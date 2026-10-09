@@ -1,0 +1,33 @@
+{
+  "version": "strict-hand-full-narrative-1",
+  "required_elements": [
+    {
+      "id": "R1",
+      "criterion": "The man she loved betrayed her that day (day of the apartment scene)."
+    },
+    {
+      "id": "R2",
+      "criterion": "He was packing his bags to move out of the apartment they shared."
+    },
+    {
+      "id": "R3",
+      "criterion": "She tearfully begged him to stay; he refused/ignored her and did not look back."
+    },
+    {
+      "id": "R4",
+      "criterion": "She then coldly asked him to leave her pillow behind; a faithful paraphrase of the request is sufficient."
+    },
+    {
+      "id": "R5",
+      "criterion": "Pillow refers to HIS HAND treated as her headrest; she deliberately cut off that HAND to keep it. ARM is not acceptable as a substitute."
+    },
+    {
+      "id": "R6",
+      "criterion": "She carried the severed hand as the pillow in her luggage; security found it, handcuffed and took her away."
+    }
+  ],
+  "acceptance": "ALL six elements and their narrative relations must be present without material contradiction. Accept faithful paraphrases, not only literal quotes. Do not reveal missing elements to solver. Core-mechanism recovery alone is not a complete solution. A hand/arm disjunction or entire arm cannot satisfy R5.",
+  "unknown_details": "Do not demand the implement, packaging, injury outcome, transport type or betrayal subtype; incidental unspecified details alone do not automatically fail an otherwise complete answer, but material contradictory explanations do.",
+  "player_feedback": "Only yes/no verdict, never missing elements.",
+  "scope": "User explicitly required full narrative and strict hand vs arm."
+}

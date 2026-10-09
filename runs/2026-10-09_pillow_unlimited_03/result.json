@@ -1,0 +1,35 @@
+{
+  "run_id": "2026-10-09_pillow_unlimited_03",
+  "complete_solution": false,
+  "host_queries": 166,
+  "final_attempts": 7,
+  "rejected_final_attempts": 7,
+  "total_submissions": 173,
+  "first_correct_final_after_query": null,
+  "first_correct_final_submission": null,
+  "stop_reason": "user_requested_pause",
+  "final_explanation": "Her luggage held a severed human hand in the place of the 'pillow' she claimed to carry. It belonged to her boyfriend, whose hand she had used to rest her head on when they slept together. After he ended the relationship, she cut his hand off against his will and took it so she could still have that familiar pillow. Its discovery during the baggage inspection exposed her violent act, and security handcuffed her.",
+  "host_label_counts": {
+    "yes and no": 68,
+    "no": 62,
+    "yes": 35
+  },
+  "host_format_compliance": 1.0,
+  "host_accuracy": null,
+  "human_review_status": "pending",
+  "assessment_by": "Controller using frozen six-element full-narrative rubric; not independent blinded grader",
+  "status": "paused_by_user",
+  "question_count_including_incorrect_finals": 173,
+  "host_answers_received": 165,
+  "pending_host_answers": 1,
+  "counting_rule": "ordinary questions + rejected finals; pending saved question counted once",
+  "latest_final_coverage": {
+    "R1": false,
+    "R2": false,
+    "R3": false,
+    "R4": false,
+    "R5": true,
+    "R6": true
+  },
+  "core_hand_headrest_and_security_recovered": true
+}

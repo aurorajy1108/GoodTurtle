@@ -1,0 +1,34 @@
+{"event": "solver", "query_index": 1, "submission_index": 1, "raw": "{\"type\":\"question\",\"text\":\"Did A use the eraser itself to make visible marks on the paper?\"}", "recorded_at_utc": "2026-10-08T08:50:03.553170+00:00"}
+{"event": "host", "query_index": 1, "raw": "no", "recorded_at_utc": "2026-10-08T08:50:43.445419+00:00"}
+{"event": "solver", "query_index": 2, "submission_index": 2, "raw": "{\"type\":\"question\",\"text\":\"Did A leave the eraser on the blank sheet as the message?\"}", "recorded_at_utc": "2026-10-08T08:50:43.445503+00:00"}
+{"event": "host", "query_index": 2, "raw": "no", "recorded_at_utc": "2026-10-08T08:51:28.945203+00:00"}
+{"event": "solver", "query_index": 3, "submission_index": 3, "raw": "{\"type\":\"question\",\"text\":\"Did A write on the sheet after picking up the eraser?\"}", "recorded_at_utc": "2026-10-08T08:51:28.945319+00:00"}
+{"event": "host", "query_index": 3, "raw": "yes", "recorded_at_utc": "2026-10-08T08:52:42.518433+00:00"}
+{"event": "solver", "query_index": 4, "submission_index": 4, "raw": "{\"type\":\"question\",\"text\":\"Did A use the eraser to remove any writing from that sheet?\"}", "recorded_at_utc": "2026-10-08T08:52:42.518552+00:00"}
+{"event": "host", "query_index": 4, "raw": "no", "recorded_at_utc": "2026-10-08T08:52:42.518564+00:00"}
+{"event": "solver", "query_index": 5, "submission_index": 5, "raw": "{\"type\":\"question\",\"text\":\"Did A use the eraser to erase writing from any surface?\"}", "recorded_at_utc": "2026-10-08T08:53:25.145121+00:00"}
+{"event": "host", "query_index": 5, "raw": "no", "recorded_at_utc": "2026-10-08T08:53:25.145208+00:00"}
+{"event": "solver", "query_index": 6, "submission_index": 6, "raw": "{\"type\":\"question\",\"text\":\"Was the eraser attached to a pencil?\"}", "recorded_at_utc": "2026-10-08T08:54:08.113267+00:00"}
+{"event": "host", "query_index": 6, "raw": "yes", "recorded_at_utc": "2026-10-08T08:54:08.113366+00:00"}
+{"event": "solver_final_attempt", "attempt_index": 1, "after_query": 6, "submission_index": 7, "raw": "{\"type\":\"final\",\"text\":\"The eraser was attached to the end of a pencil. A picked up the pencil by its eraser end, then used the pencil tip to write the message on the blank sheet.\"}", "recorded_at_utc": "2026-10-08T08:54:33.592762+00:00"}
+{"event": "grader", "attempt_index": 1, "after_query": 6, "verdict": "no", "complete": false, "basis_private": "Merely lifting the pencil by its eraser end omits removing the eraser to access the refill opening and adding lead.", "recorded_at_utc": "2026-10-08T08:54:33.592850+00:00"}
+{"event": "solver", "query_index": 7, "submission_index": 8, "raw": "{\"type\":\"question\",\"text\":\"Did A use the pencil attached to the eraser to write the message?\"}", "recorded_at_utc": "2026-10-08T08:55:47.224762+00:00"}
+{"event": "host", "query_index": 7, "raw": "yes", "recorded_at_utc": "2026-10-08T08:55:47.224847+00:00"}
+{"event": "solver", "query_index": 8, "submission_index": 9, "raw": "{\"type\":\"question\",\"text\":\"When A picked up the eraser, did A also pick up the attached pencil at the same time?\"}", "recorded_at_utc": "2026-10-08T08:55:47.224858+00:00"}
+{"event": "host", "query_index": 8, "raw": "no", "recorded_at_utc": "2026-10-08T08:56:29.037077+00:00"}
+{"event": "solver", "query_index": 9, "submission_index": 10, "raw": "{\"type\":\"question\",\"text\":\"Did A attach the eraser to the pencil after picking it up?\"}", "recorded_at_utc": "2026-10-08T08:56:29.037160+00:00"}
+{"event": "host", "query_index": 9, "raw": "yes and no", "recorded_at_utc": "2026-10-08T08:57:08.360496+00:00"}
+{"event": "solver", "query_index": 10, "submission_index": 11, "raw": "{\"type\":\"question\",\"text\":\"Was the eraser attached to the pencil before A picked it up?\"}", "recorded_at_utc": "2026-10-08T08:57:08.360583+00:00"}
+{"event": "host", "query_index": 10, "raw": "yes", "recorded_at_utc": "2026-10-08T08:58:11.944975+00:00"}
+{"event": "solver", "query_index": 11, "submission_index": 12, "raw": "{\"type\":\"question\",\"text\":\"Did A remove the eraser from the pencil to expose the pencil's writing tip?\"}", "recorded_at_utc": "2026-10-08T08:58:11.945071+00:00"}
+{"event": "host", "query_index": 11, "raw": "no", "recorded_at_utc": "2026-10-08T08:58:11.945088+00:00"}
+{"event": "solver", "query_index": 12, "submission_index": 13, "raw": "{\"type\":\"question\",\"text\":\"Did A use the eraser while writing the message with the pencil?\"}", "recorded_at_utc": "2026-10-08T08:58:56.731918+00:00"}
+{"event": "host", "query_index": 12, "raw": "no", "recorded_at_utc": "2026-10-08T08:58:56.732013+00:00"}
+{"event": "solver", "query_index": 13, "submission_index": 14, "raw": "{\"type\":\"question\",\"text\":\"Was the eraser detached from the pencil before A wrote the message?\"}", "recorded_at_utc": "2026-10-08T08:59:42.492444+00:00"}
+{"event": "host", "query_index": 13, "raw": "yes", "recorded_at_utc": "2026-10-08T08:59:42.492564+00:00"}
+{"event": "solver", "query_index": 14, "submission_index": 15, "raw": "{\"type\":\"question\",\"text\":\"Was the pencil a mechanical pencil?\"}", "recorded_at_utc": "2026-10-08T09:00:26.557574+00:00"}
+{"event": "host", "query_index": 14, "raw": "yes", "recorded_at_utc": "2026-10-08T09:00:26.557684+00:00"}
+{"event": "solver", "query_index": 15, "submission_index": 16, "raw": "{\"type\":\"question\",\"text\":\"Did A remove the eraser to refill the mechanical pencil with lead?\"}", "recorded_at_utc": "2026-10-08T09:01:14.050948+00:00"}
+{"event": "host", "query_index": 15, "raw": "yes", "recorded_at_utc": "2026-10-08T09:01:14.051061+00:00"}
+{"event": "solver_final_attempt", "attempt_index": 2, "after_query": 15, "submission_index": 17, "raw": "{\"type\":\"final\",\"text\":\"A's mechanical pencil had run out of lead. Its eraser covered the refill opening, so A picked up and removed the eraser, put new lead into the pencil, and then wrote the message on the blank sheet.\"}", "recorded_at_utc": "2026-10-08T09:01:28.661014+00:00"}
+{"event": "grader", "attempt_index": 2, "after_query": 15, "verdict": "yes", "complete": true, "basis_private": "Covers mechanical pencil lacking lead, removable eraser over refill opening, adding lead and writing; no material contradiction.", "recorded_at_utc": "2026-10-08T09:01:28.661113+00:00"}

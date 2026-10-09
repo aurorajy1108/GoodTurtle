@@ -1,0 +1,22 @@
+{
+  "model_requested": "gpt-6.1-sol",
+  "agent": "/root/jp004_repair_preflight",
+  "fresh_context": true,
+  "original_reference_matches": 7,
+  "reviewed_reference_matches": 8,
+  "total": 8,
+  "reference_correction": {
+    "case": "R5",
+    "original": "yes and no",
+    "reviewed": "no",
+    "reason": "Question asks whether story ESTABLISHES eventual arrival/murder, not whether outcome happened. It does not establish it, hence no under text-evidence rule. Host answer correct; AI reference was wrong."
+  },
+  "status": "development regression checked; human reference review pending",
+  "manifest": {
+    "JP004_r2/host_context.txt": "bd6ceb13d0181236f90c6e6a310abcbd8f99828f04dd27f4daf3624f23412ff9",
+    "jp004_repair_inputs.json": "d5f49012c48b1e08f663403d32158512ba659f95addf8c066abf51e3e91d40ab",
+    "jp004_repair_gold.json": "73a56de07066ca235a19e8eef96c77781cb62f5c8cef1a113f2096126f1bfa92",
+    "jp004_repair_gold_reviewed.json": "c8e108c71bffcdaa801ecf19b2d66386c39c55e6ab53c0e67eaace8c4801781f",
+    "jp004_repair_predictions.json": "c8e108c71bffcdaa801ecf19b2d66386c39c55e6ab53c0e67eaace8c4801781f"
+  }
+}

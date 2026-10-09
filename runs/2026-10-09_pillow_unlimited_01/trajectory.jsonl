@@ -1,0 +1,338 @@
+{"event": "solver", "query_index": 1, "submission_index": 1, "raw": "{\"type\":\"question\",\"text\":\"Was she arrested because one of the listed items concealed something illegal?\"}", "recorded_at_utc": "2026-10-09T03:25:48.914925+00:00"}
+{"event": "host", "query_index": 1, "raw": "no", "recorded_at_utc": "2026-10-09T03:26:25.862130+00:00"}
+{"event": "solver", "query_index": 2, "submission_index": 2, "raw": "{\"type\":\"question\",\"text\":\"Was she arrested because the items in her luggage provided evidence that she had committed a crime?\"}", "recorded_at_utc": "2026-10-09T03:27:11.953160+00:00"}
+{"event": "host", "query_index": 2, "raw": "yes", "recorded_at_utc": "2026-10-09T03:27:38.237795+00:00"}
+{"event": "solver", "query_index": 3, "submission_index": 3, "raw": "{\"type\":\"question\",\"text\":\"Was the crime a murder?\"}", "recorded_at_utc": "2026-10-09T03:27:56.513539+00:00"}
+{"event": "host", "query_index": 3, "raw": "yes and no", "recorded_at_utc": "2026-10-09T03:28:15.482137+00:00"}
+{"event": "solver", "query_index": 4, "submission_index": 4, "raw": "{\"type\":\"question\",\"text\":\"Had someone died before security inspected her luggage?\"}", "recorded_at_utc": "2026-10-09T03:28:37.876817+00:00"}
+{"event": "host", "query_index": 4, "raw": "yes and no", "recorded_at_utc": "2026-10-09T03:29:16.935032+00:00"}
+{"event": "solver", "query_index": 5, "submission_index": 5, "raw": "{\"type\":\"question\",\"text\":\"Was the young woman being arrested for theft?\"}", "recorded_at_utc": "2026-10-09T03:29:48.547991+00:00"}
+{"event": "host", "query_index": 5, "raw": "no", "recorded_at_utc": "2026-10-09T03:30:17.935760+00:00"}
+{"event": "solver", "query_index": 6, "submission_index": 6, "raw": "{\"type\":\"question\",\"text\":\"Was the checkpoint at an airport?\"}", "recorded_at_utc": "2026-10-09T03:30:54.070155+00:00"}
+{"event": "host", "query_index": 6, "raw": "yes and no", "recorded_at_utc": "2026-10-09T03:31:20.034859+00:00"}
+{"event": "solver", "query_index": 7, "submission_index": 7, "raw": "{\"type\":\"question\",\"text\":\"Was the pillow the item that alerted security personnel to the crime?\"}", "recorded_at_utc": "2026-10-09T03:31:51.526267+00:00"}
+{"event": "host", "query_index": 7, "raw": "yes", "recorded_at_utc": "2026-10-09T03:32:20.220393+00:00"}
+{"event": "solver", "query_index": 8, "submission_index": 8, "raw": "{\"type\":\"question\",\"text\":\"Had the pillow been used to suffocate someone?\"}", "recorded_at_utc": "2026-10-09T03:32:45.726825+00:00"}
+{"event": "host", "query_index": 8, "raw": "no", "recorded_at_utc": "2026-10-09T03:33:23.326033+00:00"}
+{"event": "solver", "query_index": 9, "submission_index": 9, "raw": "{\"type\":\"question\",\"text\":\"Did the pillow have visible blood on it?\"}", "recorded_at_utc": "2026-10-09T03:34:26.394131+00:00"}
+{"event": "host", "query_index": 9, "raw": "yes and no", "recorded_at_utc": "2026-10-09T03:35:00.433343+00:00"}
+{"event": "solver", "query_index": 10, "submission_index": 10, "raw": "{\"type\":\"question\",\"text\":\"Was the pillow physically damaged?\"}", "recorded_at_utc": "2026-10-09T03:35:34.215449+00:00"}
+{"event": "host", "query_index": 10, "raw": "yes", "recorded_at_utc": "2026-10-09T03:36:03.922763+00:00"}
+{"event": "solver", "query_index": 11, "submission_index": 11, "raw": "{\"type\":\"question\",\"text\":\"Did the pillow have a hole made by a bullet?\"}", "recorded_at_utc": "2026-10-09T03:36:37.004144+00:00"}
+{"event": "host", "query_index": 11, "raw": "no", "recorded_at_utc": "2026-10-09T03:37:05.883161+00:00"}
+{"event": "solver", "query_index": 12, "submission_index": 12, "raw": "{\"type\":\"question\",\"text\":\"Had the pillow been cut or torn open?\"}", "recorded_at_utc": "2026-10-09T03:37:40.337909+00:00"}
+{"event": "host", "query_index": 12, "raw": "yes and no", "recorded_at_utc": "2026-10-09T03:38:29.671201+00:00"}
+{"event": "solver", "query_index": 13, "submission_index": 13, "raw": "{\"type\":\"question\",\"text\":\"Was it an inflatable pillow?\"}", "recorded_at_utc": "2026-10-09T03:39:06.070938+00:00"}
+{"event": "host", "query_index": 13, "raw": "no", "recorded_at_utc": "2026-10-09T03:39:32.011800+00:00"}
+{"event": "solver", "query_index": 14, "submission_index": 14, "raw": "{\"type\":\"question\",\"text\":\"Was the pillow damaged by fire?\"}", "recorded_at_utc": "2026-10-09T03:40:13.970757+00:00"}
+{"event": "host", "query_index": 14, "raw": "no", "recorded_at_utc": "2026-10-09T03:40:48.297853+00:00"}
+{"event": "solver", "query_index": 15, "submission_index": 15, "raw": "{\"type\":\"question\",\"text\":\"Was the pillow missing its stuffing?\"}", "recorded_at_utc": "2026-10-09T03:41:26.314654+00:00"}
+{"event": "host", "query_index": 15, "raw": "no", "recorded_at_utc": "2026-10-09T03:42:19.406759+00:00"}
+{"event": "solver", "query_index": 16, "submission_index": 16, "raw": "{\"type\":\"question\",\"text\":\"Was the pillow wet?\"}", "recorded_at_utc": "2026-10-09T03:42:53.528298+00:00"}
+{"event": "host", "query_index": 16, "raw": "yes and no", "recorded_at_utc": "2026-10-09T03:43:34.296383+00:00"}
+{"event": "solver", "query_index": 17, "submission_index": 17, "raw": "{\"type\":\"question\",\"text\":\"Did security personnel damage the pillow while inspecting it?\"}", "recorded_at_utc": "2026-10-09T03:44:02.155992+00:00"}
+{"event": "host", "query_index": 17, "raw": "yes and no", "recorded_at_utc": "2026-10-09T03:45:03.835758+00:00"}
+{"event": "solver", "query_index": 18, "submission_index": 18, "raw": "{\"type\":\"question\",\"text\":\"Was there anything inside the pillow besides ordinary stuffing?\"}", "recorded_at_utc": "2026-10-09T03:45:38.710404+00:00"}
+{"event": "host", "query_index": 18, "raw": "yes and no", "recorded_at_utc": "2026-10-09T03:46:14.309193+00:00"}
+{"event": "solver", "query_index": 19, "submission_index": 19, "raw": "{\"type\":\"question\",\"text\":\"Was the young woman trying to transport a person in her luggage?\"}", "recorded_at_utc": "2026-10-09T03:46:50.949327+00:00"}
+{"event": "host", "query_index": 19, "raw": "no", "recorded_at_utc": "2026-10-09T03:47:24.059241+00:00"}
+{"event": "solver", "query_index": 20, "submission_index": 20, "raw": "{\"type\":\"question\",\"text\":\"Did the pillow bear bite marks?\"}", "recorded_at_utc": "2026-10-09T03:48:06.527525+00:00"}
+{"event": "host", "query_index": 20, "raw": "yes and no", "recorded_at_utc": "2026-10-09T03:48:49.520702+00:00"}
+{"event": "solver", "query_index": 21, "submission_index": 21, "raw": "{\"type\":\"question\",\"text\":\"Was the pillow damaged before she reached the checkpoint?\"}", "recorded_at_utc": "2026-10-09T03:49:16.138544+00:00"}
+{"event": "host", "query_index": 21, "raw": "yes", "recorded_at_utc": "2026-10-09T03:49:56.657981+00:00"}
+{"event": "solver", "query_index": 22, "submission_index": 22, "raw": "{\"type\":\"question\",\"text\":\"Did the pillow belong to someone other than the young woman?\"}", "recorded_at_utc": "2026-10-09T03:50:31.986064+00:00"}
+{"event": "host", "query_index": 22, "raw": "yes and no", "recorded_at_utc": "2026-10-09T03:51:04.926833+00:00"}
+{"event": "solver", "query_index": 23, "submission_index": 23, "raw": "{\"type\":\"question\",\"text\":\"Did the thermos also provide evidence of the crime?\"}", "recorded_at_utc": "2026-10-09T03:51:37.054343+00:00"}
+{"event": "host", "query_index": 23, "raw": "no", "recorded_at_utc": "2026-10-09T03:52:20.666792+00:00"}
+{"event": "solver", "query_index": 24, "submission_index": 24, "raw": "{\"type\":\"question\",\"text\":\"Did the towel also provide evidence of the crime?\"}", "recorded_at_utc": "2026-10-09T03:52:55.702238+00:00"}
+{"event": "host", "query_index": 24, "raw": "no", "recorded_at_utc": "2026-10-09T03:53:29.359213+00:00"}
+{"event": "solver", "query_index": 25, "submission_index": 25, "raw": "{\"type\":\"question\",\"text\":\"Was the pillow taken from a hospital?\"}", "recorded_at_utc": "2026-10-09T03:54:03.997849+00:00"}
+{"event": "host", "query_index": 25, "raw": "no", "recorded_at_utc": "2026-10-09T03:54:39.062369+00:00"}
+{"event": "solver", "query_index": 26, "submission_index": 26, "raw": "{\"type\":\"question\",\"text\":\"Was there any blood on or in the pillow?\"}", "recorded_at_utc": "2026-10-09T03:55:07.029827+00:00"}
+{"event": "host", "query_index": 26, "raw": "yes", "recorded_at_utc": "2026-10-09T03:55:36.572726+00:00"}
+{"event": "solver", "query_index": 27, "submission_index": 27, "raw": "{\"type\":\"question\",\"text\":\"Was the blood on the pillow someone else's blood?\"}", "recorded_at_utc": "2026-10-09T03:56:30.920437+00:00"}
+{"event": "host", "query_index": 27, "raw": "yes and no", "recorded_at_utc": "2026-10-09T03:57:10.438562+00:00"}
+{"event": "solver", "query_index": 28, "submission_index": 28, "raw": "{\"type\":\"question\",\"text\":\"Was the blood on the pillow the young woman's own blood?\"}", "recorded_at_utc": "2026-10-09T03:57:59.064314+00:00"}
+{"event": "host", "query_index": 28, "raw": "yes and no", "recorded_at_utc": "2026-10-09T03:58:42.572785+00:00"}
+{"event": "solver", "query_index": 29, "submission_index": 29, "raw": "{\"type\":\"question\",\"text\":\"Was the crime an attempted killing?\"}", "recorded_at_utc": "2026-10-09T03:59:15.226321+00:00"}
+{"event": "host", "query_index": 29, "raw": "no", "recorded_at_utc": "2026-10-09T03:59:36.209467+00:00"}
+{"event": "solver", "query_index": 30, "submission_index": 30, "raw": "{\"type\":\"question\",\"text\":\"Did the crime cause a person's death?\"}", "recorded_at_utc": "2026-10-09T04:00:10.564239+00:00"}
+{"event": "host", "query_index": 30, "raw": "yes and no", "recorded_at_utc": "2026-10-09T04:00:56.952130+00:00"}
+{"event": "solver", "query_index": 31, "submission_index": 31, "raw": "{\"type\":\"question\",\"text\":\"Had she intentionally injured another person?\"}", "recorded_at_utc": "2026-10-09T04:01:34.513499+00:00"}
+{"event": "host", "query_index": 31, "raw": "yes", "recorded_at_utc": "2026-10-09T04:01:53.810687+00:00"}
+{"event": "solver", "query_index": 32, "submission_index": 32, "raw": "{\"type\":\"question\",\"text\":\"Did she use the pillow as a weapon?\"}", "recorded_at_utc": "2026-10-09T04:02:52.550867+00:00"}
+{"event": "host", "query_index": 32, "raw": "no", "recorded_at_utc": "2026-10-09T04:03:23.919283+00:00"}
+{"event": "solver", "query_index": 33, "submission_index": 33, "raw": "{\"type\":\"question\",\"text\":\"Did she injure the other person while that person was lying in bed?\"}", "recorded_at_utc": "2026-10-09T04:04:01.312584+00:00"}
+{"event": "host", "query_index": 33, "raw": "yes and no", "recorded_at_utc": "2026-10-09T04:04:51.144865+00:00"}
+{"event": "solver", "query_index": 34, "submission_index": 34, "raw": "{\"type\":\"question\",\"text\":\"Was the blood on the pillow human blood?\"}", "recorded_at_utc": "2026-10-09T04:05:20.332647+00:00"}
+{"event": "host", "query_index": 34, "raw": "yes and no", "recorded_at_utc": "2026-10-09T04:05:43.816704+00:00"}
+{"event": "solver", "query_index": 35, "submission_index": 35, "raw": "{\"type\":\"question\",\"text\":\"Did the pillow contain human remains?\"}", "recorded_at_utc": "2026-10-09T04:06:42.866734+00:00"}
+{"event": "host", "query_index": 35, "raw": "yes", "recorded_at_utc": "2026-10-09T04:07:20.968800+00:00"}
+{"event": "solver", "query_index": 36, "submission_index": 36, "raw": "{\"type\":\"question\",\"text\":\"Were the human remains in the pillow body parts from a dismembered person?\"}", "recorded_at_utc": "2026-10-09T04:07:57.924367+00:00"}
+{"event": "host", "query_index": 36, "raw": "yes", "recorded_at_utc": "2026-10-09T04:08:43.351708+00:00"}
+{"event": "solver", "query_index": 37, "submission_index": 37, "raw": "{\"type\":\"question\",\"text\":\"Was a severed human head inside the pillow?\"}", "recorded_at_utc": "2026-10-09T04:10:47.548679+00:00"}
+{"event": "host", "query_index": 37, "raw": "no", "recorded_at_utc": "2026-10-09T04:11:28.896806+00:00"}
+{"event": "solver", "query_index": 38, "submission_index": 38, "raw": "{\"type\":\"question\",\"text\":\"Was a severed human limb inside the pillow?\"}", "recorded_at_utc": "2026-10-09T04:12:00.213761+00:00"}
+{"event": "host", "query_index": 38, "raw": "yes and no", "recorded_at_utc": "2026-10-09T04:12:19.492843+00:00"}
+{"event": "solver", "query_index": 39, "submission_index": 39, "raw": "{\"type\":\"question\",\"text\":\"Was the pillow stuffed with pieces of human flesh?\"}", "recorded_at_utc": "2026-10-09T04:13:04.409057+00:00"}
+{"event": "host", "query_index": 39, "raw": "no", "recorded_at_utc": "2026-10-09T04:13:29.423692+00:00"}
+{"event": "solver", "query_index": 40, "submission_index": 40, "raw": "{\"type\":\"question\",\"text\":\"Did the pillow contain human bones?\"}", "recorded_at_utc": "2026-10-09T04:14:25.059009+00:00"}
+{"event": "host", "query_index": 40, "raw": "yes", "recorded_at_utc": "2026-10-09T04:15:04.229648+00:00"}
+{"event": "solver", "query_index": 41, "submission_index": 41, "raw": "{\"type\":\"question\",\"text\":\"Did she kill the person whose bones were in the pillow?\"}", "recorded_at_utc": "2026-10-09T04:15:40.152611+00:00"}
+{"event": "host", "query_index": 41, "raw": "yes and no", "recorded_at_utc": "2026-10-09T04:16:16.916401+00:00"}
+{"event": "solver", "query_index": 42, "submission_index": 42, "raw": "{\"type\":\"question\",\"text\":\"Was the person whose bones were in the pillow still alive at the checkpoint?\"}", "recorded_at_utc": "2026-10-09T04:16:56.232307+00:00"}
+{"event": "host", "query_index": 42, "raw": "yes and no", "recorded_at_utc": "2026-10-09T04:17:34.920331+00:00"}
+{"event": "solver", "query_index": 43, "submission_index": 43, "raw": "{\"type\":\"question\",\"text\":\"Did the pillow contain bones from more than one person?\"}", "recorded_at_utc": "2026-10-09T04:18:13.033563+00:00"}
+{"event": "host", "query_index": 43, "raw": "no", "recorded_at_utc": "2026-10-09T04:18:34.846275+00:00"}
+{"event": "solver", "query_index": 44, "submission_index": 44, "raw": "{\"type\":\"question\",\"text\":\"Did the pillow contain a severed human hand?\"}", "recorded_at_utc": "2026-10-09T04:19:16.564539+00:00"}
+{"event": "host", "query_index": 44, "raw": "yes", "recorded_at_utc": "2026-10-09T04:19:57.850740+00:00"}
+{"event": "solver", "query_index": 45, "submission_index": 45, "raw": "{\"type\":\"question\",\"text\":\"Did she cut off the hand herself?\"}", "recorded_at_utc": "2026-10-09T04:20:45.399416+00:00"}
+{"event": "host", "query_index": 45, "raw": "yes", "recorded_at_utc": "2026-10-09T04:21:39.232022+00:00"}
+{"event": "solver", "query_index": 46, "submission_index": 46, "raw": "{\"type\":\"question\",\"text\":\"Was the severed hand from a man?\"}", "recorded_at_utc": "2026-10-09T04:22:17.287298+00:00"}
+{"event": "host", "query_index": 46, "raw": "yes", "recorded_at_utc": "2026-10-09T04:23:09.082830+00:00"}
+{"event": "solver", "query_index": 47, "submission_index": 47, "raw": "{\"type\":\"question\",\"text\":\"Was the man whose hand she cut off her romantic partner?\"}", "recorded_at_utc": "2026-10-09T04:23:50.083084+00:00"}
+{"event": "host", "query_index": 47, "raw": "yes", "recorded_at_utc": "2026-10-09T04:24:32.697567+00:00"}
+{"event": "solver", "query_index": 48, "submission_index": 48, "raw": "{\"type\":\"question\",\"text\":\"Was the man her husband?\"}", "recorded_at_utc": "2026-10-09T04:25:09.708198+00:00"}
+{"event": "host", "query_index": 48, "raw": "yes and no", "recorded_at_utc": "2026-10-09T04:25:40.675945+00:00"}
+{"event": "solver", "query_index": 49, "submission_index": 49, "raw": "{\"type\":\"question\",\"text\":\"Was the man her boyfriend?\"}", "recorded_at_utc": "2026-10-09T04:26:22.198388+00:00"}
+{"event": "host", "query_index": 49, "raw": "yes", "recorded_at_utc": "2026-10-09T04:26:53.954133+00:00"}
+{"event": "solver", "query_index": 50, "submission_index": 50, "raw": "{\"type\":\"question\",\"text\":\"Did she sever her boyfriend's hand without his consent?\"}", "recorded_at_utc": "2026-10-09T04:27:26.555738+00:00"}
+{"event": "host", "query_index": 50, "raw": "yes", "recorded_at_utc": "2026-10-09T04:28:06.153723+00:00"}
+{"event": "solver", "query_index": 51, "submission_index": 51, "raw": "{\"type\":\"question\",\"text\":\"Did she cut off his hand in revenge for something he had done to her?\"}", "recorded_at_utc": "2026-10-09T04:28:49.029096+00:00"}
+{"event": "host", "query_index": 51, "raw": "no", "recorded_at_utc": "2026-10-09T04:29:35.185396+00:00"}
+{"event": "solver", "query_index": 52, "submission_index": 52, "raw": "{\"type\":\"question\",\"text\":\"Did she intend to use the severed hand to unlock something with his fingerprints?\"}", "recorded_at_utc": "2026-10-09T04:30:17.162146+00:00"}
+{"event": "host", "query_index": 52, "raw": "no", "recorded_at_utc": "2026-10-09T04:31:27.261027+00:00"}
+{"event": "solver", "query_index": 53, "submission_index": 53, "raw": "{\"type\":\"question\",\"text\":\"Was her boyfriend alive when she cut off his hand?\"}", "recorded_at_utc": "2026-10-09T04:32:01.520479+00:00"}
+{"event": "host", "query_index": 53, "raw": "yes", "recorded_at_utc": "2026-10-09T04:32:26.336350+00:00"}
+{"event": "solver", "query_index": 54, "submission_index": 54, "raw": "{\"type\":\"question\",\"text\":\"Did she cut off his hand to save his life?\"}", "recorded_at_utc": "2026-10-09T04:33:14.041355+00:00"}
+{"event": "host", "query_index": 54, "raw": "no", "recorded_at_utc": "2026-10-09T04:33:37.880374+00:00"}
+{"event": "solver", "query_index": 55, "submission_index": 55, "raw": "{\"type\":\"question\",\"text\":\"Did she sever his hand to prevent him from doing something?\"}", "recorded_at_utc": "2026-10-09T04:34:26.461115+00:00"}
+{"event": "host", "query_index": 55, "raw": "yes", "recorded_at_utc": "2026-10-09T04:34:52.034636+00:00"}
+{"event": "solver", "query_index": 56, "submission_index": 56, "raw": "{\"type\":\"question\",\"text\":\"Did she cut off his hand to stop him from leaving her?\"}", "recorded_at_utc": "2026-10-09T04:35:42.295487+00:00"}
+{"event": "host", "query_index": 56, "raw": "no", "recorded_at_utc": "2026-10-09T04:36:10.296239+00:00"}
+{"event": "solver", "query_index": 57, "submission_index": 57, "raw": "{\"type\":\"question\",\"text\":\"Did she cut off his hand to prevent him from using a weapon?\"}", "recorded_at_utc": "2026-10-09T04:36:54.317496+00:00"}
+{"event": "host", "query_index": 57, "raw": "no", "recorded_at_utc": "2026-10-09T04:37:42.733970+00:00"}
+{"event": "solver", "query_index": 58, "submission_index": 58, "raw": "{\"type\":\"question\",\"text\":\"Did she cut off his hand to stop him from contacting someone?\"}", "recorded_at_utc": "2026-10-09T04:38:42.166291+00:00"}
+{"event": "host", "query_index": 58, "raw": "no", "recorded_at_utc": "2026-10-09T04:39:09.046060+00:00"}
+{"event": "solver", "query_index": 59, "submission_index": 59, "raw": "{\"type\":\"question\",\"text\":\"Did she cut off his hand to stop him from working in his profession?\"}", "recorded_at_utc": "2026-10-09T04:40:20.890303+00:00"}
+{"event": "host", "query_index": 59, "raw": "no", "recorded_at_utc": "2026-10-09T04:40:59.061813+00:00"}
+{"event": "solver", "query_index": 60, "submission_index": 60, "raw": "{\"type\":\"question\",\"text\":\"Did she cut off his hand to prevent him from committing a crime?\"}", "recorded_at_utc": "2026-10-09T04:41:50.000610+00:00"}
+{"event": "host", "query_index": 60, "raw": "no", "recorded_at_utc": "2026-10-09T04:42:41.032377+00:00"}
+{"event": "solver", "query_index": 61, "submission_index": 61, "raw": "{\"type\":\"question\",\"text\":\"Did she cut off his hand so he could not physically resist her?\"}", "recorded_at_utc": "2026-10-09T04:43:07.977274+00:00"}
+{"event": "host", "query_index": 61, "raw": "no", "recorded_at_utc": "2026-10-09T04:43:52.493391+00:00"}
+{"event": "solver", "query_index": 62, "submission_index": 62, "raw": "{\"type\":\"question\",\"text\":\"Did she cut off his hand to stop him from escaping captivity?\"}", "recorded_at_utc": "2026-10-09T04:44:44.560842+00:00"}
+{"event": "host", "query_index": 62, "raw": "no", "recorded_at_utc": "2026-10-09T04:45:10.262658+00:00"}
+{"event": "solver", "query_index": 63, "submission_index": 63, "raw": "{\"type\":\"question\",\"text\":\"Was she trying to dispose of the severed hand to hide evidence of the assault?\"}", "recorded_at_utc": "2026-10-09T04:46:12.898318+00:00"}
+{"event": "host", "query_index": 63, "raw": "no", "recorded_at_utc": "2026-10-09T04:46:51.017611+00:00"}
+{"event": "solver", "query_index": 64, "submission_index": 64, "raw": "{\"type\":\"question\",\"text\":\"Was she taking the hand somewhere so it could be surgically reattached?\"}", "recorded_at_utc": "2026-10-09T04:47:17.906598+00:00"}
+{"event": "host", "query_index": 64, "raw": "no", "recorded_at_utc": "2026-10-09T04:48:13.776635+00:00"}
+{"event": "solver", "query_index": 65, "submission_index": 65, "raw": "{\"type\":\"question\",\"text\":\"Was she keeping the severed hand as a personal keepsake?\"}", "recorded_at_utc": "2026-10-09T04:48:38.971288+00:00"}
+{"event": "host", "query_index": 65, "raw": "yes", "recorded_at_utc": "2026-10-09T04:49:30.931810+00:00"}
+{"event": "solver", "query_index": 66, "submission_index": 66, "raw": "{\"type\":\"question\",\"text\":\"Was she motivated by jealousy?\"}", "recorded_at_utc": "2026-10-09T04:49:56.743546+00:00"}
+{"event": "host", "query_index": 66, "raw": "yes and no", "recorded_at_utc": "2026-10-09T04:50:37.934331+00:00"}
+{"event": "solver", "query_index": 67, "submission_index": 67, "raw": "{\"type\":\"question\",\"text\":\"Was she obsessed with her boyfriend?\"}", "recorded_at_utc": "2026-10-09T04:51:32.087135+00:00"}
+{"event": "host", "query_index": 67, "raw": "yes and no", "recorded_at_utc": "2026-10-09T04:51:57.659776+00:00"}
+{"event": "solver", "query_index": 68, "submission_index": 68, "raw": "{\"type\":\"question\",\"text\":\"Did she cut off his hand to stop him from touching another person?\"}", "recorded_at_utc": "2026-10-09T04:53:02.108525+00:00"}
+{"event": "host", "query_index": 68, "raw": "no", "recorded_at_utc": "2026-10-09T04:53:35.145369+00:00"}
+{"event": "solver", "query_index": 69, "submission_index": 69, "raw": "{\"type\":\"question\",\"text\":\"Did she cut off her boyfriend's hand during a physical fight with him?\"}", "recorded_at_utc": "2026-10-09T04:54:27.043792+00:00"}
+{"event": "host", "query_index": 69, "raw": "yes and no", "recorded_at_utc": "2026-10-09T04:55:07.402909+00:00"}
+{"event": "solver", "query_index": 70, "submission_index": 70, "raw": "{\"type\":\"question\",\"text\":\"Had her boyfriend told her he wanted to break up?\"}", "recorded_at_utc": "2026-10-09T04:55:37.002632+00:00"}
+{"event": "host", "query_index": 70, "raw": "yes and no", "recorded_at_utc": "2026-10-09T04:56:22.961180+00:00"}
+{"event": "solver", "query_index": 71, "submission_index": 71, "raw": "{\"type\":\"question\",\"text\":\"Was her boyfriend planning to travel away from her?\"}", "recorded_at_utc": "2026-10-09T04:57:36.274484+00:00"}
+{"event": "host", "query_index": 71, "raw": "yes", "recorded_at_utc": "2026-10-09T04:58:18.340029+00:00"}
+{"event": "solver", "query_index": 72, "submission_index": 72, "raw": "{\"type\":\"question\",\"text\":\"Did she cut off his hand to stop him from making that trip?\"}", "recorded_at_utc": "2026-10-09T04:58:52.225716+00:00"}
+{"event": "host", "query_index": 72, "raw": "no", "recorded_at_utc": "2026-10-09T04:59:27.045306+00:00"}
+{"event": "solver", "query_index": 73, "submission_index": 73, "raw": "{\"type\":\"question\",\"text\":\"Was she traveling to meet her boyfriend?\"}", "recorded_at_utc": "2026-10-09T04:59:56.211371+00:00"}
+{"event": "host", "query_index": 73, "raw": "yes and no", "recorded_at_utc": "2026-10-09T05:01:13.686149+00:00"}
+{"event": "solver", "query_index": 74, "submission_index": 74, "raw": "{\"type\":\"question\",\"text\":\"Did she place the severed hand inside the pillow herself?\"}", "recorded_at_utc": "2026-10-09T05:02:04.553641+00:00"}
+{"event": "host", "query_index": 74, "raw": "yes and no", "recorded_at_utc": "2026-10-09T05:02:30.113842+00:00"}
+{"event": "solver", "query_index": 75, "submission_index": 75, "raw": "{\"type\":\"question\",\"text\":\"Was the severed hand hidden inside the pillow to avoid detection at the checkpoint?\"}", "recorded_at_utc": "2026-10-09T05:03:25.608887+00:00"}
+{"event": "host", "query_index": 75, "raw": "no", "recorded_at_utc": "2026-10-09T05:03:51.413104+00:00"}
+{"event": "solver", "query_index": 76, "submission_index": 76, "raw": "{\"type\":\"question\",\"text\":\"Did she keep his hand so she would have a physical reminder of him while they were apart?\"}", "recorded_at_utc": "2026-10-09T05:04:48.031383+00:00"}
+{"event": "host", "query_index": 76, "raw": "no", "recorded_at_utc": "2026-10-09T05:05:17.997536+00:00"}
+{"event": "solver", "query_index": 77, "submission_index": 77, "raw": "{\"type\":\"question\",\"text\":\"Did she keep the hand as a trophy of her attack on him?\"}", "recorded_at_utc": "2026-10-09T05:06:33.542678+00:00"}
+{"event": "host", "query_index": 77, "raw": "no", "recorded_at_utc": "2026-10-09T05:07:08.182570+00:00"}
+{"event": "solver", "query_index": 78, "submission_index": 78, "raw": "{\"type\":\"question\",\"text\":\"Did she intend to kill her boyfriend?\"}", "recorded_at_utc": "2026-10-09T05:07:46.309430+00:00"}
+{"event": "host", "query_index": 78, "raw": "yes and no", "recorded_at_utc": "2026-10-09T05:08:34.269186+00:00"}
+{"event": "solver_final_attempt", "attempt_index": 1, "after_query": 78, "submission_index": 79, "raw": "{\"type\":\"final\",\"text\":\"Security found a severed human hand in the pillow in her luggage. It was her boyfriend's hand. She had cut it off while he was alive, kept it as a personal keepsake, and then carried the pillow containing it through the checkpoint. The hand and blood in the damaged pillow exposed the assault, so the officers handcuffed her.\"}", "recorded_at_utc": "2026-10-09T05:09:13.332270+00:00"}
+{"event": "grader", "attempt_index": 1, "after_query": 78, "verdict": "no", "complete": false, "coverage_private": {"R1": false, "R2": false, "R3": false, "R4": false, "R5": false, "R6": false}, "notes_private": "Hand severing and discovery recovered but ordinary damaged pillow containing hand replaces hand-as-headrest. No betrayal, departure scene, plea or request.", "recorded_at_utc": "2026-10-09T05:09:13.415620+00:00"}
+{"event": "solver", "query_index": 79, "submission_index": 80, "raw": "{\"type\":\"question\",\"text\":\"Did security personnel handcuff her because they found the severed hand?\"}", "recorded_at_utc": "2026-10-09T05:09:47.680574+00:00"}
+{"event": "host", "query_index": 79, "raw": "yes", "recorded_at_utc": "2026-10-09T05:10:48.903336+00:00"}
+{"event": "solver", "query_index": 80, "submission_index": 81, "raw": "{\"type\":\"question\",\"text\":\"Did she sever his hand to stop him from gambling?\"}", "recorded_at_utc": "2026-10-09T05:11:19.194368+00:00"}
+{"event": "host", "query_index": 80, "raw": "no", "recorded_at_utc": "2026-10-09T05:12:29.450622+00:00"}
+{"event": "solver", "query_index": 81, "submission_index": 82, "raw": "{\"type\":\"question\",\"text\":\"Was her boyfriend asleep when she cut off his hand?\"}", "recorded_at_utc": "2026-10-09T05:13:05.561392+00:00"}
+{"event": "host", "query_index": 81, "raw": "no", "recorded_at_utc": "2026-10-09T05:13:37.225463+00:00"}
+{"event": "solver", "query_index": 82, "submission_index": 83, "raw": "{\"type\":\"question\",\"text\":\"Was her boyfriend restrained when she cut off his hand?\"}", "recorded_at_utc": "2026-10-09T05:14:47.458704+00:00"}
+{"event": "host", "query_index": 82, "raw": "yes and no", "recorded_at_utc": "2026-10-09T05:15:23.411152+00:00"}
+{"event": "solver", "query_index": 83, "submission_index": 84, "raw": "{\"type\":\"question\",\"text\":\"Was any other part of her boyfriend's body in the luggage?\"}", "recorded_at_utc": "2026-10-09T05:16:11.968664+00:00"}
+{"event": "host", "query_index": 83, "raw": "no", "recorded_at_utc": "2026-10-09T05:16:58.422903+00:00"}
+{"event": "solver", "query_index": 84, "submission_index": 85, "raw": "{\"type\":\"question\",\"text\":\"Was there a ring on the severed hand?\"}", "recorded_at_utc": "2026-10-09T05:17:35.163146+00:00"}
+{"event": "host", "query_index": 84, "raw": "yes and no", "recorded_at_utc": "2026-10-09T05:18:25.115395+00:00"}
+{"event": "solver", "query_index": 85, "submission_index": 86, "raw": "{\"type\":\"question\",\"text\":\"Did she cut off both of her boyfriend's hands?\"}", "recorded_at_utc": "2026-10-09T05:19:07.984359+00:00"}
+{"event": "host", "query_index": 85, "raw": "no", "recorded_at_utc": "2026-10-09T05:19:39.439670+00:00"}
+{"event": "solver", "query_index": 86, "submission_index": 87, "raw": "{\"type\":\"question\",\"text\":\"Did an X-ray scan reveal the hand before security opened her luggage?\"}", "recorded_at_utc": "2026-10-09T05:20:39.073655+00:00"}
+{"event": "host", "query_index": 86, "raw": "yes and no", "recorded_at_utc": "2026-10-09T05:21:17.525749+00:00"}
+{"event": "solver", "query_index": 87, "submission_index": 88, "raw": "{\"type\":\"question\",\"text\":\"Did the pajamas also provide evidence of the crime?\"}", "recorded_at_utc": "2026-10-09T05:22:38.794051+00:00"}
+{"event": "host", "query_index": 87, "raw": "no", "recorded_at_utc": "2026-10-09T05:23:29.852353+00:00"}
+{"event": "solver", "query_index": 88, "submission_index": 89, "raw": "{\"type\":\"question\",\"text\":\"Did she sever his hand to stop him from marrying someone else?\"}", "recorded_at_utc": "2026-10-09T05:23:57.324533+00:00"}
+{"event": "host", "query_index": 88, "raw": "no", "recorded_at_utc": "2026-10-09T05:24:57.172520+00:00"}
+{"event": "solver", "query_index": 89, "submission_index": 90, "raw": "{\"type\":\"question\",\"text\":\"Was her boyfriend planning to join the military?\"}", "recorded_at_utc": "2026-10-09T05:25:35.620209+00:00"}
+{"event": "host", "query_index": 89, "raw": "yes and no", "recorded_at_utc": "2026-10-09T05:26:45.525421+00:00"}
+{"event": "solver", "query_index": 90, "submission_index": 91, "raw": "{\"type\":\"question\",\"text\":\"Was her boyfriend going to fly somewhere?\"}", "recorded_at_utc": "2026-10-09T05:28:18.015043+00:00"}
+{"event": "host", "query_index": 90, "raw": "yes and no", "recorded_at_utc": "2026-10-09T05:30:04.080666+00:00"}
+{"event": "solver", "query_index": 91, "submission_index": 92, "raw": "{\"type\":\"question\",\"text\":\"Was her boyfriend planning to abandon her?\"}", "recorded_at_utc": "2026-10-09T05:31:00.469738+00:00"}
+{"event": "host", "query_index": 91, "raw": "yes", "recorded_at_utc": "2026-10-09T05:32:03.395434+00:00"}
+{"event": "solver", "query_index": 92, "submission_index": 93, "raw": "{\"type\":\"question\",\"text\":\"Did she cut off his hand because he was going to abandon her?\"}", "recorded_at_utc": "2026-10-09T05:32:51.105457+00:00"}
+{"event": "host", "query_index": 92, "raw": "yes", "recorded_at_utc": "2026-10-09T05:33:29.203190+00:00"}
+{"event": "solver", "query_index": 93, "submission_index": 94, "raw": "{\"type\":\"question\",\"text\":\"Did she keep his severed hand because she could not bear the thought of having nothing of him after he left?\"}", "recorded_at_utc": "2026-10-09T05:34:33.705190+00:00"}
+{"event": "host", "query_index": 93, "raw": "no", "recorded_at_utc": "2026-10-09T05:35:59.700419+00:00"}
+{"event": "solver", "query_index": 94, "submission_index": 95, "raw": "{\"type\":\"question\",\"text\":\"Did she believe keeping his hand would somehow bind him to her?\"}", "recorded_at_utc": "2026-10-09T05:36:54.241038+00:00"}
+{"event": "host", "query_index": 94, "raw": "no", "recorded_at_utc": "2026-10-09T05:37:52.655164+00:00"}
+{"event": "solver", "query_index": 95, "submission_index": 96, "raw": "{\"type\":\"question\",\"text\":\"Did her boyfriend die from blood loss caused by the amputation?\"}", "recorded_at_utc": "2026-10-09T05:38:48.126258+00:00"}
+{"event": "host", "query_index": 95, "raw": "yes and no", "recorded_at_utc": "2026-10-09T05:39:50.444110+00:00"}
+{"event": "solver", "query_index": 96, "submission_index": 97, "raw": "{\"type\":\"question\",\"text\":\"Did she cut off his hand to prevent him from taking something away from her?\"}", "recorded_at_utc": "2026-10-09T05:40:53.487025+00:00"}
+{"event": "host", "query_index": 96, "raw": "yes", "recorded_at_utc": "2026-10-09T05:41:42.842888+00:00"}
+{"event": "solver", "query_index": 97, "submission_index": 98, "raw": "{\"type\":\"question\",\"text\":\"Was he planning to take their child away from her?\"}", "recorded_at_utc": "2026-10-09T05:42:15.748801+00:00"}
+{"event": "host", "query_index": 97, "raw": "no", "recorded_at_utc": "2026-10-09T05:43:17.137411+00:00"}
+{"event": "solver", "query_index": 98, "submission_index": 99, "raw": "{\"type\":\"question\",\"text\":\"Was the thing he intended to take from her money?\"}", "recorded_at_utc": "2026-10-09T05:44:14.617102+00:00"}
+{"event": "host", "query_index": 98, "raw": "no", "recorded_at_utc": "2026-10-09T05:45:15.132511+00:00"}
+{"event": "solver", "query_index": 99, "submission_index": 100, "raw": "{\"type\":\"question\",\"text\":\"Was the thing he was going to take away from her his own presence in her life?\"}", "recorded_at_utc": "2026-10-09T05:46:37.022214+00:00"}
+{"event": "host", "query_index": 99, "raw": "no", "recorded_at_utc": "2026-10-09T05:47:43.748819+00:00"}
+{"event": "solver", "query_index": 100, "submission_index": 101, "raw": "{\"type\":\"question\",\"text\":\"Was he planning to take the pillow from her?\"}", "recorded_at_utc": "2026-10-09T05:48:41.639908+00:00"}
+{"event": "host", "query_index": 100, "raw": "yes", "recorded_at_utc": "2026-10-09T05:49:49.606773+00:00"}
+{"event": "solver", "query_index": 101, "submission_index": 102, "raw": "{\"type\":\"question\",\"text\":\"Did the pillow contain something valuable before she put the hand in it?\"}", "recorded_at_utc": "2026-10-09T05:50:49.651639+00:00"}
+{"event": "host", "query_index": 101, "raw": "no", "recorded_at_utc": "2026-10-09T05:51:45.354687+00:00"}
+{"event": "solver", "query_index": 102, "submission_index": 103, "raw": "{\"type\":\"question\",\"text\":\"Did she cut off his hand while he was trying to take the pillow?\"}", "recorded_at_utc": "2026-10-09T05:52:26.028835+00:00"}
+{"event": "host", "query_index": 102, "raw": "yes", "recorded_at_utc": "2026-10-09T05:53:51.313875+00:00"}
+{"event": "solver", "query_index": 103, "submission_index": 104, "raw": "{\"type\":\"question\",\"text\":\"Was the pillow emotionally important to her before the incident?\"}", "recorded_at_utc": "2026-10-09T05:54:59.504592+00:00"}
+{"event": "host", "query_index": 103, "raw": "yes", "recorded_at_utc": "2026-10-09T05:55:51.393833+00:00"}
+{"event": "solver", "query_index": 104, "submission_index": 105, "raw": "{\"type\":\"question\",\"text\":\"Was the pillow a gift from a family member?\"}", "recorded_at_utc": "2026-10-09T05:57:02.401765+00:00"}
+{"event": "host", "query_index": 104, "raw": "no", "recorded_at_utc": "2026-10-09T05:57:58.135375+00:00"}
+{"event": "solver", "query_index": 105, "submission_index": 106, "raw": "{\"type\":\"question\",\"text\":\"Was it a pillow she had shared with her boyfriend?\"}", "recorded_at_utc": "2026-10-09T05:58:34.936633+00:00"}
+{"event": "host", "query_index": 105, "raw": "yes and no", "recorded_at_utc": "2026-10-09T06:04:53.327424+00:00"}
+{"event": "solver", "query_index": 106, "submission_index": 107, "raw": "{\"type\":\"question\",\"text\":\"Did the pillow originally belong to her?\"}", "recorded_at_utc": "2026-10-09T06:05:49.887606+00:00"}
+{"event": "host", "query_index": 106, "raw": "yes and no", "recorded_at_utc": "2026-10-09T06:06:25.454702+00:00"}
+{"event": "solver", "query_index": 107, "submission_index": 108, "raw": "{\"type\":\"question\",\"text\":\"Was his hand already inside the pillow when he tried to take it?\"}", "recorded_at_utc": "2026-10-09T06:07:44.364839+00:00"}
+{"event": "host", "query_index": 107, "raw": "yes and no", "recorded_at_utc": "2026-10-09T06:09:03.974462+00:00"}
+{"event": "solver", "query_index": 108, "submission_index": 109, "raw": "{\"type\":\"question\",\"text\":\"Did she intentionally put his severed hand in the pillow after cutting it off?\"}", "recorded_at_utc": "2026-10-09T06:09:40.776552+00:00"}
+{"event": "host", "query_index": 108, "raw": "yes and no", "recorded_at_utc": "2026-10-09T06:10:54.491037+00:00"}
+{"event": "solver", "query_index": 109, "submission_index": 110, "raw": "{\"type\":\"question\",\"text\":\"Was the severed hand inside the pillowcase rather than inside the pillow's stuffing?\"}", "recorded_at_utc": "2026-10-09T06:12:30.562322+00:00"}
+{"event": "host", "query_index": 109, "raw": "yes and no", "recorded_at_utc": "2026-10-09T06:13:35.901058+00:00"}
+{"event": "solver", "query_index": 110, "submission_index": 111, "raw": "{\"type\":\"question\",\"text\":\"Was the pillow an heirloom?\"}", "recorded_at_utc": "2026-10-09T06:14:41.939693+00:00"}
+{"event": "host", "query_index": 110, "raw": "no", "recorded_at_utc": "2026-10-09T06:15:45.842653+00:00"}
+{"event": "solver_final_attempt", "attempt_index": 2, "after_query": 110, "submission_index": 112, "raw": "{\"type\":\"final\",\"text\":\"Her boyfriend was about to abandon her and take a pillow that mattered deeply to her. When he reached for it, she cut off his hand to stop him taking it. She kept the hand with the pillow and packed it alongside her ordinary overnight belongings. At the baggage checkpoint, security found the severed hand and blood in the damaged pillow, revealing that she had assaulted him, and arrested her.\"}", "recorded_at_utc": "2026-10-09T06:16:23.932554+00:00"}
+{"event": "grader", "attempt_index": 2, "after_query": 110, "verdict": "no", "complete": false, "coverage_private": {"R1": false, "R2": false, "R3": false, "R4": false, "R5": false, "R6": false}, "notes_private": "Departure inferred but ordinary pillow contested/containing hand narrative persists. Missing betrayal-day, packing shared apartment, tearful plea, cold request, hand-as-headrest.", "recorded_at_utc": "2026-10-09T06:16:24.103352+00:00"}
+{"event": "solver", "query_index": 111, "submission_index": 113, "raw": "{\"type\":\"question\",\"text\":\"Did her boyfriend survive after she severed his hand?\"}", "recorded_at_utc": "2026-10-09T06:17:28.605271+00:00"}
+{"event": "host", "query_index": 111, "raw": "yes and no", "recorded_at_utc": "2026-10-09T06:18:42.723439+00:00"}
+{"event": "solver", "query_index": 112, "submission_index": 114, "raw": "{\"type\":\"question\",\"text\":\"Did she injure anyone besides her boyfriend?\"}", "recorded_at_utc": "2026-10-09T06:19:20.590648+00:00"}
+{"event": "host", "query_index": 112, "raw": "yes and no", "recorded_at_utc": "2026-10-09T06:20:49.177090+00:00"}
+{"event": "solver", "query_index": 113, "submission_index": 115, "raw": "{\"type\":\"question\",\"text\":\"Did security stop her because a scan of the luggage showed bones inside the pillow?\"}", "recorded_at_utc": "2026-10-09T06:21:34.989052+00:00"}
+{"event": "host", "query_index": 113, "raw": "yes and no", "recorded_at_utc": "2026-10-09T06:22:49.673236+00:00"}
+{"event": "solver", "query_index": 114, "submission_index": 116, "raw": "{\"type\":\"question\",\"text\":\"Was there blood on the pillow before she cut off her boyfriend's hand?\"}", "recorded_at_utc": "2026-10-09T06:23:52.748189+00:00"}
+{"event": "host", "query_index": 114, "raw": "yes and no", "recorded_at_utc": "2026-10-09T06:24:37.087265+00:00"}
+{"event": "solver", "query_index": 115, "submission_index": 117, "raw": "{\"type\":\"question\",\"text\":\"Did the luggage contain any human remains besides her boyfriend's hand?\"}", "recorded_at_utc": "2026-10-09T06:26:08.465941+00:00"}
+{"event": "host", "query_index": 115, "raw": "no", "recorded_at_utc": "2026-10-09T06:27:00.550331+00:00"}
+{"event": "solver", "query_index": 116, "submission_index": 118, "raw": "{\"type\":\"question\",\"text\":\"Had her boyfriend attacked her before she cut off his hand?\"}", "recorded_at_utc": "2026-10-09T06:28:22.541173+00:00"}
+{"event": "host", "query_index": 116, "raw": "yes and no", "recorded_at_utc": "2026-10-09T06:29:46.065986+00:00"}
+{"event": "solver", "query_index": 117, "submission_index": 119, "raw": "{\"type\":\"question\",\"text\":\"Had she owned the pillow since childhood?\"}", "recorded_at_utc": "2026-10-09T06:30:42.659592+00:00"}
+{"event": "host", "query_index": 117, "raw": "no", "recorded_at_utc": "2026-10-09T06:31:23.833318+00:00"}
+{"event": "solver", "query_index": 118, "submission_index": 120, "raw": "{\"type\":\"question\",\"text\":\"Was the pillow a gift from her boyfriend?\"}", "recorded_at_utc": "2026-10-09T06:33:28.023173+00:00"}
+{"event": "host", "query_index": 118, "raw": "no", "recorded_at_utc": "2026-10-09T06:34:39.128806+00:00"}
+{"event": "solver", "query_index": 119, "submission_index": 121, "raw": "{\"type\":\"question\",\"text\":\"Had the pillow belonged to her child?\"}", "recorded_at_utc": "2026-10-09T06:35:35.762638+00:00"}
+{"event": "host", "query_index": 119, "raw": "no", "recorded_at_utc": "2026-10-09T06:36:24.275156+00:00"}
+{"event": "solver", "query_index": 120, "submission_index": 122, "raw": "{\"type\":\"question\",\"text\":\"Was there a written message or image on the pillow?\"}", "recorded_at_utc": "2026-10-09T06:37:49.321754+00:00"}
+{"event": "host", "query_index": 120, "raw": "yes and no", "recorded_at_utc": "2026-10-09T06:38:38.217082+00:00"}
+{"event": "solver", "query_index": 121, "submission_index": 123, "raw": "{\"type\":\"question\",\"text\":\"Was it the pillow her boyfriend normally slept on?\"}", "recorded_at_utc": "2026-10-09T06:39:54.124697+00:00"}
+{"event": "host", "query_index": 121, "raw": "no", "recorded_at_utc": "2026-10-09T06:41:33.053909+00:00"}
+{"event": "solver", "query_index": 122, "submission_index": 124, "raw": "{\"type\":\"question\",\"text\":\"Was there an object hidden inside the pillow before she cut off his hand?\"}", "recorded_at_utc": "2026-10-09T06:42:31.430099+00:00"}
+{"event": "host", "query_index": 122, "raw": "no", "recorded_at_utc": "2026-10-09T06:43:49.776800+00:00"}
+{"event": "solver", "query_index": 123, "submission_index": 125, "raw": "{\"type\":\"question\",\"text\":\"Was the severed hand wrapped in the pillow?\"}", "recorded_at_utc": "2026-10-09T06:45:08.067111+00:00"}
+{"event": "host", "query_index": 123, "raw": "yes and no", "recorded_at_utc": "2026-10-09T06:46:03.755039+00:00"}
+{"event": "solver", "query_index": 124, "submission_index": 126, "raw": "{\"type\":\"question\",\"text\":\"Did she cut off his hand with a knife?\"}", "recorded_at_utc": "2026-10-09T06:46:44.926723+00:00"}
+{"event": "host", "query_index": 124, "raw": "yes and no", "recorded_at_utc": "2026-10-09T06:47:55.560890+00:00"}
+{"event": "solver", "query_index": 125, "submission_index": 127, "raw": "{\"type\":\"question\",\"text\":\"Did she use the thermos while attacking her boyfriend?\"}", "recorded_at_utc": "2026-10-09T06:50:04.779579+00:00"}
+{"event": "host", "query_index": 125, "raw": "yes and no", "recorded_at_utc": "2026-10-09T06:51:24.249888+00:00"}
+{"event": "solver", "query_index": 126, "submission_index": 128, "raw": "{\"type\":\"question\",\"text\":\"Did she amputate his hand because she was angry that he tried to take the pillow?\"}", "recorded_at_utc": "2026-10-09T06:52:15.694359+00:00"}
+{"event": "host", "query_index": 126, "raw": "yes and no", "recorded_at_utc": "2026-10-09T06:53:42.118179+00:00"}
+{"event": "solver", "query_index": 127, "submission_index": 129, "raw": "{\"type\":\"question\",\"text\":\"Was she trying to flee after injuring her boyfriend?\"}", "recorded_at_utc": "2026-10-09T06:55:27.560474+00:00"}
+{"event": "host", "query_index": 127, "raw": "yes and no", "recorded_at_utc": "2026-10-09T06:56:38.686117+00:00"}
+{"event": "solver", "query_index": 128, "submission_index": 130, "raw": "{\"type\":\"question\",\"text\":\"Did her boyfriend want to take the pillow because it belonged to him?\"}", "recorded_at_utc": "2026-10-09T06:57:37.178922+00:00"}
+{"event": "host", "query_index": 128, "raw": "yes", "recorded_at_utc": "2026-10-09T06:58:24.674649+00:00"}
+{"event": "solver", "query_index": 129, "submission_index": 131, "raw": "{\"type\":\"question\",\"text\":\"Was the pillow emotionally important to her because it belonged to her boyfriend?\"}", "recorded_at_utc": "2026-10-09T06:59:42.233854+00:00"}
+{"event": "host", "query_index": 129, "raw": "no", "recorded_at_utc": "2026-10-09T07:01:11.770747+00:00"}
+{"event": "solver", "query_index": 130, "submission_index": 132, "raw": "{\"type\":\"question\",\"text\":\"Had a significant event involving the two of them taken place on that pillow?\"}", "recorded_at_utc": "2026-10-09T07:04:00.628286+00:00"}
+{"event": "host", "query_index": 130, "raw": "yes and no", "recorded_at_utc": "2026-10-09T07:04:23.778400+00:00"}
+{"event": "solver", "query_index": 131, "submission_index": 133, "raw": "{\"type\":\"question\",\"text\":\"Was the pillow important to her because it held evidence of something her boyfriend had done?\"}", "recorded_at_utc": "2026-10-09T07:05:40.295803+00:00"}
+{"event": "host", "query_index": 131, "raw": "no", "recorded_at_utc": "2026-10-09T07:06:05.776566+00:00"}
+{"event": "solver", "query_index": 132, "submission_index": 134, "raw": "{\"type\":\"question\",\"text\":\"Was her boyfriend leaving her for another woman?\"}", "recorded_at_utc": "2026-10-09T07:07:41.323992+00:00"}
+{"event": "host", "query_index": 132, "raw": "yes and no", "recorded_at_utc": "2026-10-09T07:08:02.447673+00:00"}
+{"event": "solver", "query_index": 133, "submission_index": 135, "raw": "{\"type\":\"question\",\"text\":\"Was his pillow the only item he was taking when he left?\"}", "recorded_at_utc": "2026-10-09T07:09:38.665561+00:00"}
+{"event": "host", "query_index": 133, "raw": "no", "recorded_at_utc": "2026-10-09T07:10:02.503459+00:00"}
+{"event": "solver", "query_index": 134, "submission_index": 136, "raw": "{\"type\":\"question\",\"text\":\"Did the luggage originally belong to her boyfriend?\"}", "recorded_at_utc": "2026-10-09T07:12:02.415064+00:00"}
+{"event": "host", "query_index": 134, "raw": "yes and no", "recorded_at_utc": "2026-10-09T07:12:39.809631+00:00"}
+{"event": "solver", "query_index": 135, "submission_index": 137, "raw": "{\"type\":\"question\",\"text\":\"Were the pajamas in the luggage her boyfriend's?\"}", "recorded_at_utc": "2026-10-09T07:13:37.284734+00:00"}
+{"event": "host", "query_index": 135, "raw": "yes and no", "recorded_at_utc": "2026-10-09T07:14:22.859537+00:00"}
+{"event": "solver", "query_index": 136, "submission_index": 138, "raw": "{\"type\":\"question\",\"text\":\"Was the pillow damaged when she put the hand inside it?\"}", "recorded_at_utc": "2026-10-09T07:15:40.643952+00:00"}
+{"event": "host", "query_index": 136, "raw": "yes and no", "recorded_at_utc": "2026-10-09T07:16:45.981794+00:00"}
+{"event": "solver", "query_index": 137, "submission_index": 139, "raw": "{\"type\":\"question\",\"text\":\"Does the explanation involve anything supernatural?\"}", "recorded_at_utc": "2026-10-09T07:17:26.949035+00:00"}
+{"event": "host", "query_index": 137, "raw": "no", "recorded_at_utc": "2026-10-09T07:18:29.958898+00:00"}
+{"event": "solver", "query_index": 138, "submission_index": 140, "raw": "{\"type\":\"question\",\"text\":\"Was the young woman delusional when she cut off his hand?\"}", "recorded_at_utc": "2026-10-09T07:19:23.943448+00:00"}
+{"event": "host", "query_index": 138, "raw": "yes and no", "recorded_at_utc": "2026-10-09T07:20:31.705307+00:00"}
+{"event": "solver", "query_index": 139, "submission_index": 141, "raw": "{\"type\":\"question\",\"text\":\"Would she have cut off his hand if he had not tried to take the pillow?\"}", "recorded_at_utc": "2026-10-09T07:21:14.632631+00:00"}
+{"event": "host", "query_index": 139, "raw": "no", "recorded_at_utc": "2026-10-09T07:22:08.747868+00:00"}
+{"event": "solver", "query_index": 140, "submission_index": 142, "raw": "{\"type\":\"question\",\"text\":\"Did she need the pillow for a medical reason?\"}", "recorded_at_utc": "2026-10-09T07:23:03.349191+00:00"}
+{"event": "host", "query_index": 140, "raw": "no", "recorded_at_utc": "2026-10-09T07:24:24.591289+00:00"}
+{"event": "solver", "query_index": 141, "submission_index": 143, "raw": "{\"type\":\"question\",\"text\":\"Had the young woman regularly slept on that pillow before the incident?\"}", "recorded_at_utc": "2026-10-09T07:25:36.728806+00:00"}
+{"event": "host", "query_index": 141, "raw": "yes", "recorded_at_utc": "2026-10-09T07:26:26.257248+00:00"}
+{"event": "solver", "query_index": 142, "submission_index": 144, "raw": "{\"type\":\"question\",\"text\":\"Was the pillow itself made from any human body tissue?\"}", "recorded_at_utc": "2026-10-09T07:27:12.052881+00:00"}
+{"event": "host", "query_index": 142, "raw": "yes", "recorded_at_utc": "2026-10-09T07:28:30.457250+00:00"}
+{"event": "solver", "query_index": 143, "submission_index": 145, "raw": "{\"type\":\"question\",\"text\":\"Was the pillowcase made from human skin?\"}", "recorded_at_utc": "2026-10-09T07:29:14.417981+00:00"}
+{"event": "host", "query_index": 143, "raw": "no", "recorded_at_utc": "2026-10-09T07:30:01.580496+00:00"}
+{"event": "solver", "query_index": 144, "submission_index": 146, "raw": "{\"type\":\"question\",\"text\":\"Was the pillow stuffed with human hair?\"}", "recorded_at_utc": "2026-10-09T07:31:00.230542+00:00"}
+{"event": "host", "query_index": 144, "raw": "no", "recorded_at_utc": "2026-10-09T07:31:40.763294+00:00"}
+{"event": "solver", "query_index": 145, "submission_index": 147, "raw": "{\"type\":\"question\",\"text\":\"Was the severed hand being used as part of the pillow's filling?\"}", "recorded_at_utc": "2026-10-09T07:33:00.373229+00:00"}
+{"event": "host", "query_index": 145, "raw": "no", "recorded_at_utc": "2026-10-09T07:33:41.528234+00:00"}
+{"event": "solver", "query_index": 146, "submission_index": 148, "raw": "{\"type\":\"question\",\"text\":\"Was a human bone sewn into the pillow?\"}", "recorded_at_utc": "2026-10-09T07:35:00.541846+00:00"}
+{"event": "host", "query_index": 146, "raw": "no", "recorded_at_utc": "2026-10-09T07:35:45.645940+00:00"}
+{"event": "solver", "query_index": 147, "submission_index": 149, "raw": "{\"type\":\"question\",\"text\":\"Was the pillow shaped like a human body part?\"}", "recorded_at_utc": "2026-10-09T07:37:02.497701+00:00"}
+{"event": "host", "query_index": 147, "raw": "yes", "recorded_at_utc": "2026-10-09T07:37:56.189790+00:00"}
+{"event": "solver", "query_index": 148, "submission_index": 150, "raw": "{\"type\":\"question\",\"text\":\"Was the pillow shaped like a hand?\"}", "recorded_at_utc": "2026-10-09T07:39:22.766716+00:00"}
+{"event": "host", "query_index": 148, "raw": "yes", "recorded_at_utc": "2026-10-09T07:40:13.023762+00:00"}
+{"event": "solver", "query_index": 149, "submission_index": 151, "raw": "{\"type\":\"question\",\"text\":\"Was the object she called a pillow actually a conventional soft pillow?\"}", "recorded_at_utc": "2026-10-09T07:41:35.475981+00:00"}
+{"event": "host", "query_index": 149, "raw": "no", "recorded_at_utc": "2026-10-09T07:42:20.521459+00:00"}
+{"event": "solver", "query_index": 150, "submission_index": 152, "raw": "{\"type\":\"question\",\"text\":\"Was the 'pillow' actually her boyfriend's arm?\"}", "recorded_at_utc": "2026-10-09T07:45:17.476917+00:00"}
+{"event": "host", "query_index": 150, "raw": "no", "recorded_at_utc": "2026-10-09T07:46:13.467940+00:00"}
+{"event": "solver", "query_index": 151, "submission_index": 153, "raw": "{\"type\":\"question\",\"text\":\"Was the object she called a pillow actually the severed hand itself?\"}", "recorded_at_utc": "2026-10-09T07:47:45.434258+00:00"}
+{"event": "host", "query_index": 151, "raw": "yes", "recorded_at_utc": "2026-10-09T07:48:32.709450+00:00"}
+{"event": "solver", "query_index": 152, "submission_index": 154, "raw": "{\"type\":\"question\",\"text\":\"Had she been using her boyfriend's hand to support her head while she slept?\"}", "recorded_at_utc": "2026-10-09T07:50:00.408684+00:00"}
+{"event": "host", "query_index": 152, "raw": "yes", "recorded_at_utc": "2026-10-09T07:50:41.450422+00:00"}
+{"event": "solver", "query_index": 153, "submission_index": 155, "raw": "{\"type\":\"question\",\"text\":\"Did she cut off his hand so she could continue using it as her pillow after he left?\"}", "recorded_at_utc": "2026-10-09T07:51:54.854229+00:00"}
+{"event": "host", "query_index": 153, "raw": "yes", "recorded_at_utc": "2026-10-09T07:52:45.704160+00:00"}
+{"event": "solver_final_attempt", "attempt_index": 3, "after_query": 153, "submission_index": 156, "raw": "{\"type\":\"final\",\"text\":\"The “pillow” was her boyfriend’s hand. She had grown used to resting her head on his hand to sleep. When he was about to leave her, she cut the hand off while he was alive so she could keep using it as her pillow. She packed the severed hand with her ordinary belongings and called it a pillow. Security found the bloody hand during inspection and arrested her for the assault.\"}", "recorded_at_utc": "2026-10-09T07:53:48.283600+00:00"}
+{"event": "grader", "attempt_index": 3, "after_query": 153, "verdict": "no", "complete": false, "coverage_private": {"R1": false, "R2": false, "R3": false, "R4": false, "R5": true, "R6": true}, "notes_private": "Hand itself/headrest purpose and security detention correctly recovered. Missing same-day betrayal, packing shared apartment, tearful plea ignored without looking back, and cold leave-pillow request.", "recorded_at_utc": "2026-10-09T07:53:48.368404+00:00"}
+{"event": "solver", "query_index": 154, "submission_index": 157, "raw": "{\"type\":\"question\",\"text\":\"Were any other items she named also body parts rather than what she called them?\"}", "recorded_at_utc": "2026-10-09T07:54:36.668953+00:00"}
+{"event": "host", "query_index": 154, "raw": "no", "recorded_at_utc": "2026-10-09T07:55:22.622646+00:00"}
+{"event": "solver", "query_index": 155, "submission_index": 158, "raw": "{\"type\":\"question\",\"text\":\"Did he refuse to let her rest her head on his hand anymore?\"}", "recorded_at_utc": "2026-10-09T07:56:24.317271+00:00"}
+{"event": "host", "query_index": 155, "raw": "yes and no", "recorded_at_utc": "2026-10-09T07:57:11.005854+00:00"}
+{"event": "solver", "query_index": 156, "submission_index": 159, "raw": "{\"type\":\"question\",\"text\":\"Was the severed hand wrapped in the towel?\"}", "recorded_at_utc": "2026-10-09T07:58:16.190453+00:00"}
+{"event": "host", "query_index": 156, "raw": "yes and no", "recorded_at_utc": "2026-10-09T07:59:14.502975+00:00"}
+{"event": "solver", "query_index": 157, "submission_index": 160, "raw": "{\"type\":\"question\",\"text\":\"Was it his left hand?\"}", "recorded_at_utc": "2026-10-09T08:00:01.883646+00:00"}
+{"event": "host", "query_index": 157, "raw": "yes and no", "recorded_at_utc": "2026-10-09T08:01:08.276126+00:00"}
+{"event": "solver", "query_index": 158, "submission_index": 161, "raw": "{\"type\":\"question\",\"text\":\"Did he cradle her head in the palm of his hand when she slept?\"}", "recorded_at_utc": "2026-10-09T08:02:29.925648+00:00"}
+{"event": "host", "query_index": 158, "raw": "yes and no", "recorded_at_utc": "2026-10-09T08:03:35.578368+00:00"}
+{"event": "solver", "query_index": 159, "submission_index": 162, "raw": "{\"type\":\"question\",\"text\":\"Did a particular earlier event make his hand important to her as a pillow?\"}", "recorded_at_utc": "2026-10-09T08:05:07.826617+00:00"}
+{"event": "host", "query_index": 159, "raw": "yes and no", "recorded_at_utc": "2026-10-09T08:05:54.785224+00:00"}
+{"event": "solver", "query_index": 160, "submission_index": 163, "raw": "{\"type\":\"question\",\"text\":\"Was the smell of the severed hand what first drew security's attention?\"}", "recorded_at_utc": "2026-10-09T08:06:57.273805+00:00"}
+{"event": "host", "query_index": 160, "raw": "yes and no", "recorded_at_utc": "2026-10-09T08:07:47.443928+00:00"}
+{"event": "solver_final_attempt", "attempt_index": 4, "after_query": 160, "submission_index": 164, "raw": "{\"type\":\"final\",\"text\":\"She literally meant a human hand when she said “pillow.” She used to sleep with her head resting on her boyfriend's hand. When he decided to leave and take his hand with him, she amputated it so she could keep sleeping with that same “pillow.” Security opened her bag, recognized the hand as a severed human body part, and handcuffed her for mutilating him.\"}", "recorded_at_utc": "2026-10-09T08:09:10.811275+00:00"}
+{"event": "grader", "attempt_index": 4, "after_query": 160, "verdict": "no", "complete": false, "coverage_private": {"R1": false, "R2": false, "R3": false, "R4": false, "R5": true, "R6": true}, "notes_private": "Core hand-as-headrest, intentional severing to retain pillow, security discovery/handcuffs present. Same-day betrayal, shared-apartment packing, tearful plea/refusal, cold pillow request absent.", "recorded_at_utc": "2026-10-09T08:09:10.907006+00:00"}
+{"event": "solver", "query_index": 161, "submission_index": 165, "raw": "{\"type\":\"question\",\"text\":\"Was the item she called a pillow solely the severed hand, with no actual cushion or pillow attached?\"}", "recorded_at_utc": "2026-10-09T08:10:16.234658+00:00"}
+{"event": "host", "query_index": 161, "raw": "yes and no", "recorded_at_utc": "2026-10-09T08:12:05.241146+00:00"}
+{"event": "solver", "query_index": 162, "submission_index": 166, "raw": "{\"type\":\"question\",\"text\":\"Was there also a conventional pillow in the luggage?\"}", "recorded_at_utc": "2026-10-09T08:12:52.742184+00:00"}
+{"event": "host", "query_index": 162, "raw": "yes and no", "recorded_at_utc": "2026-10-09T08:14:21.059533+00:00"}
+{"event": "solver", "query_index": 163, "submission_index": 167, "raw": "{\"type\":\"question\",\"text\":\"Were police already looking for the woman before security opened her bag?\"}", "recorded_at_utc": "2026-10-09T08:15:13.834805+00:00"}
+{"event": "host", "query_index": 163, "raw": "yes and no", "recorded_at_utc": "2026-10-09T08:16:13.149006+00:00"}
+{"event": "solver", "query_index": 164, "submission_index": 168, "raw": "{\"type\":\"question\",\"text\":\"Was her boyfriend unusually large?\"}", "recorded_at_utc": "2026-10-09T08:17:09.146828+00:00"}
+{"event": "host", "query_index": 164, "raw": "yes and no", "recorded_at_utc": "2026-10-09T08:17:56.424373+00:00"}
+{"event": "solver", "query_index": 165, "submission_index": 169, "raw": "{\"type\":\"question\",\"text\":\"Was the boyfriend married to someone else?\"}", "recorded_at_utc": "2026-10-09T08:19:06.633879+00:00"}
+{"event": "host", "query_index": 165, "raw": "yes and no", "recorded_at_utc": "2026-10-09T08:20:08.288734+00:00"}

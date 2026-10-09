@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.DS_Store
+.venv/
+venv/
+.pytest_cache/
+
+# Published data is restricted to the two user-approved puzzles.
+/data/*
+!/data/release_scope.json
+!/data/host_packs/
+/data/host_packs/*
+!/data/host_packs/USER_ERASER_001.json
+!/data/host_packs/USER_PILLOW_001.json
+!/data/host_dev/
+/data/host_dev/*
+!/data/host_dev/eraser_v02.json
+!/data/host_dev/eraser_v03.json
+!/data/host_dev/USER_PILLOW_001_draft.json
+!/data/public/
+/data/public/*
+!/data/public/puzzles.jsonl

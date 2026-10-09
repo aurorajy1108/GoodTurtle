@@ -1,0 +1,20 @@
+{
+  "solver_agent": "/root/nonenglish_trials/jp003_solver",
+  "host_agent": "/root/nonenglish_trials/jp003_host",
+  "solver_model": "gpt-6-sol",
+  "solver_reasoning_effort": "high",
+  "host_model": "gpt-6.1-sol",
+  "host_reasoning_effort": "default_inherited",
+  "fork_turns": "none",
+  "frozen_solver_task_exact": true,
+  "status": "completed",
+  "started_at": "2026-10-09T07:24:50.076Z",
+  "controller_handoff": {
+    "from": "/root/nonenglish_trials",
+    "to": "/root",
+    "reason": "free third active inference slot; same model agents, prompts, grading and dialogue",
+    "outcome": "Original controller resumed to receive grandchild outputs; root concurrently handles JP004 and remaining queue. Same role agents continued."
+  },
+  "handoff_limitation": "Root followups to descendants ran but outputs routed to original controller; controller resumed both games without restarting or duplicate feedback. Root owns other games; original controller serializes at most one child turn.",
+  "completed_at": "2026-10-09T09:36:45.804571+00:00"
+}

@@ -1,0 +1,62 @@
+{
+  "primary_runs": [
+    "2026-10-08_eraser_03",
+    "2026-10-08_eraser_04"
+  ],
+  "successes": 2,
+  "primary_question_count": {
+    "n": 2,
+    "values": [
+      15,
+      25
+    ],
+    "mean": 20,
+    "population_variance": 25,
+    "sample_variance": 50
+  },
+  "final_attempt_count": {
+    "n": 2,
+    "values": [
+      2,
+      4
+    ],
+    "mean": 3,
+    "population_variance": 1,
+    "sample_variance": 2
+  },
+  "total_submission_count": {
+    "n": 2,
+    "values": [
+      17,
+      29
+    ],
+    "mean": 23,
+    "population_variance": 36,
+    "sample_variance": 72
+  },
+  "definitions": {
+    "question_count": "All host queries until the correct final submission, including repeats; excludes final-answer attempts.",
+    "population_variance": "sum((x - mean)^2) / n",
+    "sample_variance": "sum((x - mean)^2) / (n - 1)"
+  },
+  "secondary_prior_inclusive": {
+    "question_count": {
+      "n": 3,
+      "values": [
+        14,
+        15,
+        25
+      ],
+      "mean": 18,
+      "population_variance": 24.666666666666668,
+      "sample_variance": 37
+    },
+    "note": "Descriptive only: earlier 14-question run was resumed after a mid-game protocol change and is not pooled into the primary same-protocol estimate."
+  },
+  "limitations": [
+    "Only two new repetitions; variance estimate is unstable.",
+    "Host semantic labels and controller grading still require human review.",
+    "Agent contexts are separate but sampling seed and exact checkpoint are not exposed; statistical independence is not established.",
+    "Do not attribute differences solely to solver; host wording decisions can vary."
+  ]
+}

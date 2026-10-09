@@ -1,0 +1,1745 @@
+{
+  "status": "authorized_for_push_eraser_pillow_data_only",
+  "remote": "https://github.com/aurorajy1108/GoodTurtle.git",
+  "branch": "main",
+  "data_allowlist": [
+    "data/host_dev/USER_PILLOW_001_draft.json",
+    "data/host_dev/eraser_v02.json",
+    "data/host_dev/eraser_v03.json",
+    "data/host_packs/USER_ERASER_001.json",
+    "data/host_packs/USER_PILLOW_001.json",
+    "data/public/puzzles.jsonl",
+    "data/release_scope.json"
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 502,
+      "sha256": "d06987d4e995c4670df5494d4fe288f955a8c473f95eb8ddb52ad110bf984778"
+    },
+    {
+      "path": "Readme.md",
+      "bytes": 10750,
+      "sha256": "e543454a544934a951f1823dc0d491fe55ee1f542da01de8abc8d5b90a432efc"
+    },
+    {
+      "path": "data/host_dev/USER_PILLOW_001_draft.json",
+      "bytes": 16610,
+      "sha256": "c9bce0eca93ba3ee29f88f46e6c47552b80ee77daee3f6799e7f93ef34d22bc3"
+    },
+    {
+      "path": "data/host_dev/eraser_v02.json",
+      "bytes": 9474,
+      "sha256": "4f4ccc064a7bedb08bd9d86ddb2f5c0d7fa4435170d361f515a7507e117e4d62"
+    },
+    {
+      "path": "data/host_dev/eraser_v03.json",
+      "bytes": 9794,
+      "sha256": "e5f19cc6e312a9c3c6ee49bef73acac720408ce5e930057bd86112450bd250ff"
+    },
+    {
+      "path": "data/host_packs/USER_ERASER_001.json",
+      "bytes": 8839,
+      "sha256": "ab97c8444cf05c694777bde02523249441da8a31fe571b526be77911b682a20f"
+    },
+    {
+      "path": "data/host_packs/USER_PILLOW_001.json",
+      "bytes": 26801,
+      "sha256": "435ceef8d3d1da8f9af4c3a60edc09c8f982f0550277f536cd9e7e959000640d"
+    },
+    {
+      "path": "data/public/puzzles.jsonl",
+      "bytes": 601,
+      "sha256": "0ecd0c8649a465bd6f3a951be4b1f89cbf5eb78aa6cd67f9941ae00fe828e966"
+    },
+    {
+      "path": "data/release_scope.json",
+      "bytes": 286,
+      "sha256": "afb7b4d0ce0059375dd92477def642efafdfde13df3629820a8ccd97f9c400c8"
+    },
+    {
+      "path": "docs/candidate_review.md",
+      "bytes": 51253,
+      "sha256": "072115621dc46a9124605abbf97de6d463017026e8318c25cebbee8fe24919bd"
+    },
+    {
+      "path": "docs/host_v02.md",
+      "bytes": 5253,
+      "sha256": "a8081d497551bee27fec1579e1c6e3f4a3090b59f038f4a75f47aaed4389d2e3"
+    },
+    {
+      "path": "docs/host_v03.md",
+      "bytes": 2592,
+      "sha256": "42a064fde993db86c73caa8c8ce4f41dde4311ebd6aab3f8c8099534c39d816f"
+    },
+    {
+      "path": "docs/host_v05.md",
+      "bytes": 5320,
+      "sha256": "6e2149d036968a19948825e16cc71a188fb3b7a2519a551252daed98f36601d2"
+    },
+    {
+      "path": "docs/host_validation.md",
+      "bytes": 4127,
+      "sha256": "e3631387bfa2eba9a6819b02f4970b03e02291f2bd5a8af2620905c7d319373e"
+    },
+    {
+      "path": "docs/nonenglish_candidates.md",
+      "bytes": 8285,
+      "sha256": "fd9931984ba6fcb4992d1e5d23bb393a76e5f5a35cafceeaa4eaaf0848848d9f"
+    },
+    {
+      "path": "docs/protocol.md",
+      "bytes": 10995,
+      "sha256": "a666b42a4513e9324db51528904365ad02d5e1565a82c57eb4a646cde81fe2ce"
+    },
+    {
+      "path": "docs/push_plan.md",
+      "bytes": 2596,
+      "sha256": "0c3a4b733344580d3c8789583d1ec132ad3ecd67c0eb8e53e41515c8a7f3bb0d"
+    },
+    {
+      "path": "docs/reproducing_experiments.md",
+      "bytes": 4121,
+      "sha256": "b1bde3f31a19117faabf6868a39d760d38a7353d97f25eb07cd226d2c0d16cd1"
+    },
+    {
+      "path": "prompts/archive/host_system_v0.1.txt",
+      "bytes": 3904,
+      "sha256": "c793bf04a8e1a91710a31031d5287307f35779406c4233c6b8421117e94fff68"
+    },
+    {
+      "path": "prompts/archive/host_system_v0.2.txt",
+      "bytes": 5678,
+      "sha256": "9147fa34d2fac352b997e217496229707dad2a3a4de01ab8a7b1c3a8b9550403"
+    },
+    {
+      "path": "prompts/archive/host_system_v0.3.txt",
+      "bytes": 4428,
+      "sha256": "67682eb12c86cceb729c02d1e1f03dca573f14d0949d79a5847a72d75ce3cd68"
+    },
+    {
+      "path": "prompts/archive/host_system_v0.4.txt",
+      "bytes": 5068,
+      "sha256": "5de6105a0417f87b7484a36d81ded9d53169851ed2a809879977126cd280d586"
+    },
+    {
+      "path": "prompts/archive/host_system_v0.5.txt",
+      "bytes": 8236,
+      "sha256": "e5576276a74a26a4bbad6348383331d0f5206880cb9e06f2a4e34a58b0febb0e"
+    },
+    {
+      "path": "prompts/host_system.txt",
+      "bytes": 8909,
+      "sha256": "9b6c9a18c40b48cfff8120d3b7984d35d6a89c145cf90a6585b839a4af22cff3"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_01/audit_notes.md",
+      "bytes": 3927,
+      "sha256": "aaa9dc685e075671e667ea19e111bd9078056e33cbcefab6c1b984e2d7f89142"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_01/build_report.py",
+      "bytes": 5508,
+      "sha256": "17772d083ece656df958e89e65b93722a0b0fc11dc43aca8870c21f0acd2fc44"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_01/config.json",
+      "bytes": 1832,
+      "sha256": "237e898a731f6a54205d0be4954cd19922a8868ebc87862a15d3dc28ecc1a0dc"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_01/host_context.txt",
+      "bytes": 7192,
+      "sha256": "e270302f8d9b3e89134879b131705c327f9359c45e0e7a0fd3a1003f071f4904"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_01/host_messages_template.json",
+      "bytes": 7655,
+      "sha256": "e8cdd5201b6d77dd6bba7052480a721a4ed0a6ba9a93e0f6b2bcdf6ce0b54f61"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_01/host_task.txt",
+      "bytes": 994,
+      "sha256": "701015aaa2a2e3d9b3bb9d3a921b3f7f02c55c10882a7ca1bbe6d60d12cbb091"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_01/human_review.csv",
+      "bytes": 3843,
+      "sha256": "7946947b29e1c3e3d29939864ae24182301c8c4279386913c94b26dccd057126"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_01/manifest.json",
+      "bytes": 1077,
+      "sha256": "6a7a6875eaf7d70bbdbde2addbb4bd1e78fea7ba06a609a011015d37f15d4316"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_01/puzzle_private.json",
+      "bytes": 513,
+      "sha256": "99fdb2341cb9543b85915c10655033821c82bb6a8596cc0d16f3867669bff883"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_01/result.json",
+      "bytes": 930,
+      "sha256": "63f3f95d2e8f962ae45b79192d07a81af72218af20c08b98480cdf7c25d81448"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_01/solver_task.txt",
+      "bytes": 1321,
+      "sha256": "b438578e52f04338a64aa658f2a6d46ebdb00481b8debb142b02384d70d7c895"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_01/trajectory.jsonl",
+      "bytes": 9772,
+      "sha256": "16790685d1bc43e6a5c0b73266b44b931fe1f0b0666f273b1c4bbd8744a25515"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_01/trajectory.md",
+      "bytes": 6531,
+      "sha256": "e74ad01be2d474167b136955c9e0255116f0831b25e776ba6e8dd964c9408497"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02/audit_notes.md",
+      "bytes": 1484,
+      "sha256": "56f4d099dd5285e4d1f1313ff79cdc2b523ccab7008a31ec9f81626c40cc9335"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02/build_report.py",
+      "bytes": 4748,
+      "sha256": "c1b6a82a1475fe370aaebd949cd6d1ae08f26cb10ff4b6a261dc39b1cc55ff68"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02/config.json",
+      "bytes": 1858,
+      "sha256": "ef8eae16c799e7271214743f193a4b83c41a7c1f6b02ed83790e0c1dda8ed745"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02/host_context.txt",
+      "bytes": 31980,
+      "sha256": "15ab2b1ce4a7b31647cacfff086c3ecc985270c743342edc777b1157b75dbcb7"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02/host_messages_template.json",
+      "bytes": 33592,
+      "sha256": "6cbdbe4535bd32b15f18ae1990b462cb4b2e533050ee9ee17a1dcee1119a4f85"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02/host_task.txt",
+      "bytes": 930,
+      "sha256": "e385fe8bac983fbe14968eb98895a1c385c2c470384d82697d04f2311f7fca3e"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02/human_review.csv",
+      "bytes": 316,
+      "sha256": "c16fd53106f6e0be47094bf54039a8ed99a4fe28f343a1249527e743fe5695e0"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02/manifest.json",
+      "bytes": 1171,
+      "sha256": "c4fc8e8bd61458249c4ed324f6edbefad18689255bf957d706f814f1fe75a499"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02/puzzle_private.json",
+      "bytes": 8848,
+      "sha256": "74ae86ed376e0375c085e581a0a783c137bde1cd9de5433c4d87f35489606c87"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02/result.json",
+      "bytes": 850,
+      "sha256": "1571c1d655dbef8796457cb1a5727263044274f1e32aa4bc0ef744102ea850a9"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02/shared_examples.json",
+      "bytes": 20753,
+      "sha256": "ff48cea99e8aa5f79ba0e4e758ca4dd4b1b9e3ee150abb44160acc1b139adb32"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02/solver_task.txt",
+      "bytes": 1491,
+      "sha256": "1f84551871526426fee502deae9a02fd2334a8b9826e6d45c57804e50ad0ae96"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02/trajectory.jsonl",
+      "bytes": 817,
+      "sha256": "6d7c865192c79424430f5a322d0c6488274c7063712be3a0c53d684582d92c2d"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02/trajectory.md",
+      "bytes": 3088,
+      "sha256": "1e846339b0dbce1219d63acbf8d9c2ff62d1740b270babe4d5029450a9408386"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02_continued/audit_notes.md",
+      "bytes": 1447,
+      "sha256": "79b0412781ec6639e23117b0aa76a08dfe8c6f260e369655011ab3173f5ad80a"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02_continued/build_report.py",
+      "bytes": 6555,
+      "sha256": "b2731bad6e8de7ed0aa701159d2d29606281c90662d1558c899f8fba01f68e4f"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02_continued/config.json",
+      "bytes": 2435,
+      "sha256": "c5af36c729c4b337c091bc68d86d146c04fdf2ba2e5097452d0fc41c74e9cc06"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02_continued/continuation_task.txt",
+      "bytes": 548,
+      "sha256": "b16127826c47c1003c0d7c729f481fc12681a8573c36842c3e9fd7c8c9cf1c67"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02_continued/final_attempt_review.csv",
+      "bytes": 607,
+      "sha256": "f8b794c2d769778796dbf310a93ff1feb440b297f2ac9c987e721a35a6a9362c"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02_continued/grader_rubric.json",
+      "bytes": 555,
+      "sha256": "428ad9ebdde575cb986824b40b2fe6298666700807796917488718deb4b59796"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02_continued/host_context.txt",
+      "bytes": 31980,
+      "sha256": "15ab2b1ce4a7b31647cacfff086c3ecc985270c743342edc777b1157b75dbcb7"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02_continued/host_messages_template.json",
+      "bytes": 33592,
+      "sha256": "6cbdbe4535bd32b15f18ae1990b462cb4b2e533050ee9ee17a1dcee1119a4f85"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02_continued/host_task.txt",
+      "bytes": 930,
+      "sha256": "e385fe8bac983fbe14968eb98895a1c385c2c470384d82697d04f2311f7fca3e"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02_continued/human_review.csv",
+      "bytes": 1250,
+      "sha256": "2aad2859eddb6995d058a5b9852040adcc847a85ca18ec1b78b03e14226e391f"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02_continued/manifest.json",
+      "bytes": 1456,
+      "sha256": "adb8f57e4aaef58b71d1b1bb7934d76978088851e11eb21d8370c9a2609375aa"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02_continued/puzzle_private.json",
+      "bytes": 8848,
+      "sha256": "74ae86ed376e0375c085e581a0a783c137bde1cd9de5433c4d87f35489606c87"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02_continued/result.json",
+      "bytes": 1067,
+      "sha256": "f8c5935a5237b8bd6a4e82e794b344c46b7825c63d87c105a40421da75f66102"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02_continued/shared_examples.json",
+      "bytes": 20753,
+      "sha256": "ff48cea99e8aa5f79ba0e4e758ca4dd4b1b9e3ee150abb44160acc1b139adb32"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02_continued/solver_task.txt",
+      "bytes": 1491,
+      "sha256": "1f84551871526426fee502deae9a02fd2334a8b9826e6d45c57804e50ad0ae96"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02_continued/trajectory.jsonl",
+      "bytes": 6700,
+      "sha256": "ba09fad49011c5eefb48c4f6963c77401d4e6bfc1ab943d04566cbe1ba4f188e"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_02_continued/trajectory.md",
+      "bytes": 4597,
+      "sha256": "126cc1dceebebf876b22c927c38a374f11005ddb35dc5340f208a93f26985f15"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_03/audit_notes.md",
+      "bytes": 841,
+      "sha256": "989c18ca7aefc8b38b5a3b8d0905b54a2f45dfe937b8adaaf1881333d9bd8f86"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_03/config.json",
+      "bytes": 2117,
+      "sha256": "ea87afff1c3254bf129df0d85bd3a72f68c77164723ddd129d703079654889ab"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_03/final_attempt_review.csv",
+      "bytes": 476,
+      "sha256": "0fb0dd1e6951b8a21bfcfd25bb1f3e2de49f444965a973326b2364183b661635"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_03/grader_rubric.json",
+      "bytes": 555,
+      "sha256": "428ad9ebdde575cb986824b40b2fe6298666700807796917488718deb4b59796"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_03/host_context.txt",
+      "bytes": 31980,
+      "sha256": "15ab2b1ce4a7b31647cacfff086c3ecc985270c743342edc777b1157b75dbcb7"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_03/host_messages_template.json",
+      "bytes": 33592,
+      "sha256": "6cbdbe4535bd32b15f18ae1990b462cb4b2e533050ee9ee17a1dcee1119a4f85"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_03/host_task.txt",
+      "bytes": 915,
+      "sha256": "e8a269518d688e2ad437d209db65fe3dbfb7a6a77d038fafdae974d4c93fc8a2"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_03/human_review.csv",
+      "bytes": 1215,
+      "sha256": "2cdd1be84be59e3a11f7996ad603fc81e63c25ed545fb84d1b58d2927e604773"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_03/manifest.json",
+      "bytes": 1272,
+      "sha256": "fb1d80cb2d5baea0e1b1c0b64ded48d25c0127f836d9cb0424743099c65d0d10"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_03/puzzle_private.json",
+      "bytes": 8848,
+      "sha256": "74ae86ed376e0375c085e581a0a783c137bde1cd9de5433c4d87f35489606c87"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_03/result.json",
+      "bytes": 746,
+      "sha256": "22932d9981c6f503f07482eb2fa2bfcf8faba393ae2faad3bb5c17a07940d9b7"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_03/shared_examples.json",
+      "bytes": 20753,
+      "sha256": "ff48cea99e8aa5f79ba0e4e758ca4dd4b1b9e3ee150abb44160acc1b139adb32"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_03/solver_task.txt",
+      "bytes": 1717,
+      "sha256": "11a440a918fa1d39bff3ddd460caa9684665904f49002dd9f4cad8d5079bf263"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_03/trajectory.jsonl",
+      "bytes": 6279,
+      "sha256": "8e961447c2144ded81377f2d5c6088b5edaa10fb9348a3511ccac8d26643c8da"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_03/trajectory.md",
+      "bytes": 3296,
+      "sha256": "cd2cf59dc0981faf32782ac099f6ae58b0f9899df05050fd612703fc649a4f13"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_04/audit_notes.md",
+      "bytes": 1677,
+      "sha256": "d7247da01bd734387b9dfea9c8ef79849aefca7159a01d9baa8bca0cc8fc7501"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_04/config.json",
+      "bytes": 2117,
+      "sha256": "8d00f1bb9900c13b8a13fefa84cfdf1aa53edb4fe7bdd34615da3ecbf1ba0919"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_04/final_attempt_review.csv",
+      "bytes": 776,
+      "sha256": "f8f14c2d8b9427de46222bf06a95ea5e25b8e94a8c1a5d0879ecd3070bbaae56"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_04/grader_rubric.json",
+      "bytes": 555,
+      "sha256": "428ad9ebdde575cb986824b40b2fe6298666700807796917488718deb4b59796"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_04/host_context.txt",
+      "bytes": 31980,
+      "sha256": "15ab2b1ce4a7b31647cacfff086c3ecc985270c743342edc777b1157b75dbcb7"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_04/host_messages_template.json",
+      "bytes": 33592,
+      "sha256": "6cbdbe4535bd32b15f18ae1990b462cb4b2e533050ee9ee17a1dcee1119a4f85"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_04/host_task.txt",
+      "bytes": 927,
+      "sha256": "747c83e68cd88edde33bf825b8987938dc28ed1e8553b677911b86442e6ce306"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_04/human_review.csv",
+      "bytes": 2216,
+      "sha256": "78ce1030f58b19eef83d200c69845fd26bd8cbdb17e249494fe15bbe7175e335"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_04/manifest.json",
+      "bytes": 1272,
+      "sha256": "c7f2199d9d9d9520f1cf8a20e9ee74be81a0c3372d4df28f1edb58a4671c2473"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_04/puzzle_private.json",
+      "bytes": 8848,
+      "sha256": "74ae86ed376e0375c085e581a0a783c137bde1cd9de5433c4d87f35489606c87"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_04/result.json",
+      "bytes": 730,
+      "sha256": "c87d50b7e2cbb7466e39b6587093f6e5a252a45b12902021a30378d693e8b777"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_04/shared_examples.json",
+      "bytes": 20753,
+      "sha256": "ff48cea99e8aa5f79ba0e4e758ca4dd4b1b9e3ee150abb44160acc1b139adb32"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_04/solver_task.txt",
+      "bytes": 1717,
+      "sha256": "11a440a918fa1d39bff3ddd460caa9684665904f49002dd9f4cad8d5079bf263"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_04/trajectory.jsonl",
+      "bytes": 11175,
+      "sha256": "4858ed885835e291333d65d4887bc1e7202aa162c3c6b39d436aa190ed2391eb"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_04/trajectory.md",
+      "bytes": 4756,
+      "sha256": "5c712d8a72514ab2acb8406dc9d807031147e065b52e9722c418e76d86ecc161"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_repeats_summary/artifact_tools.py",
+      "bytes": 9079,
+      "sha256": "8e4d876ea0f2a3062e6fd2b7705c75a22dc5f1a904a3aae6fe743f2f580f7237"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_repeats_summary/runs.csv",
+      "bytes": 220,
+      "sha256": "cdb62c0f2df59679221921dd4252fce2f108b24bc0856ac34cc90cfb5744c5da"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_repeats_summary/summarize.py",
+      "bytes": 5828,
+      "sha256": "7c828aa9ed1b46baba61413d01052ab18c401d6e650185e64cce181855d6c8da"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_repeats_summary/summary.json",
+      "bytes": 1626,
+      "sha256": "a8185422fc68dfecdc0262cfc8d1d05f291699c550c78ad6f5a2712f71a682f7"
+    },
+    {
+      "path": "runs/2026-10-08_eraser_repeats_summary/summary.md",
+      "bytes": 2483,
+      "sha256": "b74e79c579fc16be8f606687e4947b0cebf082d16f4ab3745252844a215bb413"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_01/config.json",
+      "bytes": 2253,
+      "sha256": "55cc13515b928382b40eecfc2aa3f5e12ff3a94f89cbe5c6a0ab5310de171d46"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_01/final_attempt_review.csv",
+      "bytes": 771,
+      "sha256": "dc1a5143b7ad2878014baa2f88d3789926f7e5afd64799015e646204ac7a7118"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_01/grader_rubric.json",
+      "bytes": 1680,
+      "sha256": "ad01a127fc3da8a93ca9314524b01d7c316cb3fbb7db1b3453b4a7eb9d5a23e0"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_01/host_context.txt",
+      "bytes": 39845,
+      "sha256": "5a8b588c9e0a013bc0dbfc80bb36fefd5562f9b257e376d10b0c4a5e13cb37cd"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_01/host_messages_template.json",
+      "bytes": 42119,
+      "sha256": "be01d8f1808ff1a0fda456696d983405e5591617778fe492b2014147955c6b5a"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_01/host_task.txt",
+      "bytes": 929,
+      "sha256": "565a90ea38fb8e35781335f22d628329e9976d20b910ecfbdf235ef700b5cd91"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_01/human_review.csv",
+      "bytes": 3521,
+      "sha256": "16081e5bd0c6c49b299ec5bd5407f28e3853296ad84b418495d0c44e77bea97c"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_01/manifest.json",
+      "bytes": 1184,
+      "sha256": "6de9b58d13b45b96627117ad6dd82f608812663f66837a02c26d8665714d6f3b"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_01/puzzle_private.json",
+      "bytes": 26801,
+      "sha256": "435ceef8d3d1da8f9af4c3a60edc09c8f982f0550277f536cd9e7e959000640d"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_01/result.json",
+      "bytes": 909,
+      "sha256": "0f237a8929776559bf375e59034be8dcdded277aad31b53fa3e20125846cd998"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_01/shared_examples.json",
+      "bytes": 20753,
+      "sha256": "ff48cea99e8aa5f79ba0e4e758ca4dd4b1b9e3ee150abb44160acc1b139adb32"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_01/solver_task.txt",
+      "bytes": 2051,
+      "sha256": "7b93fc3b3de80649d25470f213a9327171496a1f98d781a9260fe7fbdc1b5fd3"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_01/trajectory.jsonl",
+      "bytes": 17965,
+      "sha256": "bd807a478d8f73675ff200ca852988a86173170f5c69d12614fcc34623cbb067"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_01/trajectory.md",
+      "bytes": 6200,
+      "sha256": "38387eb97019494a0dba1eaa31c8abe8f1732aa8a04a4f373067ea450c958a2f"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_02/config.json",
+      "bytes": 2253,
+      "sha256": "affdfe14032ba5d293b7702189ef82adbef63cff87b610868d49713ef191a88f"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_02/final_attempt_review.csv",
+      "bytes": 742,
+      "sha256": "af7e3bcbe85382c8e61f802cdf04ff0d82f8698345b3d1de2a15bd103507115f"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_02/grader_rubric.json",
+      "bytes": 1680,
+      "sha256": "ad01a127fc3da8a93ca9314524b01d7c316cb3fbb7db1b3453b4a7eb9d5a23e0"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_02/host_context.txt",
+      "bytes": 39845,
+      "sha256": "5a8b588c9e0a013bc0dbfc80bb36fefd5562f9b257e376d10b0c4a5e13cb37cd"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_02/host_messages_template.json",
+      "bytes": 42119,
+      "sha256": "be01d8f1808ff1a0fda456696d983405e5591617778fe492b2014147955c6b5a"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_02/host_task.txt",
+      "bytes": 935,
+      "sha256": "47f0088c8530d22291a8367642b97e617dd9095bc3fd134254e59b29757a03ba"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_02/human_review.csv",
+      "bytes": 3601,
+      "sha256": "240102fdaf0993a7add46fac8d445fdc3e5613fdc4eb557bb4d16e53b786c619"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_02/manifest.json",
+      "bytes": 1184,
+      "sha256": "dd2edab46f96f033c5a1bb8b166e979d17fe612bfd8d64780165c23bd76431d5"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_02/puzzle_private.json",
+      "bytes": 26801,
+      "sha256": "435ceef8d3d1da8f9af4c3a60edc09c8f982f0550277f536cd9e7e959000640d"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_02/result.json",
+      "bytes": 944,
+      "sha256": "78aa00a5d379c7e52d4211226c62140f425f28abeaab591b25c7b25b91d4d984"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_02/shared_examples.json",
+      "bytes": 20753,
+      "sha256": "ff48cea99e8aa5f79ba0e4e758ca4dd4b1b9e3ee150abb44160acc1b139adb32"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_02/solver_task.txt",
+      "bytes": 2051,
+      "sha256": "7b93fc3b3de80649d25470f213a9327171496a1f98d781a9260fe7fbdc1b5fd3"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_02/trajectory.jsonl",
+      "bytes": 17944,
+      "sha256": "df7ea6c7ec4b37b6e887ea709a242e3abb19a36ea9b2f4b359c09f99c59e3ee3"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_02/trajectory.md",
+      "bytes": 6251,
+      "sha256": "33781299324197ca9e8846eb9211e49a0dc4b113f1df0178a7d5c70883b35f90"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_03/config.json",
+      "bytes": 2253,
+      "sha256": "e628ff6313df7985de8b7a75d7a9c073d56987775bdc4f9560d47774205469d0"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_03/final_attempt_review.csv",
+      "bytes": 409,
+      "sha256": "e521166ff19c6546e5900e28d8f1d3e8418d716e59a17111e4c5765833e3009b"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_03/grader_rubric.json",
+      "bytes": 1680,
+      "sha256": "ad01a127fc3da8a93ca9314524b01d7c316cb3fbb7db1b3453b4a7eb9d5a23e0"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_03/host_context.txt",
+      "bytes": 39845,
+      "sha256": "5a8b588c9e0a013bc0dbfc80bb36fefd5562f9b257e376d10b0c4a5e13cb37cd"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_03/host_messages_template.json",
+      "bytes": 42119,
+      "sha256": "be01d8f1808ff1a0fda456696d983405e5591617778fe492b2014147955c6b5a"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_03/host_task.txt",
+      "bytes": 911,
+      "sha256": "f5271db44f9a61d2b25d004dfdad0598b39ec550e40690a2134de92a61df5db2"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_03/human_review.csv",
+      "bytes": 3264,
+      "sha256": "6024358b677759b2ac6ca6f2eaec1bb6ef4f429fd27ff4b8db0df5086d332b1b"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_03/manifest.json",
+      "bytes": 1184,
+      "sha256": "e46b5a3b1f3ba519b3bd205cd58aba53e65c709bf1590d93242379f57d431b73"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_03/puzzle_private.json",
+      "bytes": 26801,
+      "sha256": "435ceef8d3d1da8f9af4c3a60edc09c8f982f0550277f536cd9e7e959000640d"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_03/result.json",
+      "bytes": 908,
+      "sha256": "8ba9e2443ca3e7189959bdf05a4edaa0a26e3005a8723a3cfbbfdae59d27a4f1"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_03/shared_examples.json",
+      "bytes": 20753,
+      "sha256": "ff48cea99e8aa5f79ba0e4e758ca4dd4b1b9e3ee150abb44160acc1b139adb32"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_03/solver_task.txt",
+      "bytes": 2051,
+      "sha256": "7b93fc3b3de80649d25470f213a9327171496a1f98d781a9260fe7fbdc1b5fd3"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_03/trajectory.jsonl",
+      "bytes": 16863,
+      "sha256": "362e4e3701a974d3ca3e8f5f7f287696bd8b214d8d7d069ad656839ccc8e7500"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_03/trajectory.md",
+      "bytes": 5576,
+      "sha256": "5ddb10207eb8a9c2958390a82f395fbfb456f28296bc352994e9dda7aca1ed9d"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_repeats_summary/audit_notes.md",
+      "bytes": 3199,
+      "sha256": "33b9aa4f5d8069058bb00d21bdbf94e9ddeaae64b3b1715d9732e48900b4f2e9"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_repeats_summary/build_report.py",
+      "bytes": 8677,
+      "sha256": "20e318a37c82695113b63f04b273f8e83595b6c4675798481eca36b5c0ac3b60"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_repeats_summary/runs.csv",
+      "bytes": 243,
+      "sha256": "0fffc988c86b2e5abc8d863f6ae523885c86edb816fd9da639d0597e3087b960"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_repeats_summary/summary.json",
+      "bytes": 3876,
+      "sha256": "d6a305860a9d545cd11d79e50a582582862bdaf17883b94641da47c24e426ee7"
+    },
+    {
+      "path": "runs/2026-10-08_pillow_repeats_summary/summary.md",
+      "bytes": 2973,
+      "sha256": "855d6c62c7f4668c99773b9204e8bc9fe50861b6ce0162d40898a241c7269c1e"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP001/SHA256SUMS",
+      "bytes": 1005,
+      "sha256": "e5c018fbb009c72e73d9354e7c1ce97a858b295f307add460c1e99d32a86b9bc"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP001/config.json",
+      "bytes": 944,
+      "sha256": "51f06a07c68dc3616c252d34cd2fb494d4c646349795ac1526f4af8f0f70a4da"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP001/execution_metadata.json",
+      "bytes": 397,
+      "sha256": "9dd16d006aec9423c85e111c8011d7cbecfae9272878af613a46cd739e58bff6"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP001/final_attempt_review.csv",
+      "bytes": 119,
+      "sha256": "aa306ba65d56a255d30de2ab30d065b416f2a59d273dae954c0b62a1fa756755"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP001/grader_rubric.json",
+      "bytes": 1153,
+      "sha256": "6b7520634da8fa2ec81c540e922e0fc09546a3bf6141e90c9082ee8fb257a267"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP001/host_context.txt",
+      "bytes": 39302,
+      "sha256": "546c6e97612330a94e720c44fc24a1698e119dc00a1187d4a134aa77b9ae84f3"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP001/human_review.csv",
+      "bytes": 4554,
+      "sha256": "272cf11468c70b36e8d4ea2ae1743586c10b1a259a19a8fc22417786980ffb92"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP001/input_manifest.json",
+      "bytes": 452,
+      "sha256": "11c00f9b668c0ff37d025059e71a7385491eb4d6f7ee8198f57006530ce88926"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP001/puzzle_private.json",
+      "bytes": 18484,
+      "sha256": "3609a40f5c705b3d64c2da5eb20fd1dd5a2df0b5eb4c76e5e72c208d26b36605"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP001/result.json",
+      "bytes": 5317,
+      "sha256": "4475ada3f094bf8c1d6834c32a032bcffbc34b5f95ba23fe7336078c107d9fd0"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP001/solver_task.txt",
+      "bytes": 1561,
+      "sha256": "484f412c153e27b245910e56cf124c9fa491263ffea6760da7d3d28d8a898291"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP001/trajectory.jsonl",
+      "bytes": 15335,
+      "sha256": "2e5ddd50a968d82af81fdb1845a1c9cb3aec63cc8501704b74993b786f61a6c4"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP001/trajectory.md",
+      "bytes": 2368,
+      "sha256": "e486bd5af5857e679b544c9486607d99fbeb1b21e0f68bb0e0e6edb4be8fe5db"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP001_r2/config.json",
+      "bytes": 1296,
+      "sha256": "f22d6f58d7b3054098f626118bea79671ca624e6e611f5148af7c601b31e7dc2"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP001_r2/execution_metadata.json",
+      "bytes": 393,
+      "sha256": "ed571011be80a090164e59b9a38abb582e77e8725e55f85e8e6efa076653cff4"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP001_r2/grader_rubric.json",
+      "bytes": 1153,
+      "sha256": "6b7520634da8fa2ec81c540e922e0fc09546a3bf6141e90c9082ee8fb257a267"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP001_r2/host_context.txt",
+      "bytes": 41384,
+      "sha256": "6ae25c5efd32dd1ee1dcc54de7c8794549020921afc86d99f1ab66bca87523c5"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP001_r2/input_manifest.json",
+      "bytes": 452,
+      "sha256": "05ca1dfd6cff4061007afdd1414829843a3e413fec3d1410206b8e9686ae1937"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP001_r2/puzzle_private.json",
+      "bytes": 23767,
+      "sha256": "c57c8f3f572429025b03d18e814a536dcd44d35dca8cedef25f2c4c90561d2bb"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP001_r2/solver_task.txt",
+      "bytes": 1561,
+      "sha256": "484f412c153e27b245910e56cf124c9fa491263ffea6760da7d3d28d8a898291"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP001_r2/trajectory.jsonl",
+      "bytes": 17319,
+      "sha256": "6043e2870ee7e81eceb06d609d2a33762127b5a64c2d70ba58c71c9de69b8f05"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP002/config.json",
+      "bytes": 944,
+      "sha256": "66b2703395fe7f9485aa1e1191f73ef57a5da66f6aeaa08c40f4ee90bd23f5a1"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP002/execution_metadata.json",
+      "bytes": 1065,
+      "sha256": "492e0e343b1e3ec359f8c8f824b97ae6aefa29b9f63734ad8e42a1c9262af273"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP002/grader_rubric.json",
+      "bytes": 758,
+      "sha256": "eb238ec39d4c9d6c97d770f6baae9962962bb43934c03a8d80da1326ebc76fe3"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP002/grading_sensitivity.json",
+      "bytes": 684,
+      "sha256": "080669976441f7ba19184d77e88dcaa10f37d2a5d275474f53e95d80c87ed57e"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP002/handoff_pending_solver.json",
+      "bytes": 77,
+      "sha256": "bbf1d869269fa6b67648a46195701c7088943e7a1d156735337c316217a7f3d8"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP002/host_context.txt",
+      "bytes": 37963,
+      "sha256": "621df5e073e16c6bfff6948827bc12776a1e6598a19a720c9c6e7eadf2425997"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP002/input_manifest.json",
+      "bytes": 452,
+      "sha256": "88aef0d22e40b6f5841dd7c5b7362560d37b7cca41ece6c954b90ea1cc9cd010"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP002/puzzle_private.json",
+      "bytes": 15305,
+      "sha256": "8161d5601fed43691ab4286f731722397ba3090f878b84b77d1a7aa430f18b91"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP002/scheduling_checkpoint.json",
+      "bytes": 588,
+      "sha256": "e07828b25991247c8805c0d7ad54d40887d5cfe5caf750252c9963adf9a21091"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP002/solver_task.txt",
+      "bytes": 1534,
+      "sha256": "7c0ec72787add33bdc8479ce0ae8bc51b7c6a0dbad578725b34445d376613427"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP002/trajectory.jsonl",
+      "bytes": 72652,
+      "sha256": "2a8694c4da7ea31fcc008a1016630c8b9af7bfd82d9473a52ed30740528006da"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP003/SHA256SUMS",
+      "bytes": 1005,
+      "sha256": "c595ec1d7cf79ce816bcb234279586efd65f0e30e12d6481a49dcb0f5fc07c76"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP003/config.json",
+      "bytes": 944,
+      "sha256": "e2121d3f7d29bed191a20eba462b33be56eff0400717cc672bc7220b18099d7f"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP003/execution_metadata.json",
+      "bytes": 1045,
+      "sha256": "e0a1f14eaee45c5bf0ff6378eceba763dba27a8e49c7825437d34501deabfcf5"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP003/final_attempt_review.csv",
+      "bytes": 4258,
+      "sha256": "656b6d6e158f80648ab78b0be9f5cf943c751e5092b67f4c8ec968826a59b551"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP003/grader_rubric.json",
+      "bytes": 861,
+      "sha256": "9afd7fd0a0d9e4d91c7b94b40a2181dcbefb71f33ce90153579d68fe3c5ffabf"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP003/host_context.txt",
+      "bytes": 38287,
+      "sha256": "faa7b3aa60e88978b60251ea7e7444874a9a3978137a97d68cf73bebdbc2718a"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP003/human_review.csv",
+      "bytes": 12619,
+      "sha256": "da73b2f7e2714e04b611d5f75249dcce579b58d11fc0446841d3a6e73f0bdaf4"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP003/input_manifest.json",
+      "bytes": 452,
+      "sha256": "c4adf4013eaf5fc37bfa2c71406ea5e9fa994cad9d437baa975506cf9b7c7295"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP003/puzzle_private.json",
+      "bytes": 15796,
+      "sha256": "6e58091fe6133af6a15b9d2e455e41b96b07eda4c8583794f2b9a13b3c79c703"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP003/result.json",
+      "bytes": 11499,
+      "sha256": "f14f0382343f81de24b61120497484631c6c09453061efdf254e784526d898fc"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP003/solver_task.txt",
+      "bytes": 1533,
+      "sha256": "7f8a9ee5e888181514fa21945eac7fee0744ed03d547b7e980f812aeaa37abdc"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP003/trajectory.jsonl",
+      "bytes": 52717,
+      "sha256": "bff9b0e504cd13a99dd468445c09fd1fcb4a9b08febc6cfb36df99477814a95b"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP003/trajectory.md",
+      "bytes": 10122,
+      "sha256": "08ff640544edc4049e731718930e6d8da0dd81ef320063f4c5ec7760cf18ffe0"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP004/SHA256SUMS",
+      "bytes": 1005,
+      "sha256": "e94236cd41407b13ca0661c408012502d5ef0dd196455a5c5a04141b03039b25"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP004/config.json",
+      "bytes": 944,
+      "sha256": "63cb147b3e4ea364539ae5ded5bf801fce19db0413d5ed26b11aa9e2b18ef2e7"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP004/execution_metadata.json",
+      "bytes": 378,
+      "sha256": "b8611e193d047e998c7de72eb662f5cba8ce0b8c9c69c0fc89628ee76eb59634"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP004/final_attempt_review.csv",
+      "bytes": 119,
+      "sha256": "aa306ba65d56a255d30de2ab30d065b416f2a59d273dae954c0b62a1fa756755"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP004/grader_rubric.json",
+      "bytes": 810,
+      "sha256": "1a8e6f4839fc55c43bc6658c09358826fc4fa58debf7f3a82a7a0cfcbe33cc3d"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP004/host_context.txt",
+      "bytes": 38052,
+      "sha256": "c5a02b3cd5bc3aba20ece00cdfc257eea7cc0b52d74446528e0472c3d71ffb06"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP004/human_review.csv",
+      "bytes": 4364,
+      "sha256": "c09a0d3864bf81822a0fa4aa22ea670e8fea2e0a1ae5cf22950ad9d77d2be5b4"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP004/input_manifest.json",
+      "bytes": 452,
+      "sha256": "53e7119387c6111ac5f3bbc7430b94eed435c21261092d73aa3535c96c1fe0e6"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP004/puzzle_private.json",
+      "bytes": 15493,
+      "sha256": "184b5008bf922fb314f6515c1cc713fd2f4238b0616ac7df739383cb6d479374"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP004/result.json",
+      "bytes": 4428,
+      "sha256": "1e755fe272f131c274a4c8bb746e51d329144add967110cdb951681804b3187f"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP004/solver_task.txt",
+      "bytes": 1527,
+      "sha256": "12063dc465917cafc8605075735e9c7bf8f73f23cf1b0d717f85267513122fb7"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP004/trajectory.jsonl",
+      "bytes": 15039,
+      "sha256": "1ad6a8e1782257a3b9790bcc7029f854cdea2afb1441360a634da5c67fe84eab"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP004/trajectory.md",
+      "bytes": 2576,
+      "sha256": "644a270209a6c5741812c4067b505485b25335ee76296e9672afcf11f4226de1"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP004_r2/config.json",
+      "bytes": 1266,
+      "sha256": "6e3247e3a12b1d952e96c45b94f1bc988ec280a6d1553dbc69662f2e9ef185c0"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP004_r2/execution_metadata.json",
+      "bytes": 576,
+      "sha256": "16ba817ef227b445c81273982a81e5792f6bf7dfcd93d66b9f2796265837d02a"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP004_r2/grader_rubric.json",
+      "bytes": 810,
+      "sha256": "1a8e6f4839fc55c43bc6658c09358826fc4fa58debf7f3a82a7a0cfcbe33cc3d"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP004_r2/host_context.txt",
+      "bytes": 39970,
+      "sha256": "bd6ceb13d0181236f90c6e6a310abcbd8f99828f04dd27f4daf3624f23412ff9"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP004_r2/input_manifest.json",
+      "bytes": 452,
+      "sha256": "c79ac1d12edd1dba8a58b51c038e7777199ce40ce9a3ab48afd381d01f75c635"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP004_r2/puzzle_private.json",
+      "bytes": 20410,
+      "sha256": "93a7397711aa407f8c2245fa939ee2b12df22dabd06b921b15d955a5c6bb8396"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP004_r2/solver_task.txt",
+      "bytes": 1527,
+      "sha256": "12063dc465917cafc8605075735e9c7bf8f73f23cf1b0d717f85267513122fb7"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP004_r2/trajectory.jsonl",
+      "bytes": 16360,
+      "sha256": "7da26148d930beeec8d7571572711142c42b37277f322355fb099ed7a5ab7567"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP005/config.json",
+      "bytes": 944,
+      "sha256": "e0ba2c06dab8ef42412cbf62d6c95a053390ec986f6267bfd91bee9557650a6c"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP005/execution_metadata.json",
+      "bytes": 640,
+      "sha256": "f0bc1df30550b9ac4556aab92fcefac579a077882ee2aaae16b03a2d4749c87c"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP005/grader_rubric.json",
+      "bytes": 793,
+      "sha256": "2fe58e1b4d7fc58f13bfda06c2cacd9d860963c8a35ac6bc2db3887d98d4e5cf"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP005/host_context.txt",
+      "bytes": 38106,
+      "sha256": "61bc1eb69570e916ffdd82cc3bdac4b608a7b28ff330aa02ff608b654a6d62c4"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP005/input_manifest.json",
+      "bytes": 452,
+      "sha256": "831d2a4f68085ecd1265080417e56859b9c9251bb8b3f07aebb72f4148aaa27a"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP005/puzzle_private.json",
+      "bytes": 15546,
+      "sha256": "c85b05861a8ec6a0438529151164ca14ac2c44bdf7eba82978b5a71cb26645f4"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP005/solver_task.txt",
+      "bytes": 1587,
+      "sha256": "e565fa9cc4254f97753d0cdb7665b9fa9ee0b098aa0427602e90943e2da5a86b"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP005/trajectory.jsonl",
+      "bytes": 52883,
+      "sha256": "5dcab67f25a8f0e1b8db1a0b34a9a0f9da57fd0adaaaf2f9754793d7049dc684"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP006/config.json",
+      "bytes": 1124,
+      "sha256": "3e9c2765a17c9c2aee7a656e0e5791d06783d63ddff08b9c53b5c3b961beaf71"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP006/execution_metadata.json",
+      "bytes": 611,
+      "sha256": "8e368a698caa3342b9d2c3f8aaeb75aacc5ec37c57eeb6b750c1c16a3a10f44b"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP006/grader_rubric.json",
+      "bytes": 860,
+      "sha256": "3a209a5316fb606caa762eb4a410d07a824a7b08418cc4eb7dd3b29bf18ae4b3"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP006/host_context.txt",
+      "bytes": 38311,
+      "sha256": "3410218a378600e25a470197ac0547ba191e8817100922f7e4e10b9124bc0d1b"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP006/input_manifest.json",
+      "bytes": 452,
+      "sha256": "0246f5202523f3fa5fe5fd3f01868325a0610a856f7c8a242d23765bcdd5ff23"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP006/puzzle_private.json",
+      "bytes": 15844,
+      "sha256": "6286d407e8abf550a65ed89ec0de3c03daa03346a154c510a521642335240231"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP006/solver_task.txt",
+      "bytes": 1476,
+      "sha256": "079c22306128c8c0047b0483a03b5e7a1cf48f75fe9c2edabd97bc094353682d"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/JP006/trajectory.jsonl",
+      "bytes": 21714,
+      "sha256": "a288f5708938374ffe2c1006b475c410f0c2cd15d1ad158123dc3f464af66345"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/all_trajectories.jsonl",
+      "bytes": 295535,
+      "sha256": "95c37a6b8d14f35a71b38629244dd6ab68d256a9380d3b28be09120e7c792839"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/all_trajectories.md",
+      "bytes": 40704,
+      "sha256": "448a6cac3a4262fc18b930a28789f058c176a3b3a6d231410e3aa9948db3a37a"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/calibration_v05/JP001_host_context.txt",
+      "bytes": 38629,
+      "sha256": "b53587a53d8c3285ce022cce13d99a33531df0fe88ec6cb284b9d0f6cee16228"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/calibration_v05/JP002_host_context.txt",
+      "bytes": 37290,
+      "sha256": "f0e4fe6325ff61f5764745a36e00b616ac00cef7e0a3244c116c17af3f793a8c"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/calibration_v05/JP003_host_context.txt",
+      "bytes": 37614,
+      "sha256": "da05816eadfb3c2cc09c373a25a56c205e792d150143efb2ae12c40df19465c7"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/calibration_v05/JP004_host_context.txt",
+      "bytes": 37379,
+      "sha256": "3721d8cc0615f0aa3f210fb18a9b3651372364b0ca47b2495fe78a234f5cedf3"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/calibration_v05/JP005_host_context.txt",
+      "bytes": 37433,
+      "sha256": "a69bc3018d22132d41916466c691437c053ea7f2ec357334c6b9555a880f82da"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/calibration_v05/JP006_host_context.txt",
+      "bytes": 37628,
+      "sha256": "4247a1eff71b4304efa735be4d17a4ff832e8725da6bd7a2b77101924e57fbf4"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/calibration_v05/gold.json",
+      "bytes": 5525,
+      "sha256": "852e32d041ba76045b07e5320943c399be531e7eac1180cad64be7a78014b033"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/calibration_v05/inputs.json",
+      "bytes": 7389,
+      "sha256": "ed5b73a71b46cede7c80388863fd0fe9c7a2a4616d8ce2b5ba8bcc17a65b682b"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/calibration_v05/manifest.json",
+      "bytes": 922,
+      "sha256": "bab7064383167188efd8a1b7ad0959b36db05fc631df8d829aebf8612ede37f0"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/calibration_v05/predictions.json",
+      "bytes": 2161,
+      "sha256": "4854ba80a9fb3b92fb3ef4c182140565a6e0efe5f8f72a954ba76666a5ae5464"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/calibration_v05/result.json",
+      "bytes": 138,
+      "sha256": "f2341e7201c83109d0d679daf701bca4f5731dd54a769297d7a53ecfb04b1a8c"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/controller_handoff.json",
+      "bytes": 1633,
+      "sha256": "8a4dfbaa376a0b810bdfde33b59948f4a2316fbeb71b73385b3a8a000623378b"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/jp001_repair_gold.json",
+      "bytes": 510,
+      "sha256": "20f17262506cdfdcea1e7e408e309f93df9affb5384d5c4d34b3da8daea3a47a"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/jp001_repair_inputs.json",
+      "bytes": 1435,
+      "sha256": "43478561b70818c8ba973fb2218371e90bb562256665dcbbe1868760bdb3107a"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/jp001_repair_predictions.json",
+      "bytes": 70,
+      "sha256": "0908446041a782193ee8c8ea666d2c922350d0e7dce75d141cdfa1004bd21b55"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/jp001_repair_result.json",
+      "bytes": 824,
+      "sha256": "e81da4d0615bf9c01ae634b80932fcb3ee89587b26ef4268e69646ce9ba2d19b"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/jp004_repair_gold.json",
+      "bytes": 78,
+      "sha256": "73a56de07066ca235a19e8eef96c77781cb62f5c8cef1a113f2096126f1bfa92"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/jp004_repair_gold_reviewed.json",
+      "bytes": 70,
+      "sha256": "c8e108c71bffcdaa801ecf19b2d66386c39c55e6ab53c0e67eaace8c4801781f"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/jp004_repair_inputs.json",
+      "bytes": 1165,
+      "sha256": "d5f49012c48b1e08f663403d32158512ba659f95addf8c066abf51e3e91d40ab"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/jp004_repair_predictions.json",
+      "bytes": 70,
+      "sha256": "c8e108c71bffcdaa801ecf19b2d66386c39c55e6ab53c0e67eaace8c4801781f"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/jp004_repair_result.json",
+      "bytes": 1120,
+      "sha256": "bc8b3cdb8006bbec3dffc4a0ce1d021918036253063f60cc6adc751d3856c22e"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/preflight_gold.json",
+      "bytes": 5525,
+      "sha256": "852e32d041ba76045b07e5320943c399be531e7eac1180cad64be7a78014b033"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/preflight_inputs.json",
+      "bytes": 7293,
+      "sha256": "43366d750a0b114bb901c93629a879bfeaae68e9286bace5aae1d1401541a6de"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/runs.csv",
+      "bytes": 789,
+      "sha256": "a32b87cdfa51beaa3ea311ca001e376184927e5aa665f75eb4a7e79c15c3b1da"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/source_audit.md",
+      "bytes": 5431,
+      "sha256": "41aa5faab5b93684235b616410bc5565e6fa160e9bd08893d30d4cde6909a71f"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/summary.json",
+      "bytes": 27020,
+      "sha256": "02b91af392bbe617bd10ded8f4be7a7c41adc9ad1577ede9b3d6dfa2d67954ff"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/summary.md",
+      "bytes": 2194,
+      "sha256": "706d357f914367637865b39e7f9d2613a30cd959b05dcea1e8603e64f817b92d"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/trial_log.py",
+      "bytes": 5714,
+      "sha256": "cc1d2069b47996dbc8a46cf9f94861cdc6114f446c823d10fc996e0bbcd3e591"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/validation_gold.json",
+      "bytes": 2266,
+      "sha256": "24317596c4c74d17e818182daad900ba6ae79623c261e9b70ab61b83ee629bf1"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/validation_inputs.json",
+      "bytes": 3668,
+      "sha256": "3c2593540e0f5760cb87479509aa4136d2511d5a8788f8c9768f949800d816df"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/validation_predictions.json",
+      "bytes": 872,
+      "sha256": "435252d12b5964f5dc54fb2c5f40cbe9391a10b617a585bc38e80f5b11ca1045"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/validation_result.json",
+      "bytes": 227,
+      "sha256": "7fdeaa6712b0058368352561d1134391a26668064592189cb75d6fa8bfab1e64"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/validation_v051/JP001_host_context.txt",
+      "bytes": 39302,
+      "sha256": "546c6e97612330a94e720c44fc24a1698e119dc00a1187d4a134aa77b9ae84f3"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/validation_v051/JP002_host_context.txt",
+      "bytes": 37963,
+      "sha256": "621df5e073e16c6bfff6948827bc12776a1e6598a19a720c9c6e7eadf2425997"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/validation_v051/JP003_host_context.txt",
+      "bytes": 38287,
+      "sha256": "faa7b3aa60e88978b60251ea7e7444874a9a3978137a97d68cf73bebdbc2718a"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/validation_v051/JP004_host_context.txt",
+      "bytes": 38052,
+      "sha256": "c5a02b3cd5bc3aba20ece00cdfc257eea7cc0b52d74446528e0472c3d71ffb06"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/validation_v051/JP005_host_context.txt",
+      "bytes": 38106,
+      "sha256": "61bc1eb69570e916ffdd82cc3bdac4b608a7b28ff330aa02ff608b654a6d62c4"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/validation_v051/JP006_host_context.txt",
+      "bytes": 38301,
+      "sha256": "0cd0010a195f286faa420a9393968145fdc2740f1aa938f841be47e74c461023"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/validation_v051/gold.json",
+      "bytes": 2266,
+      "sha256": "24317596c4c74d17e818182daad900ba6ae79623c261e9b70ab61b83ee629bf1"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/validation_v051/inputs.json",
+      "bytes": 3764,
+      "sha256": "2a150f4419fd4c3c3614851654f93af6659644f3f2eb636bccb58d3d9390bc27"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/validation_v051/manifest.json",
+      "bytes": 922,
+      "sha256": "4dd003637db88810613049aae7f36a0cd1552210c6f716bab5754c4e2c1b67be"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/validation_v051/predictions.json",
+      "bytes": 872,
+      "sha256": "435252d12b5964f5dc54fb2c5f40cbe9391a10b617a585bc38e80f5b11ca1045"
+    },
+    {
+      "path": "runs/2026-10-09_nonenglish_screening/validation_v051/result.json",
+      "bytes": 227,
+      "sha256": "7fdeaa6712b0058368352561d1134391a26668064592189cb75d6fa8bfab1e64"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_01/build_report.py",
+      "bytes": 5785,
+      "sha256": "51dfe618644ac20724eec4691c7b9f290e02a1e2529facc2ca76230badabea56"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_01/config.json",
+      "bytes": 2412,
+      "sha256": "b52ff3c63065ca51d513783a21df337f255dc8e38e910d921534f83677531195"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_01/continuations.jsonl",
+      "bytes": 67825,
+      "sha256": "2163f3214a7f8924dac2a2f1f99ec5dfb26308b5371bb49bdf586e84992f4362"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_01/final_attempt_review.csv",
+      "bytes": 1632,
+      "sha256": "be13a926376f6f284d9d328bcdee85762dec77f33e34ec881a75f925bddc997e"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_01/grader_rubric.json",
+      "bytes": 1680,
+      "sha256": "ad01a127fc3da8a93ca9314524b01d7c316cb3fbb7db1b3453b4a7eb9d5a23e0"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_01/host_context.txt",
+      "bytes": 39845,
+      "sha256": "5a8b588c9e0a013bc0dbfc80bb36fefd5562f9b257e376d10b0c4a5e13cb37cd"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_01/host_messages_template.json",
+      "bytes": 42119,
+      "sha256": "be01d8f1808ff1a0fda456696d983405e5591617778fe492b2014147955c6b5a"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_01/host_task.txt",
+      "bytes": 939,
+      "sha256": "24673b056f7be8a501484776604e92a3527f6ffaa443e87894b1575e04a80be8"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_01/human_review.csv",
+      "bytes": 12271,
+      "sha256": "8ed467234229170d2192d9b2b30755a62618220ff07c5ba00f7d6bae0abbd71f"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_01/manifest.json",
+      "bytes": 1559,
+      "sha256": "89b78c9659e7ba7c49e04db6152d18290ee3b9f3ff024e9d82c5cc1cd9f38b9f"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_01/operational_events.jsonl",
+      "bytes": 310,
+      "sha256": "6f4b73a1d6da166b000608cf254ddd9057ea0b503b967d44875d59b59ddf20fe"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_01/pause_checkpoint.json",
+      "bytes": 576,
+      "sha256": "f0019c71b893468f6c62a3276cf3c2689ee51b024eb6779cff0a7c8e8433e000"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_01/puzzle_private.json",
+      "bytes": 26801,
+      "sha256": "435ceef8d3d1da8f9af4c3a60edc09c8f982f0550277f536cd9e7e959000640d"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_01/result.json",
+      "bytes": 1414,
+      "sha256": "9b5a55c5e0d231548b6f3f8155b164239f8f6462ab83eec3665b63578bcbb3b5"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_01/shared_examples.json",
+      "bytes": 20753,
+      "sha256": "ff48cea99e8aa5f79ba0e4e758ca4dd4b1b9e3ee150abb44160acc1b139adb32"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_01/solver_task.txt",
+      "bytes": 2039,
+      "sha256": "799dd3b621bae20fdc9f54fbcebd4e8f810bf0fa3bf36f9adb5e1a2c96ac0771"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_01/trajectory.jsonl",
+      "bytes": 58543,
+      "sha256": "a41b726f7a3f792cf07415c772446f5c0d5f8cedb7429b46ebb7b7d2c29c80fa"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_01/trajectory.md",
+      "bytes": 17328,
+      "sha256": "f3364ff9d39dd0f6bdb4b2c560f5b1a87f3a8182d95b06f13fcb51c85f15dd71"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_02/config.json",
+      "bytes": 2420,
+      "sha256": "79f2a30c5a83e704668671ba0ce255d998c12a52bfb23b101f92edea1adbbb69"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_02/continuations.jsonl",
+      "bytes": 66569,
+      "sha256": "3c93618c4ab6dc806efb5f07fff6d9563985bf852887495516f72abca953d2f7"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_02/final_attempt_review.csv",
+      "bytes": 2920,
+      "sha256": "d59a581be00ffe8a7dad314d627425114108069b7148dc868711e4ddfa687d8c"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_02/grader_rubric.json",
+      "bytes": 1680,
+      "sha256": "ad01a127fc3da8a93ca9314524b01d7c316cb3fbb7db1b3453b4a7eb9d5a23e0"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_02/grading_review_addenda.jsonl",
+      "bytes": 426,
+      "sha256": "991d616f701fe2a2bdfe63fadefd22e85cb52becbd7db131844412c94aa25da2"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_02/host_context.txt",
+      "bytes": 39845,
+      "sha256": "5a8b588c9e0a013bc0dbfc80bb36fefd5562f9b257e376d10b0c4a5e13cb37cd"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_02/host_messages_template.json",
+      "bytes": 42119,
+      "sha256": "be01d8f1808ff1a0fda456696d983405e5591617778fe492b2014147955c6b5a"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_02/host_task.txt",
+      "bytes": 912,
+      "sha256": "7a37a3ca5517a40dabdd00ad591fa8ff13207183ab98650c0a972bae0fa795d5"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_02/human_review.csv",
+      "bytes": 12368,
+      "sha256": "c09f0bc2b0c7a6e3213d0205956a79b007600a0fcfa365be03aaedde99493fc2"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_02/manifest.json",
+      "bytes": 1474,
+      "sha256": "eab0f01b0dea13758768e8e3ae44ca1b7a7e5b32d70a6b9f669a67f1cfac2e1f"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_02/pause_checkpoint.json",
+      "bytes": 576,
+      "sha256": "f7d2435f7076fb435902b4c650898a55e5d47a78da3d2864948b9835ad67cb57"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_02/puzzle_private.json",
+      "bytes": 26801,
+      "sha256": "435ceef8d3d1da8f9af4c3a60edc09c8f982f0550277f536cd9e7e959000640d"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_02/result.json",
+      "bytes": 1581,
+      "sha256": "8c89b23caaaef653cce96806dfa833d3776b7c2c43c9b1795b0fd5293d4f0a5c"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_02/shared_examples.json",
+      "bytes": 20753,
+      "sha256": "ff48cea99e8aa5f79ba0e4e758ca4dd4b1b9e3ee150abb44160acc1b139adb32"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_02/solver_task.txt",
+      "bytes": 2039,
+      "sha256": "799dd3b621bae20fdc9f54fbcebd4e8f810bf0fa3bf36f9adb5e1a2c96ac0771"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_02/trajectory.jsonl",
+      "bytes": 60008,
+      "sha256": "12757585dd903a9bd36594c32d79bc41210b7086953adbbb0ad32318e7e32e73"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_02/trajectory.md",
+      "bytes": 18661,
+      "sha256": "bf607addc7bf19200480b62dc470277ce53dff75e71eee5e609a0b28d7f17e90"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_03/config.json",
+      "bytes": 2420,
+      "sha256": "2622a3eec6f90a44e0d974b3f7de622c7662b61c6c9568f3e937de6a4299790d"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_03/continuations.jsonl",
+      "bytes": 68692,
+      "sha256": "d92e7a48df2a056439994614f3ebb8688a0d5e4dcbd8a66a00a4b3db9087b01e"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_03/final_attempt_review.csv",
+      "bytes": 2772,
+      "sha256": "f14156f3e59d7abf6c13ac61f14062c91391e43c0d95c91ed14a673d831d0704"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_03/grader_rubric.json",
+      "bytes": 1680,
+      "sha256": "ad01a127fc3da8a93ca9314524b01d7c316cb3fbb7db1b3453b4a7eb9d5a23e0"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_03/host_context.txt",
+      "bytes": 39845,
+      "sha256": "5a8b588c9e0a013bc0dbfc80bb36fefd5562f9b257e376d10b0c4a5e13cb37cd"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_03/host_messages_template.json",
+      "bytes": 42119,
+      "sha256": "be01d8f1808ff1a0fda456696d983405e5591617778fe492b2014147955c6b5a"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_03/host_task.txt",
+      "bytes": 951,
+      "sha256": "0870fe69c2bee0c9d561ac287e1c9c95470f36013329ea274a16383227f317af"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_03/human_review.csv",
+      "bytes": 12401,
+      "sha256": "7631fc1314cb158d2dd13313b610d64d22d4c4b78ef9f9667424d56e5b6615b2"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_03/manifest.json",
+      "bytes": 1372,
+      "sha256": "2428c3441c8a5d96e954280dc5d5e1713af64884f8dc2275d2536cdd86364c37"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_03/pause_checkpoint.json",
+      "bytes": 609,
+      "sha256": "9869a17ad34b904a785e56a68df7269b77aea43615f8f5d554d143d903ccd513"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_03/puzzle_private.json",
+      "bytes": 26801,
+      "sha256": "435ceef8d3d1da8f9af4c3a60edc09c8f982f0550277f536cd9e7e959000640d"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_03/result.json",
+      "bytes": 1464,
+      "sha256": "976c8b76b654ef531be667c1910cbe50fb11988c042ac6fe76e8434f8fffcc82"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_03/shared_examples.json",
+      "bytes": 20753,
+      "sha256": "ff48cea99e8aa5f79ba0e4e758ca4dd4b1b9e3ee150abb44160acc1b139adb32"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_03/solver_task.txt",
+      "bytes": 2039,
+      "sha256": "799dd3b621bae20fdc9f54fbcebd4e8f810bf0fa3bf36f9adb5e1a2c96ac0771"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_03/trajectory.jsonl",
+      "bytes": 62460,
+      "sha256": "b4cacbb6be716533a72948c5de6ad381f26e9069f14aa3316333b18e339c4ca7"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_03/trajectory.md",
+      "bytes": 18676,
+      "sha256": "9ebf659cfb149754e57bf8b93bc328bf7b2a7699d2f83ac15f245461837a37cb"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_summary/all_human_review.csv",
+      "bytes": 51934,
+      "sha256": "9582b47d06c54551a631b33b6cf69dbd1c80c2b98aa65615e3c598290b907117"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_summary/all_trajectories.jsonl",
+      "bytes": 225671,
+      "sha256": "55361186b98203a8262f8349c701a640e6f4ab01a61ecc7c18c568f923c9443d"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_summary/all_trajectories.md",
+      "bytes": 64252,
+      "sha256": "9229bc2e5a26f47fa8082d6d7c9c64c71649c0b33cc2cc933b6fa5ef0d9413d6"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_summary/audit_notes.md",
+      "bytes": 11742,
+      "sha256": "14179f07ae1dcce87b857a14c107b00022cbf67938e829fca66d7921c41100c6"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_summary/frozen_input_hashes.json",
+      "bytes": 1048,
+      "sha256": "cfe216448a52388f8d5b0aa2b2c42a5389fe81708be78420a8acb823a0f87692"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_summary/quality_snapshot.json",
+      "bytes": 3017,
+      "sha256": "a3afda119224ad6d5d934228bb77f83c07ecdf40d6008fcdc8cc7ef3e022d37a"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_summary/runs.csv",
+      "bytes": 363,
+      "sha256": "d2c95983d5995bd0ce408c3d01c2998e4d5c9d94256436073723d278a1e53217"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_summary/summarize.py",
+      "bytes": 5904,
+      "sha256": "edc0b447eeca172acfb3b068b534ff87a8356af3b3a339875027da57814dd75f"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_summary/summary.json",
+      "bytes": 2307,
+      "sha256": "28ac975cba2c5a0666488aa6d3bb571f55bff46fca708149777e2b475c95d41f"
+    },
+    {
+      "path": "runs/2026-10-09_pillow_unlimited_summary/summary.md",
+      "bytes": 3571,
+      "sha256": "6ecf11bd5463f9f04f4181ad52c78ebcb5fe265af8e15c9e2aa1f4ace2971e33"
+    },
+    {
+      "path": "scripts/audit_screening.py",
+      "bytes": 2855,
+      "sha256": "b870ae997c44b3d95f82c53182a87477629d38e4d848e6dad8ba7db0c71d350c"
+    },
+    {
+      "path": "scripts/prepare.py",
+      "bytes": 13042,
+      "sha256": "1de4a9b40f9348e46afbff0a7a6fef4d15fdb5aa0e281db54d15dfd2384873d9"
+    },
+    {
+      "path": "scripts/summarize_screening.py",
+      "bytes": 5452,
+      "sha256": "2e685acd7ed9b362a66066af2c5e031d2ea15b799686f9ce03e8702f38b93910"
+    }
+  ],
+  "file_count_including_manifest": 342,
+  "bytes_excluding_manifest": 4281807,
+  "excluded_local_files": [
+    "data/archive/candidates_before_v0.3.json",
+    "data/archive/host_examples_v0.1.json",
+    "data/archive/host_examples_v0.2.json",
+    "data/host_examples.json",
+    "data/host_packs/JP001.json",
+    "data/host_packs/JP002.json",
+    "data/host_packs/JP003.json",
+    "data/host_packs/JP004.json",
+    "data/host_packs/JP005.json",
+    "data/host_packs/JP006.json",
+    "data/local_only/puzzles_before_release_57763333b925.jsonl",
+    "data/private/candidates.json",
+    "data/research/JP001_source_corrections.json",
+    "data/research/nonenglish_candidates_2026-10-09.json",
+    "runs/.DS_Store",
+    "runs/2026-10-09_nonenglish_screening/__pycache__/trial_log.cpython-314.pyc",
+    "scripts/__pycache__/prepare.cpython-311.pyc",
+    "scripts/__pycache__/prepare.cpython-314.pyc",
+    "scripts/__pycache__/summarize_screening.cpython-314.pyc"
+  ],
+  "self": "docs/push_manifest.json included; no recursive checksum"
+}

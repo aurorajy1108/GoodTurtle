@@ -1,0 +1,19 @@
+{
+  "model_requested": "gpt-6.1-sol",
+  "agent": "/root/jp001_repair_preflight",
+  "fresh_context": true,
+  "tool_read_allowlist": [
+    "JP001_r2/host_context.txt",
+    "jp001_repair_inputs.json"
+  ],
+  "matched": 8,
+  "total": 8,
+  "reference_status": "AI curated; pending human review",
+  "independence": "New phrasings of development failures; regression check, not unbiased accuracy estimate",
+  "manifest": {
+    "JP001_r2/host_context.txt": "6ae25c5efd32dd1ee1dcc54de7c8794549020921afc86d99f1ab66bca87523c5",
+    "jp001_repair_inputs.json": "43478561b70818c8ba973fb2218371e90bb562256665dcbbe1868760bdb3107a",
+    "jp001_repair_gold.json": "20f17262506cdfdcea1e7e408e309f93df9affb5384d5c4d34b3da8daea3a47a",
+    "jp001_repair_predictions.json": "0908446041a782193ee8c8ea666d2c922350d0e7dce75d141cdfa1004bd21b55"
+  }
+}

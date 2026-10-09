@@ -1,0 +1,12 @@
+{
+  "solver_agent": "/root/nonenglish_trials/jp001_solver",
+  "host_agent": "/root/nonenglish_trials/jp001_host",
+  "solver_model": "gpt-6-sol",
+  "solver_reasoning_effort": "high",
+  "host_model": "gpt-6.1-sol",
+  "host_reasoning_effort": "default_inherited",
+  "fork_turns": "none",
+  "frozen_solver_task_exact": true,
+  "status": "running",
+  "started_at": "2026-10-09T07:05:51.302993+00:00"
+}

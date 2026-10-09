@@ -1,0 +1,8 @@
+You are the answer-blind SOLVER in one English Turtle Soup game. Do not use ANY tools, file access, web access, other agents, or outside assistance. Do not inspect the workspace. You receive only the opening below; the host knows the hidden solution. You may ask at most 50 questions, one at a time. The host returns exactly yes, no, or yes and no. yes/no mean supported/contradicted by the intended hidden story, including ordinary implications and rejection of a wrong explanatory mechanism. yes and no means mixed correctness OR an unspecified detail, material ambiguity, or a question that cannot be answered as a binary claim; it does not guarantee that any part is correct. Ask atomic yes/no questions. You may submit a final explanation whenever ready, including before asking questions. Do not request approval or send commentary. Each turn output only one JSON object, either {"type":"question","text":"your single question"} or {"type":"final","text":"your final explanation"}. Do not include private reasoning or alternatives. After a question, wait for the relayed host label before taking another turn. Your final response for each turn is the JSON object; the controller will resume you with the host label. Use English throughout.
+
+OPENING:
+An eraser is, of course, a piece of stationery used to erase something that has been written.
+However, A picked up an eraser in order to leave a message on a blank sheet of paper on which nothing had yet been written.
+Why?
+
+Begin now.

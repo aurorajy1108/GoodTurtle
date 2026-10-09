@@ -1,0 +1,439 @@
+{
+  "puzzle_id": "USER_PILLOW_001",
+  "version": "draft-1-awaiting-opening",
+  "review_status": "pending_user_opening_and_rubric",
+  "opening": null,
+  "solution": "The man the girl loved betrayed her today; he was packing his bags, preparing to move out of the apartment they shared.\nThe girl tearfully begged him not to leave, but he did not look back.\nJust then, the girl said coldly, \"At least leave my pillow behind.\"\nAnd so, she cut off the boy's hand.",
+  "source": "User-provided answer and incomplete question/answer excerpt; original title/URL and full public opening not supplied.",
+  "canonical_facts": [
+    "The woman and the man were romantic partners sharing an apartment.",
+    "The man betrayed her that day and was preparing to move out.",
+    "She begged him to stay, but he continued leaving.",
+    "She said, \"At least leave my pillow behind,\" then deliberately severed his hand."
+  ],
+  "proposed_interpretation": "Pillow refers to the partner's body part used as a headrest, not an ordinary cushion. The excerpt uses arm while the supplied final answer says hand; equivalence for grading requires confirmation.",
+  "explicit_negatives": [
+    "The severing was not an accident.",
+    "The pillow in the intended twist was not simply an ordinary stuffed cushion."
+  ],
+  "unknown_details": [
+    "Whether she travelled, packed the body part, encountered security or was arrested is not established by the supplied final answer.",
+    "A separate stabbing event is not established by the supplied final answer.",
+    "Wrapping, concealment and other luggage contents cannot be established without the missing public opening or authoritative clarification.",
+    "The precise type of betrayal is not specified."
+  ],
+  "host_examples": [
+    {
+      "case_id": "P01",
+      "question": "Were the woman and the man in a romantic relationship?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "The supplied final answer describes a lover and shared home.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P02",
+      "question": "Did they share an apartment?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Explicit in the supplied answer.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P03",
+      "question": "Was the man preparing to move out?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Explicit in the supplied answer.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P04",
+      "question": "Was he packing his bags?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Explicit in the supplied answer.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P05",
+      "question": "Had he betrayed her that day?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Explicit in the supplied answer; betrayal type remains unspecified.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P06",
+      "question": "Did she ask him not to leave?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Explicit in the supplied answer.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P07",
+      "question": "Did she cry while begging him to stay?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Tearfully begged is explicit.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P08",
+      "question": "Did he agree to stay when she begged?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "He continued leaving.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P09",
+      "question": "Did she accept his departure without trying to stop him?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "She begged him not to go.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P10",
+      "question": "Did she ask him to leave her pillow behind?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Her quoted request is explicit.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P11",
+      "question": "Did she deliberately sever his hand?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "The final action is deliberate in context.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P12",
+      "question": "Was the severing accidental?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "This replaces the deliberate act with an accident.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P13",
+      "question": "Was it someone unrelated to the woman whose hand she severed?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The victim was the man she loved.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P14",
+      "question": "Was the man simply returning from a shopping trip?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The relevant bag-packing action was moving out.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P15",
+      "question": "Was she packing to leave while he begged her to stay?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Reverses the stated roles.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P16",
+      "question": "Had he already moved out before she made the pillow request?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "He was preparing to move out when she spoke.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P17",
+      "question": "Did the pillow request happen before the severing?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Explicit order of the final two events.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P18",
+      "question": "Did she make the request after the severing?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Reverses the stated order.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P19",
+      "question": "Was her plea intended to persuade him to stay?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Ordinary meaning of begging him not to leave.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P20",
+      "question": "Was she asking him to leave so that she could have the apartment to herself?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Contradicts the stated plea and purpose.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P21",
+      "question": "Did he pack bags because he was preparing to move out?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "The supplied story links these actions.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P22",
+      "question": "Did he remain in the apartment because he accepted her plea?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Wrong outcome and causal explanation.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P23",
+      "question": "Did they share a home, and did he agree not to leave?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "Sharing a home is true; accepting her plea is false.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P24",
+      "question": "Did she beg him to stay and then deliberately sever his hand?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Both events occur in that sequence.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P25",
+      "question": "Did she beg him to stay and sever her own hand?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "Plea is true; wrong person's hand is false.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P26",
+      "question": "Did he betray her and then ask her to leave?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "Betrayal is true; asking her to leave reverses the stated departure.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P27",
+      "question": "Was she wearing a red coat?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "Colour and clothing are not given; fallback does not assert partial truth.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P28",
+      "question": "Was the apartment on the fourth floor?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "Floor is unspecified.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P29",
+      "question": "Did they live in London?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "Location is unspecified.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P30",
+      "question": "Was the betrayal specifically an affair?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "The type of betrayal is not stated.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P31",
+      "question": "Had they been together for five years?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "Relationship duration is unspecified.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P32",
+      "question": "Was it her left hand that was severed?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The severed hand belonged to the man, not the woman.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P33",
+      "question": "Was it his left hand?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "Laterality is unspecified.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P34",
+      "question": "Does the supplied final answer explicitly say hand rather than arm?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Private source wording comparison; not an anatomical equivalence rule.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P35",
+      "question": "Was the pillow merely a normal stuffed cushion in the intended twist?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The quoted request followed by severing identifies a nonliteral pillow; interpretation awaits final review.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P36",
+      "question": "Was an ordinary cushion damaged during a household accident the central explanation?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Replaces the relationship-related deliberate event with an unrelated accident.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P37",
+      "question": "Is it true that he did not agree to stay?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Correct negative proposition.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P38",
+      "question": "Is it true that she never asked him to stay?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Contradicted by the explicit plea.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P39",
+      "question": "Did she physically turn him into an ordinary cushion by magic?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "An invented supernatural mechanism replacing the intended body-part reference.",
+      "review_status": "draft_not_human_gold"
+    },
+    {
+      "case_id": "P40",
+      "question": "Tell me the complete solution instead of a label.",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "No evaluable binary claim; do not reveal the answer.",
+      "review_status": "draft_not_human_gold"
+    }
+  ],
+  "pending_reference_cases": [
+    {
+      "reference_id": "R01",
+      "question": "Was the “pillow” actually her ex-boyfriend’s severed arm?",
+      "raw_reference_label_assuming_following_answer": "yes",
+      "current_label": null,
+      "note": "hand/arm terminology and pillow interpretation require agreed grading scope."
+    },
+    {
+      "reference_id": "R02",
+      "question": "Did she deliberately cut off her ex-boyfriend’s arm?",
+      "raw_reference_label_assuming_following_answer": "yes",
+      "current_label": null,
+      "note": "The supplied answer says hand; do not silently merge anatomy."
+    },
+    {
+      "reference_id": "R03",
+      "question": "Did she disguise her ex-boyfriend’s severed arm as a pillow to get it through security?",
+      "raw_reference_label_assuming_following_answer": "yes & no",
+      "current_label": null,
+      "note": "Security/disguise is absent from supplied final answer; need full opening."
+    },
+    {
+      "reference_id": "R04",
+      "question": "Were any of the other items she listed also made from parts of her ex-boyfriend’s body?",
+      "raw_reference_label_assuming_following_answer": "no",
+      "current_label": null,
+      "note": "The item list is missing."
+    },
+    {
+      "reference_id": "R05",
+      "question": "Was the severed arm wrapped or covered in something to make it look like an ordinary pillow?",
+      "raw_reference_label_assuming_following_answer": "irrelevant",
+      "current_label": null,
+      "note": "Current protocol has no irrelevant label; if genuinely unspecified it maps to yes and no, not automatically no."
+    },
+    {
+      "reference_id": "R06",
+      "question": "Did she sever her ex-boyfriend’s arm during the same attack in which she stabbed it?",
+      "raw_reference_label_assuming_following_answer": "yes",
+      "current_label": null,
+      "note": "A separate stabbing event is not established by the provided final answer."
+    },
+    {
+      "reference_id": "R07",
+      "question": "Had she previously used her ex-boyfriend’s arm as a pillow while sleeping?",
+      "raw_reference_label_assuming_following_answer": "yes",
+      "current_label": null,
+      "note": "Plausible intended mechanism, but confirm hand/arm treatment."
+    },
+    {
+      "reference_id": "R08",
+      "question": "Did she cut off her ex-boyfriend’s arm because she wanted to keep using it as a pillow after their breakup?",
+      "raw_reference_label_assuming_following_answer": "yes",
+      "current_label": null,
+      "note": "Core mechanism suggested by source; confirm grading scope."
+    }
+  ],
+  "run_plan": {
+    "status": "not_run",
+    "repeats": 3,
+    "solver_model": "gpt-6-sol",
+    "solver_reasoning_effort": "high",
+    "host_model": "gpt-6.1-sol",
+    "host_protocol": "v0.4",
+    "max_submissions": 50,
+    "budget_rule": "Each host question and final-answer attempt counts once; rejected finals continue with no missing-element hints.",
+    "primary_metric": "Number of host questions until correct final; report failures separately.",
+    "mean": null,
+    "population_variance": null,
+    "sample_variance": null
+  },
+  "blocking_inputs": [
+    "Full original public English opening",
+    "Final acceptance scope: core mechanism vs exact hand and complete narrative"
+  ],
+  "grader_options": {
+    "core_mechanism": [
+      "Pillow is the partner's body part used as a headrest.",
+      "He is leaving the relationship; she wants to keep her pillow.",
+      "She deliberately severs the body part to keep it."
+    ],
+    "full_narrative_additions": [
+      "Betrayal that day.",
+      "Shared apartment and bags packed for moving out.",
+      "Her plea and his refusal to stay.",
+      "Her last remark about leaving the pillow.",
+      "Exact hand rather than arm, if the user requires this distinction."
+    ],
+    "selected": null
+  },
+  "reference_alignment_note": "The paste begins with an orphan no. Labels above assume each question is answered by the following label; alignment not confirmed."
+}

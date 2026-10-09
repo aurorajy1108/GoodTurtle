@@ -1,0 +1,14 @@
+{
+  "run_id": "JP002",
+  "status": "parked_for_fair_scheduling",
+  "question_count": 110,
+  "final_attempts": 4,
+  "total_submissions": 114,
+  "solver": "/root/nonenglish_trials/jp002_solver",
+  "host": "/root/nonenglish_trials/jp002_host",
+  "pending_feedback_to_solver": "yes and no",
+  "last_question": "Was he legally a minor?",
+  "last_host_answer_logged": true,
+  "next_action": "Relay yes and no to original jp002_solver, then continue. No new agent or repeated host question.",
+  "reason": "Root instruction rotates to untested repaired JP001_r2, not a count limit or failure."
+}

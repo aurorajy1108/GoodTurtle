@@ -1,0 +1,25 @@
+{
+  "required_elements": [
+    {
+      "id": "R1",
+      "criterion": "A photographed/reported murder by B's parent, whose arrest caused B's school transfer and relocation."
+    },
+    {
+      "id": "R2",
+      "criterion": "A's changed surname explains asymmetric recognition at university: A knew B, B did not recognize A; genuine romance and marriage followed."
+    },
+    {
+      "id": "R3",
+      "criterion": "A hid involvement out of guilt/fear of losing B, while B hid parentage out of shame."
+    },
+    {
+      "id": "R4",
+      "criterion": "B later recognized A but wrongly believed A did not know B's past; shame/fear caused B to flee alive."
+    },
+    {
+      "id": "R5",
+      "criterion": "A searched unsuccessfully, fabricated evidence and falsely confessed to B's murder; arrest/news was intended to reach B, communicate acceptance and induce return/exoneration."
+    }
+  ],
+  "acceptance": "All causal narrative elements required, faithful paraphrases accepted. No arbitrary exact wording, names, counts or narrative decoration beyond rubric. Never give solver missing elements. False/incomplete final gets no and game continues."
+}

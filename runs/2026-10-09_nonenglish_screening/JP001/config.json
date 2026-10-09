@@ -1,0 +1,22 @@
+{
+  "puzzle_id": "JP001",
+  "status": "ready",
+  "solver_model_requested": "gpt-6-sol",
+  "solver_reasoning_effort_requested": "high",
+  "host_model_requested": "gpt-6.1-sol",
+  "host_reasoning_effort": "inherited",
+  "host_protocol": "v0.5.1",
+  "shared_examples": 52,
+  "target_examples": 47,
+  "max_questions": null,
+  "max_submissions": null,
+  "stop_rule": "Complete correct final; wrong finals continue",
+  "retain_rule": "Solved with >30 host questions and no material host error or leakage; preliminary one-run screen only",
+  "backend": "Codex collaboration subagents, not standalone API",
+  "isolation": "fork_turns=none; no-tools instruction, not OS sandbox",
+  "grader": "Controller against frozen rubric",
+  "exact_checkpoint": null,
+  "usage_tokens": null,
+  "host_sha256": "546c6e97612330a94e720c44fc24a1698e119dc00a1187d4a134aa77b9ae84f3",
+  "solver_sha256": "484f412c153e27b245910e56cf124c9fa491263ffea6760da7d3d28d8a898291"
+}

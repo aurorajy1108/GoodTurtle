@@ -1,0 +1,10 @@
+{
+  "required_elements": [
+    "The instrument is a mechanical pencil needing usable lead.",
+    "Picking up the eraser means removing it to access the lead-refill opening.",
+    "A adds lead so the pencil can write the message."
+  ],
+  "acceptance": "Accept natural paraphrases covering the mechanism without material contradiction. Do not demand incidental hardware or brand details.",
+  "player_feedback": "Only a binary final verdict; no missing-element feedback.",
+  "rejected_attempt": "Merely lifting a pencil by its eraser end is insufficient."
+}
