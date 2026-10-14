@@ -1,0 +1,6 @@
+{
+  "max_questions": 100,
+  "host": {"provider": "deepseek", "model": "${DEEPSEEK_MODEL}", "max_output_tokens": 4096},
+  "player": {"provider": "deepseek", "model": "${DEEPSEEK_MODEL}", "max_output_tokens": 4096},
+  "grader": "host"
+}

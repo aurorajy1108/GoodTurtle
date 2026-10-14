@@ -23,3 +23,6 @@ venv/
 !/data/public/
 /data/public/*
 !/data/public/puzzles.jsonl
+
+# New API experiments contain private answer/rubric snapshots; publish deliberately.
+/runs/api/
