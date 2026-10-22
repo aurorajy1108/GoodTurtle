@@ -8,13 +8,14 @@ __pycache__/
 venv/
 .pytest_cache/
 
-# Published data is restricted to the two user-approved puzzles.
+# Publish only explicitly approved puzzle packs; keep other private data local.
 /data/*
 !/data/release_scope.json
 !/data/host_packs/
 /data/host_packs/*
 !/data/host_packs/USER_ERASER_001.json
 !/data/host_packs/USER_PILLOW_001.json
+!/data/host_packs/APRIL_*.json
 !/data/host_dev/
 /data/host_dev/*
 !/data/host_dev/eraser_v02.json
