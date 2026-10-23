@@ -77,6 +77,9 @@ def validate_dataset(data):
         ids.add(pid)
         if not all(isinstance(puzzle[k], str) and puzzle[k].strip() for k in ('opening', 'answer')):
             raise ValueError(f'{pid}: empty opening/answer')
+        requirements = puzzle.get('completion_requirements', [])
+        if not isinstance(requirements, list) or any(not isinstance(x, str) or not x.strip() for x in requirements):
+            raise ValueError(f'{pid}: invalid completion requirements')
         rubric = puzzle['rubric']
         if not rubric or len({c['id'] for c in rubric}) != len(rubric):
             raise ValueError(f'{pid}: absent or duplicate rubric checkpoints')

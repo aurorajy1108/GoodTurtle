@@ -1,0 +1,236 @@
+{
+  "schema_version": 1,
+  "source": "User supplied relation table, 2026-10-22",
+  "interpretation": "Relation labels are preregistered hypotheses, not measured effects. All distinct ordered pairs; overlapping pairs retain group IDs. Answer-revealing rationales remain private.",
+  "groups": [
+    {
+      "id": "G01",
+      "puzzles": [
+        "TS012",
+        "TS017",
+        "TS018"
+      ],
+      "relation": "negative"
+    },
+    {
+      "id": "G02",
+      "puzzles": [
+        "TS015",
+        "TS016"
+      ],
+      "relation": "negative"
+    },
+    {
+      "id": "G03",
+      "puzzles": [
+        "TS014",
+        "TS015",
+        "TS016"
+      ],
+      "relation": "negative"
+    },
+    {
+      "id": "G04",
+      "puzzles": [
+        "TS013",
+        "TS015",
+        "TS016"
+      ],
+      "relation": "positive"
+    },
+    {
+      "id": "G05",
+      "puzzles": [
+        "TS013",
+        "TS014"
+      ],
+      "relation": "negative"
+    },
+    {
+      "id": "G06",
+      "puzzles": [
+        "TS019",
+        "TS020"
+      ],
+      "relation": "negative"
+    },
+    {
+      "id": "G07",
+      "puzzles": [
+        "TS022",
+        "TS047"
+      ],
+      "relation": "positive"
+    },
+    {
+      "id": "G08",
+      "puzzles": [
+        "TS007",
+        "TS021"
+      ],
+      "relation": "negative"
+    },
+    {
+      "id": "G09",
+      "puzzles": [
+        "TS010",
+        "TS011",
+        "TS042"
+      ],
+      "relation": "positive"
+    },
+    {
+      "id": "G10",
+      "puzzles": [
+        "TS010",
+        "TS042"
+      ],
+      "relation": "positive"
+    },
+    {
+      "id": "G11",
+      "puzzles": [
+        "TS033",
+        "TS034"
+      ],
+      "relation": "negative"
+    },
+    {
+      "id": "G12",
+      "puzzles": [
+        "TS001",
+        "TS003"
+      ],
+      "relation": "positive"
+    },
+    {
+      "id": "G13",
+      "puzzles": [
+        "TS035",
+        "TS036"
+      ],
+      "relation": "positive"
+    },
+    {
+      "id": "G14",
+      "puzzles": [
+        "TS038",
+        "TS046"
+      ],
+      "relation": "positive"
+    },
+    {
+      "id": "G15",
+      "puzzles": [
+        "TS007",
+        "TS043"
+      ],
+      "relation": "positive"
+    },
+    {
+      "id": "G16",
+      "puzzles": [
+        "TS008",
+        "TS009"
+      ],
+      "relation": "neutral"
+    },
+    {
+      "id": "G17",
+      "puzzles": [
+        "TS023",
+        "TS050"
+      ],
+      "relation": "neutral"
+    },
+    {
+      "id": "G18",
+      "puzzles": [
+        "TS041",
+        "TS049"
+      ],
+      "relation": "neutral"
+    },
+    {
+      "id": "G19",
+      "puzzles": [
+        "TS030",
+        "TS046"
+      ],
+      "relation": "neutral"
+    },
+    {
+      "id": "G20",
+      "puzzles": [
+        "TS032",
+        "TS038"
+      ],
+      "relation": "neutral"
+    },
+    {
+      "id": "G21",
+      "puzzles": [
+        "TS025",
+        "TS045"
+      ],
+      "relation": "neutral"
+    },
+    {
+      "id": "G22",
+      "puzzles": [
+        "TS005",
+        "TS027"
+      ],
+      "relation": "neutral"
+    },
+    {
+      "id": "G23",
+      "puzzles": [
+        "TS006",
+        "TS014"
+      ],
+      "relation": "neutral"
+    },
+    {
+      "id": "G24",
+      "puzzles": [
+        "TS039",
+        "TS014"
+      ],
+      "relation": "neutral"
+    },
+    {
+      "id": "G25",
+      "puzzles": [
+        "TS044",
+        "TS045"
+      ],
+      "relation": "neutral"
+    },
+    {
+      "id": "G26",
+      "puzzles": [
+        "TS001",
+        "TS033",
+        "TS034"
+      ],
+      "relation": "neutral"
+    },
+    {
+      "id": "G27",
+      "puzzles": [
+        "TS021",
+        "TS030"
+      ],
+      "relation": "neutral"
+    },
+    {
+      "id": "G28",
+      "puzzles": [
+        "TS004",
+        "TS027"
+      ],
+      "relation": "neutral"
+    }
+  ]
+}

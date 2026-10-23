@@ -26,3 +26,17 @@ Return only JSON in exactly this shape, one entry per supplied checkpoint:
 All four flags must be JSON booleans. Do not output a total score, feedback label
 or chain of thought. The controller derives the score and public label. Notes and
 per-checkpoint coverage are private to the evaluator and human reviewer.
+
+When supplied, completion_requirements enumerate mandatory narrative facts. All must
+be covered for full_solution. Apply checkpoint-specific full_credit and half_credit
+rules where present. grading_notes clarify boundaries; never add unsupported facts.
+A conflict between these annotations and the reference must trigger rubric_conflict.
+
+When story_context is supplied, it is the SAME versioned private story used by the
+question host. Its canonical_solution, canonical_facts and explicit_negatives are
+explicit story expansions, not player guesses. Use these alongside reference_answer
+and completion_requirements, so a short source answer does not erase established
+facts. Do not treat incidental unknowns as mandatory completion requirements.
+The host_examples are question-label examples, not scoring rules or evidence of what
+this player said. Score only submitted_explanation using the supplied rubric.
+If the canonical facts and rubric genuinely contradict, flag rubric_conflict.

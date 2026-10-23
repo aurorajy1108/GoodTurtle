@@ -48,6 +48,10 @@ def resolve_env(value):
 
 
 def validate_profile(profile, require_key=True):
+    if profile.get('provider') == 'codex_cli':
+        from .codex_client import validate
+        validate(profile)
+        return '', '', 'codex_cli'
     allowed = {'provider', 'model', 'base_url', 'api_key_env', 'max_output_tokens',
                'temperature', 'extra_body', 'timeout', 'max_retries'}
     if set(profile) - allowed:
@@ -145,6 +149,9 @@ class Client:
         self.opener = urllib.request.build_opener(NoRedirect)
 
     def complete(self, system, user):
+        if self.profile.get('provider') == 'codex_cli':
+            from .codex_client import complete
+            return complete(self.profile, self.role, self.audit, system, user)
         url, headers, body, kind = build_request(self.profile, system, user)
         for attempt in range(self.profile.get('max_retries', 2) + 1):
             start = time.monotonic()

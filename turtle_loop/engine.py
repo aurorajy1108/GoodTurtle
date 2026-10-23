@@ -11,6 +11,7 @@ from decimal import Decimal
 from pathlib import Path
 
 from .providers import APIError
+from .host_context import build_story_context, host_payload
 
 LABELS = {'yes', 'no', 'yes and no', 'irrelevant'}
 ROOT = Path(__file__).resolve().parents[1]
@@ -116,7 +117,7 @@ class Recorder:
         success = any(g['complete'] for g in graded)
         last = finals[-1].get('grade') if finals else None
         usage = {}
-        for role in ('player', 'host', 'grader'):
+        for role in sorted({'player', 'host', 'grader'} | {c['role'] for c in self.calls}):
             calls = [c for c in self.calls if c['role'] == role]
             totals = {}
             for c in calls:
@@ -190,13 +191,21 @@ def load_prompts():
     return {role: (ROOT / f'prompts/loop_{role}_v1.txt').read_text() for role in ('player', 'host', 'grader')}
 
 
-def play(puzzle, config, recorder, clients, prompts):
+def play(puzzle, config, recorder, clients, prompts, player_context=None):
     limit = config['max_questions']
     if type(limit) is not int or not 1 <= limit <= 100:
         raise ValueError('max_questions must be an integer from 1 to 100')
     history = []  # Only public player submissions and four-label feedback.
     counted = 0
     recorder.report('running', None)
+    # A stale fingerprint or missing host pack must not leave a batch looking
+    # permanently running. No model calls have been made at this point.
+    try:
+        story_context = build_story_context(puzzle)
+        dump(recorder.folder / 'host_context.json', story_context)
+    except (ValueError, KeyError, OSError) as exc:
+        recorder.event('error', phase='host_context', error_type=type(exc).__name__, message=str(exc))
+        return recorder.report('error', 'host_context_error', str(exc))
     try:
         while True:
             forced = counted >= limit - 1
@@ -204,8 +213,10 @@ def play(puzzle, config, recorder, clients, prompts):
                        f'Used question-equivalents: {counted}. '
                        + ('This is the mandatory last turn. Return type=final NOW, even if uncertain.'
                           if forced else f'At slot {limit}, you MUST submit a final explanation.'))
-            player_input = json.dumps({'opening': puzzle['opening'], 'visible_history': history,
-                                       'turn_control': control}, ensure_ascii=False)
+            payload = {'opening': puzzle['opening'], 'visible_history': history, 'turn_control': control}
+            if player_context is not None:
+                payload['prior_experience'] = player_context
+            player_input = json.dumps(payload, ensure_ascii=False)
             reply = clients['player'].complete(prompts['player'], player_input)
             action = parse_action(reply.text, forced)
             turn = {'index': len(recorder.turns)+1, **action, 'forced': forced}
@@ -214,8 +225,7 @@ def play(puzzle, config, recorder, clients, prompts):
             recorder.report('running', None)
             if action['type'] == 'question':
                 counted += 1
-                host_input = json.dumps({'active_puzzle': {'opening': puzzle['opening'], 'answer': puzzle['answer']},
-                                         'visible_history': history, 'current_question': action['text']}, ensure_ascii=False)
+                host_input = json.dumps(host_payload(story_context, history, action['text']), ensure_ascii=False)
                 response = clients['host'].complete(prompts['host'], host_input)
                 label = response.text.strip()
                 if label not in LABELS:
@@ -224,7 +234,11 @@ def play(puzzle, config, recorder, clients, prompts):
                 recorder.event('host_feedback', submission=turn['index'], label=label, raw=response.text)
             else:
                 grader_input = json.dumps({'opening': puzzle['opening'], 'reference_answer': puzzle['answer'],
-                                           'rubric': puzzle['rubric'], 'submitted_explanation': action['text']}, ensure_ascii=False)
+                                           'story_context': story_context,
+                                           'rubric': puzzle['rubric'],
+                                           'completion_requirements': puzzle.get('completion_requirements', []),
+                                           'grading_notes': puzzle.get('grading_notes', ''),
+                                           'submitted_explanation': action['text']}, ensure_ascii=False)
                 response = clients['grader'].complete(prompts['grader'], grader_input)
                 grade = grade_final(response.text, puzzle['rubric'])
                 turn.update(grade=grade, label=grade['label'])

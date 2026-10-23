@@ -1,4 +1,6 @@
-# 实验复现与暂停续接
+# 历史实验复现与暂停续接（2026-10-09）
+
+本页只描述旧的三标签、人工转发和 unlimited 暂停记录。当前四标签自动 API／Codex loop、100 次预算及同事运行步骤见 [新版指南](coworker_quickstart.md)。以下历史设置不适用于当前实验。
 
 本仓库保存 host prompt、共享/题目专属示例、秘密答案、solver 指令、评分标准以及实跑日志。当前模型调用使用 Codex 的 collaboration 子 agent；`scripts/` 是标准库 Python 的资料准备、验证和汇总工具，并不是独立 OpenAI API 自动跑局程序。仅 clone 仓库不会自动获得模型调用能力或原会话。
 

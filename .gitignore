@@ -16,6 +16,8 @@ venv/
 !/data/host_packs/USER_ERASER_001.json
 !/data/host_packs/USER_PILLOW_001.json
 !/data/host_packs/APRIL_*.json
+!/data/host_packs/LOOP_TS002_v2.json
+!/data/host_packs/LOOP_TS031_v4.json
 !/data/host_dev/
 /data/host_dev/*
 !/data/host_dev/eraser_v02.json
@@ -24,6 +26,7 @@ venv/
 !/data/public/
 /data/public/*
 !/data/public/puzzles.jsonl
+!/data/public/loop_eraser_pillow.json
 
 # New API experiments contain private answer/rubric snapshots; publish deliberately.
 /runs/api/

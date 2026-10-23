@@ -132,6 +132,20 @@ class GameTests(unittest.TestCase):
         self.assertTrue((rec.folder/'trajectory.jsonl').exists())
         self.assertTrue((rec.folder/'human_review.csv').exists())
 
+    def test_invalid_or_missing_host_pack_is_recorded_before_model_calls(self):
+        for error in (ValueError('host fingerprint mismatch'), FileNotFoundError('missing host pack')):
+            with self.subTest(error=type(error).__name__), patch(
+                    'turtle_loop.engine.build_story_context', side_effect=error):
+                result, rec, clients = self.game(lambda i, x: '{"type":"final","text":"Guess"}')
+            self.assertEqual(result['status'], 'error')
+            self.assertEqual(result['stop_reason'], 'host_context_error')
+            self.assertIsNone(result['success'])
+            self.assertEqual(result['counted_questions'], 0)
+            self.assertEqual(result['submissions'], 0)
+            self.assertTrue(all(not client.inputs for client in clients.values()))
+            self.assertEqual(json.loads((rec.folder/'result.json').read_text())['status'], 'error')
+            self.assertIn('host_context', (rec.folder/'trajectory.jsonl').read_text())
+
     def test_rubric_conflict_marks_review_not_success(self):
         result, _, _ = self.game(lambda i, x: '{"type":"final","text":"Answer"}',
                                  grader=lambda i, x: evaluated(conflict=True))

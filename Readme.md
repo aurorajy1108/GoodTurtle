@@ -1,6 +1,69 @@
 # GoodTurtle — COMP1110
 
+**同事运行入口：[从 clone 到实验的完整指南](docs/coworker_quickstart.md)**。Git 自带可直接运行的 eraser／pillow；完整 50 题用单独交接的数据包。指南覆盖模型配置、所有 sweep 参数、CL、报告和后台运行。
+
+
+2026-10-23 追加：已加入多题重复双 agent 实验入口，冻结 host／rubric／代码快照，按题统计均值与方差，并提供三调用的单 agent 对照及独立提案合并策略。
+
+```sh
+python3 scripts/team_sweep.py --dataset data/annotations/turtle50_v2/private.json \
+  --config configs/loop.codex.json --puzzles TS023,TS032,TS033 \
+  --repeat 3 --strategies solo,solo_reflect,discuss,independent \
+  --workers 3 --out runs/api/my_team_sweep
+```
+
+共 36 局；加 `--dry-run` 零模型调用预检。打开输出目录的 `trajectories.html` 看全部轨迹，`results_zh.md` 看分题结果；每 20 秒更新一次，刷新文件即可看到新记录。[全部参数、策略差异及异常处理](docs/experiment_pipelines.md#多题重复实验冻结快照并发与完整轨迹)。标注仍为 AI 审核待人工确认，新增题目没有对外推送。
+
 研究海龟汤中的经验迁移与双 agent 合作。当前先完成两个基础任务：可靠的 **host** 和首批 **20 道英文题目**。
+
+## 三方审核后的当前版本（2026-10-23）
+
+当前评分数据为本地 `data/annotations/turtle50_v2/private.json`：50 题、161 个评分点，已与原始 49 题 XLSX 对比并经过三个 subagent 独立复核和主 agent 裁决。原始附件不改写；这是 **AI 审核稿，尚未人工确认**。运行下面实验时请使用 v2 数据，不要把旧评分与新分数直接比较。
+
+当前 host 通过 `configs/host_bindings.json` 加载三方审核后的 v3 资料（TS012、TS017、TS022、TS031、TS047），共 478 条示例，其中包括筛选后的审核问答和明确保留的既有校准例。全部 793 条原问答、三个独立答案、裁决和未选入的理由均保留；有歧义或依赖历史的题目不自动作为无上下文 few-shot。
+
+[评分／host 审核总入口](runs/api/20261023_three_review/index.html) · [50 题评分对照](runs/api/20261023_three_review/partial_score_review.html) · [最新单文件 trajectory](runs/api/20261023_three_review_rerun/trajectories.html)。这些私有数据和运行记录仍在本地 Git 忽略目录中。
+
+运行后可重新生成单文件轨迹：
+
+```sh
+python3 scripts/render_trajectories.py runs/api/20261023_three_review_rerun
+```
+
+全部参数：`directory` 为必填实验根目录（含 `positive` / `negative` / `team` 子目录）；`--out` 为可选 HTML 输出路径，默认 `directory/trajectories.html`；`-h / --help` 查看帮助。HTML 内嵌完整提交、反馈、私有评分、A 的转移经验及合作讨论，无外部资源依赖；运行中可重复生成并刷新查看。它是人工审核文件，包含汤底，不应发送给 player。
+
+## 新增：跨题经验迁移与双 agent（2026-10-22）
+
+入口 `python3 scripts/experiment.py`；完整实验设计、全部 CLI 参数与结果解读见 [实验 pipeline 指南](docs/experiment_pipelines.md)。
+
+若使用当前已登录的 Codex 账号，将 `--config` 改为 `configs/loop.codex.json`，无需 API key；当前设置为用户指定的 `gpt-6-luna`（high）。该 backend 的独立参数与隔离方式见实验指南。
+
+```sh
+# 先配置 OPENAI_API_KEY / OPENAI_MODEL，或更换现有 API 配置。
+# A→B 对比直接 B；默认只传 A 的公开轨迹，不揭示标准答案。
+python3 scripts/experiment.py continual --dataset data/annotations/turtle50_v2/private.json \
+  --config configs/loop.openai.json --group G07 --repeat 3
+
+# 单人、轮流合作、双人讨论、自我审查四条件对比。
+python3 scripts/experiment.py team --dataset data/annotations/turtle50_v2/private.json \
+  --config configs/loop.openai.json --puzzle TS002,TS031 --repeat 3
+```
+
+加 `--dry-run` 可不调用 API。每局继续执行四标签、失败交卷计数和最多 100 次提交规则；内部讨论另记调用/token 消耗。每次运行生成配对差异、均值/方差、轨迹和合作过程。本版 continual learning 指上下文经验迁移，没有模型权重更新。
+
+本地 [50 题评分审核稿](data/annotations/turtle50_v1/review.md) 为每题提供完整解答清单、满分/半分/零分条件，共 164 个评分点；[运行数据](data/annotations/turtle50_v1/private.json) 可直接用于新旧 loop。新增 TS040 已登记网络来源。标注均待人工审核、数据保持本地，远端 clone 不包含这些文件；原 XLSX 未改写。[关系组配置](configs/transfer_groups.json) 保存用户提供的 28 个组，正负相关仍是待检验假设。
+
+2026-10-23 已修正 host 接入：通过 `configs/host_bindings.json` 按题目 ID 与汤面／汤底 SHA-256 绑定专属资料，橡皮和 pillow 复用旧资料并应用四标签修订；窗户题、火警题补充专属案例。host 与 grader 读取同一个 `host_context.json` 私有快照，player 不可见。绑定的原文变化或资料文件缺失会报错，不会静默串题或退回空示例。目前共 12 题有专属案例（含新增 TS023、TS032、TS033、TS035、TS036、TS049），其余题使用原文与已有完成清单；所有新增标签仍待人工审核。详见 [host 修正与回归方法](docs/host_repair_v2.md)。
+
+已完成本地 GPT-6 Luna 小规模试跑：[中文结果](runs/api/20261022_codex_rerun/results_zh.md)、[完整轨迹入口](runs/api/20261022_codex_rerun/index.html)、[审核疑点](runs/api/20261022_codex_rerun/audit_notes.md)。原 20 局计划因 host／评分一致性问题缩减为 8 局；每条件仅一次，不能估计样本方差。这些本地运行资料位于 Git 忽略的 `runs/api/`。
+
+可从已有记录重建试跑汇总（不调用模型）：
+
+```sh
+python3 scripts/summarize_pilot.py runs/api/20261022_codex_rerun
+```
+
+`scripts/summarize_pilot.py` 的全部参数：`directory` 为必填位置参数，指向包含 `positive`、`negative`、`team` 中一个或多个实验子目录的根目录，读取其中的计划、运行明细、结果及轨迹；`-h / --help` 显示帮助。它重写该目录的 `summary.md`、`pilot_summary.json`、`submission_scores.csv` 和 `index.html`，保留原始轨迹与评分；存在 `scope_amendment.json` 时同时展示调整后的试跑范围。
 
 ## 四标签 API 对局：运行方式与全部参数
 
@@ -181,7 +244,7 @@ host / player / grader 对象均仅允许下列九个字段：
 
 ### 6. Host、提交和计分规则
 
-三个角色分别使用 [host prompt](prompts/loop_host_v1.txt)、[player prompt](prompts/loop_player_v1.txt)、[grader prompt](prompts/loop_grader_v1.txt)。host 根据汤面、汤底和公开历史回答；player 只看汤面、自己的提交和四标签反馈。每次调用重传完整可见历史，不继续供应商私有 reasoning 状态，不使用工具。表格没有逐题经过审核的大量问答示例，新 loop 不能据此声称已经达到高准确性。
+三个角色分别使用 [host prompt](prompts/loop_host_v1.txt)、[player prompt](prompts/loop_player_v1.txt)、[grader prompt](prompts/loop_grader_v1.txt)。host 根据当前题的统一私有事实、专属示例（如已配置）和公开历史回答；grader 使用同一事实快照与评分规则；player 只看汤面、自己的提交和四标签反馈。每次调用重传完整可见历史，不继续供应商私有 reasoning 状态，不使用工具。表格没有逐题经过审核的大量问答示例，新 loop 不能据此声称已经达到高准确性。
 
 普通问题由 host 输出一个标签；交卷由 grader 私下评分，再由程序生成相同四标签之一。player **看不到得分、缺失项或解释**。player 的响应协议为 `{"type":"question","text":"..."}` 或 `{"type":"final","text":"..."}`，最终答案应在一次 final 中写完整；非法格式保留日志并报错。
 
@@ -273,6 +336,8 @@ python3 -m unittest discover -s tests -v
 ## 非英语来源筛选（2026-10-09）
 
 新增 [6 道日语来源候选及英文转述](docs/nonenglish_candidates.md)，与原有 20 道 AI 草稿分开保存。[本批计数及筛选结果](runs/2026-10-09_nonenglish_screening/summary.md)持续更新。每题实跑一次，只有完整解出前超过 30 问、且 host 无重大错误的题才暂定保留；未完成和 host 污染的局不冒充难题。
+
+另录入用户提供的中文来源题 [CN001：条件](docs/nonenglish_candidates.md#cn001--条件用户新增未试跑)，包含 [60 条专属 host 示例](data/host_packs/CN001.json)。原 sample 中的自杀、主动遗体捐献及女生亲自解剖均未获汤底支持，已按未知事实标注。此题仅在本地研究题库中，尚未试跑，也未加入发布 allowlist。可用 `python3 scripts/prepare.py host CN001 --local` 生成该题 host 消息。
 
 [Host v0.5.1](docs/host_v05.md)统一增加身份/容器、因果关系、时点、信念/事实、上位概念、保证/可能、否定一致性等规则；本批每题配 41–57 条专属示例。先做实际模型校准，再冻结资料运行；这些标签与轨迹仍需人工审核。
 
