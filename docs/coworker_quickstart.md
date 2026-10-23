@@ -19,23 +19,23 @@ python3 scripts/play.py demo --out runs/api/my_demo
 ```sh
 # 已有工作副本使用 git pull；新同事直接 clone 即可。
 git pull --ff-only
-python3 scripts/play.py inspect --dataset data/annotations/turtle50_v2/private.json
+python3 scripts/play.py inspect --dataset data/annotations/turtle50_v3/private.json
 ```
 
 当前仓库包含完整 **50 题、161 个评分点**，无需下载 XLSX 或单独的数据 ZIP：
 
-- `data/annotations/turtle50_v2/private.json`：每题英文汤面、汤底、完整解答要求、partial score 权重和满分／半分／零分规则。
-- `data/annotations/turtle50_v2/review.md`：逐题可读标注。
-- `configs/host_bindings.json` 和它引用的所有 `data/host_packs/` 文件：当前 15 题专属示例；其余题用参考答案和完成清单，全部可运行。
-- `data/public/loop_eraser_pillow.json`：可选的 TS002／TS031 两题小子集。
+- `data/annotations/turtle50_v3/private.json`：每题英文汤面、汤底、完整解答要求、partial score 权重和满分／半分／零分规则。
+- `data/annotations/turtle50_v3/review.md`：逐题可读标注。
+- `configs/host_bindings.json` 和它引用的所有 `data/host_packs/` 文件：当前 50 题均有基础示例；新补示例仍需真实历史和人工验证。
+- 历史 `data/public/loop_eraser_pillow.json` 保留供旧数据查阅；新实验用 v3 数据配合题号筛选。
 
 `private.json` 中的 private 指“对 player 保密”，不是未上传。控制器会隔离答案和评分，玩家只看到汤面及四标签反馈。标注经过 AI 审核，仍待人工确认，不能当作已验证的人工 gold。
 
-模型账号必须由运行者自己配置。原始 49 题 XLSX 不是运行依赖；直接使用仓库中的 v2 JSON，避免旧表格和新 host 绑定版本不一致。
+模型账号必须由运行者自己配置。原始 49 题 XLSX 不是运行依赖；直接使用仓库中的 v3 JSON，避免旧表格和新 host 绑定版本不一致。
 
 如果此前解压过旧数据包，`git pull` 提示未跟踪文件将被覆盖时，先备份提示中的文件或使用新的 clone，不要强制清理。旧 ZIP 不再是运行前置条件。
 
-可选的离线传输工具仍可用：`python3 scripts/experiment_bundle.py export --dataset data/annotations/turtle50_v2/private.json --out /tmp/new_bundle.zip`；`--dataset` 指源 JSON/XLSX，`--out` 指新 ZIP（父目录需存在）。`python3 scripts/experiment_bundle.py verify --archive /tmp/new_bundle.zip` 检查哈希及绑定版本，不解压、不调用模型；两子命令支持 `-h / --help`。不需要为正常 clone/pull 运行这些命令。
+可选的离线传输工具仍可用：`python3 scripts/experiment_bundle.py export --dataset data/annotations/turtle50_v3/private.json --out /tmp/new_bundle.zip`；`--dataset` 指源 JSON/XLSX，`--out` 指新 ZIP（父目录需存在）。`python3 scripts/experiment_bundle.py verify --archive /tmp/new_bundle.zip` 检查哈希及绑定版本，不解压、不调用模型；两子命令支持 `-h / --help`。不需要为正常 clone/pull 运行这些命令。
 
 ## 3. 模型配置：任选一种
 
@@ -68,16 +68,18 @@ export ANTHROPIC_MODEL='你账号可用的准确模型 ID'
 
 该后端通过官方 `codex exec` 调用，工具禁用，每次为新会话。部分 CLI 版本可能不支持本项目使用的参数；若启动报 unsupported option，请查看本机 `codex exec --help` 与 `api_calls.jsonl`，不要把失败当作模型成绩。CLI 的模型 metadata fallback 警告不证明实际换了模型；实际模型名若没有由事件返回，报告保持未独立核验。
 
+新 host 每次普通提问内部调用 2 次，分歧时 3 次；只有最终四标签进入公开历史。证据格式修复最多增加一次 grader 调用。问题计数不变，调用成本增加。参见 [host 修复与回归检查](host_repair_v5.md)。
+
 ## 4. 跑一局（先 dry-run，再真实调用）
 
 以下用 OpenAI API 配置举例；也可把配置路径替换成上面其他配置。即使 dry-run，配置中的模型环境变量也要设置，但不需要真实 key；Codex backend 还会检查 CLI 是否安装。
 
 ```sh
-python3 scripts/play.py run --dataset data/public/loop_eraser_pillow.json \
+python3 scripts/play.py run --dataset data/annotations/turtle50_v3/private.json \
   --puzzle TS031 --config configs/loop.openai.json --dry-run \
   --out runs/api/eraser_check
 
-python3 scripts/play.py run --dataset data/public/loop_eraser_pillow.json \
+python3 scripts/play.py run --dataset data/annotations/turtle50_v3/private.json \
   --puzzle TS031 --config configs/loop.openai.json \
   --out runs/api/eraser_real
 ```
@@ -88,19 +90,19 @@ python3 scripts/play.py run --dataset data/public/loop_eraser_pillow.json \
 
 ```sh
 # clone/pull 后：先不花模型调用检查 36 局计划。
-python3 scripts/team_sweep.py --dataset data/annotations/turtle50_v2/private.json \
+python3 scripts/team_sweep.py --dataset data/annotations/turtle50_v3/private.json \
   --config configs/loop.openai.json --puzzles TS023,TS032,TS033 \
   --repeat 3 --strategies solo,solo_reflect,discuss,independent \
   --workers 3 --dry-run --out runs/api/team_check
 
 # 真正开始；每题每条件 3 局，总计 36 局。
-python3 scripts/team_sweep.py --dataset data/annotations/turtle50_v2/private.json \
+python3 scripts/team_sweep.py --dataset data/annotations/turtle50_v3/private.json \
   --config configs/loop.openai.json --puzzles TS023,TS032,TS033 \
   --repeat 3 --strategies solo,solo_reflect,discuss,independent \
   --workers 3 --out runs/api/team_real
 ```
 
-新增另一批可将 `--puzzles` 改成 `TS035,TS036,TS049` 并换输出目录。想用两题小子集可改为 `--dataset data/public/loop_eraser_pillow.json --puzzles TS002,TS031`，此时总计 24 局。
+新增另一批可将 `--puzzles` 改成 `TS035,TS036,TS049` 并换输出目录。想用两题小子集可改为 `--dataset data/annotations/turtle50_v3/private.json --puzzles TS002,TS031`，此时总计 24 局。
 
 | 条件 | 每轮 solver 调用 | 行为 |
 | --- | ---: | --- |
@@ -137,7 +139,7 @@ python3 scripts/team_sweep.py --dataset data/annotations/turtle50_v2/private.jso
 ## 6. Continual learning 对照
 
 ```sh
-python3 scripts/experiment.py continual --dataset data/annotations/turtle50_v2/private.json \
+python3 scripts/experiment.py continual --dataset data/annotations/turtle50_v3/private.json \
   --config configs/loop.openai.json --group G07 --pair TS022:TS047 \
   --memory transcript --source-feedback none --repeat 3 \
   --out runs/api/cl_real
@@ -156,7 +158,7 @@ python3 scripts/experiment.py continual --dataset data/annotations/turtle50_v2/p
 
 ```sh
 # 可选：在已有运行环境中让终端退出后仍运行。
-nohup python3 scripts/team_sweep.py --dataset data/annotations/turtle50_v2/private.json \
+nohup python3 scripts/team_sweep.py --dataset data/annotations/turtle50_v3/private.json \
   --config configs/loop.openai.json --puzzles TS035,TS036,TS049 --repeat 3 \
   --workers 1 --out runs/api/team_background > team_background.log 2>&1 &
 

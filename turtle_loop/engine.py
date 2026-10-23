@@ -1,6 +1,7 @@
 """Deterministic counting, score calculation and public/private context separation."""
 import csv
 import html
+import hashlib
 import json
 import math
 import statistics
@@ -11,7 +12,10 @@ from decimal import Decimal
 from pathlib import Path
 
 from .providers import APIError
-from .host_context import build_story_context, host_payload
+from .host_context import build_story_context, host_payload, story_fingerprint, grading_fingerprint
+from .coverage import PROTOCOL, fact_specs, requirement_specs, constrain
+from .host import answer_question
+from .grader import evaluate_final
 
 LABELS = {'yes', 'no', 'yes and no', 'irrelevant'}
 ROOT = Path(__file__).resolve().parents[1]
@@ -46,13 +50,14 @@ def parse_action(text, force_final=False):
     return value
 
 
-def grade_final(text, rubric):
+def grade_final(text, rubric, requirements=None, submitted_explanation=None):
     try:
         value = json.loads(text)
     except (ValueError, TypeError):
         raise ProtocolError('Evaluator must return JSON, without markdown') from None
     flags = {'material_contradiction', 'irrelevant', 'rubric_conflict'}
-    if not isinstance(value, dict) or set(value) != flags | {'checkpoints', 'full_solution', 'completion_note'}:
+    coverage_fields = {'fact_coverage', 'requirement_coverage', 'contradictions'} if requirements is not None else set()
+    if not isinstance(value, dict) or set(value) != flags | {'checkpoints', 'full_solution', 'completion_note'} | coverage_fields:
         raise ProtocolError('Invalid evaluator fields')
     if any(type(value[k]) is not bool for k in flags | {'full_solution'}):
         raise ProtocolError('Evaluator flags must be JSON booleans')
@@ -74,6 +79,16 @@ def grade_final(text, rubric):
         indexed[row['id']] = row
     if set(indexed) != {r['id'] for r in rubric}:
         raise ProtocolError('Evaluator returned wrong checkpoint IDs')
+    corrections = []
+    if requirements is not None:
+        if not isinstance(submitted_explanation, str):
+            raise ProtocolError('Coverage grading requires the actual submitted explanation')
+        try:
+            value, corrections = constrain(value, rubric, requirements, submitted_explanation)
+        except ValueError as exc:
+            raise ProtocolError(str(exc)) from None
+        checkpoints = value['checkpoints']
+        indexed = {row['id']: row for row in checkpoints}
     score = sum(Decimal(str(r['weight'])) * Decimal(str(indexed[r['id']]['credit'])) for r in rubric)
     if value['irrelevant'] and score != 0:
         raise ProtocolError('Irrelevant answer cannot also receive positive credit')
@@ -81,7 +96,10 @@ def grade_final(text, rubric):
                 and not any(value[k] for k in flags))
     label = ('yes' if complete else 'irrelevant' if value['irrelevant'] else
              'yes and no' if score > 0 or value['rubric_conflict'] else 'no')
-    return {**value, 'partial_score': float(score), 'complete': complete, 'label': label}
+    result = {**value, 'partial_score': float(score), 'complete': complete, 'label': label}
+    if requirements is not None:
+        result.update(grading_protocol=PROTOCOL, controller_corrections=corrections)
+    return result
 
 
 class Recorder:
@@ -92,6 +110,12 @@ class Recorder:
         self.opening = puzzle['opening']
         self.simulation = config.get('mode') == 'scripted_demo_NOT_model_performance'
         self.start = time.monotonic()
+        self.versions = {'story_sha256':story_fingerprint(puzzle), 'grading_sha256':grading_fingerprint(puzzle),
+                         'grading_protocol':puzzle.get('grading_protocol', 'legacy'),
+                         'prompts_sha256':hashlib.sha256(json.dumps(prompts,sort_keys=True).encode()).hexdigest()}
+        self.versions['controller_sha256'] = hashlib.sha256(b''.join(
+            (ROOT/'turtle_loop'/name).read_bytes() for name in
+            ('engine.py','host.py','host_context.py','coverage.py','grader.py','providers.py','codex_client.py'))).hexdigest()
         dump(self.folder / 'puzzle_private.json', puzzle)
         dump(self.folder / 'config.json', config)
         dump(self.folder / 'prompts.json', prompts)
@@ -139,7 +163,8 @@ class Recorder:
                   'best_partial_score': max((g['partial_score'] for g in graded), default=None),
                   'latest_final': finals[-1]['text'] if finals else None,
                   'latest_grade': last, 'elapsed_seconds': time.monotonic()-self.start,
-                  'usage': usage, 'error': error, 'human_review_status': 'pending'}
+                  'usage': usage, 'error': error, 'human_review_status': 'pending',
+                  'evaluation_versions': self.versions}
         dump(self.folder / 'result.json', result)
         self.render(result)
         if status != 'running' and not (self.folder/'human_review.csv').exists():
@@ -188,7 +213,7 @@ class Recorder:
 
 
 def load_prompts():
-    return {role: (ROOT / f'prompts/loop_{role}_v1.txt').read_text() for role in ('player', 'host', 'grader')}
+    return {role: (ROOT / f'prompts/loop_{role}_v1.txt').read_text() for role in ('player', 'host', 'grader', 'host_review')}
 
 
 def play(puzzle, config, recorder, clients, prompts, player_context=None):
@@ -202,6 +227,8 @@ def play(puzzle, config, recorder, clients, prompts, player_context=None):
     # permanently running. No model calls have been made at this point.
     try:
         story_context = build_story_context(puzzle)
+        recorder.versions['host_context_sha256'] = story_context['context_sha256']
+        recorder.versions['host_binding_version'] = story_context.get('binding_version')
         dump(recorder.folder / 'host_context.json', story_context)
     except (ValueError, KeyError, OSError) as exc:
         recorder.event('error', phase='host_context', error_type=type(exc).__name__, message=str(exc))
@@ -225,24 +252,31 @@ def play(puzzle, config, recorder, clients, prompts, player_context=None):
             recorder.report('running', None)
             if action['type'] == 'question':
                 counted += 1
-                host_input = json.dumps(host_payload(story_context, history, action['text']), ensure_ascii=False)
-                response = clients['host'].complete(prompts['host'], host_input)
+                response = answer_question(clients['host'], prompts['host'],
+                                           host_payload(story_context, history, action['text']),
+                                           prompts.get('host_review',''),
+                                           lambda decision:recorder.event('host_review', submission=turn['index'], **decision))
                 label = response.text.strip()
                 if label not in LABELS:
                     raise ProtocolError('Host returned an invalid label; raw output saved in api_calls.jsonl')
                 turn['label'] = label
                 recorder.event('host_feedback', submission=turn['index'], label=label, raw=response.text)
             else:
-                grader_input = json.dumps({'opening': puzzle['opening'], 'reference_answer': puzzle['answer'],
+                grader_payload = {'opening': puzzle['opening'], 'reference_answer': puzzle['answer'],
                                            'story_context': story_context,
                                            'rubric': puzzle['rubric'],
                                            'completion_requirements': puzzle.get('completion_requirements', []),
                                            'grading_notes': puzzle.get('grading_notes', ''),
-                                           'submitted_explanation': action['text']}, ensure_ascii=False)
-                response = clients['grader'].complete(prompts['grader'], grader_input)
-                grade = grade_final(response.text, puzzle['rubric'])
+                                           'submitted_explanation': action['text']}
+                coverage_mode = puzzle.get('grading_protocol') == PROTOCOL
+                if coverage_mode:
+                    grader_payload.update(grading_protocol=PROTOCOL,
+                                          required_facts=fact_specs(puzzle['rubric']),
+                                          required_completion=requirement_specs(puzzle.get('completion_requirements', [])))
+                grade, raw_grade = evaluate_final(clients['grader'],prompts['grader'],grader_payload,
+                                                 lambda repair:recorder.event('grader_evidence_repair', submission=turn['index'], **repair))
                 turn.update(grade=grade, label=grade['label'])
-                recorder.event('evaluation', submission=turn['index'], **grade, raw=response.text)
+                recorder.event('evaluation', submission=turn['index'], **grade, raw=raw_grade)
                 if not grade['complete']:
                     counted += 1
             history.append({'type': action['type'], 'text': action['text'], 'feedback': turn['label']})

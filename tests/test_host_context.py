@@ -76,3 +76,20 @@ class HostContextTests(unittest.TestCase):
         public = json.dumps(clients['player'].inputs)
         for marker in ('PRIVATE_', 'SECRET_', 'canonical_facts', 'host_examples'):
             self.assertNotIn(marker, public)
+
+    def test_rubric_and_notes_changes_invalidate_context_hash_without_story_change(self):
+        old = build_story_context(self.puzzle, self.root)
+        for field in ('rubric', 'grading_notes'):
+            changed = copy.deepcopy(self.puzzle)
+            if field == 'rubric': changed['rubric'][0]['criterion'] = 'NEW_CRITERION'
+            else: changed[field] = 'NEW_SCORING_BOUNDARY'
+            new = build_story_context(changed, self.root)
+            self.assertEqual(old['story_sha256'], new['story_sha256'])
+            self.assertNotEqual(old['grading_sha256'],new['grading_sha256'])
+            self.assertNotEqual(old['context_sha256'],new['context_sha256'])
+
+    def test_exact_example_label_conflicts_rejected(self):
+        self.binding['host_examples']=[{'case_id':'E2','question':'What colour?', 'answer':'no'}]
+        self.write_binding()
+        with self.assertRaisesRegex(ValueError, 'Conflicting labels'):
+            build_story_context(self.puzzle,self.root)

@@ -1,0 +1,2746 @@
+[
+  {
+    "id": "C01",
+    "puzzle_id": "TS023",
+    "question": "At the moment the prisoner first slipped into the coffin, was his promised rescuer already the dead occupant?",
+    "expected": "yes",
+    "history": [],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "novel_wording_diagnostic"
+  },
+  {
+    "id": "C02",
+    "puzzle_id": "TS023",
+    "question": "Did the guard physically place the prisoner next to his own corpse before arranging to dig him out?",
+    "expected": "no",
+    "history": [],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "novel_wording_diagnostic"
+  },
+  {
+    "id": "C02_history",
+    "puzzle_id": "TS023",
+    "question": "Did the guard physically place the prisoner next to his own corpse before arranging to dig him out?",
+    "expected": "no",
+    "history": [
+      {
+        "type": "question",
+        "text": "Was a guard involved in arranging the escape?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did that guard personally put the prisoner inside the coffin?",
+        "feedback": "yes"
+      }
+    ],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "synthetic_error_history"
+  },
+  {
+    "id": "C03",
+    "puzzle_id": "TS023",
+    "question": "Did he become hopeless because he realized that the person scheduled to unearth him could no longer act?",
+    "expected": "yes",
+    "history": [],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "novel_wording_diagnostic"
+  },
+  {
+    "id": "C04",
+    "puzzle_id": "TS032",
+    "question": "When they started dating at university, did A already know that B came from the family affected by the reported murder?",
+    "expected": "yes",
+    "history": [],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "novel_wording_diagnostic"
+  },
+  {
+    "id": "C05",
+    "puzzle_id": "TS032",
+    "question": "Did B leave because B discovered who had handed the murder photograph to the authorities?",
+    "expected": "no",
+    "history": [],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "novel_wording_diagnostic"
+  },
+  {
+    "id": "C05_history",
+    "puzzle_id": "TS032",
+    "question": "Did B leave because B discovered who had handed the murder photograph to the authorities?",
+    "expected": "no",
+    "history": [
+      {
+        "type": "question",
+        "text": "Did B eventually recognize the former classmate?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "So B also discovered that A had reported the parent?",
+        "feedback": "yes"
+      }
+    ],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "synthetic_error_history"
+  },
+  {
+    "id": "C06",
+    "puzzle_id": "TS032",
+    "question": "Did B eventually return after hearing the confession on the news?",
+    "expected": "irrelevant",
+    "history": [],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "novel_wording_diagnostic"
+  },
+  {
+    "id": "C07",
+    "puzzle_id": "TS033",
+    "question": "Did he initially put the full fifty million yen of spendable money in the bag?",
+    "expected": "no",
+    "history": [],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "novel_wording_diagnostic"
+  },
+  {
+    "id": "C08",
+    "puzzle_id": "TS033",
+    "question": "Was adding genuine money intended to make the kidnappers mistake the remaining paper-filled bundles for real money?",
+    "expected": "yes",
+    "history": [],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "novel_wording_diagnostic"
+  },
+  {
+    "id": "C09",
+    "puzzle_id": "TS033",
+    "question": "Did the recipient demand an additional transaction fee on top of the ransom, causing him to add money?",
+    "expected": "no",
+    "history": [],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "novel_wording_diagnostic"
+  },
+  {
+    "id": "C09_history",
+    "puzzle_id": "TS033",
+    "question": "Did the recipient demand an additional transaction fee on top of the ransom, causing him to add money?",
+    "expected": "no",
+    "history": [
+      {
+        "type": "question",
+        "text": "Was the money intended for a ransom payment?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did the recipient require an extra fee for a second transaction?",
+        "feedback": "yes"
+      }
+    ],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "synthetic_error_history"
+  },
+  {
+    "id": "C10",
+    "puzzle_id": "TS036",
+    "question": "Does the photographed completeness of Umio’s bones, by itself, identify the chemical means of his death?",
+    "expected": "no",
+    "history": [],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "novel_wording_diagnostic"
+  },
+  {
+    "id": "C11",
+    "puzzle_id": "TS036",
+    "question": "Is the apparent physical advantage a result of being denied the usual treatment of a dead body?",
+    "expected": "yes",
+    "history": [],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "novel_wording_diagnostic"
+  },
+  {
+    "id": "C12",
+    "puzzle_id": "TS036",
+    "question": "Were Kameda’s bones broken because Umio beat him to death in their struggle?",
+    "expected": "no",
+    "history": [],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "novel_wording_diagnostic"
+  },
+  {
+    "id": "C13",
+    "puzzle_id": "TS009",
+    "question": "Did the driver turn on the wipers as a response to rain without first realizing that eggs were lodged there?",
+    "expected": "yes",
+    "history": [],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "novel_wording_diagnostic"
+  },
+  {
+    "id": "C14",
+    "puzzle_id": "TS009",
+    "question": "Was an electrical or mechanical failure of the wiper motor the stated reason the driver crashed?",
+    "expected": "no",
+    "history": [],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "novel_wording_diagnostic"
+  },
+  {
+    "id": "C15",
+    "puzzle_id": "TS009",
+    "question": "Does reconstructing the accident require choosing whether exactly two eggs or exactly three eggs escaped the bag?",
+    "expected": "no",
+    "history": [],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "novel_wording_diagnostic"
+  },
+  {
+    "id": "TS023_r01_independent_Q12",
+    "puzzle_id": "TS023",
+    "question": "Was the man aboard a ship or other watercraft when he struck the match?",
+    "expected": "no",
+    "history": [
+      {
+        "type": "question",
+        "text": "Did the matchlight reveal another person to him?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did he believe the person revealed by the match was dead?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the person he saw actually dead at that moment?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person someone whose death the man had caused?",
+        "feedback": "yes and no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man intentionally cause the person’s death?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person killed in an accident that the man had unintentionally caused?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man die by suicide after recognizing the dead person?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man’s actions indirectly contribute to the dead person’s death, even though he neither intended it nor directly caused it in an accident?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did he die from a physical danger or medical condition rather than choosing to end his own life?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did seeing the dead person trigger a fatal heart attack?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person someone the man knew personally?",
+        "feedback": "yes"
+      }
+    ],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "frozen_real_history_repair"
+  },
+  {
+    "id": "TS023_r01_independent_Q73",
+    "puzzle_id": "TS023",
+    "question": "Did the officer die before the coffin was placed in the tomb?",
+    "expected": "yes",
+    "history": [
+      {
+        "type": "question",
+        "text": "Did the matchlight reveal another person to him?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did he believe the person revealed by the match was dead?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the person he saw actually dead at that moment?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person someone whose death the man had caused?",
+        "feedback": "yes and no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man intentionally cause the person’s death?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person killed in an accident that the man had unintentionally caused?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man die by suicide after recognizing the dead person?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man’s actions indirectly contribute to the dead person’s death, even though he neither intended it nor directly caused it in an accident?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did he die from a physical danger or medical condition rather than choosing to end his own life?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did seeing the dead person trigger a fatal heart attack?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person someone the man knew personally?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the man aboard a ship or other watercraft when he struck the match?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Did the match ignite a fire or explosion that physically killed the man?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the man already in a life-threatening physical situation before he struck the match?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was he trapped in an enclosed place with a limited supply of breathable air?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person’s body in the same air-limited enclosed space as the man when he struck the match?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the man buried alive in a coffin or tomb with the dead person’s body?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was he buried alive because others mistakenly believed he was dead?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he knowingly and intentionally sealed inside the tomb while still alive?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the man accidentally trapped in the tomb while still alive?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did the man die from suffocation due to the limited breathable air in the tomb?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was he in the tomb to steal something?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person a family member of the man?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person already buried in the tomb before the man became trapped there?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he inside the tomb as part of the burial process when the dead person's body was placed there?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man and the dead person enter the tomb together before the man became trapped there?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the person alive when they entered the tomb together?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man bring the dead person’s body into the tomb himself?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the dead person die in the same incident that left the man trapped in the tomb?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he trapped because the tomb’s entrance became blocked, preventing him from getting out?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did the man enter the tomb while accompanying someone who was carrying the dead person’s body?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person inside a coffin when the man entered the tomb?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did he enter the tomb to visit or pay his respects to the person in the coffin?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man enter the tomb to hide from someone or something outside?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he inside the tomb as part of his occupation?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man enter the tomb to retrieve an object that had been buried with the person in the coffin?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man enter the tomb as a passenger in a vehicle that was transporting the coffin?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did he enter the tomb by accidentally falling into it?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man know he was entering a tomb when he went inside?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did he enter the place while exploring it, not realizing it was a tomb?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the man unconscious when someone brought him into the tomb?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the man transported into the tomb by some means other than entering it on foot?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was he transported into the tomb in a vehicle?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was the man transported into the tomb inside a coffin?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the man transported into the tomb inside the same coffin as the dead person?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did the people who placed or transported the coffin know that the man was alive inside it?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the man placed inside the coffin alongside the dead person before it was transported to the tomb?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the man hiding inside the coffin when it was prepared for the dead person?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Did the man willingly get into the coffin alongside the dead person?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did he willingly get into the coffin as part of a plan to fake his own death?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did he willingly get into the coffin as part of a cultural or religious funeral ritual?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did he get into the coffin as part of a practical joke or bet?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did he get into the coffin in order to be transported somewhere without others knowing he was inside?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was he hiding in the coffin to escape from the authorities?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the man wanted by the authorities for the dead person’s death?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person an accomplice who was also fleeing from the authorities with the man?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man first recognize who the dead person was when the match illuminated their face?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person a law-enforcement officer?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Had the man previously encountered the dead officer while fleeing from the authorities?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Had the dead officer previously arrested the man?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead officer killed by someone other than the man?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead officer murdered?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was the coffin being transported for the officer’s burial, independently of the man’s escape plan?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "When he struck the match, was he still inside the coffin?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did someone help him hide in the coffin and intend to let him out after it reached the tomb?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the person who was supposed to free him unable to do so because the tomb entrance was blocked?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the helper fail to free him because the coffin remained sealed or otherwise inaccessible to them?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the helper at the tomb when the man struck the match?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the helper able to release the man but chose not to?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the helper dead at the time the man struck the match?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead helper the same person as the dead law-enforcement officer in the coffin?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead officer himself the person who helped the man hide in the coffin and intended to release him later?",
+        "feedback": "yes"
+      }
+    ],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "frozen_real_history_repair"
+  },
+  {
+    "id": "TS023_r01_independent_Q74",
+    "puzzle_id": "TS023",
+    "question": "Did the officer die after the man got into the coffin, while they were being transported to the tomb?",
+    "expected": "no",
+    "history": [
+      {
+        "type": "question",
+        "text": "Did the matchlight reveal another person to him?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did he believe the person revealed by the match was dead?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the person he saw actually dead at that moment?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person someone whose death the man had caused?",
+        "feedback": "yes and no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man intentionally cause the person’s death?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person killed in an accident that the man had unintentionally caused?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man die by suicide after recognizing the dead person?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man’s actions indirectly contribute to the dead person’s death, even though he neither intended it nor directly caused it in an accident?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did he die from a physical danger or medical condition rather than choosing to end his own life?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did seeing the dead person trigger a fatal heart attack?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person someone the man knew personally?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the man aboard a ship or other watercraft when he struck the match?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Did the match ignite a fire or explosion that physically killed the man?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the man already in a life-threatening physical situation before he struck the match?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was he trapped in an enclosed place with a limited supply of breathable air?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person’s body in the same air-limited enclosed space as the man when he struck the match?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the man buried alive in a coffin or tomb with the dead person’s body?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was he buried alive because others mistakenly believed he was dead?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he knowingly and intentionally sealed inside the tomb while still alive?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the man accidentally trapped in the tomb while still alive?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did the man die from suffocation due to the limited breathable air in the tomb?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was he in the tomb to steal something?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person a family member of the man?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person already buried in the tomb before the man became trapped there?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he inside the tomb as part of the burial process when the dead person's body was placed there?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man and the dead person enter the tomb together before the man became trapped there?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the person alive when they entered the tomb together?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man bring the dead person’s body into the tomb himself?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the dead person die in the same incident that left the man trapped in the tomb?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he trapped because the tomb’s entrance became blocked, preventing him from getting out?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did the man enter the tomb while accompanying someone who was carrying the dead person’s body?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person inside a coffin when the man entered the tomb?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did he enter the tomb to visit or pay his respects to the person in the coffin?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man enter the tomb to hide from someone or something outside?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he inside the tomb as part of his occupation?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man enter the tomb to retrieve an object that had been buried with the person in the coffin?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man enter the tomb as a passenger in a vehicle that was transporting the coffin?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did he enter the tomb by accidentally falling into it?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man know he was entering a tomb when he went inside?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did he enter the place while exploring it, not realizing it was a tomb?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the man unconscious when someone brought him into the tomb?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the man transported into the tomb by some means other than entering it on foot?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was he transported into the tomb in a vehicle?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was the man transported into the tomb inside a coffin?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the man transported into the tomb inside the same coffin as the dead person?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did the people who placed or transported the coffin know that the man was alive inside it?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the man placed inside the coffin alongside the dead person before it was transported to the tomb?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the man hiding inside the coffin when it was prepared for the dead person?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Did the man willingly get into the coffin alongside the dead person?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did he willingly get into the coffin as part of a plan to fake his own death?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did he willingly get into the coffin as part of a cultural or religious funeral ritual?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did he get into the coffin as part of a practical joke or bet?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did he get into the coffin in order to be transported somewhere without others knowing he was inside?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was he hiding in the coffin to escape from the authorities?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the man wanted by the authorities for the dead person’s death?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person an accomplice who was also fleeing from the authorities with the man?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man first recognize who the dead person was when the match illuminated their face?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person a law-enforcement officer?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Had the man previously encountered the dead officer while fleeing from the authorities?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Had the dead officer previously arrested the man?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead officer killed by someone other than the man?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead officer murdered?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was the coffin being transported for the officer’s burial, independently of the man’s escape plan?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "When he struck the match, was he still inside the coffin?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did someone help him hide in the coffin and intend to let him out after it reached the tomb?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the person who was supposed to free him unable to do so because the tomb entrance was blocked?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the helper fail to free him because the coffin remained sealed or otherwise inaccessible to them?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the helper at the tomb when the man struck the match?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the helper able to release the man but chose not to?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the helper dead at the time the man struck the match?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead helper the same person as the dead law-enforcement officer in the coffin?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead officer himself the person who helped the man hide in the coffin and intended to release him later?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did the officer die before the coffin was placed in the tomb?",
+        "feedback": "irrelevant"
+      }
+    ],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "frozen_real_history_repair"
+  },
+  {
+    "id": "TS023_r01_solo_Q35",
+    "puzzle_id": "TS023",
+    "question": "Did the man enter the coffin voluntarily, knowing that the dead person was already inside?",
+    "expected": "yes",
+    "history": [
+      {
+        "type": "question",
+        "text": "Did the match reveal something that directly caused the man’s death?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man die because of a pre-existing physical danger or condition, rather than from what the match revealed?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the man already in a situation where he was likely to die soon, even before striking the match?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the man in a vehicle or vessel when he struck the match?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the man in a building or other enclosed structure when he struck the match?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was he trapped underground, such as in a mine or tunnel?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was another person physically present with him underground?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the other person already dead when the man struck the match?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did he recognize the dead person as someone personally known to him?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was he dying from lack of oxygen or another breathable-air problem?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the breathable-air problem caused by poisonous gas in the mine?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the mine’s breathable air depleted because the trapped men had been consuming the limited oxygen in a sealed or poorly ventilated space?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he suffocating because carbon dioxide or another non-poisonous gas had displaced the oxygen in the mine?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he unable to breathe because an injury or physical obstruction was restricting his breathing?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the mine’s oxygen deficiency caused by a natural process underground, such as oxygen being consumed by minerals or displaced by air pressure changes?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was water flooding the underground space, leaving him without enough air to breathe?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Had a fire or smoldering combustion underground consumed the breathable oxygen before he struck the match?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Had someone deliberately removed or consumed the breathable oxygen in the underground space before he struck the match?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was his breathable-air problem caused by ventilation to the underground space being cut off or blocked?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he relying on a breathing apparatus or other limited air supply that ran out?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he unable to breathe because the air was filled with dust or another airborne particulate matter?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he buried or pinned under rubble in a way that prevented him from reaching breathable air?",
+        "feedback": "yes and no"
+      },
+      {
+        "type": "question",
+        "text": "Did lighting the match consume enough of the already scarce oxygen to cause or hasten his suffocation?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he trapped inside a small, enclosed pocket of air created by the mine collapse, with the surrounding rubble sealing it off?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the man trapped because a mine collapse blocked his route to the surface, even though the rubble itself did not physically pin him or seal off his pocket of air?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was his lack of oxygen caused by a medical condition affecting his body, rather than by the air or surroundings?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he trapped inside a buried coffin or tomb?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person he recognized lying in the same coffin with him?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person a close family member of the man?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the dead person look exactly like the man, as if he were seeing his own double?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person someone with whom the man had been romantically involved?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was the man responsible for the death of the person lying with him in the coffin?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Before striking the match, did the man believe the person in the coffin was still alive?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he mistakenly buried alive in a coffin intended for the dead person?",
+        "feedback": "no"
+      }
+    ],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "frozen_real_history_repair"
+  },
+  {
+    "id": "TS023_r01_solo_Q38",
+    "puzzle_id": "TS023",
+    "question": "Was he alive when the coffin was buried because he had hidden inside it without realizing a corpse was already there?",
+    "expected": "no",
+    "history": [
+      {
+        "type": "question",
+        "text": "Did the match reveal something that directly caused the man’s death?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man die because of a pre-existing physical danger or condition, rather than from what the match revealed?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the man already in a situation where he was likely to die soon, even before striking the match?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the man in a vehicle or vessel when he struck the match?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the man in a building or other enclosed structure when he struck the match?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was he trapped underground, such as in a mine or tunnel?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was another person physically present with him underground?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the other person already dead when the man struck the match?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did he recognize the dead person as someone personally known to him?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was he dying from lack of oxygen or another breathable-air problem?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the breathable-air problem caused by poisonous gas in the mine?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the mine’s breathable air depleted because the trapped men had been consuming the limited oxygen in a sealed or poorly ventilated space?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he suffocating because carbon dioxide or another non-poisonous gas had displaced the oxygen in the mine?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he unable to breathe because an injury or physical obstruction was restricting his breathing?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the mine’s oxygen deficiency caused by a natural process underground, such as oxygen being consumed by minerals or displaced by air pressure changes?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was water flooding the underground space, leaving him without enough air to breathe?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Had a fire or smoldering combustion underground consumed the breathable oxygen before he struck the match?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Had someone deliberately removed or consumed the breathable oxygen in the underground space before he struck the match?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was his breathable-air problem caused by ventilation to the underground space being cut off or blocked?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he relying on a breathing apparatus or other limited air supply that ran out?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he unable to breathe because the air was filled with dust or another airborne particulate matter?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he buried or pinned under rubble in a way that prevented him from reaching breathable air?",
+        "feedback": "yes and no"
+      },
+      {
+        "type": "question",
+        "text": "Did lighting the match consume enough of the already scarce oxygen to cause or hasten his suffocation?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he trapped inside a small, enclosed pocket of air created by the mine collapse, with the surrounding rubble sealing it off?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the man trapped because a mine collapse blocked his route to the surface, even though the rubble itself did not physically pin him or seal off his pocket of air?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was his lack of oxygen caused by a medical condition affecting his body, rather than by the air or surroundings?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he trapped inside a buried coffin or tomb?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person he recognized lying in the same coffin with him?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person a close family member of the man?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the dead person look exactly like the man, as if he were seeing his own double?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person someone with whom the man had been romantically involved?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was the man responsible for the death of the person lying with him in the coffin?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Before striking the match, did the man believe the person in the coffin was still alive?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he mistakenly buried alive in a coffin intended for the dead person?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man enter the coffin voluntarily, knowing that the dead person was already inside?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he deliberately placed in the coffin while alive, as part of a plan by someone else?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he alive when the coffin was buried and later regained consciousness inside it?",
+        "feedback": "yes and no"
+      }
+    ],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "frozen_real_history_repair"
+  },
+  {
+    "id": "TS023_r01_solo_Q39",
+    "puzzle_id": "TS023",
+    "question": "Was the man hiding in the coffin to escape from or avoid someone?",
+    "expected": "yes",
+    "history": [
+      {
+        "type": "question",
+        "text": "Did the match reveal something that directly caused the man’s death?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man die because of a pre-existing physical danger or condition, rather than from what the match revealed?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the man already in a situation where he was likely to die soon, even before striking the match?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the man in a vehicle or vessel when he struck the match?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the man in a building or other enclosed structure when he struck the match?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was he trapped underground, such as in a mine or tunnel?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was another person physically present with him underground?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the other person already dead when the man struck the match?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did he recognize the dead person as someone personally known to him?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was he dying from lack of oxygen or another breathable-air problem?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the breathable-air problem caused by poisonous gas in the mine?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the mine’s breathable air depleted because the trapped men had been consuming the limited oxygen in a sealed or poorly ventilated space?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he suffocating because carbon dioxide or another non-poisonous gas had displaced the oxygen in the mine?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he unable to breathe because an injury or physical obstruction was restricting his breathing?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the mine’s oxygen deficiency caused by a natural process underground, such as oxygen being consumed by minerals or displaced by air pressure changes?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was water flooding the underground space, leaving him without enough air to breathe?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Had a fire or smoldering combustion underground consumed the breathable oxygen before he struck the match?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Had someone deliberately removed or consumed the breathable oxygen in the underground space before he struck the match?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was his breathable-air problem caused by ventilation to the underground space being cut off or blocked?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he relying on a breathing apparatus or other limited air supply that ran out?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he unable to breathe because the air was filled with dust or another airborne particulate matter?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he buried or pinned under rubble in a way that prevented him from reaching breathable air?",
+        "feedback": "yes and no"
+      },
+      {
+        "type": "question",
+        "text": "Did lighting the match consume enough of the already scarce oxygen to cause or hasten his suffocation?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he trapped inside a small, enclosed pocket of air created by the mine collapse, with the surrounding rubble sealing it off?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the man trapped because a mine collapse blocked his route to the surface, even though the rubble itself did not physically pin him or seal off his pocket of air?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was his lack of oxygen caused by a medical condition affecting his body, rather than by the air or surroundings?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he trapped inside a buried coffin or tomb?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person he recognized lying in the same coffin with him?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person a close family member of the man?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the dead person look exactly like the man, as if he were seeing his own double?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person someone with whom the man had been romantically involved?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was the man responsible for the death of the person lying with him in the coffin?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Before striking the match, did the man believe the person in the coffin was still alive?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he mistakenly buried alive in a coffin intended for the dead person?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man enter the coffin voluntarily, knowing that the dead person was already inside?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he deliberately placed in the coffin while alive, as part of a plan by someone else?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was he alive when the coffin was buried and later regained consciousness inside it?",
+        "feedback": "yes and no"
+      },
+      {
+        "type": "question",
+        "text": "Was he alive when the coffin was buried because he had hidden inside it without realizing a corpse was already there?",
+        "feedback": "yes"
+      }
+    ],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "frozen_real_history_repair"
+  },
+  {
+    "id": "TS032_r03_discuss_Q53",
+    "puzzle_id": "TS032",
+    "question": "Did B learn that A had witnessed a homicide?",
+    "expected": "no",
+    "history": [
+      {
+        "type": "question",
+        "text": "Was B’s transfer caused by something A did intentionally?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did A intend to harm or disadvantage B by causing the transfer?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did A cause B’s transfer as a side effect of pursuing a goal unrelated to B’s welfare?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did the school require B to transfer as a result of A’s actions?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did B or B’s family decide to transfer because of a consequence of A pursuing that unrelated goal?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did A's pursuit of the unrelated goal change B's circumstances in a way that prompted the transfer?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was B’s transfer prompted by a financial consequence of A’s actions?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the main consequence that prompted the transfer experienced directly by B, rather than primarily by B’s family or household?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the nonfinancial consequence that prompted the transfer a practical problem for B’s household?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did A’s actions physically damage the family’s home or belongings?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the household problem that B’s family could no longer remain in their home?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Did the practical household problem involve a change in who was available to help or care for the family?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Did the practical household problem involve B’s family losing access to an essential service or resource?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the household problem disrupt B’s family’s ordinary day-to-day routine?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the routine disruption caused by something that happened to a member of B’s family?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did the event involve another person taking action against the family member?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did the other person’s action directly disrupt the family member’s ability to take part in the household’s usual routine?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did the other person’s action make that family member absent from the household?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was that family member absent because they were detained by authorities?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the family member detained as a direct consequence of A pursuing that unrelated goal?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the detained family member one of B’s parents?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the parent detained because authorities suspected them of conduct connected to A’s goal, rather than as an incidental consequence of A pursuing it?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did A’s goal itself involve B’s parent or the conduct authorities suspected, rather than merely setting off a chain of events that brought it to their attention?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was A personally affected by the conduct authorities suspected the parent of?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was A directly subjected to the conduct authorities suspected B’s parent of, rather than affected by it indirectly?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was B personally involved in the conduct authorities suspected the parent of?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was A’s goal to expose or report B’s parent’s conduct to the authorities?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the conduct A reported a crime committed by B’s parent?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the crime A reported against a person, rather than property or involving financial wrongdoing?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did the crime A reported involve physical violence against a person?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did A personally know the victim of the crime?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was the reported violence committed within a family or domestic relationship?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was the violent crime A reported a homicide?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was A motivated to report the homicide because of a personal connection to the victim?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Did A have direct knowledge of the homicide before reporting it?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did A directly witness the homicide?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the homicide victim related to A?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Did A actually murder B?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was B the victim of the homicide A witnessed?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Before transferring, did B know that A had reported the homicide and that this report led to B’s parent being detained?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "After transferring, did B ever learn that A had reported the homicide and that this led to B’s parent being detained?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was B’s parent ultimately convicted of the homicide A witnessed?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was B still alive after disappearing?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did B leave on their own, rather than being taken or held against their will?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was B’s disappearance related to their relationship with A?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was B’s decision to disappear driven by wanting to leave A?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was B’s disappearance motivated by a desire to protect someone?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the event that prompted B to disappear occur after they married?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the event that prompted B to disappear something that happened directly to B?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did A’s actions cause the post-marriage event that prompted B to disappear?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the triggering event something B learned, rather than an incident or change that directly happened to them?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was what B learned about A’s own past?",
+        "feedback": "yes"
+      }
+    ],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "frozen_real_history_repair"
+  },
+  {
+    "id": "TS032_r03_discuss_Q88",
+    "puzzle_id": "TS032",
+    "question": "Was A’s association with the deceased person maintained through something A did after that person’s death?",
+    "expected": "no",
+    "history": [
+      {
+        "type": "question",
+        "text": "Was B’s transfer caused by something A did intentionally?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did A intend to harm or disadvantage B by causing the transfer?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did A cause B’s transfer as a side effect of pursuing a goal unrelated to B’s welfare?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did the school require B to transfer as a result of A’s actions?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did B or B’s family decide to transfer because of a consequence of A pursuing that unrelated goal?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did A's pursuit of the unrelated goal change B's circumstances in a way that prompted the transfer?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was B’s transfer prompted by a financial consequence of A’s actions?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the main consequence that prompted the transfer experienced directly by B, rather than primarily by B’s family or household?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the nonfinancial consequence that prompted the transfer a practical problem for B’s household?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did A’s actions physically damage the family’s home or belongings?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the household problem that B’s family could no longer remain in their home?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Did the practical household problem involve a change in who was available to help or care for the family?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Did the practical household problem involve B’s family losing access to an essential service or resource?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the household problem disrupt B’s family’s ordinary day-to-day routine?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the routine disruption caused by something that happened to a member of B’s family?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did the event involve another person taking action against the family member?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did the other person’s action directly disrupt the family member’s ability to take part in the household’s usual routine?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did the other person’s action make that family member absent from the household?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was that family member absent because they were detained by authorities?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the family member detained as a direct consequence of A pursuing that unrelated goal?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the detained family member one of B’s parents?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the parent detained because authorities suspected them of conduct connected to A’s goal, rather than as an incidental consequence of A pursuing it?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did A’s goal itself involve B’s parent or the conduct authorities suspected, rather than merely setting off a chain of events that brought it to their attention?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was A personally affected by the conduct authorities suspected the parent of?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was A directly subjected to the conduct authorities suspected B’s parent of, rather than affected by it indirectly?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was B personally involved in the conduct authorities suspected the parent of?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was A’s goal to expose or report B’s parent’s conduct to the authorities?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the conduct A reported a crime committed by B’s parent?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the crime A reported against a person, rather than property or involving financial wrongdoing?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did the crime A reported involve physical violence against a person?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did A personally know the victim of the crime?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was the reported violence committed within a family or domestic relationship?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was the violent crime A reported a homicide?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was A motivated to report the homicide because of a personal connection to the victim?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Did A have direct knowledge of the homicide before reporting it?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did A directly witness the homicide?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the homicide victim related to A?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Did A actually murder B?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was B the victim of the homicide A witnessed?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Before transferring, did B know that A had reported the homicide and that this report led to B’s parent being detained?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "After transferring, did B ever learn that A had reported the homicide and that this led to B’s parent being detained?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was B’s parent ultimately convicted of the homicide A witnessed?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was B still alive after disappearing?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did B leave on their own, rather than being taken or held against their will?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was B’s disappearance related to their relationship with A?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was B’s decision to disappear driven by wanting to leave A?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was B’s disappearance motivated by a desire to protect someone?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the event that prompted B to disappear occur after they married?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the event that prompted B to disappear something that happened directly to B?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did A’s actions cause the post-marriage event that prompted B to disappear?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the triggering event something B learned, rather than an incident or change that directly happened to them?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was what B learned about A’s own past?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did B learn that A had witnessed a homicide?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did learning that A had witnessed the homicide change B’s view of A’s honesty or character?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Did B learn that A had witnessed the homicide directly from A?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "After learning that A had witnessed the homicide, did B fear that A might be dangerous?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did learning that A had witnessed the homicide reveal a fact about A’s past that directly affected B’s own life?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did B have a personal connection to the person A witnessed being killed?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Did B learn that their parent was the person A had witnessed committing the homicide?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was learning the victim’s identity—not merely learning that A had witnessed the homicide—what prompted B to disappear?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did B deliberately make their disappearance appear to be a murder?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did learning about A’s past make B fear that the homicide would have consequences for B personally?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did B learn that A had witnessed the homicide from someone other than A?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Did B deliberately disappear as a response to learning that A had witnessed the homicide?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did learning this reveal something A had previously kept from B?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did learning about the homicide reveal a separate fact about B’s own past?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the circumstances in which B learned that A had witnessed the homicide, rather than the fact itself, prompt B’s disappearance?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was B’s disappearance prompted by something they learned about A’s past other than A witnessing the homicide?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the other fact B learned about A’s past that prompted B’s disappearance that A had committed a crime?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the other fact about something A had done, rather than a circumstance of A’s past?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the other circumstance of A’s past that B learned about a relationship or association involving A?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the other person in that relationship or association involved in the homicide A witnessed?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was A’s relationship or association with that person still ongoing when B learned about it?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was A’s ongoing relationship or association with that person personal rather than professional or organizational?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Did B learn that A’s ongoing association with this person conflicted with the expectations of their marriage?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was what B learned about the other person in A’s ongoing association, rather than about the association itself?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was A’s ongoing association with the other person a romantic or sexual relationship?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the other person related to A?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Did A’s ongoing association with this person have a direct practical consequence for B that prompted B to disappear?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was A’s ongoing association with this person a family relationship?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Did A know this person before meeting B?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the other person connected to B independently of A?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did B disappear because A maintained the association itself, rather than because of a practical effect it had on B?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the association defined by a particular role A had in the other person’s life?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was A’s ongoing association with this person based on a recurring shared activity or setting?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did B’s discovery of A’s ongoing association reveal a concrete risk or consequence for B?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the person in A’s ongoing association alive when B learned about it?",
+        "feedback": "no"
+      }
+    ],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "frozen_real_history_repair"
+  },
+  {
+    "id": "TS033_r03_solo_reflect_Q78",
+    "puzzle_id": "TS033",
+    "question": "Was the million yen needed for a specific transaction or obligation?",
+    "expected": "yes",
+    "history": [
+      {
+        "type": "question",
+        "text": "Did adding the extra cash change what potential attackers could infer about the bag, rather than simply increase the amount of money inside?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Could someone identify the bag as containing exactly one million yen based on circumstances outside the bag’s appearance?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was making the total amount more than one million yen important to his reason for adding the cash?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the added cash intended to make the amount in the bag less predictable to a potential attacker?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did adding cash alter an outward physical cue, such as the bag’s weight or bulk, that potential attackers might use to judge its contents?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was the extra cash meant to change a potential attacker’s assessment of the bag’s value or desirability?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the extra cash make the contents appear to be something other than a large sum of yen?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did adding cash affect an inference about the bag’s owner or purpose, rather than the amount or value of its contents?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the added cash make a potential attacker expect to recover a different amount of money from the bag?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the changed inference about whether the bag contained exactly one million yen, rather than about its total amount, value, or apparent contents?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was there a practical reason unrelated to deceiving potential attackers for adding the extra cash, with any effect on their inference being incidental?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did a property of the added cash other than its amount affect what an attacker could infer?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the relevant property a feature of the cash itself, rather than how it changed the bag’s physical appearance?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did the added cash’s legal status—whether it was valid spendable money—matter?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the added cash not valid spendable currency, such as counterfeit or otherwise invalid money?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the added cash’s legal status matter because it was valid currency of another country, rather than because it was invalid or counterfeit?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the legal-status distinction concern whether the added cash was accepted for ordinary transactions in Japan?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did the added cash’s legal status matter because of a restriction on how it could be used in a transaction, rather than whether it was valid currency?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the added cash valid Japanese currency but different from ordinary yen in a way that affected whether it was accepted in everyday transactions?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the legal distinction concern whether the added cash could be spent as ordinary payment, or some other legal treatment?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Could the added cash be redeemed or exchanged for ordinary yen, even though it could not be spent directly?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the added cash legally excluded from use as payment in Japan, even though it was neither counterfeit nor foreign currency?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the added items have an officially assigned monetary value but could not be used as currency for ordinary purchases?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the legal treatment of the added cash matter for a reason other than whether it could be spent as ordinary payment?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the added cash’s legal status affect the consequences for a would-be robber if caught with it, rather than whether the cash could be spent or exchanged?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the relevant legal distinction about the cash’s classification or attached rights, rather than its physical condition or ordinary acceptance as payment?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the relevant legal consequence about a robber’s legal exposure for taking or possessing the added cash?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the added cash in the form of banknotes rather than coins?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did the notes’ special legal status come from how or why they were issued, rather than from being an obsolete Japanese issue?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Could the added banknotes be individually identified or traced in a way that affected the legal significance of a robbery?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Were the added notes no longer legal tender in Japan because they had been withdrawn from circulation?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Were the added notes ordinary Japanese banknotes in circulation, with no special legal or issuance status?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Could a potential attacker recognize the legally relevant status of the added notes from a visible feature printed on them?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Does the printed feature identify a special status of the banknotes, rather than their face value?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the relevant printed feature simply the notes’ denomination, rather than a separate inscription or mark?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Did the visible printed feature let an attacker recognize the notes as a particular kind of Japanese banknote with a distinct legal status?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the legally relevant printed feature added to the banknotes after they were issued, rather than being part of their original design?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Were the added banknotes issued by a Japanese institution other than the Bank of Japan?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the printed feature that mattered identify a legal distinction tied to the notes’ denomination or original design, rather than mark them for a special purpose?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Does the printed feature indicate a legal distinction about the notes themselves, rather than identify individual notes?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Does the printed feature identify the individual banknotes, rather than indicate a rule or status shared by that kind of note?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Does the visible printed feature indicate some other legal attribute of the notes, beyond their denomination, issuance purpose, or restrictions on use?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the printed feature matter because carrying the notes could have legal consequences for the president, rather than because of what the notes could be used for?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Does the printed feature identify a legal status of the notes that has not been covered by the earlier questions?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the printed feature that mattered relate to a legal promise or guarantee attached to the banknotes, rather than to whether they were valid money or usable for ordinary purchases?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Does the printed feature consist of words or a phrase?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Is the relevant printed feature a non-text graphic, such as an image or emblem?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the visible feature part of the notes’ original design or printing, rather than a later mark or alteration?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Did the relevant visible feature identify a property of the banknotes’ physical format, rather than their issuance purpose?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the visible printed feature let an attacker infer a specific legal consequence of taking or possessing the notes?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the visible feature identify the banknotes as belonging to a particular series or issue, rather than identifying individual notes?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Does the printed feature indicate a category or designation shared by a group of notes, rather than identify or number each note individually?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Is the relevant visible cue a feature of the notes’ printing or layout, rather than a separate mark, image, or wording?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Is the relevant printing the notes’ serial number or its format?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Does the relevant printed cue depend on ink color, rather than the placement or arrangement of printing?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the notes’ printed layout indicate a geographic limit on where they could be used?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Would the added notes have the same legally relevant significance if they were carried alone, without the million yen?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Does the printed-layout cue matter only in combination with the million yen, rather than identifying the added notes on their own?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Is the relevant layout difference between the added notes and the million-yen notes, rather than a feature that identifies the added notes on their own?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Does the significance of the printed layout depend on how the notes are arranged or combined, rather than on a feature of each note on its own?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Does the layout cue tell an attacker something about the added notes individually, rather than about a rule applying to a set of notes?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Did the added notes matter because they were a different kind of valid Japanese banknote from the million-yen notes?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Does the added notes’ printing or layout have a conventional meaning relevant to their legal status that we have not yet identified?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Does the printed layout change what an attacker infers for a reason other than how the notes may be used as payment?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Were the added notes the same denomination as the notes that made up the one million yen?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Did the added notes’ relevant legal treatment arise from physical damage or mutilation, rather than from a special type or design of note?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the printed layout indicate whether the added banknotes had been officially issued as legal tender?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the notes’ printed layout signal a special rule about how they could be used as payment?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the printed layout’s legal significance arise from a feature shared by the notes as a group, rather than from a special designation of the added notes?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Does the added cash’s printed layout reveal that the notes were issued under a special legal regime, such as emergency or occupation currency?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Does the printed layout identify a legal or payment distinction other than the notes’ issuance purpose?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the relevant layout feature an unintended printing anomaly, rather than an intentional feature of the notes’ design?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Could a potential attacker see the banknotes inside the bag?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Could an attacker recognize the added notes as a kind of banknote that was valid currency but not intended for ordinary spending?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the added notes make it harder for an attacker looking into the bag to distinguish the million-yen notes from the added notes?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the reason he had to carry exactly one million yen directly connected to why he added the other notes?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was he required by another person or institution to carry the million yen?",
+        "feedback": "no"
+      }
+    ],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "frozen_real_history_repair"
+  },
+  {
+    "id": "baseline_TS019",
+    "puzzle_id": "TS019",
+    "question": "Did maintenance leave an escalator stationary so it could be walked on?",
+    "expected": "yes",
+    "history": [],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "previously_uncovered_sample"
+  },
+  {
+    "id": "baseline_TS020",
+    "puzzle_id": "TS020",
+    "question": "Were the steps part of boarding and leaving a school bus?",
+    "expected": "yes",
+    "history": [],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "previously_uncovered_sample"
+  },
+  {
+    "id": "baseline_TS025",
+    "puzzle_id": "TS025",
+    "question": "Was the observer reading fiction rather than witnessing an actual murder?",
+    "expected": "yes",
+    "history": [],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "previously_uncovered_sample"
+  },
+  {
+    "id": "baseline_TS027",
+    "puzzle_id": "TS027",
+    "question": "Was the apparent shooting star actually the father’s crashing spacecraft?",
+    "expected": "yes",
+    "history": [],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "previously_uncovered_sample"
+  },
+  {
+    "id": "baseline_TS038",
+    "puzzle_id": "TS038",
+    "question": "Was the repeated writing an effort to imitate the wife’s handwriting?",
+    "expected": "yes",
+    "history": [],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "previously_uncovered_sample"
+  },
+  {
+    "id": "baseline_TS050",
+    "puzzle_id": "TS050",
+    "question": "Was the broken match connected to selecting who would leave an overloaded balloon?",
+    "expected": "yes",
+    "history": [],
+    "review_status": "AI_adjudicated_pending_human",
+    "case_group": "previously_uncovered_sample"
+  }
+]

@@ -4,7 +4,7 @@
 
 ## 数据与评分
 
-仓库已发布 `data/annotations/turtle50_v2/private.json`：TS001–TS050，共 50 题、161 个评分点，经过三位 AI 独立提案及裁定。clone/pull 后即可使用，无需另取数据包。每题包含：
+仓库已发布 `data/annotations/turtle50_v3/private.json`：TS001–TS050，共 50 题、161 个评分点，经过三位 AI 独立提案及裁定。clone/pull 后即可使用，无需另取数据包。每题包含：
 
 - `completion_requirements`：完整叙事必须覆盖的清单，供 host／grader 使用，player 不可见。
 - `rubric[].points / full_credit / half_credit / zero_credit`：百分制满分值与满分、半分、零分规则。程序仍按 `weight × credit` 输出 0–1，乘 100 得百分制。
@@ -25,18 +25,18 @@ export OPENAI_MODEL='账号可用的准确 API 模型 ID'
 
 # 默认 G07 的两个方向：TS022→TS047，以及 TS047→TS022。
 python3 scripts/experiment.py continual \
-  --dataset data/annotations/turtle50_v2/private.json \
+  --dataset data/annotations/turtle50_v3/private.json \
   --config configs/loop.openai.json --group G07 --repeat 3
 
 # 限定一个方向，并先做不调用模型的检查。
 python3 scripts/experiment.py continual \
-  --dataset data/annotations/turtle50_v2/private.json \
+  --dataset data/annotations/turtle50_v3/private.json \
   --config configs/loop.openai.json --group G01 --pair TS012:TS017 \
   --repeat 3 --dry-run
 
 # 全部 28 个关系组；建议先完成小批 host 人工审核再运行。
 python3 scripts/experiment.py continual \
-  --dataset data/annotations/turtle50_v2/private.json \
+  --dataset data/annotations/turtle50_v3/private.json \
   --config configs/loop.openai.json --group all --repeat 3
 ```
 
@@ -59,12 +59,12 @@ python3 scripts/experiment.py continual \
 
 ```sh
 python3 scripts/experiment.py team \
-  --dataset data/annotations/turtle50_v2/private.json \
+  --dataset data/annotations/turtle50_v3/private.json \
   --config configs/loop.openai.json --puzzle TS002,TS031 --repeat 3
 
 # 只比较单人和双人讨论；可用不同供应商作为第二位 solver。
 python3 scripts/experiment.py team \
-  --dataset data/annotations/turtle50_v2/private.json \
+  --dataset data/annotations/turtle50_v3/private.json \
   --config configs/loop.openai.json --puzzle TS040 --repeat 3 \
   --strategies solo,discuss --partner-config configs/partner.deepseek.json
 ```
@@ -88,7 +88,7 @@ python3 scripts/experiment.py team \
 新增 `configs/loop.codex.json`，通过官方 `codex exec` 复用本机已有登录；不读取、复制或提交 auth.json。先确认 `codex login status` 显示已登录，然后将上面的配置路径换为此文件。
 
 ```sh
-python3 scripts/experiment.py continual --dataset data/annotations/turtle50_v2/private.json \
+python3 scripts/experiment.py continual --dataset data/annotations/turtle50_v3/private.json \
   --config configs/loop.codex.json --group G07 --pair TS022:TS047 --repeat 2
 ```
 
@@ -103,7 +103,7 @@ python3 scripts/experiment.py continual --dataset data/annotations/turtle50_v2/p
 
 不接受 `max_output_tokens / temperature / extra_body / base_url / api_key_env / max_retries`，避免把未支持的选项伪装成已生效。保留全局 max_questions=100。CLI 的网络重试由其自身处理；后端不做输出重新采样。当前重跑配置将 timeout 设为 600 秒（默认仍为 240）。日志中的 http_attempts 在此后端表示 CLI 调用次数，不是底层网络尝试次数。
 
-v2 backend 使用官方 `--output-schema` 和 `--output-last-message`。player/grader 仍返回原 JSON 协议；host 在传输层返回 `{ "label": "no" }` 等四标签对象，程序只将 label 展示给玩家。审查文本用 text 字段封装。最终消息文件与 JSONL 若同时有内容必须一致；文件可补足缺失的事件输出，但不会触发重新采样。日志保存原始封装、解码文本、schema 和实际传输 prompt，因此应与旧自由格式 backend 分开报告。
+v2 backend 使用官方 `--output-schema` 和 `--output-last-message`。player 返回原 JSON 协议，v3 数据的 grader 增加逐事实覆盖和矛盾证据；host 在传输层返回 `{ "label": "no" }` 等四标签对象，程序只将 label 展示给玩家。审查文本用 text 字段封装。最终消息文件与 JSONL 若同时有内容必须一致；文件可补足缺失的事件输出，但不会触发重新采样。日志保存原始封装、解码文本、schema 和实际传输 prompt，因此应与旧自由格式 backend 分开报告。
 
 每次角色调用使用新的 ephemeral 会话，工作目录为临时隔离目录；关闭 shell、apps、plugins、browser、computer、multi-agent、memories 等工具功能，并禁止加载用户项目配置和 AGENTS.md。角色 prompt 通过 model_instructions_file 传入，不把仓库路径给玩家。日志若出现工具调用，则该次响应作废并停止该实验。所有角色依然只由 Python loop 提供各自允许的上下文。
 
@@ -172,7 +172,7 @@ python3 -m unittest discover -s tests -v
 ## 多题重复实验：冻结快照、并发与完整轨迹
 
 ```sh
-python3 scripts/team_sweep.py --dataset data/annotations/turtle50_v2/private.json \
+python3 scripts/team_sweep.py --dataset data/annotations/turtle50_v3/private.json \
   --config configs/loop.codex.json --puzzles TS023,TS032,TS033 \
   --repeat 3 --strategies solo,solo_reflect,discuss,independent \
   --workers 3 --out runs/api/my_team_sweep
@@ -205,3 +205,6 @@ python3 scripts/team_sweep.py --out runs/api/my_team_sweep --summarize-only
 ```
 
 错误／不完整交卷计一次，100 次内最后一次强制 final。统计同时保留完整成功率、最终 partial score、预算消耗、仅成功局问题数、模型调用、token 和时间。100 次失败是预算截尾，不能写成“解题用了 100 问”；同样三次调用也不意味着相同 token 成本。
+
+
+当前 host 的独立核验、grader 的证据覆盖与格式修复、额外调用成本、回归命令见 [host v5.1 修复说明](host_repair_v5.md)。新实验使用 v3 数据；原 runtime_snapshot 不受仓库修改影响。

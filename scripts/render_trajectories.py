@@ -23,6 +23,8 @@ def jsonl(path):
 
 def collect(root):
     games = []
+    notice_path=root/'audit_notice.json'
+    notice=json.loads(notice_path.read_text()) if notice_path.exists() else None
     for path in sorted(root.rglob('trajectory.jsonl')):
         if 'runtime_snapshot' not in path.relative_to(root).parts:
             folder = path.parent
@@ -35,7 +37,7 @@ def collect(root):
                           'result': read('result.json', {}), 'events': jsonl(path),
                           'collaboration': jsonl(folder/'collaboration.jsonl'),
                           'prior_experience': read('prior_experience.json'),
-                          'host_context': read('host_context.json')})
+                          'host_context': read('host_context.json'), 'audit_notice':notice})
     return games
 
 
@@ -66,6 +68,7 @@ table{border-collapse:collapse;width:100%;font-size:14px}td,th{padding:8px;text-
 const games=JSON.parse(document.getElementById('data').textContent);
 const el=(tag,text,cls)=>{const e=document.createElement(tag);if(text!==undefined)e.textContent=text;if(cls)e.className=cls;return e};
 const detail=(name,value)=>{const d=el('details',undefined,'private');d.append(el('summary',name),el('pre',typeof value==='string'?value:JSON.stringify(value,null,2)));return d};
+if(games.some(g=>g.audit_notice))document.getElementById('overview').append(el('p','审核提示：本批实验有独立质量备注，请先查看每局审核说明再解释性能结果。'));
 const table=el('table');const hr=el('tr');['对局','状态','问题数','部分分','完整解出'].forEach(x=>hr.append(el('th',x)));table.append(hr);
 for(const g of games){const r=g.result;const tr=el('tr');[g.name,r.status,r.counted_questions,r.final_partial_score??'—',r.success===true?'是':r.success===false?'否':'未完成'].forEach(x=>tr.append(el('td',String(x))));table.append(tr);
 const o=el('option',g.name);o.value=g.name;document.getElementById('filter').append(o)}
@@ -73,9 +76,10 @@ document.getElementById('overview').append(table);
 function draw(){const target=document.getElementById('games');target.replaceChildren();const query=document.getElementById('search').value.toLowerCase();const selected=document.getElementById('filter').value;
 for(const g of games){if(selected&&g.name!==selected)continue;if(query&&!JSON.stringify(g).toLowerCase().includes(query))continue;
 const box=el('details',undefined,'game');box.open=!!selected||!!query;box.append(el('summary',g.name+' · '+g.result.status),el('pre',g.opening),detail('私有汤底及统一事实',g.host_context??g.answer));
+if(g.audit_notice)box.append(detail('审核说明（未改写原始结果）',g.audit_notice));
 if(g.prior_experience)box.append(detail('传给 B 的 A 题公开经验',g.prior_experience));
 const feedback=new Map(g.events.filter(x=>x.event==='host_feedback'||x.event==='evaluation').map(x=>[x.submission,x]));
-for(const t of g.events.filter(x=>x.event==='submission')){const f=feedback.get(t.index);const a=el('article',undefined,t.type);a.append(el('h3','#'+t.index+' · '+t.type+(t.forced?' · 强制最终提交':'')),el('pre',t.text),el('p','Host: '+(f?.label??'等待反馈'),'label'));if(f?.event==='evaluation')a.append(detail('私有评分与完整叙事判定',f));box.append(a)}
+for(const t of g.events.filter(x=>x.event==='submission')){const f=feedback.get(t.index);const a=el('article',undefined,t.type);a.append(el('h3','#'+t.index+' · '+t.type+(t.forced?' · 强制最终提交':'')),el('pre',t.text),el('p','Host: '+(f?.label??'等待反馈'),'label'));if(f?.event==='evaluation')a.append(detail('私有评分与完整叙事判定',f));const checks=g.events.filter(e=>e.submission===t.index&&(e.event==='host_review'||e.event==='grader_evidence_repair'));if(checks.length)a.append(detail('私有复核及引用修复（不计为玩家问题）',checks));box.append(a)}
 if(g.collaboration.length)box.append(detail('全部合作讨论（按调用顺序）',g.collaboration));
 box.append(detail('性能与问题计数',g.result));target.append(box)}}
 document.getElementById('filter').onchange=draw;document.getElementById('search').oninput=draw;document.getElementById('expand').onclick=()=>document.querySelectorAll('details.game').forEach(x=>x.open=true);draw();

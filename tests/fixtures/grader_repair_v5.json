@@ -1,0 +1,123 @@
+[
+  {
+    "id": "old_final_89",
+    "puzzle_id": "TS023",
+    "submission": "A prisoner was escaping with help from a law-enforcement officer, who hid him inside a coffin alongside the officer’s own body. The coffin was being transported for the officer’s burial, and the officer planned to release the prisoner afterward. But the officer died before he could do so, and no one else knew the prisoner was inside. Buried in the tomb and trapped in the coffin with little breathable air, the man struck a match, recognized the officer’s face, and realized his only helper was dead. He died of suffocation.",
+    "expected": {
+      "complete": false,
+      "partial_score": 0.25,
+      "material_contradiction": true
+    },
+    "review_status": "AI_adjudicated_pending_human"
+  },
+  {
+    "id": "old_final_95",
+    "puzzle_id": "TS023",
+    "submission": "A prisoner was escaping from prison with the help of a law-enforcement officer. To get him out unnoticed, the officer hid him inside the coffin with the officer’s own body, which was being taken for burial. The officer intended to release him afterward, and no one else knew the prisoner was there. But the officer died before he could free him. Buried in the tomb and still trapped inside the coffin, the prisoner struck a match, recognized the officer, and realized his only helper was dead. He could not escape and eventually suffocated.",
+    "expected": {
+      "complete": false,
+      "partial_score": 0.25,
+      "material_contradiction": true
+    },
+    "review_status": "AI_adjudicated_pending_human"
+  },
+  {
+    "id": "old_final_98",
+    "puzzle_id": "TS023",
+    "submission": "A prisoner was escaping from the prison where a guard helped him. The guard hid him inside a coffin beside the guard’s own body, which was being transported for burial, intending to let him out afterward. The guard died before he could free the prisoner, and nobody else knew the prisoner was inside. After the coffin was buried, the prisoner struck a match, recognized the dead guard, and realized his only helper was gone. Trapped inside the coffin underground, he eventually suffocated.",
+    "expected": {
+      "complete": false,
+      "partial_score": 0.25,
+      "material_contradiction": true
+    },
+    "review_status": "AI_adjudicated_pending_human"
+  },
+  {
+    "id": "old_final_99",
+    "puzzle_id": "TS023",
+    "submission": "A prisoner was escaping from prison with the help of a guard. The guard hid him inside a coffin alongside the guard’s own body, which was being transported for burial, intending to release him afterward. No one else knew the prisoner was there. Once the coffin was buried, the prisoner struck a match and recognized the dead guard. He realized that his only helper was dead and that he was trapped underground. Unable to escape, he suffocated in the coffin.",
+    "expected": {
+      "complete": false,
+      "partial_score": 0.25,
+      "material_contradiction": true
+    },
+    "review_status": "AI_adjudicated_pending_human"
+  },
+  {
+    "id": "old_final_100",
+    "puzzle_id": "TS023",
+    "submission": "A prisoner was escaping from prison with the help of a prison guard. The guard hid him inside a coffin beside the guard’s own body, which was being taken to a tomb for burial, intending to let him out later. The guard died before he could free the prisoner, and no one else knew the prisoner was inside. Once the coffin was buried, the prisoner struck a match, recognized the dead guard, and realized he had no way out. Trapped underground in the coffin with limited breathable air, he eventually suffocated.",
+    "expected": {
+      "complete": false,
+      "partial_score": 0.25,
+      "material_contradiction": true
+    },
+    "review_status": "AI_adjudicated_pending_human"
+  },
+  {
+    "id": "complete_TS023",
+    "puzzle_id": "TS023",
+    "submission": "The man was a prisoner. In order to escape, he bribed a prison guard. The two agreed that the next time someone in the prison died, he would hide inside the coffin. After it was transported out and buried, the guard would dig him back up.\n \nThen one day, someone in the prison finally passed away, and he quickly hid inside the coffin. When the coffin was buried and everything around him was pitch black, he struck a match to take a look. He found that lying next to him—the prison guard who was supposed to be waiting to escape with him—was already dead. Knowing his own death was certain, he could only wait to die in terror and despair.",
+    "expected": {
+      "complete": true,
+      "partial_score": 1.0,
+      "material_contradiction": false
+    },
+    "review_status": "AI_adjudicated_pending_human"
+  },
+  {
+    "id": "complete_TS032",
+    "puzzle_id": "TS032",
+    "submission": "A had photographed a murder committed by B’s parent and reported it. The arrest forced B to move away to live with relatives. A felt guilty.\nA’s surname later changed after parental divorce and remarriage. At university, A recognized B, but B did not recognize A. They genuinely fell in love and married.\nYears later, B recognized A as the former classmate. B mistakenly believed A had not recognized B and did not know about B’s criminal parent. Ashamed and afraid of rejection, B disappeared, leaving divorce papers and an apology. B never learned that A had reported the crime.\nUnable to find B, A fabricated evidence and falsely confessed to murdering B. A hoped the news would reach B, communicate acceptance of B’s past, and persuade B to return to clear A’s name. B was alive.",
+    "expected": {
+      "complete": true,
+      "partial_score": 1.0,
+      "material_contradiction": false
+    },
+    "review_status": "AI_adjudicated_pending_human"
+  },
+  {
+    "id": "complete_TS033",
+    "puzzle_id": "TS033",
+    "submission": "His daughter had been kidnapped, and the kidnappers demanded fifty million yen in ransom.\nTo save money, he prepared bundles made mostly of blank paper, with genuine banknotes on the outside. The bag appeared to contain the full ransom, but the genuine money amounted to only one million yen.\nHe feared that the kidnappers would attack him if they discovered the deception. He therefore replaced the bundles at the top with bundles consisting entirely of genuine banknotes.\nThis increased the actual amount of money in the bag and made a superficial inspection less likely to reveal the fake bundles underneath.",
+    "expected": {
+      "complete": true,
+      "partial_score": 1.0,
+      "material_contradiction": false
+    },
+    "review_status": "AI_adjudicated_pending_human"
+  },
+  {
+    "id": "complete_TS036",
+    "puzzle_id": "TS036",
+    "submission": "Kameda and Umio were historical political rivals: Kameda was a king, and Umio was a duke. The comparison concerned their excavated skeletal remains, including photographs shown during a history lecture.\nTheir culture normally cremated the dead. Kameda’s fragmented bones were consistent with a proper cremation and an honourable royal burial.\nUmio’s intact skeleton indicated that his body had instead been buried without cremation. The accepted historical explanation was that Kameda’s agents had poisoned Umio and secretly disposed of his body.\nConsequently, Umio’s better-preserved remains suggested that he had lost the political struggle and been denied a proper funeral. They did not indicate that he had survived or defeated Kameda.",
+    "expected": {
+      "complete": true,
+      "partial_score": 1.0,
+      "material_contradiction": false
+    },
+    "review_status": "AI_adjudicated_pending_human"
+  },
+  {
+    "id": "complete_TS009",
+    "puzzle_id": "TS009",
+    "submission": "Xiaoming went to the supermarket to buy eggs. On the way home, his shoelace came undone, so he squatted down to tie it, and casually placed the eggs he had bought on a nearby car.\nUnexpectedly, the bag holding the eggs broke, and two or three eggs leaked into the car's windshield wiper groove.\nWithout noticing anything, Xiaoming finished tying his shoelace, picked up the remaining eggs, and went home.\nA while later, the driver came to drive the car and also did not notice the eggs in front. On the road, it suddenly began to rain. The driver turned on the windshield wipers, which also smashed the eggs and smeared them all over the windshield, obstructing the view and causing a car accident.",
+    "expected": {
+      "complete": true,
+      "partial_score": 1.0,
+      "material_contradiction": false
+    },
+    "review_status": "AI_adjudicated_pending_human"
+  },
+  {
+    "id": "missing_bribe",
+    "puzzle_id": "TS023",
+    "submission": "The man was a prisoner. In order to escape, he made an arrangement with a prison guard. The two agreed that the next time someone in the prison died, he would hide inside the coffin. After it was transported out and buried, the guard would dig him back up.\n \nThen one day, someone in the prison finally passed away, and he quickly hid inside the coffin. When the coffin was buried and everything around him was pitch black, he struck a match to take a look. He found that lying next to him—the prison guard who was supposed to be waiting to escape with him—was already dead. Knowing his own death was certain, he could only wait to die in terror and despair.",
+    "expected": {
+      "complete": false,
+      "partial_score": 0.875,
+      "material_contradiction": false
+    },
+    "review_status": "AI_adjudicated_pending_human"
+  }
+]

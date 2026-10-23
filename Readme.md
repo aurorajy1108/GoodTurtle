@@ -6,7 +6,7 @@
 2026-10-23 追加：已加入多题重复双 agent 实验入口，冻结 host／rubric／代码快照，按题统计均值与方差，并提供三调用的单 agent 对照及独立提案合并策略。
 
 ```sh
-python3 scripts/team_sweep.py --dataset data/annotations/turtle50_v2/private.json \
+python3 scripts/team_sweep.py --dataset data/annotations/turtle50_v3/private.json \
   --config configs/loop.codex.json --puzzles TS023,TS032,TS033 \
   --repeat 3 --strategies solo,solo_reflect,discuss,independent \
   --workers 3 --out runs/api/my_team_sweep
@@ -18,11 +18,11 @@ python3 scripts/team_sweep.py --dataset data/annotations/turtle50_v2/private.jso
 
 ## 三方审核后的当前版本（2026-10-23）
 
-当前已发布评分数据为 `data/annotations/turtle50_v2/private.json`：50 题、161 个评分点，已与原始 49 题 XLSX 对比并经过三个 subagent 独立复核和主 agent 裁决。原始附件不改写；这是 **AI 审核稿，尚未人工确认**。运行下面实验时请使用 v2 数据，不要把旧评分与新分数直接比较。
+当前运行数据为 `data/annotations/turtle50_v3/private.json`：50 题、161 个评分点，权重沿用已与原 XLSX 对比并经过三方 AI 复核的 v2。v3 增加逐事实证据覆盖、TS023 评分边界和 host 修复；**仍是 AI 标注，尚未人工确认**。运行新实验请用 v3；复现旧实验使用原始 runtime_snapshot，不混合新旧分数。
 
-当前 host 通过 `configs/host_bindings.json` 加载专属资料，已发布全部绑定文件，15 题有专属示例，其余题使用参考答案与完整解答清单。既有三方审核案例和后续校准例的来源状态保存在各 pack 中；新增 AI 示例不冒称人工标注。有歧义或依赖历史的问答不自动作为无上下文 few-shot。
+当前全部 50 题都绑定专属资料。其中新增 35 题的示例是来源事实、否定问法和无关细节的基础覆盖，不能当作真实模型准确率验证。新 host 用同一配置模型独立回答两次，分歧时再裁决一次，只向 player 返回一个四标签答案；内部调用不增加问题数。grader 逐项列证据，控制器限制遗漏/矛盾下的分数和通关。参见 [修复说明与运行成本](docs/host_repair_v5.md)。
 
-[评分／host 审核总入口](runs/api/20261023_three_review/index.html) · [50 题评分对照](runs/api/20261023_three_review/partial_score_review.html) · [最新单文件 trajectory](runs/api/20261023_three_review_rerun/trajectories.html)。这些原始审核过程和运行记录仍在本地；已发布的最终标注可直接查看 [逐题评分文档](data/annotations/turtle50_v2/review.md)。
+[评分／host 审核总入口](runs/api/20261023_three_review/index.html) · [50 题评分对照](runs/api/20261023_three_review/partial_score_review.html) · [最新单文件 trajectory](runs/api/20261023_three_review_rerun/trajectories.html)。这些原始审核过程和运行记录仍在本地；已发布的最终标注可直接查看 [逐题评分文档](data/annotations/turtle50_v3/review.md)。
 
 运行后可重新生成单文件轨迹：
 
@@ -41,17 +41,17 @@ python3 scripts/render_trajectories.py runs/api/20261023_three_review_rerun
 ```sh
 # 先配置 OPENAI_API_KEY / OPENAI_MODEL，或更换现有 API 配置。
 # A→B 对比直接 B；默认只传 A 的公开轨迹，不揭示标准答案。
-python3 scripts/experiment.py continual --dataset data/annotations/turtle50_v2/private.json \
+python3 scripts/experiment.py continual --dataset data/annotations/turtle50_v3/private.json \
   --config configs/loop.openai.json --group G07 --repeat 3
 
 # 单人、轮流合作、双人讨论、自我审查四条件对比。
-python3 scripts/experiment.py team --dataset data/annotations/turtle50_v2/private.json \
+python3 scripts/experiment.py team --dataset data/annotations/turtle50_v3/private.json \
   --config configs/loop.openai.json --puzzle TS002,TS031 --repeat 3
 ```
 
 加 `--dry-run` 可不调用 API。每局继续执行四标签、失败交卷计数和最多 100 次提交规则；内部讨论另记调用/token 消耗。每次运行生成配对差异、均值/方差、轨迹和合作过程。本版 continual learning 指上下文经验迁移，没有模型权重更新。
 
-[50 题评分阅读版](data/annotations/turtle50_v2/review.md) 为每题列出完整解答清单及满分／半分／零分条件，共 161 个评分点；[运行数据](data/annotations/turtle50_v2/private.json) 已随仓库发布。新增 TS040 有来源记录，原 XLSX 未改写，标注均待人工审核。[关系组配置](configs/transfer_groups.json) 保存 28 个组的题号与关系假设。
+[50 题评分阅读版](data/annotations/turtle50_v3/review.md) 为每题列出完整解答清单及满分／半分／零分条件，共 161 个评分点；[运行数据](data/annotations/turtle50_v3/private.json) 已随仓库发布。新增 TS040 有来源记录，原 XLSX 未改写，标注均待人工审核。[关系组配置](configs/transfer_groups.json) 保存 28 个组的题号与关系假设。
 
 2026-10-23 已修正 host 接入：通过 `configs/host_bindings.json` 按题目 ID 与汤面／汤底 SHA-256 绑定专属资料，橡皮和 pillow 复用旧资料并应用四标签修订；窗户题、火警题补充专属案例。host 与 grader 读取同一个 `host_context.json` 私有快照，player 不可见。绑定的原文变化或资料文件缺失会报错，不会静默串题或退回空示例。目前共 15 题有专属案例（含新增 TS009、TS037、TS048），其余题使用原文与已有完成清单；所有新增标签仍待人工审核。详见 [host 修正与回归方法](docs/host_repair_v2.md)。
 
@@ -84,11 +84,11 @@ python3 scripts/play.py demo
 
 ### 2. 准备数据
 
-**Git 已提供完整 50 题和评分标注**，默认使用 `data/annotations/turtle50_v2/private.json`，无需原 XLSX。下面的导入命令仅用于你自己的额外表格；历史 host pack JSON 不是新 loop 的 dataset 格式。
+**Git 已提供完整 50 题和评分标注**，默认使用 `data/annotations/turtle50_v3/private.json`，无需原 XLSX。下面的导入命令仅用于你自己的额外表格；历史 host pack JSON 不是新 loop 的 dataset 格式。
 
 ```sh
 # 直接使用仓库内题库；若导入自己的 XLSX，再修改此路径。
-export TURTLE_DATASET="data/annotations/turtle50_v2/private.json"
+export TURTLE_DATASET="data/annotations/turtle50_v3/private.json"
 python3 scripts/play.py inspect --dataset "$TURTLE_DATASET"
 
 # 可选：导入目录必须尚不存在。

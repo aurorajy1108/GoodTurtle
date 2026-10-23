@@ -14,6 +14,11 @@ def story_fingerprint(puzzle):
     return hashlib.sha256(text.encode()).hexdigest()
 
 
+def grading_fingerprint(puzzle):
+    data = {k: puzzle.get(k) for k in ('rubric', 'completion_requirements', 'grading_notes', 'grading_protocol')}
+    return hashlib.sha256(json.dumps(data, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
+
+
 def build_story_context(puzzle, root=ROOT):
     root = Path(root)
     bindings = json.loads((root / 'configs/host_bindings.json').read_text())
@@ -43,13 +48,23 @@ def build_story_context(puzzle, root=ROOT):
                 example.update(answer=override['answer'], rationale=override['rationale'])
         for key in ('canonical_facts', 'explicit_negatives', 'unknown_details', 'irrelevant_details', 'host_examples'):
             pack[key] = pack.get(key, []) + binding.get(key, [])
+        for key in ('solution', 'event_order', 'knowledge_states', 'label_boundaries', 'verification_policy'):
+            if key in binding:
+                pack[key] = copy.deepcopy(binding[key])
+    seen = {}
+    if pack.get('verification_policy','single') not in ('single','independent_then_adjudicate_v1'):
+        raise ValueError('Unsupported host verification policy')
     for example in pack.get('host_examples', []):
         if example.get('answer') not in LABELS or not example.get('question'):
             raise ValueError('Invalid host example')
+        key = (example['question'].strip().casefold(), json.dumps(example.get('public_history', []), sort_keys=True))
+        if key in seen and seen[key] != example['answer']:
+            raise ValueError('Conflicting labels for the same example question/history')
+        seen[key] = example['answer']
     context = {
         'puzzle_id': puzzle['id'], 'opening': puzzle['opening'], 'reference_answer': puzzle['answer'],
         'canonical_solution': pack.get('solution', puzzle['answer']),
-        'canonical_facts': pack.get('canonical_facts', []),
+        'canonical_facts': pack.get('canonical_facts') or puzzle.get('completion_requirements', []),
         'explicit_negatives': pack.get('explicit_negatives', []),
         'unknown_details': pack.get('unknown_details', []),
         'irrelevant_details': pack.get('irrelevant_details', []),
@@ -58,6 +73,12 @@ def build_story_context(puzzle, root=ROOT):
         'review_status': binding.get('review_status', 'pending_human_review') if binding else 'pending_human_review',
         'binding_version': binding.get('version') if binding else None,
         'story_sha256': story_fingerprint(puzzle),
+        'grading_sha256': grading_fingerprint(puzzle),
+        'context_schema': 'story-context-v2',
+        'event_order': pack.get('event_order', []),
+        'knowledge_states': pack.get('knowledge_states', []),
+        'label_boundaries': pack.get('label_boundaries', []),
+        'verification_policy': pack.get('verification_policy', 'single'),
     }
     context['context_sha256'] = hashlib.sha256(json.dumps(context, sort_keys=True, ensure_ascii=False).encode()).hexdigest()
     return context

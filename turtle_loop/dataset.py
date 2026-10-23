@@ -80,10 +80,17 @@ def validate_dataset(data):
         requirements = puzzle.get('completion_requirements', [])
         if not isinstance(requirements, list) or any(not isinstance(x, str) or not x.strip() for x in requirements):
             raise ValueError(f'{pid}: invalid completion requirements')
+        if puzzle.get('grading_protocol') not in (None, 'coverage-v2'):
+            raise ValueError(f'{pid}: unsupported grading protocol')
+        if puzzle.get('grading_protocol') == 'coverage-v2' and not requirements:
+            raise ValueError(f'{pid}: coverage-v2 requires explicit completion requirements')
         rubric = puzzle['rubric']
         if not rubric or len({c['id'] for c in rubric}) != len(rubric):
             raise ValueError(f'{pid}: absent or duplicate rubric checkpoints')
         for c in rubric:
+            if 'required_facts' in c and (not isinstance(c['required_facts'], list) or not c['required_facts']
+                    or any(not isinstance(f,str) or not f.strip() for f in c['required_facts'])):
+                raise ValueError(f'{pid}: invalid required checkpoint facts')
             if (type(c['weight']) not in (float, int) or not math.isfinite(c['weight'])
                     or not 0 < c['weight'] <= 1 or not isinstance(c['criterion'], str)
                     or not c['criterion'].strip()):

@@ -54,6 +54,10 @@ def output_contract(user):
         payload={}
     if not isinstance(payload,dict):
         payload={}
+    if payload.get('evidence_repair') is True:
+        ids=list(payload.get('source_sentences',{}))
+        return obj({'repairs':{'type':'array','items':obj({'field':string,
+                    'sentence_ids':{'type':'array','items':{'type':'string','enum':ids}}})}}),None,''
     if 'current_question' in payload and 'active_puzzle' in payload:
         schema=obj({'label':{'type':'string','enum':['yes','no','yes and no','irrelevant']}})
         return schema,'label','\nTRANSPORT OVERRIDE: Return a JSON object with one field label containing exactly your four-label answer. The controller exposes only that label. No explanations.'
@@ -62,6 +66,9 @@ def output_contract(user):
         fields={'checkpoints':{'type':'array','items':checkpoint}}
         fields.update({k:{'type':'boolean'} for k in ('material_contradiction','irrelevant','rubric_conflict','full_solution')})
         fields['completion_note']=string
+        if payload.get('grading_protocol') == 'coverage-v2':
+            from .coverage import coverage_schema
+            fields.update(coverage_schema())
         return obj(fields),None,''
     if 'turn_control' in payload and 'opening' in payload:
         return obj({'type':{'type':'string','enum':['question','final']},'text':string}),None,''

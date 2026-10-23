@@ -9,6 +9,7 @@ from turtle_loop.dataset import load_dataset
 from turtle_loop.engine import dump, load_prompts
 from turtle_loop.host_context import build_story_context, host_payload, LABELS
 from turtle_loop.providers import Client, APIError, resolve_env
+from turtle_loop.host import answer_question
 
 
 def main():
@@ -39,6 +40,7 @@ def main():
     dump(out/'inputs.json', inputs)
     dump(out/'config.json', config)
     (out/'host_prompt.txt').write_text(prompts['host'])
+    (out/'host_review_prompt.txt').write_text(prompts['host_review'])
     def append(name, row):
         with (out/name).open('a') as stream:
             stream.write(json.dumps(row, ensure_ascii=False)+'\n')
@@ -49,7 +51,8 @@ def main():
             for case, payload in zip(cases, inputs):
                 row = {'id':case['id'], 'repeat':repeat, 'expected':case['expected']}
                 try:
-                    actual = client.complete(prompts['host'], json.dumps(payload,ensure_ascii=False)).text.strip()
+                    actual = answer_question(client, prompts['host'], payload, prompts['host_review'],
+                                             lambda decision:append('host_reviews.jsonl',{'id':case['id'],'repeat':repeat,**decision})).text.strip()
                     row.update(actual=actual, passed=actual==case['expected'], valid_label=actual in LABELS)
                 except APIError as exc:
                     row.update(error=str(exc), passed=False, valid_label=False)
