@@ -1,6 +1,6 @@
 # GoodTurtle — COMP1110
 
-**同事运行入口：[从 clone 到实验的完整指南](docs/coworker_quickstart.md)**。Git 自带可直接运行的 eraser／pillow；完整 50 题用单独交接的数据包。指南覆盖模型配置、所有 sweep 参数、CL、报告和后台运行。
+**同事运行入口：[从 clone 到实验的完整指南](docs/coworker_quickstart.md)**。Git 已包含完整 50 题、partial score 标注和所需 host packs；无需另取数据包，配置自己的模型账号即可运行。指南覆盖模型配置、所有 sweep 参数、CL、报告和后台运行。
 
 
 2026-10-23 追加：已加入多题重复双 agent 实验入口，冻结 host／rubric／代码快照，按题统计均值与方差，并提供三调用的单 agent 对照及独立提案合并策略。
@@ -12,17 +12,17 @@ python3 scripts/team_sweep.py --dataset data/annotations/turtle50_v2/private.jso
   --workers 3 --out runs/api/my_team_sweep
 ```
 
-共 36 局；加 `--dry-run` 零模型调用预检。打开输出目录的 `trajectories.html` 看全部轨迹，`results_zh.md` 看分题结果；每 20 秒更新一次，刷新文件即可看到新记录。[全部参数、策略差异及异常处理](docs/experiment_pipelines.md#多题重复实验冻结快照并发与完整轨迹)。标注仍为 AI 审核待人工确认，新增题目没有对外推送。
+共 36 局；加 `--dry-run` 零模型调用预检。打开输出目录的 `trajectories.html` 看全部轨迹，`results_zh.md` 看分题结果；每 20 秒更新一次，刷新文件即可看到新记录。[全部参数、策略差异及异常处理](docs/experiment_pipelines.md#多题重复实验冻结快照并发与完整轨迹)。完整题库与最终标注已入库；标注仍为 AI 审核待人工确认。
 
-研究海龟汤中的经验迁移与双 agent 合作。当前先完成两个基础任务：可靠的 **host** 和首批 **20 道英文题目**。
+研究海龟汤中的经验迁移与双 agent 合作。当前提供 **50 道英文题目**、评分标注和可配置的 host／player 实验框架。
 
 ## 三方审核后的当前版本（2026-10-23）
 
-当前评分数据为本地 `data/annotations/turtle50_v2/private.json`：50 题、161 个评分点，已与原始 49 题 XLSX 对比并经过三个 subagent 独立复核和主 agent 裁决。原始附件不改写；这是 **AI 审核稿，尚未人工确认**。运行下面实验时请使用 v2 数据，不要把旧评分与新分数直接比较。
+当前已发布评分数据为 `data/annotations/turtle50_v2/private.json`：50 题、161 个评分点，已与原始 49 题 XLSX 对比并经过三个 subagent 独立复核和主 agent 裁决。原始附件不改写；这是 **AI 审核稿，尚未人工确认**。运行下面实验时请使用 v2 数据，不要把旧评分与新分数直接比较。
 
-当前 host 通过 `configs/host_bindings.json` 加载三方审核后的 v3 资料（TS012、TS017、TS022、TS031、TS047），共 478 条示例，其中包括筛选后的审核问答和明确保留的既有校准例。全部 793 条原问答、三个独立答案、裁决和未选入的理由均保留；有歧义或依赖历史的题目不自动作为无上下文 few-shot。
+当前 host 通过 `configs/host_bindings.json` 加载专属资料，已发布全部绑定文件，15 题有专属示例，其余题使用参考答案与完整解答清单。既有三方审核案例和后续校准例的来源状态保存在各 pack 中；新增 AI 示例不冒称人工标注。有歧义或依赖历史的问答不自动作为无上下文 few-shot。
 
-[评分／host 审核总入口](runs/api/20261023_three_review/index.html) · [50 题评分对照](runs/api/20261023_three_review/partial_score_review.html) · [最新单文件 trajectory](runs/api/20261023_three_review_rerun/trajectories.html)。这些私有数据和运行记录仍在本地 Git 忽略目录中。
+[评分／host 审核总入口](runs/api/20261023_three_review/index.html) · [50 题评分对照](runs/api/20261023_three_review/partial_score_review.html) · [最新单文件 trajectory](runs/api/20261023_three_review_rerun/trajectories.html)。这些原始审核过程和运行记录仍在本地；已发布的最终标注可直接查看 [逐题评分文档](data/annotations/turtle50_v2/review.md)。
 
 运行后可重新生成单文件轨迹：
 
@@ -51,9 +51,9 @@ python3 scripts/experiment.py team --dataset data/annotations/turtle50_v2/privat
 
 加 `--dry-run` 可不调用 API。每局继续执行四标签、失败交卷计数和最多 100 次提交规则；内部讨论另记调用/token 消耗。每次运行生成配对差异、均值/方差、轨迹和合作过程。本版 continual learning 指上下文经验迁移，没有模型权重更新。
 
-本地 [50 题评分审核稿](data/annotations/turtle50_v1/review.md) 为每题提供完整解答清单、满分/半分/零分条件，共 164 个评分点；[运行数据](data/annotations/turtle50_v1/private.json) 可直接用于新旧 loop。新增 TS040 已登记网络来源。标注均待人工审核、数据保持本地，远端 clone 不包含这些文件；原 XLSX 未改写。[关系组配置](configs/transfer_groups.json) 保存用户提供的 28 个组，正负相关仍是待检验假设。
+[50 题评分阅读版](data/annotations/turtle50_v2/review.md) 为每题列出完整解答清单及满分／半分／零分条件，共 161 个评分点；[运行数据](data/annotations/turtle50_v2/private.json) 已随仓库发布。新增 TS040 有来源记录，原 XLSX 未改写，标注均待人工审核。[关系组配置](configs/transfer_groups.json) 保存 28 个组的题号与关系假设。
 
-2026-10-23 已修正 host 接入：通过 `configs/host_bindings.json` 按题目 ID 与汤面／汤底 SHA-256 绑定专属资料，橡皮和 pillow 复用旧资料并应用四标签修订；窗户题、火警题补充专属案例。host 与 grader 读取同一个 `host_context.json` 私有快照，player 不可见。绑定的原文变化或资料文件缺失会报错，不会静默串题或退回空示例。目前共 12 题有专属案例（含新增 TS023、TS032、TS033、TS035、TS036、TS049），其余题使用原文与已有完成清单；所有新增标签仍待人工审核。详见 [host 修正与回归方法](docs/host_repair_v2.md)。
+2026-10-23 已修正 host 接入：通过 `configs/host_bindings.json` 按题目 ID 与汤面／汤底 SHA-256 绑定专属资料，橡皮和 pillow 复用旧资料并应用四标签修订；窗户题、火警题补充专属案例。host 与 grader 读取同一个 `host_context.json` 私有快照，player 不可见。绑定的原文变化或资料文件缺失会报错，不会静默串题或退回空示例。目前共 15 题有专属案例（含新增 TS009、TS037、TS048），其余题使用原文与已有完成清单；所有新增标签仍待人工审核。详见 [host 修正与回归方法](docs/host_repair_v2.md)。
 
 已完成本地 GPT-6 Luna 小规模试跑：[中文结果](runs/api/20261022_codex_rerun/results_zh.md)、[完整轨迹入口](runs/api/20261022_codex_rerun/index.html)、[审核疑点](runs/api/20261022_codex_rerun/audit_notes.md)。原 20 局计划因 host／评分一致性问题缩减为 8 局；每条件仅一次，不能估计样本方差。这些本地运行资料位于 Git 忽略的 `runs/api/`。
 
@@ -84,11 +84,11 @@ python3 scripts/play.py demo
 
 ### 2. 准备数据
 
-按此前的数据发布范围，Git 中 `data/` 仍只发布 eraser 和 pillow。**新的 49 题 XLSX 和导入结果没有上传，clone 后需要自行提供表格。** 可以直接运行 XLSX，也可先导入再运行；历史 host pack JSON 不是新 loop 的 dataset 格式。
+**Git 已提供完整 50 题和评分标注**，默认使用 `data/annotations/turtle50_v2/private.json`，无需原 XLSX。下面的导入命令仅用于你自己的额外表格；历史 host pack JSON 不是新 loop 的 dataset 格式。
 
 ```sh
-# 修改为自己的表格路径；带空格的路径必须加引号。
-export TURTLE_DATASET="$HOME/Downloads/turtle_soup_labeled_49_with_partial_score.xlsx"
+# 直接使用仓库内题库；若导入自己的 XLSX，再修改此路径。
+export TURTLE_DATASET="data/annotations/turtle50_v2/private.json"
 python3 scripts/play.py inspect --dataset "$TURTLE_DATASET"
 
 # 可选：导入目录必须尚不存在。
@@ -301,7 +301,7 @@ python3 -m unittest discover -s tests -v
 
 ## 历史原型交付与状态
 
-本次 Git 发布的 `data/` **仅包含 eraser 与 pillow**，范围由 `data/release_scope.json` 固定。其他候选、来源数据和包含其他故事的共享示例不入库；本地原文件保留。历史 `runs/` 和文档仍按批准范围完整归档，可能包含其他题目。当前新建 host 仅加载该题专属示例；复现旧实验使用各 run 冻结上下文中的原始共享示例，不用新配置替换。
+旧版只发布 eraser／pillow；2026-10-23 用户已授权完整 50 题及最终标注入库。`data/release_scope.json` 的 loop_puzzle_ids 记录当前范围，puzzle_ids 则保留旧 prepare.py 的两题 ID，以兼容历史流程。其他未纳入这 50 题的研究候选仍留本地。历史 `runs/` 和文档仍按批准范围完整归档，可能包含其他题目。当前新建 host 仅加载该题专属示例；复现旧实验使用各 run 冻结上下文中的原始共享示例，不用新配置替换。
 
 - [Host system prompt](prompts/host_system.txt)：v0.5.1 三标签协议，仅输出 `yes` / `no` / `yes and no`，按汤底中的实际用途判定。
 - 历史共享示例库：6 个独立小故事、52 条标注示例，冻结副本保存在历史 run；本次不发布独立 `data/host_examples.json`。

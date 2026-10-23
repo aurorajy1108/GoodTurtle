@@ -14,35 +14,28 @@ python3 scripts/play.py demo --out runs/api/my_demo
 
 `demo` 是脚本模拟，不调用模型，不代表性能结果。所有输出目录必须尚不存在；第二次运行请改名字。
 
-## 2. 选择数据：clone 自带两题；完整题库单独交接
-
-Git 自带 `data/public/loop_eraser_pillow.json`，含 TS002（pillow）和 TS031（eraser）的汤底、评分和完成条件，以及对应 host pack。`public` 目录名是历史路径，**这个文件含秘密答案，只供控制器使用，不可直接给 player**。
+## 2. 题库与评分已随代码发布
 
 ```sh
-python3 scripts/play.py inspect --dataset data/public/loop_eraser_pillow.json
-```
-
-完整 50 题及其他专属 host pack 遵循原发布范围，不随 Git 上传。要跑 TS023 等题，向项目负责人取得与当前代码匹配的 `goodturtle_experiment_inputs.zip`，在仓库根目录验证并解压：
-
-```sh
-python3 scripts/experiment_bundle.py verify --archive /path/to/goodturtle_experiment_inputs.zip
-python3 -m zipfile -e /path/to/goodturtle_experiment_inputs.zip .
+# 已有工作副本使用 git pull；新同事直接 clone 即可。
+git pull --ff-only
 python3 scripts/play.py inspect --dataset data/annotations/turtle50_v2/private.json
 ```
 
-ZIP 只含题库、所需 host packs 和 SHA-256 清单，无 key、登录文件、模型配置或运行记录。验证同时检查当前 `configs/host_bindings.json` 是否与数据包匹配。若不匹配，请取得对应版本，不要删除绑定校验。对已有工作副本解压会写入相同路径，推荐使用干净 clone。
+当前仓库包含完整 **50 题、161 个评分点**，无需下载 XLSX 或单独的数据 ZIP：
 
-项目负责人生成本地交接包的方法：
+- `data/annotations/turtle50_v2/private.json`：每题英文汤面、汤底、完整解答要求、partial score 权重和满分／半分／零分规则。
+- `data/annotations/turtle50_v2/review.md`：逐题可读标注。
+- `configs/host_bindings.json` 和它引用的所有 `data/host_packs/` 文件：当前 15 题专属示例；其余题用参考答案和完成清单，全部可运行。
+- `data/public/loop_eraser_pillow.json`：可选的 TS002／TS031 两题小子集。
 
-```sh
-python3 scripts/experiment_bundle.py export \
-  --dataset data/annotations/turtle50_v2/private.json \
-  --out /tmp/goodturtle_experiment_inputs.zip
-```
+`private.json` 中的 private 指“对 player 保密”，不是未上传。控制器会隔离答案和评分，玩家只看到汤面及四标签反馈。标注经过 AI 审核，仍待人工确认，不能当作已验证的人工 gold。
 
-`export --dataset` 是源 JSON/XLSX，`--out` 是尚不存在的 ZIP，父目录需存在；`verify --archive` 只校验不解压、不调用模型。两子命令均支持 `-h / --help`。生成的数据集固定放在包内 `data/annotations/turtle50_v2/private.json`；如果传入的是其他标注版本，内容以输入为准，不会自动升级评分。不要把 ZIP 加入 Git。
+模型账号必须由运行者自己配置。原始 49 题 XLSX 不是运行依赖；直接使用仓库中的 v2 JSON，避免旧表格和新 host 绑定版本不一致。
 
-原始 49 题 XLSX 可以被读取，但它不等于已经审核的 50 题 v2 数据。相同题号的汤面／汤底若改变，当前绑定会拒绝运行；不能靠重命名文件假装复现了相同数据。
+如果此前解压过旧数据包，`git pull` 提示未跟踪文件将被覆盖时，先备份提示中的文件或使用新的 clone，不要强制清理。旧 ZIP 不再是运行前置条件。
+
+可选的离线传输工具仍可用：`python3 scripts/experiment_bundle.py export --dataset data/annotations/turtle50_v2/private.json --out /tmp/new_bundle.zip`；`--dataset` 指源 JSON/XLSX，`--out` 指新 ZIP（父目录需存在）。`python3 scripts/experiment_bundle.py verify --archive /tmp/new_bundle.zip` 检查哈希及绑定版本，不解压、不调用模型；两子命令支持 `-h / --help`。不需要为正常 clone/pull 运行这些命令。
 
 ## 3. 模型配置：任选一种
 
@@ -94,7 +87,7 @@ python3 scripts/play.py run --dataset data/public/loop_eraser_pillow.json \
 ## 5. 多题、多次双 agent 对比
 
 ```sh
-# 完整数据包解压后：先不花模型调用检查 36 局计划。
+# clone/pull 后：先不花模型调用检查 36 局计划。
 python3 scripts/team_sweep.py --dataset data/annotations/turtle50_v2/private.json \
   --config configs/loop.openai.json --puzzles TS023,TS032,TS033 \
   --repeat 3 --strategies solo,solo_reflect,discuss,independent \
@@ -107,7 +100,7 @@ python3 scripts/team_sweep.py --dataset data/annotations/turtle50_v2/private.jso
   --workers 3 --out runs/api/team_real
 ```
 
-新增另一批可将 `--puzzles` 改成 `TS035,TS036,TS049` 并换输出目录。只用 Git 自带数据可改为 `--dataset data/public/loop_eraser_pillow.json --puzzles TS002,TS031`，此时总计 24 局。
+新增另一批可将 `--puzzles` 改成 `TS035,TS036,TS049` 并换输出目录。想用两题小子集可改为 `--dataset data/public/loop_eraser_pillow.json --puzzles TS002,TS031`，此时总计 24 局。
 
 | 条件 | 每轮 solver 调用 | 行为 |
 | --- | ---: | --- |
@@ -173,4 +166,4 @@ python3 scripts/team_sweep.py --out runs/api/team_background --summarize-only
 
 需要停止时优先对前台 launcher 按 Ctrl-C；后台请记录启动时的 launcher PID 并给它 SIGINT。不要按名称批量 kill 其他实验。每局遇到 API、超时或协议错误会保留原记录并停止该题后续条件；launcher 不再启动新题，已经启动的其他题仍继续。没有自动续跑，也不会自动重采样“较差答案”。修复后请用新目录并保留失败批次。
 
-缺文件通常是尚未解压匹配数据包；fingerprint mismatch 是原文／绑定版本不同；缺环境变量先检查对应模型配置；401/403 检查本人的账号权限；429 时降低并行数并核对已有任务。100 次未解出是预算截尾，不是解题耗时为 100。三次重复只降低部分随机波动，不证明统计显著。
+缺文件先确认已拉取最新代码且文件没有被本地删除；fingerprint mismatch 是原文／绑定版本不同；缺环境变量先检查对应模型配置；401/403 检查本人的账号权限；429 时降低并行数并核对已有任务。100 次未解出是预算截尾，不是解题耗时为 100。三次重复只降低部分随机波动，不证明统计显著。

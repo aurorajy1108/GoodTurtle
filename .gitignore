@@ -8,7 +8,7 @@ __pycache__/
 venv/
 .pytest_cache/
 
-# Publish only explicitly approved puzzle packs; keep other private data local.
+# Publish the approved 50-puzzle dataset and active host packs; retain other research files locally.
 /data/*
 !/data/release_scope.json
 !/data/host_packs/
@@ -30,3 +30,24 @@ venv/
 
 # New API experiments contain private answer/rubric snapshots; publish deliberately.
 /runs/api/
+
+!/data/host_packs/LOOP_TS022_v3.json
+!/data/host_packs/LOOP_TS047_v4.json
+!/data/host_packs/LOOP_TS012_v3.json
+!/data/host_packs/LOOP_TS017_v4.json
+!/data/host_packs/LOOP_TS023_v4.json
+!/data/host_packs/LOOP_TS032_v4.json
+!/data/host_packs/LOOP_TS033_v4.json
+!/data/host_packs/LOOP_TS035_v1.json
+!/data/host_packs/LOOP_TS036_v1.json
+!/data/host_packs/LOOP_TS049_v1.json
+!/data/host_packs/LOOP_TS009_local.json
+!/data/host_packs/LOOP_TS037_local.json
+!/data/host_packs/LOOP_TS048_local.json
+!/data/annotations/
+/data/annotations/*
+!/data/annotations/turtle50_v2/
+/data/annotations/turtle50_v2/*
+!/data/annotations/turtle50_v2/private.json
+!/data/annotations/turtle50_v2/review.md
+!/data/annotations/turtle50_v2/README.md

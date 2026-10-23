@@ -4,14 +4,14 @@
 
 ## 数据与评分
 
-本地新数据：`data/annotations/turtle50_v1/private.json`。共 TS001–TS050，50 题、164 个评分点。49 道原题的汤面和参考答案保持原样；原始权重保留，7 项判据有显式修订。每题增加：
+仓库已发布 `data/annotations/turtle50_v2/private.json`：TS001–TS050，共 50 题、161 个评分点，经过三位 AI 独立提案及裁定。clone/pull 后即可使用，无需另取数据包。每题包含：
 
-- `completion_requirements`：完整叙事必须覆盖的清单，仅给 grader。
+- `completion_requirements`：完整叙事必须覆盖的清单，供 host／grader 使用，player 不可见。
 - `rubric[].points / full_credit / half_credit / zero_credit`：百分制满分值与满分、半分、零分规则。程序仍按 `weight × credit` 输出 0–1，乘 100 得百分制。
 - `grading_notes`：不可过度要求的细节、hand/arm 等边界。
-- `annotation_status`：全部为 pending_human_review，不能视为人工金标准。
+- `annotation_status`：标记 AI 审核且待人工确认，不能视为人工金标准。
 
-人工阅读 `review.md` 或 `review.html`；`annotation_changes.json` 记录判据改动。`public.jsonl` 只有 ID 和汤面，不能单独用于主持和评分。构建脚本保存在同目录 `build_annotations.py`；源为先前导入的 private.json。本次没有改写原 XLSX，标注存入实验直接读取的 JSON，并提供可读文档。新数据仍遵循既有本地保存限制，不自动提交到 Git。
+人工阅读同目录的 `review.md`，权威运行输入为 `private.json`。原 XLSX 未改写，其 SHA-256 保存在 source 字段。所需 host packs 已一起入库；完整标注不再受旧的 eraser／pillow 发布范围限制。
 
 TS040 是 [Puzzle Prime: Unconscious and Bleeding](https://www.puzzleprime.com/puzzles/brain-teasers/lateral/unconscious-and-bleeding/) 的简短英文转述：窃贼扔砖砸窗，砖反弹使其昏迷。记录了来源和待复核状态，未验证难度，未自动加入关系组。
 
@@ -25,18 +25,18 @@ export OPENAI_MODEL='账号可用的准确 API 模型 ID'
 
 # 默认 G07 的两个方向：TS022→TS047，以及 TS047→TS022。
 python3 scripts/experiment.py continual \
-  --dataset data/annotations/turtle50_v1/private.json \
+  --dataset data/annotations/turtle50_v2/private.json \
   --config configs/loop.openai.json --group G07 --repeat 3
 
 # 限定一个方向，并先做不调用模型的检查。
 python3 scripts/experiment.py continual \
-  --dataset data/annotations/turtle50_v1/private.json \
+  --dataset data/annotations/turtle50_v2/private.json \
   --config configs/loop.openai.json --group G01 --pair TS012:TS017 \
   --repeat 3 --dry-run
 
 # 全部 28 个关系组；建议先完成小批 host 人工审核再运行。
 python3 scripts/experiment.py continual \
-  --dataset data/annotations/turtle50_v1/private.json \
+  --dataset data/annotations/turtle50_v2/private.json \
   --config configs/loop.openai.json --group all --repeat 3
 ```
 
@@ -59,12 +59,12 @@ python3 scripts/experiment.py continual \
 
 ```sh
 python3 scripts/experiment.py team \
-  --dataset data/annotations/turtle50_v1/private.json \
+  --dataset data/annotations/turtle50_v2/private.json \
   --config configs/loop.openai.json --puzzle TS002,TS031 --repeat 3
 
 # 只比较单人和双人讨论；可用不同供应商作为第二位 solver。
 python3 scripts/experiment.py team \
-  --dataset data/annotations/turtle50_v1/private.json \
+  --dataset data/annotations/turtle50_v2/private.json \
   --config configs/loop.openai.json --puzzle TS040 --repeat 3 \
   --strategies solo,discuss --partner-config configs/partner.deepseek.json
 ```
@@ -88,7 +88,7 @@ python3 scripts/experiment.py team \
 新增 `configs/loop.codex.json`，通过官方 `codex exec` 复用本机已有登录；不读取、复制或提交 auth.json。先确认 `codex login status` 显示已登录，然后将上面的配置路径换为此文件。
 
 ```sh
-python3 scripts/experiment.py continual --dataset data/annotations/turtle50_v1/private.json \
+python3 scripts/experiment.py continual --dataset data/annotations/turtle50_v2/private.json \
   --config configs/loop.codex.json --group G07 --pair TS022:TS047 --repeat 2
 ```
 

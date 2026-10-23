@@ -37,7 +37,7 @@ def export(dataset, output, root=ROOT):
                 'dataset': 'data/annotations/turtle50_v2/private.json',
                 'required_bindings_sha256': digest(bindings_path.read_bytes()),
                 'files': {name: digest(blob) for name, blob in members.items()},
-                'privacy': 'Private puzzle answers and AI-reviewed rubrics. Share separately; not a Git release.',
+                'privacy': 'Puzzle answers and AI-reviewed rubrics for host/grader only. Optional offline copy of published experiment inputs.',
                 'credentials_included': False}
     # Only explicit dataset/pack members; never include .env, login files, configs or runs.
     with ZipFile(output, 'x', compression=ZIP_DEFLATED) as archive:
