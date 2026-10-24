@@ -95,6 +95,11 @@ def validate_dataset(data):
                     or not 0 < c['weight'] <= 1 or not isinstance(c['criterion'], str)
                     or not c['criterion'].strip()):
                 raise ValueError(f'{pid}: invalid rubric checkpoint')
+        for c in rubric:
+            valid_ids = {f"{c['id']}.F{i}" for i in range(1,len(c.get('required_facts', []))+1)}
+            gates = c.get('half_credit_requires', [])
+            if not isinstance(gates,list) or any(not isinstance(x,str) or x not in valid_ids for x in gates):
+                raise ValueError(f'{pid}: invalid half_credit_requires')
         if not math.isclose(sum(c['weight'] for c in rubric), 1, abs_tol=1e-9):
             raise ValueError(f'{pid}: rubric weights must sum to 1')
     return data

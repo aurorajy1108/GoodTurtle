@@ -1,0 +1,56 @@
+[
+  {
+    "id": "TS023_final_100",
+    "puzzle_id": "TS023",
+    "submission": "The man voluntarily entered a coffin for a planned buried-coffin escape stunt, knowing there was a corpse inside but not knowing whose it was. When he struck a match and recognized the body, he realized that the deceased was supposed to remove the earth covering the coffin and could no longer do so. He was never dug out and died trapped underground. The recognition made him understand that the planned escape had failed; the clues do not establish a single precise physical cause of death or fully explain why no one else rescued him.",
+    "expected": {
+      "complete": false,
+      "checkpoint_credits": {
+        "C1": 0,
+        "C2": 0
+      }
+    }
+  },
+  {
+    "id": "TS036_final_75",
+    "puzzle_id": "TS036",
+    "submission": "Kameda and Umio were political rivals struggling over power. Kameda died while still reigning monarch, and his cremation was a prestigious funeral rite. Umio also died, but was buried intact and received a less honorific burial. People took the difference in their posthumous treatment as a sign that Umio had lost the political struggle to Kameda. Kameda’s “battered fragments” were the result of cremation, not combat; Umio’s body was undamaged because he was buried.",
+    "expected": {
+      "complete": false,
+      "checkpoint_credits": {
+        "C2": 0.5,
+        "C3": 0
+      }
+    }
+  },
+  {
+    "id": "TS036_final_100",
+    "puzzle_id": "TS036",
+    "submission": "Kameda was the reigning monarch, and Umio was a non-royal challenger for political control of the same kingdom. Kameda defeated Umio. After their deaths, Kameda was cremated, a more honorific treatment, while Umio was buried intact in a deliberately less prestigious burial arranged by Kameda’s side. People comparing their funerals took that contrast as evidence that Umio had lost. Kameda’s fragments resulted from cremation, not from damage Umio inflicted during their struggle.",
+    "expected": {
+      "complete": false,
+      "checkpoint_credits": {
+        "C2": 0.5,
+        "C3": 0
+      }
+    }
+  },
+  {
+    "id": "TS023_complete",
+    "puzzle_id": "TS023",
+    "submission": "The man was a prisoner. In order to escape, he bribed a prison guard. The two agreed that the next time someone in the prison died, he would hide inside the coffin. After it was transported out and buried, the guard would dig him back up.\n \nThen one day, someone in the prison finally passed away, and he quickly hid inside the coffin. When the coffin was buried and everything around him was pitch black, he struck a match to take a look. He found that lying next to him—the prison guard who was supposed to be waiting to escape with him—was already dead. Knowing his own death was certain, he could only wait to die in terror and despair.",
+    "expected": {
+      "complete": true,
+      "partial_score": 1
+    }
+  },
+  {
+    "id": "TS036_complete",
+    "puzzle_id": "TS036",
+    "submission": "Kameda and Umio were historical political rivals: Kameda was a king, and Umio was a duke. The comparison concerned their excavated skeletal remains, including photographs shown during a history lecture.\nTheir culture normally cremated the dead. Kameda’s fragmented bones were consistent with a proper cremation and an honourable royal burial.\nUmio’s intact skeleton indicated that his body had instead been buried without cremation. The accepted historical explanation was that Kameda’s agents had poisoned Umio and secretly disposed of his body.\nConsequently, Umio’s better-preserved remains suggested that he had lost the political struggle and been denied a proper funeral. They did not indicate that he had survived or defeated Kameda.",
+    "expected": {
+      "complete": true,
+      "partial_score": 1
+    }
+  }
+]

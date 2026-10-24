@@ -4,7 +4,7 @@
 
 ## 运行方式与版本
 
-新实验使用 `data/annotations/turtle50_v3/private.json`。模型配置方式、CLI 参数和 100 次提交上限不变，命令见 [运行指南](coworker_quickstart.md)。`configs/loop.codex.json` 请求 Luna high；没有自动切换 Astra。
+新实验使用 `data/annotations/turtle50_v3/private.json`。模型配置方式、CLI 参数和 100 次提交上限不变，命令见 [运行指南](coworker_quickstart.md)。从 2026-10-24 下一批新实验起，`configs/loop.codex.json` 请求 host/grader 为 GPT-6.1 Sol high，player 为 GPT-6 Luna high。现有批次保留冻结配置；此前 Luna high 回归结果不能当作 Sol 的验证结果。
 
 所有 50 题均绑定 `LOOP_TSxxx_repair_v5.json`，共 1,148 条示例。新增 35 题使用来源事实、否定问法与无关细节的基础示例，这只能解决示例缺失，不能替代真实历史的可靠性验证。TS023/032/033/036/009 另有时间线、人物知识状态及标签边界。TS009 明确是小明放下鸡蛋，正常运作的雨刮器打破鸡蛋。
 

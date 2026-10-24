@@ -34,6 +34,14 @@ class CoverageTests(unittest.TestCase):
         self.assertFalse(result['full_solution'])
         self.assertEqual(len(result['controller_corrections']),2)
 
+    def test_half_credit_gate_cannot_be_bypassed_by_partial_overlap(self):
+        self.rubric[0]['half_credit_requires']=['C1.F1']
+        self.value['checkpoints'][0]['credit']=0.5
+        self.value['fact_coverage'][0].update(status='missing',evidence='')
+        result=self.grade(submission='The guard would dig him out. A hid himself after the guard died.')
+        self.assertEqual(result['partial_score'],0)
+        self.assertTrue(any(c['field']=='C1.credit' for c in result['controller_corrections']))
+
     def test_missing_narrative_blocks_success_without_erasing_valid_checkpoint(self):
         self.value['requirement_coverage'][0].update(status='missing', evidence='')
         result=self.grade()

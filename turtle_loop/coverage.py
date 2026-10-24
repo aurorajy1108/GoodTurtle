@@ -93,6 +93,10 @@ def constrain(value, rubric, requirements, submission):
         statuses = [facts[s['id']]['status'] for s in specs if s['checkpoint_id']==point['id']]
         cap = (0 if point['id'] in affected or 'contradicted' in statuses or all(s=='missing' for s in statuses)
                else 1 if all(s=='covered' for s in statuses) else 0.5)
+        rule = next(r for r in rubric if r['id'] == point['id'])
+        gates = rule.get('half_credit_requires', [])
+        if cap < 1 and any(facts[fid]['status'] != 'covered' for fid in gates):
+            cap = 0
         if point['credit'] > cap:
             corrections.append({'field':point['id']+'.credit','model':point['credit'],'effective':cap})
             point['credit'] = cap

@@ -115,7 +115,7 @@ class Recorder:
                          'prompts_sha256':hashlib.sha256(json.dumps(prompts,sort_keys=True).encode()).hexdigest()}
         self.versions['controller_sha256'] = hashlib.sha256(b''.join(
             (ROOT/'turtle_loop'/name).read_bytes() for name in
-            ('engine.py','host.py','host_context.py','coverage.py','grader.py','providers.py','codex_client.py'))).hexdigest()
+            ('engine.py','host.py','host_context.py','coverage.py','grader.py','providers.py','codex_client.py','experiments.py'))).hexdigest()
         dump(self.folder / 'puzzle_private.json', puzzle)
         dump(self.folder / 'config.json', config)
         dump(self.folder / 'prompts.json', prompts)

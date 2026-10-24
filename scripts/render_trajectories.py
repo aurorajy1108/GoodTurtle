@@ -34,7 +34,8 @@ def collect(root):
             puzzle = read('puzzle_private.json', {})
             games.append({'name': str(folder.relative_to(root)), 'puzzle_id': puzzle.get('id'),
                           'opening': puzzle.get('opening'), 'answer': puzzle.get('answer'),
-                          'result': read('result.json', {}), 'events': jsonl(path),
+                          'result': ({**read('result.json', {}), 'status':'superseded', 'success':None}
+                                     if read('superseded.json') else read('result.json', {})), 'events': jsonl(path),
                           'collaboration': jsonl(folder/'collaboration.jsonl'),
                           'prior_experience': read('prior_experience.json'),
                           'host_context': read('host_context.json'), 'audit_notice':notice})
@@ -80,6 +81,7 @@ if(g.audit_notice)box.append(detail('审核说明（未改写原始结果）',g.
 if(g.prior_experience)box.append(detail('传给 B 的 A 题公开经验',g.prior_experience));
 const feedback=new Map(g.events.filter(x=>x.event==='host_feedback'||x.event==='evaluation').map(x=>[x.submission,x]));
 for(const t of g.events.filter(x=>x.event==='submission')){const f=feedback.get(t.index);const a=el('article',undefined,t.type);a.append(el('h3','#'+t.index+' · '+t.type+(t.forced?' · 强制最终提交':'')),el('pre',t.text),el('p','Host: '+(f?.label??'等待反馈'),'label'));if(f?.event==='evaluation')a.append(detail('私有评分与完整叙事判定',f));const checks=g.events.filter(e=>e.submission===t.index&&(e.event==='host_review'||e.event==='grader_evidence_repair'));if(checks.length)a.append(detail('私有复核及引用修复（不计为玩家问题）',checks));box.append(a)}
+const reveals=g.events.filter(e=>e.event==='source_answer_reveal');if(reveals.length)box.append(detail('A 结束后的完整答案揭示（不消耗 B 额度）',reveals));
 if(g.collaboration.length)box.append(detail('全部合作讨论（按调用顺序）',g.collaboration));
 box.append(detail('性能与问题计数',g.result));target.append(box)}}
 document.getElementById('filter').onchange=draw;document.getElementById('search').oninput=draw;document.getElementById('expand').onclick=()=>document.querySelectorAll('details.game').forEach(x=>x.open=true);draw();

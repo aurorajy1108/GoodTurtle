@@ -32,7 +32,7 @@ def main():
     for case in cases:
         p=bank[case['puzzle_id']]
         if p.get('grading_protocol')!=PROTOCOL:raise ValueError('check_grader requires coverage-v2 data')
-        if not case['expected'] or set(case['expected'])-{'complete','partial_score','material_contradiction'}:
+        if not case['expected'] or set(case['expected'])-{'complete','partial_score','material_contradiction','checkpoint_credits'}:
             raise ValueError('Expected fields: complete, partial_score, material_contradiction')
         inputs.append({'opening':p['opening'],'reference_answer':p['answer'],'story_context':build_story_context(p),
                        'rubric':p['rubric'],'completion_requirements':p['completion_requirements'],
@@ -53,7 +53,9 @@ def main():
                 try:
                     grade,_=evaluate_final(client,prompts['grader'],payload,
                                            lambda repair:append('evidence_repairs.jsonl',{'id':case['id'],'repeat':repeat,**repair}))
-                    row.update(grade=grade,passed=all(grade[k]==v for k,v in case['expected'].items()))
+                    credits={p['id']:p['credit'] for p in grade['checkpoints']}
+                    passed=all((all(credits.get(cid)==credit for cid,credit in v.items()) if k=='checkpoint_credits' else grade[k]==v) for k,v in case['expected'].items())
+                    row.update(grade=grade,passed=passed)
                 except (APIError,ProtocolError) as exc:
                     row.update(error=str(exc),passed=False)
                 rows.append(row);append('results.jsonl',row)

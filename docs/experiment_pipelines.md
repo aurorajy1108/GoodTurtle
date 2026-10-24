@@ -4,7 +4,7 @@
 
 ## 数据与评分
 
-仓库已发布 `data/annotations/turtle50_v3/private.json`：TS001–TS050，共 50 题、161 个评分点，经过三位 AI 独立提案及裁定。clone/pull 后即可使用，无需另取数据包。每题包含：
+仓库已发布 `data/annotations/turtle50_v4/private.json`：TS001–TS050，共 50 题、161 个评分点，经过三位 AI 独立提案及裁定。clone/pull 后即可使用，无需另取数据包。每题包含：
 
 - `completion_requirements`：完整叙事必须覆盖的清单，供 host／grader 使用，player 不可见。
 - `rubric[].points / full_credit / half_credit / zero_credit`：百分制满分值与满分、半分、零分规则。程序仍按 `weight × credit` 输出 0–1，乘 100 得百分制。
@@ -25,31 +25,31 @@ export OPENAI_MODEL='账号可用的准确 API 模型 ID'
 
 # 默认 G07 的两个方向：TS022→TS047，以及 TS047→TS022。
 python3 scripts/experiment.py continual \
-  --dataset data/annotations/turtle50_v3/private.json \
+  --dataset data/annotations/turtle50_v4/private.json \
   --config configs/loop.openai.json --group G07 --repeat 3
 
 # 限定一个方向，并先做不调用模型的检查。
 python3 scripts/experiment.py continual \
-  --dataset data/annotations/turtle50_v3/private.json \
+  --dataset data/annotations/turtle50_v4/private.json \
   --config configs/loop.openai.json --group G01 --pair TS012:TS017 \
   --repeat 3 --dry-run
 
 # 全部 28 个关系组；建议先完成小批 host 人工审核再运行。
 python3 scripts/experiment.py continual \
-  --dataset data/annotations/turtle50_v3/private.json \
+  --dataset data/annotations/turtle50_v4/private.json \
   --config configs/loop.openai.json --group all --repeat 3
 ```
 
 每个 group / A / B / repeat 构成一个 block：
 
-1. 新会话完成 A，最多 100 次。A 未解出也保留失败经验，不替换为理想答案。
+1. 新会话完成 A，最多 100 次。无论 A 答对还是耗尽预算，结束后都揭示 A 的完整标准答案；保留真实失败轨迹，不改写成成功。答案揭示不算提问。
 2. 在新会话直接做 B（direct），没有 A 的任何信息。
-3. 在另一新会话做 B（transcript），每轮提供 A 的完整公开提交和四标签反馈。A 的模型私有推理、参考答案、rubric、分数、题号、family、关系标签均不传入。
+3. 在另一新会话做 B（transcript），每轮提供 A 的完整公开提交、四标签反馈以及结束后揭示的完整标准答案。A 的模型私有推理、rubric、分数、题号、family、关系标签均不传入；B 的标准答案始终不可见。
 4. 比较同一 block 的两个 B；每局 B 都有完整独立预算。B 条件的运行顺序随机化，互相不共享 B 的轨迹。
 
-默认 `--source-feedback none`，符合用户选择的“只传公开对话”。`--source-feedback answer` 是独立的答案教学条件：A 结束后额外给出 **A 的标准答案**，永远不给 B 的答案；必须与 none 分开报告。这个开关不会要求 A 必须成功，源局成功与否留在 contrasts 中用于分层分析。
+根据当前实验要求，默认 `--source-feedback answer`：A 结束后提供 **A 的完整标准答案**，永远不给 B 的答案。`--source-feedback none` 仅作为显式选择的历史消融条件，必须与 answer 分开报告。A 不必成功，源局成功与否留在 contrasts 中用于分层分析。完整答案写入 `source_answer_reveal.json` 和源 trajectory 的 `source_answer_reveal` 事件，计数不变。
 
-可选 `--memory card` 将 A 的允许信息总结成不超过 300 词的经验卡，随后让 B 只看卡；`--memory both` 同时包含 direct / transcript / card 三种 B。卡由 player 配置的模型生成，调用和成本计入源局 `memory` 角色，不读取私有 grader 信息；300 词是提示约束，不是截断器。
+可选 `--memory card` 将 A 的允许信息总结成不超过 300 词的经验卡，随后让 B 看卡；默认 answer 模式还会在卡旁单独提供未经摘要或截断的 A 完整答案，防止摘要遗漏；`--memory both` 同时包含 direct / transcript / card 三种 B。卡由 player 配置的模型生成，调用和成本计入源局 `memory` 角色，不读取私有 grader 信息；300 词是提示约束，不是截断器。
 
 同组全部题按**有方向的两两组合**展开。28 组共 76 个 group-pairs，每次重复默认 228 局（76 个 A + 152 个 B）；repeat=3 是 684 局。both 模式每次重复 304 局，另有 76 次摘要调用。API 失败会提前终止，实际数量可能更少。
 
@@ -59,12 +59,12 @@ python3 scripts/experiment.py continual \
 
 ```sh
 python3 scripts/experiment.py team \
-  --dataset data/annotations/turtle50_v3/private.json \
+  --dataset data/annotations/turtle50_v4/private.json \
   --config configs/loop.openai.json --puzzle TS002,TS031 --repeat 3
 
 # 只比较单人和双人讨论；可用不同供应商作为第二位 solver。
 python3 scripts/experiment.py team \
-  --dataset data/annotations/turtle50_v3/private.json \
+  --dataset data/annotations/turtle50_v4/private.json \
   --config configs/loop.openai.json --puzzle TS040 --repeat 3 \
   --strategies solo,discuss --partner-config configs/partner.deepseek.json
 ```
@@ -88,16 +88,16 @@ python3 scripts/experiment.py team \
 新增 `configs/loop.codex.json`，通过官方 `codex exec` 复用本机已有登录；不读取、复制或提交 auth.json。先确认 `codex login status` 显示已登录，然后将上面的配置路径换为此文件。
 
 ```sh
-python3 scripts/experiment.py continual --dataset data/annotations/turtle50_v3/private.json \
+python3 scripts/experiment.py continual --dataset data/annotations/turtle50_v4/private.json \
   --config configs/loop.codex.json --group G07 --pair TS022:TS047 --repeat 2
 ```
 
-该配置按用户指定使用 `gpt-6-luna`，所有角色均为 reasoning high。Codex backend 仅接受下列字段，和 HTTP API profile 不混用：
+该配置从下一批新实验起按用户指定使用 host/grader `gpt-6.1-sol`、player `gpt-6-luna`，所有角色均为 reasoning high。已运行批次的冻结配置保持不变。Codex backend 仅接受下列字段，和 HTTP API profile 不混用：
 
 | 字段 | 默认/要求 | 含义 |
 | --- | --- | --- |
 | `provider` | 必填 `codex_cli` | 使用官方本机 CLI |
-| `model` | 必填 | 精确模型名；本次为 gpt-6-luna |
+| `model` | 必填 | 精确模型名；当前 host/grader 为 gpt-6.1-sol，player 为 gpt-6-luna |
 | `reasoning_effort` | `high` | low / medium / high / xhigh / max / ultra，实际支持由服务端决定 |
 | `timeout` | `240` 秒，范围 (0,600] | 整个单次 CLI 调用的超时 |
 
@@ -131,7 +131,7 @@ CLI 事件不回传实际服务端模型名，日志固定记录请求的模型�
 | `--group IDS` | `G07` | 单组、逗号分隔多组或 all，不要夹空格 |
 | `--pair A:B` | 不限制 | 在选中组中只运行这个方向；如 TS012:TS017；两题必须不同，零匹配时报错 |
 | `--memory MODE` | `transcript` | transcript / card / both；三种都包含 direct 基线 |
-| `--source-feedback MODE` | `none` | none 只允许公开轨迹；answer 额外揭示 A 答案；不改变 B 的私有隔离 |
+| `--source-feedback MODE` | `answer` | A 结束后揭示完整答案（不计数）；none 是显式历史消融。direct B 始终不接收 A 信息 |
 
 | team 专用 | 默认 / 约束 | 说明 |
 | --- | --- | --- |
@@ -172,7 +172,7 @@ python3 -m unittest discover -s tests -v
 ## 多题重复实验：冻结快照、并发与完整轨迹
 
 ```sh
-python3 scripts/team_sweep.py --dataset data/annotations/turtle50_v3/private.json \
+python3 scripts/team_sweep.py --dataset data/annotations/turtle50_v4/private.json \
   --config configs/loop.codex.json --puzzles TS023,TS032,TS033 \
   --repeat 3 --strategies solo,solo_reflect,discuss,independent \
   --workers 3 --out runs/api/my_team_sweep
@@ -208,3 +208,39 @@ python3 scripts/team_sweep.py --out runs/api/my_team_sweep --summarize-only
 
 
 当前 host 的独立核验、grader 的证据覆盖与格式修复、额外调用成本、回归命令见 [host v5.1 修复说明](host_repair_v5.md)。新实验使用 v3 数据；原 runtime_snapshot 不受仓库修改影响。
+
+## 2026-10-24: shared buffer and audited boundaries
+
+New trials use v4 data and `configs/loop.codex.json`: host/grader `gpt-6.1-sol`, player/partner `gpt-6-luna`, all reasoning high. The complete 100-submission limit remains unchanged. This is requested model configuration; CLI responses do not independently attest model identity.
+
+```sh
+python3 scripts/team_sweep.py --dataset data/annotations/turtle50_v4/private.json \
+  --config configs/loop.codex.json --puzzles TS023,TS036 \
+  --strategies solo,independent,shared_buffer --sync-interval 4 \
+  --repeat 3 --workers 2 --seed 20261024 --out runs/api/team_v6
+```
+
+This is 18 games. Three conditions and three repeats fully balance condition positions per puzzle. Seeds affect ordering only. Three repeats do not eliminate bias. `shared_buffer` uses one solver call per submission, like solo; `independent` uses three and must not be called a compute-matched comparison.
+
+`--sync-interval N` defaults to 4 and must be positive. It counts **completed submissions**, including rejected finals. A and B alternate submissions: A investigates identities, setting and causal sequence; B tests premises, alternatives and missing causal links. Before synchronization each sees the shared prefix plus its own subsequent answered turns, not the other agent's new observations. At synchronization both see all answered turns. The mandatory last submission forces a final synchronization. Buffers contain only submitted questions/answers and four-label feedback, never hidden truth, grades or reasoning. Exact visibility is covered by offline tests. `shared_buffer.jsonl` records each publication state. There is no merger in this condition.
+
+`independent` now selects exactly one of the two candidate actions. If the selector rewrites it, the controller records `selection_override` and uses a candidate verbatim (prefer a question before the forced final; rotate eligible candidates by turn). This prevents new qualifiers from being inserted at the merge step. It does not guarantee the candidates themselves are good. Historical independent results used rewriting and must remain separately versioned.
+
+Host reminders cover false crews/performances, plan versus execution, living persons versus remains, source consistency and incidental unknowns. Player reminders cover excluded branches and rejection loops. Grading reminders plus `half_credit_requires` enforce specified half-credit gates. Model semantic coverage judgments still require review; passing regression tests is not a population accuracy estimate.
+
+A `superseded.json` sidecar marks replaced placeholder games in reports without altering raw trajectories. They are not running or completed observations.
+
+完成后检查完整轨迹：
+
+```sh
+python3 scripts/audit_sweep.py --root runs/api/team_v6 \
+  --out runs/api/team_v6_review --semantic-config configs/loop.codex.json
+```
+
+`--only-game` 可选，精确指定单局相对目录（如 `batches/TS023/TS023_r01_solo`），便于每局完成后立即审核。`--root` 是实验根目录；`--out` 必须是新目录。省略可选的 `--semantic-config` 只检查计数、预算、重复提交、host 分歧和选择器拦截。指定后，配置中的 host 对每个完成局额外调用一次，读取私有汤底、完整问答、双方合作记录和评分，输出带轮次依据的 AI 审核；这不是人工正确率评估。失败的审核调用保留错误，不重抽样。输出 `audit.json`、`audit.html`、`summary.json` 和私有审计调用记录。模型 ID、prompt 与每局请求都保留。只处理已完成且未被替代的局，不给未完成局补零分。
+
+`check_grader.py` 的 expected 还支持 `checkpoint_credits` 对象，例如 `{"C1":0,"C2":0}`，用于检查具体半分门槛，而不混入其他评分项的波动。预期值不会传给模型。
+
+指标解释：维持完整叙事的严格成功标准，不把“核心猜到”当作已通关。逐项 fact_coverage、requirement_coverage 和 checkpoint 分数均保留在 trajectory 的私有评分里，供分析核心解释与叙事细节的差别；没有额外引入一个未经人工定义的“核心机制成功率”。
+
+CL 额度回归：使用真实控制循环与离线模型替身，分别让 A 首次成功、A 耗尽100次；验证 direct/transcript/card 三种 B 各执行完整100次（98个普通问题＋2个被拒交卷），第100次强制 final。这验证基础设施，不属于模型性能实验。每局预算取 `max_questions`，当前实验配置为100；A→B 的迁移和摘要调用不扣除 B 的额度。

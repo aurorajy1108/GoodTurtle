@@ -6,7 +6,7 @@
 2026-10-23 追加：已加入多题重复双 agent 实验入口，冻结 host／rubric／代码快照，按题统计均值与方差，并提供三调用的单 agent 对照及独立提案合并策略。
 
 ```sh
-python3 scripts/team_sweep.py --dataset data/annotations/turtle50_v3/private.json \
+python3 scripts/team_sweep.py --dataset data/annotations/turtle50_v4/private.json \
   --config configs/loop.codex.json --puzzles TS023,TS032,TS033 \
   --repeat 3 --strategies solo,solo_reflect,discuss,independent \
   --workers 3 --out runs/api/my_team_sweep
@@ -18,7 +18,7 @@ python3 scripts/team_sweep.py --dataset data/annotations/turtle50_v3/private.jso
 
 ## 三方审核后的当前版本（2026-10-23）
 
-当前运行数据为 `data/annotations/turtle50_v3/private.json`：50 题、161 个评分点，权重沿用已与原 XLSX 对比并经过三方 AI 复核的 v2。v3 增加逐事实证据覆盖、TS023 评分边界和 host 修复；**仍是 AI 标注，尚未人工确认**。运行新实验请用 v3；复现旧实验使用原始 runtime_snapshot，不混合新旧分数。
+当前运行数据为 `data/annotations/turtle50_v4/private.json`：50 题、161 个评分点，权重沿用已与原 XLSX 对比并经过三方 AI 复核的 v2。v3 增加逐事实证据覆盖、TS023 评分边界和 host 修复；**仍是 AI 标注，尚未人工确认**。运行新实验请用 v3；复现旧实验使用原始 runtime_snapshot，不混合新旧分数。
 
 当前全部 50 题都绑定专属资料。其中新增 35 题的示例是来源事实、否定问法和无关细节的基础覆盖，不能当作真实模型准确率验证。新 host 用同一配置模型独立回答两次，分歧时再裁决一次，只向 player 返回一个四标签答案；内部调用不增加问题数。grader 逐项列证据，控制器限制遗漏/矛盾下的分数和通关。参见 [修复说明与运行成本](docs/host_repair_v5.md)。
 
@@ -36,22 +36,22 @@ python3 scripts/render_trajectories.py runs/api/20261023_three_review_rerun
 
 入口 `python3 scripts/experiment.py`；完整实验设计、全部 CLI 参数与结果解读见 [实验 pipeline 指南](docs/experiment_pipelines.md)。
 
-若使用当前已登录的 Codex 账号，将 `--config` 改为 `configs/loop.codex.json`，无需 API key；当前设置为用户指定的 `gpt-6-luna`（high）。该 backend 的独立参数与隔离方式见实验指南。
+若使用当前已登录的 Codex 账号，将 `--config` 改为 `configs/loop.codex.json`，无需 API key；从下一批新实验起，host 与复用其配置的 grader 使用 `gpt-6.1-sol`，player 使用 `gpt-6-luna`，均为 reasoning `high`。已启动批次保留各自冻结配置。该 backend 的独立参数与隔离方式见实验指南。
 
 ```sh
 # 先配置 OPENAI_API_KEY / OPENAI_MODEL，或更换现有 API 配置。
 # A→B 对比直接 B；默认只传 A 的公开轨迹，不揭示标准答案。
-python3 scripts/experiment.py continual --dataset data/annotations/turtle50_v3/private.json \
+python3 scripts/experiment.py continual --dataset data/annotations/turtle50_v4/private.json \
   --config configs/loop.openai.json --group G07 --repeat 3
 
 # 单人、轮流合作、双人讨论、自我审查四条件对比。
-python3 scripts/experiment.py team --dataset data/annotations/turtle50_v3/private.json \
+python3 scripts/experiment.py team --dataset data/annotations/turtle50_v4/private.json \
   --config configs/loop.openai.json --puzzle TS002,TS031 --repeat 3
 ```
 
 加 `--dry-run` 可不调用 API。每局继续执行四标签、失败交卷计数和最多 100 次提交规则；内部讨论另记调用/token 消耗。每次运行生成配对差异、均值/方差、轨迹和合作过程。本版 continual learning 指上下文经验迁移，没有模型权重更新。
 
-[50 题评分阅读版](data/annotations/turtle50_v3/review.md) 为每题列出完整解答清单及满分／半分／零分条件，共 161 个评分点；[运行数据](data/annotations/turtle50_v3/private.json) 已随仓库发布。新增 TS040 有来源记录，原 XLSX 未改写，标注均待人工审核。[关系组配置](configs/transfer_groups.json) 保存 28 个组的题号与关系假设。
+[50 题评分阅读版](data/annotations/turtle50_v3/review.md) 为每题列出完整解答清单及满分／半分／零分条件，共 161 个评分点；[运行数据](data/annotations/turtle50_v4/private.json) 已随仓库发布。新增 TS040 有来源记录，原 XLSX 未改写，标注均待人工审核。[关系组配置](configs/transfer_groups.json) 保存 28 个组的题号与关系假设。
 
 2026-10-23 已修正 host 接入：通过 `configs/host_bindings.json` 按题目 ID 与汤面／汤底 SHA-256 绑定专属资料，橡皮和 pillow 复用旧资料并应用四标签修订；窗户题、火警题补充专属案例。host 与 grader 读取同一个 `host_context.json` 私有快照，player 不可见。绑定的原文变化或资料文件缺失会报错，不会静默串题或退回空示例。目前共 15 题有专属案例（含新增 TS009、TS037、TS048），其余题使用原文与已有完成清单；所有新增标签仍待人工审核。详见 [host 修正与回归方法](docs/host_repair_v2.md)。
 
@@ -84,11 +84,11 @@ python3 scripts/play.py demo
 
 ### 2. 准备数据
 
-**Git 已提供完整 50 题和评分标注**，默认使用 `data/annotations/turtle50_v3/private.json`，无需原 XLSX。下面的导入命令仅用于你自己的额外表格；历史 host pack JSON 不是新 loop 的 dataset 格式。
+**Git 已提供完整 50 题和评分标注**，默认使用 `data/annotations/turtle50_v4/private.json`，无需原 XLSX。下面的导入命令仅用于你自己的额外表格；历史 host pack JSON 不是新 loop 的 dataset 格式。
 
 ```sh
 # 直接使用仓库内题库；若导入自己的 XLSX，再修改此路径。
-export TURTLE_DATASET="data/annotations/turtle50_v3/private.json"
+export TURTLE_DATASET="data/annotations/turtle50_v4/private.json"
 python3 scripts/play.py inspect --dataset "$TURTLE_DATASET"
 
 # 可选：导入目录必须尚不存在。
@@ -391,3 +391,7 @@ Proposal 中摄影例子的 `Did she photograph her husband? → No` 应修正�
 本次没有复制这些仓库的题目。若后续导入，逐一核对数据本身的授权、来源与适用范围，不以仓库可访问代替复用许可。
 
 实验输入、历史版本与暂停续接方法见 [复现说明](docs/reproducing_experiments.md)。
+
+2026-10-24：新增共享记录双 agent、严格候选选择和结构化半分门槛；新实验固定 Sol host / Luna player，详见 [v6 修复与验证范围](docs/host_repair_v6.md)。
+
+CL 当前默认在 A 结束后揭示完整标准答案（`--source-feedback answer`），B 独立重置为配置中的100次额度；direct B 不接收 A 信息。摘要卡模式也单独保留完整 A 答案。

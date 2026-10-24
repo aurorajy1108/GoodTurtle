@@ -28,6 +28,7 @@ def snapshot(out, dataset, config, puzzles, partner=None):
         shutil.copytree(ROOT / name, snap / name, ignore=shutil.ignore_patterns('__pycache__', '*.pyc'))
     (snap / 'scripts').mkdir()
     shutil.copy2(ROOT / 'scripts/experiment.py', snap / 'scripts/experiment.py')
+    shutil.copy2(ROOT / 'scripts/audit_sweep.py', snap / 'scripts/audit_sweep.py')
     (snap / 'configs').mkdir()
     dump(snap / 'configs/run.json', config)
     if partner is not None:
@@ -68,6 +69,8 @@ def summarize(out):
                 if not (game / 'result.json').exists():
                     continue
                 result = json.loads((game / 'result.json').read_text())
+                if (game / 'superseded.json').exists():
+                    result = {**result, 'status': 'superseded', 'success': None}
                 rows.append({**result, 'block': block['block'], 'condition': condition,
                              'puzzle_id': block['target'], 'target': block['target'],
                              'repeat': block['repeat'], 'run_dir': str(game.relative_to(out))})
@@ -98,7 +101,7 @@ def summarize(out):
                          f"{fmt(count['mean'])} | {fmt(count['sample_variance'])} |")
     lines += ['', '错误／不完整提交计一次；成功交卷单列。失败的 100 次是预算消耗，不是成功解题时间。', '',
               '重复次数较少；题目按叙事复杂度预先选择，难度未由独立测量验证。不能把随机重复等同消除偏差。',
-              'solo 为一次 solver 调用；solo_reflect、discuss、independent 每步三次。相同模型的 discuss 与 solo_reflect 仅调用角色标签不同，不能据此证明两个 agent 优于一个。',
+              'solo 和 shared_buffer 每步一次 solver 调用；shared_buffer 双方轮流按角色探索，每 N 次完成提交同步问答；solo_reflect、discuss、independent 每步三次。相同模型的 discuss 与 solo_reflect 仅调用角色标签不同，不能据此证明两个 agent 优于一个。',
               'independent 的第二份提案看不到第一份提案；合并者可看到双方提案。所有策略仅看当前局公开历史。',
               '比较按题目和重复编号配对，另报告相对 solo_reflect 的调用次数控制对照；token 数仍可能不同。',
               'seed 只控制执行顺序，不控制服务端采样。顺序循环平衡：重复数不是条件数的倍数时各位置不能完全均衡。', '',
@@ -167,6 +170,7 @@ def main(argv=None):
     p.add_argument('--puzzles', default='TS023,TS032,TS033', help='Distinct comma-separated IDs')
     p.add_argument('--repeat', type=int, default=3, help='Independent games per puzzle and condition')
     p.add_argument('--strategies', default='solo,solo_reflect,discuss,independent')
+    p.add_argument('--sync-interval', type=int, default=4, help='shared_buffer synchronization interval in completed submissions')
     p.add_argument('--workers', type=int, default=3, help='Concurrent puzzle batches, 1–4')
     p.add_argument('--seed', type=int, default=20261023, help='Scheduling only, not model sampling')
     p.add_argument('--out', required=True, help='New directory; existing directory only for --summarize-only')
@@ -212,7 +216,7 @@ def main(argv=None):
         commands[pid] = [sys.executable, str(snap / 'scripts/experiment.py'), 'team',
                         '--dataset', str(snap / 'data/dataset.json'), '--config', str(snap / 'configs/run.json'),
                         '--puzzle', pid, '--repeat', str(args.repeat), '--seed', str(job['seed']),
-                        '--strategies', args.strategies, '--quiet', '--out', str(out / 'batches' / pid)]
+                        '--strategies', args.strategies, '--sync-interval', str(args.sync_interval), '--quiet', '--out', str(out / 'batches' / pid)]
         if args.dry_run:
             commands[pid].append('--dry-run')
         if partner is not None:

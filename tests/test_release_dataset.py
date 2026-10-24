@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 class ReleaseDatasetTests(unittest.TestCase):
     def test_complete_bank_rubrics_and_all_host_dependencies(self):
-        data = load_dataset(ROOT/'data/annotations/turtle50_v3/private.json')
+        data = load_dataset(ROOT/'data/annotations/turtle50_v4/private.json')
         self.assertEqual({p['id'] for p in data['puzzles']},
                          {f'TS{i:03d}' for i in range(1, 51)})
         self.assertEqual(sum(len(p['rubric']) for p in data['puzzles']), 161)

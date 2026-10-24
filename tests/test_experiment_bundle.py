@@ -23,7 +23,7 @@ class BundleTests(unittest.TestCase):
             self.assertTrue(verify(out,root)['verified'])
             with ZipFile(out) as archive:
                 self.assertEqual(set(archive.namelist()), {
-                    'data/annotations/turtle50_v3/private.json', 'data/experiment_bundle_manifest.json'})
+                    'data/annotations/turtle50_v4/private.json', 'data/experiment_bundle_manifest.json'})
             (root/'configs/host_bindings.json').write_text('{"changed":true}')
             with self.assertRaisesRegex(ValueError,'bindings differ'):
                 verify(out,root)
