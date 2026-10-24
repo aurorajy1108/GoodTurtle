@@ -1,0 +1,197 @@
+{
+  "puzzle_id": "TS008",
+  "version": "history-candidate-v1-20261024",
+  "review_status": "ai_checked_pending_human",
+  "story_sha256": "8b8eabbf7a5354317146dd40fe485996d863d0a89cf27566c3b03009e1957de4",
+  "canonical_facts": [
+    "Drivers a and b collide on a highway; the noise wakes the narrator, who is driving tired.",
+    "The novice narrator mistakes accelerator for brake and crashes into driver c, who stopped after missing an exit."
+  ],
+  "explicit_negatives": [],
+  "unknown_details": [],
+  "irrelevant_details": [],
+  "host_examples": [
+    {
+      "case_id": "HIST_TS008_001",
+      "question": "Is the narrator (“I”) a human being?",
+      "answer": "yes",
+      "rationale": "The narrator is a first-time human driver.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "puzzle_001/puzzle_001/001",
+        "source_file": "puzzle_001_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS008_004",
+      "question": "Did the events involving (a), (b), and (c) happen in the narrator's real life, rather than in a dream or imagination?",
+      "answer": "yes",
+      "rationale": "The highway collisions happen in the story’s real world.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "puzzle_001/puzzle_001/004",
+        "source_file": "puzzle_001_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS008_019",
+      "question": "Is the “first fork in my life” referring to a literal fork in a road/path, rather than a metaphorical life decision?",
+      "answer": "yes",
+      "rationale": "The fork is a literal highway exit.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "puzzle_001/puzzle_001/019",
+        "source_file": "puzzle_001_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS008_022",
+      "question": "Is the narrator the driver of the vehicle?",
+      "answer": "yes",
+      "rationale": "The narrator is driving the third vehicle.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "puzzle_001/puzzle_001/022",
+        "source_file": "puzzle_001_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS008_028",
+      "question": "Are (a) and (b) actually the two drivers/vehicles involved in a collision, with “two parallel lines intersected here” describing their paths crossing?",
+      "answer": "yes",
+      "rationale": "Drivers a and b collide after crossing the traffic rules.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "puzzle_001/puzzle_001/028",
+        "source_file": "puzzle_001_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS008_029",
+      "question": "Is the narrator's vehicle the third vehicle/person affected by the collision, rather than one of the two vehicles driven by (a) and (b)?",
+      "answer": "yes",
+      "rationale": "The narrator is the driver of a separate third vehicle.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "puzzle_001/puzzle_001/029",
+        "source_file": "puzzle_001_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS008_035",
+      "question": "Is (c) a person who was also driving another vehicle, and was already stopped/waiting at the fork before the narrator arrived?",
+      "answer": "yes",
+      "rationale": "Driver c has stopped ahead after missing an exit.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "puzzle_001/puzzle_001/035",
+        "source_file": "puzzle_001_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS008_037",
+      "question": "Did (c) intentionally stop and wait at the fork because (c) knew the narrator would arrive there?",
+      "answer": "no",
+      "rationale": "Driver c did not stop in anticipation of the narrator.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "puzzle_001/puzzle_001/037",
+        "source_file": "puzzle_001_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS008_038",
+      "question": "Did (c) stop at the fork because of the same accident involving (a) and (b), rather than because of the narrator?",
+      "answer": "no",
+      "rationale": "Driver c stopped after missing an exit, not because of a and b’s crash.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "puzzle_001/puzzle_001/038",
+        "source_file": "puzzle_001_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS008_039",
+      "question": "Is (c) a person who stopped at the fork for an unrelated reason, but happened to meet the narrator there?",
+      "answer": "yes",
+      "rationale": "Driver c stopped for a missed exit, independently of a and b.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "puzzle_001/puzzle_001/039",
+        "source_file": "puzzle_001_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS008_041",
+      "question": "Did the narrator give (c) a big hug because (c) helped save the narrator’s life or prevented a disaster?",
+      "answer": "no",
+      "rationale": "The collision is accidental, not an emotional thank-you.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "puzzle_001/puzzle_001/041",
+        "source_file": "puzzle_001_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS008_042",
+      "question": "Was the narrator’s hug with (c) a normal human emotional reaction (for example gratitude, happiness, relief), rather than something required by the situation?",
+      "answer": "no",
+      "rationale": "The embrace is a car collision, not a normal emotional hug.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "puzzle_001/puzzle_001/042",
+        "source_file": "puzzle_001_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS008_045",
+      "question": "Is the narrator’s hug with (c) caused by a physical force or movement (for example, two bodies/vehicles colliding or being pushed together), rather than the narrator choosing to hug?",
+      "answer": "yes",
+      "rationale": "The final embrace is a physical vehicle impact.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "puzzle_001/puzzle_001/045",
+        "source_file": "puzzle_001_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS008_046",
+      "question": "Is the narrator’s “big hug” actually a vehicle collision, where the narrator’s vehicle crashes into (c)’s vehicle?",
+      "answer": "yes",
+      "rationale": "The narrator crashes their car into driver c’s car.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "puzzle_001/puzzle_001/046",
+        "source_file": "puzzle_001_qa.json",
+        "human_confirmed": false
+      }
+    }
+  ]
+}

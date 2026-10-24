@@ -1,0 +1,132 @@
+{
+  "puzzle_id": "TS009",
+  "version": "history-candidate-v1-20261024",
+  "review_status": "ai_checked_pending_human",
+  "story_sha256": "6dd36ba6f4adac3d7bbcaaa600631f41c1a65e70e022d4ea304ecaaf5a9b1629",
+  "canonical_facts": [
+    "The man places an egg bag on a nearby car while tying his shoe; the bag breaks and some eggs leak into its wiper groove.",
+    "The man leaves. Later rain makes the driver use the wipers, smearing eggs over the windshield and obstructing the view."
+  ],
+  "explicit_negatives": [],
+  "unknown_details": [],
+  "irrelevant_details": [],
+  "host_examples": [
+    {
+      "case_id": "HIST_TS009_002",
+      "question": "Did the car accident happen because of something related to him squatting down to tie his shoelace?",
+      "answer": "yes",
+      "rationale": "Tying the shoelace leads to putting the egg bag on a nearby car.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "puzzle_002/puzzle_002/002",
+        "source_file": "puzzle_002_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS009_012",
+      "question": "Did the car accident happen after the man had already stood up and left the place where he tied his shoelace?",
+      "answer": "yes",
+      "rationale": "The man leaves before the other driver later crashes.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "puzzle_002/puzzle_002/012",
+        "source_file": "puzzle_002_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS009_019",
+      "question": "Was the “thing” related to the supermarket items he was carrying (for example, food, a bag, or packaging), even if it was not simply “dropped”?",
+      "answer": "yes",
+      "rationale": "The causally relevant objects are the eggs bought at the supermarket.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "puzzle_002/puzzle_002/019",
+        "source_file": "puzzle_002_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS009_020",
+      "question": "Did the supermarket item spill or leak something onto the ground when he squatted down, and that later contributed to the car accident?",
+      "answer": "no",
+      "rationale": "The eggs leak into a windshield-wiper groove, not onto the ground.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "puzzle_002/puzzle_002/020",
+        "source_file": "puzzle_002_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS009_059",
+      "question": "Did the man put the supermarket item somewhere temporarily while tying his shoelace, and that placement caused the accident later?",
+      "answer": "yes",
+      "rationale": "He puts down the egg bag while tying his shoe.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "puzzle_002/puzzle_002/059",
+        "source_file": "puzzle_002_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS009_060",
+      "question": "Did he place the supermarket item on or near a car, and this later caused the accident?",
+      "answer": "yes",
+      "rationale": "He puts the egg bag on a nearby car.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "puzzle_002/puzzle_002/060",
+        "source_file": "puzzle_002_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS009_068",
+      "question": "Was the item placed on the front windshield or front area of the car, affecting the driver’s forward view?",
+      "answer": "yes",
+      "rationale": "Eggs leak into the car’s front windshield-wiper area.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "puzzle_002/puzzle_002/068",
+        "source_file": "puzzle_002_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS009_072",
+      "question": "Did the bag on the windshield block the driver from seeing something outside the car that was important, which led to the accident?",
+      "answer": "no",
+      "rationale": "The bag itself is removed; the later obstruction comes from smeared eggs.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "puzzle_002/puzzle_002/072",
+        "source_file": "puzzle_002_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS009_094",
+      "question": "Was the thing the driver failed to see because of the bag the man himself (for example, the man was still in front of the car or near it)?",
+      "answer": "no",
+      "rationale": "The man has already left before the car accident.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "puzzle_002/puzzle_002/094",
+        "source_file": "puzzle_002_qa.json",
+        "human_confirmed": false
+      }
+    }
+  ]
+}

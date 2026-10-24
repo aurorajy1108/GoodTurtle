@@ -1,0 +1,67 @@
+{
+  "puzzle_id": "TS003",
+  "version": "history-candidate-v1-20261024",
+  "review_status": "ai_checked_pending_human",
+  "story_sha256": "4a5f071e5c999e1fc52d9d18fb19f532cf1047f979725d5691f0a15f7a19f9c2",
+  "canonical_facts": [
+    "Snow White is a runaway girl; the apparent Queen is her searching mother.",
+    "The apparent dwarfs are traffickers who imprison the girl, steal her valuables, and sell her to an outsider."
+  ],
+  "explicit_negatives": [],
+  "unknown_details": [],
+  "irrelevant_details": [],
+  "host_examples": [
+    {
+      "case_id": "HIST_TS003_003",
+      "question": "Were the dwarfs preventing Snow White from responding to the Queen?",
+      "answer": "yes",
+      "rationale": "The girl is held captive and cannot answer her mother.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "six_puzzles/snow_white/003",
+        "source_file": "turtle_soup_full_question_logs.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS003_004",
+      "question": "Were the dwarfs holding Snow White captive against her will?",
+      "answer": "yes",
+      "rationale": "The traffickers imprison her against her will.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "six_puzzles/snow_white/004",
+        "source_file": "turtle_soup_full_question_logs.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS003_024",
+      "question": "Was “Snow White” a young girl who ran away from home and was subsequently abducted by a group of human traffickers?",
+      "answer": "yes",
+      "rationale": "The girl ran away and was captured by traffickers.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "six_puzzles/snow_white/024",
+        "source_file": "turtle_soup_full_question_logs.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS003_031",
+      "question": "Did the dwarfs initially pretend to be kind and trustworthy so Snow White would willingly stay with them before they imprisoned her?",
+      "answer": "yes",
+      "rationale": "The traffickers initially feign warmth and hospitality.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "six_puzzles/snow_white/031",
+        "source_file": "turtle_soup_full_question_logs.json",
+        "human_confirmed": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "puzzle_id": "TS010",
+  "version": "history-candidate-v1-20261024",
+  "review_status": "ai_checked_pending_human",
+  "story_sha256": "5f041cadb4e3b05a4144ab21ff5f2e55adce0028d575cc597f88792115c6d463",
+  "canonical_facts": [
+    "A circus trainer puts his head into a lion’s mouth during a performance.",
+    "Pepper odor on the trainer makes the lion sneeze involuntarily; its jaws close and kill him."
+  ],
+  "explicit_negatives": [],
+  "unknown_details": [],
+  "irrelevant_details": [],
+  "host_examples": [
+    {
+      "case_id": "HIST_TS010_001",
+      "question": "Was the person’s death directly caused by eating the pepper steak?",
+      "answer": "no",
+      "rationale": "Eating the steak does not directly kill the trainer.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "pepper/pepper_steak/001",
+        "source_file": "pepper_steak_turtle_soup_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS010_003",
+      "question": "Was the “pepper steak” not actually a normal dish, but something that only looked like pepper steak or had another meaning?",
+      "answer": "no",
+      "rationale": "The meal is ordinary pepper steak, not a disguised object.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "pepper/pepper_steak/003",
+        "source_file": "pepper_steak_turtle_soup_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS010_008",
+      "question": "Was the person’s death caused by an accident at work?",
+      "answer": "yes",
+      "rationale": "The fatal bite occurs during a work performance.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "pepper/pepper_steak/008",
+        "source_file": "pepper_steak_turtle_soup_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS010_010",
+      "question": "Was the person’s job related to food, cooking, or a restaurant?",
+      "answer": "no",
+      "rationale": "The trainer works with circus animals, not food service.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "pepper/pepper_steak/010",
+        "source_file": "pepper_steak_turtle_soup_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS010_011",
+      "question": "Was the person’s job related to transportation (such as driving, flying, shipping, trains, etc.)?",
+      "answer": "no",
+      "rationale": "The trainer’s work is a circus act, not transportation.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "pepper/pepper_steak/011",
+        "source_file": "pepper_steak_turtle_soup_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS010_012",
+      "question": "Was the person’s job related to machines, factories, or industrial equipment?",
+      "answer": "no",
+      "rationale": "The central accident involves a lion, not machinery.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "pepper/pepper_steak/012",
+        "source_file": "pepper_steak_turtle_soup_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS010_029",
+      "question": "Did someone else intentionally cause the person’s death after noticing the condition caused by the pepper steak?",
+      "answer": "no",
+      "rationale": "The death is accidental, not an intentional killing.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "pepper/pepper_steak/029",
+        "source_file": "pepper_steak_turtle_soup_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS010_077",
+      "question": "Did the person’s death involve a fall, such as falling from a height or into something, at the workplace?",
+      "answer": "no",
+      "rationale": "The fatal event is a lion’s bite, not a fall.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "pepper/pepper_steak/077",
+        "source_file": "pepper_steak_turtle_soup_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS010_092",
+      "question": "Was the moving thing that caused the danger an animal or living creature?",
+      "answer": "yes",
+      "rationale": "A living animal, the lion, causes the fatal event.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "pepper/pepper_steak/092",
+        "source_file": "pepper_steak_turtle_soup_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS010_100",
+      "question": "Was the animal a mammal?",
+      "answer": "yes",
+      "rationale": "A lion is a mammal.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "pepper/pepper_steak/100",
+        "source_file": "pepper_steak_turtle_soup_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS010_103",
+      "question": "Was the animal a cat or a feline (such as a tiger, lion, leopard, etc.)?",
+      "answer": "yes",
+      "rationale": "A lion is a feline.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "pepper/pepper_steak/103",
+        "source_file": "pepper_steak_turtle_soup_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS010_105",
+      "question": "Was the animal a big cat (such as a lion, tiger, leopard, or similar animal)?",
+      "answer": "yes",
+      "rationale": "A lion is a big cat.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "pepper/pepper_steak/105",
+        "source_file": "pepper_steak_turtle_soup_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS010_106",
+      "question": "Was the animal a tiger?",
+      "answer": "no",
+      "rationale": "The animal is a lion, not a tiger.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "pepper/pepper_steak/106",
+        "source_file": "pepper_steak_turtle_soup_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS010_107",
+      "question": "Was the animal a lion?",
+      "answer": "yes",
+      "rationale": "The animal is explicitly a lion.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "pepper/pepper_steak/107",
+        "source_file": "pepper_steak_turtle_soup_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS010_112",
+      "question": "Was the person’s job directly involved with performing or interacting with the lion (for example, a trainer, performer, or handler)?",
+      "answer": "yes",
+      "rationale": "The trainer interacts with the lion during a performance.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "pepper/pepper_steak/112",
+        "source_file": "pepper_steak_turtle_soup_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS010_113",
+      "question": "Did the pepper steak clue relate to the person’s lion performance or interaction with the lion?",
+      "answer": "yes",
+      "rationale": "Pepper odor matters during the lion performance.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "pepper/pepper_steak/113",
+        "source_file": "pepper_steak_turtle_soup_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS010_116",
+      "question": "Did the pepper steak clue relate to the lion’s behavior or reaction during the performance?",
+      "answer": "yes",
+      "rationale": "Pepper odor causes the lion’s involuntary sneeze.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "pepper/pepper_steak/116",
+        "source_file": "pepper_steak_turtle_soup_qa.json",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HIST_TS010_118",
+      "question": "Did the lion’s reaction to the pepper steak clue involve the lion becoming aggressive because of the smell or taste of the pepper steak?",
+      "answer": "no",
+      "rationale": "The lion sneezes involuntarily rather than turning aggressive.",
+      "public_history": [],
+      "review_status": "ai_checked_pending_human",
+      "provenance": {
+        "source_case": "pepper/pepper_steak/118",
+        "source_file": "pepper_steak_turtle_soup_qa.json",
+        "human_confirmed": false
+      }
+    }
+  ]
+}
