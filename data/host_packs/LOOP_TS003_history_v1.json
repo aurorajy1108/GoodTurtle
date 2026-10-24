@@ -1,7 +1,7 @@
 {
   "puzzle_id": "TS003",
   "version": "history-candidate-v1-20261024",
-  "review_status": "ai_checked_pending_human",
+  "review_status": "user_supplied_ai_curated",
   "story_sha256": "4a5f071e5c999e1fc52d9d18fb19f532cf1047f979725d5691f0a15f7a19f9c2",
   "canonical_facts": [
     "Snow White is a runaway girl; the apparent Queen is her searching mother.",
@@ -17,11 +17,12 @@
       "answer": "yes",
       "rationale": "The girl is held captive and cannot answer her mother.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "six_puzzles/snow_white/003",
         "source_file": "turtle_soup_full_question_logs.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -30,11 +31,12 @@
       "answer": "yes",
       "rationale": "The traffickers imprison her against her will.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "six_puzzles/snow_white/004",
         "source_file": "turtle_soup_full_question_logs.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -43,11 +45,12 @@
       "answer": "yes",
       "rationale": "The girl ran away and was captured by traffickers.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "six_puzzles/snow_white/024",
         "source_file": "turtle_soup_full_question_logs.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -56,11 +59,12 @@
       "answer": "yes",
       "rationale": "The traffickers initially feign warmth and hospitality.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "six_puzzles/snow_white/031",
         "source_file": "turtle_soup_full_question_logs.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     }
   ]

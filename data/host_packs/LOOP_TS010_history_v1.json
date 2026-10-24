@@ -1,7 +1,7 @@
 {
   "puzzle_id": "TS010",
   "version": "history-candidate-v1-20261024",
-  "review_status": "ai_checked_pending_human",
+  "review_status": "user_supplied_ai_curated",
   "story_sha256": "5f041cadb4e3b05a4144ab21ff5f2e55adce0028d575cc597f88792115c6d463",
   "canonical_facts": [
     "A circus trainer puts his head into a lion’s mouth during a performance.",
@@ -17,11 +17,12 @@
       "answer": "no",
       "rationale": "Eating the steak does not directly kill the trainer.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "pepper/pepper_steak/001",
         "source_file": "pepper_steak_turtle_soup_qa.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -30,11 +31,12 @@
       "answer": "no",
       "rationale": "The meal is ordinary pepper steak, not a disguised object.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "pepper/pepper_steak/003",
         "source_file": "pepper_steak_turtle_soup_qa.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -43,11 +45,12 @@
       "answer": "yes",
       "rationale": "The fatal bite occurs during a work performance.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "pepper/pepper_steak/008",
         "source_file": "pepper_steak_turtle_soup_qa.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -56,11 +59,12 @@
       "answer": "no",
       "rationale": "The trainer works with circus animals, not food service.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "pepper/pepper_steak/010",
         "source_file": "pepper_steak_turtle_soup_qa.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -69,11 +73,12 @@
       "answer": "no",
       "rationale": "The trainer’s work is a circus act, not transportation.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "pepper/pepper_steak/011",
         "source_file": "pepper_steak_turtle_soup_qa.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -82,11 +87,12 @@
       "answer": "no",
       "rationale": "The central accident involves a lion, not machinery.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "pepper/pepper_steak/012",
         "source_file": "pepper_steak_turtle_soup_qa.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -95,11 +101,12 @@
       "answer": "no",
       "rationale": "The death is accidental, not an intentional killing.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "pepper/pepper_steak/029",
         "source_file": "pepper_steak_turtle_soup_qa.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -108,11 +115,12 @@
       "answer": "no",
       "rationale": "The fatal event is a lion’s bite, not a fall.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "pepper/pepper_steak/077",
         "source_file": "pepper_steak_turtle_soup_qa.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -121,11 +129,12 @@
       "answer": "yes",
       "rationale": "A living animal, the lion, causes the fatal event.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "pepper/pepper_steak/092",
         "source_file": "pepper_steak_turtle_soup_qa.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -134,11 +143,12 @@
       "answer": "yes",
       "rationale": "A lion is a mammal.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "pepper/pepper_steak/100",
         "source_file": "pepper_steak_turtle_soup_qa.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -147,11 +157,12 @@
       "answer": "yes",
       "rationale": "A lion is a feline.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "pepper/pepper_steak/103",
         "source_file": "pepper_steak_turtle_soup_qa.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -160,11 +171,12 @@
       "answer": "yes",
       "rationale": "A lion is a big cat.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "pepper/pepper_steak/105",
         "source_file": "pepper_steak_turtle_soup_qa.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -173,11 +185,12 @@
       "answer": "no",
       "rationale": "The animal is a lion, not a tiger.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "pepper/pepper_steak/106",
         "source_file": "pepper_steak_turtle_soup_qa.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -186,11 +199,12 @@
       "answer": "yes",
       "rationale": "The animal is explicitly a lion.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "pepper/pepper_steak/107",
         "source_file": "pepper_steak_turtle_soup_qa.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -199,11 +213,12 @@
       "answer": "yes",
       "rationale": "The trainer interacts with the lion during a performance.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "pepper/pepper_steak/112",
         "source_file": "pepper_steak_turtle_soup_qa.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -212,11 +227,12 @@
       "answer": "yes",
       "rationale": "Pepper odor matters during the lion performance.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "pepper/pepper_steak/113",
         "source_file": "pepper_steak_turtle_soup_qa.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -225,11 +241,12 @@
       "answer": "yes",
       "rationale": "Pepper odor causes the lion’s involuntary sneeze.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "pepper/pepper_steak/116",
         "source_file": "pepper_steak_turtle_soup_qa.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -238,11 +255,12 @@
       "answer": "no",
       "rationale": "The lion sneezes involuntarily rather than turning aggressive.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "pepper/pepper_steak/118",
         "source_file": "pepper_steak_turtle_soup_qa.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     }
   ]

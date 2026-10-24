@@ -1,7 +1,7 @@
 {
   "puzzle_id": "TS001",
   "version": "history-candidate-v1-20261024",
-  "review_status": "ai_checked_pending_human",
+  "review_status": "user_supplied_ai_curated",
   "story_sha256": "34546a145c8caf716484be1186d0d700b73b403f522361f2d8c0fa37f0fb5acf",
   "canonical_facts": [
     "The apparent girl is an adult woman with dwarfism who poses as a child to lure child abductors.",
@@ -17,11 +17,12 @@
       "answer": "yes",
       "rationale": "The rabbit is stained with the killed man’s blood.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "six_puzzles/rabbit/002",
         "source_file": "turtle_soup_full_question_logs.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -30,11 +31,12 @@
       "answer": "yes",
       "rationale": "She kills the abductor who drove her into the mountains.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "six_puzzles/rabbit/005",
         "source_file": "turtle_soup_full_question_logs.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -43,11 +45,12 @@
       "answer": "yes",
       "rationale": "She planned to kill him before letting herself be lured.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "six_puzzles/rabbit/006",
         "source_file": "turtle_soup_full_question_logs.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -56,11 +59,12 @@
       "answer": "yes",
       "rationale": "The story describes this as her repeated pattern.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "six_puzzles/rabbit/008",
         "source_file": "turtle_soup_full_question_logs.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -69,11 +73,12 @@
       "answer": "no",
       "rationale": "She is an adult human, not a supernatural being.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "six_puzzles/rabbit/018",
         "source_file": "turtle_soup_full_question_logs.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -82,11 +87,12 @@
       "answer": "yes",
       "rationale": "The source explicitly identifies dwarfism.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "six_puzzles/rabbit/039",
         "source_file": "turtle_soup_full_question_logs.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -95,11 +101,12 @@
       "answer": "yes",
       "rationale": "She acts on her own idea of justice, not as law enforcement.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "six_puzzles/rabbit/046",
         "source_file": "turtle_soup_full_question_logs.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     }
   ]

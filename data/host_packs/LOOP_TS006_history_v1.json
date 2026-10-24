@@ -1,7 +1,7 @@
 {
   "puzzle_id": "TS006",
   "version": "history-candidate-v1-20261024",
-  "review_status": "ai_checked_pending_human",
+  "review_status": "user_supplied_ai_curated",
   "story_sha256": "245143d49e058145e05b71057edebcd72e0adb0f1b63aee0beff7976ae7ee461",
   "canonical_facts": [
     "In the supplied fictional story, the daughter’s green-ink alteration reveals red-green color blindness to her father.",
@@ -17,11 +17,12 @@
       "answer": "yes",
       "rationale": "The father reacts to the inferred parentage, beyond the poor grade.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "six_puzzles/colorblindness/001",
         "source_file": "turtle_soup_full_question_logs.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -30,11 +31,12 @@
       "answer": "yes",
       "rationale": "In this fictional story he concludes the girl is not his biological child.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "six_puzzles/colorblindness/002",
         "source_file": "turtle_soup_full_question_logs.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -43,11 +45,12 @@
       "answer": "no",
       "rationale": "The father is described as having normal color vision.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "six_puzzles/colorblindness/004",
         "source_file": "turtle_soup_full_question_logs.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -56,11 +59,12 @@
       "answer": "irrelevant",
       "rationale": "The mother’s color vision is not specified and not needed here.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "six_puzzles/colorblindness/005",
         "source_file": "turtle_soup_full_question_logs.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -69,11 +73,12 @@
       "answer": "yes",
       "rationale": "The child is a daughter despite the opening’s misleading pronoun.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "six_puzzles/colorblindness/006",
         "source_file": "turtle_soup_full_question_logs.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -82,11 +87,12 @@
       "answer": "yes",
       "rationale": "The father uses the daughter’s color blindness to infer nonparentage.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "six_puzzles/colorblindness/008",
         "source_file": "turtle_soup_full_question_logs.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -95,11 +101,12 @@
       "answer": "yes",
       "rationale": "The source story presents the parentage inference as correct.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "six_puzzles/colorblindness/010",
         "source_file": "turtle_soup_full_question_logs.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     }
   ]

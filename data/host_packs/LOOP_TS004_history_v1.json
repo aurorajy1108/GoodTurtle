@@ -1,7 +1,7 @@
 {
   "puzzle_id": "TS004",
   "version": "history-candidate-v1-20261024",
-  "review_status": "ai_checked_pending_human",
+  "review_status": "user_supplied_ai_curated",
   "story_sha256": "9b56802a7b6f8f6c3b40b12db39e9427af2c4e643b9607aa2313cc8eac9188d8",
   "canonical_facts": [
     "The narrator dies from overwork, returns as a spirit on the seventh day, and kills the exploitative client.",
@@ -17,11 +17,12 @@
       "answer": "no",
       "rationale": "The client sends the message while alive and dies later.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "six_puzzles/seventh_day/001",
         "source_file": "turtle_soup_full_question_logs.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -30,11 +31,12 @@
       "answer": "no",
       "rationale": "The narrator has already died before receiving the message.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "six_puzzles/seventh_day/002",
         "source_file": "turtle_soup_full_question_logs.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -43,11 +45,12 @@
       "answer": "no",
       "rationale": "The client does not realize the narrator died.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "six_puzzles/seventh_day/004",
         "source_file": "turtle_soup_full_question_logs.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -56,11 +59,12 @@
       "answer": "no",
       "rationale": "The ghost takes revenge; no real proposal is completed after death.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "six_puzzles/seventh_day/005",
         "source_file": "turtle_soup_full_question_logs.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -69,11 +73,12 @@
       "answer": "yes",
       "rationale": "The narrator literally died and returned as a spirit.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "six_puzzles/seventh_day/012",
         "source_file": "turtle_soup_full_question_logs.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -82,11 +87,12 @@
       "answer": "yes",
       "rationale": "The return occurs on the traditional seventh day.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "six_puzzles/seventh_day/015",
         "source_file": "turtle_soup_full_question_logs.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -95,11 +101,12 @@
       "answer": "yes",
       "rationale": "The client dies after sending the message.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "six_puzzles/seventh_day/020",
         "source_file": "turtle_soup_full_question_logs.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -108,11 +115,12 @@
       "answer": "yes",
       "rationale": "The narrator kills the client after seeing the message.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "six_puzzles/seventh_day/021",
         "source_file": "turtle_soup_full_question_logs.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -121,11 +129,12 @@
       "answer": "yes",
       "rationale": "The killing is revenge for the client’s continued demands.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "six_puzzles/seventh_day/022",
         "source_file": "turtle_soup_full_question_logs.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     }
   ]

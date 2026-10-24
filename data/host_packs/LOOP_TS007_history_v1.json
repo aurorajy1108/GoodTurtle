@@ -1,7 +1,7 @@
 {
   "puzzle_id": "TS007",
   "version": "history-candidate-v1-20261024",
-  "review_status": "ai_checked_pending_human",
+  "review_status": "user_supplied_ai_curated",
   "story_sha256": "f1ca2549a5ddf5e66b2e7e23154c2318287a8fe3985fea2fa946936fd705f149",
   "canonical_facts": [
     "The narrator is a tiger cub in a wildlife park; colorful boxes are visitor cars and the toy is a human.",
@@ -17,11 +17,12 @@
       "answer": "no",
       "rationale": "The narrator is a young tiger, not a human.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "tiger/tiger_cub_colorful_boxes/001",
         "source_file": "turtle_soup_tiger_guessing_record.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -30,11 +31,12 @@
       "answer": "no",
       "rationale": "The colorful boxes are tourist cars, not living creatures.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "tiger/tiger_cub_colorful_boxes/003",
         "source_file": "turtle_soup_tiger_guessing_record.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -43,11 +45,12 @@
       "answer": "no",
       "rationale": "The tiger lives in a wildlife park, not underwater.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "tiger/tiger_cub_colorful_boxes/007",
         "source_file": "turtle_soup_tiger_guessing_record.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -56,11 +59,12 @@
       "answer": "yes",
       "rationale": "The narrator is a tiger and therefore an animal.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "tiger/tiger_cub_colorful_boxes/010",
         "source_file": "turtle_soup_tiger_guessing_record.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -69,11 +73,12 @@
       "answer": "yes",
       "rationale": "The colorful boxes are human-made vehicles.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "tiger/tiger_cub_colorful_boxes/017",
         "source_file": "turtle_soup_tiger_guessing_record.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -82,11 +87,12 @@
       "answer": "yes",
       "rationale": "The supposed toy is a human who left a car.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "tiger/tiger_cub_colorful_boxes/019",
         "source_file": "turtle_soup_tiger_guessing_record.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -95,11 +101,12 @@
       "answer": "yes",
       "rationale": "The supposed toy is specifically a human.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "tiger/tiger_cub_colorful_boxes/020",
         "source_file": "turtle_soup_tiger_guessing_record.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -108,11 +115,12 @@
       "answer": "yes",
       "rationale": "The colorful boxes are tourists’ cars.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "tiger/tiger_cub_colorful_boxes/022",
         "source_file": "turtle_soup_tiger_guessing_record.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -121,11 +129,12 @@
       "answer": "yes",
       "rationale": "The tiger hurts the human while thinking it is playing.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "tiger/tiger_cub_colorful_boxes/026",
         "source_file": "turtle_soup_tiger_guessing_record.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -134,11 +143,12 @@
       "answer": "yes",
       "rationale": "The first shot is a tranquilizer dart, causing unconsciousness.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "tiger/tiger_cub_colorful_boxes/028",
         "source_file": "turtle_soup_tiger_guessing_record.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -147,11 +157,12 @@
       "answer": "yes",
       "rationale": "The narrator is a young tiger.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "tiger/tiger_cub_colorful_boxes/030",
         "source_file": "turtle_soup_tiger_guessing_record.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     }
   ]

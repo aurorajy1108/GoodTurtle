@@ -1,7 +1,7 @@
 {
   "puzzle_id": "TS009",
   "version": "history-candidate-v1-20261024",
-  "review_status": "ai_checked_pending_human",
+  "review_status": "user_supplied_ai_curated",
   "story_sha256": "6dd36ba6f4adac3d7bbcaaa600631f41c1a65e70e022d4ea304ecaaf5a9b1629",
   "canonical_facts": [
     "The man places an egg bag on a nearby car while tying his shoe; the bag breaks and some eggs leak into its wiper groove.",
@@ -17,11 +17,12 @@
       "answer": "yes",
       "rationale": "Tying the shoelace leads to putting the egg bag on a nearby car.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "puzzle_002/puzzle_002/002",
         "source_file": "puzzle_002_qa.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -30,11 +31,12 @@
       "answer": "yes",
       "rationale": "The man leaves before the other driver later crashes.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "puzzle_002/puzzle_002/012",
         "source_file": "puzzle_002_qa.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -43,11 +45,12 @@
       "answer": "yes",
       "rationale": "The causally relevant objects are the eggs bought at the supermarket.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "puzzle_002/puzzle_002/019",
         "source_file": "puzzle_002_qa.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -56,11 +59,12 @@
       "answer": "no",
       "rationale": "The eggs leak into a windshield-wiper groove, not onto the ground.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "puzzle_002/puzzle_002/020",
         "source_file": "puzzle_002_qa.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -69,11 +73,12 @@
       "answer": "yes",
       "rationale": "He puts down the egg bag while tying his shoe.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "puzzle_002/puzzle_002/059",
         "source_file": "puzzle_002_qa.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -82,11 +87,12 @@
       "answer": "yes",
       "rationale": "He puts the egg bag on a nearby car.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "puzzle_002/puzzle_002/060",
         "source_file": "puzzle_002_qa.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -95,11 +101,12 @@
       "answer": "yes",
       "rationale": "Eggs leak into the car’s front windshield-wiper area.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "puzzle_002/puzzle_002/068",
         "source_file": "puzzle_002_qa.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -108,11 +115,12 @@
       "answer": "no",
       "rationale": "The bag itself is removed; the later obstruction comes from smeared eggs.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "puzzle_002/puzzle_002/072",
         "source_file": "puzzle_002_qa.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     },
     {
@@ -121,11 +129,12 @@
       "answer": "no",
       "rationale": "The man has already left before the car accident.",
       "public_history": [],
-      "review_status": "ai_checked_pending_human",
+      "review_status": "user_supplied_ai_curated",
       "provenance": {
         "source_case": "puzzle_002/puzzle_002/094",
         "source_file": "puzzle_002_qa.json",
-        "human_confirmed": false
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
       }
     }
   ]
