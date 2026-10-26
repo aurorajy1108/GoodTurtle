@@ -101,7 +101,7 @@ def summarize(out):
                          f"{fmt(count['mean'])} | {fmt(count['sample_variance'])} |")
     lines += ['', '错误／不完整提交计一次；成功交卷单列。失败的 100 次是预算消耗，不是成功解题时间。', '',
               '重复次数较少；题目按叙事复杂度预先选择，难度未由独立测量验证。不能把随机重复等同消除偏差。',
-              'solo 和 shared_buffer 每步一次 solver 调用；shared_buffer 双方轮流按角色探索，每 N 次完成提交同步问答；solo_reflect、discuss、independent 每步三次。相同模型的 discuss 与 solo_reflect 仅调用角色标签不同，不能据此证明两个 agent 优于一个。',
+              'solo 和 shared_buffer 每步一次 solver 调用；shared_buffer 双方轮流按角色探索，每 N 次完成提交同步问答，同步前仅公开已问问题的文本以避免重复；solo_reflect、discuss、independent 每步三次。相同模型的 discuss 与 solo_reflect 仅调用角色标签不同，不能据此证明两个 agent 优于一个。',
               'independent 的第二份提案看不到第一份提案；合并者可看到双方提案。所有策略仅看当前局公开历史。',
               '比较按题目和重复编号配对，另报告相对 solo_reflect 的调用次数控制对照；token 数仍可能不同。',
               'seed 只控制执行顺序，不控制服务端采样。顺序循环平衡：重复数不是条件数的倍数时各位置不能完全均衡。', '',
@@ -169,8 +169,10 @@ def main(argv=None):
     p.add_argument('--partner-config', help='Optional second solver profile JSON; defaults to player')
     p.add_argument('--puzzles', default='TS023,TS032,TS033', help='Distinct comma-separated IDs')
     p.add_argument('--repeat', type=int, default=3, help='Independent games per puzzle and condition')
-    p.add_argument('--strategies', default='solo,solo_reflect,discuss,independent')
+    p.add_argument('--strategies', default='solo,solo_reflect,independent,shared_buffer')
     p.add_argument('--sync-interval', type=int, default=4, help='shared_buffer synchronization interval in completed submissions')
+    p.add_argument('--on-error', choices=['continue','stop'], default='continue',
+                   help='continue records failures and schedules remaining independent games; stop prevents new jobs after a failed batch')
     p.add_argument('--workers', type=int, default=3, help='Concurrent puzzle batches, 1–4')
     p.add_argument('--seed', type=int, default=20261023, help='Scheduling only, not model sampling')
     p.add_argument('--out', required=True, help='New directory; existing directory only for --summarize-only')
@@ -216,7 +218,7 @@ def main(argv=None):
         commands[pid] = [sys.executable, str(snap / 'scripts/experiment.py'), 'team',
                         '--dataset', str(snap / 'data/dataset.json'), '--config', str(snap / 'configs/run.json'),
                         '--puzzle', pid, '--repeat', str(args.repeat), '--seed', str(job['seed']),
-                        '--strategies', args.strategies, '--sync-interval', str(args.sync_interval), '--quiet', '--out', str(out / 'batches' / pid)]
+                        '--strategies', args.strategies, '--sync-interval', str(args.sync_interval), '--on-error', args.on_error, '--quiet', '--out', str(out / 'batches' / pid)]
         if args.dry_run:
             commands[pid].append('--dry-run')
         if partner is not None:
@@ -241,7 +243,7 @@ def main(argv=None):
                     exited[pid] = process.returncode
                     log.close()
                     del active[pid]
-                    stopped |= process.returncode != 0  # Never blindly launch more jobs after infra failure.
+                    stopped |= process.returncode != 0 and (args.on_error == 'stop' or process.returncode in (130, -2, -15))
                     dump(out / 'exit_codes.json', exited)
             progress = summarize(out)
             status = [(r['run_dir'], r['status'], r['counted_questions']) for r in progress['statuses']]
@@ -264,7 +266,7 @@ def main(argv=None):
     dump(out / 'completion.json', {'exit_codes': exited, 'unstarted': pending,
                                   'all_batches_finished': not pending and not active,
                                   'dry_run': args.dry_run})
-    return 1 if stopped else 0
+    return 1 if stopped or any(code != 0 for code in exited.values()) else 0
 
 
 if __name__ == '__main__':

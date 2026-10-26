@@ -22,6 +22,11 @@ class APIError(RuntimeError):
     pass
 
 
+class RetryableAPIError(APIError):
+    """Explicit pre-response capacity/rate limit; no usable generation exists."""
+    pass
+
+
 @dataclass
 class Reply:
     text: str
@@ -151,7 +156,14 @@ class Client:
     def complete(self, system, user):
         if self.profile.get('provider') == 'codex_cli':
             from .codex_client import complete
-            return complete(self.profile, self.role, self.audit, system, user)
+            retries = self.profile.get('max_retries', 2)
+            for attempt in range(1, retries + 2):
+                try:
+                    return complete(self.profile, self.role, self.audit, system, user, attempt=attempt)
+                except RetryableAPIError:
+                    if attempt > retries:
+                        raise
+                    time.sleep(min(2 ** (attempt - 1), 8))
         url, headers, body, kind = build_request(self.profile, system, user)
         for attempt in range(self.profile.get('max_retries', 2) + 1):
             start = time.monotonic()

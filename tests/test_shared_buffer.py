@@ -20,6 +20,9 @@ class SharedBufferTests(unittest.TestCase):
                 history.append({'type':'question','text':f'Q{i+1}','feedback':'no'})
             payloads=[json.loads(x[1]) for x in b.inputs]
             self.assertEqual(payloads[0]['visible_history'],[])
+            self.assertEqual(payloads[0]['unpublished_questions'],[{'submission':1,'text':'Q1'}])
+            self.assertNotIn('feedback',str(payloads[0]['unpublished_questions']))
+            self.assertEqual(payloads[2]['unpublished_questions'],[])
             self.assertEqual([x['text'] for x in payloads[1]['visible_history']],['Q2'])
             self.assertEqual(len(payloads[2]['visible_history']),5)
             ap=[json.loads(x[1]) for x in a.inputs]

@@ -12,15 +12,17 @@ DISABLED = ('shell_tool','apps','plugins','hooks','multi_agent','browser_use','c
 
 
 def validate(profile):
-    allowed={'provider','model','reasoning_effort','timeout'}
+    allowed={'provider','model','reasoning_effort','timeout','max_retries'}
     if set(profile)-allowed:
-        raise ValueError('codex_cli supports only provider, model, reasoning_effort, timeout; no API token cap or sampling overrides')
+        raise ValueError('codex_cli supports only provider, model, reasoning_effort, timeout, max_retries; no API token cap or sampling overrides')
     if not isinstance(profile.get('model'),str) or not profile['model'].strip():
         raise ValueError('codex_cli needs an explicit model')
     if profile.get('reasoning_effort','high') not in ('low','medium','high','xhigh','max','ultra'):
         raise ValueError('Invalid Codex reasoning effort')
     if type(profile.get('timeout',240)) not in (int,float) or not 0<profile.get('timeout',240)<=600:
         raise ValueError('Codex timeout must be in (0,600] seconds')
+    if type(profile.get('max_retries', 2)) is not int or not 0 <= profile.get('max_retries', 2) <= 5:
+        raise ValueError('Codex max_retries must be an integer from 0 to 5')
     if not shutil.which('codex'):
         raise ValueError('Install and log in to the official Codex CLI first')
 
@@ -75,13 +77,13 @@ def output_contract(user):
     return obj({'text':string}),'text','\nTRANSPORT OVERRIDE: Put your entire response in one JSON object with the string field text; no other fields.'
 
 
-def complete(profile,role,audit,system,user):
-    from .providers import APIError,Reply
+def complete(profile,role,audit,system,user,attempt=1):
+    from .providers import APIError,Reply,RetryableAPIError
     start=time.monotonic()
     schema,unwrap,override=output_contract(user)
     wire_system=system+override
     record={'role':role,'provider':'codex_cli','model_requested':profile['model'],
-            'reasoning_effort':profile.get('reasoning_effort','high'),'attempt':1,
+            'reasoning_effort':profile.get('reasoning_effort','high'),'attempt':attempt,
             'request':{'system':wire_system,'user':user,'output_schema':schema},
             'transport':'official_codex_exec_structured_v2',
             'auth':'existing_codex_login','session_policy':'fresh ephemeral session; tools disabled'}
@@ -98,7 +100,7 @@ def complete(profile,role,audit,system,user):
             audit({**record,'status':'transport_error','error_type':type(exc).__name__,'seconds':time.monotonic()-start})
             raise APIError(f'{role}: Codex CLI {type(exc).__name__}; no resampling') from None
         last=(folder/'last.txt').read_text() if (folder/'last.txt').exists() else ''
-    messages=[];usage={};thread='';events=[];completed=False;tool_use=False
+    messages=[];usage={};thread='';events=[];completed=False;tool_use=False;generation_started=False
     for line in process.stdout.splitlines():
         try:
             event=json.loads(line)
@@ -113,6 +115,8 @@ def complete(profile,role,audit,system,user):
             events.append({'type':kind,'message':event.get('message',event.get('error',{}))})
         elif kind in ('item.started','item.completed'):
             item=event.get('item',{})
+            if item.get('type') in ('agent_message', 'reasoning'):
+                generation_started=True
             if item.get('type') not in ('agent_message','reasoning','error'):
                 tool_use=True
                 events.append({'type':'unexpected_tool','item_type':item.get('type')})
@@ -145,5 +149,10 @@ def complete(profile,role,audit,system,user):
            'output_channel':'last_message_file' if last.strip() else 'jsonl_event',
            'output_channel_mismatch':mismatch,'finish_reason':'completed' if ok else 'failed'})
     if not ok:
+        # Never retry bad formats, partial generations, tool use, or a low-quality answer.
+        diagnostic = json.dumps([e for e in events if e['type'] in ('error','turn.failed')]).lower()
+        if (process.returncode != 0 and not raw.strip() and not completed and not tool_use and not generation_started
+                and any(marker in diagnostic for marker in ('at capacity', 'rate limit', 'rate_limit'))):
+            raise RetryableAPIError(f'{role}: capacity/rate limit before response; see api_calls.jsonl')
         raise APIError(f'{role}: Codex CLI failed (exit={process.returncode}, tools={tool_use}, format={valid}); see api_calls.jsonl')
     return Reply(text,usage,thread,profile['model'],'completed',time.monotonic()-start)

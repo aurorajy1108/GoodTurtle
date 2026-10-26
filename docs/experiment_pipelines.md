@@ -1,5 +1,7 @@
 # Continual learning 与双 agent 实验
 
+> 2026-10-24 v7：新增 CL 四条件对照、共享 buffer 问题预约、容量错误有限重试及 `--on-error`。旧实验已暂停，新增参数与设计边界见 [v7 修复说明](host_repair_v7.md)。
+
 入口：`python3 scripts/experiment.py`，Python 3.10+，仅标准库。复用现有 host/player/grader API 配置、四标签协议、100 次预算、HTML/Markdown/JSONL 轨迹及私有评分。所有命令从仓库根目录运行。当前实现是 **in-context continual learning / experience transfer**，没有梯度更新或模型参数训练；A→B 是最小两任务序列，不测长期遗忘。
 
 ## 数据与评分
@@ -101,7 +103,7 @@ python3 scripts/experiment.py continual --dataset data/annotations/turtle50_v4/p
 | `reasoning_effort` | `high` | low / medium / high / xhigh / max / ultra，实际支持由服务端决定 |
 | `timeout` | `240` 秒，范围 (0,600] | 整个单次 CLI 调用的超时 |
 
-不接受 `max_output_tokens / temperature / extra_body / base_url / api_key_env / max_retries`，避免把未支持的选项伪装成已生效。保留全局 max_questions=100。CLI 的网络重试由其自身处理；后端不做输出重新采样。当前重跑配置将 timeout 设为 600 秒（默认仍为 240）。日志中的 http_attempts 在此后端表示 CLI 调用次数，不是底层网络尝试次数。
+不接受 `max_output_tokens / temperature / extra_body / base_url / api_key_env`，避免把未支持的选项伪装成已生效。保留全局 max_questions=100。CLI 的底层网络重试由其自身处理；后端支持 `max_retries`（默认 2，0–5），仅对没有任何生成内容的明确容量／限流失败重试原请求，不对错误答案或格式重采样。当前重跑配置将 timeout 设为 600 秒（默认仍为 240）。日志中的 http_attempts 在此后端表示 CLI 调用次数，不是底层网络尝试次数。
 
 v2 backend 使用官方 `--output-schema` 和 `--output-last-message`。player 返回原 JSON 协议，v3 数据的 grader 增加逐事实覆盖和矛盾证据；host 在传输层返回 `{ "label": "no" }` 等四标签对象，程序只将 label 展示给玩家。审查文本用 text 字段封装。最终消息文件与 JSONL 若同时有内容必须一致；文件可补足缺失的事件输出，但不会触发重新采样。日志保存原始封装、解码文本、schema 和实际传输 prompt，因此应与旧自由格式 backend 分开报告。
 
@@ -136,7 +138,7 @@ CLI 事件不回传实际服务端模型名，日志固定记录请求的模型�
 | team 专用 | 默认 / 约束 | 说明 |
 | --- | --- | --- |
 | `--puzzle IDS` | `TS002` | 单 ID、逗号分隔列表或 all |
-| `--strategies LIST` | `solo,alternating,discuss,solo_reflect` | 从 solo / alternating / discuss / solo_reflect / independent 中选择，不允许重复，必须含 solo 对照 |
+| `--strategies LIST` | `solo,solo_reflect,independent,shared_buffer` | 从 solo / alternating / discuss / solo_reflect / independent / shared_buffer 中选择，不允许重复，必须含 solo 对照 |
 | `--partner-config PATH` | 复制 config.player | **单个模型 profile 对象**的 JSON，不是 host/player/grader 顶层实验配置；支持和 player 相同的九个字段 |
 
 此入口没有 `--host / --player / --grader` 覆盖选项，请直接编辑 `--config`。模型配置全部字段、默认值与 key 环境变量见 README 的参数表。`max_questions` 仍是 1..100，最后名额必须 final；每一局 A 和 B、每个 team condition 分别获得此预算。

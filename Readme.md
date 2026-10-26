@@ -1,5 +1,8 @@
 # GoodTurtle — COMP1110
 
+2026-10-24 v7：当前本地实验已暂停。新增来源事实约束与 TS015/016/023/036 专属边界，CL 增加 `answer_only` / `unrelated` 对照，双 agent 默认包含三调用的 `solo_reflect` 对照。**本轮只完成离线验证，不宣称 Host 准确率已经提高。** [本轮修复、全部新增参数和复跑前检查](docs/host_repair_v7.md)。
+
+
 **同事运行入口：[从 clone 到实验的完整指南](docs/coworker_quickstart.md)**。Git 已包含完整 50 题、partial score 标注和所需 host packs；无需另取数据包，配置自己的模型账号即可运行。指南覆盖模型配置、所有 sweep 参数、CL、报告和后台运行。
 
 
@@ -18,7 +21,7 @@ python3 scripts/team_sweep.py --dataset data/annotations/turtle50_v4/private.jso
 
 ## 三方审核后的当前版本（2026-10-23）
 
-当前运行数据为 `data/annotations/turtle50_v4/private.json`：50 题、161 个评分点，权重沿用已与原 XLSX 对比并经过三方 AI 复核的 v2。v3 增加逐事实证据覆盖、TS023 评分边界和 host 修复；**仍是 AI 标注，尚未人工确认**。运行新实验请用 v3；复现旧实验使用原始 runtime_snapshot，不混合新旧分数。
+当前运行数据为 `data/annotations/turtle50_v4/private.json`：50 题、161 个评分点，权重沿用已与原 XLSX 对比并经过三方 AI 复核的 v2。v3 增加逐事实证据覆盖、TS023 评分边界和 host 修复；**仍是 AI 标注，尚未人工确认**。运行新实验请用 v4；复现旧实验使用原始 runtime_snapshot，不混合新旧分数。
 
 当前全部 50 题都绑定专属资料。其中新增 35 题的示例是来源事实、否定问法和无关细节的基础覆盖，不能当作真实模型准确率验证。新 host 用同一配置模型独立回答两次，分歧时再裁决一次，只向 player 返回一个四标签答案；内部调用不增加问题数。grader 逐项列证据，控制器限制遗漏/矛盾下的分数和通关。参见 [修复说明与运行成本](docs/host_repair_v5.md)。
 
@@ -40,7 +43,7 @@ python3 scripts/render_trajectories.py runs/api/20261023_three_review_rerun
 
 ```sh
 # 先配置 OPENAI_API_KEY / OPENAI_MODEL，或更换现有 API 配置。
-# A→B 对比直接 B；默认只传 A 的公开轨迹，不揭示标准答案。
+# A→B 对比直接 B；默认传 A 的公开轨迹，并在 A 结束后揭示完整标准答案。
 python3 scripts/experiment.py continual --dataset data/annotations/turtle50_v4/private.json \
   --config configs/loop.openai.json --group G07 --repeat 3
 
