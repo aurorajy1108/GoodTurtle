@@ -62,3 +62,18 @@ venv/
 !/data/host_packs/LOOP_TS*_repair_v6.json
 
 !/data/host_packs/LOOP_TS*_repair_v7.json
+
+!/data/host_packs/LOOP_TS*_history_merged_v1.json
+
+# Audited public-share text only; raw HTML and bootstrap metadata remain local.
+!/data/human_trajectories/
+/data/human_trajectories/*
+!/data/human_trajectories/chatgpt_shares_20261026/
+/data/human_trajectories/chatgpt_shares_20261026/*
+!/data/human_trajectories/chatgpt_shares_20261026/*.json
+!/data/human_trajectories/chatgpt_shares_20261026/*.md
+!/data/host_packs/LOOP_TS*_share_merged_v1.json
+
+# Local Excel lock files and generated review thumbnails.
+/outputs/20261026_host_review/~$*
+/outputs/20261026_host_review/previews/
