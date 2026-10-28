@@ -209,7 +209,7 @@ python3 scripts/team_sweep.py --out runs/api/my_team_sweep --summarize-only
 错误／不完整交卷计一次，100 次内最后一次强制 final。统计同时保留完整成功率、最终 partial score、预算消耗、仅成功局问题数、模型调用、token 和时间。100 次失败是预算截尾，不能写成“解题用了 100 问”；同样三次调用也不意味着相同 token 成本。
 
 
-当前 host 的独立核验、grader 的证据覆盖与格式修复、额外调用成本、回归命令见 [host v5.1 修复说明](host_repair_v5.md)。新实验使用 v3 数据；原 runtime_snapshot 不受仓库修改影响。
+当前 host 的独立核验、grader 的证据覆盖与格式修复、额外调用成本、回归命令见 [host v5.1 修复说明](archive/host_repair_v5.md)。新实验使用 v3 数据；原 runtime_snapshot 不受仓库修改影响。
 
 ## 2026-10-24: shared buffer and audited boundaries
 

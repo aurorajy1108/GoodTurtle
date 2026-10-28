@@ -10,25 +10,15 @@ python3 scripts/play.py demo
 
 终端显示新目录。打开目录中的 `index.html`，进入 `trajectory.html` 查看全过程。演示是明确标记的脚本模拟，包含一次错误交卷和强制最终提交，**不是模型性能测试**。
 
-## 使用这次的 49 题表格
+## 使用仓库内的50题
 
-可直接传 XLSX，不必导入：
-
-```sh
-python3 scripts/play.py inspect --dataset "/Users/aurorasun/Downloads/turtle_soup_labeled_49_with_partial_score.xlsx"
-```
-
-已在本地生成 `data/imported/turtle49_20261014/private.json`、`public.jsonl`、`audit.json`。也可以对新表格执行：
+当前数据为 `data/annotations/turtle50_v4/private.json`：50题、161个评分点；当前Host包由 `configs/host_bindings.json` 指向 `data/host_packs/active/`。标注仍待人工确认，原始49题XLSX不是运行依赖。
 
 ```sh
-python3 scripts/play.py import --dataset "/path/to/workbook.xlsx" --out data/imported/my_dataset
+python3 scripts/play.py inspect --dataset data/annotations/turtle50_v4/private.json
 ```
 
-读取 `逐题标注` 中的 ID、problem、answer，以及 `Partial Rubric` 中的 checkpoint、权重和英文评分标准；保留原 ID（49 题中没有 TS040）、story_family、质量标记与复核说明。不会执行 Excel 公式或其中的指令，也不会把 Score Inputs 的空白当成零分。
-
-当前表格共有 49 题、161 checkpoints，每题权重合计 1。正常 36 题；其余包含复核、多解和同故事变体。TS012/017/018、TS015/016 存在完全相同汤面；还有同家族题。默认可运行全部 49 题，但这不表示它们都已通过 benchmark 质量验收，不要跨 family 随机拆分训练与测试。TS002 的新 partial rubric 比旧六要素评分更粗，旧成绩不直接混算。
-
-本次只是构建和本地导入，没有发布新数据。此前 Git 的 data 白名单继续生效，新导入数据仍被忽略；不要把私有 dataset、rubric 或运行目录交给 player。
+导入自己的新表格时仍可用 `python3 scripts/play.py import --dataset /path/to/workbook.xlsx --out data/imported/my_dataset`。新表格与既有Host绑定的汤面/汤底不同会触发指纹校验，需单独审核绑定，不能静默套用原题资料。题库、rubric和Host私有输入不能发送给player。
 
 ## 一条命令开始实际 API 对局
 
@@ -38,11 +28,11 @@ python3 scripts/play.py import --dataset "/path/to/workbook.xlsx" --out data/imp
 export OPENAI_API_KEY='填入你的 key'
 export OPENAI_MODEL='填入实际 API model ID'
 python3 scripts/play.py run \
-  --dataset data/imported/turtle49_20261014/private.json \
+  --dataset data/annotations/turtle50_v4/private.json \
   --config configs/loop.openai.json --puzzle TS002 --repeat 3
 ```
 
-无需指定输出目录，自动在 `runs/api/时间_UUID/` 下创建独立 batch。`--out` 可指定新目录，但已有目录不会被覆盖。`--puzzle TS001,TS002` 选择多题，`--puzzle all --repeat 3` 运行全部 49 题三次。每局上下文独立，不共享其他局的内容。
+无需指定输出目录，自动在 `runs/api/时间_UUID/` 下创建独立 batch。`--out` 可指定新目录，但已有目录不会被覆盖。`--puzzle TS001,TS002` 选择多题，`--puzzle all --repeat 3` 运行全部 50 题三次。每局上下文独立，不共享其他局的内容。
 
 DeepSeek：导出 `DEEPSEEK_API_KEY`、`DEEPSEEK_MODEL`，改用 `configs/loop.deepseek.json`。
 
@@ -51,7 +41,7 @@ Claude：导出 `ANTHROPIC_API_KEY`、`ANTHROPIC_MODEL`，改用 `configs/loop.c
 混合供应商使用 `configs/loop.mixed.json`，host、player、grader 可分别选择模型。需要对应的三个 API key，以及 `HOST_MODEL`、`PLAYER_MODEL`、`GRADER_MODEL`。也可直接覆盖配置中的某个角色：
 
 ```sh
-python3 scripts/play.py run --dataset data/imported/turtle49_20261014/private.json \
+python3 scripts/play.py run --dataset data/annotations/turtle50_v4/private.json \
   --host openai:YOUR_HOST_API_MODEL --player deepseek:YOUR_PLAYER_API_MODEL \
   --grader anthropic:YOUR_GRADER_API_MODEL --puzzle TS002
 ```
@@ -149,7 +139,7 @@ Batch 目录：
 不调用 API 的全题预检：
 
 ```sh
-python3 scripts/play.py run --dataset data/imported/turtle49_20261014/private.json \
+python3 scripts/play.py run --dataset data/annotations/turtle50_v4/private.json \
   --host openai:YOUR_HOST_API_MODEL --player deepseek:YOUR_PLAYER_API_MODEL \
   --puzzle all --dry-run
 python3 -m unittest discover -s tests -v

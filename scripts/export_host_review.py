@@ -16,8 +16,8 @@ from openpyxl.formatting.rule import CellIsRule
 from openpyxl.utils import get_column_letter
 from openpyxl.workbook.properties import CalcProperties
 ROOT=Path(__file__).resolve().parents[1]
-D=ROOT/'data/human_trajectories/chatgpt_shares_20261026'
-A=ROOT/'docs/reviews'
+D=ROOT/'data/host_reference/sources/chatgpt_shares_20261026'
+A=ROOT/'data/host_reference/reviews'
 NAVY='16324F';TEAL='006D77';WHITE='FFFFFF';INK='243746';PALE='EEF4F8';EDIT='FFF2CC'
 
 
@@ -145,7 +145,7 @@ def main():
     for group in merge['puzzles']:
         for e in group['added_examples']:bound.append([group['puzzle_id'],e['case_id'],e['question'],e['answer'],e['rationale'],e['review_status'],group['merged_pack'],e['provenance']['source_url'],'','',''])
     add_sheet(wb,'已绑定示例',['题目ID','案例ID','问题','标签','私有理由','审核状态','绑定文件','来源','人工决定','人工标签','人工备注'],bound,[12,29,105,18,100,48,70,50,16,18,50])
-    sources=[['分享1','https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45','495条可见消息；用户提供；本地可见文本抽取，保留消息ID。'],['分享2','https://chatgpt.com/share/6adf37d6-5080-83e9-abbc-2ced03b615d6','138条可见消息；包含人工回改、未答末题。'],['导出官方说明','https://help.openai.com/en/articles/7260999-exporting-your-chatgpt-history-and-data','登录网页→头像→Settings→Data controls→Export data→Export/Confirm export。'],['导出下载提醒','https://help.openai.com/en/articles/7260999-exporting-your-chatgpt-history-and-data','邮件/短信通知；最多可能7天；下载链接24小时过期。ZIP含聊天及其他账户数据。'],['只提供相关题目','data/human_trajectories/chatgpt_shares_20261026/README.md','完整账户导出可能包含其他隐私；可只整理相关会话文本/JSON，不必提供整个账户归档。'],['当前评判来源','data/annotations/turtle50_v4/private.json','标准答案、rubric及completion_requirements优先；不为配合历史回答改写汤底。'],['当前四标签prompt','prompts/loop_host_v1.txt','旧prompts/host_system.txt不是当前loop四标签prompt。'],['来源文件范围','docs/reviews/experiment_findings_snapshot_20261026.json','41条旧审核发现是完整快照；旧run文件本地仍在但不是新生成结果。'],['人工确认范围','docs/reviews/chatgpt_share_merge_20261026.json','新绑定21条为人工原答+AI核对，human_confirmed=false。'],['表格生成','scripts/export_host_review.py','需要openpyxl；可选Pillow预览。黄色底蓝字是人工可填写栏。长原文保留完整，可在编辑栏展开。'],['运行状态','docs/host_repair_v7.md','正式实验暂停；本轮只做离线测试与资料审核，没有新准确率。']]
+    sources=[['分享1','https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45','495条可见消息；用户提供；本地可见文本抽取，保留消息ID。'],['分享2','https://chatgpt.com/share/6adf37d6-5080-83e9-abbc-2ced03b615d6','138条可见消息；包含人工回改、未答末题。'],['导出官方说明','https://help.openai.com/en/articles/7260999-exporting-your-chatgpt-history-and-data','登录网页→头像→Settings→Data controls→Export data→Export/Confirm export。'],['导出下载提醒','https://help.openai.com/en/articles/7260999-exporting-your-chatgpt-history-and-data','邮件/短信通知；最多可能7天；下载链接24小时过期。ZIP含聊天及其他账户数据。'],['只提供相关题目','data/host_reference/sources/chatgpt_shares_20261026/README.md','完整账户导出可能包含其他隐私；可只整理相关会话文本/JSON，不必提供整个账户归档。'],['当前评判来源','data/annotations/turtle50_v4/private.json','标准答案、rubric及completion_requirements优先；不为配合历史回答改写汤底。'],['当前四标签prompt','prompts/loop_host_v1.txt','旧prompts/archive/host_system_v0.5.1.txt不是当前loop四标签prompt。'],['来源文件范围','data/host_reference/reviews/experiment_findings_snapshot_20261026.json','41条旧审核发现是完整快照；旧run文件本地仍在但不是新生成结果。'],['人工确认范围','data/host_reference/reviews/chatgpt_share_merge_20261026.json','新绑定21条为人工原答+AI核对，human_confirmed=false。'],['表格生成','scripts/export_host_review.py','需要openpyxl；可选Pillow预览。黄色底蓝字是人工可填写栏。长原文保留完整，可在编辑栏展开。'],['运行状态','docs/host_repair_v7.md','正式实验暂停；本轮只做离线测试与资料审核，没有新准确率。']]
     add_sheet(wb,'来源与导出',['项目','链接/路径','说明'],sources,[30,95,110])
     formulas={
         'B3':("COUNTA('新分享疑点'!A2:A10000)",len(issues)),

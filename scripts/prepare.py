@@ -107,7 +107,7 @@ def public_rows(puzzles):
 def read_host_packs():
     packs = {}
     scope = release_scope()
-    for path in sorted((ROOT / "data/host_packs").glob("*.json")):
+    for path in sorted((ROOT / "data/host_packs/archive").glob("*.json")):
         if scope is not None and path.stem not in scope["puzzle_ids"]:
             continue
         pack = json.loads(path.read_text())
@@ -168,7 +168,7 @@ def host_messages(puzzle, examples, shots, question):
                "TARGET_DEMONSTRATIONS": target_examples,
                "ACTIVE_PUZZLE": {key: puzzle[key] for key in HOST_FIELDS}}
     return [
-        {"role": "system", "content": (ROOT / "prompts/host_system.txt").read_text()},
+        {"role": "system", "content": (ROOT / "prompts/archive/host_system_v0.5.1.txt").read_text()},
         {"role": "system", "content": "PROTOCOL_DEMONSTRATIONS use other stories. TARGET_DEMONSTRATIONS are designated answers for ACTIVE_PUZZLE; each example history is local to that example, not this game's history.\n" + json.dumps(context, ensure_ascii=False)},
         {"role": "user", "content": json.dumps({"public_history": [], "question": question}, ensure_ascii=False)},
     ]

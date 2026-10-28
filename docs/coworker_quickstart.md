@@ -4,6 +4,8 @@
 
 本指南对应当前四标签 loop，Python 3.10+，只使用标准库。macOS、Linux 或 Windows 的 WSL 可运行并发 sweep；直接 Windows 环境的进程组停止行为尚未验证。运行真实模型需要你自己的 API key，或本机已安装且登录的官方 Codex CLI；仓库不包含账号凭据。以下命令都在仓库根目录执行。
 
+人工参考问答统一上传到 [Host reference入口](../data/host_reference/README.md)，不要直接混进运行输出或active包。
+
 ## 1. 获取代码并做零调用检查
 
 ```sh
@@ -28,12 +30,12 @@ python3 scripts/play.py inspect --dataset data/annotations/turtle50_v4/private.j
 
 - `data/annotations/turtle50_v4/private.json`：每题英文汤面、汤底、完整解答要求、partial score 权重和满分／半分／零分规则。
 - `data/annotations/turtle50_v3/review.md`：逐题可读标注。
-- `configs/host_bindings.json` 和它引用的所有 `data/host_packs/` 文件：当前 50 题均有基础示例；新补示例仍需真实历史和人工验证。
-- 历史 `data/public/loop_eraser_pillow.json` 保留供旧数据查阅；新实验用 v3 数据配合题号筛选。
+- `configs/host_bindings.json` 和它引用的所有 `data/host_packs/active/` 文件：当前 50 题均有基础示例；新补示例仍需真实历史和人工验证。
+- 历史 `data/public/loop_eraser_pillow.json` 保留供旧数据查阅；新实验用 v4 数据配合题号筛选。
 
 `private.json` 中的 private 指“对 player 保密”，不是未上传。控制器会隔离答案和评分，玩家只看到汤面及四标签反馈。标注经过 AI 审核，仍待人工确认，不能当作已验证的人工 gold。
 
-模型账号必须由运行者自己配置。原始 49 题 XLSX 不是运行依赖；直接使用仓库中的 v3 JSON，避免旧表格和新 host 绑定版本不一致。
+模型账号必须由运行者自己配置。原始 49 题 XLSX 不是运行依赖；直接使用仓库中的 v4 JSON，避免旧表格和新 host 绑定版本不一致。
 
 如果此前解压过旧数据包，`git pull` 提示未跟踪文件将被覆盖时，先备份提示中的文件或使用新的 clone，不要强制清理。旧 ZIP 不再是运行前置条件。
 
@@ -62,7 +64,7 @@ export ANTHROPIC_MODEL='你账号可用的准确模型 ID'
 # 配置：configs/loop.claude.json
 ```
 
-这些配置的模型 ID 由你自己的服务账号决定，不自动映射 Codex 模型别名。允许分别配置 host、player、grader；参见 `configs/loop.mixed.json` 与 README 的完整模型参数表。
+这些配置的模型 ID 由你自己的服务账号决定，不自动映射 Codex 模型别名。允许分别配置 host、player、grader；参见 `configs/loop.mixed.json` 与 [完整模型参数表](runtime_parameters.md)。
 
 ### 使用本机现有 Codex 登录
 
@@ -70,7 +72,7 @@ export ANTHROPIC_MODEL='你账号可用的准确模型 ID'
 
 该后端通过官方 `codex exec` 调用，工具禁用，每次为新会话。部分 CLI 版本可能不支持本项目使用的参数；若启动报 unsupported option，请查看本机 `codex exec --help` 与 `api_calls.jsonl`，不要把失败当作模型成绩。CLI 的模型 metadata fallback 警告不证明实际换了模型；实际模型名若没有由事件返回，报告保持未独立核验。
 
-新 host 每次普通提问内部调用 2 次，分歧时 3 次；只有最终四标签进入公开历史。证据格式修复最多增加一次 grader 调用。问题计数不变，调用成本增加。参见 [host 修复与回归检查](host_repair_v5.md)。
+新 host 每次普通提问内部调用 2 次，分歧时 3 次；只有最终四标签进入公开历史。证据格式修复最多增加一次 grader 调用。问题计数不变，调用成本增加。参见 [host 修复与回归检查](archive/host_repair_v5.md)。
 
 ## 4. 跑一局（先 dry-run，再真实调用）
 

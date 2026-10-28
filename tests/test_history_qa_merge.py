@@ -4,6 +4,7 @@ import json
 import unittest
 from pathlib import Path
 from turtle_loop.dataset import load_dataset
+from turtle_loop.repository import resolve_historical_path
 from turtle_loop.host_context import build_story_context, story_fingerprint, grading_fingerprint
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -12,16 +13,16 @@ ROOT=Path(__file__).resolve().parents[1]
 class HistoryQAMergeTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.audit=json.loads((ROOT/'docs/reviews/history_qa_merge_20261026.json').read_text())
+        cls.audit=json.loads((ROOT/'data/host_reference/reviews/history_qa_merge_20261026.json').read_text())
         cls.bank={p['id']:p for p in load_dataset(ROOT/cls.audit['dataset'])['puzzles']}
         cls.bindings=json.loads((ROOT/'configs/host_bindings.json').read_text())
 
     def test_every_supplied_case_is_accounted_for_without_rewriting_source(self):
-        expected_sources={str(p.relative_to(ROOT)) for p in (ROOT/'data/host_packs').glob('LOOP_TS*_history_v1.json')}
-        self.assertEqual(expected_sources,{p['source_pack'] for p in self.audit['puzzles']})
+        expected_sources={str(p.relative_to(ROOT)) for p in (ROOT/'data/host_packs/archive').glob('LOOP_TS*_history_v1.json')}
+        self.assertEqual(expected_sources,{str(resolve_historical_path(p['source_pack']).relative_to(ROOT)) for p in self.audit['puzzles']})
         counts={'accepted':0,'rewritten':0,'withheld':0}
         for group in self.audit['puzzles']:
-            raw=(ROOT/group['source_pack']).read_bytes()
+            raw=resolve_historical_path(group['source_pack']).read_bytes()
             self.assertEqual(hashlib.sha256(raw).hexdigest(),group['source_sha256'])
             sources={e['case_id']:e for e in json.loads(raw)['host_examples']}
             self.assertEqual(len(sources),len(group['decisions']))
@@ -39,11 +40,11 @@ class HistoryQAMergeTests(unittest.TestCase):
                 puzzle=self.bank[group['puzzle_id']]
                 self.assertEqual(story_fingerprint(puzzle),group['story_sha256'])
                 self.assertEqual(grading_fingerprint(puzzle),group['grading_sha256'])
-                base_path=ROOT/group['base_binding']['overlay_pack']
+                base_path=resolve_historical_path(group['base_binding']['overlay_pack'])
                 self.assertEqual(hashlib.sha256(base_path.read_bytes()).hexdigest(),group['base_sha256'])
                 base=json.loads(base_path.read_text())
-                merged=json.loads((ROOT/group['merged_pack']).read_text())
-                self.assertEqual(self.bindings[puzzle['id']]['overlay_pack'],group['merged_pack'])
+                merged=json.loads(resolve_historical_path(group['merged_pack']).read_text())
+                self.assertEqual(json.loads((ROOT/self.bindings[puzzle['id']]['overlay_pack']).read_text()),merged)
                 for field in ('solution','canonical_facts','explicit_negatives','unknown_details','irrelevant_details','event_order','knowledge_states','verification_policy'):
                     self.assertEqual(merged.get(field),base.get(field),field)
                 active=build_story_context(puzzle)

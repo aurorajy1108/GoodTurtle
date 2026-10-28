@@ -7,17 +7,35 @@ __pycache__/
 .venv/
 venv/
 .pytest_cache/
+~$*
 
-# Publish the approved 50-puzzle dataset and active host packs; retain other research files locally.
+# Data is explicitly published by purpose. Local research material stays excluded.
 /data/*
+!/data/README.md
 !/data/release_scope.json
+!/data/annotations/
+/data/annotations/*
+!/data/annotations/turtle50_v2/
+/data/annotations/turtle50_v2/*
+!/data/annotations/turtle50_v2/private.json
+!/data/annotations/turtle50_v2/review.md
+!/data/annotations/turtle50_v2/README.md
+!/data/annotations/turtle50_v3/
+/data/annotations/turtle50_v3/*
+!/data/annotations/turtle50_v3/private.json
+!/data/annotations/turtle50_v3/review.md
+!/data/annotations/turtle50_v3/README.md
+!/data/annotations/turtle50_v4/
 !/data/host_packs/
 /data/host_packs/*
-!/data/host_packs/USER_ERASER_001.json
-!/data/host_packs/USER_PILLOW_001.json
-!/data/host_packs/APRIL_*.json
-!/data/host_packs/LOOP_TS002_v2.json
-!/data/host_packs/LOOP_TS031_v4.json
+!/data/host_packs/README.md
+!/data/host_packs/active/
+!/data/host_packs/archive/
+/data/host_packs/local/
+!/data/host_reference/
+/data/host_reference/**/*.html
+/data/host_reference/**/*.zip
+/data/host_reference/**/.DS_Store
 !/data/host_dev/
 /data/host_dev/*
 !/data/host_dev/eraser_v02.json
@@ -28,52 +46,6 @@ venv/
 !/data/public/puzzles.jsonl
 !/data/public/loop_eraser_pillow.json
 
-# New API experiments contain private answer/rubric snapshots; publish deliberately.
+# Frozen experiment outputs are separate from human reference data; publish deliberately.
 /runs/api/
-
-!/data/host_packs/LOOP_TS022_v3.json
-!/data/host_packs/LOOP_TS047_v4.json
-!/data/host_packs/LOOP_TS012_v3.json
-!/data/host_packs/LOOP_TS017_v4.json
-!/data/host_packs/LOOP_TS023_v4.json
-!/data/host_packs/LOOP_TS032_v4.json
-!/data/host_packs/LOOP_TS033_v4.json
-!/data/host_packs/LOOP_TS035_v1.json
-!/data/host_packs/LOOP_TS036_v1.json
-!/data/host_packs/LOOP_TS049_v1.json
-!/data/host_packs/LOOP_TS009_local.json
-!/data/host_packs/LOOP_TS037_local.json
-!/data/host_packs/LOOP_TS048_local.json
-!/data/annotations/
-/data/annotations/*
-!/data/annotations/turtle50_v2/
-/data/annotations/turtle50_v2/*
-!/data/annotations/turtle50_v2/private.json
-!/data/annotations/turtle50_v2/review.md
-!/data/annotations/turtle50_v2/README.md
-!/data/host_packs/LOOP_TS*_repair_v5.json
-!/data/annotations/turtle50_v3/
-/data/annotations/turtle50_v3/*
-!/data/annotations/turtle50_v3/private.json
-!/data/annotations/turtle50_v3/review.md
-!/data/annotations/turtle50_v3/README.md
-
-!/data/annotations/turtle50_v4/
-!/data/host_packs/LOOP_TS*_repair_v6.json
-
-!/data/host_packs/LOOP_TS*_repair_v7.json
-
-!/data/host_packs/LOOP_TS*_history_merged_v1.json
-
-# Audited public-share text only; raw HTML and bootstrap metadata remain local.
-!/data/human_trajectories/
-/data/human_trajectories/*
-!/data/human_trajectories/chatgpt_shares_20261026/
-/data/human_trajectories/chatgpt_shares_20261026/*
-!/data/human_trajectories/chatgpt_shares_20261026/*.json
-!/data/human_trajectories/chatgpt_shares_20261026/*.md
-!/data/host_packs/LOOP_TS*_share_merged_v1.json
-
-# Local Excel lock files and generated review thumbnails.
-/outputs/20261026_host_review/~$*
 /outputs/20261026_host_review/previews/

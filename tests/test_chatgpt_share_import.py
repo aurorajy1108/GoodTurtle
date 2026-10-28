@@ -5,11 +5,12 @@ import hashlib
 import unittest
 from pathlib import Path
 from turtle_loop.dataset import load_dataset
+from turtle_loop.repository import resolve_historical_path
 from turtle_loop.host_context import build_story_context
 ROOT=Path(__file__).resolve().parents[1]
 spec=importlib.util.spec_from_file_location('share_import',ROOT/'scripts/import_chatgpt_share.py')
 module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
-D=ROOT/'data/human_trajectories/chatgpt_shares_20261026'
+D=ROOT/'data/host_reference/sources/chatgpt_shares_20261026'
 
 
 def html_fixture(nodes):
@@ -58,13 +59,13 @@ class ShareImportTests(unittest.TestCase):
         self.assertEqual(by['SHARE_6adf37d6_074']['action_type'],'final_submission')
 
     def test_only_curated_examples_bound_and_existing_contract_unchanged(self):
-        audit=json.loads((ROOT/'docs/reviews/chatgpt_share_merge_20261026.json').read_text())
+        audit=json.loads((ROOT/'data/host_reference/reviews/chatgpt_share_merge_20261026.json').read_text())
         bank={p['id']:p for p in load_dataset(ROOT/audit['dataset'])['puzzles']}
         pairs={p['case_id']:p for p in json.loads((D/'qa_pairs.json').read_text())}
         approved=set()
         for group in audit['puzzles']:
-            basepath=ROOT/group['base_binding']['overlay_pack'];self.assertEqual(hashlib.sha256(basepath.read_bytes()).hexdigest(),group['base_sha256'])
-            base=json.loads(basepath.read_text());merged=json.loads((ROOT/group['merged_pack']).read_text());context=build_story_context(bank[group['puzzle_id']])
+            basepath=resolve_historical_path(group['base_binding']['overlay_pack']);self.assertEqual(hashlib.sha256(basepath.read_bytes()).hexdigest(),group['base_sha256'])
+            base=json.loads(basepath.read_text());merged=json.loads(resolve_historical_path(group['merged_pack']).read_text());context=build_story_context(bank[group['puzzle_id']])
             for key in base:
                 if key not in ('version','review_status','host_examples'):self.assertEqual(base[key],merged[key])
             self.assertEqual(merged['host_examples'][:len(base['host_examples'])],base['host_examples'])
