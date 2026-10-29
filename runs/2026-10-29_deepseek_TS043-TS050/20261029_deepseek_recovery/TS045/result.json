@@ -1,0 +1,67 @@
+{
+  "status": "error",
+  "stop_reason": "ProtocolError",
+  "simulation": false,
+  "success": null,
+  "host_questions": 72,
+  "final_attempts": 5,
+  "rejected_finals": 4,
+  "counted_questions": 76,
+  "submissions": 77,
+  "pending_feedback": 1,
+  "forced_final": false,
+  "final_partial_score": null,
+  "best_partial_score": 0.55,
+  "latest_final": "The narrator secretly planted a camera pen on his favorite horror writer as a birthday gift, intending to spy on him inside his own home. After the party, the narrator went home and reviewed the footage. The pen camera captured the writer committing a real, literal murder of a living human being in his home. Crucially, the murder matched the content of one of the writer's published horror stories—revealing that the writer's 'fiction' was actually a truthful account of real murders he had committed. The narrator was horrified to discover that his admired horror writer was a genuine killer whose stories were confessions disguised as fiction, learned through the very surveillance he had secretly arranged.",
+  "latest_grade": null,
+  "elapsed_seconds": 161.111914042,
+  "usage": {
+    "grader": {
+      "http_attempts": 5,
+      "successful_responses": 5,
+      "seconds": 14.422448042000017,
+      "provider_reported_usage": {
+        "prompt_tokens": 16855,
+        "completion_tokens": 1995,
+        "total_tokens": 18850,
+        "prompt_cache_hit_tokens": 12544,
+        "prompt_cache_miss_tokens": 4311
+      }
+    },
+    "host": {
+      "http_attempts": 149,
+      "successful_responses": 149,
+      "seconds": 90.21498074700001,
+      "provider_reported_usage": {
+        "prompt_tokens": 369428,
+        "completion_tokens": 66,
+        "total_tokens": 369494,
+        "prompt_cache_hit_tokens": 356224,
+        "prompt_cache_miss_tokens": 13204
+      }
+    },
+    "player": {
+      "http_attempts": 77,
+      "successful_responses": 77,
+      "seconds": 55.876505917999935,
+      "provider_reported_usage": {
+        "prompt_tokens": 104039,
+        "completion_tokens": 1621,
+        "total_tokens": 105660,
+        "prompt_cache_hit_tokens": 98048,
+        "prompt_cache_miss_tokens": 5991
+      }
+    }
+  },
+  "error": "Evaluator must return JSON, without markdown",
+  "human_review_status": "pending",
+  "evaluation_versions": {
+    "story_sha256": "45054b15fec8cb9b0c83dc9e5be3bc6ad7d7edd3059d18a25afc6de268841b2c",
+    "grading_sha256": "af6b01154c8d65202b475abdc2be290ebbcc08a168b9ecfa603d4a9dedc2012f",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "3ad8cff7ff01654eb948a48a0420492bce967eb61a87f28b28752fdf17d2ccec",
+    "controller_sha256": "b2f9cdef2472b363a8fda1382d4dc42802fa2ab040fc667c481e27756469557b",
+    "host_context_sha256": "fae899f8ca337439318953b75d3dedacba94332351e24a88cd97859a01346a51",
+    "host_binding_version": "host-v5.1-20261023"
+  }
+}

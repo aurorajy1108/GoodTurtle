@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "source_id": "20261029_222248_human",
+  "puzzle_ids": [
+    "TS043"
+  ],
+  "source_url": "",
+  "uploaded_at": "2026-10-29T23:11:57.041886+08:00",
+  "review_status": "pending",
+  "role_mapping": {
+    "user": "human_host",
+    "assistant": "player"
+  },
+  "role_mapping_status": "confirmed",
+  "trajectory_file": "trajectory.md",
+  "submission_status": "uploaded",
+  "trajectory_sha256": "7052b8dca1417bcb7693a2edf2c6aebf81387409faf1765200b2b08470138f0b",
+  "notes": "Original human-host session; /next indicates skipped, /quit indicates stopped. Preserved verbatim; pending semantic review. TS043 subsequently restarted in a separate model-run archive."
+}

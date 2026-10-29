@@ -1,0 +1,36 @@
+{
+  "max_questions": 100,
+  "host": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "max_output_tokens": 4096,
+    "timeout": 120,
+    "extra_body": {
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  },
+  "player": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "max_output_tokens": 4096,
+    "timeout": 120,
+    "extra_body": {
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  },
+  "grader": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "max_output_tokens": 4096,
+    "timeout": 120,
+    "extra_body": {
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  }
+}

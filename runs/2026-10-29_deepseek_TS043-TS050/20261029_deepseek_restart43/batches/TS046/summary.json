@@ -1,0 +1,107 @@
+{
+  "simulation": false,
+  "runs": [
+    {
+      "block": "TS046_r01",
+      "condition": "solo",
+      "puzzle_id": "TS046",
+      "repeat": 1,
+      "run_dir": "TS046_r01_solo",
+      "source": null,
+      "target": "TS046",
+      "group": null,
+      "relation_hypothesis": null,
+      "status": "error",
+      "stop_reason": "ProtocolError",
+      "simulation": false,
+      "success": null,
+      "host_questions": 85,
+      "final_attempts": 5,
+      "rejected_finals": 4,
+      "counted_questions": 89,
+      "submissions": 90,
+      "pending_feedback": 1,
+      "forced_final": false,
+      "final_partial_score": null,
+      "best_partial_score": 0.05,
+      "latest_final": "The narrator's younger sister is genuinely dead and was already dead when the narrator came home, where they lived together. Her death was not a suicide, and it was not a killing by the narrator or by another person, nor an accident the narrator caused. The narrator deliberately wrote a note intended to be read as the dead sister's own suicide note, so that people—including the third person they lived with—would believe the sister had died by suicide. The note was easy to write because its text described the narrator's own wish to die: the narrator projected their own suicidal feelings onto the dead sister. The deception was not for money, not to protect anyone, not to cover a murder, and the narrator was not forced. The motive is tied to the narrator's own death wish—the note recasts the sister's non-suicidal death as a chosen suicide, mirroring the narrator's own desire to die—while also shaping how the death is perceived and officially treated.",
+      "latest_grade": null,
+      "elapsed_seconds": 603.337256542,
+      "usage": {
+        "grader": {
+          "http_attempts": 5,
+          "successful_responses": 5,
+          "seconds": 24.253708541999913,
+          "provider_reported_usage": {
+            "prompt_tokens": 28017,
+            "completion_tokens": 3537,
+            "total_tokens": 31554,
+            "prompt_cache_hit_tokens": 20736,
+            "prompt_cache_miss_tokens": 7281
+          }
+        },
+        "host": {
+          "http_attempts": 183,
+          "successful_responses": 183,
+          "seconds": 387.38520937099975,
+          "provider_reported_usage": {
+            "prompt_tokens": 1341567,
+            "completion_tokens": 235,
+            "total_tokens": 1341802,
+            "prompt_cache_hit_tokens": 1291136,
+            "prompt_cache_miss_tokens": 50431
+          }
+        },
+        "player": {
+          "http_attempts": 90,
+          "successful_responses": 90,
+          "seconds": 190.22322950299997,
+          "provider_reported_usage": {
+            "prompt_tokens": 264635,
+            "completion_tokens": 4613,
+            "total_tokens": 269248,
+            "prompt_cache_hit_tokens": 246272,
+            "prompt_cache_miss_tokens": 18363
+          }
+        }
+      },
+      "error": "requirement_coverage: invalid or duplicate coverage row",
+      "human_review_status": "pending",
+      "evaluation_versions": {
+        "story_sha256": "d6972a0000db97080e12770f7beb1dde706e187b7597268ebb2d473eeedf5e95",
+        "grading_sha256": "855900aa3dd14c9822202ce68da49c27281dc14e378b6c6097d2797bad158eda",
+        "grading_protocol": "coverage-v2",
+        "prompts_sha256": "3ad8cff7ff01654eb948a48a0420492bce967eb61a87f28b28752fdf17d2ccec",
+        "controller_sha256": "b2f9cdef2472b363a8fda1382d4dc42802fa2ab040fc667c481e27756469557b",
+        "host_context_sha256": "c3feace7ca040a1e0ee497ee56ee53956f1a1945c40d347f4f8b41170e597c91",
+        "host_binding_version": "host-v5.1-20261023"
+      }
+    }
+  ],
+  "attempted_games": 1,
+  "error_games": 1,
+  "interrupted_games": 0,
+  "needs_review_games": 0,
+  "completed_games": 0,
+  "solved_games": 0,
+  "success_rate_completed": null,
+  "counted_questions_completed": {
+    "n": 0,
+    "mean": null,
+    "population_variance": null,
+    "sample_variance": null
+  },
+  "counted_questions_success_only": {
+    "n": 0,
+    "mean": null,
+    "population_variance": null,
+    "sample_variance": null
+  },
+  "final_partial_scores_completed": {
+    "n": 0,
+    "mean": null,
+    "population_variance": null,
+    "sample_variance": null
+  },
+  "note": "Errors, interrupted and needs_review runs remain visible and are excluded from completed-game rates. Scores are provisional model judgments."
+}

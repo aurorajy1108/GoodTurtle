@@ -1,0 +1,67 @@
+{
+  "status": "error",
+  "stop_reason": "ProtocolError",
+  "simulation": false,
+  "success": null,
+  "host_questions": 85,
+  "final_attempts": 15,
+  "rejected_finals": 14,
+  "counted_questions": 99,
+  "submissions": 100,
+  "pending_feedback": 1,
+  "forced_final": true,
+  "final_partial_score": null,
+  "best_partial_score": 0.1,
+  "latest_final": "The narrator had believed his real, living pet black cat was not following or watching him. As police led him away after his intentional killing, he saw the cat staring from the doorway and realized he had been wrong: the cat had in fact accompanied and observed him. The killing was not to protect the cat, not because the cat was harmed, and not because of anything the cat revealed.",
+  "latest_grade": null,
+  "elapsed_seconds": 269.544882875,
+  "usage": {
+    "grader": {
+      "http_attempts": 15,
+      "successful_responses": 15,
+      "seconds": 61.843115084000026,
+      "provider_reported_usage": {
+        "prompt_tokens": 67204,
+        "completion_tokens": 8690,
+        "total_tokens": 75894,
+        "prompt_cache_hit_tokens": 56192,
+        "prompt_cache_miss_tokens": 11012
+      }
+    },
+    "host": {
+      "http_attempts": 182,
+      "successful_responses": 182,
+      "seconds": 112.0349473719999,
+      "provider_reported_usage": {
+        "prompt_tokens": 537478,
+        "completion_tokens": 78,
+        "total_tokens": 537556,
+        "prompt_cache_hit_tokens": 518656,
+        "prompt_cache_miss_tokens": 18822
+      }
+    },
+    "player": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 94.35049591799995,
+      "provider_reported_usage": {
+        "prompt_tokens": 213437,
+        "completion_tokens": 3516,
+        "total_tokens": 216953,
+        "prompt_cache_hit_tokens": 201984,
+        "prompt_cache_miss_tokens": 11453
+      }
+    }
+  },
+  "error": "fact_coverage: every supplied fact must be assessed once",
+  "human_review_status": "pending",
+  "evaluation_versions": {
+    "story_sha256": "dc86c60b046c1c0b5865f1ef49997fc978b6d159578e8fcd5f3bb1c62660a6cb",
+    "grading_sha256": "e84b6718ed79127a4fea758c1ee8507bb7a696cd779a26114bde9c53af3faf09",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "3ad8cff7ff01654eb948a48a0420492bce967eb61a87f28b28752fdf17d2ccec",
+    "controller_sha256": "b2f9cdef2472b363a8fda1382d4dc42802fa2ab040fc667c481e27756469557b",
+    "host_context_sha256": "d65c38b8fe739944e76959524f2d1a40bd121b940672445ec799899d1824a17b",
+    "host_binding_version": "host-v5.1-20261023"
+  }
+}

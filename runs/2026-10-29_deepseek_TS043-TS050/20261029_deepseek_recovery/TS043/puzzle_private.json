@@ -1,0 +1,75 @@
+{
+  "id": "TS043",
+  "opening": "Xiaoqiang had a very loyal dog. Today he was walking the dog on the street, and then Xiaoqiang died.",
+  "answer": "This time when Xiaoqiang went out, he suddenly had a heart attack. The dog wouldn't let anyone including doctors perform CPR on its owner. This delayed treatment and led to Xiaoqiang's death.",
+  "rubric": [
+    {
+      "id": "C1",
+      "weight": 0.5,
+      "core": true,
+      "criterion": "The loyal dog prevents bystanders and medical staff from administering aid.",
+      "full_credit": "The loyal dog prevents bystanders and medical staff from administering aid.",
+      "half_credit": "Dog interferes with aid identified without blocking rescuers/CPR",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+      "points": 50.0,
+      "required_facts": [
+        "The loyal dog prevents bystanders and medical staff from administering aid."
+      ],
+      "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+    },
+    {
+      "id": "C2",
+      "weight": 0.3,
+      "core": false,
+      "criterion": "The owner suffers a sudden heart attack and needs urgent resuscitation.",
+      "full_credit": "The owner suffers a sudden heart attack and needs urgent resuscitation.",
+      "half_credit": "Heart attack identified without urgent resuscitation need",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+      "points": 30.0,
+      "required_facts": [
+        "The owner suffers a sudden heart attack and needs urgent resuscitation."
+      ],
+      "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+    },
+    {
+      "id": "C3",
+      "weight": 0.2,
+      "core": false,
+      "criterion": "The dog’s obstruction delays CPR and leads to the owner’s death; its exact beliefs about doctors need not be specified.",
+      "full_credit": "The dog’s obstruction delays CPR and leads to the owner’s death; its exact beliefs about doctors need not be specified.",
+      "half_credit": "Delayed care identified without causal contribution to death",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+      "points": 20.0,
+      "required_facts": [
+        "The dog’s obstruction delays CPR and leads to the owner’s death; its exact beliefs about doctors need not be specified."
+      ],
+      "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+    }
+  ],
+  "title": "忠犬阻止急救",
+  "story_family": "F043",
+  "quality_status": "正常",
+  "review_notes": "",
+  "source_row": "43",
+  "observed_score": null,
+  "completion_requirements": [
+    "Xiaoqiang suffers a sudden heart attack while out with the dog",
+    "The loyal dog prevents others, including doctors, from giving CPR",
+    "The delayed treatment leads to his death",
+    "The precise belief the dog has about doctors is unspecified and not required"
+  ],
+  "annotation_version": "turtle50-v3-host-repair-20261023",
+  "annotation_status": "ai_repair_pending_human",
+  "grading_notes": "AI three-review adjudication v2, pending human confirmation. Score only this submission. Apply full_credit/half_credit/zero_credit explicitly, with zero taking precedence for a materially contradictory checkpoint claim. An omitted qualifier can be partial; replacing the core identity/cause with a wrong one is not an omission. Faithful paraphrases count. Partial score and full narrative are separate outputs. AI independent review B, pending human approval. Credit is 0/.5/1 per checkpoint. Full narrative additionally requires all sourced completion requirements and no incompatible central claims. Judge the submitted explanation, not unasserted chat guesses. Accept faithful paraphrases; missing optional detail is not a contradiction. Do not demand unknown motives, devices or events. The dog’s precise mental model is unspecified. Objective obstruction and fatal delay are required.",
+  "annotation_provenance": {
+    "reviewers": [
+      "a",
+      "b",
+      "c"
+    ],
+    "selected_base": "b",
+    "adjudicator": "root",
+    "human_confirmed": false
+  },
+  "grading_protocol": "coverage-v2"
+}

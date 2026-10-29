@@ -1,0 +1,864 @@
+{
+  "TS043": {
+    "path": "20261029_deepseek_recovery/TS043/result.json",
+    "status": "completed",
+    "stop_reason": "budget_exhausted",
+    "simulation": false,
+    "success": false,
+    "host_questions": 88,
+    "final_attempts": 12,
+    "rejected_finals": 12,
+    "counted_questions": 100,
+    "submissions": 100,
+    "pending_feedback": 0,
+    "forced_final": true,
+    "final_partial_score": 0.15,
+    "best_partial_score": 0.3,
+    "latest_final": "Xiaoqiang died of a sudden fatal heart attack while walking his very loyal dog on the street, and the dog's behavior triggered the heart attack. He was not killed by another person, a vehicle, a fall, a dog attack or bite, or a venomous sting; the death was a medical emergency rather than physical trauma. The dog's loyalty is central to the mechanism: the dog's devoted conduct on the walk is the causal link that brought on Xiaoqiang's fatal cardiac event. Ruled out were barking or sounds, running off, pulling the leash, jumping on or contacting him, bringing objects or fetching help, interacting with other people, animals, reflections, corpses, smells, clothing, or food, and triggers of fear, startle, anger, grief, laughter, joy, allergy, weather, or exertion. The confirmed core is that the loyal dog's behavior during the street walk precipitated Xiaoqiang's sudden fatal heart attack, and the story turns on that loyal bond.",
+    "latest_grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0,
+          "evidence": "the dog's devoted conduct on the walk is the causal link that brought on Xiaoqiang's fatal cardiac event",
+          "reason": "The submission never states the dog prevents bystanders or doctors from administering aid/CPR; instead it claims the dog's behavior caused the attack, contradicting the aid-blocking role."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "Xiaoqiang died of a sudden fatal heart attack while walking his very loyal dog",
+          "reason": "Heart attack is identified, but the urgent resuscitation need is absent and the causal claim is that the dog triggered the attack."
+        },
+        {
+          "id": "C3",
+          "credit": 0,
+          "evidence": "the dog's devoted conduct on the walk is the causal link that brought on Xiaoqiang's fatal cardiac event",
+          "reason": "No obstruction of CPR delaying treatment is described; the death is attributed to dog-triggered cardiac event rather than delayed CPR."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "The submission omits the dog blocking bystanders/doctors from giving CPR and replaces the mechanism with the dog's behavior causing/triggering the heart attack; it also omits the delayed-treatment causal chain to death.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "Xiaoqiang died of a sudden fatal heart attack while walking his very loyal dog"
+        },
+        {
+          "id": "C3.F1",
+          "status": "contradicted",
+          "evidence": "the dog's devoted conduct on the walk is the causal link that brought on Xiaoqiang's fatal cardiac event"
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "covered",
+          "evidence": "Xiaoqiang died of a sudden fatal heart attack while walking his very loyal dog on the street"
+        },
+        {
+          "id": "R2",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "R3",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "R4",
+          "status": "missing",
+          "evidence": ""
+        }
+      ],
+      "contradictions": [
+        {
+          "quote": "the dog's devoted conduct on the walk is the causal link that brought on Xiaoqiang's fatal cardiac event",
+          "reference": "The loyal dog prevents others, including doctors, from giving CPR; the delayed treatment leads to his death",
+          "checkpoint_ids": [
+            "C1",
+            "C3"
+          ]
+        }
+      ],
+      "partial_score": 0.15,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "elapsed_seconds": 50.744562792,
+    "usage": {
+      "grader": {
+        "http_attempts": 14,
+        "successful_responses": 14,
+        "seconds": 25.038386623999997,
+        "provider_reported_usage": {
+          "prompt_tokens": 26649,
+          "completion_tokens": 3522,
+          "total_tokens": 30171,
+          "prompt_cache_hit_tokens": 20480,
+          "prompt_cache_miss_tokens": 6169
+        }
+      },
+      "host": {
+        "http_attempts": 190,
+        "successful_responses": 190,
+        "seconds": 4.493593583999999,
+        "provider_reported_usage": {
+          "prompt_tokens": 20150,
+          "completion_tokens": 2,
+          "total_tokens": 20152,
+          "prompt_cache_hit_tokens": 18048,
+          "prompt_cache_miss_tokens": 2102
+        }
+      },
+      "player": {
+        "http_attempts": 100,
+        "successful_responses": 100,
+        "seconds": 20.287636833000008,
+        "provider_reported_usage": {
+          "prompt_tokens": 40856,
+          "completion_tokens": 1251,
+          "total_tokens": 42107,
+          "prompt_cache_hit_tokens": 38528,
+          "prompt_cache_miss_tokens": 2328
+        }
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "95d438846c96a5adfe9e938af358452751b002418ffd5bb431fba9afdc7e5465",
+      "grading_sha256": "83554a61db54de5cb2d969f6a15ad16d0a3860c118ac487dad53fe0e0351ce7e",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "3ad8cff7ff01654eb948a48a0420492bce967eb61a87f28b28752fdf17d2ccec",
+      "controller_sha256": "b2f9cdef2472b363a8fda1382d4dc42802fa2ab040fc667c481e27756469557b",
+      "host_context_sha256": "492a788e03f33260cb09d8cf0a1d6f0b3b23e82a961d56686c33e43eff7aca40",
+      "host_binding_version": "host-v5.1-20261023"
+    }
+  },
+  "TS046": {
+    "path": "20261029_deepseek_recovery/TS046/result.json",
+    "status": "error",
+    "stop_reason": "ProtocolError",
+    "simulation": false,
+    "success": null,
+    "host_questions": 88,
+    "final_attempts": 12,
+    "rejected_finals": 11,
+    "counted_questions": 99,
+    "submissions": 100,
+    "pending_feedback": 1,
+    "forced_final": true,
+    "final_partial_score": null,
+    "best_partial_score": 0.05,
+    "latest_final": "The narrator's younger sister was already dead when the narrator came home to the shared home, where they lived with a third person. The death was real and sudden, but not a suicide. The narrator then wrote a note deliberately intended to be read as the dead sister's own suicide note, so that people—especially the third person they lived with—would believe the sister had chosen to die by suicide, and so the death would be perceived and officially treated as a suicide rather than by its true non-suicidal cause. The note was easy to write because its content simply described the narrator's own wish to die: the narrator projected her own suicidal feelings into a document attributed to the sister. The deception was not to cover a murder by the narrator or anyone else, not for money, not to protect another person, and the narrator was not forced. The motive is bound up with the narrator's own death wish—by recasting the sister's sudden non-suicidal death as a chosen suicide, the forged note mirrors and expresses the narrator's own desire to die while shaping how others and the authorities classify the sister's death.",
+    "latest_grade": null,
+    "elapsed_seconds": 78.856942875,
+    "usage": {
+      "grader": {
+        "http_attempts": 12,
+        "successful_responses": 12,
+        "seconds": 40.46827420799999,
+        "provider_reported_usage": {
+          "prompt_tokens": 46110,
+          "completion_tokens": 6205,
+          "total_tokens": 52315,
+          "prompt_cache_hit_tokens": 36224,
+          "prompt_cache_miss_tokens": 9886
+        }
+      },
+      "host": {
+        "http_attempts": 189,
+        "successful_responses": 189,
+        "seconds": 12.368046332999995,
+        "provider_reported_usage": {
+          "prompt_tokens": 64990,
+          "completion_tokens": 8,
+          "total_tokens": 64998,
+          "prompt_cache_hit_tokens": 62464,
+          "prompt_cache_miss_tokens": 2526
+        }
+      },
+      "player": {
+        "http_attempts": 100,
+        "successful_responses": 100,
+        "seconds": 24.94221975199999,
+        "provider_reported_usage": {
+          "prompt_tokens": 67758,
+          "completion_tokens": 1858,
+          "total_tokens": 69616,
+          "prompt_cache_hit_tokens": 64384,
+          "prompt_cache_miss_tokens": 3374
+        }
+      }
+    },
+    "error": "requirement_coverage: invalid or duplicate coverage row",
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "d6972a0000db97080e12770f7beb1dde706e187b7597268ebb2d473eeedf5e95",
+      "grading_sha256": "855900aa3dd14c9822202ce68da49c27281dc14e378b6c6097d2797bad158eda",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "3ad8cff7ff01654eb948a48a0420492bce967eb61a87f28b28752fdf17d2ccec",
+      "controller_sha256": "b2f9cdef2472b363a8fda1382d4dc42802fa2ab040fc667c481e27756469557b",
+      "host_context_sha256": "c3feace7ca040a1e0ee497ee56ee53956f1a1945c40d347f4f8b41170e597c91",
+      "host_binding_version": "host-v5.1-20261023"
+    }
+  },
+  "TS048": {
+    "path": "20261029_deepseek_syntax_recovery/TS048/result.json",
+    "status": "error",
+    "stop_reason": "ProtocolError",
+    "simulation": false,
+    "success": null,
+    "host_questions": 68,
+    "final_attempts": 7,
+    "rejected_finals": 6,
+    "counted_questions": 74,
+    "submissions": 75,
+    "pending_feedback": 1,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": 0.35,
+    "latest_final": "The narrator is a wanted criminal suspect hiding from the police. The police have narrowed his whereabouts to a building or area but need to confirm exactly which home/apartment he is in, so they place a fake food-delivery order to his address as a ruse; an undercover officer working with them makes the delivery and announces it. The narrator ordered nothing, so he is puzzled and is about to refuse it — but his response to the announcement (rather than anyone else's) confirms to the waiting police that the wanted man is inside that location. Several burly men — police officers — then rush in and pin him down to arrest him for the crime he is wanted for. His sister and girlfriend fearfully shake their heads in connection with the delivery/setup; they have only partial awareness that something is wrong (mixed answers on their knowledge), but the public evidence rules out that they were coerced by the men, feared the narrator's violence, were warning him not to open the door, recognized the delivery person as police, or were grieving his arrest — their precise motive for the fearful head-shake remains unresolved.",
+    "latest_grade": null,
+    "elapsed_seconds": 78.52528795799999,
+    "usage": {
+      "grader": {
+        "http_attempts": 7,
+        "successful_responses": 7,
+        "seconds": 16.396989583999996,
+        "provider_reported_usage": {
+          "prompt_tokens": 20169,
+          "completion_tokens": 2290,
+          "total_tokens": 22459,
+          "prompt_cache_hit_tokens": 17408,
+          "prompt_cache_miss_tokens": 2761
+        }
+      },
+      "host": {
+        "http_attempts": 147,
+        "successful_responses": 147,
+        "seconds": 33.34879796000001,
+        "provider_reported_usage": {
+          "prompt_tokens": 153515,
+          "completion_tokens": 22,
+          "total_tokens": 153537,
+          "prompt_cache_hit_tokens": 147456,
+          "prompt_cache_miss_tokens": 6059
+        }
+      },
+      "player": {
+        "http_attempts": 75,
+        "successful_responses": 75,
+        "seconds": 28.37632779,
+        "provider_reported_usage": {
+          "prompt_tokens": 52822,
+          "completion_tokens": 1257,
+          "total_tokens": 54079,
+          "prompt_cache_hit_tokens": 49664,
+          "prompt_cache_miss_tokens": 3158
+        }
+      }
+    },
+    "error": "fact_coverage: invalid or duplicate coverage row",
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "21602e833532b5d933e9da147ba223b279d3aff4a712364e7cb9c8b9de976082",
+      "grading_sha256": "57b7fdb550ac7b6c225ac3db4d5e182833b6365a43389aac0e2eb10481681940",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "3ad8cff7ff01654eb948a48a0420492bce967eb61a87f28b28752fdf17d2ccec",
+      "controller_sha256": "b2f9cdef2472b363a8fda1382d4dc42802fa2ab040fc667c481e27756469557b",
+      "host_context_sha256": "0690b7eb4391e944816fadc7385cfe8caf4bd42025b40b6c58786f1b58ef7b31",
+      "host_binding_version": "host-v5.1-20261023"
+    }
+  },
+  "TS049": {
+    "path": "20261029_deepseek_restart43/batches/TS049/TS049_r01_solo/result.json",
+    "status": "completed",
+    "stop_reason": "budget_exhausted",
+    "simulation": false,
+    "success": false,
+    "host_questions": 71,
+    "final_attempts": 29,
+    "rejected_finals": 29,
+    "counted_questions": 100,
+    "submissions": 100,
+    "pending_feedback": 0,
+    "forced_final": true,
+    "final_partial_score": 0.825,
+    "best_partial_score": 0.825,
+    "latest_final": "The man borrows books for his child, who cannot go to the library. The child has a habit of writing his or her own name on page 30 of every library book the child reads. The man knows this habit. Before choosing a book, he opens it to page 30 and looks for the child's name. If the name is there, the child has already read that book, so he does not borrow it. If the name is not there, the book is new to the child, and he borrows it to take home so the child has something fresh to read. The man checks page 30 because that is where the child always writes his or her name.",
+    "latest_grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 1,
+          "evidence": "The child has a habit of writing his or her own name on page 30 of every library book the child reads.",
+          "reason": "Child places a mark (name) on page thirty after reading; faithful paraphrase of the fact."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "The man borrows books for his child, who cannot go to the library.",
+          "reason": "Child mobility limitation (cannot go to library) is covered, but the man's illiteracy is not stated; only one qualifier present, capping at half."
+        },
+        {
+          "id": "C3",
+          "credit": 1,
+          "evidence": "Before choosing a book, he opens it to page 30 and looks for the child's name. If the name is there, the child has already read that book, so he does not borrow it.",
+          "reason": "Checks mark before borrowing and rejects marked copies to avoid repeats; both qualifiers covered."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Submission omits the man's illiteracy (R1), a required completion fact; otherwise reconstructs child marking page 30, father checking the mark, and rejecting marked copies to avoid repeats.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "covered",
+          "evidence": "The child has a habit of writing his or her own name on page 30 of every library book the child reads."
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "The man borrows books for his child, who cannot go to the library."
+        },
+        {
+          "id": "C3.F1",
+          "status": "covered",
+          "evidence": "Before choosing a book, he opens it to page 30 and looks for the child's name. If the name is there, the child has already read that book, so he does not borrow it."
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "partial",
+          "evidence": "The man borrows books for his child, who cannot go to the library."
+        },
+        {
+          "id": "R2",
+          "status": "covered",
+          "evidence": "The child has a habit of writing his or her own name on page 30 of every library book the child reads."
+        },
+        {
+          "id": "R3",
+          "status": "covered",
+          "evidence": "Before choosing a book, he opens it to page 30 and looks for the child's name."
+        },
+        {
+          "id": "R4",
+          "status": "covered",
+          "evidence": "If the name is there, the child has already read that book, so he does not borrow it."
+        }
+      ],
+      "contradictions": [],
+      "partial_score": 0.825,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "elapsed_seconds": 646.6798303339999,
+    "usage": {
+      "grader": {
+        "http_attempts": 31,
+        "successful_responses": 31,
+        "seconds": 124.13771779300009,
+        "provider_reported_usage": {
+          "prompt_tokens": 139040,
+          "completion_tokens": 16628,
+          "total_tokens": 155668,
+          "prompt_cache_hit_tokens": 119552,
+          "prompt_cache_miss_tokens": 19488
+        }
+      },
+      "host": {
+        "http_attempts": 152,
+        "successful_responses": 152,
+        "seconds": 301.60694705199984,
+        "provider_reported_usage": {
+          "prompt_tokens": 1013742,
+          "completion_tokens": 198,
+          "total_tokens": 1013940,
+          "prompt_cache_hit_tokens": 965760,
+          "prompt_cache_miss_tokens": 47982
+        }
+      },
+      "player": {
+        "http_attempts": 100,
+        "successful_responses": 100,
+        "seconds": 219.1827989990002,
+        "provider_reported_usage": {
+          "prompt_tokens": 345497,
+          "completion_tokens": 7018,
+          "total_tokens": 352515,
+          "prompt_cache_hit_tokens": 322688,
+          "prompt_cache_miss_tokens": 22809
+        }
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "b2a3f79c9520f5e0d1420b9138ab1e932fc0f5df15e1c85877ad5372262c1512",
+      "grading_sha256": "ad4b973640b144997a8b486d5b84a74fecf2a4f8a93a62f84ed5576ffd910135",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "3ad8cff7ff01654eb948a48a0420492bce967eb61a87f28b28752fdf17d2ccec",
+      "controller_sha256": "b2f9cdef2472b363a8fda1382d4dc42802fa2ab040fc667c481e27756469557b",
+      "host_context_sha256": "59be27d3b382c45955a136daad3cc33be26f90f5787aee9f248bf51fb9c0438c",
+      "host_binding_version": "host-v5.1-20261023"
+    }
+  },
+  "TS044": {
+    "path": "20261029_deepseek_recovery/TS044/result.json",
+    "status": "error",
+    "stop_reason": "ProtocolError",
+    "simulation": false,
+    "success": null,
+    "host_questions": 85,
+    "final_attempts": 15,
+    "rejected_finals": 14,
+    "counted_questions": 99,
+    "submissions": 100,
+    "pending_feedback": 1,
+    "forced_final": true,
+    "final_partial_score": null,
+    "best_partial_score": 0.1,
+    "latest_final": "The narrator had believed his real, living pet black cat was not following or watching him. As police led him away after his intentional killing, he saw the cat staring from the doorway and realized he had been wrong: the cat had in fact accompanied and observed him. The killing was not to protect the cat, not because the cat was harmed, and not because of anything the cat revealed.",
+    "latest_grade": null,
+    "elapsed_seconds": 269.544882875,
+    "usage": {
+      "grader": {
+        "http_attempts": 15,
+        "successful_responses": 15,
+        "seconds": 61.843115084000026,
+        "provider_reported_usage": {
+          "prompt_tokens": 67204,
+          "completion_tokens": 8690,
+          "total_tokens": 75894,
+          "prompt_cache_hit_tokens": 56192,
+          "prompt_cache_miss_tokens": 11012
+        }
+      },
+      "host": {
+        "http_attempts": 182,
+        "successful_responses": 182,
+        "seconds": 112.0349473719999,
+        "provider_reported_usage": {
+          "prompt_tokens": 537478,
+          "completion_tokens": 78,
+          "total_tokens": 537556,
+          "prompt_cache_hit_tokens": 518656,
+          "prompt_cache_miss_tokens": 18822
+        }
+      },
+      "player": {
+        "http_attempts": 100,
+        "successful_responses": 100,
+        "seconds": 94.35049591799995,
+        "provider_reported_usage": {
+          "prompt_tokens": 213437,
+          "completion_tokens": 3516,
+          "total_tokens": 216953,
+          "prompt_cache_hit_tokens": 201984,
+          "prompt_cache_miss_tokens": 11453
+        }
+      }
+    },
+    "error": "fact_coverage: every supplied fact must be assessed once",
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "dc86c60b046c1c0b5865f1ef49997fc978b6d159578e8fcd5f3bb1c62660a6cb",
+      "grading_sha256": "e84b6718ed79127a4fea758c1ee8507bb7a696cd779a26114bde9c53af3faf09",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "3ad8cff7ff01654eb948a48a0420492bce967eb61a87f28b28752fdf17d2ccec",
+      "controller_sha256": "b2f9cdef2472b363a8fda1382d4dc42802fa2ab040fc667c481e27756469557b",
+      "host_context_sha256": "d65c38b8fe739944e76959524f2d1a40bd121b940672445ec799899d1824a17b",
+      "host_binding_version": "host-v5.1-20261023"
+    }
+  },
+  "TS045": {
+    "path": "20261029_deepseek_recovery/TS045/result.json",
+    "status": "error",
+    "stop_reason": "ProtocolError",
+    "simulation": false,
+    "success": null,
+    "host_questions": 72,
+    "final_attempts": 5,
+    "rejected_finals": 4,
+    "counted_questions": 76,
+    "submissions": 77,
+    "pending_feedback": 1,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": 0.55,
+    "latest_final": "The narrator secretly planted a camera pen on his favorite horror writer as a birthday gift, intending to spy on him inside his own home. After the party, the narrator went home and reviewed the footage. The pen camera captured the writer committing a real, literal murder of a living human being in his home. Crucially, the murder matched the content of one of the writer's published horror stories—revealing that the writer's 'fiction' was actually a truthful account of real murders he had committed. The narrator was horrified to discover that his admired horror writer was a genuine killer whose stories were confessions disguised as fiction, learned through the very surveillance he had secretly arranged.",
+    "latest_grade": null,
+    "elapsed_seconds": 161.111914042,
+    "usage": {
+      "grader": {
+        "http_attempts": 5,
+        "successful_responses": 5,
+        "seconds": 14.422448042000017,
+        "provider_reported_usage": {
+          "prompt_tokens": 16855,
+          "completion_tokens": 1995,
+          "total_tokens": 18850,
+          "prompt_cache_hit_tokens": 12544,
+          "prompt_cache_miss_tokens": 4311
+        }
+      },
+      "host": {
+        "http_attempts": 149,
+        "successful_responses": 149,
+        "seconds": 90.21498074700001,
+        "provider_reported_usage": {
+          "prompt_tokens": 369428,
+          "completion_tokens": 66,
+          "total_tokens": 369494,
+          "prompt_cache_hit_tokens": 356224,
+          "prompt_cache_miss_tokens": 13204
+        }
+      },
+      "player": {
+        "http_attempts": 77,
+        "successful_responses": 77,
+        "seconds": 55.876505917999935,
+        "provider_reported_usage": {
+          "prompt_tokens": 104039,
+          "completion_tokens": 1621,
+          "total_tokens": 105660,
+          "prompt_cache_hit_tokens": 98048,
+          "prompt_cache_miss_tokens": 5991
+        }
+      }
+    },
+    "error": "Evaluator must return JSON, without markdown",
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "45054b15fec8cb9b0c83dc9e5be3bc6ad7d7edd3059d18a25afc6de268841b2c",
+      "grading_sha256": "af6b01154c8d65202b475abdc2be290ebbcc08a168b9ecfa603d4a9dedc2012f",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "3ad8cff7ff01654eb948a48a0420492bce967eb61a87f28b28752fdf17d2ccec",
+      "controller_sha256": "b2f9cdef2472b363a8fda1382d4dc42802fa2ab040fc667c481e27756469557b",
+      "host_context_sha256": "fae899f8ca337439318953b75d3dedacba94332351e24a88cd97859a01346a51",
+      "host_binding_version": "host-v5.1-20261023"
+    }
+  },
+  "TS047": {
+    "path": "20261029_deepseek_recovery/TS047/result.json",
+    "status": "completed",
+    "stop_reason": "budget_exhausted",
+    "simulation": false,
+    "success": false,
+    "host_questions": 71,
+    "final_attempts": 29,
+    "rejected_finals": 29,
+    "counted_questions": 100,
+    "submissions": 100,
+    "pending_feedback": 0,
+    "forced_final": true,
+    "final_partial_score": 0.8,
+    "best_partial_score": 0.9,
+    "latest_final": "The reporter's dim guesthouse room had a window directly opposite her bed. In the poor light, a real man was standing close outside the glass, staring in at her; framed by the dark window casing, his motionless head and shoulders looked exactly like a framed portrait of a man. Believing it was merely a picture, she went to sleep unalarmed and without shielding herself. In the morning, daylight revealed genuine outdoor scenery through the glass around where the figure had been—real trees and sky rather than a painted background—proving the 'frame' was a window frame and the figure had been a living man outside. She was stunned because she realized the 'portrait' was a peeping intruder who had watched her through the night while she slept and undressed, believing herself safe with only a picture before her.",
+    "latest_grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 1,
+          "evidence": "a real man was standing close outside the glass, staring in at her...proving the 'frame' was a window frame and the figure had been a living man outside",
+          "reason": "Identifies the window and real outside man."
+        },
+        {
+          "id": "C2",
+          "credit": 1,
+          "evidence": "In the poor light...framed by the dark window casing, his motionless head and shoulders looked exactly like a framed portrait of a man",
+          "reason": "Dim light causes the portrait misidentification."
+        },
+        {
+          "id": "C3",
+          "credit": 0,
+          "evidence": "she went to sleep unalarmed and without shielding herself",
+          "reason": "Contradicts the required night-time unease and avoidance; she is described as unalarmed."
+        },
+        {
+          "id": "C4",
+          "credit": 1,
+          "evidence": "In the morning, daylight revealed genuine outdoor scenery through the glass...She was stunned because she realized the 'portrait' was a peeping intruder who had watched her through the night",
+          "reason": "Daylight reveals the window/real watcher and explains her shock."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Omitted the night-time feeling of being watched and avoidance; instead states she slept unalarmed. This contradicts a mandatory completion requirement (R2).",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "covered",
+          "evidence": "a real man was standing close outside the glass, staring in at her...proving the 'frame' was a window frame and the figure had been a living man outside"
+        },
+        {
+          "id": "C2.F1",
+          "status": "covered",
+          "evidence": "In the poor light...framed by the dark window casing, his motionless head and shoulders looked exactly like a framed portrait of a man"
+        },
+        {
+          "id": "C3.F1",
+          "status": "contradicted",
+          "evidence": "she went to sleep unalarmed and without shielding herself"
+        },
+        {
+          "id": "C4.F1",
+          "status": "covered",
+          "evidence": "In the morning, daylight revealed genuine outdoor scenery through the glass...She was stunned because she realized the 'portrait' was a peeping intruder"
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "covered",
+          "evidence": "In the poor light...his motionless head and shoulders looked exactly like a framed portrait of a man"
+        },
+        {
+          "id": "R2",
+          "status": "contradicted",
+          "evidence": "she went to sleep unalarmed and without shielding herself"
+        },
+        {
+          "id": "R3",
+          "status": "covered",
+          "evidence": "In the morning, daylight revealed genuine outdoor scenery through the glass...She was stunned because she realized the 'portrait' was a peeping intruder who had watched her through the night"
+        }
+      ],
+      "contradictions": [
+        {
+          "quote": "she went to sleep unalarmed and without shielding herself",
+          "reference": "Feeling watched, she avoids looking at it during the night",
+          "checkpoint_ids": [
+            "C3"
+          ]
+        }
+      ],
+      "partial_score": 0.8,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "elapsed_seconds": 433.364379875,
+    "usage": {
+      "grader": {
+        "http_attempts": 29,
+        "successful_responses": 29,
+        "seconds": 154.85803750099996,
+        "provider_reported_usage": {
+          "prompt_tokens": 565129,
+          "completion_tokens": 17333,
+          "total_tokens": 582462,
+          "prompt_cache_hit_tokens": 529408,
+          "prompt_cache_miss_tokens": 35721
+        }
+      },
+      "host": {
+        "http_attempts": 149,
+        "successful_responses": 149,
+        "seconds": 142.3635260839998,
+        "provider_reported_usage": {
+          "prompt_tokens": 1688551,
+          "completion_tokens": 77,
+          "total_tokens": 1688628,
+          "prompt_cache_hit_tokens": 1663744,
+          "prompt_cache_miss_tokens": 24807
+        }
+      },
+      "player": {
+        "http_attempts": 100,
+        "successful_responses": 100,
+        "seconds": 134.48655558299996,
+        "provider_reported_usage": {
+          "prompt_tokens": 302709,
+          "completion_tokens": 5583,
+          "total_tokens": 308292,
+          "prompt_cache_hit_tokens": 288768,
+          "prompt_cache_miss_tokens": 13941
+        }
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "53f7fbdb24212705bbbe8e2ae12b20773f609a02377082226c8299db279d7428",
+      "grading_sha256": "007f3f097ed52e23cf1eef40b821716553cd49eef0335596d2350c6588c75ab9",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "3ad8cff7ff01654eb948a48a0420492bce967eb61a87f28b28752fdf17d2ccec",
+      "controller_sha256": "b2f9cdef2472b363a8fda1382d4dc42802fa2ab040fc667c481e27756469557b",
+      "host_context_sha256": "594126eaa4a7475e0193ddf2401062b150d686efa5c286785c33155a4a2bf013",
+      "host_binding_version": "host-v5.1-20261023"
+    }
+  },
+  "TS050": {
+    "path": "20261029_deepseek_remaining/batches/TS050/TS050_r01_solo/result.json",
+    "status": "completed",
+    "stop_reason": "solved",
+    "simulation": false,
+    "success": true,
+    "host_questions": 17,
+    "final_attempts": 1,
+    "rejected_finals": 0,
+    "counted_questions": 17,
+    "submissions": 18,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": 1.0,
+    "best_partial_score": 1.0,
+    "latest_final": "The man was a passenger in a hot-air balloon that was losing altitude over the desert. To lighten it, the people aboard threw out several suitcases. They then used matchsticks to draw lots to decide who among them would jump out; the man drew the short half-matchstick, meaning he was the one required to leave. He did not jump voluntarily, so the other occupants forced or threw him out of the balloon. He fell from the balloon into the desert and died on impact, still clutching the half matchstick that had marked him as the chosen sacrifice.",
+    "latest_grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 1,
+          "evidence": "The man was a passenger in a hot-air balloon that was losing altitude over the desert.",
+          "reason": "Covers balloon and loss of altitude; not walking in desert is entailed."
+        },
+        {
+          "id": "C2",
+          "credit": 1,
+          "evidence": "To lighten it, the people aboard threw out several suitcases.",
+          "reason": "Luggage thrown to lighten balloon; inadequate effect entailed by subsequent lottery/sacrifice."
+        },
+        {
+          "id": "C3",
+          "credit": 1,
+          "evidence": "They then used matchsticks to draw lots to decide who among them would jump out; the man drew the short half-matchstick, meaning he was the one required to leave.",
+          "reason": "Matches drawn to select victim and man drew short/broken one."
+        },
+        {
+          "id": "C4",
+          "credit": 1,
+          "evidence": "He did not jump voluntarily, so the other occupants forced or threw him out of the balloon. He fell from the balloon into the desert and died on impact, still clutching the half matchstick",
+          "reason": "Thrown from balloon and dies holding half-matchstick."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": true,
+      "completion_note": "Complete reference narrative reconstructed: balloon losing altitude, luggage discarded but insufficient, match lottery, man drew short match and was thrown, dying while holding it.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "covered",
+          "evidence": "The man was a passenger in a hot-air balloon that was losing altitude over the desert."
+        },
+        {
+          "id": "C2.F1",
+          "status": "covered",
+          "evidence": "To lighten it, the people aboard threw out several suitcases. They then used matchsticks to draw lots to decide who among them would jump out"
+        },
+        {
+          "id": "C3.F1",
+          "status": "covered",
+          "evidence": "They then used matchsticks to draw lots to decide who among them would jump out; the man drew the short half-matchstick"
+        },
+        {
+          "id": "C4.F1",
+          "status": "covered",
+          "evidence": "the other occupants forced or threw him out of the balloon. He fell from the balloon into the desert and died on impact, still clutching the half matchstick"
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "covered",
+          "evidence": "The man was a passenger in a hot-air balloon that was losing altitude over the desert."
+        },
+        {
+          "id": "R2",
+          "status": "covered",
+          "evidence": "To lighten it, the people aboard threw out several suitcases. They then used matchsticks to draw lots"
+        },
+        {
+          "id": "R3",
+          "status": "covered",
+          "evidence": "They then used matchsticks to draw lots to decide who among them would jump out"
+        },
+        {
+          "id": "R4",
+          "status": "covered",
+          "evidence": "the man drew the short half-matchstick, meaning he was the one required to leave. He did not jump voluntarily, so the other occupants forced or threw him out of the balloon. He fell from the balloon into the desert and died on impact, still clutching the half matchstick"
+        }
+      ],
+      "contradictions": [],
+      "partial_score": 1.0,
+      "complete": true,
+      "label": "yes",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "elapsed_seconds": 102.089018083,
+    "usage": {
+      "grader": {
+        "http_attempts": 1,
+        "successful_responses": 1,
+        "seconds": 4.220960292000001,
+        "provider_reported_usage": {
+          "prompt_tokens": 4558,
+          "completion_tokens": 637,
+          "total_tokens": 5195,
+          "prompt_cache_hit_tokens": 1280,
+          "prompt_cache_miss_tokens": 3278
+        }
+      },
+      "host": {
+        "http_attempts": 38,
+        "successful_responses": 38,
+        "seconds": 67.63808462699998,
+        "provider_reported_usage": {
+          "prompt_tokens": 175445,
+          "completion_tokens": 61,
+          "total_tokens": 175506,
+          "prompt_cache_hit_tokens": 162432,
+          "prompt_cache_miss_tokens": 13013
+        }
+      },
+      "player": {
+        "http_attempts": 18,
+        "successful_responses": 18,
+        "seconds": 29.994206999000003,
+        "provider_reported_usage": {
+          "prompt_tokens": 17715,
+          "completion_tokens": 669,
+          "total_tokens": 18384,
+          "prompt_cache_hit_tokens": 14208,
+          "prompt_cache_miss_tokens": 3507
+        }
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "1031bedfa25c8f8aabd1852246ad7088494b3611b01ee7119cc8a07d8327d370",
+      "grading_sha256": "0af2737722bb615a7f5d8f0f1d1184c5983e7ba8f9381acccc4947108a73a817",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "3ad8cff7ff01654eb948a48a0420492bce967eb61a87f28b28752fdf17d2ccec",
+      "controller_sha256": "b2f9cdef2472b363a8fda1382d4dc42802fa2ab040fc667c481e27756469557b",
+      "host_context_sha256": "997ab2b74991d2317468f679b5e8256db84544cdcb9f31fa0ce7f00524f14563",
+      "host_binding_version": "host-v5.1-20261023"
+    }
+  }
+}

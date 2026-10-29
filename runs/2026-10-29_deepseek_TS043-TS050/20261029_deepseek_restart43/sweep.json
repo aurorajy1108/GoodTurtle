@@ -1,0 +1,62 @@
+{
+  "arguments": {
+    "dataset": "data/annotations/turtle50_v4/private.json",
+    "config": "configs/loop.deepseek.local-last10.json",
+    "partner_config": null,
+    "puzzles": "TS043,TS044,TS045,TS046,TS047,TS048,TS049,TS050",
+    "repeat": 1,
+    "strategies": "solo",
+    "sync_interval": 4,
+    "on_error": "stop",
+    "workers": 4,
+    "seed": 20261023,
+    "out": "runs/api/20261029_deepseek_restart43",
+    "poll_seconds": 30.0,
+    "dry_run": false,
+    "summarize_only": false,
+    "command": "team",
+    "puzzle": "TS043,TS044,TS045,TS046,TS047,TS048,TS049,TS050"
+  },
+  "repeat": 1,
+  "strategies": [
+    "solo"
+  ],
+  "planned_games": 8,
+  "jobs": [
+    {
+      "puzzle_id": "TS046",
+      "seed": 20261026
+    },
+    {
+      "puzzle_id": "TS048",
+      "seed": 20261028
+    },
+    {
+      "puzzle_id": "TS043",
+      "seed": 20261023
+    },
+    {
+      "puzzle_id": "TS049",
+      "seed": 20261029
+    },
+    {
+      "puzzle_id": "TS050",
+      "seed": 20261030
+    },
+    {
+      "puzzle_id": "TS044",
+      "seed": 20261024
+    },
+    {
+      "puzzle_id": "TS045",
+      "seed": 20261025
+    },
+    {
+      "puzzle_id": "TS047",
+      "seed": 20261027
+    }
+  ],
+  "dry_run": false,
+  "selection": "Prespecified narrative-complexity candidates; not empirically established difficulty.",
+  "model_identity": "Requested model pinned; Codex event stream may not verify returned model."
+}

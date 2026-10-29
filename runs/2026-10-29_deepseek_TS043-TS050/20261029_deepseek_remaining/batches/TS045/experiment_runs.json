@@ -1,0 +1,78 @@
+[
+  {
+    "block": "TS045_r01",
+    "condition": "solo",
+    "puzzle_id": "TS045",
+    "repeat": 1,
+    "run_dir": "TS045_r01_solo",
+    "source": null,
+    "target": "TS045",
+    "group": null,
+    "relation_hypothesis": null,
+    "status": "error",
+    "stop_reason": "ProtocolError",
+    "simulation": false,
+    "success": null,
+    "host_questions": 47,
+    "final_attempts": 2,
+    "rejected_finals": 1,
+    "counted_questions": 48,
+    "submissions": 49,
+    "pending_feedback": 1,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": 0.55,
+    "latest_final": "The narrator secretly gave his favorite horror writer a pen containing a hidden camera, intending to spy on the writer inside his own home. After returning home, the narrator reviewed the footage and was horrified: the pen camera had recorded the writer committing a real, literal murder of another person in his home. This revealed the writer was an actual killer, not merely an author of horror fiction. The narrator's horror came from discovering this genuine crime through the surveillance he had secretly arranged.",
+    "latest_grade": null,
+    "elapsed_seconds": 250.605132916,
+    "usage": {
+      "grader": {
+        "http_attempts": 2,
+        "successful_responses": 2,
+        "seconds": 6.482016042999987,
+        "provider_reported_usage": {
+          "prompt_tokens": 8089,
+          "completion_tokens": 895,
+          "total_tokens": 8984,
+          "prompt_cache_hit_tokens": 4864,
+          "prompt_cache_miss_tokens": 3225
+        }
+      },
+      "host": {
+        "http_attempts": 97,
+        "successful_responses": 97,
+        "seconds": 162.09272275,
+        "provider_reported_usage": {
+          "prompt_tokens": 485126,
+          "completion_tokens": 135,
+          "total_tokens": 485261,
+          "prompt_cache_hit_tokens": 459520,
+          "prompt_cache_miss_tokens": 25606
+        }
+      },
+      "player": {
+        "http_attempts": 49,
+        "successful_responses": 49,
+        "seconds": 81.36712670400001,
+        "provider_reported_usage": {
+          "prompt_tokens": 79263,
+          "completion_tokens": 1819,
+          "total_tokens": 81082,
+          "prompt_cache_hit_tokens": 69760,
+          "prompt_cache_miss_tokens": 9503
+        }
+      }
+    },
+    "error": "Invalid evaluator fields",
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "45054b15fec8cb9b0c83dc9e5be3bc6ad7d7edd3059d18a25afc6de268841b2c",
+      "grading_sha256": "af6b01154c8d65202b475abdc2be290ebbcc08a168b9ecfa603d4a9dedc2012f",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "3ad8cff7ff01654eb948a48a0420492bce967eb61a87f28b28752fdf17d2ccec",
+      "controller_sha256": "b2f9cdef2472b363a8fda1382d4dc42802fa2ab040fc667c481e27756469557b",
+      "host_context_sha256": "fae899f8ca337439318953b75d3dedacba94332351e24a88cd97859a01346a51",
+      "host_binding_version": "host-v5.1-20261023"
+    }
+  }
+]

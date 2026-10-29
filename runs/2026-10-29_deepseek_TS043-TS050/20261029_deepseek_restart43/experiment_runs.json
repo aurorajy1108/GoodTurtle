@@ -1,0 +1,365 @@
+[
+  {
+    "status": "error",
+    "stop_reason": "ProtocolError",
+    "simulation": false,
+    "success": null,
+    "host_questions": 85,
+    "final_attempts": 5,
+    "rejected_finals": 4,
+    "counted_questions": 89,
+    "submissions": 90,
+    "pending_feedback": 1,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": 0.05,
+    "latest_final": "The narrator's younger sister is genuinely dead and was already dead when the narrator came home, where they lived together. Her death was not a suicide, and it was not a killing by the narrator or by another person, nor an accident the narrator caused. The narrator deliberately wrote a note intended to be read as the dead sister's own suicide note, so that people—including the third person they lived with—would believe the sister had died by suicide. The note was easy to write because its text described the narrator's own wish to die: the narrator projected their own suicidal feelings onto the dead sister. The deception was not for money, not to protect anyone, not to cover a murder, and the narrator was not forced. The motive is tied to the narrator's own death wish—the note recasts the sister's non-suicidal death as a chosen suicide, mirroring the narrator's own desire to die—while also shaping how the death is perceived and officially treated.",
+    "latest_grade": null,
+    "elapsed_seconds": 603.337256542,
+    "usage": {
+      "grader": {
+        "http_attempts": 5,
+        "successful_responses": 5,
+        "seconds": 24.253708541999913,
+        "provider_reported_usage": {
+          "prompt_tokens": 28017,
+          "completion_tokens": 3537,
+          "total_tokens": 31554,
+          "prompt_cache_hit_tokens": 20736,
+          "prompt_cache_miss_tokens": 7281
+        }
+      },
+      "host": {
+        "http_attempts": 183,
+        "successful_responses": 183,
+        "seconds": 387.38520937099975,
+        "provider_reported_usage": {
+          "prompt_tokens": 1341567,
+          "completion_tokens": 235,
+          "total_tokens": 1341802,
+          "prompt_cache_hit_tokens": 1291136,
+          "prompt_cache_miss_tokens": 50431
+        }
+      },
+      "player": {
+        "http_attempts": 90,
+        "successful_responses": 90,
+        "seconds": 190.22322950299997,
+        "provider_reported_usage": {
+          "prompt_tokens": 264635,
+          "completion_tokens": 4613,
+          "total_tokens": 269248,
+          "prompt_cache_hit_tokens": 246272,
+          "prompt_cache_miss_tokens": 18363
+        }
+      }
+    },
+    "error": "requirement_coverage: invalid or duplicate coverage row",
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "d6972a0000db97080e12770f7beb1dde706e187b7597268ebb2d473eeedf5e95",
+      "grading_sha256": "855900aa3dd14c9822202ce68da49c27281dc14e378b6c6097d2797bad158eda",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "3ad8cff7ff01654eb948a48a0420492bce967eb61a87f28b28752fdf17d2ccec",
+      "controller_sha256": "b2f9cdef2472b363a8fda1382d4dc42802fa2ab040fc667c481e27756469557b",
+      "host_context_sha256": "c3feace7ca040a1e0ee497ee56ee53956f1a1945c40d347f4f8b41170e597c91",
+      "host_binding_version": "host-v5.1-20261023"
+    },
+    "block": "TS046_r01",
+    "condition": "solo",
+    "puzzle_id": "TS046",
+    "target": "TS046",
+    "repeat": 1,
+    "run_dir": "batches/TS046/TS046_r01_solo"
+  },
+  {
+    "status": "error",
+    "stop_reason": "ProtocolError",
+    "simulation": false,
+    "success": null,
+    "host_questions": 59,
+    "final_attempts": 3,
+    "rejected_finals": 2,
+    "counted_questions": 61,
+    "submissions": 62,
+    "pending_feedback": 1,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": 0.175,
+    "latest_final": "The narrator is a wanted criminal suspect hiding out. The police knew he was in a particular building or area but needed to pinpoint his exact apartment/location, so they placed a fake food-delivery order as a ruse. An undercover officer working with the police made the delivery/announcement; because the narrator had ordered nothing, he was puzzled and about to refuse it. The delivery confirmed to the waiting police that the wanted man was present at that location. Several burly men — police officers — then rushed in and pinned the narrator down to arrest him for the crime he is wanted for. The sister and girlfriend shook their heads fearfully in connection with the delivery/setup, consistent with their partial awareness (the host gave a mixed answer on their knowledge and rejected the specific motives I proposed for their fear), but their exact motive remains unresolved in the public evidence.",
+    "latest_grade": null,
+    "elapsed_seconds": 423.786977125,
+    "usage": {
+      "grader": {
+        "http_attempts": 3,
+        "successful_responses": 3,
+        "seconds": 12.586288166999964,
+        "provider_reported_usage": {
+          "prompt_tokens": 14521,
+          "completion_tokens": 1742,
+          "total_tokens": 16263,
+          "prompt_cache_hit_tokens": 9728,
+          "prompt_cache_miss_tokens": 4793
+        }
+      },
+      "host": {
+        "http_attempts": 128,
+        "successful_responses": 128,
+        "seconds": 288.84315746299984,
+        "provider_reported_usage": {
+          "prompt_tokens": 761153,
+          "completion_tokens": 169,
+          "total_tokens": 761322,
+          "prompt_cache_hit_tokens": 732672,
+          "prompt_cache_miss_tokens": 28481
+        }
+      },
+      "player": {
+        "http_attempts": 62,
+        "successful_responses": 62,
+        "seconds": 121.40645103900016,
+        "provider_reported_usage": {
+          "prompt_tokens": 116218,
+          "completion_tokens": 2419,
+          "total_tokens": 118637,
+          "prompt_cache_hit_tokens": 103936,
+          "prompt_cache_miss_tokens": 12282
+        }
+      }
+    },
+    "error": "fact_coverage: invalid or duplicate coverage row",
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "21602e833532b5d933e9da147ba223b279d3aff4a712364e7cb9c8b9de976082",
+      "grading_sha256": "57b7fdb550ac7b6c225ac3db4d5e182833b6365a43389aac0e2eb10481681940",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "3ad8cff7ff01654eb948a48a0420492bce967eb61a87f28b28752fdf17d2ccec",
+      "controller_sha256": "b2f9cdef2472b363a8fda1382d4dc42802fa2ab040fc667c481e27756469557b",
+      "host_context_sha256": "0690b7eb4391e944816fadc7385cfe8caf4bd42025b40b6c58786f1b58ef7b31",
+      "host_binding_version": "host-v5.1-20261023"
+    },
+    "block": "TS048_r01",
+    "condition": "solo",
+    "puzzle_id": "TS048",
+    "target": "TS048",
+    "repeat": 1,
+    "run_dir": "batches/TS048/TS048_r01_solo"
+  },
+  {
+    "status": "error",
+    "stop_reason": "ProtocolError",
+    "simulation": false,
+    "success": null,
+    "host_questions": 87,
+    "final_attempts": 7,
+    "rejected_finals": 6,
+    "counted_questions": 93,
+    "submissions": 94,
+    "pending_feedback": 1,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": 0.3,
+    "latest_final": "Xiaoqiang died of a sudden fatal heart attack while walking his very loyal dog on the street, and the dog's behavior triggered it. The death was a medical emergency, not physical trauma, not caused by another person, a vehicle, a fall, a dog attack, or a venomous bite. The dog's loyalty is central to the mechanism rather than incidental. The precise triggering action remains unresolved: barking and other sounds, running off, pulling the leash, jumping on him, bringing objects or help, interacting with other people, animals, reflections, corpses, smells, clothing, or food, frightening, angering, or amusing him, exertion, and efforts to revive or guard him were all rejected. On the public evidence, the confirmed causal core is simply that the loyal dog's behavior during the walk precipitated Xiaoqiang's fatal heart attack, and the dog's devoted bond with him is the key link in the story.",
+    "latest_grade": null,
+    "elapsed_seconds": 618.060043333,
+    "usage": {
+      "grader": {
+        "http_attempts": 9,
+        "successful_responses": 9,
+        "seconds": 33.70249041399995,
+        "provider_reported_usage": {
+          "prompt_tokens": 31392,
+          "completion_tokens": 4211,
+          "total_tokens": 35603,
+          "prompt_cache_hit_tokens": 23296,
+          "prompt_cache_miss_tokens": 8096
+        }
+      },
+      "host": {
+        "http_attempts": 188,
+        "successful_responses": 188,
+        "seconds": 381.93594561999976,
+        "provider_reported_usage": {
+          "prompt_tokens": 1165655,
+          "completion_tokens": 226,
+          "total_tokens": 1165881,
+          "prompt_cache_hit_tokens": 1118208,
+          "prompt_cache_miss_tokens": 47447
+        }
+      },
+      "player": {
+        "http_attempts": 94,
+        "successful_responses": 94,
+        "seconds": 200.98260486799995,
+        "provider_reported_usage": {
+          "prompt_tokens": 265225,
+          "completion_tokens": 4893,
+          "total_tokens": 270118,
+          "prompt_cache_hit_tokens": 245376,
+          "prompt_cache_miss_tokens": 19849
+        }
+      }
+    },
+    "error": "fact_coverage: every supplied fact must be assessed once",
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "95d438846c96a5adfe9e938af358452751b002418ffd5bb431fba9afdc7e5465",
+      "grading_sha256": "83554a61db54de5cb2d969f6a15ad16d0a3860c118ac487dad53fe0e0351ce7e",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "3ad8cff7ff01654eb948a48a0420492bce967eb61a87f28b28752fdf17d2ccec",
+      "controller_sha256": "b2f9cdef2472b363a8fda1382d4dc42802fa2ab040fc667c481e27756469557b",
+      "host_context_sha256": "492a788e03f33260cb09d8cf0a1d6f0b3b23e82a961d56686c33e43eff7aca40",
+      "host_binding_version": "host-v5.1-20261023"
+    },
+    "block": "TS043_r01",
+    "condition": "solo",
+    "puzzle_id": "TS043",
+    "target": "TS043",
+    "repeat": 1,
+    "run_dir": "batches/TS043/TS043_r01_solo"
+  },
+  {
+    "status": "completed",
+    "stop_reason": "budget_exhausted",
+    "simulation": false,
+    "success": false,
+    "host_questions": 71,
+    "final_attempts": 29,
+    "rejected_finals": 29,
+    "counted_questions": 100,
+    "submissions": 100,
+    "pending_feedback": 0,
+    "forced_final": true,
+    "final_partial_score": 0.825,
+    "best_partial_score": 0.825,
+    "latest_final": "The man borrows books for his child, who cannot go to the library. The child has a habit of writing his or her own name on page 30 of every library book the child reads. The man knows this habit. Before choosing a book, he opens it to page 30 and looks for the child's name. If the name is there, the child has already read that book, so he does not borrow it. If the name is not there, the book is new to the child, and he borrows it to take home so the child has something fresh to read. The man checks page 30 because that is where the child always writes his or her name.",
+    "latest_grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 1,
+          "evidence": "The child has a habit of writing his or her own name on page 30 of every library book the child reads.",
+          "reason": "Child places a mark (name) on page thirty after reading; faithful paraphrase of the fact."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "The man borrows books for his child, who cannot go to the library.",
+          "reason": "Child mobility limitation (cannot go to library) is covered, but the man's illiteracy is not stated; only one qualifier present, capping at half."
+        },
+        {
+          "id": "C3",
+          "credit": 1,
+          "evidence": "Before choosing a book, he opens it to page 30 and looks for the child's name. If the name is there, the child has already read that book, so he does not borrow it.",
+          "reason": "Checks mark before borrowing and rejects marked copies to avoid repeats; both qualifiers covered."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Submission omits the man's illiteracy (R1), a required completion fact; otherwise reconstructs child marking page 30, father checking the mark, and rejecting marked copies to avoid repeats.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "covered",
+          "evidence": "The child has a habit of writing his or her own name on page 30 of every library book the child reads."
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "The man borrows books for his child, who cannot go to the library."
+        },
+        {
+          "id": "C3.F1",
+          "status": "covered",
+          "evidence": "Before choosing a book, he opens it to page 30 and looks for the child's name. If the name is there, the child has already read that book, so he does not borrow it."
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "partial",
+          "evidence": "The man borrows books for his child, who cannot go to the library."
+        },
+        {
+          "id": "R2",
+          "status": "covered",
+          "evidence": "The child has a habit of writing his or her own name on page 30 of every library book the child reads."
+        },
+        {
+          "id": "R3",
+          "status": "covered",
+          "evidence": "Before choosing a book, he opens it to page 30 and looks for the child's name."
+        },
+        {
+          "id": "R4",
+          "status": "covered",
+          "evidence": "If the name is there, the child has already read that book, so he does not borrow it."
+        }
+      ],
+      "contradictions": [],
+      "partial_score": 0.825,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "elapsed_seconds": 646.6798303339999,
+    "usage": {
+      "grader": {
+        "http_attempts": 31,
+        "successful_responses": 31,
+        "seconds": 124.13771779300009,
+        "provider_reported_usage": {
+          "prompt_tokens": 139040,
+          "completion_tokens": 16628,
+          "total_tokens": 155668,
+          "prompt_cache_hit_tokens": 119552,
+          "prompt_cache_miss_tokens": 19488
+        }
+      },
+      "host": {
+        "http_attempts": 152,
+        "successful_responses": 152,
+        "seconds": 301.60694705199984,
+        "provider_reported_usage": {
+          "prompt_tokens": 1013742,
+          "completion_tokens": 198,
+          "total_tokens": 1013940,
+          "prompt_cache_hit_tokens": 965760,
+          "prompt_cache_miss_tokens": 47982
+        }
+      },
+      "player": {
+        "http_attempts": 100,
+        "successful_responses": 100,
+        "seconds": 219.1827989990002,
+        "provider_reported_usage": {
+          "prompt_tokens": 345497,
+          "completion_tokens": 7018,
+          "total_tokens": 352515,
+          "prompt_cache_hit_tokens": 322688,
+          "prompt_cache_miss_tokens": 22809
+        }
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "b2a3f79c9520f5e0d1420b9138ab1e932fc0f5df15e1c85877ad5372262c1512",
+      "grading_sha256": "ad4b973640b144997a8b486d5b84a74fecf2a4f8a93a62f84ed5576ffd910135",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "3ad8cff7ff01654eb948a48a0420492bce967eb61a87f28b28752fdf17d2ccec",
+      "controller_sha256": "b2f9cdef2472b363a8fda1382d4dc42802fa2ab040fc667c481e27756469557b",
+      "host_context_sha256": "59be27d3b382c45955a136daad3cc33be26f90f5787aee9f248bf51fb9c0438c",
+      "host_binding_version": "host-v5.1-20261023"
+    },
+    "block": "TS049_r01",
+    "condition": "solo",
+    "puzzle_id": "TS049",
+    "target": "TS049",
+    "repeat": 1,
+    "run_dir": "batches/TS049/TS049_r01_solo"
+  }
+]

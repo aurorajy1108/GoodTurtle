@@ -1,0 +1,659 @@
+{
+  "schema_version": 1,
+  "source": {
+    "filename": "turtle_soup_labeled_49_with_partial_score.xlsx",
+    "sha256": "77fd016e9424012d4dfaa916786ec47114362c2d36ae31a91c55b912ea2fc688"
+  },
+  "scoring": "sum(weight * credit); credit in {0,0.5,1}; AI-adjudicated, pending human confirmation",
+  "puzzles": [
+    {
+      "id": "TS043",
+      "opening": "Xiaoqiang had a very loyal dog. Today he was walking the dog on the street, and then Xiaoqiang died.",
+      "answer": "This time when Xiaoqiang went out, he suddenly had a heart attack. The dog wouldn't let anyone including doctors perform CPR on its owner. This delayed treatment and led to Xiaoqiang's death.",
+      "rubric": [
+        {
+          "id": "C1",
+          "weight": 0.5,
+          "core": true,
+          "criterion": "The loyal dog prevents bystanders and medical staff from administering aid.",
+          "full_credit": "The loyal dog prevents bystanders and medical staff from administering aid.",
+          "half_credit": "Dog interferes with aid identified without blocking rescuers/CPR",
+          "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+          "points": 50.0,
+          "required_facts": [
+            "The loyal dog prevents bystanders and medical staff from administering aid."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        },
+        {
+          "id": "C2",
+          "weight": 0.3,
+          "core": false,
+          "criterion": "The owner suffers a sudden heart attack and needs urgent resuscitation.",
+          "full_credit": "The owner suffers a sudden heart attack and needs urgent resuscitation.",
+          "half_credit": "Heart attack identified without urgent resuscitation need",
+          "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+          "points": 30.0,
+          "required_facts": [
+            "The owner suffers a sudden heart attack and needs urgent resuscitation."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        },
+        {
+          "id": "C3",
+          "weight": 0.2,
+          "core": false,
+          "criterion": "The dog’s obstruction delays CPR and leads to the owner’s death; its exact beliefs about doctors need not be specified.",
+          "full_credit": "The dog’s obstruction delays CPR and leads to the owner’s death; its exact beliefs about doctors need not be specified.",
+          "half_credit": "Delayed care identified without causal contribution to death",
+          "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+          "points": 20.0,
+          "required_facts": [
+            "The dog’s obstruction delays CPR and leads to the owner’s death; its exact beliefs about doctors need not be specified."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        }
+      ],
+      "title": "忠犬阻止急救",
+      "story_family": "F043",
+      "quality_status": "正常",
+      "review_notes": "",
+      "source_row": "43",
+      "observed_score": null,
+      "completion_requirements": [
+        "Xiaoqiang suffers a sudden heart attack while out with the dog",
+        "The loyal dog prevents others, including doctors, from giving CPR",
+        "The delayed treatment leads to his death",
+        "The precise belief the dog has about doctors is unspecified and not required"
+      ],
+      "annotation_version": "turtle50-v3-host-repair-20261023",
+      "annotation_status": "ai_repair_pending_human",
+      "grading_notes": "AI three-review adjudication v2, pending human confirmation. Score only this submission. Apply full_credit/half_credit/zero_credit explicitly, with zero taking precedence for a materially contradictory checkpoint claim. An omitted qualifier can be partial; replacing the core identity/cause with a wrong one is not an omission. Faithful paraphrases count. Partial score and full narrative are separate outputs. AI independent review B, pending human approval. Credit is 0/.5/1 per checkpoint. Full narrative additionally requires all sourced completion requirements and no incompatible central claims. Judge the submitted explanation, not unasserted chat guesses. Accept faithful paraphrases; missing optional detail is not a contradiction. Do not demand unknown motives, devices or events. The dog’s precise mental model is unspecified. Objective obstruction and fatal delay are required.",
+      "annotation_provenance": {
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "selected_base": "b",
+        "adjudicator": "root",
+        "human_confirmed": false
+      },
+      "grading_protocol": "coverage-v2"
+    },
+    {
+      "id": "TS044",
+      "opening": "The Black Cat. I killed someone. As the police led me away, I saw a black cat staring at me from the doorway. At that moment, I realized I was wrong.",
+      "answer": "I had been feeding the cat downstairs. Returning from a business trip, I found dead mice on my balcony and blamed a neighbor with whom I often argued. I killed the neighbor. As the police took me away, I saw the cat carrying a mouse and realized it had brought the mice.",
+      "rubric": [
+        {
+          "id": "C1",
+          "weight": 0.5,
+          "core": true,
+          "criterion": "The dead mice were brought by the black cat, not planted by the neighbor.",
+          "full_credit": "The dead mice were brought by the black cat, not planted by the neighbor.",
+          "half_credit": "Cat identified without clearing neighbor of blame",
+          "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+          "points": 50.0,
+          "required_facts": [
+            "The dead mice were brought by the black cat, not planted by the neighbor."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        },
+        {
+          "id": "C2",
+          "weight": 0.3,
+          "core": false,
+          "criterion": "The narrator falsely blames and murders a neighbor with whom they argued.",
+          "full_credit": "The narrator falsely blames and murders a neighbor with whom they argued.",
+          "half_credit": "False blame identified without murder",
+          "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+          "points": 30.0,
+          "required_facts": [
+            "The narrator falsely blames and murders a neighbor with whom they argued."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        },
+        {
+          "id": "C3",
+          "weight": 0.2,
+          "core": false,
+          "criterion": "Seeing the cat carrying a mouse while being arrested reveals the mistake.",
+          "full_credit": "Seeing the cat carrying a mouse while being arrested reveals the mistake.",
+          "half_credit": "Discovery identified without seeing cat carry mouse during arrest",
+          "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+          "points": 20.0,
+          "required_facts": [
+            "Seeing the cat carrying a mouse while being arrested reveals the mistake."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        }
+      ],
+      "title": "黑猫和死老鼠",
+      "story_family": "F044",
+      "quality_status": "正常",
+      "review_notes": "",
+      "source_row": "44",
+      "observed_score": null,
+      "completion_requirements": [
+        "The narrator had been feeding the cat downstairs",
+        "After a business trip, the narrator finds dead mice on the balcony and blames a neighbor with whom they quarrel",
+        "The narrator kills that neighbor and is arrested",
+        "While being taken away the narrator sees the cat carrying a mouse and realizes the cat brought the mice"
+      ],
+      "annotation_version": "turtle50-v3-host-repair-20261023",
+      "annotation_status": "ai_repair_pending_human",
+      "grading_notes": "AI three-review adjudication v2, pending human confirmation. Score only this submission. Apply full_credit/half_credit/zero_credit explicitly, with zero taking precedence for a materially contradictory checkpoint claim. An omitted qualifier can be partial; replacing the core identity/cause with a wrong one is not an omission. Faithful paraphrases count. Partial score and full narrative are separate outputs. AI independent review B, pending human approval. Credit is 0/.5/1 per checkpoint. Full narrative additionally requires all sourced completion requirements and no incompatible central claims. Judge the submitted explanation, not unasserted chat guesses. Accept faithful paraphrases; missing optional detail is not a contradiction. Do not demand unknown motives, devices or events. Accept faithful paraphrase. Require the listed identities, events and causal links, not exact prose or unspecified incidental details.",
+      "annotation_provenance": {
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "selected_base": "b",
+        "adjudicator": "root",
+        "human_confirmed": false
+      },
+      "grading_protocol": "coverage-v2"
+    },
+    {
+      "id": "TS045",
+      "opening": "The Writer’s Birthday Gift. I gave my favorite horror writer a pen containing a camera at his birthday party. I returned home satisfied. But when he returned to his own home, I was horrified. Why?",
+      "answer": "I intended to spy on him. Through the camera, I saw human heads and limbs hanging on his walls and blood on the floor. I realized his vivid stories of murder and dismemberment described his own crimes, rather than fictional events.",
+      "rubric": [
+        {
+          "id": "C1",
+          "weight": 0.5,
+          "core": true,
+          "criterion": "The horror author truly commits murders and dismemberment similar to his stories.",
+          "full_credit": "The horror author truly commits murders and dismemberment similar to his stories.",
+          "half_credit": "Real crimes identified without stories reflecting those crimes",
+          "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+          "points": 50.0,
+          "required_facts": [
+            "The horror author truly commits murders and dismemberment similar to his stories."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        },
+        {
+          "id": "C2",
+          "weight": 0.3,
+          "core": false,
+          "criterion": "The narrator gives a pen with a hidden camera intending to spy.",
+          "full_credit": "The narrator gives a pen with a hidden camera intending to spy.",
+          "half_credit": "Camera pen identified without deliberate spying",
+          "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+          "points": 30.0,
+          "required_facts": [
+            "The narrator gives a pen with a hidden camera intending to spy."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        },
+        {
+          "id": "C3",
+          "weight": 0.2,
+          "core": false,
+          "criterion": "The camera shows severed human heads and limbs on walls and blood on the floor.",
+          "full_credit": "The camera shows severed human heads and limbs on walls and blood on the floor.",
+          "half_credit": "Severed body parts or blood observed but not both.",
+          "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+          "points": 20.0,
+          "required_facts": [
+            "The camera shows severed human heads and limbs on walls and blood on the floor."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        }
+      ],
+      "title": "恐怖作家的偷拍笔",
+      "story_family": "F045",
+      "quality_status": "正常",
+      "review_notes": "",
+      "source_row": "45",
+      "observed_score": null,
+      "completion_requirements": [
+        "The narrator deliberately gives the writer a camera hidden in a pen to spy",
+        "The camera shows actual severed human heads and limbs on the walls and blood on the floor",
+        "The narrator realizes the writer’s detailed murder and dismemberment stories describe his own real crimes"
+      ],
+      "annotation_version": "turtle50-v3-host-repair-20261023",
+      "annotation_status": "ai_repair_pending_human",
+      "grading_notes": "AI three-review adjudication v2, pending human confirmation. Score only this submission. Apply full_credit/half_credit/zero_credit explicitly, with zero taking precedence for a materially contradictory checkpoint claim. An omitted qualifier can be partial; replacing the core identity/cause with a wrong one is not an omission. Faithful paraphrases count. Partial score and full narrative are separate outputs. AI independent review B, pending human approval. Credit is 0/.5/1 per checkpoint. Full narrative additionally requires all sourced completion requirements and no incompatible central claims. Judge the submitted explanation, not unasserted chat guesses. Accept faithful paraphrases; missing optional detail is not a contradiction. Do not demand unknown motives, devices or events. Accept faithful paraphrase. Require the listed identities, events and causal links, not exact prose or unspecified incidental details.",
+      "annotation_provenance": {
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "selected_base": "b",
+        "adjudicator": "root",
+        "human_confirmed": false
+      },
+      "grading_protocol": "coverage-v2"
+    },
+    {
+      "id": "TS046",
+      "opening": "My Sister’s Suicide Note. As soon as I got home, I wrote a suicide note for my dead younger sister. It was easy: I only had to describe my own wish to die.",
+      "answer": "We are identical twins. Our mother favors my sister and abuses me. My sister breaks our mother’s belongings and plants my book to blame me. Fearing a fatal beating, I trick her into swapping clothes, claiming I will take her punishment. She goes home first, dressed as me. When I arrive outside, I see her fall from above, dead. I forge her suicide note using my own despair.",
+      "rubric": [
+        {
+          "id": "C1",
+          "weight": 0.5,
+          "core": true,
+          "criterion": "The narrator and sister are identical twins who swap clothes, creating mistaken identity.",
+          "full_credit": "The narrator and sister are identical twins who swap clothes, creating mistaken identity.",
+          "half_credit": "Identical twins identified without clothing-based identity swap",
+          "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+          "points": 50.0,
+          "required_facts": [
+            "The narrator and sister are identical twins who swap clothes, creating mistaken identity."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        },
+        {
+          "id": "C2",
+          "weight": 0.25,
+          "core": false,
+          "criterion": "Their mother favors the sister and abuses the narrator, who is framed by the sister.",
+          "full_credit": "Their mother favors the sister and abuses the narrator, who is framed by the sister.",
+          "half_credit": "Favoritism or framing identified, but not both",
+          "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+          "points": 25.0,
+          "required_facts": [
+            "Their mother favors the sister and abuses the narrator, who is framed by the sister."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        },
+        {
+          "id": "C3",
+          "weight": 0.15,
+          "core": false,
+          "criterion": "The narrator tricks her sister into going home first; the sister subsequently falls to her death.",
+          "full_credit": "The narrator tricks her sister into going home first; the sister subsequently falls to her death.",
+          "half_credit": "Deceptive first arrival or subsequent fatal fall, not both.",
+          "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+          "points": 15.0,
+          "required_facts": [
+            "The narrator tricks her sister into going home first; the sister subsequently falls to her death."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        },
+        {
+          "id": "C4",
+          "weight": 0.1,
+          "core": false,
+          "criterion": "The narrator forges the dead sister’s suicide note using her own despair.",
+          "full_credit": "The narrator forges the dead sister’s suicide note using her own despair.",
+          "half_credit": "Forged note identified without using narrator’s own despair",
+          "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+          "points": 10.0,
+          "required_facts": [
+            "The narrator forges the dead sister’s suicide note using her own despair."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        }
+      ],
+      "title": "双胞胎与遗书",
+      "story_family": "F046",
+      "quality_status": "需要复核",
+      "review_notes": "答案未说明妹妹从高处坠落的直接原因",
+      "source_row": "46",
+      "observed_score": null,
+      "completion_requirements": [
+        "The narrator and sister are identical twins; their mother favors the sister and abuses the narrator",
+        "The sister breaks the mother’s possessions and plants the narrator’s book to frame them",
+        "Fearing a fatal beating, the narrator tricks the sister into swapping clothes with a promise to take her punishment",
+        "The sister goes home first dressed as the narrator, and the narrator later sees her fall from above, dead",
+        "The narrator forges the sister’s suicide note using the narrator’s own despair",
+        "Do not require a specific person to have pushed her, or an actual suicide: the reference leaves the fall’s exact cause unspecified"
+      ],
+      "annotation_version": "turtle50-v3-host-repair-20261023",
+      "annotation_status": "ai_repair_pending_human",
+      "grading_notes": "AI three-review adjudication v2, pending human confirmation. Score only this submission. Apply full_credit/half_credit/zero_credit explicitly, with zero taking precedence for a materially contradictory checkpoint claim. An omitted qualifier can be partial; replacing the core identity/cause with a wrong one is not an omission. Faithful paraphrases count. Partial score and full narrative are separate outputs. AI independent review B, pending human approval. Credit is 0/.5/1 per checkpoint. Full narrative additionally requires all sourced completion requirements and no incompatible central claims. Judge the submitted explanation, not unasserted chat guesses. Accept faithful paraphrases; missing optional detail is not a contradiction. Do not demand unknown motives, devices or events. The exact cause of the fall is unspecified; neither murder by the mother nor actual suicide is mandatory.",
+      "annotation_provenance": {
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "selected_base": "b",
+        "adjudicator": "root",
+        "human_confirmed": false
+      },
+      "grading_protocol": "coverage-v2"
+    },
+    {
+      "id": "TS047",
+      "opening": "The Guesthouse Portrait. A reporter visiting the countryside stays in a shabby guesthouse. In the dim room, there is a picture opposite her bed. The next morning, she is stunned. Why?",
+      "answer": "In poor light, she mistakes a window with a real man outside for a lifelike portrait. During the night, she feels watched and avoids looking at it. In daylight, she approaches it and realizes it is a window: the man was real, and she had been watched.",
+      "rubric": [
+        {
+          "id": "C1",
+          "weight": 0.4,
+          "core": true,
+          "criterion": "The apparent portrait is a window with a real man outside.",
+          "full_credit": "Window plus outside real man.",
+          "half_credit": "Window identified without real watcher.",
+          "zero_credit": "Missing or contradicted; incompatible uncommitted alternatives; merely repeating the opening without the required explanatory content. ",
+          "points": 40.0,
+          "required_facts": [
+            "Window plus outside real man."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        },
+        {
+          "id": "C2",
+          "weight": 0.2,
+          "core": false,
+          "criterion": "Dim light causes the portrait misidentification.",
+          "full_credit": "Dim light makes the window/man seem a portrait.",
+          "half_credit": "Mistaken portrait identified without dim-light cause.",
+          "zero_credit": "Missing or contradicted; incompatible uncommitted alternatives; merely repeating the opening without the required explanatory content. ",
+          "points": 20.0,
+          "required_facts": [
+            "Dim light makes the window/man seem a portrait."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        },
+        {
+          "id": "C3",
+          "weight": 0.2,
+          "core": false,
+          "criterion": "Feeling watched at night makes her avoid looking.",
+          "full_credit": "Unease and avoidance during the night.",
+          "half_credit": "Feeling watched or avoiding looking, not both.",
+          "zero_credit": "Missing or contradicted; incompatible uncommitted alternatives; merely repeating the opening without the required explanatory content. ",
+          "points": 20.0,
+          "required_facts": [
+            "Unease and avoidance during the night."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        },
+        {
+          "id": "C4",
+          "weight": 0.2,
+          "core": false,
+          "criterion": "Daylight reveals the window and real watcher, shocking her.",
+          "full_credit": "Daylight realization explains shock.",
+          "half_credit": "Daylight discovery without shock at real watcher.",
+          "zero_credit": "Missing or contradicted; incompatible uncommitted alternatives; merely repeating the opening without the required explanatory content. ",
+          "points": 20.0,
+          "required_facts": [
+            "Daylight realization explains shock."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        }
+      ],
+      "title": "旅店的画像",
+      "story_family": "F-WINDOW-PORTRAIT",
+      "quality_status": "同故事变体",
+      "review_notes": "与22题为同一核心故事的改写",
+      "source_row": "47",
+      "observed_score": null,
+      "completion_requirements": [
+        "In poor light the guest mistakes a window and a real man outside for a lifelike portrait",
+        "Feeling watched, she avoids looking at it during the night",
+        "Daylight reveals the window and makes her realize the watcher was real, shocking her"
+      ],
+      "annotation_version": "turtle50-v3-host-repair-20261023",
+      "annotation_status": "ai_repair_pending_human",
+      "grading_notes": "AI three-review adjudication v2, pending human confirmation. Score only this submission. Apply full_credit/half_credit/zero_credit explicitly, with zero taking precedence for a materially contradictory checkpoint claim. An omitted qualifier can be partial; replacing the core identity/cause with a wrong one is not an omission. Faithful paraphrases count. Partial score and full narrative are separate outputs. AI independent review C, not human gold. Score sum(weight*credit), credit 0/0.5/1. Full narrative requires all listed supported requirements and no material contradictory mechanism; partial 1 alone does not override full narrative. Credit each distinct causal proposition once; do not penalize faithful paraphrase or omitted unknown details. Accept faithful paraphrase. Require the listed identities, events and causal links, not exact prose or unspecified incidental details.",
+      "annotation_provenance": {
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "selected_base": "c",
+        "adjudicator": "root",
+        "human_confirmed": false
+      },
+      "grading_protocol": "coverage-v2"
+    },
+    {
+      "id": "TS048",
+      "opening": "The Unordered Delivery. Someone announces a food delivery, but I ordered nothing. My sister shakes her head when asked, and my girlfriend fearfully does the same. As I am about to refuse it, several burly men rush in and pin me down.",
+      "answer": "The delivery worker is a disguised police officer. The room is used by a pyramid scheme, and I tricked my sister and girlfriend into joining it. My girlfriend secretly called the police for help. The men rushing in are officers arresting me.",
+      "rubric": [
+        {
+          "id": "C1",
+          "weight": 0.35,
+          "core": true,
+          "criterion": "The supposed delivery worker is a police officer using a delivery disguise to gain entry for arrest.",
+          "full_credit": "The supposed delivery worker is a police officer using a delivery disguise to gain entry for arrest.",
+          "half_credit": "Officer identity without delivery pretext.",
+          "zero_credit": "Missing, contradicted, repeats only the opening, or presents uncommitted incompatible guesses.",
+          "points": 35.0,
+          "required_facts": [
+            "The supposed delivery worker is a police officer using a delivery disguise to gain entry for arrest."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        },
+        {
+          "id": "C2",
+          "weight": 0.4,
+          "core": false,
+          "criterion": "The room hosts a pyramid scheme and the narrator tricked his sister and girlfriend into joining.",
+          "full_credit": "The room hosts a pyramid scheme and the narrator tricked his sister and girlfriend into joining.",
+          "half_credit": "The pyramid scheme is identified but the narrator’s recruitment of both his sister and girlfriend is omitted.",
+          "zero_credit": "Missing, contradicted, repeats only the opening, or presents uncommitted incompatible guesses.",
+          "points": 40.0,
+          "required_facts": [
+            "The room hosts a pyramid scheme and the narrator tricked his sister and girlfriend into joining."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        },
+        {
+          "id": "C3",
+          "weight": 0.25,
+          "core": false,
+          "criterion": "The girlfriend secretly called police for help.",
+          "full_credit": "The girlfriend secretly called police for help.",
+          "half_credit": "Girlfriend contacts police but secrecy/help request omitted.",
+          "zero_credit": "Missing, contradicted, repeats only the opening, or presents uncommitted incompatible guesses.",
+          "points": 25.0,
+          "required_facts": [
+            "The girlfriend secretly called police for help."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        }
+      ],
+      "title": "未经订购的外卖",
+      "story_family": "F048",
+      "quality_status": "正常",
+      "review_notes": "",
+      "source_row": "48",
+      "observed_score": null,
+      "completion_requirements": [
+        "The apparent delivery worker is an undercover police officer",
+        "The room is used for a pyramid scheme and the narrator tricked their sister and girlfriend into joining",
+        "The girlfriend secretly asked the police for help",
+        "The men who rush in are police arresting the narrator"
+      ],
+      "annotation_version": "turtle50-v3-host-repair-20261023",
+      "annotation_status": "ai_repair_pending_human",
+      "grading_notes": "AI three-review adjudication v2, pending human confirmation. Score only this submission. Apply full_credit/half_credit/zero_credit explicitly, with zero taking precedence for a materially contradictory checkpoint claim. An omitted qualifier can be partial; replacing the core identity/cause with a wrong one is not an omission. Faithful paraphrases count. Partial score and full narrative are separate outputs. AI independent review, not human gold. Sum(weight*credit), credit in {0,0.5,1}. Full solution additionally requires all completion requirements and no material contradiction. Accept faithful paraphrases; never award the same factual component twice. Incidental unsupported additions do not earn points; materially conflicting additions defeat corresponding checkpoint. Accept faithful paraphrase. Require the listed identities, events and causal links, not exact prose or unspecified incidental details.",
+      "annotation_provenance": {
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "selected_base": "a",
+        "adjudicator": "root",
+        "human_confirmed": false
+      },
+      "grading_protocol": "coverage-v2"
+    },
+    {
+      "id": "TS049",
+      "opening": "An elderly man visits the library every week to borrow books. Before choosing any book, he always opens it to page thirty. Why?",
+      "answer": "The man cannot read. He borrows books for his child, who has difficulty walking and cannot easily visit the library. After finishing a book, the child leaves a mark on page thirty. The father checks that page before borrowing: if he finds the mark, he knows his child has already read the book and chooses another one.",
+      "rubric": [
+        {
+          "id": "C1",
+          "weight": 0.4,
+          "core": true,
+          "criterion": "The child leaves a mark on page thirty after finishing a book.",
+          "full_credit": "The child leaves a mark on page thirty after finishing a book.",
+          "half_credit": "Page-thirty mark identified without child placing it after reading.",
+          "zero_credit": "Missing, contradicted, repeats only the opening, or presents uncommitted incompatible guesses.",
+          "points": 40.0,
+          "required_facts": [
+            "The child leaves a mark on page thirty after finishing a book."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        },
+        {
+          "id": "C2",
+          "weight": 0.35,
+          "core": false,
+          "criterion": "The father cannot read and borrows for his child who has difficulty walking.",
+          "full_credit": "The father cannot read and borrows for his child who has difficulty walking.",
+          "half_credit": "Illiteracy or child mobility limitation, not both.",
+          "zero_credit": "Missing, contradicted, repeats only the opening, or presents uncommitted incompatible guesses.",
+          "points": 35.0,
+          "required_facts": [
+            "The father cannot read and borrows for his child who has difficulty walking."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        },
+        {
+          "id": "C3",
+          "weight": 0.25,
+          "core": false,
+          "criterion": "He checks the mark before borrowing and selects a different book when marked to avoid repeats.",
+          "full_credit": "He checks the mark before borrowing and selects a different book when marked to avoid repeats.",
+          "half_credit": "He checks the mark to avoid repeats, but does not say that a marked book is rejected in favor of a different book.",
+          "zero_credit": "Missing, contradicted, repeats only the opening, or presents uncommitted incompatible guesses.",
+          "points": 25.0,
+          "required_facts": [
+            "He checks the mark before borrowing and selects a different book when marked to avoid repeats."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        }
+      ],
+      "title": "老人总翻第30页",
+      "story_family": "F049",
+      "quality_status": "正常",
+      "review_notes": "",
+      "source_row": "49",
+      "observed_score": null,
+      "completion_requirements": [
+        "The man is illiterate and borrows books for his child, who has difficulty walking",
+        "The child marks page thirty after finishing each book",
+        "The father checks for that mark before borrowing",
+        "A marked copy is rejected in favor of another book to avoid repeats"
+      ],
+      "annotation_version": "turtle50-v3-host-repair-20261023",
+      "annotation_status": "ai_repair_pending_human",
+      "grading_notes": "AI three-review adjudication v2, pending human confirmation. Score only this submission. Apply full_credit/half_credit/zero_credit explicitly, with zero taking precedence for a materially contradictory checkpoint claim. An omitted qualifier can be partial; replacing the core identity/cause with a wrong one is not an omission. Faithful paraphrases count. Partial score and full narrative are separate outputs. AI independent review, not human gold. Sum(weight*credit), credit in {0,0.5,1}. Full solution additionally requires all completion requirements and no material contradiction. Accept faithful paraphrases; never award the same factual component twice. Incidental unsupported additions do not earn points; materially conflicting additions defeat corresponding checkpoint. Accept faithful paraphrase. Require the listed identities, events and causal links, not exact prose or unspecified incidental details.",
+      "annotation_provenance": {
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "selected_base": "a",
+        "adjudicator": "root",
+        "human_confirmed": false
+      },
+      "grading_protocol": "coverage-v2"
+    },
+    {
+      "id": "TS050",
+      "opening": "A man is found dead in the desert, lying headfirst in the sand. Several suitcases are scattered nearby. In his hand, he is tightly clutching half a matchstick. How did he die?",
+      "answer": "He and his friends were traveling in a hot-air balloon when it developed a problem and began losing altitude. They threw their luggage overboard, but the balloon was still too heavy. They drew matchsticks to decide who would be sacrificed. The man drew the broken matchstick and was thrown out of the balloon, still holding it.",
+      "rubric": [
+        {
+          "id": "C1",
+          "weight": 0.3,
+          "core": true,
+          "criterion": "The deceased had been aboard a hot-air balloon losing altitude, not walking in the desert.",
+          "full_credit": "The deceased had been aboard a hot-air balloon losing altitude, not walking in the desert.",
+          "half_credit": "Balloon identified without loss of altitude",
+          "zero_credit": "Missing or contradicted; incompatible uncommitted alternatives; merely repeating the opening without the required explanatory content. ",
+          "points": 30.0,
+          "required_facts": [
+            "The deceased had been aboard a hot-air balloon losing altitude, not walking in the desert."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        },
+        {
+          "id": "C2",
+          "weight": 0.25,
+          "core": false,
+          "criterion": "The travelers throw luggage overboard, but it does not solve the weight problem.",
+          "full_credit": "The travelers throw luggage overboard, but it does not solve the weight problem.",
+          "half_credit": "Discarded luggage identified without inadequate effect",
+          "zero_credit": "Missing or contradicted; incompatible uncommitted alternatives; merely repeating the opening without the required explanatory content. ",
+          "points": 25.0,
+          "required_facts": [
+            "The travelers throw luggage overboard, but it does not solve the weight problem."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        },
+        {
+          "id": "C3",
+          "weight": 0.3,
+          "core": false,
+          "criterion": "They draw matchsticks to select a victim, and the man draws the short/broken one.",
+          "full_credit": "They draw matchsticks to select a victim, and the man draws the short/broken one.",
+          "half_credit": "Match lottery identified without sacrifice purpose or short match",
+          "zero_credit": "Missing or contradicted; incompatible uncommitted alternatives; merely repeating the opening without the required explanatory content. ",
+          "points": 30.0,
+          "required_facts": [
+            "They draw matchsticks to select a victim, and the man draws the short/broken one."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        },
+        {
+          "id": "C4",
+          "weight": 0.15,
+          "core": false,
+          "criterion": "He is thrown from the balloon and dies holding the half-matchstick.",
+          "full_credit": "He is thrown from the balloon and dies holding the half-matchstick.",
+          "half_credit": "Falling death identified without forced ejection and match in hand",
+          "zero_credit": "Missing or contradicted; incompatible uncommitted alternatives; merely repeating the opening without the required explanatory content. ",
+          "points": 15.0,
+          "required_facts": [
+            "He is thrown from the balloon and dies holding the half-matchstick."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        }
+      ],
+      "title": "沙漠与半截火柴",
+      "story_family": "F050",
+      "quality_status": "正常",
+      "review_notes": "",
+      "source_row": "50",
+      "observed_score": null,
+      "completion_requirements": [
+        "The man and friends were in a hot-air balloon that developed a problem and lost altitude",
+        "They threw out luggage but remained too heavy",
+        "They drew matches to decide who would be sacrificed",
+        "He drew the broken or short match and was thrown from the balloon, dying while still holding it"
+      ],
+      "annotation_version": "turtle50-v3-host-repair-20261023",
+      "annotation_status": "ai_repair_pending_human",
+      "grading_notes": "AI three-review adjudication v2, pending human confirmation. Score only this submission. Apply full_credit/half_credit/zero_credit explicitly, with zero taking precedence for a materially contradictory checkpoint claim. An omitted qualifier can be partial; replacing the core identity/cause with a wrong one is not an omission. Faithful paraphrases count. Partial score and full narrative are separate outputs. AI independent review C, not human gold. Score sum(weight*credit), credit 0/0.5/1. Full narrative requires all listed supported requirements and no material contradictory mechanism; partial 1 alone does not override full narrative. Credit each distinct causal proposition once; do not penalize faithful paraphrase or omitted unknown details. Accept faithful paraphrase. Require the listed identities, events and causal links, not exact prose or unspecified incidental details.",
+      "annotation_provenance": {
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "selected_base": "c",
+        "adjudicator": "root",
+        "human_confirmed": false
+      },
+      "grading_protocol": "coverage-v2"
+    }
+  ],
+  "annotation_policy": {
+    "review": "Three independent AI annotations plus root adjudication, not human gold",
+    "full_solution": "Requires all completion requirements and no material contradiction; no new incidental facts",
+    "weight_policy": "Distinct explanatory content; weighting is a documented research choice, not a uniquely optimal quantity",
+    "attachment": "Original 49-puzzle XLSX remains unchanged; TS040 added in previous version"
+  },
+  "revision_notes": "v3: evidence coverage grading, TS023 explicit subfacts; no weight changes. Based on triple-reviewed v2, followed by root AI repair; pending human."
+}

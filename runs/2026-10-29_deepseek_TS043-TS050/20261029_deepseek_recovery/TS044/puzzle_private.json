@@ -1,0 +1,75 @@
+{
+  "id": "TS044",
+  "opening": "The Black Cat. I killed someone. As the police led me away, I saw a black cat staring at me from the doorway. At that moment, I realized I was wrong.",
+  "answer": "I had been feeding the cat downstairs. Returning from a business trip, I found dead mice on my balcony and blamed a neighbor with whom I often argued. I killed the neighbor. As the police took me away, I saw the cat carrying a mouse and realized it had brought the mice.",
+  "rubric": [
+    {
+      "id": "C1",
+      "weight": 0.5,
+      "core": true,
+      "criterion": "The dead mice were brought by the black cat, not planted by the neighbor.",
+      "full_credit": "The dead mice were brought by the black cat, not planted by the neighbor.",
+      "half_credit": "Cat identified without clearing neighbor of blame",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+      "points": 50.0,
+      "required_facts": [
+        "The dead mice were brought by the black cat, not planted by the neighbor."
+      ],
+      "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+    },
+    {
+      "id": "C2",
+      "weight": 0.3,
+      "core": false,
+      "criterion": "The narrator falsely blames and murders a neighbor with whom they argued.",
+      "full_credit": "The narrator falsely blames and murders a neighbor with whom they argued.",
+      "half_credit": "False blame identified without murder",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+      "points": 30.0,
+      "required_facts": [
+        "The narrator falsely blames and murders a neighbor with whom they argued."
+      ],
+      "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+    },
+    {
+      "id": "C3",
+      "weight": 0.2,
+      "core": false,
+      "criterion": "Seeing the cat carrying a mouse while being arrested reveals the mistake.",
+      "full_credit": "Seeing the cat carrying a mouse while being arrested reveals the mistake.",
+      "half_credit": "Discovery identified without seeing cat carry mouse during arrest",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+      "points": 20.0,
+      "required_facts": [
+        "Seeing the cat carrying a mouse while being arrested reveals the mistake."
+      ],
+      "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+    }
+  ],
+  "title": "黑猫和死老鼠",
+  "story_family": "F044",
+  "quality_status": "正常",
+  "review_notes": "",
+  "source_row": "44",
+  "observed_score": null,
+  "completion_requirements": [
+    "The narrator had been feeding the cat downstairs",
+    "After a business trip, the narrator finds dead mice on the balcony and blames a neighbor with whom they quarrel",
+    "The narrator kills that neighbor and is arrested",
+    "While being taken away the narrator sees the cat carrying a mouse and realizes the cat brought the mice"
+  ],
+  "annotation_version": "turtle50-v3-host-repair-20261023",
+  "annotation_status": "ai_repair_pending_human",
+  "grading_notes": "AI three-review adjudication v2, pending human confirmation. Score only this submission. Apply full_credit/half_credit/zero_credit explicitly, with zero taking precedence for a materially contradictory checkpoint claim. An omitted qualifier can be partial; replacing the core identity/cause with a wrong one is not an omission. Faithful paraphrases count. Partial score and full narrative are separate outputs. AI independent review B, pending human approval. Credit is 0/.5/1 per checkpoint. Full narrative additionally requires all sourced completion requirements and no incompatible central claims. Judge the submitted explanation, not unasserted chat guesses. Accept faithful paraphrases; missing optional detail is not a contradiction. Do not demand unknown motives, devices or events. Accept faithful paraphrase. Require the listed identities, events and causal links, not exact prose or unspecified incidental details.",
+  "annotation_provenance": {
+    "reviewers": [
+      "a",
+      "b",
+      "c"
+    ],
+    "selected_base": "b",
+    "adjudicator": "root",
+    "human_confirmed": false
+  },
+  "grading_protocol": "coverage-v2"
+}
