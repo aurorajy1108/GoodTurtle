@@ -1,8 +1,9 @@
-# 上传到这里
+# Upload human reference trajectories
 
-单题：`TS032/20261028_chat01/source.json`＋`trajectory.md`（也支持txt/json/jsonl/csv）。
-多题：`multi/20261028_chat01/`，在source.json中列出全部题号。
+English | [中文](README.zh-CN.md)
 
-用 `python3 scripts/host_reference.py init --puzzle TS032 --source-id 20261028_chat01` 建立目录，再粘贴全文。不要只贴链接或只贴筛选后的正确回答。填写后运行 `python3 scripts/host_reference.py validate`。
+For one puzzle, use `TS032/20261028_chat01/source.json` and `trajectory.md` (text, JSON, JSONL and CSV are also supported). For a conversation covering multiple puzzles, use `multi/20261028_chat01/` and list all puzzle IDs in `source.json`.
 
-全部规则见 [上级指南](../README.md)。上传内容保持pending，**不会自动进入Host**。
+Create a directory with `python3 scripts/host_reference.py init --puzzle TS032 --source-id 20261028_chat01`, then paste the complete conversation. Include the full record, not just a link or selected answers. Run `python3 scripts/host_reference.py validate` after filling it in.
+
+See the [reference guide](../README.md) for the full process. Uploads remain in the inbox with pending status and **are not automatically added to the host**.

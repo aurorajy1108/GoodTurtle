@@ -1,53 +1,55 @@
-# 人工 Host reference：统一上传入口
+# Human host references: upload guide
 
-**新人工 trajectory 统一放在 `data/host_reference/inbox/`。** 不放 `runs/`，也不直接覆盖 `host_packs/active/`。
+English | [中文](README.zh-CN.md)
 
-| 阶段 | 位置 | 内容和作用 |
+Upload new human trajectories to `data/host_reference/inbox/`. Do not put them in `runs/` or directly overwrite `host_packs/active/`.
+
+| Stage | Location | Purpose |
 | --- | --- | --- |
-| 上传、待审核 | `inbox/TSxxx/source_id/` | 原始完整对话＋source.json；保留问答、错误、回改和未答问题 |
-| 一份对话含多题 | `inbox/multi/source_id/` | source.json列出全部题号；不要手工截断再丢失上下文 |
-| 已登记来源 | `sources/source_id/` | 可见消息、消息ID、来源链接、分段索引和规范化Q&A；保存原文，不代表全都正确 |
-| 审核记录 | `reviews/` | 原答与裁决分开；记录题目、来源ID、证据、审核人/日期、修改与暂缓原因 |
-| 实际Host输入 | `../host_packs/active/TSxxx.json` | 只有被明确选入的示例；由 `configs/host_bindings.json` 绑定 |
+| Upload, pending review | `inbox/TSxxx/source_id/` | Complete source conversation and `source.json`, including questions, mistakes, corrections and unanswered questions |
+| One conversation covering multiple puzzles | `inbox/multi/source_id/` | List every puzzle ID in `source.json`; preserve context |
+| Registered source | `sources/source_id/` | Visible messages, message IDs, links, segment indexes and normalized Q&A; registration does not establish correctness |
+| Review records | `reviews/` | Keep original answers separate from decisions, with puzzle, source, evidence, reviewer, date and reasons |
+| Runtime host input | `../host_packs/active/TSxxx.json` | Explicitly selected examples, bound through `configs/host_bindings.json` |
 
-上传入口、原始资料和实际Host示例是三个不同层次。Host每次加载当前题active包中的示例；**不会自动扫描inbox，也不会自动检索所有人工聊天。** Source文件只作为数据，不作为可执行指令。
+The host loads examples from the active pack for the current puzzle. **It does not automatically scan the inbox or retrieve every human conversation.** Source files are treated as data, not executable instructions.
 
-## 如何上传
+## Upload
+
+Run from the repository root:
 
 ```sh
-# 有现成对话文件：原样复制，不改其中的问答。
+# Copy an existing conversation without changing its questions and answers.
 python3 scripts/host_reference.py init --puzzle TS032 \
   --source-id 20261028_chat01 --file /path/to/chat.md \
   --source-url https://chatgpt.com/share/YOUR_SHARE_ID
 
-# 只有聊天文本：先建模板，再粘贴完整文本。
+# Create a template and paste the complete conversation.
 python3 scripts/host_reference.py init --puzzle TS034 --source-id 20261028_chat02
 
-# 一份聊天包含多道题：只保存一份完整原文。
+# Save a conversation covering multiple puzzles once, in full.
 python3 scripts/host_reference.py init --puzzle TS032,TS034 \
   --source-id 20261028_multi --file /path/to/multi.txt
 
 python3 scripts/host_reference.py validate
 ```
 
-命令从仓库根目录执行；也可以手工创建同样的目录。文件夹必须带 `source.json`，建议用init避免漏字段。原始对话正文可用 `.md / .txt / .json / .jsonl / .csv`；CSV请保留角色和顺序。分享链接本身不等于已保存对话，CLI不会自动联网提取。
+Directories may also be created manually, but each must contain `source.json`. Supported source formats are `.md`, `.txt`, `.json`, `.jsonl` and `.csv`; preserve roles and order in CSV. A link alone is not a saved conversation: the CLI does not fetch it.
 
-参数说明：
+| Command or option | Meaning |
+| --- | --- |
+| `init` | Create an upload directory; existing directories are not overwritten |
+| `--puzzle` | Existing TS ID, or comma-separated IDs for multiple puzzles |
+| `--source-id` | 1–80 letters, digits, underscores or hyphens, beginning with a letter or digit |
+| `--file` | Optional conversation file, copied unchanged with its extension and SHA-256; whole-account ZIP files are not accepted |
+| `--source-url` | Optional source URL; recorded without a network request |
+| `validate` | Check puzzle IDs, metadata, role mapping, file paths and hashes; does not judge answers or modify the host |
+| `locate OLD_PATH` | Map a historical repository path to its current location |
+| `-h` / `--help` | Show command help |
 
-| 命令/参数 | 必填/默认 | 含义 |
-| --- | --- | --- |
-| `init` | 子命令 | 创建新的上传文件夹；已有目录不会覆盖 |
-| `--puzzle` | 必填 | 一个已有TS题号；多题用逗号，不加空格 |
-| `--source-id` | 必填 | 1–80位字母、数字、下划线或连字符，首位字母/数字；建议日期＋来源编号 |
-| `--file` | 可选 | 对话文件；原样复制为trajectory同扩展名，并记录SHA-256；不接受整个账户ZIP |
-| `--source-url` | 可选，默认空 | 记录来源URL，不发网络请求 |
-| `validate` | 子命令，无其他参数 | 检查inbox题号、元信息、角色映射、文件路径、原文哈希；不判断答案语义正确性，不修改Host |
-| `locate OLD_PATH` | 子命令，路径必填 | 将旧审核中的仓库相对路径映射到整理后的文件 |
-| `-h / --help` | 可选 | 显示命令或子命令帮助 |
+The default role mapping is `user=human_host, assistant=player`, as in the two shared conversations used by this project. If your conversation has the opposite roles, update `role_mapping`. After checking, set `role_mapping_status` to `confirmed`; once a template is filled, set `submission_status` to `uploaded`. Imported files have a recorded hash: create a new revision rather than overwrite a source.
 
-init默认映射 `user=human_host, assistant=player`，因为本项目两个分享采用这种方式。**如果你的对话相反，必须修改role_mapping**，核对后设 `role_mapping_status: confirmed`。模板填写完成后设 `submission_status: uploaded`。自动导入文件已有原文哈希，修改内容应另建修订来源，不覆盖旧稿。
-
-提交示例（把目录替换成自己的）：
+Example commit:
 
 ```sh
 git add data/host_reference/inbox/TS032/20261028_chat01/
@@ -55,21 +57,21 @@ git commit -m "Add TS032 human reference trajectory"
 git push
 ```
 
-只放与题目有关的聊天，不把整个账号导出包或凭据放入仓库。网页HTML仅用于本地提取，默认忽略；可用 `scripts/import_chatgpt_share.py --html SAVED.html --source-url URL --out NEW.messages.json` 转为可见消息JSON。
+Include only puzzle-related conversation, not an entire account export or credentials. HTML is used for local extraction and ignored by default. `scripts/import_chatgpt_share.py --html SAVED.html --source-url URL --out NEW.messages.json` extracts visible messages.
 
-## 上传后怎样进入Host
+## From upload to host
 
-1. 核对题号、完整汤面/汤底版本、角色与对话边界。原错别字、人工纠正和未答问题不能凭猜测补齐。
-2. 按题整理来源/规范化Q&A到sources，保留原文和稳定ID。登记不等于审核通过。
-3. 对照当前题库和上下文，审核标签与因果/身份/时间/未知细节。reviews中保留原答、建议答案、最终裁决和证据；AI审核与人工确认状态必须区分。
-4. 将明确选入的条目加入 `data/host_packs/active/TSxxx.json` 的host_examples，保留case_id、provenance、public_history及review_status；升级该包和binding的版本。不能把规范化文件的所有行无条件追加。
-5. 跑离线测试，检查运行context；需要真实质量验证时按已批准实验计划使用 `scripts/check_host.py`。旧few-shot回放不等于独立准确率。
+1. Check the puzzle ID, opening and answer version, roles and conversation boundaries. Preserve original typos, corrections and unanswered questions.
+2. Register the source and normalized Q&A in `sources/`, retaining original text and stable IDs. Registration does not imply approval.
+3. Compare labels and causal, identity, timing and unknown-detail boundaries against the current puzzle context. Keep original answers, proposed labels, decisions and evidence in `reviews/`, distinguishing AI review from human confirmation.
+4. Add explicitly selected entries to the puzzle's active pack with `case_id`, `provenance`, `public_history` and `review_status`; update pack and binding versions. Do not append all normalized rows indiscriminately.
+5. Run offline tests and check the runtime context. For model quality validation, use `scripts/check_host.py` under the approved experiment plan. Replaying existing few-shot examples is not an independent accuracy measurement.
 
-本次提供的是上传/结构验证/路径查询工具，**没有自动裁决标签或将Excel意见批量写回active的功能**。这种写回仍属于审核后的明确编辑，不以“文件存在”作为审批信号。
+The upload tool validates structure and locates paths; it does not automatically adjudicate labels or apply Excel review decisions to active packs.
 
-## 已有人工资料在哪里
+## Existing references
 
-- 两个分享的633条可见消息、311条行动记录：[sources/chatgpt_shares_20261026/](sources/chatgpt_shares_20261026/)。包括TS032/033/034/037/039、TS034两次尝试、一道题库外火车题。目录内文件是原样迁移，README和JSON中的旧路径按迁移清单解释。
-- 历史9题的89条候选片段：`data/host_packs/archive/LOOP_TS*_history_v1.json`，审核见 [history_qa_merge_20261026.json](reviews/history_qa_merge_20261026.json)。旧完整对话未找到，不能把片段叫完整原文。
-- 当前新增绑定109条（历史88＋新分享21），仍有AI审核待人工状态；每题实际加载的内容以active包和binding为准。
-- [Excel审核表](../../outputs/20261026_host_review/host_review_20261026.xlsx)和[待办清单](../../docs/todo_human_review_20261027.md)仍可用。旧Excel不为改路径而覆盖，以免丢失人工填写内容；旧路径可用locate查询。
+- [Shared conversations](sources/chatgpt_shares_20261026/) contain 633 visible messages and 311 player actions, covering TS032, TS033, TS034, TS037, TS039 and an external train puzzle. TS034 has two attempts. Historical paths follow the migration map.
+- The 89 historical candidate excerpts for nine puzzles are in `data/host_packs/archive/LOOP_TS*_history_v1.json`; see [merge review](reviews/history_qa_merge_20261026.json). Excerpts alone do not establish a complete original conversation.
+- The earlier merge added 109 examples (88 historical and 21 from shared conversations); check the active pack and binding for current runtime inputs and each example's provenance.
+- The [Excel workbook](../../outputs/20261026_host_review/host_review_20261026.xlsx) and [review checklist](../../docs/todo_human_review_20261027.md) remain available. Historical paths can be resolved with `locate`.
