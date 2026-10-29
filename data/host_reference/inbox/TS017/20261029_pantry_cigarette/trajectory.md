@@ -1,6 +1,5 @@
 | Speaker | Message |
 |---|---|
-| assistant | You are solving a lateral thinking puzzle. Ask one closed-ended question at a time. Puzzle: I went to the pantry in my hall. The fire alarm rang. What happened? |
 | user | Did you cause the fire alarm to ring? |
 | assistant | yes |
 | user | Did you intentionally cause the fire alarm to ring? |
