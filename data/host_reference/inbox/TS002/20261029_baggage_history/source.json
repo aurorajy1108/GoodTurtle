@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "source_id": "20261029_baggage_history",
+  "puzzle_ids": [
+    "TS002"
+  ],
+  "source_url": "",
+  "uploaded_at": "2026-10-29T11:35:39.529496+08:00",
+  "review_status": "pending",
+  "role_mapping": {
+    "user": "human_host",
+    "assistant": "player"
+  },
+  "role_mapping_status": "confirmed",
+  "trajectory_file": "trajectory.md",
+  "submission_status": "uploaded",
+  "trajectory_sha256": "5809e2bf398da77185585888232b72be9bc18a2cc3b3dc3b6674f8266bfa3178",
+  "notes": "由用户提供的结构化记录整理；保留84条问题、最终猜测和汤底。第84条回答为原JSON中的转述；不声称还原未记录的聊天消息。",
+  "original_source_file": "turtle_soup_baggage_checkpoint_qa.json",
+  "original_source_sha256": "fadd86bcaf14eb210bb84609828ab0b94bd793e699a3c225ecb685d462accc56"
+}

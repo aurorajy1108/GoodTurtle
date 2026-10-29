@@ -1,0 +1,442 @@
+{
+  "title": "海龟汤：安检处的枕头",
+  "language_of_game": "English",
+  "game_rules": "The assistant may ask only questions answerable with yes/no; the host may also answer 'yes & no', 'unknown', or 'irrelevant'.",
+  "puzzle_prompt": "The young woman was stopped at the baggage security checkpoint. She said, \"My luggage contains only pajamas, a pillow, a thermos, a towel, and some changes of clothes—why are you stopping me?\" After inspecting her luggage, security personnel handcuffed her and took her away.",
+  "question_count": {
+    "yes_no_game_questions": 83,
+    "post_guess_confirmation_questions": 1,
+    "total_assistant_questions": 84
+  },
+  "qa_history": [
+    {
+      "question_number": 1,
+      "question": "Was there something in her luggage that she didn't mention?",
+      "answer": "yes & no"
+    },
+    {
+      "question_number": 2,
+      "question": "Did the security personnel find evidence of a crime in her luggage?",
+      "answer": "yes"
+    },
+    {
+      "question_number": 3,
+      "question": "Was the evidence related to a murder?",
+      "answer": "yes & no"
+    },
+    {
+      "question_number": 4,
+      "question": "Did someone die in connection with the crime?",
+      "answer": "unknown"
+    },
+    {
+      "question_number": 5,
+      "question": "Was one of the items she mentioned used as a weapon?",
+      "answer": "no"
+    },
+    {
+      "question_number": 6,
+      "question": "Did any of the items in her luggage contain bloodstains?",
+      "answer": "yes"
+    },
+    {
+      "question_number": 7,
+      "question": "Did the blood belong to someone other than the young woman?",
+      "answer": "yes"
+    },
+    {
+      "question_number": 8,
+      "question": "Was the blood found on the towel?",
+      "answer": "no"
+    },
+    {
+      "question_number": 9,
+      "question": "Was the blood found on the pillow?",
+      "answer": "yes"
+    },
+    {
+      "question_number": 10,
+      "question": "Was the pillow used to suffocate someone?",
+      "answer": "no"
+    },
+    {
+      "question_number": 11,
+      "question": "Was the blood on the pillow from a human?",
+      "answer": "yes"
+    },
+    {
+      "question_number": 12,
+      "question": "Did the blood on the pillow come from a child or baby?",
+      "answer": "no"
+    },
+    {
+      "question_number": 13,
+      "question": "Did the blood on the pillow come from someone the woman had injured?",
+      "answer": "yes"
+    },
+    {
+      "question_number": 14,
+      "question": "Did the woman intentionally injure that person?",
+      "answer": "yes"
+    },
+    {
+      "question_number": 15,
+      "question": "Was the person she injured someone she knew personally?",
+      "answer": "yes"
+    },
+    {
+      "question_number": 16,
+      "question": "Was the person she injured a member of her family?",
+      "answer": "no"
+    },
+    {
+      "question_number": 17,
+      "question": "Was the person she injured her romantic partner?",
+      "answer": "yes & no"
+    },
+    {
+      "question_number": 18,
+      "question": "Was the injured person her ex-boyfriend or ex-husband?",
+      "answer": "yes"
+    },
+    {
+      "question_number": 19,
+      "question": "Did she attack her ex-boyfriend because of a conflict related to their breakup?",
+      "answer": "yes"
+    },
+    {
+      "question_number": 20,
+      "question": "Did she attack her ex-boyfriend while he was sleeping?",
+      "answer": "irrelevant"
+    },
+    {
+      "question_number": 21,
+      "question": "Was she trying to escape after attacking her ex-boyfriend?",
+      "answer": "irrelevant"
+    },
+    {
+      "question_number": 22,
+      "question": "Was something hidden inside the pillow?",
+      "answer": "no"
+    },
+    {
+      "question_number": 23,
+      "question": "Was the blood on the pillow visible to the security personnel without any special testing?",
+      "answer": "irrelevant"
+    },
+    {
+      "question_number": 24,
+      "question": "Did the thermos contain something other than an ordinary drink?",
+      "answer": "irrelevant"
+    },
+    {
+      "question_number": 25,
+      "question": "Did the blood on the pillow belong to her ex-boyfriend?",
+      "answer": "yes"
+    },
+    {
+      "question_number": 26,
+      "question": "Was the pillow directly involved in the attack on her ex-boyfriend?",
+      "answer": "yes"
+    },
+    {
+      "question_number": 27,
+      "question": "Did she use the pillow to absorb or wipe up her ex-boyfriend’s blood?",
+      "answer": "no"
+    },
+    {
+      "question_number": 28,
+      "question": "Did she use the pillow to muffle the sound of the attack?",
+      "answer": "no"
+    },
+    {
+      "question_number": 29,
+      "question": "Was her ex-boyfriend's head resting on the pillow when she attacked him?",
+      "answer": "no"
+    },
+    {
+      "question_number": 30,
+      "question": "Did his blood splatter onto the pillow during the attack?",
+      "answer": "irrelevant"
+    },
+    {
+      "question_number": 31,
+      "question": "Did she use the pillow itself to physically strike her ex-boyfriend?",
+      "answer": "no"
+    },
+    {
+      "question_number": 32,
+      "question": "Did she use the pillow to cover any part of her ex-boyfriend's body during the attack?",
+      "answer": "no"
+    },
+    {
+      "question_number": 33,
+      "question": "Did she use the pillow to restrain or immobilize her ex-boyfriend during the attack?",
+      "answer": "no"
+    },
+    {
+      "question_number": 34,
+      "question": "Did she use the pillow to set a trap for her ex-boyfriend?",
+      "answer": "no"
+    },
+    {
+      "question_number": 35,
+      "question": "Did she bring the pillow to her ex-boyfriend's location specifically as part of her plan to injure him?",
+      "answer": "no"
+    },
+    {
+      "question_number": 36,
+      "question": "Was the pillow in her luggage the same pillow that was involved in the attack on her ex-boyfriend?",
+      "answer": "yes"
+    },
+    {
+      "question_number": 37,
+      "question": "Did her ex-boyfriend use the pillow to defend himself during the attack?",
+      "answer": "unknown"
+    },
+    {
+      "question_number": 38,
+      "question": "Was the pillow in direct physical contact with her ex-boyfriend during the attack?",
+      "answer": "yes"
+    },
+    {
+      "question_number": 39,
+      "question": "Did she injure her ex-boyfriend with a sharp object, such as a knife?",
+      "answer": "yes"
+    },
+    {
+      "question_number": 40,
+      "question": "Was the knife she used to attack her ex-boyfriend also found in her luggage?",
+      "answer": "no"
+    },
+    {
+      "question_number": 41,
+      "question": "Did the knife pierce the pillow during the attack?",
+      "answer": "yes"
+    },
+    {
+      "question_number": 42,
+      "question": "Did she stab her ex-boyfriend through the pillow?",
+      "answer": "no"
+    },
+    {
+      "question_number": 43,
+      "question": "Was the pillow underneath another part of her ex-boyfriend's body (not his head) when she stabbed him?",
+      "answer": "no"
+    },
+    {
+      "question_number": 44,
+      "question": "Was her ex-boyfriend holding the pillow when she attacked him with the knife?",
+      "answer": "no"
+    },
+    {
+      "question_number": 45,
+      "question": "Did the knife pierce the pillow after passing through her ex-boyfriend's body?",
+      "answer": "no"
+    },
+    {
+      "question_number": 46,
+      "question": "Did the knife pierce the pillow before she stabbed her ex-boyfriend?",
+      "answer": "no"
+    },
+    {
+      "question_number": 47,
+      "question": "Did she deliberately stab the pillow with the knife during the attack?",
+      "answer": "yes"
+    },
+    {
+      "question_number": 48,
+      "question": "Did she stab the pillow after injuring her ex-boyfriend?",
+      "answer": "no"
+    },
+    {
+      "question_number": 49,
+      "question": "Did she stab both the pillow and her ex-boyfriend with the same knife thrust?",
+      "answer": "yes"
+    },
+    {
+      "question_number": 50,
+      "question": "Was the pillow right next to her ex-boyfriend's body when she stabbed him?",
+      "answer": "yes & no"
+    },
+    {
+      "question_number": 51,
+      "question": "Was her ex-boyfriend lying on a bed when she stabbed him?",
+      "answer": "irrelevant"
+    },
+    {
+      "question_number": 52,
+      "question": "Was the pillow pressed against her ex-boyfriend's body when she stabbed him?",
+      "answer": "no"
+    },
+    {
+      "question_number": 53,
+      "question": "Was someone other than the woman or her ex-boyfriend holding the pillow during the attack?",
+      "answer": "no"
+    },
+    {
+      "question_number": 54,
+      "question": "Was the woman holding the pillow when she stabbed her ex-boyfriend?",
+      "answer": "unknown"
+    },
+    {
+      "question_number": 55,
+      "question": "Was the pillow positioned between the woman and her ex-boyfriend when she stabbed him?",
+      "answer": "yes & no"
+    },
+    {
+      "question_number": 56,
+      "question": "Was the pillow attached to her ex-boyfriend's body when she stabbed him?",
+      "answer": "yes"
+    },
+    {
+      "question_number": 57,
+      "question": "Was her ex-boyfriend wearing the pillow on his body when she stabbed him?",
+      "answer": "yes & no"
+    },
+    {
+      "question_number": 58,
+      "question": "Was it a U-shaped travel pillow worn around his neck?",
+      "answer": "no"
+    },
+    {
+      "question_number": 59,
+      "question": "Was the pillow attached to his clothing rather than directly to his body?",
+      "answer": "irrelevant"
+    },
+    {
+      "question_number": 60,
+      "question": "Was the pillow attached to her ex-boyfriend's body by some kind of strap or fastening?",
+      "answer": "no"
+    },
+    {
+      "question_number": 61,
+      "question": "Was the pillow attached to her ex-boyfriend's body as part of a disguise or costume?",
+      "answer": "no"
+    },
+    {
+      "question_number": 62,
+      "question": "Did the pillow become attached to her ex-boyfriend's body as a result of the stabbing?",
+      "answer": "no"
+    },
+    {
+      "question_number": 63,
+      "question": "Was the pillow an ordinary sleeping pillow, rather than a specially designed or modified one?",
+      "answer": "no"
+    },
+    {
+      "question_number": 64,
+      "question": "Was the pillow specifically designed to be worn or attached to a person's body?",
+      "answer": "no"
+    },
+    {
+      "question_number": 65,
+      "question": "Was the pillow made from any part of her ex-boyfriend’s body?",
+      "answer": "yes"
+    },
+    {
+      "question_number": 66,
+      "question": "Was the pillow stuffed with parts of her ex-boyfriend's body?",
+      "answer": "no"
+    },
+    {
+      "question_number": 67,
+      "question": "Was the pillow’s outer covering made from her ex-boyfriend’s skin?",
+      "answer": "yes"
+    },
+    {
+      "question_number": 68,
+      "question": "Did she remove the skin from her ex-boyfriend herself?",
+      "answer": "no"
+    },
+    {
+      "question_number": 69,
+      "question": "Did someone else remove the skin from her ex-boyfriend's body?",
+      "answer": "no"
+    },
+    {
+      "question_number": 70,
+      "question": "Did her ex-boyfriend's skin come off naturally, without anyone deliberately removing it?",
+      "answer": "irrelevant"
+    },
+    {
+      "question_number": 71,
+      "question": "Was the “pillow” actually a part of her ex-boyfriend’s body, rather than a separate object?",
+      "answer": "yes"
+    },
+    {
+      "question_number": 72,
+      "question": "Was the “pillow” actually her ex-boyfriend’s severed head?",
+      "answer": "no"
+    },
+    {
+      "question_number": 73,
+      "question": "Was the “pillow” actually her ex-boyfriend’s torso?",
+      "answer": "no"
+    },
+    {
+      "question_number": 74,
+      "question": "Was the “pillow” actually part of her ex-boyfriend’s arm or leg?",
+      "answer": "yes"
+    },
+    {
+      "question_number": 75,
+      "question": "Was the “pillow” actually her ex-boyfriend’s severed leg?",
+      "answer": "no"
+    },
+    {
+      "question_number": 76,
+      "question": "Was the “pillow” actually her ex-boyfriend’s severed arm?",
+      "answer": "yes"
+    },
+    {
+      "question_number": 77,
+      "question": "Did she deliberately cut off her ex-boyfriend’s arm?",
+      "answer": "yes"
+    },
+    {
+      "question_number": 78,
+      "question": "Did she disguise her ex-boyfriend’s severed arm as a pillow to get it through security?",
+      "answer": "yes & no"
+    },
+    {
+      "question_number": 79,
+      "question": "Were any of the other items she listed also made from parts of her ex-boyfriend’s body?",
+      "answer": "no"
+    },
+    {
+      "question_number": 80,
+      "question": "Was the severed arm wrapped or covered in something to make it look like an ordinary pillow?",
+      "answer": "irrelevant"
+    },
+    {
+      "question_number": 81,
+      "question": "Did she sever her ex-boyfriend’s arm during the same attack in which she stabbed it?",
+      "answer": "yes"
+    },
+    {
+      "question_number": 82,
+      "question": "Had she previously used her ex-boyfriend’s arm as a pillow while sleeping?",
+      "answer": "yes"
+    },
+    {
+      "question_number": 83,
+      "question": "Did she cut off her ex-boyfriend’s arm because she wanted to keep using it as a pillow after their breakup?",
+      "answer": "yes"
+    },
+    {
+      "question_number": 84,
+      "question": "Is this the complete story?",
+      "answer": "The user supplied the intended story instead of a yes/no answer, indicating that the assistant's guess was incomplete.",
+      "type": "post-guess confirmation"
+    }
+  ],
+  "assistant_final_guess": "The woman used to sleep with her head resting on her boyfriend's arm. After they broke up, she missed having his arm as her pillow so much that she attacked him and cut it off. She then carried his severed arm in her luggage, genuinely treating it as her 'pillow.' Security discovered the human arm and arrested her.",
+  "user_revealed_solution": "The man the girl loved betrayed her today; he was packing his bags, preparing to move out of the apartment they shared. The girl tearfully begged him not to leave, but he didn't look back. Just then, the girl said coldly, \"At least leave my pillow behind.\" And so, she cut off the boy's hand.",
+  "post_game_assessment": {
+    "core_mystery_solved": true,
+    "complete_story_reconstructed": false,
+    "assessment": "The assistant recovered the central twist that the 'pillow' was a body part of the ex-boyfriend and that the woman cut it off because she wanted to keep it as her pillow after the breakup. However, it guessed an arm rather than a hand and missed the betrayal, his plan to move out, her plea for him to stay, and the line 'At least leave my pillow behind.'",
+    "question_efficiency": "Poor: 83 game questions were asked, with many repetitive questions about the pillow's physical position and role in the stabbing."
+  }
+}
