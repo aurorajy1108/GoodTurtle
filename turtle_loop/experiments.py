@@ -16,6 +16,7 @@ from .cli import ROOT, choose, configuration
 from .dataset import load_dataset
 from .engine import Recorder, dump, load_prompts, parse_action, play, summarize_batch
 from .providers import APIError, Client, resolve_env, validate_profile
+from .host_context import build_story_context
 
 ADVICE = '''You are the second solver reviewing a teammate's proposed Turtle Soup action.
 Use only the supplied public puzzle, feedback and proposal. Identify unsupported
@@ -144,7 +145,13 @@ def experience(puzzle, recorder, result, feedback):
                          for t in recorder.turns if 'label' in t],
              'termination': result['stop_reason']}
     if feedback == 'answer':
-        value['revealed_source_answer'] = puzzle['answer']
+        # Reveal exactly the source Host's complete narrative, including reviewed
+        # author clarifications. Never serialize its examples, rubric or target.
+        saved = recorder.folder / 'host_context.json'
+        source_context = json.loads(saved.read_text()) if saved.exists() else build_story_context(puzzle)
+        if source_context['puzzle_id'] != puzzle['id']:
+            raise ValueError('Source answer reveal context belongs to another puzzle')
+        value['revealed_source_answer'] = source_context['canonical_solution']
     return value
 
 
@@ -152,6 +159,8 @@ def make_plan(args, bank):
     rng = random.Random(args.seed)
     blocks = []
     if args.command == 'continual':
+        if getattr(args, 'source_policy', 'fixed') not in ('fixed', 'per-repeat'):
+            raise ValueError('Unknown source policy')
         groups = json.loads(Path(args.groups).read_text())['groups']
         selected = groups if args.group == 'all' else [g for g in groups if g['id'] in args.group.split(',')]
         if not selected or (args.group != 'all' and set(args.group.split(',')) != {g['id'] for g in selected}):
@@ -172,7 +181,18 @@ def make_plan(args, bank):
             ids = group['puzzles']
             if len(ids) != len(set(ids)) or not set(ids) <= set(bank):
                 raise ValueError('Duplicate or absent puzzle in '+group['id'])
-            pairs = list(itertools.permutations(ids, 2))
+            if 'directed_pairs' in group:
+                raw_pairs = group['directed_pairs']
+                if not isinstance(raw_pairs, list) or not raw_pairs:
+                    raise ValueError('directed_pairs must be a nonempty list')
+                if any(not isinstance(p, list) or len(p) != 2 or p[0] == p[1]
+                       or not set(p) <= set(ids) for p in raw_pairs):
+                    raise ValueError('Invalid directed pair in '+group['id'])
+                pairs = [tuple(p) for p in raw_pairs]
+                if len(pairs) != len(set(pairs)):
+                    raise ValueError('Duplicate directed pair in '+group['id'])
+            else:
+                pairs = list(itertools.permutations(ids, 2))
             if args.pair:
                 pairs = [p for p in pairs if ':'.join(p) == args.pair]
             for a, b in pairs:
@@ -186,6 +206,8 @@ def make_plan(args, bank):
                     order = conditions[shift:] + conditions[:shift]
                     blocks.append({'block': f"{group['id']}_{a}_{b}_r{repeat:02d}", 'group': group['id'],
                                    'relation_hypothesis': group['relation'], 'source': a, 'target': b,
+                                   'analysis_role': group.get('analysis_role', 'unspecified'),
+                                   'source_policy': getattr(args, 'source_policy', 'fixed'),
                                    'repeat': repeat, 'conditions': order,
                                    'control_source': control_source if 'unrelated' in controls else None})
     else:
@@ -208,6 +230,17 @@ def make_plan(args, bank):
     return blocks
 
 
+def planned_games(blocks, kind, source_policy='fixed'):
+    total = sum(len(b['conditions']) for b in blocks)
+    if kind != 'continual':
+        return total
+    # Main sources and optional unrelated-control sources have separate caches.
+    sources = [b['source'] for b in blocks]
+    controls = [b['control_source'] for b in blocks if 'unrelated' in b['conditions']]
+    return total + (len(set(sources)) + len(set(controls)) if source_policy == 'fixed'
+                    else len(sources) + len(controls))
+
+
 def stats(values):
     return {'n': len(values), 'mean': statistics.mean(values) if values else None,
             'population_variance': statistics.pvariance(values) if values else None,
@@ -220,6 +253,10 @@ def write_reports(folder, rows, blocks, kind):
     contrasts = []
     for block in blocks:
         local = {r['condition']: r for r in rows if r['block'] == block['block']}
+        # Rebuild links from saved rows too (plan.json predates source execution).
+        source_link = block.get('source_run_dir') or next((r.get('source_run_dir') for r in local.values() if r.get('source_run_dir')), None)
+        context_hash = block.get('source_context_sha256') or next((r.get('source_context_sha256') for r in local.values() if r.get('source_context_sha256')), None)
+        source = next((r for r in rows if r['run_dir'] == source_link), local.get('source', {}))
         base = local.get(baseline)
         for condition in block['conditions']:
             if condition == baseline:
@@ -230,8 +267,12 @@ def write_reports(folder, rows, blocks, kind):
                    'relation_hypothesis': block.get('relation_hypothesis',''),
                    'source': block.get('source',''), 'target': block['target'], 'repeat': block['repeat'],
                    'condition': condition, 'valid_pair': valid,
-                   'source_success':local.get('source',{}).get('success'),
-                   'source_status':local.get('source',{}).get('status'),
+                   'analysis_role':block.get('analysis_role', 'unspecified'),
+                   'source_policy':block.get('source_policy'),
+                   'source_run_dir':source_link,
+                   'source_context_sha256':context_hash,
+                   'source_success':source.get('success'),
+                   'source_status':source.get('status'),
                    'score_gain': None, 'success_gain': None, 'question_saving_both_solved': None,
                    'consumption_difference': None}
             if valid:
@@ -346,14 +387,17 @@ def write_reports(folder, rows, blocks, kind):
     dump(folder/'experiment_runs.json',rows)
     if rows:
         fields = ['block','condition','puzzle_id','repeat','status','success','counted_questions','submissions',
-                  'final_partial_score','elapsed_seconds','run_dir','usage']
+                  'final_partial_score','elapsed_seconds','run_dir','usage','analysis_role','source_policy',
+                  'source_run_dir','source_context_sha256','control_source_run_dir']
         with (folder/'experiment_runs.csv').open('w',newline='') as f:
             writer=csv.DictWriter(f,fieldnames=fields,extrasaction='ignore');writer.writeheader()
             writer.writerows({**r,'usage':json.dumps(r.get('usage',{}))} for r in rows)
     links = ''.join('<li>'+html.escape(r['block']+' / '+r['condition'])+' — <a href="'+r['run_dir']+'/trajectory.html">trajectory</a>'
                     + (' / <a href="'+r['run_dir']+'/collaboration.html">collaboration</a>' if r['condition'] in ('discuss','alternating','solo_reflect','independent','shared_buffer') else '')+'</li>' for r in rows)
     (folder/'index.html').write_text('<meta charset="utf-8"><meta http-equiv="refresh" content="5"><h1>Experiment</h1>'
-                                    '<p>Provisional model judgments. Contrast summaries exclude incomplete pairs.</p><ul>'+links+'</ul>')
+                                    '<p>Provisional model judgments. Contrast summaries exclude incomplete pairs.</p>'
+                                    '<p><a href="costs_by_game.csv">Token and cost by game</a> · '
+                                    '<a href="cost_summary.json">Total and role/model costs (estimated USD)</a></p><ul>'+links+'</ul>')
 
 
 def run(args):
@@ -377,6 +421,8 @@ def run(args):
                             'config':config,'partner':partner,
                             'dataset_sha256':hashlib.sha256(Path(args.dataset).read_bytes()).hexdigest(),
                             'source_feedback':getattr(args,'source_feedback',None),
+                            'source_policy':getattr(args,'source_policy',None),
+                            'source_sampling_note':'fixed reuses one A per puzzle within this batch; B repeats are conditional on that A. Failures are never rerun to select a successful A.',
                             'per_game_budget':config['max_questions'],
                             'budget_policy':'Fresh independent budget for A and every B condition; source feedback and memory calls consume no target submissions.',
                             'groups_snapshot':json.loads(Path(args.groups).read_text()) if args.command=='continual' else None,
@@ -386,6 +432,9 @@ def run(args):
                             'team_order': 'Random base order per puzzle with cyclic rotation over repeats; blocks shuffled.' if args.command=='team' else None})
     dump(folder/'experiment_prompts.json',{'advice':ADVICE,'memory':MEMORY,'transfer':TRANSFER,'revision':REVISION,'synthesis':SYNTHESIS})
     rows=[]
+    source_cache={}
+    control_cache={}
+    fixed_source=getattr(args,'source_policy','fixed') == 'fixed'
     failed = False
     print('Output:',folder,flush=True)
 
@@ -406,7 +455,8 @@ def run(args):
         rec.report('dry_run' if args.dry_run else 'running',None)
         row={'block':block['block'],'condition':condition,'puzzle_id':pid,'repeat':block['repeat'],'run_dir':name,
              'source':block.get('source'),'target':block['target'],'group':block.get('group'),
-             'relation_hypothesis':block.get('relation_hypothesis')}
+             'relation_hypothesis':block.get('relation_hypothesis'),
+             **{k:block.get(k) for k in ('analysis_role','source_policy','source_run_dir','source_context_sha256','control_source_run_dir')}}
         rows.append({**row,**rec.report('dry_run' if args.dry_run else 'running',None)})
         write_reports(folder,rows,blocks,args.command)
         if args.dry_run:
@@ -421,13 +471,23 @@ def run(args):
         print(name,result['status'],'count=',result['counted_questions'],flush=True)
         return rec,result
 
+    def source_game(block, condition, pid, cache):
+        if fixed_source and pid in cache:
+            return cache[pid]
+        rec,result=game(block,condition,pid)
+        entry={'rec':rec,'result':result,'context':None,'card':None,'prepared':False}
+        cache[pid]=entry  # Also retain errors: never cherry-pick a new successful A.
+        return entry
+
     for block in blocks:
         context=None
         card=None
         unrelated=None
         skipped=[]
         if args.command=='continual':
-            source_rec,source_result=game(block,'source',block['source'])
+            entry=source_game(block,'source',block['source'],source_cache)
+            source_rec,source_result=entry['rec'],entry['result']
+            block['source_run_dir']=source_rec.folder.name
             if source_result['status'] == 'interrupted':
                 return 130
             if source_result['status'] == 'error':
@@ -439,43 +499,50 @@ def run(args):
                 failed = True
                 dump(folder/(block['block']+'_skipped.json'), [{'block':block['block'],'condition':c,'reason':'source needs review'} for c in block['conditions']])
                 continue  # Invalid source invalidates this whole block; no hidden answer substitution.
-            context=experience(bank[block['source']],source_rec,source_result,args.source_feedback)
-            dump(source_rec.folder/'transfer_input.json',context)
-            if args.source_feedback == 'answer':
-                source_rec.event('source_answer_reveal', answer=context['revealed_source_answer'],
-                                 counts_as_question=False, recipient='transfer_player_only')
-                dump(source_rec.folder/'source_answer_reveal.json', {
-                    'answer':context['revealed_source_answer'], 'counts_as_question':False,
-                    'source_success':source_result['success'], 'next_game_budget':config['max_questions']})
-            if 'card' in block['conditions']:
-                if args.dry_run:
-                    card={'memory_card':'DRY RUN PLACEHOLDER: not generated'}
-                else:
-                    try:
-                        reply=Client(config['player'],'memory',source_rec.audit).complete(MEMORY,json.dumps(context,ensure_ascii=False))
-                        card={'memory_card':reply.text}
-                    except (APIError,KeyboardInterrupt) as exc:
-                        status='interrupted' if isinstance(exc,KeyboardInterrupt) else 'error'
-                        # A completed game stays completed; failure belongs to the memory operation.
-                        dump(source_rec.folder/'memory_error.json', {'status':status,'error':str(exc)})
-                        if status == 'interrupted': return 130
-                        failed = True
-                        if args.on_error == 'stop': return 1
-                    rows[-1].update(source_rec.report(source_result['status'],source_result['stop_reason']))
-                if card is not None and args.source_feedback == 'answer':
-                    # A lossy summary cannot replace the user's required complete answer.
-                    card.update(source_opening=bank[block['source']]['opening'],
-                                revealed_source_answer=context['revealed_source_answer'])
-                if card is not None:
-                    dump(source_rec.folder/'memory_card.json',card)
+            if not entry['prepared']:
+                context=experience(bank[block['source']],source_rec,source_result,args.source_feedback)
+                dump(source_rec.folder/'transfer_input.json',context)
+                if args.source_feedback == 'answer':
+                    source_rec.event('source_answer_reveal', answer=context['revealed_source_answer'],
+                                     counts_as_question=False, recipient='transfer_player_only')
+                    dump(source_rec.folder/'source_answer_reveal.json', {
+                        'answer':context['revealed_source_answer'], 'counts_as_question':False,
+                        'source_success':source_result['success'], 'next_game_budget':config['max_questions']})
+                if 'card' in block['conditions']:
+                    if args.dry_run:
+                        card={'memory_card':'DRY RUN PLACEHOLDER: not generated'}
+                    else:
+                        try:
+                            reply=Client(config['player'],'memory',source_rec.audit).complete(MEMORY,json.dumps(context,ensure_ascii=False))
+                            card={'memory_card':reply.text}
+                        except (APIError,KeyboardInterrupt) as exc:
+                            status='interrupted' if isinstance(exc,KeyboardInterrupt) else 'error'
+                            # A completed game stays completed; failure belongs to the memory operation.
+                            dump(source_rec.folder/'memory_error.json', {'status':status,'error':str(exc)})
+                            if status == 'interrupted': return 130
+                            failed = True
+                            if args.on_error == 'stop': return 1
+                        rows[-1].update(source_rec.report(source_result['status'],source_result['stop_reason']))
+                    if card is not None and args.source_feedback == 'answer':
+                        # A lossy summary cannot replace the user's required complete answer.
+                        card.update(source_opening=bank[block['source']]['opening'],
+                                    revealed_source_answer=context['revealed_source_answer'])
+                    if card is not None:
+                        dump(source_rec.folder/'memory_card.json',card)
+                entry.update(context=deepcopy(context),card=deepcopy(card),prepared=True)
+            context,card=deepcopy(entry['context']),deepcopy(entry['card'])
+            block['source_context_sha256']=hashlib.sha256(json.dumps(context,sort_keys=True,ensure_ascii=False).encode()).hexdigest()
+            dump(folder/'source_reuse.json', {b['block']:{k:b.get(k) for k in ('source','target','source_policy','source_run_dir','source_context_sha256')} for b in blocks if b.get('source_run_dir')})
         if args.command == 'continual' and 'unrelated' in block['conditions']:
-            ctrl_rec, ctrl_result = game(block, 'control_source', block['control_source'])
+            ctrl_entry=source_game(block,'control_source',block['control_source'],control_cache)
+            ctrl_rec,ctrl_result=ctrl_entry['rec'],ctrl_entry['result']
+            block['control_source_run_dir']=ctrl_rec.folder.name
             if ctrl_result['status'] == 'interrupted': return 130
             if ctrl_result['status'] == 'error':
                 failed = True
                 if args.on_error == 'stop': return 1
             if ctrl_result['status'] == 'needs_review': failed = True
-            if ctrl_result['status'] not in ('error', 'needs_review'):
+            if ctrl_result['status'] not in ('error', 'needs_review') and not ctrl_entry['prepared']:
                 unrelated = experience(bank[block['control_source']], ctrl_rec, ctrl_result, 'answer')
                 dump(ctrl_rec.folder/'transfer_input.json', unrelated)
                 ctrl_rec.event('source_answer_reveal', answer=unrelated['revealed_source_answer'],
@@ -483,6 +550,8 @@ def run(args):
                 dump(ctrl_rec.folder/'source_answer_reveal.json', {
                     'answer':unrelated['revealed_source_answer'], 'counts_as_question':False,
                     'source_success':ctrl_result['success'], 'next_game_budget':config['max_questions']})
+                ctrl_entry.update(context=deepcopy(unrelated),prepared=True)
+            unrelated=deepcopy(ctrl_entry['context'])
         for condition in block['conditions']:
             if (condition == 'unrelated' and unrelated is None) or (condition == 'card' and card is None):
                 skipped.append({'block':block['block'],'condition':condition,'reason':'required context unavailable'})
@@ -491,7 +560,7 @@ def run(args):
             prior = context if condition=='transcript' else card if condition=='card' else None
             if condition == 'answer_only':
                 prior = {'opening': bank[block['source']]['opening'],
-                         'revealed_source_answer': bank[block['source']]['answer']}
+                         'revealed_source_answer': context['revealed_source_answer']}
             elif condition == 'unrelated':
                 prior = unrelated
             _,result=game(block,condition,block['target'],prior,
@@ -523,6 +592,7 @@ def main(argv=None):
             p.add_argument('--group',default='G07',help='Comma-separated group IDs or all')
             p.add_argument('--pair',help='Optional directed SOURCE:TARGET filter within selected groups')
             p.add_argument('--memory',choices=['transcript','card','both'],default='transcript')
+            p.add_argument('--source-policy',choices=['fixed','per-repeat'],default='fixed',help='fixed: solve each source once within batch, reuse public history and answer; per-repeat: regenerate each block')
             p.add_argument('--controls', default='', help='Optional comma-separated answer_only,unrelated controls; require source-feedback answer')
             p.add_argument('--control-source', help='Explicit unrelated control puzzle ID, different from A and B; neutrality requires human review')
             p.add_argument('--source-feedback',choices=['none','answer'],default='answer',help='Default answer: reveal the full A answer after A, without consuming B budget; none is an explicit transcript-only ablation')

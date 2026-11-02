@@ -21,6 +21,8 @@ TS040 是 [Puzzle Prime: Unconscious and Bleeding](https://www.puzzleprime.com/p
 
 ## A→B 对照
 
+当前五个 Set 的默认研究入口为 [study_20261102.py 说明](study_20261102.md)：固定各组首题为 B，反向 positive 仅显式探索。以下通用入口仍支持旧关系组排列。
+
 ```sh
 export OPENAI_API_KEY='你的 API key'
 export OPENAI_MODEL='账号可用的准确 API 模型 ID'
@@ -44,7 +46,7 @@ python3 scripts/experiment.py continual \
 
 每个 group / A / B / repeat 构成一个 block：
 
-1. 新会话完成 A，最多 100 次。无论 A 答对还是耗尽预算，结束后都揭示 A 的完整标准答案；保留真实失败轨迹，不改写成成功。答案揭示不算提问。
+1. 默认 `--source-policy fixed`：同一批次每道源题 A 仅在首次需要时用新会话完成一次，后续 block 复用其公开经历；`per-repeat` 才逐 block 重新解 A。A 最多 100 次。无论 A 答对还是耗尽预算，结束后都揭示 A 的完整标准答案；保留真实失败轨迹，不改写成成功。答案揭示不算提问。
 2. 在新会话直接做 B（direct），没有 A 的任何信息。
 3. 在另一新会话做 B（transcript），每轮提供 A 的完整公开提交、四标签反馈以及结束后揭示的完整标准答案。A 的模型私有推理、rubric、分数、题号、family、关系标签均不传入；B 的标准答案始终不可见。
 4. 比较同一 block 的两个 B；每局 B 都有完整独立预算。B 条件的运行顺序随机化，互相不共享 B 的轨迹。
@@ -53,7 +55,10 @@ python3 scripts/experiment.py continual \
 
 可选 `--memory card` 将 A 的允许信息总结成不超过 300 词的经验卡，随后让 B 看卡；默认 answer 模式还会在卡旁单独提供未经摘要或截断的 A 完整答案，防止摘要遗漏；`--memory both` 同时包含 direct / transcript / card 三种 B。卡由 player 配置的模型生成，调用和成本计入源局 `memory` 角色，不读取私有 grader 信息；300 词是提示约束，不是截断器。
 
-同组全部题按**有方向的两两组合**展开。28 组共 76 个 group-pairs，每次重复默认 228 局（76 个 A + 152 个 B）；repeat=3 是 684 局。both 模式每次重复 304 局，另有 76 次摘要调用。API 失败会提前终止，实际数量可能更少。
+旧关系组在没有 directed_pairs 时仍按有方向两两组合展开；新 study 入口使用明确方向。
+固定 A 模式总局数 = 唯一源题数 + 所有 B 条件局数（可选 unrelated 控制源另计一次/题）。
+不要沿用旧版本“每个 block 都包含一个新 A”的计费公式。缓存仅限当前批次，A 解题失败不重试挑成功轨迹；
+B 统计条件于固定 A，跨 block 依赖通过 source_reuse.json 与 source_run_dir/hash 保留。
 
 同一题对可属于多个组，保留为不同假设，不能视为独立证据：G02/G03/G04 的 15↔16、G09/G10 的 10↔42、G11/G26 的 33↔34 重叠。其中 G04 与 G02 的正负标签分别描述元策略帮助和具体答案固着，不能将标签当已知实验结果。当前汇总按 group+condition 分层，不计算把重叠对混在一起的总迁移结论。关系信息只供实验调度和研究者分析。
 
@@ -121,7 +126,8 @@ CLI 事件不回传实际服务端模型名，日志固定记录请求的模型�
 | --- | --- | --- |
 | `--dataset PATH` | 必填 | 原 XLSX 或 schema v1 私有 JSON；新增 50 题标注需使用本版 private.json |
 | `--config PATH` | 必填 | 和 scripts/play.py 相同的 host/player/grader/max_questions 配置；支持全部现有 provider、base_url、api_key_env、reasoning 等字段 |
-| `--repeat N` | `3`，正整数 | 每个题对或目标题独立重复次数 |
+| `--repeat N` | `3`，正整数 | 每个方向的 B / 每个目标题策略重复次数 |
+| `--source-policy MODE` | `fixed` | CL：每批每道 A 解一次后复用；per-repeat 才逐 block 重新解 A |
 | `--seed N` | `0`，整数 | 调度随机种子，只控制 block 和条件顺序，不控制远端模型采样；重复不代表相同随机数配对 |
 | `--out DIR` | 自动生成 `runs/api/experiment_<UUID8>/` | 必须是新目录，不覆盖、不自动续跑 |
 | `--dry-run` | 关闭 | 不要求 key、不调用模型；验证配置/ID、保存计划与各局输入，得分 null。模型环境变量占位仍需设置 |

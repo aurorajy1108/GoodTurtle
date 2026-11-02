@@ -1,0 +1,715 @@
+{
+  "puzzle_id": "TS035",
+  "source_kind": "model_simulated_reference",
+  "opening": "In a newly settled village in Meiji-era Japan, a father finds a brown bear eating his only daughter in the forest. He shoots it and weeps over her remains. Knowing these wary bears rarely attack unfamiliar living humans, he nevertheless fears other villagers will also suffer having relatives eaten. Why?",
+  "human_confirmed": false,
+  "review_status": "pending",
+  "host_model_requested": "gpt-6.1-sol",
+  "player_model_requested": "gpt-6-luna",
+  "reasoning_effort": "high",
+  "run_path": "runs/2026-10-30_sol_luna_reference/batches/TS035/TS035_r01_solo",
+  "trajectory_sha256": "18a3c735ceb5e705fd267c1705254cee11397b6a624050740ba6c9c3b355b324",
+  "status": "completed",
+  "actions": [
+    {
+      "index": 1,
+      "type": "question",
+      "text": "Is the father’s fear that the bear may eat villagers’ relatives after they die, rather than attack living people?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 2,
+      "type": "question",
+      "text": "Is he afraid that the bear will dig up and eat villagers’ buried dead because their graves are accessible?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 3,
+      "type": "question",
+      "text": "Did the villagers’ burial customs leave bodies in graves that bears could readily dig up?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 4,
+      "type": "question",
+      "text": "Did eating the daughter teach the bear that human bodies were food, making it more likely to dig up and eat buried villagers?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 5,
+      "type": "question",
+      "text": "Was the daughter already dead before the bear began eating her, rather than having been killed by the bear?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 6,
+      "type": "question",
+      "text": "Was the daughter’s body buried before the bear began eating it?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 7,
+      "type": "question",
+      "text": "Did the bear find the daughter because her grave was shallow or otherwise easy to detect by smell?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 8,
+      "type": "question",
+      "text": "Had bears already dug up and eaten other villagers’ buried dead before this incident?",
+      "forced": false,
+      "feedback": "yes and no"
+    },
+    {
+      "index": 9,
+      "type": "question",
+      "text": "Did the bear dig the daughter’s body out of her grave before eating it?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 10,
+      "type": "question",
+      "text": "Was this same bear responsible for digging up and eating at least one other villager’s buried dead before it dug up the daughter?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 11,
+      "type": "question",
+      "text": "Did the villagers bury their dead with food or other offerings that attracted bears to the graves?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 12,
+      "type": "question",
+      "text": "Do bears in the area have a known habit of digging up graves to eat the bodies buried there?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 13,
+      "type": "question",
+      "text": "Did the daughter die of natural causes before she was buried?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 14,
+      "type": "question",
+      "text": "Were the villagers likely to keep burying their dead in the same way, leaving future graves accessible to bears?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 15,
+      "type": "question",
+      "text": "Was the daughter’s grave in a place where bears could reach it more easily than the villagers’ other graves?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 16,
+      "type": "question",
+      "text": "Before the daughter was eaten, had a bear other than the one her father shot dug up and eaten any villager’s buried dead?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 17,
+      "type": "question",
+      "text": "Was the newly settled village built in an area where bears had previously lived or fed?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 18,
+      "type": "question",
+      "text": "Could other bears still dig up and eat villagers’ buried dead even after this bear is killed?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 19,
+      "type": "question",
+      "text": "Was his concern that bears could keep getting into the village cemetery and eating other buried people, regardless of whether this particular bear survived?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 20,
+      "type": "question",
+      "text": "Were villagers’ dead buried without coffins or other physical protection that would keep bears from reaching the bodies?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 21,
+      "type": "final",
+      "text": "The daughter had died of natural causes and was buried. A bear later dug up her grave and ate her body; her father found it doing so, shot it, and wept over her remains. The danger he feared was not that bears would attack living villagers, nor that this particular bear had learned to eat people. The villagers’ burial practice left the dead accessible to bears, and other bears could continue digging up graves and eating the bodies of their relatives. Killing this bear would not remove that continuing danger.",
+      "forced": false,
+      "feedback": "yes and no"
+    },
+    {
+      "index": 22,
+      "type": "question",
+      "text": "Was the daughter’s grave in the village’s cemetery?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 23,
+      "type": "question",
+      "text": "Did the villagers bury their dead without cremating the bodies first?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 24,
+      "type": "question",
+      "text": "Were villagers’ graves left unmarked, making it difficult to tell which graves had already been disturbed?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 25,
+      "type": "question",
+      "text": "Was cremation unavailable in the newly settled village, which is why the villagers buried their dead uncremated?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 26,
+      "type": "question",
+      "text": "Did the village lack the means to cremate its dead because it was newly settled?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 27,
+      "type": "question",
+      "text": "Did seeing the bear eat his daughter make the father realize that the village’s uncremated burials left all its dead vulnerable to bears?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 28,
+      "type": "question",
+      "text": "Was he worried that, until the village gained a way to cremate its dead, it would have to keep burying uncremated bodies that bears could dig up?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 29,
+      "type": "question",
+      "text": "Would cremating the dead have prevented bears from digging up and eating their bodies?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 30,
+      "type": "question",
+      "text": "Was cremation unavailable because the newly settled village had no crematorium or other facilities for cremating its dead?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 31,
+      "type": "final",
+      "text": "The daughter died of natural causes and was buried without cremation. Because the newly settled village had no means to cremate its dead, the buried bodies remained accessible to bears. A bear dug up the daughter’s grave and was eating her when her father found it and shot it. He feared that other bears could still dig up the graves of other villagers’ relatives; killing this bear would not remove that danger. The threat was to the dead, not to living villagers, and the bear’s behavior did not need to have taught it to eat human bodies.",
+      "forced": false,
+      "feedback": "yes and no"
+    },
+    {
+      "index": 32,
+      "type": "question",
+      "text": "Was the father’s fear specifically that bears would continue to dig up graves because the village had no way to cremate its dead?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 33,
+      "type": "question",
+      "text": "Did the father fear that other bears could also discover and dig up graves after this bear had found his daughter’s grave?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 34,
+      "type": "question",
+      "text": "Were other villagers’ uncremated relatives already buried and at risk when the father found the bear?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 35,
+      "type": "question",
+      "text": "Was the father’s concern that the bear’s discovery of one grave revealed a danger to all the village’s already-buried, uncremated dead—not just to people who died in the future?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 36,
+      "type": "question",
+      "text": "Did the father intend to persuade the villagers to find a way to cremate their dead after witnessing the bear dig up his daughter’s grave?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 37,
+      "type": "question",
+      "text": "Was the father’s fear that the bear’s discovery of the daughter’s grave showed that other bears could find the already-buried bodies too, because the village had no way to cremate them?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 38,
+      "type": "final",
+      "text": "The daughter died of natural causes and was buried without cremation. As a newly settled village with no facilities or means to cremate its dead, the village had other uncremated bodies already buried and vulnerable to bears. Her father found a bear digging up and eating her body and shot it. He feared that other bears could find the villagers’ other buried relatives too: killing this bear would not solve the danger while the bodies remained accessible. The threat was to the dead, not to living villagers, and did not depend on this bear having learned to eat human bodies.",
+      "forced": false,
+      "feedback": "yes and no"
+    },
+    {
+      "index": 39,
+      "type": "question",
+      "text": "Before the bear dug up the daughter’s grave, had any bear already dug up and eaten another villager’s buried body?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 40,
+      "type": "question",
+      "text": "Was the bear able to locate the daughter’s buried body by smelling it underground?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 41,
+      "type": "question",
+      "text": "Would a bear naturally eat a human corpse it encountered, even without having eaten a human body before?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 42,
+      "type": "question",
+      "text": "Did the father fear that other bears would also eat buried bodies because the bear’s behavior showed that bears could do so, even without having previously eaten human remains?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 43,
+      "type": "question",
+      "text": "Was the father’s fear based on bears being able to find and eat uncremated corpses, rather than on any unusual behavior by this particular bear?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 44,
+      "type": "question",
+      "text": "Was the daughter’s burial intended to be temporary, with the villagers planning to cremate her later when they had the means?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 45,
+      "type": "question",
+      "text": "Could the villagers have exhumed and cremated the relatives who were already buried to protect them from bears?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 46,
+      "type": "question",
+      "text": "Did the villagers have any practical way to protect the bodies already buried from bears, other than cremating them?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 47,
+      "type": "question",
+      "text": "Was the immediate problem that villagers could not protect the bodies already buried, because they could not safely exhume them for cremation?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 48,
+      "type": "question",
+      "text": "Could villagers protect the bodies already buried by making their graves deeper or otherwise reinforcing them, without cremating the bodies?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 49,
+      "type": "question",
+      "text": "Did the villagers bury their dead in the ground without a protective enclosure around the bodies?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 50,
+      "type": "question",
+      "text": "Was he afraid that other villagers might discover bears eating the remains of their own relatives, as he had discovered with his daughter?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 51,
+      "type": "question",
+      "text": "Did the villagers’ beliefs or customs prevent them from exhuming already-buried bodies for cremation?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 52,
+      "type": "question",
+      "text": "Could the villagers prevent bears from finding future buried bodies by changing where or how they buried them, without cremating them?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 53,
+      "type": "final",
+      "text": "The daughter died naturally and was buried uncremated. Because the newly settled village had no means to cremate its dead, other villagers already had uncremated relatives buried too. A bear dug up the daughter’s grave and ate her body; her father found it, shot the bear, and wept over her remains. He knew the danger was not that bears would attack living villagers, but that bears could find and eat buried bodies. Other villagers might likewise discover bears eating their own relatives. Killing this bear could not remove the danger to the other graves.",
+      "forced": false,
+      "feedback": "yes and no"
+    },
+    {
+      "index": 54,
+      "type": "question",
+      "text": "Was the harm he feared for other villagers the grief of finding a bear eating their deceased relatives, rather than any danger to the villagers themselves?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 55,
+      "type": "question",
+      "text": "Did the bear’s behavior reflect ordinary scavenging of an accessible corpse, rather than an unusual predatory attack on a person?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 56,
+      "type": "question",
+      "text": "Would villagers’ distress come from discovering bears eating their deceased relatives, even though the bears posed no danger to living people?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 57,
+      "type": "question",
+      "text": "Did the father fear that other villagers might find bears eating their relatives’ bodies because those bodies were buried uncremated, rather than fearing that the bears would harm the living?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 58,
+      "type": "question",
+      "text": "Was he worried that bears eating the buried bodies would also prevent the deceased from receiving proper funerary rites?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 59,
+      "type": "question",
+      "text": "Did the bear carry the daughter’s body away from her grave into the forest before her father found it?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 60,
+      "type": "question",
+      "text": "Was the father’s fear that other villagers would suffer the same emotional shock of discovering bears eating their deceased relatives, rather than that the bears would cause some further harm to the bodies or the living?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 61,
+      "type": "final",
+      "text": "The daughter died naturally and was buried without cremation. The newly settled village had no means to cremate its dead, so other villagers’ uncremated relatives were already buried and vulnerable too. A bear dug up the daughter’s grave and scavenged her body; her father found it, shot the bear, and wept. He feared that other villagers might suffer the same shock of finding bears eating their deceased relatives. The danger was to the buried dead, not to the living, and killing this bear would not protect the other graves from bears.",
+      "forced": false,
+      "feedback": "yes and no"
+    },
+    {
+      "index": 62,
+      "type": "question",
+      "text": "Did the father fear that the scent of buried bodies would draw bears into the village, where villagers might encounter them while they were alive?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 63,
+      "type": "question",
+      "text": "Was he afraid that the bears might eat the other villagers’ buried relatives before the villagers had a chance to discover or recover their remains?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 64,
+      "type": "question",
+      "text": "Before finding the bear at his daughter’s grave, had the father personally witnessed a bear eating human remains?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 65,
+      "type": "question",
+      "text": "Was the daughter’s grave located in the forest where her father found the bear?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 66,
+      "type": "question",
+      "text": "Were the villagers’ graves generally located in or near the forest where bears could reach them?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 67,
+      "type": "question",
+      "text": "Did finding the bear at his daughter’s grave make the father realize that bears could reach the other villagers’ graves in or near the forest?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 68,
+      "type": "question",
+      "text": "Was the ongoing consequence he feared chiefly that other villagers would be traumatized by finding bears eating their buried relatives?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 69,
+      "type": "question",
+      "text": "Before finding the bear at his daughter’s grave, did the father believe the villagers’ buried dead were safe from bears?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 70,
+      "type": "question",
+      "text": "Was the father chiefly afraid that other villagers would themselves discover bears eating their buried relatives, and suffer the same emotional shock he had? ",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 71,
+      "type": "question",
+      "text": "Was the father chiefly afraid that bears would eat other villagers’ buried relatives, rather than chiefly afraid of the distress villagers would feel if they discovered it?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 72,
+      "type": "final",
+      "text": "The daughter died naturally and was buried without being cremated. The newly settled village had no means to cremate its dead, and its graves were in or near the forest where bears could reach them. A bear dug up the daughter’s grave and ate her body; her father found it and shot the bear. He feared that other bears could also dig up and eat the villagers’ already-buried relatives. The danger was to the dead, not to living people, and killing this bear would not remove it.",
+      "forced": false,
+      "feedback": "yes and no"
+    },
+    {
+      "index": 73,
+      "type": "question",
+      "text": "Did he fear that bears might destroy or scatter the buried remains, making it difficult for villagers to recover and rebury their relatives?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 74,
+      "type": "question",
+      "text": "Was the danger that bears could reach the villagers’ uncremated graves in the forest and eat the bodies, regardless of how or why they found them?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 75,
+      "type": "final",
+      "text": "The daughter died of natural causes and was buried uncremated. The newly settled village had no means to cremate its dead, and its graves were in or near forest that bears could reach. A bear dug up and ate the daughter’s body; her father found it and shot it. He feared that other bears could also get into the graves and eat the villagers’ already-buried relatives. The danger he feared was to the dead, not an attack on the living, and killing this one bear would not protect the other graves.",
+      "forced": false,
+      "feedback": "yes and no"
+    },
+    {
+      "index": 76,
+      "type": "question",
+      "text": "Were the villagers’ graves in the forest because the newly settled village had not yet established a proper burial ground?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 77,
+      "type": "question",
+      "text": "Did the father fear that bears would eat other villagers’ buried relatives because the village’s graves were located in the bears’ natural habitat, rather than because bears were entering the village itself?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 78,
+      "type": "final",
+      "text": "The daughter died naturally and was buried without cremation. The newly settled village had no means to cremate its dead, and its graves were in or near forest that bears could reach. A bear dug up her grave and scavenged her body; her father found it and shot the bear. He feared that other bears could also reach the villagers’ already-buried relatives and eat their bodies. The danger was to the dead, not to living villagers, and killing this bear would not protect the other graves.",
+      "forced": false,
+      "feedback": "yes and no"
+    },
+    {
+      "index": 79,
+      "type": "question",
+      "text": "Was the father’s fear that uncremated burial in bear-accessible forest made it likely that bears would eat other villagers’ bodies too, even without this bear teaching them to do so?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 80,
+      "type": "question",
+      "text": "Did the father fear that bears could find and eat the villagers’ uncremated dead simply because their graves were reachable in the forest, even if no bear had done so before?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 81,
+      "type": "question",
+      "text": "Was cremation unavailable because Meiji-era law prohibited it, rather than because this newly settled village lacked cremation facilities?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 82,
+      "type": "question",
+      "text": "Did the bear’s discovery of the daughter’s grave show the father that bears could find and eat the other villagers’ already-buried, uncremated dead too?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 83,
+      "type": "question",
+      "text": "Did the father expect that bears would eventually dig up and eat other villagers’ buried relatives, rather than merely recognize that it was possible?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 84,
+      "type": "final",
+      "text": "His daughter had died naturally and been buried without cremation. The newly settled village had no way to cremate its dead, and the graves were in bear-reachable forest. When the father found a bear digging up and eating his daughter’s body, he realized that other bears could do the same to the villagers’ already-buried relatives. He feared that the dead would be eaten—not that bears would attack the living. Killing this bear could not protect the other graves.",
+      "forced": false,
+      "feedback": "yes and no"
+    },
+    {
+      "index": 85,
+      "type": "final",
+      "text": "The daughter died of natural causes and was buried without cremation. The newly settled village had no facilities or other means to cremate its dead, and its graves were in or near forest that bears could reach. A bear dug up her grave and ate her body; her father found it and shot it. He realized that other bears could likewise find and eat the villagers’ already-buried relatives, and expected that this would happen. His fear was about the dead, not bears attacking living people, and killing this one bear could not protect the other graves.",
+      "forced": false,
+      "feedback": "yes and no"
+    },
+    {
+      "index": 86,
+      "type": "question",
+      "text": "Were the graves vulnerable because the villagers buried the bodies only shallowly? ",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 87,
+      "type": "question",
+      "text": "Was the risk to other families specifically that their relatives’ bodies were buried intact, rather than their cremated ashes being buried?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 88,
+      "type": "question",
+      "text": "Did the father fear that bears would eventually find and eat the other already-buried, uncremated bodies because their graves were in bear-accessible forest?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 89,
+      "type": "question",
+      "text": "Did the father also fear that future villagers’ bodies would be vulnerable if they continued to be buried uncremated?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 90,
+      "type": "final",
+      "text": "The daughter died of natural causes and was buried intact because the newly settled village had no means to cremate its dead. The villagers’ graves were in bear-accessible forest. A bear dug up her grave and ate her body; her father found it and shot it. Seeing this showed him that bears could find and eat the other villagers’ already-buried, uncremated relatives too, and he expected that risk to continue. He feared for the buried dead, not that bears would attack living villagers. Killing this bear could not protect the other graves.",
+      "forced": false,
+      "feedback": "yes and no"
+    },
+    {
+      "index": 91,
+      "type": "question",
+      "text": "Did the father fear that bears would dig up the other graves because this bear had revealed that human corpses were an available food source to bears generally, even though it had not taught them to eat human bodies?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 92,
+      "type": "question",
+      "text": "Were the other villagers’ already-buried, uncremated relatives buried in the same bear-accessible forest as the daughter?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 93,
+      "type": "question",
+      "text": "Did he expect other bears to find and eat the other graves independently, rather than being drawn there by the bear he shot?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 94,
+      "type": "question",
+      "text": "Did seeing the bear dig up his daughter’s grave convince the father that the other already-buried, uncremated bodies were also at risk?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 95,
+      "type": "final",
+      "text": "The daughter died naturally and was buried uncremated. The newly settled village had no means to cremate its dead, and its graves—including the daughter’s—were in bear-accessible forest. A bear dug up her grave and ate her body; her father found it and shot it. He realized that other bears could independently find and eat the other villagers’ already-buried relatives too. He feared for the buried dead, not that bears would attack the living. Killing this bear would not protect the other graves.",
+      "forced": false,
+      "feedback": "yes and no"
+    },
+    {
+      "index": 96,
+      "type": "question",
+      "text": "Did the father fear that the bear’s discovery of his daughter’s grave would attract other bears to the nearby graves?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 97,
+      "type": "final",
+      "text": "The daughter died naturally and was buried uncremated. The newly settled village had no means to cremate its dead, and its graves—including hers—were in forest accessible to bears. A bear dug up her grave and ate her body; her father found it and shot it. He knew the bear had not attacked a living person, but its behavior showed him that other bears could independently find and eat the other villagers’ already-buried, uncremated relatives too. He expected that risk to continue. The bear he killed was not drawing other bears to the graves, and killing it could not protect them.",
+      "forced": false,
+      "feedback": "yes and no"
+    },
+    {
+      "index": 98,
+      "type": "final",
+      "text": "The daughter died of natural causes and was buried uncremated because the newly settled village had no means to cremate its dead. Her grave, like the other villagers’ graves, was in forest accessible to bears. A bear dug up her body and scavenged it; her father found the bear eating her and shot it. He feared that other bears could independently find and eat the other villagers’ already-buried relatives too. The threat was to the uncremated dead, not to living people, and killing this bear would not protect the other graves.",
+      "forced": false,
+      "feedback": "yes and no"
+    },
+    {
+      "index": 99,
+      "type": "final",
+      "text": "The daughter died naturally and was buried uncremated because the newly settled village had no means to cremate its dead. The graves were in forest that bears could reach. A bear dug up her grave and was eating her body when her father found it and shot it. He realized other bears could independently find and eat the villagers’ already-buried relatives too, and expected that to happen. He feared for the dead, not that bears would attack the living; killing this bear would not protect the other graves.",
+      "forced": false,
+      "feedback": "yes and no"
+    },
+    {
+      "index": 100,
+      "type": "final",
+      "text": "The daughter died naturally and was buried uncremated. Because the newly settled village had no means to cremate its dead, other villagers’ uncremated relatives were already buried in forest bears could reach. A bear dug up the daughter’s grave and scavenged her body; her father found it and shot it. He feared that other bears could independently find and eat the other buried bodies too. The danger was to the dead, not to living people, and killing this bear would not protect the other graves.",
+      "forced": true,
+      "feedback": "yes and no"
+    }
+  ]
+}

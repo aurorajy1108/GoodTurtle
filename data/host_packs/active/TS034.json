@@ -1,6 +1,6 @@
 {
-  "version": "host-v7-share-20261026",
-  "review_status": "user_history_ai_adjudicated_pending_human",
+  "version": "host-v9-human-20261102",
+  "review_status": "human_labels_and_delegated_adjudication",
   "replace_host_examples": true,
   "solution": "The father is the hostage. His wealthy daughter is free and receives the kidnapper’s phone call.\nThe father hears the kidnapper order his daughter to bring the ransom alone. He fears that, once she arrives with the money, the kidnapper will kill both of them to eliminate witnesses.\nHis daughter is his only family. To protect her, he tells her not to pay the ransom or come to the meeting, even though refusing puts his own life at risk.\nThe explanation concerns the father’s fear and decision; it does not establish that the kidnapper eventually kills either of them.",
   "canonical_facts": [
@@ -252,7 +252,74 @@
         "reviewer": "codex_root",
         "review_date": "2026-10-26"
       }
+    },
+    {
+      "case_id": "RECHECK_20261031_NEW037",
+      "question": "Does the father believe that his daughter is genuinely in danger of being killed?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "父亲确实担心女儿来交赎金后遇害；原问没限定当前正被挟持。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "SHARE_6adf37d6_002",
+        "audit_case": "NEW037",
+        "source": "https://chatgpt.com/share/6adf37d6-5080-83e9-abbc-2ced03b615d6",
+        "source_kind": "user_supplied_history",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "**Question 1:** Does the father believe that his daughter is genuinely in danger of being killed?",
+        "original_answer": "no",
+        "question_origin": "reviewer_rewrite",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_NEW038",
+      "question": "Is the kidnapper's voice coming from the same phone call as the daughter's voice?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "同一绑架电话事件为真；绑匪声音对父亲是现场，对女儿来自电话，原句缺听者。 原人工曾更正Q6=yes；这里裁定含混原句，原更正仍保留，不冒称人工确认新标签。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "SHARE_6adf37d6_012",
+        "audit_case": "NEW038",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 71,
+        "human_confirmed": false,
+        "original_question": "**Question 6:** Is the kidnapper's voice coming from the same phone call as the daughter's voice?",
+        "original_answer": "no",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_NEW040",
+      "question": "Is the father's decision based on the fact that the kidnapper demanded his daughter come alone, without police protection?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "要求独自赴约为真；排除所有远程或隐蔽警方保护未说明。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "SHARE_6adf37d6_054",
+        "audit_case": "NEW040",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 70,
+        "human_confirmed": false,
+        "original_question": "**Question 26:** Is the father's decision based on the fact that the kidnapper demanded his daughter come alone, without police protection?",
+        "original_answer": "irrelevant",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
     }
   ],
-  "verification_policy": "independent_then_adjudicate_v1"
+  "verification_policy": "independent_then_adjudicate_v1",
+  "label_boundaries": [
+    "An unqualified question about the father fearing danger to his daughter includes his feared future ransom meeting, not only present hostage status. Historical acceptance of a core reconstruction does not override current full-story completion requirements."
+  ]
 }

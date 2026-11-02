@@ -1,6 +1,6 @@
 {
-  "version": "host-v7-20261024",
-  "review_status": "ai_repair_pending_human",
+  "version": "host-v9-human-20261102",
+  "review_status": "human_labels_and_delegated_adjudication",
   "replace_host_examples": true,
   "solution": "I was standing in front of a river. I cannot pass the course of the river because the current is too swift and I don't have suitable equipm.",
   "canonical_facts": [
@@ -133,6 +133,50 @@
       "rationale": "Location is incidental and unspecified.",
       "public_history": [],
       "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS015_011",
+      "question": "Was the narrator using any apparatus, machine, or conveyance to attempt the course, rather than relying solely on his own body?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "人工标为非问题，保留原标签。如果narrator有合适设备就可以过河了，可以推测他此时没有这种设备",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS015_011",
+        "audit_case": "INBOX_TS015_011",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 40,
+        "human_confirmed": true,
+        "original_question": "Was the narrator using any apparatus, machine, or conveyance to attempt the course, rather than relying solely on his own body?",
+        "original_answer": "no",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS015_019",
+      "question": "Did the narrator fail because he did not have the equipment normally required to complete the course?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "人工标为非问题，保留原标签。如果narrator有合适设备就可以过河了，可以推测他此时没有这种设备",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS015_019",
+        "audit_case": "INBOX_TS015_019",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 40,
+        "human_confirmed": true,
+        "original_question": "Did the narrator fail because he did not have the equipment normally required to complete the course?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
     }
   ],
   "verification_policy": "independent_then_adjudicate_v1",

@@ -1,6 +1,6 @@
 {
-  "version": "host-v5.1-20261023",
-  "review_status": "ai_repair_pending_human",
+  "version": "host-v9-human-20261102",
+  "review_status": "human_labels_and_delegated_adjudication",
   "replace_host_examples": true,
   "solution": "A had a mechanical pencil with no usable lead. The eraser covered the lead-refill opening, so A picked up/removed the eraser, inserted new lead, then used the pencil to write the message on the blank sheet.",
   "canonical_facts": [
@@ -2457,7 +2457,919 @@
       "public_history": [],
       "rationale": "Relational correction from post-run audit, pending human confirmation.",
       "review_status": "ai_audit_root_adjudicated_pending_human"
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_001",
+      "question": "Did A use the eraser itself to make visible marks on the paper, rather than erase existing writing?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_001",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A use the eraser itself to make visible marks on the paper, rather than erase existing writing?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_002",
+      "question": "Did A use the eraser to remove something from the paper so that a message underneath became visible?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_002",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A use the eraser to remove something from the paper so that a message underneath became visible?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_003",
+      "question": "Did A use the eraser to apply ink or another pigment to the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_004",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A use the eraser to apply ink or another pigment to the paper?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_004",
+      "question": "Did A use the eraser to press or emboss a message into the paper, leaving indentations rather than visible pigment?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_005",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A use the eraser to press or emboss a message into the paper, leaving indentations rather than visible pigment?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_005",
+      "question": "Did A use the pencil’s graphite to write the message on the paper?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_007",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A use the pencil’s graphite to write the message on the paper?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_006",
+      "question": "Did A use the eraser to sharpen or shape the pencil’s graphite tip before writing the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_008",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A use the eraser to sharpen or shape the pencil’s graphite tip before writing the message?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_007",
+      "question": "Did A use the eraser to hold or guide the pencil while writing the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_009",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A use the eraser to hold or guide the pencil while writing the message?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_008",
+      "question": "Did A use the eraser to hold the blank sheet in place while writing the message with the pencil?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_010",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A use the eraser to hold the blank sheet in place while writing the message with the pencil?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_009",
+      "question": "Was A unable to use a separate pencil, so they chose the pencil with an attached eraser instead?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_018",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was A unable to use a separate pencil, so they chose the pencil with an attached eraser instead?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_010",
+      "question": "Did A remove or move the eraser to uncover the pencil’s writing tip before writing?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_022",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A remove or move the eraser to uncover the pencil’s writing tip before writing?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_011",
+      "question": "Did A press the eraser, which functioned as a button on a mechanical pencil, to advance the graphite lead before writing?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_027",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A press the eraser, which functioned as a button on a mechanical pencil, to advance the graphite lead before writing?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_012",
+      "question": "Did A sharpen the pencil with a separate pencil sharpener before writing?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_030",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A sharpen the pencil with a separate pencil sharpener before writing?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_013",
+      "question": "Was the pencil’s graphite writing tip already exposed and usable when A picked up the item?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_031",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was the pencil’s graphite writing tip already exposed and usable when A picked up the item?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_014",
+      "question": "Did A use a sharpener built into the eraser to sharpen the pencil before writing?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_032",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A use a sharpener built into the eraser to sharpen the pencil before writing?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_015",
+      "question": "Did A sharpen the pencil’s graphite tip by any method before writing?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_035",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A sharpen the pencil’s graphite tip by any method before writing?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_016",
+      "question": "Was the eraser physically covering or enclosing the pencil’s graphite writing tip?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_037",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was the eraser physically covering or enclosing the pencil’s graphite writing tip?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_017",
+      "question": "Did A obtain graphite from inside the pencil and use that graphite to write, rather than writing with the pencil’s tip?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_044",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A obtain graphite from inside the pencil and use that graphite to write, rather than writing with the pencil’s tip?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_018",
+      "question": "Did A attach or embed the separate piece of graphite in the eraser, using the eraser to hold it while writing?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_049",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A attach or embed the separate piece of graphite in the eraser, using the eraser to hold it while writing?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_019",
+      "question": "Did A insert the separate piece of graphite into the broken end of the pencil, so the pencil held it as a makeshift writing tip?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_051",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A insert the separate piece of graphite into the broken end of the pencil, so the pencil held it as a makeshift writing tip?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_020",
+      "question": "Did A use the pencil as a straightedge or guide while making the message with the separate piece of graphite?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_055",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A use the pencil as a straightedge or guide while making the message with the separate piece of graphite?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_021",
+      "question": "Was the pencil used as part of a larger contraption or setup that enabled A to write with the separate graphite?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_061",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was the pencil used as part of a larger contraption or setup that enabled A to write with the separate graphite?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_022",
+      "question": "Did removing the eraser provide access for adding pencil lead, rather than using the eraser as a marking tool?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "移除盖子是访问步骤，不是拿橡皮作为刻画工具。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_003",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "reviewer_rewrite",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A use the eraser as a tool to make a message with some other material, rather than using the eraser itself to mark or erase the paper?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_023",
+      "question": "Did A remove the eraser because it covered the mechanical pencil's lead-refill opening?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "明确真实目的，避免只拿起整个普通铅笔的错误因果。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_011",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "reviewer_rewrite",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A pick up the eraser because a pencil was attached to it or otherwise incorporated into it, and then use that pencil to write the message?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_024",
+      "question": "Was this a mechanical pencil with a removable eraser covering its refill opening?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "消除 ordinary pencil 对木制铅笔的歧义。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_013",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "reviewer_rewrite",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was the eraser attached to the end of an ordinary pencil, as a pencil-top eraser?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_025",
+      "question": "Was the message meant to demonstrate or reveal that the eraser had a pencil attached to it?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "展示附带铅笔不是写留言的解释性目的。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_016",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "reviewer_rewrite",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was the message meant to demonstrate or reveal that the eraser had a pencil attached to it?",
+        "original_answer": "irrelevant",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_026",
+      "question": "Did A insert replacement graphite lead inside the mechanical pencil and then write using that pencil?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "铅芯在笔内，非外置独立绘图装置。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_048",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "reviewer_rewrite",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A use the eraser-attached pencil as a holder or support for a separate piece of graphite while writing?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_027",
+      "question": "Did A use the pencil to prop up an external apparatus that held a separate piece of graphite for writing?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "独立外部支撑装置不是汤底。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_057",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "reviewer_rewrite",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the pencil support the separate graphite indirectly, through another object or part, while A wrote?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_028",
+      "question": "Does the story require a separate guide or support apparatus in addition to the refilled mechanical pencil?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "不将内部笔结构重新解释成第三个装置。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_085",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "reviewer_rewrite",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the pencil support an object that helped guide or control the separate graphite as it rubbed across the paper?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_RUN_TS031_006",
+      "question": "Did A use the eraser together with a pencil to write the message?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "宽泛地使用橡皮和铅笔完成写字流程成立；没有断言橡皮直接画字。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_006",
+        "audit_case": "RUN_TS031_006",
+        "source": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_kind": "model_generated",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A use the eraser together with a pencil to write the message?",
+        "original_answer": "yes",
+        "question_origin": "source_verbatim",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_RUN_TS031_015",
+      "question": "Did A pick up the pencil because they needed to use its graphite tip to write the message?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "需要用铅芯写留言这一宽泛目的成立，不表示铅芯起初可用。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_015",
+        "audit_case": "RUN_TS031_015",
+        "source": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_kind": "model_generated",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A pick up the pencil because they needed to use its graphite tip to write the message?",
+        "original_answer": "yes",
+        "question_origin": "source_verbatim",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_RUN_TS031_048",
+      "question": "Did A use the eraser-attached pencil as a holder or support for a separate piece of graphite while writing?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "替换铅芯本来是独立补充材料，装入笔内后由笔夹持；问句没有说外置装置。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_048",
+        "audit_case": "RUN_TS031_048",
+        "source": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_kind": "model_generated",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A use the eraser-attached pencil as a holder or support for a separate piece of graphite while writing?",
+        "original_answer": "yes",
+        "question_origin": "source_verbatim",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS031_003",
+      "question": "Did A use the eraser as a tool to make a message with some other material, rather than using the eraser itself to mark or erase the paper?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "橡皮参与补芯流程，但不是施加书写材料的工具；原问工具角色有重要歧义。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS031_003",
+        "audit_case": "RUN_TS031_003",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 63,
+        "human_confirmed": false,
+        "original_question": "Did A use the eraser as a tool to make a message with some other material, rather than using the eraser itself to mark or erase the paper?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS031_011",
+      "question": "Did A pick up the eraser because a pencil was attached to it or otherwise incorporated into it, and then use that pencil to write the message?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "与铅笔相连为真；拿橡皮的关键目的是打开补芯口，不是只拿起可用的铅笔。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS031_011",
+        "audit_case": "RUN_TS031_011",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 63,
+        "human_confirmed": false,
+        "original_question": "Did A pick up the eraser because a pencil was attached to it or otherwise incorporated into it, and then use that pencil to write the message?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS031_013",
+      "question": "Was the eraser attached to the end of an ordinary pencil, as a pencil-top eraser?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "附带橡皮为真，ordinary pencil可指木制铅笔或普通自动铅笔；保留此身份歧义。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS031_013",
+        "audit_case": "RUN_TS031_013",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 57,
+        "human_confirmed": false,
+        "original_question": "Was the eraser attached to the end of an ordinary pencil, as a pencil-top eraser?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS031_020",
+      "question": "Was the pencil attached to the eraser unusual in some way that mattered to why A used it?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "这支笔当时缺可用铅芯的状态对动作有意义；不表示罕见型号或特殊机器。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS031_020",
+        "audit_case": "RUN_TS031_020",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 57,
+        "human_confirmed": false,
+        "original_question": "Was the pencil attached to the eraser unusual in some way that mattered to why A used it?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS031_057",
+      "question": "Did the pencil support the separate graphite indirectly, through another object or part, while A wrote?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "another object or part可指内部夹芯部件，也可指另一台装置；不得静默换指代。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS031_057",
+        "audit_case": "RUN_TS031_057",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 58,
+        "human_confirmed": false,
+        "original_question": "Did the pencil support the separate graphite indirectly, through another object or part, while A wrote?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS031_069",
+      "question": "Did the pencil indirectly support the separate graphite by supporting something that played a role in creating the message?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "内部夹芯结构与玩家外部支撑物假设混淆；原句重要指代未定。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS031_069",
+        "audit_case": "RUN_TS031_069",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 58,
+        "human_confirmed": false,
+        "original_question": "Did the pencil indirectly support the separate graphite by supporting something that played a role in creating the message?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS031_077",
+      "question": "Did the pencil support an object that A used to make the message by physically marking, cutting, or otherwise altering the paper?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "可解释为内部铅芯接触纸，也可延续额外装置，不能无条件肯定后者。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS031_077",
+        "audit_case": "RUN_TS031_077",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 59,
+        "human_confirmed": false,
+        "original_question": "Did the pencil support an object that A used to make the message by physically marking, cutting, or otherwise altering the paper?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS031_079",
+      "question": "Was the tool that the pencil indirectly supported used to make the message by applying pressure to the paper?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "铅芯施压为真，前提“间接支撑的另一个工具”不明确。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS031_079",
+        "audit_case": "RUN_TS031_079",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 59,
+        "human_confirmed": false,
+        "original_question": "Was the tool that the pencil indirectly supported used to make the message by applying pressure to the paper?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS031_082",
+      "question": "Did A move the refilled mechanical pencil’s graphite tip across the paper while pressing it to write?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "书写铅芯移动并接触纸；以明确改写采纳人工yes，不肯定外置支架。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS031_082",
+        "audit_case": "RUN_TS031_082",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 60,
+        "human_confirmed": false,
+        "original_question": "Did A move the pressure-applying tool across the paper while pressing it, rather than keeping it in one place?",
+        "original_answer": "yes",
+        "question_origin": "reviewer_rewrite",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS031_083",
+      "question": "Did the tool make the message by rubbing or scraping across the paper under pressure?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "若tool指铅芯，摩擦纸成立；若指先前假设的另一装置，其存在不成立。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS031_083",
+        "audit_case": "RUN_TS031_083",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": null,
+        "human_confirmed": false,
+        "original_question": "Did the tool make the message by rubbing or scraping across the paper under pressure?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS031_084",
+      "question": "Was the tool that rubbed or scraped across the paper a separate piece of graphite?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "是铅芯材料，但不是游离于笔外、由额外装置支撑的书写工具。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS031_084",
+        "audit_case": "RUN_TS031_084",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 61,
+        "human_confirmed": false,
+        "original_question": "Was the tool that rubbed or scraped across the paper a separate piece of graphite?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS031_085",
+      "question": "Did the pencil support an object that helped guide or control the separate graphite as it rubbed across the paper?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "可指笔内夹芯结构，也可指错误的外置导向器，不能确认额外装置。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS031_085",
+        "audit_case": "RUN_TS031_085",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 61,
+        "human_confirmed": false,
+        "original_question": "Did the pencil support an object that helped guide or control the separate graphite as it rubbed across the paper?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS031_095",
+      "question": "Was the pencil physically touching the object it indirectly supported?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "object无确定指代；笔内结构存在接触，先前外置支撑物并不存在。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS031_095",
+        "audit_case": "RUN_TS031_095",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 62,
+        "human_confirmed": false,
+        "original_question": "Was the pencil physically touching the object it indirectly supported?",
+        "original_answer": "no",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
     }
   ],
-  "verification_policy": "independent_then_adjudicate_v1"
+  "verification_policy": "independent_then_adjudicate_v1",
+  "label_boundaries": [
+    "Removing the eraser to refill the pencil is not holding a usable ordinary pencil by its eraser. Separate replacement lead goes INSIDE the mechanical pencil.",
+    "Resolve tool/support/other object references from the question and its history. Do not silently relabel an asserted external apparatus as internal pencil parts. If genuinely ambiguous, use yes and no; reject a specified external drawing mechanism with no.",
+    "A no to removing the eraser TO UNCOVER THE WRITING TIP does not deny removing it TO OPEN THE REFILL PORT. Preserve the causal predicate, not only the verb remove.",
+    "Use together can describe the overall remove/refill/write process without asserting that the eraser marks the paper. Separate replacement lead can be inserted inside the pencil; separate alone does not entail an external machine."
+  ]
 }

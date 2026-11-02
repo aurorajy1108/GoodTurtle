@@ -4,7 +4,11 @@ English | [中文](README.zh-CN.md)
 
 GoodTurtle studies in-context experience transfer (continual learning, or CL) and two-agent collaboration using lateral thinking puzzles. It includes **50 English puzzles and 161 scoring checkpoints**, configurable host, player and grader roles, trajectories, and experiment summaries.
 
-**Current status: experiments are paused.** Host behavior and scoring annotations still need validation; passing unit tests does not establish model accuracy. The default requested host/grader is `gpt-6.1-sol` with high reasoning, and the player is `gpt-6-luna` with high reasoning. Host answers use four labels: `yes`, `no`, `yes and no`, and `irrelevant`.
+**Current scope: one-repeat CL Set 1 and TS038 team experiments are authorized; other experiments remain paused.** Host behavior and scoring annotations still need validation; passing unit tests does not establish model accuracy. The default requested host/grader is `gpt-6.1-sol` with high reasoning, and the player and default partner are `gpt-5.6-luna` with low reasoning. Host answers use four labels: `yes`, `no`, `yes and no`, and `irrelevant`.
+
+The [current five-set study](docs/study_20261102.md) defaults to a fixed target B per set and one frozen A trajectory per source puzzle within a batch. B starts a fresh 100-submission session on every repeat. Reverse positive directions require `--directions bidirectional` and are exploratory; `--source-policy per-repeat` explicitly restores regenerating A. The study launcher defaults to writing a plan only.
+
+New runs automatically export per-call `token_costs.csv`, per-game `costs_by_game.csv`, and `cost_summary.json` totals by role/model. USD values are standard API-equivalent estimates, including failed calls with reported usage; unknown usage/prices stay unknown. Codex subscription charges are not inferred from API prices. See [cost accounting and price configuration](docs/study_20261102.md#token-与费用记录自动启用).
 
 ## Where to start
 
@@ -12,7 +16,8 @@ GoodTurtle studies in-context experience transfer (continual learning, or CL) an
 | --- | --- |
 | Upload a human host reference trajectory | [Upload inbox](data/host_reference/inbox/); [reference guide](data/host_reference/README.md) |
 | Find archived human conversations and corrections | [Reference sources](data/host_reference/sources/) |
-| Review findings | [Reviews](data/host_reference/reviews/); [Excel review workbook](outputs/20261026_host_review/host_review_20261026.xlsx) |
+| Review findings | [Applied human review](data/host_reference/reviews/human_20261102/manifest.json); [Original annotations](data/host_reference/sources/human_review_20261102/); [Review history](data/host_reference/reviews/) |
+| Run the five CL sets and five team puzzles | [November 2 experiment list, settings and commands](docs/study_20261102.md) |
 | Inspect examples currently used by the host | [Active packs](data/host_packs/active/); [bindings](configs/host_bindings.json) |
 | Run experiments | [Coworker quickstart](docs/coworker_quickstart.md) |
 | Find commands and model parameters | [Runtime parameters](docs/runtime_parameters.md); [CL and two-agent experiments](docs/experiment_pipelines.md); [v7 control design](docs/host_repair_v7.md) |

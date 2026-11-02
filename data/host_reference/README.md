@@ -71,6 +71,8 @@ The upload tool validates structure and locates paths; it does not automatically
 
 ## Existing references
 
+- **2026-10-30 review:** [report](../../docs/host_reference_audit_20261030.md), [workbook](../../outputs/20261030_host_reference_audit/host_reference_audit.xlsx), [source-preserving decisions](reviews/audit_20261030/). TS031/035/038 gained 102 reviewed examples; TS033 has one corrected causal label. Actual generation provenance is retained; this is not human gold or a measured accuracy gain. The 17 inbox uploads remain pending activation.
+
 - [Shared conversations](sources/chatgpt_shares_20261026/) contain 633 visible messages and 311 player actions, covering TS032, TS033, TS034, TS037, TS039 and an external train puzzle. TS034 has two attempts. Historical paths follow the migration map.
 - The 89 historical candidate excerpts for nine puzzles are in `data/host_packs/archive/LOOP_TS*_history_v1.json`; see [merge review](reviews/history_qa_merge_20261026.json). Excerpts alone do not establish a complete original conversation.
 - The earlier merge added 109 examples (88 historical and 21 from shared conversations); check the active pack and binding for current runtime inputs and each example's provenance.

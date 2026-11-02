@@ -6,6 +6,35 @@
 
 人工参考问答统一上传到 [Host reference入口](../data/host_reference/README.md)，不要直接混进运行输出或active包。
 
+## 11月2日当前实验入口
+
+最新默认：Host/grader=`gpt-6.1-sol` high；player/partner=`gpt-5.6-luna` low。
+CL 固定每组首题为 B；同一批次每道 A 解一次后冻结复用，揭示 A 完整答案。
+B 每次是新会话、独立100次额度。Token/费用自动记录，Codex 账号费用仅作 API 等价估算。
+完整参数、实验方向、四种协作策略及费用说明见 [当前实验文档](study_20261102.md)。
+
+已安装 Codex CLI 的同事先自行完成 `codex login`；不会共享任何人的登录凭据。
+
+```sh
+git pull --ff-only
+# 只写计划，零模型调用；每次选择新输出目录。
+python3 scripts/study_20261102.py --suite all --sets 1 --team-puzzles TS038 \
+  --repeat 1 --out runs/api/my_set1_ts038_plan
+
+# CL Set 1：固定 B=13，A=15/16/14/28；4局A + 12局B =16局。
+python3 scripts/study_20261102.py --suite continual --sets 1 --repeat 1 \
+  --mode run --out runs/api/my_set1_once
+
+# TS038：solo/solo_reflect/independent/shared_buffer，各1局，共4局。
+python3 scripts/study_20261102.py --suite team --team-puzzles TS038 --repeat 1 \
+  --mode run --out runs/api/my_ts038_once
+```
+
+后两条可在独立终端运行。每批 `status.json` 记录状态，子目录 `index.html` 链接各局轨迹；
+`experiment_runs.csv` 是性能结果，`costs_by_game.csv` / `cost_summary.json` 是用量和估算费用。
+一次重复只用于检查行为，不足以估计稳定的方差或研究效果。
+普通实验运行不需要 openpyxl；仅重新导入/制作人工审核 Excel 的维护脚本可能需要安装它。
+
 ## 1. 获取代码并做零调用检查
 
 ```sh

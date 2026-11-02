@@ -1,0 +1,3208 @@
+{
+  "version": "host-v8-reviewed-20261030",
+  "human_confirmed": false,
+  "changes": [
+    {
+      "puzzle_id": "TS031",
+      "case_id": "REVIEW_20261030_TS031_001",
+      "source_case": "RUN_TS031_001",
+      "action": "add_reviewed",
+      "question": "Did A use the eraser itself to make visible marks on the paper, rather than erase existing writing?",
+      "answer": "no",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS031_001",
+        "question": "Did A use the eraser itself to make visible marks on the paper, rather than erase existing writing?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_001",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did A use the eraser itself to make visible marks on the paper, rather than erase existing writing?",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS031",
+      "case_id": "REVIEW_20261030_TS031_002",
+      "source_case": "RUN_TS031_002",
+      "action": "add_reviewed",
+      "question": "Did A use the eraser to remove something from the paper so that a message underneath became visible?",
+      "answer": "no",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS031_002",
+        "question": "Did A use the eraser to remove something from the paper so that a message underneath became visible?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_002",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did A use the eraser to remove something from the paper so that a message underneath became visible?",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS031",
+      "case_id": "REVIEW_20261030_TS031_003",
+      "source_case": "RUN_TS031_004",
+      "action": "add_reviewed",
+      "question": "Did A use the eraser to apply ink or another pigment to the paper?",
+      "answer": "no",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS031_003",
+        "question": "Did A use the eraser to apply ink or another pigment to the paper?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_004",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did A use the eraser to apply ink or another pigment to the paper?",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS031",
+      "case_id": "REVIEW_20261030_TS031_004",
+      "source_case": "RUN_TS031_005",
+      "action": "add_reviewed",
+      "question": "Did A use the eraser to press or emboss a message into the paper, leaving indentations rather than visible pigment?",
+      "answer": "no",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS031_004",
+        "question": "Did A use the eraser to press or emboss a message into the paper, leaving indentations rather than visible pigment?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_005",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did A use the eraser to press or emboss a message into the paper, leaving indentations rather than visible pigment?",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS031",
+      "case_id": "REVIEW_20261030_TS031_005",
+      "source_case": "RUN_TS031_007",
+      "action": "add_reviewed",
+      "question": "Did A use the pencil’s graphite to write the message on the paper?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS031_005",
+        "question": "Did A use the pencil’s graphite to write the message on the paper?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_007",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did A use the pencil’s graphite to write the message on the paper?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS031",
+      "case_id": "REVIEW_20261030_TS031_006",
+      "source_case": "RUN_TS031_008",
+      "action": "add_reviewed",
+      "question": "Did A use the eraser to sharpen or shape the pencil’s graphite tip before writing the message?",
+      "answer": "no",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS031_006",
+        "question": "Did A use the eraser to sharpen or shape the pencil’s graphite tip before writing the message?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_008",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did A use the eraser to sharpen or shape the pencil’s graphite tip before writing the message?",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS031",
+      "case_id": "REVIEW_20261030_TS031_007",
+      "source_case": "RUN_TS031_009",
+      "action": "add_reviewed",
+      "question": "Did A use the eraser to hold or guide the pencil while writing the message?",
+      "answer": "no",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS031_007",
+        "question": "Did A use the eraser to hold or guide the pencil while writing the message?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_009",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did A use the eraser to hold or guide the pencil while writing the message?",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS031",
+      "case_id": "REVIEW_20261030_TS031_008",
+      "source_case": "RUN_TS031_010",
+      "action": "add_reviewed",
+      "question": "Did A use the eraser to hold the blank sheet in place while writing the message with the pencil?",
+      "answer": "no",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS031_008",
+        "question": "Did A use the eraser to hold the blank sheet in place while writing the message with the pencil?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_010",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did A use the eraser to hold the blank sheet in place while writing the message with the pencil?",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS031",
+      "case_id": "REVIEW_20261030_TS031_009",
+      "source_case": "RUN_TS031_018",
+      "action": "add_reviewed",
+      "question": "Was A unable to use a separate pencil, so they chose the pencil with an attached eraser instead?",
+      "answer": "no",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS031_009",
+        "question": "Was A unable to use a separate pencil, so they chose the pencil with an attached eraser instead?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_018",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Was A unable to use a separate pencil, so they chose the pencil with an attached eraser instead?",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS031",
+      "case_id": "REVIEW_20261030_TS031_010",
+      "source_case": "RUN_TS031_022",
+      "action": "add_reviewed",
+      "question": "Did A remove or move the eraser to uncover the pencil’s writing tip before writing?",
+      "answer": "no",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS031_010",
+        "question": "Did A remove or move the eraser to uncover the pencil’s writing tip before writing?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_022",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did A remove or move the eraser to uncover the pencil’s writing tip before writing?",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS031",
+      "case_id": "REVIEW_20261030_TS031_011",
+      "source_case": "RUN_TS031_027",
+      "action": "add_reviewed",
+      "question": "Did A press the eraser, which functioned as a button on a mechanical pencil, to advance the graphite lead before writing?",
+      "answer": "no",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS031_011",
+        "question": "Did A press the eraser, which functioned as a button on a mechanical pencil, to advance the graphite lead before writing?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_027",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did A press the eraser, which functioned as a button on a mechanical pencil, to advance the graphite lead before writing?",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS031",
+      "case_id": "REVIEW_20261030_TS031_012",
+      "source_case": "RUN_TS031_030",
+      "action": "add_reviewed",
+      "question": "Did A sharpen the pencil with a separate pencil sharpener before writing?",
+      "answer": "no",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS031_012",
+        "question": "Did A sharpen the pencil with a separate pencil sharpener before writing?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_030",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did A sharpen the pencil with a separate pencil sharpener before writing?",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS031",
+      "case_id": "REVIEW_20261030_TS031_013",
+      "source_case": "RUN_TS031_031",
+      "action": "add_reviewed",
+      "question": "Was the pencil’s graphite writing tip already exposed and usable when A picked up the item?",
+      "answer": "no",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS031_013",
+        "question": "Was the pencil’s graphite writing tip already exposed and usable when A picked up the item?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_031",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Was the pencil’s graphite writing tip already exposed and usable when A picked up the item?",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS031",
+      "case_id": "REVIEW_20261030_TS031_014",
+      "source_case": "RUN_TS031_032",
+      "action": "add_reviewed",
+      "question": "Did A use a sharpener built into the eraser to sharpen the pencil before writing?",
+      "answer": "no",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS031_014",
+        "question": "Did A use a sharpener built into the eraser to sharpen the pencil before writing?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_032",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did A use a sharpener built into the eraser to sharpen the pencil before writing?",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS031",
+      "case_id": "REVIEW_20261030_TS031_015",
+      "source_case": "RUN_TS031_035",
+      "action": "add_reviewed",
+      "question": "Did A sharpen the pencil’s graphite tip by any method before writing?",
+      "answer": "no",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS031_015",
+        "question": "Did A sharpen the pencil’s graphite tip by any method before writing?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_035",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did A sharpen the pencil’s graphite tip by any method before writing?",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS031",
+      "case_id": "REVIEW_20261030_TS031_016",
+      "source_case": "RUN_TS031_037",
+      "action": "add_reviewed",
+      "question": "Was the eraser physically covering or enclosing the pencil’s graphite writing tip?",
+      "answer": "no",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS031_016",
+        "question": "Was the eraser physically covering or enclosing the pencil’s graphite writing tip?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_037",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Was the eraser physically covering or enclosing the pencil’s graphite writing tip?",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS031",
+      "case_id": "REVIEW_20261030_TS031_017",
+      "source_case": "RUN_TS031_044",
+      "action": "add_reviewed",
+      "question": "Did A obtain graphite from inside the pencil and use that graphite to write, rather than writing with the pencil’s tip?",
+      "answer": "no",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS031_017",
+        "question": "Did A obtain graphite from inside the pencil and use that graphite to write, rather than writing with the pencil’s tip?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_044",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did A obtain graphite from inside the pencil and use that graphite to write, rather than writing with the pencil’s tip?",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS031",
+      "case_id": "REVIEW_20261030_TS031_018",
+      "source_case": "RUN_TS031_049",
+      "action": "add_reviewed",
+      "question": "Did A attach or embed the separate piece of graphite in the eraser, using the eraser to hold it while writing?",
+      "answer": "no",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS031_018",
+        "question": "Did A attach or embed the separate piece of graphite in the eraser, using the eraser to hold it while writing?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_049",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did A attach or embed the separate piece of graphite in the eraser, using the eraser to hold it while writing?",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS031",
+      "case_id": "REVIEW_20261030_TS031_019",
+      "source_case": "RUN_TS031_051",
+      "action": "add_reviewed",
+      "question": "Did A insert the separate piece of graphite into the broken end of the pencil, so the pencil held it as a makeshift writing tip?",
+      "answer": "no",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS031_019",
+        "question": "Did A insert the separate piece of graphite into the broken end of the pencil, so the pencil held it as a makeshift writing tip?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_051",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did A insert the separate piece of graphite into the broken end of the pencil, so the pencil held it as a makeshift writing tip?",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS031",
+      "case_id": "REVIEW_20261030_TS031_020",
+      "source_case": "RUN_TS031_055",
+      "action": "add_reviewed",
+      "question": "Did A use the pencil as a straightedge or guide while making the message with the separate piece of graphite?",
+      "answer": "no",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS031_020",
+        "question": "Did A use the pencil as a straightedge or guide while making the message with the separate piece of graphite?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_055",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did A use the pencil as a straightedge or guide while making the message with the separate piece of graphite?",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS031",
+      "case_id": "REVIEW_20261030_TS031_021",
+      "source_case": "RUN_TS031_061",
+      "action": "add_reviewed",
+      "question": "Was the pencil used as part of a larger contraption or setup that enabled A to write with the separate graphite?",
+      "answer": "no",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS031_021",
+        "question": "Was the pencil used as part of a larger contraption or setup that enabled A to write with the separate graphite?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_061",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Was the pencil used as part of a larger contraption or setup that enabled A to write with the separate graphite?",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS031",
+      "case_id": "REVIEW_20261030_TS031_022",
+      "source_case": "RUN_TS031_003",
+      "action": "add_rewrite",
+      "question": "Did removing the eraser provide access for adding pencil lead, rather than using the eraser as a marking tool?",
+      "answer": "yes",
+      "reason": "移除盖子是访问步骤，不是拿橡皮作为刻画工具。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS031_022",
+        "question": "Did removing the eraser provide access for adding pencil lead, rather than using the eraser as a marking tool?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "移除盖子是访问步骤，不是拿橡皮作为刻画工具。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_003",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+          "source_kind": "model_generated",
+          "question_origin": "reviewer_rewrite",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did A use the eraser as a tool to make a message with some other material, rather than using the eraser itself to mark or erase the paper?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS031",
+      "case_id": "REVIEW_20261030_TS031_023",
+      "source_case": "RUN_TS031_011",
+      "action": "add_rewrite",
+      "question": "Did A remove the eraser because it covered the mechanical pencil's lead-refill opening?",
+      "answer": "yes",
+      "reason": "明确真实目的，避免只拿起整个普通铅笔的错误因果。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS031_023",
+        "question": "Did A remove the eraser because it covered the mechanical pencil's lead-refill opening?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "明确真实目的，避免只拿起整个普通铅笔的错误因果。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_011",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+          "source_kind": "model_generated",
+          "question_origin": "reviewer_rewrite",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did A pick up the eraser because a pencil was attached to it or otherwise incorporated into it, and then use that pencil to write the message?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS031",
+      "case_id": "REVIEW_20261030_TS031_024",
+      "source_case": "RUN_TS031_013",
+      "action": "add_rewrite",
+      "question": "Was this a mechanical pencil with a removable eraser covering its refill opening?",
+      "answer": "yes",
+      "reason": "消除 ordinary pencil 对木制铅笔的歧义。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS031_024",
+        "question": "Was this a mechanical pencil with a removable eraser covering its refill opening?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "消除 ordinary pencil 对木制铅笔的歧义。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_013",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+          "source_kind": "model_generated",
+          "question_origin": "reviewer_rewrite",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Was the eraser attached to the end of an ordinary pencil, as a pencil-top eraser?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS031",
+      "case_id": "REVIEW_20261030_TS031_025",
+      "source_case": "RUN_TS031_016",
+      "action": "add_rewrite",
+      "question": "Was the message meant to demonstrate or reveal that the eraser had a pencil attached to it?",
+      "answer": "no",
+      "reason": "展示附带铅笔不是写留言的解释性目的。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS031_025",
+        "question": "Was the message meant to demonstrate or reveal that the eraser had a pencil attached to it?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "展示附带铅笔不是写留言的解释性目的。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_016",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+          "source_kind": "model_generated",
+          "question_origin": "reviewer_rewrite",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Was the message meant to demonstrate or reveal that the eraser had a pencil attached to it?",
+          "original_answer": "irrelevant",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS031",
+      "case_id": "REVIEW_20261030_TS031_026",
+      "source_case": "RUN_TS031_048",
+      "action": "add_rewrite",
+      "question": "Did A insert replacement graphite lead inside the mechanical pencil and then write using that pencil?",
+      "answer": "yes",
+      "reason": "铅芯在笔内，非外置独立绘图装置。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS031_026",
+        "question": "Did A insert replacement graphite lead inside the mechanical pencil and then write using that pencil?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "铅芯在笔内，非外置独立绘图装置。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_048",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+          "source_kind": "model_generated",
+          "question_origin": "reviewer_rewrite",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did A use the eraser-attached pencil as a holder or support for a separate piece of graphite while writing?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS031",
+      "case_id": "REVIEW_20261030_TS031_027",
+      "source_case": "RUN_TS031_057",
+      "action": "add_rewrite",
+      "question": "Did A use the pencil to prop up an external apparatus that held a separate piece of graphite for writing?",
+      "answer": "no",
+      "reason": "独立外部支撑装置不是汤底。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS031_027",
+        "question": "Did A use the pencil to prop up an external apparatus that held a separate piece of graphite for writing?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "独立外部支撑装置不是汤底。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_057",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+          "source_kind": "model_generated",
+          "question_origin": "reviewer_rewrite",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the pencil support the separate graphite indirectly, through another object or part, while A wrote?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS031",
+      "case_id": "REVIEW_20261030_TS031_028",
+      "source_case": "RUN_TS031_085",
+      "action": "add_rewrite",
+      "question": "Does the story require a separate guide or support apparatus in addition to the refilled mechanical pencil?",
+      "answer": "no",
+      "reason": "不将内部笔结构重新解释成第三个装置。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS031_028",
+        "question": "Does the story require a separate guide or support apparatus in addition to the refilled mechanical pencil?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "不将内部笔结构重新解释成第三个装置。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_085",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+          "source_kind": "model_generated",
+          "question_origin": "reviewer_rewrite",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the pencil support an object that helped guide or control the separate graphite as it rubbed across the paper?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS033",
+      "case_id": "SHARE_6adf3775_120",
+      "source_case": "SHARE_6adf3775_120",
+      "action": "correct_label",
+      "question": "Did he add more cash because the kidnappers had demanded a ransom greater than one million yen?",
+      "answer": "no",
+      "reason": "因果错配：增加真钞是怕假钞被发现，不是单因索要金额高于一百万。高额赎金为真不等于此因果成立。",
+      "before": {
+        "case_id": "SHARE_6adf3775_120",
+        "question": "Did he add more cash because the kidnappers had demanded a ransom greater than one million yen?",
+        "answer": "yes",
+        "rationale": "The demand is fifty million yen, exceeding one million; extra real top bundles conceal the deception, not necessarily make the whole bag genuine.",
+        "public_history": [],
+        "review_status": "user_history_ai_adjudicated_pending_human",
+        "provenance": {
+          "source_url": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "message_id": "b7aba170-1b67-4e05-a978-a882de5f004b",
+          "feedback_message_id": "b749b51c-e996-4a23-bf22-ff7c32d87702",
+          "source_case": "SHARE_6adf3775_120",
+          "human_confirmed": false,
+          "question_origin": "user_shared_player_question",
+          "answer_origin": "user_supplied_history",
+          "reviewer": "codex_root",
+          "review_date": "2026-10-26"
+        }
+      },
+      "example": {
+        "case_id": "SHARE_6adf3775_120",
+        "question": "Did he add more cash because the kidnappers had demanded a ransom greater than one million yen?",
+        "answer": "no",
+        "rationale": "因果错配：增加真钞是怕假钞被发现，不是单因索要金额高于一百万。高额赎金为真不等于此因果成立。",
+        "public_history": [],
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_url": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "message_id": "b7aba170-1b67-4e05-a978-a882de5f004b",
+          "feedback_message_id": "b749b51c-e996-4a23-bf22-ff7c32d87702",
+          "source_case": "SHARE_6adf3775_120",
+          "human_confirmed": false,
+          "question_origin": "user_shared_player_question",
+          "answer_origin": "ai_corrected_user_history",
+          "reviewer": "codex_root",
+          "review_date": "2026-10-26",
+          "original_answer": "yes"
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_030",
+      "source_case": "RUN_TS035_001",
+      "action": "add_reviewed",
+      "question": "Is the father’s fear that the bear may eat villagers’ relatives after they die, rather than attack living people?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_030",
+        "question": "Is the father’s fear that the bear may eat villagers’ relatives after they die, rather than attack living people?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_001",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Is the father’s fear that the bear may eat villagers’ relatives after they die, rather than attack living people?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_031",
+      "source_case": "RUN_TS035_005",
+      "action": "add_reviewed",
+      "question": "Was the daughter already dead before the bear began eating her, rather than having been killed by the bear?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_031",
+        "question": "Was the daughter already dead before the bear began eating her, rather than having been killed by the bear?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_005",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Was the daughter already dead before the bear began eating her, rather than having been killed by the bear?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_032",
+      "source_case": "RUN_TS035_006",
+      "action": "add_reviewed",
+      "question": "Was the daughter’s body buried before the bear began eating it?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_032",
+        "question": "Was the daughter’s body buried before the bear began eating it?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_006",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Was the daughter’s body buried before the bear began eating it?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_033",
+      "source_case": "RUN_TS035_007",
+      "action": "add_reviewed",
+      "question": "Did the bear find the daughter because her grave was shallow or otherwise easy to detect by smell?",
+      "answer": "irrelevant",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_033",
+        "question": "Did the bear find the daughter because her grave was shallow or otherwise easy to detect by smell?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_007",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the bear find the daughter because her grave was shallow or otherwise easy to detect by smell?",
+          "original_answer": "irrelevant",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_034",
+      "source_case": "RUN_TS035_009",
+      "action": "add_reviewed",
+      "question": "Did the bear dig the daughter’s body out of her grave before eating it?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_034",
+        "question": "Did the bear dig the daughter’s body out of her grave before eating it?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_009",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the bear dig the daughter’s body out of her grave before eating it?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_035",
+      "source_case": "RUN_TS035_010",
+      "action": "add_reviewed",
+      "question": "Was this same bear responsible for digging up and eating at least one other villager’s buried dead before it dug up the daughter?",
+      "answer": "irrelevant",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_035",
+        "question": "Was this same bear responsible for digging up and eating at least one other villager’s buried dead before it dug up the daughter?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_010",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Was this same bear responsible for digging up and eating at least one other villager’s buried dead before it dug up the daughter?",
+          "original_answer": "irrelevant",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_036",
+      "source_case": "RUN_TS035_013",
+      "action": "add_reviewed",
+      "question": "Did the daughter die of natural causes before she was buried?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_036",
+        "question": "Did the daughter die of natural causes before she was buried?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_013",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the daughter die of natural causes before she was buried?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_037",
+      "source_case": "RUN_TS035_018",
+      "action": "add_reviewed",
+      "question": "Could other bears still dig up and eat villagers’ buried dead even after this bear is killed?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_037",
+        "question": "Could other bears still dig up and eat villagers’ buried dead even after this bear is killed?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_018",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Could other bears still dig up and eat villagers’ buried dead even after this bear is killed?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_038",
+      "source_case": "RUN_TS035_020",
+      "action": "add_reviewed",
+      "question": "Were villagers’ dead buried without coffins or other physical protection that would keep bears from reaching the bodies?",
+      "answer": "irrelevant",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_038",
+        "question": "Were villagers’ dead buried without coffins or other physical protection that would keep bears from reaching the bodies?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_020",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Were villagers’ dead buried without coffins or other physical protection that would keep bears from reaching the bodies?",
+          "original_answer": "irrelevant",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_039",
+      "source_case": "RUN_TS035_023",
+      "action": "add_reviewed",
+      "question": "Did the villagers bury their dead without cremating the bodies first?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_039",
+        "question": "Did the villagers bury their dead without cremating the bodies first?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_023",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the villagers bury their dead without cremating the bodies first?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_040",
+      "source_case": "RUN_TS035_025",
+      "action": "add_reviewed",
+      "question": "Was cremation unavailable in the newly settled village, which is why the villagers buried their dead uncremated?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_040",
+        "question": "Was cremation unavailable in the newly settled village, which is why the villagers buried their dead uncremated?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_025",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Was cremation unavailable in the newly settled village, which is why the villagers buried their dead uncremated?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_041",
+      "source_case": "RUN_TS035_029",
+      "action": "add_reviewed",
+      "question": "Would cremating the dead have prevented bears from digging up and eating their bodies?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_041",
+        "question": "Would cremating the dead have prevented bears from digging up and eating their bodies?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_029",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Would cremating the dead have prevented bears from digging up and eating their bodies?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_042",
+      "source_case": "RUN_TS035_030",
+      "action": "add_reviewed",
+      "question": "Was cremation unavailable because the newly settled village had no crematorium or other facilities for cremating its dead?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_042",
+        "question": "Was cremation unavailable because the newly settled village had no crematorium or other facilities for cremating its dead?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_030",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Was cremation unavailable because the newly settled village had no crematorium or other facilities for cremating its dead?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_043",
+      "source_case": "RUN_TS035_034",
+      "action": "add_reviewed",
+      "question": "Were other villagers’ uncremated relatives already buried and at risk when the father found the bear?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_043",
+        "question": "Were other villagers’ uncremated relatives already buried and at risk when the father found the bear?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_034",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Were other villagers’ uncremated relatives already buried and at risk when the father found the bear?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_044",
+      "source_case": "RUN_TS035_036",
+      "action": "add_reviewed",
+      "question": "Did the father intend to persuade the villagers to find a way to cremate their dead after witnessing the bear dig up his daughter’s grave?",
+      "answer": "irrelevant",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_044",
+        "question": "Did the father intend to persuade the villagers to find a way to cremate their dead after witnessing the bear dig up his daughter’s grave?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_036",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the father intend to persuade the villagers to find a way to cremate their dead after witnessing the bear dig up his daughter’s grave?",
+          "original_answer": "irrelevant",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_045",
+      "source_case": "RUN_TS035_039",
+      "action": "add_reviewed",
+      "question": "Before the bear dug up the daughter’s grave, had any bear already dug up and eaten another villager’s buried body?",
+      "answer": "irrelevant",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_045",
+        "question": "Before the bear dug up the daughter’s grave, had any bear already dug up and eaten another villager’s buried body?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_039",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Before the bear dug up the daughter’s grave, had any bear already dug up and eaten another villager’s buried body?",
+          "original_answer": "irrelevant",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_046",
+      "source_case": "RUN_TS035_040",
+      "action": "add_reviewed",
+      "question": "Was the bear able to locate the daughter’s buried body by smelling it underground?",
+      "answer": "irrelevant",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_046",
+        "question": "Was the bear able to locate the daughter’s buried body by smelling it underground?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_040",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Was the bear able to locate the daughter’s buried body by smelling it underground?",
+          "original_answer": "irrelevant",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_047",
+      "source_case": "RUN_TS035_044",
+      "action": "add_reviewed",
+      "question": "Was the daughter’s burial intended to be temporary, with the villagers planning to cremate her later when they had the means?",
+      "answer": "irrelevant",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_047",
+        "question": "Was the daughter’s burial intended to be temporary, with the villagers planning to cremate her later when they had the means?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_044",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Was the daughter’s burial intended to be temporary, with the villagers planning to cremate her later when they had the means?",
+          "original_answer": "irrelevant",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_048",
+      "source_case": "RUN_TS035_046",
+      "action": "add_reviewed",
+      "question": "Did the villagers have any practical way to protect the bodies already buried from bears, other than cremating them?",
+      "answer": "irrelevant",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_048",
+        "question": "Did the villagers have any practical way to protect the bodies already buried from bears, other than cremating them?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_046",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the villagers have any practical way to protect the bodies already buried from bears, other than cremating them?",
+          "original_answer": "irrelevant",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_049",
+      "source_case": "RUN_TS035_048",
+      "action": "add_reviewed",
+      "question": "Could villagers protect the bodies already buried by making their graves deeper or otherwise reinforcing them, without cremating the bodies?",
+      "answer": "irrelevant",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_049",
+        "question": "Could villagers protect the bodies already buried by making their graves deeper or otherwise reinforcing them, without cremating the bodies?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_048",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Could villagers protect the bodies already buried by making their graves deeper or otherwise reinforcing them, without cremating the bodies?",
+          "original_answer": "irrelevant",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_050",
+      "source_case": "RUN_TS035_050",
+      "action": "add_reviewed",
+      "question": "Was he afraid that other villagers might discover bears eating the remains of their own relatives, as he had discovered with his daughter?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_050",
+        "question": "Was he afraid that other villagers might discover bears eating the remains of their own relatives, as he had discovered with his daughter?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_050",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Was he afraid that other villagers might discover bears eating the remains of their own relatives, as he had discovered with his daughter?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_051",
+      "source_case": "RUN_TS035_055",
+      "action": "add_reviewed",
+      "question": "Did the bear’s behavior reflect ordinary scavenging of an accessible corpse, rather than an unusual predatory attack on a person?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_051",
+        "question": "Did the bear’s behavior reflect ordinary scavenging of an accessible corpse, rather than an unusual predatory attack on a person?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_055",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the bear’s behavior reflect ordinary scavenging of an accessible corpse, rather than an unusual predatory attack on a person?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_052",
+      "source_case": "RUN_TS035_065",
+      "action": "add_reviewed",
+      "question": "Was the daughter’s grave located in the forest where her father found the bear?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_052",
+        "question": "Was the daughter’s grave located in the forest where her father found the bear?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_065",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Was the daughter’s grave located in the forest where her father found the bear?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_053",
+      "source_case": "RUN_TS035_081",
+      "action": "add_reviewed",
+      "question": "Was cremation unavailable because Meiji-era law prohibited it, rather than because this newly settled village lacked cremation facilities?",
+      "answer": "no",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_053",
+        "question": "Was cremation unavailable because Meiji-era law prohibited it, rather than because this newly settled village lacked cremation facilities?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_081",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Was cremation unavailable because Meiji-era law prohibited it, rather than because this newly settled village lacked cremation facilities?",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_054",
+      "source_case": "RUN_TS035_086",
+      "action": "add_reviewed",
+      "question": "Were the graves vulnerable because the villagers buried the bodies only shallowly? ",
+      "answer": "irrelevant",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_054",
+        "question": "Were the graves vulnerable because the villagers buried the bodies only shallowly? ",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_086",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Were the graves vulnerable because the villagers buried the bodies only shallowly? ",
+          "original_answer": "irrelevant",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_055",
+      "source_case": "RUN_TS035_094",
+      "action": "add_reviewed",
+      "question": "Did seeing the bear dig up his daughter’s grave convince the father that the other already-buried, uncremated bodies were also at risk?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_055",
+        "question": "Did seeing the bear dig up his daughter’s grave convince the father that the other already-buried, uncremated bodies were also at risk?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_094",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did seeing the bear dig up his daughter’s grave convince the father that the other already-buried, uncremated bodies were also at risk?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_056",
+      "source_case": "RUN_TS035_008",
+      "action": "add_rewrite",
+      "question": "Had bears already dug up and eaten other villagers’ buried dead before this incident?",
+      "answer": "irrelevant",
+      "reason": "此前其他墓的事件未说明。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_056",
+        "question": "Had bears already dug up and eaten other villagers’ buried dead before this incident?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "此前其他墓的事件未说明。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_008",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "reviewer_rewrite",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Had bears already dug up and eaten other villagers’ buried dead before this incident?",
+          "original_answer": "yes and no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_057",
+      "source_case": "RUN_TS035_019",
+      "action": "add_rewrite",
+      "question": "Did he fear other bears could reach the other forest graves and eat the bodies buried there?",
+      "answer": "yes",
+      "reason": "森林坟墓，不新增正式墓园。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_057",
+        "question": "Did he fear other bears could reach the other forest graves and eat the bodies buried there?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "森林坟墓，不新增正式墓园。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_019",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "reviewer_rewrite",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Was his concern that bears could keep getting into the village cemetery and eating other buried people, regardless of whether this particular bear survived?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_058",
+      "source_case": "RUN_TS035_056",
+      "action": "add_rewrite",
+      "question": "Would villagers be distressed by bears eating their dead relatives, and is it also established that bears pose absolutely no danger to living people?",
+      "answer": "yes and no",
+      "reason": "悲痛合理；绝对零风险不成立。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_058",
+        "question": "Would villagers be distressed by bears eating their dead relatives, and is it also established that bears pose absolutely no danger to living people?",
+        "answer": "yes and no",
+        "public_history": [],
+        "rationale": "悲痛合理；绝对零风险不成立。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_056",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "reviewer_rewrite",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Would villagers’ distress come from discovering bears eating their deceased relatives, even though the bears posed no danger to living people?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_059",
+      "source_case": "RUN_TS035_068",
+      "action": "add_rewrite",
+      "question": "Did the father fear other villagers’ buried relatives would also be eaten?",
+      "answer": "yes",
+      "reason": "保留核心担忧，不杜撰悲痛与遗体受损孰轻孰重。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_059",
+        "question": "Did the father fear other villagers’ buried relatives would also be eaten?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "保留核心担忧，不杜撰悲痛与遗体受损孰轻孰重。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_068",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "reviewer_rewrite",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Was the ongoing consequence he feared chiefly that other villagers would be traumatized by finding bears eating their buried relatives?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_060",
+      "source_case": "RUN_TS035_083",
+      "action": "add_rewrite",
+      "question": "Is it established that other villagers’ buried relatives were subsequently eaten?",
+      "answer": "irrelevant",
+      "reason": "担忧不是后来事件已经发生。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_060",
+        "question": "Is it established that other villagers’ buried relatives were subsequently eaten?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "担忧不是后来事件已经发生。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_083",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "reviewer_rewrite",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the father expect that bears would eventually dig up and eat other villagers’ buried relatives, rather than merely recognize that it was possible?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "case_id": "REVIEW_20261030_TS035_061",
+      "source_case": "RUN_TS035_091",
+      "action": "add_rewrite",
+      "question": "Did the incident reveal the risk to the father, rather than establish that this bear taught other bears to eat humans?",
+      "answer": "yes",
+      "reason": "明确认知主体，不传递给其他熊。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS035_061",
+        "question": "Did the incident reveal the risk to the father, rather than establish that this bear taught other bears to eat humans?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "明确认知主体，不传递给其他熊。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_091",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+          "source_kind": "model_generated",
+          "question_origin": "reviewer_rewrite",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the father fear that bears would dig up the other graves because this bear had revealed that human corpses were an available food source to bears generally, even though it had not taught them to eat human bodies?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_062",
+      "source_case": "RUN_TS038_003",
+      "action": "add_reviewed",
+      "question": "Was the sentence written by someone other than the speaker who says, “I know I’m in trouble”?.",
+      "answer": "no",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_062",
+        "question": "Was the sentence written by someone other than the speaker who says, “I know I’m in trouble”?.",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_003",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Was the sentence written by someone other than the speaker who says, “I know I’m in trouble”?.",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_063",
+      "source_case": "RUN_TS038_004",
+      "action": "add_reviewed",
+      "question": "Did the speaker write the sentence repeatedly as a punishment or assignment?",
+      "answer": "no",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_063",
+        "question": "Did the speaker write the sentence repeatedly as a punishment or assignment?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_004",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the speaker write the sentence repeatedly as a punishment or assignment?",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_064",
+      "source_case": "RUN_TS038_005",
+      "action": "add_reviewed",
+      "question": "Did the speaker intentionally write the repeated sentence?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_064",
+        "question": "Did the speaker intentionally write the repeated sentence?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_005",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the speaker intentionally write the repeated sentence?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_065",
+      "source_case": "RUN_TS038_006",
+      "action": "add_reviewed",
+      "question": "Did the speaker write the sentence as part of a fictional or creative work?",
+      "answer": "no",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_065",
+        "question": "Did the speaker write the sentence as part of a fictional or creative work?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_006",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the speaker write the sentence as part of a fictional or creative work?",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_066",
+      "source_case": "RUN_TS038_007",
+      "action": "add_reviewed",
+      "question": "Did the speaker write the sentence by hand on a physical surface?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_066",
+        "question": "Did the speaker write the sentence by hand on a physical surface?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_007",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the speaker write the sentence by hand on a physical surface?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_067",
+      "source_case": "RUN_TS038_010",
+      "action": "add_reviewed",
+      "question": "Has someone else discovered the speaker’s handwritten draft?",
+      "answer": "irrelevant",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_067",
+        "question": "Has someone else discovered the speaker’s handwritten draft?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_010",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Has someone else discovered the speaker’s handwritten draft?",
+          "original_answer": "irrelevant",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_068",
+      "source_case": "RUN_TS038_019",
+      "action": "add_reviewed",
+      "question": "Did the speaker’s concealed action directly harm another person?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_068",
+        "question": "Did the speaker’s concealed action directly harm another person?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_019",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the speaker’s concealed action directly harm another person?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_069",
+      "source_case": "RUN_TS038_021",
+      "action": "add_reviewed",
+      "question": "Did the speaker accidentally cause the other person’s physical injury?",
+      "answer": "no",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_069",
+        "question": "Did the speaker accidentally cause the other person’s physical injury?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_021",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the speaker accidentally cause the other person’s physical injury?",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_070",
+      "source_case": "RUN_TS038_022",
+      "action": "add_reviewed",
+      "question": "Did the speaker deliberately cause the other person’s physical injury?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_070",
+        "question": "Did the speaker deliberately cause the other person’s physical injury?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_022",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the speaker deliberately cause the other person’s physical injury?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_071",
+      "source_case": "RUN_TS038_023",
+      "action": "add_reviewed",
+      "question": "Did the person the speaker deliberately injured die as a result?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_071",
+        "question": "Did the person the speaker deliberately injured die as a result?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_023",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the person the speaker deliberately injured die as a result?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_072",
+      "source_case": "RUN_TS038_024",
+      "action": "add_reviewed",
+      "question": "Did the speaker deliberately kill the person in order to protect themselves or someone else?",
+      "answer": "irrelevant",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_072",
+        "question": "Did the speaker deliberately kill the person in order to protect themselves or someone else?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_024",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the speaker deliberately kill the person in order to protect themselves or someone else?",
+          "original_answer": "irrelevant",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_073",
+      "source_case": "RUN_TS038_027",
+      "action": "add_reviewed",
+      "question": "Is the speaker worried they will be caught or punished for the killing?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_073",
+        "question": "Is the speaker worried they will be caught or punished for the killing?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_027",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Is the speaker worried they will be caught or punished for the killing?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_074",
+      "source_case": "RUN_TS038_028",
+      "action": "add_reviewed",
+      "question": "Was the killing committed during a robbery?",
+      "answer": "irrelevant",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_074",
+        "question": "Was the killing committed during a robbery?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_028",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Was the killing committed during a robbery?",
+          "original_answer": "irrelevant",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_075",
+      "source_case": "RUN_TS038_029",
+      "action": "add_reviewed",
+      "question": "Does the draft explicitly confess that the speaker killed someone?",
+      "answer": "no",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_075",
+        "question": "Does the draft explicitly confess that the speaker killed someone?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_029",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Does the draft explicitly confess that the speaker killed someone?",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_076",
+      "source_case": "RUN_TS038_032",
+      "action": "add_reviewed",
+      "question": "Was the draft meant to make the killing look like a suicide?",
+      "answer": "no",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_076",
+        "question": "Was the draft meant to make the killing look like a suicide?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_032",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Was the draft meant to make the killing look like a suicide?",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_077",
+      "source_case": "RUN_TS038_034",
+      "action": "add_reviewed",
+      "question": "Was the draft meant to look like a note written by the person the speaker killed?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_077",
+        "question": "Was the draft meant to look like a note written by the person the speaker killed?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_034",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Was the draft meant to look like a note written by the person the speaker killed?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_078",
+      "source_case": "RUN_TS038_035",
+      "action": "add_reviewed",
+      "question": "Did the speaker write the sentence repeatedly to practice imitating the murdered person’s handwriting?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_078",
+        "question": "Did the speaker write the sentence repeatedly to practice imitating the murdered person’s handwriting?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_035",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the speaker write the sentence repeatedly to practice imitating the murdered person’s handwriting?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_079",
+      "source_case": "RUN_TS038_036",
+      "action": "add_reviewed",
+      "question": "Did the speaker use a genuine sample of the victim’s handwriting to imitate it?",
+      "answer": "irrelevant",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_079",
+        "question": "Did the speaker use a genuine sample of the victim’s handwriting to imitate it?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_036",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the speaker use a genuine sample of the victim’s handwriting to imitate it?",
+          "original_answer": "irrelevant",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_080",
+      "source_case": "RUN_TS038_038",
+      "action": "add_reviewed",
+      "question": "Has the forged note already been found by the intended recipient?",
+      "answer": "irrelevant",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_080",
+        "question": "Has the forged note already been found by the intended recipient?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_038",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Has the forged note already been found by the intended recipient?",
+          "original_answer": "irrelevant",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_081",
+      "source_case": "RUN_TS038_039",
+      "action": "add_reviewed",
+      "question": "Did the speaker hide the victim’s body after killing them?",
+      "answer": "irrelevant",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_081",
+        "question": "Did the speaker hide the victim’s body after killing them?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_039",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the speaker hide the victim’s body after killing them?",
+          "original_answer": "irrelevant",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_082",
+      "source_case": "RUN_TS038_040",
+      "action": "add_reviewed",
+      "question": "Did the speaker become worried because the repeated practice made their own handwriting resemble the victim’s too closely, risking exposure?",
+      "answer": "no",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_082",
+        "question": "Did the speaker become worried because the repeated practice made their own handwriting resemble the victim’s too closely, risking exposure?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_040",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the speaker become worried because the repeated practice made their own handwriting resemble the victim’s too closely, risking exposure?",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_083",
+      "source_case": "RUN_TS038_041",
+      "action": "add_reviewed",
+      "question": "Is the speaker worried because they cannot convincingly imitate the victim’s handwriting?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_083",
+        "question": "Is the speaker worried because they cannot convincingly imitate the victim’s handwriting?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_041",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Is the speaker worried because they cannot convincingly imitate the victim’s handwriting?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_084",
+      "source_case": "RUN_TS038_045",
+      "action": "add_reviewed",
+      "question": "Was the sentence based on something the victim had actually written or said before their death?",
+      "answer": "irrelevant",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_084",
+        "question": "Was the sentence based on something the victim had actually written or said before their death?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_045",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Was the sentence based on something the victim had actually written or said before their death?",
+          "original_answer": "irrelevant",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_085",
+      "source_case": "RUN_TS038_046",
+      "action": "add_reviewed",
+      "question": "Did the speaker write these practice lines after killing the victim?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_085",
+        "question": "Did the speaker write these practice lines after killing the victim?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_046",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the speaker write these practice lines after killing the victim?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_086",
+      "source_case": "RUN_TS038_048",
+      "action": "add_reviewed",
+      "question": "Is the intended recipient of the forged note a law-enforcement officer?",
+      "answer": "irrelevant",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_086",
+        "question": "Is the intended recipient of the forged note a law-enforcement officer?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_048",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Is the intended recipient of the forged note a law-enforcement officer?",
+          "original_answer": "irrelevant",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_087",
+      "source_case": "RUN_TS038_052",
+      "action": "add_reviewed",
+      "question": "Was the victim’s note written in cursive, which the speaker is unable to imitate convincingly?",
+      "answer": "irrelevant",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_087",
+        "question": "Was the victim’s note written in cursive, which the speaker is unable to imitate convincingly?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_052",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Was the victim’s note written in cursive, which the speaker is unable to imitate convincingly?",
+          "original_answer": "irrelevant",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_088",
+      "source_case": "RUN_TS038_054",
+      "action": "add_reviewed",
+      "question": "Does the victim’s handwriting use an unusually stylized form, such as calligraphy?",
+      "answer": "irrelevant",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_088",
+        "question": "Does the victim’s handwriting use an unusually stylized form, such as calligraphy?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_054",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Does the victim’s handwriting use an unusually stylized form, such as calligraphy?",
+          "original_answer": "irrelevant",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_089",
+      "source_case": "RUN_TS038_057",
+      "action": "add_reviewed",
+      "question": "Is the speaker worried that the note will be recognized as a forgery because its handwriting does not convincingly match the victim’s?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_089",
+        "question": "Is the speaker worried that the note will be recognized as a forgery because its handwriting does not convincingly match the victim’s?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_057",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Is the speaker worried that the note will be recognized as a forgery because its handwriting does not convincingly match the victim’s?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_090",
+      "source_case": "RUN_TS038_065",
+      "action": "add_reviewed",
+      "question": "Is the speaker worried that the handwriting will expose the forgery even if the note’s wording supports the story that the victim left?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_090",
+        "question": "Is the speaker worried that the handwriting will expose the forgery even if the note’s wording supports the story that the victim left?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_065",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Is the speaker worried that the handwriting will expose the forgery even if the note’s wording supports the story that the victim left?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_091",
+      "source_case": "RUN_TS038_067",
+      "action": "add_reviewed",
+      "question": "Is the forged note intended to make the recipient believe that the victim left voluntarily?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_091",
+        "question": "Is the forged note intended to make the recipient believe that the victim left voluntarily?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_067",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Is the forged note intended to make the recipient believe that the victim left voluntarily?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_092",
+      "source_case": "RUN_TS038_074",
+      "action": "add_reviewed",
+      "question": "Does the speaker intend to impersonate the victim in person or through communications, in addition to forging the note?",
+      "answer": "irrelevant",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_092",
+        "question": "Does the speaker intend to impersonate the victim in person or through communications, in addition to forging the note?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_074",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Does the speaker intend to impersonate the victim in person or through communications, in addition to forging the note?",
+          "original_answer": "irrelevant",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_093",
+      "source_case": "RUN_TS038_086",
+      "action": "add_reviewed",
+      "question": "Is the note meant to make its recipient believe the victim left because they were disappointed in that recipient?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_093",
+        "question": "Is the note meant to make its recipient believe the victim left because they were disappointed in that recipient?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_086",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Is the note meant to make its recipient believe the victim left because they were disappointed in that recipient?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_094",
+      "source_case": "RUN_TS038_097",
+      "action": "add_reviewed",
+      "question": "Is the forged note meant to make the victim’s permanent disappearance look voluntary rather than the result of a killing?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_094",
+        "question": "Is the forged note meant to make the victim’s permanent disappearance look voluntary rather than the result of a killing?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_097",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Is the forged note meant to make the victim’s permanent disappearance look voluntary rather than the result of a killing?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_095",
+      "source_case": "RUN_TS038_099",
+      "action": "add_reviewed",
+      "question": "Is the repeated sentence the wording the speaker plans to use in the forged note?",
+      "answer": "yes",
+      "reason": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_095",
+        "question": "Is the repeated sentence the wording the speaker plans to use in the forged note?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_099",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "source_verbatim",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Is the repeated sentence the wording the speaker plans to use in the forged note?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_096",
+      "source_case": "RUN_TS038_002",
+      "action": "add_rewrite",
+      "question": "Did the narrator himself repeatedly write the quoted sentence while trying to forge his wife’s handwriting?",
+      "answer": "yes",
+      "reason": "区分写字者、假署名者与未定收信人。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_096",
+        "question": "Did the narrator himself repeatedly write the quoted sentence while trying to forge his wife’s handwriting?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "区分写字者、假署名者与未定收信人。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_002",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "reviewer_rewrite",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Is the repeated sentence written somewhere for the speaker to read?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_097",
+      "source_case": "RUN_TS038_012",
+      "action": "add_rewrite",
+      "question": "Does the poor handwriting imitation risk exposing the narrator’s attempt to conceal the killing?",
+      "answer": "yes",
+      "reason": "是暴露风险，不是已经有人发现。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_097",
+        "question": "Does the poor handwriting imitation risk exposing the narrator’s attempt to conceal the killing?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "是暴露风险，不是已经有人发现。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_012",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "reviewer_rewrite",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Is the speaker worried because the draft reveals something they intended to keep secret from its recipient?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_098",
+      "source_case": "RUN_TS038_030",
+      "action": "add_rewrite",
+      "question": "Was the forged note intended to prove that the narrator was somewhere else when the killing happened?",
+      "answer": "no",
+      "reason": "严格不在场证明与隐瞒死亡不同。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_098",
+        "question": "Was the forged note intended to prove that the narrator was somewhere else when the killing happened?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "严格不在场证明与隐瞒死亡不同。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_030",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "reviewer_rewrite",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the speaker write the draft to create or support an alibi for the killing?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_099",
+      "source_case": "RUN_TS038_030",
+      "action": "add_rewrite",
+      "question": "Was the forged note intended to conceal the killing by making the wife’s disappearance look voluntary?",
+      "answer": "yes",
+      "reason": "说明真正掩盖机制。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_099",
+        "question": "Was the forged note intended to conceal the killing by making the wife’s disappearance look voluntary?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "说明真正掩盖机制。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_030",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "reviewer_rewrite",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the speaker write the draft to create or support an alibi for the killing?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_100",
+      "source_case": "RUN_TS038_051",
+      "action": "add_rewrite",
+      "question": "Is the exact writing system or alphabet used in the forged note specified?",
+      "answer": "no",
+      "reason": "是否已说明是可判定元问题。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_100",
+        "question": "Is the exact writing system or alphabet used in the forged note specified?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "是否已说明是可判定元问题。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_051",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "reviewer_rewrite",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Is the victim’s handwriting difficult to imitate because it uses a non-Latin writing system?",
+          "original_answer": "no",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_101",
+      "source_case": "RUN_TS038_080",
+      "action": "add_rewrite",
+      "question": "Does the story establish a plan to send additional impersonation messages beyond the forged leaving note?",
+      "answer": "no",
+      "reason": "未建立额外通信计划；不等于断言绝不会发生。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_101",
+        "question": "Does the story establish a plan to send additional impersonation messages beyond the forged leaving note?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "未建立额外通信计划；不等于断言绝不会发生。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_080",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "reviewer_rewrite",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Does the speaker plan to send communications pretending to be the victim after the killing?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_102",
+      "source_case": "RUN_TS038_083",
+      "action": "add_rewrite",
+      "question": "Is the forged leaving note being prepared by hand?",
+      "answer": "yes",
+      "reason": "手写已说明，实际寄出尚未说明。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_102",
+        "question": "Is the forged leaving note being prepared by hand?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "手写已说明，实际寄出尚未说明。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_083",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "reviewer_rewrite",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Will the speaker send the forged note as a handwritten note?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "case_id": "REVIEW_20261030_TS038_103",
+      "source_case": "RUN_TS038_083",
+      "action": "add_rewrite",
+      "question": "Was the forged note eventually sent or delivered?",
+      "answer": "irrelevant",
+      "reason": "故事停在练习伪造失败，不断言后续执行。",
+      "example": {
+        "case_id": "REVIEW_20261030_TS038_103",
+        "question": "Was the forged note eventually sent or delivered?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "故事停在练习伪造失败，不断言后续执行。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_083",
+          "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+          "source_kind": "model_generated",
+          "question_origin": "reviewer_rewrite",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Will the speaker send the forged note as a handwritten note?",
+          "original_answer": "yes",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      }
+    }
+  ],
+  "packs": {
+    "TS031": {
+      "before_sha256": "9bd7f9be4f8b527593bdb581b7649e88ba64c8b098b154f515962316647efb0e",
+      "after_sha256": "21078a971809318ec177e1127fab7bb72f41aef437618fbc5b1b447f4c91be78"
+    },
+    "TS033": {
+      "before_sha256": "76104bc4ca350c7d12b7323958779bec3d83c41d206d67390babfd08f98e07ae",
+      "after_sha256": "146cb0223f7ffbad7e05d103ae7064348aa2d9320cec1e9fe7e28363d7aac67a"
+    },
+    "TS035": {
+      "before_sha256": "ff5a81403794489fb31000e479dae74cf4967916e0e33b3c2e5fec676c9e60d4",
+      "after_sha256": "87933c0dc4250533adc572694a953a5ff98f1f550e2386b236f8814808414d6b"
+    },
+    "TS038": {
+      "before_sha256": "7d14570922e15b1e890ec909ab00c41a9752136656c51be63ed077210ab1b35c",
+      "after_sha256": "740a2ae72714e1ed7e0160143e65f062ac86b1dcbfe6272fcc6d672146587af3"
+    }
+  },
+  "context_sha256_before": {
+    "TS001": "ada2bc05e1ecc4693ce3f014672d2ba485f2346894eac18c3f8d0e2c6431679e",
+    "TS002": "48c8a1b6cc86419dcfc34036f688607125d9f9384d1fcde6f863020b9b73ee45",
+    "TS003": "4dcd30076b607e2bde0940ee57d477ff930dfa4d0f06bdf22d66ab34e481de5b",
+    "TS004": "fc954270c350d9dd997e02e1edf18b817c6ca123ca3b23604d778a2878ab3e79",
+    "TS005": "54da85763574eed62b80949a79cf581ad376fcd2535e8eaf05a9007c563e417b",
+    "TS006": "3e76e1603989a470a0985655992bc9a2319d3a56bba8d07d1dbc13f13b19644c",
+    "TS007": "5e2f195b3f0fb16fc96bc8225c768f749505b8146748d5317db17bf432d0500d",
+    "TS008": "f8a407e784d4b82cec6d491077b57a7ae4a05c6925b09ffd968e128bd989e9c3",
+    "TS009": "3015ca48e7809e5e5e0612f31afdfee2adabc1dd4347c2b620cfda459ada01ae",
+    "TS010": "79baba4c200a8821731c66cbbb5768ce1d3360f6260b9b562cb5bc912e90e815",
+    "TS011": "f519b74ef25292e11f0ac1088d521965cddf9eb58fdbb128ade01aa80f889ae3",
+    "TS012": "47a6bdf60dc6eeaf3f70b50e1662078d0e236e13e9ff28799920745adeda6aaa",
+    "TS013": "5be0dd8810700ae60c596c6ba3df1c4124ebd16b0da0c5c2dc046030657cfd61",
+    "TS014": "e8181631d8d2e3c97bf5a7c30ec6ecaa85c76dcfc8cb00149a22ccddcfe88c3d",
+    "TS015": "e39cc0aebf4dd3531ae4bcf7a4fbf2834d8f78e94cb1639ce1937cf67ccfbf6c",
+    "TS016": "f66a04f1f24422dee11c2f1a6306a91e248087086df328a05041b2339e320012",
+    "TS017": "13a37b5d7215eb6317375ed248fed7703ec12201e93e81a9f295416df228071f",
+    "TS018": "9682a010b60b8bc406d0953bdf59d4a8958a0e81dfc2d7717909718878494ed9",
+    "TS019": "6bf315af04503be75fedd78dc8a1c1d3197a09bae38323b5b6a686824a5c8ea5",
+    "TS020": "b4fee77929ec0a6c8fd721c0d2731d1f055c7c8eccec1ffab7c580df510b01d1",
+    "TS021": "20beafa6c79de2ca07e840f0924071437a92d8b63e8c2384bde10c8c4451776b",
+    "TS022": "0bbe502549fcd33c6b2570eaf26c0e4fe7a3c233da571fee5847dded07af0486",
+    "TS023": "ba61908070a9770171e5e2053b48fcec8fc0ad99dcf31ead1471599144ffea3d",
+    "TS024": "b9a0add57839e647df168877a9ebcf092bcbfe9bb8380bea72190bd47076c597",
+    "TS025": "7e1dc2ef4f6eb84ecf66bc91c77eecd2d3ef851a337abef9054db32e121bb0c9",
+    "TS026": "cbaa8c4cc6bfe415587b43468a75dff7d1b9aea04f1f660c3f2b1d633551e313",
+    "TS027": "a822ba421a4d32824ff4eada2ff6b27e3affbaa8585514a782159670bf8f0a93",
+    "TS028": "775b5299856722c72e13f0020dbf0d54da64d8296f1477dd82c13a7435ccc7a9",
+    "TS029": "273314cad52ca5f66cdce60ee7a077ff78fbd26073d72929f394d35475854c03",
+    "TS030": "3b36c0d0eeae8da9c73bacdc418ff04bf1a5c7cc1385cf4f173ac7cc5ff72709",
+    "TS031": "13d0557cd7a26f41213a6c55e6545dbc4c2bceb38858418524464696c2ce8b00",
+    "TS032": "baf40dd42bbee2bc289996aaa5dd9d8be3ec8db3fda6e1c89680d440591987ba",
+    "TS033": "d751cfe590330a06014c065906bc6b380bf77ad1657986217a14f673fc57c323",
+    "TS034": "e6e1584a221467df5c30f6788539155a0f74625ad7feff1a51d38aab28e4c39a",
+    "TS035": "42ed9354decaf224a90c4f254c18cf957e4bbcaaac3b0da352b5a8e1d8d87730",
+    "TS036": "bf2837c40fcdc8bafc575d0ec856289299dfbd80e19097120bcaa40783a92c6f",
+    "TS037": "0dd794a8989605b9be45e503252798a20f6fae6a47ffcd70d116ce0e00bf8fe5",
+    "TS038": "20cb4c16afaba879580856ce39bd1aefe3b92989f12f0cdb72238b787ced21d0",
+    "TS039": "b7d235bed4d111059cf29d9ac92dfbc90668284db07864981713b9847e0ec235",
+    "TS040": "c66af0e304379c1e139fde5bd61f1aaf9ea347f08aa090b9c4dfae39da2669d3",
+    "TS041": "e64a5e4a628eddafa279fc07d568454475290f7df1f69bacaa3c3302734a9e75",
+    "TS042": "e32a06d97b5f2dc8e4db82c3302c0e24ecabb81733f4fad24b9aa27b2dec1bb4",
+    "TS043": "492a788e03f33260cb09d8cf0a1d6f0b3b23e82a961d56686c33e43eff7aca40",
+    "TS044": "d65c38b8fe739944e76959524f2d1a40bd121b940672445ec799899d1824a17b",
+    "TS045": "fae899f8ca337439318953b75d3dedacba94332351e24a88cd97859a01346a51",
+    "TS046": "c3feace7ca040a1e0ee497ee56ee53956f1a1945c40d347f4f8b41170e597c91",
+    "TS047": "594126eaa4a7475e0193ddf2401062b150d686efa5c286785c33155a4a2bf013",
+    "TS048": "0690b7eb4391e944816fadc7385cfe8caf4bd42025b40b6c58786f1b58ef7b31",
+    "TS049": "59be27d3b382c45955a136daad3cc33be26f90f5787aee9f248bf51fb9c0438c",
+    "TS050": "997ab2b74991d2317468f679b5e8256db84544cdcb9f31fa0ce7f00524f14563"
+  },
+  "context_sha256_after": {
+    "TS001": "ada2bc05e1ecc4693ce3f014672d2ba485f2346894eac18c3f8d0e2c6431679e",
+    "TS002": "48c8a1b6cc86419dcfc34036f688607125d9f9384d1fcde6f863020b9b73ee45",
+    "TS003": "4dcd30076b607e2bde0940ee57d477ff930dfa4d0f06bdf22d66ab34e481de5b",
+    "TS004": "fc954270c350d9dd997e02e1edf18b817c6ca123ca3b23604d778a2878ab3e79",
+    "TS005": "54da85763574eed62b80949a79cf581ad376fcd2535e8eaf05a9007c563e417b",
+    "TS006": "3e76e1603989a470a0985655992bc9a2319d3a56bba8d07d1dbc13f13b19644c",
+    "TS007": "5e2f195b3f0fb16fc96bc8225c768f749505b8146748d5317db17bf432d0500d",
+    "TS008": "f8a407e784d4b82cec6d491077b57a7ae4a05c6925b09ffd968e128bd989e9c3",
+    "TS009": "3015ca48e7809e5e5e0612f31afdfee2adabc1dd4347c2b620cfda459ada01ae",
+    "TS010": "79baba4c200a8821731c66cbbb5768ce1d3360f6260b9b562cb5bc912e90e815",
+    "TS011": "f519b74ef25292e11f0ac1088d521965cddf9eb58fdbb128ade01aa80f889ae3",
+    "TS012": "47a6bdf60dc6eeaf3f70b50e1662078d0e236e13e9ff28799920745adeda6aaa",
+    "TS013": "5be0dd8810700ae60c596c6ba3df1c4124ebd16b0da0c5c2dc046030657cfd61",
+    "TS014": "e8181631d8d2e3c97bf5a7c30ec6ecaa85c76dcfc8cb00149a22ccddcfe88c3d",
+    "TS015": "e39cc0aebf4dd3531ae4bcf7a4fbf2834d8f78e94cb1639ce1937cf67ccfbf6c",
+    "TS016": "f66a04f1f24422dee11c2f1a6306a91e248087086df328a05041b2339e320012",
+    "TS017": "13a37b5d7215eb6317375ed248fed7703ec12201e93e81a9f295416df228071f",
+    "TS018": "9682a010b60b8bc406d0953bdf59d4a8958a0e81dfc2d7717909718878494ed9",
+    "TS019": "6bf315af04503be75fedd78dc8a1c1d3197a09bae38323b5b6a686824a5c8ea5",
+    "TS020": "b4fee77929ec0a6c8fd721c0d2731d1f055c7c8eccec1ffab7c580df510b01d1",
+    "TS021": "20beafa6c79de2ca07e840f0924071437a92d8b63e8c2384bde10c8c4451776b",
+    "TS022": "0bbe502549fcd33c6b2570eaf26c0e4fe7a3c233da571fee5847dded07af0486",
+    "TS023": "ba61908070a9770171e5e2053b48fcec8fc0ad99dcf31ead1471599144ffea3d",
+    "TS024": "b9a0add57839e647df168877a9ebcf092bcbfe9bb8380bea72190bd47076c597",
+    "TS025": "7e1dc2ef4f6eb84ecf66bc91c77eecd2d3ef851a337abef9054db32e121bb0c9",
+    "TS026": "cbaa8c4cc6bfe415587b43468a75dff7d1b9aea04f1f660c3f2b1d633551e313",
+    "TS027": "a822ba421a4d32824ff4eada2ff6b27e3affbaa8585514a782159670bf8f0a93",
+    "TS028": "775b5299856722c72e13f0020dbf0d54da64d8296f1477dd82c13a7435ccc7a9",
+    "TS029": "273314cad52ca5f66cdce60ee7a077ff78fbd26073d72929f394d35475854c03",
+    "TS030": "3b36c0d0eeae8da9c73bacdc418ff04bf1a5c7cc1385cf4f173ac7cc5ff72709",
+    "TS031": "0230385323a3305e1def20d46782ac520f22e8fad568544bae4823a196fb5941",
+    "TS032": "baf40dd42bbee2bc289996aaa5dd9d8be3ec8db3fda6e1c89680d440591987ba",
+    "TS033": "92817380fb21511202168a45f000210e9d819dda9040fc0fe94ac2085556f722",
+    "TS034": "e6e1584a221467df5c30f6788539155a0f74625ad7feff1a51d38aab28e4c39a",
+    "TS035": "058bceb4e89fd16bb13e4dc25ac7f21907770cb9a402185f629483c82c617b4b",
+    "TS036": "bf2837c40fcdc8bafc575d0ec856289299dfbd80e19097120bcaa40783a92c6f",
+    "TS037": "0dd794a8989605b9be45e503252798a20f6fae6a47ffcd70d116ce0e00bf8fe5",
+    "TS038": "bf6ec1a5f54c0a32624c8feed60f0a52ba4c8987d29bc52ccb9d888a8822d8b3",
+    "TS039": "b7d235bed4d111059cf29d9ac92dfbc90668284db07864981713b9847e0ec235",
+    "TS040": "c66af0e304379c1e139fde5bd61f1aaf9ea347f08aa090b9c4dfae39da2669d3",
+    "TS041": "e64a5e4a628eddafa279fc07d568454475290f7df1f69bacaa3c3302734a9e75",
+    "TS042": "e32a06d97b5f2dc8e4db82c3302c0e24ecabb81733f4fad24b9aa27b2dec1bb4",
+    "TS043": "492a788e03f33260cb09d8cf0a1d6f0b3b23e82a961d56686c33e43eff7aca40",
+    "TS044": "d65c38b8fe739944e76959524f2d1a40bd121b940672445ec799899d1824a17b",
+    "TS045": "fae899f8ca337439318953b75d3dedacba94332351e24a88cd97859a01346a51",
+    "TS046": "c3feace7ca040a1e0ee497ee56ee53956f1a1945c40d347f4f8b41170e597c91",
+    "TS047": "594126eaa4a7475e0193ddf2401062b150d686efa5c286785c33155a4a2bf013",
+    "TS048": "0690b7eb4391e944816fadc7385cfe8caf4bd42025b40b6c58786f1b58ef7b31",
+    "TS049": "59be27d3b382c45955a136daad3cc33be26f90f5787aee9f248bf51fb9c0438c",
+    "TS050": "997ab2b74991d2317468f679b5e8256db84544cdcb9f31fa0ce7f00524f14563"
+  },
+  "source_sha256": {
+    "data/host_reference/reviews/audit_20261030/baseline/TS048.json": "0bbf55c21c4d7320a826a66401c2c4b0d54e41649b3cc72768316e3366a91eac",
+    "data/host_reference/reviews/audit_20261030/baseline/TS009.json": "66c95eae607ec4854bd0c7bb69f0d9877b4110a8d4a61f6e37a2d5f7ab71f25b",
+    "data/host_reference/reviews/audit_20261030/baseline/TS025.json": "fc45096df28a2f441d44d8f3536756100abc725c61417ae283472d71db6cf569",
+    "data/host_reference/reviews/audit_20261030/baseline/TS033.json": "76104bc4ca350c7d12b7323958779bec3d83c41d206d67390babfd08f98e07ae",
+    "data/host_reference/reviews/audit_20261030/baseline/TS044.json": "8d04a6283be833499921e183d09d6fdf14ea531f50fc684ad14980c99451556d",
+    "data/host_reference/reviews/audit_20261030/baseline/TS013.json": "ca8b6c2e2aa90edeb8a31d2bf132d3ad6f408505332c7751e93c9b2b11cd469f",
+    "data/host_reference/reviews/audit_20261030/baseline/TS005.json": "3026ea1a2592da08ce1dd1c74a84202eda2427d96dfc03e9cd4bd7da6af0cb20",
+    "data/host_reference/reviews/audit_20261030/baseline/TS029.json": "78c7164d5e3d61ce4417756617e0ccb9b4509995636bc1510e215647679b208f",
+    "data/host_reference/reviews/audit_20261030/baseline/bindings.json": "130f5044fce3bd806a00cdca7f55805e002d19f3e5dac46a46042ee9b617bfc6",
+    "data/host_reference/reviews/audit_20261030/baseline/TS028.json": "a93a1f6be1a8554ba07300205380f8018421ac531692ba20325c690362665bec",
+    "data/host_reference/reviews/audit_20261030/baseline/TS004.json": "4e52b8f54dabebf8a6e9f01ffd6975820af953e3b0e98cb145060477fb3a9b5f",
+    "data/host_reference/reviews/audit_20261030/baseline/TS012.json": "c495f9aee252c652b709a1f338a1a338975a41ae530cfe0f524a742878bbd6f7",
+    "data/host_reference/reviews/audit_20261030/baseline/TS045.json": "9b214c5b6de5a69ab06749ead59e44aac1e7bd06a56a61c68fad51de7e68ccf3",
+    "data/host_reference/reviews/audit_20261030/baseline/TS032.json": "6a142b15d2180a39abb9b871ddff7a2f2653fe1f7b46841802ec8f8c35a1f769",
+    "data/host_reference/reviews/audit_20261030/baseline/TS024.json": "b53430eaeda88fca26041df876af9ac22081f0d0093014eccfabd0d6422dbcab",
+    "data/host_reference/reviews/audit_20261030/baseline/TS008.json": "2c41940d2ac64deccdd24e1d4e4d759d33d0d96e9b46ea10aaec55ad0d57b784",
+    "data/host_reference/reviews/audit_20261030/baseline/TS049.json": "064278ce8dd44126b200a0cf8b87c62b3213f6d4f9e8fbd627475940acf4decd",
+    "data/host_reference/reviews/audit_20261030/baseline/TS042.json": "6777fe7f97d447bb081e43db64b899a2164186434808409d05543e951eba7eb0",
+    "data/host_reference/reviews/audit_20261030/baseline/TS015.json": "6c5e88bf2de63888f94933a18c85a3158bd70f85205e34a024922c634b9865ec",
+    "data/host_reference/reviews/audit_20261030/baseline/TS003.json": "ad4b634a944f8abeea803f3ba4dd7d2e4ec0e85e740e2d17bd41f07582bf38f9",
+    "data/host_reference/reviews/audit_20261030/baseline/TS039.json": "71dc127ac4d983b6afad93b9d7297415f3584681c6b674cb3e18c541a3676470",
+    "data/host_reference/reviews/audit_20261030/baseline/TS019.json": "f1cb4f2dd65c31572de76abd5a69fbdd696a0ed2831226838c5b5c8db48bac48",
+    "data/host_reference/reviews/audit_20261030/baseline/TS023.json": "952696c8907758e54212c157be39ea3ed98857258adf0c0caf84b838c81388cb",
+    "data/host_reference/reviews/audit_20261030/baseline/TS035.json": "ff5a81403794489fb31000e479dae74cf4967916e0e33b3c2e5fec676c9e60d4",
+    "data/host_reference/reviews/audit_20261030/baseline/TS034.json": "b8fb08461aca3e55a16c7bbda37eda545cbc5689a576a456eb48d5ec49adb06d",
+    "data/host_reference/reviews/audit_20261030/baseline/TS022.json": "0d4038ad6165ad8a5bfae22911099af6b7cbf3ba56310f8d327587e26df7ea6d",
+    "data/host_reference/reviews/audit_20261030/baseline/TS018.json": "a4026387656f8fb4f5f4604f70be4008a7d692d01f0612dd59aa69e87e5bf344",
+    "data/host_reference/reviews/audit_20261030/baseline/TS038.json": "7d14570922e15b1e890ec909ab00c41a9752136656c51be63ed077210ab1b35c",
+    "data/host_reference/reviews/audit_20261030/baseline/TS002.json": "91565c974660f994529003a1edf3e5dcf8ea93b2e6b5bfd739ad81cd8013f3ec",
+    "data/host_reference/reviews/audit_20261030/baseline/TS014.json": "18380387eef0eeac24d5e1253b580976ed223733f324457310a2555df73bd468",
+    "data/host_reference/reviews/audit_20261030/baseline/TS043.json": "cf02bfd7146b4deb1817b14e8b30badc7059099eceb98bf75d572d42f080dc11",
+    "data/host_reference/reviews/audit_20261030/baseline/TS001.json": "b901e231496ce12a4f84c9fd5c6315daa0f17eb7ba25f13afb985e09901dddf9",
+    "data/host_reference/reviews/audit_20261030/baseline/TS017.json": "3de6abf52204e84367f41ff6d9914d8e6d351014f288780996e2b88c19b3871d",
+    "data/host_reference/reviews/audit_20261030/baseline/TS040.json": "d8ee0a056d2ae5094db09943342309b601a2c88f5b52adf76c1572f8015311df",
+    "data/host_reference/reviews/audit_20261030/baseline/TS037.json": "96feb52b5ff7b3a6f6b6335176c1176ff17537bc0cd56a5832e9125150875372",
+    "data/host_reference/reviews/audit_20261030/baseline/TS021.json": "8894015ef9c41ed7532e8974f86b634ff146ab2e9d55f8a01589985530c4767a",
+    "data/host_reference/reviews/audit_20261030/baseline/TS020.json": "763047eb3e9f7886a4c755923790d1cac6b74145898d1a41fbc6702ee100afec",
+    "data/host_reference/reviews/audit_20261030/baseline/TS036.json": "60d829816448fa7bccce940c5fcfc6edac5bed7633d90bb8cec40abcb55d84ad",
+    "data/host_reference/reviews/audit_20261030/baseline/TS041.json": "d6ee51deee3affa2f2500e31d1f0f834e5f7a6ad140cf739f5d44b62faade564",
+    "data/host_reference/reviews/audit_20261030/baseline/TS016.json": "c30a3857213b9685dd7fc4bb9097dc4800fadfea679a297c8b7e008d2966a751",
+    "data/host_reference/reviews/audit_20261030/baseline/TS031.json": "9bd7f9be4f8b527593bdb581b7649e88ba64c8b098b154f515962316647efb0e",
+    "data/host_reference/reviews/audit_20261030/baseline/TS027.json": "35bae9efa3a56d843f461ad84de589ae03bb46fbb6b0c181a6b900fbd2b3e248",
+    "data/host_reference/reviews/audit_20261030/baseline/TS050.json": "e6da9a61f0db00c3ece4868e799cac39f72ad815f93cc029658d69a0b85892a9",
+    "data/host_reference/reviews/audit_20261030/baseline/TS007.json": "cfd009627635765ec48e3f182d74031b218a43e77d3b12e19834fe3a19ee15a2",
+    "data/host_reference/reviews/audit_20261030/baseline/TS011.json": "b5261709d5ad2cf1e447a5422cd22c544714953a59956440473d1bcd07af5ca3",
+    "data/host_reference/reviews/audit_20261030/baseline/TS046.json": "405a1ece2e918c08cce70c8d29327505a5f90c98d324e4805e4f1f1dcddf6a36",
+    "data/host_reference/reviews/audit_20261030/baseline/TS047.json": "19ead467947d286dab17cd46a02dd660c927a6cf42a22ae4a0c1cc1a63dc625c",
+    "data/host_reference/reviews/audit_20261030/baseline/TS010.json": "589959bed582d7080a4f263e2c8ad5f0a02497f779d365022ceb388612a7ddcd",
+    "data/host_reference/reviews/audit_20261030/baseline/TS006.json": "5b40075a20cfc2d61067e0e4cea8d4bd5de535dbb25e4e3cf3653215cad9b29f",
+    "data/host_reference/reviews/audit_20261030/baseline/TS026.json": "ab8f6b69ea663a6b0c2944128cd95ba3771e0dd608ab85b8f7a327b91e4efbc4",
+    "data/host_reference/reviews/audit_20261030/baseline/TS030.json": "a96130a1fd29b3da4a168bb23de9f1974cb6da26207416f1e21ee3bc60d6a3b9",
+    "data/host_reference/sources/model_simulated_20261030/TS031.json": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+    "data/host_reference/sources/model_simulated_20261030/TS035.json": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+    "data/host_reference/sources/model_simulated_20261030/TS038.json": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+    "data/host_reference/inbox/TS002/20261029_baggage_history/source_record.json": "fadd86bcaf14eb210bb84609828ab0b94bd793e699a3c225ecb685d462accc56",
+    "data/host_reference/inbox/TS007/20261029_tiger_history/source_record.json": "6be65ed59a263b69e47ff1398cd928e2437c1534b9a2caf25c883e46a1a32b4a",
+    "data/host_reference/inbox/TS011/20261029_music_stop/trajectory.md": "e38d9b9cc115ddd4768a70120aea28831e78f262c753fbb5009556f769d3160e",
+    "data/host_reference/inbox/TS012/20261029_chat01/trajectory.md": "b906d5d7e229476d04489c2787724296f25f3a9c71edc7d39486081ed1ec9a4b",
+    "data/host_reference/inbox/TS013/20261029_courses_gone/trajectory.md": "c62495bb47c057d6e4639d6a980d9eed5956ecf68c30c50e2fe20ed19980df6f",
+    "data/host_reference/inbox/TS014/20261029_fail_course_group_project/trajectory.md": "5ba0404c926688a3624ea4c448fa27e39c2c279e0d15107c27466799d1fd0ea5",
+    "data/host_reference/inbox/TS015/20261029_fail_course_river/trajectory.md": "bcb21a4e268603badca7dd6efa37c0cb083ea2352a4dcc34fe4df40b9aa59222",
+    "data/host_reference/inbox/TS017/20261029_pantry_cigarette/trajectory.md": "a40522e653496c2686f5a6c7695de64e877a36d2272b8152410df2a720e4935f",
+    "data/host_reference/inbox/TS018/20261029_pantry_incense/trajectory.md": "4e9dbfd928d9d5edbb6558a0999eba7f4b76ba7dc38117e78174ff4c2d657dc5",
+    "data/host_reference/inbox/TS019/20261029_stairs_campus/trajectory.md": "736468de3949d502c6df8d34da289519bb4c07a2d13732f4cd35475f07729e1a",
+    "data/host_reference/inbox/TS021/20261029_chatgpt_6ae30251/trajectory.md": "030eb815399880500a7cc1dd4c489052d63679f4389166bff93d3b97e2ee7f37",
+    "data/host_reference/inbox/TS022/20261029_chatgpt_6ae30235/trajectory.md": "d2a06e7308b4f9f5b4e25a090dab336193f2b7c9821735270caf5473b6628b3d",
+    "data/host_reference/inbox/TS026/20261029_chatgpt_6ae3021a/trajectory.md": "2a4251036d1733b814da8d325dbe7052018378c1c6700e84e473122021df28d2",
+    "data/host_reference/inbox/TS028/20261029_chatgpt_6ae2ff22/trajectory.md": "1ea02498960df8cfa6871cb9a7b19be4fb24cd31395906c7645f1a0bee736925",
+    "data/host_reference/inbox/TS041/20261029_222248_human/trajectory.md": "8e88a433ee4970eeb54249fde813cbf3f569c1e33b26e6d8886494f353c4b2ad",
+    "data/host_reference/inbox/TS042/20261029_222248_human/trajectory.md": "af13790af9583c5e73396888b49bd8e8c7c46327936ea6675b785811fd5b7d19",
+    "data/host_reference/inbox/TS043/20261029_222248_human/trajectory.md": "7052b8dca1417bcb7693a2edf2c6aebf81387409faf1765200b2b08470138f0b"
+  },
+  "note": "Reviewed references; original source provenance retained. No human confirmation or live accuracy measurement claimed."
+}

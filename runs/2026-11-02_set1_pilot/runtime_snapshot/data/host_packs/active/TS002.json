@@ -1,0 +1,1212 @@
+{
+  "version": "host-v9-human-20261102",
+  "review_status": "human_labels_and_delegated_adjudication",
+  "replace_host_examples": true,
+  "solution": "The man the girl loved betrayed her today; he was packing his bags, preparing to move out of the apartment they shared.\nThe girl tearfully begged him not to leave, but he did not look back.\nJust then, the girl said coldly, \"At least leave my pillow behind.\"\nAnd so, she cut off the boy's hand.\nThe \"pillow\" she wanted to keep was his hand, a body part she treated as her pillow/headrest. She carried the severed hand in her luggage and called it her pillow. At the baggage checkpoint, security personnel discovered the human hand, handcuffed her and took her away.",
+  "canonical_facts": [
+    "The woman and the man were romantic partners and shared an apartment.",
+    "He betrayed her that day, and he was packing his bags to move out of their shared apartment.",
+    "She tearfully begged him not to leave. He did not look back or accept her plea.",
+    "She then said coldly, \"At least leave my pillow behind.\"",
+    "She deliberately severed his hand to keep the body part she treated as her pillow/headrest.",
+    "The body part in this version is a HAND, not an arm. Arm and hand are not interchangeable terms in this story.",
+    "The item she called a pillow in her luggage was that severed human hand.",
+    "At a baggage security checkpoint, personnel inspected the luggage, discovered the hand, and handcuffed and took her away.",
+    "Her list was pajamas, a pillow, a thermos, a towel and changes of clothes. The hidden bodily referent is the pillow, not the other listed items."
+  ],
+  "explicit_negatives": [
+    "The pillow in the twist was not an ordinary stuffed cushion, a prosthetic, or an animal body part.",
+    "She did not sever or carry a whole arm as the pillow; this story specifies the hand.",
+    "The severing was not an accident, self-defence, a medical amputation or a consensual gift.",
+    "An unrelated travel restriction on an ordinary pillow, a liquid-limit issue, a concealed drug shipment or an ordinary stolen cushion does not explain her detention.",
+    "The other listed items were not made from the partner's body parts."
+  ],
+  "unknown_details": [
+    "The precise type of betrayal is unspecified; do not assume an affair.",
+    "Whether the man died, the injury details, the precise implement and any distinct stabbing event are unspecified.",
+    "Whether the hand was wrapped, placed in a pillowcase or visually disguised is unspecified. Calling it a pillow does not prove a visual disguise.",
+    "The checkpoint transport mode, city, travel destination and exact time after the apartment incident are unspecified.",
+    "Which hand, the ages of the characters, the exact duration of their relationship and legal charges are unspecified."
+  ],
+  "irrelevant_details": [
+    "Coat colour, apartment floor, city, relationship duration, side of hand, transport mode and specific betrayal type are incidental.",
+    "Survival at the checkpoint, a separate stabbing event and packaging are unspecified and not required to explain the hand as pillow."
+  ],
+  "host_examples": [
+    {
+      "case_id": "P001",
+      "question": "Were the woman and the man in a romantic relationship?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "The supplied final answer describes a lover and shared home.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P002",
+      "question": "Did they share an apartment?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Explicit in the supplied answer.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P003",
+      "question": "Was the man preparing to move out?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Explicit in the supplied answer.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P004",
+      "question": "Was he packing his bags?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Explicit in the supplied answer.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P005",
+      "question": "Had he betrayed her that day?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Explicit in the supplied answer; betrayal type remains unspecified.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P006",
+      "question": "Did she ask him not to leave?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Explicit in the supplied answer.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P007",
+      "question": "Did she cry while begging him to stay?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Tearfully begged is explicit.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P008",
+      "question": "Did he agree to stay when she begged?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "He continued leaving.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P009",
+      "question": "Did she accept his departure without trying to stop him?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "She begged him not to go.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P010",
+      "question": "Did she ask him to leave her pillow behind?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Her quoted request is explicit.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P011",
+      "question": "Did she deliberately sever his hand?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "The final action is deliberate in context.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P012",
+      "question": "Was the severing accidental?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "This replaces the deliberate act with an accident.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P013",
+      "question": "Was it someone unrelated to the woman whose hand she severed?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The victim was the man she loved.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P014",
+      "question": "Was the man simply returning from a shopping trip?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The relevant bag-packing action was moving out.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P015",
+      "question": "Was she packing to leave while he begged her to stay?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Reverses the stated roles.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P016",
+      "question": "Had he already moved out before she made the pillow request?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "He was preparing to move out when she spoke.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P017",
+      "question": "Did the pillow request happen before the severing?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Explicit order of the final two events.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P018",
+      "question": "Did she make the request after the severing?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Reverses the stated order.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P019",
+      "question": "Was her plea intended to persuade him to stay?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Ordinary meaning of begging him not to leave.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P020",
+      "question": "Was she asking him to leave so that she could have the apartment to herself?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Contradicts the stated plea and purpose.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P021",
+      "question": "Did he pack bags because he was preparing to move out?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "The supplied story links these actions.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P022",
+      "question": "Did he remain in the apartment because he accepted her plea?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Wrong outcome and causal explanation.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P023",
+      "question": "Did they share a home, and did he agree not to leave?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "Sharing a home is true; accepting her plea is false.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P024",
+      "question": "Did she beg him to stay and then deliberately sever his hand?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Both events occur in that sequence.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P025",
+      "question": "Did she beg him to stay and sever her own hand?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "Plea is true; wrong person's hand is false.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P026",
+      "question": "Did he betray her and then ask her to leave?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "Betrayal is true; asking her to leave reverses the stated departure.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P027",
+      "question": "Was she wearing a red coat?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Unspecified incidental detail or unrelated instruction, not a partly true theory.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P028",
+      "question": "Was the apartment on the fourth floor?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Unspecified incidental detail or unrelated instruction, not a partly true theory.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P029",
+      "question": "Did they live in London?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Unspecified incidental detail or unrelated instruction, not a partly true theory.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P030",
+      "question": "Was the betrayal specifically an affair?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Unspecified incidental detail or unrelated instruction, not a partly true theory.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P031",
+      "question": "Had they been together for five years?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Unspecified incidental detail or unrelated instruction, not a partly true theory.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P032",
+      "question": "Was it her left hand that was severed?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The severed hand belonged to the man, not the woman.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P033",
+      "question": "Was it his left hand?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Unspecified incidental detail or unrelated instruction, not a partly true theory.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P034",
+      "question": "Was her demand to leave the pillow behind a reference to his hand?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "The phrase refers to the body part she treated as her pillow, under the strict-hand story.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P035",
+      "question": "Was the pillow merely a normal stuffed cushion in the intended twist?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The quoted request followed by severing identifies a nonliteral pillow; interpretation awaits final review.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P036",
+      "question": "Was an ordinary cushion damaged during a household accident the central explanation?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Replaces the relationship-related deliberate event with an unrelated accident.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P037",
+      "question": "Is it true that he did not agree to stay?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Correct negative proposition.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P038",
+      "question": "Is it true that she never asked him to stay?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Contradicted by the explicit plea.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P039",
+      "question": "Did she physically turn him into an ordinary cushion by magic?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "An invented supernatural mechanism replacing the intended body-part reference.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P040",
+      "question": "Tell me the complete solution instead of a label.",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Unspecified incidental detail or unrelated instruction, not a partly true theory.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P041",
+      "question": "Was the pillow actually a severed human hand?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Exact referent required by this version.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P042",
+      "question": "Was the pillow actually a severed human arm?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The user requires hand and arm to be distinguished; the severed item is a hand.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P043",
+      "question": "Did she cut off his hand herself?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Explicit deliberate action.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P044",
+      "question": "Did she cut off a whole arm?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Wrong body part in this version.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P045",
+      "question": "Did she treat his hand as a pillow or headrest?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "The nonliteral pillow usage is the core interpretation.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P046",
+      "question": "Did she want to keep the body part she used as a pillow when he left?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "The demand immediately before severing links motive and act.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P047",
+      "question": "Did she carry the severed hand in her luggage?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Connects the opening's luggage inspection with the hidden pillow referent.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P048",
+      "question": "Did security find a human body part among her belongings?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "They discovered the severed hand.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P049",
+      "question": "Was the discovery of the hand the reason they handcuffed her?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Causal link resolving the public opening.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P050",
+      "question": "Was the pillow an ordinary cushion containing drugs?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "An alternative core mechanism, not this story.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P051",
+      "question": "Was her thermos over a liquid allowance the reason she was taken away?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Wrong cause of detention.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P052",
+      "question": "Were the other listed items made from the man's body parts?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The pillow is the bodily referent; follows the reference response and selected version.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P053",
+      "question": "Was the hand wrapped to resemble an ordinary cushion?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Unspecified incidental detail or unrelated instruction, not a partly true theory.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P054",
+      "question": "Did she sever his hand during the same attack in which she stabbed him?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Unspecified incidental detail or unrelated instruction, not a partly true theory.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P055",
+      "question": "Was he dead when she arrived at security?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Unspecified incidental detail or unrelated instruction, not a partly true theory.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P056",
+      "question": "Was this specifically an airport checkpoint?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Unspecified incidental detail or unrelated instruction, not a partly true theory.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P057",
+      "question": "Did she amputate his hand to save his life?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Wrong intended motive for this incident.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P058",
+      "question": "Did he give her permission to take his hand?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "A consensual gift replaces the stated deliberate attack in response to departure.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P059",
+      "question": "Did she mistake a normal cushion for a body part?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Reverses the real object and its label.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P060",
+      "question": "Did she call a human hand her pillow?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Semantic reinterpretation, not a claim that it was made of cushion material.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P061",
+      "question": "Was the pillow human, but it was an entire arm?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "Human body-part referent is correct; the entire-arm identification is wrong.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P062",
+      "question": "Did she sever his hand after he agreed to stay?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The assumed agreement is contradicted.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P063",
+      "question": "Did she beg him to stay, but he ignored the plea and kept preparing to leave?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Natural paraphrase of the supplied narrative.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P064",
+      "question": "Had he betrayed her on the day of the apartment incident?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Today is anchored to the apartment scene; not an invented travel date.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P065",
+      "question": "Did she say something equivalent to \"at least leave my pillow behind\"?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Semantic equivalents count for the dialogue detail.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P066",
+      "question": "Was keeping the pillow a demand she made when he refused to stay?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Sequence and motivation match the supplied story.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P067",
+      "question": "Did she steal an unrelated person's hand before ever knowing her partner?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Wrong owner and chronology.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P068",
+      "question": "Was the body part from her partner?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "The man she loved is its owner.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P069",
+      "question": "Was it her own hand?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Wrong owner.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P070",
+      "question": "Did the police arrest her at the apartment rather than at security?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The opening places detention at baggage security.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P071",
+      "question": "Was she arrested merely for saying the word pillow?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Discovery of the severed hand, not vocabulary alone, caused detention.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P072",
+      "question": "Did the baggage contain the hand, but no towel?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "Hand is supported; the declared inventory includes a towel.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P073",
+      "question": "Had she been using his arm rather than his hand as the pillow in this version?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Strict anatomical terminology confirmed by user.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P074",
+      "question": "Was the severed hand placed inside a real pillow?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Unspecified incidental detail or unrelated instruction, not a partly true theory.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P075",
+      "question": "Did she attack him because she wanted to keep her pillow after he left?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Intended causal motive under the supplied explanation.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P076",
+      "question": "Did the man ask her to keep his hand when he left?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The request and deliberate severing were hers.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P077",
+      "question": "Was it his hand?",
+      "answer": "yes",
+      "public_history": [
+        {
+          "question": "Was the pillow a human body part?",
+          "label": "yes"
+        }
+      ],
+      "rationale": "History fixes the body-part referent.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P078",
+      "question": "Was it his entire arm?",
+      "answer": "no",
+      "public_history": [
+        {
+          "question": "Was the pillow a human body part?",
+          "label": "yes"
+        }
+      ],
+      "rationale": "Same referent, but anatomy remains hand.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P079",
+      "question": "So was the hand a prosthetic?",
+      "answer": "no",
+      "public_history": [
+        {
+          "question": "Was the pillow artificial?",
+          "label": "yes"
+        }
+      ],
+      "rationale": "Player suggestion or earlier mistake cannot override real human hand.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "P080",
+      "question": "Did he pack to leave their shared apartment that day after betraying her, ignore her tearful plea, and then have his hand severed after she asked him to leave her pillow behind, with that hand later found in her luggage at security?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Coherent full narrative; do not reject simply because it contains many steps.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R01",
+      "question": "Was she carrying a whole severed arm rather than a hand?",
+      "answer": "no",
+      "rationale": "The canonical body part is strictly hand.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R02",
+      "question": "Was she arrested because the pillow was stolen ordinary bedding?",
+      "answer": "no",
+      "rationale": "Wrong object and cause.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R03",
+      "question": "Was her former partner still alive at the checkpoint?",
+      "answer": "irrelevant",
+      "rationale": "Survival then is not needed for this narrative.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R04",
+      "question": "Was her request to leave her pillow a reference to his hand?",
+      "answer": "yes",
+      "rationale": "Pillow is the hand she wanted him to leave.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS002_003",
+      "question": "Was the evidence related to a murder?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "按人工标签列应用；“非问题”不当作删除问句的指令。",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS002_003",
+        "audit_case": "INBOX_TS002_003",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 2,
+        "human_confirmed": true,
+        "original_question": "Was the evidence related to a murder?",
+        "original_answer": "yes & no",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS002_004",
+      "question": "Did someone die in connection with the crime?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "按人工标签列应用；“非问题”不当作删除问句的指令。",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS002_004",
+        "audit_case": "INBOX_TS002_004",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 3,
+        "human_confirmed": true,
+        "original_question": "Did someone die in connection with the crime?",
+        "original_answer": "unknown",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS002_037",
+      "question": "Did her ex-boyfriend use the pillow to defend himself during the attack?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "按人工标签列应用；“非问题”不当作删除问句的指令。",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS002_037",
+        "audit_case": "INBOX_TS002_037",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 3,
+        "human_confirmed": true,
+        "original_question": "Did her ex-boyfriend use the pillow to defend himself during the attack?",
+        "original_answer": "unknown",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS002_054",
+      "question": "Was the woman holding the pillow when she stabbed her ex-boyfriend?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "按人工标签列应用；“非问题”不当作删除问句的指令。",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS002_054",
+        "audit_case": "INBOX_TS002_054",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 4,
+        "human_confirmed": true,
+        "original_question": "Was the woman holding the pillow when she stabbed her ex-boyfriend?",
+        "original_answer": "unknown",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS002_008",
+      "question": "Was the blood found on the towel?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "按人工标签列应用；“非问题”不当作删除问句的指令。",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS002_008",
+        "audit_case": "INBOX_TS002_008",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 5,
+        "human_confirmed": true,
+        "original_question": "Was the blood found on the towel?",
+        "original_answer": "no",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS002_040",
+      "question": "Was the knife she used to attack her ex-boyfriend also found in her luggage?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "按人工标签列应用；“非问题”不当作删除问句的指令。",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS002_040",
+        "audit_case": "INBOX_TS002_040",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 5,
+        "human_confirmed": true,
+        "original_question": "Was the knife she used to attack her ex-boyfriend also found in her luggage?",
+        "original_answer": "no",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS002_079",
+      "question": "Were any of the other items she listed also made from parts of her ex-boyfriend’s body?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "按人工标签列应用；“非问题”不当作删除问句的指令。",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS002_079",
+        "audit_case": "INBOX_TS002_079",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 6,
+        "human_confirmed": true,
+        "original_question": "Were any of the other items she listed also made from parts of her ex-boyfriend’s body?",
+        "original_answer": "no",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS002_020",
+      "question": "Did she attack her ex-boyfriend while he was sleeping?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "按人工标签列应用；“非问题”不当作删除问句的指令。",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS002_020",
+        "audit_case": "INBOX_TS002_020",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 7,
+        "human_confirmed": true,
+        "original_question": "Did she attack her ex-boyfriend while he was sleeping?",
+        "original_answer": "irrelevant",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS002_041",
+      "question": "Did the knife pierce the pillow during the attack?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "按人工标签列应用；“非问题”不当作删除问句的指令。",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS002_041",
+        "audit_case": "INBOX_TS002_041",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 8,
+        "human_confirmed": true,
+        "original_question": "Did the knife pierce the pillow during the attack?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS002_047",
+      "question": "Did she deliberately stab the pillow with the knife during the attack?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "按人工标签列应用；“非问题”不当作删除问句的指令。",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS002_047",
+        "audit_case": "INBOX_TS002_047",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 8,
+        "human_confirmed": true,
+        "original_question": "Did she deliberately stab the pillow with the knife during the attack?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS002_049",
+      "question": "Did she stab both the pillow and her ex-boyfriend with the same knife thrust?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "按人工标签列应用；“非问题”不当作删除问句的指令。",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS002_049",
+        "audit_case": "INBOX_TS002_049",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 9,
+        "human_confirmed": true,
+        "original_question": "Did she stab both the pillow and her ex-boyfriend with the same knife thrust?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS002_081",
+      "question": "Did she sever her ex-boyfriend’s arm during the same attack in which she stabbed it?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "按人工标签列应用；“非问题”不当作删除问句的指令。",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS002_081",
+        "audit_case": "INBOX_TS002_081",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 9,
+        "human_confirmed": true,
+        "original_question": "Did she sever her ex-boyfriend’s arm during the same attack in which she stabbed it?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS002_050",
+      "question": "Was the pillow right next to her ex-boyfriend's body when she stabbed him?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "这种比喻的题目设定边界太模糊了，还是回答yes&no吧",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS002_050",
+        "audit_case": "INBOX_TS002_050",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 10,
+        "human_confirmed": true,
+        "original_question": "Was the pillow right next to her ex-boyfriend's body when she stabbed him?",
+        "original_answer": "yes & no",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS002_055",
+      "question": "Was the pillow positioned between the woman and her ex-boyfriend when she stabbed him?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "这种比喻的题目设定边界太模糊了，还是回答yes&no吧",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS002_055",
+        "audit_case": "INBOX_TS002_055",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 10,
+        "human_confirmed": true,
+        "original_question": "Was the pillow positioned between the woman and her ex-boyfriend when she stabbed him?",
+        "original_answer": "yes & no",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS002_057",
+      "question": "Was her ex-boyfriend wearing the pillow on his body when she stabbed him?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "同上",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS002_057",
+        "audit_case": "INBOX_TS002_057",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 11,
+        "human_confirmed": true,
+        "original_question": "Was her ex-boyfriend wearing the pillow on his body when she stabbed him?",
+        "original_answer": "yes & no",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS002_059",
+      "question": "Was the pillow attached to his clothing rather than directly to his body?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "同上",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS002_059",
+        "audit_case": "INBOX_TS002_059",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 11,
+        "human_confirmed": true,
+        "original_question": "Was the pillow attached to his clothing rather than directly to his body?",
+        "original_answer": "irrelevant",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS002_067",
+      "question": "Was the pillow’s outer covering made from her ex-boyfriend’s skin?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "同上",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS002_067",
+        "audit_case": "INBOX_TS002_067",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 12,
+        "human_confirmed": true,
+        "original_question": "Was the pillow’s outer covering made from her ex-boyfriend’s skin?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS002_070",
+      "question": "Did her ex-boyfriend's skin come off naturally, without anyone deliberately removing it?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "同上",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS002_070",
+        "audit_case": "INBOX_TS002_070",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 12,
+        "human_confirmed": true,
+        "original_question": "Did her ex-boyfriend's skin come off naturally, without anyone deliberately removing it?",
+        "original_answer": "irrelevant",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS002_076",
+      "question": "Was the “pillow” actually her ex-boyfriend’s severed arm?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "按人工标签列应用；“非问题”不当作删除问句的指令。",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS002_076",
+        "audit_case": "INBOX_TS002_076",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 13,
+        "human_confirmed": true,
+        "original_question": "Was the “pillow” actually her ex-boyfriend’s severed arm?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS002_077",
+      "question": "Did she deliberately cut off her ex-boyfriend’s arm?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "按人工标签列应用；“非问题”不当作删除问句的指令。",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS002_077",
+        "audit_case": "INBOX_TS002_077",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 13,
+        "human_confirmed": true,
+        "original_question": "Did she deliberately cut off her ex-boyfriend’s arm?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS002_082",
+      "question": "Had she previously used her ex-boyfriend’s arm as a pillow while sleeping?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "按人工标签列应用；“非问题”不当作删除问句的指令。",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS002_082",
+        "audit_case": "INBOX_TS002_082",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 14,
+        "human_confirmed": true,
+        "original_question": "Had she previously used her ex-boyfriend’s arm as a pillow while sleeping?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS002_083",
+      "question": "Did she cut off her ex-boyfriend’s arm because she wanted to keep using it as a pillow after their breakup?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "按人工标签列应用；“非问题”不当作删除问句的指令。",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS002_083",
+        "audit_case": "INBOX_TS002_083",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 14,
+        "human_confirmed": true,
+        "original_question": "Did she cut off her ex-boyfriend’s arm because she wanted to keep using it as a pillow after their breakup?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    }
+  ],
+  "verification_policy": "independent_then_adjudicate_v1",
+  "label_boundaries": [
+    "For the exact human_spreadsheet examples, use the reviewed label as this puzzle’s local convention. A yes and no label does NOT establish the false subtype (arm, skin covering, fan or hammer). Do not promote it into canonical facts. For other questions follow the ordinary causal/identity rules."
+  ]
+}

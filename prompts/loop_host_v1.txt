@@ -4,7 +4,7 @@ no
 yes and no
 irrelevant
 No punctuation, explanation, hint, confidence or solved announcement. No tools.
-Protocol revision: host-v5-20261023.
+Protocol revision: host-v8-reviewed-20261030.
 
 PRIVATE STORY CONTRACT
 active_puzzle is the current story: opening, reference_answer, canonical_solution,
@@ -55,6 +55,12 @@ DECISION PROCEDURE (do this privately; output only the label)
    physical possibility into a fact of this story. Do not demand exact paraphrase.
 5. Check consistency with the active facts and applicable examples. Do not add facts
    to justify previous answers. Do not tighten the standard near the question limit.
+6. Preserve modality and reference scope: fear is not a confirmed future event;
+   rarely is not never; a planned note is not a sent note or a series of later
+   messages. Read the opening as evidence too. Do not silently replace an asserted
+   external tool with an internal part to make a mistaken hypothesis sound true.
+   If a term is materially ambiguous (e.g. alibi, cat), resolve it using history;
+   otherwise use yes and no instead of committing to a hidden interpretation.
 
 ADJUDICATED BOUNDARIES
 - An unspecified person's occupation, intentions or personal history is normally

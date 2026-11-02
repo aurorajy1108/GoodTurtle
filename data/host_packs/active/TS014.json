@@ -1,6 +1,6 @@
 {
-  "version": "host-v5.1-20261023",
-  "review_status": "ai_repair_pending_human",
+  "version": "host-v9-human-20261102",
+  "review_status": "human_labels_and_delegated_adjudication",
   "replace_host_examples": true,
   "solution": "The course has a group project which contributes significantly towards the final grades. Unfortunately, everyone in the group except me is a free rider. Due to the huge workload, I completed the project poorly, received a poor grade and thus failed the course.",
   "canonical_facts": [
@@ -131,6 +131,204 @@
       "provenance": {
         "method": "protocol_boundary",
         "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS014_001",
+      "question": "Were the tests and exams you passed part of the course you failed?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "除了小组作业以外其他都不是重点",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS014_001",
+        "audit_case": "INBOX_TS014_001",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 35,
+        "human_confirmed": true,
+        "original_question": "Were the tests and exams you passed part of the course you failed?",
+        "original_answer": "No",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS014_008",
+      "question": "Did the course you failed have any tests or exams?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "除了小组作业以外其他都不是重点",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS014_008",
+        "audit_case": "INBOX_TS014_008",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 35,
+        "human_confirmed": true,
+        "original_question": "Did the course you failed have any tests or exams?",
+        "original_answer": "No",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS014_051",
+      "question": "Was the course you failed an online course?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "除了小组作业以外其他都不是重点",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS014_051",
+        "audit_case": "INBOX_TS014_051",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 36,
+        "human_confirmed": true,
+        "original_question": "Was the course you failed an online course?",
+        "original_answer": "no",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS014_059",
+      "question": "Was the course you failed a seminar?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "除了小组作业以外其他都不是重点",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS014_059",
+        "audit_case": "INBOX_TS014_059",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 36,
+        "human_confirmed": true,
+        "original_question": "Was the course you failed a seminar?",
+        "original_answer": "no",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS014_067",
+      "question": "Was the course you failed a course in a religious institution?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "除了小组作业以外其他都不是重点",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS014_067",
+        "audit_case": "INBOX_TS014_067",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 37,
+        "human_confirmed": true,
+        "original_question": "Was the course you failed a course in a religious institution?",
+        "original_answer": "no",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS014_069",
+      "question": "Was the course you failed a course in a military or police academy?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "除了小组作业以外其他都不是重点",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS014_069",
+        "audit_case": "INBOX_TS014_069",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 37,
+        "human_confirmed": true,
+        "original_question": "Was the course you failed a course in a military or police academy?",
+        "original_answer": "no",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS014_071",
+      "question": "Was the course you failed a cooking class?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "除了小组作业以外其他都不是重点",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS014_071",
+        "audit_case": "INBOX_TS014_071",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 38,
+        "human_confirmed": true,
+        "original_question": "Was the course you failed a cooking class?",
+        "original_answer": "no",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS014_004",
+      "question": "Did you fail the course because you did not complete a required project or assignment?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "汤底明确写明完成了小组项目",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS014_004",
+        "audit_case": "INBOX_TS014_004",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 39,
+        "human_confirmed": true,
+        "original_question": "Did you fail the course because you did not complete a required project or assignment?",
+        "original_answer": "No",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS014_046",
+      "question": "Did you fail the course because you did not complete a required group project?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "汤底明确写明完成了小组项目",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS014_046",
+        "audit_case": "INBOX_TS014_046",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 39,
+        "human_confirmed": true,
+        "original_question": "Did you fail the course because you did not complete a required group project?",
+        "original_answer": "no",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
       }
     }
   ],

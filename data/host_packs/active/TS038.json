@@ -1,6 +1,6 @@
 {
-  "version": "host-v5.1-20261023",
-  "review_status": "ai_repair_pending_human",
+  "version": "host-v9-human-20261102",
+  "review_status": "human_labels_and_delegated_adjudication",
   "replace_host_examples": true,
   "solution": "I killed my wife and faked the evidence to make it look like she had simply run away from home, but no matter how many times I tried, I couldn't quite manage to imitate her handwriting.",
   "canonical_facts": [
@@ -107,7 +107,1237 @@
         "method": "protocol_boundary",
         "human_confirmed": false
       }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_062",
+      "question": "Was the sentence written by someone other than the speaker who says, “I know I’m in trouble”?.",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_003",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was the sentence written by someone other than the speaker who says, “I know I’m in trouble”?.",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_063",
+      "question": "Did the speaker write the sentence repeatedly as a punishment or assignment?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_004",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the speaker write the sentence repeatedly as a punishment or assignment?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_064",
+      "question": "Did the speaker intentionally write the repeated sentence?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_005",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the speaker intentionally write the repeated sentence?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_065",
+      "question": "Did the speaker write the sentence as part of a fictional or creative work?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_006",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the speaker write the sentence as part of a fictional or creative work?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_066",
+      "question": "Did the speaker write the sentence by hand on a physical surface?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_007",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the speaker write the sentence by hand on a physical surface?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_067",
+      "question": "Has someone else discovered the speaker’s handwritten draft?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_010",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Has someone else discovered the speaker’s handwritten draft?",
+        "original_answer": "irrelevant",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_068",
+      "question": "Did the speaker’s concealed action directly harm another person?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_019",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the speaker’s concealed action directly harm another person?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_069",
+      "question": "Did the speaker accidentally cause the other person’s physical injury?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_021",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the speaker accidentally cause the other person’s physical injury?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_070",
+      "question": "Did the speaker deliberately cause the other person’s physical injury?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_022",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the speaker deliberately cause the other person’s physical injury?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_071",
+      "question": "Did the person the speaker deliberately injured die as a result?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_023",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the person the speaker deliberately injured die as a result?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_072",
+      "question": "Did the speaker deliberately kill the person in order to protect themselves or someone else?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_024",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the speaker deliberately kill the person in order to protect themselves or someone else?",
+        "original_answer": "irrelevant",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_073",
+      "question": "Is the speaker worried they will be caught or punished for the killing?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_027",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Is the speaker worried they will be caught or punished for the killing?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_074",
+      "question": "Was the killing committed during a robbery?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_028",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was the killing committed during a robbery?",
+        "original_answer": "irrelevant",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_075",
+      "question": "Does the draft explicitly confess that the speaker killed someone?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_029",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Does the draft explicitly confess that the speaker killed someone?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_076",
+      "question": "Was the draft meant to make the killing look like a suicide?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_032",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was the draft meant to make the killing look like a suicide?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_077",
+      "question": "Was the draft meant to look like a note written by the person the speaker killed?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_034",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was the draft meant to look like a note written by the person the speaker killed?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_078",
+      "question": "Did the speaker write the sentence repeatedly to practice imitating the murdered person’s handwriting?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_035",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the speaker write the sentence repeatedly to practice imitating the murdered person’s handwriting?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_079",
+      "question": "Did the speaker use a genuine sample of the victim’s handwriting to imitate it?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_036",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the speaker use a genuine sample of the victim’s handwriting to imitate it?",
+        "original_answer": "irrelevant",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_080",
+      "question": "Has the forged note already been found by the intended recipient?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_038",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Has the forged note already been found by the intended recipient?",
+        "original_answer": "irrelevant",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_081",
+      "question": "Did the speaker hide the victim’s body after killing them?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_039",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the speaker hide the victim’s body after killing them?",
+        "original_answer": "irrelevant",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_082",
+      "question": "Did the speaker become worried because the repeated practice made their own handwriting resemble the victim’s too closely, risking exposure?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_040",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the speaker become worried because the repeated practice made their own handwriting resemble the victim’s too closely, risking exposure?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_083",
+      "question": "Is the speaker worried because they cannot convincingly imitate the victim’s handwriting?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_041",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Is the speaker worried because they cannot convincingly imitate the victim’s handwriting?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_084",
+      "question": "Was the sentence based on something the victim had actually written or said before their death?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_045",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was the sentence based on something the victim had actually written or said before their death?",
+        "original_answer": "irrelevant",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_085",
+      "question": "Did the speaker write these practice lines after killing the victim?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_046",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the speaker write these practice lines after killing the victim?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_086",
+      "question": "Is the intended recipient of the forged note a law-enforcement officer?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_048",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Is the intended recipient of the forged note a law-enforcement officer?",
+        "original_answer": "irrelevant",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_087",
+      "question": "Was the victim’s note written in cursive, which the speaker is unable to imitate convincingly?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_052",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was the victim’s note written in cursive, which the speaker is unable to imitate convincingly?",
+        "original_answer": "irrelevant",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_088",
+      "question": "Does the victim’s handwriting use an unusually stylized form, such as calligraphy?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_054",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Does the victim’s handwriting use an unusually stylized form, such as calligraphy?",
+        "original_answer": "irrelevant",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_089",
+      "question": "Is the speaker worried that the note will be recognized as a forgery because its handwriting does not convincingly match the victim’s?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_057",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Is the speaker worried that the note will be recognized as a forgery because its handwriting does not convincingly match the victim’s?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_090",
+      "question": "Is the speaker worried that the handwriting will expose the forgery even if the note’s wording supports the story that the victim left?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_065",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Is the speaker worried that the handwriting will expose the forgery even if the note’s wording supports the story that the victim left?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_091",
+      "question": "Is the forged note intended to make the recipient believe that the victim left voluntarily?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_067",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Is the forged note intended to make the recipient believe that the victim left voluntarily?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_092",
+      "question": "Does the speaker intend to impersonate the victim in person or through communications, in addition to forging the note?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_074",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Does the speaker intend to impersonate the victim in person or through communications, in addition to forging the note?",
+        "original_answer": "irrelevant",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_093",
+      "question": "Is the note meant to make its recipient believe the victim left because they were disappointed in that recipient?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_086",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Is the note meant to make its recipient believe the victim left because they were disappointed in that recipient?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_094",
+      "question": "Is the forged note meant to make the victim’s permanent disappearance look voluntary rather than the result of a killing?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_097",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Is the forged note meant to make the victim’s permanent disappearance look voluntary rather than the result of a killing?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_095",
+      "question": "Is the repeated sentence the wording the speaker plans to use in the forged note?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_099",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Is the repeated sentence the wording the speaker plans to use in the forged note?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_096",
+      "question": "Did the narrator himself repeatedly write the quoted sentence while trying to forge his wife’s handwriting?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "区分写字者、假署名者与未定收信人。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_002",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "reviewer_rewrite",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Is the repeated sentence written somewhere for the speaker to read?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_097",
+      "question": "Does the poor handwriting imitation risk exposing the narrator’s attempt to conceal the killing?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "是暴露风险，不是已经有人发现。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_012",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "reviewer_rewrite",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Is the speaker worried because the draft reveals something they intended to keep secret from its recipient?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_098",
+      "question": "Was the forged note intended to prove that the narrator was somewhere else when the killing happened?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "严格不在场证明与隐瞒死亡不同。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_030",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "reviewer_rewrite",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the speaker write the draft to create or support an alibi for the killing?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_099",
+      "question": "Was the forged note intended to conceal the killing by making the wife’s disappearance look voluntary?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "说明真正掩盖机制。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_030",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "reviewer_rewrite",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the speaker write the draft to create or support an alibi for the killing?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_100",
+      "question": "Is the exact writing system or alphabet used in the forged note specified?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "是否已说明是可判定元问题。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_051",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "reviewer_rewrite",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Is the victim’s handwriting difficult to imitate because it uses a non-Latin writing system?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_101",
+      "question": "Does the story establish a plan to send additional impersonation messages beyond the forged leaving note?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "未建立额外通信计划；不等于断言绝不会发生。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_080",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "reviewer_rewrite",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Does the speaker plan to send communications pretending to be the victim after the killing?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_102",
+      "question": "Is the forged leaving note being prepared by hand?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "手写已说明，实际寄出尚未说明。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_083",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "reviewer_rewrite",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Will the speaker send the forged note as a handwritten note?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS038_103",
+      "question": "Was the forged note eventually sent or delivered?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "故事停在练习伪造失败，不断言后续执行。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_083",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_sha256": "99743e6a2f5c0a8d66e92c96c394c011c72a975904e1b560e6026ffa1d39bde7",
+        "source_kind": "model_generated",
+        "question_origin": "reviewer_rewrite",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Will the speaker send the forged note as a handwritten note?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_RUN_TS038_009",
+      "question": "Did the speaker write the repeated sentence as an unsent draft of a message?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "反复练习伪造的句子可称尚未交付的草稿；不据此推断未来一定寄出。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_009",
+        "audit_case": "RUN_TS038_009",
+        "source": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_kind": "model_generated",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the speaker write the repeated sentence as an unsent draft of a message?",
+        "original_answer": "yes",
+        "question_origin": "source_verbatim",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_RUN_TS038_012",
+      "question": "Is the speaker worried because the draft reveals something they intended to keep secret from its recipient?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "worried because 描述怕草稿暴露秘密，符合伪造失败风险；不推导已经有人看到。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_012",
+        "audit_case": "RUN_TS038_012",
+        "source": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_kind": "model_generated",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Is the speaker worried because the draft reveals something they intended to keep secret from its recipient?",
+        "original_answer": "yes",
+        "question_origin": "source_verbatim",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_RUN_TS038_014",
+      "question": "Does the draft pretend to be a message written by its intended recipient?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "妻子是被冒名的作者；给他人看的妻子离家字条不是伪称由收信人本人写的信。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_014",
+        "audit_case": "RUN_TS038_014",
+        "source": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_kind": "model_generated",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Does the draft pretend to be a message written by its intended recipient?",
+        "original_answer": "no",
+        "question_origin": "source_verbatim",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_RUN_TS038_018",
+      "question": "Is the concealed thing the speaker did something they did directly to the intended recipient?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "隐瞒的是杀妻，妻子是伪造署名者而非欺骗的收信人；不需要猜收信人的具体身份。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_018",
+        "audit_case": "RUN_TS038_018",
+        "source": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_kind": "model_generated",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Is the concealed thing the speaker did something they did directly to the intended recipient?",
+        "original_answer": "no",
+        "question_origin": "source_verbatim",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_RUN_TS038_047",
+      "question": "Is the speaker worried that someone may discover the practice lines themselves and realize they are forging a note?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "汤底没有规定具体暴露渠道、左右手或字母系统；这些是未定细节，不是已经被否定的事实。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_047",
+        "audit_case": "RUN_TS038_047",
+        "source": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_kind": "model_generated",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Is the speaker worried that someone may discover the practice lines themselves and realize they are forging a note?",
+        "original_answer": "no",
+        "question_origin": "source_verbatim",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_RUN_TS038_049",
+      "question": "Did the speaker struggle to imitate the victim’s handwriting because the victim wrote with their other hand?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "汤底没有规定具体暴露渠道、左右手或字母系统；这些是未定细节，不是已经被否定的事实。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_049",
+        "audit_case": "RUN_TS038_049",
+        "source": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_kind": "model_generated",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the speaker struggle to imitate the victim’s handwriting because the victim wrote with their other hand?",
+        "original_answer": "no",
+        "question_origin": "source_verbatim",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_RUN_TS038_051",
+      "question": "Is the victim’s handwriting difficult to imitate because it uses a non-Latin writing system?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "汤底没有规定具体暴露渠道、左右手或字母系统；这些是未定细节，不是已经被否定的事实。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_051",
+        "audit_case": "RUN_TS038_051",
+        "source": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_kind": "model_generated",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Is the victim’s handwriting difficult to imitate because it uses a non-Latin writing system?",
+        "original_answer": "no",
+        "question_origin": "source_verbatim",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_RUN_TS038_080",
+      "question": "Does the speaker plan to send communications pretending to be the victim after the killing?",
+      "answer": "irrelevant",
+      "public_history": [
+        {
+          "question": "Does the speaker intend to impersonate the victim in person or through communications, in addition to forging the note?",
+          "answer": "irrelevant"
+        },
+        {
+          "question": "Does the speaker intend to impersonate the victim in order to deceive an institution or authority that the victim is still alive?",
+          "answer": "irrelevant"
+        },
+        {
+          "question": "Did the speaker kill the victim in order to take over their identity?",
+          "answer": "irrelevant"
+        },
+        {
+          "question": "Is the speaker pretending the victim is still alive in order to conceal or postpone discovery of the victim’s death?",
+          "answer": "yes"
+        },
+        {
+          "question": "Is the speaker pretending the victim is still alive primarily to avoid suspicion or investigation of the victim’s death, rather than to gain money or property?",
+          "answer": "yes"
+        },
+        {
+          "question": "Was the speaker hired or paid by someone else to kill the victim?",
+          "answer": "irrelevant"
+        }
+      ],
+      "rationale": "紧接 Q74–79 的“字条之外的冒名通信”追问，额外通信计划未说明；携带原局部语境，不作脱离上下文的标签。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_080",
+        "audit_case": "RUN_TS038_080",
+        "source": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_kind": "model_generated",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Does the speaker plan to send communications pretending to be the victim after the killing?",
+        "original_answer": "yes",
+        "question_origin": "source_verbatim",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_RUN_TS038_083",
+      "question": "Will the speaker send the forged note as a handwritten note?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "will send 问实际未来寄出；写过草稿不确定将来交付，手写这个已知属性不让寄出成为事实。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_083",
+        "audit_case": "RUN_TS038_083",
+        "source": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_kind": "model_generated",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Will the speaker send the forged note as a handwritten note?",
+        "original_answer": "yes",
+        "question_origin": "source_verbatim",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_RUN_TS038_088",
+      "question": "Will the speaker use the forged note and later messages to make people believe the victim moved away and is still living elsewhere?",
+      "answer": "yes and no",
+      "public_history": [
+        {
+          "question": "Does the speaker intend to impersonate the victim in person or through communications, in addition to forging the note?",
+          "answer": "irrelevant"
+        },
+        {
+          "question": "Does the speaker intend to impersonate the victim in order to deceive an institution or authority that the victim is still alive?",
+          "answer": "irrelevant"
+        },
+        {
+          "question": "Did the speaker kill the victim in order to take over their identity?",
+          "answer": "irrelevant"
+        },
+        {
+          "question": "Is the speaker pretending the victim is still alive in order to conceal or postpone discovery of the victim’s death?",
+          "answer": "yes"
+        },
+        {
+          "question": "Is the speaker pretending the victim is still alive primarily to avoid suspicion or investigation of the victim’s death, rather than to gain money or property?",
+          "answer": "yes"
+        },
+        {
+          "question": "Was the speaker hired or paid by someone else to kill the victim?",
+          "answer": "irrelevant"
+        }
+      ],
+      "rationale": "假离家字条掩盖死亡成立，额外后续消息不确定；混合标签不表示确认消息存在。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_088",
+        "audit_case": "RUN_TS038_088",
+        "source": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_kind": "model_generated",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Will the speaker use the forged note and later messages to make people believe the victim moved away and is still living elsewhere?",
+        "original_answer": "yes and no",
+        "question_origin": "source_verbatim",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_RUN_TS038_094",
+      "question": "Is the forged note meant to explain why the victim will no longer be physically present, while later messages are meant to make it seem they are still alive?",
+      "answer": "yes and no",
+      "public_history": [
+        {
+          "question": "Does the speaker intend to impersonate the victim in person or through communications, in addition to forging the note?",
+          "answer": "irrelevant"
+        },
+        {
+          "question": "Does the speaker intend to impersonate the victim in order to deceive an institution or authority that the victim is still alive?",
+          "answer": "irrelevant"
+        },
+        {
+          "question": "Did the speaker kill the victim in order to take over their identity?",
+          "answer": "irrelevant"
+        },
+        {
+          "question": "Is the speaker pretending the victim is still alive in order to conceal or postpone discovery of the victim’s death?",
+          "answer": "yes"
+        },
+        {
+          "question": "Is the speaker pretending the victim is still alive primarily to avoid suspicion or investigation of the victim’s death, rather than to gain money or property?",
+          "answer": "yes"
+        },
+        {
+          "question": "Was the speaker hired or paid by someone else to kill the victim?",
+          "answer": "irrelevant"
+        }
+      ],
+      "rationale": "假离家字条掩盖死亡成立，额外后续消息不确定；混合标签不表示确认消息存在。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS038_094",
+        "audit_case": "RUN_TS038_094",
+        "source": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+        "source_kind": "model_generated",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Is the forged note meant to explain why the victim will no longer be physically present, while later messages are meant to make it seem they are still alive?",
+        "original_answer": "yes and no",
+        "question_origin": "source_verbatim",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS038_001",
+      "question": "Is the repeated sentence something the speaker is hearing or reading, rather than saying themselves?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "可读的练字文字为真，但听到/读到作为重复句出现的解释不同于自己反复书写。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS038_001",
+        "audit_case": "RUN_TS038_001",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 77,
+        "human_confirmed": false,
+        "original_question": "Is the repeated sentence something the speaker is hearing or reading, rather than saying themselves?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS038_002",
+      "question": "Is the repeated sentence written somewhere for the speaker to read?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "自己写下并检查字迹的文字可供自己看，普通蕴含；不暗示另一个写字者。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS038_002",
+        "audit_case": "RUN_TS038_002",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 77,
+        "human_confirmed": false,
+        "original_question": "Is the repeated sentence written somewhere for the speaker to read?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS038_016",
+      "question": "Does the draft reveal something the speaker has done that they are trying to conceal from its intended recipient?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "字迹可暴露伪造与杀人是风险；直接陈述已经向特定收信人揭露不成立/未说明。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS038_016",
+        "audit_case": "RUN_TS038_016",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 78,
+        "human_confirmed": false,
+        "original_question": "Does the draft reveal something the speaker has done that they are trying to conceal from its intended recipient?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS038_030",
+      "question": "Did the speaker write the draft to create or support an alibi for the killing?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "alibi采用严格案发不在场证明；本题仅伪造妻子主动离家。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS038_030",
+        "audit_case": "RUN_TS038_030",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 76,
+        "human_confirmed": false,
+        "original_question": "Did the speaker write the draft to create or support an alibi for the killing?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
     }
   ],
-  "verification_policy": "independent_then_adjudicate_v1"
+  "verification_policy": "independent_then_adjudicate_v1",
+  "label_boundaries": [
+    "The opening explicitly contains disappointment and never returning. This wording is supported; consult the opening as well as the short solution.",
+    "The narrator writes, the wife is the forged author, and an actual later reader/recipient is unspecified. Do not infer identity or discovery from a generic mention of a recipient.",
+    "Concealing death with a forged departure note is not evidence of an elsewhere-at-the-time alibi. Additional impersonation messages, delivery, discovery and future outcomes are not established.",
+    "The wife is the forged author, not the intended reader being deceived. Worry about revelation does not assert actual discovery. Handedness and alphabet causing imitation difficulty are unspecified. Contextual questions about ADDITIONAL messages beyond the note are irrelevant; do not affirm delivery from handwritten drafts.",
+    "Use alibi in its strict elsewhere-at-the-time sense unless the player explicitly defines it as cover story. Material ambiguity in reading/revealing must not assert a new writer or a discovery event."
+  ]
 }

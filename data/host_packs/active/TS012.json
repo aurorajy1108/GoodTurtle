@@ -1,19 +1,20 @@
 {
-  "version": "host-v5.1-20261023",
-  "review_status": "ai_repair_pending_human",
+  "version": "host-v9-human-20261102",
+  "review_status": "human_labels_and_delegated_adjudication",
   "replace_host_examples": true,
-  "solution": "I cooked food with a very high temperature (without burning the food) in the pantry. However, I forgot to turn on the exhaust fan. Since the smoke detecter in the building is very sensitive, the grease fumes triggered the fire alarm.",
+  "solution": "I cooked food with a very high temperature (without burning the food) in the pantry. However, I forgot to turn on the exhaust fan. Since the smoke detecter in the building is very sensitive, the grease fumes triggered the fire alarm.\n\nHere hall means a residential hall and pantry means its small shared kitchen plus food storage. The narrator enters before starting to cook, rather than fetching an ingredient from another room. The pan is initially empty before oil and food are added. Both the smoke detector and alarm are inside the pantry.",
   "canonical_facts": [
     "The narrator cooks at high temperature in the pantry without burning the food",
     "The exhaust fan was not switched on",
     "Cooking grease fumes trigger a sensitive smoke detector and the fire alarm",
-    "Cooking grease fumes may be called cooking smoke in ordinary language; do not confuse them with burnt food, water steam, cigarette smoke or a separate fire."
+    "Cooking grease fumes may be called cooking smoke in ordinary language; do not confuse them with burnt food, water steam, cigarette smoke or a separate fire.",
+    "Here hall means a residential hall and pantry means its small shared kitchen plus food storage. The narrator enters before starting to cook, rather than fetching an ingredient from another room. The pan is initially empty before oil and food are added. Both the smoke detector and alarm are inside the pantry."
   ],
   "explicit_negatives": [
     "The source was high-temperature cooking grease fumes, not cigarette smoke."
   ],
   "unknown_details": [
-    "The precise appliance, gas/electric energy source, cooking technique (including frying), detector position and naked-eye visibility of fumes are unspecified."
+    "The precise appliance, gas/electric energy source, cooking technique (including frying), naked-eye visibility of fumes are unspecified."
   ],
   "irrelevant_details": [
     "Appliance brand, exact temperature, clothing and room dimensions are incidental."
@@ -688,10 +689,10 @@
     {
       "case_id": "AUDIT_038",
       "question": "Was the pantry a shared kitchen in a residence hall or dormitory?",
-      "answer": "irrelevant",
+      "answer": "yes",
       "public_history": [],
-      "rationale": "Residence-hall subtype or pantry layout is unspecified and unnecessary to the smoke/fumes mechanism.",
-      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "rationale": "人工说明hall是宿舍，pantry是共享小厨房；此前未定状态已被作者补全。",
+      "review_status": "human_fact_based_repair",
       "provenance": {
         "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q054",
         "reviewers": [
@@ -700,7 +701,13 @@
           "c"
         ],
         "adjudicator": "root",
-        "human_confirmed": false
+        "human_confirmed": false,
+        "answer_origin": "ai_application_of_human_fact",
+        "workbook_rows": [
+          22,
+          24
+        ],
+        "original_answer": "irrelevant"
       }
     },
     {
@@ -796,10 +803,10 @@
     {
       "case_id": "AUDIT_044",
       "question": "Was the person cooking in a kitchen or kitchenette located in the hall, rather than in a food-storage pantry?",
-      "answer": "irrelevant",
+      "answer": "yes",
       "public_history": [],
-      "rationale": "Residence-hall subtype or pantry layout is unspecified and unnecessary to the smoke/fumes mechanism.",
-      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "rationale": "人工说明hall是宿舍，pantry是共享小厨房；此前未定状态已被作者补全。",
+      "review_status": "human_fact_based_repair",
       "provenance": {
         "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q091",
         "reviewers": [
@@ -808,7 +815,13 @@
           "c"
         ],
         "adjudicator": "root",
-        "human_confirmed": false
+        "human_confirmed": false,
+        "answer_origin": "ai_application_of_human_fact",
+        "workbook_rows": [
+          22,
+          24
+        ],
+        "original_answer": "irrelevant"
       }
     },
     {
@@ -994,10 +1007,10 @@
     {
       "case_id": "AUDIT_055",
       "question": "Was the pantry a shared or communal kitchen in a residential building, rather than a pantry inside your own home?",
-      "answer": "irrelevant",
+      "answer": "yes",
       "public_history": [],
-      "rationale": "Residence-hall subtype or pantry layout is unspecified and unnecessary to the smoke/fumes mechanism.",
-      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "rationale": "人工说明hall是宿舍，pantry是共享小厨房；此前未定状态已被作者补全。",
+      "review_status": "human_fact_based_repair",
       "provenance": {
         "source_case": "20261023_repaired_host_rerun/negative/G01_TS012_TS017_r01_source/Q013",
         "reviewers": [
@@ -1006,7 +1019,13 @@
           "c"
         ],
         "adjudicator": "root",
-        "human_confirmed": false
+        "human_confirmed": false,
+        "answer_origin": "ai_application_of_human_fact",
+        "workbook_rows": [
+          22,
+          24
+        ],
+        "original_answer": "irrelevant"
       }
     },
     {
@@ -1048,7 +1067,213 @@
       "rationale": "Smoke/fumes caused the alarm without a building fire.",
       "public_history": [],
       "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS012_021",
+      "question": "Is the setting a normal, everyday residential house?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "宿舍符合 a normal, everyday residential house 的定义",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS012_021",
+        "audit_case": "INBOX_TS012_021",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 22,
+        "human_confirmed": true,
+        "original_question": "Is the setting a normal, everyday residential house?",
+        "original_answer": "Yes",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS012_025",
+      "question": "Did the narrator start heating the food before going to the pantry?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "先进入pantry，然后在pantry里面cook food",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS012_025",
+        "audit_case": "INBOX_TS012_025",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 23,
+        "human_confirmed": true,
+        "original_question": "Did the narrator start heating the food before going to the pantry?",
+        "original_answer": "Yes and no",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS012_027",
+      "question": "Did the narrator go to the pantry to get an ingredient or item needed for the food?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "进入pantry的目的就是cook food而不是get ingredients，我们hall对于pantry的定义跟一般定义不一样（cambridge：a small room or large cupboard in a house where food is kept，hall：mini kitchen+food storage）",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS012_027",
+        "audit_case": "INBOX_TS012_027",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 24,
+        "human_confirmed": true,
+        "original_question": "Did the narrator go to the pantry to get an ingredient or item needed for the food?",
+        "original_answer": "Yes",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS012_029",
+      "question": "Was there already food on the stovetop when the narrator went to the pantry?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "进入pantry后才开始cook",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS012_029",
+        "audit_case": "INBOX_TS012_029",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 25,
+        "human_confirmed": true,
+        "original_question": "Was there already food on the stovetop when the narrator went to the pantry?",
+        "original_answer": "No",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS012_030",
+      "question": "Was the pan or pot on the stove empty when the narrator went to the pantry?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "按人工标签列应用；“非问题”不当作删除问句的指令。",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS012_030",
+        "audit_case": "INBOX_TS012_030",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 26,
+        "human_confirmed": true,
+        "original_question": "Was the pan or pot on the stove empty when the narrator went to the pantry?",
+        "original_answer": "Yes",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS012_031",
+      "question": "Was there oil or cooking fat in the pan when it was left on the stove?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "按人工标签列应用；“非问题”不当作删除问句的指令。",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS012_031",
+        "audit_case": "INBOX_TS012_031",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 26,
+        "human_confirmed": true,
+        "original_question": "Was there oil or cooking fat in the pan when it was left on the stove?",
+        "original_answer": "Yes",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS012_032",
+      "question": "Did the oil in the pan overheat and produce smoke while the narrator was in the pantry?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "按人工标签列应用；“非问题”不当作删除问句的指令。",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS012_032",
+        "audit_case": "INBOX_TS012_032",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 27,
+        "human_confirmed": true,
+        "original_question": "Did the oil in the pan overheat and produce smoke while the narrator was in the pantry?",
+        "original_answer": "Yes and no",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS012_034",
+      "question": "Did the smoke start after the narrator returned from the pantry?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "the smoke started while the narrator is cooking",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS012_034",
+        "audit_case": "INBOX_TS012_034",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 28,
+        "human_confirmed": true,
+        "original_question": "Did the smoke start after the narrator returned from the pantry?",
+        "original_answer": "Yes and no",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS012_049",
+      "question": "Is the fire alarm located in the hall, just outside the pantry?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "其实写的时候assume了smoke detector和fire alarm都在pantry里面，可能需要改写汤底？",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS012_049",
+        "audit_case": "INBOX_TS012_049",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 29,
+        "human_confirmed": true,
+        "original_question": "Is the fire alarm located in the hall, just outside the pantry?",
+        "original_answer": "yes and no",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
     }
   ],
-  "verification_policy": "independent_then_adjudicate_v1"
+  "verification_policy": "independent_then_adjudicate_v1",
+  "fact_provenance": [
+    {
+      "text": "Here hall means a residential hall and pantry means its small shared kitchen plus food storage. The narrator enters before starting to cook, rather than fetching an ingredient from another room. The pan is initially empty before oil and food are added. Both the smoke detector and alarm are inside the pantry.",
+      "source": "Human workbook rows 22–29",
+      "workbook_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+      "human_supplied": true
+    }
+  ]
 }

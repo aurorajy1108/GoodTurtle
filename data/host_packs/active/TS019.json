@@ -1,6 +1,6 @@
 {
-  "version": "host-v5.1-20261023",
-  "review_status": "ai_repair_pending_human",
+  "version": "host-v9-human-20261102",
+  "review_status": "human_labels_and_delegated_adjudication",
   "replace_host_examples": true,
   "solution": "There is a pair of escalators connecting the campus. I must take the escalator to get to the campus since there are no staircases nearby. One of these escalators is often under maintenance. When this happens, the other escalator will be paused so that people can use it as a staircase to enter and exit the campus.",
   "canonical_facts": [
@@ -106,6 +106,116 @@
       "provenance": {
         "method": "protocol_boundary",
         "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS019_003",
+      "question": "Are the stairs part of a fixed building structure?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "1. 改为irrelevant，并非重点 2. 扶梯没坏时附近确实没有楼梯，作者只有在扶梯坏掉时才有机会走「楼梯」",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS019_003",
+        "audit_case": "INBOX_TS019_003",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 44,
+        "human_confirmed": true,
+        "original_question": "Are the stairs part of a fixed building structure?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS019_006",
+      "question": "Are the stairs inside a building that is on your usual route to or from the school campus?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "两者都改为yes and no（有时扶梯停用就有「楼梯」，否则建筑里没有「楼梯」，maybe汤底写明扶梯在campus entrance/exit 前面？",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS019_006",
+        "audit_case": "INBOX_TS019_006",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 45,
+        "human_confirmed": true,
+        "original_question": "Are the stairs inside a building that is on your usual route to or from the school campus?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS019_007",
+      "question": "Is the building with the stairs part of the school campus?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "两者都改为yes and no（有时扶梯停用就有「楼梯」，否则建筑里没有「楼梯」，maybe汤底写明扶梯在campus entrance/exit 前面？",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS019_007",
+        "audit_case": "INBOX_TS019_007",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 45,
+        "human_confirmed": true,
+        "original_question": "Is the building with the stairs part of the school campus?",
+        "original_answer": "no",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS019_016",
+      "question": "Is the school-campus area you enter/exit located on a floor other than ground level inside that non-campus building?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "人工标为非问题，保留原标签。",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS019_016",
+        "audit_case": "INBOX_TS019_016",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 48,
+        "human_confirmed": true,
+        "original_question": "Is the school-campus area you enter/exit located on a floor other than ground level inside that non-campus building?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS019_017",
+      "question": "Is the explanation that the entrance/exit to the school campus is on an upper or lower floor inside a separate non-campus building, so you normally take that building’s lift/elevator, but sometimes take its stairs when the lift is unavailable?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "人工标为非问题，保留原标签。",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS019_017",
+        "audit_case": "INBOX_TS019_017",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 48,
+        "human_confirmed": true,
+        "original_question": "Is the explanation that the entrance/exit to the school campus is on an upper or lower floor inside a separate non-campus building, so you normally take that building’s lift/elevator, but sometimes take its stairs when the lift is unavailable?",
+        "original_answer": "yes and no",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
       }
     }
   ],

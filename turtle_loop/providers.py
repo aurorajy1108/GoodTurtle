@@ -167,6 +167,7 @@ class Client:
         url, headers, body, kind = build_request(self.profile, system, user)
         for attempt in range(self.profile.get('max_retries', 2) + 1):
             start = time.monotonic()
+            data = None
             response_recorded = False
             record = {'role': self.role, 'provider': self.profile['provider'],
                       'model_requested': self.profile['model'], 'endpoint': url,
@@ -179,7 +180,7 @@ class Client:
                 reply.seconds = time.monotonic() - start
                 self.audit({**record, 'status': 'ok', 'seconds': reply.seconds,
                             'response_id': reply.response_id, 'model_returned': reply.model,
-                            'text': reply.text, 'usage': reply.usage, 'finish_reason': reply.finish_reason})
+                            'text': reply.text, 'usage': reply.usage, 'service_tier': data.get('service_tier'), 'finish_reason': reply.finish_reason})
                 response_recorded = True
                 # Truncated/refused outputs are recorded, not silently repaired/re-sampled.
                 if not reply.text.strip() or reply.finish_reason in ('length', 'max_tokens', 'incomplete', 'failed', 'refusal', 'content_filter', 'tool_use', 'tool_calls'):
@@ -198,8 +199,14 @@ class Client:
                 retry, error = True, APIError(f'{self.role}: transport failure ({type(exc).__name__})')
             except (json.JSONDecodeError, APIError) as exc:
                 if not response_recorded:
-                    self.audit({**record, 'status': 'invalid_response', 'seconds': time.monotonic()-start})
+                    self.audit({**record, 'status': 'invalid_response', 'seconds': time.monotonic()-start,
+                                'usage': data.get('usage', {}) if isinstance(data, dict) else {},
+                                'model_returned': data.get('model') if isinstance(data, dict) else None})
                 raise APIError(f'{self.role}: invalid/empty/truncated provider response') from None
+            except KeyboardInterrupt:
+                if not response_recorded:
+                    self.audit({**record, 'status':'interrupted', 'seconds':time.monotonic()-start})
+                raise
             if not retry or attempt >= self.profile.get('max_retries', 2):
                 raise error from None
             time.sleep(min(2 ** attempt, 8))

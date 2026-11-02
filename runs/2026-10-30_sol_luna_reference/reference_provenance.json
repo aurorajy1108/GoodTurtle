@@ -1,0 +1,22 @@
+{
+  "kind": "model_simulated_reference",
+  "human_trajectory": false,
+  "human_confirmed": false,
+  "purpose": "User-requested replacement references for TS031, TS035, TS038",
+  "puzzles": [
+    "TS031",
+    "TS035",
+    "TS038"
+  ],
+  "host": "gpt-6.1-sol",
+  "player": "gpt-6-luna",
+  "grader": "gpt-6.1-sol",
+  "reasoning_effort": "high",
+  "repeats_per_puzzle": 1,
+  "max_submissions_per_puzzle": 100,
+  "reference_url": "https://chatgpt.com/share/6ae46825-9dd4-83ee-b6d9-3cdde0f40caf",
+  "reference_access": "web fetch failed; direct request HTTP 403; not included in prompts",
+  "review_status": "pending",
+  "active_host_updated": false,
+  "model_identity": "Requested CLI model pinned; returned model identity may not be independently reported."
+}

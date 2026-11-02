@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "source": "User sets and target eligibility clarification, 2026-11-02",
+  "interpretation": "Only anchor or positive can be target B. Bidirectional anchor-positive; negative/neutral only source. No inferred relations among non-anchor puzzles.",
+  "groups": [
+    {
+      "id": "S1_TS015_TS013",
+      "set_id": 1,
+      "puzzles": [
+        "TS015",
+        "TS013"
+      ],
+      "directed_pairs": [
+        [
+          "TS015",
+          "TS013"
+        ]
+      ],
+      "relation": "positive",
+      "anchor": "TS013",
+      "relation_status": "user_hypothesis_not_measured",
+      "direction": "to_anchor"
+    },
+    {
+      "id": "S1_TS013_TS015",
+      "set_id": 1,
+      "puzzles": [
+        "TS013",
+        "TS015"
+      ],
+      "directed_pairs": [
+        [
+          "TS013",
+          "TS015"
+        ]
+      ],
+      "relation": "positive",
+      "anchor": "TS013",
+      "relation_status": "user_hypothesis_not_measured",
+      "direction": "to_positive"
+    },
+    {
+      "id": "S1_TS016_TS013",
+      "set_id": 1,
+      "puzzles": [
+        "TS016",
+        "TS013"
+      ],
+      "directed_pairs": [
+        [
+          "TS016",
+          "TS013"
+        ]
+      ],
+      "relation": "positive",
+      "anchor": "TS013",
+      "relation_status": "user_hypothesis_not_measured",
+      "direction": "to_anchor"
+    },
+    {
+      "id": "S1_TS013_TS016",
+      "set_id": 1,
+      "puzzles": [
+        "TS013",
+        "TS016"
+      ],
+      "directed_pairs": [
+        [
+          "TS013",
+          "TS016"
+        ]
+      ],
+      "relation": "positive",
+      "anchor": "TS013",
+      "relation_status": "user_hypothesis_not_measured",
+      "direction": "to_positive"
+    },
+    {
+      "id": "S1_TS014_TS013",
+      "set_id": 1,
+      "puzzles": [
+        "TS014",
+        "TS013"
+      ],
+      "directed_pairs": [
+        [
+          "TS014",
+          "TS013"
+        ]
+      ],
+      "relation": "negative",
+      "anchor": "TS013",
+      "relation_status": "user_hypothesis_not_measured",
+      "direction": "to_anchor"
+    },
+    {
+      "id": "S1_TS028_TS013",
+      "set_id": 1,
+      "puzzles": [
+        "TS028",
+        "TS013"
+      ],
+      "directed_pairs": [
+        [
+          "TS028",
+          "TS013"
+        ]
+      ],
+      "relation": "neutral",
+      "anchor": "TS013",
+      "relation_status": "user_hypothesis_not_measured",
+      "direction": "to_anchor"
+    }
+  ]
+}

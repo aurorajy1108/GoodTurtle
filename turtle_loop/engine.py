@@ -107,6 +107,9 @@ class Recorder:
         self.folder = Path(folder)
         self.folder.mkdir(parents=True, exist_ok=False)
         self.turns, self.calls, self.echo = [], [], echo
+        from .costs import pricing_config
+        self.pricing = pricing_config(config.get('pricing'))
+        dump(self.folder / 'pricing_snapshot.json', self.pricing)
         self.opening = puzzle['opening']
         self.simulation = config.get('mode') == 'scripted_demo_NOT_model_performance'
         self.start = time.monotonic()
@@ -130,10 +133,17 @@ class Recorder:
         self.append('trajectory.jsonl', {'event': kind, **fields})
 
     def audit(self, value):
+        from .costs import account_call
+        value = {**value, 'accounting': account_call(value, self.pricing)}
         self.calls.append(value)
         self.append('api_calls.jsonl', value)
 
     def report(self, status, stop_reason, error=None):
+        from .costs import cost_summary, write_call_costs
+        accounting = [c['accounting'] for c in self.calls]
+        costs = cost_summary(accounting)
+        write_call_costs(self.folder, accounting)
+        dump(self.folder / 'cost_summary.json', costs)
         questions = sum(t['type'] == 'question' for t in self.turns)
         finals = [t for t in self.turns if t['type'] == 'final']
         graded = [t['grade'] for t in finals if 'grade' in t]
@@ -163,7 +173,7 @@ class Recorder:
                   'best_partial_score': max((g['partial_score'] for g in graded), default=None),
                   'latest_final': finals[-1]['text'] if finals else None,
                   'latest_grade': last, 'elapsed_seconds': time.monotonic()-self.start,
-                  'usage': usage, 'error': error, 'human_review_status': 'pending',
+                  'usage': usage, 'costs': costs, 'error': error, 'human_review_status': 'pending',
                   'evaluation_versions': self.versions}
         dump(self.folder / 'result.json', result)
         self.render(result)
@@ -175,6 +185,7 @@ class Recorder:
         lines = ['# Turtle Soup trajectory', '', self.opening, '',
                  f"Status: {result['status']} | counted questions: {result['counted_questions']} | "
                  f"submissions: {result['submissions']} | final partial score: {result['final_partial_score']}", '']
+        lines.extend(['[Token usage and estimated costs](token_costs.csv)', ''])
         cards = []
         review = []
         for turn in self.turns:
@@ -204,7 +215,8 @@ class Recorder:
             + ('<p><strong>SCRIPTED DEMO — not model performance</strong></p>' if result['simulation'] else '')
             + '<pre>' + html.escape(self.opening) + '</pre><p>'
             + html.escape(f"{result['status']} · count {result['counted_questions']} · score {result['final_partial_score']}")
-            + '</p>' + ''.join(cards))
+            + '</p><p><a href="token_costs.csv">Token usage and estimated costs</a> · '
+              '<a href="cost_summary.json">Cost summary (USD estimate, not actual bill)</a></p>' + ''.join(cards))
         # Model-owned snapshot: never overwrite a human's separate annotation file.
         with (self.folder / 'review_template.csv').open('w', newline='') as stream:
             writer = csv.DictWriter(stream, fieldnames=['submission', 'type', 'text', 'host_label', 'reviewer_label', 'notes'])
@@ -299,6 +311,8 @@ def play(puzzle, config, recorder, clients, prompts, player_context=None):
 
 
 def summarize_batch(folder, entries):
+    from .costs import write_batch_costs
+    costs = write_batch_costs(Path(folder), entries)
     completed = [r for r in entries if r['status'] == 'completed']
     solved = [r for r in completed if r['success']]
     def stats(values):
@@ -315,7 +329,8 @@ def summarize_batch(folder, entries):
                'counted_questions_success_only': stats([r['counted_questions'] for r in solved]),
                'final_partial_scores_completed': stats([r['final_partial_score'] for r in completed
                                                         if r['final_partial_score'] is not None]),
-               'note': 'Errors, interrupted and needs_review runs remain visible and are excluded from completed-game rates. Scores are provisional model judgments.'}
+               'costs': costs,
+               'note': 'Errors, interrupted and needs_review runs remain visible and are excluded from completed-game rates. Costs include all statuses. Scores are provisional model judgments.'}
     dump(Path(folder)/'summary.json', summary)
     columns = ['puzzle_id', 'story_family', 'quality_status', 'repeat', 'status', 'success', 'host_questions', 'rejected_finals',
                'counted_questions', 'submissions', 'final_partial_score', 'best_partial_score', 'stop_reason', 'run_dir']

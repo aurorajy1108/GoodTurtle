@@ -1,0 +1,221 @@
+{
+  "as_of": "2026-10-29",
+  "local_commit": "1aa06db",
+  "fetched_origin_main": "1aa06db",
+  "scope": "15 distinct user-listed puzzles; Set 1 unrelated control has no puzzle ID yet",
+  "definition": "Visible-source archived means all readable messages from the earlier public share are preserved, not that the game was solved, every question was answered, or labels were human-approved. Existing AI experimental trajectories are not human references.",
+  "rows": [
+    {
+      "set": "set1",
+      "puzzle_id": "TS013",
+      "source_status": "no_human_source_found",
+      "source_sessions": [],
+      "active_examples_total": 10,
+      "active_examples_from_user_history": 0,
+      "human_confirmed_active_examples": 0,
+      "needs_original_source": true
+    },
+    {
+      "set": "set1",
+      "puzzle_id": "TS014",
+      "source_status": "no_human_source_found",
+      "source_sessions": [],
+      "active_examples_total": 10,
+      "active_examples_from_user_history": 0,
+      "human_confirmed_active_examples": 0,
+      "needs_original_source": true
+    },
+    {
+      "set": "set1",
+      "puzzle_id": "TS015",
+      "source_status": "no_human_source_found",
+      "source_sessions": [],
+      "active_examples_total": 11,
+      "active_examples_from_user_history": 0,
+      "human_confirmed_active_examples": 0,
+      "needs_original_source": true
+    },
+    {
+      "set": "set1",
+      "puzzle_id": "TS016",
+      "source_status": "no_human_source_found",
+      "source_sessions": [],
+      "active_examples_total": 16,
+      "active_examples_from_user_history": 0,
+      "human_confirmed_active_examples": 0,
+      "needs_original_source": true
+    },
+    {
+      "set": "set2",
+      "puzzle_id": "TS034",
+      "source_status": "visible_source_archived",
+      "source_sessions": [
+        {
+          "session_id": "6adf3775_TS034_05",
+          "recorded_actions": 9,
+          "source_url": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45"
+        },
+        {
+          "session_id": "6adf37d6_TS034_01",
+          "recorded_actions": 37,
+          "source_url": "https://chatgpt.com/share/6adf37d6-5080-83e9-abbc-2ced03b615d6"
+        }
+      ],
+      "active_examples_total": 17,
+      "active_examples_from_user_history": 5,
+      "human_confirmed_active_examples": 0,
+      "needs_original_source": false
+    },
+    {
+      "set": "set2",
+      "puzzle_id": "TS033",
+      "source_status": "visible_source_archived",
+      "source_sessions": [
+        {
+          "session_id": "6adf3775_TS033_03",
+          "recorded_actions": 101,
+          "source_url": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45"
+        }
+      ],
+      "active_examples_total": 32,
+      "active_examples_from_user_history": 4,
+      "human_confirmed_active_examples": 0,
+      "needs_original_source": false
+    },
+    {
+      "set": "set2",
+      "puzzle_id": "TS035",
+      "source_status": "no_human_source_found",
+      "source_sessions": [],
+      "active_examples_total": 20,
+      "active_examples_from_user_history": 0,
+      "human_confirmed_active_examples": 0,
+      "needs_original_source": true
+    },
+    {
+      "set": "set3",
+      "puzzle_id": "TS022",
+      "source_status": "no_human_source_found",
+      "source_sessions": [],
+      "active_examples_total": 94,
+      "active_examples_from_user_history": 0,
+      "human_confirmed_active_examples": 0,
+      "needs_original_source": true
+    },
+    {
+      "set": "set3",
+      "puzzle_id": "TS047",
+      "source_status": "no_human_source_found",
+      "source_sessions": [],
+      "active_examples_total": 125,
+      "active_examples_from_user_history": 0,
+      "human_confirmed_active_examples": 0,
+      "needs_original_source": true
+    },
+    {
+      "set": "set4",
+      "puzzle_id": "TS007",
+      "source_status": "fragments_only",
+      "source_sessions": [],
+      "active_examples_total": 25,
+      "active_examples_from_user_history": 11,
+      "human_confirmed_active_examples": 0,
+      "needs_original_source": true
+    },
+    {
+      "set": "set4",
+      "puzzle_id": "TS026",
+      "source_status": "no_human_source_found",
+      "source_sessions": [],
+      "active_examples_total": 8,
+      "active_examples_from_user_history": 0,
+      "human_confirmed_active_examples": 0,
+      "needs_original_source": true
+    },
+    {
+      "set": "set4",
+      "puzzle_id": "TS021",
+      "source_status": "no_human_source_found",
+      "source_sessions": [],
+      "active_examples_total": 8,
+      "active_examples_from_user_history": 0,
+      "human_confirmed_active_examples": 0,
+      "needs_original_source": true
+    },
+    {
+      "set": "set5",
+      "puzzle_id": "TS038",
+      "source_status": "no_human_source_found",
+      "source_sessions": [],
+      "active_examples_total": 8,
+      "active_examples_from_user_history": 0,
+      "human_confirmed_active_examples": 0,
+      "needs_original_source": true
+    },
+    {
+      "set": "set5",
+      "puzzle_id": "TS046",
+      "source_status": "no_human_source_found",
+      "source_sessions": [],
+      "active_examples_total": 14,
+      "active_examples_from_user_history": 0,
+      "human_confirmed_active_examples": 0,
+      "needs_original_source": true
+    },
+    {
+      "set": "set5",
+      "puzzle_id": "TS032",
+      "source_status": "visible_source_archived",
+      "source_sessions": [
+        {
+          "session_id": "6adf3775_TS032_04",
+          "recorded_actions": 100,
+          "source_url": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45"
+        }
+      ],
+      "active_examples_total": 35,
+      "active_examples_from_user_history": 5,
+      "human_confirmed_active_examples": 0,
+      "needs_original_source": false
+    }
+  ],
+  "unread_sources": [
+    {
+      "url": "https://chatgpt.com/share/6ae2bbf3-51a8-83ee-89a6-8df90cff3e4b",
+      "status": "unreadable_http_403",
+      "puzzle_ids": null,
+      "note": "No messages extracted; do not infer puzzle IDs from surrounding request."
+    },
+    {
+      "url": "https://app.notion.com/p/Set-1-result-4079ebc0e9b0801d85adc2c2137ee811?pvs=21",
+      "set": "set1",
+      "status": "body_not_accessible",
+      "note": "Web reader unavailable; Set 1 direct HTML was application shell, not the question/answer record."
+    },
+    {
+      "url": "https://app.notion.com/p/Set-2-Result-4079ebc0e9b08064b40ee14db0e64469?pvs=21",
+      "set": "set2",
+      "status": "body_not_accessible",
+      "note": "Web reader could not access body; contents not verified."
+    },
+    {
+      "url": "https://app.notion.com/p/Set-3-Result-4079ebc0e9b080c8ac0df21a3b2b8d05?pvs=21",
+      "set": "set3",
+      "status": "body_not_accessible",
+      "note": "Web reader could not access body; contents not verified."
+    },
+    {
+      "url": "https://app.notion.com/p/Set-4-Result-4079ebc0e9b080c5afe8ea0f7b44c422?pvs=21",
+      "set": "set4",
+      "status": "body_not_accessible",
+      "note": "Web reader could not access body; contents not verified."
+    }
+  ],
+  "missing_control": {
+    "set": "set1",
+    "relation": "unrelated",
+    "puzzle_id": null
+  },
+  "runtime_changed": false,
+  "new_trajectory_imported": false
+}

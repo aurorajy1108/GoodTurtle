@@ -1,0 +1,202 @@
+{
+  "puzzle_id": "TS035",
+  "opening": "In a newly settled village in Meiji-era Japan, a father finds a brown bear eating his only daughter in the forest. He shoots it and weeps over her remains. Knowing these wary bears rarely attack unfamiliar living humans, he nevertheless fears other villagers will also suffer having relatives eaten. Why?",
+  "reference_answer": "Several days earlier, an epidemic had killed his daughter and several other villagers.\nThe new settlement had no crematorium and could not spare enough fuel to cremate the dead, so the villagers buried the bodies in the forest.\nThe father visited his daughter’s grave every day. On this visit, he discovered that a bear had dug up her body and was eating her remains. He shot the bear.\nHe feared that other bears would also dig up the graves and eat the dead relatives of other villagers. His concern was about bears consuming buried bodies, rather than attacking living people.",
+  "canonical_solution": "Several days earlier, an epidemic had killed his daughter and several other villagers.\nThe new settlement had no crematorium and could not spare enough fuel to cremate the dead, so the villagers buried the bodies in the forest.\nThe father visited his daughter’s grave every day. On this visit, he discovered that a bear had dug up her body and was eating her remains. He shot the bear.\nHe feared that other bears would also dig up the graves and eat the dead relatives of other villagers. His concern was about bears consuming buried bodies, rather than attacking living people.",
+  "canonical_facts": [
+    "An epidemic has already killed his daughter and other villagers",
+    "The settlement lacks a crematorium and sufficient fuel, so victims are buried in the forest",
+    "On a daily grave visit he finds a bear has dug up and is eating his daughter’s remains",
+    "He shoots that bear",
+    "He fears other bears will exhume other villagers’ dead relatives, not attack living villagers"
+  ],
+  "explicit_negatives": [
+    "The bear did not kill the daughter; she was already an epidemic victim.",
+    "His stated worry concerns corpses being exhumed, not danger to living villagers."
+  ],
+  "unknown_details": [
+    "The gun brand, exact grave count and future actions of other bears are unspecified."
+  ],
+  "irrelevant_details": [
+    "Unspecified names, brands, colors and exact dates are incidental."
+  ],
+  "completion_requirements": [
+    "An epidemic has already killed his daughter and other villagers",
+    "The settlement lacks a crematorium and sufficient fuel, so victims are buried in the forest",
+    "On a daily grave visit he finds a bear has dug up and is eating his daughter’s remains",
+    "He shoots that bear",
+    "He fears other bears will exhume other villagers’ dead relatives, not attack living villagers"
+  ],
+  "host_examples": [
+    {
+      "case_id": "EXT_TS035_001",
+      "question": "Was the daughter already dead before the bear reached her?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Use the source roles and causal chain; do not invent unspecified details.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "EXT_TS035_002",
+      "question": "Was she killed by the bear during this encounter?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Use the source roles and causal chain; do not invent unspecified details.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "EXT_TS035_003",
+      "question": "Did an epidemic kill her and other villagers days earlier?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Use the source roles and causal chain; do not invent unspecified details.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "EXT_TS035_004",
+      "question": "Were the dead buried in the forest?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Use the source roles and causal chain; do not invent unspecified details.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "EXT_TS035_005",
+      "question": "Did the settlement have enough fuel and a crematorium for normal cremation?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Use the source roles and causal chain; do not invent unspecified details.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "EXT_TS035_006",
+      "question": "Did lack of a crematorium and sufficient fuel lead to burial instead?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Use the source roles and causal chain; do not invent unspecified details.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "EXT_TS035_007",
+      "question": "Was the father visiting her grave as he did every day?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Use the source roles and causal chain; do not invent unspecified details.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "EXT_TS035_008",
+      "question": "Had the bear dug up her body?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Use the source roles and causal chain; do not invent unspecified details.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "EXT_TS035_009",
+      "question": "Was the bear eating her remains?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Use the source roles and causal chain; do not invent unspecified details.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "EXT_TS035_010",
+      "question": "Did the father shoot that bear?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Use the source roles and causal chain; do not invent unspecified details.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "EXT_TS035_011",
+      "question": "Was his concern about other bears digging up other graves?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Use the source roles and causal chain; do not invent unspecified details.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "EXT_TS035_012",
+      "question": "Was his concern specifically that bears would attack living villagers?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Use the source roles and causal chain; do not invent unspecified details.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "EXT_TS035_013",
+      "question": "Was the bear a supernatural reincarnation of his daughter?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Use the source roles and causal chain; do not invent unspecified details.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "EXT_TS035_014",
+      "question": "Was the father himself the person who killed the daughter?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Use the source roles and causal chain; do not invent unspecified details.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "EXT_TS035_015",
+      "question": "Were the other bodies also victims of the epidemic?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Use the source roles and causal chain; do not invent unspecified details.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "EXT_TS035_016",
+      "question": "Did the father worry about dead relatives of other villagers being eaten?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Use the source roles and causal chain; do not invent unspecified details.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "EXT_TS035_017",
+      "question": "Was she already dead and did the bear kill her?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "Use the source roles and causal chain; do not invent unspecified details.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "EXT_TS035_018",
+      "question": "What brand of gun did the father use?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Use the source roles and causal chain; do not invent unspecified details.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "EXT_TS035_019",
+      "question": "Exactly how many other graves were there?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Use the source roles and causal chain; do not invent unspecified details.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "EXT_TS035_020",
+      "question": "Had her body been cremated before the bear found it?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Use the source roles and causal chain; do not invent unspecified details.",
+      "review_status": "ai_authored_pending_human"
+    }
+  ],
+  "review_status": "ai_repair_pending_human",
+  "binding_version": "host-v5.1-20261023",
+  "story_sha256": "f83d2aebe4ff29ad7bb173bfbd5cab4151f689941bfa7e56f140c7e2eadd857a",
+  "grading_sha256": "a42f820be88edcb7da6a7d91362a2443219656cae38fe3053cbdf7988aa1bf9a",
+  "context_schema": "story-context-v2",
+  "event_order": [],
+  "knowledge_states": [],
+  "label_boundaries": [],
+  "verification_policy": "independent_then_adjudicate_v1",
+  "context_sha256": "42ed9354decaf224a90c4f254c18cf957e4bbcaaac3b0da352b5a8e1d8d87730"
+}

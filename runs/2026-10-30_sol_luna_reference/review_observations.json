@@ -1,0 +1,101 @@
+[
+  {
+    "puzzle_id": "TS031",
+    "submission": 13,
+    "question": "Was the eraser attached to the end of an ordinary pencil, as a pencil-top eraser?",
+    "original_label": "yes",
+    "category": "ambiguity",
+    "observation": "“ordinary pencil” 可泛指普通铅笔，也可能被玩家理解为木杆铅笔；Host 的 yes 不能视为确认木杆结构。需连同下一次失败交卷审核。",
+    "review_status": "ai_flag_pending_human",
+    "adjudicated_label": null,
+    "original_modified": false
+  },
+  {
+    "puzzle_id": "TS035",
+    "submission": 8,
+    "question": "Had bears already dug up and eaten other villagers’ buried dead before this incident?",
+    "original_label": "yes and no",
+    "category": "label_boundary",
+    "observation": "此前已有其他遗体被熊挖出是否属关键未知：Q8 为 yes and no，Q10/12 对类似既往事件为 irrelevant。复核标签边界一致性。",
+    "review_status": "ai_flag_pending_human",
+    "adjudicated_label": null,
+    "original_modified": false
+  },
+  {
+    "puzzle_id": "TS038",
+    "submission": 12,
+    "question": "Is the speaker worried because the draft reveals something they intended to keep secret from its recipient?",
+    "original_label": "yes",
+    "category": "presupposition",
+    "observation": "问题预设有 intended recipient 并询问隐瞒；汤底是伪造妻子离家笔迹，未指定具体收件人。检查 yes 是否无意确认额外角色。",
+    "review_status": "ai_flag_pending_human",
+    "adjudicated_label": null,
+    "original_modified": false
+  },
+  {
+    "puzzle_id": "TS038",
+    "submission": 30,
+    "question": "Did the speaker write the draft to create or support an alibi for the killing?",
+    "original_label": "yes",
+    "category": "word_sense",
+    "observation": "alibi 狭义指案发时不在现场，汤底只确立伪造妻子离家证据。检查此 yes 是否把一般掩饰犯罪混同为不在场证明；结合 Q31 的后续澄清审核。",
+    "review_status": "ai_flag_pending_human",
+    "adjudicated_label": null,
+    "original_modified": false
+  },
+  {
+    "puzzle_id": "TS035",
+    "submission": 56,
+    "question": "Would villagers’ distress come from discovering bears eating their deceased relatives, even though the bears posed no danger to living people?",
+    "original_label": "yes",
+    "category": "fear_vs_objective_risk",
+    "observation": "父亲不担心熊攻击活人不等于熊客观上对活人无危险。问题 even though bears posed no danger to living people 强加了绝对事实；原 yes 过度肯定。建议复核为 yes and no：亲属悲伤部分有依据，客观零风险未确立。 题面说 rarely attack unfamiliar living humans，不是 never attack。",
+    "suggested_label": "yes and no",
+    "review_status": "ai_flag_pending_human",
+    "adjudicated_label": null,
+    "original_modified": false,
+    "opening_evidence": "In a newly settled village in Meiji-era Japan, a father finds a brown bear eating his only daughter in the forest. He shoots it and weeps over her remains. Knowing these wary bears rarely attack unfamiliar living humans, he nevertheless fears other villagers will also suffer having relatives eaten. Why?"
+  },
+  {
+    "puzzle_id": "TS031",
+    "submission": 57,
+    "question": "Did the pencil support the separate graphite indirectly, through another object or part, while A wrote?",
+    "original_label": "yes",
+    "category": "compound_question",
+    "observation": "another object or part 的 part 可包括自动铅笔内部夹持部件，但宽泛 yes 被玩家继续解释为外部支架。审查问题范围与后续 Q58/59，不将其直接改写成对外部装置的肯定。",
+    "suggested_label": null,
+    "review_status": "ai_flag_pending_human",
+    "adjudicated_label": null,
+    "original_modified": false
+  },
+  {
+    "puzzle_id": "TS035",
+    "submission": 68,
+    "related_submissions": [
+      70,
+      71
+    ],
+    "question": "Was the ongoing consequence he feared chiefly that other villagers would be traumatized by finding bears eating their buried relatives?",
+    "original_label": "yes",
+    "category": "comparative_priority",
+    "observation": "Q68/Q70 将主要担忧设为亲属精神创伤，Q71 明确区分并说主要担忧尸体被吃，Host 都肯定。情感反应可合理推测，但不能忽略 chiefly/rather than 所要求的优先级；对照汤底复核。",
+    "review_status": "ai_flag_pending_human",
+    "adjudicated_label": null,
+    "original_modified": false
+  },
+  {
+    "puzzle_id": "TS038",
+    "submission": 86,
+    "question": "Is the note meant to make its recipient believe the victim left because they were disappointed in that recipient?",
+    "original_label": "yes",
+    "category": "unsupported_motive",
+    "observation": "复核完整题面后撤销未提供失望动机的初步标记：题面反复出现 You have disappointed me / You’ve disappointed me。不能只读简短汤底就忽略题面证据。具体发送及后续通信仍不可由此推定。",
+    "review_status": "ai_flag_cleared_after_opening_check",
+    "adjudicated_label": null,
+    "original_modified": false,
+    "initial_observation": "汤底只确立杀妻、伪造离家字条及模仿笔迹失败；没有确立字条虚构的离家原因是对收件人失望，具体收件人也未指定。原 yes 肯定了未给出的动机，应复核而非直接作为 gold。",
+    "initial_suggested_label": "irrelevant",
+    "opening_evidence": "\"You've disappointed me so much; I'm never coming back.\" \"You've disappointed me so much; I'm never coming back.\" \"You've disappointed me so much; I'm never coming back.\" \"You've disappointed me so much; I'm never coming back.\" \"You've disappointed me so much; I'm never coming back.\" \"You've disappointed me so much; I'm never coming back.\" \"You've disappointed me so much; I'm never coming back.\"\n\nSigh, I know I'm in trouble.",
+    "human_confirmed": false
+  }
+]

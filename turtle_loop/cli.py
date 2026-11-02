@@ -11,13 +11,14 @@ from pathlib import Path
 from .dataset import load_dataset, overview
 from .engine import Recorder, dump, load_prompts, play, summarize_batch
 from .providers import Client, Reply, resolve_env, validate_profile
+from .costs import pricing_config
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
 def configuration(args):
     raw = json.loads(Path(args.config).read_text()) if args.config else {'max_questions': 100}
-    allowed = {'host', 'player', 'grader', 'max_questions'}
+    allowed = {'host', 'player', 'grader', 'max_questions', 'pricing'}
     if set(raw) - allowed:
         raise ValueError(f'Unknown experiment settings: {set(raw)-allowed}')
     for role in ('host', 'player', 'grader'):
@@ -35,6 +36,7 @@ def configuration(args):
     if not isinstance(raw['grader'], dict):
         raise ValueError('grader must be a profile object or "host"')
     raw = resolve_env(raw)
+    raw['pricing'] = pricing_config(raw.get('pricing'))
     raw.setdefault('max_questions', 100)
     if type(raw['max_questions']) is not int or not 1 <= raw['max_questions'] <= 100:
         raise ValueError('max_questions must be an integer from 1 to 100')

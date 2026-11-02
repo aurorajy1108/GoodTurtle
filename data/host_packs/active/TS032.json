@@ -1,6 +1,6 @@
 {
-  "version": "host-v7-share-20261026",
-  "review_status": "user_history_ai_adjudicated_pending_human",
+  "version": "host-v9-human-20261102",
+  "review_status": "human_labels_and_delegated_adjudication",
   "replace_host_examples": true,
   "solution": "A had photographed a murder committed by B’s parent and reported it. The arrest forced B to move away to live with relatives. A felt guilty.\nA’s surname later changed after parental divorce and remarriage. At university, A recognized B, but B did not recognize A. They genuinely fell in love and married.\nYears later, B recognized A as the former classmate. B mistakenly believed A had not recognized B and did not know about B’s criminal parent. Ashamed and afraid of rejection, B disappeared, leaving divorce papers and an apology. B never learned that A had reported the crime.\nUnable to find B, A fabricated evidence and falsely confessed to murdering B. A hoped the news would reach B, communicate acceptance of B’s past, and persuade B to return to clear A’s name. B was alive.",
   "canonical_facts": [
@@ -478,6 +478,230 @@
         "reviewer": "codex_root",
         "review_date": "2026-10-26"
       }
+    },
+    {
+      "case_id": "RECHECK_20261031_NEW027",
+      "question": "Was B’s family involved in a crime that was serious enough that B became socially isolated or bullied after A revealed it?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "父母犯罪成立；被欺凌/孤立未说明。保留混合标签，并禁止把未知部分当线索。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "SHARE_6adf3775_304",
+        "audit_case": "NEW027",
+        "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+        "source_kind": "user_supplied_history",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "**Question 15:** Was B’s family involved in a crime that was serious enough that B became socially isolated or bullied after A revealed it?",
+        "original_answer": "yes and no",
+        "question_origin": "reviewer_rewrite",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_NEW028",
+      "question": "Did B later fall in love with A because B did not know that A had caused the transfer, and A hid this fact from B?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "不知举报者身份是知识状态，不等于相爱的原因；不能代替 genuine love 的叙事。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "SHARE_6adf3775_320",
+        "audit_case": "NEW028",
+        "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+        "source_kind": "user_supplied_history",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "**Question 23:** Did B later fall in love with A because B did not know that A had caused the transfer, and A hid this fact from B?",
+        "original_answer": "yes",
+        "question_origin": "reviewer_rewrite",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_NEW029",
+      "question": "Did B intentionally disappear because B wanted to escape from A or end their marriage??",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "B主动离开并留下离婚文件，广义离开A/结束婚姻成立；不推导A曾施暴。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "SHARE_6adf3775_330",
+        "audit_case": "NEW029",
+        "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+        "source_kind": "user_supplied_history",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "**Question 28:** Did B intentionally disappear because B wanted to escape from A or end their marriage??",
+        "original_answer": "no",
+        "question_origin": "reviewer_rewrite",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_NEW030",
+      "question": "Did B intentionally disappear because B wanted to **hide something from A**?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "B害怕父母犯罪被A知晓后遭拒绝，宽泛 hide something 可以概括；不要因为A其实已知就否定B的主观动机。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "SHARE_6adf3775_336",
+        "audit_case": "NEW030",
+        "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+        "source_kind": "user_supplied_history",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "**Question 31:** Did B intentionally disappear because B wanted to **hide something from A**?",
+        "original_answer": "no",
+        "question_origin": "reviewer_rewrite",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_NEW031",
+      "question": "Did B intentionally disappear because B was **following someone else's request or instruction**?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "不猜 mo 是什么；按汤底独立重标：B的离开不是奉别人命令。原 mo 不改写。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "SHARE_6adf3775_376",
+        "audit_case": "NEW031",
+        "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+        "source_kind": "user_supplied_history",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "**Question 51:** Did B intentionally disappear because B was **following someone else's request or instruction**?",
+        "original_answer": "mo",
+        "question_origin": "reviewer_rewrite",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_NEW032",
+      "question": "Had B known about the parent’s murder from the moment it happened?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "all along 的起点和持续知情时间未说明；已知B后来知道父母犯罪不补出这段时间。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "SHARE_6adf3775_420",
+        "audit_case": "NEW032",
+        "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+        "source_kind": "user_supplied_history",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "**Question 73:** Was B’s secret related to the fact that **B had known about the murder all along**, rather than the specific details of the murder?",
+        "original_answer": "yes",
+        "question_origin": "reviewer_rewrite",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_NEW033",
+      "question": "Did B know about the murder because **B witnessed it or was present when it happened**, and B hid this from A?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "B是否在场目击是未说明的获知方式；原 irrelevant 可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "SHARE_6adf3775_422",
+        "audit_case": "NEW033",
+        "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+        "source_kind": "user_supplied_history",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "**Question 74:** Did B know about the murder because **B witnessed it or was present when it happened**, and B hid this from A?",
+        "original_answer": "irrelevant",
+        "question_origin": "reviewer_rewrite",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_NEW035",
+      "question": "Did B disappear because B **wanted to escape from the consequences of knowing the murder secret**, and B’s disappearance was a form of running away?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "宽泛逃避秘密带来的婚姻后果符合怕被拒绝而离开；不把 consequences 偷换为法律制裁。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "SHARE_6adf3775_444",
+        "audit_case": "NEW035",
+        "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+        "source_kind": "user_supplied_history",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "**Question 85:** Did B disappear because B **wanted to escape from the consequences of knowing the murder secret**, and B’s disappearance was a form of running away?",
+        "original_answer": "no",
+        "question_origin": "reviewer_rewrite",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_NEW036",
+      "question": "Did B disappear because B **voluntarily left home**, but the reason was something ordinary/unrelated to the murder secret (and the secret only affected why A was suspected)?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "独立重标而非猜原 typo：主动离家为真，原因与秘密无关为假。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "SHARE_6adf3775_468",
+        "audit_case": "NEW036",
+        "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+        "source_kind": "user_supplied_history",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "**Question 97:** Did B disappear because B **voluntarily left home**, but the reason was something ordinary/unrelated to the murder secret (and the secret only affected why A was suspected)?",
+        "original_answer": "yes and ni",
+        "question_origin": "reviewer_rewrite",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_NEW026",
+      "question": "Did A cause B to transfer elsewhere because of something A did **intentionally**, rather than accidentally?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "intentionally修饰A做的举报行为，不是其导致转学的后果；举报是主动的。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "SHARE_6adf3775_278",
+        "audit_case": "NEW026",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 65,
+        "human_confirmed": false,
+        "original_question": "**Question 2:** Did A cause B to transfer elsewhere because of something A did **intentionally**, rather than accidentally?",
+        "original_answer": "no",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_NEW034",
+      "question": "Did B disappear because B **could no longer live with the guilt of knowing about the murder**, rather than because of any external threat?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "问题提出无法承受知晓谋杀的负罪感作为离开原因；标准是认出A后羞耻并怕被拒绝。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "SHARE_6adf3775_428",
+        "audit_case": "NEW034",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 64,
+        "human_confirmed": false,
+        "original_question": "**Question 77:** Did B disappear because B **could no longer live with the guilt of knowing about the murder**, rather than because of any external threat?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
     }
   ],
   "event_order": [],
@@ -489,7 +713,8 @@
   ],
   "label_boundaries": [
     "Recognition of an old classmate is not discovery of the informer’s identity.",
-    "No newly introduced deceased third-party association explains the disappearance. Reject that invented causal branch."
+    "No newly introduced deceased third-party association explains the disappearance. Reject that invented causal branch.",
+    "Separate intentional reporting from intent to make B transfer. B leaves and leaves divorce papers; broadly hiding the family secret or escaping its feared relationship consequences can describe B’s motive even though A already knows. Unknown witness status and when B first learned the crime are not additional facts."
   ],
   "verification_policy": "independent_then_adjudicate_v1"
 }

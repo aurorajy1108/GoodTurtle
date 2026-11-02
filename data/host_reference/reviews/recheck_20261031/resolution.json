@@ -1,0 +1,1883 @@
+{
+  "version": "host-v8.1-reviewed-20261031",
+  "date": "2026-10-31",
+  "human_confirmed": false,
+  "changes": [
+    {
+      "puzzle_id": "TS031",
+      "source_case": "RUN_TS031_006",
+      "example": {
+        "case_id": "RECHECK_20261031_RUN_TS031_006",
+        "question": "Did A use the eraser together with a pencil to write the message?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "宽泛地使用橡皮和铅笔完成写字流程成立；没有断言橡皮直接画字。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_006",
+          "audit_case": "RUN_TS031_006",
+          "source": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_kind": "model_generated",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did A use the eraser together with a pencil to write the message?",
+          "original_answer": "yes",
+          "question_origin": "source_verbatim",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS031",
+      "source_case": "RUN_TS031_015",
+      "example": {
+        "case_id": "RECHECK_20261031_RUN_TS031_015",
+        "question": "Did A pick up the pencil because they needed to use its graphite tip to write the message?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "需要用铅芯写留言这一宽泛目的成立，不表示铅芯起初可用。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_015",
+          "audit_case": "RUN_TS031_015",
+          "source": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_kind": "model_generated",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did A pick up the pencil because they needed to use its graphite tip to write the message?",
+          "original_answer": "yes",
+          "question_origin": "source_verbatim",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS031",
+      "source_case": "RUN_TS031_048",
+      "example": {
+        "case_id": "RECHECK_20261031_RUN_TS031_048",
+        "question": "Did A use the eraser-attached pencil as a holder or support for a separate piece of graphite while writing?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "替换铅芯本来是独立补充材料，装入笔内后由笔夹持；问句没有说外置装置。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS031_048",
+          "audit_case": "RUN_TS031_048",
+          "source": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+          "source_kind": "model_generated",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did A use the eraser-attached pencil as a holder or support for a separate piece of graphite while writing?",
+          "original_answer": "yes",
+          "question_origin": "source_verbatim",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS035",
+      "source_case": "RUN_TS035_019",
+      "example": {
+        "case_id": "RECHECK_20261031_RUN_TS035_019",
+        "question": "Was his concern that bears could keep getting into the village cemetery and eating other buried people, regardless of whether this particular bear survived?",
+        "answer": "yes and no",
+        "public_history": [],
+        "rationale": "担忧其他坟墓被吃成立；正式 village cemetery 的限定未说明。该词不允许扩写为设有正式墓园。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_019",
+          "audit_case": "RUN_TS035_019",
+          "source": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_kind": "model_generated",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Was his concern that bears could keep getting into the village cemetery and eating other buried people, regardless of whether this particular bear survived?",
+          "original_answer": "yes",
+          "question_origin": "source_verbatim",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS035",
+      "source_case": "RUN_TS035_054",
+      "example": {
+        "case_id": "RECHECK_20261031_RUN_TS035_054",
+        "question": "Was the harm he feared for other villagers the grief of finding a bear eating their deceased relatives, rather than any danger to the villagers themselves?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "问家属因发现遗体遭吃而悲痛，是合理普通含义；未断言熊对所有活人绝无危险。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_054",
+          "audit_case": "RUN_TS035_054",
+          "source": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_kind": "model_generated",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Was the harm he feared for other villagers the grief of finding a bear eating their deceased relatives, rather than any danger to the villagers themselves?",
+          "original_answer": "yes",
+          "question_origin": "source_verbatim",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS035",
+      "source_case": "RUN_TS035_056",
+      "example": {
+        "case_id": "RECHECK_20261031_RUN_TS035_056",
+        "question": "Would villagers’ distress come from discovering bears eating their deceased relatives, even though the bears posed no danger to living people?",
+        "answer": "yes and no",
+        "public_history": [],
+        "rationale": "悲痛成立，但绝对零危险强于题面的 rarely；保留两分句的差别。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS035_056",
+          "audit_case": "RUN_TS035_056",
+          "source": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+          "source_kind": "model_generated",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Would villagers’ distress come from discovering bears eating their deceased relatives, even though the bears posed no danger to living people?",
+          "original_answer": "yes",
+          "question_origin": "source_verbatim",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS038",
+      "source_case": "RUN_TS038_009",
+      "example": {
+        "case_id": "RECHECK_20261031_RUN_TS038_009",
+        "question": "Did the speaker write the repeated sentence as an unsent draft of a message?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "反复练习伪造的句子可称尚未交付的草稿；不据此推断未来一定寄出。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_009",
+          "audit_case": "RUN_TS038_009",
+          "source": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_kind": "model_generated",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the speaker write the repeated sentence as an unsent draft of a message?",
+          "original_answer": "yes",
+          "question_origin": "source_verbatim",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS038",
+      "source_case": "RUN_TS038_012",
+      "example": {
+        "case_id": "RECHECK_20261031_RUN_TS038_012",
+        "question": "Is the speaker worried because the draft reveals something they intended to keep secret from its recipient?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "worried because 描述怕草稿暴露秘密，符合伪造失败风险；不推导已经有人看到。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_012",
+          "audit_case": "RUN_TS038_012",
+          "source": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_kind": "model_generated",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Is the speaker worried because the draft reveals something they intended to keep secret from its recipient?",
+          "original_answer": "yes",
+          "question_origin": "source_verbatim",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS038",
+      "source_case": "RUN_TS038_014",
+      "example": {
+        "case_id": "RECHECK_20261031_RUN_TS038_014",
+        "question": "Does the draft pretend to be a message written by its intended recipient?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "妻子是被冒名的作者；给他人看的妻子离家字条不是伪称由收信人本人写的信。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_014",
+          "audit_case": "RUN_TS038_014",
+          "source": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_kind": "model_generated",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Does the draft pretend to be a message written by its intended recipient?",
+          "original_answer": "no",
+          "question_origin": "source_verbatim",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS038",
+      "source_case": "RUN_TS038_018",
+      "example": {
+        "case_id": "RECHECK_20261031_RUN_TS038_018",
+        "question": "Is the concealed thing the speaker did something they did directly to the intended recipient?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "隐瞒的是杀妻，妻子是伪造署名者而非欺骗的收信人；不需要猜收信人的具体身份。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_018",
+          "audit_case": "RUN_TS038_018",
+          "source": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_kind": "model_generated",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Is the concealed thing the speaker did something they did directly to the intended recipient?",
+          "original_answer": "no",
+          "question_origin": "source_verbatim",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS038",
+      "source_case": "RUN_TS038_047",
+      "example": {
+        "case_id": "RECHECK_20261031_RUN_TS038_047",
+        "question": "Is the speaker worried that someone may discover the practice lines themselves and realize they are forging a note?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "汤底没有规定具体暴露渠道、左右手或字母系统；这些是未定细节，不是已经被否定的事实。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_047",
+          "audit_case": "RUN_TS038_047",
+          "source": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_kind": "model_generated",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Is the speaker worried that someone may discover the practice lines themselves and realize they are forging a note?",
+          "original_answer": "no",
+          "question_origin": "source_verbatim",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS038",
+      "source_case": "RUN_TS038_049",
+      "example": {
+        "case_id": "RECHECK_20261031_RUN_TS038_049",
+        "question": "Did the speaker struggle to imitate the victim’s handwriting because the victim wrote with their other hand?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "汤底没有规定具体暴露渠道、左右手或字母系统；这些是未定细节，不是已经被否定的事实。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_049",
+          "audit_case": "RUN_TS038_049",
+          "source": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_kind": "model_generated",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the speaker struggle to imitate the victim’s handwriting because the victim wrote with their other hand?",
+          "original_answer": "no",
+          "question_origin": "source_verbatim",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS038",
+      "source_case": "RUN_TS038_051",
+      "example": {
+        "case_id": "RECHECK_20261031_RUN_TS038_051",
+        "question": "Is the victim’s handwriting difficult to imitate because it uses a non-Latin writing system?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "汤底没有规定具体暴露渠道、左右手或字母系统；这些是未定细节，不是已经被否定的事实。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_051",
+          "audit_case": "RUN_TS038_051",
+          "source": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_kind": "model_generated",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Is the victim’s handwriting difficult to imitate because it uses a non-Latin writing system?",
+          "original_answer": "no",
+          "question_origin": "source_verbatim",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS038",
+      "source_case": "RUN_TS038_080",
+      "example": {
+        "case_id": "RECHECK_20261031_RUN_TS038_080",
+        "question": "Does the speaker plan to send communications pretending to be the victim after the killing?",
+        "answer": "irrelevant",
+        "public_history": [
+          {
+            "question": "Does the speaker intend to impersonate the victim in person or through communications, in addition to forging the note?",
+            "answer": "irrelevant"
+          },
+          {
+            "question": "Does the speaker intend to impersonate the victim in order to deceive an institution or authority that the victim is still alive?",
+            "answer": "irrelevant"
+          },
+          {
+            "question": "Did the speaker kill the victim in order to take over their identity?",
+            "answer": "irrelevant"
+          },
+          {
+            "question": "Is the speaker pretending the victim is still alive in order to conceal or postpone discovery of the victim’s death?",
+            "answer": "yes"
+          },
+          {
+            "question": "Is the speaker pretending the victim is still alive primarily to avoid suspicion or investigation of the victim’s death, rather than to gain money or property?",
+            "answer": "yes"
+          },
+          {
+            "question": "Was the speaker hired or paid by someone else to kill the victim?",
+            "answer": "irrelevant"
+          }
+        ],
+        "rationale": "紧接 Q74–79 的“字条之外的冒名通信”追问，额外通信计划未说明；携带原局部语境，不作脱离上下文的标签。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_080",
+          "audit_case": "RUN_TS038_080",
+          "source": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_kind": "model_generated",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Does the speaker plan to send communications pretending to be the victim after the killing?",
+          "original_answer": "yes",
+          "question_origin": "source_verbatim",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS038",
+      "source_case": "RUN_TS038_083",
+      "example": {
+        "case_id": "RECHECK_20261031_RUN_TS038_083",
+        "question": "Will the speaker send the forged note as a handwritten note?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "will send 问实际未来寄出；写过草稿不确定将来交付，手写这个已知属性不让寄出成为事实。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_083",
+          "audit_case": "RUN_TS038_083",
+          "source": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_kind": "model_generated",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Will the speaker send the forged note as a handwritten note?",
+          "original_answer": "yes",
+          "question_origin": "source_verbatim",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS038",
+      "source_case": "RUN_TS038_088",
+      "example": {
+        "case_id": "RECHECK_20261031_RUN_TS038_088",
+        "question": "Will the speaker use the forged note and later messages to make people believe the victim moved away and is still living elsewhere?",
+        "answer": "yes and no",
+        "public_history": [
+          {
+            "question": "Does the speaker intend to impersonate the victim in person or through communications, in addition to forging the note?",
+            "answer": "irrelevant"
+          },
+          {
+            "question": "Does the speaker intend to impersonate the victim in order to deceive an institution or authority that the victim is still alive?",
+            "answer": "irrelevant"
+          },
+          {
+            "question": "Did the speaker kill the victim in order to take over their identity?",
+            "answer": "irrelevant"
+          },
+          {
+            "question": "Is the speaker pretending the victim is still alive in order to conceal or postpone discovery of the victim’s death?",
+            "answer": "yes"
+          },
+          {
+            "question": "Is the speaker pretending the victim is still alive primarily to avoid suspicion or investigation of the victim’s death, rather than to gain money or property?",
+            "answer": "yes"
+          },
+          {
+            "question": "Was the speaker hired or paid by someone else to kill the victim?",
+            "answer": "irrelevant"
+          }
+        ],
+        "rationale": "假离家字条掩盖死亡成立，额外后续消息不确定；混合标签不表示确认消息存在。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_088",
+          "audit_case": "RUN_TS038_088",
+          "source": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_kind": "model_generated",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Will the speaker use the forged note and later messages to make people believe the victim moved away and is still living elsewhere?",
+          "original_answer": "yes and no",
+          "question_origin": "source_verbatim",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS038",
+      "source_case": "RUN_TS038_094",
+      "example": {
+        "case_id": "RECHECK_20261031_RUN_TS038_094",
+        "question": "Is the forged note meant to explain why the victim will no longer be physically present, while later messages are meant to make it seem they are still alive?",
+        "answer": "yes and no",
+        "public_history": [
+          {
+            "question": "Does the speaker intend to impersonate the victim in person or through communications, in addition to forging the note?",
+            "answer": "irrelevant"
+          },
+          {
+            "question": "Does the speaker intend to impersonate the victim in order to deceive an institution or authority that the victim is still alive?",
+            "answer": "irrelevant"
+          },
+          {
+            "question": "Did the speaker kill the victim in order to take over their identity?",
+            "answer": "irrelevant"
+          },
+          {
+            "question": "Is the speaker pretending the victim is still alive in order to conceal or postpone discovery of the victim’s death?",
+            "answer": "yes"
+          },
+          {
+            "question": "Is the speaker pretending the victim is still alive primarily to avoid suspicion or investigation of the victim’s death, rather than to gain money or property?",
+            "answer": "yes"
+          },
+          {
+            "question": "Was the speaker hired or paid by someone else to kill the victim?",
+            "answer": "irrelevant"
+          }
+        ],
+        "rationale": "假离家字条掩盖死亡成立，额外后续消息不确定；混合标签不表示确认消息存在。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "RUN_TS038_094",
+          "audit_case": "RUN_TS038_094",
+          "source": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+          "source_kind": "model_generated",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Is the forged note meant to explain why the victim will no longer be physically present, while later messages are meant to make it seem they are still alive?",
+          "original_answer": "yes and no",
+          "question_origin": "source_verbatim",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS039",
+      "source_case": "NEW001",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW001",
+        "question": "Did the boy and girl actually end up attending the same university?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "遗体用于解剖教学不等于学生入学、受雇工作或作为在职试验对象。拒绝这个身份/因果前提。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf3775_020",
+          "audit_case": "NEW001",
+          "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the boy and girl actually end up attending the same university?",
+          "original_answer": "yes",
+          "question_origin": "source_verbatim",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS039",
+      "source_case": "NEW002",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW002",
+        "question": "Did the boy gain admission to the university through a special admission route that did not depend on his academic grades?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "遗体用于解剖教学不等于学生入学、受雇工作或作为在职试验对象。拒绝这个身份/因果前提。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf3775_024",
+          "audit_case": "NEW002",
+          "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the boy gain admission to the university through a special admission route that did not depend on his academic grades?",
+          "original_answer": "yes",
+          "question_origin": "source_verbatim",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS039",
+      "source_case": "NEW003",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW003",
+        "question": "Did the boy enter the university as an employee?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "遗体用于解剖教学不等于学生入学、受雇工作或作为在职试验对象。拒绝这个身份/因果前提。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf3775_036",
+          "audit_case": "NEW003",
+          "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the boy enter the university as an employee?",
+          "original_answer": "yes",
+          "question_origin": "source_verbatim",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS039",
+      "source_case": "NEW004",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW004",
+        "question": "Did the girl go insane because she discovered what kind of job the boy had taken at the university?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "遗体用于解剖教学不等于学生入学、受雇工作或作为在职试验对象。拒绝这个身份/因果前提。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf3775_040",
+          "audit_case": "NEW004",
+          "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "Did the girl go insane because she discovered what kind of job the boy had taken at the university?",
+          "original_answer": "yes",
+          "question_origin": "source_verbatim",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS039",
+      "source_case": "NEW005",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW005",
+        "question": "Was the boy's job at the university related to teaching or academic research?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "遗体用于解剖教学不等于学生入学、受雇工作或作为在职试验对象。拒绝这个身份/因果前提。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf3775_046",
+          "audit_case": "NEW005",
+          "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "**Question 17:** Was the boy's job at the university related to teaching or academic research?",
+          "original_answer": "yes",
+          "question_origin": "reviewer_rewrite",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS039",
+      "source_case": "NEW006",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW006",
+        "question": "Did the boy's job involve serving as a test subject for scientific or medical research?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "遗体用于解剖教学不等于学生入学、受雇工作或作为在职试验对象。拒绝这个身份/因果前提。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf3775_054",
+          "audit_case": "NEW006",
+          "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "**Question 21:** Did the boy's job involve serving as a test subject for scientific or medical research?",
+          "original_answer": "yes",
+          "question_origin": "reviewer_rewrite",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS039",
+      "source_case": "NEW007",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW007",
+        "question": "Does the story specify any alteration of the boy’s body in a research experiment, beyond its use as an anatomy-class cadaver?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "汤底没有额外研究试验或身体改造细节；缺失细节不构成一次已确认试验。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf3775_056",
+          "audit_case": "NEW007",
+          "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "**Question 22:** Did the research experiment physically alter the boy's body or appearance?",
+          "original_answer": "yes and no",
+          "question_origin": "reviewer_rewrite",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS039",
+      "source_case": "NEW008",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW008",
+        "question": "Was the boy already dead when the girl recognized him as the anatomy-class cadaver?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "遗体在女孩认出时已死；去掉不存在的 research role 前提。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf3775_060",
+          "audit_case": "NEW008",
+          "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "**Question 24:** Was the boy already dead when the girl discovered his role in the university's research?",
+          "original_answer": "yes",
+          "question_origin": "reviewer_rewrite",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS039",
+      "source_case": "NEW009",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW009",
+        "question": "Was donation the route by which the boy’s body reached the university?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "遗体进入课堂的捐献手续/途径未说明；不能由使用目的推断 donation。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf3775_062",
+          "audit_case": "NEW009",
+          "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "**Question 25:** Was the boy's dead body donated to the university for medical research or anatomical study?",
+          "original_answer": "yes",
+          "question_origin": "reviewer_rewrite",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS039",
+      "source_case": "NEW010",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW010",
+        "question": "Did the boy deliberately arrange for his body to be donated to that particular university so he could fulfill the girl's condition of being at the same university as her, even after death?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "个人捐献安排、求死动机及具体死因均未说明；不是题目必须还原的事实。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf3775_066",
+          "audit_case": "NEW010",
+          "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "**Question 27:** Did the boy deliberately arrange for his body to be donated to that particular university so he could fulfill the girl's condition of being at the same university as her, even after death?",
+          "original_answer": "yes",
+          "question_origin": "reviewer_rewrite",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS039",
+      "source_case": "NEW011",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW011",
+        "question": "Did the boy deliberately commit suicide so that his body could be donated to the university?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "个人捐献安排、求死动机及具体死因均未说明；不是题目必须还原的事实。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf3775_068",
+          "audit_case": "NEW011",
+          "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "I think I've solved the central twist: the boy arranged to donate his body to the girl's university after his death, fulfilling her condition in a horrifyingly literal way.\n\n**Question 28:** Did the boy deliberately commit suicide so that his body could be donated to the university?",
+          "original_answer": "yes",
+          "question_origin": "reviewer_rewrite",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS033",
+      "source_case": "NEW012",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW012",
+        "question": "Was the additional cash intended to change the physical appearance of the money inside the bag, rather than simply increase its total value?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "换顶层真钞的目的是让表面检查不易发现假包；并非只追求提高真钱金额。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf3775_084",
+          "audit_case": "NEW012",
+          "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "**Question 7:** Was the additional cash intended to change the physical appearance of the money inside the bag, rather than simply increase its total value?",
+          "original_answer": "no",
+          "question_origin": "reviewer_rewrite",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS033",
+      "source_case": "NEW015",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW015",
+        "question": "Was the additional cash meant to make the total amount match the known price of a particular item?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "没有按某个商品已知价格购买的解释。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf3775_100",
+          "audit_case": "NEW015",
+          "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "**Question 15:** Was the additional cash meant to make the total amount match the known price of a particular item?",
+          "original_answer": "yes",
+          "question_origin": "reviewer_rewrite",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS033",
+      "source_case": "NEW017",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW017",
+        "question": "Did the kidnappers demand a ransom amount that was **more than one million yen**, and the president added cash so the bag contained exactly that demanded amount?",
+        "answer": "yes and no",
+        "public_history": [],
+        "rationale": "需求大于一百万为真，增加到全部实额赎金为假。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf3775_134",
+          "audit_case": "NEW017",
+          "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "**Question 32\\:** Did the kidnappers demand a ransom amount that was **more than one million yen**, and the president added cash so the bag contained exactly that demanded amount?",
+          "original_answer": "yes",
+          "question_origin": "reviewer_rewrite",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS033",
+      "source_case": "NEW020",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW020",
+        "question": "Was the reason adding more cash would protect his child related to the fact that the kidnappers might **kill the child if they thought the president was too poor or unwilling to pay**?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "这不是保护女儿免遭嫌穷杀害的既定原因；来源是怕发现假包后攻击自己。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf3775_184",
+          "audit_case": "NEW020",
+          "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "**Question 56:** Was the reason adding more cash would protect his child related to the fact that the kidnappers might **kill the child if they thought the president was too poor or unwilling to pay**?",
+          "original_answer": "yes",
+          "question_origin": "reviewer_rewrite",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS033",
+      "source_case": "NEW021",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW021",
+        "question": "Was the unavoidable situation that made him put one million yen in the bag **caused by the kidnappers themselves** (for example, their instructions or a message they sent)?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "特定一百万来自父亲省钱做假包，不是绑匪给出的金额指令。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf3775_190",
+          "audit_case": "NEW021",
+          "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "**Question 59:** Was the unavoidable situation that made him put one million yen in the bag **caused by the kidnappers themselves** (for example, their instructions or a message they sent)?",
+          "original_answer": "yes",
+          "question_origin": "reviewer_rewrite",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS033",
+      "source_case": "NEW024",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW024",
+        "question": "Did the president add more cash because the kidnappers would **kill his child if the ransom was not exactly the demanded amount**, and the only reason he initially had one million yen was due to a coincidence/unavoidable event?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "最初只装一百万不是偶然；“不恰好足额就杀孩子”的解释也未建立。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf3775_232",
+          "audit_case": "NEW024",
+          "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "**Question 80:** Did the president add more cash because the kidnappers would **kill his child if the ransom was not exactly the demanded amount**, and the only reason he initially had one million yen was due to a coincidence/unavoidable event?",
+          "original_answer": "yes",
+          "question_origin": "reviewer_rewrite",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS033",
+      "source_case": "NEW025",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW025",
+        "question": "Was the unavoidable situation that forced him to put one million yen in the bag related to **the kidnapping victim (his child) being the one who caused the one million yen to be placed there**?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "被绑的孩子不是把一百万放进包的行动者，具体造假由父亲选择。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf3775_270",
+          "audit_case": "NEW025",
+          "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "**Question 99:** Was the unavoidable situation that forced him to put one million yen in the bag related to **the kidnapping victim (his child) being the one who caused the one million yen to be placed there**?",
+          "original_answer": "yes",
+          "question_origin": "reviewer_rewrite",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS032",
+      "source_case": "NEW027",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW027",
+        "question": "Was B’s family involved in a crime that was serious enough that B became socially isolated or bullied after A revealed it?",
+        "answer": "yes and no",
+        "public_history": [],
+        "rationale": "父母犯罪成立；被欺凌/孤立未说明。保留混合标签，并禁止把未知部分当线索。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf3775_304",
+          "audit_case": "NEW027",
+          "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "**Question 15:** Was B’s family involved in a crime that was serious enough that B became socially isolated or bullied after A revealed it?",
+          "original_answer": "yes and no",
+          "question_origin": "reviewer_rewrite",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS032",
+      "source_case": "NEW028",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW028",
+        "question": "Did B later fall in love with A because B did not know that A had caused the transfer, and A hid this fact from B?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "不知举报者身份是知识状态，不等于相爱的原因；不能代替 genuine love 的叙事。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf3775_320",
+          "audit_case": "NEW028",
+          "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "**Question 23:** Did B later fall in love with A because B did not know that A had caused the transfer, and A hid this fact from B?",
+          "original_answer": "yes",
+          "question_origin": "reviewer_rewrite",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS032",
+      "source_case": "NEW029",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW029",
+        "question": "Did B intentionally disappear because B wanted to escape from A or end their marriage??",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "B主动离开并留下离婚文件，广义离开A/结束婚姻成立；不推导A曾施暴。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf3775_330",
+          "audit_case": "NEW029",
+          "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "**Question 28:** Did B intentionally disappear because B wanted to escape from A or end their marriage??",
+          "original_answer": "no",
+          "question_origin": "reviewer_rewrite",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS032",
+      "source_case": "NEW030",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW030",
+        "question": "Did B intentionally disappear because B wanted to **hide something from A**?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "B害怕父母犯罪被A知晓后遭拒绝，宽泛 hide something 可以概括；不要因为A其实已知就否定B的主观动机。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf3775_336",
+          "audit_case": "NEW030",
+          "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "**Question 31:** Did B intentionally disappear because B wanted to **hide something from A**?",
+          "original_answer": "no",
+          "question_origin": "reviewer_rewrite",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS032",
+      "source_case": "NEW031",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW031",
+        "question": "Did B intentionally disappear because B was **following someone else's request or instruction**?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "不猜 mo 是什么；按汤底独立重标：B的离开不是奉别人命令。原 mo 不改写。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf3775_376",
+          "audit_case": "NEW031",
+          "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "**Question 51:** Did B intentionally disappear because B was **following someone else's request or instruction**?",
+          "original_answer": "mo",
+          "question_origin": "reviewer_rewrite",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS032",
+      "source_case": "NEW032",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW032",
+        "question": "Had B known about the parent’s murder from the moment it happened?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "all along 的起点和持续知情时间未说明；已知B后来知道父母犯罪不补出这段时间。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf3775_420",
+          "audit_case": "NEW032",
+          "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "**Question 73:** Was B’s secret related to the fact that **B had known about the murder all along**, rather than the specific details of the murder?",
+          "original_answer": "yes",
+          "question_origin": "reviewer_rewrite",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS032",
+      "source_case": "NEW033",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW033",
+        "question": "Did B know about the murder because **B witnessed it or was present when it happened**, and B hid this from A?",
+        "answer": "irrelevant",
+        "public_history": [],
+        "rationale": "B是否在场目击是未说明的获知方式；原 irrelevant 可保留。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf3775_422",
+          "audit_case": "NEW033",
+          "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "**Question 74:** Did B know about the murder because **B witnessed it or was present when it happened**, and B hid this from A?",
+          "original_answer": "irrelevant",
+          "question_origin": "reviewer_rewrite",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS032",
+      "source_case": "NEW035",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW035",
+        "question": "Did B disappear because B **wanted to escape from the consequences of knowing the murder secret**, and B’s disappearance was a form of running away?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "宽泛逃避秘密带来的婚姻后果符合怕被拒绝而离开；不把 consequences 偷换为法律制裁。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf3775_444",
+          "audit_case": "NEW035",
+          "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "**Question 85:** Did B disappear because B **wanted to escape from the consequences of knowing the murder secret**, and B’s disappearance was a form of running away?",
+          "original_answer": "no",
+          "question_origin": "reviewer_rewrite",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS032",
+      "source_case": "NEW036",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW036",
+        "question": "Did B disappear because B **voluntarily left home**, but the reason was something ordinary/unrelated to the murder secret (and the secret only affected why A was suspected)?",
+        "answer": "yes and no",
+        "public_history": [],
+        "rationale": "独立重标而非猜原 typo：主动离家为真，原因与秘密无关为假。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf3775_468",
+          "audit_case": "NEW036",
+          "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "**Question 97:** Did B disappear because B **voluntarily left home**, but the reason was something ordinary/unrelated to the murder secret (and the secret only affected why A was suspected)?",
+          "original_answer": "yes and ni",
+          "question_origin": "reviewer_rewrite",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS034",
+      "source_case": "NEW037",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW037",
+        "question": "Does the father believe that his daughter is genuinely in danger of being killed?",
+        "answer": "yes",
+        "public_history": [],
+        "rationale": "父亲确实担心女儿来交赎金后遇害；原问没限定当前正被挟持。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf37d6_002",
+          "audit_case": "NEW037",
+          "source": "https://chatgpt.com/share/6adf37d6-5080-83e9-abbc-2ced03b615d6",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "**Question 1:** Does the father believe that his daughter is genuinely in danger of being killed?",
+          "original_answer": "no",
+          "question_origin": "reviewer_rewrite",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS037",
+      "source_case": "NEW042",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW042",
+        "question": "Is the mother counting down the days remaining until her expected death?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "不是按剩余天数倒数；月份由3月跳到生日7月。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf37d6_114",
+          "audit_case": "NEW042",
+          "source": "https://chatgpt.com/share/6adf37d6-5080-83e9-abbc-2ced03b615d6",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "**Question 19:** Is the mother counting down the days remaining until her expected death?",
+          "original_answer": "yes and no",
+          "question_origin": "reviewer_rewrite",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    },
+    {
+      "puzzle_id": "TS037",
+      "source_case": "NEW043",
+      "example": {
+        "case_id": "RECHECK_20261031_NEW043",
+        "question": "Does the mother believe that skipping certain numbers will somehow prolong her life?",
+        "answer": "no",
+        "public_history": [],
+        "rationale": "跳数是提前陪孩子庆生的善意谎言，不是通过数字改变肉体寿命。",
+        "review_status": "reviewed_reference_pending_human",
+        "provenance": {
+          "source_case": "SHARE_6adf37d6_124",
+          "audit_case": "NEW043",
+          "source": "https://chatgpt.com/share/6adf37d6-5080-83e9-abbc-2ced03b615d6",
+          "source_kind": "user_supplied_history",
+          "answer_origin": "ai_source_based_adjudication",
+          "original_question": "**Question 24:** Does the mother believe that skipping certain numbers will somehow prolong her life?",
+          "original_answer": "yes and no",
+          "question_origin": "reviewer_rewrite",
+          "reviewer": "codex_root",
+          "human_confirmed": false
+        }
+      },
+      "replaced": []
+    }
+  ],
+  "dispositions": [
+    {
+      "case_id": "SHARE_6adf3775_120",
+      "status": "resolved_already_active",
+      "active_case_id": "SHARE_6adf3775_120",
+      "reason": "上轮已将错误因果改为 no；核实当前实际加载的标签，不再列为待办。"
+    },
+    {
+      "case_id": "RUN_TS031_006",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_RUN_TS031_006",
+      "reason": "宽泛地使用橡皮和铅笔完成写字流程成立；没有断言橡皮直接画字。"
+    },
+    {
+      "case_id": "RUN_TS031_015",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_RUN_TS031_015",
+      "reason": "需要用铅芯写留言这一宽泛目的成立，不表示铅芯起初可用。"
+    },
+    {
+      "case_id": "RUN_TS031_048",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_RUN_TS031_048",
+      "reason": "替换铅芯本来是独立补充材料，装入笔内后由笔夹持；问句没有说外置装置。"
+    },
+    {
+      "case_id": "RUN_TS031_016",
+      "status": "resolved_already_active",
+      "active_case_id": "REVIEW_20261030_TS031_025",
+      "reason": "展示橡皮附有铅笔不是写留言的解释；当前已有该 no 示例。"
+    },
+    {
+      "case_id": "RUN_TS035_008",
+      "status": "resolved_already_active",
+      "active_case_id": "REVIEW_20261030_TS035_056",
+      "reason": "此前其他坟墓是否遭袭未说明；当前已有正确示例。"
+    },
+    {
+      "case_id": "RUN_TS035_019",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_RUN_TS035_019",
+      "reason": "担忧其他坟墓被吃成立；正式 village cemetery 的限定未说明。该词不允许扩写为设有正式墓园。"
+    },
+    {
+      "case_id": "RUN_TS035_054",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_RUN_TS035_054",
+      "reason": "问家属因发现遗体遭吃而悲痛，是合理普通含义；未断言熊对所有活人绝无危险。"
+    },
+    {
+      "case_id": "RUN_TS035_056",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_RUN_TS035_056",
+      "reason": "悲痛成立，但绝对零危险强于题面的 rarely；保留两分句的差别。"
+    },
+    {
+      "case_id": "RUN_TS038_009",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_RUN_TS038_009",
+      "reason": "反复练习伪造的句子可称尚未交付的草稿；不据此推断未来一定寄出。"
+    },
+    {
+      "case_id": "RUN_TS038_012",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_RUN_TS038_012",
+      "reason": "worried because 描述怕草稿暴露秘密，符合伪造失败风险；不推导已经有人看到。"
+    },
+    {
+      "case_id": "RUN_TS038_014",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_RUN_TS038_014",
+      "reason": "妻子是被冒名的作者；给他人看的妻子离家字条不是伪称由收信人本人写的信。"
+    },
+    {
+      "case_id": "RUN_TS038_018",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_RUN_TS038_018",
+      "reason": "隐瞒的是杀妻，妻子是伪造署名者而非欺骗的收信人；不需要猜收信人的具体身份。"
+    },
+    {
+      "case_id": "RUN_TS038_047",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_RUN_TS038_047",
+      "reason": "汤底没有规定具体暴露渠道、左右手或字母系统；这些是未定细节，不是已经被否定的事实。"
+    },
+    {
+      "case_id": "RUN_TS038_049",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_RUN_TS038_049",
+      "reason": "汤底没有规定具体暴露渠道、左右手或字母系统；这些是未定细节，不是已经被否定的事实。"
+    },
+    {
+      "case_id": "RUN_TS038_051",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_RUN_TS038_051",
+      "reason": "汤底没有规定具体暴露渠道、左右手或字母系统；这些是未定细节，不是已经被否定的事实。"
+    },
+    {
+      "case_id": "RUN_TS038_080",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_RUN_TS038_080",
+      "reason": "紧接 Q74–79 的“字条之外的冒名通信”追问，额外通信计划未说明；携带原局部语境，不作脱离上下文的标签。"
+    },
+    {
+      "case_id": "RUN_TS038_083",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_RUN_TS038_083",
+      "reason": "will send 问实际未来寄出；写过草稿不确定将来交付，手写这个已知属性不让寄出成为事实。"
+    },
+    {
+      "case_id": "RUN_TS038_088",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_RUN_TS038_088",
+      "reason": "假离家字条掩盖死亡成立，额外后续消息不确定；混合标签不表示确认消息存在。"
+    },
+    {
+      "case_id": "RUN_TS038_094",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_RUN_TS038_094",
+      "reason": "假离家字条掩盖死亡成立，额外后续消息不确定；混合标签不表示确认消息存在。"
+    },
+    {
+      "case_id": "NEW001",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW001",
+      "reason": "遗体用于解剖教学不等于学生入学、受雇工作或作为在职试验对象。拒绝这个身份/因果前提。"
+    },
+    {
+      "case_id": "NEW002",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW002",
+      "reason": "遗体用于解剖教学不等于学生入学、受雇工作或作为在职试验对象。拒绝这个身份/因果前提。"
+    },
+    {
+      "case_id": "NEW003",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW003",
+      "reason": "遗体用于解剖教学不等于学生入学、受雇工作或作为在职试验对象。拒绝这个身份/因果前提。"
+    },
+    {
+      "case_id": "NEW004",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW004",
+      "reason": "遗体用于解剖教学不等于学生入学、受雇工作或作为在职试验对象。拒绝这个身份/因果前提。"
+    },
+    {
+      "case_id": "NEW005",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW005",
+      "reason": "遗体用于解剖教学不等于学生入学、受雇工作或作为在职试验对象。拒绝这个身份/因果前提。"
+    },
+    {
+      "case_id": "NEW006",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW006",
+      "reason": "遗体用于解剖教学不等于学生入学、受雇工作或作为在职试验对象。拒绝这个身份/因果前提。"
+    },
+    {
+      "case_id": "NEW007",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW007",
+      "reason": "汤底没有额外研究试验或身体改造细节；缺失细节不构成一次已确认试验。"
+    },
+    {
+      "case_id": "NEW008",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW008",
+      "reason": "遗体在女孩认出时已死；去掉不存在的 research role 前提。"
+    },
+    {
+      "case_id": "NEW009",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW009",
+      "reason": "遗体进入课堂的捐献手续/途径未说明；不能由使用目的推断 donation。"
+    },
+    {
+      "case_id": "NEW010",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW010",
+      "reason": "个人捐献安排、求死动机及具体死因均未说明；不是题目必须还原的事实。"
+    },
+    {
+      "case_id": "NEW011",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW011",
+      "reason": "个人捐献安排、求死动机及具体死因均未说明；不是题目必须还原的事实。"
+    },
+    {
+      "case_id": "NEW012",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW012",
+      "reason": "换顶层真钞的目的是让表面检查不易发现假包；并非只追求提高真钱金额。"
+    },
+    {
+      "case_id": "NEW015",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW015",
+      "reason": "没有按某个商品已知价格购买的解释。"
+    },
+    {
+      "case_id": "NEW017",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW017",
+      "reason": "需求大于一百万为真，增加到全部实额赎金为假。"
+    },
+    {
+      "case_id": "NEW019",
+      "status": "resolved_existing_pipeline",
+      "reason": "原记录已是 final_submission、no 且不进入 Host 示例；模型自评分/问数不用于实验指标。关闭记录问题，保留原文。"
+    },
+    {
+      "case_id": "NEW020",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW020",
+      "reason": "这不是保护女儿免遭嫌穷杀害的既定原因；来源是怕发现假包后攻击自己。"
+    },
+    {
+      "case_id": "NEW021",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW021",
+      "reason": "特定一百万来自父亲省钱做假包，不是绑匪给出的金额指令。"
+    },
+    {
+      "case_id": "NEW024",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW024",
+      "reason": "最初只装一百万不是偶然；“不恰好足额就杀孩子”的解释也未建立。"
+    },
+    {
+      "case_id": "NEW025",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW025",
+      "reason": "被绑的孩子不是把一百万放进包的行动者，具体造假由父亲选择。"
+    },
+    {
+      "case_id": "NEW027",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW027",
+      "reason": "父母犯罪成立；被欺凌/孤立未说明。保留混合标签，并禁止把未知部分当线索。"
+    },
+    {
+      "case_id": "NEW028",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW028",
+      "reason": "不知举报者身份是知识状态，不等于相爱的原因；不能代替 genuine love 的叙事。"
+    },
+    {
+      "case_id": "NEW029",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW029",
+      "reason": "B主动离开并留下离婚文件，广义离开A/结束婚姻成立；不推导A曾施暴。"
+    },
+    {
+      "case_id": "NEW030",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW030",
+      "reason": "B害怕父母犯罪被A知晓后遭拒绝，宽泛 hide something 可以概括；不要因为A其实已知就否定B的主观动机。"
+    },
+    {
+      "case_id": "NEW031",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW031",
+      "reason": "不猜 mo 是什么；按汤底独立重标：B的离开不是奉别人命令。原 mo 不改写。"
+    },
+    {
+      "case_id": "NEW032",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW032",
+      "reason": "all along 的起点和持续知情时间未说明；已知B后来知道父母犯罪不补出这段时间。"
+    },
+    {
+      "case_id": "NEW033",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW033",
+      "reason": "B是否在场目击是未说明的获知方式；原 irrelevant 可保留。"
+    },
+    {
+      "case_id": "NEW035",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW035",
+      "reason": "宽泛逃避秘密带来的婚姻后果符合怕被拒绝而离开；不把 consequences 偷换为法律制裁。"
+    },
+    {
+      "case_id": "NEW036",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW036",
+      "reason": "独立重标而非猜原 typo：主动离家为真，原因与秘密无关为假。"
+    },
+    {
+      "case_id": "NEW037",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW037",
+      "reason": "父亲确实担心女儿来交赎金后遇害；原问没限定当前正被挟持。"
+    },
+    {
+      "case_id": "NEW039",
+      "status": "resolved_existing_pipeline",
+      "reason": "导入器已把此回复标为 correction_not_feedback，label_observed=null，并挂到Q6；无需人工重新修一次。"
+    },
+    {
+      "case_id": "NEW041",
+      "status": "resolved_existing_pipeline",
+      "reason": "当前 rubric 明确要求富有、唯一亲人及双方灭口风险；历史 yes 仅记录核心接受，已作为 final_submission 排除于普通问答示例，不映射严格成功。"
+    },
+    {
+      "case_id": "NEW042",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW042",
+      "reason": "不是按剩余天数倒数；月份由3月跳到生日7月。"
+    },
+    {
+      "case_id": "NEW043",
+      "status": "resolved_applied",
+      "active_case_id": "RECHECK_20261031_NEW043",
+      "reason": "跳数是提前陪孩子庆生的善意谎言，不是通过数字改变肉体寿命。"
+    }
+  ],
+  "pending": {
+    "RUN_TS031_003": {
+      "topic": "橡皮是被拆下的盖，还是被当作工具？",
+      "reason": "同一个 use/pick up 既可泛指补铅芯流程，也可指直接操作写字；两种读法标签不同。",
+      "human_question": "若泛指拆橡皮后补芯写字：yes；若指橡皮作为写字工具或只拿起一支可用铅笔：no。原问 intended meaning 选哪种？"
+    },
+    "RUN_TS031_011": {
+      "topic": "橡皮是被拆下的盖，还是被当作工具？",
+      "reason": "同一个 use/pick up 既可泛指补铅芯流程，也可指直接操作写字；两种读法标签不同。",
+      "human_question": "若泛指拆橡皮后补芯写字：yes；若指橡皮作为写字工具或只拿起一支可用铅笔：no。原问 intended meaning 选哪种？"
+    },
+    "RUN_TS031_013": {
+      "topic": "ordinary／unusual 的比较对象",
+      "reason": "自动铅笔是普通文具，但不是木制铅笔；unusual 没有给比较基准。",
+      "human_question": "ordinary pencil 是否专指木制铅笔？unusual 是否只指这支笔需要补芯？请定统一释义，或允许混合标签。"
+    },
+    "RUN_TS031_020": {
+      "topic": "ordinary／unusual 的比较对象",
+      "reason": "自动铅笔是普通文具，但不是木制铅笔；unusual 没有给比较基准。",
+      "human_question": "ordinary pencil 是否专指木制铅笔？unusual 是否只指这支笔需要补芯？请定统一释义，或允许混合标签。"
+    },
+    "RUN_TS031_057": {
+      "topic": "后半段的 tool／support 指什么？",
+      "reason": "玩家逐步假设外置支撑装置；汤底只有笔内铅芯。部分问句又能被读成内部结构，原 yes/no 无法固定指代。",
+      "human_question": "把 object/tool 固定为玩家提出的额外装置（相关机制 no），还是允许改指内部铅芯（某些问句 yes）？建议固定前者；请确认这个语境边界。"
+    },
+    "RUN_TS031_069": {
+      "topic": "后半段的 tool／support 指什么？",
+      "reason": "玩家逐步假设外置支撑装置；汤底只有笔内铅芯。部分问句又能被读成内部结构，原 yes/no 无法固定指代。",
+      "human_question": "把 object/tool 固定为玩家提出的额外装置（相关机制 no），还是允许改指内部铅芯（某些问句 yes）？建议固定前者；请确认这个语境边界。"
+    },
+    "RUN_TS031_077": {
+      "topic": "后半段的 tool／support 指什么？",
+      "reason": "玩家逐步假设外置支撑装置；汤底只有笔内铅芯。部分问句又能被读成内部结构，原 yes/no 无法固定指代。",
+      "human_question": "把 object/tool 固定为玩家提出的额外装置（相关机制 no），还是允许改指内部铅芯（某些问句 yes）？建议固定前者；请确认这个语境边界。"
+    },
+    "RUN_TS031_079": {
+      "topic": "后半段的 tool／support 指什么？",
+      "reason": "玩家逐步假设外置支撑装置；汤底只有笔内铅芯。部分问句又能被读成内部结构，原 yes/no 无法固定指代。",
+      "human_question": "把 object/tool 固定为玩家提出的额外装置（相关机制 no），还是允许改指内部铅芯（某些问句 yes）？建议固定前者；请确认这个语境边界。"
+    },
+    "RUN_TS031_082": {
+      "topic": "后半段的 tool／support 指什么？",
+      "reason": "玩家逐步假设外置支撑装置；汤底只有笔内铅芯。部分问句又能被读成内部结构，原 yes/no 无法固定指代。",
+      "human_question": "把 object/tool 固定为玩家提出的额外装置（相关机制 no），还是允许改指内部铅芯（某些问句 yes）？建议固定前者；请确认这个语境边界。"
+    },
+    "RUN_TS031_083": {
+      "topic": "后半段的 tool／support 指什么？",
+      "reason": "玩家逐步假设外置支撑装置；汤底只有笔内铅芯。部分问句又能被读成内部结构，原 yes/no 无法固定指代。",
+      "human_question": "把 object/tool 固定为玩家提出的额外装置（相关机制 no），还是允许改指内部铅芯（某些问句 yes）？建议固定前者；请确认这个语境边界。"
+    },
+    "RUN_TS031_084": {
+      "topic": "后半段的 tool／support 指什么？",
+      "reason": "玩家逐步假设外置支撑装置；汤底只有笔内铅芯。部分问句又能被读成内部结构，原 yes/no 无法固定指代。",
+      "human_question": "把 object/tool 固定为玩家提出的额外装置（相关机制 no），还是允许改指内部铅芯（某些问句 yes）？建议固定前者；请确认这个语境边界。"
+    },
+    "RUN_TS031_085": {
+      "topic": "后半段的 tool／support 指什么？",
+      "reason": "玩家逐步假设外置支撑装置；汤底只有笔内铅芯。部分问句又能被读成内部结构，原 yes/no 无法固定指代。",
+      "human_question": "把 object/tool 固定为玩家提出的额外装置（相关机制 no），还是允许改指内部铅芯（某些问句 yes）？建议固定前者；请确认这个语境边界。"
+    },
+    "RUN_TS031_095": {
+      "topic": "后半段的 tool／support 指什么？",
+      "reason": "玩家逐步假设外置支撑装置；汤底只有笔内铅芯。部分问句又能被读成内部结构，原 yes/no 无法固定指代。",
+      "human_question": "把 object/tool 固定为玩家提出的额外装置（相关机制 no），还是允许改指内部铅芯（某些问句 yes）？建议固定前者；请确认这个语境边界。"
+    },
+    "RUN_TS035_060": {
+      "topic": "是否区分“怕尸体被吃”和“怕家属悲痛”？",
+      "reason": "汤底确定前者，并合理蕴含后者；没有规定 chiefly 的心理优先级。Q68=yes 与 Q70=no 近义冲突。",
+      "human_question": "两种说法都视为可接受概括，还是必须严格回答尸体受损才是首要担忧？请先定口径，再统一这些标签。"
+    },
+    "RUN_TS035_068": {
+      "topic": "是否区分“怕尸体被吃”和“怕家属悲痛”？",
+      "reason": "汤底确定前者，并合理蕴含后者；没有规定 chiefly 的心理优先级。Q68=yes 与 Q70=no 近义冲突。",
+      "human_question": "两种说法都视为可接受概括，还是必须严格回答尸体受损才是首要担忧？请先定口径，再统一这些标签。"
+    },
+    "RUN_TS035_070": {
+      "topic": "是否区分“怕尸体被吃”和“怕家属悲痛”？",
+      "reason": "汤底确定前者，并合理蕴含后者；没有规定 chiefly 的心理优先级。Q68=yes 与 Q70=no 近义冲突。",
+      "human_question": "两种说法都视为可接受概括，还是必须严格回答尸体受损才是首要担忧？请先定口径，再统一这些标签。"
+    },
+    "RUN_TS035_071": {
+      "topic": "是否区分“怕尸体被吃”和“怕家属悲痛”？",
+      "reason": "汤底确定前者，并合理蕴含后者；没有规定 chiefly 的心理优先级。Q68=yes 与 Q70=no 近义冲突。",
+      "human_question": "两种说法都视为可接受概括，还是必须严格回答尸体受损才是首要担忧？请先定口径，再统一这些标签。"
+    },
+    "RUN_TS035_083": {
+      "topic": "expect 是担心可能，还是认定会发生？",
+      "reason": "担忧风险明确；主观概率和确信程度没有明说。expect 不一定等于 certainty，不能机械改成 no。",
+      "human_question": "这里 expect 是否允许表达“担心会发生”（可 yes），还是要求比可能性更强的预期（未定）？"
+    },
+    "RUN_TS035_091": {
+      "topic": "风险揭示给父亲，还是食物信息揭示给其他熊？",
+      "reason": "revealed ... to bears generally 的修饰范围不清；两种读法给出不同因果。",
+      "human_question": "若仅指父亲意识到尸体可被熊吃：yes；若指该熊使其他熊知道食物：no。原问采取哪一种？"
+    },
+    "RUN_TS038_001": {
+      "topic": "写字、读字和暴露秘密是否被混为一谈？",
+      "reason": "来源确定反复练字伪造及担心暴露；没有实际阅读或已向收信人揭密的事件。原问可描述文本内容，也可描述已发生事件。",
+      "human_question": "reading/reveals 是“文字可供看出问题”，还是“已经有人读到/秘密已曝光”？后者未说明。请确认再标。"
+    },
+    "RUN_TS038_002": {
+      "topic": "写字、读字和暴露秘密是否被混为一谈？",
+      "reason": "来源确定反复练字伪造及担心暴露；没有实际阅读或已向收信人揭密的事件。原问可描述文本内容，也可描述已发生事件。",
+      "human_question": "reading/reveals 是“文字可供看出问题”，还是“已经有人读到/秘密已曝光”？后者未说明。请确认再标。"
+    },
+    "RUN_TS038_016": {
+      "topic": "写字、读字和暴露秘密是否被混为一谈？",
+      "reason": "来源确定反复练字伪造及担心暴露；没有实际阅读或已向收信人揭密的事件。原问可描述文本内容，也可描述已发生事件。",
+      "human_question": "reading/reveals 是“文字可供看出问题”，还是“已经有人读到/秘密已曝光”？后者未说明。请确认再标。"
+    },
+    "RUN_TS038_030": {
+      "topic": "alibi 是严格不在场证明还是泛指掩饰？",
+      "reason": "严格 alibi 要证明案发时人在别处；本题仅用假离家字条掩盖死亡。口语可能混用。",
+      "human_question": "采用严格定义则 no；泛指 cover story 则 yes。建议严格定义，是否同意？"
+    },
+    "NEW013": {
+      "topic": "赎金能否称为 purchase？",
+      "reason": "支付赎金是交易，但普通商品购买和比喻“买自由”不是同一命题。",
+      "human_question": "purchase 允许比喻买回自由（yes），还是按买商品解释（no）？请统一这两问口径。"
+    },
+    "NEW014": {
+      "topic": "赎金能否称为 purchase？",
+      "reason": "支付赎金是交易，但普通商品购买和比喻“买自由”不是同一命题。",
+      "human_question": "purchase 允许比喻买回自由（yes），还是按买商品解释（no）？请统一这两问口径。"
+    },
+    "NEW016": {
+      "topic": "amount 指实际真钱还是外观名义金额？",
+      "reason": "包看似全额赎金，但实际真钱没有补足全额。",
+      "human_question": "实际真钱总额：no；只指外观看起来足额：yes。请确认玩家问句指哪一种。"
+    },
+    "NEW018": {
+      "topic": "粗查假包还是清点实额？",
+      "reason": "真钞替换用于掩盖假包；问句把“金额不足被发现”与“造假被发现”混在一起。",
+      "human_question": "是否允许将 count/金额不足解释为泛指检查造假？若要求清点实额/补足全额，此解释应拒绝。"
+    },
+    "NEW023": {
+      "topic": "粗查假包还是清点实额？",
+      "reason": "真钞替换用于掩盖假包；问句把“金额不足被发现”与“造假被发现”混在一起。",
+      "human_question": "是否允许将 count/金额不足解释为泛指检查造假？若要求清点实额/补足全额，此解释应拒绝。"
+    },
+    "NEW022": {
+      "topic": "照片／视频是随口举例还是必须确认的事件？",
+      "reason": "为绑架准备赎金成立，证明人质的照片视频未说明；括号又声明只问宏观准备。",
+      "human_question": "按括号主旨回答 yes，还是对未定照片视频也判混合？请确认包含 e.g. 的问句口径。"
+    },
+    "NEW026": {
+      "topic": "故意举报，还是故意让 B 转学？",
+      "reason": "A主动举报，但导致B转学不等于A举报的目的。",
+      "human_question": "intentionally 修饰举报行为：yes；修饰让B转学这个目的：no。原问用哪个范围？"
+    },
+    "NEW034": {
+      "topic": "guilt 是否可以概括羞耻与怕拒绝？",
+      "reason": "来源强调认出A后的羞耻和怕被拒绝，不是B参与犯罪；guilt 可有宽泛心理含义。",
+      "human_question": "允许作为负担/羞耻的概括（yes），还是严格读为犯罪知情负罪感这一替代动机（no）？"
+    },
+    "NEW038": {
+      "topic": "同一通电话：谁的听觉视角？",
+      "reason": "人类后来已把 Q6 改为 yes，但父亲现场听与女儿电话听不是同一声音来源。纠错已正确挂到Q6。",
+      "human_question": "请确认该问默认听者是父亲、女儿还是通话整体；再决定原句是否作为无条件参考。"
+    },
+    "NEW040": {
+      "topic": "come alone 是否等于无任何警方保护？",
+      "reason": "独自赴约明确；便衣、远程保护等未说明。这个修饰也可只指不带警察到场。",
+      "human_question": "若只是独自到场：yes；若指任何形式警方保护都没有：混合或未定。请确认 without police protection 的范围。"
+    },
+    "NEW044": {
+      "topic": "跳过4–6月的动机应怎样表述？",
+      "reason": "这段时间预计母亲已不在与提前庆生有关，但不是人为把死亡月份编码进去。",
+      "human_question": "是否接受“跳过预计无法陪伴的月份”作为生日提前的概括（yes），还是要求明确“为了过7月生日”，原句视作错误因果（no）？"
+    }
+  },
+  "reviewed_puzzle_ids": [
+    "TS031",
+    "TS032",
+    "TS033",
+    "TS034",
+    "TS035",
+    "TS036",
+    "TS037",
+    "TS038",
+    "TS039",
+    "TS040"
+  ],
+  "no_previous_flagged_cases": [
+    "TS036",
+    "TS040"
+  ],
+  "source_sha256": {
+    "data/host_reference/reviews/audit_20261030/review.json": "900728d968ca471b9e72404f46f016ce23af8484f4513bd110709af2c13b33d6",
+    "data/host_reference/reviews/chatgpt_share_issues_20261026.json": "c8d85dc0559916ae55b753c9054efb3b44d8f778b50b6b7d0bd654bb4103f9c6",
+    "data/host_reference/sources/chatgpt_shares_20261026/qa_pairs.json": "77e7b55251243b03a0aebdd4ea6925c333063cc79710ec47ee6d8d0ed5829aa0"
+  },
+  "context_sha256_before": {
+    "TS001": "ada2bc05e1ecc4693ce3f014672d2ba485f2346894eac18c3f8d0e2c6431679e",
+    "TS002": "48c8a1b6cc86419dcfc34036f688607125d9f9384d1fcde6f863020b9b73ee45",
+    "TS003": "4dcd30076b607e2bde0940ee57d477ff930dfa4d0f06bdf22d66ab34e481de5b",
+    "TS004": "fc954270c350d9dd997e02e1edf18b817c6ca123ca3b23604d778a2878ab3e79",
+    "TS005": "54da85763574eed62b80949a79cf581ad376fcd2535e8eaf05a9007c563e417b",
+    "TS006": "3e76e1603989a470a0985655992bc9a2319d3a56bba8d07d1dbc13f13b19644c",
+    "TS007": "5e2f195b3f0fb16fc96bc8225c768f749505b8146748d5317db17bf432d0500d",
+    "TS008": "f8a407e784d4b82cec6d491077b57a7ae4a05c6925b09ffd968e128bd989e9c3",
+    "TS009": "3015ca48e7809e5e5e0612f31afdfee2adabc1dd4347c2b620cfda459ada01ae",
+    "TS010": "79baba4c200a8821731c66cbbb5768ce1d3360f6260b9b562cb5bc912e90e815",
+    "TS011": "f519b74ef25292e11f0ac1088d521965cddf9eb58fdbb128ade01aa80f889ae3",
+    "TS012": "47a6bdf60dc6eeaf3f70b50e1662078d0e236e13e9ff28799920745adeda6aaa",
+    "TS013": "5be0dd8810700ae60c596c6ba3df1c4124ebd16b0da0c5c2dc046030657cfd61",
+    "TS014": "e8181631d8d2e3c97bf5a7c30ec6ecaa85c76dcfc8cb00149a22ccddcfe88c3d",
+    "TS015": "e39cc0aebf4dd3531ae4bcf7a4fbf2834d8f78e94cb1639ce1937cf67ccfbf6c",
+    "TS016": "f66a04f1f24422dee11c2f1a6306a91e248087086df328a05041b2339e320012",
+    "TS017": "13a37b5d7215eb6317375ed248fed7703ec12201e93e81a9f295416df228071f",
+    "TS018": "9682a010b60b8bc406d0953bdf59d4a8958a0e81dfc2d7717909718878494ed9",
+    "TS019": "6bf315af04503be75fedd78dc8a1c1d3197a09bae38323b5b6a686824a5c8ea5",
+    "TS020": "b4fee77929ec0a6c8fd721c0d2731d1f055c7c8eccec1ffab7c580df510b01d1",
+    "TS021": "20beafa6c79de2ca07e840f0924071437a92d8b63e8c2384bde10c8c4451776b",
+    "TS022": "0bbe502549fcd33c6b2570eaf26c0e4fe7a3c233da571fee5847dded07af0486",
+    "TS023": "ba61908070a9770171e5e2053b48fcec8fc0ad99dcf31ead1471599144ffea3d",
+    "TS024": "b9a0add57839e647df168877a9ebcf092bcbfe9bb8380bea72190bd47076c597",
+    "TS025": "7e1dc2ef4f6eb84ecf66bc91c77eecd2d3ef851a337abef9054db32e121bb0c9",
+    "TS026": "cbaa8c4cc6bfe415587b43468a75dff7d1b9aea04f1f660c3f2b1d633551e313",
+    "TS027": "a822ba421a4d32824ff4eada2ff6b27e3affbaa8585514a782159670bf8f0a93",
+    "TS028": "775b5299856722c72e13f0020dbf0d54da64d8296f1477dd82c13a7435ccc7a9",
+    "TS029": "273314cad52ca5f66cdce60ee7a077ff78fbd26073d72929f394d35475854c03",
+    "TS030": "3b36c0d0eeae8da9c73bacdc418ff04bf1a5c7cc1385cf4f173ac7cc5ff72709",
+    "TS031": "0230385323a3305e1def20d46782ac520f22e8fad568544bae4823a196fb5941",
+    "TS032": "baf40dd42bbee2bc289996aaa5dd9d8be3ec8db3fda6e1c89680d440591987ba",
+    "TS033": "92817380fb21511202168a45f000210e9d819dda9040fc0fe94ac2085556f722",
+    "TS034": "e6e1584a221467df5c30f6788539155a0f74625ad7feff1a51d38aab28e4c39a",
+    "TS035": "058bceb4e89fd16bb13e4dc25ac7f21907770cb9a402185f629483c82c617b4b",
+    "TS036": "bf2837c40fcdc8bafc575d0ec856289299dfbd80e19097120bcaa40783a92c6f",
+    "TS037": "0dd794a8989605b9be45e503252798a20f6fae6a47ffcd70d116ce0e00bf8fe5",
+    "TS038": "bf6ec1a5f54c0a32624c8feed60f0a52ba4c8987d29bc52ccb9d888a8822d8b3",
+    "TS039": "b7d235bed4d111059cf29d9ac92dfbc90668284db07864981713b9847e0ec235",
+    "TS040": "c66af0e304379c1e139fde5bd61f1aaf9ea347f08aa090b9c4dfae39da2669d3",
+    "TS041": "e64a5e4a628eddafa279fc07d568454475290f7df1f69bacaa3c3302734a9e75",
+    "TS042": "e32a06d97b5f2dc8e4db82c3302c0e24ecabb81733f4fad24b9aa27b2dec1bb4",
+    "TS043": "492a788e03f33260cb09d8cf0a1d6f0b3b23e82a961d56686c33e43eff7aca40",
+    "TS044": "d65c38b8fe739944e76959524f2d1a40bd121b940672445ec799899d1824a17b",
+    "TS045": "fae899f8ca337439318953b75d3dedacba94332351e24a88cd97859a01346a51",
+    "TS046": "c3feace7ca040a1e0ee497ee56ee53956f1a1945c40d347f4f8b41170e597c91",
+    "TS047": "594126eaa4a7475e0193ddf2401062b150d686efa5c286785c33155a4a2bf013",
+    "TS048": "0690b7eb4391e944816fadc7385cfe8caf4bd42025b40b6c58786f1b58ef7b31",
+    "TS049": "59be27d3b382c45955a136daad3cc33be26f90f5787aee9f248bf51fb9c0438c",
+    "TS050": "997ab2b74991d2317468f679b5e8256db84544cdcb9f31fa0ce7f00524f14563"
+  },
+  "context_sha256_after": {
+    "TS001": "ada2bc05e1ecc4693ce3f014672d2ba485f2346894eac18c3f8d0e2c6431679e",
+    "TS002": "48c8a1b6cc86419dcfc34036f688607125d9f9384d1fcde6f863020b9b73ee45",
+    "TS003": "4dcd30076b607e2bde0940ee57d477ff930dfa4d0f06bdf22d66ab34e481de5b",
+    "TS004": "fc954270c350d9dd997e02e1edf18b817c6ca123ca3b23604d778a2878ab3e79",
+    "TS005": "54da85763574eed62b80949a79cf581ad376fcd2535e8eaf05a9007c563e417b",
+    "TS006": "3e76e1603989a470a0985655992bc9a2319d3a56bba8d07d1dbc13f13b19644c",
+    "TS007": "5e2f195b3f0fb16fc96bc8225c768f749505b8146748d5317db17bf432d0500d",
+    "TS008": "f8a407e784d4b82cec6d491077b57a7ae4a05c6925b09ffd968e128bd989e9c3",
+    "TS009": "3015ca48e7809e5e5e0612f31afdfee2adabc1dd4347c2b620cfda459ada01ae",
+    "TS010": "79baba4c200a8821731c66cbbb5768ce1d3360f6260b9b562cb5bc912e90e815",
+    "TS011": "f519b74ef25292e11f0ac1088d521965cddf9eb58fdbb128ade01aa80f889ae3",
+    "TS012": "47a6bdf60dc6eeaf3f70b50e1662078d0e236e13e9ff28799920745adeda6aaa",
+    "TS013": "5be0dd8810700ae60c596c6ba3df1c4124ebd16b0da0c5c2dc046030657cfd61",
+    "TS014": "e8181631d8d2e3c97bf5a7c30ec6ecaa85c76dcfc8cb00149a22ccddcfe88c3d",
+    "TS015": "e39cc0aebf4dd3531ae4bcf7a4fbf2834d8f78e94cb1639ce1937cf67ccfbf6c",
+    "TS016": "f66a04f1f24422dee11c2f1a6306a91e248087086df328a05041b2339e320012",
+    "TS017": "13a37b5d7215eb6317375ed248fed7703ec12201e93e81a9f295416df228071f",
+    "TS018": "9682a010b60b8bc406d0953bdf59d4a8958a0e81dfc2d7717909718878494ed9",
+    "TS019": "6bf315af04503be75fedd78dc8a1c1d3197a09bae38323b5b6a686824a5c8ea5",
+    "TS020": "b4fee77929ec0a6c8fd721c0d2731d1f055c7c8eccec1ffab7c580df510b01d1",
+    "TS021": "20beafa6c79de2ca07e840f0924071437a92d8b63e8c2384bde10c8c4451776b",
+    "TS022": "0bbe502549fcd33c6b2570eaf26c0e4fe7a3c233da571fee5847dded07af0486",
+    "TS023": "ba61908070a9770171e5e2053b48fcec8fc0ad99dcf31ead1471599144ffea3d",
+    "TS024": "b9a0add57839e647df168877a9ebcf092bcbfe9bb8380bea72190bd47076c597",
+    "TS025": "7e1dc2ef4f6eb84ecf66bc91c77eecd2d3ef851a337abef9054db32e121bb0c9",
+    "TS026": "cbaa8c4cc6bfe415587b43468a75dff7d1b9aea04f1f660c3f2b1d633551e313",
+    "TS027": "a822ba421a4d32824ff4eada2ff6b27e3affbaa8585514a782159670bf8f0a93",
+    "TS028": "775b5299856722c72e13f0020dbf0d54da64d8296f1477dd82c13a7435ccc7a9",
+    "TS029": "273314cad52ca5f66cdce60ee7a077ff78fbd26073d72929f394d35475854c03",
+    "TS030": "3b36c0d0eeae8da9c73bacdc418ff04bf1a5c7cc1385cf4f173ac7cc5ff72709",
+    "TS031": "b63d09028e7cbd7178c6545b1edc0ee5de461876ad8b2a1f25735e782ec783fe",
+    "TS032": "9b56ca071e0633256a972c0b53489e622eade5194e9bca306fe4fe5822bc1379",
+    "TS033": "18cbf37ab3d75d9c1fbce6e9df7b63a2e59bd137269ee5ccb836f5fbde1afeb2",
+    "TS034": "718e7afa60c6354882e63a30860d09ec3f96b43d7f93be812bc27e0e01e2797f",
+    "TS035": "780ef5a7737de8905b98e73a8b56630d3c572ef47dd52bdd36882651cbe1a954",
+    "TS036": "bf2837c40fcdc8bafc575d0ec856289299dfbd80e19097120bcaa40783a92c6f",
+    "TS037": "07be40763322d9f605dcae8d25fde4aac4e0622e5fcd8dbfd18131a6f5c61bc0",
+    "TS038": "fc25abdd3c9379ceb489b9e5514643c01523aee3db94816aee6f6ec2cd66a3b1",
+    "TS039": "ef6f5523869c48013f27d4689d452134000a5aba3d6f1f84b33a7e0f72db6a43",
+    "TS040": "c66af0e304379c1e139fde5bd61f1aaf9ea347f08aa090b9c4dfae39da2669d3",
+    "TS041": "e64a5e4a628eddafa279fc07d568454475290f7df1f69bacaa3c3302734a9e75",
+    "TS042": "e32a06d97b5f2dc8e4db82c3302c0e24ecabb81733f4fad24b9aa27b2dec1bb4",
+    "TS043": "492a788e03f33260cb09d8cf0a1d6f0b3b23e82a961d56686c33e43eff7aca40",
+    "TS044": "d65c38b8fe739944e76959524f2d1a40bd121b940672445ec799899d1824a17b",
+    "TS045": "fae899f8ca337439318953b75d3dedacba94332351e24a88cd97859a01346a51",
+    "TS046": "c3feace7ca040a1e0ee497ee56ee53956f1a1945c40d347f4f8b41170e597c91",
+    "TS047": "594126eaa4a7475e0193ddf2401062b150d686efa5c286785c33155a4a2bf013",
+    "TS048": "0690b7eb4391e944816fadc7385cfe8caf4bd42025b40b6c58786f1b58ef7b31",
+    "TS049": "59be27d3b382c45955a136daad3cc33be26f90f5787aee9f248bf51fb9c0438c",
+    "TS050": "997ab2b74991d2317468f679b5e8256db84544cdcb9f31fa0ce7f00524f14563"
+  },
+  "packs": [
+    "TS033",
+    "TS031",
+    "TS035",
+    "TS038",
+    "TS039",
+    "TS032",
+    "TS034",
+    "TS037"
+  ],
+  "unresolved_original_cases": 34,
+  "resolved_original_cases": 53
+}

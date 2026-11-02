@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "games": 72,
+  "directions": 6,
+  "repeats": 3,
+  "checks": [
+    "fresh 100 per game",
+    "source canonical solution revealed",
+    "direct no prior",
+    "answer_only whitelist",
+    "no private rubric/example leakage",
+    "all dry runs complete"
+  ]
+}

@@ -71,6 +71,8 @@ git push
 
 ## 已有人工资料在哪里
 
+- **2026-10-30 更新**：[审核报告](../../docs/host_reference_audit_20261030.md)、[最新Excel](../../outputs/20261030_host_reference_audit/host_reference_audit.xlsx)、[可追溯裁决](reviews/audit_20261030/)。TS031/035/038新增102条已审核参考，TS033修正1条因果标签。保留真实来源，尚未人工确认或实测准确率；17份inbox上传尚未整批激活。
+
 - 两个分享的633条可见消息、311条行动记录：[sources/chatgpt_shares_20261026/](sources/chatgpt_shares_20261026/)。包括TS032/033/034/037/039、TS034两次尝试、一道题库外火车题。目录内文件是原样迁移，README和JSON中的旧路径按迁移清单解释。
 - 历史9题的89条候选片段：`data/host_packs/archive/LOOP_TS*_history_v1.json`，审核见 [history_qa_merge_20261026.json](reviews/history_qa_merge_20261026.json)。旧完整对话未找到，不能把片段叫完整原文。
 - 当前新增绑定109条（历史88＋新分享21），仍有AI审核待人工状态；每题实际加载的内容以active包和binding为准。

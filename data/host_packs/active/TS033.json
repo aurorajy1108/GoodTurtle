@@ -1,6 +1,6 @@
 {
-  "version": "host-v7-share-20261026",
-  "review_status": "user_history_ai_adjudicated_pending_human",
+  "version": "host-v9-human-20261102",
+  "review_status": "human_labels_and_delegated_adjudication",
   "replace_host_examples": true,
   "solution": "His daughter had been kidnapped, and the kidnappers demanded fifty million yen in ransom.\nTo save money, he prepared bundles made mostly of blank paper, with genuine banknotes on the outside. The bag appeared to contain the full ransom, but the genuine money amounted to only one million yen.\nHe feared that the kidnappers would attack him if they discovered the deception. He therefore replaced the bundles at the top with bundles consisting entirely of genuine banknotes.\nThis increased the actual amount of money in the bag and made a superficial inspection less likely to reveal the fake bundles underneath.",
   "canonical_facts": [
@@ -379,10 +379,10 @@
     {
       "case_id": "SHARE_6adf3775_120",
       "question": "Did he add more cash because the kidnappers had demanded a ransom greater than one million yen?",
-      "answer": "yes",
-      "rationale": "The demand is fifty million yen, exceeding one million; extra real top bundles conceal the deception, not necessarily make the whole bag genuine.",
+      "answer": "no",
+      "rationale": "因果错配：增加真钞是怕假钞被发现，不是单因索要金额高于一百万。高额赎金为真不等于此因果成立。",
       "public_history": [],
-      "review_status": "user_history_ai_adjudicated_pending_human",
+      "review_status": "reviewed_reference_pending_human",
       "provenance": {
         "source_url": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
         "message_id": "b7aba170-1b67-4e05-a978-a882de5f004b",
@@ -390,9 +390,10 @@
         "source_case": "SHARE_6adf3775_120",
         "human_confirmed": false,
         "question_origin": "user_shared_player_question",
-        "answer_origin": "user_supplied_history",
+        "answer_origin": "ai_corrected_user_history",
         "reviewer": "codex_root",
-        "review_date": "2026-10-26"
+        "review_date": "2026-10-26",
+        "original_answer": "yes"
       }
     },
     {
@@ -432,6 +433,278 @@
         "reviewer": "codex_root",
         "review_date": "2026-10-26"
       }
+    },
+    {
+      "case_id": "RECHECK_20261031_NEW012",
+      "question": "Was the additional cash intended to change the physical appearance of the money inside the bag, rather than simply increase its total value?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "换顶层真钞的目的是让表面检查不易发现假包；并非只追求提高真钱金额。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "SHARE_6adf3775_084",
+        "audit_case": "NEW012",
+        "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+        "source_kind": "user_supplied_history",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "**Question 7:** Was the additional cash intended to change the physical appearance of the money inside the bag, rather than simply increase its total value?",
+        "original_answer": "no",
+        "question_origin": "reviewer_rewrite",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_NEW015",
+      "question": "Was the additional cash meant to make the total amount match the known price of a particular item?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "没有按某个商品已知价格购买的解释。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "SHARE_6adf3775_100",
+        "audit_case": "NEW015",
+        "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+        "source_kind": "user_supplied_history",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "**Question 15:** Was the additional cash meant to make the total amount match the known price of a particular item?",
+        "original_answer": "yes",
+        "question_origin": "reviewer_rewrite",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_NEW017",
+      "question": "Did the kidnappers demand a ransom amount that was **more than one million yen**, and the president added cash so the bag contained exactly that demanded amount?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "需求大于一百万为真，增加到全部实额赎金为假。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "SHARE_6adf3775_134",
+        "audit_case": "NEW017",
+        "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+        "source_kind": "user_supplied_history",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "**Question 32\\:** Did the kidnappers demand a ransom amount that was **more than one million yen**, and the president added cash so the bag contained exactly that demanded amount?",
+        "original_answer": "yes",
+        "question_origin": "reviewer_rewrite",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_NEW020",
+      "question": "Was the reason adding more cash would protect his child related to the fact that the kidnappers might **kill the child if they thought the president was too poor or unwilling to pay**?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "这不是保护女儿免遭嫌穷杀害的既定原因；来源是怕发现假包后攻击自己。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "SHARE_6adf3775_184",
+        "audit_case": "NEW020",
+        "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+        "source_kind": "user_supplied_history",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "**Question 56:** Was the reason adding more cash would protect his child related to the fact that the kidnappers might **kill the child if they thought the president was too poor or unwilling to pay**?",
+        "original_answer": "yes",
+        "question_origin": "reviewer_rewrite",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_NEW021",
+      "question": "Was the unavoidable situation that made him put one million yen in the bag **caused by the kidnappers themselves** (for example, their instructions or a message they sent)?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "特定一百万来自父亲省钱做假包，不是绑匪给出的金额指令。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "SHARE_6adf3775_190",
+        "audit_case": "NEW021",
+        "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+        "source_kind": "user_supplied_history",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "**Question 59:** Was the unavoidable situation that made him put one million yen in the bag **caused by the kidnappers themselves** (for example, their instructions or a message they sent)?",
+        "original_answer": "yes",
+        "question_origin": "reviewer_rewrite",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_NEW024",
+      "question": "Did the president add more cash because the kidnappers would **kill his child if the ransom was not exactly the demanded amount**, and the only reason he initially had one million yen was due to a coincidence/unavoidable event?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "最初只装一百万不是偶然；“不恰好足额就杀孩子”的解释也未建立。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "SHARE_6adf3775_232",
+        "audit_case": "NEW024",
+        "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+        "source_kind": "user_supplied_history",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "**Question 80:** Did the president add more cash because the kidnappers would **kill his child if the ransom was not exactly the demanded amount**, and the only reason he initially had one million yen was due to a coincidence/unavoidable event?",
+        "original_answer": "yes",
+        "question_origin": "reviewer_rewrite",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_NEW025",
+      "question": "Was the unavoidable situation that forced him to put one million yen in the bag related to **the kidnapping victim (his child) being the one who caused the one million yen to be placed there**?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "被绑的孩子不是把一百万放进包的行动者，具体造假由父亲选择。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "SHARE_6adf3775_270",
+        "audit_case": "NEW025",
+        "source": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+        "source_kind": "user_supplied_history",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "**Question 99:** Was the unavoidable situation that forced him to put one million yen in the bag related to **the kidnapping victim (his child) being the one who caused the one million yen to be placed there**?",
+        "original_answer": "yes",
+        "question_origin": "reviewer_rewrite",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_NEW013",
+      "question": "Was the additional cash intended to make the total amount resemble the price of an expensive purchase?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "purchase按物品购买读；不把支付赎金隐喻成在购买某物。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "SHARE_6adf3775_092",
+        "audit_case": "NEW013",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 69,
+        "human_confirmed": false,
+        "original_question": "**Question 11:** Was the additional cash intended to make the total amount resemble the price of an expensive purchase?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_NEW014",
+      "question": "Was he trying to make the money look like it was intended for a purchase costing more than one million yen?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "同上，赎金而非伪装成商品采购款。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "SHARE_6adf3775_094",
+        "audit_case": "NEW014",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 69,
+        "human_confirmed": false,
+        "original_question": "**Question 12:** Was he trying to make the money look like it was intended for a purchase costing more than one million yen?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_NEW016",
+      "question": "Was he trying to make the amount of money in the bag match the ransom demanded by the kidnappers exactly?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "amount of money按实际真钱总额读；未补足全额，只有外观伪装全额。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "SHARE_6adf3775_124",
+        "audit_case": "NEW016",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 66,
+        "human_confirmed": false,
+        "original_question": "**Question 27:** Was he trying to make the amount of money in the bag match the ransom demanded by the kidnappers exactly?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_NEW018",
+      "question": "Did the president add more cash because the kidnappers would **count the money**, and if they found only one million yen they would realize he had not obeyed their ransom demand?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "精确点钞发现只有一百万不是换顶层真钞能解决的机制；主因是粗查发现假包。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "SHARE_6adf3775_158",
+        "audit_case": "NEW018",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 68,
+        "human_confirmed": false,
+        "original_question": "**Question 44:** Did the president add more cash because the kidnappers would **count the money**, and if they found only one million yen they would realize he had not obeyed their ransom demand?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_NEW023",
+      "question": "Did the president add more cash **before handing over the ransom**, because the kidnappers had already specified the ransom amount, and the problem was that the bag contained **exactly one million yen at that moment**?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "交付前加钱、原有一百万为真；若将问题归为数额不足而非假包暴露，则因果不完整。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "SHARE_6adf3775_204",
+        "audit_case": "NEW023",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 68,
+        "human_confirmed": false,
+        "original_question": "**Question 66:** Did the president add more cash **before handing over the ransom**, because the kidnappers had already specified the ransom amount, and the problem was that the bag contained **exactly one million yen at that moment**?",
+        "original_answer": "no",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_NEW022",
+      "question": "Was the “unavoidable situation” that caused him to put one million yen in the bag something like the kidnappers **showing him a photo/video/message proving they had his child**, after which he prepared the ransom? (i.e., the situation forced him to start preparing the money, not a direct instruction about the amount)",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "绑架促使备款为真，但照片视频等证据交付未说明；明确保留未定细节。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "SHARE_6adf3775_200",
+        "audit_case": "NEW022",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 67,
+        "human_confirmed": false,
+        "original_question": "**Question 64:** Was the “unavoidable situation” that caused him to put one million yen in the bag something like the kidnappers **showing him a photo/video/message proving they had his child**, after which he prepared the ransom? (i.e., the situation forced him to start preparing the money, not a direct instruction about the amount)",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
     }
   ],
   "event_order": [
@@ -444,7 +717,10 @@
   "label_boundaries": [
     "Ransom counts as a transaction, payment and obligation. The million genuine yen is part of that intended payment.",
     "A fifty-million demand does not mean anyone demanded exactly one million.",
-    "Genuine money does not establish unspecified mint/issuance details. The purpose is hiding the paper-filled bundles, not a special legal regime or extra fee."
+    "Genuine money does not establish unspecified mint/issuance details. The purpose is hiding the paper-filled bundles, not a special legal regime or extra fee.",
+    "Do not affirm adding cash BECAUSE the demand exceeded one million. The specific change to the top bundles is to conceal the fake bundles during inspection; a true amount alone does not validate an incorrect causal explanation.",
+    "Ransom demand, nominal appearance and genuine cash total are different. Extra genuine top bundles camouflage paper bundles; they do not fill the bag with the full genuine ransom. The child did not place the cash; saving money was a deliberate choice.",
+    "Unqualified amount means genuine cash, not nominal face value. Purchase means an ordinary acquisition of an item, not an unannounced metaphor for ransom."
   ],
   "verification_policy": "independent_then_adjudicate_v1"
 }

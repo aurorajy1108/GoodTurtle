@@ -1,0 +1,60 @@
+{
+  "id": "TS016",
+  "opening": "I am a very smart student who is very attentive in my class. I could not pass the course. Why?",
+  "answer": "I was standing in front of a course in which a match is being held. Therefore I could not pass it.",
+  "rubric": [
+    {
+      "id": "C1",
+      "weight": 0.75,
+      "core": true,
+      "criterion": "Course refers to a sporting/racing course, not an academic course.",
+      "full_credit": "Course refers to a sporting/racing course, not an academic course.",
+      "half_credit": "The correct nonacademic domain is identified (river/waterway for TS015; sports/race venue for TS016), but the explicit reinterpretation of course is incomplete. A generic claim that it is not academic earns zero here.",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+      "points": 75.0,
+      "required_facts": [
+        "Course refers to a sporting/racing course, not an academic course."
+      ],
+      "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+    },
+    {
+      "id": "C2",
+      "weight": 0.25,
+      "core": false,
+      "criterion": "A competition underway prevents the person from passing across it.",
+      "full_credit": "A competition underway prevents the person from passing across it.",
+      "half_credit": "Competition identified without explaining blocked crossing",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+      "points": 25.0,
+      "required_facts": [
+        "A competition underway prevents the person from passing across it."
+      ],
+      "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+    }
+  ],
+  "title": "无法pass the course：赛道",
+  "story_family": "F-PASS-COURSE",
+  "quality_status": "同题不同解/待复核",
+  "review_notes": "与15题题面完全相同；通行原因需补充",
+  "source_row": "16",
+  "observed_score": null,
+  "completion_requirements": [
+    "Course is a sporting or racing course",
+    "A match is taking place there",
+    "The person cannot cross the active competition course; academic ability is irrelevant"
+  ],
+  "annotation_version": "turtle50-v3-host-repair-20261023",
+  "annotation_status": "ai_repair_pending_human",
+  "grading_notes": "AI three-review adjudication v2, pending human confirmation. Score only this submission. Apply full_credit/half_credit/zero_credit explicitly, with zero taking precedence for a materially contradictory checkpoint claim. An omitted qualifier can be partial; replacing the core identity/cause with a wrong one is not an omission. Faithful paraphrases count. Partial score and full narrative are separate outputs. AI independent review B, pending human approval. Credit is 0/.5/1 per checkpoint. Full narrative additionally requires all sourced completion requirements and no incompatible central claims. Judge the submitted explanation, not unasserted chat guesses. Accept faithful paraphrases; missing optional detail is not a contradiction. Do not demand unknown motives, devices or events. Accept faithful paraphrase. Require the listed identities, events and causal links, not exact prose or unspecified incidental details.",
+  "annotation_provenance": {
+    "reviewers": [
+      "a",
+      "b",
+      "c"
+    ],
+    "selected_base": "b",
+    "adjudicator": "root",
+    "human_confirmed": false
+  },
+  "grading_protocol": "coverage-v2"
+}

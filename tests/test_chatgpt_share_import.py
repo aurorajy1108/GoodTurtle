@@ -63,6 +63,8 @@ class ShareImportTests(unittest.TestCase):
         bank={p['id']:p for p in load_dataset(ROOT/audit['dataset'])['puzzles']}
         pairs={p['case_id']:p for p in json.loads((D/'qa_pairs.json').read_text())}
         approved=set()
+        revision=json.loads((ROOT/'data/host_reference/reviews/audit_20261030/activation.json').read_text())
+        corrections={c['case_id']:c for c in revision['changes'] if c['action']=='correct_label'}
         for group in audit['puzzles']:
             basepath=resolve_historical_path(group['base_binding']['overlay_pack']);self.assertEqual(hashlib.sha256(basepath.read_bytes()).hexdigest(),group['base_sha256'])
             base=json.loads(basepath.read_text());merged=json.loads(resolve_historical_path(group['merged_pack']).read_text());context=build_story_context(bank[group['puzzle_id']])
@@ -71,7 +73,14 @@ class ShareImportTests(unittest.TestCase):
             self.assertEqual(merged['host_examples'][:len(base['host_examples'])],base['host_examples'])
             self.assertEqual(merged['host_examples'][len(base['host_examples']):],group['added_examples'])
             for e in group['added_examples']:
-                self.assertIn(e,context['host_examples']);self.assertEqual(e['question'],pairs[e['case_id']]['question']);self.assertEqual(e['answer'],pairs[e['case_id']]['label_observed']);self.assertFalse(e['provenance']['human_confirmed']);approved.add(e['case_id'])
+                if e['case_id'] in corrections:
+                    change=corrections[e['case_id']]
+                    self.assertEqual(change['before'],e)
+                    self.assertIn(change['example'],context['host_examples'])
+                    self.assertNotIn(e,context['host_examples'])
+                else:
+                    self.assertIn(e,context['host_examples'])
+                self.assertEqual(e['question'],pairs[e['case_id']]['question']);self.assertEqual(e['answer'],pairs[e['case_id']]['label_observed']);self.assertFalse(e['provenance']['human_confirmed']);approved.add(e['case_id'])
         self.assertEqual(len(approved),21)
         self.assertEqual(approved,{k for k,v in pairs.items() if v['eligible_for_host_pack']})
         self.assertEqual(len(bank),50)

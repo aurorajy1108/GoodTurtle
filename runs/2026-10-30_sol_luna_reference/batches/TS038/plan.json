@@ -1,0 +1,65 @@
+{
+  "kind": "team",
+  "seed": 20261025,
+  "arguments": {
+    "command": "team",
+    "dataset": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/runs/2026-10-30_sol_luna_reference/runtime_snapshot/data/dataset.json",
+    "config": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/runs/2026-10-30_sol_luna_reference/runtime_snapshot/configs/run.json",
+    "repeat": 1,
+    "seed": 20261025,
+    "out": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/runs/2026-10-30_sol_luna_reference/batches/TS038",
+    "dry_run": false,
+    "quiet": true,
+    "on_error": "continue",
+    "puzzle": "TS038",
+    "strategies": "solo",
+    "sync_interval": 4,
+    "partner_config": null
+  },
+  "blocks": [
+    {
+      "block": "TS038_r01",
+      "target": "TS038",
+      "repeat": 1,
+      "conditions": [
+        "solo"
+      ]
+    }
+  ],
+  "config": {
+    "max_questions": 100,
+    "host": {
+      "provider": "codex_cli",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "high",
+      "timeout": 600
+    },
+    "player": {
+      "provider": "codex_cli",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "high",
+      "timeout": 600
+    },
+    "grader": {
+      "provider": "codex_cli",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "high",
+      "timeout": 600
+    }
+  },
+  "partner": {
+    "provider": "codex_cli",
+    "model": "gpt-6-luna",
+    "reasoning_effort": "high",
+    "timeout": 600
+  },
+  "dataset_sha256": "2d68e00d30dcd242ce250ab7f97d219637f119f4da512ac95468346eb4e90050",
+  "source_feedback": null,
+  "per_game_budget": 100,
+  "budget_policy": "Fresh independent budget for A and every B condition; source feedback and memory calls consume no target submissions.",
+  "groups_snapshot": null,
+  "meaning": "Context transfer only; weights unchanged. Seed controls scheduling, not API sampling.",
+  "controls_note": "Unrelated-source neutrality is a hypothesis requiring human review; history lengths are recorded, not matched. Shared buffer exposes pending question text but withholds unsynced answers.",
+  "condition_order": "Random base order rotated across repeats; shuffled blocks.",
+  "team_order": "Random base order per puzzle with cyclic rotation over repeats; blocks shuffled."
+}

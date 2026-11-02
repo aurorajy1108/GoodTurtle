@@ -1,6 +1,6 @@
 {
-  "version": "host-v5.1-20261023",
-  "review_status": "ai_repair_pending_human",
+  "version": "host-v9-human-20261102",
+  "review_status": "human_labels_and_delegated_adjudication",
   "replace_host_examples": true,
   "solution": "Several days earlier, an epidemic had killed his daughter and several other villagers.\nThe new settlement had no crematorium and could not spare enough fuel to cremate the dead, so the villagers buried the bodies in the forest.\nThe father visited his daughter’s grave every day. On this visit, he discovered that a bear had dug up her body and was eating her remains. He shot the bear.\nHe feared that other bears would also dig up the graves and eat the dead relatives of other villagers. His concern was about bears consuming buried bodies, rather than attacking living people.",
   "canonical_facts": [
@@ -180,7 +180,846 @@
       "public_history": [],
       "rationale": "Use the source roles and causal chain; do not invent unspecified details.",
       "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_030",
+      "question": "Is the father’s fear that the bear may eat villagers’ relatives after they die, rather than attack living people?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_001",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Is the father’s fear that the bear may eat villagers’ relatives after they die, rather than attack living people?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_031",
+      "question": "Was the daughter already dead before the bear began eating her, rather than having been killed by the bear?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_005",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was the daughter already dead before the bear began eating her, rather than having been killed by the bear?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_032",
+      "question": "Was the daughter’s body buried before the bear began eating it?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_006",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was the daughter’s body buried before the bear began eating it?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_033",
+      "question": "Did the bear find the daughter because her grave was shallow or otherwise easy to detect by smell?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_007",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the bear find the daughter because her grave was shallow or otherwise easy to detect by smell?",
+        "original_answer": "irrelevant",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_034",
+      "question": "Did the bear dig the daughter’s body out of her grave before eating it?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_009",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the bear dig the daughter’s body out of her grave before eating it?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_035",
+      "question": "Was this same bear responsible for digging up and eating at least one other villager’s buried dead before it dug up the daughter?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_010",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was this same bear responsible for digging up and eating at least one other villager’s buried dead before it dug up the daughter?",
+        "original_answer": "irrelevant",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_036",
+      "question": "Did the daughter die of natural causes before she was buried?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_013",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the daughter die of natural causes before she was buried?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_037",
+      "question": "Could other bears still dig up and eat villagers’ buried dead even after this bear is killed?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_018",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Could other bears still dig up and eat villagers’ buried dead even after this bear is killed?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_038",
+      "question": "Were villagers’ dead buried without coffins or other physical protection that would keep bears from reaching the bodies?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_020",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Were villagers’ dead buried without coffins or other physical protection that would keep bears from reaching the bodies?",
+        "original_answer": "irrelevant",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_039",
+      "question": "Did the villagers bury their dead without cremating the bodies first?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_023",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the villagers bury their dead without cremating the bodies first?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_040",
+      "question": "Was cremation unavailable in the newly settled village, which is why the villagers buried their dead uncremated?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_025",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was cremation unavailable in the newly settled village, which is why the villagers buried their dead uncremated?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_041",
+      "question": "Would cremating the dead have prevented bears from digging up and eating their bodies?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_029",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Would cremating the dead have prevented bears from digging up and eating their bodies?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_042",
+      "question": "Was cremation unavailable because the newly settled village had no crematorium or other facilities for cremating its dead?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_030",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was cremation unavailable because the newly settled village had no crematorium or other facilities for cremating its dead?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_043",
+      "question": "Were other villagers’ uncremated relatives already buried and at risk when the father found the bear?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_034",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Were other villagers’ uncremated relatives already buried and at risk when the father found the bear?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_044",
+      "question": "Did the father intend to persuade the villagers to find a way to cremate their dead after witnessing the bear dig up his daughter’s grave?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_036",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the father intend to persuade the villagers to find a way to cremate their dead after witnessing the bear dig up his daughter’s grave?",
+        "original_answer": "irrelevant",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_045",
+      "question": "Before the bear dug up the daughter’s grave, had any bear already dug up and eaten another villager’s buried body?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_039",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Before the bear dug up the daughter’s grave, had any bear already dug up and eaten another villager’s buried body?",
+        "original_answer": "irrelevant",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_046",
+      "question": "Was the bear able to locate the daughter’s buried body by smelling it underground?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_040",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was the bear able to locate the daughter’s buried body by smelling it underground?",
+        "original_answer": "irrelevant",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_047",
+      "question": "Was the daughter’s burial intended to be temporary, with the villagers planning to cremate her later when they had the means?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_044",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was the daughter’s burial intended to be temporary, with the villagers planning to cremate her later when they had the means?",
+        "original_answer": "irrelevant",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_048",
+      "question": "Did the villagers have any practical way to protect the bodies already buried from bears, other than cremating them?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_046",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the villagers have any practical way to protect the bodies already buried from bears, other than cremating them?",
+        "original_answer": "irrelevant",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_049",
+      "question": "Could villagers protect the bodies already buried by making their graves deeper or otherwise reinforcing them, without cremating the bodies?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_048",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Could villagers protect the bodies already buried by making their graves deeper or otherwise reinforcing them, without cremating the bodies?",
+        "original_answer": "irrelevant",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_050",
+      "question": "Was he afraid that other villagers might discover bears eating the remains of their own relatives, as he had discovered with his daughter?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_050",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was he afraid that other villagers might discover bears eating the remains of their own relatives, as he had discovered with his daughter?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_051",
+      "question": "Did the bear’s behavior reflect ordinary scavenging of an accessible corpse, rather than an unusual predatory attack on a person?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_055",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the bear’s behavior reflect ordinary scavenging of an accessible corpse, rather than an unusual predatory attack on a person?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_052",
+      "question": "Was the daughter’s grave located in the forest where her father found the bear?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_065",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was the daughter’s grave located in the forest where her father found the bear?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_053",
+      "question": "Was cremation unavailable because Meiji-era law prohibited it, rather than because this newly settled village lacked cremation facilities?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_081",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was cremation unavailable because Meiji-era law prohibited it, rather than because this newly settled village lacked cremation facilities?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_054",
+      "question": "Were the graves vulnerable because the villagers buried the bodies only shallowly? ",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_086",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Were the graves vulnerable because the villagers buried the bodies only shallowly? ",
+        "original_answer": "irrelevant",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_055",
+      "question": "Did seeing the bear dig up his daughter’s grave convince the father that the other already-buried, uncremated bodies were also at risk?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_094",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did seeing the bear dig up his daughter’s grave convince the father that the other already-buried, uncremated bodies were also at risk?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_056",
+      "question": "Had bears already dug up and eaten other villagers’ buried dead before this incident?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "此前其他墓的事件未说明。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_008",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "reviewer_rewrite",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Had bears already dug up and eaten other villagers’ buried dead before this incident?",
+        "original_answer": "yes and no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_057",
+      "question": "Did he fear other bears could reach the other forest graves and eat the bodies buried there?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "森林坟墓，不新增正式墓园。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_019",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "reviewer_rewrite",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was his concern that bears could keep getting into the village cemetery and eating other buried people, regardless of whether this particular bear survived?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_058",
+      "question": "Would villagers be distressed by bears eating their dead relatives, and is it also established that bears pose absolutely no danger to living people?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "悲痛合理；绝对零风险不成立。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_056",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "reviewer_rewrite",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Would villagers’ distress come from discovering bears eating their deceased relatives, even though the bears posed no danger to living people?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_059",
+      "question": "Did the father fear other villagers’ buried relatives would also be eaten?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "保留核心担忧，不杜撰悲痛与遗体受损孰轻孰重。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_068",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "reviewer_rewrite",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was the ongoing consequence he feared chiefly that other villagers would be traumatized by finding bears eating their buried relatives?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_060",
+      "question": "Is it established that other villagers’ buried relatives were subsequently eaten?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "担忧不是后来事件已经发生。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_083",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "reviewer_rewrite",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the father expect that bears would eventually dig up and eat other villagers’ buried relatives, rather than merely recognize that it was possible?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS035_061",
+      "question": "Did the incident reveal the risk to the father, rather than establish that this bear taught other bears to eat humans?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "明确认知主体，不传递给其他熊。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_091",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_sha256": "f2966882c6386e710b22c674ef725744de091c4001d21fa7f523e7294ac0fd1c",
+        "source_kind": "model_generated",
+        "question_origin": "reviewer_rewrite",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the father fear that bears would dig up the other graves because this bear had revealed that human corpses were an available food source to bears generally, even though it had not taught them to eat human bodies?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_RUN_TS035_019",
+      "question": "Was his concern that bears could keep getting into the village cemetery and eating other buried people, regardless of whether this particular bear survived?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "担忧其他坟墓被吃成立；正式 village cemetery 的限定未说明。该词不允许扩写为设有正式墓园。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_019",
+        "audit_case": "RUN_TS035_019",
+        "source": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_kind": "model_generated",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was his concern that bears could keep getting into the village cemetery and eating other buried people, regardless of whether this particular bear survived?",
+        "original_answer": "yes",
+        "question_origin": "source_verbatim",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_RUN_TS035_054",
+      "question": "Was the harm he feared for other villagers the grief of finding a bear eating their deceased relatives, rather than any danger to the villagers themselves?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "问家属因发现遗体遭吃而悲痛，是合理普通含义；未断言熊对所有活人绝无危险。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_054",
+        "audit_case": "RUN_TS035_054",
+        "source": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_kind": "model_generated",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was the harm he feared for other villagers the grief of finding a bear eating their deceased relatives, rather than any danger to the villagers themselves?",
+        "original_answer": "yes",
+        "question_origin": "source_verbatim",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_RUN_TS035_056",
+      "question": "Would villagers’ distress come from discovering bears eating their deceased relatives, even though the bears posed no danger to living people?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "悲痛成立，但绝对零危险强于题面的 rarely；保留两分句的差别。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS035_056",
+        "audit_case": "RUN_TS035_056",
+        "source": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+        "source_kind": "model_generated",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Would villagers’ distress come from discovering bears eating their deceased relatives, even though the bears posed no danger to living people?",
+        "original_answer": "yes",
+        "question_origin": "source_verbatim",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS035_060",
+      "question": "Was the father’s fear that other villagers would suffer the same emotional shock of discovering bears eating their deceased relatives, rather than that the bears would cause some further harm to the bodies or the living?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "相同悲痛成立，但rather than harm to bodies否定/弱化了核心遗体遭吃风险。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS035_060",
+        "audit_case": "RUN_TS035_060",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 73,
+        "human_confirmed": false,
+        "original_question": "Was the father’s fear that other villagers would suffer the same emotional shock of discovering bears eating their deceased relatives, rather than that the bears would cause some further harm to the bodies or the living?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS035_068",
+      "question": "Was the ongoing consequence he feared chiefly that other villagers would be traumatized by finding bears eating their buried relatives?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "家属因发现遗体被吃而悲痛是核心担忧的合理概括，未明确否认遗体风险。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS035_068",
+        "audit_case": "RUN_TS035_068",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 73,
+        "human_confirmed": false,
+        "original_question": "Was the ongoing consequence he feared chiefly that other villagers would be traumatized by finding bears eating their buried relatives?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS035_070",
+      "question": "Was the father chiefly afraid that other villagers would themselves discover bears eating their buried relatives, and suffer the same emotional shock he had? ",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "与Q68同义采用同一口径，不要求逐字复述汤底。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS035_070",
+        "audit_case": "RUN_TS035_070",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 74,
+        "human_confirmed": false,
+        "original_question": "Was the father chiefly afraid that other villagers would themselves discover bears eating their buried relatives, and suffer the same emotional shock he had? ",
+        "original_answer": "no",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS035_071",
+      "question": "Was the father chiefly afraid that bears would eat other villagers’ buried relatives, rather than chiefly afraid of the distress villagers would feel if they discovered it?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "怕遗体被吃成立；把此与家属悲痛排为互斥主次无依据。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS035_071",
+        "audit_case": "RUN_TS035_071",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 74,
+        "human_confirmed": false,
+        "original_question": "Was the father chiefly afraid that bears would eat other villagers’ buried relatives, rather than chiefly afraid of the distress villagers would feel if they discovered it?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS035_083",
+      "question": "Did the father expect that bears would eventually dig up and eat other villagers’ buried relatives, rather than merely recognize that it was possible?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "父亲预期有风险，但rather than merely possible要求更强主观确信，来源未给。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS035_083",
+        "audit_case": "RUN_TS035_083",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 72,
+        "human_confirmed": false,
+        "original_question": "Did the father expect that bears would eventually dig up and eat other villagers’ buried relatives, rather than merely recognize that it was possible?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS035_091",
+      "question": "Did the father fear that bears would dig up the other graves because this bear had revealed that human corpses were an available food source to bears generally, even though it had not taught them to eat human bodies?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "事件向父亲揭示风险为真；向其他熊传播食物信息未建立。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS035_091",
+        "audit_case": "RUN_TS035_091",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 75,
+        "human_confirmed": false,
+        "original_question": "Did the father fear that bears would dig up the other graves because this bear had revealed that human corpses were an available food source to bears generally, even though it had not taught them to eat human bodies?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
     }
   ],
-  "verification_policy": "independent_then_adjudicate_v1"
+  "verification_policy": "independent_then_adjudicate_v1",
+  "label_boundaries": [
+    "Fear of other graves being eaten is established; previous other attacks, actual future attacks, coffins, grave depth and a formal cemetery are not established.",
+    "Rarely attacking living people does not mean zero danger to all living people. Do not convert fear or risk into certainty.",
+    "The core fear concerns bodies being eaten. Emotional distress is reasonable, but the story does not rank distress versus damage to remains as mutually exclusive chief fears. Do not arbitrarily reverse answers to paraphrases.",
+    "Distress at a relative’s remains being eaten is an ordinary implication and may be affirmed broadly. Do not infer absolute safety of the living or a specified ranking of grief versus harm to remains. A formal cemetery is not specified by forest graves.",
+    "Broad grief at finding eaten relatives is an acceptable paraphrase of the concern. Only an explicit exclusion/ranking of grief versus body damage is undetermined; match Q68 and Q70 consistently as yes."
+  ]
 }

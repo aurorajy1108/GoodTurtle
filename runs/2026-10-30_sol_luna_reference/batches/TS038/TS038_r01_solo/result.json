@@ -1,0 +1,133 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 97,
+  "final_attempts": 3,
+  "rejected_finals": 3,
+  "counted_questions": 100,
+  "submissions": 100,
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.35,
+  "best_partial_score": 0.35,
+  "latest_final": "The speaker deliberately killed someone as part of a crime. Afterward, they repeatedly wrote “You’ve disappointed me so much; I’m never coming back” to practice imitating the victim’s handwriting. They plan to send it as a forged handwritten note from the victim, making it seem the victim left voluntarily because they were disappointed in the recipient. The speaker also plans to send later communications pretending to be the victim, to make people believe the victim is still alive and conceal the death, avoiding suspicion or investigation. The speaker is worried that their handwriting will not convincingly match the victim’s, exposing the forgery and potentially the crime.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0,
+        "evidence": "The speaker deliberately killed someone as part of a crime.",
+        "reason": "The submission identifies a murder and a staged voluntary departure but never identifies the victim as the narrator’s wife. The specified half-credit condition requires identifying the wife’s murder."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "they repeatedly wrote “You’ve disappointed me so much; I’m never coming back” to practice imitating the victim’s handwriting",
+        "reason": "Repeated handwriting-forgery attempts are explained, satisfying the forgery requirement for partial credit, but the victim is not identified as his wife."
+      },
+      {
+        "id": "C3",
+        "credit": 1,
+        "evidence": "The speaker is worried that their handwriting will not convincingly match the victim’s, exposing the forgery and potentially the crime.",
+        "reason": "Clearly connects the unconvincing handwriting imitation to fear that the forgery and crime will be discovered."
+      }
+    ],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "The victim is never identified as the narrator’s wife. The additional planned communications are unsupported incidental elaboration, not a material contradiction.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "partial",
+        "evidence": "The speaker deliberately killed someone as part of a crime. … They plan to send it as a forged handwritten note from the victim, making it seem the victim left voluntarily because they were disappointed in the recipient."
+      },
+      {
+        "id": "C2.F1",
+        "status": "partial",
+        "evidence": "Afterward, they repeatedly wrote “You’ve disappointed me so much; I’m never coming back” to practice imitating the victim’s handwriting."
+      },
+      {
+        "id": "C3.F1",
+        "status": "covered",
+        "evidence": "The speaker is worried that their handwriting will not convincingly match the victim’s, exposing the forgery and potentially the crime."
+      }
+    ],
+    "requirement_coverage": [
+      {
+        "id": "R1",
+        "status": "partial",
+        "evidence": "The speaker deliberately killed someone as part of a crime."
+      },
+      {
+        "id": "R2",
+        "status": "covered",
+        "evidence": "They plan to send it as a forged handwritten note from the victim, making it seem the victim left voluntarily because they were disappointed in the recipient."
+      },
+      {
+        "id": "R3",
+        "status": "covered",
+        "evidence": "Afterward, they repeatedly wrote “You’ve disappointed me so much; I’m never coming back” to practice imitating the victim’s handwriting. … The speaker is worried that their handwriting will not convincingly match the victim’s, exposing the forgery and potentially the crime."
+      }
+    ],
+    "contradictions": [],
+    "partial_score": 0.35,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v2",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 4965.790916333994,
+  "usage": {
+    "grader": {
+      "http_attempts": 3,
+      "successful_responses": 3,
+      "seconds": 91.19603658298729,
+      "provider_reported_usage": {
+        "input_tokens": 17333,
+        "cached_input_tokens": 3072,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3160,
+        "reasoning_output_tokens": 1134
+      }
+    },
+    "host": {
+      "http_attempts": 200,
+      "successful_responses": 200,
+      "seconds": 3089.6435008369153,
+      "provider_reported_usage": {
+        "input_tokens": 1450858,
+        "cached_input_tokens": 351232,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 15814,
+        "reasoning_output_tokens": 12376
+      }
+    },
+    "player": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 1784.0110212921281,
+      "provider_reported_usage": {
+        "input_tokens": 415682,
+        "cached_input_tokens": 149376,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 37881,
+        "reasoning_output_tokens": 33787
+      }
+    }
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "evaluation_versions": {
+    "story_sha256": "8f2ddbbd95f8552db795e6101df8e1ec6ac3755b6591d990fc66877d5a4b9d3b",
+    "grading_sha256": "b45687898c96ce287d149e65ef97c3ace0f95ce5ccfd722ce4b2d9d4588abd56",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "3ad8cff7ff01654eb948a48a0420492bce967eb61a87f28b28752fdf17d2ccec",
+    "controller_sha256": "b2f9cdef2472b363a8fda1382d4dc42802fa2ab040fc667c481e27756469557b",
+    "host_context_sha256": "20cb4c16afaba879580856ce39bd1aefe3b92989f12f0cdb72238b787ced21d0",
+    "host_binding_version": "host-v5.1-20261023"
+  }
+}

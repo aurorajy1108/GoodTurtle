@@ -1,15 +1,16 @@
 {
-  "version": "host-v7-history-20261026",
-  "review_status": "user_history_ai_adjudicated_pending_human",
+  "version": "host-v9-human-20261102",
+  "review_status": "human_labels_and_delegated_adjudication",
   "replace_host_examples": true,
-  "solution": "I am a young tiger in a wildlife park. Every day, tourists drive their own vehicles through the grounds to sightsee; to me, these look like colorful moving boxes. Mom always told me not to go near them, and I had no idea what was inside. Then, one day—for some reason—a car suddenly stopped, and a human stepped out. I didn't recognize humans; to me, this looked like a small, running, squeaking toy emerging from the box. Intrigued, I dragged the human away and began pouncing and biting in play. My actions drew the attention of the zookeepers, who shot me with a tranquilizer dart, causing me to lose consciousness. The human I had mauled eventually died from severe injuries, and I was euthanized for having killed a person.\nBut... I wasn't the one who opened the box.",
+  "solution": "I am a young tiger in a wildlife park. Every day, tourists drive their own vehicles through the grounds to sightsee; to me, these look like colorful moving boxes. Mom always told me not to go near them, and I had no idea what was inside. Then, one day—for some reason—a car suddenly stopped, and a human stepped out. I didn't recognize humans; to me, this looked like a small, running, squeaking toy emerging from the box. Intrigued, I dragged the human away and began pouncing and biting in play. My actions drew the attention of the zookeepers, who shot me with a tranquilizer dart, causing me to lose consciousness. The human I had mauled eventually died from severe injuries, and I was euthanized for having killed a person.\nBut... I wasn't the one who opened the box.\n\nIn the human-reviewed version, the young tiger is larger than a human. The visitor voluntarily exits despite rules requiring visitors to remain in vehicles.",
   "canonical_facts": [
     "The narrator is a young tiger living in a wildlife park",
     "Colored boxes are tourists’ vehicles, and the mother warns against approaching them",
     "A human exits a stopped vehicle, so the tiger did not open the box",
     "The tiger interprets the person as a toy, drags them away and bites and pounces in play",
     "Keepers tranquilize the tiger, causing its fading consciousness",
-    "The visitor dies of the injuries and the tiger is later euthanized"
+    "The visitor dies of the injuries and the tiger is later euthanized",
+    "In the human-reviewed version, the young tiger is larger than a human. The visitor voluntarily exits despite rules requiring visitors to remain in vehicles."
   ],
   "explicit_negatives": [],
   "unknown_details": [],
@@ -402,6 +403,94 @@
         "label_changed": false,
         "human_confirmed": false
       }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS007_006",
+      "question": "Is the narrator a mammal?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "按人工标签列应用；“非问题”不当作删除问句的指令。",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS007_006",
+        "audit_case": "INBOX_TS007_006",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 17,
+        "human_confirmed": true,
+        "original_question": "Is the narrator a mammal?",
+        "original_answer": "no",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS007_018",
+      "question": "Did the narrator lose consciousness because of an electric shock?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "按人工标签列应用；“非问题”不当作删除问句的指令。",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS007_018",
+        "audit_case": "INBOX_TS007_018",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 18,
+        "human_confirmed": true,
+        "original_question": "Did the narrator lose consciousness because of an electric shock?",
+        "original_answer": "irrelevant",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS007_021",
+      "question": "Is the narrator much larger than a human?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "按人工标签列应用；“非问题”不当作删除问句的指令。",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS007_021",
+        "audit_case": "INBOX_TS007_021",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 19,
+        "human_confirmed": true,
+        "original_question": "Is the narrator much larger than a human?",
+        "original_answer": "yes & no",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
+    },
+    {
+      "case_id": "HUMAN_20261102_INBOX_TS007_025",
+      "question": "Did the human get out of the car voluntarily, despite the park’s rules requiring visitors to stay inside?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "按人工标签列应用；“非问题”不当作删除问句的指令。",
+      "review_status": "human_confirmed_label",
+      "provenance": {
+        "source_case": "INBOX_TS007_025",
+        "audit_case": "INBOX_TS007_025",
+        "answer_origin": "human_spreadsheet",
+        "source_kind": "user_supplied_history",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 19,
+        "human_confirmed": true,
+        "original_question": "Did the human get out of the car voluntarily, despite the park’s rules requiring visitors to stay inside?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "human_spreadsheet"
+      }
     }
   ],
   "verification_policy": "independent_then_adjudicate_v1",
@@ -415,5 +504,13 @@
     "base_sha256": "a23004ba8371b0e175e881477aae4eacaa3a86848487dc568ba2b68b7962c08b",
     "audit_record": "docs/reviews/history_qa_merge_20261026.json",
     "canonical_policy": "Retain the existing canonical facts, solution, scoring and verification policy; append adjudicated examples only."
-  }
+  },
+  "fact_provenance": [
+    {
+      "text": "In the human-reviewed version, the young tiger is larger than a human. The visitor voluntarily exits despite rules requiring visitors to remain in vehicles.",
+      "source": "Human workbook row 19",
+      "workbook_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+      "human_supplied": true
+    }
+  ]
 }

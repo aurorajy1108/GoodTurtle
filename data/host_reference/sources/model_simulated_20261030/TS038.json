@@ -1,0 +1,715 @@
+{
+  "puzzle_id": "TS038",
+  "source_kind": "model_simulated_reference",
+  "opening": "\"You've disappointed me so much; I'm never coming back.\" \"You've disappointed me so much; I'm never coming back.\" \"You've disappointed me so much; I'm never coming back.\" \"You've disappointed me so much; I'm never coming back.\" \"You've disappointed me so much; I'm never coming back.\" \"You've disappointed me so much; I'm never coming back.\" \"You've disappointed me so much; I'm never coming back.\"\n\nSigh, I know I'm in trouble.",
+  "human_confirmed": false,
+  "review_status": "pending",
+  "host_model_requested": "gpt-6.1-sol",
+  "player_model_requested": "gpt-6-luna",
+  "reasoning_effort": "high",
+  "run_path": "runs/2026-10-30_sol_luna_reference/batches/TS038/TS038_r01_solo",
+  "trajectory_sha256": "4d3b419b23e9d0dd9dbdf8c14743e6c49ae4864cde38bb1288e7edbca013d350",
+  "status": "completed",
+  "actions": [
+    {
+      "index": 1,
+      "type": "question",
+      "text": "Is the repeated sentence something the speaker is hearing or reading, rather than saying themselves?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 2,
+      "type": "question",
+      "text": "Is the repeated sentence written somewhere for the speaker to read?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 3,
+      "type": "question",
+      "text": "Was the sentence written by someone other than the speaker who says, “I know I’m in trouble”?.",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 4,
+      "type": "question",
+      "text": "Did the speaker write the sentence repeatedly as a punishment or assignment?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 5,
+      "type": "question",
+      "text": "Did the speaker intentionally write the repeated sentence?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 6,
+      "type": "question",
+      "text": "Did the speaker write the sentence as part of a fictional or creative work?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 7,
+      "type": "question",
+      "text": "Did the speaker write the sentence by hand on a physical surface?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 8,
+      "type": "question",
+      "text": "Did the speaker write the repeated sentence as a message intended for someone else to read?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 9,
+      "type": "question",
+      "text": "Did the speaker write the repeated sentence as an unsent draft of a message?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 10,
+      "type": "question",
+      "text": "Has someone else discovered the speaker’s handwritten draft?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 11,
+      "type": "question",
+      "text": "Is the intended recipient a family member of the speaker?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 12,
+      "type": "question",
+      "text": "Is the speaker worried because the draft reveals something they intended to keep secret from its recipient?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 13,
+      "type": "question",
+      "text": "Does the draft reveal that the speaker intends to leave the recipient permanently?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 14,
+      "type": "question",
+      "text": "Does the draft pretend to be a message written by its intended recipient?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 15,
+      "type": "question",
+      "text": "Is the intended recipient someone the speaker is romantically involved with?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 16,
+      "type": "question",
+      "text": "Does the draft reveal something the speaker has done that they are trying to conceal from its intended recipient?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 17,
+      "type": "question",
+      "text": "Is the concealed thing the speaker has done a betrayal of the intended recipient?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 18,
+      "type": "question",
+      "text": "Is the concealed thing the speaker did something they did directly to the intended recipient?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 19,
+      "type": "question",
+      "text": "Did the speaker’s concealed action directly harm another person?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 20,
+      "type": "question",
+      "text": "Did the speaker’s concealed action physically injure the other person?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 21,
+      "type": "question",
+      "text": "Did the speaker accidentally cause the other person’s physical injury?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 22,
+      "type": "question",
+      "text": "Did the speaker deliberately cause the other person’s physical injury?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 23,
+      "type": "question",
+      "text": "Did the person the speaker deliberately injured die as a result?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 24,
+      "type": "question",
+      "text": "Did the speaker deliberately kill the person in order to protect themselves or someone else?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 25,
+      "type": "question",
+      "text": "Is the intended recipient personally connected to the person the speaker killed?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 26,
+      "type": "question",
+      "text": "Did the speaker kill the person as part of a deliberate crime?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 27,
+      "type": "question",
+      "text": "Is the speaker worried they will be caught or punished for the killing?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 28,
+      "type": "question",
+      "text": "Was the killing committed during a robbery?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 29,
+      "type": "question",
+      "text": "Does the draft explicitly confess that the speaker killed someone?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 30,
+      "type": "question",
+      "text": "Did the speaker write the draft to create or support an alibi for the killing?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 31,
+      "type": "question",
+      "text": "Did the draft support the speaker’s alibi by making it appear they were somewhere else when the killing happened?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 32,
+      "type": "question",
+      "text": "Was the draft meant to make the killing look like a suicide?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 33,
+      "type": "question",
+      "text": "Was the draft intended to make its recipient believe that the person the speaker killed had left and would not return?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 34,
+      "type": "question",
+      "text": "Was the draft meant to look like a note written by the person the speaker killed?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 35,
+      "type": "question",
+      "text": "Did the speaker write the sentence repeatedly to practice imitating the murdered person’s handwriting?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 36,
+      "type": "question",
+      "text": "Did the speaker use a genuine sample of the victim’s handwriting to imitate it?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 37,
+      "type": "question",
+      "text": "Did the speaker leave a forged version of the note for the intended recipient to find?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 38,
+      "type": "question",
+      "text": "Has the forged note already been found by the intended recipient?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 39,
+      "type": "question",
+      "text": "Did the speaker hide the victim’s body after killing them?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 40,
+      "type": "question",
+      "text": "Did the speaker become worried because the repeated practice made their own handwriting resemble the victim’s too closely, risking exposure?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 41,
+      "type": "question",
+      "text": "Is the speaker worried because they cannot convincingly imitate the victim’s handwriting?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 42,
+      "type": "question",
+      "text": "Is the forged note meant to make the recipient believe the victim voluntarily left, so they will not immediately report the victim missing?",
+      "forced": false,
+      "feedback": "yes and no"
+    },
+    {
+      "index": 43,
+      "type": "question",
+      "text": "Would the recipient recognize the victim’s handwriting well enough to judge whether the note was genuine?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 44,
+      "type": "question",
+      "text": "Was the forged note intended to make the recipient delay reporting the victim missing?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 45,
+      "type": "question",
+      "text": "Was the sentence based on something the victim had actually written or said before their death?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 46,
+      "type": "question",
+      "text": "Did the speaker write these practice lines after killing the victim?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 47,
+      "type": "question",
+      "text": "Is the speaker worried that someone may discover the practice lines themselves and realize they are forging a note?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 48,
+      "type": "question",
+      "text": "Is the intended recipient of the forged note a law-enforcement officer?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 49,
+      "type": "question",
+      "text": "Did the speaker struggle to imitate the victim’s handwriting because the victim wrote with their other hand?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 50,
+      "type": "question",
+      "text": "Is the speaker struggling to imitate the victim’s handwriting because it uses a writing style or script they cannot reproduce well?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 51,
+      "type": "question",
+      "text": "Is the victim’s handwriting difficult to imitate because it uses a non-Latin writing system?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 52,
+      "type": "question",
+      "text": "Was the victim’s note written in cursive, which the speaker is unable to imitate convincingly?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 53,
+      "type": "question",
+      "text": "Was the victim’s handwriting unusually distinctive because of a physical or medical condition?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 54,
+      "type": "question",
+      "text": "Does the victim’s handwriting use an unusually stylized form, such as calligraphy?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 55,
+      "type": "question",
+      "text": "Is the speaker struggling because the victim wrote in a highly stylized or decorative lettering style, rather than ordinary handwriting?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 56,
+      "type": "question",
+      "text": "Is the speaker unable to imitate the victim’s handwriting because the speaker is unfamiliar with the particular way of writing the letters, rather than because the victim’s handwriting is unusually decorative or distinctive?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 57,
+      "type": "question",
+      "text": "Is the speaker worried that the note will be recognized as a forgery because its handwriting does not convincingly match the victim’s?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 58,
+      "type": "question",
+      "text": "Does the victim write in block capitals, which the speaker is struggling to imitate?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 59,
+      "type": "question",
+      "text": "Was the victim a child, whose handwriting the speaker is struggling to imitate?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 60,
+      "type": "final",
+      "text": "The speaker deliberately killed someone as part of a crime. Afterward, they wrote the same sentence repeatedly to practice imitating the victim’s handwriting. They intend to forge a note in the victim’s hand, addressed to someone else, making it appear that the victim has left and will not return. The note is meant to support a cover story for the killing, but the speaker is struggling to make the handwriting convincing and fears that the forgery—and therefore the crime—may be exposed.",
+      "forced": false,
+      "feedback": "yes and no"
+    },
+    {
+      "index": 61,
+      "type": "question",
+      "text": "Did the victim usually write in a style the speaker does not normally use, such as cursive when the speaker normally prints?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 62,
+      "type": "question",
+      "text": "Is the speaker’s difficulty imitating the victim’s handwriting mainly because the victim’s letter shapes are unfamiliar to them?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 63,
+      "type": "question",
+      "text": "Is the speaker a child?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 64,
+      "type": "question",
+      "text": "Does the victim’s handwriting use shorthand or another abbreviated writing system that the speaker cannot reproduce?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 65,
+      "type": "question",
+      "text": "Is the speaker worried that the handwriting will expose the forgery even if the note’s wording supports the story that the victim left?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 66,
+      "type": "question",
+      "text": "Is the speaker’s difficulty imitating the victim’s handwriting caused by a physical limitation affecting their own writing?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 67,
+      "type": "question",
+      "text": "Is the forged note intended to make the recipient believe that the victim left voluntarily?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 68,
+      "type": "question",
+      "text": "Is the speaker struggling to imitate the victim’s handwriting because the speaker cannot read or write fluently?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 69,
+      "type": "question",
+      "text": "Did the speaker kill the victim to prevent them from identifying the speaker or exposing the crime?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 70,
+      "type": "question",
+      "text": "Was the crime the speaker committed a fraud, in addition to the killing?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 71,
+      "type": "question",
+      "text": "Was the fraud intended to obtain money or property by making someone believe the victim had left voluntarily?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 72,
+      "type": "question",
+      "text": "Was the fraud intended to let the speaker keep receiving money or benefits belonging to the victim?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 73,
+      "type": "question",
+      "text": "Is the fraud mainly about the speaker pretending that the victim is still alive?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 74,
+      "type": "question",
+      "text": "Does the speaker intend to impersonate the victim in person or through communications, in addition to forging the note?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 75,
+      "type": "question",
+      "text": "Does the speaker intend to impersonate the victim in order to deceive an institution or authority that the victim is still alive?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 76,
+      "type": "question",
+      "text": "Did the speaker kill the victim in order to take over their identity?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 77,
+      "type": "question",
+      "text": "Is the speaker pretending the victim is still alive in order to conceal or postpone discovery of the victim’s death?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 78,
+      "type": "question",
+      "text": "Is the speaker pretending the victim is still alive primarily to avoid suspicion or investigation of the victim’s death, rather than to gain money or property?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 79,
+      "type": "question",
+      "text": "Was the speaker hired or paid by someone else to kill the victim?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 80,
+      "type": "question",
+      "text": "Does the speaker plan to send communications pretending to be the victim after the killing?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 81,
+      "type": "question",
+      "text": "Was the speaker already impersonating the victim before the killing?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 82,
+      "type": "question",
+      "text": "Will the speaker send the forged note to someone who would otherwise report the victim missing?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 83,
+      "type": "question",
+      "text": "Will the speaker send the forged note as a handwritten note?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 84,
+      "type": "question",
+      "text": "Will the speaker send the later communications while pretending to be the victim through the victim’s own phone or online accounts?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 85,
+      "type": "question",
+      "text": "Are the later communications pretending to be from the victim meant to reassure others that the victim is still alive?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 86,
+      "type": "question",
+      "text": "Is the note meant to make its recipient believe the victim left because they were disappointed in that recipient?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 87,
+      "type": "question",
+      "text": "Does the speaker plan to send the forged note before sending later messages pretending to be the victim?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 88,
+      "type": "question",
+      "text": "Will the speaker use the forged note and later messages to make people believe the victim moved away and is still living elsewhere?",
+      "forced": false,
+      "feedback": "yes and no"
+    },
+    {
+      "index": 89,
+      "type": "question",
+      "text": "Was the killing committed to facilitate a separate fraud involving someone other than the victim?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 90,
+      "type": "question",
+      "text": "Are the later communications pretending to be from the victim intended for the same recipient as the forged note?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 91,
+      "type": "question",
+      "text": "Is the speaker trying to conceal the victim’s death from people beyond the note’s recipient by continuing to communicate as the victim?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 92,
+      "type": "question",
+      "text": "Was the victim a public figure?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 93,
+      "type": "question",
+      "text": "Is the forged note meant to make its recipient feel responsible for the victim’s departure?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 94,
+      "type": "question",
+      "text": "Is the forged note meant to explain why the victim will no longer be physically present, while later messages are meant to make it seem they are still alive?",
+      "forced": false,
+      "feedback": "yes and no"
+    },
+    {
+      "index": 95,
+      "type": "final",
+      "text": "The speaker murdered someone and is trying to conceal the death and avoid suspicion. After the killing, they repeatedly copied the sentence to practice imitating the victim’s handwriting. They plan to send a forged handwritten note, supposedly from the victim, telling its recipient that the victim is disappointed in them and has left voluntarily. The speaker also plans to send later communications while pretending to be the victim, as part of a fraud designed to make people believe the victim is still alive and postpone discovery of the death—not to obtain money or property. The speaker is worried because their handwriting does not convincingly match the victim’s, so the note may be recognized as a forgery and expose them.",
+      "forced": false,
+      "feedback": "yes and no"
+    },
+    {
+      "index": 96,
+      "type": "question",
+      "text": "Is the speaker trying to make the victim’s loved ones believe the victim is still alive so they will not report the victim missing?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 97,
+      "type": "question",
+      "text": "Is the forged note meant to make the victim’s permanent disappearance look voluntary rather than the result of a killing?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 98,
+      "type": "question",
+      "text": "Does the speaker intend people to believe the victim is still alive somewhere else?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 99,
+      "type": "question",
+      "text": "Is the repeated sentence the wording the speaker plans to use in the forged note?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 100,
+      "type": "final",
+      "text": "The speaker deliberately killed someone as part of a crime. Afterward, they repeatedly wrote “You’ve disappointed me so much; I’m never coming back” to practice imitating the victim’s handwriting. They plan to send it as a forged handwritten note from the victim, making it seem the victim left voluntarily because they were disappointed in the recipient. The speaker also plans to send later communications pretending to be the victim, to make people believe the victim is still alive and conceal the death, avoiding suspicion or investigation. The speaker is worried that their handwriting will not convincingly match the victim’s, exposing the forgery and potentially the crime.",
+      "forced": true,
+      "feedback": "yes and no"
+    }
+  ]
+}

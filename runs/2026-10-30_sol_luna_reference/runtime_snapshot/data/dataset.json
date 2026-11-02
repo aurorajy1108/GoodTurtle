@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "source": {
+    "filename": "turtle_soup_labeled_49_with_partial_score.xlsx",
+    "sha256": "77fd016e9424012d4dfaa916786ec47114362c2d36ae31a91c55b912ea2fc688"
+  },
+  "scoring": "sum(weight * credit); credit in {0,0.5,1}; AI-adjudicated, pending human confirmation",
+  "puzzles": [
+    {
+      "id": "TS031",
+      "opening": "An eraser is, of course, a piece of stationery used to erase something that has been written.\nHowever, A picked up an eraser in order to leave a message on a blank sheet of paper on which nothing had yet been written.\nWhy?",
+      "answer": "Because A needed to put lead into a mechanical pencil.",
+      "rubric": [
+        {
+          "id": "C1",
+          "weight": 0.75,
+          "core": true,
+          "criterion": "The eraser is lifted/handled to load lead into a mechanical pencil.",
+          "full_credit": "The eraser is lifted/handled to load lead into a mechanical pencil.",
+          "half_credit": "Mechanical pencil identified without lead-refill purpose",
+          "zero_credit": "Missing or contradicted; incompatible uncommitted alternatives; merely repeating the opening without the required explanatory content. ",
+          "points": 75.0,
+          "required_facts": [
+            "The eraser is lifted/handled to load lead into a mechanical pencil."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        },
+        {
+          "id": "C2",
+          "weight": 0.25,
+          "core": false,
+          "criterion": "The actual message is written with the refilled mechanical pencil on blank paper.",
+          "full_credit": "The actual message is written with the refilled mechanical pencil on blank paper.",
+          "half_credit": "Writing with pencil identified without refill-to-message sequence",
+          "zero_credit": "Missing or contradicted; incompatible uncommitted alternatives; merely repeating the opening without the required explanatory content. ",
+          "points": 25.0,
+          "required_facts": [
+            "The actual message is written with the refilled mechanical pencil on blank paper."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        }
+      ],
+      "title": "橡皮擦留下字",
+      "story_family": "F031",
+      "quality_status": "正常",
+      "review_notes": "",
+      "source_row": "31",
+      "observed_score": null,
+      "completion_requirements": [
+        "The eraser is handled or removed to access the lead-refill opening of a mechanical pencil",
+        "A inserts lead and uses the refilled pencil to write on the blank page"
+      ],
+      "annotation_version": "turtle50-v3-host-repair-20261023",
+      "annotation_status": "ai_repair_pending_human",
+      "grading_notes": "AI three-review adjudication v2, pending human confirmation. Score only this submission. Apply full_credit/half_credit/zero_credit explicitly, with zero taking precedence for a materially contradictory checkpoint claim. An omitted qualifier can be partial; replacing the core identity/cause with a wrong one is not an omission. Faithful paraphrases count. Partial score and full narrative are separate outputs. AI independent review C, not human gold. Score sum(weight*credit), credit 0/0.5/1. Full narrative requires all listed supported requirements and no material contradictory mechanism; partial 1 alone does not override full narrative. Credit each distinct causal proposition once; do not penalize faithful paraphrase or omitted unknown details. Accept faithful paraphrase. Require the listed identities, events and causal links, not exact prose or unspecified incidental details. Prior user-provided expanded canonical story establishes removal of the eraser covering the refill opening. This is an accepted expansion beyond the short spreadsheet answer. A direct eraser-driven writing mechanism contradicts it.",
+      "annotation_provenance": {
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "selected_base": "c",
+        "adjudicator": "root",
+        "human_confirmed": false
+      },
+      "grading_protocol": "coverage-v2"
+    },
+    {
+      "id": "TS035",
+      "opening": "In a newly settled village in Meiji-era Japan, a father finds a brown bear eating his only daughter in the forest. He shoots it and weeps over her remains. Knowing these wary bears rarely attack unfamiliar living humans, he nevertheless fears other villagers will also suffer having relatives eaten. Why?",
+      "answer": "Several days earlier, an epidemic had killed his daughter and several other villagers.\nThe new settlement had no crematorium and could not spare enough fuel to cremate the dead, so the villagers buried the bodies in the forest.\nThe father visited his daughter’s grave every day. On this visit, he discovered that a bear had dug up her body and was eating her remains. He shot the bear.\nHe feared that other bears would also dig up the graves and eat the dead relatives of other villagers. His concern was about bears consuming buried bodies, rather than attacking living people.",
+      "rubric": [
+        {
+          "id": "C1",
+          "weight": 0.5,
+          "core": true,
+          "criterion": "The daughter already died in an epidemic and the bear is eating her buried corpse.",
+          "full_credit": "The daughter already died in an epidemic and the bear is eating her buried corpse.",
+          "half_credit": "Already-dead daughter without epidemic or buried corpse.",
+          "zero_credit": "Missing, contradicted, repeats only the opening, or presents uncommitted incompatible guesses.",
+          "points": 50.0,
+          "required_facts": [
+            "The daughter already died in an epidemic and the bear is eating her buried corpse."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        },
+        {
+          "id": "C2",
+          "weight": 0.25,
+          "core": false,
+          "criterion": "No crematorium and insufficient fuel led to forest burial.",
+          "full_credit": "No crematorium and insufficient fuel led to forest burial.",
+          "half_credit": "Forest burial without cremation constraints.",
+          "zero_credit": "Missing, contradicted, repeats only the opening, or presents uncommitted incompatible guesses.",
+          "points": 25.0,
+          "required_facts": [
+            "No crematorium and insufficient fuel led to forest burial."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        },
+        {
+          "id": "C3",
+          "weight": 0.25,
+          "core": false,
+          "criterion": "The bear dug up her grave and the father fears other bears will similarly exhume other relatives.",
+          "full_credit": "The bear dug up her grave and the father fears other bears will similarly exhume other relatives.",
+          "half_credit": "Exhumation identified without concern for other graves.",
+          "zero_credit": "Missing, contradicted, repeats only the opening, or presents uncommitted incompatible guesses.",
+          "points": 25.0,
+          "required_facts": [
+            "The bear dug up her grave and the father fears other bears will similarly exhume other relatives."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        }
+      ],
+      "title": "棕熊吃掉的女儿",
+      "story_family": "F035",
+      "quality_status": "正常",
+      "review_notes": "",
+      "source_row": "35",
+      "observed_score": null,
+      "completion_requirements": [
+        "An epidemic has already killed his daughter and other villagers",
+        "The settlement lacks a crematorium and sufficient fuel, so victims are buried in the forest",
+        "On a daily grave visit he finds a bear has dug up and is eating his daughter’s remains",
+        "He shoots that bear",
+        "He fears other bears will exhume other villagers’ dead relatives, not attack living villagers"
+      ],
+      "annotation_version": "turtle50-v3-host-repair-20261023",
+      "annotation_status": "ai_repair_pending_human",
+      "grading_notes": "AI three-review adjudication v2, pending human confirmation. Score only this submission. Apply full_credit/half_credit/zero_credit explicitly, with zero taking precedence for a materially contradictory checkpoint claim. An omitted qualifier can be partial; replacing the core identity/cause with a wrong one is not an omission. Faithful paraphrases count. Partial score and full narrative are separate outputs. AI independent review, not human gold. Sum(weight*credit), credit in {0,0.5,1}. Full solution additionally requires all completion requirements and no material contradiction. Accept faithful paraphrases; never award the same factual component twice. Incidental unsupported additions do not earn points; materially conflicting additions defeat corresponding checkpoint. Accept faithful paraphrase. Require the listed identities, events and causal links, not exact prose or unspecified incidental details.",
+      "annotation_provenance": {
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "selected_base": "a",
+        "adjudicator": "root",
+        "human_confirmed": false
+      },
+      "grading_protocol": "coverage-v2"
+    },
+    {
+      "id": "TS038",
+      "opening": "\"You've disappointed me so much; I'm never coming back.\" \"You've disappointed me so much; I'm never coming back.\" \"You've disappointed me so much; I'm never coming back.\" \"You've disappointed me so much; I'm never coming back.\" \"You've disappointed me so much; I'm never coming back.\" \"You've disappointed me so much; I'm never coming back.\" \"You've disappointed me so much; I'm never coming back.\"\n\nSigh, I know I'm in trouble.",
+      "answer": "I killed my wife and faked the evidence to make it look like she had simply run away from home, but no matter how many times I tried, I couldn't quite manage to imitate her handwriting.",
+      "rubric": [
+        {
+          "id": "C1",
+          "weight": 0.5,
+          "core": true,
+          "criterion": "The narrator murdered his wife and staged her disappearance as a voluntary departure.",
+          "full_credit": "The narrator murdered his wife and staged her disappearance as a voluntary departure.",
+          "half_credit": "Wife’s murder identified without staged voluntary departure",
+          "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+          "points": 50.0,
+          "required_facts": [
+            "The narrator murdered his wife and staged her disappearance as a voluntary departure."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        },
+        {
+          "id": "C2",
+          "weight": 0.3,
+          "core": false,
+          "criterion": "The repeated message represents attempts to forge his wife’s handwriting.",
+          "full_credit": "The repeated message represents attempts to forge his wife’s handwriting.",
+          "half_credit": "Forgery identified without repeated handwriting attempts",
+          "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+          "points": 30.0,
+          "required_facts": [
+            "The repeated message represents attempts to forge his wife’s handwriting."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        },
+        {
+          "id": "C3",
+          "weight": 0.2,
+          "core": false,
+          "criterion": "His inability to imitate her handwriting leads him to worry about being caught.",
+          "full_credit": "His inability to imitate her handwriting leads him to worry about being caught.",
+          "half_credit": "Fear of capture identified without poor imitation cause",
+          "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+          "points": 20.0,
+          "required_facts": [
+            "His inability to imitate her handwriting leads him to worry about being caught."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        }
+      ],
+      "title": "重复的绝交留言",
+      "story_family": "F038",
+      "quality_status": "正常",
+      "review_notes": "",
+      "source_row": "38",
+      "observed_score": null,
+      "completion_requirements": [
+        "The narrator killed his wife",
+        "He tries to stage a voluntary departure with a forged leaving message",
+        "The repetitions are failed attempts to imitate her handwriting, making him fear discovery"
+      ],
+      "annotation_version": "turtle50-v3-host-repair-20261023",
+      "annotation_status": "ai_repair_pending_human",
+      "grading_notes": "AI three-review adjudication v2, pending human confirmation. Score only this submission. Apply full_credit/half_credit/zero_credit explicitly, with zero taking precedence for a materially contradictory checkpoint claim. An omitted qualifier can be partial; replacing the core identity/cause with a wrong one is not an omission. Faithful paraphrases count. Partial score and full narrative are separate outputs. AI independent review B, pending human approval. Credit is 0/.5/1 per checkpoint. Full narrative additionally requires all sourced completion requirements and no incompatible central claims. Judge the submitted explanation, not unasserted chat guesses. Accept faithful paraphrases; missing optional detail is not a contradiction. Do not demand unknown motives, devices or events. Accept faithful paraphrase. Require the listed identities, events and causal links, not exact prose or unspecified incidental details.",
+      "annotation_provenance": {
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "selected_base": "b",
+        "adjudicator": "root",
+        "human_confirmed": false
+      },
+      "grading_protocol": "coverage-v2"
+    }
+  ],
+  "annotation_policy": {
+    "review": "Three independent AI annotations plus root adjudication, not human gold",
+    "full_solution": "Requires all completion requirements and no material contradiction; no new incidental facts",
+    "weight_policy": "Distinct explanatory content; weighting is a documented research choice, not a uniquely optimal quantity",
+    "attachment": "Original 49-puzzle XLSX remains unchanged; TS040 added in previous version"
+  },
+  "revision_notes": "v3: evidence coverage grading, TS023 explicit subfacts; no weight changes. Based on triple-reviewed v2, followed by root AI repair; pending human."
+}

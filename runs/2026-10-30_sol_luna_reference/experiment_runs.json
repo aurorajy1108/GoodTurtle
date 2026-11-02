@@ -1,0 +1,428 @@
+[
+  {
+    "status": "completed",
+    "stop_reason": "budget_exhausted",
+    "simulation": false,
+    "success": false,
+    "host_questions": 97,
+    "final_attempts": 3,
+    "rejected_finals": 3,
+    "counted_questions": 100,
+    "submissions": 100,
+    "pending_feedback": 0,
+    "forced_final": true,
+    "final_partial_score": 0.0,
+    "best_partial_score": 0.125,
+    "latest_final": "A picked up a pencil with an eraser attached, but its graphite tip was broken or missing. They used a separate piece of graphite to make the message by rubbing or scraping it under pressure across the blank paper. The pencil did not write the message itself: it indirectly supported an object that helped guide or control the separate graphite during that process. The eraser was incidental to the writing; nothing was being erased.",
+    "latest_grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0,
+          "evidence": "The eraser was incidental to the writing; nothing was being erased.",
+          "reason": "Replaces the eraser's lead-refill purpose with an incidental role and does not identify a mechanical pencil or loading lead."
+        },
+        {
+          "id": "C2",
+          "credit": 0,
+          "evidence": "The pencil did not write the message itself: it indirectly supported an object that helped guide or control the separate graphite during that process.",
+          "reason": "Explicitly contradicts writing the message with the refilled mechanical pencil."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Neither refill access through eraser removal nor lead insertion followed by pencil writing is reconstructed. A separate-graphite marking mechanism replaces the canonical causal sequence.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "contradicted",
+          "evidence": "The eraser was incidental to the writing; nothing was being erased."
+        },
+        {
+          "id": "C2.F1",
+          "status": "contradicted",
+          "evidence": "The pencil did not write the message itself: it indirectly supported an object that helped guide or control the separate graphite during that process."
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "contradicted",
+          "evidence": "The eraser was incidental to the writing; nothing was being erased."
+        },
+        {
+          "id": "R2",
+          "status": "contradicted",
+          "evidence": "They used a separate piece of graphite to make the message by rubbing or scraping it under pressure across the blank paper. The pencil did not write the message itself: it indirectly supported an object that helped guide or control the separate graphite during that process."
+        }
+      ],
+      "contradictions": [
+        {
+          "quote": "The eraser was incidental to the writing; nothing was being erased.",
+          "reference": "The eraser covered the mechanical pencil's lead-refill opening and was removed to allow lead insertion.",
+          "checkpoint_ids": [
+            "C1"
+          ]
+        },
+        {
+          "quote": "The pencil did not write the message itself: it indirectly supported an object that helped guide or control the separate graphite during that process.",
+          "reference": "A inserted lead into the mechanical pencil and then used that refilled pencil to write the message.",
+          "checkpoint_ids": [
+            "C2"
+          ]
+        }
+      ],
+      "partial_score": 0.0,
+      "complete": false,
+      "label": "no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "elapsed_seconds": 5010.875829750003,
+    "usage": {
+      "grader": {
+        "http_attempts": 3,
+        "successful_responses": 3,
+        "seconds": 94.10636366700055,
+        "provider_reported_usage": {
+          "input_tokens": 79885,
+          "cached_input_tokens": 3072,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2549,
+          "reasoning_output_tokens": 847
+        }
+      },
+      "host": {
+        "http_attempts": 200,
+        "successful_responses": 200,
+        "seconds": 3146.05700561704,
+        "provider_reported_usage": {
+          "input_tokens": 5717602,
+          "cached_input_tokens": 381568,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 13542,
+          "reasoning_output_tokens": 10192
+        }
+      },
+      "player": {
+        "http_attempts": 100,
+        "successful_responses": 100,
+        "seconds": 1769.5426722909033,
+        "provider_reported_usage": {
+          "input_tokens": 425422,
+          "cached_input_tokens": 145920,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 43988,
+          "reasoning_output_tokens": 39647
+        }
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "329a66420790cd458a05577aada07f11f88c70e9aeb0d118fa6b2f17418cd71e",
+      "grading_sha256": "dc0165285839049e97cb2fa02cb87dfac869a3159770499436cfa9a88cd9556c",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "3ad8cff7ff01654eb948a48a0420492bce967eb61a87f28b28752fdf17d2ccec",
+      "controller_sha256": "b2f9cdef2472b363a8fda1382d4dc42802fa2ab040fc667c481e27756469557b",
+      "host_context_sha256": "13d0557cd7a26f41213a6c55e6545dbc4c2bceb38858418524464696c2ce8b00",
+      "host_binding_version": "host-v5.1-20261023"
+    },
+    "block": "TS031_r01",
+    "condition": "solo",
+    "puzzle_id": "TS031",
+    "target": "TS031",
+    "repeat": 1,
+    "run_dir": "batches/TS031/TS031_r01_solo"
+  },
+  {
+    "status": "completed",
+    "stop_reason": "budget_exhausted",
+    "simulation": false,
+    "success": false,
+    "host_questions": 97,
+    "final_attempts": 3,
+    "rejected_finals": 3,
+    "counted_questions": 100,
+    "submissions": 100,
+    "pending_feedback": 0,
+    "forced_final": true,
+    "final_partial_score": 0.35,
+    "best_partial_score": 0.35,
+    "latest_final": "The speaker deliberately killed someone as part of a crime. Afterward, they repeatedly wrote “You’ve disappointed me so much; I’m never coming back” to practice imitating the victim’s handwriting. They plan to send it as a forged handwritten note from the victim, making it seem the victim left voluntarily because they were disappointed in the recipient. The speaker also plans to send later communications pretending to be the victim, to make people believe the victim is still alive and conceal the death, avoiding suspicion or investigation. The speaker is worried that their handwriting will not convincingly match the victim’s, exposing the forgery and potentially the crime.",
+    "latest_grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0,
+          "evidence": "The speaker deliberately killed someone as part of a crime.",
+          "reason": "The submission identifies a murder and a staged voluntary departure but never identifies the victim as the narrator’s wife. The specified half-credit condition requires identifying the wife’s murder."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "they repeatedly wrote “You’ve disappointed me so much; I’m never coming back” to practice imitating the victim’s handwriting",
+          "reason": "Repeated handwriting-forgery attempts are explained, satisfying the forgery requirement for partial credit, but the victim is not identified as his wife."
+        },
+        {
+          "id": "C3",
+          "credit": 1,
+          "evidence": "The speaker is worried that their handwriting will not convincingly match the victim’s, exposing the forgery and potentially the crime.",
+          "reason": "Clearly connects the unconvincing handwriting imitation to fear that the forgery and crime will be discovered."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "The victim is never identified as the narrator’s wife. The additional planned communications are unsupported incidental elaboration, not a material contradiction.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The speaker deliberately killed someone as part of a crime. … They plan to send it as a forged handwritten note from the victim, making it seem the victim left voluntarily because they were disappointed in the recipient."
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "Afterward, they repeatedly wrote “You’ve disappointed me so much; I’m never coming back” to practice imitating the victim’s handwriting."
+        },
+        {
+          "id": "C3.F1",
+          "status": "covered",
+          "evidence": "The speaker is worried that their handwriting will not convincingly match the victim’s, exposing the forgery and potentially the crime."
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "partial",
+          "evidence": "The speaker deliberately killed someone as part of a crime."
+        },
+        {
+          "id": "R2",
+          "status": "covered",
+          "evidence": "They plan to send it as a forged handwritten note from the victim, making it seem the victim left voluntarily because they were disappointed in the recipient."
+        },
+        {
+          "id": "R3",
+          "status": "covered",
+          "evidence": "Afterward, they repeatedly wrote “You’ve disappointed me so much; I’m never coming back” to practice imitating the victim’s handwriting. … The speaker is worried that their handwriting will not convincingly match the victim’s, exposing the forgery and potentially the crime."
+        }
+      ],
+      "contradictions": [],
+      "partial_score": 0.35,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "elapsed_seconds": 4965.790916333994,
+    "usage": {
+      "grader": {
+        "http_attempts": 3,
+        "successful_responses": 3,
+        "seconds": 91.19603658298729,
+        "provider_reported_usage": {
+          "input_tokens": 17333,
+          "cached_input_tokens": 3072,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 3160,
+          "reasoning_output_tokens": 1134
+        }
+      },
+      "host": {
+        "http_attempts": 200,
+        "successful_responses": 200,
+        "seconds": 3089.6435008369153,
+        "provider_reported_usage": {
+          "input_tokens": 1450858,
+          "cached_input_tokens": 351232,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 15814,
+          "reasoning_output_tokens": 12376
+        }
+      },
+      "player": {
+        "http_attempts": 100,
+        "successful_responses": 100,
+        "seconds": 1784.0110212921281,
+        "provider_reported_usage": {
+          "input_tokens": 415682,
+          "cached_input_tokens": 149376,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 37881,
+          "reasoning_output_tokens": 33787
+        }
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "8f2ddbbd95f8552db795e6101df8e1ec6ac3755b6591d990fc66877d5a4b9d3b",
+      "grading_sha256": "b45687898c96ce287d149e65ef97c3ace0f95ce5ccfd722ce4b2d9d4588abd56",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "3ad8cff7ff01654eb948a48a0420492bce967eb61a87f28b28752fdf17d2ccec",
+      "controller_sha256": "b2f9cdef2472b363a8fda1382d4dc42802fa2ab040fc667c481e27756469557b",
+      "host_context_sha256": "20cb4c16afaba879580856ce39bd1aefe3b92989f12f0cdb72238b787ced21d0",
+      "host_binding_version": "host-v5.1-20261023"
+    },
+    "block": "TS038_r01",
+    "condition": "solo",
+    "puzzle_id": "TS038",
+    "target": "TS038",
+    "repeat": 1,
+    "run_dir": "batches/TS038/TS038_r01_solo"
+  },
+  {
+    "status": "completed",
+    "stop_reason": "budget_exhausted",
+    "simulation": false,
+    "success": false,
+    "host_questions": 84,
+    "final_attempts": 16,
+    "rejected_finals": 16,
+    "counted_questions": 100,
+    "submissions": 100,
+    "pending_feedback": 0,
+    "forced_final": true,
+    "final_partial_score": 0.625,
+    "best_partial_score": 0.625,
+    "latest_final": "The daughter died naturally and was buried uncremated. Because the newly settled village had no means to cremate its dead, other villagers’ uncremated relatives were already buried in forest bears could reach. A bear dug up the daughter’s grave and scavenged her body; her father found it and shot it. He feared that other bears could independently find and eat the other buried bodies too. The danger was to the dead, not to living people, and killing this bear would not protect the other graves.",
+    "latest_grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The daughter died naturally and was buried uncremated. … A bear dug up the daughter’s grave and scavenged her body",
+          "reason": "Establishes that she was already dead and the bear ate her buried corpse, but does not identify the epidemic."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "Because the newly settled village had no means to cremate its dead, other villagers’ uncremated relatives were already buried in forest bears could reach.",
+          "reason": "Connects forest burial to an inability to cremate, but does not specify both the missing crematorium and insufficient fuel."
+        },
+        {
+          "id": "C3",
+          "credit": 1,
+          "evidence": "A bear dug up the daughter’s grave and scavenged her body … He feared that other bears could independently find and eat the other buried bodies too.",
+          "reason": "Identifies the exhumation and his fear that other bears would similarly consume other buried relatives."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Missing the epidemic that killed the daughter and other villagers, the specific lack of both a crematorium and sufficient fuel, and the father's daily grave visits. Natural death does not contradict an epidemic death.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The daughter died naturally and was buried uncremated. … A bear dug up the daughter’s grave and scavenged her body"
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "Because the newly settled village had no means to cremate its dead, other villagers’ uncremated relatives were already buried in forest bears could reach."
+        },
+        {
+          "id": "C3.F1",
+          "status": "covered",
+          "evidence": "A bear dug up the daughter’s grave and scavenged her body … He feared that other bears could independently find and eat the other buried bodies too."
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "partial",
+          "evidence": "The daughter died naturally and was buried uncremated. … other villagers’ uncremated relatives were already buried"
+        },
+        {
+          "id": "R2",
+          "status": "partial",
+          "evidence": "Because the newly settled village had no means to cremate its dead, other villagers’ uncremated relatives were already buried in forest bears could reach."
+        },
+        {
+          "id": "R3",
+          "status": "partial",
+          "evidence": "A bear dug up the daughter’s grave and scavenged her body; her father found it and shot it."
+        },
+        {
+          "id": "R4",
+          "status": "covered",
+          "evidence": "A bear dug up the daughter’s grave and scavenged her body; her father found it and shot it."
+        },
+        {
+          "id": "R5",
+          "status": "covered",
+          "evidence": "He feared that other bears could independently find and eat the other buried bodies too. The danger was to the dead, not to living people, and killing this bear would not protect the other graves."
+        }
+      ],
+      "contradictions": [],
+      "partial_score": 0.625,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "elapsed_seconds": 5159.566189458012,
+    "usage": {
+      "grader": {
+        "http_attempts": 16,
+        "successful_responses": 16,
+        "seconds": 437.8213234570285,
+        "provider_reported_usage": {
+          "input_tokens": 108391,
+          "cached_input_tokens": 3072,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 16161,
+          "reasoning_output_tokens": 3362
+        }
+      },
+      "host": {
+        "http_attempts": 172,
+        "successful_responses": 172,
+        "seconds": 2620.497330114187,
+        "provider_reported_usage": {
+          "input_tokens": 1472648,
+          "cached_input_tokens": 286592,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 12282,
+          "reasoning_output_tokens": 9350
+        }
+      },
+      "player": {
+        "http_attempts": 100,
+        "successful_responses": 100,
+        "seconds": 2100.26985604479,
+        "provider_reported_usage": {
+          "input_tokens": 473580,
+          "cached_input_tokens": 153088,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 68277,
+          "reasoning_output_tokens": 62420
+        }
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "f83d2aebe4ff29ad7bb173bfbd5cab4151f689941bfa7e56f140c7e2eadd857a",
+      "grading_sha256": "a42f820be88edcb7da6a7d91362a2443219656cae38fe3053cbdf7988aa1bf9a",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "3ad8cff7ff01654eb948a48a0420492bce967eb61a87f28b28752fdf17d2ccec",
+      "controller_sha256": "b2f9cdef2472b363a8fda1382d4dc42802fa2ab040fc667c481e27756469557b",
+      "host_context_sha256": "42ed9354decaf224a90c4f254c18cf957e4bbcaaac3b0da352b5a8e1d8d87730",
+      "host_binding_version": "host-v5.1-20261023"
+    },
+    "block": "TS035_r01",
+    "condition": "solo",
+    "puzzle_id": "TS035",
+    "target": "TS035",
+    "repeat": 1,
+    "run_dir": "batches/TS035/TS035_r01_solo"
+  }
+]

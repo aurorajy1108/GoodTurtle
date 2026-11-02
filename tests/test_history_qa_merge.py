@@ -44,7 +44,15 @@ class HistoryQAMergeTests(unittest.TestCase):
                 self.assertEqual(hashlib.sha256(base_path.read_bytes()).hexdigest(),group['base_sha256'])
                 base=json.loads(base_path.read_text())
                 merged=json.loads(resolve_historical_path(group['merged_pack']).read_text())
-                self.assertEqual(json.loads((ROOT/self.bindings[puzzle['id']]['overlay_pack']).read_text()),merged)
+                current_pack=json.loads((ROOT/self.bindings[puzzle['id']]['overlay_pack']).read_text())
+                human=json.loads((ROOT/'data/host_reference/reviews/human_20261102/manifest.json').read_text())
+                if puzzle['id'] in human['packs']:
+                    frozen=json.loads((ROOT/f"data/host_reference/reviews/human_20261102/baseline/{puzzle['id']}.json").read_text())
+                    self.assertEqual(frozen,merged)
+                    added=[c['example'] for c in human['changes'] if c['puzzle_id']==puzzle['id']]
+                    self.assertEqual(current_pack['host_examples'],merged['host_examples']+added)
+                else:
+                    self.assertEqual(current_pack,merged)
                 for field in ('solution','canonical_facts','explicit_negatives','unknown_details','irrelevant_details','event_order','knowledge_states','verification_policy'):
                     self.assertEqual(merged.get(field),base.get(field),field)
                 active=build_story_context(puzzle)
@@ -68,7 +76,8 @@ class HistoryQAMergeTests(unittest.TestCase):
                         self.assertNotEqual(current['question'],entry['original']['question'])
                         self.assertEqual(current['provenance']['question_origin'],'ai_rewrite_of_user_supplied_question')
                     else:self.assertEqual(current['question'],entry['original']['question'])
-                self.assertEqual(len(actual),group['final_examples'])
+                additions=sum(c['puzzle_id']==puzzle['id'] for c in human['changes'])
+                self.assertEqual(len(actual),group['final_examples']+additions)
 
     def test_regression_cases_match_live_examples_and_exclude_held_paternity_claim(self):
         cases=json.loads((ROOT/'tests/fixtures/history_qa_merged_v1.json').read_text())

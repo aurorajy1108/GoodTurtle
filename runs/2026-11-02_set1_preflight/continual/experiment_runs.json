@@ -1,0 +1,4034 @@
+[
+  {
+    "block": "S1_TS015_TS013_TS015_TS013_r03",
+    "condition": "source",
+    "puzzle_id": "TS015",
+    "repeat": 3,
+    "run_dir": "S1_TS015_TS013_TS015_TS013_r03_source",
+    "source": "TS015",
+    "target": "TS013",
+    "group": "S1_TS015_TS013",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.005139000015333295,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "5f133f2c7c9b35d240674a345c097e2de3c4be06b24aaa40952415bfb2f3f6b1",
+      "grading_sha256": "6f9f08700b2e7432366a5812ad57c37a6f6e4db514a12509b92ba53e77161d88",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "ee2355155bc93572faf555bea747de2352440d723da28eaad5060002be9cb0c8",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS015_TS013_TS015_TS013_r03",
+    "condition": "answer_only",
+    "puzzle_id": "TS013",
+    "repeat": 3,
+    "run_dir": "S1_TS015_TS013_TS015_TS013_r03_answer_only",
+    "source": "TS015",
+    "target": "TS013",
+    "group": "S1_TS015_TS013",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.005847916996572167,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS015_TS013_TS015_TS013_r03",
+    "condition": "transcript",
+    "puzzle_id": "TS013",
+    "repeat": 3,
+    "run_dir": "S1_TS015_TS013_TS015_TS013_r03_transcript",
+    "source": "TS015",
+    "target": "TS013",
+    "group": "S1_TS015_TS013",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.007645917008630931,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS015_TS013_TS015_TS013_r03",
+    "condition": "direct",
+    "puzzle_id": "TS013",
+    "repeat": 3,
+    "run_dir": "S1_TS015_TS013_TS015_TS013_r03_direct",
+    "source": "TS015",
+    "target": "TS013",
+    "group": "S1_TS015_TS013",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.0061365829897113144,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS016_TS013_TS016_TS013_r02",
+    "condition": "source",
+    "puzzle_id": "TS016",
+    "repeat": 2,
+    "run_dir": "S1_TS016_TS013_TS016_TS013_r02_source",
+    "source": "TS016",
+    "target": "TS013",
+    "group": "S1_TS016_TS013",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.006575707986485213,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "eb116ccc7c4d65c9d6fa0bce2a0be8161218aa71d3f4a1f8c91b98d8f8491dd8",
+      "grading_sha256": "f451ad2fafd12fe2555ef91fcbdb042cd456ad444625cc3a36ed5d3751a878b9",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "ee2355155bc93572faf555bea747de2352440d723da28eaad5060002be9cb0c8",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS016_TS013_TS016_TS013_r02",
+    "condition": "transcript",
+    "puzzle_id": "TS013",
+    "repeat": 2,
+    "run_dir": "S1_TS016_TS013_TS016_TS013_r02_transcript",
+    "source": "TS016",
+    "target": "TS013",
+    "group": "S1_TS016_TS013",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.007550833048298955,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS016_TS013_TS016_TS013_r02",
+    "condition": "direct",
+    "puzzle_id": "TS013",
+    "repeat": 2,
+    "run_dir": "S1_TS016_TS013_TS016_TS013_r02_direct",
+    "source": "TS016",
+    "target": "TS013",
+    "group": "S1_TS016_TS013",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.0067153749987483025,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS016_TS013_TS016_TS013_r02",
+    "condition": "answer_only",
+    "puzzle_id": "TS013",
+    "repeat": 2,
+    "run_dir": "S1_TS016_TS013_TS016_TS013_r02_answer_only",
+    "source": "TS016",
+    "target": "TS013",
+    "group": "S1_TS016_TS013",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.00707379198865965,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS013_TS016_TS013_TS016_r03",
+    "condition": "source",
+    "puzzle_id": "TS013",
+    "repeat": 3,
+    "run_dir": "S1_TS013_TS016_TS013_TS016_r03_source",
+    "source": "TS013",
+    "target": "TS016",
+    "group": "S1_TS013_TS016",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.006683458981569856,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "ee2355155bc93572faf555bea747de2352440d723da28eaad5060002be9cb0c8",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS013_TS016_TS013_TS016_r03",
+    "condition": "direct",
+    "puzzle_id": "TS016",
+    "repeat": 3,
+    "run_dir": "S1_TS013_TS016_TS013_TS016_r03_direct",
+    "source": "TS013",
+    "target": "TS016",
+    "group": "S1_TS013_TS016",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.005623959004878998,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "eb116ccc7c4d65c9d6fa0bce2a0be8161218aa71d3f4a1f8c91b98d8f8491dd8",
+      "grading_sha256": "f451ad2fafd12fe2555ef91fcbdb042cd456ad444625cc3a36ed5d3751a878b9",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS013_TS016_TS013_TS016_r03",
+    "condition": "transcript",
+    "puzzle_id": "TS016",
+    "repeat": 3,
+    "run_dir": "S1_TS013_TS016_TS013_TS016_r03_transcript",
+    "source": "TS013",
+    "target": "TS016",
+    "group": "S1_TS013_TS016",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.006076624966226518,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "eb116ccc7c4d65c9d6fa0bce2a0be8161218aa71d3f4a1f8c91b98d8f8491dd8",
+      "grading_sha256": "f451ad2fafd12fe2555ef91fcbdb042cd456ad444625cc3a36ed5d3751a878b9",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS013_TS016_TS013_TS016_r03",
+    "condition": "answer_only",
+    "puzzle_id": "TS016",
+    "repeat": 3,
+    "run_dir": "S1_TS013_TS016_TS013_TS016_r03_answer_only",
+    "source": "TS013",
+    "target": "TS016",
+    "group": "S1_TS013_TS016",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.006393374991603196,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "eb116ccc7c4d65c9d6fa0bce2a0be8161218aa71d3f4a1f8c91b98d8f8491dd8",
+      "grading_sha256": "f451ad2fafd12fe2555ef91fcbdb042cd456ad444625cc3a36ed5d3751a878b9",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS013_TS015_TS013_TS015_r02",
+    "condition": "source",
+    "puzzle_id": "TS013",
+    "repeat": 2,
+    "run_dir": "S1_TS013_TS015_TS013_TS015_r02_source",
+    "source": "TS013",
+    "target": "TS015",
+    "group": "S1_TS013_TS015",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.006607333023566753,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "ee2355155bc93572faf555bea747de2352440d723da28eaad5060002be9cb0c8",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS013_TS015_TS013_TS015_r02",
+    "condition": "direct",
+    "puzzle_id": "TS015",
+    "repeat": 2,
+    "run_dir": "S1_TS013_TS015_TS013_TS015_r02_direct",
+    "source": "TS013",
+    "target": "TS015",
+    "group": "S1_TS013_TS015",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.005639374954625964,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "5f133f2c7c9b35d240674a345c097e2de3c4be06b24aaa40952415bfb2f3f6b1",
+      "grading_sha256": "6f9f08700b2e7432366a5812ad57c37a6f6e4db514a12509b92ba53e77161d88",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS013_TS015_TS013_TS015_r02",
+    "condition": "transcript",
+    "puzzle_id": "TS015",
+    "repeat": 2,
+    "run_dir": "S1_TS013_TS015_TS013_TS015_r02_transcript",
+    "source": "TS013",
+    "target": "TS015",
+    "group": "S1_TS013_TS015",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.006668207992333919,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "5f133f2c7c9b35d240674a345c097e2de3c4be06b24aaa40952415bfb2f3f6b1",
+      "grading_sha256": "6f9f08700b2e7432366a5812ad57c37a6f6e4db514a12509b92ba53e77161d88",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS013_TS015_TS013_TS015_r02",
+    "condition": "answer_only",
+    "puzzle_id": "TS015",
+    "repeat": 2,
+    "run_dir": "S1_TS013_TS015_TS013_TS015_r02_answer_only",
+    "source": "TS013",
+    "target": "TS015",
+    "group": "S1_TS013_TS015",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.008155792020261288,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "5f133f2c7c9b35d240674a345c097e2de3c4be06b24aaa40952415bfb2f3f6b1",
+      "grading_sha256": "6f9f08700b2e7432366a5812ad57c37a6f6e4db514a12509b92ba53e77161d88",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS016_TS013_TS016_TS013_r01",
+    "condition": "source",
+    "puzzle_id": "TS016",
+    "repeat": 1,
+    "run_dir": "S1_TS016_TS013_TS016_TS013_r01_source",
+    "source": "TS016",
+    "target": "TS013",
+    "group": "S1_TS016_TS013",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.005844125000294298,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "eb116ccc7c4d65c9d6fa0bce2a0be8161218aa71d3f4a1f8c91b98d8f8491dd8",
+      "grading_sha256": "f451ad2fafd12fe2555ef91fcbdb042cd456ad444625cc3a36ed5d3751a878b9",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "ee2355155bc93572faf555bea747de2352440d723da28eaad5060002be9cb0c8",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS016_TS013_TS016_TS013_r01",
+    "condition": "answer_only",
+    "puzzle_id": "TS013",
+    "repeat": 1,
+    "run_dir": "S1_TS016_TS013_TS016_TS013_r01_answer_only",
+    "source": "TS016",
+    "target": "TS013",
+    "group": "S1_TS016_TS013",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.006340750027447939,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS016_TS013_TS016_TS013_r01",
+    "condition": "transcript",
+    "puzzle_id": "TS013",
+    "repeat": 1,
+    "run_dir": "S1_TS016_TS013_TS016_TS013_r01_transcript",
+    "source": "TS016",
+    "target": "TS013",
+    "group": "S1_TS016_TS013",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.036360332975164056,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS016_TS013_TS016_TS013_r01",
+    "condition": "direct",
+    "puzzle_id": "TS013",
+    "repeat": 1,
+    "run_dir": "S1_TS016_TS013_TS016_TS013_r01_direct",
+    "source": "TS016",
+    "target": "TS013",
+    "group": "S1_TS016_TS013",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.007184792018961161,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS028_TS013_TS028_TS013_r02",
+    "condition": "source",
+    "puzzle_id": "TS028",
+    "repeat": 2,
+    "run_dir": "S1_TS028_TS013_TS028_TS013_r02_source",
+    "source": "TS028",
+    "target": "TS013",
+    "group": "S1_TS028_TS013",
+    "relation_hypothesis": "neutral",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.006602708017453551,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "30cf65018ae290c9e7e0f0fad12082e953571ed7f48c01497dbdb182c2a47b2a",
+      "grading_sha256": "4022d38efc0762eabfc2b4ab4b7d9556c03006d851c7a112e02b0c56af6a9ad2",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "ee2355155bc93572faf555bea747de2352440d723da28eaad5060002be9cb0c8",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS028_TS013_TS028_TS013_r02",
+    "condition": "answer_only",
+    "puzzle_id": "TS013",
+    "repeat": 2,
+    "run_dir": "S1_TS028_TS013_TS028_TS013_r02_answer_only",
+    "source": "TS028",
+    "target": "TS013",
+    "group": "S1_TS028_TS013",
+    "relation_hypothesis": "neutral",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.007579541997984052,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS028_TS013_TS028_TS013_r02",
+    "condition": "direct",
+    "puzzle_id": "TS013",
+    "repeat": 2,
+    "run_dir": "S1_TS028_TS013_TS028_TS013_r02_direct",
+    "source": "TS028",
+    "target": "TS013",
+    "group": "S1_TS028_TS013",
+    "relation_hypothesis": "neutral",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.006948790978640318,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS028_TS013_TS028_TS013_r02",
+    "condition": "transcript",
+    "puzzle_id": "TS013",
+    "repeat": 2,
+    "run_dir": "S1_TS028_TS013_TS028_TS013_r02_transcript",
+    "source": "TS028",
+    "target": "TS013",
+    "group": "S1_TS028_TS013",
+    "relation_hypothesis": "neutral",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.007266375003382564,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS028_TS013_TS028_TS013_r01",
+    "condition": "source",
+    "puzzle_id": "TS028",
+    "repeat": 1,
+    "run_dir": "S1_TS028_TS013_TS028_TS013_r01_source",
+    "source": "TS028",
+    "target": "TS013",
+    "group": "S1_TS028_TS013",
+    "relation_hypothesis": "neutral",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.006514709035400301,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "30cf65018ae290c9e7e0f0fad12082e953571ed7f48c01497dbdb182c2a47b2a",
+      "grading_sha256": "4022d38efc0762eabfc2b4ab4b7d9556c03006d851c7a112e02b0c56af6a9ad2",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "ee2355155bc93572faf555bea747de2352440d723da28eaad5060002be9cb0c8",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS028_TS013_TS028_TS013_r01",
+    "condition": "transcript",
+    "puzzle_id": "TS013",
+    "repeat": 1,
+    "run_dir": "S1_TS028_TS013_TS028_TS013_r01_transcript",
+    "source": "TS028",
+    "target": "TS013",
+    "group": "S1_TS028_TS013",
+    "relation_hypothesis": "neutral",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.008557500026654452,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS028_TS013_TS028_TS013_r01",
+    "condition": "answer_only",
+    "puzzle_id": "TS013",
+    "repeat": 1,
+    "run_dir": "S1_TS028_TS013_TS028_TS013_r01_answer_only",
+    "source": "TS028",
+    "target": "TS013",
+    "group": "S1_TS028_TS013",
+    "relation_hypothesis": "neutral",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.007211500022094697,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS028_TS013_TS028_TS013_r01",
+    "condition": "direct",
+    "puzzle_id": "TS013",
+    "repeat": 1,
+    "run_dir": "S1_TS028_TS013_TS028_TS013_r01_direct",
+    "source": "TS028",
+    "target": "TS013",
+    "group": "S1_TS028_TS013",
+    "relation_hypothesis": "neutral",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.006310416967608035,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS015_TS013_TS015_TS013_r02",
+    "condition": "source",
+    "puzzle_id": "TS015",
+    "repeat": 2,
+    "run_dir": "S1_TS015_TS013_TS015_TS013_r02_source",
+    "source": "TS015",
+    "target": "TS013",
+    "group": "S1_TS015_TS013",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.006318500032648444,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "5f133f2c7c9b35d240674a345c097e2de3c4be06b24aaa40952415bfb2f3f6b1",
+      "grading_sha256": "6f9f08700b2e7432366a5812ad57c37a6f6e4db514a12509b92ba53e77161d88",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "ee2355155bc93572faf555bea747de2352440d723da28eaad5060002be9cb0c8",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS015_TS013_TS015_TS013_r02",
+    "condition": "direct",
+    "puzzle_id": "TS013",
+    "repeat": 2,
+    "run_dir": "S1_TS015_TS013_TS015_TS013_r02_direct",
+    "source": "TS015",
+    "target": "TS013",
+    "group": "S1_TS015_TS013",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.0068641669931821525,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS015_TS013_TS015_TS013_r02",
+    "condition": "answer_only",
+    "puzzle_id": "TS013",
+    "repeat": 2,
+    "run_dir": "S1_TS015_TS013_TS015_TS013_r02_answer_only",
+    "source": "TS015",
+    "target": "TS013",
+    "group": "S1_TS015_TS013",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.00873699999647215,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS015_TS013_TS015_TS013_r02",
+    "condition": "transcript",
+    "puzzle_id": "TS013",
+    "repeat": 2,
+    "run_dir": "S1_TS015_TS013_TS015_TS013_r02_transcript",
+    "source": "TS015",
+    "target": "TS013",
+    "group": "S1_TS015_TS013",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.006885625014547259,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS015_TS013_TS015_TS013_r01",
+    "condition": "source",
+    "puzzle_id": "TS015",
+    "repeat": 1,
+    "run_dir": "S1_TS015_TS013_TS015_TS013_r01_source",
+    "source": "TS015",
+    "target": "TS013",
+    "group": "S1_TS015_TS013",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.006751792039722204,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "5f133f2c7c9b35d240674a345c097e2de3c4be06b24aaa40952415bfb2f3f6b1",
+      "grading_sha256": "6f9f08700b2e7432366a5812ad57c37a6f6e4db514a12509b92ba53e77161d88",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "ee2355155bc93572faf555bea747de2352440d723da28eaad5060002be9cb0c8",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS015_TS013_TS015_TS013_r01",
+    "condition": "transcript",
+    "puzzle_id": "TS013",
+    "repeat": 1,
+    "run_dir": "S1_TS015_TS013_TS015_TS013_r01_transcript",
+    "source": "TS015",
+    "target": "TS013",
+    "group": "S1_TS015_TS013",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.0074728750041686,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS015_TS013_TS015_TS013_r01",
+    "condition": "direct",
+    "puzzle_id": "TS013",
+    "repeat": 1,
+    "run_dir": "S1_TS015_TS013_TS015_TS013_r01_direct",
+    "source": "TS015",
+    "target": "TS013",
+    "group": "S1_TS015_TS013",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.007506958965677768,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS015_TS013_TS015_TS013_r01",
+    "condition": "answer_only",
+    "puzzle_id": "TS013",
+    "repeat": 1,
+    "run_dir": "S1_TS015_TS013_TS015_TS013_r01_answer_only",
+    "source": "TS015",
+    "target": "TS013",
+    "group": "S1_TS015_TS013",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.008014124992769212,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS013_TS016_TS013_TS016_r02",
+    "condition": "source",
+    "puzzle_id": "TS013",
+    "repeat": 2,
+    "run_dir": "S1_TS013_TS016_TS013_TS016_r02_source",
+    "source": "TS013",
+    "target": "TS016",
+    "group": "S1_TS013_TS016",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.008729459019377828,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "ee2355155bc93572faf555bea747de2352440d723da28eaad5060002be9cb0c8",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS013_TS016_TS013_TS016_r02",
+    "condition": "answer_only",
+    "puzzle_id": "TS016",
+    "repeat": 2,
+    "run_dir": "S1_TS013_TS016_TS013_TS016_r02_answer_only",
+    "source": "TS013",
+    "target": "TS016",
+    "group": "S1_TS013_TS016",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.0077117919572629035,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "eb116ccc7c4d65c9d6fa0bce2a0be8161218aa71d3f4a1f8c91b98d8f8491dd8",
+      "grading_sha256": "f451ad2fafd12fe2555ef91fcbdb042cd456ad444625cc3a36ed5d3751a878b9",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS013_TS016_TS013_TS016_r02",
+    "condition": "direct",
+    "puzzle_id": "TS016",
+    "repeat": 2,
+    "run_dir": "S1_TS013_TS016_TS013_TS016_r02_direct",
+    "source": "TS013",
+    "target": "TS016",
+    "group": "S1_TS013_TS016",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.007494832971133292,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "eb116ccc7c4d65c9d6fa0bce2a0be8161218aa71d3f4a1f8c91b98d8f8491dd8",
+      "grading_sha256": "f451ad2fafd12fe2555ef91fcbdb042cd456ad444625cc3a36ed5d3751a878b9",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS013_TS016_TS013_TS016_r02",
+    "condition": "transcript",
+    "puzzle_id": "TS016",
+    "repeat": 2,
+    "run_dir": "S1_TS013_TS016_TS013_TS016_r02_transcript",
+    "source": "TS013",
+    "target": "TS016",
+    "group": "S1_TS013_TS016",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.008877249958459288,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "eb116ccc7c4d65c9d6fa0bce2a0be8161218aa71d3f4a1f8c91b98d8f8491dd8",
+      "grading_sha256": "f451ad2fafd12fe2555ef91fcbdb042cd456ad444625cc3a36ed5d3751a878b9",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS016_TS013_TS016_TS013_r03",
+    "condition": "source",
+    "puzzle_id": "TS016",
+    "repeat": 3,
+    "run_dir": "S1_TS016_TS013_TS016_TS013_r03_source",
+    "source": "TS016",
+    "target": "TS013",
+    "group": "S1_TS016_TS013",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.007823624997399747,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "eb116ccc7c4d65c9d6fa0bce2a0be8161218aa71d3f4a1f8c91b98d8f8491dd8",
+      "grading_sha256": "f451ad2fafd12fe2555ef91fcbdb042cd456ad444625cc3a36ed5d3751a878b9",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "ee2355155bc93572faf555bea747de2352440d723da28eaad5060002be9cb0c8",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS016_TS013_TS016_TS013_r03",
+    "condition": "direct",
+    "puzzle_id": "TS013",
+    "repeat": 3,
+    "run_dir": "S1_TS016_TS013_TS016_TS013_r03_direct",
+    "source": "TS016",
+    "target": "TS013",
+    "group": "S1_TS016_TS013",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.006887750001624227,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS016_TS013_TS016_TS013_r03",
+    "condition": "answer_only",
+    "puzzle_id": "TS013",
+    "repeat": 3,
+    "run_dir": "S1_TS016_TS013_TS016_TS013_r03_answer_only",
+    "source": "TS016",
+    "target": "TS013",
+    "group": "S1_TS016_TS013",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.00785458303289488,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS016_TS013_TS016_TS013_r03",
+    "condition": "transcript",
+    "puzzle_id": "TS013",
+    "repeat": 3,
+    "run_dir": "S1_TS016_TS013_TS016_TS013_r03_transcript",
+    "source": "TS016",
+    "target": "TS013",
+    "group": "S1_TS016_TS013",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.008677333011291921,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS013_TS015_TS013_TS015_r01",
+    "condition": "source",
+    "puzzle_id": "TS013",
+    "repeat": 1,
+    "run_dir": "S1_TS013_TS015_TS013_TS015_r01_source",
+    "source": "TS013",
+    "target": "TS015",
+    "group": "S1_TS013_TS015",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.008075209043454379,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "ee2355155bc93572faf555bea747de2352440d723da28eaad5060002be9cb0c8",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS013_TS015_TS013_TS015_r01",
+    "condition": "answer_only",
+    "puzzle_id": "TS015",
+    "repeat": 1,
+    "run_dir": "S1_TS013_TS015_TS013_TS015_r01_answer_only",
+    "source": "TS013",
+    "target": "TS015",
+    "group": "S1_TS013_TS015",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.008448208041954786,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "5f133f2c7c9b35d240674a345c097e2de3c4be06b24aaa40952415bfb2f3f6b1",
+      "grading_sha256": "6f9f08700b2e7432366a5812ad57c37a6f6e4db514a12509b92ba53e77161d88",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS013_TS015_TS013_TS015_r01",
+    "condition": "direct",
+    "puzzle_id": "TS015",
+    "repeat": 1,
+    "run_dir": "S1_TS013_TS015_TS013_TS015_r01_direct",
+    "source": "TS013",
+    "target": "TS015",
+    "group": "S1_TS013_TS015",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.007627625018358231,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "5f133f2c7c9b35d240674a345c097e2de3c4be06b24aaa40952415bfb2f3f6b1",
+      "grading_sha256": "6f9f08700b2e7432366a5812ad57c37a6f6e4db514a12509b92ba53e77161d88",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS013_TS015_TS013_TS015_r01",
+    "condition": "transcript",
+    "puzzle_id": "TS015",
+    "repeat": 1,
+    "run_dir": "S1_TS013_TS015_TS013_TS015_r01_transcript",
+    "source": "TS013",
+    "target": "TS015",
+    "group": "S1_TS013_TS015",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.008884458045940846,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "5f133f2c7c9b35d240674a345c097e2de3c4be06b24aaa40952415bfb2f3f6b1",
+      "grading_sha256": "6f9f08700b2e7432366a5812ad57c37a6f6e4db514a12509b92ba53e77161d88",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS014_TS013_TS014_TS013_r01",
+    "condition": "source",
+    "puzzle_id": "TS014",
+    "repeat": 1,
+    "run_dir": "S1_TS014_TS013_TS014_TS013_r01_source",
+    "source": "TS014",
+    "target": "TS013",
+    "group": "S1_TS014_TS013",
+    "relation_hypothesis": "negative",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.007324416015762836,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "95a3d31f81a3ef0ebfa32f5ede191b4e24e727b55ced0a21d7ba42666a2392a4",
+      "grading_sha256": "475d22bca77f15b9707d0c4067d0a85ab70975edf0dbb10d3fdb3903cef5b48f",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "ee2355155bc93572faf555bea747de2352440d723da28eaad5060002be9cb0c8",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS014_TS013_TS014_TS013_r01",
+    "condition": "direct",
+    "puzzle_id": "TS013",
+    "repeat": 1,
+    "run_dir": "S1_TS014_TS013_TS014_TS013_r01_direct",
+    "source": "TS014",
+    "target": "TS013",
+    "group": "S1_TS014_TS013",
+    "relation_hypothesis": "negative",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.007509000017307699,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS014_TS013_TS014_TS013_r01",
+    "condition": "answer_only",
+    "puzzle_id": "TS013",
+    "repeat": 1,
+    "run_dir": "S1_TS014_TS013_TS014_TS013_r01_answer_only",
+    "source": "TS014",
+    "target": "TS013",
+    "group": "S1_TS014_TS013",
+    "relation_hypothesis": "negative",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.008366000023670495,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS014_TS013_TS014_TS013_r01",
+    "condition": "transcript",
+    "puzzle_id": "TS013",
+    "repeat": 1,
+    "run_dir": "S1_TS014_TS013_TS014_TS013_r01_transcript",
+    "source": "TS014",
+    "target": "TS013",
+    "group": "S1_TS014_TS013",
+    "relation_hypothesis": "negative",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.00861870899097994,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS013_TS015_TS013_TS015_r03",
+    "condition": "source",
+    "puzzle_id": "TS013",
+    "repeat": 3,
+    "run_dir": "S1_TS013_TS015_TS013_TS015_r03_source",
+    "source": "TS013",
+    "target": "TS015",
+    "group": "S1_TS013_TS015",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.007545124972239137,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "ee2355155bc93572faf555bea747de2352440d723da28eaad5060002be9cb0c8",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS013_TS015_TS013_TS015_r03",
+    "condition": "transcript",
+    "puzzle_id": "TS015",
+    "repeat": 3,
+    "run_dir": "S1_TS013_TS015_TS013_TS015_r03_transcript",
+    "source": "TS013",
+    "target": "TS015",
+    "group": "S1_TS013_TS015",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.00783695897553116,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "5f133f2c7c9b35d240674a345c097e2de3c4be06b24aaa40952415bfb2f3f6b1",
+      "grading_sha256": "6f9f08700b2e7432366a5812ad57c37a6f6e4db514a12509b92ba53e77161d88",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS013_TS015_TS013_TS015_r03",
+    "condition": "answer_only",
+    "puzzle_id": "TS015",
+    "repeat": 3,
+    "run_dir": "S1_TS013_TS015_TS013_TS015_r03_answer_only",
+    "source": "TS013",
+    "target": "TS015",
+    "group": "S1_TS013_TS015",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.008936166996136308,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "5f133f2c7c9b35d240674a345c097e2de3c4be06b24aaa40952415bfb2f3f6b1",
+      "grading_sha256": "6f9f08700b2e7432366a5812ad57c37a6f6e4db514a12509b92ba53e77161d88",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS013_TS015_TS013_TS015_r03",
+    "condition": "direct",
+    "puzzle_id": "TS015",
+    "repeat": 3,
+    "run_dir": "S1_TS013_TS015_TS013_TS015_r03_direct",
+    "source": "TS013",
+    "target": "TS015",
+    "group": "S1_TS013_TS015",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.008013582963030785,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "5f133f2c7c9b35d240674a345c097e2de3c4be06b24aaa40952415bfb2f3f6b1",
+      "grading_sha256": "6f9f08700b2e7432366a5812ad57c37a6f6e4db514a12509b92ba53e77161d88",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS013_TS016_TS013_TS016_r01",
+    "condition": "source",
+    "puzzle_id": "TS013",
+    "repeat": 1,
+    "run_dir": "S1_TS013_TS016_TS013_TS016_r01_source",
+    "source": "TS013",
+    "target": "TS016",
+    "group": "S1_TS013_TS016",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.007645750010851771,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "ee2355155bc93572faf555bea747de2352440d723da28eaad5060002be9cb0c8",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS013_TS016_TS013_TS016_r01",
+    "condition": "transcript",
+    "puzzle_id": "TS016",
+    "repeat": 1,
+    "run_dir": "S1_TS013_TS016_TS013_TS016_r01_transcript",
+    "source": "TS013",
+    "target": "TS016",
+    "group": "S1_TS013_TS016",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.009035666997078806,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "eb116ccc7c4d65c9d6fa0bce2a0be8161218aa71d3f4a1f8c91b98d8f8491dd8",
+      "grading_sha256": "f451ad2fafd12fe2555ef91fcbdb042cd456ad444625cc3a36ed5d3751a878b9",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS013_TS016_TS013_TS016_r01",
+    "condition": "answer_only",
+    "puzzle_id": "TS016",
+    "repeat": 1,
+    "run_dir": "S1_TS013_TS016_TS013_TS016_r01_answer_only",
+    "source": "TS013",
+    "target": "TS016",
+    "group": "S1_TS013_TS016",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.00810316699789837,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "eb116ccc7c4d65c9d6fa0bce2a0be8161218aa71d3f4a1f8c91b98d8f8491dd8",
+      "grading_sha256": "f451ad2fafd12fe2555ef91fcbdb042cd456ad444625cc3a36ed5d3751a878b9",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS013_TS016_TS013_TS016_r01",
+    "condition": "direct",
+    "puzzle_id": "TS016",
+    "repeat": 1,
+    "run_dir": "S1_TS013_TS016_TS013_TS016_r01_direct",
+    "source": "TS013",
+    "target": "TS016",
+    "group": "S1_TS013_TS016",
+    "relation_hypothesis": "positive",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.00803041597828269,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "eb116ccc7c4d65c9d6fa0bce2a0be8161218aa71d3f4a1f8c91b98d8f8491dd8",
+      "grading_sha256": "f451ad2fafd12fe2555ef91fcbdb042cd456ad444625cc3a36ed5d3751a878b9",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS014_TS013_TS014_TS013_r03",
+    "condition": "source",
+    "puzzle_id": "TS014",
+    "repeat": 3,
+    "run_dir": "S1_TS014_TS013_TS014_TS013_r03_source",
+    "source": "TS014",
+    "target": "TS013",
+    "group": "S1_TS014_TS013",
+    "relation_hypothesis": "negative",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.009320999961346388,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "95a3d31f81a3ef0ebfa32f5ede191b4e24e727b55ced0a21d7ba42666a2392a4",
+      "grading_sha256": "475d22bca77f15b9707d0c4067d0a85ab70975edf0dbb10d3fdb3903cef5b48f",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "ee2355155bc93572faf555bea747de2352440d723da28eaad5060002be9cb0c8",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS014_TS013_TS014_TS013_r03",
+    "condition": "transcript",
+    "puzzle_id": "TS013",
+    "repeat": 3,
+    "run_dir": "S1_TS014_TS013_TS014_TS013_r03_transcript",
+    "source": "TS014",
+    "target": "TS013",
+    "group": "S1_TS014_TS013",
+    "relation_hypothesis": "negative",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.008490500040352345,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS014_TS013_TS014_TS013_r03",
+    "condition": "direct",
+    "puzzle_id": "TS013",
+    "repeat": 3,
+    "run_dir": "S1_TS014_TS013_TS014_TS013_r03_direct",
+    "source": "TS014",
+    "target": "TS013",
+    "group": "S1_TS014_TS013",
+    "relation_hypothesis": "negative",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.00797099998453632,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS014_TS013_TS014_TS013_r03",
+    "condition": "answer_only",
+    "puzzle_id": "TS013",
+    "repeat": 3,
+    "run_dir": "S1_TS014_TS013_TS014_TS013_r03_answer_only",
+    "source": "TS014",
+    "target": "TS013",
+    "group": "S1_TS014_TS013",
+    "relation_hypothesis": "negative",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.008790166990365833,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS014_TS013_TS014_TS013_r02",
+    "condition": "source",
+    "puzzle_id": "TS014",
+    "repeat": 2,
+    "run_dir": "S1_TS014_TS013_TS014_TS013_r02_source",
+    "source": "TS014",
+    "target": "TS013",
+    "group": "S1_TS014_TS013",
+    "relation_hypothesis": "negative",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.009768666001036763,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "95a3d31f81a3ef0ebfa32f5ede191b4e24e727b55ced0a21d7ba42666a2392a4",
+      "grading_sha256": "475d22bca77f15b9707d0c4067d0a85ab70975edf0dbb10d3fdb3903cef5b48f",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "ee2355155bc93572faf555bea747de2352440d723da28eaad5060002be9cb0c8",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS014_TS013_TS014_TS013_r02",
+    "condition": "answer_only",
+    "puzzle_id": "TS013",
+    "repeat": 2,
+    "run_dir": "S1_TS014_TS013_TS014_TS013_r02_answer_only",
+    "source": "TS014",
+    "target": "TS013",
+    "group": "S1_TS014_TS013",
+    "relation_hypothesis": "negative",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.008377082995139062,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS014_TS013_TS014_TS013_r02",
+    "condition": "transcript",
+    "puzzle_id": "TS013",
+    "repeat": 2,
+    "run_dir": "S1_TS014_TS013_TS014_TS013_r02_transcript",
+    "source": "TS014",
+    "target": "TS013",
+    "group": "S1_TS014_TS013",
+    "relation_hypothesis": "negative",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.009464958973694593,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS014_TS013_TS014_TS013_r02",
+    "condition": "direct",
+    "puzzle_id": "TS013",
+    "repeat": 2,
+    "run_dir": "S1_TS014_TS013_TS014_TS013_r02_direct",
+    "source": "TS014",
+    "target": "TS013",
+    "group": "S1_TS014_TS013",
+    "relation_hypothesis": "negative",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.00980883400188759,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS028_TS013_TS028_TS013_r03",
+    "condition": "source",
+    "puzzle_id": "TS028",
+    "repeat": 3,
+    "run_dir": "S1_TS028_TS013_TS028_TS013_r03_source",
+    "source": "TS028",
+    "target": "TS013",
+    "group": "S1_TS028_TS013",
+    "relation_hypothesis": "neutral",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.009467041003517807,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "30cf65018ae290c9e7e0f0fad12082e953571ed7f48c01497dbdb182c2a47b2a",
+      "grading_sha256": "4022d38efc0762eabfc2b4ab4b7d9556c03006d851c7a112e02b0c56af6a9ad2",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "ee2355155bc93572faf555bea747de2352440d723da28eaad5060002be9cb0c8",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS028_TS013_TS028_TS013_r03",
+    "condition": "direct",
+    "puzzle_id": "TS013",
+    "repeat": 3,
+    "run_dir": "S1_TS028_TS013_TS028_TS013_r03_direct",
+    "source": "TS028",
+    "target": "TS013",
+    "group": "S1_TS028_TS013",
+    "relation_hypothesis": "neutral",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.008779374998994172,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS028_TS013_TS028_TS013_r03",
+    "condition": "transcript",
+    "puzzle_id": "TS013",
+    "repeat": 3,
+    "run_dir": "S1_TS028_TS013_TS028_TS013_r03_transcript",
+    "source": "TS028",
+    "target": "TS013",
+    "group": "S1_TS028_TS013",
+    "relation_hypothesis": "neutral",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.009162499976810068,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  },
+  {
+    "block": "S1_TS028_TS013_TS028_TS013_r03",
+    "condition": "answer_only",
+    "puzzle_id": "TS013",
+    "repeat": 3,
+    "run_dir": "S1_TS028_TS013_TS028_TS013_r03_answer_only",
+    "source": "TS028",
+    "target": "TS013",
+    "group": "S1_TS028_TS013",
+    "relation_hypothesis": "neutral",
+    "status": "dry_run",
+    "stop_reason": "no_model_calls",
+    "simulation": false,
+    "success": null,
+    "host_questions": 0,
+    "final_attempts": 0,
+    "rejected_finals": 0,
+    "counted_questions": 0,
+    "submissions": 0,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": null,
+    "best_partial_score": null,
+    "latest_final": null,
+    "latest_grade": null,
+    "elapsed_seconds": 0.010156749980524182,
+    "usage": {
+      "grader": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "host": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      },
+      "player": {
+        "http_attempts": 0,
+        "successful_responses": 0,
+        "seconds": 0,
+        "provider_reported_usage": {}
+      }
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "evaluation_versions": {
+      "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+      "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+      "controller_sha256": "f69f448dd87fc294084b318eebb2541050d6501f5ea993b8938fbe21c12a2034"
+    }
+  }
+]

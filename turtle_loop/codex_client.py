@@ -99,6 +99,9 @@ def complete(profile,role,audit,system,user,attempt=1):
         except (subprocess.TimeoutExpired,OSError) as exc:
             audit({**record,'status':'transport_error','error_type':type(exc).__name__,'seconds':time.monotonic()-start})
             raise APIError(f'{role}: Codex CLI {type(exc).__name__}; no resampling') from None
+        except KeyboardInterrupt:
+            audit({**record,'status':'interrupted','seconds':time.monotonic()-start})
+            raise
         last=(folder/'last.txt').read_text() if (folder/'last.txt').exists() else ''
     messages=[];usage={};thread='';events=[];completed=False;tool_use=False;generation_started=False
     for line in process.stdout.splitlines():
