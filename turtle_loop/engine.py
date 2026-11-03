@@ -12,7 +12,8 @@ from decimal import Decimal
 from pathlib import Path
 
 from .providers import APIError
-from .host_context import build_story_context, host_payload, story_fingerprint, grading_fingerprint
+from .host_context import (build_story_context, host_payload, story_fingerprint, grading_fingerprint,
+                           grader_story_context, context_policy, RUNTIME_VERSION)
 from .coverage import PROTOCOL, fact_specs, requirement_specs, constrain
 from .host import answer_question
 from .grader import evaluate_final
@@ -103,6 +104,59 @@ def grade_final(text, rubric, requirements=None, submitted_explanation=None):
 
 
 class Recorder:
+    @classmethod
+    def restore(cls, folder, puzzle, config, prompts, echo=True):
+        """Restore an archived session; never reset budget or resample a submitted action."""
+        folder = Path(folder)
+        for name, expected in [('puzzle_private.json', puzzle), ('config.json', config), ('prompts.json', prompts)]:
+            if json.loads((folder/name).read_text()) != expected:
+                raise ValueError('Resume input mismatch: '+name)
+        previous = json.loads((folder/'result.json').read_text())
+        if config.get('session_mode', 'replay') == 'persistent' and previous['status'] != 'completed':
+            raise ValueError('Persistent interrupted sessions cannot be safely replayed; original provider state may have advanced. Start a new labeled run.')
+        if previous['evaluation_versions'].get('runtime_context_version') != RUNTIME_VERSION:
+            raise ValueError('Runtime context policy changed; resume using the original frozen code or start a new game')
+        if previous['status'] not in ('completed', 'error', 'interrupted'):
+            raise ValueError('Resume requires a stopped or completed game')
+        rec = cls.__new__(cls)
+        rec.folder, rec.echo = folder, echo
+        rec.opening, rec.simulation = puzzle['opening'], previous.get('simulation', False)
+        rec.start = time.monotonic() - previous.get('elapsed_seconds', 0)
+        rec.versions = previous['evaluation_versions']
+        rec.versions.setdefault('original_controller_sha256',rec.versions.get('controller_sha256'))
+        rec.versions['controller_sha256'] = hashlib.sha256(b''.join(
+            (ROOT/'turtle_loop'/name).read_bytes() for name in
+            ('engine.py','host.py','host_context.py','coverage.py','grader.py','providers.py','codex_client.py','experiments.py','sessions.py'))).hexdigest()
+        rec.pricing = json.loads((folder/'pricing_snapshot.json').read_text())
+        rec.turns, rec.calls = [], []
+        for line in (folder/'trajectory.jsonl').read_text().splitlines():
+            event = json.loads(line)
+            if event['event'] == 'submission':
+                if event['index'] != len(rec.turns)+1:
+                    raise ValueError('Invalid resumed submission order')
+                rec.turns.append({k:event[k] for k in ('index','type','text','forced')})
+            elif event['event'] in ('host_feedback','evaluation'):
+                turn = rec.turns[event['submission']-1]
+                if 'label' in turn:
+                    raise ValueError('Duplicate feedback in resume history')
+                turn['label'] = event['label']
+                if event['event'] == 'evaluation':
+                    turn['grade'] = {k:v for k,v in event.items() if k not in ('event','timestamp','submission','raw')}
+        if any('label' not in t for t in rec.turns[:-1]) or len(rec.turns)>config['max_questions']:
+            raise ValueError('Invalid pending turn or exhausted quota in resume history')
+        if (folder/'api_calls.jsonl').exists():
+            rec.calls = [json.loads(line) for line in (folder/'api_calls.jsonl').read_text().splitlines()]
+        if previous['status'] == 'error':
+            last = rec.calls[-1] if rec.calls else {}
+            diagnostic = json.dumps(last.get('diagnostics', [])).lower()
+            recoverable = last.get('status') in ('transport_error','http_error','interrupted') or (
+                last.get('status') == 'invalid_response' and not last.get('raw_text',last.get('text','')).strip()
+                and any(s in diagnostic for s in ('usage limit','at capacity','rate limit','rate_limit')))
+            if not recoverable:
+                raise ValueError('Refuse to resample a protocol/model-output failure')
+        rec.resumed = True
+        return rec
+
     def __init__(self, folder, puzzle, config, prompts, echo=True):
         self.folder = Path(folder)
         self.folder.mkdir(parents=True, exist_ok=False)
@@ -114,14 +168,20 @@ class Recorder:
         self.simulation = config.get('mode') == 'scripted_demo_NOT_model_performance'
         self.start = time.monotonic()
         self.versions = {'story_sha256':story_fingerprint(puzzle), 'grading_sha256':grading_fingerprint(puzzle),
+                         'runtime_context_version': RUNTIME_VERSION,
                          'grading_protocol':puzzle.get('grading_protocol', 'legacy'),
                          'prompts_sha256':hashlib.sha256(json.dumps(prompts,sort_keys=True).encode()).hexdigest()}
         self.versions['controller_sha256'] = hashlib.sha256(b''.join(
             (ROOT/'turtle_loop'/name).read_bytes() for name in
-            ('engine.py','host.py','host_context.py','coverage.py','grader.py','providers.py','codex_client.py','experiments.py'))).hexdigest()
+            ('engine.py','host.py','host_context.py','coverage.py','grader.py','providers.py','codex_client.py','experiments.py','sessions.py'))).hexdigest()
         dump(self.folder / 'puzzle_private.json', puzzle)
         dump(self.folder / 'config.json', config)
         dump(self.folder / 'prompts.json', prompts)
+        dump(self.folder / 'runtime_context_policy.json', {
+            'version': RUNTIME_VERSION, 'host_calls_per_question': 1,
+            'session_mode': config.get('session_mode', 'replay'),
+            'history': 'complete role-visible information; lossless deltas in persistent mode',
+            **context_policy(config.get('context_policy'))})
         self.event('start', puzzle_id=puzzle['id'], budget=config['max_questions'])
 
     def append(self, filename, value):
@@ -174,6 +234,11 @@ class Recorder:
                   'latest_final': finals[-1]['text'] if finals else None,
                   'latest_grade': last, 'elapsed_seconds': time.monotonic()-self.start,
                   'usage': usage, 'costs': costs, 'error': error, 'human_review_status': 'pending',
+                  'session_transport': {
+                      'session_ids': sorted({c['game_session_id'] for c in self.calls if c.get('game_session_id')}),
+                      'logical_input_chars': sum(c.get('logical_input_chars', 0) for c in self.calls),
+                      'delta_input_chars': sum(c.get('delta_input_chars', 0) for c in self.calls),
+                      'note': 'Character counters cover caller input, not billed tokens or replay-provider wire history; see costs.'},
                   'evaluation_versions': self.versions}
         dump(self.folder / 'result.json', result)
         self.render(result)
@@ -229,16 +294,46 @@ def load_prompts():
 
 
 def play(puzzle, config, recorder, clients, prompts, player_context=None):
+    """Own all role sessions for exactly one game, including team subroles."""
+    opened = []
+    def initialize(client):
+        if hasattr(client, 'leader') and hasattr(client, 'partner'):
+            initialize(client.leader)
+            initialize(client.partner)
+        elif hasattr(client, 'begin_game') and client not in opened:
+            client.begin_game(recorder.folder, recorder.event)
+            opened.append(client)
+    try:
+        if config.get('session_mode', 'replay') == 'persistent':
+            for client in clients.values():
+                initialize(client)
+        return _play(puzzle, config, recorder, clients, prompts, player_context)
+    finally:
+        for client in opened:
+            client.close_game()
+
+
+def _play(puzzle, config, recorder, clients, prompts, player_context=None):
     limit = config['max_questions']
     if type(limit) is not int or not 1 <= limit <= 100:
         raise ValueError('max_questions must be an integer from 1 to 100')
-    history = []  # Only public player submissions and four-label feedback.
-    counted = 0
+    history = [{'type':t['type'],'text':t['text'],'feedback':t['label']}
+               for t in recorder.turns if 'label' in t]
+    counted = sum(t['type']=='question' or (t.get('grade') and not t['grade']['complete'])
+                  for t in recorder.turns if 'label' in t)
+    pending = recorder.turns[-1] if recorder.turns and 'label' not in recorder.turns[-1] else None
+    if recorder.turns and recorder.turns[-1].get('grade',{}).get('complete'):
+        return recorder.report('completed','solved')
+    if counted >= limit and pending is None:
+        return recorder.report('completed','budget_exhausted')
     recorder.report('running', None)
     # A stale fingerprint or missing host pack must not leave a batch looking
     # permanently running. No model calls have been made at this point.
     try:
         story_context = build_story_context(puzzle)
+        saved_context = recorder.folder/'host_context.json'
+        if getattr(recorder,'resumed',False) and saved_context.exists() and json.loads(saved_context.read_text()) != story_context:
+            raise ValueError('Resumed Host context differs from frozen context')
         recorder.versions['host_context_sha256'] = story_context['context_sha256']
         recorder.versions['host_binding_version'] = story_context.get('binding_version')
         dump(recorder.folder / 'host_context.json', story_context)
@@ -252,20 +347,29 @@ def play(puzzle, config, recorder, clients, prompts, player_context=None):
                        f'Used question-equivalents: {counted}. '
                        + ('This is the mandatory last turn. Return type=final NOW, even if uncertain.'
                           if forced else f'At slot {limit}, you MUST submit a final explanation.'))
-            payload = {'opening': puzzle['opening'], 'visible_history': history, 'turn_control': control}
-            if player_context is not None:
-                payload['prior_experience'] = player_context
-            player_input = json.dumps(payload, ensure_ascii=False)
-            reply = clients['player'].complete(prompts['player'], player_input)
-            action = parse_action(reply.text, forced)
-            turn = {'index': len(recorder.turns)+1, **action, 'forced': forced}
-            recorder.turns.append(turn)
-            recorder.event('submission', **turn, raw_player_output=reply.text)
-            recorder.report('running', None)
+            if pending is not None:
+                turn = pending
+                action = {'type':turn['type'],'text':turn['text']}
+                forced = turn['forced']
+                pending = None
+            else:
+                payload = {'opening': puzzle['opening'], 'visible_history': history, 'turn_control': control}
+                if player_context is not None:
+                    payload['prior_experience'] = player_context
+                player_input = json.dumps(payload, ensure_ascii=False)
+                reply = clients['player'].complete(prompts['player'], player_input)
+                action = parse_action(reply.text, forced)
+                turn = {'index': len(recorder.turns)+1, **action, 'forced': forced}
+                recorder.turns.append(turn)
+                recorder.event('submission', **turn, raw_player_output=reply.text)
+                recorder.report('running', None)
             if action['type'] == 'question':
                 counted += 1
                 response = answer_question(clients['host'], prompts['host'],
-                                           host_payload(story_context, history, action['text']),
+                                           host_payload(story_context, history, action['text'],
+                                               config.get('context_policy'),
+                                               lambda selection: recorder.event('reference_selection',
+                                                   role='host', submission=turn['index'], **selection)),
                                            prompts.get('host_review',''),
                                            lambda decision:recorder.event('host_review', submission=turn['index'], **decision))
                 label = response.text.strip()
@@ -275,7 +379,10 @@ def play(puzzle, config, recorder, clients, prompts, player_context=None):
                 recorder.event('host_feedback', submission=turn['index'], label=label, raw=response.text)
             else:
                 grader_payload = {'opening': puzzle['opening'], 'reference_answer': puzzle['answer'],
-                                           'story_context': story_context,
+                                           'story_context': grader_story_context(story_context, action['text'],
+                                               config.get('context_policy'),
+                                               lambda selection: recorder.event('reference_selection',
+                                                   role='grader', submission=turn['index'], **selection)),
                                            'rubric': puzzle['rubric'],
                                            'completion_requirements': puzzle.get('completion_requirements', []),
                                            'grading_notes': puzzle.get('grading_notes', ''),

@@ -71,8 +71,14 @@ class HostContextTests(unittest.TestCase):
         self.assertTrue(result['success'])
         host = json.loads(clients['host'].inputs[0][1])['active_puzzle']
         grader = json.loads(clients['grader'].inputs[0][1])['story_context']
-        self.assertEqual(host, grader)
-        self.assertEqual(host, json.loads((rec.folder/'host_context.json').read_text()))
+        saved = json.loads((rec.folder/'host_context.json').read_text())
+        self.assertEqual(saved, story)
+        for payload in (host, grader):
+            self.assertEqual(payload['canonical_solution'], saved['canonical_solution'])
+            self.assertEqual(payload['canonical_facts'], saved['canonical_facts'])
+            self.assertEqual(payload['completion_requirements'], saved['completion_requirements'])
+            self.assertNotIn('review_status', payload)
+            self.assertNotIn('binding_version', payload)
         public = json.dumps(clients['player'].inputs)
         for marker in ('PRIVATE_', 'SECRET_', 'canonical_facts', 'host_examples'):
             self.assertNotIn(marker, public)

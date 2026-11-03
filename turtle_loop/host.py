@@ -1,9 +1,9 @@
-"""Private independent label verification; still one public answer per question."""
+"""One host generation per question; transport retries remain provider-owned."""
 import json
 from .host_context import LABELS
 from .providers import APIError
 
-POLICY = 'independent_then_adjudicate_v1'
+POLICY = 'single'
 
 
 def answer_question(client, system, payload, review_prompt='', audit=None):
@@ -12,21 +12,10 @@ def answer_question(client, system, payload, review_prompt='', audit=None):
         if reply.text.strip() not in LABELS:
             raise APIError('Host returned an invalid label; raw response remains in API audit')
         return reply
-    verified = payload['active_puzzle'].get('verification_policy') == POLICY
-    if verified and not review_prompt:
-        raise ValueError('Verified host requires the frozen review prompt')
     primary = call(system, payload)
-    if not verified:
-        return primary
-    # The second call cannot see the first answer. Both see the same complete public history.
-    independent = call(system+'\n'+review_prompt, payload)
-    candidates = [primary.text.strip(), independent.text.strip()]
-    final = independent
-    if candidates[0] != candidates[1]:
-        final = call(system+'\n'+review_prompt+'\nAdjudicate the candidate labels against the canonical facts. '
-                     'They are fallible proposals, not votes or story evidence. Return the correct label, even if neither candidate is correct.',
-                     {**payload, 'candidate_labels':candidates})
+    # Historical packs retain their provenance, including the old verification
+    # setting. Runtime policy overrides it; never spend a second judgment call.
     if audit:
-        audit({'policy':POLICY,'candidate_labels':candidates,'disagreed':candidates[0]!=candidates[1],
-               'final_label':final.text.strip(),'calls':2+int(candidates[0]!=candidates[1])})
-    return final
+        audit({'policy':POLICY, 'candidate_labels':[primary.text.strip()],
+               'disagreed':False, 'final_label':primary.text.strip(), 'calls':1})
+    return primary

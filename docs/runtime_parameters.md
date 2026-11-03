@@ -117,7 +117,7 @@ python3 scripts/play.py run --dataset "$TURTLE_DATASET" \
 
 ### 5. JSON 实验配置：全部字段
 
-顶层仅允许以下四个字段，拼错或添加其他字段会报错：
+顶层允许以下字段，拼错或添加其他字段会报错：
 
 | 字段 | 类型 / 默认值 | 含义 |
 | --- | --- | --- |
@@ -125,6 +125,26 @@ python3 scripts/play.py run --dataset "$TURTLE_DATASET" \
 | `host` | 模型配置对象，必填（或 CLI 提供） | 普通问题的四标签主持模型。 |
 | `player` | 模型配置对象，必填（或 CLI 提供） | 提问并提交完整故事的模型。 |
 | `grader` | 模型配置对象或字符串 `"host"`；默认 `"host"` | 私有答案评估模型；默认复用 host 参数。 |
+| `pricing` | 可选对象 | 自定义估算费率；见[费用字段](study_20261102.md#token-与费用记录自动启用)。 |
+| `context_policy` | 可选对象 | 本地参考检索预算，字段见下表；所有供应商通用。 |
+| `session_mode` | 字符串，默认 `"persistent"` | 每局角色隔离持续会话；`"replay"` 每次独立重放，用于对照。Codex显式thread续聊，Responses用previous_response_id，其余供应商本地多轮messages。persistent中断不自动恢复或降级。 |
+
+`codex_cli`角色配置支持 `provider`、`model`、`reasoning_effort`（默认high）、`timeout`（默认240秒，范围1–600）、
+`max_retries`（默认2，整数0–5）和 `usage_scope`（默认 `thread_total`；可设 `turn`）。
+本机CLI 0.154.0续聊返回thread累计usage，所以每次按同一lane的前后差值记账；原累计量、baseline和
+有效每轮usage同时归档。若所用CLI明确改为逐轮usage，须显式设置 `usage_scope: turn`，不能凭单轮大小猜测。
+计数倒退或baseline字段缺失时费用标未知，不套零值。该参数不适用于HTTP供应商。
+
+| `context_policy` 字段 | 默认值 / 范围 | 含义 |
+| --- | --- | --- |
+| `host_examples_limit` | 6 / 整数 0–20 | 每问最多6条相关参考，0禁用示例 |
+| `grader_examples_limit` | 3 / 整数 0–20 | 每次交卷最多3条相关判例 |
+| `host_examples_max_chars` | 6000 / 整数 0–50000 | Host参考列表JSON字符预算，不是token数；0禁用示例 |
+| `grader_examples_max_chars` | 3000 / 整数 0–50000 | Grader参考列表JSON字符预算；0禁用示例 |
+
+仅在本题已绑定的参考中本地检索，数量与字符双限制；过长案例整条跳过并记录。
+普通问题固定一次Host判断，不能通过旧题包的 `verification_policy` 恢复多次复核。
+完整汤底及当前对话历史不受以上参考预算裁剪。参见[具体设计](study_20261102.md#11月3日参考检索与精简评分上下文)。
 
 host / player / grader 对象均仅允许下列九个字段：
 
@@ -181,7 +201,7 @@ host / player / grader 对象均仅允许下列九个字段：
 
 ### 6. Host、提交和计分规则
 
-三个角色分别使用 [host prompt](../prompts/loop_host_v1.txt)、[player prompt](../prompts/loop_player_v1.txt)、[grader prompt](../prompts/loop_grader_v1.txt)。host 根据当前题的统一私有事实、专属示例（如已配置）和公开历史回答；grader 使用同一事实快照与评分规则；player 只看汤面、自己的提交和四标签反馈。每次调用重传完整可见历史，不继续供应商私有 reasoning 状态，不使用工具。表格没有逐题经过审核的大量问答示例，新 loop 不能据此声称已经达到高准确性。
+三个角色分别使用 [host prompt](../prompts/loop_host_v1.txt)、[player prompt](../prompts/loop_player_v1.txt)、[grader prompt](../prompts/loop_grader_v1.txt)。host 根据当前题的统一私有事实、检索示例和公开历史回答；grader 使用精简事实视图与完整评分规则；player 只看授权的公开材料。默认每局持续独立角色会话，以增量更新上下文；`replay`可作对照，不使用工具。持续会话并不免除历史计费，也不能保证评分不受先前答案锚定；[设计与限制](study_20261102.md#持续会话隔离和对照)说明具体边界。
 
 普通问题由 host 输出一个标签；交卷由 grader 私下评分，再由程序生成相同四标签之一。player **看不到得分、缺失项或解释**。player 的响应协议为 `{"type":"question","text":"..."}` 或 `{"type":"final","text":"..."}`，最终答案应在一次 final 中写完整；非法格式保留日志并报错。
 

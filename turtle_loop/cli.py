@@ -12,13 +12,14 @@ from .dataset import load_dataset, overview
 from .engine import Recorder, dump, load_prompts, play, summarize_batch
 from .providers import Client, Reply, resolve_env, validate_profile
 from .costs import pricing_config
+from .host_context import context_policy
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
 def configuration(args):
     raw = json.loads(Path(args.config).read_text()) if args.config else {'max_questions': 100}
-    allowed = {'host', 'player', 'grader', 'max_questions', 'pricing'}
+    allowed = {'host', 'player', 'grader', 'max_questions', 'pricing', 'context_policy', 'session_mode'}
     if set(raw) - allowed:
         raise ValueError(f'Unknown experiment settings: {set(raw)-allowed}')
     for role in ('host', 'player', 'grader'):
@@ -37,6 +38,10 @@ def configuration(args):
         raise ValueError('grader must be a profile object or "host"')
     raw = resolve_env(raw)
     raw['pricing'] = pricing_config(raw.get('pricing'))
+    raw['context_policy'] = context_policy(raw.get('context_policy'))
+    raw.setdefault('session_mode', 'persistent')
+    if raw['session_mode'] not in ('persistent', 'replay'):
+        raise ValueError('session_mode must be persistent or replay')
     raw.setdefault('max_questions', 100)
     if type(raw['max_questions']) is not int or not 1 <= raw['max_questions'] <= 100:
         raise ValueError('max_questions must be an integer from 1 to 100')
@@ -70,7 +75,7 @@ def batch(args):
     dump(folder/'batch_config.json', {'models_and_budget': config, 'puzzle_ids': [p['id'] for p in puzzles],
                                     'repeats': args.repeat, 'source': data.get('source'),
                                     'source_file_sha256': hashlib.sha256(Path(args.dataset).read_bytes()).hexdigest(),
-                                    'context_policy': 'stateless replay of complete visible history; no tools',
+                                    'context_policy': config['session_mode'] + '; role-isolated; no tools',
                                     'prompt_sha256': {k: hashlib.sha256(v.encode()).hexdigest() for k, v in prompts.items()},
                                     'dry_run': args.dry_run})
     entries = []

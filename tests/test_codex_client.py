@@ -7,6 +7,24 @@ from turtle_loop.providers import Client,APIError
 PROFILE={'provider':'codex_cli','model':'gpt-6-luna','reasoning_effort':'high'}
 
 class CodexTests(unittest.TestCase):
+    def test_cumulative_session_usage_is_differenced_and_raw_turn_mode_supported(self):
+        from turtle_loop.codex_client import turn_usage
+        from turtle_loop.costs import normalize_usage
+        previous={'input_tokens':1934,'cached_input_tokens':0,'cache_write_input_tokens':0,
+                  'output_tokens':16,'reasoning_output_tokens':0}
+        raw={'input_tokens':3915,'cached_input_tokens':1792,'cache_write_input_tokens':0,
+             'output_tokens':32,'reasoning_output_tokens':0}
+        effective=turn_usage(raw,previous,'thread_total')
+        self.assertEqual(effective['input_tokens'],1981)
+        self.assertEqual(effective['output_tokens'],16)
+        self.assertEqual(turn_usage(raw,previous,'turn'),raw)
+        self.assertEqual(turn_usage(previous,raw,'thread_total'),{})
+        normalized=normalize_usage('codex_cli',effective)
+        self.assertEqual(normalized['reasoning_tokens'],0)
+        self.assertEqual(normalized['total_tokens'],1997)
+        self.assertEqual(normalize_usage('codex_cli',{'input_tokens':10,'cached_input_tokens':0,
+                         'cache_write_input_tokens':3,'output_tokens':2,'reasoning_output_tokens':1})['cache_write_tokens'],3)
+
     @patch('turtle_loop.codex_client.shutil.which',return_value='/bin/codex')
     def test_official_cli_arguments_and_usage(self,_):
         output='\n'.join(json.dumps(x) for x in [

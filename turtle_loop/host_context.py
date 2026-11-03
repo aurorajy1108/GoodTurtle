@@ -2,6 +2,9 @@
 import copy
 import hashlib
 import json
+import math
+import re
+from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -84,5 +87,115 @@ def build_story_context(puzzle, root=ROOT):
     return context
 
 
-def host_payload(context, history, question):
-    return {'active_puzzle': context, 'visible_history': history, 'current_question': question}
+RUNTIME_VERSION = 'single-retrieved-session-v2'
+CONTEXT_DEFAULTS = {'host_examples_limit': 6, 'grader_examples_limit': 3,
+                    'host_examples_max_chars': 6000, 'grader_examples_max_chars': 3000}
+# Whitelist story semantics. Full originals and provenance stay in host_context.json.
+STORY_FIELDS = ('puzzle_id', 'opening', 'reference_answer', 'canonical_solution',
+                'canonical_facts', 'explicit_negatives', 'unknown_details',
+                'irrelevant_details', 'completion_requirements', 'event_order',
+                'knowledge_states', 'label_boundaries')
+HISTORY_FIELDS = ('question', 'answer', 'type', 'text', 'feedback', 'role', 'content')
+STOPWORDS = set('a an the is are was were be been being do does did of to in on at '
+                'for from by with as and or that this it its he she they his her their '
+                'have has had would could can will some any what which who how why '
+                'statement correct false true'.split())
+
+
+def context_policy(value=None):
+    value = {} if value is None else value
+    if not isinstance(value, dict) or set(value) - set(CONTEXT_DEFAULTS):
+        raise ValueError('Unknown context_policy settings')
+    policy = {**CONTEXT_DEFAULTS, **value}
+    for key, number in policy.items():
+        ceiling = 20 if key.endswith('_limit') else 50000
+        if type(number) is not int or not 0 <= number <= ceiling:
+            raise ValueError(f'{key} must be an integer in [0, {ceiling}]')
+    return policy
+
+
+def compact_example(example):
+    """Never truncate a precedent's question, label or history: meaning is atomic."""
+    result = {key: copy.deepcopy(example[key]) for key in ('question', 'answer')}
+    if example.get('public_history'):
+        result['public_history'] = [
+            {key: copy.deepcopy(turn[key]) for key in HISTORY_FIELDS if key in turn}
+            for turn in example['public_history']]
+    return result
+
+
+def _terms(text):
+    return [word for word in re.findall(r"\w+", text.casefold()) if word not in STOPWORDS]
+
+
+def retrieve_examples(context, query, history, limit, max_chars):
+    """Local BM25, no model calls. Search only this puzzle's bound references.
+
+    Current wording dominates; the last two turns help resolve pronouns. Exact
+    questions rank first, but their original history is still shown to the host.
+    Oversized examples are skipped whole, never stripped of qualifying history.
+    """
+    examples = context.get('host_examples', [])
+    compact = [compact_example(e) for e in examples]
+    documents = [Counter(_terms(e['question'] + ' ' + json.dumps(e.get('public_history', []), ensure_ascii=False)))
+                 for e in compact]
+    frequencies = Counter(term for doc in documents for term in doc)
+    average = sum(sum(doc.values()) for doc in documents) / max(1, len(documents)) or 1
+    current = Counter(_terms(query))
+    recent = Counter(_terms(json.dumps(history[-2:], ensure_ascii=False)))
+    weights = {term: 4 * min(current[term], 2) + min(recent[term], 1)
+               for term in current.keys() | recent.keys()}
+    ranked = []
+    normalized = lambda text: ' '.join(re.findall(r'\w+', text.casefold()))
+    for index, (example, doc) in enumerate(zip(examples, documents)):
+        score = 0.0
+        for term, weight in weights.items():
+            tf = doc[term]
+            if tf:
+                idf = math.log(1 + (len(documents) - frequencies[term] + .5) / (frequencies[term] + .5))
+                score += weight * idf * tf * 2.2 / (tf + 1.2 * (.25 + .75 * sum(doc.values()) / average))
+        exact = normalized(query) == normalized(example['question'])
+        pinned = example.get('runtime_required') is True
+        if score > 0 or exact or pinned:
+            ranked.append((not pinned, not exact, -score, index))
+    selected, records, skipped = [], [], []
+    for _, _, negative_score, index in sorted(ranked):
+        if len(selected) >= limit:
+            break
+        candidate = compact[index]
+        if len(json.dumps(selected + [candidate], ensure_ascii=False)) > max_chars:
+            skipped.append(examples[index].get('case_id', str(index)))
+            continue
+        selected.append(candidate)
+        records.append({'case_id': examples[index].get('case_id', str(index)),
+                        'source_index': index, 'score': round(-negative_score, 6)})
+    return selected, {'method': 'local_bm25_v1', 'available': len(examples),
+                      'selected': records, 'skipped_oversize': skipped,
+                      'selected_chars': len(json.dumps(selected, ensure_ascii=False)),
+                      'limit': limit, 'max_chars': max_chars}
+
+
+def runtime_story(context):
+    return {key: copy.deepcopy(context[key]) for key in STORY_FIELDS if key in context}
+
+
+def host_payload(context, history, question, policy=None, audit=None):
+    policy = context_policy(policy)
+    examples, selection = retrieve_examples(context, question, history,
+        policy['host_examples_limit'], policy['host_examples_max_chars'])
+    active = runtime_story(context)
+    active['host_examples'] = examples
+    if audit:
+        audit(selection)
+    return {'active_puzzle': active, 'visible_history': history, 'current_question': question}
+
+
+def grader_story_context(context, explanation, policy=None, audit=None):
+    policy = context_policy(policy)
+    examples, selection = retrieve_examples(context, explanation, [],
+        policy['grader_examples_limit'], policy['grader_examples_max_chars'])
+    active = runtime_story(context)
+    active['host_examples'] = examples
+    if audit:
+        audit(selection)
+    return active

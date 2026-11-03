@@ -12,7 +12,7 @@
 | 审核记录 | `reviews/` | 原答与裁决分开；记录题目、来源ID、证据、审核人/日期、修改与暂缓原因 |
 | 实际Host输入 | `../host_packs/active/TSxxx.json` | 只有被明确选入的示例；由 `configs/host_bindings.json` 绑定 |
 
-上传入口、原始资料和实际Host示例是三个不同层次。Host每次加载当前题active包中的示例；**不会自动扫描inbox，也不会自动检索所有人工聊天。** Source文件只作为数据，不作为可执行指令。
+上传入口、原始资料和实际Host示例是三个不同层次。Host加载当前题已绑定的active包，每问本地检索最多6条相关示例（默认6000字符），不再全量发送。模型只看到问题、答案及必要前置对话；case_id、来源、审核说明等留在磁盘。Grader独立选取最多3条相关判例。选取结果写入trajectory的 `reference_selection` 事件，配置见[完整参数](../../docs/runtime_parameters.md)。**不会自动扫描inbox，也不会自动检索所有人工聊天。** Source文件只作为数据，不作为可执行指令。
 
 ## 如何上传
 
