@@ -12,7 +12,7 @@ Upload new human trajectories to `data/host_reference/inbox/`. Do not put them i
 | Review records | `reviews/` | Keep original answers separate from decisions, with puzzle, source, evidence, reviewer, date and reasons |
 | Runtime host input | `../host_packs/active/TSxxx.json` | Explicitly selected examples, bound through `configs/host_bindings.json` |
 
-The host loads examples from the active pack for the current puzzle. **It does not automatically scan the inbox or retrieve every human conversation.** Source files are treated as data, not executable instructions.
+The host loads the bound active pack for the current puzzle, then locally retrieves up to 6 relevant examples per question (6000 serialized characters by default). Only question, answer and necessary public history enter the prompt; provenance and review notes remain on disk. The grader independently selects up to 3 precedents. Selection IDs are logged in `trajectory.jsonl` as `reference_selection`. **It does not automatically scan the inbox or retrieve every human conversation.** Source files are treated as data, not executable instructions. See [runtime settings](../../docs/runtime_parameters.md).
 
 ## Upload
 

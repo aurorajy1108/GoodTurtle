@@ -12,9 +12,11 @@ DISABLED = ('shell_tool','apps','plugins','hooks','multi_agent','browser_use','c
 
 
 def validate(profile):
-    allowed={'provider','model','reasoning_effort','timeout','max_retries'}
+    allowed={'provider','model','reasoning_effort','timeout','max_retries','usage_scope'}
     if set(profile)-allowed:
-        raise ValueError('codex_cli supports only provider, model, reasoning_effort, timeout, max_retries; no API token cap or sampling overrides')
+        raise ValueError('codex_cli supports only provider, model, reasoning_effort, timeout, max_retries, usage_scope; no API token cap or sampling overrides')
+    if profile.get('usage_scope','thread_total') not in ('thread_total','turn'):
+        raise ValueError('Codex usage_scope must be thread_total or turn')
     if not isinstance(profile.get('model'),str) or not profile['model'].strip():
         raise ValueError('codex_cli needs an explicit model')
     if profile.get('reasoning_effort','high') not in ('low','medium','high','xhigh','max','ultra'):
@@ -77,22 +79,46 @@ def output_contract(user):
     return obj({'text':string}),'text','\nTRANSPORT OVERRIDE: Put your entire response in one JSON object with the string field text; no other fields.'
 
 
-def complete(profile,role,audit,system,user,attempt=1):
+def turn_usage(raw, previous, scope):
+    """CLI 0.154.0 emits thread totals on resume; never sum those as turns.
+
+    A different CLI can explicitly declare per-turn usage. Counter regressions
+    or missing baseline fields are unknown, not negative costs or guessed zeros.
+    """
+    if scope == 'turn' or previous is None:
+        return dict(raw)
+    if any(type(value) is not int or type(previous.get(key)) is not int or value < previous[key]
+           for key, value in raw.items()):
+        return {}
+    return {key: value-previous[key] for key,value in raw.items()}
+
+
+def complete(profile,role,audit,system,user,attempt=1,session=None,schema_user=None):
     from .providers import APIError,Reply,RetryableAPIError
     start=time.monotonic()
-    schema,unwrap,override=output_contract(user)
+    schema,unwrap,override=output_contract(schema_user if schema_user is not None else user)
     wire_system=system+override
     record={'role':role,'provider':'codex_cli','model_requested':profile['model'],
             'reasoning_effort':profile.get('reasoning_effort','high'),'attempt':attempt,
             'request':{'system':wire_system,'user':user,'output_schema':schema},
             'transport':'official_codex_exec_structured_v2',
-            'auth':'existing_codex_login','session_policy':'fresh ephemeral session; tools disabled'}
-    with tempfile.TemporaryDirectory(prefix='turtle-role-') as directory:
+           'auth':'existing_codex_login','session_policy':
+               'persistent game/role/lane; tools disabled' if session is not None else 'fresh ephemeral session; tools disabled'}
+    from contextlib import nullcontext
+    workspace = nullcontext(session['workspace'].name) if session is not None else tempfile.TemporaryDirectory(prefix='turtle-role-')
+    with workspace as directory:
         folder=Path(directory)
         (folder/'system.txt').write_text(wire_system)
         (folder/'schema.json').write_text(json.dumps(schema))
         args=command(profile,folder)[:-1]+['--output-schema',str(folder/'schema.json'),
                                          '--output-last-message',str(folder/'last.txt'),'-']
+        if session is not None:
+            args.remove('--ephemeral')
+            if session['response_id']:
+                # Global exec flags (sandbox, cwd, disabled features) remain before
+                # the resume subcommand. Never use --last or discover other threads.
+                args = args[:-1] + ['resume', session['response_id'], '-']
+        (folder/'last.txt').unlink(missing_ok=True)
         try:
             process=subprocess.run(args,input=user,text=True,capture_output=True,
                                    timeout=profile.get('timeout',240),cwd=folder)
@@ -146,9 +172,18 @@ def complete(profile,role,audit,system,user,attempt=1):
     except (ValueError,TypeError):
         valid=False
     ok=process.returncode==0 and completed and bool(text.strip()) and not tool_use and valid and not mismatch
+    if session is not None:
+        ok = ok and bool(thread) and (not session['response_id'] or thread == session['response_id'])
+    raw_usage = dict(usage)
+    usage_scope = profile.get('usage_scope','thread_total')
+    baseline = session.get('codex_usage_total') if session is not None else None
+    usage = turn_usage(raw_usage, baseline, usage_scope)
     audit({**record,'status':'ok' if ok else 'invalid_response','seconds':time.monotonic()-start,
            'response_id':thread,'model_returned':None,'model_verification':'CLI model argument pinned; event stream does not report actual model',
-           'text':text,'raw_text':raw,'usage':usage,'returncode':process.returncode,'diagnostics':events,
+           'text':text,'raw_text':raw,'usage':usage,'raw_usage':raw_usage,
+           'usage_scope':usage_scope,'usage_baseline':baseline,
+           'usage_normalization':'thread_delta' if baseline is not None and usage_scope=='thread_total' else 'unchanged',
+           'returncode':process.returncode,'diagnostics':events,
            'output_channel':'last_message_file' if last.strip() else 'jsonl_event',
            'output_channel_mismatch':mismatch,'finish_reason':'completed' if ok else 'failed'})
     if not ok:
@@ -158,4 +193,6 @@ def complete(profile,role,audit,system,user,attempt=1):
                 and any(marker in diagnostic for marker in ('at capacity', 'rate limit', 'rate_limit'))):
             raise RetryableAPIError(f'{role}: capacity/rate limit before response; see api_calls.jsonl')
         raise APIError(f'{role}: Codex CLI failed (exit={process.returncode}, tools={tool_use}, format={valid}); see api_calls.jsonl')
+    if session is not None:
+        session['codex_usage_total'] = raw_usage
     return Reply(text,usage,thread,profile['model'],'completed',time.monotonic()-start)

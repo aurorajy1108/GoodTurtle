@@ -152,24 +152,66 @@ class Client:
         validate_profile(profile)
         self.profile, self.role, self.audit = profile, role, audit
         self.opener = urllib.request.build_opener(NoRedirect)
+        self.session = None
+
+    def begin_game(self, folder, event):
+        from .sessions import GameSession
+        if self.session is not None:
+            raise ValueError('Client already belongs to a game')
+        self.session = GameSession(self.role, folder, event)
+
+    def close_game(self):
+        if self.session is not None:
+            self.session.close()
 
     def complete(self, system, user):
+        try:
+            return self._complete(system, user)
+        except BaseException:
+            if self.session is not None:
+                self.session.failed = True
+            raise
+
+    def _complete(self, system, user):
+        lane = None
+        metadata = {}
+        original_user = user
+        if self.session is not None:
+            lane, payload, system, user, metadata = self.session.prepare(system, user)
+        def audit(record):
+            self.audit({**record, **metadata})
         if self.profile.get('provider') == 'codex_cli':
             from .codex_client import complete
             retries = self.profile.get('max_retries', 2)
             for attempt in range(1, retries + 2):
                 try:
-                    return complete(self.profile, self.role, self.audit, system, user, attempt=attempt)
+                    reply = complete(self.profile, self.role, audit, system, user, attempt=attempt,
+                                     session=lane, schema_user=original_user)
+                    if lane is not None:
+                        self.session.accept(lane, payload, user, reply)
+                    return reply
                 except RetryableAPIError:
                     if attempt > retries:
                         raise
                     time.sleep(min(2 ** (attempt - 1), 8))
         url, headers, body, kind = build_request(self.profile, system, user)
+        if lane is not None:
+            if kind == 'responses':
+                body['store'] = True
+                # Instructions are reapplied, not appended as another system
+                # message in the conversation chain on every turn.
+                body['instructions'] = system
+                body['input'] = [{'role': 'user', 'content': user}]
+                if lane['response_id']:
+                    body['previous_response_id'] = lane['response_id']
+            else:
+                messages = lane['messages'] + [{'role': 'user', 'content': user}]
+                body['messages'] = messages if kind == 'anthropic' else [{'role': 'system', 'content': system}] + messages
         for attempt in range(self.profile.get('max_retries', 2) + 1):
             start = time.monotonic()
             data = None
             response_recorded = False
-            record = {'role': self.role, 'provider': self.profile['provider'],
+            record = {**metadata, 'role': self.role, 'provider': self.profile['provider'],
                       'model_requested': self.profile['model'], 'endpoint': url,
                       'attempt': attempt + 1, 'request': body}
             try:
@@ -185,18 +227,22 @@ class Client:
                 # Truncated/refused outputs are recorded, not silently repaired/re-sampled.
                 if not reply.text.strip() or reply.finish_reason in ('length', 'max_tokens', 'incomplete', 'failed', 'refusal', 'content_filter', 'tool_use', 'tool_calls'):
                     raise APIError(f'{self.role}: empty, refused or truncated response ({reply.finish_reason})')
+                if lane is not None:
+                    if kind == 'responses' and not reply.response_id:
+                        raise APIError('Persistent Responses session requires a response ID; no stateless fallback')
+                    self.session.accept(lane, payload, user, reply)
                 return reply
             except urllib.error.HTTPError as exc:
                 code = exc.code
                 self.audit({**record, 'status': 'http_error', 'http_status': code,
                             'seconds': time.monotonic()-start})
-                retry = code == 429 or 500 <= code < 600
+                retry = code == 429 or (lane is None and 500 <= code < 600)
                 # Do not dump vendor error bodies: they can echo credentials/prompts.
                 error = APIError(f'{self.role}: HTTP {code}; check endpoint, model access and key')
             except (urllib.error.URLError, TimeoutError, ConnectionError) as exc:
                 self.audit({**record, 'status': 'transport_error', 'error_type': type(exc).__name__,
                             'seconds': time.monotonic()-start})
-                retry, error = True, APIError(f'{self.role}: transport failure ({type(exc).__name__})')
+                retry, error = lane is None, APIError(f'{self.role}: transport failure ({type(exc).__name__})')
             except (json.JSONDecodeError, APIError) as exc:
                 if not response_recorded:
                     self.audit({**record, 'status': 'invalid_response', 'seconds': time.monotonic()-start,

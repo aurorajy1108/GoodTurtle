@@ -50,12 +50,12 @@ def normalize_usage(provider, usage):
     inp = _count(u.get('input_tokens', u.get('prompt_tokens')))
     out = _count(u.get('output_tokens', u.get('completion_tokens')))
     cached = _count(u.get('cached_input_tokens', u.get('prompt_cache_hit_tokens', details.get('cached_tokens'))))
-    writes = _count(u.get('cache_creation_input_tokens', details.get('cache_write_tokens', 0)))
+    writes = _count(u.get('cache_creation_input_tokens', u.get('cache_write_input_tokens', details.get('cache_write_tokens', 0))))
     if provider == 'anthropic':
         # Anthropic input_tokens excludes both cache reads and cache creation.
         cached = _count(u.get('cache_read_input_tokens', 0)) if inp is not None else None
         inp = inp + cached + writes if None not in (inp, cached, writes) else None
-    reasoning = _count(u.get('reasoning_tokens', output_details.get('reasoning_tokens')))
+    reasoning = _count(u.get('reasoning_tokens', u.get('reasoning_output_tokens', output_details.get('reasoning_tokens'))))
     valid = (inp is not None and out is not None and cached is not None and writes is not None
              and cached + writes <= inp and (reasoning is None or reasoning <= out))
     return dict(input_tokens=inp, cached_input_tokens=cached, cache_write_tokens=writes,

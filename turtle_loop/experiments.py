@@ -52,6 +52,22 @@ class TeamPlayer:
         self.sync_interval = sync_interval
         self.owners = []
         self.shared_count = 0
+        if getattr(recorder,'resumed',False) and not (recorder.turns and 'label' not in recorder.turns[-1]):
+            saved_discussions=recorder.folder/'collaboration.jsonl'
+            completed_discussions=[json.loads(x) for x in saved_discussions.read_text().splitlines()] if saved_discussions.exists() else []
+            boundary=completed_discussions[-1].get('timestamp','') if completed_discussions else ''
+            if any(c.get('role') in ('player','partner') and c.get('status')=='ok'
+                   and c.get('timestamp','')>boundary for c in recorder.calls):
+                raise ValueError('Cannot resample partial internal team outputs after interruption')
+        if recorder.turns:
+            saved = recorder.folder/'collaboration.jsonl'
+            self.discussions = [json.loads(x) for x in saved.read_text().splitlines()] if saved.exists() else []
+            if len(self.discussions) != len(recorder.turns):
+                raise ValueError('Cannot resume an incomplete internal team discussion')
+            self.turn = len(recorder.turns)
+            if strategy == 'shared_buffer':
+                self.owners = [0 if r['actor']=='A' else 1 for r in self.discussions]
+                self.shared_count = self.discussions[-1]['published_turns']
 
     def complete(self, system, user):
         self.turn += 1
@@ -415,9 +431,21 @@ def run(args):
         validate_profile(partner, require_key=not args.dry_run)
     blocks = make_plan(args,bank)
     folder = Path(args.out) if args.out else ROOT/'runs/api'/('experiment_'+uuid.uuid4().hex[:8])
-    folder.mkdir(parents=True,exist_ok=False)
+    resuming = getattr(args,'resume',False)
+    if resuming:
+        saved_plan=json.loads((folder/'plan.json').read_text())
+        if (saved_plan['config']!=config or saved_plan['partner']!=partner
+                or saved_plan['blocks']!=blocks
+                or saved_plan['dataset_sha256']!=hashlib.sha256(Path(args.dataset).read_bytes()).hexdigest()):
+            raise ValueError('Resume configuration, schedule or dataset mismatch')
+        previous_args=saved_plan['arguments']
+        for key in ('memory','source_feedback','source_policy','sync_interval','controls','control_source'):
+            if previous_args.get(key)!=getattr(args,key,None):
+                raise ValueError('Resume argument mismatch: '+key)
+    else:
+        folder.mkdir(parents=True,exist_ok=False)
     prompts = load_prompts()
-    dump(folder/'plan.json',{'kind':args.command,'seed':args.seed,'arguments':vars(args),'blocks':blocks,
+    plan_record={'kind':args.command,'seed':args.seed,'arguments':vars(args),'blocks':blocks,
                             'config':config,'partner':partner,
                             'dataset_sha256':hashlib.sha256(Path(args.dataset).read_bytes()).hexdigest(),
                             'source_feedback':getattr(args,'source_feedback',None),
@@ -429,9 +457,10 @@ def run(args):
                             'meaning':'Context transfer only; weights unchanged. Seed controls scheduling, not API sampling.',
                             'controls_note':'Unrelated-source neutrality is a hypothesis requiring human review; history lengths are recorded, not matched. Shared buffer exposes pending question text but withholds unsynced answers.',
                             'condition_order':'Random base order rotated across repeats; shuffled blocks.',
-                            'team_order': 'Random base order per puzzle with cyclic rotation over repeats; blocks shuffled.' if args.command=='team' else None})
+                            'team_order': 'Random base order per puzzle with cyclic rotation over repeats; blocks shuffled.' if args.command=='team' else None}
+    if not resuming:dump(folder/'plan.json',plan_record)
     dump(folder/'experiment_prompts.json',{'advice':ADVICE,'memory':MEMORY,'transfer':TRANSFER,'revision':REVISION,'synthesis':SYNTHESIS})
-    rows=[]
+    rows=json.loads((folder/'experiment_runs.json').read_text()) if resuming else []
     source_cache={}
     control_cache={}
     fixed_source=getattr(args,'source_policy','fixed') == 'fixed'
@@ -442,7 +471,20 @@ def run(args):
         name=block['block']+'_'+condition
         target_transfer_policy = args.command == 'continual' and condition not in SOURCE_CONDITIONS
         used_prompts={**prompts,'player':prompts['player']+(TRANSFER if target_transfer_policy else '')}
-        rec=Recorder(folder/name,bank[pid],config,used_prompts,echo=not args.quiet)
+        saved_row=next((r for r in rows if r['run_dir']==name),None)
+        if saved_row:
+            rec=Recorder.restore(folder/name,bank[pid],config,used_prompts,echo=not args.quiet)
+            prior_path=rec.folder/'prior_experience.json'
+            if (json.loads(prior_path.read_text()) if prior_path.exists() else None)!=context:
+                raise ValueError('Resume prior experience changed')
+            if team!='solo' and json.loads((rec.folder/'partner_config.json').read_text())!=partner:
+                raise ValueError('Resume partner changed')
+            if saved_row['status']=='completed':
+                return rec,json.loads((rec.folder/'result.json').read_text())
+            rec.event('resume',previous_status=saved_row['status'],preserved_submissions=len(rec.turns),
+                      pending_feedback=sum('label' not in t for t in rec.turns))
+        else:
+            rec=Recorder(folder/name,bank[pid],config,used_prompts,echo=not args.quiet)
         if context is not None:
             dump(rec.folder/'prior_experience.json',context)
             dump(rec.folder/'transfer_metadata.json', {
@@ -457,7 +499,10 @@ def run(args):
              'source':block.get('source'),'target':block['target'],'group':block.get('group'),
              'relation_hypothesis':block.get('relation_hypothesis'),
              **{k:block.get(k) for k in ('analysis_role','source_policy','source_run_dir','source_context_sha256','control_source_run_dir')}}
-        rows.append({**row,**rec.report('dry_run' if args.dry_run else 'running',None)})
+        row_index=rows.index(saved_row) if saved_row else len(rows)
+        current={**row,**rec.report('dry_run' if args.dry_run else 'running',None)}
+        if saved_row:rows[row_index]=current
+        else:rows.append(current)
         write_reports(folder,rows,blocks,args.command)
         if args.dry_run:
             result=rec.report('dry_run','no_model_calls')
@@ -466,7 +511,7 @@ def run(args):
             if team != 'solo':
                 clients['player']=TeamPlayer(clients['player'],Client(partner,'partner',rec.audit),team,rec,getattr(args,'sync_interval',4))
             result=play(bank[pid],config,rec,clients,used_prompts,player_context=context)
-        rows[-1]={**row,**result}
+        rows[row_index]={**row,**result}
         write_reports(folder,rows,blocks,args.command)
         print(name,result['status'],'count=',result['counted_questions'],flush=True)
         return rec,result
@@ -585,6 +630,7 @@ def main(argv=None):
         p.add_argument('--out')
         p.add_argument('--dry-run',action='store_true')
         p.add_argument('--quiet',action='store_true')
+        p.add_argument('--resume',action='store_true',help='Resume a stopped copied batch with identical frozen inputs; preserve submitted actions and budget')
         p.add_argument('--on-error', choices=['continue','stop'], default='continue',
                        help='continue: record invalid game and run remaining independent conditions/blocks; never count API errors as puzzle failure')
         if name=='continual':
