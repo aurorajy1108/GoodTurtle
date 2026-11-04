@@ -8,7 +8,7 @@
 
 ## 11月2日当前实验入口
 
-最新默认：Host/grader=`gpt-6.1-sol` high；player/partner=`gpt-5.6-luna` low。
+最新默认：Host=`gpt-6.1-sol` medium，grader=`gpt-6.1-sol` high；player/partner=`gpt-5.6-luna` low。
 CL 固定每组首题为 B；同一批次每道 A 解一次后冻结复用，揭示 A 完整答案。
 B 每次是新会话、独立100次额度。Token/费用自动记录，Codex 账号费用仅作 API 等价估算。
 完整参数、实验方向、四种协作策略及费用说明见 [当前实验文档](study_20261102.md)。
@@ -97,11 +97,11 @@ export ANTHROPIC_MODEL='你账号可用的准确模型 ID'
 
 ### 使用本机现有 Codex 登录
 
-确认本机的 `codex` 命令可用且已登录，使用 `--config configs/loop.codex.json`。当前配置请求 host/grader 为 `gpt-6.1-sol`、player 为 `gpt-6-luna`，均使用 reasoning `high`、单次超时 600 秒；需要账号支持相应模型。新配置只影响之后启动的批次。不要复制其他人的登录文件。如果账号不支持该 ID，请编辑自己的配置文件，实验报告会记录实际请求配置。
+确认本机的 `codex` 命令可用且已登录，使用 `--config configs/loop.codex.json`。当前配置请求 host 为 `gpt-6.1-sol / medium`、grader 为 `gpt-6.1-sol / high`、player/默认partner 为 `gpt-5.6-luna / low`，单次超时 600 秒；需要账号支持相应模型。新配置只影响之后启动的批次。不要复制其他人的登录文件。如果账号不支持该 ID，请编辑自己的配置文件，实验报告会记录实际请求配置。
 
-该后端通过官方 `codex exec` 调用，工具禁用，每次为新会话。部分 CLI 版本可能不支持本项目使用的参数；若启动报 unsupported option，请查看本机 `codex exec --help` 与 `api_calls.jsonl`，不要把失败当作模型成绩。CLI 的模型 metadata fallback 警告不证明实际换了模型；实际模型名若没有由事件返回，报告保持未独立核验。
+该后端通过官方 `codex exec` 调用，工具禁用；默认每局每角色独立持续会话，同局续接对应 thread ID，下一局新建。部分 CLI 版本可能不支持本项目使用的参数；若启动报 unsupported option，请查看本机 `codex exec --help` 与 `api_calls.jsonl`，不要把失败当作模型成绩。CLI 的模型 metadata fallback 警告不证明实际换了模型；实际模型名若没有由事件返回，报告保持未独立核验。
 
-新 host 每次普通提问内部调用 2 次，分歧时 3 次；只有最终四标签进入公开历史。证据格式修复最多增加一次 grader 调用。问题计数不变，调用成本增加。参见 [host 修复与回归检查](archive/host_repair_v5.md)。
+当前 host 每次普通提问只调用一次；只有最终四标签进入公开历史。证据格式修复最多增加一次 grader 调用。新增的自由协作 MAS 及角色 ablation 参数见 [free_dialogue](mas_free_dialogue.md)。
 
 ## 4. 跑一局（先 dry-run，再真实调用）
 

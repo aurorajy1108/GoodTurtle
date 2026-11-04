@@ -4,7 +4,9 @@ English | [中文](README.zh-CN.md)
 
 GoodTurtle studies in-context experience transfer (continual learning, or CL) and two-agent collaboration using lateral thinking puzzles. It includes **50 English puzzles and 161 scoring checkpoints**, configurable host, player and grader roles, trajectories, and experiment summaries.
 
-**Current scope: one-repeat CL Set 1 and TS038 team experiments are authorized; other experiments remain paused.** Host behavior and scoring annotations still need validation; passing unit tests does not establish model accuracy. The default requested host/grader is `gpt-6.1-sol` with high reasoning, and the player and default partner are `gpt-5.6-luna` with low reasoning. Host answers use four labels: `yes`, `no`, `yes and no`, and `irrelevant`.
+**Current scope: one-repeat CL Set 1 and TS038 team experiments are authorized; other experiments remain paused.** Host behavior and scoring annotations still need validation; passing unit tests does not establish model accuracy. The default host is `gpt-6.1-sol` with medium reasoning; the grader stays `gpt-6.1-sol` with high reasoning, and the player and default partner are `gpt-5.6-luna` with low reasoning. Host answers use four labels: `yes`, `no`, `yes and no`, and `irrelevant`.
+
+New optional MAS strategy: [`free_dialogue`](docs/mas_free_dialogue.md) gives two independent persistent agents one shared public chat, adaptive speaking order, and explicit role ablations. Select `--strategies solo,free_dialogue`; the existing four-strategy study default is preserved.
 
 The [current five-set study](docs/study_20261102.md) defaults to a fixed target B per set and one frozen A trajectory per source puzzle within a batch. B starts a fresh 100-submission session on every repeat. Reverse positive directions require `--directions bidirectional` and are exploratory; `--source-policy per-repeat` explicitly restores regenerating A. The study launcher defaults to writing a plan only.
 

@@ -10,6 +10,7 @@ SESSION_INSTRUCTIONS = '''
 SESSION PROTOCOL v1: Messages after the initial JSON carry context_update.
 Maintain the supplied JSON context: set replaces a top-level field completely;
 remove deletes fields; append_visible_history appends to visible_history.
+append_shared_dialogue appends speaker-tagged messages to shared_dialogue.
 update_objects applies these same rules recursively inside each named object.
 For shared_buffer/private exploration, visible_history may be replaced to restore
 chronological order at synchronization; no missing teammate answers may be inferred.
@@ -22,20 +23,19 @@ Follow the same response schema on every turn. Do not describe context updates.
 
 def delta(previous, current):
     """Exact reconstruction, not model summarization; shared-buffer reorder is a set."""
-    updates, removed, appended, nested = {}, sorted(set(previous) - set(current)), None, {}
+    updates, removed, appended, nested = {}, sorted(set(previous) - set(current)), {}, {}
     for key, value in current.items():
         if key in previous and previous[key] == value:
             continue
         old = previous.get(key)
-        if key == 'visible_history' and isinstance(old, list) and isinstance(value, list) and value[:len(old)] == old:
-            appended = value[len(old):]
+        if key in ('visible_history','shared_dialogue') and isinstance(old, list) and isinstance(value, list) and value[:len(old)] == old:
+            appended['append_'+key] = value[len(old):]
         elif isinstance(old, dict) and isinstance(value, dict):
             nested[key] = delta(old, value)['context_update']
         else:
             updates[key] = value
     result = {'set': updates, 'remove': removed}
-    if appended is not None:
-        result['append_visible_history'] = appended
+    result.update(appended)
     if nested:
         result['update_objects'] = nested
     return {'context_update': result}

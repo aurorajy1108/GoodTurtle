@@ -18,6 +18,7 @@ from turtle_loop.engine import dump
 from turtle_loop.experiments import make_plan, stats, write_reports
 from turtle_loop.host_context import build_story_context
 from turtle_loop.providers import resolve_env, validate_profile
+from turtle_loop.dialogue import add_dialogue_arguments, dialogue_settings
 from scripts.render_trajectories import render
 
 
@@ -171,6 +172,7 @@ def main(argv=None):
     p.add_argument('--repeat', type=int, default=3, help='Independent games per puzzle and condition')
     p.add_argument('--strategies', default='solo,solo_reflect,independent,shared_buffer')
     p.add_argument('--sync-interval', type=int, default=4, help='shared_buffer synchronization interval in completed submissions')
+    add_dialogue_arguments(p)
     p.add_argument('--on-error', choices=['continue','stop'], default='continue',
                    help='continue records failures and schedules remaining independent games; stop prevents new jobs after a failed batch')
     p.add_argument('--workers', type=int, default=3, help='Concurrent puzzle batches, 1–4')
@@ -186,6 +188,7 @@ def main(argv=None):
         return 0
     if not args.dataset or not args.config:
         p.error('--dataset and --config are required for new sweeps')
+    dialogue=dialogue_settings(args)
     if not 1 <= args.workers <= 4 or args.repeat < 1 or not 1 <= args.poll_seconds <= 60:
         p.error('workers must be 1–4, repeat positive, poll-seconds 1–60')
     ids = args.puzzles.split(',')
@@ -206,6 +209,7 @@ def main(argv=None):
     jobs = [{'puzzle_id': q['id'], 'seed': args.seed + i} for i, q in enumerate(puzzles)]
     random.Random(args.seed).shuffle(jobs)
     manifest = {'arguments': vars(args), 'repeat': args.repeat, 'strategies': args.strategies.split(','),
+                'dialogue_policy':dialogue,
                 'planned_games': len(jobs) * args.repeat * len(args.strategies.split(',')),
                 'jobs': jobs, 'dry_run': args.dry_run,
                 'selection': 'Prespecified narrative-complexity candidates; not empirically established difficulty.',
@@ -219,6 +223,8 @@ def main(argv=None):
                         '--dataset', str(snap / 'data/dataset.json'), '--config', str(snap / 'configs/run.json'),
                         '--puzzle', pid, '--repeat', str(args.repeat), '--seed', str(job['seed']),
                         '--strategies', args.strategies, '--sync-interval', str(args.sync_interval), '--on-error', args.on_error, '--quiet', '--out', str(out / 'batches' / pid)]
+        commands[pid].extend(['--dialogue-roles',args.dialogue_roles,'--dialogue-scheduling',args.dialogue_scheduling,
+                             '--dialogue-max-discussion',str(args.dialogue_max_discussion),'--dialogue-start',args.dialogue_start])
         if args.dry_run:
             commands[pid].append('--dry-run')
         if partner is not None:

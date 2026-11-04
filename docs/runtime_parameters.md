@@ -218,6 +218,8 @@ host / player / grader 对象均仅允许下列九个字段：
 
 ### 7. 轨迹、performance 和审核输出
 
+新增 `free_dialogue` 的完整角色、调度、讨论预算与 ablation 参数见 [共享聊天 MAS](mas_free_dialogue.md)。启用 `--strategies solo,free_dialogue` 后，两名 agent 独立持续会话，完整聊天及分角色动作统计也会保存；内部讨论调用同样记录 tokens/费用。
+
 终端会显示 batch 路径，直接用浏览器打开其中的 `index.html`。逐局 HTML 在运行中每 5 秒刷新，无需启动网页服务。
 
 | 位置 / 文件 | 内容 |

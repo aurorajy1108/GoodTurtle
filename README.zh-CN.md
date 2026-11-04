@@ -4,9 +4,11 @@
 
 研究海龟汤中的上下文经验迁移（CL）与双 agent 合作。当前有 **50 道英文题目、161 个评分点**，支持可配置的 Host / player / grader、完整轨迹和实验统计。
 
-**当前授权：CL Set 1 与 TS038 各一组，其余实验暂停。** Host 与评分标注仍待人工确认；单元测试通过不代表模型回答已经可靠。默认请求 Host / grader `gpt-6.1-sol / high`，player 和默认 partner `gpt-5.6-luna / low`。四种反馈：`yes / no / yes and no / irrelevant`。
+**当前授权：CL Set 1 与 TS038 各一组，其余实验暂停。** Host 与评分标注仍待人工确认；单元测试通过不代表模型回答已经可靠。默认请求 Host `gpt-6.1-sol / medium`，grader 保持 `gpt-6.1-sol / high`，player 和默认 partner `gpt-5.6-luna / low`。四种反馈：`yes / no / yes and no / irrelevant`。
 
 11月3日起新批次：每个普通问题只调用一次Host；本地检索最多6条参考（6000字符），grader单独使用精简上下文、最多3条判例（3000字符）。每局每角色持续独立会话，增量更新上下文；Codex按thread ID续聊，Responses按response ID续聊，其余API本地维护多轮messages。可用 `session_mode: replay` 做独立重放对照。完整汤底、评分规则和当前对话历史仍保留，来源与审核元数据只存磁盘。持续会话不等于历史免计费；中断的persistent局当前不自动恢复，需新建并标记run。配置见[完整参数](docs/runtime_parameters.md)，设计与限制见[当前研究方案](docs/study_20261102.md)。旧冻结实验保持原策略。
+
+新增可选 MAS 策略 [`free_dialogue`](docs/mas_free_dialogue.md)：两名独立持续会话的 agent 共用公开聊天记录，自主选择提问、讨论、交卷和交接，并支持角色分工 ablation。用 `--strategies solo,free_dialogue` 选择；原四策略默认计划保留。
 
 ## 我应该去哪里？
 

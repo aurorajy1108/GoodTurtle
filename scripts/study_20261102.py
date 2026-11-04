@@ -20,6 +20,7 @@ from turtle_loop.engine import dump
 from turtle_loop.cli import configuration
 from turtle_loop.experiments import make_plan, planned_games
 from turtle_loop.costs import write_batch_costs
+from turtle_loop.dialogue import add_dialogue_arguments, dialogue_settings
 from scripts.team_sweep import snapshot
 
 SETS={
@@ -72,6 +73,7 @@ def main(argv=None):
     p.add_argument('--repeat',type=int,default=3,help='Fresh B games per direction/condition; fixed source A is not repeated')
     p.add_argument('--strategies',default='solo,solo_reflect,independent,shared_buffer')
     p.add_argument('--sync-interval',type=int,default=4)
+    add_dialogue_arguments(p)
     p.add_argument('--config',default='configs/loop.codex.json')
     p.add_argument('--dataset',default='data/annotations/turtle50_v4/private.json')
     p.add_argument('--seed',type=int,default=20261102,help='Scheduling only, not remote sampling seed')
@@ -79,6 +81,7 @@ def main(argv=None):
     p.add_argument('--on-error',choices=['stop','continue'],default='stop',help='Default stop prevents spending more calls after a failed game')
     p.add_argument('--out',required=True,help='New output directory; no automatic resume/overwrite')
     args=p.parse_args(argv)
+    dialogue=dialogue_settings(args)
     selected=list(SETS) if args.sets=='all' else [int(n) for n in args.sets.split(',')]
     if not selected or len(set(selected))!=len(selected) or not set(selected)<=set(SETS):p.error('Invalid/duplicate sets')
     teams=args.team_puzzles.split(',')
@@ -111,14 +114,17 @@ def main(argv=None):
         teamargs=argparse.Namespace(command='team',puzzle=','.join(teams),strategies=args.strategies,repeat=args.repeat,seed=args.seed)
         blocks['team']=make_plan(teamargs,bank)
         jobs.append(dict(name='team',argv=[sys.executable,str(snap/'scripts/experiment.py'),'team',*common,
-          '--puzzle',','.join(teams),'--strategies',args.strategies,'--sync-interval',str(args.sync_interval),'--out',str(out/'team')]))
+          '--puzzle',','.join(teams),'--strategies',args.strategies,'--sync-interval',str(args.sync_interval),
+          '--dialogue-roles',args.dialogue_roles,'--dialogue-scheduling',args.dialogue_scheduling,
+          '--dialogue-max-discussion',str(args.dialogue_max_discussion),'--dialogue-start',args.dialogue_start,
+          '--out',str(out/'team')]))
     for job in jobs:
         if args.mode=='dry-run':job['argv'].append('--dry-run')
     hashes={str(x.relative_to(snap)):hashlib.sha256(x.read_bytes()).hexdigest() for x in snap.rglob('*') if x.is_file()}
     dump(out/'snapshot_hashes.json',hashes)
     counts={name:planned_games(bs,name,args.source_policy) for name,bs in blocks.items()}
     dump(out/'study_plan.json',dict(mode=args.mode,arguments=vars(args),groups=g,blocks=blocks,planned_games=counts,jobs=jobs,
-      trajectory_review_owners=OWNERS,config=config,host_versions={pid:build_story_context(x)['binding_version'] for pid,x in bank.items()},
+      trajectory_review_owners=OWNERS,config=config,dialogue_policy=dialogue,host_versions={pid:build_story_context(x)['binding_version'] for pid,x in bank.items()},
       interpretation='CL weights unchanged. Default fixed anchor B and one frozen A experience per source puzzle per batch. Source answer revealed after A; fresh 100 for every B. B repeats are conditional on the frozen A, not independent A samples. Reverse positive directions are exploratory. Relation labels never reach players.',
       controls='direct, transcript+complete source answer, answer_only. Neutral source pairs target the same anchor. No arbitrary reverse negative/neutral target.'))
     print(json.dumps({'out':str(out),'mode':args.mode,'games':counts},ensure_ascii=False),flush=True)

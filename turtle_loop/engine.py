@@ -126,7 +126,7 @@ class Recorder:
         rec.versions.setdefault('original_controller_sha256',rec.versions.get('controller_sha256'))
         rec.versions['controller_sha256'] = hashlib.sha256(b''.join(
             (ROOT/'turtle_loop'/name).read_bytes() for name in
-            ('engine.py','host.py','host_context.py','coverage.py','grader.py','providers.py','codex_client.py','experiments.py','sessions.py'))).hexdigest()
+            ('engine.py','host.py','host_context.py','coverage.py','grader.py','providers.py','codex_client.py','experiments.py','sessions.py','dialogue.py'))).hexdigest()
         rec.pricing = json.loads((folder/'pricing_snapshot.json').read_text())
         rec.turns, rec.calls = [], []
         for line in (folder/'trajectory.jsonl').read_text().splitlines():
@@ -173,7 +173,7 @@ class Recorder:
                          'prompts_sha256':hashlib.sha256(json.dumps(prompts,sort_keys=True).encode()).hexdigest()}
         self.versions['controller_sha256'] = hashlib.sha256(b''.join(
             (ROOT/'turtle_loop'/name).read_bytes() for name in
-            ('engine.py','host.py','host_context.py','coverage.py','grader.py','providers.py','codex_client.py','experiments.py','sessions.py'))).hexdigest()
+            ('engine.py','host.py','host_context.py','coverage.py','grader.py','providers.py','codex_client.py','experiments.py','sessions.py','dialogue.py'))).hexdigest()
         dump(self.folder / 'puzzle_private.json', puzzle)
         dump(self.folder / 'config.json', config)
         dump(self.folder / 'prompts.json', prompts)
@@ -240,6 +240,9 @@ class Recorder:
                       'delta_input_chars': sum(c.get('delta_input_chars', 0) for c in self.calls),
                       'note': 'Character counters cover caller input, not billed tokens or replay-provider wire history; see costs.'},
                   'evaluation_versions': self.versions}
+        dialogue_metrics = self.folder/'dialogue_metrics.json'
+        if dialogue_metrics.exists():
+            result['dialogue_metrics'] = json.loads(dialogue_metrics.read_text())
         dump(self.folder / 'result.json', result)
         self.render(result)
         if status != 'running' and not (self.folder/'human_review.csv').exists():
@@ -280,7 +283,9 @@ class Recorder:
             + ('<p><strong>SCRIPTED DEMO — not model performance</strong></p>' if result['simulation'] else '')
             + '<pre>' + html.escape(self.opening) + '</pre><p>'
             + html.escape(f"{result['status']} · count {result['counted_questions']} · score {result['final_partial_score']}")
-            + '</p><p><a href="token_costs.csv">Token usage and estimated costs</a> · '
+            + '</p>' + ('<p><a href="shared_dialogue.html">Full shared chat: agents A/B and Host</a></p>'
+                         if (self.folder/'shared_dialogue.html').exists() else '')
+            + '<p><a href="token_costs.csv">Token usage and estimated costs</a> · '
               '<a href="cost_summary.json">Cost summary (USD estimate, not actual bill)</a></p>' + ''.join(cards))
         # Model-owned snapshot: never overwrite a human's separate annotation file.
         with (self.folder / 'review_template.csv').open('w', newline='') as stream:
@@ -399,6 +404,8 @@ def _play(puzzle, config, recorder, clients, prompts, player_context=None):
                 if not grade['complete']:
                     counted += 1
             history.append({'type': action['type'], 'text': action['text'], 'feedback': turn['label']})
+            if hasattr(clients['player'], 'observe_feedback'):
+                clients['player'].observe_feedback(turn['index'], action, turn['label'])
             if recorder.echo:
                 print(f"[{puzzle['id']} #{turn['index']} {action['type']}] {action['text']}\nHost: {turn['label']}", flush=True)
             if action['type'] == 'final':

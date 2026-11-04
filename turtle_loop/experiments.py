@@ -17,6 +17,7 @@ from .dataset import load_dataset
 from .engine import Recorder, dump, load_prompts, parse_action, play, summarize_batch
 from .providers import APIError, Client, resolve_env, validate_profile
 from .host_context import build_story_context
+from .dialogue import FreeDialoguePlayer, add_dialogue_arguments, dialogue_settings
 
 ADVICE = '''You are the second solver reviewing a teammate's proposed Turtle Soup action.
 Use only the supplied public puzzle, feedback and proposal. Identify unsupported
@@ -228,8 +229,8 @@ def make_plan(args, bank):
                                    'control_source': control_source if 'unrelated' in controls else None})
     else:
         strategies = args.strategies.split(',')
-        if len(set(strategies)) != len(strategies) or not set(strategies) <= {'solo', 'solo_reflect', 'alternating', 'discuss', 'independent', 'shared_buffer'} or 'solo' not in strategies:
-            raise ValueError('--strategies must include solo and unique values from solo,solo_reflect,alternating,discuss,independent,shared_buffer')
+        if len(set(strategies)) != len(strategies) or not set(strategies) <= {'solo', 'solo_reflect', 'alternating', 'discuss', 'independent', 'shared_buffer', 'free_dialogue'} or 'solo' not in strategies:
+            raise ValueError('--strategies must include solo and unique values from solo,solo_reflect,alternating,discuss,independent,shared_buffer,free_dialogue')
         for puzzle in choose({'puzzles': list(bank.values())}, args.puzzle):
             # Latin cyclic order: each condition occupies every position once per
             # complete cycle. Randomize the base once, not each repeat separately.
@@ -404,12 +405,15 @@ def write_reports(folder, rows, blocks, kind):
     if rows:
         fields = ['block','condition','puzzle_id','repeat','status','success','counted_questions','submissions',
                   'final_partial_score','elapsed_seconds','run_dir','usage','analysis_role','source_policy',
-                  'source_run_dir','source_context_sha256','control_source_run_dir']
+                  'source_run_dir','source_context_sha256','control_source_run_dir',
+                  'dialogue_roles','dialogue_scheduling','dialogue_max_discussion','dialogue_start']
         with (folder/'experiment_runs.csv').open('w',newline='') as f:
             writer=csv.DictWriter(f,fieldnames=fields,extrasaction='ignore');writer.writeheader()
             writer.writerows({**r,'usage':json.dumps(r.get('usage',{}))} for r in rows)
     links = ''.join('<li>'+html.escape(r['block']+' / '+r['condition'])+' — <a href="'+r['run_dir']+'/trajectory.html">trajectory</a>'
-                    + (' / <a href="'+r['run_dir']+'/collaboration.html">collaboration</a>' if r['condition'] in ('discuss','alternating','solo_reflect','independent','shared_buffer') else '')+'</li>' for r in rows)
+                    + (' / <a href="'+r['run_dir']+'/collaboration.html">collaboration</a>' if r['condition'] in ('discuss','alternating','solo_reflect','independent','shared_buffer') else '')
+                    + (' / <a href="'+r['run_dir']+'/shared_dialogue.html">shared chat</a>'
+                       if r['condition']=='free_dialogue' and (folder/r['run_dir']/'shared_dialogue.html').exists() else '')+'</li>' for r in rows)
     (folder/'index.html').write_text('<meta charset="utf-8"><meta http-equiv="refresh" content="5"><h1>Experiment</h1>'
                                     '<p>Provisional model judgments. Contrast summaries exclude incomplete pairs.</p>'
                                     '<p><a href="costs_by_game.csv">Token and cost by game</a> · '
@@ -423,6 +427,7 @@ def run(args):
         raise ValueError('sync-interval must be positive')
     if args.repeat < 1:
         raise ValueError('--repeat must be positive')
+    dialogue = dialogue_settings(args)
     config = configuration(args)
     partner = deepcopy(config['player'])
     if args.command == 'team' and args.partner_config:
@@ -439,13 +444,15 @@ def run(args):
                 or saved_plan['dataset_sha256']!=hashlib.sha256(Path(args.dataset).read_bytes()).hexdigest()):
             raise ValueError('Resume configuration, schedule or dataset mismatch')
         previous_args=saved_plan['arguments']
-        for key in ('memory','source_feedback','source_policy','sync_interval','controls','control_source'):
+        for key in ('memory','source_feedback','source_policy','sync_interval','controls','control_source',
+                    'dialogue_roles','dialogue_scheduling','dialogue_max_discussion','dialogue_start'):
             if previous_args.get(key)!=getattr(args,key,None):
                 raise ValueError('Resume argument mismatch: '+key)
     else:
         folder.mkdir(parents=True,exist_ok=False)
     prompts = load_prompts()
     plan_record={'kind':args.command,'seed':args.seed,'arguments':vars(args),'blocks':blocks,
+                            'dialogue_policy':dialogue,
                             'config':config,'partner':partner,
                             'dataset_sha256':hashlib.sha256(Path(args.dataset).read_bytes()).hexdigest(),
                             'source_feedback':getattr(args,'source_feedback',None),
@@ -481,6 +488,8 @@ def run(args):
                 raise ValueError('Resume partner changed')
             if saved_row['status']=='completed':
                 return rec,json.loads((rec.folder/'result.json').read_text())
+            if team=='free_dialogue' and rec.turns:
+                raise ValueError('free_dialogue mid-game recovery is not supported; start a labeled new run')
             rec.event('resume',previous_status=saved_row['status'],preserved_submissions=len(rec.turns),
                       pending_feedback=sum('label' not in t for t in rec.turns))
         else:
@@ -494,11 +503,15 @@ def run(args):
                 'budget':config['max_questions']})
         if team != 'solo':
             dump(rec.folder/'partner_config.json',partner)
+        if team == 'free_dialogue':
+            dump(rec.folder/'dialogue_policy.json',dialogue)
         rec.report('dry_run' if args.dry_run else 'running',None)
         row={'block':block['block'],'condition':condition,'puzzle_id':pid,'repeat':block['repeat'],'run_dir':name,
              'source':block.get('source'),'target':block['target'],'group':block.get('group'),
              'relation_hypothesis':block.get('relation_hypothesis'),
              **{k:block.get(k) for k in ('analysis_role','source_policy','source_run_dir','source_context_sha256','control_source_run_dir')}}
+        if team == 'free_dialogue':
+            row.update({'dialogue_'+key:dialogue[key] for key in ('roles','scheduling','max_discussion','start')})
         row_index=rows.index(saved_row) if saved_row else len(rows)
         current={**row,**rec.report('dry_run' if args.dry_run else 'running',None)}
         if saved_row:rows[row_index]=current
@@ -508,7 +521,9 @@ def run(args):
             result=rec.report('dry_run','no_model_calls')
         else:
             clients={role:Client(config[role],role,rec.audit) for role in ('host','player','grader')}
-            if team != 'solo':
+            if team == 'free_dialogue':
+                clients['player']=FreeDialoguePlayer(clients['player'],Client(partner,'partner',rec.audit),rec,dialogue)
+            elif team != 'solo':
                 clients['player']=TeamPlayer(clients['player'],Client(partner,'partner',rec.audit),team,rec,getattr(args,'sync_interval',4))
             result=play(bank[pid],config,rec,clients,used_prompts,player_context=context)
         rows[row_index]={**row,**result}
@@ -647,6 +662,7 @@ def main(argv=None):
             p.add_argument('--strategies',default='solo,solo_reflect,independent,shared_buffer')
             p.add_argument('--sync-interval',type=int,default=4,help='shared_buffer: publish both explorers observations every N completed submissions')
             p.add_argument('--partner-config',help='JSON containing ONE provider profile; defaults to player')
+            add_dialogue_arguments(p)
     args=parser.parse_args(argv)
     try:
         return run(args)

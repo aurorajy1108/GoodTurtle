@@ -58,6 +58,9 @@ def output_contract(user):
         payload={}
     if not isinstance(payload,dict):
         payload={}
+    if 'dialogue_control' in payload:
+        return obj({'type':{'type':'string','enum':payload['dialogue_control']['allowed_actions']},
+                    'text':string,'next_speaker':{'type':'string','enum':['A','B']}}),None,''
     if payload.get('evidence_repair') is True:
         ids=list(payload.get('source_sentences',{}))
         return obj({'repairs':{'type':'array','items':obj({'field':string,
