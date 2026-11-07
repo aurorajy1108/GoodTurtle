@@ -37,7 +37,7 @@ def dump(path, data):
     temp.replace(path)
 
 
-def parse_action(text, force_final=False, audit=None):
+def parse_player_json(text):
     recovery = None
     try:
         value = json.loads(text)
@@ -69,6 +69,11 @@ def parse_action(text, force_final=False, audit=None):
             raise ProtocolError('Ambiguous extra JSON content in player response') from None
         recovery = {'method': 'single_embedded_json', 'prefix_chars': start,
                     'suffix_chars': len(text) - end}
+    return value, recovery
+
+
+def parse_action(text, force_final=False, audit=None):
+    value, recovery = parse_player_json(text)
     if (not isinstance(value, dict) or set(value) != {'type', 'text'} or
             value['type'] not in ('question', 'final') or not isinstance(value['text'], str)
             or not value['text'].strip()):
