@@ -37,17 +37,46 @@ def dump(path, data):
     temp.replace(path)
 
 
-def parse_action(text, force_final=False):
+def parse_action(text, force_final=False, audit=None):
+    recovery = None
     try:
         value = json.loads(text)
     except (ValueError, TypeError):
-        raise ProtocolError('Player must return one JSON object, without markdown') from None
+        if not isinstance(text, str):
+            raise ProtocolError('Player must return one JSON object, without markdown') from None
+        if '```' in text:
+            raise ProtocolError('Player JSON must not be wrapped in markdown') from None
+        decoder = json.JSONDecoder()
+        objects = []
+        index = 0
+        while index < len(text):
+            start = text.find('{', index)
+            if start < 0:
+                break
+            try:
+                candidate, end = decoder.raw_decode(text, start)
+            except ValueError:
+                index = start + 1
+                continue
+            if isinstance(candidate, dict):
+                objects.append((candidate, start, end))
+            index = end
+        if len(objects) != 1:
+            raise ProtocolError('Player must return one unambiguous JSON object') from None
+        value, start, end = objects[0]
+        # Do not silently discard a broken or truncated additional JSON object.
+        if any(c in text[:start] + text[end:] for c in '{}'):
+            raise ProtocolError('Ambiguous extra JSON content in player response') from None
+        recovery = {'method': 'single_embedded_json', 'prefix_chars': start,
+                    'suffix_chars': len(text) - end}
     if (not isinstance(value, dict) or set(value) != {'type', 'text'} or
             value['type'] not in ('question', 'final') or not isinstance(value['text'], str)
             or not value['text'].strip()):
         raise ProtocolError('Player JSON must contain type=question|final and nonempty text')
     if force_final and value['type'] != 'final':
         raise ProtocolError('Player violated mandatory final instruction; no question was sent to host')
+    if recovery and audit:
+        audit(recovery)
     return value
 
 
@@ -363,7 +392,8 @@ def _play(puzzle, config, recorder, clients, prompts, player_context=None):
                     payload['prior_experience'] = player_context
                 player_input = json.dumps(payload, ensure_ascii=False)
                 reply = clients['player'].complete(prompts['player'], player_input)
-                action = parse_action(reply.text, forced)
+                action = parse_action(reply.text, forced, lambda details: recorder.event(
+                    'player_format_recovery', submission=len(recorder.turns)+1, **details))
                 turn = {'index': len(recorder.turns)+1, **action, 'forced': forced}
                 recorder.turns.append(turn)
                 recorder.event('submission', **turn, raw_player_output=reply.text)
