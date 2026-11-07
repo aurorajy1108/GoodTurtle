@@ -90,8 +90,8 @@ def main(argv=None):
     data=load_dataset(args.dataset);bank={x['id']:x for x in data['puzzles']}
     args.dry_run=args.mode!='run';config=configuration(args)
     if config['max_questions']!=100:p.error('This study requires exactly 100 fresh submissions per game')
-    # Configuration is explicit; fail if accidentally supplied the old Host model.
-    if config['host']['model']!='gpt-6.1-sol':p.error('This study requires host gpt-6.1-sol')
+    # Model/provider choices come entirely from the explicit configuration.
+    # Freeze them below; never substitute a Codex model for an API provider.
     g=groups(selected,args.directions);blocks={};clargs=None;teamargs=None
     out=Path(args.out).resolve()
     if out.exists():p.error('Output directory exists; choose a new one')

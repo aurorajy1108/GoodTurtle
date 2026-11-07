@@ -2,6 +2,8 @@
 
 # GoodTurtle — COMP1110
 
+**全接口DeepSeek：** 设置 `DEEPSEEK_API_KEY`、`DEEPSEEK_MODEL` 并选择 `--config configs/loop.deepseek.json`，Host、grader、player、默认MAS partner及辅助请求全部走DeepSeek。CL/MAS入口均支持，见[完整运行说明](docs/deepseek.md)。
+
 研究海龟汤中的上下文经验迁移（CL）与双 agent 合作。当前有 **50 道英文题目、161 个评分点**，支持可配置的 Host / player / grader、完整轨迹和实验统计。
 
 **当前授权：CL Set 1 与 TS038 各一组，其余实验暂停。** Host 与评分标注仍待人工确认；单元测试通过不代表模型回答已经可靠。默认请求 Host `gpt-6.1-sol / medium`，grader 保持 `gpt-6.1-sol / high`，player 和默认 partner `gpt-5.6-luna / low`。四种反馈：`yes / no / yes and no / irrelevant`。

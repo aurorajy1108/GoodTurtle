@@ -8,6 +8,8 @@
 
 ## 11月2日当前实验入口
 
+11月7日新增全DeepSeek配置：Host/player/grader/默认partner及辅助调用均可使用同一个DeepSeek Key，study入口已解除GPT Host限制。参见[DeepSeek设置及CL/MAS运行命令](deepseek.md)。下面Codex配置仍可显式选择。
+
 最新默认：Host=`gpt-6.1-sol` medium，grader=`gpt-6.1-sol` high；player/partner=`gpt-5.6-luna` low。
 CL 固定每组首题为 B；同一批次每道 A 解一次后冻结复用，揭示 A 完整答案。
 B 每次是新会话、独立100次额度。Token/费用自动记录，Codex 账号费用仅作 API 等价估算。

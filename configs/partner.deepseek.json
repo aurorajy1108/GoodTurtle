@@ -2,7 +2,8 @@
   "provider": "deepseek",
   "model": "${DEEPSEEK_MODEL}",
   "api_key_env": "DEEPSEEK_API_KEY",
-  "max_output_tokens": 4096,
-  "timeout": 120,
-  "max_retries": 2
+  "max_output_tokens": 8192,
+  "timeout": 600,
+  "max_retries": 2,
+  "extra_body": {"thinking": {"type": "enabled"}, "reasoning_effort": "low"}
 }

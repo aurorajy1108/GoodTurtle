@@ -10,15 +10,17 @@ sys.path.insert(0, str(ROOT))
 from turtle_loop.providers import Client
 from turtle_loop.engine import dump
 from turtle_loop.costs import account_call, pricing_config, cost_summary
+from turtle_loop.cli import configuration
 
 
-def main():
+def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--config', default='configs/loop.codex.json')
     parser.add_argument('--out', required=True, help='New directory for synthetic transport audit')
     parser.add_argument('--run', action='store_true', help='Make six small real calls; otherwise write plan only')
-    args = parser.parse_args()
-    config = json.loads(Path(args.config).read_text())
+    args = parser.parse_args(argv)
+    args.dry_run = not args.run
+    config = configuration(args)
     out = Path(args.out); out.mkdir(parents=True, exist_ok=False)
     dump(out/'plan.json', {'synthetic': True, 'calls': 6, 'roles': ['host','player','grader'],
                          'purpose': 'native session continuity, role isolation and delta transport; not puzzle performance',
@@ -37,12 +39,12 @@ def main():
             profile=config['host'] if role=='grader' and config.get('grader','host')=='host' else config[role]
             client=Client({**profile,'max_retries':0},role,audit)
             client.begin_game(out,event)
-            system='This is a synthetic memory transport check. No tools. Remember the supplied code. Follow current task. Output only the requested word.'
-            payload={'code':word,'task':'Reply with the code.'}
+            system='This is a synthetic memory transport check. No tools. Remember the supplied code. Follow current task. Return only JSON in exactly this shape: {"code":"remembered code"}.'
+            payload={'code':word,'task':'Reply with the code in the required JSON object.'}
             try:
                 first=client.complete(system,json.dumps(payload))
-                second=client.complete(system,json.dumps({**payload,'task':'Recall the code from the initial message and reply with only that code.'}))
-                assert first.text.strip().lower()==word and second.text.strip().lower()==word, 'Memory response mismatch'
+                second=client.complete(system,json.dumps({**payload,'task':'Recall the initial code and reply in the same JSON shape.'}))
+                assert json.loads(first.text)=={'code':word} and json.loads(second.text)=={'code':word}, 'Memory response mismatch'
                 role_calls=[c for c in calls if c['role']==role]
                 assert len(role_calls)==2 and role_calls[1]['previous_response_id']==role_calls[0]['response_id']
                 results.append({'role':role,'passed':True,'same_lane':role_calls[0]['session_lane_id']==role_calls[1]['session_lane_id']})

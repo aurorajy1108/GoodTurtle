@@ -62,11 +62,13 @@ python3 scripts/play.py run --dataset "$TURTLE_DATASET" \
 | 配置模板 | host / player / grader | 必须设置的模型环境变量 | 默认 key 环境变量 |
 | --- | --- | --- | --- |
 | [loop.openai.json](../configs/loop.openai.json) | OpenAI / OpenAI / 复用 host 配置 | `OPENAI_MODEL` | `OPENAI_API_KEY` |
-| [loop.deepseek.json](../configs/loop.deepseek.json) | DeepSeek / DeepSeek / 复用 host 配置 | `DEEPSEEK_MODEL` | `DEEPSEEK_API_KEY` |
+| [loop.deepseek.json](../configs/loop.deepseek.json) | 全DeepSeek；Host/grader high、player/默认partner low；持续会话 | `DEEPSEEK_MODEL` | `DEEPSEEK_API_KEY` |
 | [loop.claude.json](../configs/loop.claude.json) | Claude / Claude / 复用 host 配置 | `ANTHROPIC_MODEL` | `ANTHROPIC_API_KEY` |
 | [loop.mixed.json](../configs/loop.mixed.json) | OpenAI / DeepSeek / Claude | `HOST_MODEL`、`PLAYER_MODEL`、`GRADER_MODEL` | `OPENAI_API_KEY`、`DEEPSEEK_API_KEY`、`ANTHROPIC_API_KEY` |
 
 DeepSeek、Claude 的运行命令只需换 `--config`，并设置表中对应环境变量。混合模板示例：
+
+全DeepSeek的CL、MAS、小规模测试及完整实验命令见 [DeepSeek运行指南](deepseek.md)；不要求任何GPT Key或Codex登录。
 
 ```sh
 export OPENAI_API_KEY='替换为 OpenAI key'

@@ -2,6 +2,8 @@
 
 English | [中文](README.zh-CN.md)
 
+**All-DeepSeek option:** select `--config configs/loop.deepseek.json` and set `DEEPSEEK_API_KEY` / `DEEPSEEK_MODEL`. Host, grader, player, default MAS partner and auxiliary calls all use DeepSeek. CL and MAS study launchers support this configuration. See [setup and commands](docs/deepseek.md).
+
 GoodTurtle studies in-context experience transfer (continual learning, or CL) and two-agent collaboration using lateral thinking puzzles. It includes **50 English puzzles and 161 scoring checkpoints**, configurable host, player and grader roles, trajectories, and experiment summaries.
 
 **Current scope: one-repeat CL Set 1 and TS038 team experiments are authorized; other experiments remain paused.** Host behavior and scoring annotations still need validation; passing unit tests does not establish model accuracy. The default host is `gpt-6.1-sol` with medium reasoning; the grader stays `gpt-6.1-sol` with high reasoning, and the player and default partner are `gpt-5.6-luna` with low reasoning. Host answers use four labels: `yes`, `no`, `yes and no`, and `irrelevant`.

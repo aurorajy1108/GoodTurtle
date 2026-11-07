@@ -1,6 +1,41 @@
 {
   "max_questions": 100,
-  "host": {"provider": "deepseek", "model": "${DEEPSEEK_MODEL}", "max_output_tokens": 4096},
-  "player": {"provider": "deepseek", "model": "${DEEPSEEK_MODEL}", "max_output_tokens": 4096},
-  "grader": "host"
+  "session_mode": "persistent",
+  "context_policy": {
+    "host_examples_limit": 6,
+    "grader_examples_limit": 3,
+    "host_examples_max_chars": 6000,
+    "grader_examples_max_chars": 3000
+  },
+  "host": {
+    "provider": "deepseek",
+    "model": "${DEEPSEEK_MODEL}",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "max_output_tokens": 32768,
+    "timeout": 600,
+    "max_retries": 2,
+    "extra_body": {"thinking": {"type": "enabled"}, "reasoning_effort": "high"}
+  },
+  "player": {
+    "provider": "deepseek",
+    "model": "${DEEPSEEK_MODEL}",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "max_output_tokens": 8192,
+    "timeout": 600,
+    "max_retries": 2,
+    "extra_body": {"thinking": {"type": "enabled"}, "reasoning_effort": "low"}
+  },
+  "grader": {
+    "provider": "deepseek",
+    "model": "${DEEPSEEK_MODEL}",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "max_output_tokens": 32768,
+    "timeout": 600,
+    "max_retries": 2,
+    "extra_body": {
+      "thinking": {"type": "enabled"},
+      "reasoning_effort": "high",
+      "response_format": {"type": "json_object"}
+    }
+  }
 }
