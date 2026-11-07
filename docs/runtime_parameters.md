@@ -62,7 +62,8 @@ python3 scripts/play.py run --dataset "$TURTLE_DATASET" \
 | 配置模板 | host / player / grader | 必须设置的模型环境变量 | 默认 key 环境变量 |
 | --- | --- | --- | --- |
 | [loop.openai.json](../configs/loop.openai.json) | OpenAI / OpenAI / 复用 host 配置 | `OPENAI_MODEL` | `OPENAI_API_KEY` |
-| [loop.deepseek.json](../configs/loop.deepseek.json) | 全DeepSeek；Host/grader high、player/默认partner low；持续会话 | `DEEPSEEK_MODEL` | `DEEPSEEK_API_KEY` |
+| [loop.deepseek.json](../configs/loop.deepseek.json) | Host/grader Pro/high；player/默认partner Flash/low；持续会话 | 无，模型按角色写入JSON | `DEEPSEEK_API_KEY` |
+| [loop.deepseek.same-model.json](../configs/loop.deepseek.same-model.json) | 同模型对照：三角色共用所选模型 | `DEEPSEEK_MODEL` | `DEEPSEEK_API_KEY` |
 | [loop.claude.json](../configs/loop.claude.json) | Claude / Claude / 复用 host 配置 | `ANTHROPIC_MODEL` | `ANTHROPIC_API_KEY` |
 | [loop.mixed.json](../configs/loop.mixed.json) | OpenAI / DeepSeek / Claude | `HOST_MODEL`、`PLAYER_MODEL`、`GRADER_MODEL` | `OPENAI_API_KEY`、`DEEPSEEK_API_KEY`、`ANTHROPIC_API_KEY` |
 

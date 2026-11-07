@@ -8,12 +8,13 @@
 
 ```sh
 export DEEPSEEK_API_KEY='在本机替换成你的DeepSeek Key'
-export DEEPSEEK_MODEL='deepseek-flash'
 ```
 
-`DEEPSEEK_MODEL` 是显式模型 ID，可替换为你账号有权限的模型。官方当前列出的模型有 `deepseek-flash` 和 `deepseek-v4-pro`；示例采用 Flash。换模型时需核对该模型是否支持配置中的 thinking/JSON 参数。[官方接口与模型说明](https://api-docs.deepseek.com/quick_start/)
+默认按角色分配模型：**Host/grader 使用 `deepseek-v4-pro / high`，player/partner 使用 `deepseek-flash / low`**。模型ID在 `configs/loop.deepseek.json` 的各角色 `model` 中独立指定，可分别修改。官方当前列有这两个模型；本配置按研究设计选择Pro承担主持与评分、Flash承担玩家，尚未通过本项目实验证明准确率改善。换模型时核对其是否支持配置中的 thinking/JSON 参数。[官方接口与模型说明](https://api-docs.deepseek.com/quick_start/)
 
-只要求上述两个变量；Key 通过 `Authorization` 请求头使用，配置和 API 日志不保存认证请求头。缺少模型变量或真实运行缺少 Key 会在模型调用前报错。
+只要求 `DEEPSEEK_API_KEY`；新默认配置无需设置 `DEEPSEEK_MODEL`，已有同名变量不会覆盖各角色模型。Key 通过 `Authorization` 请求头使用，配置和 API 日志不保存认证请求头。真实运行缺少 Key 会在模型调用前报错。
+
+如需恢复三角色共用同一模型，选择 `--config configs/loop.deepseek.same-model.json`，并额外设置 `export DEEPSEEK_MODEL=deepseek-flash`（或其他明确模型ID）。这是独立的同模型对照模板。
 
 ## 2. 先验证配置
 
@@ -75,7 +76,7 @@ python3 scripts/play.py run --dataset data/annotations/turtle50_v4/private.json 
 | 设置 | Host | player / 默认partner | grader |
 | --- | --- | --- | --- |
 | provider | deepseek | deepseek | deepseek |
-| model | DEEPSEEK_MODEL | DEEPSEEK_MODEL | DEEPSEEK_MODEL |
+| model | deepseek-v4-pro | deepseek-flash | deepseek-v4-pro |
 | api_key_env | DEEPSEEK_API_KEY | DEEPSEEK_API_KEY | DEEPSEEK_API_KEY |
 | thinking.type | enabled | enabled | enabled |
 | reasoning_effort | high | low | high |
@@ -90,7 +91,7 @@ python3 scripts/play.py run --dataset data/annotations/turtle50_v4/private.json 
 
 默认 `session_mode=persistent`。每局每角色（MAS A/B也各自独立）持续维护同一消息历史；下一局新建。DeepSeek Chat Completions 接口本身无状态，客户端每次需发送同一会话累积的messages；新增上下文仍按无损增量追加，先前的消息不会重复展开成多份汤底。不能据此声称只计新消息tokens或历史免费。[官方多轮聊天说明](https://api-docs.deepseek.com/guides/multi_round_chat/)
 
-MAS默认partner自动复制player配置，**无需另设 partner-config**。底层 `experiment.py team` 或 `team_sweep.py` 如显式传 `--partner-config`，会覆盖默认partner；全DeepSeek实验应使用 `configs/partner.deepseek.json`，避免误传其他供应商。这个模板参数与player相同。
+MAS默认partner自动复制player配置，**无需另设 partner-config**。底层 `experiment.py team` 或 `team_sweep.py` 如显式传 `--partner-config`，会覆盖默认partner；全DeepSeek实验应使用 `configs/partner.deepseek.json`，避免误传其他供应商。这个模板默认使用Flash/low，与新默认player相同；如修改player模型，显式partner模板也需一起调整，否则省略partner-config即可自动复制player。
 
 ## 5. 查看轨迹、tokens与费用
 

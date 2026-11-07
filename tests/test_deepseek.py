@@ -50,7 +50,7 @@ class DeepSeekTests(unittest.TestCase):
                         i=len(requests[role])
                         self.assertEqual(req.full_url,'https://api.deepseek.com/chat/completions')
                         self.assertEqual(req.get_header('Authorization'),'Bearer fixture-secret-key')
-                        self.assertEqual(body['model'],'deepseek-flash')
+                        self.assertEqual(body['model'], 'deepseek-v4-pro' if role in ('host','grader') else 'deepseek-flash')
                         self.assertEqual(body['thinking'],{'type':'enabled'})
                         self.assertNotIn('tools',body)
                         self.assertNotIn('previous_response_id',body)
@@ -75,7 +75,7 @@ class DeepSeekTests(unittest.TestCase):
                                 text=json.dumps(dict(type=kind,text=text,next_speaker=next_actor))
                             else:
                                 text=json.dumps(dict(type='question' if i%2 else 'final',text='Attempt'))
-                        return Response(dict(id=f'{role}-{i}',model='deepseek-flash',
+                        return Response(dict(id=f'{role}-{i}',model=body['model'],
                             choices=[dict(message={'content':text,'reasoning_content':'PRIVATE_REASONING_SENTINEL'},finish_reason='stop')],
                             usage=dict(prompt_tokens=100,completion_tokens=25,prompt_cache_hit_tokens=20,
                                        prompt_cache_miss_tokens=80,completion_tokens_details={'reasoning_tokens':10})))
@@ -122,6 +122,7 @@ class DeepSeekTests(unittest.TestCase):
             self.assertEqual(plan['planned_games'],{'continual':16,'team':2})
             for role in ('host','player','grader'):
                 self.assertEqual(plan['config'][role]['provider'],'deepseek')
+                self.assertEqual(plan['config'][role]['model'], 'deepseek-v4-pro' if role in ('host','grader') else 'deepseek-flash')
                 self.assertEqual(plan['config'][role]['api_key_env'],'DEEPSEEK_API_KEY')
             partner=json.loads((out/'team/TS038_r01_free_dialogue/partner_config.json').read_text())
             self.assertEqual(partner['provider'],'deepseek')
@@ -133,9 +134,9 @@ class DeepSeekTests(unittest.TestCase):
         bodies=[]
         def respond(req, **kwargs):
             body=json.loads(req.data); bodies.append(body)
-            self.assertEqual(body['model'],'deepseek-flash')
+            self.assertEqual(body['model'], 'deepseek-flash' if len(bodies) in (3,4) else 'deepseek-v4-pro')
             code=json.loads(body['messages'][1]['content'])['code']
-            return Response(dict(id=f'smoke-{len(bodies)}',model='deepseek-flash',
+            return Response(dict(id=f'smoke-{len(bodies)}',model=body['model'],
                 choices=[dict(message={'content':json.dumps({'code':code})},finish_reason='stop')],
                 usage=dict(prompt_tokens=20,completion_tokens=5,prompt_cache_hit_tokens=0)))
         with tempfile.TemporaryDirectory() as folder, redirect_stdout(io.StringIO()), \

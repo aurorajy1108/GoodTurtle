@@ -1,6 +1,6 @@
 {
   "provider": "deepseek",
-  "model": "${DEEPSEEK_MODEL}",
+  "model": "deepseek-flash",
   "api_key_env": "DEEPSEEK_API_KEY",
   "max_output_tokens": 8192,
   "timeout": 600,
