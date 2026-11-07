@@ -10,7 +10,7 @@
 export DEEPSEEK_API_KEY='在本机替换成你的DeepSeek Key'
 ```
 
-默认按角色分配模型：**Host/grader 使用 `deepseek-v4-pro / high`，player/partner 使用 `deepseek-flash / low`**。模型ID在 `configs/loop.deepseek.json` 的各角色 `model` 中独立指定，可分别修改。官方当前列有这两个模型；本配置按研究设计选择Pro承担主持与评分、Flash承担玩家，尚未通过本项目实验证明准确率改善。换模型时核对其是否支持配置中的 thinking/JSON 参数。[官方接口与模型说明](https://api-docs.deepseek.com/quick_start/)
+默认按角色分配模型：**Host/grader 使用 `deepseek-v4-pro / high`，player/partner 使用 `deepseek-flash / thinking disabled`**。模型ID在 `configs/loop.deepseek.json` 的各角色 `model` 中独立指定，可分别修改。官方当前列有这两个模型；本配置按研究设计选择Pro承担主持与评分、Flash承担玩家，尚未通过本项目实验证明准确率改善。换模型时核对其是否支持配置中的 thinking/JSON 参数。[官方接口与模型说明](https://api-docs.deepseek.com/quick_start/)
 
 只要求 `DEEPSEEK_API_KEY`；新默认配置无需设置 `DEEPSEEK_MODEL`，已有同名变量不会覆盖各角色模型。Key 通过 `Authorization` 请求头使用，配置和 API 日志不保存认证请求头。真实运行缺少 Key 会在模型调用前报错。
 
@@ -18,12 +18,13 @@ export DEEPSEEK_API_KEY='在本机替换成你的DeepSeek Key'
 
 ## 2. 先验证配置
 
-下面 dry-run 会冻结代码、题包、模型与计划，生成 CL Set 1 的16局和 TS038 的2局空轨迹，不调用 API、不收费：
+本次小规模实验仅保留15作为positive A，不跑16；A=15/14/28，B=13。下面dry-run会冻结代码、题包、模型与计划，生成12局CL和2局TS038空轨迹，不调用API、不收费：
 
 ```sh
 python3 scripts/study_20261102.py \
   --config configs/loop.deepseek.json \
   --suite all --sets 1 --team-puzzles TS038 \
+  --source-puzzles TS015,TS014,TS028 \
   --strategies solo,free_dialogue --repeat 1 \
   --mode dry-run --out runs/api/deepseek_set1_ts038_check
 ```
@@ -39,17 +40,20 @@ python3 scripts/smoke_sessions.py --config configs/loop.deepseek.json \
 
 ## 3. 正式运行
 
+当前按用户要求暂停实验。下列真实运行命令仅供之后明确恢复时使用，更新代码不会自动启动实验。需要恢复小批次时，可在已export Key的终端执行 `bash scripts/start_deepseek_pilot.sh`，后台启动A=15/14/28、B=13及TS038两局，共14局，输出新目录 `runs/api/deepseek_set1_ts038_nothinking_once`。脚本可选第一个参数指定其他新输出目录，拒绝覆盖现有目录。
+
 先跑 CL Set 1 与小规模 MAS：
 
 ```sh
 python3 scripts/study_20261102.py \
   --config configs/loop.deepseek.json \
   --suite all --sets 1 --team-puzzles TS038 \
+  --source-puzzles TS015,TS014,TS028 \
   --strategies solo,free_dialogue --repeat 1 \
   --mode run --out runs/api/deepseek_set1_ts038_once
 ```
 
-CL 固定目标 B=13，A=15/16/14/28各解一次、揭晓完整答案并冻结，比较 direct/transcript/answer_only；每局新100次额度。MAS只跑solo与free_dialogue各一次。运行数量与已有设计一致，详细规则见[研究方案](study_20261102.md)。
+CL固定目标B=13，A=15/14/28各解一次、揭晓完整答案并冻结，比较direct/transcript/answer_only；每局新100次额度。共3局A+9局B=12局CL。MAS只跑solo与free_dialogue各一次，共14局。详细规则见[研究方案](study_20261102.md)。
 
 全部5个 Set + 全部5道 MAS 目标题，每策略重复3次（共198局：CL168 + MAS30）：
 
@@ -78,12 +82,14 @@ python3 scripts/play.py run --dataset data/annotations/turtle50_v4/private.json 
 | provider | deepseek | deepseek | deepseek |
 | model | deepseek-v4-pro | deepseek-flash | deepseek-v4-pro |
 | api_key_env | DEEPSEEK_API_KEY | DEEPSEEK_API_KEY | DEEPSEEK_API_KEY |
-| thinking.type | enabled | enabled | enabled |
-| reasoning_effort | high | low | high |
+| thinking.type | enabled | disabled | enabled |
+| reasoning_effort | high | 不发送 | high |
 | max_output_tokens | 32768 | 8192 | 32768 |
 | timeout（秒） | 600 | 600 | 600 |
 | max_retries | 2 | 2 | 2 |
 | response_format | 不强制JSON，直接四标签 | 依具体动作prompt；兼容旧策略文本审查 | json_object |
+
+player/默认partner、显式partner模板、同模型对照中的player及混合模板中的DeepSeek player均已关闭thinking，并删除reasoning_effort；玩家的内部审查和经验总结继承此设置。Host/grader仍开启high推理。
 
 这些参数在 `configs/loop.deepseek.json` 中修改。输出预算是每次调用的上限，包含模型推理及可见输出，不是每次都会用满；到上限而截断会记为错误，不重新采样答案。推理模式不设置 temperature；如果要关闭推理，把相应角色的 `extra_body.thinking.type` 改为 `disabled` 并删除该角色的 `reasoning_effort`。本模板不把原 GPT 的 medium 直接等同为 DeepSeek medium：官方当前将 medium 映射为 high，因此明确写 high。记录并单独比较模型/推理配置不同的批次。[官方推理参数说明](https://api-docs.deepseek.com/guides/thinking_mode/)
 
@@ -91,7 +97,7 @@ python3 scripts/play.py run --dataset data/annotations/turtle50_v4/private.json 
 
 默认 `session_mode=persistent`。每局每角色（MAS A/B也各自独立）持续维护同一消息历史；下一局新建。DeepSeek Chat Completions 接口本身无状态，客户端每次需发送同一会话累积的messages；新增上下文仍按无损增量追加，先前的消息不会重复展开成多份汤底。不能据此声称只计新消息tokens或历史免费。[官方多轮聊天说明](https://api-docs.deepseek.com/guides/multi_round_chat/)
 
-MAS默认partner自动复制player配置，**无需另设 partner-config**。底层 `experiment.py team` 或 `team_sweep.py` 如显式传 `--partner-config`，会覆盖默认partner；全DeepSeek实验应使用 `configs/partner.deepseek.json`，避免误传其他供应商。这个模板默认使用Flash/low，与新默认player相同；如修改player模型，显式partner模板也需一起调整，否则省略partner-config即可自动复制player。
+MAS默认partner自动复制player配置，**无需另设 partner-config**。底层 `experiment.py team` 或 `team_sweep.py` 如显式传 `--partner-config`，会覆盖默认partner；全DeepSeek实验应使用 `configs/partner.deepseek.json`，避免误传其他供应商。这个模板默认使用Flash/thinking关闭，与新默认player相同；如修改player模型，显式partner模板也需一起调整，否则省略partner-config即可自动复制player。
 
 ## 5. 查看轨迹、tokens与费用
 
@@ -101,4 +107,4 @@ study目录包含 `study_plan.json`、`status.json`、`continual/index.html`、`
 
 **当前内置价格表尚未收录这次选用的 DeepSeek 模型价格**：tokens照常记录；没有精确模型费率的费用明确为 unknown，不记作0。若需金额，按你账号适用的官方价，在JSON顶层 `pricing` 填入完整费率表（见[费用参数](study_20261102.md#token-与费用记录自动启用)）；provider应为deepseek、model为响应中的精确ID、endpoint_prefix为 `https://api.deepseek.com/`，提供 input/cached_input/output 的每百万token美元单价及来源。未知的响应模型版本仍保持unknown，账单以DeepSeek控制台为准。
 
-本次已用模拟HTTP覆盖全部角色、持续会话、共享聊天、Key隔离、usage记录和18局dry-run；未使用真实Key调用付费接口。模型权限和实际输出合规性需通过小规模真实请求验证。
+已用模拟HTTP覆盖全部角色、持续会话、共享聊天、Key隔离、usage记录，以及原18局和精简后14局dry-run。旧thinking开启批次曾真实启动，在A=14完成8轮问答后遇到HTTP IncompleteRead并停止，无交卷结果。连接异常现会计入transport_error并停止持续会话；不会自动重试或续跑旧局。当前关闭玩家thinking的配置尚未真实试跑。

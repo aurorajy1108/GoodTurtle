@@ -1,5 +1,6 @@
 """Small HTTP adapters; provider/model/endpoint can differ for each role."""
 import json
+import http.client
 import os
 import re
 import time
@@ -239,7 +240,7 @@ class Client:
                 retry = code == 429 or (lane is None and 500 <= code < 600)
                 # Do not dump vendor error bodies: they can echo credentials/prompts.
                 error = APIError(f'{self.role}: HTTP {code}; check endpoint, model access and key')
-            except (urllib.error.URLError, TimeoutError, ConnectionError) as exc:
+            except (urllib.error.URLError, TimeoutError, ConnectionError, http.client.HTTPException) as exc:
                 self.audit({**record, 'status': 'transport_error', 'error_type': type(exc).__name__,
                             'seconds': time.monotonic()-start})
                 retry, error = lane is None, APIError(f'{self.role}: transport failure ({type(exc).__name__})')

@@ -67,6 +67,7 @@ def main(argv=None):
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('--suite',choices=['continual','team','all'],default='all')
     p.add_argument('--sets',default='all',help='CL set numbers: all or comma-separated 1..5')
+    p.add_argument('--source-puzzles',default='all',help='CL source A whitelist, e.g. TS015,TS014,TS028; default all sources in selected sets/directions')
     p.add_argument('--directions',choices=['primary','bidirectional'],default='primary',help='primary: fixed anchor B; bidirectional also adds exploratory reverse positive pairs')
     p.add_argument('--source-policy',choices=['fixed','per-repeat'],default='fixed',help='fixed: solve each A once per batch and reuse its complete public experience; per-repeat: independently regenerate A for each block')
     p.add_argument('--team-puzzles',default=','.join(OWNERS),help='Subset of TS038,TS002,TS014,TS022,TS042')
@@ -93,6 +94,13 @@ def main(argv=None):
     # Model/provider choices come entirely from the explicit configuration.
     # Freeze them below; never substitute a Codex model for an API provider.
     g=groups(selected,args.directions);blocks={};clargs=None;teamargs=None
+    if args.source_puzzles!='all':
+        sources=args.source_puzzles.split(',')
+        available={entry['directed_pairs'][0][0] for entry in g['groups']}
+        if args.suite=='team' or not sources or len(sources)!=len(set(sources)) or not set(sources)<=available:
+            p.error('--source-puzzles must select unique CL source IDs from the selected sets/directions')
+        g['groups']=[entry for entry in g['groups'] if entry['directed_pairs'][0][0] in sources]
+        g['source_selection']=sources
     out=Path(args.out).resolve()
     if out.exists():p.error('Output directory exists; choose a new one')
     # Validate everything before creating output or spending model calls.

@@ -2,7 +2,7 @@
 
 # GoodTurtle — COMP1110
 
-**全接口DeepSeek：** 设置 `DEEPSEEK_API_KEY` 并选择 `--config configs/loop.deepseek.json`，Host/grader使用 `deepseek-v4-pro / high`，player/默认MAS partner使用 `deepseek-flash / low`，辅助请求使用对应角色配置。CL/MAS入口均支持，见[完整运行说明](docs/deepseek.md)。
+**全接口DeepSeek：** 设置 `DEEPSEEK_API_KEY` 并选择 `--config configs/loop.deepseek.json`，Host/grader使用 `deepseek-v4-pro / high`，player/默认MAS partner使用 `deepseek-flash / thinking disabled`，辅助请求使用对应角色配置。CL/MAS入口均支持，见[完整运行说明](docs/deepseek.md)。
 
 研究海龟汤中的上下文经验迁移（CL）与双 agent 合作。当前有 **50 道英文题目、161 个评分点**，支持可配置的 Host / player / grader、完整轨迹和实验统计。
 

@@ -1,6 +1,7 @@
 """Exercise every role through the HTTP adapter without using a paid API."""
 import copy
 import io
+import http.client
 import json
 import os
 import tempfile
@@ -16,6 +17,7 @@ from turtle_loop.cli import configuration
 from turtle_loop.dialogue import FreeDialoguePlayer, dialogue_settings
 from turtle_loop.engine import Recorder, load_prompts, play
 from turtle_loop.providers import Client
+from turtle_loop.providers import APIError
 from test_loop import PUZZLE, evaluated
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -29,6 +31,25 @@ class Response:
 
 
 class DeepSeekTests(unittest.TestCase):
+    @patch.dict(os.environ, {'DEEPSEEK_API_KEY':'fixture-secret-key'})
+    def test_incomplete_http_read_is_logged_and_stops_persistent_game(self):
+        config=configuration(Namespace(config=str(ROOT/'configs/loop.deepseek.json'),dry_run=False))
+        records=[]
+        client=Client(config['player'],'player',records.append)
+        with tempfile.TemporaryDirectory() as folder:
+            client.begin_game(folder,lambda *a,**k:None)
+            response=Response({})
+            with patch.object(client.opener,'open',return_value=response) as opened, \
+                 patch.object(response,'read',side_effect=http.client.IncompleteRead(b'partial-sensitive-body')):
+                with self.assertRaises(APIError):
+                    client.complete('system',json.dumps({'opening':'story','turn_control':'normal'}))
+                self.assertEqual(opened.call_count,1)
+            self.assertTrue(client.session.failed)
+            self.assertEqual(records[-1]['status'],'transport_error')
+            self.assertEqual(records[-1]['error_type'],'IncompleteRead')
+            self.assertNotIn('partial-sensitive-body',str(records))
+            client.close_game()
+
     @patch.dict(os.environ, {'DEEPSEEK_MODEL':'deepseek-flash', 'DEEPSEEK_API_KEY':'fixture-secret-key'})
     def test_all_role_http_calls_persistent_sessions_and_shared_dialogue(self):
         for team in (False, True):
@@ -51,7 +72,7 @@ class DeepSeekTests(unittest.TestCase):
                         self.assertEqual(req.full_url,'https://api.deepseek.com/chat/completions')
                         self.assertEqual(req.get_header('Authorization'),'Bearer fixture-secret-key')
                         self.assertEqual(body['model'], 'deepseek-v4-pro' if role in ('host','grader') else 'deepseek-flash')
-                        self.assertEqual(body['thinking'],{'type':'enabled'})
+                        self.assertEqual(body['thinking'],{'type':'enabled' if role in ('host','grader') else 'disabled'})
                         self.assertNotIn('tools',body)
                         self.assertNotIn('previous_response_id',body)
                         if role=='host':
@@ -62,7 +83,7 @@ class DeepSeekTests(unittest.TestCase):
                             self.assertEqual(body['response_format'],{'type':'json_object'})
                             text=evaluated((.5,0)) if i==1 else evaluated()
                         else:
-                            self.assertEqual(body['reasoning_effort'],'low')
+                            self.assertNotIn('reasoning_effort',body)
                             # Neither earlier private scores nor story facts enter either solver session.
                             self.assertNotIn('SECRET_',json.dumps(body))
                             self.assertNotIn('completion_note',json.dumps(body))
@@ -116,10 +137,13 @@ class DeepSeekTests(unittest.TestCase):
             code=study_main(['--config',str(ROOT/'configs/loop.deepseek.json'),
                 '--dataset',str(ROOT/'data/annotations/turtle50_v4/private.json'),
                 '--suite','all','--sets','1','--team-puzzles','TS038',
+                '--source-puzzles','TS015,TS014,TS028',
                 '--strategies','solo,free_dialogue','--repeat','1','--mode','dry-run','--out',str(out)])
             self.assertEqual(code,0)
             plan=json.loads((out/'study_plan.json').read_text())
-            self.assertEqual(plan['planned_games'],{'continual':16,'team':2})
+            self.assertEqual(plan['planned_games'],{'continual':12,'team':2})
+            self.assertEqual({b['source'] for b in plan['blocks']['continual']},{'TS015','TS014','TS028'})
+            self.assertTrue(all(b['target']=='TS013' for b in plan['blocks']['continual']))
             for role in ('host','player','grader'):
                 self.assertEqual(plan['config'][role]['provider'],'deepseek')
                 self.assertEqual(plan['config'][role]['model'], 'deepseek-v4-pro' if role in ('host','grader') else 'deepseek-flash')

@@ -1,6 +1,6 @@
 {
   "max_questions": 100,
   "host": {"provider": "openai", "model": "${HOST_MODEL}", "max_output_tokens": 4096},
-  "player": {"provider": "deepseek", "model": "${PLAYER_MODEL}", "max_output_tokens": 4096},
+  "player": {"provider": "deepseek", "model": "${PLAYER_MODEL}", "max_output_tokens": 4096, "extra_body": {"thinking": {"type": "disabled"}}},
   "grader": {"provider": "anthropic", "model": "${GRADER_MODEL}", "max_output_tokens": 4096}
 }

@@ -87,7 +87,7 @@ export OPENAI_MODEL='你账号可用的准确模型 ID'
 
 ```sh
 export DEEPSEEK_API_KEY='你的 key'
-# configs/loop.deepseek.json 已按角色指定：Host/grader Pro/high，player/partner Flash/low
+# configs/loop.deepseek.json 已按角色指定：Host/grader Pro/high，player/partner Flash/thinking关闭
 # 无需设置 DEEPSEEK_MODEL；同模型对照另用 configs/loop.deepseek.same-model.json
 
 export ANTHROPIC_API_KEY='你的 key'

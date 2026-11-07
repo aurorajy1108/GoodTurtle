@@ -23,7 +23,7 @@
     "max_output_tokens": 8192,
     "timeout": 600,
     "max_retries": 2,
-    "extra_body": {"thinking": {"type": "enabled"}, "reasoning_effort": "low"}
+    "extra_body": {"thinking": {"type": "disabled"}}
   },
   "grader": {
     "provider": "deepseek",
