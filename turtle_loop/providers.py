@@ -165,6 +165,25 @@ class Client:
         if self.session is not None:
             self.session.close()
 
+    def restore_game(self, folder, event, calls):
+        if self.profile.get('provider')!='deepseek':
+            raise ValueError('Persistent recovery is restricted to saved DeepSeek chat messages')
+        selected=[c for c in calls if c.get('role')==self.role]
+        endpoint,_,_=validate_profile(self.profile)
+        for call in selected:
+            if (call.get('model_requested')!=self.profile['model']
+                    or call.get('endpoint')!=endpoint+'/chat/completions'):
+                raise ValueError('Saved session model or endpoint differs from the configured role')
+        if self.session is not None:
+            raise ValueError('Client already belongs to a game')
+        from .sessions import GameSession
+        self.session=GameSession(self.role,folder,event,
+                                 session_id=selected[0].get('game_session_id') if selected else None)
+        try:self.session.restore_chat(calls)
+        except BaseException:
+            self.session.close()
+            raise
+
     def complete(self, system, user):
         try:
             return self._complete(system, user)

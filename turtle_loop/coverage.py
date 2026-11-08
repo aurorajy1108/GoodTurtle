@@ -52,10 +52,26 @@ def evidence_is_verbatim(quote, submission):
             return False
     return matched
 
+
+def normalize_coverage_metadata(value):
+    """Drop only optional string explanations, without changing any judgments."""
+    value=copy.deepcopy(value)
+    changes=[]
+    for name in ('fact_coverage','requirement_coverage'):
+        items=value.get(name)
+        if not isinstance(items,list):continue  # The strict validator reports this.
+        for row in items:
+            if not isinstance(row,dict) or 'reason' not in row:continue
+            if not isinstance(row['reason'],str):
+                raise ValueError(f'{name}: optional reason must be a string')
+            reason=row.pop('reason')
+            changes.append({'field':f"{name}.{row.get('id','?')}.reason",'action':'ignored_metadata',
+                            'model':reason,'effective':None})
+    return value,changes
+
 def constrain(value, rubric, requirements, submission):
     """Validate evidence IDs, cap credit and reconcile flags. Never increase credit."""
-    value = copy.deepcopy(value)
-    corrections = []
+    value, corrections = normalize_coverage_metadata(value)
     def quote_exists(quote):
         return evidence_is_verbatim(quote, submission)
     def rows(name, specs):

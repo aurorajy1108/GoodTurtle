@@ -41,15 +41,47 @@ def delta(previous, current):
     return {'context_update': result}
 
 
+def restore_context(previous, wire):
+    """Reconstruct controller JSON from the exact saved messages, without a model."""
+    value=json.loads(wire)
+    if not isinstance(value,dict):
+        raise ValueError('Saved session payload must be an object')
+    if 'context_update' not in value:
+        if previous is not None:
+            raise ValueError('Expected a saved context delta after the first message')
+        return value
+    if set(value)!={'context_update'} or previous is None:
+        raise ValueError('Invalid saved initial context/delta')
+    def apply(context, update):
+        if (not isinstance(context,dict) or not isinstance(update,dict)
+                or not set(update)<= {'set','remove','update_objects','append_visible_history','append_shared_dialogue'}
+                or not isinstance(update.get('set'),dict) or not isinstance(update.get('remove'),list)
+                or not all(isinstance(k,str) for k in update['remove'])):
+            raise ValueError('Invalid saved context update')
+        result=copy.deepcopy(context)
+        for key in update['remove']:result.pop(key,None)
+        result.update(update['set'])
+        for key in ('visible_history','shared_dialogue'):
+            if 'append_'+key in update:
+                if not isinstance(result.get(key),list) or not isinstance(update['append_'+key],list):
+                    raise ValueError('Invalid saved history append')
+                result[key].extend(update['append_'+key])
+        nested=update.get('update_objects',{})
+        if not isinstance(nested,dict):raise ValueError('Invalid saved nested update')
+        for key, child in nested.items():result[key]=apply(result.get(key),child)
+        return result
+    return apply(previous,value['context_update'])
+
+
 class GameSession:
     """Each system-prompt lane is isolated (proposal, selection, review, repair)."""
-    def __init__(self, role, folder, event):
+    def __init__(self, role, folder, event, session_id=None):
         self.role, self.folder, self.event = role, Path(folder), event
-        self.id = str(uuid.uuid4())
+        self.id = session_id or str(uuid.uuid4())
         self.lanes = {}
         self.closed = False
         self.failed = False
-        self.event('session_open', role=role, session_id=self.id)
+        self.event('session_reopen' if session_id else 'session_open', role=role, session_id=self.id)
 
     def prepare(self, system, user):
         if self.closed:
@@ -80,6 +112,45 @@ class GameSession:
         lane['turn'] += 1
         self.event('session_turn', role=self.role, session_id=self.id, lane_id=lane['id'],
                    turn=lane['turn'], response_id=reply.response_id)
+
+    def restore_chat(self, records):
+        """DeepSeek no-tools chat has no hidden remote thread: restore its messages."""
+        if self.lanes or self.closed or self.failed:
+            raise ValueError('Restore requires a fresh local session')
+        calls=[c for c in records if c.get('role')==self.role]
+        if not calls:return
+        ids={c.get('game_session_id') for c in calls}
+        if len(ids)!=1 or None in ids:
+            raise ValueError('Saved role has inconsistent session IDs')
+        states={}
+        for call in calls:
+            if call.get('provider')!='deepseek' or call.get('status')!='ok' or not call.get('text'):
+                raise ValueError('Only complete DeepSeek chat replies can be restored')
+            messages=call.get('request',{}).get('messages',[])
+            if (len(messages)<2 or messages[0].get('role')!='system' or messages[-1].get('role')!='user'
+                    or not messages[0].get('content','').endswith(SESSION_INSTRUCTIONS)
+                    or call.get('request',{}).get('tools')):
+                raise ValueError('Saved chat does not match the local no-tools session protocol')
+            system=messages[0]['content'][:-len(SESSION_INSTRUCTIONS)]
+            key=hashlib.sha256(system.encode()).hexdigest()
+            state=states.setdefault(key,{'previous':None,'messages':[],'turn':0,
+                                         'response_id':'','id':call.get('session_lane_id')})
+            if (not state['id'] or call.get('session_lane_id')!=state['id']
+                    or call.get('session_turn')!=state['turn']+1
+                    or call.get('previous_response_id')!=state['response_id']
+                    or messages[1:-1]!=state['messages']):
+                raise ValueError('Saved chat chain is incomplete or inconsistent')
+            state['previous']=restore_context(state['previous'],messages[-1]['content'])
+            state['messages']=copy.deepcopy(messages[1:])+[{'role':'assistant','content':call['text']}]
+            state['response_id']=call.get('response_id','')
+            state['turn']+=1
+        self.id=next(iter(ids))
+        for key,state in states.items():
+            state['workspace']=tempfile.TemporaryDirectory(prefix='turtle-restored-session-')
+            self.lanes[key]=state
+        self.event('session_restored',role=self.role,session_id=self.id,
+                   lanes=[{'id':s['id'],'turns':s['turn']} for s in states.values()],
+                   method='exact_saved_deepseek_chat_messages')
 
     def close(self):
         if self.closed:

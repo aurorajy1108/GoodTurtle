@@ -101,6 +101,30 @@ MAS默认partner自动复制player配置，**无需另设 partner-config**。底
 
 ## 5. 查看轨迹、tokens与费用
 
+### Grader覆盖评分中的reason说明
+
+`fact_coverage`、`requirement_coverage` 的每条记录仍按id/status/evidence校验，但额外的字符串 `reason` 视为说明元数据：控制器复制后移除它，并在 `controller_corrections` 中记录 `ignored_metadata`。原始响应仍保留在API日志；不因此增加grader调用、重新采样分数或改变事实判断。checkpoint本身要求的reason字段不受影响。
+
+未知额外字段、非字符串reason、重复/缺失/错误ID、非法status及无法在当前交卷中验证的evidence仍会拒绝。说明文字不能替代证据或提高分数。若确实需要原有的证据引用格式修复，最多一次调用，不能改变评分判断。
+
+11月9日已用旧批次保存的完整grader响应离线验证该兼容修复；原批次、交卷和原始输出保留，没有重新调用模型。旧冻结代码不会因pull自动改变，也不会自动续跑。
+
+### 字符串text_note及一次性续跑
+
+玩家的question/final动作允许额外的字符串 `text_note`。控制器只取原有type/text，不改写问题或答案；原始输出保留在API及submission日志，移除动作另记 `player_action_normalized`。未知额外字段、非字符串note、空正文及错误动作类型仍报错，不靠重新采样修复。
+
+仅在旧局因这个note被拒绝，且最后一次DeepSeek玩家响应完整、尚未提交Host、前面没有不确定的失败请求时，可以在新目录续跑。工具会验证原快照哈希和完整消息链，保留原Host包、模型、prompt、评分、实验顺序、问数及费用；复制原目录后，只覆盖manifest列明的engine/sessions/providers三个控制器模块。DeepSeek no-tools chat的本地消息按原样恢复，直接提交保存的动作，不重新生成它。恢复批次需单独标注控制器修复，不算一次新独立重复。
+
+```sh
+# 默认plan仅创建恢复副本及manifest，零模型调用；out必须为新目录。
+python3 scripts/resume_study.py \
+  --from-study runs/api/20261108_deepseek_set1_cl_once \
+  --out runs/api/20261108_deepseek_set1_cl_note_resume01 \
+  --repair-player-note --mode plan
+```
+
+在已export Key的终端将mode改为run并选择另一个新out，才会真实续跑。该功能当前限单玩家DeepSeek三角色；不用于MAS中途恢复、修改Host答案/评分之后续跑、缺失响应或网络错误的重试。完整原批次保留；此次从A=14的48轮后保存的第49问继续，A和B额度均不重置。
+
 study目录包含 `study_plan.json`、`status.json`、`continual/index.html`、`team/index.html`。MAS逐局 `shared_dialogue.html` 展示A/B及Host的全部公开对话，`trajectory.html`展示外部问答与私有评分供研究者审阅。
 
 每局 `api_calls.jsonl` 保存请求模型及响应模型、usage、缓存命中、推理token数量（供应商返回时）；不保存 `reasoning_content`。`token_costs.csv` 和 `cost_summary.json` 保留所有角色及失败调用的可用计量，不把推理token重复加到输出总数。

@@ -242,6 +242,10 @@ host / player / grader 对象均仅允许下列九个字段：
 
 **运行目录包含汤底、rubric 和私有评分，只供研究者审核，不能交给 player。** `/runs/api/` 和新导入数据默认被 Git 忽略；历史归档实验已单独发布，不受新 loop 改写。
 
+玩家动作新增一项窄兼容：字符串 `text_note` 可作为非动作元数据忽略，type/text内容不改写，原始输出及移除记录都归档。其他额外字段仍拒绝。旧DeepSeek单玩家局仅因此中断时，有明确校验和新目录副本的恢复入口，见[一次性续跑说明](deepseek.md#字符串text_note及一次性续跑)；一般persistent中断仍不自动恢复。
+
+Grader的fact_coverage/requirement_coverage记录也允许额外字符串reason说明；只移除该元数据并记录controller_corrections，不增加调用或改动评分。ID、status、证据及其他字段仍严格校验，checkpoint要求的reason保留。详见[评分说明字段](deepseek.md#grader覆盖评分中的reason说明)。
+
 ### 8. 错误、退出码与验证
 
 Ctrl+C 会保存当前局为 `interrupted`。API 或协议错误会保存为 `error` 并停止剩余 batch；已经发出但尚未完成反馈的提交标记 pending。当前没有半局自动恢复，修复配置后须使用新目录开新实验。`needs_review` 停止当前局，batch 可继续下一局。

@@ -103,12 +103,17 @@ class FreeDialoguePlayer:
             reply=client.complete(system+DIALOGUE_PROMPT,json.dumps(payload,ensure_ascii=False))
             try:
                 action=json.loads(reply.text)
-                if (not isinstance(action,dict) or set(action)!={'type','text','next_speaker'}
+                if (not isinstance(action,dict) or not {'type','text','next_speaker'} <= set(action)
+                        or not set(action)<= {'type','text','next_speaker','text_note'}
+                        or ('text_note' in action and not isinstance(action['text_note'],str))
                         or action['type'] not in allowed or action['next_speaker'] not in ('A','B')
                         or not isinstance(action['text'],str) or not action['text'].strip()):
                     raise ValueError()
             except (ValueError,TypeError):
                 raise ProtocolError('Invalid shared-dialogue action; no resampling') from None
+            if 'text_note' in action:
+                self.recorder.event('player_action_normalized',actor=actor,submission=self.turn,
+                                    removed_fields=['text_note'],raw_player_output=reply.text)
             next_actor=action['next_speaker'] if self.settings['scheduling']=='adaptive' else ('B' if actor=='A' else 'A')
             self._append({'speaker':actor,'specialty':self.settings['role_assignment'][actor]['specialty'],
                           'type':action['type'],'text':action['text'],'external_turn':self.turn,

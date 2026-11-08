@@ -42,13 +42,15 @@ def parse_action(text, force_final=False):
         value = json.loads(text)
     except (ValueError, TypeError):
         raise ProtocolError('Player must return one JSON object, without markdown') from None
-    if (not isinstance(value, dict) or set(value) != {'type', 'text'} or
+    if (not isinstance(value, dict) or not {'type', 'text'} <= set(value) or
+            not set(value) <= {'type','text','text_note'} or
+            ('text_note' in value and not isinstance(value['text_note'],str)) or
             value['type'] not in ('question', 'final') or not isinstance(value['text'], str)
             or not value['text'].strip()):
         raise ProtocolError('Player JSON must contain type=question|final and nonempty text')
     if force_final and value['type'] != 'final':
         raise ProtocolError('Player violated mandatory final instruction; no question was sent to host')
-    return value
+    return {key:value[key] for key in ('type','text')}
 
 
 def grade_final(text, rubric, requirements=None, submitted_explanation=None):
@@ -103,6 +105,40 @@ def grade_final(text, rubric, requirements=None, submitted_explanation=None):
     return result
 
 
+def saved_player_note_recovery(previous, calls, turns, config):
+    """One narrow repair: a complete, unsubmitted solo action with a text note."""
+    if (previous.get('status')!='error' or previous.get('stop_reason')!='ProtocolError'
+            or not calls or any('label' not in t for t in turns)
+            or any(t.get('grade',{}).get('complete') for t in turns)
+            or len(turns)>=config['max_questions']
+            or any(config.get(role,{}).get('provider')!='deepseek' for role in ('host','player','grader'))
+            or any(c.get('provider')!='deepseek' or c.get('status')!='ok'
+                   or c.get('role') not in ('host','player','grader') for c in calls)):
+        return None
+    last=calls[-1]
+    player_calls=[c for c in calls if c.get('role')=='player']
+    if (last.get('role')!='player' or len(player_calls)!=len(turns)+1
+            or len({c.get('session_lane_id') for c in player_calls})!=1):
+        return None
+    try:
+        raw=json.loads(last['text'])
+        if set(raw)!={'type','text','text_note'} or not isinstance(raw['text_note'],str):return None
+        forced=len(turns)>=config['max_questions']-1
+        action=parse_action(last['text'],forced)
+        for call,turn in zip(player_calls[:-1],turns):
+            if parse_action(call['text'])!={key:turn[key] for key in ('type','text')}:return None
+    except (ValueError,TypeError,KeyError,ProtocolError):
+        return None
+    # Validate complete message chains before accepting the recovery exception.
+    from .sessions import GameSession
+    for role in ('host','player','grader'):
+        session=GameSession(role, '.', lambda *a,**k:None)
+        try:session.restore_chat(calls)
+        except (ValueError,KeyError,TypeError):return None
+        finally:session.close()
+    return {'action':action,'forced':forced,'raw':last['text'],'response_id':last.get('response_id')}
+
+
 class Recorder:
     @classmethod
     def restore(cls, folder, puzzle, config, prompts, echo=True):
@@ -112,8 +148,6 @@ class Recorder:
             if json.loads((folder/name).read_text()) != expected:
                 raise ValueError('Resume input mismatch: '+name)
         previous = json.loads((folder/'result.json').read_text())
-        if config.get('session_mode', 'replay') == 'persistent' and previous['status'] != 'completed':
-            raise ValueError('Persistent interrupted sessions cannot be safely replayed; original provider state may have advanced. Start a new labeled run.')
         if previous['evaluation_versions'].get('runtime_context_version') != RUNTIME_VERSION:
             raise ValueError('Runtime context policy changed; resume using the original frozen code or start a new game')
         if previous['status'] not in ('completed', 'error', 'interrupted'):
@@ -146,15 +180,26 @@ class Recorder:
             raise ValueError('Invalid pending turn or exhausted quota in resume history')
         if (folder/'api_calls.jsonl').exists():
             rec.calls = [json.loads(line) for line in (folder/'api_calls.jsonl').read_text().splitlines()]
+        recovery=saved_player_note_recovery(previous,rec.calls,rec.turns,config)
+        if config.get('session_mode','replay')=='persistent' and previous['status']!='completed' and not recovery:
+            raise ValueError('Persistent interrupted sessions cannot be safely replayed; only a complete saved DeepSeek solo action with text_note supports exact local recovery.')
         if previous['status'] == 'error':
             last = rec.calls[-1] if rec.calls else {}
             diagnostic = json.dumps(last.get('diagnostics', [])).lower()
             recoverable = last.get('status') in ('transport_error','http_error','interrupted') or (
                 last.get('status') == 'invalid_response' and not last.get('raw_text',last.get('text','')).strip()
                 and any(s in diagnostic for s in ('usage limit','at capacity','rate limit','rate_limit')))
-            if not recoverable:
+            if not recoverable and not recovery:
                 raise ValueError('Refuse to resample a protocol/model-output failure')
         rec.resumed = True
+        rec.restore_sessions=bool(recovery)
+        if recovery:
+            turn={'index':len(rec.turns)+1,**recovery['action'],'forced':recovery['forced']}
+            rec.turns.append(turn)
+            rec.event('player_action_normalized',submission=turn['index'],removed_fields=['text_note'],
+                      recovery=True,source_response_id=recovery['response_id'])
+            rec.event('submission',**turn,raw_player_output=recovery['raw'],
+                      recovered_from_response_id=recovery['response_id'])
         return rec
 
     def __init__(self, folder, puzzle, config, prompts, echo=True):
@@ -306,7 +351,10 @@ def play(puzzle, config, recorder, clients, prompts, player_context=None):
             initialize(client.leader)
             initialize(client.partner)
         elif hasattr(client, 'begin_game') and client not in opened:
-            client.begin_game(recorder.folder, recorder.event)
+            if getattr(recorder,'restore_sessions',False):
+                client.restore_game(recorder.folder,recorder.event,recorder.calls)
+            else:
+                client.begin_game(recorder.folder, recorder.event)
             opened.append(client)
     try:
         if config.get('session_mode', 'replay') == 'persistent':
@@ -364,6 +412,9 @@ def _play(puzzle, config, recorder, clients, prompts, player_context=None):
                 player_input = json.dumps(payload, ensure_ascii=False)
                 reply = clients['player'].complete(prompts['player'], player_input)
                 action = parse_action(reply.text, forced)
+                if 'text_note' in json.loads(reply.text):
+                    recorder.event('player_action_normalized',submission=len(recorder.turns)+1,
+                                   removed_fields=['text_note'],recovery=False)
                 turn = {'index': len(recorder.turns)+1, **action, 'forced': forced}
                 recorder.turns.append(turn)
                 recorder.event('submission', **turn, raw_player_output=reply.text)
