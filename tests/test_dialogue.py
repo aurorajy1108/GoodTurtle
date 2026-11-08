@@ -17,6 +17,16 @@ def action(kind, text, next_speaker='B'):
 
 
 class DialogueTests(unittest.TestCase):
+    def test_prose_and_note_metadata_compose_in_shared_dialogue(self):
+        team,rec=self.team(lambda i,p:'A thought. {"type":"question","text":"Q?","next_speaker":"B","text_note":"rephrase"}',
+                           lambda i,p:'{}',max_discussion=0)
+        reply=team.complete('system','{}')
+        self.assertEqual(json.loads(reply.text),{'type':'question','text':'Q?'})
+        self.assertNotIn('text_note',team.transcript[0])
+        events=[json.loads(x) for x in (rec.folder/'trajectory.jsonl').read_text().splitlines()]
+        self.assertTrue(any(e['event']=='player_format_recovery' for e in events))
+        self.assertTrue(any(e['event']=='player_action_normalized' for e in events))
+
     def setUp(self):
         temp = tempfile.TemporaryDirectory()
         self.addCleanup(temp.cleanup)
@@ -27,6 +37,23 @@ class DialogueTests(unittest.TestCase):
         rec = Recorder(self.root/'game', PUZZLE, {'max_questions':3}, self.prompts, echo=False)
         settings = dialogue_settings(Namespace(**{'dialogue_'+k:v for k,v in options.items()}))
         return FreeDialoguePlayer(FakeClient(a), FakeClient(b), rec, settings), rec
+
+    def test_recovers_one_action_with_prose_and_records_actor(self):
+        team, rec = self.team(lambda i,p: 'Let me check.\n' + action('question', 'Is it alive?'),
+                              lambda i,p: action('question', 'Other?'))
+        reply = team.complete('system', '{}')
+        self.assertEqual(json.loads(reply.text), {'type':'question', 'text':'Is it alive?'})
+        events = [json.loads(line) for line in (rec.folder/'trajectory.jsonl').read_text().splitlines()]
+        recovery = [e for e in events if e['event'] == 'player_format_recovery']
+        self.assertEqual(len(recovery), 1)
+        self.assertEqual(recovery[0]['actor'], 'A')
+
+    def test_recovery_rejects_ambiguous_or_disallowed_actions(self):
+        team, rec = self.team(lambda i,p: 'Note: '+action('question','A?')+' '+action('question','B?'),
+                              lambda i,p: action('question','Other?'))
+        with self.assertRaises(ProtocolError):
+            team.complete('system', '{}')
+        self.assertEqual(team.transcript, [])
 
     def test_shared_chat_discussion_and_private_grade_isolation(self):
         def a(i, p):

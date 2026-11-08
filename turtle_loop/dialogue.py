@@ -4,7 +4,7 @@ import json
 from collections import Counter
 from dataclasses import replace
 
-from .engine import ProtocolError, dump
+from .engine import ProtocolError, dump, parse_player_json
 
 ROLE_PROFILES = {
     'investigator': 'Develop and test explanations of identities, setting, event order and the main causal mechanism. Connect confirmed facts into a coherent story; explicitly distinguish hypotheses from host-confirmed facts.',
@@ -102,7 +102,7 @@ class FreeDialoguePlayer:
             client=self.leader if actor=='A' else self.partner
             reply=client.complete(system+DIALOGUE_PROMPT,json.dumps(payload,ensure_ascii=False))
             try:
-                action=json.loads(reply.text)
+                action,recovery=parse_player_json(reply.text)
                 if (not isinstance(action,dict) or not {'type','text','next_speaker'} <= set(action)
                         or not set(action)<= {'type','text','next_speaker','text_note'}
                         or ('text_note' in action and not isinstance(action['text_note'],str))
@@ -114,6 +114,9 @@ class FreeDialoguePlayer:
             if 'text_note' in action:
                 self.recorder.event('player_action_normalized',actor=actor,submission=self.turn,
                                     removed_fields=['text_note'],raw_player_output=reply.text)
+            if recovery:
+                self.recorder.event('player_format_recovery', submission=self.turn,
+                                    actor=actor, strategy='free_dialogue', **recovery)
             next_actor=action['next_speaker'] if self.settings['scheduling']=='adaptive' else ('B' if actor=='A' else 'A')
             self._append({'speaker':actor,'specialty':self.settings['role_assignment'][actor]['specialty'],
                           'type':action['type'],'text':action['text'],'external_turn':self.turn,
