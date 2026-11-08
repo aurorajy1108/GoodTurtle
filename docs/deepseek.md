@@ -16,6 +16,12 @@ export DEEPSEEK_API_KEY='在本机替换成你的DeepSeek Key'
 
 如需恢复三角色共用同一模型，选择 `--config configs/loop.deepseek.same-model.json`，并额外设置 `export DEEPSEEK_MODEL=deepseek-flash`（或其他明确模型ID）。这是独立的同模型对照模板。
 
+## 单人 Player JSON 模式配置
+
+`configs/loop.deepseek.solo-json.json` 保留上述 Host、grader 和 Player 模型与推理设置，同时为 Player 增加 `response_format: {"type": "json_object"}`。适用于单人对局，以及只使用 transcript / answer-only 的 CL；运行方式是将下方命令的 `--config` 换成此文件。API key 仍只从 `DEEPSEEK_API_KEY` 环境变量读取。
+
+此配置会影响所有使用 Player profile 的调用，因此不要直接用于要求纯文本的 CL memory card、`solo_reflect` 或 `discuss` 内部审查。JSON 模式仍可能返回空白、截断或字段不合规，控制器继续验证动作并记录失败。2026-11-08 的 TS035 单人试跑使用了这份角色配置，完整运行至100次提交但未解出；这是一次试跑，不构成可靠性或性能结论。该次运行还使用了当时本地未合并的网络诊断改动；复现需核对运行快照与版本，不要仅凭配置文件推断整个环境相同。
+
 ## 2. 先验证配置
 
 本次小规模实验仅保留15作为positive A，不跑16；A=15/14/28，B=13。下面dry-run会冻结代码、题包、模型与计划，生成12局CL和2局TS038空轨迹，不调用API、不收费：
