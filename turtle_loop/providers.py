@@ -3,6 +3,8 @@ import json
 import http.client
 import os
 import re
+import socket
+import ssl
 import time
 import urllib.error
 import urllib.parse
@@ -148,6 +150,34 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
         return None  # Never forward credentials to an unexpected host.
 
 
+def transport_diagnostic(exc, phase):
+    """Classify errors without logging exception messages, URLs or response bodies.
+
+    Only a DNS failure during opener.open is known to precede connection and
+    request transmission. Other failures have ambiguous transmission state.
+    """
+    reason = exc.reason if isinstance(exc, urllib.error.URLError) else exc
+    if isinstance(reason, socket.gaierror):
+        category = 'dns_resolution'
+    elif isinstance(reason, ssl.SSLError):
+        category = 'tls'
+    elif isinstance(reason, (socket.timeout, TimeoutError)):
+        category = 'timeout'
+    elif isinstance(reason, ConnectionRefusedError):
+        category = 'connection_refused'
+    elif isinstance(reason, ConnectionResetError):
+        category = 'connection_reset'
+    elif isinstance(reason, http.client.HTTPException):
+        category = 'http_protocol'
+    else:
+        category = 'other_transport'
+    code = getattr(reason, 'errno', None)
+    return {'transport_phase': phase, 'transport_category': category,
+            'reason_type': type(reason).__name__,
+            'reason_errno': code if type(code) is int else None,
+            'safe_pre_send_retry': category == 'dns_resolution' and phase == 'open'}
+
+
 class Client:
     def __init__(self, profile, role, audit):
         validate_profile(profile)
@@ -212,12 +242,14 @@ class Client:
             start = time.monotonic()
             data = None
             response_recorded = False
+            phase = 'open'
             record = {**metadata, 'role': self.role, 'provider': self.profile['provider'],
                       'model_requested': self.profile['model'], 'endpoint': url,
                       'attempt': attempt + 1, 'request': body}
             try:
                 request = urllib.request.Request(url, json.dumps(body).encode(), headers, method='POST')
                 with self.opener.open(request, timeout=self.profile.get('timeout', 120)) as response:
+                    phase = 'read'
                     data = json.loads(response.read())
                 reply = parse_reply(kind, data)
                 reply.seconds = time.monotonic() - start
@@ -237,13 +269,15 @@ class Client:
                 code = exc.code
                 self.audit({**record, 'status': 'http_error', 'http_status': code,
                             'seconds': time.monotonic()-start})
-                retry = code == 429 or (lane is None and 500 <= code < 600)
+                retry = code == 429
                 # Do not dump vendor error bodies: they can echo credentials/prompts.
                 error = APIError(f'{self.role}: HTTP {code}; check endpoint, model access and key')
             except (urllib.error.URLError, TimeoutError, ConnectionError, http.client.HTTPException) as exc:
+                diagnostic = transport_diagnostic(exc, phase)
                 self.audit({**record, 'status': 'transport_error', 'error_type': type(exc).__name__,
-                            'seconds': time.monotonic()-start})
-                retry, error = lane is None, APIError(f'{self.role}: transport failure ({type(exc).__name__})')
+                            **diagnostic, 'seconds': time.monotonic()-start})
+                retry = diagnostic['safe_pre_send_retry']
+                error = APIError(f"{self.role}: transport failure ({diagnostic['transport_category']}, {phase})")
             except (json.JSONDecodeError, APIError) as exc:
                 if not response_recorded:
                     self.audit({**record, 'status': 'invalid_response', 'seconds': time.monotonic()-start,
