@@ -1,5 +1,5 @@
 {
-  "version": "host-v9-human-20261102",
+  "version": "host-v10-pillow-boundaries-20261109",
   "review_status": "human_labels_and_delegated_adjudication",
   "replace_host_examples": true,
   "solution": "The man the girl loved betrayed her today; he was packing his bags, preparing to move out of the apartment they shared.\nThe girl tearfully begged him not to leave, but he did not look back.\nJust then, the girl said coldly, \"At least leave my pillow behind.\"\nAnd so, she cut off the boy's hand.\nThe \"pillow\" she wanted to keep was his hand, a body part she treated as her pillow/headrest. She carried the severed hand in her luggage and called it her pillow. At the baggage checkpoint, security personnel discovered the human hand, handcuffed her and took her away.",
@@ -1203,10 +1203,63 @@
         "question_origin": "source_question",
         "reviewer": "human_spreadsheet"
       }
+    },
+    {
+      "case_id": "PILLOW_V10_01",
+      "question": "Was the pillow actually a severed human hand?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Boundary for the hand-as-pillow identity; preserve uncertainty about unsupported details.",
+      "review_status": "derived_from_canonical_story"
+    },
+    {
+      "case_id": "PILLOW_V10_02",
+      "question": "Was the hand concealed inside an ordinary pillow?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "Boundary for the hand-as-pillow identity; preserve uncertainty about unsupported details.",
+      "review_status": "derived_from_canonical_story"
+    },
+    {
+      "case_id": "PILLOW_V10_03",
+      "question": "Was the human bone or teeth component part of the pillow, such as tassels, beads, or a zipper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Boundary for the hand-as-pillow identity; preserve uncertainty about unsupported details.",
+      "review_status": "derived_from_canonical_story"
+    },
+    {
+      "case_id": "PILLOW_V10_04",
+      "question": "Was human bone used in the pillow's structure or filling?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Boundary for the hand-as-pillow identity; preserve uncertainty about unsupported details.",
+      "review_status": "derived_from_canonical_story"
+    },
+    {
+      "case_id": "PILLOW_V10_05",
+      "question": "Did she literally sleep or rest on the severed hand as a pillow?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "Boundary for the hand-as-pillow identity; preserve uncertainty about unsupported details.",
+      "review_status": "derived_from_canonical_story"
+    },
+    {
+      "case_id": "PILLOW_V10_06",
+      "question": "Was the pillow a severed head or another body part?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "Boundary for the hand-as-pillow identity; preserve uncertainty about unsupported details.",
+      "review_status": "derived_from_canonical_story"
     }
   ],
   "verification_policy": "independent_then_adjudicate_v1",
   "label_boundaries": [
-    "For the exact human_spreadsheet examples, use the reviewed label as this puzzle’s local convention. A yes and no label does NOT establish the false subtype (arm, skin covering, fan or hammer). Do not promote it into canonical facts. For other questions follow the ordinary causal/identity rules."
+    "For the exact human_spreadsheet examples, use the reviewed label as this puzzle’s local convention. A yes and no label does NOT establish the false subtype (arm, skin covering, fan or hammer). Do not promote it into canonical facts. For other questions follow the ordinary causal/identity rules.",
+    "The pillow referent is the severed hand itself, not an ordinary pillow with a hand concealed inside. A wrapping, pillowcase or disguise is unspecified; do not assert one.",
+    "Human bone or teeth ornaments, beads, tassels, structural supports or stuffing are not supported. Do not infer that the pillow was made of bone components from the fact that a hand contains bones.",
+    "Calling his hand a pillow or headrest does not establish that she literally slept on or rested on the severed hand. Treat actual use as unspecified.",
+    "For a mixed alternative such as a severed head or another body part, do not answer yes in a way that confirms a head. Use yes and no when one alternative is true but another is false; a hand is not a head.",
+    "Do not infer that the man died, that transporting a hand is itself illegal, that the hand was stolen property, or a specific legal charge; these details are unspecified."
   ]
 }
