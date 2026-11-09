@@ -56,18 +56,58 @@ def repair_missing_question_quote(text):
                   'insert_offset':offset,'characters_added':1}
 
 
+def repair_question_inner_quotes(text):
+    """Escape one unambiguous quoted phrase inside a complete question value."""
+    if not isinstance(text,str):return None
+    match=re.fullmatch(r'(\s*\{\s*"type"\s*:\s*"question"\s*,\s*"text"\s*:\s*")'
+                      r'([\s\S]*)("\s*\}\s*)',text)
+    if not match:return None
+    body=match.group(2)
+    quotes=[];i=0
+    while i<len(body):
+        char=body[i]
+        if char=='\\':i+=2;continue
+        if char in '{}' or ord(char)<32:return None
+        if char=='"':quotes.append(i)
+        i+=1
+    if len(quotes)!=2 or not body.rstrip().endswith('?'):return None
+    first,last=quotes;phrase=body[first+1:last].strip()
+    # Reject possible keys, delimiters, extra objects, and broken envelopes.
+    if (not phrase or not any(c.isalpha() for c in phrase)
+            or phrase[0] in ',:[]' or ':' in phrase
+            or body[:first].rstrip().endswith((',',':','['))
+            or body[last+1:].lstrip().startswith((':',',','[',']'))):
+        return None
+    offsets=[match.start(2)+i for i in quotes]
+    candidate=text
+    for at in reversed(offsets):candidate=candidate[:at]+'\\'+candidate[at:]
+    try:value=json.loads(candidate)
+    except ValueError:return None
+    if set(value)!={'type','text'} or value['type']!='question':return None
+    return value,{'method':'unescaped_question_inner_quotes','escaped_quote_offsets':offsets,
+                  'inserted_character':'\\','characters_added':2}
+
+
+def _unique_player_object(pairs):
+    value={}
+    for key,item in pairs:
+        if key in value:raise ValueError('Duplicate player JSON key')
+        value[key]=item
+    return value
+
+
 def parse_player_json(text):
     recovery = None
     try:
-        value = json.loads(text)
+        value = json.loads(text,object_pairs_hook=_unique_player_object)
     except (ValueError, TypeError):
-        repaired=repair_missing_question_quote(text)
+        repaired=repair_missing_question_quote(text) or repair_question_inner_quotes(text)
         if repaired:return repaired
         if not isinstance(text, str):
             raise ProtocolError('Player must return one JSON object, without markdown') from None
         if '```' in text:
             raise ProtocolError('Player JSON must not be wrapped in markdown') from None
-        decoder = json.JSONDecoder()
+        decoder = json.JSONDecoder(object_pairs_hook=_unique_player_object)
         objects = []
         index = 0
         while index < len(text):
@@ -182,7 +222,8 @@ def _saved_player_recovery(previous, calls, turns, config, mode):
             if set(raw)!={'type','text','text_note'} or not isinstance(raw['text_note'],str):return None
         else:
             raw,format_recovery=parse_player_json(last['text'])
-            if (not format_recovery or format_recovery['method']!='missing_question_text_closing_quote'
+            if (not format_recovery or format_recovery['method'] not in
+                    ('missing_question_text_closing_quote','unescaped_question_inner_quotes')
                     or last.get('finish_reason')!='stop'):return None
         forced=len(turns)>=config['max_questions']-1
         action=parse_action(last['text'],forced)

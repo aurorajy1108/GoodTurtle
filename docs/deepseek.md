@@ -143,6 +143,10 @@ python3 scripts/resume_study.py \
 
 本次复用已结束的A=14，直接把answer_only B=13已保存的第1问交给Host，不重跑A、不重新生成B的第1问。out必须是新目录；mode plan仅准备副本且无付费调用。
 
+同一恢复入口也支持另一种独立的窄修复：完整双字段question对象的正文中，仅有一对短语引号未转义时，只为这两个引号添加反斜线。问题文字及引号本身保留，原始输出和转义位置归档。多个引号短语、疑似字段/对象分隔符、正文中歧义括号、截断输出和final答案仍不修复；玩家JSON中的重复键也拒绝。
+
+当前断点为 `20261109_deepseek_set1_cl_json_resume03` 的第74问，前73轮已有反馈。可使用相同 `--repair-player-json` 从该目录复制到新out并续跑，不重新调用player生成第74问；A=14的100次提交及结果同样复用。
+
 ### 字符串text_note的恢复
 
 玩家的question/final动作允许额外的字符串 `text_note`。控制器只取原有type/text，不改写问题或答案；原始输出保留在API及submission日志，移除动作另记 `player_action_normalized`。未知额外字段、非字符串note、空正文及错误动作类型仍报错，不靠重新采样修复。

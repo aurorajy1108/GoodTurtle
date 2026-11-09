@@ -38,17 +38,20 @@ class NoteRecoveryTests(unittest.TestCase):
     def test_missing_quote_resume_preserves_saved_question_and_does_not_resample(self):
         self.resume_case('question_quote')
 
+    def test_unescaped_inner_quote_resume_does_not_regenerate_question(self):
+        self.resume_case('inner_quotes')
+
     @patch.dict(os.environ, {'DEEPSEEK_API_KEY':'fixture'})
     def resume_case(self, mode):
         class StopAfterSavedReply(Client):
             def complete(self, system, user):
                 reply=super().complete(system,user)
-                if 'text_note' in reply.text or reply.text.endswith('?}'):
+                if 'text_note' in reply.text or reply.text.endswith('?}') or 'Action "three"?' in reply.text:
                     raise ProtocolError('Player JSON must contain type=question|final and nonempty text')
                 return reply
 
         counts=Counter(); requests=[]
-        question3='Action 3?' if mode=='question_quote' else 'Action 3'
+        question3='Action 3?' if mode=='question_quote' else 'Action "three"?' if mode=='inner_quotes' else 'Action 3'
         def respond(req, **kwargs):
             body=json.loads(req.data); role=body['model'].removeprefix('fixture-')
             counts[role]+=1; n=counts[role]; requests.append((role,body))
@@ -58,6 +61,7 @@ class NoteRecoveryTests(unittest.TestCase):
                 text=json.dumps(value)
                 if n==3 and mode=='question_quote':
                     at=text.rfind('"');text=text[:at]+text[at+1:]
+                if n==3 and mode=='inner_quotes':text=text.replace('\\"three\\"','"three"')
             elif role=='host':text='no'
             else:text=evaluated()
             return Response({'id':f'{role}-{n}','model':body['model'],
@@ -82,7 +86,7 @@ class NoteRecoveryTests(unittest.TestCase):
                 elif changed=='unknown_metadata':calls[-1]['text']='{"type":"question","text":"Q","answer":"guess"}'
                 else:calls[-1]['session_turn']=500
                 self.assertIsNone(recover(result,calls,rec.turns,config),changed)
-            if mode=='question_quote':
+            if mode!='text_note':
                 calls=copy.deepcopy(rec.calls);calls[-1]['finish_reason']='length'
                 self.assertIsNone(recover(result,calls,rec.turns,config))
             self.assertIsNone(recover(result,rec.calls,rec.turns,

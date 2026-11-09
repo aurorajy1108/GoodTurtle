@@ -4,6 +4,25 @@ from turtle_loop.engine import parse_action, ProtocolError
 
 
 class PlayerFormatRecoveryTests(unittest.TestCase):
+    def test_one_unescaped_inner_quote_pair_preserves_question_words(self):
+        events=[]
+        raw='{"type":"question","text":"Did you click "confirm before deadline," and lose the dishes?"}'
+        self.assertEqual(parse_action(raw,audit=events.append),
+                         {'type':'question','text':'Did you click "confirm before deadline," and lose the dishes?'})
+        self.assertEqual(events[0]['method'],'unescaped_question_inner_quotes')
+        self.assertEqual(events[0]['characters_added'],2)
+        for invalid in (
+            '{"type":"final","text":"A "quoted" guess?"}',
+            '{"type":"question","text":"Q?","extra":"value?"}',
+            '{"type":"question","text":"Q?","type":"final"}',
+            '{"type":"question","text":"Did {you} click "confirm"?"}',
+            '{"type":"question","text":"Did "A" or "B" do it?"}',
+            'Prose {"type":"question","text":"Did you click "confirm"?"}',
+        ):
+            # Valid JSON with forbidden extra fields is still rejected too.
+            with self.subTest(raw=invalid),self.assertRaises(ProtocolError):parse_action(invalid)
+        with self.assertRaises(ProtocolError):parse_action(raw,force_final=True)
+
     def test_exact_missing_question_quote_inserts_only_one_character(self):
         events=[]
         raw='{"type":"question","text":"Were the courses taken by someone else?}'

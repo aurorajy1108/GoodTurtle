@@ -111,7 +111,7 @@ def main(argv=None):
     p.add_argument('--mode',choices=['plan','run'],default='plan')
     p.add_argument('--repair-player-note',action='store_true',help='Recover one complete saved DeepSeek solo action rejected solely for string text_note; preserve local chat messages and quota')
     p.add_argument('--repair-grader-reason',action='store_true',help='Recover the complete saved DeepSeek grade rejected solely for coverage reason metadata; no new grader call')
-    p.add_argument('--repair-player-json',action='store_true',help='Recover a saved complete question missing only its text closing quote; no model call')
+    p.add_argument('--repair-player-json',action='store_true',help='Recover a saved complete question with one missing text quote or one unescaped inner quote pair; no model call')
     args=p.parse_args(argv)
     record=prepare(args.from_study,args.out,args.repair_player_note,args.repair_grader_reason,args.repair_player_json)
     out=Path(record['out']);batch=record['batch']
