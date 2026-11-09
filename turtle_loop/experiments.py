@@ -17,7 +17,7 @@ from .dataset import load_dataset
 from .engine import Recorder, dump, load_prompts, parse_action, play, summarize_batch
 from .providers import APIError, Client, resolve_env, validate_profile
 from .host_context import build_story_context
-from .dialogue import FreeDialoguePlayer, add_dialogue_arguments, dialogue_settings
+from .dialogue import FreeDialoguePlayer, add_dialogue_arguments, dialogue_settings, dialogue_system_prompt
 
 ADVICE = '''You are the second solver reviewing a teammate's proposed Turtle Soup action.
 Use only the supplied public puzzle, feedback and proposal. Identify unsupported
@@ -478,6 +478,8 @@ def run(args):
         name=block['block']+'_'+condition
         target_transfer_policy = args.command == 'continual' and condition not in SOURCE_CONDITIONS
         used_prompts={**prompts,'player':prompts['player']+(TRANSFER if target_transfer_policy else '')}
+        if team == 'free_dialogue':
+            used_prompts['player'] = dialogue_system_prompt()
         saved_row=next((r for r in rows if r['run_dir']==name),None)
         if saved_row:
             rec=Recorder.restore(folder/name,bank[pid],config,used_prompts,echo=not args.quiet)
