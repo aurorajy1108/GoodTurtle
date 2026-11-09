@@ -1,0 +1,44 @@
+[
+  {
+    "id": "death_mixed",
+    "puzzle_id": "TS002",
+    "question": "Was she knowingly transporting the dead body of her partner?",
+    "expected": "yes and no"
+  },
+  {
+    "id": "death_only",
+    "puzzle_id": "TS002",
+    "question": "Did her partner die as a result of the injury?",
+    "expected": "irrelevant"
+  },
+  {
+    "id": "metaphor",
+    "puzzle_id": "TS002",
+    "question": "Did her use of pillow refer to her partner’s hand?",
+    "expected": "yes"
+  },
+  {
+    "id": "wordplay_broad",
+    "puzzle_id": "TS002",
+    "question": "Is the key a pun or wordplay involving the pillow?",
+    "expected": "yes and no"
+  },
+  {
+    "id": "phonetic_pun",
+    "puzzle_id": "TS002",
+    "question": "Does pillow conceal a phonetic joke about a drug pill?",
+    "expected": "no"
+  },
+  {
+    "id": "mixed_head",
+    "puzzle_id": "TS002",
+    "question": "Is the pillow a severed head or another body part?",
+    "expected": "yes and no"
+  },
+  {
+    "id": "mixed_arm",
+    "puzzle_id": "TS002",
+    "question": "Is the severed part a hand or a whole arm?",
+    "expected": "yes and no"
+  }
+]

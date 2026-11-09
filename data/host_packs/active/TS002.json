@@ -1,5 +1,5 @@
 {
-  "version": "host-v10-pillow-boundaries-20261109",
+  "version": "host-v11-unknown-wordplay-alternatives-20261109",
   "review_status": "human_labels_and_delegated_adjudication",
   "replace_host_examples": true,
   "solution": "The man the girl loved betrayed her today; he was packing his bags, preparing to move out of the apartment they shared.\nThe girl tearfully begged him not to leave, but he did not look back.\nJust then, the girl said coldly, \"At least leave my pillow behind.\"\nAnd so, she cut off the boy's hand.\nThe \"pillow\" she wanted to keep was his hand, a body part she treated as her pillow/headrest. She carried the severed hand in her luggage and called it her pillow. At the baggage checkpoint, security personnel discovered the human hand, handcuffed her and took her away.",
@@ -1260,6 +1260,9 @@
     "Human bone or teeth ornaments, beads, tassels, structural supports or stuffing are not supported. Do not infer that the pillow was made of bone components from the fact that a hand contains bones.",
     "Calling his hand a pillow or headrest does not establish that she literally slept on or rested on the severed hand. Treat actual use as unspecified.",
     "For a mixed alternative such as a severed head or another body part, do not answer yes in a way that confirms a head. Use yes and no when one alternative is true but another is false; a hand is not a head.",
-    "Do not infer that the man died, that transporting a hand is itself illegal, that the hand was stolen property, or a specific legal charge; these details are unspecified."
+    "Do not infer that the man died, that transporting a hand is itself illegal, that the hand was stolen property, or a specific legal charge; these details are unspecified.",
+    "Death status is unspecified: never confirm that the partner died, is a corpse, or is a dead person. For a combined claim that a hand was carried and the partner is dead, use yes and no: the hand is established but death is unknown. Do not infer survival after the injury either. For death-only questions follow the existing unknown-detail convention, irrelevant.",
+    "The word pillow refers to the hand treated as her pillow; that is an unusual referent or metaphor, not established spelling, pronunciation, homophone, anagram, rebus, pun, or word puzzle. A broad pun/wordplay question that conflates metaphor with a linguistic puzzle receives yes and no; a specific unsupported spelling or sound puzzle receives no. Do not confirm a pun merely because the referent is unusual.",
+    "For alternative or mixed propositions assess each branch independently: a yes for a broad category or disjunction does not confirm any specific alternative. Where a question combines a supported branch with a false or unsupported branch and risks confirming that branch, use yes and no. A hand is supported; an entire arm, leg, foot, head, and claims about death are not established. Do not turn a yes to hand-or-arm into proof of arm."
   ]
 }
