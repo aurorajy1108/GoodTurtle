@@ -38,6 +38,79 @@ class DialogueTests(unittest.TestCase):
         settings = dialogue_settings(Namespace(**{'dialogue_'+k:v for k,v in options.items()}))
         return FreeDialoguePlayer(FakeClient(a), FakeClient(b), rec, settings), rec
 
+    def test_discussion_with_literal_newlines_is_recovered_without_changing_text(self):
+        raw='{"type":"discuss","text":"First line\n\nSecond line","next_speaker":"B"}'
+        team,rec=self.team(lambda i,p:raw,lambda i,p:action('question','Is it alive?'))
+        reply=team.complete('system','{}')
+        self.assertEqual(json.loads(reply.text),{'type':'question','text':'Is it alive?'})
+        self.assertEqual(team.transcript[0]['text'],'First line\n\nSecond line')
+        events=[json.loads(l) for l in (rec.folder/'trajectory.jsonl').read_text().splitlines()]
+        recovered=[e for e in events if e['event']=='player_format_recovery']
+        self.assertEqual(len(recovered),1)
+        self.assertEqual(recovered[0]['method'],'escape_string_newlines')
+        self.assertEqual(recovered[0]['actor'],'A')
+
+    def test_malformed_multiline_dialogue_with_missing_speaker_still_stops(self):
+        raw='{"type":"question","text":"One\nline"}'
+        team,rec=self.team(lambda i,p:raw,lambda i,p:action('question','Other?'))
+        with self.assertRaises(ProtocolError):team.complete('system','{}')
+        self.assertEqual(team.transcript,[])
+
+    def test_missing_speaker_is_corrected_by_same_actor_and_recorded(self):
+        def a(i,p):
+            if i == 1:
+                return '{"type":"final","text":"An explanation"}'
+            self.assertIn('next_speaker', p['format_correction']['instruction'])
+            return action('final','An explanation','B')
+        team,rec=self.team(a,lambda i,p:action('question','Other?'))
+        reply=team.complete('system','{}')
+        self.assertEqual(json.loads(reply.text),{'type':'final','text':'An explanation'})
+        self.assertEqual(len(team.leader.inputs),2)
+        self.assertEqual(len(team.partner.inputs),0)
+        events=[json.loads(l) for l in (rec.folder/'trajectory.jsonl').read_text().splitlines()]
+        self.assertEqual([e['event'] for e in events if e['event'].startswith('dialogue_format_')],
+                         ['dialogue_format_rejected','dialogue_format_corrected'])
+
+    def test_format_correction_has_two_retry_limit(self):
+        team,rec=self.team(lambda i,p:'{}',lambda i,p:action('question','Other?'))
+        with self.assertRaises(ProtocolError):team.complete('system','{}')
+        self.assertEqual(len(team.leader.inputs),3)
+        self.assertEqual(team.transcript,[])
+
+    def test_mandatory_final_accepts_optional_speaker_and_uses_matching_contract(self):
+        for suffix in ('', ',"next_speaker":"B"'):
+            with self.subTest(suffix=suffix):
+                self.root = self.root / ('with_speaker' if suffix else 'without_speaker')
+                team,rec=self.team(lambda i,p:'{"type":"final","text":"Final"'+suffix+'}',
+                                   lambda i,p:action('question','Other?'))
+                reply=team.complete('unused solo prompt',json.dumps({'turn_control':'This is the mandatory last turn.'}))
+                self.assertEqual(json.loads(reply.text),{'type':'final','text':'Final'})
+                system,wire=team.leader.inputs[0]
+                self.assertNotIn('unused solo prompt',system)
+                self.assertNotIn('{"type":"question","text":"One yes/no question"}',system)
+                payload=json.loads(wire)
+                schema,_,_=output_contract(wire)
+                self.assertEqual(schema['required'],['type','text'])
+                self.assertEqual(json.loads(payload['dialogue_control']['response_contract'].split('schema: ',1)[1].rsplit('. The text',1)[0]),schema)
+                self.assertIsNone(team.transcript[0]['effective_next_speaker'])
+
+    def test_normal_final_missing_speaker_is_corrected_before_submission(self):
+        team,rec=self.team(lambda i,p: '{"type":"final","text":"Answer"}' if i==1 else action('final','Answer','B'),
+                           lambda i,p:action('question','Other?'))
+        team.complete('system','{}')
+        self.assertEqual(len(team.leader.inputs),2)
+        self.assertEqual(team.speaker,'B')
+
+    def test_mandatory_final_without_speaker_is_graded_and_finishes(self):
+        team,rec=self.team(lambda i,p:'{"type":"final","text":"Last answer"}',
+                           lambda i,p:action('question','Other?'))
+        grader=FakeClient(lambda i,p:evaluated((.5,0)))
+        result=play(PUZZLE,{'max_questions':1},rec,
+                    dict(player=team,host=FakeClient(lambda i,p:'no'),grader=grader),self.prompts)
+        self.assertEqual(result['status'],'completed')
+        self.assertEqual(result['stop_reason'],'budget_exhausted')
+        self.assertEqual(len(grader.inputs),1)
+
     def test_recovers_one_action_with_prose_and_records_actor(self):
         team, rec = self.team(lambda i,p: 'Let me check.\n' + action('question', 'Is it alive?'),
                               lambda i,p: action('question', 'Other?'))
@@ -103,12 +176,12 @@ class DialogueTests(unittest.TestCase):
             team.observe_feedback(2, json.loads(reply.text), 'no')
         team.observe_feedback(1, json.loads(reply.text), 'no')
 
-    def test_no_discussion_and_mandatory_final_reject_invalid_actions_without_retry(self):
+    def test_no_discussion_and_mandatory_final_reject_invalid_actions(self):
         team, rec = self.team(lambda i,p:action('discuss', 'More discussion'),
                               lambda i,p:action('question', 'Q'), max_discussion=0)
         with self.assertRaises(ProtocolError):
             team.complete('system', '{}')
-        self.assertEqual(len(team.leader.inputs), 1)
+        self.assertEqual(len(team.leader.inputs), 3)
         self.assertEqual(team.transcript, [])
         # A final-only call must not admit either questions or internal discussion.
         with self.assertRaises(ProtocolError):

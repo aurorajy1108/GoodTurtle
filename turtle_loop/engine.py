@@ -56,6 +56,30 @@ def repair_missing_question_quote(text):
                   'insert_offset':offset,'characters_added':1}
 
 
+def escape_json_string_newlines(text):
+    """Escape literal CR/LF inside JSON strings without changing decoded text."""
+    result = []
+    in_string = False
+    escaped = False
+    changed = 0
+    for char in text:
+        if in_string:
+            if escaped:
+                escaped = False
+            elif char == '\\':
+                escaped = True
+            elif char == '"':
+                in_string = False
+            elif char in ('\n', '\r'):
+                result.append('\\n' if char == '\n' else '\\r')
+                changed += 1
+                continue
+        elif char == '"':
+            in_string = True
+        result.append(char)
+    return ''.join(result), changed
+
+
 def parse_player_json(text):
     recovery = None
     try:
@@ -67,6 +91,14 @@ def parse_player_json(text):
             raise ProtocolError('Player must return one JSON object, without markdown') from None
         if '```' in text:
             raise ProtocolError('Player JSON must not be wrapped in markdown') from None
+        escaped_text, count = escape_json_string_newlines(text)
+        if count:
+            try:
+                candidate = json.loads(escaped_text)
+            except ValueError:
+                candidate = None
+            if isinstance(candidate, dict):
+                return candidate, {'method': 'escape_string_newlines', 'escaped_characters': count}
         decoder = json.JSONDecoder()
         objects = []
         index = 0

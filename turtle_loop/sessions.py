@@ -17,7 +17,7 @@ chronological order at synchronization; no missing teammate answers may be infer
 Only the current context's question/submission/turn_control is active. Old examples
 are historical references, not additional story facts. Never carry a prior submitted
 explanation or grade into the current submission's evidence. Judge only its text.
-Follow the same response schema on every turn. Do not describe context updates.
+Follow the response schema specified for the current turn. Do not describe context updates.
 '''
 
 
