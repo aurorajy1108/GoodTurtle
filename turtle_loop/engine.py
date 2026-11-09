@@ -4,6 +4,7 @@ import html
 import hashlib
 import json
 import math
+import re
 import statistics
 import shutil
 import time
@@ -37,11 +38,31 @@ def dump(path, data):
     temp.replace(path)
 
 
+def repair_missing_question_quote(text):
+    """Repair only one missing quote in a complete two-field question object."""
+    if not isinstance(text,str):return None
+    match=re.fullmatch(
+        r'\s*\{\s*"type"\s*:\s*"question"\s*,\s*"text"\s*:\s*"'
+        r'((?:[^"\\{}\x00-\x1f]|\\(?:["\\/bfnrt]|u[0-9a-fA-F]{4}))*)\}\s*',text)
+    if not match:return None
+    # A question mark and final object brace must already be present. Never
+    # repair truncated prose, additional objects, keys, braces, or final answers.
+    offset=text.rfind('}')
+    candidate=text[:offset]+'"'+text[offset:]
+    try:value=json.loads(candidate)
+    except ValueError:return None
+    if not value['text'].rstrip().endswith('?'):return None
+    return value,{'method':'missing_question_text_closing_quote','inserted_character':'"',
+                  'insert_offset':offset,'characters_added':1}
+
+
 def parse_player_json(text):
     recovery = None
     try:
         value = json.loads(text)
     except (ValueError, TypeError):
+        repaired=repair_missing_question_quote(text)
+        if repaired:return repaired
         if not isinstance(text, str):
             raise ProtocolError('Player must return one JSON object, without markdown') from None
         if '```' in text:
@@ -139,8 +160,8 @@ def grade_final(text, rubric, requirements=None, submitted_explanation=None):
     return result
 
 
-def saved_player_note_recovery(previous, calls, turns, config):
-    """One narrow repair: a complete, unsubmitted solo action with a text note."""
+def _saved_player_recovery(previous, calls, turns, config, mode):
+    """Recover a complete saved solo action without another model generation."""
     if (previous.get('status')!='error' or previous.get('stop_reason')!='ProtocolError'
             or not calls or any('label' not in t for t in turns)
             or any(t.get('grade',{}).get('complete') for t in turns)
@@ -155,8 +176,14 @@ def saved_player_note_recovery(previous, calls, turns, config):
             or len({c.get('session_lane_id') for c in player_calls})!=1):
         return None
     try:
-        raw=json.loads(last['text'])
-        if set(raw)!={'type','text','text_note'} or not isinstance(raw['text_note'],str):return None
+        format_recovery=None
+        if mode=='text_note':
+            raw=json.loads(last['text'])
+            if set(raw)!={'type','text','text_note'} or not isinstance(raw['text_note'],str):return None
+        else:
+            raw,format_recovery=parse_player_json(last['text'])
+            if (not format_recovery or format_recovery['method']!='missing_question_text_closing_quote'
+                    or last.get('finish_reason')!='stop'):return None
         forced=len(turns)>=config['max_questions']-1
         action=parse_action(last['text'],forced)
         for call,turn in zip(player_calls[:-1],turns):
@@ -170,7 +197,59 @@ def saved_player_note_recovery(previous, calls, turns, config):
         try:session.restore_chat(calls)
         except (ValueError,KeyError,TypeError):return None
         finally:session.close()
-    return {'action':action,'forced':forced,'raw':last['text'],'response_id':last.get('response_id')}
+    return {'action':action,'forced':forced,'raw':last['text'],'response_id':last.get('response_id'),
+            'format_recovery':format_recovery}
+
+
+def saved_player_note_recovery(previous, calls, turns, config):
+    return _saved_player_recovery(previous,calls,turns,config,'text_note')
+
+
+def saved_player_json_recovery(previous, calls, turns, config):
+    return _saved_player_recovery(previous,calls,turns,config,'question_quote')
+
+
+def saved_grader_reason_recovery(previous, calls, turns, config, puzzle):
+    """Accept an already returned grade rejected only for explanation metadata."""
+    if (previous.get('status')!='error' or previous.get('stop_reason')!='ProtocolError'
+            or not calls or not turns or turns[-1].get('type')!='final' or 'label' in turns[-1]
+            or any('label' not in t for t in turns[:-1])
+            or any(config.get(role,{}).get('provider')!='deepseek' for role in ('host','player','grader'))
+            or any(c.get('provider')!='deepseek' or c.get('status')!='ok'
+                   or c.get('role') not in ('host','player','grader') for c in calls)):
+        return None
+    last=calls[-1]
+    players=[c for c in calls if c.get('role')=='player']
+    if (last.get('role')!='grader' or len(players)!=len(turns)
+            or len({c.get('session_lane_id') for c in players})!=1):return None
+    from .coverage import normalize_coverage_metadata
+    from .sessions import GameSession
+    payload=None
+    try:
+        for role in ('host','player','grader'):
+            session=GameSession(role,'.',lambda *a,**k:None)
+            try:
+                session.restore_chat(calls)
+                if role=='grader':
+                    for lane in session.lanes.values():
+                        if lane['response_id']==last.get('response_id'):payload=lane['previous']
+            finally:session.close()
+        if (not payload or puzzle.get('grading_protocol')!=PROTOCOL
+                or payload.get('grading_protocol')!=PROTOCOL
+                or payload.get('rubric')!=puzzle['rubric']
+                or payload.get('completion_requirements',[])!=puzzle.get('completion_requirements',[])
+                or payload.get('submitted_explanation')!=turns[-1]['text']
+                or payload.get('required_facts')!=fact_specs(puzzle['rubric'])
+                or payload.get('required_completion')!=requirement_specs(puzzle.get('completion_requirements',[]))):
+            return None
+        raw=json.loads(last['text'])
+        if not isinstance(raw,dict):return None
+        _,changes=normalize_coverage_metadata(raw)
+        if not changes:return None
+        grade=grade_final(last['text'],puzzle['rubric'],puzzle.get('completion_requirements',[]),turns[-1]['text'])
+        return {'grade':grade,'raw':last['text'],'response_id':last.get('response_id'),
+                'removed_fields':[c['field'] for c in changes]}
+    except (ValueError,TypeError,KeyError,ProtocolError):return None
 
 
 class Recorder:
@@ -214,26 +293,39 @@ class Recorder:
             raise ValueError('Invalid pending turn or exhausted quota in resume history')
         if (folder/'api_calls.jsonl').exists():
             rec.calls = [json.loads(line) for line in (folder/'api_calls.jsonl').read_text().splitlines()]
-        recovery=saved_player_note_recovery(previous,rec.calls,rec.turns,config)
-        if config.get('session_mode','replay')=='persistent' and previous['status']!='completed' and not recovery:
-            raise ValueError('Persistent interrupted sessions cannot be safely replayed; only a complete saved DeepSeek solo action with text_note supports exact local recovery.')
+        recovery=(saved_player_note_recovery(previous,rec.calls,rec.turns,config)
+                  or saved_player_json_recovery(previous,rec.calls,rec.turns,config))
+        grade_recovery=saved_grader_reason_recovery(previous,rec.calls,rec.turns,config,puzzle)
+        if config.get('session_mode','replay')=='persistent' and previous['status']!='completed' and not (recovery or grade_recovery):
+            raise ValueError('Persistent interrupted sessions cannot be safely replayed; only complete saved DeepSeek solo replies rejected for supported metadata permit exact local recovery.')
         if previous['status'] == 'error':
             last = rec.calls[-1] if rec.calls else {}
             diagnostic = json.dumps(last.get('diagnostics', [])).lower()
             recoverable = last.get('status') in ('transport_error','http_error','interrupted') or (
                 last.get('status') == 'invalid_response' and not last.get('raw_text',last.get('text','')).strip()
                 and any(s in diagnostic for s in ('usage limit','at capacity','rate limit','rate_limit')))
-            if not recoverable and not recovery:
+            if not recoverable and not (recovery or grade_recovery):
                 raise ValueError('Refuse to resample a protocol/model-output failure')
         rec.resumed = True
-        rec.restore_sessions=bool(recovery)
+        rec.restore_sessions=bool(recovery or grade_recovery)
         if recovery:
             turn={'index':len(rec.turns)+1,**recovery['action'],'forced':recovery['forced']}
             rec.turns.append(turn)
-            rec.event('player_action_normalized',submission=turn['index'],removed_fields=['text_note'],
-                      recovery=True,source_response_id=recovery['response_id'])
+            if recovery.get('format_recovery'):
+                rec.event('player_format_recovery',submission=turn['index'],recovery=True,
+                          source_response_id=recovery['response_id'],**recovery['format_recovery'])
+            else:
+                rec.event('player_action_normalized',submission=turn['index'],removed_fields=['text_note'],
+                          recovery=True,source_response_id=recovery['response_id'])
             rec.event('submission',**turn,raw_player_output=recovery['raw'],
                       recovered_from_response_id=recovery['response_id'])
+        if grade_recovery:
+            turn=rec.turns[-1]
+            turn.update(grade=grade_recovery['grade'],label=grade_recovery['grade']['label'])
+            rec.event('grader_metadata_recovered',submission=turn['index'],
+                      source_response_id=grade_recovery['response_id'],removed_fields=grade_recovery['removed_fields'])
+            rec.event('evaluation',submission=turn['index'],**grade_recovery['grade'],raw=grade_recovery['raw'],
+                      recovered_from_response_id=grade_recovery['response_id'])
         return rec
 
     def __init__(self, folder, puzzle, config, prompts, echo=True):

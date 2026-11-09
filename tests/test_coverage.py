@@ -1,12 +1,20 @@
 import copy
 import json
+import os
+import tempfile
 import unittest
+from collections import Counter
+from pathlib import Path
+from unittest.mock import patch
 
 from turtle_loop.coverage import fact_specs, requirement_specs
-from turtle_loop.engine import grade_final, ProtocolError
+from turtle_loop.engine import grade_final, ProtocolError, Recorder, load_prompts, play, saved_grader_reason_recovery
 from turtle_loop.codex_client import output_contract
 from turtle_loop.grader import evaluate_final
 from test_loop import FakeClient
+from test_loop import PUZZLE
+from test_sessions import Response
+from turtle_loop.providers import Client
 
 
 class CoverageTests(unittest.TestCase):
@@ -123,6 +131,64 @@ class CoverageTests(unittest.TestCase):
         self.assertEqual(len(client.inputs),2)
         self.assertEqual(grade['checkpoints'],self.value['checkpoints'])
         self.assertEqual(sum(x.get('action')=='ignored_metadata' for x in grade['controller_corrections']),3)
+
+    @patch.dict(os.environ, {'DEEPSEEK_API_KEY':'fixture'})
+    def test_saved_grade_recovery_preserves_rejected_final_quota_and_does_not_regrade(self):
+        counts=Counter();requests=[]
+        bad=copy.deepcopy(self.value)
+        bad['fact_coverage'][0].update(status='missing',evidence='')
+        bad['checkpoints'][0]['credit']=0.5
+        bad['full_solution']=False
+        for value in (bad,self.value):
+            for name in ('fact_coverage','requirement_coverage'):
+                for row in value[name]:row['reason']='Optional explanation'
+        def respond(req,**kwargs):
+            body=json.loads(req.data);role=body['model'].removeprefix('fixture-')
+            counts[role]+=1;requests.append((role,body))
+            if role=='player':
+                text=json.dumps({'type':'question' if counts[role]==2 else 'final',
+                                 'text':'A discriminating question?' if counts[role]==2 else self.submission})
+            elif role=='host':text='no'
+            else:text=json.dumps(bad if counts[role]==1 else self.value)
+            return Response({'id':f'{role}-{counts[role]}','model':body['model'],
+                'choices':[{'message':{'content':text},'finish_reason':'stop'}],
+                'usage':{'prompt_tokens':10,'completion_tokens':1,'prompt_cache_hit_tokens':0}})
+        class OldGrader(Client):
+            def complete(self,system,user):
+                reply=super().complete(system,user)
+                raise ProtocolError('fact_coverage: invalid or duplicate coverage row')
+        with tempfile.TemporaryDirectory() as tmp,patch('urllib.request.OpenerDirector.open',side_effect=respond):
+            config={'max_questions':3,'session_mode':'persistent',
+                    **{r:{'provider':'deepseek','model':'fixture-'+r} for r in ('host','player','grader')}}
+            puzzle={**copy.deepcopy(PUZZLE),'rubric':self.rubric,'completion_requirements':self.requirements,'grading_protocol':'coverage-v2'}
+            prompts=load_prompts();rec=Recorder(Path(tmp)/'game',puzzle,config,prompts,echo=False)
+            clients={r:(OldGrader if r=='grader' else Client)(config[r],r,rec.audit) for r in ('host','player','grader')}
+            stopped=play(puzzle,config,rec,clients,prompts)
+            self.assertEqual(stopped['pending_feedback'],1)
+            self.assertEqual(len(requests),2)
+            for mutation in ('transport','reason_object','wrong_fact','wrong_submission'):
+                calls=copy.deepcopy(rec.calls)
+                if mutation=='transport':calls[-1]['status']='transport_error'
+                elif mutation=='wrong_submission':
+                    p=json.loads(calls[-1]['request']['messages'][-1]['content']);p['submitted_explanation']='Other answer'
+                    calls[-1]['request']['messages'][-1]['content']=json.dumps(p)
+                else:
+                    v=json.loads(calls[-1]['text'])
+                    if mutation=='reason_object':v['fact_coverage'][0]['reason']={'credit':1}
+                    else:v['fact_coverage'][0]['id']='C99.F99'
+                    calls[-1]['text']=json.dumps(v)
+                self.assertIsNone(saved_grader_reason_recovery(stopped,calls,rec.turns,config,puzzle),mutation)
+            restored=Recorder.restore(rec.folder,puzzle,config,prompts,echo=False)
+            self.assertEqual(len(requests),2)
+            self.assertEqual(restored.turns[-1]['grade']['partial_score'],0.5)
+            clients={r:Client(config[r],r,restored.audit) for r in ('host','player','grader')}
+            result=play(puzzle,config,restored,clients,prompts)
+            self.assertTrue(result['success'])
+            self.assertEqual((result['submissions'],result['counted_questions'],result['rejected_finals']),(3,2,1))
+            self.assertEqual(requests[2][0],'player')
+            self.assertEqual(counts,{'player':3,'host':1,'grader':2})
+            self.assertNotIn('fact_coverage',json.dumps(requests[2][1]))
+            self.assertEqual(result['costs']['total']['tokens']['total_tokens'],66)
 
     def test_ordered_excerpts_accept_typography_but_not_changed_words(self):
         self.value['fact_coverage'][0]['evidence']='A bribed the guard … A hid himself after the guard died.'

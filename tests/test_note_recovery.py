@@ -7,7 +7,7 @@ from collections import Counter
 from pathlib import Path
 from unittest.mock import patch
 
-from turtle_loop.engine import Recorder, ProtocolError, load_prompts, parse_action, play, saved_player_note_recovery
+from turtle_loop.engine import Recorder, ProtocolError, load_prompts, parse_action, play, saved_player_note_recovery, saved_player_json_recovery
 from turtle_loop.providers import Client
 from turtle_loop.sessions import GameSession, delta, restore_context
 from test_loop import PUZZLE, evaluated
@@ -32,23 +32,32 @@ class NoteRecoveryTests(unittest.TestCase):
         self.assertEqual(restore_context(None,json.dumps(before)),before)
         with self.assertRaises(ValueError):restore_context(None,json.dumps(delta(before,after)))
 
-    @patch.dict(os.environ, {'DEEPSEEK_API_KEY':'fixture'})
     def test_resume_preserves_messages_saved_action_budget_and_costs_without_resampling(self):
+        self.resume_case('text_note')
+
+    def test_missing_quote_resume_preserves_saved_question_and_does_not_resample(self):
+        self.resume_case('question_quote')
+
+    @patch.dict(os.environ, {'DEEPSEEK_API_KEY':'fixture'})
+    def resume_case(self, mode):
         class StopAfterSavedReply(Client):
             def complete(self, system, user):
                 reply=super().complete(system,user)
-                if 'text_note' in reply.text:
+                if 'text_note' in reply.text or reply.text.endswith('?}'):
                     raise ProtocolError('Player JSON must contain type=question|final and nonempty text')
                 return reply
 
         counts=Counter(); requests=[]
+        question3='Action 3?' if mode=='question_quote' else 'Action 3'
         def respond(req, **kwargs):
             body=json.loads(req.data); role=body['model'].removeprefix('fixture-')
             counts[role]+=1; n=counts[role]; requests.append((role,body))
             if role=='player':
-                value={'type':'final' if n==4 else 'question','text':f'Action {n}'}
-                if n==3:value['text_note']='rephrase'
+                value={'type':'final' if n==4 else 'question','text':question3 if n==3 else f'Action {n}'}
+                if n==3 and mode=='text_note':value['text_note']='rephrase'
                 text=json.dumps(value)
+                if n==3 and mode=='question_quote':
+                    at=text.rfind('"');text=text[:at]+text[at+1:]
             elif role=='host':text='no'
             else:text=evaluated()
             return Response({'id':f'{role}-{n}','model':body['model'],
@@ -66,19 +75,23 @@ class NoteRecoveryTests(unittest.TestCase):
             self.assertEqual(counts,{'player':3,'host':2})
             old_player=next(c for c in rec.calls if c['role']=='player')
             old_host=next(c for c in rec.calls if c['role']=='host')
+            recover=saved_player_note_recovery if mode=='text_note' else saved_player_json_recovery
             for changed in ('transport','unknown_metadata','broken_chain'):
                 calls=copy.deepcopy(rec.calls)
                 if changed=='transport':calls[-1]['status']='transport_error'
                 elif changed=='unknown_metadata':calls[-1]['text']='{"type":"question","text":"Q","answer":"guess"}'
                 else:calls[-1]['session_turn']=500
-                self.assertIsNone(saved_player_note_recovery(result,calls,rec.turns,config),changed)
-            self.assertIsNone(saved_player_note_recovery(result,rec.calls,rec.turns,
+                self.assertIsNone(recover(result,calls,rec.turns,config),changed)
+            if mode=='question_quote':
+                calls=copy.deepcopy(rec.calls);calls[-1]['finish_reason']='length'
+                self.assertIsNone(recover(result,calls,rec.turns,config))
+            self.assertIsNone(recover(result,rec.calls,rec.turns,
                               {**config,'player':{'provider':'openai','model':'fixture'}}))
             before=len(requests)
             restored=Recorder.restore(rec.folder,PUZZLE,config,prompts,echo=False)
             self.assertEqual(len(requests),before)  # Recovery itself is offline.
             self.assertEqual(restored.turns[-1]['index'],3)
-            self.assertEqual(restored.turns[-1]['text'],'Action 3')
+            self.assertEqual(restored.turns[-1]['text'],question3)
             self.assertNotIn('label',restored.turns[-1])
             clients={r:Client(config[r],r,restored.audit) for r in ('player','host','grader')}
             completed=play(PUZZLE,config,restored,clients,prompts)
@@ -92,7 +105,7 @@ class NoteRecoveryTests(unittest.TestCase):
             self.assertEqual(new_player['session_lane_id'],old_player['session_lane_id'])
             self.assertEqual(new_host['session_lane_id'],old_host['session_lane_id'])
             messages=new_player['request']['messages']
-            self.assertIn('text_note',messages[-2]['content'])  # Exact old assistant reply is preserved in the chat.
+            self.assertEqual(messages[-2]['content'],rec.calls[-1]['text'])  # Preserve the exact old assistant reply.
             self.assertIn('mandatory last turn',messages[-1]['content'])
             self.assertNotIn('text_note',json.dumps(new_host['request']))
             self.assertEqual(len(restored.calls),8)

@@ -31,6 +31,23 @@ class Response:
 
 
 class DeepSeekTests(unittest.TestCase):
+    @patch.dict(os.environ, {'DEEPSEEK_API_KEY':'fixture'})
+    def test_json_action_mode_preserves_plain_text_review_and_summary_calls(self):
+        requests=[]
+        def respond(req,**kwargs):
+            body=json.loads(req.data);requests.append(body)
+            return Response({'id':str(len(requests)),'model':body['model'],
+                'choices':[{'message':{'content':'{}'},'finish_reason':'stop'}]})
+        profile={'provider':'deepseek','model':'deepseek-flash'}
+        with patch('urllib.request.OpenerDirector.open',side_effect=respond):
+            player=Client(profile,'player',lambda *a:None)
+            player.complete('Return JSON action.',json.dumps({'opening':'story','turn_control':'normal'}))
+            player.complete('Review in plain text.',json.dumps({'public_context':{'opening':'story','turn_control':'normal'},'proposed_action':{'type':'question','text':'Q?'}}))
+            Client(profile,'memory',lambda *a:None).complete('Summarize.',json.dumps({'opening':'story','history':[]}))
+        self.assertEqual(requests[0]['response_format'],{'type':'json_object'})
+        self.assertNotIn('response_format',requests[1])
+        self.assertNotIn('response_format',requests[2])
+
     @patch.dict(os.environ, {'DEEPSEEK_API_KEY':'fixture-secret-key'})
     def test_incomplete_http_read_is_logged_and_stops_persistent_game(self):
         config=configuration(Namespace(config=str(ROOT/'configs/loop.deepseek.json'),dry_run=False))
@@ -87,7 +104,7 @@ class DeepSeekTests(unittest.TestCase):
                             # Neither earlier private scores nor story facts enter either solver session.
                             self.assertNotIn('SECRET_',json.dumps(body))
                             self.assertNotIn('completion_note',json.dumps(body))
-                            self.assertNotIn('response_format',body)  # Legacy team reviews can return prose.
+                            self.assertEqual(body['response_format'],{'type':'json_object'})
                             if team:
                                 if role=='player':
                                     kind,text,next_actor=('discuss','Check the identity','B') if i==1 else ('final','Explanation','B')

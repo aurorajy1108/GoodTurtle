@@ -245,6 +245,16 @@ class Client:
                         raise
                     time.sleep(min(2 ** (attempt - 1), 8))
         url, headers, body, kind = build_request(self.profile, system, user)
+        json_action=False
+        if self.profile['provider']=='deepseek' and self.role in ('player','partner'):
+            try:logical=json.loads(original_user)
+            except (ValueError,TypeError):logical={}
+            if isinstance(logical,dict) and ('dialogue_control' in logical or
+                    ('opening' in logical and 'turn_control' in logical)):
+                # Typed actions need JSON; teammate prose reviews and source
+                # summaries have different envelopes and stay plain text.
+                body.setdefault('response_format',{'type':'json_object'})
+                json_action=isinstance(body['response_format'],dict) and body['response_format'].get('type')=='json_object'
         if lane is not None:
             if kind == 'responses':
                 body['store'] = True
@@ -263,6 +273,7 @@ class Client:
             response_recorded = False
             phase = 'open'
             record = {**metadata, 'role': self.role, 'provider': self.profile['provider'],
+                      'json_action_mode':json_action,
                       'model_requested': self.profile['model'], 'endpoint': url,
                       'attempt': attempt + 1, 'request': body}
             try:

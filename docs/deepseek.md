@@ -93,13 +93,13 @@ python3 scripts/play.py run --dataset data/annotations/turtle50_v4/private.json 
 | max_output_tokens | 32768 | 8192 | 32768 |
 | timeout（秒） | 600 | 600 | 600 |
 | max_retries | 2 | 2 | 2 |
-| response_format | 不强制JSON，直接四标签 | 依具体动作prompt；兼容旧策略文本审查 | json_object |
+| response_format | 不强制JSON，直接四标签 | 动作自动JSON模式；文本审查/摘要不强制 | json_object |
 
 player/默认partner、显式partner模板、同模型对照中的player及混合模板中的DeepSeek player均已关闭thinking，并删除reasoning_effort；玩家的内部审查和经验总结继承此设置。Host/grader仍开启high推理。
 
 这些参数在 `configs/loop.deepseek.json` 中修改。输出预算是每次调用的上限，包含模型推理及可见输出，不是每次都会用满；到上限而截断会记为错误，不重新采样答案。推理模式不设置 temperature；如果要关闭推理，把相应角色的 `extra_body.thinking.type` 改为 `disabled` 并删除该角色的 `reasoning_effort`。本模板不把原 GPT 的 medium 直接等同为 DeepSeek medium：官方当前将 medium 映射为 high，因此明确写 high。记录并单独比较模型/推理配置不同的批次。[官方推理参数说明](https://api-docs.deepseek.com/guides/thinking_mode/)
 
-普通问题仍只调用一次 Host，最多6条检索参考/6000字符；grader最多3条相关判例/3000字符。不为降低成本省略完整汤底及评分要求。player不强制全局JSON模式，是因为旧 `solo_reflect`/`discuss` 的内部审查、CL摘要需要纯文本；提问/交卷/free_dialogue仍由各自prompt与controller严格校验JSON，不合规即记录错误。
+普通问题仍只调用一次 Host，最多6条检索参考/6000字符；grader最多3条相关判例/3000字符。不为降低成本省略完整汤底及评分要求。DeepSeek player/partner的提问、交卷、free_dialogue动作会自动加response_format=json_object（显式配置response_format时以配置为准），使用更新前的原始逻辑payload识别动作，后续会话delta也不会漏加。纯文本审查使用public_context包装、CL摘要使用memory角色，因此不会误加强制JSON。结构和语义仍由controller校验，不自动重采样。
 
 默认 `session_mode=persistent`。每局每角色（MAS A/B也各自独立）持续维护同一消息历史；下一局新建。DeepSeek Chat Completions 接口本身无状态，客户端每次需发送同一会话累积的messages；新增上下文仍按无损增量追加，先前的消息不会重复展开成多份汤底。不能据此声称只计新消息tokens或历史免费。[官方多轮聊天说明](https://api-docs.deepseek.com/guides/multi_round_chat/)
 
@@ -117,7 +117,33 @@ MAS默认partner自动复制player配置，**无需另设 partner-config**。底
 
 11月9日已用旧批次保存的完整grader响应离线验证该兼容修复；原批次、交卷和原始输出保留，没有重新调用模型。旧冻结代码不会因pull自动改变，也不会自动续跑。
 
-### 字符串text_note及一次性续跑
+若旧局正好因此中断，`resume_study.py --repair-grader-reason` 可复用完整评分：验证该响应与待评交卷、冻结rubric和消息链一致，离线移除字符串reason后按相同规则计算分数，把已有交卷的公开反馈写入副本，不再次调用grader。错误交卷正常计一次，额度不会重置。该模式与repair-player-note二选一，额外记录coverage/grader控制器模块的覆盖哈希；模型、Host包、prompt及评分标准保持原冻结内容。缺失响应、无效ID/证据或不确定请求不支持恢复。
+
+```sh
+python3 scripts/resume_study.py \
+  --from-study runs/api/20261108_deepseek_set1_cl_note_resume01 \
+  --out runs/api/20261109_deepseek_set1_cl_grade_resume02 \
+  --repair-grader-reason --mode run
+```
+
+此命令需要在有Key的终端执行，out必须为新目录；改成mode plan只准备恢复副本。当前实例保存了91问及第92次交卷，复用评分后已用92次，下一次为第93次提交。
+
+### 缺失问题结束引号的恢复
+
+仅对完整返回（finish_reason=stop）的双字段question对象，若type/text字段次序明确、问题以问号结束、已有末尾对象右括号，并且只缺text的一个结束双引号，可在右括号前插入该引号。字段、问题文字逐字保留，原始输出及插入位置归档为player_format_recovery。截断响应、缺少问号、多个对象、额外字段、正文中歧义括号、代码块或final答案不使用该修复。
+
+旧批次可显式使用 `resume_study.py --repair-player-json`：在副本中验证消息链并提交已保存问题，不重新生成；已完成的A局及公开问答、标准答案、配额和费用沿用原记录。恢复清单列出preserved_completed_runs及格式控制变化，不当成新的独立重复。新的动作调用自动使用JSON模式，不增加API调用；模型、Host参考和评分标准仍沿用原冻结版本。
+
+```sh
+python3 scripts/resume_study.py \
+  --from-study runs/api/20261109_deepseek_set1_cl_grade_resume02 \
+  --out runs/api/20261109_deepseek_set1_cl_json_resume03 \
+  --repair-player-json --mode run
+```
+
+本次复用已结束的A=14，直接把answer_only B=13已保存的第1问交给Host，不重跑A、不重新生成B的第1问。out必须是新目录；mode plan仅准备副本且无付费调用。
+
+### 字符串text_note的恢复
 
 玩家的question/final动作允许额外的字符串 `text_note`。控制器只取原有type/text，不改写问题或答案；原始输出保留在API及submission日志，移除动作另记 `player_action_normalized`。未知额外字段、非字符串note、空正文及错误动作类型仍报错，不靠重新采样修复。
 

@@ -246,6 +246,8 @@ host / player / grader 对象均仅允许下列九个字段：
 
 Grader的fact_coverage/requirement_coverage记录也允许额外字符串reason说明；只移除该元数据并记录controller_corrections，不增加调用或改动评分。ID、status、证据及其他字段仍严格校验，checkpoint要求的reason保留。详见[评分说明字段](deepseek.md#grader覆盖评分中的reason说明)。
 
+双字段question对象仅缺text结束引号、已有完整问号和末尾括号时，支持单字符确定性恢复；截断、多对象及final答案不走此路径。DeepSeek player/partner的动作请求自动使用JSON对象模式，纯文本审查/摘要不受影响。续跑方式和限制见[问题引号恢复](deepseek.md#缺失问题结束引号的恢复)。
+
 ### 8. 错误、退出码与验证
 
 Ctrl+C 会保存当前局为 `interrupted`。API 或协议错误会保存为 `error` 并停止剩余 batch；已经发出但尚未完成反馈的提交标记 pending。当前没有半局自动恢复，修复配置后须使用新目录开新实验。`needs_review` 停止当前局，batch 可继续下一局。
