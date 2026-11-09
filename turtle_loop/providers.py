@@ -1,5 +1,6 @@
 """Small HTTP adapters; provider/model/endpoint can differ for each role."""
 import json
+import errno
 import http.client
 import os
 import re
@@ -150,14 +151,54 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
         return None  # Never forward credentials to an unexpected host.
 
 
+class PreSendTLSFailure(OSError):
+    """TLS handshake ended before HTTPSConnection could send the HTTP request."""
+    def __init__(self, reason):
+        super().__init__('TLS connection ended before request transmission')
+        self.reason_type = type(reason).__name__
+        self.reason_errno = reason.errno if type(reason.errno) is int else None
+
+
+class PreSendNetworkFailure(OSError):
+    """Connection could not be established before the HTTP request was sent."""
+    def __init__(self, reason):
+        super().__init__('Network unreachable before request transmission')
+        self.reason_type = type(reason).__name__
+        self.reason_errno = reason.errno if type(reason.errno) is int else None
+
+
+class TrackedHTTPSConnection(http.client.HTTPSConnection):
+    def connect(self):
+        try:
+            super().connect()
+        except ssl.SSLEOFError as exc:
+            # HTTPConnection.send calls connect before writing the request. A
+            # proxy CONNECT may have been sent, but not the application request.
+            raise PreSendTLSFailure(exc) from None
+        except OSError as exc:
+            if not isinstance(exc, ssl.SSLError) and exc.errno in (errno.EHOSTUNREACH, errno.ENETUNREACH):
+                raise PreSendNetworkFailure(exc) from None
+            raise
+
+
+class TrackedHTTPSHandler(urllib.request.HTTPSHandler):
+    def https_open(self, req):
+        return self.do_open(TrackedHTTPSConnection, req, context=self._context,
+                            check_hostname=self._check_hostname)
+
+
 def transport_diagnostic(exc, phase):
     """Classify errors without logging exception messages, URLs or response bodies.
 
-    Only a DNS failure during opener.open is known to precede connection and
-    request transmission. Other failures have ambiguous transmission state.
+    DNS failures and instrumented TLS EOFs during connect precede request
+    transmission. Uninstrumented TLS errors have ambiguous transmission state.
     """
     reason = exc.reason if isinstance(exc, urllib.error.URLError) else exc
-    if isinstance(reason, socket.gaierror):
+    if isinstance(reason, PreSendNetworkFailure):
+        category = 'network_unreachable_before_send'
+    elif isinstance(reason, PreSendTLSFailure):
+        category = 'tls_handshake_eof'
+    elif isinstance(reason, socket.gaierror):
         category = 'dns_resolution'
     elif isinstance(reason, ssl.SSLError):
         category = 'tls'
@@ -171,18 +212,19 @@ def transport_diagnostic(exc, phase):
         category = 'http_protocol'
     else:
         category = 'other_transport'
-    code = getattr(reason, 'errno', None)
+    tracked = isinstance(reason, (PreSendTLSFailure, PreSendNetworkFailure))
+    code = reason.reason_errno if tracked else getattr(reason, 'errno', None)
     return {'transport_phase': phase, 'transport_category': category,
-            'reason_type': type(reason).__name__,
+            'reason_type': reason.reason_type if tracked else type(reason).__name__,
             'reason_errno': code if type(code) is int else None,
-            'safe_pre_send_retry': category == 'dns_resolution' and phase == 'open'}
+            'safe_pre_send_retry': category in ('dns_resolution', 'tls_handshake_eof', 'network_unreachable_before_send') and phase == 'open'}
 
 
 class Client:
     def __init__(self, profile, role, audit):
         validate_profile(profile)
         self.profile, self.role, self.audit = profile, role, audit
-        self.opener = urllib.request.build_opener(NoRedirect)
+        self.opener = urllib.request.build_opener(NoRedirect, TrackedHTTPSHandler())
         self.session = None
 
     def begin_game(self, folder, event):
