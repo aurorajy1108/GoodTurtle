@@ -17,8 +17,12 @@ chronological order at synchronization; no missing teammate answers may be infer
 Only the current context's question/submission/turn_control is active. Old examples
 are historical references, not additional story facts. Never carry a prior submitted
 explanation or grade into the current submission's evidence. Judge only its text.
-Follow the same response schema on every turn. Do not describe context updates.
+Follow the response schema specified for the current turn. Do not describe context updates.
 '''
+
+LEGACY_SESSION_INSTRUCTIONS=SESSION_INSTRUCTIONS.replace(
+    'Follow the response schema specified for the current turn.',
+    'Follow the same response schema on every turn.')
 
 
 def delta(previous, current):
@@ -102,7 +106,7 @@ class GameSession:
         metadata = {'game_session_id': self.id, 'session_lane_id': lane['id'],
                     'session_turn': lane['turn'] + 1, 'previous_response_id': lane['response_id'],
                     'logical_input_chars': len(user), 'delta_input_chars': len(wire_user)}
-        return lane, payload, system + SESSION_INSTRUCTIONS, wire_user, metadata
+        return lane, payload, system + lane.get('session_instructions',SESSION_INSTRUCTIONS), wire_user, metadata
 
     def accept(self, lane, payload, wire_user, reply):
         lane['previous'] = copy.deepcopy(payload)
@@ -127,15 +131,19 @@ class GameSession:
             if call.get('provider')!='deepseek' or call.get('status')!='ok' or not call.get('text'):
                 raise ValueError('Only complete DeepSeek chat replies can be restored')
             messages=call.get('request',{}).get('messages',[])
+            instruction=next((s for s in (SESSION_INSTRUCTIONS,LEGACY_SESSION_INSTRUCTIONS)
+                              if messages and messages[0].get('content','').endswith(s)),None)
             if (len(messages)<2 or messages[0].get('role')!='system' or messages[-1].get('role')!='user'
-                    or not messages[0].get('content','').endswith(SESSION_INSTRUCTIONS)
+                    or instruction is None
                     or call.get('request',{}).get('tools')):
                 raise ValueError('Saved chat does not match the local no-tools session protocol')
-            system=messages[0]['content'][:-len(SESSION_INSTRUCTIONS)]
+            system=messages[0]['content'][:-len(instruction)]
             key=hashlib.sha256(system.encode()).hexdigest()
             state=states.setdefault(key,{'previous':None,'messages':[],'turn':0,
-                                         'response_id':'','id':call.get('session_lane_id')})
+                                         'response_id':'','id':call.get('session_lane_id'),
+                                         'session_instructions':instruction})
             if (not state['id'] or call.get('session_lane_id')!=state['id']
+                    or state['session_instructions']!=instruction
                     or call.get('session_turn')!=state['turn']+1
                     or call.get('previous_response_id')!=state['response_id']
                     or messages[1:-1]!=state['messages']):

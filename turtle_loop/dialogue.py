@@ -4,7 +4,8 @@ import json
 from collections import Counter
 from dataclasses import replace
 
-from .engine import ProtocolError, dump, parse_player_json
+from .engine import ProtocolError, ROOT, dump, parse_player_json
+from .dialogue_contract import dialogue_contract_text, valid_dialogue_action
 
 ROLE_PROFILES = {
     'investigator': 'Develop and test explanations of identities, setting, event order and the main causal mechanism. Connect confirmed facts into a coherent story; explicitly distinguish hypotheses from host-confirmed facts.',
@@ -12,7 +13,7 @@ ROLE_PROFILES = {
     'generalist': 'Collaboratively investigate identities, setting, event order, causes and motives. Challenge assumptions and combine confirmed facts into a complete story.',
 }
 DIALOGUE_PROMPT = '''
-SHARED DIALOGUE PROTOCOL v1 overrides the usual player action schema.
+SHARED DIALOGUE PROTOCOL v2.
 You are active_speaker, one of two independent solvers in the SAME public chat.
 The role_assignment specifies BOTH roles. Your specialty guides attention, but both
 agents may ask the host directly, discuss, hand over, or submit a final solution.
@@ -21,15 +22,21 @@ and host feedback. Agent discussion is fallible hypothesis, never host evidence.
 Cooperate naturally: respond to a useful teammate point, pursue a promising lead,
 or ask the teammate to challenge your interpretation. Avoid repeating rejected
 finals without new facts. Share concise reasons and hypotheses, not hidden chain of thought.
-Return exactly {"type":"question|final|discuss|pass","text":"...","next_speaker":"A|B"}.
+Return exactly ONE JSON object containing ONE action per response, with no additional
+objects or prose. If you want to discuss and then ask a question, choose only one
+action now; wait for your next turn before returning another action.
 question goes directly to the host; final goes to the grader; discuss/pass go only
 to your teammate. next_speaker proposes who acts after this message/host feedback;
 you may choose yourself to follow a lead. Under alternating scheduling the controller
 overrides that proposal. Respect dialogue_control.allowed_actions. When internal
 discussion allowance is exhausted, ask a question or submit. On the mandatory last
 turn return final immediately. Both agents share ONE external submission quota.
+On the mandatory final turn next_speaker is optional, because the game ends.
 Do not claim the host has confirmed anything it has not said. No tools.
 '''
+
+def dialogue_system_prompt():
+    return (ROOT / 'prompts/loop_player_dialogue_v1.txt').read_text() + DIALOGUE_PROMPT
 
 
 def add_dialogue_arguments(parser):
@@ -53,7 +60,8 @@ def dialogue_settings(args):
            ['critic','investigator'] if result['roles']=='swapped' else ['generalist','generalist'])
     result['role_assignment']={actor:{'specialty':specialty,'instruction':ROLE_PROFILES[specialty]}
                                for actor,specialty in zip(('A','B'),ids)}
-    result['protocol']='shared-dialogue-v1'
+    result['protocol']='shared-dialogue-v2'
+    result['format_correction_max_retries']=2
     return result
 
 
@@ -98,29 +106,40 @@ class FreeDialoguePlayer:
             payload={**base,'active_speaker':actor,'role_assignment':self.settings['role_assignment'],
                      'shared_dialogue':self.transcript,'dialogue_control':{'allowed_actions':allowed,
                      'internal_messages_remaining':self.settings['max_discussion']-internal,
-                     'scheduling':self.settings['scheduling']}}
+                     'scheduling':self.settings['scheduling'], 'mandatory_final':forced,
+                     'response_contract':dialogue_contract_text(allowed,forced)}}
             client=self.leader if actor=='A' else self.partner
-            reply=client.complete(system+DIALOGUE_PROMPT,json.dumps(payload,ensure_ascii=False))
-            try:
-                action,recovery=parse_player_json(reply.text)
-                if (not isinstance(action,dict) or not {'type','text','next_speaker'} <= set(action)
-                        or not set(action)<= {'type','text','next_speaker','text_note'}
-                        or ('text_note' in action and not isinstance(action['text_note'],str))
-                        or action['type'] not in allowed or action['next_speaker'] not in ('A','B')
-                        or not isinstance(action['text'],str) or not action['text'].strip()):
-                    raise ValueError()
-            except (ValueError,TypeError):
-                raise ProtocolError('Invalid shared-dialogue action; no resampling') from None
+            for attempt in range(3):
+                reply=client.complete(dialogue_system_prompt(),json.dumps(payload,ensure_ascii=False))
+                try:
+                    action,recovery=parse_player_json(reply.text)
+                    if not valid_dialogue_action(action,allowed,forced):
+                        raise ValueError()
+                except (ValueError,TypeError):
+                    self.recorder.event('dialogue_format_rejected', submission=self.turn,
+                                        actor=actor, attempt=attempt+1, raw_output=reply.text)
+                    if attempt == 2:
+                        raise ProtocolError('Invalid shared-dialogue action after two format corrections') from None
+                    payload['format_correction']={
+                        'instruction':'Your previous response was invalid and was not executed. Correct it. '+dialogue_contract_text(allowed,forced),
+                        'invalid_response':reply.text,
+                        'allowed_actions':allowed,
+                        'retry':attempt+1}
+                    continue
+                if attempt:
+                    self.recorder.event('dialogue_format_corrected', submission=self.turn,
+                                        actor=actor, retries=attempt, corrected_output=reply.text)
+                break
             if 'text_note' in action:
                 self.recorder.event('player_action_normalized',actor=actor,submission=self.turn,
                                     removed_fields=['text_note'],raw_player_output=reply.text)
             if recovery:
                 self.recorder.event('player_format_recovery', submission=self.turn,
                                     actor=actor, strategy='free_dialogue', **recovery)
-            next_actor=action['next_speaker'] if self.settings['scheduling']=='adaptive' else ('B' if actor=='A' else 'A')
+            next_actor=(None if forced else action['next_speaker'] if self.settings['scheduling']=='adaptive' else ('B' if actor=='A' else 'A'))
             self._append({'speaker':actor,'specialty':self.settings['role_assignment'][actor]['specialty'],
                           'type':action['type'],'text':action['text'],'external_turn':self.turn,
-                          'requested_next_speaker':action['next_speaker'],'effective_next_speaker':next_actor})
+                          'requested_next_speaker':action.get('next_speaker'),'effective_next_speaker':next_actor})
             self.speaker=next_actor
             if action['type'] in ('question','final'):
                 public={key:action[key] for key in ('type','text')}

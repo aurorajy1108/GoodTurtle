@@ -7,7 +7,7 @@ from pathlib import Path
 from unittest.mock import patch
 from urllib.error import URLError
 
-from turtle_loop.sessions import delta, GameSession
+from turtle_loop.sessions import delta, GameSession, LEGACY_SESSION_INSTRUCTIONS
 from turtle_loop.providers import Client, Reply, APIError
 from turtle_loop.engine import Recorder, load_prompts, play
 from turtle_loop.experiments import TeamPlayer
@@ -22,6 +22,25 @@ class Response:
 
 
 class SessionTests(unittest.TestCase):
+    def test_restored_legacy_prompt_is_preserved_verbatim(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            old=GameSession('player',tmp,lambda *a,**k:None)
+            with patch('turtle_loop.sessions.SESSION_INSTRUCTIONS',LEGACY_SESSION_INSTRUCTIONS):
+                lane,payload,system,wire,meta=old.prepare('original player prompt',json.dumps({'opening':'story','visible_history':[]}))
+            call={**meta,'role':'player','provider':'deepseek','status':'ok',
+                  'request':{'messages':[{'role':'system','content':system},{'role':'user','content':wire}]},
+                  'text':'{"type":"question","text":"Q?"}','response_id':'response-1'}
+            old.close()
+            restored=GameSession('player',tmp,lambda *a,**k:None)
+            try:
+                restored.restore_chat([call])
+                _,_,new_system,_,new_meta=restored.prepare('original player prompt',
+                    json.dumps({'opening':'story','visible_history':[{'text':'Q?','feedback':'no'}]}))
+                self.assertEqual(new_system,system)
+                self.assertEqual(new_meta['session_turn'],2)
+                self.assertEqual(new_meta['session_lane_id'],meta['session_lane_id'])
+            finally:restored.close()
+
     def test_delta_losslessly_reconstructs_sync_reorder_and_removed_fields(self):
         before = {'opening': 'story', 'prior_experience': {'answer': 'A'},
                   'visible_history': [{'text':'q1'}, {'text':'q3'}], 'temp': True}
