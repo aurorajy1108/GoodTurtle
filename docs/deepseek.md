@@ -103,7 +103,7 @@ player/默认partner、显式partner模板、同模型对照中的player及混�
 
 默认 `session_mode=persistent`。每局每角色（MAS A/B也各自独立）持续维护同一消息历史；下一局新建。DeepSeek Chat Completions 接口本身无状态，客户端每次需发送同一会话累积的messages；新增上下文仍按无损增量追加，先前的消息不会重复展开成多份汤底。不能据此声称只计新消息tokens或历史免费。[官方多轮聊天说明](https://api-docs.deepseek.com/guides/multi_round_chat/)
 
-HTTP 网络错误在 `api_calls.jsonl` 中记录 `transport_phase`、`transport_category`、`reason_type`、`reason_errno` 和 `safe_pre_send_retry`，不保存异常原文或响应正文。仅当连接阶段明确出现 DNS 解析错误时，才将其视为请求尚未发送并按 `max_retries` 有限重试；每次尝试单独记录。HTTP 429 仍按已有规则重试。超时、连接重置、响应读取错误和 HTTP 5xx 的请求是否已处理无法确认，不自动重试，持续会话停止并保留原始轨迹。旧日志只有 `URLError` 的情况下无法事后确定具体原因。
+HTTP 网络错误在 `api_calls.jsonl` 中记录 `transport_phase`、`transport_category`、`reason_type`、`reason_errno` 和 `safe_pre_send_retry`，不保存异常原文或响应正文。DNS 解析失败，以及受跟踪的 HTTPS 连接阶段出现 TLS 握手 EOF 或网络不可达时，应用请求尚未发送，可按 `max_retries` 有限重试；每次尝试单独记录。HTTP 429 仍按已有规则重试。超时、连接重置、响应读取错误和 HTTP 5xx 的请求是否已处理无法确认，不自动重试，持续会话停止并保留原始轨迹。旧日志只有 `URLError` 的情况下无法事后确定具体原因。
 
 MAS默认partner自动复制player配置，**无需另设 partner-config**。底层 `experiment.py team` 或 `team_sweep.py` 如显式传 `--partner-config`，会覆盖默认partner；全DeepSeek实验应使用 `configs/partner.deepseek.json`，避免误传其他供应商。这个模板默认使用Flash/thinking关闭，与新默认player相同；如修改player模型，显式partner模板也需一起调整，否则省略partner-config即可自动复制player。
 
