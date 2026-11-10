@@ -1,5 +1,5 @@
 {
-  "version": "host-v9-human-20261102",
+  "version": "host-v12-ts034-fear-boundary-20261109",
   "review_status": "human_labels_and_delegated_adjudication",
   "replace_host_examples": true,
   "solution": "The father is the hostage. His wealthy daughter is free and receives the kidnapper’s phone call.\nThe father hears the kidnapper order his daughter to bring the ransom alone. He fears that, once she arrives with the money, the kidnapper will kill both of them to eliminate witnesses.\nHis daughter is his only family. To protect her, he tells her not to pay the ransom or come to the meeting, even though refusing puts his own life at risk.\nThe explanation concerns the father’s fear and decision; it does not establish that the kidnapper eventually kills either of them.",
@@ -11,7 +11,9 @@
     "The story establishes his fear and refusal, not that either person is eventually killed"
   ],
   "explicit_negatives": [],
-  "unknown_details": [],
+  "unknown_details": [
+    "The kidnapper’s actual future actions, any intention to kill regardless of payment, and whether the father knows any such intention are not established."
+  ],
   "irrelevant_details": [],
   "host_examples": [
     {
@@ -320,6 +322,10 @@
   ],
   "verification_policy": "independent_then_adjudicate_v1",
   "label_boundaries": [
-    "An unqualified question about the father fearing danger to his daughter includes his feared future ransom meeting, not only present hostage status. Historical acceptance of a core reconstruction does not override current full-story completion requirements."
+    "An unqualified question about the father fearing danger to his daughter includes his feared future ransom meeting, not only present hostage status. Historical acceptance of a core reconstruction does not override current full-story completion requirements.",
+    "Distinguish the father’s fear from the kidnapper’s actual plan or a certain outcome: he fears the kidnapper might kill both if his daughter comes with the money, to remove witnesses. Do not say the kidnapper has decided to kill the father regardless of payment, will actually do so, or has disclosed such a plan.",
+    "When asked whether the father refuses because he knows he will be killed regardless of payment, answer no: that substitutes an unsupported cause for his established protective motive. If asked whether the kidnapper would kill the father regardless of payment, or has no intention of releasing him, without attributing this as the known motive, the material counterfactual is unspecified: answer yes and no. Do not treat earlier host labels or player guesses as evidence.",
+    "A question about whether the father fears he may be killed after the daughter arrives with the ransom can be affirmed as fear, not as a certain plan or outcome. A question that merely says the ransom is paid, without saying who arrives or whether the kidnapper would kill regardless, must not turn the conditional fear into certainty.",
+    "When a question combines the established fact that the father is captive with the unestablished claim that the captor has no intention of releasing him or plans to kill him regardless, return yes and no: captivity is established, while the captor’s unconditional plan is unknown. A question claiming this unsupported belief is the reason for refusal instead receives no."
   ]
 }

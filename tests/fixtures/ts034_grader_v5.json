@@ -1,0 +1,58 @@
+[
+  {
+    "id": "TS034_original_final_97",
+    "puzzle_id": "TS034",
+    "submission": "The father is himself the captive. He is being held by a captor and is able to speak with his daughter over a smartphone; she pleads for his life to be spared, while the captor shouts the demand: bring one hundred million yen alone by noon tomorrow or the hostage dies, with no police. The hostage whose life is threatened is the father, and the person being told to pay is his daughter, not the father himself. Crucially, the father knows that the captor will kill him regardless of whether the money is paid—the captor has no intention of honoring the bargain. Paying would not save his life; it would only hand his captor the money and could harm or ruin his daughter. He therefore decides the ransom should not be paid: since even payment will not save him, and he wants to prevent his daughter from paying and being harmed or financially ruined, refusal is the rational choice. The daughter's plea is genuine and the hostage is real; the father simply knows that money cannot buy his release from a captor determined to kill him anyway.",
+    "expected": {
+      "partial_score": 0.75,
+      "complete": false,
+      "checkpoint_credits": {
+        "C1": 1,
+        "C2": 0.5,
+        "C3": 0.5
+      }
+    }
+  },
+  {
+    "id": "TS034_original_final_100",
+    "puzzle_id": "TS034",
+    "submission": "The father is himself the captive. He is being held by a criminal captor, and a smartphone call connects him with his daughter. She genuinely pleads for his life to be spared, while the captor shouts the demand—one hundred million yen brought alone by noon tomorrow, no police, or the hostage dies. The hostage whose life is threatened is the father, and the person being told to pay is the daughter. The father knows the captor will not honor the bargain: he will kill him regardless of whether the money is paid, because the threat to his life is not truly conditional on the ransom. Paying would therefore not save him; it would only give the captor the money and could harm or financially ruin his daughter. That is why he decides the ransom should not be paid—refusing is the rational choice for a man who knows money cannot buy his release, and who wants to prevent his daughter from paying and being harmed or ruined. The daughter's plea is real and the hostage situation is real; the key is that the hostage is the father, not the daughter, and that payment would be futile because the captor intends to kill him anyway.",
+    "expected": {
+      "partial_score": 0.75,
+      "complete": false,
+      "checkpoint_credits": {
+        "C1": 1,
+        "C2": 0.5,
+        "C3": 0.5
+      }
+    }
+  },
+  {
+    "id": "TS034_true_complete",
+    "puzzle_id": "TS034",
+    "submission": "The father is the kidnapped hostage. His wealthy daughter is free and receives the ransom call, which orders her to bring the money alone. He fears that if she arrives, the kidnapper will kill both of them to eliminate witnesses. She is his only family, so he tells her not to pay or come to protect her, despite the risk to his own life. The story does not establish that either is actually killed.",
+    "expected": {
+      "partial_score": 1.0,
+      "complete": true,
+      "checkpoint_credits": {
+        "C1": 1,
+        "C2": 1,
+        "C3": 1
+      }
+    }
+  },
+  {
+    "id": "TS034_partial_danger",
+    "puzzle_id": "TS034",
+    "submission": "The father is the hostage and his daughter is free and receives the ransom call. He refuses payment because he is afraid his daughter could be harmed.",
+    "expected": {
+      "partial_score": 0.75,
+      "complete": false,
+      "checkpoint_credits": {
+        "C1": 1,
+        "C2": 0.5,
+        "C3": 0.5
+      }
+    }
+  }
+]
