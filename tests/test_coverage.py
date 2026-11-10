@@ -69,6 +69,15 @@ class CoverageTests(unittest.TestCase):
         self.value['requirement_coverage'][0]['status']='contradicted'
         self.assertTrue(self.grade()['material_contradiction'])
 
+    def test_partial_and_contradicted_facts_have_distinct_score_caps(self):
+        partial=copy.deepcopy(self.value)
+        partial['fact_coverage'][0]['status']='partial'
+        partial['checkpoints'][0]['credit']=0.5
+        self.assertEqual(self.grade(partial)['partial_score'],0.5)
+        contradicted=copy.deepcopy(partial)
+        contradicted['fact_coverage'][0]['status']='contradicted'
+        self.assertEqual(self.grade(contradicted)['partial_score'],0)
+
     def test_duplicate_missing_unknown_ids_and_invented_evidence_rejected(self):
         for mutation in ('duplicate','missing','unknown','invented'):
             value=copy.deepcopy(self.value)
@@ -84,6 +93,17 @@ class CoverageTests(unittest.TestCase):
         self.assertEqual(set(schema['properties']),set(self.value))
         self.assertEqual([x['id'] for x in fact_specs(self.rubric)],['C1.F1','C1.F2'])
         self.assertEqual(requirement_specs(self.requirements)[0]['id'],'R1')
+
+    def test_coverage_reference_metadata_preserves_judgments_and_is_audited(self):
+        baseline=self.grade()
+        for name in ('fact_coverage','requirement_coverage'):
+            for row in self.value[name]:row['reference']='Optional reference text'
+        result=self.grade()
+        self.assertEqual(result['partial_score'],baseline['partial_score'])
+        self.assertEqual(result['complete'],baseline['complete'])
+        self.assertEqual(len([x for x in result['controller_corrections'] if x['field'].endswith('.reference')]),3)
+        self.value['fact_coverage'][0]['reference']={'unexpected':'object'}
+        with self.assertRaises(ProtocolError): self.grade()
 
     def test_string_reasons_are_metadata_and_do_not_change_scores_or_call_grader_again(self):
         baseline=self.grade()

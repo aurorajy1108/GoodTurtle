@@ -8,7 +8,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from turtle_loop.coverage import PROTOCOL, fact_specs, requirement_specs
 from turtle_loop.dataset import load_dataset
 from turtle_loop.engine import dump, grade_final, load_prompts, ProtocolError
-from turtle_loop.host_context import build_story_context
+from turtle_loop.host_context import build_story_context, grader_story_context
 from turtle_loop.providers import Client, APIError, resolve_env, validate_profile
 from turtle_loop.grader import evaluate_final
 
@@ -34,7 +34,8 @@ def main():
         if p.get('grading_protocol')!=PROTOCOL:raise ValueError('check_grader requires coverage-v2 data')
         if not case['expected'] or set(case['expected'])-{'complete','partial_score','material_contradiction','checkpoint_credits'}:
             raise ValueError('Expected fields: complete, partial_score, material_contradiction')
-        inputs.append({'opening':p['opening'],'reference_answer':p['answer'],'story_context':build_story_context(p),
+        inputs.append({'opening':p['opening'],'reference_answer':p['answer'],
+                       'story_context':grader_story_context(build_story_context(p), case['submission'], config.get('context_policy')),
                        'rubric':p['rubric'],'completion_requirements':p['completion_requirements'],
                        'grading_notes':p.get('grading_notes',''),'submitted_explanation':case['submission'],
                        'grading_protocol':PROTOCOL,'required_facts':fact_specs(p['rubric']),

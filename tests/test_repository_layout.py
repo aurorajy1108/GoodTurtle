@@ -11,6 +11,15 @@ from turtle_loop.repository import resolve_historical_path
 ROOT=Path(__file__).resolve().parents[1]
 
 class RepositoryLayoutTests(unittest.TestCase):
+    def test_ts002_study_dataset_binds_updated_host(self):
+        bank=load_dataset(ROOT/'data/studies/ts002_v7.json')['puzzles']
+        self.assertEqual([p['id'] for p in bank],['TS002'])
+        self.assertEqual(build_story_context(bank[0])['binding_version'],'host-v11-unknown-wordplay-alternatives-20261109')
+        first=bank[0]['rubric'][0]
+        self.assertEqual(first['weight'],0.4)
+        self.assertIn('boyfriend or romantic partner',first['required_facts'][0])
+        self.assertIn('same boyfriend or romantic partner',bank[0]['completion_requirements'][4])
+
     def test_all_fifty_contexts_preserve_migration_or_explicit_review(self):
         manifest=json.loads((ROOT/'configs/repository_layout.json').read_text())
         bank=load_dataset(ROOT/'data/annotations/turtle50_v4/private.json')['puzzles']
@@ -20,6 +29,9 @@ class RepositoryLayoutTests(unittest.TestCase):
         human=json.loads((ROOT/'data/host_reference/reviews/human_20261102/manifest.json').read_text())
         correction=json.loads((ROOT/'data/host_reference/reviews/ts013_20261108_causal_fix.json').read_text())
         set1=json.loads((ROOT/'data/host_reference/reviews/set1_20261110/manifest.json').read_text())
+        ts034=json.loads((ROOT/'data/host_reference/reviews/ts034_20261109_fear_boundary.json').read_text())
+        pillow=json.loads((ROOT/'data/host_reference/reviews/ts002_20261109_pillow_boundaries.json').read_text())
+        clarification=json.loads((ROOT/'data/host_reference/reviews/ts002_20261109_unknown_wordplay.json').read_text())
         self.assertEqual(review['context_sha256_before'],manifest['context_sha256_before'])
         self.assertEqual(latest['context_sha256_before'],review['context_sha256_after'])
         self.assertEqual(human['context_sha256_before'],latest['context_sha256_after'])
@@ -28,10 +40,18 @@ class RepositoryLayoutTests(unittest.TestCase):
         for pid in set1['packs']:
             self.assertEqual(set1['context_sha256_before'][pid],
                              correction['context_sha256_after'].get(pid,human['context_sha256_after'][pid]))
+        self.assertEqual(pillow['context_sha256_before'],{'TS002':human['context_sha256_after']['TS002']})
+        self.assertEqual(set(pillow['context_sha256_after']),{'TS002'})
+        self.assertEqual(clarification['context_sha256_before'],pillow['context_sha256_after'])
+        self.assertEqual(set(clarification['context_sha256_after']),{'TS002'})
+        self.assertEqual(ts034['context_sha256_before'],{'TS034':human['context_sha256_after']['TS034']})
         self.assertEqual(len(bank),50)
         self.assertEqual({p.stem for p in (ROOT/'data/host_packs/active').glob('*.json')},{p['id'] for p in bank})
+        expected_contexts=dict(human['context_sha256_after'])
+        for change in (correction,pillow,clarification,ts034,set1):
+            expected_contexts.update(change['context_sha256_after'])
         for p in bank:
-            expected=set1['context_sha256_after'].get(p['id'],correction['context_sha256_after'].get(p['id'],human['context_sha256_after'][p['id']]))
+            expected=expected_contexts[p['id']]
             self.assertEqual(build_story_context(p)['context_sha256'],expected)
             if p['id'] not in human['packs']:
                 self.assertEqual(human['context_sha256_after'][p['id']],latest['context_sha256_after'][p['id']])
