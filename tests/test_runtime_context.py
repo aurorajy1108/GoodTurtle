@@ -18,7 +18,7 @@ class RuntimeContextTests(unittest.TestCase):
         puzzle=next(p for p in puzzles if p['id']=='TS013')
         review=json.loads((root/'data/host_reference/reviews/ts013_20261108_causal_fix.json').read_text())
         context=build_story_context(puzzle)
-        self.assertEqual(context['binding_version'],review['active_version'])
+        self.assertEqual(context['binding_version'],'host-v11-set1-causal-20261110')
         self.assertIn('An action or mistake in an academic course-selection/enrolment system did not cause the courses to disappear.',context['explicit_negatives'])
         audit=[]
         payload=host_payload(context,[{'type':'question','text':e['question'],'feedback':e['answer']}

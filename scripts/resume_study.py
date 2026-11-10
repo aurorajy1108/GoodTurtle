@@ -12,15 +12,18 @@ from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
-from turtle_loop.engine import dump, saved_player_note_recovery, saved_grader_reason_recovery, saved_player_json_recovery
+from turtle_loop.engine import (dump, saved_player_note_recovery, saved_grader_reason_recovery,
+                                saved_player_json_recovery, saved_host_transport_recovery)
+from turtle_loop.host_context import RUNTIME_VERSION
 from scripts.study_20261102 import collect_costs
 
 
-def prepare(source, out, repair_player_note=False, repair_grader_reason=False, repair_player_json=False):
+def prepare(source, out, repair_player_note=False, repair_grader_reason=False, repair_player_json=False,
+            recover_host_transport=False):
     source,out=Path(source).resolve(),Path(out).resolve()
-    if sum((repair_player_note,repair_grader_reason,repair_player_json))>1:
+    if sum((repair_player_note,repair_grader_reason,repair_player_json,recover_host_transport))>1:
         raise ValueError('Select one saved-response recovery mode at a time')
-    repair_any=repair_player_note or repair_grader_reason or repair_player_json
+    repair_any=repair_player_note or repair_grader_reason or repair_player_json or recover_host_transport
     if out.exists() or source in out.parents:
         raise ValueError('Use a new output directory outside the original study')
     status=json.loads((source/'status.json').read_text())
@@ -59,21 +62,29 @@ def prepare(source, out, repair_player_note=False, repair_grader_reason=False, r
                 if e['event']=='evaluation':turns[e['submission']-1]['grade']={k:v for k,v in e.items() if k not in ('event','timestamp','submission','raw')}
         calls=[json.loads(x) for x in (game/'api_calls.jsonl').read_text().splitlines()]
         args=(json.loads((game/'result.json').read_text()),calls,turns,json.loads((game/'config.json').read_text()))
-        recovery=(saved_player_note_recovery(*args) if repair_player_note else
+        if args[0].get('evaluation_versions',{}).get('runtime_context_version') != RUNTIME_VERSION:
+            raise ValueError('Recovery overlay would change the frozen runtime context protocol. '
+                             'Use the archived compatible recovery code for this old study; new experiments use a fresh batch.')
+        recovery=(saved_host_transport_recovery(*args) if recover_host_transport else
+                  saved_player_note_recovery(*args) if repair_player_note else
                   saved_player_json_recovery(*args) if repair_player_json else
                   saved_grader_reason_recovery(*args,json.loads((game/'puzzle_private.json').read_text())))
         if not recovery:
-            raise ValueError('No safely recoverable complete DeepSeek saved response was found')
+            raise ValueError('No supported saved DeepSeek recovery matches this archive')
         recovery_details={'run_dir':stopped[0]['run_dir'],'preserved_submissions':len(turns),
-                          'source_response_id':recovery['response_id'],
-                          'kind':'player_note' if repair_player_note else 'question_quote' if repair_player_json else 'grader_reason'}
-        if repair_player_note or repair_player_json:
+                          'source_response_id':recovery.get('response_id'),
+                          'kind':'host_transport' if recover_host_transport else 'player_note' if repair_player_note else 'question_quote' if repair_player_json else 'grader_reason'}
+        if recover_host_transport:
+            recovery_details.update(recovery)
+        elif repair_player_note or repair_player_json:
             recovery_details.update(pending_submission=len(turns)+1,action=recovery['action'])
             if repair_player_note:recovery_details['removed_fields']=['text_note']
             else:recovery_details['format_recovery']=recovery['format_recovery']
         else:
             recovery_details.update(recovered_submission=turns[-1]['index'],grade=recovery['grade'],removed_fields=recovery['removed_fields'])
     shutil.copytree(source,out,ignore=shutil.ignore_patterns('__pycache__','*.pyc'))
+    if recover_host_transport:
+        dump(out/plan['jobs'][0]['name']/recovery_details['run_dir']/'host_transport_recovery.json', recovery)
     snap=out/'runtime_snapshot'
     changes={}
     if repair_any:
@@ -84,7 +95,8 @@ def prepare(source, out, repair_player_note=False, repair_grader_reason=False, r
             shutil.copy2(ROOT/'turtle_loop'/name,dest)
             changes['turtle_loop/'+name]={'before_sha256':before,
                 'after_sha256':hashlib.sha256(dest.read_bytes()).hexdigest(),
-                'reason':'Explicit saved-response repair and exact DeepSeek chat recovery; no model resampling'}
+                'reason':('Exact DeepSeek message restoration and one explicit unanswered Host request replay'
+                          if recover_host_transport else 'Explicit saved-response repair and exact DeepSeek chat recovery; no model resampling')}
     job=plan['jobs'][0]
     argv=[v.replace(str(source),str(out)) for v in job['argv']]
     if '--resume' not in argv: argv.append('--resume')
@@ -97,7 +109,9 @@ def prepare(source, out, repair_player_note=False, repair_grader_reason=False, r
             'controller_overlay':changes,'original_snapshot_hashes':old_hashes,
             'saved_action_recovery':recovery_details,
             'preserved_completed_runs':preserved_completed,
-            'transport_changes':['DeepSeek typed player/partner actions use JSON object mode; free-text reviews/summaries unchanged'] if repair_any else [],
+            'transport_changes':(['Explicit replay of one unanswered DeepSeek host request; possible duplicate remote charge recorded']
+                                 if recover_host_transport else
+                                 ['DeepSeek typed player/partner actions use JSON object mode; free-text reviews/summaries unchanged'] if repair_any else []),
             'policy':'Original files retained; copied histories, quotas, costs and completed A preserved. Models, prompts, packs, scoring criteria and order unchanged. Explicit saved-response recovery overlays only the recorded controller modules; action JSON transport changes are recorded.'}
     dump(out/'resume_manifest.json',record)
     dump(out/'status.json',{'status':'prepared_resume','resumed_from':str(source),'completed':[],'active':None})
@@ -112,8 +126,10 @@ def main(argv=None):
     p.add_argument('--repair-player-note',action='store_true',help='Recover one complete saved DeepSeek solo action rejected solely for string text_note; preserve local chat messages and quota')
     p.add_argument('--repair-grader-reason',action='store_true',help='Recover the complete saved DeepSeek grade rejected solely for coverage reason metadata; no new grader call')
     p.add_argument('--repair-player-json',action='store_true',help='Recover a saved complete question with one missing text quote or one unescaped inner quote pair; no model call')
+    p.add_argument('--recover-host-transport',action='store_true',help='Explicitly restore saved DeepSeek solo sessions and replay one unanswered host request. Failed remote attempt may already have been billed; all observed replies and counts are preserved.')
     args=p.parse_args(argv)
-    record=prepare(args.from_study,args.out,args.repair_player_note,args.repair_grader_reason,args.repair_player_json)
+    record=prepare(args.from_study,args.out,args.repair_player_note,args.repair_grader_reason,args.repair_player_json,
+                   args.recover_host_transport)
     out=Path(record['out']);batch=record['batch']
     print(json.dumps(record,ensure_ascii=False),flush=True)
     if args.mode=='plan':return 0

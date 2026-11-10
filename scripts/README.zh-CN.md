@@ -17,3 +17,7 @@
 | 旧三标签原型与筛选 | `prepare.py`、`audit_screening.py`、`summarize_screening.py`、`summarize_pilot.py` |
 
 新同事先读 [运行指南](../docs/coworker_quickstart.md)。旧原型不作为当前四标签实验入口。每个脚本的 `--help` 列参数；完整参数说明见docs。
+
+## Set 1 修复后的一键试跑
+
+在已export `DEEPSEEK_API_KEY`的终端执行`bash scripts/start_set1_verified.sh`。先用同一冻结快照做20题Host诊断，通过后才跑12局CL（A=15/14/28，B=13，direct/transcript/answer_only，每条件一次）；不跑MAS。可用唯一位置参数指定新输出目录。完整参数、状态、费用及失败处理见[重跑说明](../docs/set1_v11_rerun.md)。

@@ -19,15 +19,19 @@ class RepositoryLayoutTests(unittest.TestCase):
         latest=json.loads((ROOT/'data/host_reference/reviews/recheck_20261031/resolution.json').read_text())
         human=json.loads((ROOT/'data/host_reference/reviews/human_20261102/manifest.json').read_text())
         correction=json.loads((ROOT/'data/host_reference/reviews/ts013_20261108_causal_fix.json').read_text())
+        set1=json.loads((ROOT/'data/host_reference/reviews/set1_20261110/manifest.json').read_text())
         self.assertEqual(review['context_sha256_before'],manifest['context_sha256_before'])
         self.assertEqual(latest['context_sha256_before'],review['context_sha256_after'])
         self.assertEqual(human['context_sha256_before'],latest['context_sha256_after'])
         self.assertEqual(correction['context_sha256_before'],{'TS013':human['context_sha256_after']['TS013']})
         self.assertEqual(set(correction['context_sha256_after']),{'TS013'})
+        for pid in set1['packs']:
+            self.assertEqual(set1['context_sha256_before'][pid],
+                             correction['context_sha256_after'].get(pid,human['context_sha256_after'][pid]))
         self.assertEqual(len(bank),50)
         self.assertEqual({p.stem for p in (ROOT/'data/host_packs/active').glob('*.json')},{p['id'] for p in bank})
         for p in bank:
-            expected=correction['context_sha256_after'].get(p['id'],human['context_sha256_after'][p['id']])
+            expected=set1['context_sha256_after'].get(p['id'],correction['context_sha256_after'].get(p['id'],human['context_sha256_after'][p['id']]))
             self.assertEqual(build_story_context(p)['context_sha256'],expected)
             if p['id'] not in human['packs']:
                 self.assertEqual(human['context_sha256_after'][p['id']],latest['context_sha256_after'][p['id']])

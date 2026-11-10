@@ -171,7 +171,9 @@ class TrackedHTTPSConnection(http.client.HTTPSConnection):
     def connect(self):
         try:
             super().connect()
-        except ssl.SSLEOFError as exc:
+        except ssl.SSLCertVerificationError:
+            raise  # Certificate/configuration failures are not transient retries.
+        except ssl.SSLError as exc:
             # HTTPConnection.send calls connect before writing the request. A
             # proxy CONNECT may have been sent, but not the application request.
             raise PreSendTLSFailure(exc) from None
@@ -200,7 +202,7 @@ def transport_diagnostic(exc, phase):
     if isinstance(reason, PreSendNetworkFailure):
         category = 'network_unreachable_before_send'
     elif isinstance(reason, PreSendTLSFailure):
-        category = 'tls_handshake_eof'
+        category = 'tls_handshake_eof' if reason.reason_type == 'SSLEOFError' else 'tls_handshake_failure'
     elif isinstance(reason, socket.gaierror):
         category = 'dns_resolution'
     elif isinstance(reason, ssl.SSLError):
@@ -220,7 +222,7 @@ def transport_diagnostic(exc, phase):
     return {'transport_phase': phase, 'transport_category': category,
             'reason_type': reason.reason_type if tracked else type(reason).__name__,
             'reason_errno': code if type(code) is int else None,
-            'safe_pre_send_retry': category in ('dns_resolution', 'tls_handshake_eof', 'network_unreachable_before_send') and phase == 'open'}
+            'safe_pre_send_retry': category in ('dns_resolution', 'tls_handshake_eof', 'tls_handshake_failure', 'network_unreachable_before_send') and phase == 'open'}
 
 
 class Client:
@@ -312,6 +314,11 @@ class Client:
             else:
                 messages = lane['messages'] + [{'role': 'user', 'content': user}]
                 body['messages'] = messages if kind == 'anthropic' else [{'role': 'system', 'content': system}] + messages
+        expected = getattr(self, 'expected_recovery_request', None)
+        if expected is not None:
+            if body != expected:
+                raise ValueError('Recovered host request differs from the saved unanswered request')
+            del self.expected_recovery_request
         for attempt in range(self.profile.get('max_retries', 2) + 1):
             start = time.monotonic()
             data = None

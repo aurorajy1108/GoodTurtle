@@ -2,6 +2,8 @@
 
 # GoodTurtle — COMP1110
 
+**11月10日Set1修复后重跑：** 在已export `DEEPSEEK_API_KEY`的终端执行`bash scripts/start_set1_verified.sh`。先冻结输入并跑20题Host诊断，全部通过才启动12局全新CL；本入口不跑MAS、不追加重复。已修复Host因果边界，并将持续会话中的参考内容按ID缓存。见[全部设置、参数和结果位置](docs/set1_v11_rerun.md)。
+
 **全接口DeepSeek：** 设置 `DEEPSEEK_API_KEY` 并选择 `--config configs/loop.deepseek.json`，Host/grader使用 `deepseek-v4-pro / high`，player/默认MAS partner使用 `deepseek-flash / thinking disabled`，辅助请求使用对应角色配置。CL/MAS入口均支持，见[完整运行说明](docs/deepseek.md)。
 
 研究海龟汤中的上下文经验迁移（CL）与双 agent 合作。当前有 **50 道英文题目、161 个评分点**，支持可配置的 Host / player / grader、完整轨迹和实验统计。

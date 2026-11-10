@@ -6,7 +6,7 @@ import tempfile
 import uuid
 from pathlib import Path
 
-SESSION_INSTRUCTIONS = '''
+V1_SESSION_INSTRUCTIONS = '''
 SESSION PROTOCOL v1: Messages after the initial JSON carry context_update.
 Maintain the supplied JSON context: set replaces a top-level field completely;
 remove deletes fields; append_visible_history appends to visible_history.
@@ -20,9 +20,44 @@ explanation or grade into the current submission's evidence. Judge only its text
 Follow the response schema specified for the current turn. Do not describe context updates.
 '''
 
-LEGACY_SESSION_INSTRUCTIONS=SESSION_INSTRUCTIONS.replace(
+LEGACY_SESSION_INSTRUCTIONS=V1_SESSION_INSTRUCTIONS.replace(
     'Follow the response schema specified for the current turn.',
     'Follow the same response schema on every turn.')
+
+SESSION_INSTRUCTIONS = V1_SESSION_INSTRUCTIONS.replace('SESSION PROTOCOL v1:', 'SESSION PROTOCOL v2:') + '''
+REFERENCE CACHE: active_puzzle/story_context may contain reference_library and
+active_example_ids instead of host_examples. reference_library maps content IDs
+to complete reference question/answer/history objects. Entries are sent once and
+retained; active_example_ids selects the references retrieved for THIS turn.
+Inactive entries are not current evidence. Reference histories are hypothetical
+examples, never the current public history. The canonical story overrides examples
+and earlier mistaken host replies. Never infer a new fact from a cache update.
+'''
+
+
+def cache_references(payload, previous):
+    """Each semantic reference is transmitted once per lane, without provenance.
+
+    Keep the controller's full canonical story and current retrieval intact. Only
+    repeated reference bodies are interned; no lossy history or story summary.
+    """
+    result = copy.deepcopy(payload)
+    for field in ('active_puzzle', 'story_context'):
+        story = result.get(field)
+        if not isinstance(story, dict) or 'host_examples' not in story:
+            continue
+        prior = (previous or {}).get(field, {})
+        library = copy.deepcopy(prior.get('reference_library', {}))
+        active = []
+        for example in story.pop('host_examples'):
+            semantic = json.dumps(example, ensure_ascii=False, sort_keys=True)
+            key = hashlib.sha256(semantic.encode()).hexdigest()[:16]
+            if key in library and library[key] != example:
+                raise ValueError('Reference content ID collision')
+            library[key] = example
+            active.append(key)
+        story.update(reference_library=library, active_example_ids=active)
+    return result
 
 
 def delta(previous, current):
@@ -101,6 +136,8 @@ class GameSession:
             self.lanes[key] = {'id': str(uuid.uuid4()), 'workspace': workspace,
                                'previous': None, 'response_id': '', 'messages': [], 'turn': 0}
         lane = self.lanes[key]
+        if self.role in ('host', 'grader') and lane.get('session_instructions', SESSION_INSTRUCTIONS) == SESSION_INSTRUCTIONS:
+            payload = cache_references(payload, lane['previous'])
         data = payload if lane['previous'] is None else delta(lane['previous'], payload)
         wire_user = json.dumps(data, ensure_ascii=False)
         metadata = {'game_session_id': self.id, 'session_lane_id': lane['id'],
@@ -131,7 +168,7 @@ class GameSession:
             if call.get('provider')!='deepseek' or call.get('status')!='ok' or not call.get('text'):
                 raise ValueError('Only complete DeepSeek chat replies can be restored')
             messages=call.get('request',{}).get('messages',[])
-            instruction=next((s for s in (SESSION_INSTRUCTIONS,LEGACY_SESSION_INSTRUCTIONS)
+            instruction=next((s for s in (SESSION_INSTRUCTIONS,V1_SESSION_INSTRUCTIONS,LEGACY_SESSION_INSTRUCTIONS)
                               if messages and messages[0].get('content','').endswith(s)),None)
             if (len(messages)<2 or messages[0].get('role')!='system' or messages[-1].get('role')!='user'
                     or instruction is None

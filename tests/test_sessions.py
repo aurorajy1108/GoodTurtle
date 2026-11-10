@@ -7,7 +7,7 @@ from pathlib import Path
 from unittest.mock import patch
 from urllib.error import URLError
 
-from turtle_loop.sessions import delta, GameSession, LEGACY_SESSION_INSTRUCTIONS
+from turtle_loop.sessions import delta, GameSession, LEGACY_SESSION_INSTRUCTIONS, restore_context
 from turtle_loop.providers import Client, Reply, APIError
 from turtle_loop.engine import Recorder, load_prompts, play
 from turtle_loop.experiments import TeamPlayer
@@ -22,6 +22,36 @@ class Response:
 
 
 class SessionTests(unittest.TestCase):
+    def test_reference_cache_transmits_each_body_once_and_preserves_active_scope(self):
+        events=[]
+        session=GameSession('host','.',lambda *a,**k:events.append((a,k)))
+        examples=[{'question':'Question '+str(i)+'?', 'answer':'yes',
+                   'public_history':[{'question':'Before?','answer':'no'}]} for i in range(3)]
+        initial={'active_puzzle':{'canonical_solution':'secret', 'host_examples':examples[:2]},
+                 'visible_history':[], 'current_question':'Q1?'}
+        try:
+            lane,payload,_,wire,_=session.prepare('host',json.dumps(initial))
+            self.assertNotIn('host_examples',payload['active_puzzle'])
+            self.assertEqual(len(payload['active_puzzle']['reference_library']),2)
+            session.accept(lane,payload,wire,Reply('yes',{},response_id='r1'))
+            second=copy.deepcopy(initial);second['active_puzzle']['host_examples']=[examples[1],examples[2]]
+            second['current_question']='Q2?'
+            _,new_payload,_,new_wire,_=session.prepare('host',json.dumps(second))
+            self.assertNotIn(examples[0]['question'],new_wire)
+            self.assertNotIn(examples[1]['question'],new_wire)
+            self.assertIn(examples[2]['question'],new_wire)
+            self.assertEqual(restore_context(payload,new_wire),new_payload)
+            story=new_payload['active_puzzle']
+            self.assertEqual([story['reference_library'][i] for i in story['active_example_ids']],examples[1:])
+            self.assertEqual(story['canonical_solution'],'secret')
+            # Returning to an earlier selection sends IDs, not its example text.
+            session.accept(lane,new_payload,new_wire,Reply('no',{},response_id='r2'))
+            _,last,_,last_wire,_=session.prepare('host',json.dumps(initial))
+            self.assertNotIn('Question 0?',last_wire)
+            self.assertNotIn('Question 1?',last_wire)
+            self.assertEqual(restore_context(new_payload,last_wire),last)
+        finally:session.close()
+
     def test_restored_legacy_prompt_is_preserved_verbatim(self):
         with tempfile.TemporaryDirectory() as tmp:
             old=GameSession('player',tmp,lambda *a,**k:None)

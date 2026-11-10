@@ -2,6 +2,8 @@
 
 English | [中文](README.zh-CN.md)
 
+**November 10 Set 1 rerun:** [verified launcher and settings](docs/set1_v11_rerun.md). Run `bash scripts/start_set1_verified.sh` in the terminal with `DEEPSEEK_API_KEY`: freeze inputs, run 20 Host diagnostics, then start 12 fresh CL games only if every check passes. Host causal boundaries were repaired; persistent reference bodies are cached once per role session. No MAS or extra repeats in this launcher.
+
 **All-DeepSeek option:** select `--config configs/loop.deepseek.json` and set `DEEPSEEK_API_KEY`. Host/grader use `deepseek-v4-pro / high`; player/default MAS partner use `deepseek-flash / thinking disabled`. Auxiliary calls use the corresponding role profile. CL and MAS study launchers support this configuration. See [setup and commands](docs/deepseek.md).
 
 GoodTurtle studies in-context experience transfer (continual learning, or CL) and two-agent collaboration using lateral thinking puzzles. It includes **50 English puzzles and 161 scoring checkpoints**, configurable host, player and grader roles, trajectories, and experiment summaries.

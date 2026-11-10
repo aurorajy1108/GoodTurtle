@@ -87,7 +87,7 @@ def build_story_context(puzzle, root=ROOT):
     return context
 
 
-RUNTIME_VERSION = 'single-retrieved-session-v2'
+RUNTIME_VERSION = 'single-cached-reference-session-v3'
 CONTEXT_DEFAULTS = {'host_examples_limit': 6, 'grader_examples_limit': 3,
                     'host_examples_max_chars': 6000, 'grader_examples_max_chars': 3000}
 # Whitelist story semantics. Full originals and provenance stay in host_context.json.
@@ -157,7 +157,7 @@ def retrieve_examples(context, query, history, limit, max_chars):
         exact = normalized(query) == normalized(example['question'])
         pinned = example.get('runtime_required') is True
         if score > 0 or exact or pinned:
-            ranked.append((not pinned, not exact, -score, index))
+            ranked.append((not exact, not pinned, -score, index))
     selected, records, skipped = [], [], []
     for _, _, negative_score, index in sorted(ranked):
         if len(selected) >= limit:

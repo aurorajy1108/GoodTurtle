@@ -19,6 +19,24 @@ class Response:
 
 
 class TransportDiagnosticsTests(unittest.TestCase):
+    @patch.dict('os.environ', {'DEEPSEEK_API_KEY':'fixture'})
+    @patch('turtle_loop.providers.time.sleep')
+    def test_generic_tls_error_during_connect_is_retryable_but_certificate_error_is_not(self, sleep):
+        for error, attempts, category in [
+                (ssl.SSLError(1,'fixture'),2,'tls_handshake_failure'),
+                (ssl.SSLCertVerificationError(1,'fixture'),1,'tls')]:
+            calls=[];client=self.make_client(calls,retries=1)
+            with tempfile.TemporaryDirectory() as tmp:
+                client.begin_game(tmp,lambda *a,**k:None)
+                with patch.object(http.client.HTTPSConnection,'connect',side_effect=error) as connect, \
+                     patch.object(socket.socket,'sendall') as sent, self.assertRaises(APIError):
+                    client.complete('system','{}')
+                self.assertEqual(connect.call_count,attempts)
+                self.assertEqual(calls[0]['transport_category'],category)
+                self.assertEqual(calls[0]['safe_pre_send_retry'],attempts>1)
+                sent.assert_not_called()
+                client.close_game()
+
     def make_client(self, records, retries=2):
         return Client({'provider':'deepseek', 'model':'test', 'max_retries':retries}, 'player', records.append)
 

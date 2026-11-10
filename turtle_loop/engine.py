@@ -325,6 +325,74 @@ def saved_grader_reason_recovery(previous, calls, turns, config, puzzle):
     except (ValueError,TypeError,KeyError,ProtocolError):return None
 
 
+def saved_host_transport_recovery(previous, calls, turns, config):
+    """Opt-in replay of one unanswered DeepSeek host request, never a saved reply.
+
+    DeepSeek chat history is local. A failed transmission may still have been
+    billed remotely; retain the failed audit record and explicitly disclose that.
+    """
+    roles = ('host', 'player', 'grader')
+    if (previous.get('status') != 'error' or previous.get('stop_reason') != 'APIError'
+            or config.get('session_mode') != 'persistent' or not calls or not turns
+            or turns[-1].get('type') != 'question' or 'label' in turns[-1]
+            or any('label' not in t for t in turns[:-1])
+            or any(t.get('grade', {}).get('complete') for t in turns)
+            or len(turns) >= config['max_questions']
+            or any(config.get(r, {}).get('provider') != 'deepseek' for r in roles)):
+        return None
+    last = calls[-1]
+    if (last.get('role') != 'host' or last.get('provider') != 'deepseek'
+            or last.get('status') != 'transport_error'
+            or last.get('text') or last.get('response_id') or last.get('usage')
+            or any(c.get('provider') != 'deepseek' or c.get('status') != 'ok'
+                   or c.get('role') not in roles for c in calls[:-1])):
+        return None
+    players = [c for c in calls if c.get('role') == 'player']
+    prior_hosts = [c for c in calls[:-1] if c.get('role') == 'host']
+    if len(players) != len(turns):
+        return None
+    from .sessions import GameSession, restore_context
+    try:
+        if any(parse_action(c['text']) != {k: t[k] for k in ('type', 'text')}
+               for c, t in zip(players, turns)):
+            return None
+        if sum(c.get('role') == 'host' for c in calls) != sum(t['type'] == 'question' for t in turns):
+            return None
+        for role in roles:
+            session = GameSession(role, '.', lambda *a, **k: None)
+            try:
+                session.restore_chat(calls[:-1])
+                if len(session.lanes) > 1:
+                    return None  # No team, repair, or review lanes in this mode.
+                if role == 'host':
+                    if not session.lanes:
+                        return None
+                    lane = next(iter(session.lanes.values()))
+                    messages = last['request']['messages']
+                    if (last.get('game_session_id') != session.id
+                            or last.get('session_lane_id') != lane['id']
+                            or last.get('session_turn') != lane['turn'] + 1
+                            or last.get('previous_response_id') != lane['response_id']
+                            or messages[:-1] != [prior_hosts[-1]['request']['messages'][0]] + lane['messages']
+                            or messages[-1].get('role') != 'user'
+                            or last['request'].get('tools')):
+                        return None
+                    payload = restore_context(lane['previous'], messages[-1]['content'])
+                    history = [{'type': t['type'], 'text': t['text'], 'feedback': t['label']}
+                               for t in turns[:-1]]
+                    if payload.get('current_question') != turns[-1]['text'] or payload.get('visible_history') != history:
+                        return None
+            finally:
+                session.close()
+    except (ValueError, KeyError, TypeError, IndexError, ProtocolError):
+        return None
+    return {'submission': turns[-1]['index'], 'role': 'host',
+            'failed_call_sha256': hashlib.sha256(json.dumps(last, sort_keys=True).encode()).hexdigest(),
+            'calls_sha256': hashlib.sha256(json.dumps(calls, sort_keys=True).encode()).hexdigest(),
+            'possible_duplicate_remote_charge': not last.get('safe_pre_send_retry', False),
+            'policy': 'Replay only the identical unanswered request; preserve all observed replies, quotas and failed-call accounting.'}
+
+
 class Recorder:
     @classmethod
     def restore(cls, folder, puzzle, config, prompts, echo=True):
@@ -369,8 +437,14 @@ class Recorder:
         recovery=(saved_player_note_recovery(previous,rec.calls,rec.turns,config)
                   or saved_player_json_recovery(previous,rec.calls,rec.turns,config))
         grade_recovery=saved_grader_reason_recovery(previous,rec.calls,rec.turns,config,puzzle)
-        if config.get('session_mode','replay')=='persistent' and previous['status']!='completed' and not (recovery or grade_recovery):
-            raise ValueError('Persistent interrupted sessions cannot be safely replayed; only complete saved DeepSeek solo replies rejected for supported metadata permit exact local recovery.')
+        transport_recovery = None
+        transport_marker = folder / 'host_transport_recovery.json'
+        if transport_marker.exists():
+            transport_recovery = saved_host_transport_recovery(previous, rec.calls, rec.turns, config)
+            if not transport_recovery or json.loads(transport_marker.read_text()) != transport_recovery:
+                raise ValueError('Pending host transport recovery does not match the saved archive')
+        if config.get('session_mode','replay')=='persistent' and previous['status']!='completed' and not (recovery or grade_recovery or transport_recovery):
+            raise ValueError('Persistent interrupted sessions require supported saved-response recovery or explicit checked DeepSeek pending-host transport recovery; no fresh-session fallback.')
         if previous['status'] == 'error':
             last = rec.calls[-1] if rec.calls else {}
             diagnostic = json.dumps(last.get('diagnostics', [])).lower()
@@ -380,7 +454,11 @@ class Recorder:
             if not recoverable and not (recovery or grade_recovery):
                 raise ValueError('Refuse to resample a protocol/model-output failure')
         rec.resumed = True
-        rec.restore_sessions=bool(recovery or grade_recovery)
+        rec.restore_sessions=bool(recovery or grade_recovery or transport_recovery)
+        if transport_recovery:
+            rec.session_restore_calls = rec.calls[:-1]
+            rec.pending_host_request = rec.calls[-1]['request']
+            rec.event('host_transport_recovery', **transport_recovery)
         if recovery:
             turn={'index':len(rec.turns)+1,**recovery['action'],'forced':recovery['forced']}
             rec.turns.append(turn)
@@ -551,7 +629,10 @@ def play(puzzle, config, recorder, clients, prompts, player_context=None):
             initialize(client.partner)
         elif hasattr(client, 'begin_game') and client not in opened:
             if getattr(recorder,'restore_sessions',False):
-                client.restore_game(recorder.folder,recorder.event,recorder.calls)
+                client.restore_game(recorder.folder,recorder.event,
+                                    getattr(recorder,'session_restore_calls',recorder.calls))
+                if getattr(client, 'role', None) == 'host' and hasattr(recorder, 'pending_host_request'):
+                    client.expected_recovery_request = recorder.pending_host_request
             else:
                 client.begin_game(recorder.folder, recorder.event)
             opened.append(client)
@@ -633,6 +714,9 @@ def _play(puzzle, config, recorder, clients, prompts, player_context=None):
                     raise ProtocolError('Host returned an invalid label; raw output saved in api_calls.jsonl')
                 turn['label'] = label
                 recorder.event('host_feedback', submission=turn['index'], label=label, raw=response.text)
+                if hasattr(recorder, 'pending_host_request'):
+                    (recorder.folder / 'host_transport_recovery.json').unlink(missing_ok=True)
+                    del recorder.pending_host_request
             else:
                 grader_payload = {'opening': puzzle['opening'], 'reference_answer': puzzle['answer'],
                                            'story_context': grader_story_context(story_context, action['text'],
