@@ -61,6 +61,12 @@ and sentence-final punctuation are normalized by the controller. Missing evidenc
 is an empty string. Source text, earlier guesses
 and host examples are never evidence of what the player submitted.
 
+An explicit statement of uncertainty or lack of knowledge is not a denial of the
+fact: "it is unknown who cut the hand" does not mean "she did not cut the hand".
+If a hand is identified but its actor is unknown, treat the missing agency as
+partial where the rubric allows; mark contradicted only for an affirmative claim
+that conflicts with the required fact. Do not infer an actor from uncertainty.
+
 Inspect agency, event order, knowledge and motives BEFORE awarding credit. A promise
 of rescue does not imply a bribe, and "release" alone need not entail digging up a
 buried coffin. Do not award full credit merely because the corpse and rescuer match.

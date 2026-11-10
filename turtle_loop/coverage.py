@@ -61,12 +61,14 @@ def normalize_coverage_metadata(value):
         items=value.get(name)
         if not isinstance(items,list):continue  # The strict validator reports this.
         for row in items:
-            if not isinstance(row,dict) or 'reason' not in row:continue
-            if not isinstance(row['reason'],str):
-                raise ValueError(f'{name}: optional reason must be a string')
-            reason=row.pop('reason')
-            changes.append({'field':f"{name}.{row.get('id','?')}.reason",'action':'ignored_metadata',
-                            'model':reason,'effective':None})
+            if not isinstance(row,dict):continue
+            for field in ('reason', 'reference'):
+                if field not in row:continue
+                if not isinstance(row[field],str):
+                    raise ValueError(f'{name}: optional {field} must be a string')
+                metadata=row.pop(field)
+                changes.append({'field':f"{name}.{row.get('id','?')}.{field}",'action':'ignored_metadata',
+                                'model':metadata,'effective':None})
     return value,changes
 
 def constrain(value, rubric, requirements, submission):
