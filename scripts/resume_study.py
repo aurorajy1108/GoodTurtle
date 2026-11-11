@@ -17,6 +17,7 @@ from turtle_loop.engine import (dump, saved_player_note_recovery, saved_grader_r
                                 saved_player_auto_recovery)
 from turtle_loop.host_context import RUNTIME_VERSION
 from scripts.study_20261102 import collect_costs
+from turtle_loop.dialogue_recovery import saved_dialogue_action_recovery
 
 
 def collect_resume_costs(out, batch, gate_reused=False):
@@ -30,7 +31,7 @@ def collect_resume_costs(out, batch, gate_reused=False):
 
 
 def prepare(source, out, repair_player_note=False, repair_grader_reason=False, repair_player_json=False,
-            recover_host_transport=False, auto_player_format=False):
+            recover_host_transport=False, auto_player_format=False, recover_dialogue_action=False):
     source,out=Path(source).resolve(),Path(out).resolve()
     wrapper=None
     if (source/'run_manifest.json').exists() and (source/'study/study_plan.json').exists():
@@ -43,9 +44,9 @@ def prepare(source, out, repair_player_note=False, repair_grader_reason=False, r
                 or gate.get('completed_calls')!=gate.get('planned_calls') or gate.get('errors')):
             raise ValueError('Verified wrapper must have a passed, complete Host gate and a stopped CL phase')
         source=wrapper/'study'
-    if sum((repair_player_note,repair_grader_reason,repair_player_json,recover_host_transport,auto_player_format))>1:
+    if sum((repair_player_note,repair_grader_reason,repair_player_json,recover_host_transport,auto_player_format,recover_dialogue_action))>1:
         raise ValueError('Select one saved-response recovery mode at a time')
-    repair_any=repair_player_note or repair_grader_reason or repair_player_json or recover_host_transport or auto_player_format
+    repair_any=repair_player_note or repair_grader_reason or repair_player_json or recover_host_transport or auto_player_format or recover_dialogue_action
     if out.exists() or source in out.parents or (wrapper and wrapper in out.parents):
         raise ValueError('Use a new output directory outside the original study')
     status=wrapper_status if wrapper else json.loads((source/'status.json').read_text())
@@ -87,7 +88,8 @@ def prepare(source, out, repair_player_note=False, repair_grader_reason=False, r
         if args[0].get('evaluation_versions',{}).get('runtime_context_version') != RUNTIME_VERSION:
             raise ValueError('Recovery overlay would change the frozen runtime context protocol. '
                              'Use the archived compatible recovery code for this old study; new experiments use a fresh batch.')
-        recovery=(saved_player_auto_recovery(*args) if auto_player_format else
+        recovery=(saved_dialogue_action_recovery(*args,game) if recover_dialogue_action else
+                  saved_player_auto_recovery(*args) if auto_player_format else
                   saved_host_transport_recovery(*args) if recover_host_transport else
                   saved_player_note_recovery(*args) if repair_player_note else
                   saved_player_json_recovery(*args) if repair_player_json else
@@ -96,10 +98,10 @@ def prepare(source, out, repair_player_note=False, repair_grader_reason=False, r
             raise ValueError('No supported saved DeepSeek recovery matches this archive')
         recovery_details={'run_dir':stopped[0]['run_dir'],'preserved_submissions':len(turns),
                           'source_response_id':recovery.get('response_id'),
-                          'kind':'auto_player_format' if auto_player_format else 'host_transport' if recover_host_transport else 'player_note' if repair_player_note else 'question_quote' if repair_player_json else 'grader_reason'}
+                          'kind':'saved_dialogue_action' if recover_dialogue_action else 'auto_player_format' if auto_player_format else 'host_transport' if recover_host_transport else 'player_note' if repair_player_note else 'question_quote' if repair_player_json else 'grader_reason'}
         if 'verified_pre_send_attempts' in recovery:
             recovery_details['verified_pre_send_attempts']=recovery['verified_pre_send_attempts']
-        if recover_host_transport:
+        if recover_host_transport or recover_dialogue_action:
             recovery_details.update(recovery)
         elif repair_player_note or repair_player_json or auto_player_format:
             recovery_details.update(pending_submission=len(turns)+1,action=recovery['action'])
@@ -113,10 +115,13 @@ def prepare(source, out, repair_player_note=False, repair_grader_reason=False, r
         shutil.copy2(wrapper/'run_manifest.json',out/'original_verified_run_manifest.json')
     if recover_host_transport:
         dump(out/plan['jobs'][0]['name']/recovery_details['run_dir']/'host_transport_recovery.json', recovery)
+    if recover_dialogue_action:
+        dump(out/plan['jobs'][0]['name']/recovery_details['run_dir']/'dialogue_action_recovery.json',recovery)
     snap=out/'runtime_snapshot'
     changes={}
     if repair_any:
         files=('engine.py','sessions.py','providers.py','action_text.py')+(('coverage.py','grader.py') if repair_grader_reason else ())
+        if recover_dialogue_action:files+=('dialogue.py','dialogue_contract.py','dialogue_recovery.py','experiments.py')
         for name in files:
             dest=snap/'turtle_loop'/name
             before=hashlib.sha256(dest.read_bytes()).hexdigest() if dest.exists() else None
@@ -178,9 +183,10 @@ def main(argv=None):
     p.add_argument('--repair-player-json',action='store_true',help='Recover a saved complete question with a missing/incorrectly escaped closing quote or one unescaped inner quote pair; no model call')
     p.add_argument('--recover-host-transport',action='store_true',help='Explicitly restore saved DeepSeek solo sessions and replay one unanswered host request. Failed remote attempt may already have been billed; all observed replies and counts are preserved.')
     p.add_argument('--auto-player-format',action='store_true',help='Restore saved Player output, enable fixed-position extraction and bounded verbatim Codex formatting; no puzzle action resampling')
+    p.add_argument('--recover-dialogue-action',action='store_true',help='Restore both DeepSeek agents and one explicit saved ACTION NEXT=X wrapper; preserve exact body, handoff, history and quota')
     args=p.parse_args(argv)
     record=prepare(args.from_study,args.out,args.repair_player_note,args.repair_grader_reason,args.repair_player_json,
-                   args.recover_host_transport,args.auto_player_format)
+                   args.recover_host_transport,args.auto_player_format,args.recover_dialogue_action)
     out=Path(record['out']);batch=record['batch']
     print(json.dumps(record,ensure_ascii=False),flush=True)
     if args.mode=='plan':return 0

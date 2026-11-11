@@ -497,7 +497,7 @@ def run(args):
                 raise ValueError('Resume partner changed')
             if saved_row['status']=='completed':
                 return rec,json.loads((rec.folder/'result.json').read_text())
-            if team=='free_dialogue' and rec.turns:
+            if team=='free_dialogue' and rec.turns and not hasattr(rec,'saved_dialogue_action'):
                 raise ValueError('free_dialogue mid-game recovery is not supported; start a labeled new run')
             rec.event('resume',previous_status=saved_row['status'],preserved_submissions=len(rec.turns),
                       pending_feedback=sum('label' not in t for t in rec.turns))

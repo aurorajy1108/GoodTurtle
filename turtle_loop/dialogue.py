@@ -73,7 +73,13 @@ class FreeDialoguePlayer:
         self.turn=0
         self.pending=None
         if getattr(recorder,'resumed',False) and recorder.turns:
-            raise ValueError('free_dialogue mid-game recovery is not supported; preserve archive and start a labeled new game')
+            if not hasattr(recorder,'saved_dialogue_action'):
+                raise ValueError('free_dialogue needs an explicitly audited saved action checkpoint')
+            self.transcript=[{k:v for k,v in json.loads(x).items() if k!='timestamp'}
+                             for x in (recorder.folder/'shared_dialogue.jsonl').read_text().splitlines()]
+            self.speaker=recorder.saved_dialogue_action['actor']
+            self.turn=len(recorder.turns)
+            self.saved_reply=recorder.saved_dialogue_action
         dump(recorder.folder/'dialogue_policy.json',settings)
 
     def _append(self, entry):
@@ -109,7 +115,16 @@ class FreeDialoguePlayer:
                      'response_contract':dialogue_contract_text(allowed,forced)}}
             client=self.leader if actor=='A' else self.partner
             for attempt in range(3):
-                reply=client.complete(dialogue_system_prompt(),json.dumps(payload,ensure_ascii=False))
+                if hasattr(self,'saved_reply'):
+                    from .providers import Reply
+                    saved=self.saved_reply;del self.saved_reply
+                    self.saved_recovery_submission=saved['submission']
+                    if saved['actor']!=actor or saved['submission']!=self.turn:
+                        raise ProtocolError('Saved dialogue action belongs to a different turn')
+                    reply=Reply(saved['raw'],{},response_id=saved['response_id'],finish_reason='stop')
+                    self.recorder.event('dialogue_saved_action_recovered',submission=self.turn,actor=actor,
+                                        response_id=saved['response_id'],method=saved['method'])
+                else:reply=client.complete(dialogue_system_prompt(),json.dumps(payload,ensure_ascii=False))
                 try:
                     action,recovery=parse_player_json(reply.text)
                     if not valid_dialogue_action(action,allowed,forced):
@@ -158,3 +173,7 @@ class FreeDialoguePlayer:
         self._append({'speaker':'Host','type':'feedback','text':label,'submission':submission,
                       'in_reply_to':actor,'evaluated_action_type':action['type']})
         self.pending=None
+        if getattr(self,'saved_recovery_submission',None)==submission:
+            (self.recorder.folder/'dialogue_action_recovery.json').unlink(missing_ok=True)
+            self.recorder.event('dialogue_saved_action_committed',submission=submission)
+            del self.saved_recovery_submission

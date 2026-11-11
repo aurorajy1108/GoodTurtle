@@ -10,6 +10,20 @@ from turtle_loop.costs import cost_summary
 
 
 class CampaignTests(unittest.TestCase):
+    def test_report_reads_live_game_counts_instead_of_stale_batch_row(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            out=Path(tmp);folder=out/'task/continual';game=folder/'game';game.mkdir(parents=True)
+            stale={'condition':'session','target':'TS013','source':'TS015','repeat':1,'run_dir':'game',
+                   'status':'running','success':None,'submissions':0,'counted_questions':0,'costs':cost_summary([])}
+            (folder/'experiment_runs.json').write_text(json.dumps([stale]))
+            (game/'result.json').write_text(json.dumps({**stale,'submissions':17,'counted_questions':17}))
+            job={'id':'cl-set1-a','folder':'task','kind':'continual','set':1,'slot':'a','repeat_offset':0,'planned_games':1}
+            manifest={'runner':'reviewer','preset':'full','jobs':[job],'planned_games':1,'catalogue':[job],'source_policy':'fixed'}
+            (out/'campaign.json').write_text(json.dumps(manifest))
+            rows=report(out)
+            self.assertEqual(rows[0]['counted_questions'],17)
+            self.assertEqual(rows[0]['submissions'],17)
+
     def args(self,out,**kw):
         return argparse.Namespace(command='start',preset='full',runner='reviewer',tasks='cl-set1-a',workers=2,
             set1_positive='15',config=str(ROOT/'configs/loop.deepseek.json'),

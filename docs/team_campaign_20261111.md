@@ -1,5 +1,7 @@
 # 团队运行：3个CL set、3道MAS，两人各两次
 
+真实API小量测试新发现与有限恢复边界见 [11月11日修复记录](live_test_repairs_20261111.md)。其中新增MAS保存动作恢复，不等于所有free_dialogue中断都可续跑。
+
 分支 `fix/cl-session-prefix-compat-20261111`。默认Set1只选15，16保留可选。每个实验有a/b两个**人工执行槽**：a跑重复1、2，b跑3、4；这与MAS内部两个模型Agent A/B不同。
 
 ## 实验与分工

@@ -104,7 +104,8 @@ def account_call(call, book):
             'cost_status':'estimated' if estimate is not None else 'unknown', 'unknown_reason':reason,
             'cost_basis':'standard_api_equivalent_not_actual_bill', 'actual_billed_cost_usd':None,
             'price_snapshot_sha256':hashlib.sha256(json.dumps(book, sort_keys=True).encode()).hexdigest(),
-            'price':deepcopy(rate), 'price_checked_on':book.get('checked_on')}
+            'price':deepcopy(rate), 'price_checked_on':(rate or {}).get('checked_on',book.get('checked_on')),
+            'estimate_assumption':(rate or {}).get('estimate_assumption','standard_rates_not_actual_bill')}
 
 
 def summarize_calls(records):
@@ -123,6 +124,7 @@ def cost_summary(records):
     for r in records:
         grouped[(r['role'], r['provider'], r['model'])].append(r)
     return {'schema_version':1, 'currency':'USD', 'basis':'standard_api_equivalent_not_actual_bill',
+            'estimate_assumptions':sorted({r['estimate_assumption'] for r in records if r.get('estimate_assumption')}),
             'total':summarize_calls(records),
             'by_role_model':[dict(role=k[0],provider=k[1],model=k[2],**summarize_calls(v)) for k,v in sorted(grouped.items())]}
 
@@ -142,6 +144,7 @@ def merge_summaries(summaries):
         for r in summary['by_role_model']:
             groups[(r['role'], r['provider'], r['model'])].append(r)
     return {'schema_version':1, 'currency':'USD', 'basis':'standard_api_equivalent_not_actual_bill',
+            'estimate_assumptions':sorted({a for s in summaries for a in s.get('estimate_assumptions',[])}),
             'total':merge([s['total'] for s in summaries]),
             'by_role_model':[dict(role=k[0],provider=k[1],model=k[2],**merge(v)) for k,v in sorted(groups.items())]}
 

@@ -21,6 +21,17 @@ def recover_prefix_action(raw):
     import hashlib
     if not isinstance(raw, str):
         return None
+    # The old prompt's placeholder sometimes wrapped a typed action. Recover
+    # only an explicit inner verb and explicit outer handoff, never infer a verb
+    # from free prose. Both values and the entire body must remain unchanged.
+    outer=re.fullmatch(r'\s*ACTION NEXT=([AB])\r?\n((?:QUESTION|FINAL|DISCUSS|PASS)(?: NEXT=[AB])?\r?\n[\s\S]+)',raw)
+    if outer:
+        action=parse_prefix_action(outer[2])
+        if action.get('next_speaker',outer[1])!=outer[1]:
+            raise ValueError('Conflicting outer and inner next speaker')
+        action['next_speaker']=outer[1]
+        return action,{'method':'explicit_placeholder_wrapper','raw_sha256':hashlib.sha256(raw.encode()).hexdigest(),
+                       'discarded_prefix_chars':raw.index(outer[2]),'next_speaker_preserved':True}
     if re.fullmatch(r'\s*```(?:json|text)?[ \t]*\r?\n[\s\S]*?\r?\n```\s*',raw):
         return None  # Existing full-envelope recovery handles this separately.
     headers=list(re.finditer(r'(?m)^(?:QUESTION|FINAL|DISCUSS|PASS)(?: NEXT=[AB])?\r?$',raw))

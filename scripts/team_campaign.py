@@ -147,6 +147,10 @@ def rows_for(out,manifest):
     for task in manifest['jobs']:
         path=out/task['folder']/task['kind']/'experiment_runs.json'
         for row in json.loads(path.read_text()) if path.exists() else []:
+            # Batch rows are finalized only after a whole game. The per-game
+            # result is atomically refreshed after each turn and owns live usage.
+            result=path.parent/row['run_dir']/'result.json'
+            if result.exists():row={**row,**json.loads(result.read_text())}
             source=row['condition'] in ('source','control_source')
             rows.append({**row,'task_id':task['id'],'runner':manifest['runner'],'slot':task['slot'],
                 'kind':task['kind'],'set':task.get('set'),'preset':manifest['preset'],

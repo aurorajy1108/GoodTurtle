@@ -28,6 +28,14 @@ class PrefixTests(unittest.TestCase):
         self.assertFalse(valid_dialogue_action(parse_prefix_action('QUESTION\nQ?'),['question']))
         self.assertTrue(valid_dialogue_action(parse_prefix_action('FINAL\nAnswer'),['final'],True))
 
+    def test_dialogue_contract_lists_literal_headers_not_a_copyable_placeholder(self):
+        from turtle_loop.dialogue_contract import dialogue_contract_text
+        text=dialogue_contract_text(['question','discuss'])
+        self.assertNotIn('ACTION NEXT=',text)
+        for header in ('QUESTION NEXT=A','QUESTION NEXT=B','DISCUSS NEXT=A','DISCUSS NEXT=B'):
+            self.assertIn(header,text)
+            self.assertTrue(valid_dialogue_action(parse_prefix_action(header+'\nBody'),['question','discuss']))
+
     def test_archived_json_and_codex_text_contract(self):
         self.assertEqual(parse_action('{"type":"question","text":"Q?"}')['text'],'Q?')
         self.assertEqual(output_contract(json.dumps({'action_protocol':'prefix-v1','opening':'Q','turn_control':'next'})),(None,None,''))

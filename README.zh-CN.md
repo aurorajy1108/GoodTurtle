@@ -2,6 +2,8 @@
 
 # GoodTurtle — COMP1110
 
+**真实API测试修复：** [TS015方向判定、MAS首行契约、保存动作续跑、实时计数和DeepSeek费用](docs/live_test_repairs_20261111.md)。实测仍在进行，未宣称整批已通过。
+
 **团队运行：** [三组CL+三道MAS，两人各两次的一键脚本](docs/team_campaign_20261111.md)：6局小量测试、个人批跑、限并发全员150局与去重汇总。
 
 ## 当前团队一键运行

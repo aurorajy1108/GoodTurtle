@@ -25,7 +25,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def controller_fingerprint():
     names=('engine.py','host.py','host_context.py','coverage.py','grader.py','providers.py',
-           'codex_client.py','experiments.py','sessions.py','dialogue.py','dialogue_contract.py','player_format.py','action_text.py')
+           'codex_client.py','experiments.py','sessions.py','dialogue.py','dialogue_contract.py','dialogue_recovery.py','player_format.py','action_text.py')
     files=[ROOT/'turtle_loop'/name for name in names]
     files.append(ROOT/'configs/player_format_repair.json')
     return hashlib.sha256(b''.join(p.read_bytes() for p in files if p.exists())).hexdigest()
@@ -425,7 +425,8 @@ def saved_host_transport_recovery(previous, calls, turns, config):
         if calls:calls=restorable_chat_records(calls[:-1])+[calls[-1]]
     except (ValueError,TypeError,KeyError):return None
     roles = ('host', 'player', 'grader')
-    if (previous.get('status') != 'error' or previous.get('stop_reason') != 'APIError'
+    stopped=(previous.get('status'),previous.get('stop_reason'))
+    if (stopped not in (('error','APIError'),('interrupted','user_interrupt'))
             or config.get('session_mode') != 'persistent' or not calls or not turns
             or turns[-1].get('type') != 'question' or 'label' in turns[-1]
             or any('label' not in t for t in turns[:-1])
@@ -435,7 +436,7 @@ def saved_host_transport_recovery(previous, calls, turns, config):
         return None
     last = calls[-1]
     if (last.get('role') != 'host' or last.get('provider') != 'deepseek'
-            or last.get('status') != 'transport_error'
+            or last.get('status') != ('interrupted' if stopped[0]=='interrupted' else 'transport_error')
             or last.get('text') or last.get('response_id') or last.get('usage')
             or any(c.get('provider') != 'deepseek' or c.get('status') != 'ok'
                    or c.get('role') not in roles for c in calls[:-1])):
@@ -534,12 +535,19 @@ class Recorder:
             recovery=saved_player_auto_recovery(previous,rec.calls,rec.turns,config)
         grade_recovery=saved_grader_reason_recovery(previous,rec.calls,rec.turns,config,puzzle)
         transport_recovery = None
+        dialogue_recovery=None
+        dialogue_marker=folder/'dialogue_action_recovery.json'
+        if dialogue_marker.exists() and previous['status']!='completed':
+            from .dialogue_recovery import saved_dialogue_action_recovery
+            dialogue_recovery=saved_dialogue_action_recovery(previous,rec.calls,rec.turns,config,folder)
+            if not dialogue_recovery or json.loads(dialogue_marker.read_text())!=dialogue_recovery:
+                raise ValueError('Saved dialogue recovery differs from audited checkpoint')
         transport_marker = folder / 'host_transport_recovery.json'
         if transport_marker.exists():
             transport_recovery = saved_host_transport_recovery(previous, rec.calls, rec.turns, config)
             if not transport_recovery or json.loads(transport_marker.read_text()) != transport_recovery:
                 raise ValueError('Pending host transport recovery does not match the saved archive')
-        if config.get('session_mode','replay')=='persistent' and previous['status']!='completed' and not (recovery or grade_recovery or transport_recovery):
+        if config.get('session_mode','replay')=='persistent' and previous['status']!='completed' and not (recovery or grade_recovery or transport_recovery or dialogue_recovery):
             raise ValueError('Persistent interrupted sessions require supported saved-response recovery or explicit checked DeepSeek pending-host transport recovery; no fresh-session fallback.')
         if previous['status'] == 'error':
             last = rec.calls[-1] if rec.calls else {}
@@ -547,10 +555,11 @@ class Recorder:
             recoverable = last.get('status') in ('transport_error','http_error','interrupted') or (
                 last.get('status') == 'invalid_response' and not last.get('raw_text',last.get('text','')).strip()
                 and any(s in diagnostic for s in ('usage limit','at capacity','rate limit','rate_limit')))
-            if not recoverable and not (recovery or grade_recovery):
+            if not recoverable and not (recovery or grade_recovery or dialogue_recovery):
                 raise ValueError('Refuse to resample a protocol/model-output failure')
         rec.resumed = True
-        rec.restore_sessions=bool(recovery or grade_recovery or transport_recovery)
+        rec.restore_sessions=bool(recovery or grade_recovery or transport_recovery or dialogue_recovery)
+        if dialogue_recovery:rec.saved_dialogue_action=dialogue_recovery
         if transport_recovery:
             rec.session_restore_calls = rec.calls[:-1]
             rec.pending_host_request = rec.calls[-1]['request']
