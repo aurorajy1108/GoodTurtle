@@ -1,5 +1,5 @@
 {
-  "version": "host-v12-ts034-fear-boundary-20261109",
+  "version": "host-v13-ts034-user-accepted-20261111",
   "review_status": "human_labels_and_delegated_adjudication",
   "replace_host_examples": true,
   "solution": "The father is the hostage. His wealthy daughter is free and receives the kidnapper’s phone call.\nThe father hears the kidnapper order his daughter to bring the ransom alone. He fears that, once she arrives with the money, the kidnapper will kill both of them to eliminate witnesses.\nHis daughter is his only family. To protect her, he tells her not to pay the ransom or come to the meeting, even though refusing puts his own life at risk.\nThe explanation concerns the father’s fear and decision; it does not establish that the kidnapper eventually kills either of them.",
@@ -318,10 +318,179 @@
         "question_origin": "source_question",
         "reviewer": "codex_root"
       }
+    },
+    {
+      "case_id": "USER_20261111_TS034_Q001",
+      "question": "Is the daughter the person making the ransom call's threat, or is she pleading for the hostage's life?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "User reviewed this exact question and chose to retain the original model Host answer; this is a question-specific precedent, not an assertion that an uncertain event is established.",
+      "review_status": "user_confirmed_original_model_host_answer",
+      "provenance": {
+        "source_file": "runs/api/20261111_175203_set2_TS034_resume40/web/run/TS034_r01/trajectory.jsonl",
+        "source_sha256": "63fd23fa8e0e6701683c38433a215f6865b12bd57c60cbad83168c27c34f3704",
+        "submission": 1,
+        "answer_origin": "model_host",
+        "decision_origin": "user_confirmed_keep_original",
+        "review_date": "2026-11-11",
+        "history_scope": "complete original public history in review record; relevant excerpt in runtime example",
+        "published_source_file": "runs/2026-11-11_set2_TS034_direct/TS034_r01/trajectory.jsonl"
+      }
+    },
+    {
+      "case_id": "USER_20261111_TS034_Q003",
+      "question": "Does the father believe that paying the ransom would not save the hostage?",
+      "answer": "yes",
+      "public_history": [
+        {
+          "type": "question",
+          "text": "Is the daughter the person making the ransom call's threat, or is she pleading for the hostage's life?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's decision based on the belief that the ransom demand is a scam or not genuine?",
+          "feedback": "no"
+        }
+      ],
+      "rationale": "User reviewed this exact question and chose to retain the original model Host answer; this is a question-specific precedent, not an assertion that an uncertain event is established.",
+      "review_status": "user_confirmed_original_model_host_answer",
+      "provenance": {
+        "source_file": "runs/api/20261111_175203_set2_TS034_resume40/web/run/TS034_r01/trajectory.jsonl",
+        "source_sha256": "63fd23fa8e0e6701683c38433a215f6865b12bd57c60cbad83168c27c34f3704",
+        "submission": 3,
+        "answer_origin": "model_host",
+        "decision_origin": "user_confirmed_keep_original",
+        "review_date": "2026-11-11",
+        "history_scope": "complete original public history in review record; relevant excerpt in runtime example",
+        "published_source_file": "runs/2026-11-11_set2_TS034_direct/TS034_r01/trajectory.jsonl"
+      }
+    },
+    {
+      "case_id": "USER_20261111_TS034_Q042",
+      "question": "Does the father believe that if the ransom is paid, the kidnapper will kill the hostage anyway?",
+      "answer": "yes",
+      "public_history": [
+        {
+          "type": "question",
+          "text": "Does the father refuse to pay because he is a police officer or investigator who cannot allow a ransom payment to proceed?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's refusal motivated by a moral or principled stance against paying ransoms (e.g., it funds crime)?",
+          "feedback": "no"
+        }
+      ],
+      "rationale": "User reviewed this exact question and chose to retain the original model Host answer; this is a question-specific precedent, not an assertion that an uncertain event is established.",
+      "review_status": "user_confirmed_original_model_host_answer",
+      "provenance": {
+        "source_file": "runs/api/20261111_175203_set2_TS034_resume40/web/run/TS034_r01/trajectory.jsonl",
+        "source_sha256": "63fd23fa8e0e6701683c38433a215f6865b12bd57c60cbad83168c27c34f3704",
+        "submission": 42,
+        "answer_origin": "model_host",
+        "decision_origin": "user_confirmed_keep_original",
+        "review_date": "2026-11-11",
+        "history_scope": "complete original public history in review record; relevant excerpt in runtime example",
+        "published_source_file": "runs/2026-11-11_set2_TS034_direct/TS034_r01/trajectory.jsonl"
+      }
+    },
+    {
+      "case_id": "USER_20261111_TS034_Q060",
+      "question": "Is the reason my final was partly wrong that, in addition to wanting to protect the daughter, the father also believes that paying the ransom will not save him (so the payment is futile as well as dangerous)?",
+      "answer": "yes",
+      "public_history": [
+        {
+          "type": "final",
+          "text": "The father is himself the hostage. He is being held captive by the kidnapper, who has forced or allowed a phone call in which the daughter pleads for his life and the kidnapper demands that she bring one hundred million yen alone by noon the next day, with no police. Hearing this, the father realizes that the only way the ransom can be paid is for his daughter to come alone to the kidnapper—walking straight into danger herself. Rather than let that happen, he decides the ransom should not be paid. His refusal is a deliberate sacrifice: he would rather his own life remain at risk than have his daughter deliver the money and fall into the kidnapper's hands.",
+          "feedback": "yes and no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father's refusal depend on something about the daughter's physical condition or ability—such that the danger to her comes from a specific vulnerability rather than just the kidnapper's trap?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father correct that the kidnapper will kill him regardless of whether the ransom is paid—i.e., the ransom payment would not save him either?",
+          "feedback": "yes and no"
+        }
+      ],
+      "rationale": "User reviewed this exact question and chose to retain the original model Host answer; this is a question-specific precedent, not an assertion that an uncertain event is established.",
+      "review_status": "user_confirmed_original_model_host_answer",
+      "provenance": {
+        "source_file": "runs/api/20261111_175203_set2_TS034_resume40/web/run/TS034_r01/trajectory.jsonl",
+        "source_sha256": "63fd23fa8e0e6701683c38433a215f6865b12bd57c60cbad83168c27c34f3704",
+        "submission": 60,
+        "answer_origin": "model_host",
+        "decision_origin": "user_confirmed_keep_original",
+        "review_date": "2026-11-11",
+        "history_scope": "complete original public history in review record; relevant excerpt in runtime example",
+        "published_source_file": "runs/2026-11-11_set2_TS034_direct/TS034_r01/trajectory.jsonl"
+      }
+    },
+    {
+      "case_id": "USER_20261111_TS034_Q075",
+      "question": "Does the father's belief that paying will not save him arise because the kidnapper is demanding that the daughter come alone to a place where the father knows a trap awaits (e.g., the father can see or infer that the kidnapper intends to take the money and kill both of them)?",
+      "answer": "yes",
+      "public_history": [
+        {
+          "type": "question",
+          "text": "Is the key that the father already knows he is going to die—not from the kidnapper's threat, but because of a separate fact (such as the setting being a death row / hospital / planned execution) that makes the ransom pointless?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the puzzle set in a context where the father and the hostage situation are metaphorical—for example, the \"hostage\" is the father's own life being consumed by an addiction (gambling, debt) and the \"ransom\" is money that would only fuel it?",
+          "feedback": "no"
+        }
+      ],
+      "rationale": "User reviewed this exact question and chose to retain the original model Host answer; this is a question-specific precedent, not an assertion that an uncertain event is established.",
+      "review_status": "user_confirmed_original_model_host_answer",
+      "provenance": {
+        "source_file": "runs/api/20261111_175203_set2_TS034_resume40/web/run/TS034_r01/trajectory.jsonl",
+        "source_sha256": "63fd23fa8e0e6701683c38433a215f6865b12bd57c60cbad83168c27c34f3704",
+        "submission": 75,
+        "answer_origin": "model_host",
+        "decision_origin": "user_confirmed_keep_original",
+        "review_date": "2026-11-11",
+        "history_scope": "complete original public history in review record; relevant excerpt in runtime example",
+        "published_source_file": "runs/2026-11-11_set2_TS034_direct/TS034_r01/trajectory.jsonl"
+      }
+    },
+    {
+      "case_id": "USER_20261111_TS034_Q093",
+      "question": "Does the father's decision rest on the fact that paying the ransom would require the daughter to be alone with a dangerous criminal—whereas if no ransom is paid, the daughter stays safe at home and the father accepts his own death?",
+      "answer": "yes",
+      "public_history": [
+        {
+          "type": "question",
+          "text": "Is the \"smartphone\" significant—for example, is the call being made over a video chat or a device that lets the father see something that reveals the true situation?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father the hostage but being held in a way that he can speak freely, and his refusal is because he believes the kidnapper will kill him whether or not the money is paid—so the daughter's coming would only add her death to his?",
+          "feedback": "no"
+        }
+      ],
+      "rationale": "User reviewed this exact question and chose to retain the original model Host answer; this is a question-specific precedent, not an assertion that an uncertain event is established.",
+      "review_status": "user_confirmed_original_model_host_answer",
+      "provenance": {
+        "source_file": "runs/api/20261111_175203_set2_TS034_resume40/web/run/TS034_r01/trajectory.jsonl",
+        "source_sha256": "63fd23fa8e0e6701683c38433a215f6865b12bd57c60cbad83168c27c34f3704",
+        "submission": 93,
+        "answer_origin": "model_host",
+        "decision_origin": "user_confirmed_keep_original",
+        "review_date": "2026-11-11",
+        "history_scope": "complete original public history in review record; relevant excerpt in runtime example",
+        "published_source_file": "runs/2026-11-11_set2_TS034_direct/TS034_r01/trajectory.jsonl"
+      }
     }
   ],
   "verification_policy": "independent_then_adjudicate_v1",
   "label_boundaries": [
+    "The six USER_20261111_TS034_Qxxx examples preserve user-confirmed original Host labels for the exact quoted questions and their supplied histories. These specific precedents take priority for those exact cases; do not infer an established unconditional killing plan or eventual outcome from them.",
     "An unqualified question about the father fearing danger to his daughter includes his feared future ransom meeting, not only present hostage status. Historical acceptance of a core reconstruction does not override current full-story completion requirements.",
     "Distinguish the father’s fear from the kidnapper’s actual plan or a certain outcome: he fears the kidnapper might kill both if his daughter comes with the money, to remove witnesses. Do not say the kidnapper has decided to kill the father regardless of payment, will actually do so, or has disclosed such a plan.",
     "When asked whether the father refuses because he knows he will be killed regardless of payment, answer no: that substitutes an unsupported cause for his established protective motive. If asked whether the kidnapper would kill the father regardless of payment, or has no intention of releasing him, without attributing this as the known motive, the material counterfactual is unspecified: answer yes and no. Do not treat earlier host labels or player guesses as evidence.",
