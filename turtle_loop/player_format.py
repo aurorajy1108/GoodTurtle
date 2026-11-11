@@ -52,6 +52,12 @@ def _unfence(text):
 def local_repair(raw, forced, policy):
     from .engine import parse_action, ProtocolError, _unique_player_object
     if not policy or not isinstance(raw,str) or len(raw)>policy['max_raw_chars']:return None
+    from .action_text import recover_prefix_action
+    try:prefix=recover_prefix_action(raw)
+    except ValueError:return None
+    if prefix:
+        if forced and prefix[0]['type']!='final':return None
+        return prefix
     scope,meta=_scope(raw)
     candidate=_unfence(scope)
     try:pairs=json.loads(candidate,object_pairs_hook=lambda value:value)
@@ -117,7 +123,15 @@ def verbatim_proof(raw, action):
     Substring snippets, new wording, omitted qualifiers and duplicate/extra keys
     cannot pass this guard. Single-quoted or mixed-quote JSON-like envelopes can.
     """
+    from .action_text import recover_prefix_action
+    try:prefix=recover_prefix_action(raw)
+    except ValueError:return False
+    if prefix:
+        return prefix[0]==action
     scope,_=_scope(raw);scope=_unfence(scope).strip()
+    try:prefix=recover_prefix_action(scope)
+    except ValueError:return False
+    if prefix:return prefix[0]==action
     heads=list(re.finditer(r'''\{\s*["']type["']\s*:\s*["'](question|final)["']\s*,?\s*["']text["']\s*:\s*''',scope))
     if not heads or heads[-1].group(1)!=action['type']:return False
     tail=scope[heads[-1].end():]
@@ -136,6 +150,9 @@ def verbatim_proof(raw, action):
 
 def repair(raw, forced, policy, audit, event, source_response_id='', codex_calls=0):
     from .engine import ProtocolError, parse_action
+    from .action_text import recover_prefix_action
+    try:recover_prefix_action(raw)
+    except ValueError as exc:raise ProtocolError(str(exc)) from None
     fixed=local_repair(raw,False,policy)
     if fixed:
         if forced and fixed[0]['type']!='final':

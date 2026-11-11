@@ -169,8 +169,9 @@ def complete(profile,role,audit,system,user,attempt=1,session=None,schema_user=N
     try:
         parsed=json.loads(raw) if schema is not None else None
         if schema is None:
-            from .action_text import parse_prefix_action
-            parse_prefix_action(raw)
+            from .action_text import recover_prefix_action
+            if recover_prefix_action(raw) is None:
+                valid=False
         elif unwrap:
             if not isinstance(parsed,dict) or set(parsed)!={unwrap} or not isinstance(parsed[unwrap],str):
                 valid=False

@@ -153,6 +153,13 @@ def parse_player_json(text):
             return parse_prefix_action(text), None
         except ValueError as exc:
             raise ProtocolError(str(exc)) from None
+    from .action_text import recover_prefix_action
+    try:
+        prefix_recovery=recover_prefix_action(text)
+    except ValueError as exc:
+        raise ProtocolError(str(exc)) from None
+    if prefix_recovery:
+        return prefix_recovery
     recovery = None
     try:
         value = json.loads(text,object_pairs_hook=_unique_player_object)

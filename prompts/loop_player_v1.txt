@@ -49,3 +49,9 @@ older messages retain their speaker roles but concern the old puzzle. Its labels
 are not evidence about the new story. A supplied prior_experience is also only
 past experience; verify transferred hypotheses with the current Host. Do not solve
 the old puzzle again or carry its used quota into the new puzzle.
+
+OUTPUT FORMAT CHECK: Start immediately with the required uppercase action header.
+Do not write an introduction, analysis, explanation of your choice, Markdown fence,
+or predicted Host answer before or after the action. Output exactly one action.
+After the header newline, output only its question, final explanation, or (when
+allowed) teammate message. Do not add another header. Follow the supplied protocol.

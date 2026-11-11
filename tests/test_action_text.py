@@ -69,3 +69,50 @@ class PrefixTests(unittest.TestCase):
                 reply=team.complete('system',json.dumps({'opening':'Puzzle','visible_history':[],
                                      'turn_control':'next','action_protocol':'prefix-v1'}))
                 self.assertEqual(parse_action(reply.text)['text'],'Is it a dinner?')
+
+    def test_unique_preamble_recovery_and_exact_proof(self):
+        from turtle_loop.engine import parse_player_json
+        from turtle_loop.player_format import local_repair, load_policy, verbatim_proof
+        body='Is "course" a meal?\nKeep this qualifier: before dinner.'
+        raw='Some unwanted explanation.\nQUESTION\n'+body
+        action,meta=parse_player_json(raw)
+        self.assertEqual(action,{'type':'question','text':body})
+        self.assertEqual(meta['discarded_prefix_chars'],raw.index('QUESTION'))
+        self.assertEqual(local_repair(raw,False,load_policy())[0],action)
+        self.assertTrue(verbatim_proof(raw,action))
+        self.assertFalse(verbatim_proof(raw,{'type':'question','text':'Is "course" a meal?'}))
+        self.assertFalse(verbatim_proof(raw,{'type':'final','text':body}))
+        with self.assertRaises(ProtocolError):parse_action(raw,True)
+        mas,_=parse_player_json('Explanation.\nDISCUSS NEXT=B\nCheck the timeline.')
+        self.assertTrue(valid_dialogue_action(mas,['discuss']))
+
+    def test_ambiguous_prefixes_never_call_formatter(self):
+        from turtle_loop.player_format import repair, load_policy, verbatim_proof
+        from unittest.mock import patch
+        for raw in ('Preamble\nQUESTION\nQ?\nFINAL\nAnswer',
+                    'Preamble\nQUESTION\n',
+                    '{"type":"final","text":"Guess"}\nQUESTION\nQ?',
+                    'Preamble\n```text\nQUESTION\nQ?\n```'):
+            with self.subTest(raw=raw), patch('turtle_loop.providers.Client') as formatter:
+                with self.assertRaises(ProtocolError):
+                    repair(raw,False,load_policy(),lambda c:None,lambda *a,**k:None)
+                formatter.assert_not_called()
+                self.assertFalse(verbatim_proof(raw,{'type':'question','text':'Q?'}))
+
+    def test_game_audits_preamble_without_extra_player_call(self):
+        import tempfile
+        from pathlib import Path
+        from turtle_loop.engine import Recorder, load_prompts, play
+        from test_loop import FakeClient, PUZZLE, evaluated
+        with tempfile.TemporaryDirectory() as tmp:
+            prompts=load_prompts();config={'max_questions':2}
+            rec=Recorder(Path(tmp)/'game',PUZZLE,config,prompts,echo=False)
+            player=FakeClient(lambda i,p:'Unwanted preface.\nQUESTION\nIs this relevant?' if i==1 else 'FINAL\nComplete explanation')
+            clients={'player':player,'host':FakeClient(lambda i,p:'no'),
+                     'grader':FakeClient(lambda i,p:evaluated())}
+            result=play(PUZZLE,config,rec,clients,prompts)
+            self.assertTrue(result['success'])
+            self.assertEqual(len(player.inputs),2)
+            self.assertEqual(rec.turns[0]['text'],'Is this relevant?')
+            events=[json.loads(line) for line in (rec.folder/'trajectory.jsonl').read_text().splitlines()]
+            self.assertTrue(any(e.get('method')=='unique_prefix_action' for e in events))

@@ -14,3 +14,26 @@ def parse_prefix_action(raw):
     if match[2]:
         action['next_speaker'] = match[2]
     return action
+
+
+def recover_prefix_action(raw):
+    """Discard only a preamble before one unambiguous, line-delimited action."""
+    import hashlib
+    if not isinstance(raw, str):
+        return None
+    if re.fullmatch(r'\s*```(?:json|text)?[ \t]*\r?\n[\s\S]*?\r?\n```\s*',raw):
+        return None  # Existing full-envelope recovery handles this separately.
+    headers=list(re.finditer(r'(?m)^(?:QUESTION|FINAL|DISCUSS|PASS)(?: NEXT=[AB])?\r?$',raw))
+    if not headers:
+        return None
+    if len(headers)!=1:
+        raise ValueError('Multiple action blocks require review')
+    start=headers[0].start()
+    preamble=raw[:start]
+    # Never hide a second structured action or a markdown envelope.
+    if '```' in raw or re.search(r'["\']type["\']\s*:',preamble):
+        raise ValueError('Mixed or fenced action envelopes require review')
+    action=parse_prefix_action(raw[start:])
+    return action, {'method':'unique_prefix_action','selected_span':[start,len(raw.rstrip())],
+                    'discarded_prefix_chars':start,
+                    'raw_sha256':hashlib.sha256(raw.encode()).hexdigest()}

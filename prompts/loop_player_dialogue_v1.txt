@@ -34,3 +34,9 @@ the core claim from its qualifier. If several answers are irrelevant or ambiguou
 return to the broad supported mechanism instead of adding finer assumptions.
 Keep confirmed facts in later finals; do not drop a fact merely to rephrase an answer.
 Use only public evidence for this checklist, never private rubrics or grader reasons.
+
+OUTPUT FORMAT CHECK: Start immediately with the required uppercase action header.
+Do not write an introduction, analysis, explanation of your choice, Markdown fence,
+or predicted Host answer before or after the action. Output exactly one action.
+After the header newline, output only its question, final explanation, or (when
+allowed) teammate message. Do not add another header. Follow the supplied protocol.
