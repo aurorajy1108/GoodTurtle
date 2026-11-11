@@ -73,13 +73,23 @@ class FreeDialoguePlayer:
         self.turn=0
         self.pending=None
         if getattr(recorder,'resumed',False) and recorder.turns:
-            if not hasattr(recorder,'saved_dialogue_action'):
+            if not hasattr(recorder,'saved_dialogue_action') and not getattr(recorder,'transport_checkpoint',{}).get('dialogue'):
                 raise ValueError('free_dialogue needs an explicitly audited saved action checkpoint')
             self.transcript=[{k:v for k,v in json.loads(x).items() if k!='timestamp'}
                              for x in (recorder.folder/'shared_dialogue.jsonl').read_text().splitlines()]
-            self.speaker=recorder.saved_dialogue_action['actor']
             self.turn=len(recorder.turns)
-            self.saved_reply=recorder.saved_dialogue_action
+            checkpoint=getattr(recorder,'transport_checkpoint',{}).get('dialogue')
+            if checkpoint:
+                self.speaker=checkpoint['speaker']
+                if checkpoint.get('pending_feedback',True):
+                    self.pending={'actor':checkpoint['actor'],'action':{k:recorder.turns[-1][k] for k in ('type','text')},'submission':self.turn}
+                else:
+                    self.resume_payload=checkpoint['resume_payload']
+                    self.resume_internal=checkpoint['internal_start']
+                    self.resume_format_attempt=checkpoint['format_attempt']
+            else:
+                self.speaker=recorder.saved_dialogue_action['actor']
+                self.saved_reply=recorder.saved_dialogue_action
         dump(recorder.folder/'dialogue_policy.json',settings)
 
     def _append(self, entry):
@@ -103,7 +113,9 @@ class FreeDialoguePlayer:
         base.pop('visible_history',None)
         self.turn+=1
         forced='mandatory last turn' in base.get('turn_control','').lower()
-        for internal in range(self.settings['max_discussion']+1):
+        start_internal=getattr(self,'resume_internal',0)
+        if hasattr(self,'resume_internal'):del self.resume_internal
+        for internal in range(start_internal,self.settings['max_discussion']+1):
             actor=self.speaker
             allowed=['final'] if forced else ['question','final']
             if not forced and internal < self.settings['max_discussion']:
@@ -114,7 +126,14 @@ class FreeDialoguePlayer:
                      'scheduling':self.settings['scheduling'], 'mandatory_final':forced,
                      'response_contract':dialogue_contract_text(allowed,forced)}}
             client=self.leader if actor=='A' else self.partner
-            for attempt in range(3):
+            start_attempt=0
+            if hasattr(self,'resume_payload'):
+                saved_payload=self.resume_payload;del self.resume_payload
+                if any(payload.get(k)!=saved_payload.get(k) for k in ('opening','turn_control','active_speaker','role_assignment','shared_dialogue','dialogue_control')):
+                    raise ProtocolError('Saved MAS payload differs from current control or public history')
+                payload=saved_payload
+                start_attempt=self.resume_format_attempt;del self.resume_format_attempt
+            for attempt in range(start_attempt,3):
                 if hasattr(self,'saved_reply'):
                     from .providers import Reply
                     saved=self.saved_reply;del self.saved_reply

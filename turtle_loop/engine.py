@@ -25,7 +25,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def controller_fingerprint():
     names=('engine.py','host.py','host_context.py','coverage.py','grader.py','providers.py',
-           'codex_client.py','experiments.py','sessions.py','dialogue.py','dialogue_contract.py','dialogue_recovery.py','player_format.py','action_text.py')
+           'codex_client.py','experiments.py','sessions.py','dialogue.py','dialogue_contract.py','dialogue_recovery.py','transport_recovery.py','player_format.py','action_text.py')
     files=[ROOT/'turtle_loop'/name for name in names]
     files.append(ROOT/'configs/player_format_repair.json')
     return hashlib.sha256(b''.join(p.read_bytes() for p in files if p.exists())).hexdigest()
@@ -546,7 +546,8 @@ class Recorder:
         if (folder/'api_calls.jsonl').exists():
             rec.calls = [json.loads(line) for line in (folder/'api_calls.jsonl').read_text().splitlines()]
         from .sessions import completed_host_replay_records
-        recovery_calls = completed_host_replay_records(rec.calls, events)
+        from .transport_recovery import replay_records, saved_transport_recovery
+        recovery_calls = replay_records(completed_host_replay_records(rec.calls, events), events)
         rec.session_restore_calls = recovery_calls
         recovery=(saved_player_note_recovery(previous,recovery_calls,rec.turns,config)
                   or saved_player_json_recovery(previous,recovery_calls,rec.turns,config))
@@ -554,6 +555,12 @@ class Recorder:
             recovery=saved_player_auto_recovery(previous,recovery_calls,rec.turns,config)
         grade_recovery=saved_grader_reason_recovery(previous,rec.calls,rec.turns,config,puzzle)
         transport_recovery = None
+        exact_transport=None
+        marker=folder/'transport_recovery.json'
+        if marker.exists() and previous['status']!='completed':
+            exact_transport=saved_transport_recovery(previous,rec.calls,rec.turns,config,folder)
+            if not exact_transport or json.loads(marker.read_text())!=exact_transport:
+                raise ValueError('Transport checkpoint does not match the saved messages')
         dialogue_recovery=None
         untyped_recovery=None
         untyped_marker=folder/'player_format_correction.json'
@@ -573,7 +580,7 @@ class Recorder:
             transport_recovery = saved_host_transport_recovery(previous, rec.calls, rec.turns, config)
             if not transport_recovery or json.loads(transport_marker.read_text()) != transport_recovery:
                 raise ValueError('Pending host transport recovery does not match the saved archive')
-        if config.get('session_mode','replay')=='persistent' and previous['status']!='completed' and not (recovery or grade_recovery or transport_recovery or dialogue_recovery or untyped_recovery):
+        if config.get('session_mode','replay')=='persistent' and previous['status']!='completed' and not (recovery or grade_recovery or transport_recovery or dialogue_recovery or untyped_recovery or exact_transport):
             raise ValueError('Persistent interrupted sessions require supported saved-response recovery or explicit checked DeepSeek pending-host transport recovery; no fresh-session fallback.')
         if previous['status'] == 'error':
             last = rec.calls[-1] if rec.calls else {}
@@ -581,10 +588,15 @@ class Recorder:
             recoverable = last.get('status') in ('transport_error','http_error','interrupted') or (
                 last.get('status') == 'invalid_response' and not last.get('raw_text',last.get('text','')).strip()
                 and any(s in diagnostic for s in ('usage limit','at capacity','rate limit','rate_limit')))
-            if not recoverable and not (recovery or grade_recovery or dialogue_recovery or untyped_recovery):
+            if not recoverable and not (recovery or grade_recovery or dialogue_recovery or untyped_recovery or exact_transport):
                 raise ValueError('Refuse to resample a protocol/model-output failure')
         rec.resumed = True
-        rec.restore_sessions=bool(recovery or grade_recovery or transport_recovery or dialogue_recovery or untyped_recovery)
+        rec.restore_sessions=bool(recovery or grade_recovery or transport_recovery or dialogue_recovery or untyped_recovery or exact_transport)
+        if exact_transport:
+            rec.session_restore_calls=replay_records(rec.calls,events+[{'event':'transport_recovery',**exact_transport}])
+            rec.pending_transport_call=rec.calls[-1]
+            rec.transport_checkpoint=exact_transport
+            rec.event('transport_recovery',**exact_transport)
         if untyped_recovery:rec.pending_player_correction=untyped_recovery
         if dialogue_recovery:rec.saved_dialogue_action=dialogue_recovery
         if transport_recovery:
@@ -656,6 +668,12 @@ class Recorder:
         value = {**value, 'accounting': account_call(value, self.pricing)}
         self.calls.append(value)
         self.append('api_calls.jsonl', value)
+        pending=getattr(self,'pending_transport_call',None)
+        if pending and value.get('status')=='ok' and value.get('role')==pending['role'] and value.get('request')==pending['request']:
+            (self.folder/'transport_recovery.json').unlink(missing_ok=True)
+            self.event('transport_recovery_response_observed',role=value['role'],response_id=value.get('response_id'),
+                       source_calls_sha256=self.transport_checkpoint['calls_sha256'])
+            del self.pending_transport_call
 
     def report(self, status, stop_reason, error=None):
         from .costs import cost_summary, write_call_costs
@@ -769,6 +787,9 @@ def play(puzzle, config, recorder, clients, prompts, player_context=None, player
             if getattr(recorder,'restore_sessions',False):
                 client.restore_game(recorder.folder,recorder.event,
                                     getattr(recorder,'session_restore_calls',recorder.calls))
+                pending=getattr(recorder,'pending_transport_call',None)
+                if pending and getattr(client,'role',None)==pending['role']:
+                    client.expected_recovery_request=pending['request']
                 if getattr(client, 'role', None) == 'host' and hasattr(recorder, 'pending_host_request'):
                     client.expected_recovery_request = recorder.pending_host_request
             elif getattr(client,'role',None)=='player' and player_continuation is not None:

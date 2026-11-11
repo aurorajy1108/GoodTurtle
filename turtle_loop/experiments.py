@@ -155,6 +155,17 @@ class TeamPlayer:
         return reply
 
 
+def same_player_prefix(saved,current):
+    """Only top-level append-time timestamps may differ; never role messages."""
+    if (not isinstance(saved,dict) or not isinstance(current,dict)
+            or set(saved)!={'boundary','calls'} or set(current)!=set(saved)
+            or saved['boundary']!=current['boundary']
+            or not isinstance(saved['calls'],list) or not isinstance(current['calls'],list)):
+        return False
+    def clean(rows):return [{k:v for k,v in r.items() if k!='timestamp'} for r in rows]
+    return clean(saved['calls'])==clean(current['calls'])
+
+
 def experience(puzzle, recorder, result, feedback):
     """Whitelist public events. Never serialize the private Recorder/result wholesale."""
     value = {'opening': puzzle['opening'],
@@ -497,7 +508,7 @@ def run(args):
                 raise ValueError('Resume partner changed')
             if saved_row['status']=='completed':
                 return rec,json.loads((rec.folder/'result.json').read_text())
-            if team=='free_dialogue' and rec.turns and not hasattr(rec,'saved_dialogue_action'):
+            if team=='free_dialogue' and rec.turns and not hasattr(rec,'saved_dialogue_action') and not getattr(rec,'transport_checkpoint',{}).get('dialogue'):
                 raise ValueError('free_dialogue mid-game recovery is not supported; start a labeled new run')
             rec.event('resume',previous_status=saved_row['status'],preserved_submissions=len(rec.turns),
                       pending_feedback=sum('label' not in t for t in rec.turns))
@@ -515,8 +526,15 @@ def run(args):
             # It never enters Host/Grader context or target cost aggregation.
             checkpoint={'boundary':continuation['boundary'],'calls':continuation['calls']}
             path=rec.folder/'player_continuation.json'
-            if path.exists() and json.loads(path.read_text())!=checkpoint:
-                raise ValueError('Resume source Player prefix or puzzle boundary changed')
+            if path.exists():
+                saved=json.loads(path.read_text())
+                if not same_player_prefix(saved,checkpoint):
+                    raise ValueError('Resume source Player prefix or puzzle boundary changed')
+                # API log timestamps are added on disk, after the original
+                # in-memory checkpoint was frozen. Keep its exact original
+                # audit representation and prefix hash once messages agree.
+                checkpoint=saved
+                continuation={'calls':saved['calls'],'boundary':saved['boundary']}
             dump(path,checkpoint)
             dump(rec.folder/'transfer_metadata.json',{
                 'protocol':'raw-role-session-v1','source_player_turns':len(continuation['calls']),

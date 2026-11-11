@@ -357,7 +357,7 @@ class Client:
         expected = getattr(self, 'expected_recovery_request', None)
         if expected is not None:
             if body != expected:
-                raise ValueError('Recovered host request differs from the saved unanswered request')
+                raise ValueError('Recovered request differs from the saved unanswered request')
             del self.expected_recovery_request
         for attempt in range(self.profile.get('max_retries', 2) + 1):
             start = time.monotonic()
