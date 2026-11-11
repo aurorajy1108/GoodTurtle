@@ -1,6 +1,6 @@
 {
-  "version": "host-v9-human-20261102",
-  "review_status": "human_labels_and_delegated_adjudication",
+  "version": "host-v14-ai-20261111-forged-author",
+  "review_status": "human_labels_preserved_with_ai_forgery_role_guards",
   "replace_host_examples": true,
   "solution": "I killed my wife and faked the evidence to make it look like she had simply run away from home, but no matter how many times I tried, I couldn't quite manage to imitate her handwriting.",
   "canonical_facts": [
@@ -8,7 +8,11 @@
     "He tries to stage a voluntary departure with a forged leaving message",
     "The repetitions are failed attempts to imitate her handwriting, making him fear discovery"
   ],
-  "explicit_negatives": [],
+  "explicit_negatives": [
+    "The wife did not genuinely write or send these seven farewell messages. The narrator is practising a forgery after killing her.",
+    "The quoted disappointment is part of the fabricated departure story, not an established real relationship failure causing actual messages to be sent.",
+    "A real later recipient or reader is unspecified; drafts do not establish actual delivery to the narrator or anyone else."
+  ],
   "unknown_details": [],
   "irrelevant_details": [],
   "host_examples": [
@@ -1330,6 +1334,125 @@
         "question_origin": "source_question",
         "reviewer": "codex_root"
       }
+    },
+    {
+      "case_id": "TS038_AUTHOR_GUARD_20261111_01",
+      "question": "Is the sighing person being told this because they failed to meet the sender's expectations in a personal relationship?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Actual handwriting practice for a forged departure note is distinct from the false story the note is meant to suggest. Actual recipient and delivery are not specified.",
+      "review_status": "ai_reviewed_pending_human",
+      "provenance": {
+        "method": "live_trajectory_role_adjudication",
+        "human_confirmed": false,
+        "source_run": "runs/api/20261111_live_smoke_v2_mas_resume01",
+        "source_submissions": [
+          4,
+          13
+        ]
+      }
+    },
+    {
+      "case_id": "TS038_AUTHOR_GUARD_20261111_02",
+      "question": "Are these written messages all addressed to the sighing person?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "Actual handwriting practice for a forged departure note is distinct from the false story the note is meant to suggest. Actual recipient and delivery are not specified.",
+      "review_status": "ai_reviewed_pending_human",
+      "provenance": {
+        "method": "live_trajectory_role_adjudication",
+        "human_confirmed": false,
+        "source_run": "runs/api/20261111_live_smoke_v2_mas_resume01",
+        "source_submissions": [
+          4,
+          13
+        ]
+      }
+    },
+    {
+      "case_id": "TS038_AUTHOR_GUARD_20261111_03",
+      "question": "Did the wife actually write and send the seven farewell messages?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Actual handwriting practice for a forged departure note is distinct from the false story the note is meant to suggest. Actual recipient and delivery are not specified.",
+      "review_status": "ai_reviewed_pending_human",
+      "provenance": {
+        "method": "live_trajectory_role_adjudication",
+        "human_confirmed": false,
+        "source_run": "runs/api/20261111_live_smoke_v2_mas_resume01",
+        "source_submissions": [
+          4,
+          13
+        ]
+      }
+    },
+    {
+      "case_id": "TS038_AUTHOR_GUARD_20261111_04",
+      "question": "Does the forged message pretend that the wife was disappointed and left voluntarily?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Actual handwriting practice for a forged departure note is distinct from the false story the note is meant to suggest. Actual recipient and delivery are not specified.",
+      "review_status": "ai_reviewed_pending_human",
+      "provenance": {
+        "method": "live_trajectory_role_adjudication",
+        "human_confirmed": false,
+        "source_run": "runs/api/20261111_live_smoke_v2_mas_resume01",
+        "source_submissions": [
+          4,
+          13
+        ]
+      }
+    },
+    {
+      "case_id": "TS038_AUTHOR_GUARD_20261111_05",
+      "question": "Is the narrator actually the writer, while his wife is the author he is trying to impersonate?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Actual handwriting practice for a forged departure note is distinct from the false story the note is meant to suggest. Actual recipient and delivery are not specified.",
+      "review_status": "ai_reviewed_pending_human",
+      "provenance": {
+        "method": "live_trajectory_role_adjudication",
+        "human_confirmed": false,
+        "source_run": "runs/api/20261111_live_smoke_v2_mas_resume01",
+        "source_submissions": [
+          4,
+          13
+        ]
+      }
+    },
+    {
+      "case_id": "TS038_AUTHOR_GUARD_20261111_06",
+      "question": "Do the seven lines prove the narrator actually received seven messages from someone else?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Actual handwriting practice for a forged departure note is distinct from the false story the note is meant to suggest. Actual recipient and delivery are not specified.",
+      "review_status": "ai_reviewed_pending_human",
+      "provenance": {
+        "method": "live_trajectory_role_adjudication",
+        "human_confirmed": false,
+        "source_run": "runs/api/20261111_live_smoke_v2_mas_resume01",
+        "source_submissions": [
+          4,
+          13
+        ]
+      }
+    },
+    {
+      "case_id": "TS038_AUTHOR_GUARD_20261111_07",
+      "question": "Is the identity of an actual later reader established by the story?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Actual handwriting practice for a forged departure note is distinct from the false story the note is meant to suggest. Actual recipient and delivery are not specified.",
+      "review_status": "ai_reviewed_pending_human",
+      "provenance": {
+        "method": "live_trajectory_role_adjudication",
+        "human_confirmed": false,
+        "source_run": "runs/api/20261111_live_smoke_v2_mas_resume01",
+        "source_submissions": [
+          4,
+          13
+        ]
+      }
     }
   ],
   "verification_policy": "independent_then_adjudicate_v1",
@@ -1338,6 +1461,7 @@
     "The narrator writes, the wife is the forged author, and an actual later reader/recipient is unspecified. Do not infer identity or discovery from a generic mention of a recipient.",
     "Concealing death with a forged departure note is not evidence of an elsewhere-at-the-time alibi. Additional impersonation messages, delivery, discovery and future outcomes are not established.",
     "The wife is the forged author, not the intended reader being deceived. Worry about revelation does not assert actual discovery. Handedness and alphabet causing imitation difficulty are unspecified. Contextual questions about ADDITIONAL messages beyond the note are irrelevant; do not affirm delivery from handwritten drafts.",
-    "Use alibi in its strict elsewhere-at-the-time sense unless the player explicitly defines it as cover story. Material ambiguity in reading/revealing must not assert a new writer or a discovery event."
+    "Use alibi in its strict elsewhere-at-the-time sense unless the player explicitly defines it as cover story. Material ambiguity in reading/revealing must not assert a new writer or a discovery event.",
+    "Distinguish actual writer (the narrator), impersonated author (his wife), content of the forged farewell, and unspecified actual reader/delivery. Yes to disappointment wording or the intended COVER STORY does not mean the wife was really disappointed, wrote the note, or left voluntarily. Do not affirm causal real relationship failure or a named recipient from a generic message question. Material recipient identity uncertainty is yes and no, not an invented confirmation."
   ]
 }

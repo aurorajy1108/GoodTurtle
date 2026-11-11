@@ -33,6 +33,7 @@ class RepositoryLayoutTests(unittest.TestCase):
         pillow=json.loads((ROOT/'data/host_reference/reviews/ts002_20261109_pillow_boundaries.json').read_text())
         clarification=json.loads((ROOT/'data/host_reference/reviews/ts002_20261109_unknown_wordplay.json').read_text())
         crossing=json.loads((ROOT/'data/host_reference/reviews/ts015_20261111_crossing_guard.json').read_text())
+        forged=json.loads((ROOT/'data/host_reference/reviews/ts038_20261111_forged_author_guard.json').read_text())
         self.assertEqual(review['context_sha256_before'],manifest['context_sha256_before'])
         self.assertEqual(latest['context_sha256_before'],review['context_sha256_after'])
         self.assertEqual(human['context_sha256_before'],latest['context_sha256_after'])
@@ -47,10 +48,11 @@ class RepositoryLayoutTests(unittest.TestCase):
         self.assertEqual(set(clarification['context_sha256_after']),{'TS002'})
         self.assertEqual(ts034['context_sha256_before'],{'TS034':human['context_sha256_after']['TS034']})
         self.assertEqual(crossing['context_sha256_before'],{'TS015':human['context_sha256_after']['TS015']})
+        self.assertEqual(forged['context_sha256_before'],{'TS038':human['context_sha256_after']['TS038']})
         self.assertEqual(len(bank),50)
         self.assertEqual({p.stem for p in (ROOT/'data/host_packs/active').glob('*.json')},{p['id'] for p in bank})
         expected_contexts=dict(human['context_sha256_after'])
-        for change in (correction,pillow,clarification,ts034,set1,crossing):
+        for change in (correction,pillow,clarification,ts034,set1,crossing,forged):
             expected_contexts.update(change['context_sha256_after'])
         for p in bank:
             expected=expected_contexts[p['id']]

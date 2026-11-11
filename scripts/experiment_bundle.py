@@ -22,7 +22,9 @@ def export(dataset, output, root=ROOT):
     data = load_dataset(dataset)
     bindings_path = root / 'configs/host_bindings.json'
     bindings = json.loads(bindings_path.read_text())
-    members = {'data/annotations/turtle50_v4/private.json':
+    version='turtle50_v5' if all(p.get('grading_protocol')=='coverage-v3-unified' for p in data['puzzles']) else 'turtle50_v4'
+    dataset_name=f'data/annotations/{version}/private.json'
+    members = {dataset_name:
                (json.dumps(data, ensure_ascii=False, indent=2) + '\n').encode()}
     for puzzle in data['puzzles']:
         build_story_context(puzzle, root)
@@ -34,7 +36,7 @@ def export(dataset, output, root=ROOT):
                     raise ValueError('Pack outside data/host_packs')
                 members[str(source.relative_to(root.resolve()))] = source.read_bytes()
     manifest = {'format': 1, 'puzzle_ids': [p['id'] for p in data['puzzles']],
-                'dataset': 'data/annotations/turtle50_v4/private.json',
+                'dataset': dataset_name,
                 'required_bindings_sha256': digest(bindings_path.read_bytes()),
                 'files': {name: digest(blob) for name, blob in members.items()},
                 'privacy': 'Puzzle answers and AI-reviewed rubrics for host/grader only. Optional offline copy of published experiment inputs.',

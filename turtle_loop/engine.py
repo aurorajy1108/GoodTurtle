@@ -15,7 +15,7 @@ from pathlib import Path
 from .providers import APIError
 from .host_context import (build_story_context, host_payload, story_fingerprint, grading_fingerprint,
                            grader_story_context, context_policy, RUNTIME_VERSION)
-from .coverage import PROTOCOL, fact_specs, requirement_specs, constrain
+from .coverage import PROTOCOL, UNIFIED_PROTOCOL, COVERAGE_PROTOCOLS, fact_specs, requirement_specs, constrain
 from .host import answer_question
 from .grader import evaluate_final
 
@@ -220,7 +220,7 @@ def parse_action(text, force_final=False, audit=None):
     return {key:value[key] for key in ('type','text')}
 
 
-def grade_final(text, rubric, requirements=None, submitted_explanation=None):
+def grade_final(text, rubric, requirements=None, submitted_explanation=None, grading_protocol=PROTOCOL):
     try:
         value = json.loads(text)
     except (ValueError, TypeError):
@@ -254,21 +254,29 @@ def grade_final(text, rubric, requirements=None, submitted_explanation=None):
         if not isinstance(submitted_explanation, str):
             raise ProtocolError('Coverage grading requires the actual submitted explanation')
         try:
-            value, corrections = constrain(value, rubric, requirements, submitted_explanation)
+            value, corrections = constrain(value, rubric, requirements, submitted_explanation, grading_protocol)
         except ValueError as exc:
             raise ProtocolError(str(exc)) from None
         checkpoints = value['checkpoints']
         indexed = {row['id']: row for row in checkpoints}
     score = sum(Decimal(str(r['weight'])) * Decimal(str(indexed[r['id']]['credit'])) for r in rubric)
-    if value['irrelevant'] and score != 0:
+    if grading_protocol == UNIFIED_PROTOCOL:
+        if requirements is None:
+            raise ProtocolError('Unified grading requires fact coverage')
+        if sum(Decimal(str(r['weight'])) for r in rubric) != Decimal(1):
+            raise ProtocolError('Unified weights must sum to exactly 1')
+        if value['rubric_conflict']:
+            score = None
+    if value['irrelevant'] and score not in (0, None):
         raise ProtocolError('Irrelevant answer cannot also receive positive credit')
-    complete = (value['full_solution'] and all(r['credit'] == 1 for r in checkpoints)
-                and not any(value[k] for k in flags))
+    complete = ((score == Decimal(1)) if grading_protocol == UNIFIED_PROTOCOL else
+                (value['full_solution'] and all(r['credit'] == 1 for r in checkpoints)
+                 and not any(value[k] for k in flags)))
     label = ('yes' if complete else 'irrelevant' if value['irrelevant'] else
-             'yes and no' if score > 0 or value['rubric_conflict'] else 'no')
-    result = {**value, 'partial_score': float(score), 'complete': complete, 'label': label}
+             'yes and no' if value['rubric_conflict'] or (score is not None and score > 0) else 'no')
+    result = {**value, 'partial_score': float(score) if score is not None else None, 'complete': complete, 'label': label}
     if requirements is not None:
-        result.update(grading_protocol=PROTOCOL, controller_corrections=corrections)
+        result.update(grading_protocol=grading_protocol, controller_corrections=corrections)
     return result
 
 
@@ -290,7 +298,9 @@ def _saved_player_recovery(previous, calls, turns, config, mode):
                    or c.get('role') not in ('host','player','grader') for c in calls)):
         return None
     last=calls[-1]
-    player_calls=[c for c in calls if c.get('role')=='player']
+    from .player_format import submitted_player_calls
+    try:player_calls=submitted_player_calls(calls,previous)
+    except ValueError:return None
     if (last.get('role')!='player' or len(player_calls)!=len(turns)+1
             or len({c.get('session_lane_id') for c in player_calls})!=1):
         return None
@@ -395,8 +405,8 @@ def saved_grader_reason_recovery(previous, calls, turns, config, puzzle):
                     for lane in session.lanes.values():
                         if lane['response_id']==last.get('response_id'):payload=lane['previous']
             finally:session.close()
-        if (not payload or puzzle.get('grading_protocol')!=PROTOCOL
-                or payload.get('grading_protocol')!=PROTOCOL
+        if (not payload or puzzle.get('grading_protocol') not in COVERAGE_PROTOCOLS
+                or payload.get('grading_protocol')!=puzzle.get('grading_protocol')
                 or payload.get('rubric')!=puzzle['rubric']
                 or payload.get('completion_requirements',[])!=puzzle.get('completion_requirements',[])
                 or payload.get('submitted_explanation')!=turns[-1]['text']
@@ -407,7 +417,7 @@ def saved_grader_reason_recovery(previous, calls, turns, config, puzzle):
         if not isinstance(raw,dict):return None
         _,changes=normalize_coverage_metadata(raw)
         if not changes:return None
-        grade=grade_final(last['text'],puzzle['rubric'],puzzle.get('completion_requirements',[]),turns[-1]['text'])
+        grade=grade_final(last['text'],puzzle['rubric'],puzzle.get('completion_requirements',[]),turns[-1]['text'],puzzle['grading_protocol'])
         return {'grade':grade,'raw':last['text'],'response_id':last.get('response_id'),
                 'removed_fields':[c['field'] for c in changes]}
     except (ValueError,TypeError,KeyError,ProtocolError):return None
@@ -420,6 +430,7 @@ def saved_host_transport_recovery(previous, calls, turns, config):
     billed remotely; retain the failed audit record and explicitly disclose that.
     """
     original_calls=calls
+    calls=[c for c in calls if c.get('role')!='format_repair']
     from .sessions import restorable_chat_records
     try:
         if calls:calls=restorable_chat_records(calls[:-1])+[calls[-1]]
@@ -441,7 +452,9 @@ def saved_host_transport_recovery(previous, calls, turns, config):
             or any(c.get('provider') != 'deepseek' or c.get('status') != 'ok'
                    or c.get('role') not in roles for c in calls[:-1])):
         return None
-    players = [c for c in calls if c.get('role') == 'player']
+    from .player_format import submitted_player_calls
+    try:players=submitted_player_calls(calls,previous)
+    except ValueError:return None
     prior_hosts = [c for c in calls[:-1] if c.get('role') == 'host']
     if len(players) != len(turns):
         return None
@@ -512,8 +525,11 @@ class Recorder:
             rec.versions['player_format_policy_sha256']=hashlib.sha256(format_policy.read_bytes()).hexdigest()
         rec.pricing = json.loads((folder/'pricing_snapshot.json').read_text())
         rec.turns, rec.calls = [], []
+        rec.player_format_corrections=list(previous.get('player_format_corrections',[]))
         for line in (folder/'trajectory.jsonl').read_text().splitlines():
             event = json.loads(line)
+            if event['event']=='player_format_correction_requested' and event['response_id'] not in {x['response_id'] for x in rec.player_format_corrections}:
+                rec.player_format_corrections.append({'response_id':event['response_id'],'submission':event['submission']})
             if event['event'] == 'submission':
                 if event['index'] != len(rec.turns)+1:
                     raise ValueError('Invalid resumed submission order')
@@ -536,6 +552,13 @@ class Recorder:
         grade_recovery=saved_grader_reason_recovery(previous,rec.calls,rec.turns,config,puzzle)
         transport_recovery = None
         dialogue_recovery=None
+        untyped_recovery=None
+        untyped_marker=folder/'player_format_correction.json'
+        if untyped_marker.exists() and previous['status']!='completed':
+            from .player_format import saved_untyped_player_correction
+            untyped_recovery=saved_untyped_player_correction(previous,rec.calls,rec.turns,config)
+            if not untyped_recovery or json.loads(untyped_marker.read_text())!=untyped_recovery:
+                raise ValueError('Untyped correction checkpoint mismatch')
         dialogue_marker=folder/'dialogue_action_recovery.json'
         if dialogue_marker.exists() and previous['status']!='completed':
             from .dialogue_recovery import saved_dialogue_action_recovery
@@ -547,7 +570,7 @@ class Recorder:
             transport_recovery = saved_host_transport_recovery(previous, rec.calls, rec.turns, config)
             if not transport_recovery or json.loads(transport_marker.read_text()) != transport_recovery:
                 raise ValueError('Pending host transport recovery does not match the saved archive')
-        if config.get('session_mode','replay')=='persistent' and previous['status']!='completed' and not (recovery or grade_recovery or transport_recovery or dialogue_recovery):
+        if config.get('session_mode','replay')=='persistent' and previous['status']!='completed' and not (recovery or grade_recovery or transport_recovery or dialogue_recovery or untyped_recovery):
             raise ValueError('Persistent interrupted sessions require supported saved-response recovery or explicit checked DeepSeek pending-host transport recovery; no fresh-session fallback.')
         if previous['status'] == 'error':
             last = rec.calls[-1] if rec.calls else {}
@@ -555,10 +578,11 @@ class Recorder:
             recoverable = last.get('status') in ('transport_error','http_error','interrupted') or (
                 last.get('status') == 'invalid_response' and not last.get('raw_text',last.get('text','')).strip()
                 and any(s in diagnostic for s in ('usage limit','at capacity','rate limit','rate_limit')))
-            if not recoverable and not (recovery or grade_recovery or dialogue_recovery):
+            if not recoverable and not (recovery or grade_recovery or dialogue_recovery or untyped_recovery):
                 raise ValueError('Refuse to resample a protocol/model-output failure')
         rec.resumed = True
-        rec.restore_sessions=bool(recovery or grade_recovery or transport_recovery or dialogue_recovery)
+        rec.restore_sessions=bool(recovery or grade_recovery or transport_recovery or dialogue_recovery or untyped_recovery)
+        if untyped_recovery:rec.pending_player_correction=untyped_recovery
         if dialogue_recovery:rec.saved_dialogue_action=dialogue_recovery
         if transport_recovery:
             rec.session_restore_calls = rec.calls[:-1]
@@ -659,10 +683,11 @@ class Recorder:
                   'host_questions': questions, 'final_attempts': len(finals),
                   'rejected_finals': rejected, 'counted_questions': questions + rejected,
                   'submissions': len(self.turns),
+                  'player_format_corrections':getattr(self,'player_format_corrections',[]),
                   'pending_feedback': sum('label' not in t for t in self.turns),
                   'forced_final': any(t.get('forced') for t in finals),
                   'final_partial_score': last['partial_score'] if last else None,
-                  'best_partial_score': max((g['partial_score'] for g in graded), default=None),
+                  'best_partial_score': max((g['partial_score'] for g in graded if g['partial_score'] is not None), default=None),
                   'latest_final': finals[-1]['text'] if finals else None,
                   'latest_grade': last, 'elapsed_seconds': time.monotonic()-self.start,
                   'usage': usage, 'costs': costs, 'error': error, 'human_review_status': 'pending',
@@ -808,6 +833,16 @@ def _play(puzzle, config, recorder, clients, prompts, player_context=None):
                     payload['action_protocol']='prefix-v1'
                 if player_context is not None:
                     payload['prior_experience'] = player_context
+                if hasattr(recorder,'pending_player_correction'):
+                    saved=recorder.pending_player_correction;del recorder.pending_player_correction
+                    corrections=getattr(recorder,'player_format_corrections',[])
+                    from .player_format import UNTYPED_CORRECTION_LIMIT
+                    if len(corrections)>=UNTYPED_CORRECTION_LIMIT:raise ProtocolError('Untyped format correction budget exhausted')
+                    payload['format_correction']={'instruction':'Your previous reply contained no typed action and was not executed. Return exactly ONE action now using the stated format. Keep this same submission slot; obey mandatory FINAL if required. No analysis or preamble.',
+                        'invalid_response':saved['raw'],'same_submission_slot':len(recorder.turns)+1}
+                    corrections.append({'response_id':saved['response_id'],'submission':len(recorder.turns)+1})
+                    recorder.player_format_corrections=corrections
+                    recorder.event('player_format_correction_requested',response_id=saved['response_id'],submission=len(recorder.turns)+1)
                 player_input = json.dumps(payload, ensure_ascii=False)
                 if hasattr(recorder,'pending_player_raw'):
                     from .providers import Reply
@@ -821,8 +856,14 @@ def _play(puzzle, config, recorder, clients, prompts, player_context=None):
                         'player_format_recovery', submission=len(recorder.turns)+1, **details))
                 except ProtocolError:
                     if reply.finish_reason not in ('stop','completed','end_turn') or not (ROOT/'configs/player_format_repair.json').exists():raise
-                    from .player_format import load_policy, repair
-                    action,details=repair(reply.text,forced,load_policy(),recorder.audit,recorder.event,
+                    from .player_format import load_policy, repair,is_untyped_prose,UNTYPED_CORRECTION_LIMIT
+                    policy=load_policy()
+                    if policy and len(reply.text)<=policy['max_raw_chars'] and is_untyped_prose(reply.text):
+                        if len(getattr(recorder,'player_format_corrections',[]))>=UNTYPED_CORRECTION_LIMIT:
+                            raise ProtocolError('Untyped format correction budget exhausted')
+                        recorder.pending_player_correction={'raw':reply.text,'response_id':reply.response_id}
+                        continue
+                    action,details=repair(reply.text,forced,policy,recorder.audit,recorder.event,
                         reply.response_id,sum(c.get('role')=='format_repair' for c in recorder.calls))
                     recorder.event('player_format_recovery',submission=len(recorder.turns)+1,**details)
                 try:has_note='text_note' in parse_player_json(reply.text)[0]
@@ -833,6 +874,10 @@ def _play(puzzle, config, recorder, clients, prompts, player_context=None):
                 turn = {'index': len(recorder.turns)+1, **action, 'forced': forced}
                 recorder.turns.append(turn)
                 recorder.event('submission', **turn, raw_player_output=reply.text)
+                marker=recorder.folder/'player_format_correction.json'
+                if marker.exists():
+                    marker.unlink()
+                    recorder.event('player_format_correction_committed',submission=turn['index'],response_id=reply.response_id)
                 recorder.report('running', None)
             if action['type'] == 'question':
                 counted += 1
@@ -861,9 +906,9 @@ def _play(puzzle, config, recorder, clients, prompts, player_context=None):
                                            'completion_requirements': puzzle.get('completion_requirements', []),
                                            'grading_notes': puzzle.get('grading_notes', ''),
                                            'submitted_explanation': action['text']}
-                coverage_mode = puzzle.get('grading_protocol') == PROTOCOL
+                coverage_mode = puzzle.get('grading_protocol') in COVERAGE_PROTOCOLS
                 if coverage_mode:
-                    grader_payload.update(grading_protocol=PROTOCOL,
+                    grader_payload.update(grading_protocol=puzzle['grading_protocol'],
                                           required_facts=fact_specs(puzzle['rubric']),
                                           required_completion=requirement_specs(puzzle.get('completion_requirements', [])))
                 grade, raw_grade = evaluate_final(clients['grader'],prompts['grader'],grader_payload,

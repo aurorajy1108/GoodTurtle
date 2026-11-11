@@ -67,7 +67,9 @@ def build_story_context(puzzle, root=ROOT):
     context = {
         'puzzle_id': puzzle['id'], 'opening': puzzle['opening'], 'reference_answer': puzzle['answer'],
         'canonical_solution': pack.get('solution', puzzle['answer']),
-        'canonical_facts': pack.get('canonical_facts') or puzzle.get('completion_requirements', []),
+        'canonical_facts': pack.get('canonical_facts') or puzzle.get('completion_requirements', []) or
+            ([f for c in puzzle['rubric'] for f in c['required_facts']]
+             if puzzle.get('grading_protocol')=='coverage-v3-unified' else []),
         'explicit_negatives': pack.get('explicit_negatives', []),
         'unknown_details': pack.get('unknown_details', []),
         'irrelevant_details': pack.get('irrelevant_details', []),

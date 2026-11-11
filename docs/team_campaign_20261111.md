@@ -138,7 +138,7 @@ python3 scripts/team_campaign.py collect \
 | --workers | 2 | 同时执行的槽位批次数1–12 |
 | --set1-positive | 15 | 16替换15；both两道都选，full全员从150增至164局，不与默认混合 |
 | --config | configs/loop.deepseek.json | 全角色配置 |
-| --dataset | data/annotations/turtle50_v4/private.json | Git内完整题库 |
+| --dataset | data/annotations/turtle50_v5/private.json | Git内完整题库 |
 | --seed | 20261111 | 调度种子，按槽偏移，不控制API采样 |
 | --host-gate | auto | 含CL Set1先做20次诊断；none显式跳过 |
 | --on-error | stop | stop停止本机其他任务；continue继续其他槽；失败槽内部始终停止 |

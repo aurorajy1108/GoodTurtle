@@ -121,7 +121,7 @@ def main(argv=None):
     p.add_argument('--out',required=True,help='New root directory; never resume or overwrite')
     p.add_argument('--mode',choices=['plan','run'],default='plan',help='plan freezes only; run gates and executes')
     p.add_argument('--config',default=str(ROOT/'configs/loop.deepseek.json'),help='Host/player/grader profiles, copied into snapshot')
-    p.add_argument('--dataset',default=str(ROOT/'data/annotations/turtle50_v4/private.json'),help='Private dataset, copied into snapshot')
+    p.add_argument('--dataset',default=str(ROOT/'data/annotations/turtle50_v5/private.json'),help='Private dataset, copied into snapshot')
     p.add_argument('--seed',type=int,default=20261102,help='Scheduling seed only, not model sampling seed')
     args=p.parse_args(argv)
     if args.mode=='run':

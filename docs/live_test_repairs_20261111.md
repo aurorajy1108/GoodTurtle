@@ -59,3 +59,13 @@ python3 scripts/reprice_campaign.py --campaign CAMPAIGN_ROOT --out NEW_PRICE_REV
 逐调用usage、原价格快照和冻结实验不改写；输出新的pricing_snapshot、calls及summary。给出已知金额的高峰/低峰范围；若存在缺失usage的中断调用，全量金额仍为null，保留已知小计。多份恢复归档已包含前序调用，不能把旧归档与最新归档再相加。
 
 本机实测轨迹入口为 `runs/api/20261111_live_testing/index.html`，20秒刷新。恢复后的CL/MAS分别位于 `20261111_live_smoke_v2_cl_resume01` 和 `20261111_live_smoke_v2_mas_resume01`；这些运行产物仍在本地，不因代码补丁自动发布。
+
+
+## 第二轮实测修复
+
+- TS038：明确区分实际书写者（叙述者）、冒充作者（妻子）、伪造信中的离家理由与未确定的实际收件人。保留旧参考，新增7条AI审核边界；不是人工标注或独立准确率评估。真实API诊断7/7通过。
+- 旧MAS轨迹保留并标记诊断用途；修复语义后重新进行两局小量MAS测试，避免把已经观察到的错误Host反馈带入干净对照。
+- 无类型Player自由文字不会被猜测为问题或交卷。在原持续会话中最多追加两次明确格式纠正；保留原回复、费用及消息链，不消耗未实际执行的问题额度。已有明确类型的动作不通过此机制重新生成。
+- 已停止的无类型输出恢复入口：`python3.11 scripts/resume_study.py --from-study OLD --out NEW --correct-untyped-player --mode plan`；审核计划后改为`run`。必须通过历史、预算和完整调用链校验；不是任意失败的自动重跑。
+- 248项回归测试通过，包括同槽纠正、纠正次数限制、持续会话恢复与已有CL格式兼容。技术测试通过不代表所有真实轨迹或Host语义均已验证。
+- 当前干净MAS入口：`runs/api/20261111_live_smoke_v3_mas/tasks/mas-ts038-a`；CL继续原恢复归档，避免重复调用。

@@ -80,10 +80,12 @@ def validate_dataset(data):
         requirements = puzzle.get('completion_requirements', [])
         if not isinstance(requirements, list) or any(not isinstance(x, str) or not x.strip() for x in requirements):
             raise ValueError(f'{pid}: invalid completion requirements')
-        if puzzle.get('grading_protocol') not in (None, 'coverage-v2'):
+        if puzzle.get('grading_protocol') not in (None, 'coverage-v2', 'coverage-v3-unified'):
             raise ValueError(f'{pid}: unsupported grading protocol')
         if puzzle.get('grading_protocol') == 'coverage-v2' and not requirements:
             raise ValueError(f'{pid}: coverage-v2 requires explicit completion requirements')
+        if puzzle.get('grading_protocol') == 'coverage-v3-unified' and requirements:
+            raise ValueError(f'{pid}: unified scoring has no unscored completion requirements')
         rubric = puzzle['rubric']
         if not rubric or len({c['id'] for c in rubric}) != len(rubric):
             raise ValueError(f'{pid}: absent or duplicate rubric checkpoints')
@@ -100,6 +102,12 @@ def validate_dataset(data):
             gates = c.get('half_credit_requires', [])
             if not isinstance(gates,list) or any(not isinstance(x,str) or x not in valid_ids for x in gates):
                 raise ValueError(f'{pid}: invalid half_credit_requires')
+        if puzzle.get('grading_protocol') == 'coverage-v3-unified':
+            from decimal import Decimal
+            if sum(Decimal(str(c['weight'])) for c in rubric) != Decimal(1):
+                raise ValueError(f'{pid}: unified weights must sum to exactly 1')
+            if any(not c.get('required_facts') for c in rubric):
+                raise ValueError(f'{pid}: unified scoring requires explicit facts for every point')
         if not math.isclose(sum(c['weight'] for c in rubric), 1, abs_tol=1e-9):
             raise ValueError(f'{pid}: rubric weights must sum to 1')
     return data

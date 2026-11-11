@@ -297,7 +297,7 @@ def main(argv=None):
     start.add_argument('--workers',type=int,default=2,help='Concurrent independent slot batches, 1..12')
     start.add_argument('--set1-positive',choices=['15','16','both'],default='15')
     start.add_argument('--config',default=str(ROOT/'configs/loop.deepseek.json'))
-    start.add_argument('--dataset',default=str(ROOT/'data/annotations/turtle50_v4/private.json'))
+    start.add_argument('--dataset',default=str(ROOT/'data/annotations/turtle50_v5/private.json'))
     start.add_argument('--seed',type=int,default=20261111,help='Scheduling only; not API sampling')
     start.add_argument('--host-gate',choices=['auto','none'],default='auto',help='auto: 20 Set1 diagnostics if selecting CL Set1; other sets are not thereby validated')
     start.add_argument('--on-error',choices=['stop','continue'],default='stop',help='After a slot failure stop own workers, or continue other independent slots. Failed games never regenerated.')

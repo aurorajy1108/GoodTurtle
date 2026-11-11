@@ -76,7 +76,7 @@ def output_contract(user):
         fields={'checkpoints':{'type':'array','items':checkpoint}}
         fields.update({k:{'type':'boolean'} for k in ('material_contradiction','irrelevant','rubric_conflict','full_solution')})
         fields['completion_note']=string
-        if payload.get('grading_protocol') == 'coverage-v2':
+        if payload.get('grading_protocol') in ('coverage-v2','coverage-v3-unified'):
             from .coverage import coverage_schema
             fields.update(coverage_schema())
         return obj(fields),None,''

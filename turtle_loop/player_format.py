@@ -15,6 +15,59 @@ Never merge two questions or turn a question into an explanation. You have no
 access to puzzle truth or grades. If exact recovery is impossible, return an empty
 text so the controller stops. No tools, filesystem access, or additional prose.'''
 
+UNTYPED_CORRECTION_LIMIT=2
+
+
+def is_untyped_prose(raw):
+    if not isinstance(raw,str) or not raw.strip():return False
+    scope,_=_scope(raw)
+    if re.search(r'(?m)^\s*(?:QUESTION|FINAL|DISCUSS|PASS|ACTION)(?:\s|$)|["\']type["\']\s*:',raw+'\n'+_unfence(scope)):return False
+    try:json.loads(raw)
+    except ValueError:return True
+    return False
+
+
+def submitted_player_calls(calls,previous):
+    ignored={x['response_id'] for x in previous.get('player_format_corrections',[])}
+    players=[c for c in calls if c.get('role')=='player']
+    if any(not is_untyped_prose(c.get('text')) for c in players if c.get('response_id') in ignored):
+        raise ValueError('A typed action cannot be discarded as an untyped correction')
+    if not ignored<={c.get('response_id') for c in players}:raise ValueError('Missing corrected output')
+    return [c for c in players if c.get('response_id') not in ignored]
+
+
+def saved_untyped_player_correction(previous,calls,turns,config):
+    from .engine import parse_action,ProtocolError
+    from .sessions import GameSession,restorable_chat_records
+    policy=load_policy()
+    if (not policy or previous.get('status')!='error' or previous.get('stop_reason')!='ProtocolError'
+            or config.get('session_mode')!='persistent' or len(turns)>=config['max_questions']
+            or any('label' not in t for t in turns) or any(t.get('grade',{}).get('complete') for t in turns)
+            or len(previous.get('player_format_corrections',[]))>=UNTYPED_CORRECTION_LIMIT):return None
+    try:
+        core=restorable_chat_records([c for c in calls if c.get('role')!='format_repair'])
+        if not core or core[-1].get('role')!='player' or core[-1].get('finish_reason')!='stop':return None
+        if any(c.get('provider')!='deepseek' or c.get('status')!='ok' or c.get('role') not in ('host','player','grader') for c in core):return None
+        last=core[-1]
+        if not is_untyped_prose(last.get('text')) or len(last['text'])>policy['max_raw_chars']:return None
+        players=submitted_player_calls(core,previous)
+        if len(players)!=len(turns)+1:return None
+        for c,t in zip(players[:-1],turns):
+            try:action=parse_action(c['text'])
+            except ProtocolError:
+                fixed=local_repair(c['text'],False,load_policy())
+                if not fixed:return None
+                action=fixed[0]
+            if action!={k:t[k] for k in ('type','text')}:return None
+        for role in ('host','player','grader'):
+            session=GameSession(role,'.',lambda *a,**k:None)
+            try:session.restore_chat(core)
+            finally:session.close()
+        return {'raw':last['text'],'response_id':last['response_id'],'submission':len(turns)+1,
+                'method':'bounded_same_session_untyped_correction',
+                'calls_sha256':hashlib.sha256(json.dumps(calls,sort_keys=True).encode()).hexdigest()}
+    except (ValueError,KeyError,TypeError):return None
+
 
 def load_policy(path=None):
     path=Path(path) if path else ROOT/'configs/player_format_repair.json'

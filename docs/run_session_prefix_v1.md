@@ -60,7 +60,7 @@ bash scripts/start_set1_verified.sh runs/api/my_set1_prefix_once
 ```bash
 python3 scripts/run_set1_verified.py --mode run \
   --config configs/loop.deepseek.json \
-  --dataset data/annotations/turtle50_v4/private.json \
+  --dataset data/annotations/turtle50_v5/private.json \
   --seed 20261102 --out runs/api/my_set1_prefix_foreground
 ```
 
@@ -69,7 +69,7 @@ python3 scripts/run_set1_verified.py --mode run \
 | `--mode` | plan | plan只冻结；run先诊断再实验 |
 | `--out` | 必填 | 新目录，拒绝覆盖；plan和run不共用同一目录 |
 | `--config` | configs/loop.deepseek.json | 全角色模型配置，冻结后不变 |
-| `--dataset` | data/annotations/turtle50_v4/private.json | Git中已有完整题库和评分，无需原Excel |
+| `--dataset` | data/annotations/turtle50_v5/private.json | Git中已有完整题库和评分，无需原Excel |
 | `--seed` | 20261102 | 调度seed，不控制模型采样 |
 
 通用入口及全部参数见 [五组实验文档](study_20261102.md)。`--memory session` 是新默认；transcript 显式使用旧引用历史，card 为摘要，both 为 transcript+card。session 要求 persistent API Player；Codex CLI 跨题分支暂不支持，CL须选 transcript。

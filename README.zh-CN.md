@@ -1,3 +1,5 @@
+**评分更新：** 新实验默认 v5，100% 与 complete、结束条件完全统一；旧结果不改写。[运行与验证说明](docs/unified_scoring_v3.md)。
+
 [English](Readme.md) | 中文
 
 # GoodTurtle — COMP1110
@@ -71,7 +73,7 @@ bash scripts/run_team_batch.sh coordinator all 4 runs/api/team_all_formal_v1
 ```text
 configs/                  模型配置、题目绑定、CL题对、路径迁移清单
 data/
-  annotations/turtle50_v4/ 当前50题汤底与评分标准；v2/v3供历史复现
+  annotations/turtle50_v5/ 当前50题统一评分与完成标准；v2/v3/v4供历史复现
   host_reference/         人工参考资料（上传不会自动改变Host）
     inbox/                按 TSxxx/source_id 收新上传；多题一份放 multi/
     sources/              已登记的完整原文、消息ID、分段与规范化问答
@@ -111,7 +113,7 @@ python3 scripts/host_reference.py validate
 
 ```sh
 python3 scripts/play.py run \
-  --dataset data/annotations/turtle50_v4/private.json \
+  --dataset data/annotations/turtle50_v5/private.json \
   --puzzle TS032 --config configs/loop.codex.json \
   --dry-run --out runs/api/my_preflight
 python3 -m unittest discover -s tests -q

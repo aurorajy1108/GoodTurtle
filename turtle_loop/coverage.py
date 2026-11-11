@@ -3,6 +3,8 @@ import copy
 import re
 
 PROTOCOL = 'coverage-v2'
+UNIFIED_PROTOCOL = 'coverage-v3-unified'
+COVERAGE_PROTOCOLS = (PROTOCOL, UNIFIED_PROTOCOL)
 STATUSES = ('covered', 'partial', 'missing', 'contradicted')
 
 
@@ -71,8 +73,10 @@ def normalize_coverage_metadata(value):
                                 'model':metadata,'effective':None})
     return value,changes
 
-def constrain(value, rubric, requirements, submission):
-    """Validate evidence IDs, cap credit and reconcile flags. Never increase credit."""
+def constrain(value, rubric, requirements, submission, protocol=PROTOCOL):
+    """Validate evidence; legacy only caps credit, unified derives it from facts."""
+    if protocol == UNIFIED_PROTOCOL and requirements:
+        raise ValueError("Unified scoring requires completion facts to be mapped into checkpoints")
     value, corrections = normalize_coverage_metadata(value)
     def quote_exists(quote):
         return evidence_is_verbatim(quote, submission)
@@ -115,7 +119,7 @@ def constrain(value, rubric, requirements, submission):
         gates = rule.get('half_credit_requires', [])
         if cap < 1 and any(facts[fid]['status'] != 'covered' for fid in gates):
             cap = 0
-        if point['credit'] > cap:
+        if point['credit'] > cap or (protocol == UNIFIED_PROTOCOL and point['credit'] != cap):
             corrections.append({'field':point['id']+'.credit','model':point['credit'],'effective':cap})
             point['credit'] = cap
     if contradictions or any(x['status']=='contradicted' for x in [*facts.values(),*completion.values()]):
@@ -124,6 +128,20 @@ def constrain(value, rubric, requirements, submission):
         value['material_contradiction'] = True
     complete = (all(x['status']=='covered' for x in [*facts.values(),*completion.values()])
                 and not any(value[k] for k in ('material_contradiction','rubric_conflict','irrelevant')))
+    if protocol == UNIFIED_PROTOCOL:
+        # A global veto without a localized scored contradiction is an invalid
+        # evaluation, not permission to keep asking after a numeric full score.
+        localized = bool(affected) or any(x['status']=='contradicted' for x in facts.values())
+        if (value['material_contradiction'] and not localized) or (value['irrelevant'] and any(p['credit']>0 for p in value['checkpoints'])):
+            value['rubric_conflict'] = True
+        complete = all(p['credit']==1 for p in value['checkpoints']) and not any(
+            value[k] for k in ('rubric_conflict','material_contradiction','irrelevant'))
+        if value['full_solution'] != complete:
+            corrections.append({'field':'full_solution','model':value['full_solution'],'effective':complete})
+        value['full_solution'] = complete
+        value['completion_note'] = ('Evaluation requires review; no valid numeric score.' if value['rubric_conflict'] else
+            'All weighted checkpoint facts covered; the solution is complete.' if complete else
+            'Scored facts remain missing, partial or contradicted; see fact_coverage.')
     if value['full_solution'] and not complete:
         corrections.append({'field':'full_solution','model':True,'effective':False})
         value['full_solution'] = False
