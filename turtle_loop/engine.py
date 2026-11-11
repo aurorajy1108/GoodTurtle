@@ -147,8 +147,7 @@ def escape_json_string_newlines(text):
 
 def parse_player_json(text):
     # Prefix actions preserve the body verbatim; JSON remains readable for archives.
-    if isinstance(text, str) and text.lstrip().startswith(('QUESTION\n', 'FINAL\n', 'DISCUSS\n', 'PASS\n',
-                                                          'QUESTION NEXT=', 'FINAL NEXT=', 'DISCUSS NEXT=', 'PASS NEXT=')):
+    if isinstance(text, str) and re.match(r'(?:QUESTION|FINAL|DISCUSS|PASS)(?: NEXT=[AB])?\r?\n',text.lstrip()):
         from .action_text import parse_prefix_action
         try:
             return parse_prefix_action(text), None

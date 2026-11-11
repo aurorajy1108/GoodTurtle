@@ -10,6 +10,7 @@ class PrefixTests(unittest.TestCase):
         body='Is "A" using C:\\new?\nOr a literal \\?'
         self.assertEqual(parse_action('QUESTION\n'+body),{'type':'question','text':body})
         self.assertEqual(parse_action('FINAL\n'+body,True)['text'],body)
+        self.assertEqual(parse_action('QUESTION\r\n'+body),{'type':'question','text':body})
 
     def test_no_silent_multiple_actions_or_forced_question(self):
         for raw in ('QUESTION\n', 'QUESTION\nQ?\nFINAL\nGuess', 'QUESTION\nQ?'):

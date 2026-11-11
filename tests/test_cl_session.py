@@ -8,7 +8,7 @@ from unittest.mock import patch
 
 from turtle_loop.providers import Client
 from turtle_loop.sessions import GameSession, restore_context
-from turtle_loop.engine import Recorder, load_prompts, play
+from turtle_loop.engine import Recorder, ProtocolError, load_prompts, play
 from turtle_loop.experiments import main
 from test_loop import PUZZLE, evaluated
 from test_sessions import Response
@@ -165,6 +165,44 @@ class CLSessionTests(unittest.TestCase):
             comparisons=json.loads((root/'out/control_contrasts.json').read_text())
             self.assertEqual(len(comparisons),2)
             self.assertTrue(all(c['treatment']=='session' for c in comparisons))
+
+    def test_format_resume_preserves_inherited_prefix_and_never_regenerates_pending_action(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            prompts=load_prompts();counter=[0];player_calls=[0];broken=[True]
+            config={'max_questions':3,'session_mode':'persistent',
+                **{r:{'provider':'deepseek','model':r} for r in ('host','player','grader')}}
+            source=[]
+            def api(req,**kw):
+                body=json.loads(req.data);counter[0]+=1
+                if body['model']=='player':
+                    player_calls[0]+=1
+                    # First call solves A; second call is B's saved malformed envelope.
+                    text=('QUESTION\nB question?' if player_calls[0]==2 else 'FINAL\nsubmitted explanation')
+                    if player_calls[0]==2:text='</think>'+text
+                else:text='no' if body['model']=='host' else evaluated()
+                return response('deepseek',counter[0],text)
+            with patch('urllib.request.OpenerDirector.open',side_effect=api):
+                a=Client(config['player'],'player',source.append);a.begin_game(tmp,lambda *a,**k:None)
+                a.complete(prompts['player'],json.dumps({'opening':'A','visible_history':[],'turn_control':'first','action_protocol':'prefix-v1'}))
+                a.close_game()
+                rec=Recorder(Path(tmp)/'B',PUZZLE,config,prompts,echo=False)
+                def clients(rec):return {r:Client(config[r],r,rec.audit) for r in ('host','player','grader')}
+                continuation={'calls':source,'boundary':{'completed_puzzle_full_answer':'A full answer','new_submission_budget':3}}
+                with patch('turtle_loop.player_format.repair',side_effect=ProtocolError('simulated old parser stopping')):
+                    stopped=play(PUZZLE,config,rec,clients(rec),prompts,player_continuation=continuation)
+                self.assertEqual(stopped['status'],'error')
+                self.assertEqual(stopped['submissions'],0)
+                self.assertEqual(player_calls[0],2)
+                restored=Recorder.restore(rec.folder,PUZZLE,config,prompts,echo=False)
+                resumed=play(PUZZLE,config,restored,clients(restored),prompts,player_continuation=continuation)
+                self.assertTrue(resumed['success'])
+                self.assertEqual(resumed['submissions'],2)
+                self.assertEqual(player_calls[0],3)  # A, saved B question, one new B final.
+                b_players=[c for c in restored.calls if c['role']=='player']
+                self.assertEqual([c['session_turn'] for c in b_players],[2,3])
+                self.assertEqual(b_players[1]['request']['messages'][1:3],source[0]['request']['messages'][1:]+[
+                    {'role':'assistant','content':source[0]['text']}])
+                self.assertEqual(restored.turns[0]['text'],'B question?')
 
 
 if __name__=='__main__':unittest.main()
