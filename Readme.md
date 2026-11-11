@@ -1,5 +1,7 @@
 # GoodTurtle — COMP1110
 
+**Team runs:** [Three CL sets and three MAS puzzles, two people × two repeats](docs/team_campaign_20261111.md): a six-game pilot, personal batches, bounded parallel execution of all 150 games, and deduplicated collection.
+
 English | [中文](README.zh-CN.md)
 
 **2026-11-11 branch:** [Run CL session continuation and the new Player response format](docs/run_session_prefix_v1.md), including Set1 and TS038 commands, all relevant parameters, costs and recovery limits.

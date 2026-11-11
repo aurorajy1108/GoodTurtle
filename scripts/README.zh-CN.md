@@ -2,6 +2,8 @@
 
 # 脚本入口
 
+团队正式分工及新一键脚本见 [campaign指南](../docs/team_campaign_20261111.md)：`run_team_smoke.sh`小量测试，`run_team_batch.sh`每人两次重复/限并发，`team_campaign.py`列计划、dry-run和去重汇总。
+
 | 用途 | 入口 |
 | --- | --- |
 | Player格式自动修复、有限续跑监督 | `auto_continue.py`；当前Set1用`start_set1_auto_continue.sh`，见[说明](../docs/automatic_continuation.md) |

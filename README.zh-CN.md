@@ -2,6 +2,8 @@
 
 # GoodTurtle — COMP1110
 
+**团队运行：** [三组CL+三道MAS，两人各两次的一键脚本](docs/team_campaign_20261111.md)：6局小量测试、个人批跑、限并发全员150局与去重汇总。
+
 **11月11日新版本：** [CL会话续接与新返回格式运行指南](docs/run_session_prefix_v1.md)，含新分支获取、Set1/TS038命令、参数、成本和恢复边界。
 
 **格式错误自动续跑：** 当前Set1可用`bash scripts/start_set1_auto_continue.sh`接续。先按固定规则恢复已有动作，必要时调用隔离Codex格式器并验证原文一致；保留完成局、额度和成本，限制重试次数。[机制、参数和日志位置](docs/automatic_continuation.md)。
