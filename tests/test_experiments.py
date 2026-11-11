@@ -187,7 +187,7 @@ class ExperimentTests(unittest.TestCase):
         out=self.root/'actual'
         with patch('turtle_loop.cli.validate_profile'), patch('turtle_loop.experiments.Client',side_effect=factory):
             result=main(['continual','--dataset',str(dataset),'--config',str(config),'--groups',str(groups),
-                         '--group','G','--pair','FIXTURE_A:FIXTURE_B','--repeat','1','--out',str(out),'--quiet'])
+                         '--group','G','--pair','FIXTURE_A:FIXTURE_B','--memory','transcript','--repeat','1','--out',str(out),'--quiet'])
         self.assertEqual(result,0)
         self.assertEqual(len(seen),3)
         targets=[x for x in seen if x['opening']=='PUBLIC_FIXTURE_B']

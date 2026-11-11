@@ -70,12 +70,13 @@ def main(argv=None):
     p.add_argument('--source-puzzles',default='all',help='CL source A whitelist, e.g. TS015,TS014,TS028; default all sources in selected sets/directions')
     p.add_argument('--directions',choices=['primary','bidirectional'],default='primary',help='primary: fixed anchor B; bidirectional also adds exploratory reverse positive pairs')
     p.add_argument('--source-policy',choices=['fixed','per-repeat'],default='fixed',help='fixed: solve each A once per batch and reuse its complete public experience; per-repeat: independently regenerate A for each block')
+    p.add_argument('--memory',choices=['session','transcript','card','both'],default='session',help='session: original A Player messages continued into B (default); transcript/card/both: legacy new-conversation ablations')
     p.add_argument('--team-puzzles',default=','.join(OWNERS),help='Subset of TS038,TS002,TS014,TS022,TS042')
     p.add_argument('--repeat',type=int,default=3,help='Fresh B games per direction/condition; fixed source A is not repeated')
     p.add_argument('--strategies',default='solo,solo_reflect,independent,shared_buffer')
     p.add_argument('--sync-interval',type=int,default=4)
     add_dialogue_arguments(p)
-    p.add_argument('--config',default='configs/loop.codex.json')
+    p.add_argument('--config',default='configs/loop.deepseek.json')
     p.add_argument('--dataset',default='data/annotations/turtle50_v4/private.json')
     p.add_argument('--seed',type=int,default=20261102,help='Scheduling only, not remote sampling seed')
     p.add_argument('--mode',choices=['plan','dry-run','run'],default='plan')
@@ -91,6 +92,9 @@ def main(argv=None):
     data=load_dataset(args.dataset);bank={x['id']:x for x in data['puzzles']}
     args.dry_run=args.mode!='run';config=configuration(args)
     if config['max_questions']!=100:p.error('This study requires exactly 100 fresh submissions per game')
+    if args.suite in ('continual','all') and args.memory=='session':
+        if config['session_mode']!='persistent' or config['player']['provider']=='codex_cli':
+            p.error('--memory session requires persistent API Player sessions; select --memory transcript for Codex CLI')
     # Model/provider choices come entirely from the explicit configuration.
     # Freeze them below; never substitute a Codex model for an API provider.
     g=groups(selected,args.directions);blocks={};clargs=None;teamargs=None
@@ -113,10 +117,10 @@ def main(argv=None):
     jobs=[]
     if args.suite in ['continual','all']:
         clargs=argparse.Namespace(command='continual',groups=str(snap/'configs/study_groups.json'),group='all',pair=None,
-           controls='answer_only',control_source=None,source_feedback='answer',source_policy=args.source_policy,memory='transcript',repeat=args.repeat,seed=args.seed)
+           controls='answer_only',control_source=None,source_feedback='answer',source_policy=args.source_policy,memory=args.memory,repeat=args.repeat,seed=args.seed)
         blocks['continual']=make_plan(clargs,bank)
         jobs.append(dict(name='continual',argv=[sys.executable,str(snap/'scripts/experiment.py'),'continual',*common,
-          '--groups',str(snap/'configs/study_groups.json'),'--group','all','--memory','transcript','--controls','answer_only',
+          '--groups',str(snap/'configs/study_groups.json'),'--group','all','--memory',args.memory,'--controls','answer_only',
           '--source-feedback','answer','--source-policy',args.source_policy,'--out',str(out/'continual')]))
     if args.suite in ['team','all']:
         teamargs=argparse.Namespace(command='team',puzzle=','.join(teams),strategies=args.strategies,repeat=args.repeat,seed=args.seed)
@@ -134,7 +138,7 @@ def main(argv=None):
     dump(out/'study_plan.json',dict(mode=args.mode,arguments=vars(args),groups=g,blocks=blocks,planned_games=counts,jobs=jobs,
       trajectory_review_owners=OWNERS,config=config,dialogue_policy=dialogue,host_versions={pid:build_story_context(x)['binding_version'] for pid,x in bank.items()},
       interpretation='CL weights unchanged. Default fixed anchor B and one frozen A experience per source puzzle per batch. Source answer revealed after A; fresh 100 for every B. B repeats are conditional on the frozen A, not independent A samples. Reverse positive directions are exploratory. Relation labels never reach players.',
-      controls='direct, transcript+complete source answer, answer_only. Neutral source pairs target the same anchor. No arbitrary reverse negative/neutral target.'))
+      controls=f'direct, {args.memory}+complete source answer, answer_only. Session protocol preserves original A roles and forks the same frozen prefix for each B. Neutral source pairs target the same anchor. No arbitrary reverse negative/neutral target.'))
     print(json.dumps({'out':str(out),'mode':args.mode,'games':counts},ensure_ascii=False),flush=True)
     if args.mode=='plan':return 0
     state=dict(pid=os.getpid(),status='running',completed=[],active=None,mode=args.mode);dump(out/'status.json',state)

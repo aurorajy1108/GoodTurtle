@@ -38,7 +38,7 @@ class ControlDesignTests(unittest.TestCase):
         out=root/'out'
         with patch('turtle_loop.cli.validate_profile'),patch('turtle_loop.experiments.Client',side_effect=factory):
             code=main(['continual','--dataset',str(data),'--config',str(config),'--groups',str(groups),
-                '--group','G','--pair','V7_A:V7_B','--repeat','1','--controls','answer_only,unrelated',
+                '--group','G','--pair','V7_A:V7_B','--memory','transcript','--repeat','1','--controls','answer_only,unrelated',
                 '--control-source','V7_C','--quiet','--out',str(out)])
         return code,out,sessions,private_payloads
 

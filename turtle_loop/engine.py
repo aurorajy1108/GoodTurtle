@@ -23,6 +23,14 @@ LABELS = {'yes', 'no', 'yes and no', 'irrelevant'}
 ROOT = Path(__file__).resolve().parents[1]
 
 
+def controller_fingerprint():
+    names=('engine.py','host.py','host_context.py','coverage.py','grader.py','providers.py',
+           'codex_client.py','experiments.py','sessions.py','dialogue.py','dialogue_contract.py','player_format.py','action_text.py')
+    files=[ROOT/'turtle_loop'/name for name in names]
+    files.append(ROOT/'configs/player_format_repair.json')
+    return hashlib.sha256(b''.join(p.read_bytes() for p in files if p.exists())).hexdigest()
+
+
 class ProtocolError(ValueError):
     pass
 
@@ -88,6 +96,23 @@ def repair_question_inner_quotes(text):
                   'inserted_character':'\\','characters_added':2}
 
 
+def repair_escaped_question_closing_quote(text):
+    """Remove one stray slash before a complete question's closing delimiter."""
+    if not isinstance(text, str):return None
+    match = re.fullmatch(
+        r'(\s*\{\s*"type"\s*:\s*"question"\s*,\s*"text"\s*:\s*")'
+        r'((?:[^"\\{}\x00-\x1f]|\\(?:["\\/bfnrt]|u[0-9a-fA-F]{4}))*\?)'
+        r'(\\)("\s*\}\s*)', text)
+    if not match:return None
+    offset=match.start(3)
+    candidate=text[:offset]+text[offset+1:]
+    try:value=json.loads(candidate)
+    except ValueError:return None
+    if set(value)!={'type','text'} or value['type']!='question':return None
+    return value, {'method':'escaped_question_text_closing_quote',
+                   'removed_character':'\\','remove_offset':offset,'characters_removed':1}
+
+
 def _unique_player_object(pairs):
     value={}
     for key,item in pairs:
@@ -121,11 +146,20 @@ def escape_json_string_newlines(text):
 
 
 def parse_player_json(text):
+    # Prefix actions preserve the body verbatim; JSON remains readable for archives.
+    if isinstance(text, str) and text.lstrip().startswith(('QUESTION\n', 'FINAL\n', 'DISCUSS\n', 'PASS\n',
+                                                          'QUESTION NEXT=', 'FINAL NEXT=', 'DISCUSS NEXT=', 'PASS NEXT=')):
+        from .action_text import parse_prefix_action
+        try:
+            return parse_prefix_action(text), None
+        except ValueError as exc:
+            raise ProtocolError(str(exc)) from None
     recovery = None
     try:
         value = json.loads(text,object_pairs_hook=_unique_player_object)
     except (ValueError, TypeError):
-        repaired=repair_missing_question_quote(text) or repair_question_inner_quotes(text)
+        repaired=(repair_escaped_question_closing_quote(text)
+                  or repair_missing_question_quote(text) or repair_question_inner_quotes(text))
         if repaired:return repaired
         if not isinstance(text, str):
             raise ProtocolError('Player must return one JSON object, without markdown') from None
@@ -234,6 +268,13 @@ def grade_final(text, rubric, requirements=None, submitted_explanation=None):
 
 def _saved_player_recovery(previous, calls, turns, config, mode):
     """Recover a complete saved solo action without another model generation."""
+    from .sessions import restorable_chat_records
+    auxiliary=[c for c in calls if c.get('role')=='format_repair']
+    if any(c.get('role') not in ('host','player','grader','format_repair') for c in calls):return None
+    session_calls=[c for c in calls if c.get('role')!='format_repair']
+    original_call_count=len(session_calls)
+    try:calls=restorable_chat_records(session_calls)
+    except (ValueError,TypeError,KeyError):return None
     if (previous.get('status')!='error' or previous.get('stop_reason')!='ProtocolError'
             or not calls or any('label' not in t for t in turns)
             or any(t.get('grade',{}).get('complete') for t in turns)
@@ -252,15 +293,48 @@ def _saved_player_recovery(previous, calls, turns, config, mode):
         if mode=='text_note':
             raw=json.loads(last['text'])
             if set(raw)!={'type','text','text_note'} or not isinstance(raw['text_note'],str):return None
+        elif mode=='auto_format':
+            from .player_format import local_repair, load_policy, verbatim_proof
+            policy=load_policy()
+            if not policy or last.get('finish_reason')!='stop':return None
+            fixed=local_repair(last['text'],False,policy)
+            if fixed:
+                action,format_recovery=fixed
+            else:
+                try:json.loads(last['text'])
+                except ValueError:pass
+                else:return None  # Valid JSON with a wrong schema is not a syntax repair.
+                repairs=[c for c in auxiliary if c.get('format_source_response_id')==last.get('response_id')]
+                if repairs:
+                    call=repairs[-1]
+                    if call.get('status')!='ok':return None
+                    action=parse_action(call['text'])
+                    if not verbatim_proof(last['text'],action):return None
+                    format_recovery={'method':'saved_codex_verbatim_format','repair_response_id':call.get('response_id')}
+                else:
+                    action=None
+                    format_recovery={'method':'pending_codex_format','raw_sha256':hashlib.sha256(last['text'].encode()).hexdigest()}
         else:
             raw,format_recovery=parse_player_json(last['text'])
             if (not format_recovery or format_recovery['method'] not in
-                    ('missing_question_text_closing_quote','unescaped_question_inner_quotes')
+                    ('missing_question_text_closing_quote','unescaped_question_inner_quotes',
+                     'escaped_question_text_closing_quote')
                     or last.get('finish_reason')!='stop'):return None
         forced=len(turns)>=config['max_questions']-1
-        action=parse_action(last['text'],forced)
+        if mode!='auto_format':action=parse_action(last['text'],forced)
+        elif action is not None and forced and action['type']!='final':return None
         for call,turn in zip(player_calls[:-1],turns):
-            if parse_action(call['text'])!={key:turn[key] for key in ('type','text')}:return None
+            try:prior_action=parse_action(call['text'])
+            except ProtocolError:
+                from .player_format import local_repair, load_policy, verbatim_proof
+                fixed=local_repair(call['text'],False,load_policy())
+                if fixed:prior_action=fixed[0]
+                else:
+                    repairs=[r for r in auxiliary if r.get('format_source_response_id')==call.get('response_id') and r.get('status')=='ok']
+                    if not repairs:return None
+                    prior_action=parse_action(repairs[-1]['text'])
+                    if not verbatim_proof(call['text'],prior_action):return None
+            if prior_action!={key:turn[key] for key in ('type','text')}:return None
     except (ValueError,TypeError,KeyError,ProtocolError):
         return None
     # Validate complete message chains before accepting the recovery exception.
@@ -271,7 +345,8 @@ def _saved_player_recovery(previous, calls, turns, config, mode):
         except (ValueError,KeyError,TypeError):return None
         finally:session.close()
     return {'action':action,'forced':forced,'raw':last['text'],'response_id':last.get('response_id'),
-            'format_recovery':format_recovery}
+            'format_recovery':format_recovery,
+            'verified_pre_send_attempts':original_call_count-len(calls)}
 
 
 def saved_player_note_recovery(previous, calls, turns, config):
@@ -282,8 +357,15 @@ def saved_player_json_recovery(previous, calls, turns, config):
     return _saved_player_recovery(previous,calls,turns,config,'question_quote')
 
 
+def saved_player_auto_recovery(previous, calls, turns, config):
+    return _saved_player_recovery(previous,calls,turns,config,'auto_format')
+
+
 def saved_grader_reason_recovery(previous, calls, turns, config, puzzle):
     """Accept an already returned grade rejected only for explanation metadata."""
+    from .sessions import restorable_chat_records
+    try:calls=restorable_chat_records(calls)
+    except (ValueError,TypeError,KeyError):return None
     if (previous.get('status')!='error' or previous.get('stop_reason')!='ProtocolError'
             or not calls or not turns or turns[-1].get('type')!='final' or 'label' in turns[-1]
             or any('label' not in t for t in turns[:-1])
@@ -331,6 +413,11 @@ def saved_host_transport_recovery(previous, calls, turns, config):
     DeepSeek chat history is local. A failed transmission may still have been
     billed remotely; retain the failed audit record and explicitly disclose that.
     """
+    original_calls=calls
+    from .sessions import restorable_chat_records
+    try:
+        if calls:calls=restorable_chat_records(calls[:-1])+[calls[-1]]
+    except (ValueError,TypeError,KeyError):return None
     roles = ('host', 'player', 'grader')
     if (previous.get('status') != 'error' or previous.get('stop_reason') != 'APIError'
             or config.get('session_mode') != 'persistent' or not calls or not turns
@@ -388,7 +475,7 @@ def saved_host_transport_recovery(previous, calls, turns, config):
         return None
     return {'submission': turns[-1]['index'], 'role': 'host',
             'failed_call_sha256': hashlib.sha256(json.dumps(last, sort_keys=True).encode()).hexdigest(),
-            'calls_sha256': hashlib.sha256(json.dumps(calls, sort_keys=True).encode()).hexdigest(),
+            'calls_sha256': hashlib.sha256(json.dumps(original_calls, sort_keys=True).encode()).hexdigest(),
             'possible_duplicate_remote_charge': not last.get('safe_pre_send_retry', False),
             'policy': 'Replay only the identical unanswered request; preserve all observed replies, quotas and failed-call accounting.'}
 
@@ -412,9 +499,10 @@ class Recorder:
         rec.start = time.monotonic() - previous.get('elapsed_seconds', 0)
         rec.versions = previous['evaluation_versions']
         rec.versions.setdefault('original_controller_sha256',rec.versions.get('controller_sha256'))
-        rec.versions['controller_sha256'] = hashlib.sha256(b''.join(
-            (ROOT/'turtle_loop'/name).read_bytes() for name in
-            ('engine.py','host.py','host_context.py','coverage.py','grader.py','providers.py','codex_client.py','experiments.py','sessions.py','dialogue.py'))).hexdigest()
+        rec.versions['controller_sha256'] = controller_fingerprint()
+        format_policy=ROOT/'configs/player_format_repair.json'
+        if format_policy.exists():
+            rec.versions['player_format_policy_sha256']=hashlib.sha256(format_policy.read_bytes()).hexdigest()
         rec.pricing = json.loads((folder/'pricing_snapshot.json').read_text())
         rec.turns, rec.calls = [], []
         for line in (folder/'trajectory.jsonl').read_text().splitlines():
@@ -436,6 +524,8 @@ class Recorder:
             rec.calls = [json.loads(line) for line in (folder/'api_calls.jsonl').read_text().splitlines()]
         recovery=(saved_player_note_recovery(previous,rec.calls,rec.turns,config)
                   or saved_player_json_recovery(previous,rec.calls,rec.turns,config))
+        if not recovery and (ROOT/'configs/player_format_repair.json').exists():
+            recovery=saved_player_auto_recovery(previous,rec.calls,rec.turns,config)
         grade_recovery=saved_grader_reason_recovery(previous,rec.calls,rec.turns,config,puzzle)
         transport_recovery = None
         transport_marker = folder / 'host_transport_recovery.json'
@@ -460,6 +550,10 @@ class Recorder:
             rec.pending_host_request = rec.calls[-1]['request']
             rec.event('host_transport_recovery', **transport_recovery)
         if recovery:
+            if recovery['action'] is None:
+                rec.pending_player_raw=recovery
+                rec.event('pending_player_format_repair',source_response_id=recovery['response_id'])
+                return rec
             turn={'index':len(rec.turns)+1,**recovery['action'],'forced':recovery['forced']}
             rec.turns.append(turn)
             if recovery.get('format_recovery'):
@@ -493,9 +587,10 @@ class Recorder:
                          'runtime_context_version': RUNTIME_VERSION,
                          'grading_protocol':puzzle.get('grading_protocol', 'legacy'),
                          'prompts_sha256':hashlib.sha256(json.dumps(prompts,sort_keys=True).encode()).hexdigest()}
-        self.versions['controller_sha256'] = hashlib.sha256(b''.join(
-            (ROOT/'turtle_loop'/name).read_bytes() for name in
-            ('engine.py','host.py','host_context.py','coverage.py','grader.py','providers.py','codex_client.py','experiments.py','sessions.py','dialogue.py'))).hexdigest()
+        self.versions['controller_sha256'] = controller_fingerprint()
+        format_policy=ROOT/'configs/player_format_repair.json'
+        if format_policy.exists():
+            self.versions['player_format_policy_sha256']=hashlib.sha256(format_policy.read_bytes()).hexdigest()
         dump(self.folder / 'puzzle_private.json', puzzle)
         dump(self.folder / 'config.json', config)
         dump(self.folder / 'prompts.json', prompts)
@@ -620,7 +715,7 @@ def load_prompts():
     return {role: (ROOT / f'prompts/loop_{role}_v1.txt').read_text() for role in ('player', 'host', 'grader', 'host_review')}
 
 
-def play(puzzle, config, recorder, clients, prompts, player_context=None):
+def play(puzzle, config, recorder, clients, prompts, player_context=None, player_continuation=None):
     """Own all role sessions for exactly one game, including team subroles."""
     opened = []
     def initialize(client):
@@ -633,6 +728,9 @@ def play(puzzle, config, recorder, clients, prompts, player_context=None):
                                     getattr(recorder,'session_restore_calls',recorder.calls))
                 if getattr(client, 'role', None) == 'host' and hasattr(recorder, 'pending_host_request'):
                     client.expected_recovery_request = recorder.pending_host_request
+            elif getattr(client,'role',None)=='player' and player_continuation is not None:
+                client.inherit_game(recorder.folder,recorder.event,
+                                    player_continuation['calls'],player_continuation['boundary'])
             else:
                 client.begin_game(recorder.folder, recorder.event)
             opened.append(client)
@@ -687,13 +785,32 @@ def _play(puzzle, config, recorder, clients, prompts, player_context=None):
                 pending = None
             else:
                 payload = {'opening': puzzle['opening'], 'visible_history': history, 'turn_control': control}
+                # An explicit controller overlay may resume an archived JSON
+                # prompt. Do not silently switch that experiment's protocol.
+                if 'prefix-v1' in prompts['player']:
+                    payload['action_protocol']='prefix-v1'
                 if player_context is not None:
                     payload['prior_experience'] = player_context
                 player_input = json.dumps(payload, ensure_ascii=False)
-                reply = clients['player'].complete(prompts['player'], player_input)
-                action = parse_action(reply.text, forced, lambda details: recorder.event(
-                    'player_format_recovery', submission=len(recorder.turns)+1, **details))
-                if 'text_note' in parse_player_json(reply.text)[0]:
+                if hasattr(recorder,'pending_player_raw'):
+                    from .providers import Reply
+                    saved=recorder.pending_player_raw
+                    reply=Reply(saved['raw'],{},response_id=saved['response_id'],finish_reason='stop')
+                    del recorder.pending_player_raw
+                else:
+                    reply = clients['player'].complete(prompts['player'], player_input)
+                try:
+                    action = parse_action(reply.text, forced, lambda details: recorder.event(
+                        'player_format_recovery', submission=len(recorder.turns)+1, **details))
+                except ProtocolError:
+                    if reply.finish_reason not in ('stop','completed','end_turn') or not (ROOT/'configs/player_format_repair.json').exists():raise
+                    from .player_format import load_policy, repair
+                    action,details=repair(reply.text,forced,load_policy(),recorder.audit,recorder.event,
+                        reply.response_id,sum(c.get('role')=='format_repair' for c in recorder.calls))
+                    recorder.event('player_format_recovery',submission=len(recorder.turns)+1,**details)
+                try:has_note='text_note' in parse_player_json(reply.text)[0]
+                except ProtocolError:has_note=False
+                if has_note:
                     recorder.event('player_action_normalized',submission=len(recorder.turns)+1,
                                    removed_fields=['text_note'],recovery=False)
                 turn = {'index': len(recorder.turns)+1, **action, 'forced': forced}

@@ -60,7 +60,7 @@ class DialogueTests(unittest.TestCase):
         def a(i,p):
             if i == 1:
                 return '{"type":"final","text":"An explanation"}'
-            self.assertIn('next_speaker', p['format_correction']['instruction'])
+            self.assertIn('NEXT=', p['format_correction']['instruction'])
             return action('final','An explanation','B')
         team,rec=self.team(a,lambda i,p:action('question','Other?'))
         reply=team.complete('system','{}')
@@ -90,8 +90,8 @@ class DialogueTests(unittest.TestCase):
                 self.assertNotIn('{"type":"question","text":"One yes/no question"}',system)
                 payload=json.loads(wire)
                 schema,_,_=output_contract(wire)
-                self.assertEqual(schema['required'],['type','text'])
-                self.assertEqual(json.loads(payload['dialogue_control']['response_contract'].split('schema: ',1)[1].rsplit('. The text',1)[0]),schema)
+                self.assertIsNone(schema)
+                self.assertIn('NEXT is optional',payload['dialogue_control']['response_contract'])
                 self.assertIsNone(team.transcript[0]['effective_next_speaker'])
 
     def test_normal_final_missing_speaker_is_corrected_before_submission(self):

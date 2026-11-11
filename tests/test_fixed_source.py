@@ -39,7 +39,7 @@ class FixedSourceTests(unittest.TestCase):
             return FakeClient(answer)
         out=root/'out'
         argv=['continual','--dataset',str(root/'data.json'),'--config',str(root/'config.json'),
-              '--groups',str(root/'groups.json'),'--group','all','--repeat','3',
+              '--groups',str(root/'groups.json'),'--group','all','--memory','transcript','--repeat','3',
               '--controls','answer_only','--on-error','continue','--out',str(out),'--quiet']
         if policy is not None:argv+=['--source-policy',policy]
         with patch('turtle_loop.cli.validate_profile'), patch('turtle_loop.experiments.Client',side_effect=factory):

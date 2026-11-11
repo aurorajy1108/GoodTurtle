@@ -242,6 +242,31 @@ class Client:
         if self.session is not None:
             self.session.close()
 
+    def inherit_game(self, folder, event, calls, boundary):
+        """Fork one frozen A Player prefix, then continue its exact role messages."""
+        if self.role!='player' or self.profile['provider']=='codex_cli':
+            raise ValueError('Raw session continuation requires a supported API Player; use transcript for Codex CLI')
+        selected=[c for c in calls if c.get('role')=='player']
+        if not selected:raise ValueError('Source has no Player messages')
+        base,_,kind=validate_profile(self.profile)
+        suffix='/responses' if kind=='responses' else '/messages' if kind=='anthropic' else '/chat/completions'
+        if any(c.get('provider')!=self.profile['provider'] or c.get('model_requested')!=self.profile['model']
+               or c.get('endpoint')!=base+suffix for c in selected):
+            raise ValueError('Source Player provider/model/endpoint differs from target')
+        if self.session is not None:raise ValueError('Client already belongs to a game')
+        from .sessions import GameSession
+        self.session=GameSession(self.role,folder,event,session_id=selected[0]['game_session_id'])
+        try:
+            self.session.restore_chat(selected)
+            seed=self.session.freeze_prefix()
+            lane=next(iter(self.session.lanes.values()));lane['inheritance']=seed
+            self.inherited_system_sha256=seed['system_sha256']
+            self.pending_puzzle_boundary=boundary
+            event('player_session_inherited',source_turns=seed['turn'],
+                  source_response_id=seed['response_id'],prefix_sha256=seed['messages_sha256'])
+        except BaseException:
+            self.session.close();raise
+
     def restore_game(self, folder, event, calls):
         if self.profile.get('provider')!='deepseek':
             raise ValueError('Persistent recovery is restricted to saved DeepSeek chat messages')
@@ -270,6 +295,16 @@ class Client:
             raise
 
     def _complete(self, system, user):
+        if hasattr(self,'inherited_system_sha256'):
+            import hashlib
+            if hashlib.sha256(system.encode()).hexdigest()!=self.inherited_system_sha256:
+                raise ValueError('Player system prompt changed across A and B; refusing a new lane')
+        if hasattr(self,'pending_puzzle_boundary'):
+            payload=json.loads(user)
+            if payload.get('visible_history') or 'prior_experience' in payload:
+                raise ValueError('New B must start with fresh public history and no repackaged A transcript')
+            user=json.dumps({'puzzle_boundary':self.pending_puzzle_boundary,**payload},ensure_ascii=False)
+            del self.pending_puzzle_boundary
         lane = None
         metadata = {}
         original_user = user
@@ -296,7 +331,7 @@ class Client:
         if self.profile['provider']=='deepseek' and self.role in ('player','partner'):
             try:logical=json.loads(original_user)
             except (ValueError,TypeError):logical={}
-            if isinstance(logical,dict) and ('dialogue_control' in logical or
+            if isinstance(logical,dict) and logical.get('action_protocol') != 'prefix-v1' and ('dialogue_control' in logical or
                     ('opening' in logical and 'turn_control' in logical)):
                 # Typed actions need JSON; teammate prose reviews and source
                 # summaries have different envelopes and stay plain text.

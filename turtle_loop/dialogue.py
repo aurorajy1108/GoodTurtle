@@ -13,7 +13,7 @@ ROLE_PROFILES = {
     'generalist': 'Collaboratively investigate identities, setting, event order, causes and motives. Challenge assumptions and combine confirmed facts into a complete story.',
 }
 DIALOGUE_PROMPT = '''
-SHARED DIALOGUE PROTOCOL v2.
+SHARED DIALOGUE PROTOCOL v3 (prefix-v1).
 You are active_speaker, one of two independent solvers in the SAME public chat.
 The role_assignment specifies BOTH roles. Your specialty guides attention, but both
 agents may ask the host directly, discuss, hand over, or submit a final solution.
@@ -22,8 +22,7 @@ and host feedback. Agent discussion is fallible hypothesis, never host evidence.
 Cooperate naturally: respond to a useful teammate point, pursue a promising lead,
 or ask the teammate to challenge your interpretation. Avoid repeating rejected
 finals without new facts. Share concise reasons and hypotheses, not hidden chain of thought.
-Return exactly ONE JSON object containing ONE action per response, with no additional
-objects or prose. If you want to discuss and then ask a question, choose only one
+Return exactly ONE plain text action using dialogue_control.response_contract. If you want to discuss and then ask a question, choose only one
 action now; wait for your next turn before returning another action.
 question goes directly to the host; final goes to the grader; discuss/pass go only
 to your teammate. next_speaker proposes who acts after this message/host feedback;
@@ -103,7 +102,7 @@ class FreeDialoguePlayer:
             allowed=['final'] if forced else ['question','final']
             if not forced and internal < self.settings['max_discussion']:
                 allowed+=['discuss','pass']
-            payload={**base,'active_speaker':actor,'role_assignment':self.settings['role_assignment'],
+            payload={**base,'action_protocol':'prefix-v1','active_speaker':actor,'role_assignment':self.settings['role_assignment'],
                      'shared_dialogue':self.transcript,'dialogue_control':{'allowed_actions':allowed,
                      'internal_messages_remaining':self.settings['max_discussion']-internal,
                      'scheduling':self.settings['scheduling'], 'mandatory_final':forced,

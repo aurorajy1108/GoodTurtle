@@ -20,7 +20,7 @@ class ResumeTests(unittest.TestCase):
             (root/'config.json').write_text(json.dumps({'max_questions':3,'session_mode':'replay','host':{'provider':'openai','model':'fixture'},'player':{'provider':'openai','model':'fixture'}}))
             (root/'groups.json').write_text(json.dumps({'groups':[{'id':'G','puzzles':['FIXTURE_A','FIXTURE_B'],'directed_pairs':[['FIXTURE_A','FIXTURE_B']],'relation':'positive'}]}))
             argv=['continual','--dataset',str(root/'data.json'),'--config',str(root/'config.json'),
-                  '--groups',str(root/'groups.json'),'--group','all','--repeat','1','--controls','answer_only',
+                  '--groups',str(root/'groups.json'),'--group','all','--memory','transcript','--repeat','1','--controls','answer_only',
                   '--on-error','stop','--quiet','--out',str(root/'out')]
             seen=[];fail=[True]
             def factory(profile,role,audit):

@@ -112,6 +112,39 @@ def restore_context(previous, wire):
     return apply(previous,value['context_update'])
 
 
+def restorable_chat_records(records):
+    """Omit only proven pre-send attempts completed by the identical next retry.
+
+    Original records and cost accounting remain untouched. A transport failure
+    that might have reached a model, a changed request, or an unfinished retry is
+    not an omitted message and cannot be silently discarded.
+    """
+    result=[]
+    fields=('role','provider','model_requested','endpoint','game_session_id',
+            'session_lane_id','session_turn','previous_response_id','request')
+    required=('role','provider','model_requested','endpoint','game_session_id',
+              'session_lane_id','session_turn','request','attempt')
+    for i,call in enumerate(records):
+        if call.get('status')=='ok':
+            result.append(call)
+            continue
+        if (call.get('status')!='transport_error' or call.get('provider')!='deepseek'
+                or call.get('safe_pre_send_retry') is not True
+                or call.get('transport_phase')!='open'
+                or call.get('transport_category') not in
+                    ('dns_resolution','tls_handshake_eof','tls_handshake_failure','network_unreachable_before_send')
+                or call.get('text') or call.get('response_id') or call.get('usage')
+                or any(k not in call for k in required) or not call.get('request')
+                or i+1>=len(records)):
+            raise ValueError('Saved transport failure is not a completed verified pre-send retry')
+        nxt=records[i+1]
+        if (any(call.get(k)!=nxt.get(k) for k in fields)
+                or type(call['attempt']) is not int or type(nxt.get('attempt')) is not int
+                or nxt['attempt']!=call['attempt']+1):
+            raise ValueError('Saved pre-send retry changed request or session position')
+    return result
+
+
 class GameSession:
     """Each system-prompt lane is isolated (proposal, selection, review, repair)."""
     def __init__(self, role, folder, event, session_id=None):
@@ -143,6 +176,8 @@ class GameSession:
         metadata = {'game_session_id': self.id, 'session_lane_id': lane['id'],
                     'session_turn': lane['turn'] + 1, 'previous_response_id': lane['response_id'],
                     'logical_input_chars': len(user), 'delta_input_chars': len(wire_user)}
+        if lane.get('inheritance') and lane['turn']==lane['inheritance']['turn']:
+            metadata['inherited_session']=copy.deepcopy(lane['inheritance'])
         return lane, payload, system + lane.get('session_instructions',SESSION_INSTRUCTIONS), wire_user, metadata
 
     def accept(self, lane, payload, wire_user, reply):
@@ -155,19 +190,25 @@ class GameSession:
                    turn=lane['turn'], response_id=reply.response_id)
 
     def restore_chat(self, records):
-        """DeepSeek no-tools chat has no hidden remote thread: restore its messages."""
+        """Validate exact no-tools messages, including a frozen cross-puzzle prefix."""
         if self.lanes or self.closed or self.failed:
             raise ValueError('Restore requires a fresh local session')
-        calls=[c for c in records if c.get('role')==self.role]
+        calls=restorable_chat_records([c for c in records if c.get('role')==self.role])
         if not calls:return
         ids={c.get('game_session_id') for c in calls}
         if len(ids)!=1 or None in ids:
             raise ValueError('Saved role has inconsistent session IDs')
         states={}
         for call in calls:
-            if call.get('provider')!='deepseek' or call.get('status')!='ok' or not call.get('text'):
-                raise ValueError('Only complete DeepSeek chat replies can be restored')
-            messages=call.get('request',{}).get('messages',[])
+            provider=call.get('provider');body=call.get('request',{})
+            if provider not in ('deepseek','openai','openai_chat','openai_compatible','anthropic') or call.get('status')!='ok' or not call.get('text'):
+                raise ValueError('Only complete supported API replies can be restored')
+            if provider=='openai':
+                if body.get('store') is not True:raise ValueError('Responses prefix requires stored response lineage')
+                messages=[{'role':'system','content':body.get('instructions','')}]+body.get('input',[])
+            elif provider=='anthropic':
+                messages=[{'role':'system','content':body.get('system','')}]+body.get('messages',[])
+            else:messages=body.get('messages',[])
             instruction=next((s for s in (SESSION_INSTRUCTIONS,V1_SESSION_INSTRUCTIONS,LEGACY_SESSION_INSTRUCTIONS)
                               if messages and messages[0].get('content','').endswith(s)),None)
             if (len(messages)<2 or messages[0].get('role')!='system' or messages[-1].get('role')!='user'
@@ -179,6 +220,28 @@ class GameSession:
             state=states.setdefault(key,{'previous':None,'messages':[],'turn':0,
                                          'response_id':'','id':call.get('session_lane_id'),
                                          'session_instructions':instruction})
+            seed=call.get('inherited_session')
+            if seed is not None:
+                if state['turn'] or set(seed)!={'turn','response_id','previous','messages','lane_id','system_sha256','messages_sha256'}:
+                    raise ValueError('Invalid or repeated inherited session checkpoint')
+                if (seed['system_sha256']!=key or seed['lane_id']!=state['id']
+                        or type(seed['turn']) is not int or seed['turn']<1
+                        or len(seed['messages'])!=2*seed['turn']
+                        or hashlib.sha256(json.dumps(seed['messages'],sort_keys=True).encode()).hexdigest()!=seed['messages_sha256']):
+                    raise ValueError('Inherited session checkpoint mismatch')
+                previous=None
+                for i in range(0,len(seed['messages']),2):
+                    user,assistant=seed['messages'][i:i+2]
+                    if user.get('role')!='user' or assistant.get('role')!='assistant':
+                        raise ValueError('Inherited prefix roles are not chronological')
+                    previous=restore_context(previous,user['content'])
+                if previous!=seed['previous']:raise ValueError('Inherited prefix context differs from raw messages')
+                state.update(turn=seed['turn'],response_id=seed['response_id'],previous=previous,
+                             messages=copy.deepcopy(seed['messages']))
+            if provider=='openai':
+                if body.get('previous_response_id','')!=state['response_id'] or len(messages)!=2:
+                    raise ValueError('Responses previous_response_id lineage mismatch')
+                messages=messages[:1]+state['messages']+messages[1:]
             if (not state['id'] or call.get('session_lane_id')!=state['id']
                     or state['session_instructions']!=instruction
                     or call.get('session_turn')!=state['turn']+1
@@ -195,7 +258,15 @@ class GameSession:
             self.lanes[key]=state
         self.event('session_restored',role=self.role,session_id=self.id,
                    lanes=[{'id':s['id'],'turns':s['turn']} for s in states.values()],
-                   method='exact_saved_deepseek_chat_messages')
+                   method='exact_saved_role_messages')
+
+    def freeze_prefix(self):
+        if len(self.lanes)!=1:raise ValueError('Cross-puzzle continuation requires exactly one Player lane')
+        key,lane=next(iter(self.lanes.items()))
+        return {'turn':lane['turn'],'response_id':lane['response_id'],
+                'previous':copy.deepcopy(lane['previous']),'messages':copy.deepcopy(lane['messages']),
+                'lane_id':lane['id'],'system_sha256':key,
+                'messages_sha256':hashlib.sha256(json.dumps(lane['messages'],sort_keys=True).encode()).hexdigest()}
 
     def close(self):
         if self.closed:

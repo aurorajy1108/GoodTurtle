@@ -13,20 +13,42 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
 from turtle_loop.engine import (dump, saved_player_note_recovery, saved_grader_reason_recovery,
-                                saved_player_json_recovery, saved_host_transport_recovery)
+                                saved_player_json_recovery, saved_host_transport_recovery,
+                                saved_player_auto_recovery)
 from turtle_loop.host_context import RUNTIME_VERSION
 from scripts.study_20261102 import collect_costs
 
 
+def collect_resume_costs(out, batch, gate_reused=False):
+    collect_costs(out,[{'name':batch}])
+    if gate_reused:
+        from turtle_loop.costs import merge_summaries
+        cl_cost=json.loads((out/'cost_summary.json').read_text())
+        dump(out/'cl_cost_summary.json',cl_cost)
+        gate_cost=json.loads((out/'host_gate_archive/cost_summary.json').read_text())
+        dump(out/'cost_summary.json',merge_summaries([gate_cost,cl_cost]))
+
+
 def prepare(source, out, repair_player_note=False, repair_grader_reason=False, repair_player_json=False,
-            recover_host_transport=False):
+            recover_host_transport=False, auto_player_format=False):
     source,out=Path(source).resolve(),Path(out).resolve()
-    if sum((repair_player_note,repair_grader_reason,repair_player_json,recover_host_transport))>1:
+    wrapper=None
+    if (source/'run_manifest.json').exists() and (source/'study/study_plan.json').exists():
+        wrapper=source
+        wrapper_status=json.loads((wrapper/'status.json').read_text())
+        gate=json.loads((wrapper/'host_gate/summary.json').read_text())
+        if (wrapper_status.get('phase')!='continual' or not wrapper_status.get('host_gate_passed')
+                or gate.get('dry_run') or type(gate.get('planned_calls')) is not int or gate['planned_calls']<1
+                or gate.get('passed')!=gate.get('planned_calls')
+                or gate.get('completed_calls')!=gate.get('planned_calls') or gate.get('errors')):
+            raise ValueError('Verified wrapper must have a passed, complete Host gate and a stopped CL phase')
+        source=wrapper/'study'
+    if sum((repair_player_note,repair_grader_reason,repair_player_json,recover_host_transport,auto_player_format))>1:
         raise ValueError('Select one saved-response recovery mode at a time')
-    repair_any=repair_player_note or repair_grader_reason or repair_player_json or recover_host_transport
-    if out.exists() or source in out.parents:
+    repair_any=repair_player_note or repair_grader_reason or repair_player_json or recover_host_transport or auto_player_format
+    if out.exists() or source in out.parents or (wrapper and wrapper in out.parents):
         raise ValueError('Use a new output directory outside the original study')
-    status=json.loads((source/'status.json').read_text())
+    status=wrapper_status if wrapper else json.loads((source/'status.json').read_text())
     if status['status'] not in ('stopped_on_error','interrupted','error'):
         raise ValueError('Source study must be stopped')
     plan=json.loads((source/'study_plan.json').read_text())
@@ -65,7 +87,8 @@ def prepare(source, out, repair_player_note=False, repair_grader_reason=False, r
         if args[0].get('evaluation_versions',{}).get('runtime_context_version') != RUNTIME_VERSION:
             raise ValueError('Recovery overlay would change the frozen runtime context protocol. '
                              'Use the archived compatible recovery code for this old study; new experiments use a fresh batch.')
-        recovery=(saved_host_transport_recovery(*args) if recover_host_transport else
+        recovery=(saved_player_auto_recovery(*args) if auto_player_format else
+                  saved_host_transport_recovery(*args) if recover_host_transport else
                   saved_player_note_recovery(*args) if repair_player_note else
                   saved_player_json_recovery(*args) if repair_player_json else
                   saved_grader_reason_recovery(*args,json.loads((game/'puzzle_private.json').read_text())))
@@ -73,16 +96,21 @@ def prepare(source, out, repair_player_note=False, repair_grader_reason=False, r
             raise ValueError('No supported saved DeepSeek recovery matches this archive')
         recovery_details={'run_dir':stopped[0]['run_dir'],'preserved_submissions':len(turns),
                           'source_response_id':recovery.get('response_id'),
-                          'kind':'host_transport' if recover_host_transport else 'player_note' if repair_player_note else 'question_quote' if repair_player_json else 'grader_reason'}
+                          'kind':'auto_player_format' if auto_player_format else 'host_transport' if recover_host_transport else 'player_note' if repair_player_note else 'question_quote' if repair_player_json else 'grader_reason'}
+        if 'verified_pre_send_attempts' in recovery:
+            recovery_details['verified_pre_send_attempts']=recovery['verified_pre_send_attempts']
         if recover_host_transport:
             recovery_details.update(recovery)
-        elif repair_player_note or repair_player_json:
+        elif repair_player_note or repair_player_json or auto_player_format:
             recovery_details.update(pending_submission=len(turns)+1,action=recovery['action'])
             if repair_player_note:recovery_details['removed_fields']=['text_note']
             else:recovery_details['format_recovery']=recovery['format_recovery']
         else:
             recovery_details.update(recovered_submission=turns[-1]['index'],grade=recovery['grade'],removed_fields=recovery['removed_fields'])
     shutil.copytree(source,out,ignore=shutil.ignore_patterns('__pycache__','*.pyc'))
+    if wrapper:
+        shutil.copytree(wrapper/'host_gate',out/'host_gate_archive',ignore=shutil.ignore_patterns('__pycache__','*.pyc'))
+        shutil.copy2(wrapper/'run_manifest.json',out/'original_verified_run_manifest.json')
     if recover_host_transport:
         dump(out/plan['jobs'][0]['name']/recovery_details['run_dir']/'host_transport_recovery.json', recovery)
     snap=out/'runtime_snapshot'
@@ -95,8 +123,16 @@ def prepare(source, out, repair_player_note=False, repair_grader_reason=False, r
             shutil.copy2(ROOT/'turtle_loop'/name,dest)
             changes['turtle_loop/'+name]={'before_sha256':before,
                 'after_sha256':hashlib.sha256(dest.read_bytes()).hexdigest(),
-                'reason':('Exact DeepSeek message restoration and one explicit unanswered Host request replay'
+                'reason':('Automatic format recovery; solver actions are not regenerated; auxiliary formatter calls separately audited'
+                          if auto_player_format else 'Exact DeepSeek message restoration and one explicit unanswered Host request replay'
                           if recover_host_transport else 'Explicit saved-response repair and exact DeepSeek chat recovery; no model resampling')}
+        if auto_player_format:
+            for name in ('turtle_loop/player_format.py','configs/player_format_repair.json'):
+                dest=snap/name
+                before=hashlib.sha256(dest.read_bytes()).hexdigest() if dest.exists() else None
+                shutil.copy2(ROOT/name,dest)
+                changes[name]={'before_sha256':before,'after_sha256':hashlib.sha256(dest.read_bytes()).hexdigest(),
+                               'reason':'Explicit opt-in to bounded automatic player format recovery; puzzle models/prompts/rubrics unchanged'}
     job=plan['jobs'][0]
     argv=[v.replace(str(source),str(out)) for v in job['argv']]
     if '--resume' not in argv: argv.append('--resume')
@@ -111,10 +147,23 @@ def prepare(source, out, repair_player_note=False, repair_grader_reason=False, r
             'preserved_completed_runs':preserved_completed,
             'transport_changes':(['Explicit replay of one unanswered DeepSeek host request; possible duplicate remote charge recorded']
                                  if recover_host_transport else
-                                 ['DeepSeek typed player/partner actions use JSON object mode; free-text reviews/summaries unchanged'] if repair_any else []),
+                                 ['Saved-response parser recovery; verified pre-send retries do not become assistant messages; all original attempts remain in accounting'] if repair_any else []),
             'policy':'Original files retained; copied histories, quotas, costs and completed A preserved. Models, prompts, packs, scoring criteria and order unchanged. Explicit saved-response recovery overlays only the recorded controller modules; action JSON transport changes are recorded.'}
+    if wrapper:
+        record.update(verified_wrapper=str(wrapper),host_gate_reused=True,
+                      host_gate_archive='host_gate_archive',
+                      gate_cost_policy='Preserved gate is not rerun; combined cost summary includes its calls exactly once.')
+    elif (out/'host_gate_archive/summary.json').exists():
+        record.update(host_gate_reused=True,host_gate_archive='host_gate_archive',
+                      gate_cost_policy='Inherited archived gate included exactly once; no gate calls repeated.')
+    if auto_player_format:
+        record.update(format_repair_policy=json.loads((snap/'configs/player_format_repair.json').read_text()),
+                      experiment_model_profiles_unchanged=True,
+                      auxiliary_formatter='Codex format-only; no hidden puzzle context; exact source-value guard')
     dump(out/'resume_manifest.json',record)
     dump(out/'status.json',{'status':'prepared_resume','resumed_from':str(source),'completed':[],'active':None})
+    if record.get('host_gate_reused'):
+        collect_resume_costs(out,job['name'],True)
     return record
 
 
@@ -125,11 +174,12 @@ def main(argv=None):
     p.add_argument('--mode',choices=['plan','run'],default='plan')
     p.add_argument('--repair-player-note',action='store_true',help='Recover one complete saved DeepSeek solo action rejected solely for string text_note; preserve local chat messages and quota')
     p.add_argument('--repair-grader-reason',action='store_true',help='Recover the complete saved DeepSeek grade rejected solely for coverage reason metadata; no new grader call')
-    p.add_argument('--repair-player-json',action='store_true',help='Recover a saved complete question with one missing text quote or one unescaped inner quote pair; no model call')
+    p.add_argument('--repair-player-json',action='store_true',help='Recover a saved complete question with a missing/incorrectly escaped closing quote or one unescaped inner quote pair; no model call')
     p.add_argument('--recover-host-transport',action='store_true',help='Explicitly restore saved DeepSeek solo sessions and replay one unanswered host request. Failed remote attempt may already have been billed; all observed replies and counts are preserved.')
+    p.add_argument('--auto-player-format',action='store_true',help='Restore saved Player output, enable fixed-position extraction and bounded verbatim Codex formatting; no puzzle action resampling')
     args=p.parse_args(argv)
     record=prepare(args.from_study,args.out,args.repair_player_note,args.repair_grader_reason,args.repair_player_json,
-                   args.recover_host_transport)
+                   args.recover_host_transport,args.auto_player_format)
     out=Path(record['out']);batch=record['batch']
     print(json.dumps(record,ensure_ascii=False),flush=True)
     if args.mode=='plan':return 0
@@ -146,7 +196,7 @@ def main(argv=None):
             try:child.wait(timeout=15)
             except subprocess.TimeoutExpired:child.terminate();child.wait()
             code=130
-    collect_costs(out,[{'name':batch}])
+    collect_resume_costs(out,batch,record.get('host_gate_reused',False))
     state.update(status='completed' if code==0 else 'interrupted' if code==130 else 'stopped_on_error',
                  active=None,completed=[{'batch':batch,'exit_code':code}])
     dump(out/'status.json',state)

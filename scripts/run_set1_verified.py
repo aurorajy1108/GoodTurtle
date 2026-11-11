@@ -47,7 +47,7 @@ def prepare(out, config, dataset, seed):
         'planned_host_checks':len(json.loads((snap/'configs/host_regression.json').read_text())),
         'host_versions':plan['host_versions'],'source_puzzles':['TS015','TS014','TS028'],
         'target':'TS013','repeat':1,'source_policy':'fixed',
-        'conditions':['direct','transcript','answer_only'],
+        'conditions':['direct','session','answer_only'],'transfer_protocol':'raw-role-session-v1',
         'source_answer_revealed':True,'fresh_budget_per_game':100,
         'host_gate_interpretation':'Source-grounded development diagnostics, not held-out host accuracy.',
         'old_trajectories_reused':False,'snapshot_hashes':hashes}

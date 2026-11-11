@@ -104,15 +104,15 @@ class DeepSeekTests(unittest.TestCase):
                             # Neither earlier private scores nor story facts enter either solver session.
                             self.assertNotIn('SECRET_',json.dumps(body))
                             self.assertNotIn('completion_note',json.dumps(body))
-                            self.assertEqual(body['response_format'],{'type':'json_object'})
+                            self.assertNotIn('response_format',body)
                             if team:
                                 if role=='player':
                                     kind,text,next_actor=('discuss','Check the identity','B') if i==1 else ('final','Explanation','B')
                                 else:
                                     kind,text,next_actor='question','Is identity relevant?','A'
-                                text=json.dumps(dict(type=kind,text=text,next_speaker=next_actor))
+                                text=kind.upper()+' NEXT='+next_actor+'\n'+text
                             else:
-                                text=json.dumps(dict(type='question' if i%2 else 'final',text='Attempt'))
+                                text=('QUESTION' if i%2 else 'FINAL')+'\nAttempt'
                         return Response(dict(id=f'{role}-{i}',model=body['model'],
                             choices=[dict(message={'content':text,'reasoning_content':'PRIVATE_REASONING_SENTINEL'},finish_reason='stop')],
                             usage=dict(prompt_tokens=100,completion_tokens=25,prompt_cache_hit_tokens=20,

@@ -1,5 +1,7 @@
 # Set 1 修复后重跑（2026-11-10）
 
+当前断点更新：A14已完成，B13完成60问后，第61次输出出现推理与多个动作。现在可使用[自动格式修复与续跑入口](automatic_continuation.md)，复用已有进度；下面的start入口用于从头建立新的独立批次。
+
 在已经export `DEEPSEEK_API_KEY`的终端执行：
 
 ```bash
@@ -64,3 +66,30 @@ python3 scripts/run_set1_verified.py --mode run \
 本入口固定Set1、A白名单、固定前题、repeat=1、primary方向和`on-error=stop`，避免误跑多余组合。要改实验范围应使用`study_20261102.py`并单独报告。
 
 `check_host.py`保留原参数：`--dataset`、`--config`、`--cases`、`--out`均必填；`--repeat`默认1；`--dry-run`仅验证/落盘不调用模型。它现在遵循config的session_mode，并记录诊断调用成本。未通过诊断时可先审核`host_gate/results.jsonl`对应题目，修改后用新目录重跑，避免把旧标签悄悄改成通过。
+
+## 已完成78问后的JSON格式错误：续跑入口
+
+本批20题Host诊断全部通过。A14的第79次Player响应完整返回（finish_reason=stop），但结尾误写成`?\"}`，应为`?"}`。现已加入限定修复：仅对完整的两字段question对象、问号后的一条多余反斜杠做处理；不改问题文字，不修补截断响应或final，不请求模型改写。未来相同格式错误也会离线处理并记录。
+
+历史中有两次已在发送前失败、随后成功接续的TLS尝试。恢复器现在逐一验证它们与紧接的重试有相同请求、模型、端点、角色、lane、session turn及previous response ID，并检查attempt递增、最后有完整成功响应。这些失败不是assistant消息，恢复时不推进会话，但原始审计与费用记录仍保留。未证明是pre-send的失败、变更的重试或没有成功接续的失败仍拒绝静默恢复。
+
+在已export key的终端执行：
+
+```bash
+bash /Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/scripts/resume_set1_saved79.sh
+```
+
+唯一位置参数可指定一个不存在的新输出目录；默认`runs/api/20261111_deepseek_set1_v11_json_resume01`。不要重新运行start脚本另开新批，也不要改原始轨迹。该脚本保留20题诊断，不重解A14的78次问答，先向Host发送已经生成的79问，取得反馈后再生成下一次Player动作。100次额度、模型/思考设置、提示词、参考包、评分与剩余调度均沿用原冻结设置。只覆盖明确记录的恢复控制器代码，原目录不修改。
+
+Python等价命令：
+
+```bash
+python3 scripts/resume_study.py \
+  --from-study runs/api/20261110_deepseek_set1_v11_once \
+  --out runs/api/20261111_deepseek_set1_v11_json_resume01 \
+  --repair-player-json --mode run
+```
+
+`--from-study`现在也支持带`run_manifest.json`的verified根目录；必须验证原Host gate确实通过且停止在CL阶段。`--repair-player-json`显式启用已保存完整问题的限定格式修复；`--mode plan`只复制和离线检查，`run`才发出新调用；`--out`必须为新目录。其他repair参数不可同时使用。
+
+续跑目录结构为简单study，不再套一层`study/`：`status.json`和`continual_resume.log`看进度，`continual/<run>/trajectory.html`看轨迹，`host_gate_archive/`保存原诊断，`resume_manifest.json`记录修复字符、原response ID和两次已验证pre-send尝试。`cost_summary.json`合计诊断和CL各一次，`cl_cost_summary.json`仅CL；历史费用不清零。阶段内仍以每局result/API日志为最新状态。

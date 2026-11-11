@@ -58,6 +58,8 @@ def output_contract(user):
         payload={}
     if not isinstance(payload,dict):
         payload={}
+    if payload.get('action_protocol') == 'prefix-v1':
+        return None, None, ''
     if 'dialogue_control' in payload:
         from .dialogue_contract import dialogue_schema
         control = payload['dialogue_control']
@@ -114,8 +116,10 @@ def complete(profile,role,audit,system,user,attempt=1,session=None,schema_user=N
         folder=Path(directory)
         (folder/'system.txt').write_text(wire_system)
         (folder/'schema.json').write_text(json.dumps(schema))
-        args=command(profile,folder)[:-1]+['--output-schema',str(folder/'schema.json'),
-                                         '--output-last-message',str(folder/'last.txt'),'-']
+        args=command(profile,folder)[:-1]
+        if schema is not None:
+            args+=['--output-schema',str(folder/'schema.json')]
+        args+=['--output-last-message',str(folder/'last.txt'),'-']
         if session is not None:
             args.remove('--ephemeral')
             if session['response_id']:
@@ -163,8 +167,11 @@ def complete(profile,role,audit,system,user,attempt=1,session=None,schema_user=N
     text=raw
     valid=True
     try:
-        parsed=json.loads(raw)
-        if unwrap:
+        parsed=json.loads(raw) if schema is not None else None
+        if schema is None:
+            from .action_text import parse_prefix_action
+            parse_prefix_action(raw)
+        elif unwrap:
             if not isinstance(parsed,dict) or set(parsed)!={unwrap} or not isinstance(parsed[unwrap],str):
                 valid=False
             else:

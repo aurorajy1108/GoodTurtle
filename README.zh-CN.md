@@ -2,6 +2,8 @@
 
 # GoodTurtle — COMP1110
 
+**格式错误自动续跑：** 当前Set1可用`bash scripts/start_set1_auto_continue.sh`接续。先按固定规则恢复已有动作，必要时调用隔离Codex格式器并验证原文一致；保留完成局、额度和成本，限制重试次数。[机制、参数和日志位置](docs/automatic_continuation.md)。
+
 **11月10日Set1修复后重跑：** 在已export `DEEPSEEK_API_KEY`的终端执行`bash scripts/start_set1_verified.sh`。先冻结输入并跑20题Host诊断，全部通过才启动12局全新CL；本入口不跑MAS、不追加重复。已修复Host因果边界，并将持续会话中的参考内容按ID缓存。见[全部设置、参数和结果位置](docs/set1_v11_rerun.md)。
 
 **全接口DeepSeek：** 设置 `DEEPSEEK_API_KEY` 并选择 `--config configs/loop.deepseek.json`，Host/grader使用 `deepseek-v4-pro / high`，player/默认MAS partner使用 `deepseek-flash / thinking disabled`，辅助请求使用对应角色配置。CL/MAS入口均支持，见[完整运行说明](docs/deepseek.md)。
@@ -87,3 +89,5 @@ python3 -m unittest discover -s tests -q
 2026-10-28 整理只移动目录、更新绑定与入口；50题内容、评分、Host实际上下文及历史run不变。原有超长README完整保存在 [历史副本](docs/archive/README_before_cleanup_20261028.md)，完整参数另整理到当前指南。
 
 旧审核/Excel中的路径保留为当时的来源记录，可用 `python3 scripts/host_reference.py locate OLD_PATH` 找新位置；映射见 [repository_layout.json](configs/repository_layout.json)。已有运行继续使用自己的冻结快照，不套用新目录重新解释旧结果。
+
+Player 输出协议：新实验使用固定前缀，单 agent 与 MAS 的格式、兼容性和计数规则见 [player_action_protocol.md](docs/player_action_protocol.md)。Host/Grader 格式保持不变。

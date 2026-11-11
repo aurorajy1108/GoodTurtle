@@ -37,7 +37,7 @@ class Set1VerifiedTests(unittest.TestCase):
             self.assertEqual(manifest['source_puzzles'],['TS015','TS014','TS028'])
             plan=json.loads((out/'study/study_plan.json').read_text())
             self.assertTrue(all(b['target']=='TS013' for b in plan['blocks']['continual']))
-            self.assertTrue(all(set(b['conditions'])=={'direct','transcript','answer_only'}
+            self.assertTrue(all(set(b['conditions'])=={'direct','session','answer_only'}
                                 for b in plan['blocks']['continual']))
             self.assertEqual(plan['config']['player']['extra_body']['thinking']['type'],'disabled')
 

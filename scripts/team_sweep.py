@@ -31,6 +31,8 @@ def snapshot(out, dataset, config, puzzles, partner=None):
     shutil.copy2(ROOT / 'scripts/experiment.py', snap / 'scripts/experiment.py')
     shutil.copy2(ROOT / 'scripts/audit_sweep.py', snap / 'scripts/audit_sweep.py')
     (snap / 'configs').mkdir()
+    policy=ROOT/'configs/player_format_repair.json'
+    if policy.exists():shutil.copy2(policy,snap/'configs/player_format_repair.json')
     dump(snap / 'configs/run.json', config)
     if partner is not None:
         dump(snap / 'configs/partner.json', partner)

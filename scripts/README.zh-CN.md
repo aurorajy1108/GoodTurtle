@@ -4,6 +4,7 @@
 
 | 用途 | 入口 |
 | --- | --- |
+| Player格式自动修复、有限续跑监督 | `auto_continue.py`；当前Set1用`start_set1_auto_continue.sh`，见[说明](../docs/automatic_continuation.md) |
 | 上传人工参考、检查inbox、找旧路径 | `host_reference.py init / validate / locate` |
 | 已保存ChatGPT分享HTML→可见消息JSON | `import_chatgpt_share.py` |
 | 单局/多题对局 | `play.py` |

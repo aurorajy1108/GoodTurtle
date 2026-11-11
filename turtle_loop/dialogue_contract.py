@@ -11,10 +11,11 @@ def dialogue_schema(allowed, forced=False):
 
 
 def dialogue_contract_text(allowed, forced=False):
-    import json
-    return ('Return exactly one JSON object and no other text. Follow this schema: '
-            + json.dumps(dialogue_schema(allowed, forced), ensure_ascii=False)
-            + '. The text must be nonempty.')
+    return ('Return exactly one plain text action. First line: ACTION NEXT=A or '
+            'ACTION NEXT=B, where ACTION is one of ' + ', '.join(x.upper() for x in allowed)
+            + '. Then a newline and nonempty body. No JSON, fences, or extra action blocks. '
+            + ('NEXT is optional on the mandatory final.' if forced else 'NEXT is required.'))
+
 
 
 def valid_dialogue_action(action, allowed, forced=False):

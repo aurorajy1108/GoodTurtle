@@ -2,6 +2,8 @@
 
 English | [中文](README.zh-CN.md)
 
+**Automatic format recovery:** `bash scripts/start_set1_auto_continue.sh` continues the stopped Set 1 rollout with fixed-position extraction, bounded verbatim Codex formatting, preserved game quotas, and cumulative cost accounting. See [policy, limits and parameters](docs/automatic_continuation.md).
+
 **November 10 Set 1 rerun:** [verified launcher and settings](docs/set1_v11_rerun.md). Run `bash scripts/start_set1_verified.sh` in the terminal with `DEEPSEEK_API_KEY`: freeze inputs, run 20 Host diagnostics, then start 12 fresh CL games only if every check passes. Host causal boundaries were repaired; persistent reference bodies are cached once per role session. No MAS or extra repeats in this launcher.
 
 **All-DeepSeek option:** select `--config configs/loop.deepseek.json` and set `DEEPSEEK_API_KEY`. Host/grader use `deepseek-v4-pro / high`; player/default MAS partner use `deepseek-flash / thinking disabled`. Auxiliary calls use the corresponding role profile. CL and MAS study launchers support this configuration. See [setup and commands](docs/deepseek.md).
@@ -92,3 +94,5 @@ Each game allows at most 100 submissions, reserving the last for a forced final.
 The 2026-10-28 reorganization moved paths and updated bindings and navigation without changing the 50 puzzles, scoring, actual host contexts or historical runs. The previous README is preserved in the [historical snapshot](docs/archive/README_before_cleanup_20261028.md).
 
 Use `python3 scripts/host_reference.py locate OLD_PATH` to locate paths recorded in older reviews or Excel files; mappings are in [repository_layout.json](configs/repository_layout.json). Existing runs retain their frozen snapshots.
+
+Player 输出协议：新实验使用固定前缀，单 agent 与 MAS 的格式、兼容性和计数规则见 [player_action_protocol.md](docs/player_action_protocol.md)。Host/Grader 格式保持不变。

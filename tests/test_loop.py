@@ -85,7 +85,7 @@ class GameTests(unittest.TestCase):
             self.assertNotIn('SECRET_', system+user)
             self.assertNotIn('partial_score', user)
             self.assertNotIn('credit', user)
-            self.assertEqual(set(json.loads(user)), {'opening', 'visible_history', 'turn_control'})
+            self.assertEqual(set(json.loads(user)), {'opening', 'visible_history', 'turn_control', 'action_protocol'})
         self.assertEqual(result['counted_questions'], 1)
         self.assertTrue(result['success'])
 
