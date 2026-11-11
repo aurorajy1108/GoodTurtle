@@ -145,6 +145,46 @@ def restorable_chat_records(records):
     return result
 
 
+def completed_host_replay_records(records, events):
+    """Omit a failed Host attempt from chat only after its audited replay succeeds.
+
+    Raw records remain unchanged for cost accounting. An authorization event must
+    fingerprint the entire original prefix, and the successful replay must carry
+    the identical request and session position. Unapproved failures stay visible
+    to the existing strict restoration checks.
+    """
+    skipped = set()
+    fields = ('role', 'provider', 'model_requested', 'endpoint', 'game_session_id',
+              'session_lane_id', 'session_turn', 'previous_response_id', 'request')
+    for event in events:
+        if event.get('event') != 'host_transport_recovery':
+            continue
+        matches = [i for i, call in enumerate(records)
+                   if hashlib.sha256(json.dumps(call, sort_keys=True).encode()).hexdigest()
+                   == event.get('failed_call_sha256')]
+        if len(matches) != 1:
+            raise ValueError('Saved Host replay authorization has no unique failed call')
+        index = matches[0]
+        failed = records[index]
+        if (hashlib.sha256(json.dumps(records[:index+1], sort_keys=True).encode()).hexdigest()
+                != event.get('calls_sha256')
+                or failed.get('role') != 'host' or failed.get('provider') != 'deepseek'
+                or failed.get('status') != 'transport_error' or not failed.get('request')
+                or failed.get('text') or failed.get('response_id') or failed.get('usage')):
+            raise ValueError('Saved Host replay authorization differs from its archive')
+        end = index + 1
+        while end < len(records) and records[end].get('status') != 'ok':
+            end += 1
+        if end >= len(records):
+            continue  # Pending replay: the dedicated recovery path still owns it.
+        replay = records[index+1:end+1]
+        if (any(any(call.get(k) != failed.get(k) for k in fields) for call in replay)
+                or not replay[-1].get('text') or len(restorable_chat_records(replay)) != 1):
+            raise ValueError('Saved Host replay changed its request or session position')
+        skipped.add(index)
+    return [call for i, call in enumerate(records) if i not in skipped]
+
+
 class GameSession:
     """Each system-prompt lane is isolated (proposal, selection, review, repair)."""
     def __init__(self, role, folder, event, session_id=None):

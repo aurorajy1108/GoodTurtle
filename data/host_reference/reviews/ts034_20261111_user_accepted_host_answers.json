@@ -1,0 +1,1486 @@
+{
+  "puzzle_id": "TS034",
+  "version": "host-v13-ts034-user-accepted-20261111",
+  "previous_version": "host-v12-ts034-fear-boundary-20261109",
+  "review_date": "2026-11-11",
+  "decision": "User explicitly chose to retain all six original Host labels previously flagged for discussion. Confirmation applies to these examples, not the complete grading rubric.",
+  "source_file": "runs/api/20261111_175203_set2_TS034_resume40/web/run/TS034_r01/trajectory.jsonl",
+  "source_sha256": "63fd23fa8e0e6701683c38433a215f6865b12bd57c60cbad83168c27c34f3704",
+  "source_answer_origin": "model_host",
+  "cases": [
+    {
+      "case_id": "USER_20261111_TS034_Q001",
+      "submission": 1,
+      "question": "Is the daughter the person making the ransom call's threat, or is she pleading for the hostage's life?",
+      "original_host_answer": "yes",
+      "decision": "retain_original",
+      "confirmed_by_user": true,
+      "source_answer_origin": "model_host",
+      "original_public_history": [],
+      "runtime_public_history": []
+    },
+    {
+      "case_id": "USER_20261111_TS034_Q003",
+      "submission": 3,
+      "question": "Does the father believe that paying the ransom would not save the hostage?",
+      "original_host_answer": "yes",
+      "decision": "retain_original",
+      "confirmed_by_user": true,
+      "source_answer_origin": "model_host",
+      "original_public_history": [
+        {
+          "type": "question",
+          "text": "Is the daughter the person making the ransom call's threat, or is she pleading for the hostage's life?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's decision based on the belief that the ransom demand is a scam or not genuine?",
+          "feedback": "no"
+        }
+      ],
+      "runtime_public_history": [
+        {
+          "type": "question",
+          "text": "Is the daughter the person making the ransom call's threat, or is she pleading for the hostage's life?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's decision based on the belief that the ransom demand is a scam or not genuine?",
+          "feedback": "no"
+        }
+      ]
+    },
+    {
+      "case_id": "USER_20261111_TS034_Q042",
+      "submission": 42,
+      "question": "Does the father believe that if the ransom is paid, the kidnapper will kill the hostage anyway?",
+      "original_host_answer": "yes",
+      "decision": "retain_original",
+      "confirmed_by_user": true,
+      "source_answer_origin": "model_host",
+      "original_public_history": [
+        {
+          "type": "question",
+          "text": "Is the daughter the person making the ransom call's threat, or is she pleading for the hostage's life?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's decision based on the belief that the ransom demand is a scam or not genuine?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father believe that paying the ransom would not save the hostage?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the \"hostage\" someone the father knows personally?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Does the kidnapper's demand involve the daughter bringing the money (rather than the father)?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the daughter herself the hostage being threatened?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage a different family member of the father and daughter, such as the mother?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage someone the father knows through business or professional dealings?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage a person who is already dead?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage an animal?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the daughter the one the father is actually trying to protect by refusing to pay?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the daughter physically present with the kidnapper (rather than calling from safety)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the daughter actually in danger at the moment she is calling?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the daughter being coerced or threatened by the kidnapper into making the call (even though she is not the hostage)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the daughter a willing accomplice to the kidnapper?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the \"kidnapper\" someone known to the father or daughter?",
+          "feedback": "irrelevant"
+        },
+        {
+          "type": "question",
+          "text": "Is the daughter safe and free at the time of the call, calling voluntarily out of concern for the hostage?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Does the father refuse to pay because he believes the daughter would be harmed if she personally delivers the money?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage someone whose death would benefit the kidnapper in a way the father recognizes—such that paying would only guarantee harm?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage the father's other child (a sibling of the daughter)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage a stranger to the father—someone he has never met?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage a public figure or celebrity?",
+          "feedback": "irrelevant"
+        },
+        {
+          "type": "question",
+          "text": "Does the demand that the daughter come alone reveal that the kidnapper's real target is the daughter?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's refusal based on the fact that he cannot actually raise one hundred million yen?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father believe the daughter is being used as bait to lure him (the father) into danger?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the \"hostage\" the father himself?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage the father himself?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the father already being held captive by the kidnapper at the time of the call?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Does the father know that the hostage (himself) is already dead or beyond saving?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's refusal a way to prevent the daughter from walking into the kidnapper's trap with the money?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the father speaking to the daughter while he is the captive, knowing that if she comes with the money she too will be captured?",
+          "feedback": "yes and no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father have direct knowledge of the kidnapper's plan to seize whoever delivers the money?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Did the father himself arrange or stage the kidnapping (it is a hoax/self-kidnapping)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father able to speak/hear the call freely, i.e., is he not under direct surveillance or restraint at the moment?",
+          "feedback": "irrelevant"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's refusal intended as a signal or coded message to the daughter?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father refuse because a police investigation or his being found would be triggered if the ransom were paid?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the amount one hundred million yen significant—does it represent the father's entire savings or a specific asset?",
+          "feedback": "irrelevant"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's refusal rooted in his belief that the daughter herself is the one the kidnapper truly wants, so her delivering money would put her in the kidnapper's hands?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father know the \"kidnapper\" is not actually a criminal—for instance, that the call is a prank, a misunderstanding, or a role-play?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father refuse to pay because he is a police officer or investigator who cannot allow a ransom payment to proceed?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's refusal motivated by a moral or principled stance against paying ransoms (e.g., it funds crime)?",
+          "feedback": "no"
+        }
+      ],
+      "runtime_public_history": [
+        {
+          "type": "question",
+          "text": "Does the father refuse to pay because he is a police officer or investigator who cannot allow a ransom payment to proceed?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's refusal motivated by a moral or principled stance against paying ransoms (e.g., it funds crime)?",
+          "feedback": "no"
+        }
+      ]
+    },
+    {
+      "case_id": "USER_20261111_TS034_Q060",
+      "submission": 60,
+      "question": "Is the reason my final was partly wrong that, in addition to wanting to protect the daughter, the father also believes that paying the ransom will not save him (so the payment is futile as well as dangerous)?",
+      "original_host_answer": "yes",
+      "decision": "retain_original",
+      "confirmed_by_user": true,
+      "source_answer_origin": "model_host",
+      "original_public_history": [
+        {
+          "type": "question",
+          "text": "Is the daughter the person making the ransom call's threat, or is she pleading for the hostage's life?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's decision based on the belief that the ransom demand is a scam or not genuine?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father believe that paying the ransom would not save the hostage?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the \"hostage\" someone the father knows personally?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Does the kidnapper's demand involve the daughter bringing the money (rather than the father)?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the daughter herself the hostage being threatened?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage a different family member of the father and daughter, such as the mother?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage someone the father knows through business or professional dealings?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage a person who is already dead?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage an animal?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the daughter the one the father is actually trying to protect by refusing to pay?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the daughter physically present with the kidnapper (rather than calling from safety)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the daughter actually in danger at the moment she is calling?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the daughter being coerced or threatened by the kidnapper into making the call (even though she is not the hostage)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the daughter a willing accomplice to the kidnapper?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the \"kidnapper\" someone known to the father or daughter?",
+          "feedback": "irrelevant"
+        },
+        {
+          "type": "question",
+          "text": "Is the daughter safe and free at the time of the call, calling voluntarily out of concern for the hostage?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Does the father refuse to pay because he believes the daughter would be harmed if she personally delivers the money?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage someone whose death would benefit the kidnapper in a way the father recognizes—such that paying would only guarantee harm?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage the father's other child (a sibling of the daughter)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage a stranger to the father—someone he has never met?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage a public figure or celebrity?",
+          "feedback": "irrelevant"
+        },
+        {
+          "type": "question",
+          "text": "Does the demand that the daughter come alone reveal that the kidnapper's real target is the daughter?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's refusal based on the fact that he cannot actually raise one hundred million yen?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father believe the daughter is being used as bait to lure him (the father) into danger?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the \"hostage\" the father himself?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage the father himself?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the father already being held captive by the kidnapper at the time of the call?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Does the father know that the hostage (himself) is already dead or beyond saving?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's refusal a way to prevent the daughter from walking into the kidnapper's trap with the money?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the father speaking to the daughter while he is the captive, knowing that if she comes with the money she too will be captured?",
+          "feedback": "yes and no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father have direct knowledge of the kidnapper's plan to seize whoever delivers the money?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Did the father himself arrange or stage the kidnapping (it is a hoax/self-kidnapping)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father able to speak/hear the call freely, i.e., is he not under direct surveillance or restraint at the moment?",
+          "feedback": "irrelevant"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's refusal intended as a signal or coded message to the daughter?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father refuse because a police investigation or his being found would be triggered if the ransom were paid?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the amount one hundred million yen significant—does it represent the father's entire savings or a specific asset?",
+          "feedback": "irrelevant"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's refusal rooted in his belief that the daughter herself is the one the kidnapper truly wants, so her delivering money would put her in the kidnapper's hands?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father know the \"kidnapper\" is not actually a criminal—for instance, that the call is a prank, a misunderstanding, or a role-play?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father refuse to pay because he is a police officer or investigator who cannot allow a ransom payment to proceed?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's refusal motivated by a moral or principled stance against paying ransoms (e.g., it funds crime)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father believe that if the ransom is paid, the kidnapper will kill the hostage anyway?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Does the father hold this belief specifically because he himself is the hostage and knows the kidnapper intends to kill him regardless?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father dead already, so that the voice the daughter hears on the phone is not truly him (e.g., a recording)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father unaware that he is the hostage—does he not realize the call concerns himself?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's refusal because he wants the daughter to stay away so she doesn't risk her own life for him?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the father in a situation where paying the ransom would require the daughter to put herself in physical danger (e.g., delivering the money in person to the kidnapper)?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Does the father believe that the one hundred million yen the daughter would bring is not the kidnapper's real objective—that the daughter herself (or something she carries/represents) is what the kidnapper wants?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's primary concern simply the daughter's safety—that any payment requires her to come to the kidnapper and thus be harmed—rather than any detail about the money or the kidnapper's identity?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the father himself the hostage whose life the kidnapper threatens, so his refusal is a sacrifice to keep his daughter from coming into danger?",
+          "feedback": "yes"
+        },
+        {
+          "type": "final",
+          "text": "The father is himself the hostage. He is being held captive by the kidnapper, who has forced or allowed a phone call in which the daughter pleads for his life and the kidnapper demands that she bring one hundred million yen alone by noon the next day, with no police. Hearing this, the father realizes that the only way the ransom can be paid is for his daughter to come alone to the kidnapper—walking straight into danger herself. Rather than let that happen, he decides the ransom should not be paid. His refusal is a deliberate sacrifice: he would rather his own life remain at risk than have his daughter deliver the money and fall into the kidnapper's hands.",
+          "feedback": "yes and no"
+        },
+        {
+          "type": "question",
+          "text": "Is the reason the hidden answer differs from my account that the father is not the hostage in the way I described—i.e., the \"hostage\" whose life is threatened is someone else besides the father?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the reason my final was partly wrong that the father does not actually believe the daughter would be harmed or captured if she delivered the money?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the reason my final was partly wrong that the daughter will not actually deliver the money herself—someone or something else does?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the reason my final was partly wrong that the father's refusal is aimed at something else besides the immediate danger to the daughter—some additional or different motive that I missed?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the reason my final was partly wrong that the father has considered how to get help (e.g., police) if the money is withheld and the daughter stays away, making refusal the safer overall plan?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Was the reason my final was partly wrong that the father is not actually being held captive (the \"yes\" to his being the hostage notwithstanding)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father's refusal depend on something about the daughter's physical condition or ability—such that the danger to her comes from a specific vulnerability rather than just the kidnapper's trap?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father correct that the kidnapper will kill him regardless of whether the ransom is paid—i.e., the ransom payment would not save him either?",
+          "feedback": "yes and no"
+        }
+      ],
+      "runtime_public_history": [
+        {
+          "type": "final",
+          "text": "The father is himself the hostage. He is being held captive by the kidnapper, who has forced or allowed a phone call in which the daughter pleads for his life and the kidnapper demands that she bring one hundred million yen alone by noon the next day, with no police. Hearing this, the father realizes that the only way the ransom can be paid is for his daughter to come alone to the kidnapper—walking straight into danger herself. Rather than let that happen, he decides the ransom should not be paid. His refusal is a deliberate sacrifice: he would rather his own life remain at risk than have his daughter deliver the money and fall into the kidnapper's hands.",
+          "feedback": "yes and no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father's refusal depend on something about the daughter's physical condition or ability—such that the danger to her comes from a specific vulnerability rather than just the kidnapper's trap?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father correct that the kidnapper will kill him regardless of whether the ransom is paid—i.e., the ransom payment would not save him either?",
+          "feedback": "yes and no"
+        }
+      ]
+    },
+    {
+      "case_id": "USER_20261111_TS034_Q075",
+      "submission": 75,
+      "question": "Does the father's belief that paying will not save him arise because the kidnapper is demanding that the daughter come alone to a place where the father knows a trap awaits (e.g., the father can see or infer that the kidnapper intends to take the money and kill both of them)?",
+      "original_host_answer": "yes",
+      "decision": "retain_original",
+      "confirmed_by_user": true,
+      "source_answer_origin": "model_host",
+      "original_public_history": [
+        {
+          "type": "question",
+          "text": "Is the daughter the person making the ransom call's threat, or is she pleading for the hostage's life?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's decision based on the belief that the ransom demand is a scam or not genuine?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father believe that paying the ransom would not save the hostage?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the \"hostage\" someone the father knows personally?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Does the kidnapper's demand involve the daughter bringing the money (rather than the father)?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the daughter herself the hostage being threatened?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage a different family member of the father and daughter, such as the mother?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage someone the father knows through business or professional dealings?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage a person who is already dead?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage an animal?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the daughter the one the father is actually trying to protect by refusing to pay?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the daughter physically present with the kidnapper (rather than calling from safety)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the daughter actually in danger at the moment she is calling?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the daughter being coerced or threatened by the kidnapper into making the call (even though she is not the hostage)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the daughter a willing accomplice to the kidnapper?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the \"kidnapper\" someone known to the father or daughter?",
+          "feedback": "irrelevant"
+        },
+        {
+          "type": "question",
+          "text": "Is the daughter safe and free at the time of the call, calling voluntarily out of concern for the hostage?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Does the father refuse to pay because he believes the daughter would be harmed if she personally delivers the money?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage someone whose death would benefit the kidnapper in a way the father recognizes—such that paying would only guarantee harm?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage the father's other child (a sibling of the daughter)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage a stranger to the father—someone he has never met?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage a public figure or celebrity?",
+          "feedback": "irrelevant"
+        },
+        {
+          "type": "question",
+          "text": "Does the demand that the daughter come alone reveal that the kidnapper's real target is the daughter?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's refusal based on the fact that he cannot actually raise one hundred million yen?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father believe the daughter is being used as bait to lure him (the father) into danger?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the \"hostage\" the father himself?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage the father himself?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the father already being held captive by the kidnapper at the time of the call?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Does the father know that the hostage (himself) is already dead or beyond saving?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's refusal a way to prevent the daughter from walking into the kidnapper's trap with the money?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the father speaking to the daughter while he is the captive, knowing that if she comes with the money she too will be captured?",
+          "feedback": "yes and no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father have direct knowledge of the kidnapper's plan to seize whoever delivers the money?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Did the father himself arrange or stage the kidnapping (it is a hoax/self-kidnapping)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father able to speak/hear the call freely, i.e., is he not under direct surveillance or restraint at the moment?",
+          "feedback": "irrelevant"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's refusal intended as a signal or coded message to the daughter?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father refuse because a police investigation or his being found would be triggered if the ransom were paid?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the amount one hundred million yen significant—does it represent the father's entire savings or a specific asset?",
+          "feedback": "irrelevant"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's refusal rooted in his belief that the daughter herself is the one the kidnapper truly wants, so her delivering money would put her in the kidnapper's hands?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father know the \"kidnapper\" is not actually a criminal—for instance, that the call is a prank, a misunderstanding, or a role-play?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father refuse to pay because he is a police officer or investigator who cannot allow a ransom payment to proceed?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's refusal motivated by a moral or principled stance against paying ransoms (e.g., it funds crime)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father believe that if the ransom is paid, the kidnapper will kill the hostage anyway?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Does the father hold this belief specifically because he himself is the hostage and knows the kidnapper intends to kill him regardless?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father dead already, so that the voice the daughter hears on the phone is not truly him (e.g., a recording)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father unaware that he is the hostage—does he not realize the call concerns himself?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's refusal because he wants the daughter to stay away so she doesn't risk her own life for him?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the father in a situation where paying the ransom would require the daughter to put herself in physical danger (e.g., delivering the money in person to the kidnapper)?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Does the father believe that the one hundred million yen the daughter would bring is not the kidnapper's real objective—that the daughter herself (or something she carries/represents) is what the kidnapper wants?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's primary concern simply the daughter's safety—that any payment requires her to come to the kidnapper and thus be harmed—rather than any detail about the money or the kidnapper's identity?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the father himself the hostage whose life the kidnapper threatens, so his refusal is a sacrifice to keep his daughter from coming into danger?",
+          "feedback": "yes"
+        },
+        {
+          "type": "final",
+          "text": "The father is himself the hostage. He is being held captive by the kidnapper, who has forced or allowed a phone call in which the daughter pleads for his life and the kidnapper demands that she bring one hundred million yen alone by noon the next day, with no police. Hearing this, the father realizes that the only way the ransom can be paid is for his daughter to come alone to the kidnapper—walking straight into danger herself. Rather than let that happen, he decides the ransom should not be paid. His refusal is a deliberate sacrifice: he would rather his own life remain at risk than have his daughter deliver the money and fall into the kidnapper's hands.",
+          "feedback": "yes and no"
+        },
+        {
+          "type": "question",
+          "text": "Is the reason the hidden answer differs from my account that the father is not the hostage in the way I described—i.e., the \"hostage\" whose life is threatened is someone else besides the father?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the reason my final was partly wrong that the father does not actually believe the daughter would be harmed or captured if she delivered the money?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the reason my final was partly wrong that the daughter will not actually deliver the money herself—someone or something else does?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the reason my final was partly wrong that the father's refusal is aimed at something else besides the immediate danger to the daughter—some additional or different motive that I missed?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the reason my final was partly wrong that the father has considered how to get help (e.g., police) if the money is withheld and the daughter stays away, making refusal the safer overall plan?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Was the reason my final was partly wrong that the father is not actually being held captive (the \"yes\" to his being the hostage notwithstanding)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father's refusal depend on something about the daughter's physical condition or ability—such that the danger to her comes from a specific vulnerability rather than just the kidnapper's trap?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father correct that the kidnapper will kill him regardless of whether the ransom is paid—i.e., the ransom payment would not save him either?",
+          "feedback": "yes and no"
+        },
+        {
+          "type": "question",
+          "text": "Is the reason my final was partly wrong that, in addition to wanting to protect the daughter, the father also believes that paying the ransom will not save him (so the payment is futile as well as dangerous)?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Does the father believe the one hundred million yen would be paid not by the daughter personally handing over cash, but through some means (e.g., a bank transfer) that still requires her to be exposed or to give something up?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father the \"hostage\" in the sense that the kidnapper is using him (or a threat to him) to lure the daughter—so the hostage's life is real leverage but his own safety is already forfeit?",
+          "feedback": "yes and no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father already fatally wounded or certain to die (beyond the kidnapper's threat), so that paying the ransom cannot save him?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father's belief that payment would not save him rest on knowing the kidnapper's true identity or circumstances—something specific about who the kidnapper is?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's belief that paying would not save him based on the fact that the kidnapper made the demand in a way that already implies he will be killed regardless (e.g., the kidnapper cannot safely release him)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father a person whose death would already be expected, such as someone terminally ill or very elderly, so he judges that the money cannot buy him meaningful life?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is it the father's reasoning that the kidnapper demanded no police, so involving police (which refusing to pay would force) is the only real chance of rescue—making refusal the better option for his own survival too?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father expect that, whether or not the money is paid, the kidnapper will not release him alive—so paying gains him nothing while endangering his daughter?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father's belief that paying would not save him come from the fact that he is a police officer or public official, or from a role in which the kidnapper could not safely let him live?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father blind or otherwise unable to see, so that he cannot identify his captors/location and therefore cannot help rescuers?",
+          "feedback": "irrelevant"
+        },
+        {
+          "type": "question",
+          "text": "Is the wallet drained but the father still hooked on?",
+          "feedback": "irrelevant"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's belief that paying would not save him based on the fact that the one hundred million yen is more than his assets are worth—i.e., meeting the demand would require the daughter to sacrifice something she could not recover?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the key that the father already knows he is going to die—not from the kidnapper's threat, but because of a separate fact (such as the setting being a death row / hospital / planned execution) that makes the ransom pointless?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the puzzle set in a context where the father and the hostage situation are metaphorical—for example, the \"hostage\" is the father's own life being consumed by an addiction (gambling, debt) and the \"ransom\" is money that would only fuel it?",
+          "feedback": "no"
+        }
+      ],
+      "runtime_public_history": [
+        {
+          "type": "question",
+          "text": "Is the key that the father already knows he is going to die—not from the kidnapper's threat, but because of a separate fact (such as the setting being a death row / hospital / planned execution) that makes the ransom pointless?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the puzzle set in a context where the father and the hostage situation are metaphorical—for example, the \"hostage\" is the father's own life being consumed by an addiction (gambling, debt) and the \"ransom\" is money that would only fuel it?",
+          "feedback": "no"
+        }
+      ]
+    },
+    {
+      "case_id": "USER_20261111_TS034_Q093",
+      "submission": 93,
+      "question": "Does the father's decision rest on the fact that paying the ransom would require the daughter to be alone with a dangerous criminal—whereas if no ransom is paid, the daughter stays safe at home and the father accepts his own death?",
+      "original_host_answer": "yes",
+      "decision": "retain_original",
+      "confirmed_by_user": true,
+      "source_answer_origin": "model_host",
+      "original_public_history": [
+        {
+          "type": "question",
+          "text": "Is the daughter the person making the ransom call's threat, or is she pleading for the hostage's life?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's decision based on the belief that the ransom demand is a scam or not genuine?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father believe that paying the ransom would not save the hostage?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the \"hostage\" someone the father knows personally?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Does the kidnapper's demand involve the daughter bringing the money (rather than the father)?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the daughter herself the hostage being threatened?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage a different family member of the father and daughter, such as the mother?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage someone the father knows through business or professional dealings?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage a person who is already dead?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage an animal?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the daughter the one the father is actually trying to protect by refusing to pay?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the daughter physically present with the kidnapper (rather than calling from safety)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the daughter actually in danger at the moment she is calling?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the daughter being coerced or threatened by the kidnapper into making the call (even though she is not the hostage)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the daughter a willing accomplice to the kidnapper?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the \"kidnapper\" someone known to the father or daughter?",
+          "feedback": "irrelevant"
+        },
+        {
+          "type": "question",
+          "text": "Is the daughter safe and free at the time of the call, calling voluntarily out of concern for the hostage?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Does the father refuse to pay because he believes the daughter would be harmed if she personally delivers the money?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage someone whose death would benefit the kidnapper in a way the father recognizes—such that paying would only guarantee harm?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage the father's other child (a sibling of the daughter)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage a stranger to the father—someone he has never met?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage a public figure or celebrity?",
+          "feedback": "irrelevant"
+        },
+        {
+          "type": "question",
+          "text": "Does the demand that the daughter come alone reveal that the kidnapper's real target is the daughter?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's refusal based on the fact that he cannot actually raise one hundred million yen?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father believe the daughter is being used as bait to lure him (the father) into danger?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the \"hostage\" the father himself?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the hostage the father himself?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the father already being held captive by the kidnapper at the time of the call?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Does the father know that the hostage (himself) is already dead or beyond saving?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's refusal a way to prevent the daughter from walking into the kidnapper's trap with the money?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the father speaking to the daughter while he is the captive, knowing that if she comes with the money she too will be captured?",
+          "feedback": "yes and no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father have direct knowledge of the kidnapper's plan to seize whoever delivers the money?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Did the father himself arrange or stage the kidnapping (it is a hoax/self-kidnapping)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father able to speak/hear the call freely, i.e., is he not under direct surveillance or restraint at the moment?",
+          "feedback": "irrelevant"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's refusal intended as a signal or coded message to the daughter?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father refuse because a police investigation or his being found would be triggered if the ransom were paid?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the amount one hundred million yen significant—does it represent the father's entire savings or a specific asset?",
+          "feedback": "irrelevant"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's refusal rooted in his belief that the daughter herself is the one the kidnapper truly wants, so her delivering money would put her in the kidnapper's hands?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father know the \"kidnapper\" is not actually a criminal—for instance, that the call is a prank, a misunderstanding, or a role-play?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father refuse to pay because he is a police officer or investigator who cannot allow a ransom payment to proceed?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's refusal motivated by a moral or principled stance against paying ransoms (e.g., it funds crime)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father believe that if the ransom is paid, the kidnapper will kill the hostage anyway?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Does the father hold this belief specifically because he himself is the hostage and knows the kidnapper intends to kill him regardless?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father dead already, so that the voice the daughter hears on the phone is not truly him (e.g., a recording)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father unaware that he is the hostage—does he not realize the call concerns himself?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's refusal because he wants the daughter to stay away so she doesn't risk her own life for him?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the father in a situation where paying the ransom would require the daughter to put herself in physical danger (e.g., delivering the money in person to the kidnapper)?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Does the father believe that the one hundred million yen the daughter would bring is not the kidnapper's real objective—that the daughter herself (or something she carries/represents) is what the kidnapper wants?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's primary concern simply the daughter's safety—that any payment requires her to come to the kidnapper and thus be harmed—rather than any detail about the money or the kidnapper's identity?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the father himself the hostage whose life the kidnapper threatens, so his refusal is a sacrifice to keep his daughter from coming into danger?",
+          "feedback": "yes"
+        },
+        {
+          "type": "final",
+          "text": "The father is himself the hostage. He is being held captive by the kidnapper, who has forced or allowed a phone call in which the daughter pleads for his life and the kidnapper demands that she bring one hundred million yen alone by noon the next day, with no police. Hearing this, the father realizes that the only way the ransom can be paid is for his daughter to come alone to the kidnapper—walking straight into danger herself. Rather than let that happen, he decides the ransom should not be paid. His refusal is a deliberate sacrifice: he would rather his own life remain at risk than have his daughter deliver the money and fall into the kidnapper's hands.",
+          "feedback": "yes and no"
+        },
+        {
+          "type": "question",
+          "text": "Is the reason the hidden answer differs from my account that the father is not the hostage in the way I described—i.e., the \"hostage\" whose life is threatened is someone else besides the father?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the reason my final was partly wrong that the father does not actually believe the daughter would be harmed or captured if she delivered the money?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the reason my final was partly wrong that the daughter will not actually deliver the money herself—someone or something else does?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the reason my final was partly wrong that the father's refusal is aimed at something else besides the immediate danger to the daughter—some additional or different motive that I missed?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the reason my final was partly wrong that the father has considered how to get help (e.g., police) if the money is withheld and the daughter stays away, making refusal the safer overall plan?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Was the reason my final was partly wrong that the father is not actually being held captive (the \"yes\" to his being the hostage notwithstanding)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father's refusal depend on something about the daughter's physical condition or ability—such that the danger to her comes from a specific vulnerability rather than just the kidnapper's trap?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father correct that the kidnapper will kill him regardless of whether the ransom is paid—i.e., the ransom payment would not save him either?",
+          "feedback": "yes and no"
+        },
+        {
+          "type": "question",
+          "text": "Is the reason my final was partly wrong that, in addition to wanting to protect the daughter, the father also believes that paying the ransom will not save him (so the payment is futile as well as dangerous)?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Does the father believe the one hundred million yen would be paid not by the daughter personally handing over cash, but through some means (e.g., a bank transfer) that still requires her to be exposed or to give something up?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father the \"hostage\" in the sense that the kidnapper is using him (or a threat to him) to lure the daughter—so the hostage's life is real leverage but his own safety is already forfeit?",
+          "feedback": "yes and no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father already fatally wounded or certain to die (beyond the kidnapper's threat), so that paying the ransom cannot save him?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father's belief that payment would not save him rest on knowing the kidnapper's true identity or circumstances—something specific about who the kidnapper is?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's belief that paying would not save him based on the fact that the kidnapper made the demand in a way that already implies he will be killed regardless (e.g., the kidnapper cannot safely release him)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father a person whose death would already be expected, such as someone terminally ill or very elderly, so he judges that the money cannot buy him meaningful life?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is it the father's reasoning that the kidnapper demanded no police, so involving police (which refusing to pay would force) is the only real chance of rescue—making refusal the better option for his own survival too?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father expect that, whether or not the money is paid, the kidnapper will not release him alive—so paying gains him nothing while endangering his daughter?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father's belief that paying would not save him come from the fact that he is a police officer or public official, or from a role in which the kidnapper could not safely let him live?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father blind or otherwise unable to see, so that he cannot identify his captors/location and therefore cannot help rescuers?",
+          "feedback": "irrelevant"
+        },
+        {
+          "type": "question",
+          "text": "Is the wallet drained but the father still hooked on?",
+          "feedback": "irrelevant"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's belief that paying would not save him based on the fact that the one hundred million yen is more than his assets are worth—i.e., meeting the demand would require the daughter to sacrifice something she could not recover?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the key that the father already knows he is going to die—not from the kidnapper's threat, but because of a separate fact (such as the setting being a death row / hospital / planned execution) that makes the ransom pointless?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the puzzle set in a context where the father and the hostage situation are metaphorical—for example, the \"hostage\" is the father's own life being consumed by an addiction (gambling, debt) and the \"ransom\" is money that would only fuel it?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father's belief that paying will not save him arise because the kidnapper is demanding that the daughter come alone to a place where the father knows a trap awaits (e.g., the father can see or infer that the kidnapper intends to take the money and kill both of them)?",
+          "feedback": "yes"
+        },
+        {
+          "type": "question",
+          "text": "Is the father physically present at the place where the money is to be handed over—so he can see/hear that the daughter coming there means both of them will be trapped?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father know the kidnapper's trap is that whoever comes with the money will be killed or seized (not merely robbed)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father know that the kidnapper intends to take the money and then kill the father regardless, and that the daughter delivering it would just add a second victim?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the trap that the kidnapper does not actually want money at all—the demand for one hundred million yen is a pretext to make the daughter come alone?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father conclude that if his daughter brings the money, the kidnapper will take it and then kill them both—so refusing to pay is the only way to keep her away from the trap—while also knowing the payment wouldn't save him?",
+          "feedback": "yes and no"
+        },
+        {
+          "type": "question",
+          "text": "Is the reason my final was partly wrong that the father does not believe the daughter is in danger of being killed, only of being robbed or otherwise harmed?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father aware that the daughter is not his real daughter but someone impersonating her—for example, a recording or an impostor?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father realize that the call itself is a trap—the kidnapper is trying to make the daughter act rashly, and the father's calm refusal is meant to prevent her from rushing out?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the twist that the \"father\" is not actually the hostage's father—i.e., the man speaking is someone else (such as the kidnapper) who decides the ransom should not be paid?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father know that if the daughter brings the money, the police (who will inevitably become involved despite the \"no police\" demand) will move in and the daughter will be caught in the crossfire?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father believe he is already as good as dead because he has seen the kidnapper's face or knows too much, and that the daughter bringing money would only get her killed too?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father in a position where he has already escaped or been released, so his refusal is not about his own life at all—it is purely to stop the daughter from putting herself in danger by coming to pay?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Does the father recognize the kidnapper's demand as designed so that the daughter, coming alone, will be killed or taken—and is the father's refusal specifically to deprive the kidnapper of the daughter, even at the cost of his own life?",
+          "feedback": "yes and no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's refusal specifically because he knows that the kidnapper will kill him no matter what, so paying the ransom would save no one and only expose his daughter to danger?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father's refusal because he knows the hostage cannot be saved by money—the real threat to the hostage is something money cannot fix (e.g., the hostage is dying of illness, or the \"kidnapping\" is a custody dispute)?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the \"smartphone\" significant—for example, is the call being made over a video chat or a device that lets the father see something that reveals the true situation?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father the hostage but being held in a way that he can speak freely, and his refusal is because he believes the kidnapper will kill him whether or not the money is paid—so the daughter's coming would only add her death to his?",
+          "feedback": "no"
+        }
+      ],
+      "runtime_public_history": [
+        {
+          "type": "question",
+          "text": "Is the \"smartphone\" significant—for example, is the call being made over a video chat or a device that lets the father see something that reveals the true situation?",
+          "feedback": "no"
+        },
+        {
+          "type": "question",
+          "text": "Is the father the hostage but being held in a way that he can speak freely, and his refusal is because he believes the kidnapper will kill him whether or not the money is paid—so the daughter's coming would only add her death to his?",
+          "feedback": "no"
+        }
+      ]
+    }
+  ],
+  "grading_or_historical_results_changed": false,
+  "runtime_examples_active": true,
+  "published_source_file": "runs/2026-11-11_set2_TS034_direct/TS034_r01/trajectory.jsonl"
+}

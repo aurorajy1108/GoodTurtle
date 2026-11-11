@@ -32,6 +32,36 @@ class Response:
 
 class DeepSeekTests(unittest.TestCase):
     @patch.dict(os.environ, {'DEEPSEEK_API_KEY':'fixture'})
+    def test_prefix_protocol_overrides_legacy_json_profile_on_every_session_turn(self):
+        profile = json.loads((ROOT/'configs/loop.deepseek.solo-json.json').read_text())['player']
+        for role in ('player', 'partner'):
+            with self.subTest(role=role), tempfile.TemporaryDirectory() as folder:
+                requests, records = [], []
+                def respond(req, **kwargs):
+                    body = json.loads(req.data)
+                    requests.append(body)
+                    # Reproduce the provider's whitespace replacement if the
+                    # conflicting JSON constraint ever returns.
+                    content = '  \n' if 'response_format' in body else 'QUESTION\nIs the father involved?'
+                    return Response({'id':str(len(requests)), 'model':body['model'],
+                                     'choices':[{'message':{'content':content}, 'finish_reason':'stop'}]})
+                client = Client(profile, role, records.append)
+                client.begin_game(folder, lambda *a, **k: None)
+                with patch.object(client.opener, 'open', side_effect=respond):
+                    for used in (0, 1):
+                        reply = client.complete('ACTION PROTOCOL prefix-v1. Do not return JSON.', json.dumps({
+                            'opening':'Story', 'turn_control':f'Used: {used}',
+                            'visible_history':[] if used == 0 else [{'text':'Prior question', 'feedback':'no'}],
+                            'action_protocol':'prefix-v1'}))
+                        self.assertTrue(reply.text.startswith('QUESTION\n'))
+                self.assertTrue(all('response_format' not in body for body in requests))
+                self.assertEqual([m['role'] for m in requests[1]['messages']],
+                                 ['system','user','assistant','user'])
+                self.assertTrue(all(not record['json_action_mode'] for record in records))
+                self.assertEqual(profile['extra_body']['response_format'], {'type':'json_object'})
+                client.close_game()
+
+    @patch.dict(os.environ, {'DEEPSEEK_API_KEY':'fixture'})
     def test_json_action_mode_preserves_plain_text_review_and_summary_calls(self):
         requests=[]
         def respond(req,**kwargs):

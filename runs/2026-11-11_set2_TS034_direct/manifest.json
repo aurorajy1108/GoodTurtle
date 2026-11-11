@@ -1,0 +1,36 @@
+{
+  "puzzle": "TS034",
+  "condition": "direct",
+  "planned_games": 1,
+  "source_run_status": "completed",
+  "stop_reason": "budget_exhausted",
+  "submissions": 100,
+  "final_partial_score": 0.85,
+  "full_solution": false,
+  "host_binding_during_game": "host-v12-ts034-fear-boundary-20261109",
+  "active_host_binding_after_user_review": "host-v13-ts034-user-accepted-20261111",
+  "dataset": "TS034 v5 (runtime_snapshot/data/dataset.json)",
+  "repo_commit_for_recovery": "a1ef08baa9913d663601df6ca9aa0ceebf3b6c80",
+  "controller_overlay": {
+    "turtle_loop/player_format.py": {
+      "before": "f771771e601fa1b32ea39b3ea12d8550ec2ef5504ee7fc4dfd67534d5328f5a9",
+      "after": "41735125c03461bf16360fd3f9cc44447c85d84abe3a6bad9c8fff9414ba1b37"
+    },
+    "turtle_loop/action_text.py": {
+      "before": "36c8fe9b7fbcb497a06e28ef96017680db9f0af57771b98c0089d7d77e737393",
+      "after": "8982911eb8ad145d5f8da9d7cdc72c29318dad05d36de4f35dda2c4d4d91e8e0"
+    },
+    "turtle_loop/sessions.py": {
+      "before": "65afd4083d1beb7977669ea009fa33faa1c12de9818f113d72e08541de8ab1fc",
+      "after": "7c49b9cd83e2d2f7cc32e93130ddce17f73e50061a3d03f2c7b91fd91594f348"
+    },
+    "turtle_loop/engine.py": {
+      "before": "a19ea30a296ca9cdbe46b9edc7cf2d6ab8c4d6fd190f8199e02c596d05d3021e",
+      "after": "588b49b626bac9fc41d73616c4e62a29767b1ff924e22808635b03208cad997e",
+      "scope": "Recorder.restore only; frozen gameplay loop unchanged"
+    }
+  },
+  "source_lineage": "One direct game; resumed after Host transport interruption at submission 19 and deterministic Player format repair at submission 40. Original feedback and failed-call audit preserved; no new Player generation at the recovery points.",
+  "review_scope": "User retained original Host labels for questions 1, 3, 42, 60, 75, 93. Full-result grading remains model-evaluated and subject to human review.",
+  "cost_note": "Cumulative reported token usage retained; unknown pricing remains unknown. An interrupted Host request may have incurred a charge even when no response was received."
+}

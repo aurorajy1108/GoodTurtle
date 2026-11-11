@@ -20,7 +20,8 @@ class UntypedTests(unittest.TestCase):
         self.assertTrue(is_untyped_prose('I should consider another theory.'))
         for text in ('QUESTION\nA question?','FINAL\nA story.', '{"type":"question","text":"Q?"}',
                      '{"unknown":"schema"}', 'Some preamble\nQUESTION\nQ?', '</think>QUESTION\nQ?',
-                     '```text\nFINAL\nAn explanation.\n```'):
+                     '```text\nFINAL\nAn explanation.\n```', 'QUESTION: Q?', 'final: An answer.',
+                     'QUESTION: Q?\nFINAL: An answer.'):
             self.assertFalse(is_untyped_prose(text))
 
     def test_correction_preserves_slot_and_has_two_call_limit(self):

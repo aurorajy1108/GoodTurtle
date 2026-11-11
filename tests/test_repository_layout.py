@@ -30,6 +30,9 @@ class RepositoryLayoutTests(unittest.TestCase):
         correction=json.loads((ROOT/'data/host_reference/reviews/ts013_20261108_causal_fix.json').read_text())
         set1=json.loads((ROOT/'data/host_reference/reviews/set1_20261110/manifest.json').read_text())
         ts034=json.loads((ROOT/'data/host_reference/reviews/ts034_20261109_fear_boundary.json').read_text())
+        ts034_current=json.loads((ROOT/'data/host_reference/reviews/ts034_20261111_context_migration.json').read_text())
+        self.assertEqual(ts034_current['context_sha256_before'],ts034['context_sha256_after'])
+        self.assertEqual(hashlib.sha256((ROOT/ts034_current['source_review']).read_bytes()).hexdigest(),ts034_current['source_review_sha256'])
         pillow=json.loads((ROOT/'data/host_reference/reviews/ts002_20261109_pillow_boundaries.json').read_text())
         clarification=json.loads((ROOT/'data/host_reference/reviews/ts002_20261109_unknown_wordplay.json').read_text())
         crossing=json.loads((ROOT/'data/host_reference/reviews/ts015_20261111_crossing_guard.json').read_text())
@@ -52,7 +55,7 @@ class RepositoryLayoutTests(unittest.TestCase):
         self.assertEqual(len(bank),50)
         self.assertEqual({p.stem for p in (ROOT/'data/host_packs/active').glob('*.json')},{p['id'] for p in bank})
         expected_contexts=dict(human['context_sha256_after'])
-        for change in (correction,pillow,clarification,ts034,set1,crossing,forged):
+        for change in (correction,pillow,clarification,ts034,set1,crossing,forged,ts034_current):
             expected_contexts.update(change['context_sha256_after'])
         for p in bank:
             expected=expected_contexts[p['id']]

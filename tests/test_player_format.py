@@ -14,6 +14,66 @@ from test_loop import PUZZLE, FakeClient, evaluated
 class PlayerFormatTests(unittest.TestCase):
     def setUp(self):self.policy=load_policy()
 
+    def test_terminal_prefix_after_prose_copies_the_entire_action_without_model_calls(self):
+        body = 'Is the daughter physically present with the kidnapper at the time of the call?'
+        raw = 'Let me revisit the confirmed facts.\n\nQUESTION\n'+body
+        calls, events = [], []
+        with patch('turtle_loop.providers.Client') as formatter:
+            action, meta = repair(raw, False, self.policy, calls.append,
+                                  lambda *a, **k: events.append((a, k)), 'saved-response')
+        self.assertEqual(action, {'type':'question', 'text':body})
+        self.assertEqual(meta['method'], 'unique_prefix_action')
+        start, end = meta['selected_span']
+        self.assertEqual(raw[start:end], 'QUESTION\n'+body)
+        self.assertTrue(verbatim_proof(raw, action))
+        self.assertFalse(verbatim_proof(raw, {**action, 'text':body.replace('physically ', '')}))
+        self.assertEqual((calls, events), ([], []))
+        formatter.assert_not_called()
+
+    def test_terminal_prefix_preserves_multiline_qualifiers_and_forced_final(self):
+        body = 'Every person, not just one, was involved.\nIncluding the daughter.'
+        raw = 'I will submit now.\r\nFINAL\r\n'+body
+        action, _ = local_repair(raw, True, self.policy)
+        self.assertEqual(action, {'type':'final', 'text':body})
+        self.assertIsNone(local_repair('Prose\nQUESTION\nQ?', True, self.policy))
+
+    def test_case_and_colon_variants_preserve_the_saved_question_verbatim(self):
+        body = 'Does the father refuse to pay because he is a police officer or investigator who cannot allow a ransom payment to proceed?'
+        for header in ('Question: ', 'QUESTION: ', 'question： ', 'Question\n', 'question\r\n'):
+            raw = 'I will ask this.\n' + header + body
+            with self.subTest(header=header), patch('turtle_loop.providers.Client') as formatter:
+                action, meta = repair(raw, False, self.policy, lambda *a:None, lambda *a,**k:None)
+                self.assertEqual(action, {'type':'question', 'text':body})
+                start, end = meta['text_span']
+                self.assertEqual(raw[start:end], body)
+                self.assertTrue(verbatim_proof(raw, action))
+                formatter.assert_not_called()
+        raw = 'Final: First cause.\nA necessary qualifier.'
+        self.assertEqual(local_repair(raw, True, self.policy)[0],
+                         {'type':'final', 'text':'First cause.\nA necessary qualifier.'})
+        self.assertIsNone(local_repair('Question: '+body, True, self.policy))
+
+    def test_colon_variants_reject_multiple_actions_and_empty_bodies(self):
+        for raw in ('Question: First?\nQUESTION\nSecond?',
+                    'QUESTION\nFirst?\nFinal: Guess', 'Question:   ',
+                    'Questionable: A guess?', 'Discuss: A thought',
+                    'Question NEXT=A: Q?',
+                    '{"type":"question","text":"First?"}\nQuestion: Second?'):
+            with self.subTest(raw=raw):
+                self.assertIsNone(local_repair(raw, False, self.policy))
+
+    def test_ambiguous_or_empty_prefix_actions_are_never_selected_by_formatter(self):
+        for raw in ('Prose\nQUESTION\nA?\nQUESTION\nB?',
+                    'Prose\nQUESTION\nA?\nFINAL\nGuess',
+                    'Prose\nQUESTION\n',
+                    '{"type":"question","text":"A?"}\nQUESTION\nB?',
+                    'Prose\nPASS\nSkip', 'Prose\nQUESTION NEXT=A\nQ?'):
+            with self.subTest(raw=raw), patch('turtle_loop.providers.Client') as formatter:
+                self.assertIsNone(local_repair(raw, False, self.policy))
+                with self.assertRaises(ProtocolError):
+                    repair(raw, False, self.policy, lambda *a:None, lambda *a,**k:None)
+                formatter.assert_not_called()
+
     def test_terminal_marker_and_fixed_last_candidate_do_not_use_quality(self):
         first=json.dumps({'type':'question','text':'A plausible question?'})
         last=json.dumps({'type':'question','text':'An unhelpful question?'})
