@@ -4,17 +4,47 @@
 
 **团队运行：** [三组CL+三道MAS，两人各两次的一键脚本](docs/team_campaign_20261111.md)：6局小量测试、个人批跑、限并发全员150局与去重汇总。
 
+## 当前团队一键运行
+
+使用 `fix/cl-session-prefix-compat-20261111` 分支，在仓库根目录、已export自己 `DEEPSEEK_API_KEY` 的终端执行。各人的task IDs、全部参数、输出与合并方式见上面的团队指南。
+
+```bash
+git fetch origin
+git switch fix/cl-session-prefix-compat-20261111
+git pull --ff-only
+```
+
+Jiayang的小量测试：4局CL＋2局MAS，最多1个槽位运行：
+
+```bash
+bash scripts/run_team_smoke.sh jiayang cl-set1-a,mas-ts038-a
+```
+
+Jiayang的正式实验：每条件两次重复，共21局CL＋4局MAS，最多2个槽位并行：
+
+```bash
+bash scripts/run_team_batch.sh jiayang cl-set1-a,mas-ts038-a 2
+```
+
+仅当一位协调人统一执行全员、其他人不另行启动时使用：
+
+```bash
+bash scripts/run_team_batch.sh coordinator all 4 runs/api/team_all_formal_v1
+```
+
+全员共150局，最多4个槽位并行：CL Set1–3共126局，MAS 38/2/14共24局。每个实验两人各跑两次，a/b是人工执行槽，不是模型Agent A/B。Set3第二人、MAS14第二人须各从候选中选一位；不要重复启动同一槽位。每个B独立100次额度，每个执行槽内部固定A并揭晓其完整答案；已有输出目录拒绝覆盖。
+
 **11月11日新版本：** [CL会话续接与新返回格式运行指南](docs/run_session_prefix_v1.md)，含新分支获取、Set1/TS038命令、参数、成本和恢复边界。
 
-**格式错误自动续跑：** 当前Set1可用`bash scripts/start_set1_auto_continue.sh`接续。先按固定规则恢复已有动作，必要时调用隔离Codex格式器并验证原文一致；保留完成局、额度和成本，限制重试次数。[机制、参数和日志位置](docs/automatic_continuation.md)。
+**历史Set1续跑：** `start_set1_auto_continue.sh`针对旧归档，不是新团队实验的启动命令。新批次停止后按[团队指南](docs/team_campaign_20261111.md)对具体CL task恢复，保留额度、动作和费用；机制见[恢复说明](docs/automatic_continuation.md)。
 
 **11月10日Set1修复后重跑：** 在已export `DEEPSEEK_API_KEY`的终端执行`bash scripts/start_set1_verified.sh`。先冻结输入并跑20题Host诊断，全部通过才启动12局全新CL；本入口不跑MAS、不追加重复。已修复Host因果边界，并将持续会话中的参考内容按ID缓存。见[全部设置、参数和结果位置](docs/set1_v11_rerun.md)。
 
-**全接口DeepSeek：** 设置 `DEEPSEEK_API_KEY` 并选择 `--config configs/loop.deepseek.json`，Host/grader使用 `deepseek-v4-pro / high`，player/默认MAS partner使用 `deepseek-flash / thinking disabled`，辅助请求使用对应角色配置。CL/MAS入口均支持，见[完整运行说明](docs/deepseek.md)。
+**当前默认DeepSeek：** `configs/loop.deepseek.json`中Host/Grader为 `deepseek-v4-pro / high`，Player/默认MAS partner为 `deepseek-flash / thinking disabled`。可选隔离格式修复器另行配置，没有Codex时如何只用本地修复见[团队指南](docs/team_campaign_20261111.md)；供应商配置见[运行说明](docs/deepseek.md)。
 
 研究海龟汤中的上下文经验迁移（CL）与双 agent 合作。当前有 **50 道英文题目、161 个评分点**，支持可配置的 Host / player / grader、完整轨迹和实验统计。
 
-**当前授权：CL Set 1 与 TS038 各一组，其余实验暂停。** Host 与评分标注仍待人工确认；单元测试通过不代表模型回答已经可靠。默认请求 Host `gpt-6.1-sol / medium`，grader 保持 `gpt-6.1-sol / high`，player 和默认 partner `gpt-5.6-luna / low`。四种反馈：`yes / no / yes and no / irrelevant`。
+**当前安排：CL Set1–3与MAS 38/2/14，两人各两次。** 收费对局须显式执行run脚本才启动。Host与评分标注仍待人工确认，单元测试通过不代表模型回答已经可靠。GPT模型设置保留在显式Codex配置中，不是当前团队脚本的默认设置。四种反馈：`yes / no / yes and no / irrelevant`。
 
 11月3日起新批次：每个普通问题只调用一次Host；本地检索最多6条参考（6000字符），grader单独使用精简上下文、最多3条判例（3000字符）。每局每角色持续独立会话，增量更新上下文；Codex按thread ID续聊，Responses按response ID续聊，其余API本地维护多轮messages。可用 `session_mode: replay` 做独立重放对照。完整汤底、评分规则和当前对话历史仍保留，来源与审核元数据只存磁盘。持续会话不等于历史免计费；一般persistent中断不自动恢复；完整返回且仅有已支持的元数据或可确定修复的问题引号错误的DeepSeek单玩家响应，可在明确标记的新副本中恢复，见[恢复限制](docs/deepseek.md#字符串text_note及一次性续跑)。配置见[完整参数](docs/runtime_parameters.md)，设计与限制见[当前研究方案](docs/study_20261102.md)。旧冻结实验保持原策略。
 
@@ -24,6 +54,7 @@
 
 | 任务 | 唯一入口 |
 | --- | --- |
+| 当前三组CL＋三道MAS的团队运行 | [分工、小量测试、个人正式跑、全员并行与汇总](docs/team_campaign_20261111.md) |
 | **上传人工 Host 参考 trajectory** | **[data/host_reference/inbox/](data/host_reference/inbox/)**；[上传与审核流程](data/host_reference/README.md) |
 | 查找已归档的人工聊天、回改和原始反馈 | [data/host_reference/sources/](data/host_reference/sources/) |
 | 查看／填写审核结论 | [data/host_reference/reviews/](data/host_reference/reviews/)；[Excel审核表](outputs/20261026_host_review/host_review_20261026.xlsx) |

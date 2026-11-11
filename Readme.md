@@ -4,17 +4,47 @@
 
 English | [中文](README.zh-CN.md)
 
+## Current team quickstart
+
+Use branch `fix/cl-session-prefix-compat-20261111`, run from the repository root, and export your own `DEEPSEEK_API_KEY` in the same terminal. [Task assignments, every parameter and result collection](docs/team_campaign_20261111.md).
+
+```bash
+git fetch origin
+git switch fix/cl-session-prefix-compat-20261111
+git pull --ff-only
+```
+
+Jiayang's small pilot: 4 CL games + 2 MAS games, one concurrent slot:
+
+```bash
+bash scripts/run_team_smoke.sh jiayang cl-set1-a,mas-ts038-a
+```
+
+Jiayang's formal batch: two repeats per condition, 21 CL + 4 MAS games, up to two concurrent slots:
+
+```bash
+bash scripts/run_team_batch.sh jiayang cl-set1-a,mas-ts038-a 2
+```
+
+Only ONE coordinator launches all team slots; others do not launch their own copies:
+
+```bash
+bash scripts/run_team_batch.sh coordinator all 4 runs/api/team_all_formal_v1
+```
+
+This schedules 150 games with up to four concurrent slots: CL Set1–3 (126 games) and MAS TS038/TS002/TS014 (24 games). Each experiment has two human execution slots, each running two repeats. The Set3 second operator and TS014 MAS second operator must each be assigned to one person from their listed candidates. Existing output directories are never overwritten. Each B has 100 fresh submissions; A is fixed within each execution slot, with its full answer revealed before B.
+
 **2026-11-11 branch:** [Run CL session continuation and the new Player response format](docs/run_session_prefix_v1.md), including Set1 and TS038 commands, all relevant parameters, costs and recovery limits.
 
-**Automatic format recovery:** `bash scripts/start_set1_auto_continue.sh` continues the stopped Set 1 rollout with fixed-position extraction, bounded verbatim Codex formatting, preserved game quotas, and cumulative cost accounting. See [policy, limits and parameters](docs/automatic_continuation.md).
+**Historical Set1 recovery:** `start_set1_auto_continue.sh` targets an archived stopped rollout, not the new team campaign. For a current stopped CL task use the task-specific recovery instructions in the [campaign guide](docs/team_campaign_20261111.md).
 
 **November 10 Set 1 rerun:** [verified launcher and settings](docs/set1_v11_rerun.md). Run `bash scripts/start_set1_verified.sh` in the terminal with `DEEPSEEK_API_KEY`: freeze inputs, run 20 Host diagnostics, then start 12 fresh CL games only if every check passes. Host causal boundaries were repaired; persistent reference bodies are cached once per role session. No MAS or extra repeats in this launcher.
 
-**All-DeepSeek option:** select `--config configs/loop.deepseek.json` and set `DEEPSEEK_API_KEY`. Host/grader use `deepseek-v4-pro / high`; player/default MAS partner use `deepseek-flash / thinking disabled`. Auxiliary calls use the corresponding role profile. CL and MAS study launchers support this configuration. See [setup and commands](docs/deepseek.md).
+**Current DeepSeek defaults:** `configs/loop.deepseek.json` uses `deepseek-v4-pro / high` for Host/Grader and `deepseek-flash / thinking disabled` for Player/default MAS partner. The optional isolated format repairer is configured separately; see the [campaign guide](docs/team_campaign_20261111.md) for machines without Codex. See [provider setup](docs/deepseek.md).
 
 GoodTurtle studies in-context experience transfer (continual learning, or CL) and two-agent collaboration using lateral thinking puzzles. It includes **50 English puzzles and 161 scoring checkpoints**, configurable host, player and grader roles, trajectories, and experiment summaries.
 
-**Current scope: one-repeat CL Set 1 and TS038 team experiments are authorized; other experiments remain paused.** Host behavior and scoring annotations still need validation; passing unit tests does not establish model accuracy. The default host is `gpt-6.1-sol` with medium reasoning; the grader stays `gpt-6.1-sol` with high reasoning, and the player and default partner are `gpt-5.6-luna` with low reasoning. Host answers use four labels: `yes`, `no`, `yes and no`, and `irrelevant`.
+**Current study: CL Set1–3 and MAS TS038/TS002/TS014, two people × two repeats per experiment.** Scripts start paid calls only when explicitly run. Host behavior and scoring annotations still need validation; passing unit tests does not establish model accuracy. GPT model settings remain available through the explicit Codex configuration; they are not the team launchers' DeepSeek defaults. Host answers use four labels: `yes`, `no`, `yes and no`, and `irrelevant`.
 
 New optional MAS strategy: [`free_dialogue`](docs/mas_free_dialogue.md) gives two independent persistent agents one shared public chat, adaptive speaking order, and explicit role ablations. Select `--strategies solo,free_dialogue`; the existing four-strategy study default is preserved.
 
@@ -28,6 +58,7 @@ New runs automatically export per-call `token_costs.csv`, per-game `costs_by_gam
 
 | Task | Entry point |
 | --- | --- |
+| Run the current three CL sets and three MAS puzzles | [Assigned slots, smoke/formal/parallel scripts and collection](docs/team_campaign_20261111.md) |
 | Upload a human host reference trajectory | [Upload inbox](data/host_reference/inbox/); [reference guide](data/host_reference/README.md) |
 | Find archived human conversations and corrections | [Reference sources](data/host_reference/sources/) |
 | Review findings | [Applied human review](data/host_reference/reviews/human_20261102/manifest.json); [Original annotations](data/host_reference/sources/human_review_20261102/); [Review history](data/host_reference/reviews/) |
