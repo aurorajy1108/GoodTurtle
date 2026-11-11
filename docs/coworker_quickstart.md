@@ -1,5 +1,7 @@
 # 同事从 clone 到运行实验
 
+11月11日新分支 `fix/cl-session-prefix-compat-20261111`：CL原始会话续接、新Player返回格式及兼容性请优先按 [新版本运行指南](run_session_prefix_v1.md) 操作。
+
 > 2026-10-24 v7：新增 CL 四条件对照、共享 buffer 问题预约、容量错误有限重试及 `--on-error`。旧实验已暂停，新增参数与设计边界见 [v7 修复说明](host_repair_v7.md)。
 
 本指南对应当前四标签 loop，Python 3.10+，只使用标准库。macOS、Linux 或 Windows 的 WSL 可运行并发 sweep；直接 Windows 环境的进程组停止行为尚未验证。运行真实模型需要你自己的 API key，或本机已安装且登录的官方 Codex CLI；仓库不包含账号凭据。以下命令都在仓库根目录执行。
@@ -10,9 +12,9 @@
 
 11月7日新增全DeepSeek配置：Host/player/grader/默认partner及辅助调用均可使用同一个DeepSeek Key，study入口已解除GPT Host限制。参见[DeepSeek设置及CL/MAS运行命令](deepseek.md)。下面Codex配置仍可显式选择。
 
-最新默认：Host=`gpt-6.1-sol` medium，grader=`gpt-6.1-sol` high；player/partner=`gpt-5.6-luna` low。
+study 最新默认配置为 `configs/loop.deepseek.json`：Host/Grader Pro/high，Player/Partner Flash/thinking disabled。显式选择 `configs/loop.codex.json` 时使用其中的GPT模型配置，CL须指定 `--memory transcript`。
 CL 固定每组首题为 B；同一批次每道 A 解一次后冻结复用，揭示 A 完整答案。
-B 每次是新会话、独立100次额度。Token/费用自动记录，Codex 账号费用仅作 API 等价估算。
+B 每次有独立100次额度；session 从固定A原始Player消息分支，其余条件新建会话。Token/费用自动记录，Codex账号费用仅作API等价估算。
 完整参数、实验方向、四种协作策略及费用说明见 [当前实验文档](study_20261102.md)。
 
 已安装 Codex CLI 的同事先自行完成 `codex login`；不会共享任何人的登录凭据。

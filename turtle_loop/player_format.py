@@ -45,7 +45,7 @@ def _scope(raw):
 
 
 def _unfence(text):
-    match=re.fullmatch(r'\s*```(?:json)?\s*\n([\s\S]*?)\n```\s*',text)
+    match=re.fullmatch(r'\s*```(?:json|text)?[ \t]*\r?\n([\s\S]*?)\r?\n```\s*',text)
     return match.group(1) if match else text
 
 

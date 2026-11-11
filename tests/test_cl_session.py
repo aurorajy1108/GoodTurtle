@@ -1,6 +1,8 @@
 """Cross-puzzle message lineage, independent quotas and no private-context leaks."""
 import copy
+import hashlib
 import json
+import shutil
 import tempfile
 import unittest
 from pathlib import Path
@@ -138,7 +140,12 @@ class CLSessionTests(unittest.TestCase):
             (root/'config.json').write_text(json.dumps(config));requests=[]
             def api(req,**kw):
                 body=json.loads(req.data);requests.append(body)
-                text='{"type":"final","text":"submitted explanation"}' if body['model']=='player' else evaluated()
+                if body['model']=='player':
+                    n=sum(req['model']=='player' for req in requests)
+                    text=('FINAL\nsubmitted explanation' if n%2 else
+                          '{"type":"final","text":"submitted explanation"}')
+                    self.assertNotIn('response_format',body)
+                else:text=evaluated()
                 return response('deepseek',len(requests),text)
             with patch('urllib.request.OpenerDirector.open',side_effect=api):
                 code=main(['continual','--dataset',str(root/'data.json'),'--config',str(root/'config.json'),
@@ -162,13 +169,14 @@ class CLSessionTests(unittest.TestCase):
                 for c in records:
                     if c['role']=='grader' and row['condition']!='source':self.assertNotIn('A SECRET',str(c['request']))
             self.assertEqual(prefixes[0],prefixes[1])
+            self.assertEqual(prefixes[0]['messages'][-1]['content'],'FINAL\nsubmitted explanation')
             comparisons=json.loads((root/'out/control_contrasts.json').read_text())
             self.assertEqual(len(comparisons),2)
             self.assertTrue(all(c['treatment']=='session' for c in comparisons))
 
     def test_format_resume_preserves_inherited_prefix_and_never_regenerates_pending_action(self):
         with tempfile.TemporaryDirectory() as tmp:
-            prompts=load_prompts();counter=[0];player_calls=[0];broken=[True]
+            prompts=load_prompts();counter=[0];player_calls=[0]
             config={'max_questions':3,'session_mode':'persistent',
                 **{r:{'provider':'deepseek','model':r} for r in ('host','player','grader')}}
             source=[]
@@ -193,6 +201,26 @@ class CLSessionTests(unittest.TestCase):
                 self.assertEqual(stopped['status'],'error')
                 self.assertEqual(stopped['submissions'],0)
                 self.assertEqual(player_calls[0],2)
+                # A controller overlay also ships the new prefix parser when a
+                # compatible saved snapshot did not originally contain it.
+                from scripts.resume_study import prepare
+                from turtle_loop.engine import ROOT
+                old=Path(tmp)/'study';(old/'continual').mkdir(parents=True)
+                shutil.copytree(rec.folder,old/'continual/target')
+                snap=old/'runtime_snapshot/turtle_loop';snap.mkdir(parents=True)
+                for name in ('engine.py','sessions.py','providers.py','experiments.py'):
+                    shutil.copy2(ROOT/'turtle_loop'/name,snap/name)
+                hashes={str(f.relative_to(old/'runtime_snapshot')):hashlib.sha256(f.read_bytes()).hexdigest()
+                        for f in snap.iterdir()}
+                (old/'snapshot_hashes.json').write_text(json.dumps(hashes))
+                (old/'status.json').write_text(json.dumps({'status':'stopped_on_error'}))
+                (old/'study_plan.json').write_text(json.dumps({'jobs':[{'name':'continual',
+                    'argv':['python3',str(old/'runtime_snapshot/scripts/experiment.py')]}]}))
+                (old/'continual/experiment_runs.json').write_text(json.dumps([{'run_dir':'target','status':'error'}]))
+                overlay=prepare(old,Path(tmp)/'continued_study',auto_player_format=True)
+                self.assertIsNone(overlay['controller_overlay']['turtle_loop/action_text.py']['before_sha256'])
+                self.assertEqual((Path(tmp)/'continued_study/runtime_snapshot/turtle_loop/action_text.py').read_bytes(),
+                                 (ROOT/'turtle_loop/action_text.py').read_bytes())
                 restored=Recorder.restore(rec.folder,PUZZLE,config,prompts,echo=False)
                 resumed=play(PUZZLE,config,restored,clients(restored),prompts,player_continuation=continuation)
                 self.assertTrue(resumed['success'])

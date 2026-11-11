@@ -773,9 +773,11 @@ def _play(puzzle, config, recorder, clients, prompts, player_context=None):
     try:
         while True:
             forced = counted >= limit - 1
+            final_instruction=('FINAL followed by a newline and your complete explanation'
+                               if 'prefix-v1' in prompts['player'] else 'type=final')
             control = (f'Total limit: {limit} submissions including questions and unsuccessful finals. '
                        f'Used question-equivalents: {counted}. '
-                       + ('This is the mandatory last turn. Return type=final NOW, even if uncertain.'
+                       + (f'This is the mandatory last turn. Return {final_instruction} NOW, even if uncertain.'
                           if forced else f'At slot {limit}, you MUST submit a final explanation.'))
             if pending is not None:
                 turn = pending

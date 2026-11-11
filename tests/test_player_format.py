@@ -26,6 +26,11 @@ class PlayerFormatTests(unittest.TestCase):
         self.assertEqual((meta['candidate_count'],meta['selected_index']),(2,1))
         self.assertIsNone(local_repair(first+'\n'+last,False,{**self.policy,'multiple_actions':'reject'}))
         self.assertIsNone(local_repair('</think>'+last+'{"type":',False,self.policy))
+        body='Did he say "course"?\nWas it C:\\notes?'
+        framed='```text\r\nQUESTION\r\n'+body+'\r\n```'
+        recovered,meta=local_repair(framed,False,self.policy)
+        self.assertEqual(recovered,{'type':'question','text':body})
+        self.assertEqual(meta['method'],'terminal_action_envelope')
 
     def test_identical_duplicate_fields_preserve_final_and_conflicts_are_rejected(self):
         raw='{"type":"final","text":"The full explanation.","type":"final"}'

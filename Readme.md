@@ -2,6 +2,8 @@
 
 English | [中文](README.zh-CN.md)
 
+**2026-11-11 branch:** [Run CL session continuation and the new Player response format](docs/run_session_prefix_v1.md), including Set1 and TS038 commands, all relevant parameters, costs and recovery limits.
+
 **Automatic format recovery:** `bash scripts/start_set1_auto_continue.sh` continues the stopped Set 1 rollout with fixed-position extraction, bounded verbatim Codex formatting, preserved game quotas, and cumulative cost accounting. See [policy, limits and parameters](docs/automatic_continuation.md).
 
 **November 10 Set 1 rerun:** [verified launcher and settings](docs/set1_v11_rerun.md). Run `bash scripts/start_set1_verified.sh` in the terminal with `DEEPSEEK_API_KEY`: freeze inputs, run 20 Host diagnostics, then start 12 fresh CL games only if every check passes. Host causal boundaries were repaired; persistent reference bodies are cached once per role session. No MAS or extra repeats in this launcher.
@@ -14,7 +16,7 @@ GoodTurtle studies in-context experience transfer (continual learning, or CL) an
 
 New optional MAS strategy: [`free_dialogue`](docs/mas_free_dialogue.md) gives two independent persistent agents one shared public chat, adaptive speaking order, and explicit role ablations. Select `--strategies solo,free_dialogue`; the existing four-strategy study default is preserved.
 
-The [current five-set study](docs/study_20261102.md) defaults to a fixed target B per set and one frozen A trajectory per source puzzle within a batch. B starts a fresh 100-submission session on every repeat. Reverse positive directions require `--directions bidirectional` and are exploratory; `--source-policy per-repeat` explicitly restores regenerating A. The study launcher defaults to writing a plan only.
+The [current five-set study](docs/study_20261102.md) defaults to a fixed target B per set and one frozen A trajectory per source puzzle within a batch. Every B repeat has a fresh 100-submission budget; the session condition independently forks A's original Player messages, while direct and answer_only start new conversations. Reverse positive directions require `--directions bidirectional` and are exploratory; `--source-policy per-repeat` explicitly restores regenerating A. The study launcher defaults to writing a plan only.
 
 New runs use **one host judgment per question**, local retrieval of up to 6 reference Q&As (6000 characters), and a separate grader context with up to 3 precedents (3000 characters). Full story facts and scoring rules remain intact; provenance stays on disk. **Each game has persistent, isolated role sessions** with lossless context updates: Codex resumes explicit thread IDs, Responses chains response IDs, and other providers maintain local multi-turn messages. Set `session_mode: replay` for the stateless control. Session continuity does not make history free or guarantee equal results. Configure these options in [runtime parameters](docs/runtime_parameters.md); existing frozen runs retain their original policy. General persistent interruptions fail closed. Complete saved DeepSeek solo replies with a supported metadata or narrowly repairable question-quote error can be recovered in an explicitly annotated copy; see [recovery limits](docs/deepseek.md#字符串text_note及一次性续跑).
 
@@ -96,3 +98,5 @@ The 2026-10-28 reorganization moved paths and updated bindings and navigation wi
 Use `python3 scripts/host_reference.py locate OLD_PATH` to locate paths recorded in older reviews or Excel files; mappings are in [repository_layout.json](configs/repository_layout.json). Existing runs retain their frozen snapshots.
 
 Player 输出协议：新实验使用固定前缀，单 agent 与 MAS 的格式、兼容性和计数规则见 [player_action_protocol.md](docs/player_action_protocol.md)。Host/Grader 格式保持不变。
+
+CL now defaults to original-role session continuation: finish A, reveal its full answer, then continue B with a fresh 100-submission budget. Repeated B games fork the same frozen A prefix. See [protocol, controls and launch commands](docs/cl_raw_session.md).

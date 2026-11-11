@@ -116,10 +116,10 @@ def prepare(source, out, repair_player_note=False, repair_grader_reason=False, r
     snap=out/'runtime_snapshot'
     changes={}
     if repair_any:
-        files=('engine.py','sessions.py','providers.py')+(('coverage.py','grader.py') if repair_grader_reason else ())
+        files=('engine.py','sessions.py','providers.py','action_text.py')+(('coverage.py','grader.py') if repair_grader_reason else ())
         for name in files:
             dest=snap/'turtle_loop'/name
-            before=hashlib.sha256(dest.read_bytes()).hexdigest()
+            before=hashlib.sha256(dest.read_bytes()).hexdigest() if dest.exists() else None
             shutil.copy2(ROOT/'turtle_loop'/name,dest)
             changes['turtle_loop/'+name]={'before_sha256':before,
                 'after_sha256':hashlib.sha256(dest.read_bytes()).hexdigest(),
@@ -129,6 +129,7 @@ def prepare(source, out, repair_player_note=False, repair_grader_reason=False, r
         if auto_player_format:
             for name in ('turtle_loop/player_format.py','configs/player_format_repair.json'):
                 dest=snap/name
+                dest.parent.mkdir(parents=True,exist_ok=True)
                 before=hashlib.sha256(dest.read_bytes()).hexdigest() if dest.exists() else None
                 shutil.copy2(ROOT/name,dest)
                 changes[name]={'before_sha256':before,'after_sha256':hashlib.sha256(dest.read_bytes()).hexdigest(),

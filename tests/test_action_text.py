@@ -1,9 +1,13 @@
 import json
+import tempfile
 import unittest
+from pathlib import Path
 from turtle_loop.action_text import parse_prefix_action
 from turtle_loop.engine import parse_action, ProtocolError
 from turtle_loop.codex_client import output_contract
 from turtle_loop.dialogue_contract import valid_dialogue_action
+from turtle_loop.engine import Recorder, load_prompts, play
+from test_loop import PUZZLE, FakeClient, evaluated
 
 class PrefixTests(unittest.TestCase):
     def test_punctuation_and_multiline_preserved(self):
@@ -27,6 +31,28 @@ class PrefixTests(unittest.TestCase):
     def test_archived_json_and_codex_text_contract(self):
         self.assertEqual(parse_action('{"type":"question","text":"Q?"}')['text'],'Q?')
         self.assertEqual(output_contract(json.dumps({'action_protocol':'prefix-v1','opening':'Q','turn_control':'next'})),(None,None,''))
+
+    def test_mandatory_final_control_matches_new_or_frozen_legacy_prompt(self):
+        for prefix in (True,False):
+            with self.subTest(prefix=prefix), tempfile.TemporaryDirectory() as tmp:
+                prompts=load_prompts()
+                if not prefix:prompts['player']='Legacy prompt: return one JSON action.'
+                def action(n,payload):
+                    self.assertIn('mandatory last turn',payload['turn_control'])
+                    if prefix:
+                        self.assertEqual(payload['action_protocol'],'prefix-v1')
+                        self.assertIn('Return FINAL followed by a newline',payload['turn_control'])
+                        self.assertNotIn('type=final',payload['turn_control'])
+                        return 'FINAL\nsubmitted explanation'
+                    self.assertNotIn('action_protocol',payload)
+                    self.assertIn('Return type=final',payload['turn_control'])
+                    return '{"type":"final","text":"submitted explanation"}'
+                rec=Recorder(Path(tmp)/'game',PUZZLE,{'max_questions':1},prompts,echo=False)
+                result=play(PUZZLE,{'max_questions':1},rec,{'player':FakeClient(action),
+                    'host':FakeClient(lambda *args:self.fail('Final sent to Host')),
+                    'grader':FakeClient(lambda *args:evaluated())},prompts)
+                self.assertTrue(result['success'])
+                self.assertEqual(result['submissions'],1)
 
     def test_prefix_proposals_work_in_all_team_modes(self):
         import tempfile

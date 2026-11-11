@@ -1,3 +1,5 @@
+11月11日当前启动入口改为 raw-role-session-v1；历史 v11 冻结批次仍保持 transcript。见 [CL 新协议](cl_raw_session.md)。
+
 # Set 1 修复后重跑（2026-11-10）
 
 当前断点更新：A14已完成，B13完成60问后，第61次输出出现推理与多个动作。现在可使用[自动格式修复与续跑入口](automatic_continuation.md)，复用已有进度；下面的start入口用于从头建立新的独立批次。
@@ -17,7 +19,7 @@ bash /Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/scripts/start_set1_verified
 3. **20题全部通过**才启动12局CL；错标签、非法响应、传输失败或未跑完都停止。保留诊断结果与用量，不反复重抽标签直到通过。它是开发诊断，不是独立测试集的准确率估计。
 4. A=15（positive）、14（negative）、28（neutral），固定B=13。16不参加，本批没有MAS，没有额外重复。
 5. 每道A重新做一次，结束后无论成功与否均提供完整规范答案。同一道A的经验冻结后复用；不会挑成功A替换失败A，也不会复用旧批次的已污染轨迹。
-6. 每个A分别对应B的direct、transcript+完整A答案、answer_only，共9局B，加3局A=12局。direct之间是独立新局，不复用同一份baseline结果；调度seed只影响顺序，不是模型采样seed。
+6. 每个A分别对应B的direct、session（原始会话+完整A答案）、answer_only，共9局B，加3局A=12局。direct之间是独立新局，不复用同一份baseline结果；调度seed只影响顺序，不是模型采样seed。
 7. 每局独立100次额度；错误/不完整交卷计1次，槽位100强制最终交卷。错误交卷公开反馈仍仅yes/no/yes and no/irrelevant。
 
 当前默认模型来自`configs/loop.deepseek.json`：Host和Grader为`deepseek-v4-pro`、thinking enabled/high；Player为`deepseek-flash`、thinking disabled。Host每个普通问题一次判断；Grader只在交卷时调用。角色会话独立，公开聊天持续保留，A答案只进入转移条件的Player。

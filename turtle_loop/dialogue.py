@@ -59,7 +59,7 @@ def dialogue_settings(args):
            ['critic','investigator'] if result['roles']=='swapped' else ['generalist','generalist'])
     result['role_assignment']={actor:{'specialty':specialty,'instruction':ROLE_PROFILES[specialty]}
                                for actor,specialty in zip(('A','B'),ids)}
-    result['protocol']='shared-dialogue-v2'
+    result['protocol']='shared-dialogue-v3-prefix-v1'
     result['format_correction_max_retries']=2
     return result
 

@@ -1,5 +1,7 @@
 # 自动修复格式并续跑
 
+11月11日：下方指定旧 run 的续跑命令仅用于旧 transcript 协议。最新 CL 使用 [原始会话续接](cl_raw_session.md)，须新建批次，不能在旧局中途更换迁移协议。Player 新协议见 [prefix-v1](player_action_protocol.md)。
+
 当前已停止的Set1从这里继续，在已export `DEEPSEEK_API_KEY`的终端执行一次：
 
 ```bash
@@ -12,10 +14,11 @@ bash /Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/scripts/start_set1_auto_con
 
 1. 原有严格解析和限定引号/换行修复优先。输出完整才处理，截断、拒绝、API错误不会伪装成一个问题。
    对重复JSON键，只有同一个键的所有值完全相同时才可合并，并保留完整动作；重复键值冲突或存在额外未知字段仍拒绝。第95次输出的两个type均为final，已按此规则离线验证，完整解答文字不变。
-2. 识别`<｜end▁of▁thinking｜>`、`</think>`、`</analysis>`、`</解答过程>`，只解析最后一个结束标记之后的动作；也支持去掉完整的markdown JSON围栏。
-3. 没有结束标记却有多个完整动作时，按事先固定的位置规则取**最后一个完整动作**，不是比较哪个问题更有希望。候选数、选择位置和原文哈希写入轨迹。损坏的额外对象不被静默丢弃。可在策略中设为`reject`禁用这种选择。
-4. 仍需格式修复时调用独立的Codex格式器。只传原始Player输出和格式控制，不传当前题面、公开历史、汤底、评分或Host反馈。它必须返回原文中的完整动作；程序核验type及完整text值逐字一致，不能补充、缩短、改写问题或把question改成final。能否答对不参与选择。
-5. 当前局继续使用Player原来的持续会话，保留原始assistant输出。格式器是隔离的临时调用，不替代Player，不让Player重新生成当前问题。
+2. Player 额外输出的 feedback/expected_feedback/expected_answer 只在值属于四种标签且其他字段符合 schema 时作为预测字段丢弃并审计，实际反馈始终由真正 Host 提供。未知字段或值继续拒绝。
+3. 识别`<｜end▁of▁thinking｜>`、`</think>`、`</analysis>`、`</解答过程>`，只解析最后一个结束标记之后的动作；也支持去掉完整的markdown JSON围栏。
+4. 没有结束标记却有多个完整动作时，按事先固定的位置规则取**最后一个完整动作**，不是比较哪个问题更有希望。候选数、选择位置和原文哈希写入轨迹。损坏的额外对象不被静默丢弃。可在策略中设为`reject`禁用这种选择。
+5. 仍需格式修复时调用独立的Codex格式器。只传原始Player输出和格式控制，不传当前题面、公开历史、汤底、评分或Host反馈。它必须返回原文中的完整动作；程序核验type及完整text值逐字一致，不能补充、缩短、改写问题或把question改成final。能否答对不参与选择。
+6. 当前局继续使用Player原来的持续会话，保留原始assistant输出。格式器是隔离的临时调用，不替代Player，不让Player重新生成当前问题。
 
 Codex调用复用本机已登录的CLI，使用只读沙盒、JSON输出schema和项目已有禁工具配置；这一调用方式符合[官方非交互模式文档](https://learn.chatgpt.com/docs/non-interactive-mode)。这里自动修复的是输出数据格式，不是让Codex随意修改实验代码、Host或评分标准。
 

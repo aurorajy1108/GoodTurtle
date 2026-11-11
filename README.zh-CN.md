@@ -2,6 +2,8 @@
 
 # GoodTurtle — COMP1110
 
+**11月11日新版本：** [CL会话续接与新返回格式运行指南](docs/run_session_prefix_v1.md)，含新分支获取、Set1/TS038命令、参数、成本和恢复边界。
+
 **格式错误自动续跑：** 当前Set1可用`bash scripts/start_set1_auto_continue.sh`接续。先按固定规则恢复已有动作，必要时调用隔离Codex格式器并验证原文一致；保留完成局、额度和成本，限制重试次数。[机制、参数和日志位置](docs/automatic_continuation.md)。
 
 **11月10日Set1修复后重跑：** 在已export `DEEPSEEK_API_KEY`的终端执行`bash scripts/start_set1_verified.sh`。先冻结输入并跑20题Host诊断，全部通过才启动12局全新CL；本入口不跑MAS、不追加重复。已修复Host因果边界，并将持续会话中的参考内容按ID缓存。见[全部设置、参数和结果位置](docs/set1_v11_rerun.md)。
@@ -91,3 +93,5 @@ python3 -m unittest discover -s tests -q
 旧审核/Excel中的路径保留为当时的来源记录，可用 `python3 scripts/host_reference.py locate OLD_PATH` 找新位置；映射见 [repository_layout.json](configs/repository_layout.json)。已有运行继续使用自己的冻结快照，不套用新目录重新解释旧结果。
 
 Player 输出协议：新实验使用固定前缀，单 agent 与 MAS 的格式、兼容性和计数规则见 [player_action_protocol.md](docs/player_action_protocol.md)。Host/Grader 格式保持不变。
+
+CL 默认改为保留 A 原始角色消息、揭晓完整答案后续接 B；B 重新获得 100 次额度，每次重复从固定 A 前缀独立分支。[协议、对照与启动方式](docs/cl_raw_session.md)
