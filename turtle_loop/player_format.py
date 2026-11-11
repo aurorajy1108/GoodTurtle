@@ -56,6 +56,7 @@ def local_repair(raw, forced, policy):
     try:prefix=recover_prefix_action(raw)
     except ValueError:return None
     if prefix:
+        if set(prefix[0]) != {'type','text'} or prefix[0]['type'] not in ('question','final'):return None
         if forced and prefix[0]['type']!='final':return None
         return prefix
     scope,meta=_scope(raw)
@@ -158,6 +159,10 @@ def repair(raw, forced, policy, audit, event, source_response_id='', codex_calls
         if forced and fixed[0]['type']!='final':
             raise ProtocolError('Format recovery cannot turn a question into a mandatory final')
         return fixed
+    scope, _ = _scope(raw)
+    from .action_text import PREFIX_ACTION_HEAD
+    if PREFIX_ACTION_HEAD.search(scope):
+        raise ProtocolError('Ambiguous or incomplete prefix action; no model format repair allowed')
     try:json.loads(raw)
     except ValueError:pass
     else:raise ProtocolError('Valid JSON with an unsupported schema requires review, not formatting')

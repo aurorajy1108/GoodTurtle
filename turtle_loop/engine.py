@@ -511,8 +511,8 @@ class Recorder:
             rec.versions['player_format_policy_sha256']=hashlib.sha256(format_policy.read_bytes()).hexdigest()
         rec.pricing = json.loads((folder/'pricing_snapshot.json').read_text())
         rec.turns, rec.calls = [], []
-        for line in (folder/'trajectory.jsonl').read_text().splitlines():
-            event = json.loads(line)
+        events = [json.loads(line) for line in (folder/'trajectory.jsonl').read_text().splitlines()]
+        for event in events:
             if event['event'] == 'submission':
                 if event['index'] != len(rec.turns)+1:
                     raise ValueError('Invalid resumed submission order')
@@ -528,10 +528,13 @@ class Recorder:
             raise ValueError('Invalid pending turn or exhausted quota in resume history')
         if (folder/'api_calls.jsonl').exists():
             rec.calls = [json.loads(line) for line in (folder/'api_calls.jsonl').read_text().splitlines()]
-        recovery=(saved_player_note_recovery(previous,rec.calls,rec.turns,config)
-                  or saved_player_json_recovery(previous,rec.calls,rec.turns,config))
+        from .sessions import completed_host_replay_records
+        recovery_calls = completed_host_replay_records(rec.calls, events)
+        rec.session_restore_calls = recovery_calls
+        recovery=(saved_player_note_recovery(previous,recovery_calls,rec.turns,config)
+                  or saved_player_json_recovery(previous,recovery_calls,rec.turns,config))
         if not recovery and (ROOT/'configs/player_format_repair.json').exists():
-            recovery=saved_player_auto_recovery(previous,rec.calls,rec.turns,config)
+            recovery=saved_player_auto_recovery(previous,recovery_calls,rec.turns,config)
         grade_recovery=saved_grader_reason_recovery(previous,rec.calls,rec.turns,config,puzzle)
         transport_recovery = None
         transport_marker = folder / 'host_transport_recovery.json'

@@ -18,7 +18,9 @@ export DEEPSEEK_API_KEY='在本机替换成你的DeepSeek Key'
 
 ## 单人 Player JSON 模式配置
 
-`configs/loop.deepseek.solo-json.json` 保留上述 Host、grader 和 Player 模型与推理设置，同时为 Player 增加 `response_format: {"type": "json_object"}`。适用于单人对局，以及只使用 transcript / answer-only 的 CL；运行方式是将下方命令的 `--config` 换成此文件。API key 仍只从 `DEEPSEEK_API_KEY` 环境变量读取。
+当前纯文本动作若在说明文字后附唯一一个完整的 `QUESTION` 或 `FINAL` 块，控制器可在本地逐字提取完整动作，记录原始响应哈希及提取范围，不额外调用格式模型。大小写及同一行冒号形式（如 `Question: 原问题`）也可确定性归一化，完整正文逐字保留。多个动作、空动作或混入其他动作对象时仍停止；第100次提交仍必须为 `FINAL`。已保存的同类格式错误可在独立续跑目录中恢复，保留原问答、会话和已用额度，不重新生成失败位置的 Player 输出。
+
+`configs/loop.deepseek.solo-json.json` 保留上述 Host、grader 和 Player 模型与推理设置，同时为旧版 JSON 动作协议的 Player 增加 `response_format: {"type": "json_object"}`。当前 `prefix-v1` 动作协议要求 `QUESTION/FINAL` 纯文本：DeepSeek 适配器在每轮 Player/partner 请求中移除配置继承的 `response_format`，避免与提示词冲突而返回空白。Host/Grader 的格式设置不受影响，旧版 JSON 动作协议继续使用 JSON 模式。API key 仍只从 `DEEPSEEK_API_KEY` 环境变量读取。
 
 此配置会影响所有使用 Player profile 的调用，因此不要直接用于要求纯文本的 CL memory card、`solo_reflect` 或 `discuss` 内部审查。JSON 模式仍可能返回空白、截断或字段不合规，控制器继续验证动作并记录失败。2026-11-08 的 TS035 单人试跑使用了这份角色配置，完整运行至100次提交但未解出；这是一次试跑，不构成可靠性或性能结论。该次运行还使用了当时本地未合并的网络诊断改动；复现需核对运行快照与版本，不要仅凭配置文件推断整个环境相同。
 

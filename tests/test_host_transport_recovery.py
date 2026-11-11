@@ -26,6 +26,28 @@ class Response:
 
 @patch.dict('os.environ', {'DEEPSEEK_API_KEY': 'fixture'})
 class HostTransportRecoveryTests(unittest.TestCase):
+    def test_completed_authorized_replay_keeps_audit_but_restores_chat_on_next_resume(self):
+        from turtle_loop.sessions import completed_host_replay_records, restorable_chat_records
+        with tempfile.TemporaryDirectory() as tmp:
+            config, _, rec, result, _ = self.interrupted(Path(tmp))
+            proof = saved_host_transport_recovery(result, rec.calls, rec.turns, config)
+            replay = copy.deepcopy(rec.calls[-1])
+            replay.update(status='ok', text='no', response_id='replayed-host-response')
+            records = rec.calls + [replay]
+            events = [{'event':'host_transport_recovery', **proof}]
+            normalized = completed_host_replay_records(records, events)
+            self.assertEqual(len(normalized), len(records)-1)
+            self.assertTrue(all(c['status']=='ok' for c in restorable_chat_records(normalized)))
+            self.assertEqual(records[-2]['status'], 'transport_error')
+            self.assertEqual(completed_host_replay_records(records, []), records)
+            for change in ('proof', 'request', 'session'):
+                broken, markers = copy.deepcopy(records), copy.deepcopy(events)
+                if change == 'proof':markers[0]['calls_sha256']='tampered'
+                elif change == 'request':broken[-1]['request']['max_tokens']=1
+                else:broken[-1]['session_turn']+=1
+                with self.subTest(change=change), self.assertRaises(ValueError):
+                    completed_host_replay_records(broken, markers)
+
     def interrupted(self, root):
         config = {'max_questions': 3, 'session_mode': 'persistent', **{
             r: {'provider': 'deepseek', 'model': 'fixture', 'max_retries': 0}

@@ -331,7 +331,12 @@ class Client:
         if self.profile['provider']=='deepseek' and self.role in ('player','partner'):
             try:logical=json.loads(original_user)
             except (ValueError,TypeError):logical={}
-            if isinstance(logical,dict) and logical.get('action_protocol') != 'prefix-v1' and ('dialogue_control' in logical or
+            if isinstance(logical,dict) and logical.get('action_protocol') == 'prefix-v1':
+                # The current action prompt requires QUESTION/FINAL plain text.
+                # A legacy profile's JSON constraint can turn that output into
+                # whitespace at the provider. The turn's explicit protocol wins.
+                body.pop('response_format', None)
+            elif isinstance(logical,dict) and ('dialogue_control' in logical or
                     ('opening' in logical and 'turn_control' in logical)):
                 # Typed actions need JSON; teammate prose reviews and source
                 # summaries have different envelopes and stay plain text.
