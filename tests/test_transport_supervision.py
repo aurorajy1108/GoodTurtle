@@ -1,4 +1,5 @@
 import copy
+import http.client
 import json
 import ssl
 import tempfile
@@ -99,6 +100,64 @@ class TransportSupervisionTests(unittest.TestCase):
             argv=run.call_args.args[0];self.assertEqual(argv[-1],'A literal $(command) and "quotes"')
             self.assertNotIn('shell',run.call_args.kwargs)
             self.assertEqual(json.loads((Path(tmp)/'alerts.jsonl').read_text())['kind'],'test')
+
+    def test_unanswered_grader_read_failure_preserves_submission_and_replays_exactly(self):
+        config=self.config();prompts=load_prompts();seen=[];counts={'player':0,'host':0,'grader':0}
+        class BrokenRead(Response):
+            def read(self):raise http.client.IncompleteRead(b'partial wire bytes')
+        def api(req,**kw):
+            body=json.loads(req.data);role=body['model'];counts[role]+=1;seen.append((role,body))
+            if role=='grader' and counts[role]==2:return BrokenRead({})
+            return self.response('FINAL\nsubmitted explanation' if role=='player' else
+                                 evaluated((1,0)) if counts[role]==1 else evaluated(),f'{role}-{counts[role]}')
+        with tempfile.TemporaryDirectory() as tmp,patch('urllib.request.OpenerDirector.open',side_effect=api):
+            rec=Recorder(Path(tmp)/'game',PUZZLE,config,prompts,echo=False)
+            clients=lambda record:{r:Client(config[r],r,record.audit) for r in counts}
+            stopped=play(PUZZLE,config,rec,clients(rec),prompts)
+            self.assertEqual(stopped['submissions'],2);self.assertEqual(stopped['status'],'error')
+            for mutation in ('observed','http_error','changed_request'):
+                raw=copy.deepcopy(rec.calls)
+                if mutation=='observed':raw[-1]['text']='received grade'
+                elif mutation=='http_error':raw[-1].update(status='http_error',http_status=402)
+                else:raw[-1]['request']['messages'][-1]['content']='{}'
+                self.assertIsNone(saved_transport_recovery(stopped,raw,rec.turns,config,rec.folder))
+            proof=self.marker(rec,stopped,config);self.assertTrue(proof['possible_duplicate_remote_charge'])
+            before=len(seen);restored=Recorder.restore(rec.folder,PUZZLE,config,prompts,echo=False)
+            result=play(PUZZLE,config,restored,clients(restored),prompts)
+            self.assertTrue(result['success']);self.assertEqual(result['submissions'],2)
+            self.assertEqual(counts['player'],2);self.assertEqual(seen[before],seen[before-1])
+
+    def test_actor_read_failure_never_resamples_action(self):
+        config=self.config();prompts=load_prompts();counts={'player':0,'host':0,'grader':0}
+        class BrokenRead(Response):
+            def read(self):raise http.client.IncompleteRead(b'partial')
+        def api(req,**kw):
+            role=json.loads(req.data)['model'];counts[role]+=1
+            if role=='player' and counts[role]==2:return BrokenRead({})
+            return self.response('QUESTION\nOne question?' if role=='player' else 'no',f'{role}-{counts[role]}')
+        with tempfile.TemporaryDirectory() as tmp,patch('urllib.request.OpenerDirector.open',side_effect=api):
+            rec=Recorder(Path(tmp)/'game',PUZZLE,config,prompts,echo=False)
+            stopped=play(PUZZLE,config,rec,{r:Client(config[r],r,rec.audit) for r in counts},prompts)
+            self.assertIsNone(saved_transport_recovery(stopped,rec.calls,rec.turns,config,rec.folder))
+
+    def test_host_read_recovery_limit_survives_restarts(self):
+        config=self.config();prompts=load_prompts();counts={'player':0,'host':0,'grader':0}
+        class BrokenRead(Response):
+            def read(self):raise http.client.IncompleteRead(b'partial')
+        def api(req,**kw):
+            role=json.loads(req.data)['model'];counts[role]+=1
+            if role=='host' and counts[role]>1:return BrokenRead({})
+            return self.response('QUESTION\nOne question?' if role=='player' else 'no',f'{role}-{counts[role]}')
+        with tempfile.TemporaryDirectory() as tmp,patch('urllib.request.OpenerDirector.open',side_effect=api):
+            rec=Recorder(Path(tmp)/'game',PUZZLE,config,prompts,echo=False)
+            clients=lambda record:{r:Client(config[r],r,record.audit) for r in counts}
+            stopped=play(PUZZLE,config,rec,clients(rec),prompts)
+            for _ in range(2):
+                self.marker(rec,stopped,config)
+                rec=Recorder.restore(rec.folder,PUZZLE,config,prompts,echo=False)
+                stopped=play(PUZZLE,config,rec,clients(rec),prompts)
+            self.assertEqual(counts,{'player':2,'host':4,'grader':0})
+            self.assertIsNone(saved_transport_recovery(stopped,rec.calls,rec.turns,config,rec.folder))
 
 class SupervisorLifecycleTests(unittest.TestCase):
     def run_supervisor(self,stop_code=0,unknown=False,same_checkpoint=False):

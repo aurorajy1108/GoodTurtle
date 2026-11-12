@@ -18,6 +18,19 @@ def unobserved(call):
     return not any(call.get(k) for k in ('text', 'response_id', 'usage', 'raw_text'))
 
 
+def recoverable_transport(call):
+    if call.get('status') != 'transport_error':
+        return False
+    if (call.get('safe_pre_send_retry') is True and call.get('transport_phase') == 'open'
+            and call.get('transport_category') in ('tls_handshake_failure', 'tls_handshake_eof',
+                                                   'dns_resolution', 'network_unreachable_before_send')):
+        return True
+    # No response was accepted locally. A remote charge remains possible; only
+    # judging roles may retry, never resample an actor's action.
+    return (call.get('role') in ('host', 'grader') and call.get('transport_phase') == 'read'
+            and call.get('transport_category') in ('http_protocol', 'connection_reset', 'timeout'))
+
+
 def replay_records(calls, events):
     """Only explicit, hash-checked authorizations can remove failed chat attempts.
 
@@ -55,7 +68,7 @@ def replay_records(calls, events):
 
 
 def saved_transport_recovery(previous, calls, turns, config, folder):
-    """Authorize a pre-send failure, or one explicitly interrupted Host request.
+    """Authorize pre-send failures or unanswered judging-role read failures.
 
     Actor failures must be proven pre-send TLS/DNS failures. No retries after an
     observed answer, HTTP 401/402, truncation, refusal or a grading disagreement.
@@ -81,16 +94,20 @@ def saved_transport_recovery(previous, calls, turns, config, folder):
         if failed.get('status') == 'interrupted':
             if previous['status'] != 'interrupted':
                 return None
-        elif not (failed.get('status')=='transport_error' and failed.get('safe_pre_send_retry') is True
-                  and failed.get('transport_phase')=='open' and failed.get('transport_category') in
-                  ('tls_handshake_failure','tls_handshake_eof','dns_resolution','network_unreachable_before_send')):
+        elif not recoverable_transport(failed):
+            return None
+        # Count original audits, including previously authorized failed replays.
+        # Restarting the supervisor must not reset this per-request limit.
+        read_failures = sum(c.get('status') == 'transport_error' and c.get('transport_phase') == 'read'
+                            and all(c.get(k) == failed.get(k) for k in POSITION) for c in calls)
+        if failed.get('transport_phase') == 'read' and read_failures >= 3:
             return None
         tail = len(normalized)-1
         while tail and normalized[tail-1].get('status') != 'ok':
             tail -= 1
         for call in normalized[tail:]:
             if (not unobserved(call) or any(call.get(k)!=failed.get(k) for k in POSITION)
-                    or (call.get('status')!='interrupted' and not call.get('safe_pre_send_retry'))):
+                    or (call.get('status')!='interrupted' and not recoverable_transport(call))):
                 return None
         prefix = restorable_chat_records(normalized[:tail])
         if any(c.get('provider')!='deepseek' or c.get('role') not in ROLES for c in prefix):

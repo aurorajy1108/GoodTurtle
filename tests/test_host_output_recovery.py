@@ -1,4 +1,5 @@
 import copy
+import http.client
 import json
 from pathlib import Path
 import tempfile
@@ -10,6 +11,7 @@ from turtle_loop.host_output_recovery import saved_host_output_recovery
 from turtle_loop.engine import Recorder,load_prompts,play
 from turtle_loop.providers import APIError,Client
 from turtle_loop.sessions import GameSession,restore_context
+from turtle_loop.transport_recovery import saved_transport_recovery
 from test_loop import PUZZLE,evaluated
 from test_sessions import Response
 import test_budgeted_agents as budget_fixtures
@@ -132,6 +134,39 @@ class HostOutputRecoveryTests(unittest.TestCase):
             self.assertEqual(result['status'],'error');self.assertEqual(n[0],1)
             raw=[json.loads(s) for s in (rec.folder/'api_calls.jsonl').read_text().splitlines()]
             self.assertIsNone(saved_host_output_recovery(result,raw,rec.turns,config,rec.folder))
+
+    def test_mas_read_recovery_after_empty_recovery_keeps_review_ledger(self):
+        helper=budget_fixtures.BudgetedAgentsTests();config=self.config();prompts=load_prompts()
+        budget={'generation_cap':6,'output_token_cap':12000,'submission_cap':4}
+        base=helper.api(mas=True);n=[0]
+        class BrokenRead(Response):
+            def read(self):raise http.client.IncompleteRead(b'partial')
+        def api(req,**kw):
+            response=base(req,**kw)
+            if json.loads(req.data)['model']=='host':
+                n[0]+=1
+                if n[0]==2:response.data['choices'][0]['message']['content']=''
+                if n[0]==4:return BrokenRead({})
+            return response
+        with tempfile.TemporaryDirectory() as tmp,patch('urllib.request.OpenerDirector.open',side_effect=api):
+            rec=Recorder(Path(tmp)/'game',PUZZLE,config,prompts,echo=False)
+            ledger,clients=helper.clients(config,rec,budget,True,True)
+            stopped=play(PUZZLE,config,rec,clients,prompts);self.marker(rec,stopped,config)
+            rec=Recorder.restore(rec.folder,PUZZLE,config,prompts,echo=False)
+            ledger,clients=helper.clients(config,rec,budget,True,True)
+            stopped=play(PUZZLE,config,rec,clients,prompts)
+            self.assertEqual(stopped['submissions'],3);self.assertEqual(stopped['status'],'error')
+            raw=[json.loads(s) for s in (rec.folder/'api_calls.jsonl').read_text().splitlines()]
+            proof=saved_transport_recovery(stopped,raw,rec.turns,config,rec.folder)
+            self.assertIsNotNone(proof);self.assertTrue(proof['possible_duplicate_remote_charge'])
+            (rec.folder/'transport_recovery.json').write_text(json.dumps(proof))
+            before=len(helper.seen);rec=Recorder.restore(rec.folder,PUZZLE,config,prompts,echo=False)
+            ledger,clients=helper.clients(config,rec,budget,True,True)
+            result=play(PUZZLE,config,rec,clients,prompts)
+            self.assertTrue(result['success']);self.assertEqual(result['submissions'],4)
+            self.assertEqual(helper.seen[before][:2],helper.seen[before-1][:2])
+            self.assertEqual(ledger.status()['generations'],6)
+            self.assertEqual(sum(c.get('reflection_phase')=='review' and c.get('reflection_slot')==2 for c in rec.calls),1)
 
     def test_empty_refusal_or_truncation_is_not_treated_as_retryable_blank(self):
         for kind in ('refusal','length'):

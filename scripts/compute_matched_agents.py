@@ -250,7 +250,7 @@ def recover(source,out):
     snap=out/'runtime_snapshot';overlay={}
     for name in ('turtle_loop/engine.py','turtle_loop/providers.py','turtle_loop/sessions.py',
                  'turtle_loop/host.py','turtle_loop/host_output_recovery.py',
-                 'turtle_loop/budgeted_agents.py',
+                 'turtle_loop/budgeted_agents.py','turtle_loop/transport_recovery.py',
                  'scripts/matched_self_review.py','scripts/compute_matched_agents.py'):
         dest=snap/name
         overlay[name]={'before':sha(dest) if dest.exists() else None,'after':sha(ROOT/name)}
@@ -263,7 +263,7 @@ def recover(source,out):
             if not mode:raise ValueError('No checked recovery for '+spec['run_dir'])
             stopped.append({'run_dir':spec['run_dir'],'submissions_preserved':result['submissions'],'mode':mode})
     dump(out/'recovery_manifest.json',{'source':str(source),'controller_overlay':overlay,'stopped_games':stopped,
-         'policy':'Original archive retained. Completed grades, actor phases, public buffers, quotas, model/prompt/config files and all costs preserved. Host output envelopes only.'})
+         'policy':'Original archive retained. Completed grades, actor phases, public buffers, quotas, model/prompt/config files and all costs preserved. Checked output-envelope or unobserved transport recovery only.'})
     dump(out/'snapshot_hashes.json',{str(p.relative_to(snap)):sha(p) for p in snap.rglob('*')
                                     if p.is_file() and '__pycache__' not in p.parts})
     dump(out/'status.json',{'status':'prepared_recovery','planned_games':8,'active':{},'recovered_from':str(source)})

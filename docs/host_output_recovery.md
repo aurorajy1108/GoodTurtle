@@ -10,6 +10,8 @@
 - 拒绝、截断、工具调用、不同标签冲突、鉴权/余额问题不走这个空回复重试路径。
 - 正常问题仍只有一个有效Host标签。不会为核对答案调用第二位Host；原始API输出、空回复usage和所有费用均保留。
 - Player不重问，不重做已完成的游戏，不重置100次外部提交额度。MAS的两名Player会话、公共buffer和私有复查笔记一起恢复。
+- Host或Grader读取响应时断连，且本地没有收到可用正文、response ID或usage时，可校验断点后原样重发该请求。一次请求累计3次读取失败后停止，跨重启计数；Player读取失败不自动重新采样。已收到有效标签或评分时不会再请求新的判断。
+- 读取中断可能已经产生远端费用，原调用保留为`cost_status=unknown`，恢复记录标注`possible_duplicate_remote_charge=true`，不会按免费重试计算。
 
 已保存且可以明确归一化的回答恢复时，不增加Host调用。空回复恢复时只增加必要的Host调用。不能从未展示给Player的reasoning内容猜测标签。
 
@@ -46,6 +48,8 @@ python3.11 scripts/resume_study.py \
 - `--out`：新归档，保留原目录，复制原轨迹和已完成结果。
 - `--recover-host-output`：选择本次受限恢复；不能与其他恢复flag同时使用。
 - `--mode plan`：只校验并准备，默认不调用API；`--mode run`准备后执行原计划剩余部分。
+
+未收到响应的网络中断使用同一入口的`--recover-transport`替代`--recover-host-output`；团队监督器会自动选择已通过校验的恢复方式。
 
 对已有团队campaign，可继续使用自动监督器；它现在会识别该恢复模式：
 
