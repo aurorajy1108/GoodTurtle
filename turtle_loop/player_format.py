@@ -107,9 +107,12 @@ def _unfence(text):
 def local_repair(raw, forced, policy):
     from .engine import parse_action, ProtocolError, _unique_player_object
     if not policy or not isinstance(raw,str) or len(raw)>policy['max_raw_chars']:return None
-    from .action_text import recover_prefix_action
+    from .action_text import recover_prefix_action,recover_last_prefix_action
     try:prefix=recover_prefix_action(raw)
-    except ValueError:return None
+    except ValueError:
+        if policy['multiple_actions']!='last_complete':return None
+        try:prefix=recover_last_prefix_action(raw)
+        except ValueError:return None
     if prefix:
         if set(prefix[0]) != {'type','text'} or prefix[0]['type'] not in ('question','final'):return None
         if forced and prefix[0]['type']!='final':return None
@@ -207,13 +210,13 @@ def verbatim_proof(raw, action):
 def repair(raw, forced, policy, audit, event, source_response_id='', codex_calls=0):
     from .engine import ProtocolError, parse_action
     from .action_text import recover_prefix_action
-    try:recover_prefix_action(raw)
-    except ValueError as exc:raise ProtocolError(str(exc)) from None
     fixed=local_repair(raw,False,policy)
     if fixed:
         if forced and fixed[0]['type']!='final':
             raise ProtocolError('Format recovery cannot turn a question into a mandatory final')
         return fixed
+    try:recover_prefix_action(raw)
+    except ValueError as exc:raise ProtocolError(str(exc)) from None
     scope, _ = _scope(raw)
     from .action_text import PREFIX_ACTION_HEAD
     if PREFIX_ACTION_HEAD.search(scope):

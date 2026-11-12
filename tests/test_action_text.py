@@ -119,9 +119,26 @@ class PrefixTests(unittest.TestCase):
                     'Preamble\n```text\nQUESTION\nQ?\n```'):
             with self.subTest(raw=raw), patch('turtle_loop.providers.Client') as formatter:
                 with self.assertRaises(ProtocolError):
-                    repair(raw,False,load_policy(),lambda c:None,lambda *a,**k:None)
+                    repair(raw,False,{**load_policy(),'multiple_actions':'reject'},lambda c:None,lambda *a,**k:None)
                 formatter.assert_not_called()
                 self.assertFalse(verbatim_proof(raw,{'type':'question','text':'Q?'}))
+
+    def test_explicit_last_complete_policy_preserves_last_question_without_model(self):
+        from turtle_loop.player_format import repair,load_policy
+        from unittest.mock import patch
+        body='Does "course" mean dishes?\nKeep this condition: before dinner.'
+        raw='QUESTION\nEarlier candidate?\n\nI will pivot.\nQUESTION\n'+body
+        with patch('turtle_loop.providers.Client') as formatter:
+            action,meta=repair(raw,False,{**load_policy(),'multiple_actions':'last_complete'},lambda c:None,lambda *a,**k:None)
+            self.assertEqual(action,{'type':'question','text':body})
+            self.assertEqual(meta['method'],'last_complete_prefix_action')
+            self.assertEqual(raw[meta['text_span'][0]:meta['text_span'][1]],body)
+            self.assertEqual(meta['model_calls'],0)
+            formatter.assert_not_called()
+        with self.assertRaises(ProtocolError):
+            repair(raw,True,load_policy(),lambda c:None,lambda *a,**k:None)
+        with self.assertRaises(ProtocolError):
+            repair(raw+'\nFINAL\n',False,load_policy(),lambda c:None,lambda *a,**k:None)
 
     def test_game_audits_preamble_without_extra_player_call(self):
         import tempfile

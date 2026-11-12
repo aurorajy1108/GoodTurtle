@@ -31,6 +31,16 @@ def sha(path):
     return hashlib.sha256(Path(path).read_bytes()).hexdigest()
 
 
+def solo_base_prompts(reference, shared_prompts):
+    """Keep frozen judging prompts, but take Player instructions from real solo."""
+    solo = read(Path(reference)/'team/TS038_r01_solo/prompts.json')
+    if not solo or any(solo.get(k) != v for k, v in shared_prompts.items() if k != 'player'):
+        raise ValueError('Solo and MAS reference judging prompts differ')
+    if 'SHARED DIALOGUE PROTOCOL' in solo['player'] or 'one of two independent solvers' in solo['player']:
+        raise ValueError('Solo reference contains MAS role instructions')
+    return {**shared_prompts, 'player': solo['player']}
+
+
 def prepare(reference, out):
     reference, out = Path(reference).resolve(), Path(out).resolve()
     hashes = read(reference/'snapshot_hashes.json')
@@ -73,11 +83,13 @@ def prepare(reference, out):
         source = reference/f'team/TS038_r{repeat:02}_free_dialogue'
         if any(read(source/n) != v for n, v in [('config.json', config), ('puzzle_private.json', puzzle), ('prompts.json', prompts)]):
             raise ValueError('Reference repeats have different frozen inputs')
+    prompts = solo_base_prompts(reference, prompts)
     dump(snapshot/'configs/matched_inputs.json', {'config': config, 'prompts': prompts, 'puzzle': puzzle})
     policy = read(snapshot/'configs/player_format_repair.json')
     policy['max_codex_calls_per_game'] = 0
     dump(snapshot/'configs/player_format_repair.json', policy)
-    plan = {'schema_version': 1, 'condition': 'solo_self_review_matched', 'puzzle_id': 'TS038',
+    plan = {'schema_version': 2, 'solver_prompt_version': 'solo-base-v2-no-mas-role',
+        'condition': 'solo_self_review_matched', 'puzzle_id': 'TS038',
         'reference_study': str(reference), 'repeats': specs, 'planned_games': 2,
         'matching': 'Available solver generation-count and generated-output-token caps. Input/cache tokens and actual cost are not fixed.',
         'schedule': 'Uniform deterministic floor differences across slots 1..99; no extra notes at slot 100. One solver/lane for all phases.',

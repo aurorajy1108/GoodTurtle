@@ -59,3 +59,27 @@ def recover_prefix_action(raw):
                     'text_span':[body_start,len(raw.rstrip())],
                     'discarded_prefix_chars':start,
                     'raw_sha256':hashlib.sha256(raw.encode()).hexdigest()}
+
+
+def recover_last_prefix_action(raw):
+    """Explicit opt-in last_complete policy; never choose by puzzle truth.
+
+    The strict parser still rejects multiple actions. This function is used only
+    by the existing configured format-repair policy and preserves the entire
+    final typed action, including qualifiers and any explicit MAS handoff.
+    """
+    import hashlib
+    if not isinstance(raw,str) or '```' in raw or re.search(r'["\']type["\']\s*:',raw):
+        return None
+    heads=list(PREFIX_ACTION_HEAD.finditer(raw))
+    if len(heads)<2:return None
+    head=heads[-1]
+    selected=raw[head.start():]
+    recovered=recover_prefix_action(selected)
+    if not recovered:return None
+    action,meta=recovered
+    start=head.start()+meta['text_span'][0]
+    return action,{'method':'last_complete_prefix_action','candidate_count':len(heads),
+        'selected_index':len(heads)-1,'selected_span':[head.start(),len(raw.rstrip())],
+        'text_span':[start,len(raw.rstrip())],'raw_sha256':hashlib.sha256(raw.encode()).hexdigest(),
+        'selection_policy':'last_complete','model_calls':0}

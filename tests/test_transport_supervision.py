@@ -177,7 +177,7 @@ class ActorCorrectionRecoveryTests(unittest.TestCase):
         def api(req,**kw):
             body=json.loads(req.data);r=body['model'];counts[r]+=1;seen.append((r,body))
             if r=='player' and counts[r]==3:raise KeyboardInterrupt()
-            if r=='player':text='QUESTION NEXT=B\nFirst question?' if counts[r]==1 else 'DISCUSS NEXT=B\nAn idea.\nFINAL NEXT=A\nsubmitted explanation' if counts[r]==2 else 'FINAL NEXT=B\nsubmitted explanation'
+            if r=='player':text='QUESTION NEXT=B\nFirst question?' if counts[r]==1 else 'An untyped proposed explanation.' if counts[r]==2 else 'FINAL NEXT=B\nsubmitted explanation'
             else:text='QUESTION NEXT=A\nSecond question?' if r=='partner' else 'no' if r=='host' else evaluated()
             return self.response(text,f'{r}-{counts[r]}')
         with tempfile.TemporaryDirectory() as tmp,patch('urllib.request.OpenerDirector.open',side_effect=api):

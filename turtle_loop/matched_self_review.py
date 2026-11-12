@@ -13,6 +13,8 @@ from .providers import Client, Reply
 INSTRUCTIONS = '''
 SINGLE-SOLVER SELF-REVIEW CONTROL (prefix-v1)
 You are ONE solver in ONE ongoing conversation, with no teammate or second agent.
+During draft/review ONLY, the ordinary action-only output instructions are replaced
+by the note instructions below. During action, the ordinary action protocol applies.
 The controller supplies phase_control on each call. Follow its current phase:
 - draft: write a short working hypothesis and ONE candidate next question or final.
 - review: critically check your own hypothesis/candidate using public feedback.

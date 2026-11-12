@@ -6,6 +6,8 @@
 
 **Set1 repeat extension:** [Reuse frozen A prefixes and extend to four B repeats](docs/cl_repeat_extension.md), adding 18 B games without rerunning the original 21 games; local verbatim action recovery and DeepSeek-only model interfaces.
 
+**Compute-matched MAS self-review:** [TS038 solo/MAS × explicit review](docs/compute_matched_agents.md): eight new games, common solver budgets, clean solo prompts, private per-agent reviews and shared public discussion.
+
 English | [中文](README.zh-CN.md)
 
 ## Current team quickstart

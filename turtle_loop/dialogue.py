@@ -144,8 +144,23 @@ class FreeDialoguePlayer:
                     self.recorder.event('dialogue_saved_action_recovered',submission=self.turn,actor=actor,
                                         response_id=saved['response_id'],method=saved['method'])
                 else:reply=client.complete(dialogue_system_prompt(),json.dumps(payload,ensure_ascii=False))
+                # A budget-aware actor can spend its last generation on FINAL.
+                # The same controller sets its allowed actions before generation;
+                # accept the early mandatory final without manufacturing a handoff.
+                if getattr(client,'compute_budget_final',False):
+                    forced=True
+                    allowed=['final']
+                    self.compute_budget_final=True
                 try:
-                    action,recovery=parse_player_json(reply.text)
+                    try:action,recovery=parse_player_json(reply.text)
+                    except (ValueError,TypeError):
+                        from .player_format import load_policy
+                        from .action_text import recover_last_prefix_action
+                        policy=load_policy()
+                        fixed=(recover_last_prefix_action(reply.text) if policy and
+                               policy['multiple_actions']=='last_complete' else None)
+                        if not fixed:raise
+                        action,recovery=fixed
                     if not valid_dialogue_action(action,allowed,forced):
                         raise ValueError()
                 except (ValueError,TypeError):
