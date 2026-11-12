@@ -11,6 +11,8 @@
 
 一个 Player 使用 `deepseek-flash`、关闭 thinking，同一个持续会话完成 draft、review、action。复查显式区分公开证据和自拟假设，不模拟第二个 agent。额外调用通过确定性 floor 差分分配到第1–99个外部槽位，第100个槽位只交最终答案。最多每槽一个 draft、一个 review、一个 action。复查次数不取决于模型表现，不按成功筛选或更换种子。没有额外示例、参考 MAS 对话或私有评分注入。
 
+运行时每次 note 的输出上限为1,536 token、action 为1,024 token，且不能超过总预算剩余额度；note 的文字目标至多160词。普通调用预留768个 token 给最后交卷。它们是本对照的策略参数，并不等同于原 MAS 每次调用8,192 token 的原始上限。应与实际输出利用率一起披露，不据此声称严格相同的逐调用计算量。
+
 错误/不完整交卷占一个外部问题额度；格式错误没有发给 Host，但每个已生成回复仍消耗 solver 调用和 output 预算。最多一次同槽格式纠正。计算预算不足会预留一次最终交卷并停止；提前正确解出也停止。不会为了消耗预算要求输出无意义文字。
 
 这是**相同可用调用和生成 token 预算**，不保证两边实际 token 数、输入长度、缓存命中或费用相等。不能据此声称实现了严格等 FLOPs 或等美元计算量。必须同时报告实际使用量和预算利用率；只有两次、一个题目的结果属于探索性控制。
@@ -41,3 +43,5 @@ python3.11 scripts/matched_self_review.py status --out runs/api/20261112_ts038_s
 同一输出目录有互斥锁，避免重复启动。运行器每10秒更新 `status.json`、`index.html`、`experiment_runs.json`、全角色 `cost_summary.json`；每局另有 `trajectory.html`、`self_review.html`、`solver_compute.json`、逐调用 `api_calls.jsonl`。`comparison.md/json` 把新对照与原 solo/MAS 并列，同时显示实际预算利用率。token/价格是供应商 usage 与冻结价格表推算，不是账单实扣。
 
 已证明的发送前网络错误或显式中断可按原请求续跑，已返回的 draft/review/action 不重复生成，quota 不重置；缺失评分证据可按既有逻辑补全，不能改变已返回的评分判断。最多每局自动恢复3次，其他异常暂停并记录 `alerts.jsonl`、请求 macOS 通知；通知可见性取决于本机权限。`worker --repeat 1/2 --resume` 是内部入口，应由 run 调度，避免绕过锁和快照验证。
+
+本次实际运行使用 `runs/api/20261112_ts038_self_review_matched_v2`。初始目录因单行 `QUESTION 内容` 格式被拒暂停，v2 只做明确前缀的本地换行转换，复用各槽最后一个已返回的纠正输出，所有原调用仍计入预算。原始目录保持不变，变更哈希记录在 v2 的 `recovery_manifest.json`。汇总取 v2，不能再叠加初始目录的相同调用费用。
