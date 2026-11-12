@@ -12,6 +12,7 @@
 - Player不重问，不重做已完成的游戏，不重置100次外部提交额度。MAS的两名Player会话、公共buffer和私有复查笔记一起恢复。
 - Host或Grader读取响应时断连，且本地没有收到可用正文、response ID或usage时，可校验断点后原样重发该请求。一次请求累计3次读取失败后停止，跨重启计数；Player读取失败不自动重新采样。已收到有效标签或评分时不会再请求新的判断。
 - 读取中断可能已经产生远端费用，原调用保留为`cost_status=unknown`，恢复记录标注`possible_duplicate_remote_charge=true`，不会按免费重试计算。
+- DeepSeek发生`IncompleteRead`时，如果异常中保留的字节能严格解析为一个完整JSON对象，则直接执行原有响应校验并保留该次答案和usage，不重发。真正截断的JSON、仅有空白的响应仍视为读取失败。日志只额外记录片段字节数、SHA256和类型，避免泄露正文。
 
 已保存且可以明确归一化的回答恢复时，不增加Host调用。空回复恢复时只增加必要的Host调用。不能从未展示给Player的reasoning内容猜测标签。
 
@@ -72,6 +73,39 @@ bash scripts/run_compute_matched_agents.sh runs/api/YOUR_2X2_HOST_RECOVERY
 - 后续bash只运行未完成游戏，复用原预算计划。不要再次叠加原目录的费用；新目录已包含所有历史调用。
 
 `recovery_manifest.json`记录代码覆盖及哈希；逐局`host_output_recovery.json`是待处理检查点，成功后移除，授权与恢复事件保留在`trajectory.jsonl`。`api_calls.jsonl`保留原始输出，恢复后的公共label出现在`host_feedback`事件中。重复归档只是续跑副本，不是新实验重复。
+
+## 人工决定在耗尽读取重试后继续
+
+默认仍然不超过同请求3次读取失败。排查连接、确认无活跃worker后，操作人可显式申请**一次**额外窗口，最多再发生3次读取失败。它不会清空旧日志、usage、潜在费用或100次答题额度；自动监督不会自行申请这个窗口。同一局已有该授权时拒绝再次申请。
+
+CL单批次：
+
+```bash
+python3.11 scripts/resume_study.py --from-study YOUR_STOPPED_STUDY \
+  --out runs/api/YOUR_RENEWED_CL --recover-transport \
+  --renew-read-window 'Operator continuation after connection diagnosis and pause' --mode run
+```
+
+CL团队监督器（先在终端export密钥或source忽略的`.env.local`）：
+
+```bash
+python3.11 scripts/supervise_campaign.py --campaign YOUR_STOPPED_SUPERVISOR \
+  --out runs/api/YOUR_RENEWED_SUPERVISOR \
+  --renew-read-window 'Operator continuation after connection diagnosis and pause'
+```
+
+MAS四组对照：
+
+```bash
+python3.11 scripts/compute_matched_agents.py recover --from-run YOUR_STOPPED_2X2_OUTPUT \
+  --out runs/api/YOUR_RENEWED_2X2 \
+  --renew-read-window 'Operator continuation after connection diagnosis and pause'
+bash scripts/run_compute_matched_agents.sh runs/api/YOUR_RENEWED_2X2
+```
+
+`--renew-read-window REASON`必须填写简短原因，仅适用于已累计3次读取失败、且没有收到正文、ID或usage的DeepSeek Host/Grader请求；CL同时要求`--recover-transport`。监督器仅首次检查点使用此人工授权，此后仍遵守正常校验和上限。`transport_read_window.json`将原因、时间、原日志哈希和额外上限绑定到唯一原请求；不能用来放宽其他题目或角色的失败上限。
+
+DeepSeek官方说明，非流式排队时可能发送空行保活，而不是模型答案：[连接保活机制](https://api-docs.deepseek.com/quick_start/rate_limit/)。本地配置600秒与观察到约31秒断流不同，现有证据不能确定是服务端还是网络中间层；不能把空白片段误认为有效回答或未知费用为零。
 
 ## 停止原因与限制
 

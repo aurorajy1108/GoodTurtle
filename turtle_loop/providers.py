@@ -2,6 +2,7 @@
 import json
 import errno
 import http.client
+import hashlib
 import os
 import re
 import socket
@@ -229,6 +230,29 @@ def transport_diagnostic(exc, phase):
             'safe_pre_send_retry': category in ('dns_resolution', 'tls_handshake_eof', 'tls_handshake_failure', 'network_unreachable_before_send') and phase == 'open'}
 
 
+def read_deepseek_json(response, record):
+    """Keep a complete JSON body even if the HTTP framing terminator is lost.
+
+    Never repair truncated JSON or issue another request here. Diagnostics hash
+    partial bytes without exposing model output, prompts or network headers.
+    """
+    try:
+        return json.loads(response.read())
+    except http.client.IncompleteRead as exc:
+        partial = exc.partial if isinstance(exc.partial, bytes) else b''
+        detail = {'partial_bytes': len(partial), 'partial_sha256': hashlib.sha256(partial).hexdigest(),
+                  'partial_kind': 'whitespace' if not partial.strip() else 'incomplete_json'}
+        record['http_read_diagnostic'] = detail
+        try:
+            data = json.loads(partial)
+        except (ValueError, UnicodeError):
+            raise exc from None
+        if not isinstance(data, dict):
+            raise exc from None
+        detail.update(partial_kind='complete_json', framing_recovered=True)
+        return data  # Normal refusal/truncation/label/schema checks still apply.
+
+
 class Client:
     def __init__(self, profile, role, audit):
         validate_profile(profile)
@@ -383,7 +407,8 @@ class Client:
                 request = urllib.request.Request(url, json.dumps(body).encode(), headers, method='POST')
                 with self.opener.open(request, timeout=self.profile.get('timeout', 120)) as response:
                     phase = 'read'
-                    data = json.loads(response.read())
+                    data = (read_deepseek_json(response, record) if self.profile['provider']=='deepseek'
+                            else json.loads(response.read()))
                 reply = parse_reply(kind, data)
                 reply.seconds = time.monotonic() - start
                 empty_host=(self.role=='host' and self.profile['provider']=='deepseek'

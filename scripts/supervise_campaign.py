@@ -47,9 +47,18 @@ def checkpoint(study):
     return game,previous,calls,turns,config
 
 
-def choose_recovery(study):
+def choose_recovery(study,renew_read_window=None):
     game,previous,calls,turns,config=checkpoint(study)
     args=(previous,calls,turns,config)
+    if renew_read_window:
+        from turtle_loop.transport_recovery import new_read_retry_window
+        if (game/'transport_read_window.json').exists():raise ValueError('This game already has an explicit read-window renewal')
+        window=new_read_retry_window(calls,renew_read_window)
+        proof=saved_transport_recovery(*args,game,renewed_window=window)
+        if not proof:raise ValueError('Read-window renewal has no verified transport checkpoint')
+        return '--recover-transport',{'game':game.name,'preserved_submissions':len(turns),
+            'calls_sha256':digest(calls),'possible_duplicate_remote_charge':True,
+            'renew_read_window':renew_read_window}
     choices=[('--recover-host-output',lambda:saved_host_output_recovery(*args,game)),
              ('--complete-grader-coverage',lambda:saved_grader_reason_recovery(*args,read(game/'puzzle_private.json'),missing_coverage=True)),
              ('--recover-transport',lambda:saved_transport_recovery(*args,game)),
@@ -198,7 +207,8 @@ def supervise(args):
                         job['status']='completed';continue
                     if changed:raise ValueError('Controller changed; existing frozen workers were preserved, but a new repair requires validation')
                     if len(job['attempts'])>=args.max_recoveries:raise ValueError('Bounded recovery limit reached')
-                    flag,proof=choose_recovery(current)
+                    renewal=getattr(args,'renew_read_window',None) if not job['attempts'] else None
+                    flag,proof=choose_recovery(current,renewal) if renewal else choose_recovery(current)
                     if proof['calls_sha256'] in [a['checkpoint']['calls_sha256'] for a in job['attempts']]:
                         raise ValueError('Identical failed checkpoint already attempted; refusing a repair loop')
                     target=out/'continuations'/slot/f"attempt_{len(job['attempts'])+1:02d}"
@@ -206,6 +216,7 @@ def supervise(args):
                     log=(out/f"{slot}_{len(job['attempts'])+1:02d}.log").open('w')
                     command=[sys.executable,str(ROOT/'scripts/resume_study.py'),'--from-study',str(current),
                              '--out',str(target),flag,'--mode','run']
+                    if renewal:command.extend(['--renew-read-window',renewal])
                     proc=subprocess.Popen(command,cwd=ROOT,stdout=log,stderr=subprocess.STDOUT,start_new_session=True)
                     processes[slot]=proc;logs[slot]=log
                     job.update(status='running',latest_study=str(target),pid=proc.pid,started_at=time.time(),stall_notified=False,recovery_notified=False)
@@ -244,6 +255,7 @@ def main(argv=None):
     p.add_argument('--max-recoveries',type=int,default=3)
     p.add_argument('--stall-seconds',type=int,default=2700)
     p.add_argument('--notify',choices=['macos','none'],default='macos')
+    p.add_argument('--renew-read-window',metavar='REASON',help='Explicit first-checkpoint operator renewal after exhausted read retries; never automatically renewed again')
     a=p.parse_args(argv)
     if not 1<=a.interval<=60 or not 1<=a.max_recoveries<=10 or a.cooldown<0 or a.stall_seconds<60:
         p.error('interval 1..60, max-recoveries 1..10, cooldown >=0, stall-seconds >=60')

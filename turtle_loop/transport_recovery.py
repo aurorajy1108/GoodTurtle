@@ -1,6 +1,7 @@
 """Audited exact-request recovery. Never discard an observed model response."""
 import hashlib
 import json
+from datetime import datetime, timezone
 from pathlib import Path
 
 from .sessions import GameSession, restore_context, restorable_chat_records
@@ -29,6 +30,38 @@ def recoverable_transport(call):
     # judging roles may retry, never resample an actor's action.
     return (call.get('role') in ('host', 'grader') and call.get('transport_phase') == 'read'
             and call.get('transport_category') in ('http_protocol', 'connection_reset', 'timeout'))
+
+
+def new_read_retry_window(calls, reason):
+    """Explicit operator renewal after a paused, exhausted read-retry window."""
+    if not isinstance(reason,str) or not reason.strip() or len(reason)>500 or not calls:
+        raise ValueError('Read-window renewal requires a short operator reason')
+    last=calls[-1]
+    count=sum(c.get('status')=='transport_error' and c.get('transport_phase')=='read'
+              and all(c.get(k)==last.get(k) for k in POSITION) for c in calls)
+    if (not unobserved(last) or last.get('provider')!='deepseek' or not recoverable_transport(last)
+            or last.get('transport_phase')!='read' or count<3):
+        raise ValueError('Only an exhausted unanswered judging-role read failure may be renewed')
+    return {'calls_count':len(calls),'calls_sha256':digest(calls),'request_sha256':digest(last['request']),
+            'role':last['role'],'additional_read_failures':3,'reason':reason.strip(),
+            'authorized_at':datetime.now(timezone.utc).isoformat()}
+
+
+def read_retry_window(calls, folder, supplied=None):
+    marker=Path(folder)/'transport_read_window.json'
+    window=supplied if supplied is not None else (json.loads(marker.read_text()) if marker.exists() else None)
+    if window is None:return None
+    required={'calls_count','calls_sha256','request_sha256','role','additional_read_failures','reason','authorized_at'}
+    if not isinstance(window,dict) or set(window)!=required:raise ValueError('Invalid read-window authorization')
+    n=window['calls_count']
+    if type(n) is not int or not 0<n<=len(calls) or digest(calls[:n])!=window['calls_sha256']:
+        raise ValueError('Read-window authorization does not match original audits')
+    reference=new_read_retry_window(calls[:n],window['reason'])
+    if any(window[k]!=reference[k] for k in required-{'authorized_at'}):
+        raise ValueError('Read-window authorization changed request, role or limit')
+    datetime.fromisoformat(window['authorized_at'])
+    if all(calls[-1].get(k)==calls[n-1].get(k) for k in POSITION):return window
+    return None  # Historical renewal does not apply to another question or role.
 
 
 def replay_records(calls, events):
@@ -67,7 +100,7 @@ def replay_records(calls, events):
     return [c for i,c in enumerate(calls) if i not in skipped]
 
 
-def saved_transport_recovery(previous, calls, turns, config, folder):
+def saved_transport_recovery(previous, calls, turns, config, folder, renewed_window=None):
     """Authorize pre-send failures or unanswered judging-role read failures.
 
     Actor failures must be proven pre-send TLS/DNS failures. No retries after an
@@ -98,8 +131,10 @@ def saved_transport_recovery(previous, calls, turns, config, folder):
             return None
         # Count original audits, including previously authorized failed replays.
         # Restarting the supervisor must not reset this per-request limit.
+        window=read_retry_window(calls,folder,renewed_window)
+        start=window['calls_count'] if window else 0
         read_failures = sum(c.get('status') == 'transport_error' and c.get('transport_phase') == 'read'
-                            and all(c.get(k) == failed.get(k) for k in POSITION) for c in calls)
+                            and all(c.get(k) == failed.get(k) for k in POSITION) for c in calls[start:])
         if failed.get('transport_phase') == 'read' and read_failures >= 3:
             return None
         tail = len(normalized)-1
@@ -196,11 +231,13 @@ def saved_transport_recovery(previous, calls, turns, config, folder):
         indices=[i for i,c in enumerate(calls) if any(c is x for x in normalized[tail:])]
         if indices != list(range(indices[0],len(calls))):
             return None
-        return {'role':role,'submission':len(turns) if pending else len(turns)+1,
+        result={'role':role,'submission':len(turns) if pending else len(turns)+1,
                 'calls_count':len(calls),'calls_sha256':digest(calls),
                 'failed_call_indices':indices,'request_sha256':digest(failed['request']),
                 'possible_duplicate_remote_charge':not bool(failed.get('safe_pre_send_retry')),
                 'dialogue':dialogue}
+        if window:result['read_retry_window']=window
+        return result
     except (ValueError,TypeError,KeyError,IndexError,StopIteration,OSError):
         return None
 

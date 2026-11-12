@@ -42,7 +42,7 @@ def collect_resume_costs(out, batch, gate_reused=False):
 
 
 def prepare(source, out, repair_player_note=False, repair_grader_reason=False, repair_player_json=False,
-            recover_host_transport=False, auto_player_format=False, recover_dialogue_action=False, correct_untyped_player=False, recover_transport=False, complete_grader_coverage=False, recover_host_output=False):
+            recover_host_transport=False, auto_player_format=False, recover_dialogue_action=False, correct_untyped_player=False, recover_transport=False, complete_grader_coverage=False, recover_host_output=False, renew_read_window=None):
     source,out=Path(source).resolve(),Path(out).resolve()
     wrapper=None
     if (source/'run_manifest.json').exists() and (source/'study/study_plan.json').exists():
@@ -58,6 +58,8 @@ def prepare(source, out, repair_player_note=False, repair_grader_reason=False, r
     if sum((repair_player_note,repair_grader_reason,repair_player_json,recover_host_transport,auto_player_format,recover_dialogue_action,correct_untyped_player,recover_transport,complete_grader_coverage,recover_host_output))>1:
         raise ValueError('Select one saved-response recovery mode at a time')
     repair_any=repair_player_note or repair_grader_reason or repair_player_json or recover_host_transport or auto_player_format or recover_dialogue_action or correct_untyped_player or recover_transport or complete_grader_coverage or recover_host_output
+    if renew_read_window and not recover_transport:raise ValueError('Read-window renewal requires --recover-transport')
+    renewed=None
     if out.exists() or source in out.parents or (wrapper and wrapper in out.parents):
         raise ValueError('Use a new output directory outside the original study')
     status=wrapper_status if wrapper else json.loads((source/'status.json').read_text())
@@ -95,13 +97,17 @@ def prepare(source, out, repair_player_note=False, repair_grader_reason=False, r
                 turns[e['submission']-1]['label']=e['label']
                 if e['event']=='evaluation':turns[e['submission']-1]['grade']={k:v for k,v in e.items() if k not in ('event','timestamp','submission','raw')}
         calls=[json.loads(x) for x in (game/'api_calls.jsonl').read_text().splitlines()]
+        if renew_read_window:
+            from turtle_loop.transport_recovery import new_read_retry_window
+            if (game/'transport_read_window.json').exists():raise ValueError('This game already has an explicit read-window renewal')
+            renewed=new_read_retry_window(calls,renew_read_window)
         args=(json.loads((game/'result.json').read_text()),calls,turns,json.loads((game/'config.json').read_text()))
         if args[0].get('evaluation_versions',{}).get('runtime_context_version') != RUNTIME_VERSION:
             raise ValueError('Recovery overlay would change the frozen runtime context protocol. '
                              'Use the archived compatible recovery code for this old study; new experiments use a fresh batch.')
         recovery=(saved_host_output_recovery(*args,game) if recover_host_output else
                   saved_grader_reason_recovery(*args,json.loads((game/'puzzle_private.json').read_text()),missing_coverage=True) if complete_grader_coverage else
-                  saved_transport_recovery(*args,game) if recover_transport else
+                  saved_transport_recovery(*args,game,renewed_window=renewed) if recover_transport else
                   saved_untyped_player_correction(*args) if correct_untyped_player else
                   saved_dialogue_action_recovery(*args,game) if recover_dialogue_action else
                   saved_player_auto_recovery(*args) if auto_player_format else
@@ -132,6 +138,7 @@ def prepare(source, out, repair_player_note=False, repair_grader_reason=False, r
         dump(out/plan['jobs'][0]['name']/recovery_details['run_dir']/'grader_coverage_completion.json',recovery)
     if recover_transport:
         dump(out/plan['jobs'][0]['name']/recovery_details['run_dir']/'transport_recovery.json',recovery)
+        if renewed:dump(out/plan['jobs'][0]['name']/recovery_details['run_dir']/'transport_read_window.json',renewed)
     if recover_host_transport:
         dump(out/plan['jobs'][0]['name']/recovery_details['run_dir']/'host_transport_recovery.json', recovery)
     if recover_dialogue_action:
@@ -217,9 +224,10 @@ def main(argv=None):
     p.add_argument('--recover-transport',action='store_true',help='Checked exact replay of pre-send DeepSeek failures or a cancelled pending Host request, including MAS buffers; never rerun completed games')
     p.add_argument('--complete-grader-coverage',action='store_true',help='Complete omitted per-fact evidence for an observed valid grader judgment; freeze all original credits and flags, never regrade the submission')
     p.add_argument('--recover-host-output',action='store_true',help='Recover a unique saved Host label envelope without API, or replay only a saved blank Host request within its total three-attempt limit')
+    p.add_argument('--renew-read-window',metavar='REASON',help='Explicit operator-only renewal after three unanswered judging-role read failures; one renewal per game, up to three further failures; requires --recover-transport')
     args=p.parse_args(argv)
     record=prepare(args.from_study,args.out,args.repair_player_note,args.repair_grader_reason,args.repair_player_json,
-                   args.recover_host_transport,args.auto_player_format,args.recover_dialogue_action,args.correct_untyped_player,args.recover_transport,args.complete_grader_coverage,args.recover_host_output)
+                   args.recover_host_transport,args.auto_player_format,args.recover_dialogue_action,args.correct_untyped_player,args.recover_transport,args.complete_grader_coverage,args.recover_host_output,args.renew_read_window)
     out=Path(record['out']);batch=record['batch']
     print(json.dumps(record,ensure_ascii=False),flush=True)
     if args.mode=='plan':return 0

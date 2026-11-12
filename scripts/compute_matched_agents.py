@@ -237,7 +237,7 @@ def run(out):
         state['active']={};dump(out/'status.json',state);dashboard(out);lock.close()
 
 
-def recover(source,out):
+def recover(source,out,renew_read_window=None):
     """Copy a stopped pilot, overlay checked Host recovery, preserve all games."""
     source,out=Path(source).resolve(),Path(out).resolve()
     status=read(source/'status.json')
@@ -259,6 +259,10 @@ def recover(source,out):
     for spec in read(out/'plan.json')['jobs']:
         game=out/spec['run_dir'];result=read(game/'result.json')
         if result and result['status']!='completed':
+            if renew_read_window:
+                from turtle_loop.transport_recovery import new_read_retry_window
+                if (game/'transport_read_window.json').exists():raise ValueError('This game already has an explicit read-window renewal')
+                dump(game/'transport_read_window.json',new_read_retry_window(calls(game/'api_calls.jsonl'),renew_read_window))
             mode=authorize_recovery(game)
             if not mode:raise ValueError('No checked recovery for '+spec['run_dir'])
             stopped.append({'run_dir':spec['run_dir'],'submissions_preserved':result['submissions'],'mode':mode})
@@ -281,13 +285,15 @@ def main(argv=None):
     parser.add_argument('--game',help='Internal worker run_dir from plan')
     parser.add_argument('--resume',action='store_true')
     parser.add_argument('--from-run',help='Stopped pilot to clone safely for recover; original directory is retained')
+    parser.add_argument('--renew-read-window',metavar='REASON',help='Operator-only renewal for an exhausted unanswered judging-role read request; one per game, up to three further failures; recover only')
     args=parser.parse_args(argv)
+    if args.renew_read_window and args.command!='recover':parser.error('--renew-read-window requires recover')
     if args.command=='prepare':
         prepare(args.reference,args.out,args.dataset,args.config);print('Prepared 8 games, no API calls.');return 0
     if args.command=='worker':return worker(args.out,args.game,args.resume)
     if args.command=='recover':
         if not args.from_run:parser.error('recover requires --from-run')
-        print(json.dumps(recover(args.from_run,args.out)));return 0
+        print(json.dumps(recover(args.from_run,args.out,args.renew_read_window)));return 0
     if args.command=='status':dashboard(Path(args.out));print(json.dumps(read(Path(args.out)/'status.json'),indent=2));return 0
     return run(args.out)
 

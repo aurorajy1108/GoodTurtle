@@ -11,7 +11,7 @@ from unittest.mock import patch
 from turtle_loop.engine import Recorder,load_prompts,play
 from turtle_loop.providers import Client,PreSendTLSFailure
 from turtle_loop.dialogue import FreeDialoguePlayer,dialogue_settings,dialogue_system_prompt
-from turtle_loop.transport_recovery import saved_transport_recovery,replay_records
+from turtle_loop.transport_recovery import saved_transport_recovery,replay_records,new_read_retry_window
 from scripts.supervise_campaign import desktop_notification,notify,choose_recovery
 from test_loop import PUZZLE,evaluated
 from test_sessions import Response
@@ -158,6 +158,20 @@ class TransportSupervisionTests(unittest.TestCase):
                 stopped=play(PUZZLE,config,rec,clients(rec),prompts)
             self.assertEqual(counts,{'player':2,'host':4,'grader':0})
             self.assertIsNone(saved_transport_recovery(stopped,rec.calls,rec.turns,config,rec.folder))
+            # Only an explicit operator renewal creates another bounded window.
+            raw=[json.loads(l) for l in (rec.folder/'api_calls.jsonl').read_text().splitlines()]
+            window=new_read_retry_window(raw,'Operator continuation after diagnosis and pause')
+            marker=rec.folder/'transport_read_window.json';marker.write_text(json.dumps(window))
+            for _ in range(3):
+                proof=self.marker(rec,stopped,config)
+                self.assertEqual(proof['read_retry_window'],window)
+                rec=Recorder.restore(rec.folder,PUZZLE,config,prompts,echo=False)
+                stopped=play(PUZZLE,config,rec,clients(rec),prompts)
+            raw=[json.loads(l) for l in (rec.folder/'api_calls.jsonl').read_text().splitlines()]
+            self.assertEqual(counts,{'player':2,'host':7,'grader':0})
+            self.assertIsNone(saved_transport_recovery(stopped,raw,rec.turns,config,rec.folder))
+            bad={**window,'additional_read_failures':99};marker.write_text(json.dumps(bad))
+            self.assertIsNone(saved_transport_recovery(stopped,raw,rec.turns,config,rec.folder))
 
 class SupervisorLifecycleTests(unittest.TestCase):
     def run_supervisor(self,stop_code=0,unknown=False,same_checkpoint=False):
