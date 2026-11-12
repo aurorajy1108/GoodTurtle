@@ -23,13 +23,43 @@ from turtle_loop.providers import Client
 CONDITIONS={'solo':(1,False),'solo_review':(1,True),'mas':(2,False),'mas_review':(2,True)}
 
 
-def prepare(reference,out):
-    reference,out=Path(reference).resolve(),Path(out).resolve()
-    prepare_solo(reference,out)
-    caps=read(out/'plan.json')
-    snap=out/'runtime_snapshot'
-    inputs=read(snap/'configs/matched_inputs.json')
-    inputs['mas_player_prompt']=read(reference/'team/TS038_r01_free_dialogue/prompts.json')['player']
+def prepare(reference,out,dataset=None,config=None):
+    reference=Path(reference).resolve() if reference else None
+    out=Path(out).resolve()
+    if reference:
+        if dataset or config:raise ValueError('Use either --reference or fresh --dataset/--config inputs')
+        prepare_solo(reference,out)
+        caps=read(out/'plan.json')
+        snap=out/'runtime_snapshot'
+        inputs=read(snap/'configs/matched_inputs.json')
+        inputs['mas_player_prompt']=read(reference/'team/TS038_r01_free_dialogue/prompts.json')['player']
+    else:
+        # Portable path: a fresh checkout contains every required input. No
+        # ignored local gameplay archive is required or silently substituted.
+        from scripts.team_sweep import snapshot
+        from turtle_loop.dataset import load_dataset
+        from turtle_loop.cli import configuration
+        from turtle_loop.engine import load_prompts
+        from turtle_loop.host_context import build_story_context
+        from turtle_loop.dialogue import dialogue_system_prompt
+        data=load_dataset(dataset or ROOT/'data/annotations/turtle50_v5/private.json')
+        puzzle=next((p for p in data['puzzles'] if p['id']=='TS038'),None)
+        if puzzle is None:raise ValueError('Dataset must contain TS038')
+        cfg=configuration(argparse.Namespace(config=str(config or ROOT/'configs/loop.deepseek.json'),dry_run=True))
+        if (cfg['session_mode']!='persistent' or cfg['max_questions']!=100
+                or any(cfg[r]['provider']!='deepseek' for r in ('player','host','grader'))
+                or cfg['player'].get('extra_body',{}).get('thinking')!={'type':'disabled'}):
+            raise ValueError('This pilot requires persistent DeepSeek roles, non-thinking Player and quota 100')
+        build_story_context(puzzle)
+        out.mkdir(parents=True,exist_ok=False)
+        snap=snapshot(out,data,cfg,[puzzle])
+        shutil.copy2(ROOT/'scripts/matched_self_review.py',snap/'scripts/matched_self_review.py')
+        policy=read(snap/'configs/player_format_repair.json')
+        policy['max_codex_calls_per_game']=0
+        dump(snap/'configs/player_format_repair.json',policy)
+        inputs={'puzzle':puzzle,'config':cfg,'prompts':load_prompts(),'mas_player_prompt':dialogue_system_prompt()}
+        caps={'repeats':[{'repeat':r,'generation_cap':225,'output_token_cap':77696,'submission_cap':100,
+                         'basis':'Predeclared TS038 pilot budget; no historical trajectory required.'} for r in (1,2)]}
     if 'SHARED DIALOGUE PROTOCOL' not in inputs['mas_player_prompt']:
         raise ValueError('Missing frozen MAS role protocol')
     if 'SHARED DIALOGUE PROTOCOL' in inputs['prompts']['player']:
@@ -47,7 +77,9 @@ def prepare(reference,out):
           'repeats':2,'conditions':CONDITIONS,'jobs':specs,'workers':2,
           'per_generation_output_cap':2048,'note_word_target':160,
           'dialogue_policy':dialogue_settings(argparse.Namespace()),
-          'reference_study':str(reference),'cap_derivation':caps['repeats'],
+          'reference_study':str(reference) if reference else None,
+          'input_mode':'frozen_reference' if reference else 'fresh_repository_inputs',
+          'cap_derivation':caps['repeats'],
           'common_solver_caps':common_caps,
           'matching':'Same available aggregate actor generation/output caps in ALL eight games. Actor A+B and reviews share ONE budget. Actual input/cache/cost need not match.',
           'review_schedule':'Floor differences across external slots 1..99. Only the first solver decision in a slot gets its scheduled private draft/review; no extra review for format corrections or subsequent public discussion.',
@@ -210,12 +242,13 @@ def main(argv=None):
     parser.add_argument('command',choices=['prepare','run','worker','status'])
     parser.add_argument('--out',required=True)
     parser.add_argument('--reference',help='Completed frozen TS038 study used only to derive caps and frozen inputs')
+    parser.add_argument('--dataset',help='Fresh dataset JSON containing TS038; defaults to repository turtle50_v5/private.json')
+    parser.add_argument('--config',help='Fresh DeepSeek config; defaults to repository loop.deepseek.json')
     parser.add_argument('--game',help='Internal worker run_dir from plan')
     parser.add_argument('--resume',action='store_true')
     args=parser.parse_args(argv)
     if args.command=='prepare':
-        if not args.reference:parser.error('--reference required')
-        prepare(args.reference,args.out);print('Prepared 8 games, no API calls.');return 0
+        prepare(args.reference,args.out,args.dataset,args.config);print('Prepared 8 games, no API calls.');return 0
     if args.command=='worker':return worker(args.out,args.game,args.resume)
     if args.command=='status':dashboard(Path(args.out));print(json.dumps(read(Path(args.out)/'status.json'),indent=2));return 0
     return run(args.out)

@@ -4,6 +4,20 @@
 
 # GoodTurtle — COMP1110
 
+## 自查与MAS的计算预算对照（一键运行）
+
+pull当前分支后，在终端export自己的`DEEPSEEK_API_KEY`，或写入忽略的`.env.local`，然后执行：
+
+```bash
+bash scripts/run_compute_matched_agents.sh runs/api/ts038_review_yourname_01
+```
+
+选择一个新目录；不需要下载本机历史run。脚本直接使用仓库里的TS038、Host参考包和DeepSeek配置，冻结后运行普通单agent、单agent自查、普通MAS、MAS自查，每组2次、最多2局并行。每局统一上限225次Player生成、77,696个输出token、100次外部提交；MAS两人共享计算预算。Player为Flash且关闭thinking，Host/Grader沿用配置中的Pro。实际token、缓存、费用另行记录。
+
+输出的`index.html`可查看轨迹、公共对话、私有自查与统计。[全部参数和恢复方式](docs/compute_matched_agents.md)。若只想准备计划而不调用API：`python3.11 scripts/compute_matched_agents.py prepare --out 输出目录`。
+
+CL结果只汇总最新归档，避免续跑重复计数：[Set1阶段分析](docs/results/cl_set1_20261112/interpretation.zh-CN.md)。
+
 **真实API测试修复：** [TS015方向判定、MAS首行契约、保存动作续跑、实时计数和DeepSeek费用](docs/live_test_repairs_20261111.md)。实测仍在进行，未宣称整批已通过。
 
 **团队运行：** [三组CL+三道MAS，两人各两次的一键脚本](docs/team_campaign_20261111.md)：6局小量测试、个人批跑、限并发全员150局与去重汇总。

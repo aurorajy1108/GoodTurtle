@@ -8,6 +8,20 @@
 
 **Compute-matched MAS self-review:** [TS038 solo/MAS × explicit review](docs/compute_matched_agents.md): eight new games, common solver budgets, clean solo prompts, private per-agent reviews and shared public discussion.
 
+## Run the self-review comparison
+
+After pulling this branch, use Python 3.11 and set `DEEPSEEK_API_KEY` in your terminal or the ignored `.env.local` file. No historical run download is required:
+
+```bash
+bash scripts/run_compute_matched_agents.sh runs/api/ts038_review_yourname_01
+```
+
+Choose a new output directory. This prepares a frozen snapshot and runs `solo`, `solo_review`, `mas`, and `mas_review`, twice each, with two concurrent games. Every game has the same available budget: 225 combined Player generations, 77,696 output tokens and up to 100 external submissions. Player uses DeepSeek Flash with thinking disabled; Host/Grader use the checked-in DeepSeek Pro configuration. Private reviews stay in each solver's persistent session; MAS shares public discussion and host feedback. Actual usage and estimated cost are reported separately from budget ceilings.
+
+Open the output's `index.html` for trajectories, shared dialogue, private reviews, performance and token costs. [Every parameter, optional historical-reference mode and recovery behavior](docs/compute_matched_agents.md).
+
+**CL result snapshot:** [Set1 paired analysis and limitations](docs/results/cl_set1_20261112/interpretation.zh-CN.md). The four-repeat extension is still running; incomplete cases are not treated as zero or counted as finished.
+
 English | [中文](README.zh-CN.md)
 
 ## Current team quickstart

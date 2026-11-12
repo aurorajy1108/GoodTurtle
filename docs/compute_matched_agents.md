@@ -21,7 +21,22 @@ solo使用真实solo参考的基础prompt，不再从MAS参考继承角色描述
 
 旧 `20261112_ts038_self_review_matched_v2` 的实际代码只有一个Player，但基础prompt含MAS角色描述，与追加的单人规则冲突；旧原始日志和评分保留，不作为本轮四组中的干净对照。
 
-运行方式：
+同事pull后的一键运行（不需要本机历史run目录）：
+
+```bash
+bash scripts/run_compute_matched_agents.sh runs/api/ts038_review_yourname_01
+```
+
+先在终端export自己的`DEEPSEEK_API_KEY`，或保存到忽略的`.env.local`。给定目录不存在时，shell自动从仓库内的v5题库、参考包和DeepSeek配置冻结新实验，再启动API调用；已准备目录则直接运行。目录存在但没有计划文件时拒绝覆盖。
+
+若先检查计划再启动，可分开运行（prepare不调用API）：
+
+```bash
+python3.11 scripts/compute_matched_agents.py prepare --out runs/api/ts038_review_yourname_01
+bash scripts/run_compute_matched_agents.sh runs/api/ts038_review_yourname_01
+```
+
+本机复用历史冻结输入的可选方式：
 
 ```bash
 python3.11 scripts/compute_matched_agents.py prepare \
@@ -30,9 +45,12 @@ python3.11 scripts/compute_matched_agents.py prepare \
 bash scripts/run_compute_matched_agents.sh runs/api/20261112_ts038_compute_matched_2x2_v3
 ```
 
-- `prepare`只写冻结计划，不调用API；`--reference`是含TS038两次已完成solo/MAS的study目录，仅用于冻结输入和确定预算，不给Player展示历史答案或参考trajectory。
+- `prepare`只写冻结计划，不调用API。默认使用仓库输入，无需历史trajectory。
+- `--dataset`：可选新实验题库JSON，默认`data/annotations/turtle50_v5/private.json`，必须包含TS038。本pilot只选取TS038及其绑定参考包。
+- `--config`：可选新实验模型配置，默认`configs/loop.deepseek.json`，要求persistent、额度100、全部模型接口为DeepSeek，Player关闭thinking。
+- `--reference`：可选，含TS038两次已完成solo/MAS的历史study目录，仅用于冻结输入和确定预算，不给Player展示历史答案或参考trajectory；不能同时传`--dataset`或`--config`。历史`runs/api`不随代码推送，同事直接用默认新实验模式。
 - `--out`在prepare时必须不存在；run时指向已准备的目录。不要重复prepare覆盖已有数据。
-- shell只有一个参数：已准备目录。它从忽略的`.env.local`加载`export DEEPSEEK_API_KEY=...`，或沿用已export的key，不打印key。macOS运行期间阻止空闲休眠。
+- shell只有一个参数：新目录或已准备目录。它从忽略的`.env.local`加载`export DEEPSEEK_API_KEY=...`，或沿用已export的key，不打印key。macOS运行期间阻止空闲休眠。
 - 等价直接入口：`python3.11 scripts/compute_matched_agents.py run --out 输出目录`。
 - 查看状态：`python3.11 scripts/compute_matched_agents.py status --out 输出目录`。
 - `worker --game ... --resume`是内部调度入口；正常使用run，确保互斥锁和冻结文件校验生效。

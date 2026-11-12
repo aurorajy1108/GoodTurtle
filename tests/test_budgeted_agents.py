@@ -22,6 +22,20 @@ from test_sessions import Response
 
 @patch.dict('os.environ',{'DEEPSEEK_API_KEY':'fixture'})
 class BudgetedAgentsTests(unittest.TestCase):
+    def test_portable_prepare_needs_no_historical_runs_or_model_calls(self):
+        from scripts.compute_matched_agents import prepare
+        with tempfile.TemporaryDirectory() as tmp,patch('urllib.request.OpenerDirector.open',side_effect=AssertionError('prepare must not call API')):
+            out=Path(tmp)/'prepared'
+            plan=prepare(None,out)
+            self.assertEqual(plan['input_mode'],'fresh_repository_inputs')
+            self.assertIsNone(plan['reference_study'])
+            self.assertEqual(len(plan['jobs']),8)
+            self.assertEqual({(s['generation_cap'],s['output_token_cap']) for s in plan['jobs']},{(225,77696)})
+            data=json.loads((out/'runtime_snapshot/configs/compute_agents_inputs.json').read_text())
+            self.assertEqual(data['puzzle']['id'],'TS038')
+            self.assertNotIn('SHARED DIALOGUE PROTOCOL',data['prompts']['player'])
+            self.assertTrue((out/'runtime_snapshot/scripts/compute_matched_agents.py').exists())
+
     def test_frozen_worker_cold_start_needs_no_parent_supervisor_module(self):
         repo=Path(__file__).resolve().parents[1]
         with tempfile.TemporaryDirectory() as tmp:
