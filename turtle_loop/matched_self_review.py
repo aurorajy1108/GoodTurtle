@@ -4,7 +4,6 @@ Only the actor's observed completions and generated tokens constrain this budget
 Input/cache tokens and Host/Grader usage are still recorded, never claimed equal.
 """
 import json
-import re
 from dataclasses import replace
 from pathlib import Path
 
@@ -39,20 +38,10 @@ def extra_calls(slot, call_cap, limit=100):
     return 0 if slot == limit else slot*extras//(limit-1) - (slot-1)*extras//(limit-1)
 
 
-def action_text(raw, force=False):
-    """Losslessly accept an explicit single inline QUESTION/FINAL header."""
-    if len(re.findall(r'(?m)^[ \t]*(?:QUESTION|FINAL|DISCUSS|PASS)(?=[ \t\r\n:]|$)', raw)) > 1:
-        raise ProtocolError('Multiple action headers require review')
-    try:
-        parse_action(raw, force)
-        return raw
-    except ProtocolError:
-        match = re.fullmatch(r'(QUESTION|FINAL)[ \t]+([^\r\n][\s\S]*)', raw.strip())
-        if not match:
-            raise
-        normalized = match[1]+'\n'+match[2]
-        parse_action(normalized, force)
-        return normalized
+def action_text(raw, force=False, audit=None):
+    """Use the same verbatim typed-action parser as ordinary CL/MAS Players."""
+    action = parse_action(raw, force, audit)
+    return action['type'].upper()+'\n'+action['text']
 
 
 def saved_action_recovery(previous, calls, turns, config, folder):
@@ -276,10 +265,11 @@ class MatchedSelfReviewPlayer:
                 reply = self.phase(system, payload, slot, 'action', index+1, force)
             for retry in range(2):
                 try:
-                    normalized = action_text(reply.text, force)
+                    normalized = action_text(reply.text, force, lambda details: self.recorder.event(
+                        'self_review_format_recovery', slot=slot, response_id=reply.response_id, **details))
                     if normalized != reply.text:
                         self.recorder.event('self_review_action_normalized', response_id=reply.response_id,
-                                            slot=slot, method='inline_header_to_newline', model_calls=0)
+                                            slot=slot, method='verbatim_typed_action_to_prefix', model_calls=0)
                     return replace(reply, text=normalized)
                 except ProtocolError:
                     status = self.status()

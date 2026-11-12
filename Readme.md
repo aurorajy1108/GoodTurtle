@@ -4,6 +4,8 @@
 
 **Team runs:** [Three CL sets and three MAS puzzles, two people × two repeats](docs/team_campaign_20261111.md): a six-game pilot, personal batches, bounded parallel execution of all 150 games, and deduplicated collection.
 
+**Set1 repeat extension:** [Reuse frozen A prefixes and extend to four B repeats](docs/cl_repeat_extension.md), adding 18 B games without rerunning the original 21 games; local verbatim action recovery and DeepSeek-only model interfaces.
+
 English | [中文](README.zh-CN.md)
 
 ## Current team quickstart

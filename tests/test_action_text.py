@@ -10,6 +10,22 @@ from turtle_loop.engine import Recorder, load_prompts, play
 from test_loop import PUZZLE, FakeClient, evaluated
 
 class PrefixTests(unittest.TestCase):
+    def test_unique_inline_action_and_preamble_recover_verbatim_without_model(self):
+        from turtle_loop.engine import parse_player_json
+        from turtle_loop.player_format import is_untyped_prose, verbatim_proof
+        for raw in ('QUESTION Is this written?',
+                    'Thoughts remain hypothetical.\nQUESTION Is this written?',
+                    'Thoughts.\nFINAL: Keep this exact explanation.\nAnd this qualifier.'):
+            action, meta = parse_player_json(raw)
+            self.assertEqual(action['text'], raw[meta['text_span'][0]:meta['text_span'][1]])
+            self.assertTrue(verbatim_proof(raw, action))
+            self.assertFalse(is_untyped_prose(raw))
+        action, _ = parse_player_json('Notes.\nQUESTION NEXT=B Is this written?')
+        self.assertEqual(action, {'type': 'question', 'text': 'Is this written?', 'next_speaker': 'B'})
+        for raw in ('QUESTION First?\nFINAL Second.', 'Notes.\nQUESTION First?\nQUESTION Second.'):
+            with self.assertRaises(ProtocolError):
+                parse_action(raw)
+
     def test_punctuation_and_multiline_preserved(self):
         body='Is "A" using C:\\new?\nOr a literal \\?'
         self.assertEqual(parse_action('QUESTION\n'+body),{'type':'question','text':body})

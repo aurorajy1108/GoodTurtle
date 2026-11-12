@@ -4,7 +4,8 @@ import re
 PREFIX_ACTION_HEAD = re.compile(
     r'(?mi)^[ \t]*(?P<kind>QUESTION|FINAL|DISCUSS|PASS)'
     r'(?P<handoff>[ \t]+NEXT=[AB])?[ \t]*'
-    r'(?:(?P<colon>[:：])[ \t]*(?P<inline>[^\r\n]*)|\r?$)')
+    r'(?:(?P<colon>[:：])[ \t]*(?P<inline>[^\r\n]*)'
+    r'|(?P<spaced>[ \t]+)(?P<space_inline>\S[^\r\n]*)|\r?$)')
 
 
 def parse_prefix_action(raw):
@@ -50,7 +51,8 @@ def recover_prefix_action(raw):
     if '```' in raw or re.search(r'["\']type["\']\s*:',preamble):
         raise ValueError('Mixed or fenced action envelopes require review')
     head=headers[0]
-    body_start=head.start('inline') if head.group('colon') else head.end()+1
+    body_start=(head.start('inline') if head.group('colon') else
+                head.start('space_inline') if head.group('spaced') else head.end()+1)
     header=head.group('kind').upper()+(head.group('handoff') or '').upper()
     action=parse_prefix_action(header+'\n'+raw[body_start:])
     return action, {'method':'unique_prefix_action','selected_span':[start,len(raw.rstrip())],

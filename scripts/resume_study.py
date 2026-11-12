@@ -22,6 +22,14 @@ from turtle_loop.player_format import saved_untyped_player_correction
 from turtle_loop.transport_recovery import saved_transport_recovery
 
 
+def format_overlay_policy(current,saved):
+    """A parser repair cannot silently re-enable a disabled paid formatter."""
+    if saved and 'max_codex_calls_per_game' in saved:
+        return {**current,'max_codex_calls_per_game':min(current['max_codex_calls_per_game'],
+                                                       saved['max_codex_calls_per_game'])}
+    return current
+
+
 def collect_resume_costs(out, batch, gate_reused=False):
     collect_costs(out,[{'name':batch}])
     if gate_reused:
@@ -147,7 +155,8 @@ def prepare(source, out, repair_player_note=False, repair_grader_reason=False, r
                 dest=snap/name
                 dest.parent.mkdir(parents=True,exist_ok=True)
                 before=hashlib.sha256(dest.read_bytes()).hexdigest() if dest.exists() else None
-                shutil.copy2(ROOT/name,dest)
+                saved_policy=json.loads(dest.read_text()) if dest.exists() else None
+                dump(dest,format_overlay_policy(json.loads((ROOT/name).read_text()),saved_policy))
                 changes[name]={'before_sha256':before,'after_sha256':hashlib.sha256(dest.read_bytes()).hexdigest(),
                                'reason':'Explicit opt-in to bounded automatic player format recovery; puzzle models/prompts/rubrics unchanged'}
     job=plan['jobs'][0]
@@ -176,9 +185,12 @@ def prepare(source, out, repair_player_note=False, repair_grader_reason=False, r
         record.update(host_gate_reused=True,host_gate_archive='host_gate_archive',
                       gate_cost_policy='Inherited archived gate included exactly once; no gate calls repeated.')
     if auto_player_format:
-        record.update(format_repair_policy=json.loads((snap/'configs/player_format_repair.json').read_text()),
+        format_policy=json.loads((snap/'configs/player_format_repair.json').read_text())
+        record.update(format_repair_policy=format_policy,
                       experiment_model_profiles_unchanged=True,
-                      auxiliary_formatter='Codex format-only; no hidden puzzle context; exact source-value guard')
+                      auxiliary_formatter=('Local-only; no auxiliary model calls' if
+                        format_policy['max_codex_calls_per_game']==0 else
+                        'Codex format-only; no hidden puzzle context; exact source-value guard'))
     dump(out/'resume_manifest.json',record)
     dump(out/'status.json',{'status':'prepared_resume','resumed_from':str(source),'completed':[],'active':None})
     if record.get('host_gate_reused'):

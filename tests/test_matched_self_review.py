@@ -149,7 +149,12 @@ class MatchedSelfReviewTests(unittest.TestCase):
             folder = Path(tmp)/'game'
             rec = Recorder(folder, PUZZLE, config, prompts, echo=False)
             # Reproduce the original strict parser that rejected inline headers.
-            with patch('turtle_loop.matched_self_review.action_text', side_effect=lambda raw, force=False: parse_action(raw, force)):
+            def legacy(raw, force=False, audit=None):
+                if raw.startswith('QUESTION '):
+                    raise ProtocolError('Legacy parser rejects inline header')
+                parse_action(raw, force, audit)
+                return raw
+            with patch('turtle_loop.matched_self_review.action_text', side_effect=legacy):
                 result = play(PUZZLE, config, rec, self.clients(config, rec, budget), prompts)
             self.assertEqual(result['status'], 'error')
             self.assertEqual(result['submissions'], 0)
@@ -165,6 +170,24 @@ class MatchedSelfReviewTests(unittest.TestCase):
             self.assertEqual(self.seen[before][0], 'host')
             self.assertEqual(len(submitted_review_actions(saved.calls)), 4)
             self.assertEqual(solver_usage(saved.calls)['generations'], 6)
+
+    def test_preamble_inline_action_needs_no_additional_player_generation(self):
+        config, prompts = self.config(), load_prompts()
+        budget = {'generation_cap': 6, 'output_token_cap': 10000, 'submission_cap': 4}
+        base = self.api()
+        def prefaced(req, **kw):
+            response = base(req, **kw)
+            msg = response.data['choices'][0]['message']
+            if json.loads(req.data)['model'] == 'player' and msg['content'].startswith('QUESTION\n'):
+                msg['content'] = 'Some tentative notes.\nQUESTION '+msg['content'].partition('\n')[2]
+            return response
+        with tempfile.TemporaryDirectory() as tmp, patch('urllib.request.OpenerDirector.open', side_effect=prefaced):
+            rec = Recorder(Path(tmp)/'game', PUZZLE, config, prompts, echo=False)
+            result = play(PUZZLE, config, rec, self.clients(config, rec, budget), prompts)
+            self.assertTrue(result['success'])
+            self.assertEqual(solver_usage(rec.calls)['generations'], 6)
+            self.assertEqual(len([c for c in rec.calls if c.get('self_review_phase') == 'action']), 4)
+            self.assertEqual(rec.turns[0]['text'], 'One atomic question?')
 
 
 if __name__ == '__main__':
