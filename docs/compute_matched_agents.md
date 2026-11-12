@@ -60,3 +60,5 @@ bash scripts/run_compute_matched_agents.sh runs/api/20261112_ts038_compute_match
 唯一明确action支持本地原文恢复。若既有配置为`multiple_actions=last_complete`，多个明确prefix也按同样规则原文取最后一个完整action，记录候选数、选取位置和原文SHA；不按答案质量选择，不重新生成，不允许把question改成强制final。配置为reject或末尾action不完整时仍暂停/受限纠正。
 
 运行器每10秒检查进度，遇可验证的已有transport断点按原请求恢复，已返回的review不重生成；最多自动恢复3次。未知schema、截断、无法证明安全的请求等暂停并请求macOS通知，原始记录不删除或伪造。通知可见性由本机权限决定。
+
+Host的唯一标签格式与空正文也有受限恢复。[更新、CL续跑和本四组对照的`recover --from-run`命令](host_output_recovery.md)。

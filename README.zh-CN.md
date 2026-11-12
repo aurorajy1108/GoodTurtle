@@ -4,6 +4,8 @@
 
 # GoodTurtle — COMP1110
 
+**鲁棒恢复更新：** [Host标签格式归一化、空正文限次重试及旧CL/MAS续跑方法](docs/host_output_recovery.md)。保留原始回答与费用，不重问Player、不重置额度；已有断点请按指南复制到新目录恢复。
+
 ## 自查与MAS的计算预算对照（一键运行）
 
 pull当前分支后，在终端export自己的`DEEPSEEK_API_KEY`，或写入忽略的`.env.local`，然后执行：

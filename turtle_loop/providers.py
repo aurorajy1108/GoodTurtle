@@ -137,10 +137,14 @@ def parse_reply(kind, data):
         finish = data.get('stop_reason', '')
     else:
         choices = data.get('choices', [])
-        if not choices:
+        if not isinstance(choices,list) or not choices or not isinstance(choices[0],dict):
             raise APIError('No completion choices')
-        text = choices[0].get('message', {}).get('content') or ''
+        message=choices[0].get('message') or {}
+        if not isinstance(message,dict):raise APIError('Expected a completion message object')
+        text = message.get('content') or ''
         finish = choices[0].get('finish_reason', '')
+        if message.get('refusal'):finish='refusal'
+        elif message.get('tool_calls') or message.get('function_call'):finish='tool_calls'
     if not isinstance(text, str):
         raise APIError('Expected a text completion')
     return Reply(text, usage, data.get('id', ''), data.get('model', ''), finish)
@@ -359,6 +363,13 @@ class Client:
             if body != expected:
                 raise ValueError('Recovered request differs from the saved unanswered request')
             del self.expected_recovery_request
+        empty_count=getattr(self,'restored_host_empty_count',0)
+        if hasattr(self,'restored_host_empty_count'):del self.restored_host_empty_count
+        source=getattr(self,'replayed_empty_host_response_id',None)
+        if source:
+            if expected is None:raise ValueError('Empty Host replay requires an exact saved request')
+            metadata['replayed_empty_host_response_id']=source
+            del self.replayed_empty_host_response_id
         for attempt in range(self.profile.get('max_retries', 2) + 1):
             start = time.monotonic()
             data = None
@@ -375,10 +386,22 @@ class Client:
                     data = json.loads(response.read())
                 reply = parse_reply(kind, data)
                 reply.seconds = time.monotonic() - start
+                empty_host=(self.role=='host' and self.profile['provider']=='deepseek'
+                            and not reply.text.strip() and reply.finish_reason=='stop')
+                if empty_host:
+                    empty_count+=1
+                    record['host_empty_attempt']=empty_count
+                    record['retry_disposition']=('host_empty_retry' if empty_count<3 and
+                        attempt<self.profile.get('max_retries',2) else 'host_empty_exhausted')
                 self.audit({**record, 'status': 'ok', 'seconds': reply.seconds,
                             'response_id': reply.response_id, 'model_returned': reply.model,
                             'text': reply.text, 'usage': reply.usage, 'service_tier': data.get('service_tier'), 'finish_reason': reply.finish_reason})
                 response_recorded = True
+                if empty_host and record['retry_disposition']=='host_empty_retry':
+                    if self.session is not None:
+                        self.session.event('host_empty_retry',response_id=reply.response_id,
+                                           empty_attempt=empty_count,additional_host_request=True)
+                    continue  # Same body/lane; no assistant message was accepted.
                 # Truncated/refused outputs are recorded, not silently repaired/re-sampled.
                 if not reply.text.strip() or reply.finish_reason in ('length', 'max_tokens', 'incomplete', 'failed', 'refusal', 'content_filter', 'tool_use', 'tool_calls'):
                     raise APIError(f'{self.role}: empty, refused or truncated response ({reply.finish_reason})')

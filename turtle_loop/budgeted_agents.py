@@ -38,7 +38,8 @@ class SolverBudget:
         self.limit=budget.get('submission_cap',100)
         self.path=recorder.folder/'solver_phase_plan.json'
         self.plan=json.loads(self.path.read_text()) if self.path.exists() else {'owners':{},'calls':{}}
-        self.forced_final=any(c['user']['solver_phase']['force_final'] for c in self.plan['calls'].values())
+        self.forced_final=any(c['user']['solver_phase']['force_final'] and
+                              c['user']['solver_phase']['slot']<self.limit for c in self.plan['calls'].values())
 
     def status(self):
         usage=solver_usage(self.recorder.calls)
@@ -107,10 +108,10 @@ class BudgetedAgent:
                     user['dialogue_control'].update(allowed_actions=['final'],mandatory_final=True,
                                                      response_contract=dialogue_contract_text(['final'],True))
             self.ledger.plan['calls'][key]={'user':user,'max_output_tokens':cap}
-            self.ledger.forced_final|=force
+            self.ledger.forced_final|=force and slot<self.ledger.limit
             self.ledger.save()
         plan=self.ledger.plan['calls'][key]
-        self.compute_budget_final=bool(plan['user']['solver_phase']['force_final'])
+        self.compute_budget_final=bool(plan['user']['solver_phase']['force_final'] and slot<self.ledger.limit)
         self.active={'reflection_key':key,'reflection_phase':phase,'reflection_slot':slot,'reflection_actor':self.actor}
         self.profile['max_output_tokens']=plan['max_output_tokens']
         reply=self.client.complete(system+phase_prompt('dialogue_control' in plan['user']),

@@ -25,7 +25,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def controller_fingerprint():
     names=('engine.py','host.py','host_context.py','coverage.py','grader.py','providers.py',
-           'codex_client.py','experiments.py','sessions.py','dialogue.py','dialogue_contract.py','dialogue_recovery.py','transport_recovery.py','player_format.py','action_text.py','matched_self_review.py')
+           'codex_client.py','experiments.py','sessions.py','dialogue.py','dialogue_contract.py','dialogue_recovery.py','transport_recovery.py','player_format.py','action_text.py','matched_self_review.py','host_output_recovery.py')
     files=[ROOT/'turtle_loop'/name for name in names]
     files.append(ROOT/'configs/player_format_repair.json')
     return hashlib.sha256(b''.join(p.read_bytes() for p in files if p.exists())).hexdigest()
@@ -621,7 +621,16 @@ class Recorder:
             self_review_recovery=saved_action_recovery(previous,rec.calls,rec.turns,config,folder)
             if not self_review_recovery or json.loads(self_review_marker.read_text())!=self_review_recovery:
                 raise ValueError('Self-review envelope checkpoint differs from original messages')
-        if config.get('session_mode','replay')=='persistent' and previous['status']!='completed' and not (recovery or grade_recovery or transport_recovery or dialogue_recovery or untyped_recovery or exact_transport or coverage_recovery or self_review_recovery):
+        host_output=None
+        output_marker=folder/'host_output_recovery.json'
+        if output_marker.exists() and previous['status']!='completed':
+            from .host_output_recovery import saved_host_output_recovery
+            host_output=saved_host_output_recovery(previous,rec.calls,rec.turns,config,folder)
+            if not host_output or json.loads(output_marker.read_text())!=host_output:
+                raise ValueError('Host output recovery differs from original audit or pending question')
+        recovery_ok=bool(recovery or grade_recovery or transport_recovery or dialogue_recovery or
+                         untyped_recovery or exact_transport or coverage_recovery or self_review_recovery or host_output)
+        if config.get('session_mode','replay')=='persistent' and previous['status']!='completed' and not recovery_ok:
             raise ValueError('Persistent interrupted sessions require supported saved-response recovery or explicit checked DeepSeek pending-host transport recovery; no fresh-session fallback.')
         if previous['status'] == 'error':
             last = rec.calls[-1] if rec.calls else {}
@@ -629,10 +638,20 @@ class Recorder:
             recoverable = last.get('status') in ('transport_error','http_error','interrupted') or (
                 last.get('status') == 'invalid_response' and not last.get('raw_text',last.get('text','')).strip()
                 and any(s in diagnostic for s in ('usage limit','at capacity','rate limit','rate_limit')))
-            if not recoverable and not (recovery or grade_recovery or dialogue_recovery or untyped_recovery or exact_transport or coverage_recovery or self_review_recovery):
+            if not recoverable and not recovery_ok:
                 raise ValueError('Refuse to resample a protocol/model-output failure')
         rec.resumed = True
-        rec.restore_sessions=bool(recovery or grade_recovery or transport_recovery or dialogue_recovery or untyped_recovery or exact_transport or coverage_recovery or self_review_recovery)
+        rec.restore_sessions=recovery_ok
+        if host_output:
+            rec.host_output_checkpoint=host_output
+            if host_output['mode']=='normalize':rec.pending_host_output=host_output
+            else:
+                skipped={id(rec.calls[i]) for i in host_output['empty_indices']}
+                rec.session_restore_calls=[c for c in recovery_calls if id(c) not in skipped]
+            if host_output['dialogue']:rec.transport_checkpoint=host_output
+            rec.event('host_output_recovery_authorized',mode=host_output['mode'],
+                      submission=host_output['submission'],response_id=host_output['response_id'],
+                      source_calls_sha256=host_output['calls_sha256'],request_sha256=host_output['request_sha256'])
         if self_review_recovery:
             rec.event('self_review_envelope_recovery',**self_review_recovery)
             self_review_marker.unlink()
@@ -847,6 +866,11 @@ def play(puzzle, config, recorder, clients, prompts, player_context=None, player
                     client.expected_recovery_request=pending['request']
                 if getattr(client, 'role', None) == 'host' and hasattr(recorder, 'pending_host_request'):
                     client.expected_recovery_request = recorder.pending_host_request
+                output=getattr(recorder,'host_output_checkpoint',None)
+                if getattr(client,'role',None)=='host' and output and output['mode']=='retry_empty':
+                    client.expected_recovery_request=output['request']
+                    client.replayed_empty_host_response_id=output['response_id']
+                    client.restored_host_empty_count=output['empty_count']
             elif getattr(client,'role',None)=='player' and player_continuation is not None:
                 client.inherit_game(recorder.folder,recorder.event,
                                     player_continuation['calls'],player_continuation['boundary'])
@@ -963,18 +987,32 @@ def _play(puzzle, config, recorder, clients, prompts, player_context=None):
                 recorder.report('running', None)
             if action['type'] == 'question':
                 counted += 1
+                saved_output=getattr(recorder,'pending_host_output',None)
+                returned_reply=None
+                if saved_output:
+                    from .providers import Reply
+                    returned_reply=Reply(saved_output['raw'],{},response_id=saved_output['response_id'],finish_reason='stop')
                 response = answer_question(clients['host'], prompts['host'],
                                            host_payload(story_context, history, action['text'],
                                                config.get('context_policy'),
                                                lambda selection: recorder.event('reference_selection',
                                                    role='host', submission=turn['index'], **selection)),
                                            prompts.get('host_review',''),
-                                           lambda decision:recorder.event('host_review', submission=turn['index'], **decision))
+                                           lambda decision:recorder.event('host_review', submission=turn['index'], **decision),
+                                           returned_reply=returned_reply)
                 label = response.text.strip()
                 if label not in LABELS:
                     raise ProtocolError('Host returned an invalid label; raw output saved in api_calls.jsonl')
                 turn['label'] = label
                 recorder.event('host_feedback', submission=turn['index'], label=label, raw=response.text)
+                if hasattr(recorder,'host_output_checkpoint'):
+                    output=recorder.host_output_checkpoint
+                    recorder.event('host_output_recovered',submission=turn['index'],mode=output['mode'],
+                                   source_response_id=output['response_id'],source_calls_sha256=output['calls_sha256'],
+                                   label=label,additional_host_calls=0 if output['mode']=='normalize' else 1)
+                    (recorder.folder/'host_output_recovery.json').unlink(missing_ok=True)
+                    del recorder.host_output_checkpoint
+                    if hasattr(recorder,'pending_host_output'):del recorder.pending_host_output
                 if hasattr(recorder, 'pending_host_request'):
                     (recorder.folder / 'host_transport_recovery.json').unlink(missing_ok=True)
                     del recorder.pending_host_request

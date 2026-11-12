@@ -8,6 +8,8 @@
 
 **Compute-matched MAS self-review:** [TS038 solo/MAS × explicit review](docs/compute_matched_agents.md): eight new games, common solver budgets, clean solo prompts, private per-agent reviews and shared public discussion.
 
+**Robust Host output:** [Local label-envelope normalization and bounded empty-response recovery](docs/host_output_recovery.md). Existing CL/MAS checkpoints can continue without regenerating Player actions, resetting quotas or discarding paid calls.
+
 ## Run the self-review comparison
 
 After pulling this branch, use Python 3.11 and set `DEEPSEEK_API_KEY` in your terminal or the ignored `.env.local` file. No historical run download is required:

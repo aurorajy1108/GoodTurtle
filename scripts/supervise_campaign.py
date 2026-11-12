@@ -20,6 +20,7 @@ from turtle_loop.transport_recovery import saved_transport_recovery,digest
 from turtle_loop.player_format import saved_untyped_player_correction
 from turtle_loop.dialogue_recovery import saved_dialogue_action_recovery
 from turtle_loop.engine import saved_player_auto_recovery,saved_grader_reason_recovery
+from turtle_loop.host_output_recovery import saved_host_output_recovery
 
 
 def read(path,default=None):
@@ -49,7 +50,8 @@ def checkpoint(study):
 def choose_recovery(study):
     game,previous,calls,turns,config=checkpoint(study)
     args=(previous,calls,turns,config)
-    choices=[('--complete-grader-coverage',lambda:saved_grader_reason_recovery(*args,read(game/'puzzle_private.json'),missing_coverage=True)),
+    choices=[('--recover-host-output',lambda:saved_host_output_recovery(*args,game)),
+             ('--complete-grader-coverage',lambda:saved_grader_reason_recovery(*args,read(game/'puzzle_private.json'),missing_coverage=True)),
              ('--recover-transport',lambda:saved_transport_recovery(*args,game)),
              ('--auto-player-format',lambda:saved_player_auto_recovery(*args)),
              ('--recover-dialogue-action',lambda:saved_dialogue_action_recovery(*args,game)),

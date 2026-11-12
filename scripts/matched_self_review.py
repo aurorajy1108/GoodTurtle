@@ -17,6 +17,7 @@ from turtle_loop.engine import Recorder, dump, play, saved_grader_reason_recover
 from turtle_loop.matched_self_review import MatchedSelfReviewPlayer, solver_usage, saved_action_recovery
 from turtle_loop.providers import Client
 from turtle_loop.transport_recovery import saved_transport_recovery
+from turtle_loop.host_output_recovery import saved_host_output_recovery
 
 
 def read(path, default=None):
@@ -201,6 +202,10 @@ def authorize_recovery(game):
             turns[e['submission']-1]['label'] = e['label']
             if e['event'] == 'evaluation':
                 turns[e['submission']-1]['grade'] = e
+    proof = saved_host_output_recovery(previous, raw, turns, config, game)
+    if proof:
+        dump(game/'host_output_recovery.json',proof)
+        return 'saved_host_'+proof['mode']
     proof = saved_action_recovery(previous, raw, turns, config, game)
     if proof:
         dump(game/'self_review_action_recovery.json', proof)

@@ -126,6 +126,15 @@ def restorable_chat_records(records):
               'session_lane_id','session_turn','request','attempt')
     for i,call in enumerate(records):
         if call.get('status')=='ok':
+            if (call.get('role')=='host' and call.get('provider')=='deepseek'
+                    and isinstance(call.get('text'),str) and not call['text'].strip() and call.get('finish_reason')=='stop'
+                    and i+1<len(records)):
+                nxt=records[i+1]
+                automatic=(call.get('retry_disposition')=='host_empty_retry' and
+                           nxt.get('attempt')==call.get('attempt',0)+1)
+                authorized=bool(call.get('response_id')) and nxt.get('replayed_empty_host_response_id')==call['response_id']
+                if (automatic or authorized) and all(call.get(k)==nxt.get(k) for k in fields):
+                    continue  # Raw usage/costs remain in api_calls.jsonl.
             result.append(call)
             continue
         if (call.get('status')!='transport_error' or call.get('provider')!='deepseek'

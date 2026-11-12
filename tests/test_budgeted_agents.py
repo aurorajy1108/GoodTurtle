@@ -130,6 +130,18 @@ class BudgetedAgentsTests(unittest.TestCase):
             self.assertEqual(ledger.status()['generations'],4)
             self.assertTrue(result['forced_final'])
 
+    def test_public_limit_is_not_misreported_as_solver_compute_exhaustion(self):
+        config,prompts=self.config(),load_prompts()
+        budget={'generation_cap':6,'output_token_cap':12000,'submission_cap':4}
+        with tempfile.TemporaryDirectory() as tmp,patch('urllib.request.OpenerDirector.open',side_effect=self.api(reject=True)):
+            rec=Recorder(Path(tmp)/'game',PUZZLE,config,prompts,echo=False)
+            ledger,clients=self.clients(config,rec,budget,False,False)
+            result=play(PUZZLE,config,rec,clients,prompts)
+            self.assertEqual(result['stop_reason'],'budget_exhausted')
+            self.assertEqual(result['submissions'],4)
+            self.assertEqual(ledger.status()['remaining_generations'],2)
+            self.assertFalse(ledger.status()['forced_compute_final'])
+
     def test_solo_transport_resume_reuses_paid_review_and_exact_request(self):
         config,prompts=self.config(),load_prompts()
         budget={'generation_cap':6,'output_token_cap':12000,'submission_cap':4}

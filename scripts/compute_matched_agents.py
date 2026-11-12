@@ -237,19 +237,57 @@ def run(out):
         state['active']={};dump(out/'status.json',state);dashboard(out);lock.close()
 
 
+def recover(source,out):
+    """Copy a stopped pilot, overlay checked Host recovery, preserve all games."""
+    source,out=Path(source).resolve(),Path(out).resolve()
+    status=read(source/'status.json')
+    if not status or status['status'] not in ('requires_attention','interrupted') or status.get('active'):
+        raise ValueError('Source must be a stopped pilot, without active workers')
+    if out.exists() or source in out.parents:raise ValueError('Use a new sibling output directory')
+    for name,digest in read(source/'snapshot_hashes.json').items():
+        if sha(source/'runtime_snapshot'/name)!=digest:raise ValueError('Original snapshot changed: '+name)
+    shutil.copytree(source,out,ignore=shutil.ignore_patterns('__pycache__','*.pyc','runner.lock'))
+    snap=out/'runtime_snapshot';overlay={}
+    for name in ('turtle_loop/engine.py','turtle_loop/providers.py','turtle_loop/sessions.py',
+                 'turtle_loop/host.py','turtle_loop/host_output_recovery.py',
+                 'turtle_loop/budgeted_agents.py',
+                 'scripts/matched_self_review.py','scripts/compute_matched_agents.py'):
+        dest=snap/name
+        overlay[name]={'before':sha(dest) if dest.exists() else None,'after':sha(ROOT/name)}
+        shutil.copy2(ROOT/name,dest)
+    stopped=[]
+    for spec in read(out/'plan.json')['jobs']:
+        game=out/spec['run_dir'];result=read(game/'result.json')
+        if result and result['status']!='completed':
+            mode=authorize_recovery(game)
+            if not mode:raise ValueError('No checked recovery for '+spec['run_dir'])
+            stopped.append({'run_dir':spec['run_dir'],'submissions_preserved':result['submissions'],'mode':mode})
+    dump(out/'recovery_manifest.json',{'source':str(source),'controller_overlay':overlay,'stopped_games':stopped,
+         'policy':'Original archive retained. Completed grades, actor phases, public buffers, quotas, model/prompt/config files and all costs preserved. Host output envelopes only.'})
+    dump(out/'snapshot_hashes.json',{str(p.relative_to(snap)):sha(p) for p in snap.rglob('*')
+                                    if p.is_file() and '__pycache__' not in p.parts})
+    dump(out/'status.json',{'status':'prepared_recovery','planned_games':8,'active':{},'recovered_from':str(source)})
+    dashboard(out)
+    return stopped
+
+
 def main(argv=None):
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('command',choices=['prepare','run','worker','status'])
+    parser.add_argument('command',choices=['prepare','run','worker','status','recover'])
     parser.add_argument('--out',required=True)
     parser.add_argument('--reference',help='Completed frozen TS038 study used only to derive caps and frozen inputs')
     parser.add_argument('--dataset',help='Fresh dataset JSON containing TS038; defaults to repository turtle50_v5/private.json')
     parser.add_argument('--config',help='Fresh DeepSeek config; defaults to repository loop.deepseek.json')
     parser.add_argument('--game',help='Internal worker run_dir from plan')
     parser.add_argument('--resume',action='store_true')
+    parser.add_argument('--from-run',help='Stopped pilot to clone safely for recover; original directory is retained')
     args=parser.parse_args(argv)
     if args.command=='prepare':
         prepare(args.reference,args.out,args.dataset,args.config);print('Prepared 8 games, no API calls.');return 0
     if args.command=='worker':return worker(args.out,args.game,args.resume)
+    if args.command=='recover':
+        if not args.from_run:parser.error('recover requires --from-run')
+        print(json.dumps(recover(args.from_run,args.out)));return 0
     if args.command=='status':dashboard(Path(args.out));print(json.dumps(read(Path(args.out)/'status.json'),indent=2));return 0
     return run(args.out)
 
