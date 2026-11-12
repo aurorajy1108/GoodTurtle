@@ -1,0 +1,507 @@
+{
+  "opening": "After being mugged, a company president avoided carrying large sums of cash. An unavoidable situation made him put one million yen in a bag. Worried that criminals would attack if they discovered it contained one million yen, he added more cash. Why?",
+  "history": [
+    {
+      "type": "question",
+      "text": "Was the “more cash” he added also put into the same bag?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did he add the extra cash to make the bag contain an amount other than exactly one million yen?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did he add the extra cash so that the bag would appear to contain less than one million yen, rather than more?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the bag itself visibly related to the one million yen, such that the bag's appearance could reveal the large sum?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did adding extra cash change the physical size or weight of the bag's contents so it would not match what a criminal would expect one million yen to look like?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the “unavoidable situation” a ransom or extortion payment?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the one million yen intended as the ransom/extortion payment itself?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did he add the extra cash so that if criminals attacked him for the bag, they would take a larger sum and be satisfied, leaving him safer?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the extra cash added to serve as a decoy, so that a robber would take the decoy cash and leave the actual one million yen payment behind?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did he add the extra cash so that the bag would contain a round, plausible total amount (such as for a legitimate business purpose) rather than the exact ransom figure?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the extra cash added because the ransom demand specified an amount different from one million yen, requiring him to top up the bag to the demanded amount?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did he add the extra cash so that the bag would not be filled by the one million yen alone—i.e., to reduce the bag’s visible bulge or shape that would suggest a large sum?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the added cash in a different currency or form than the one million yen?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the bag to be handed over to the criminals at a specific place where the amount inside was expected to be checked or counted?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the extra cash added to make the total amount in the bag match exactly what the criminals demanded?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the criminals demand that the money be delivered in a bag that was not transparent, and was the added cash intended to mislead them during a count at the handover?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did he add the extra cash in case the criminals robbed him before he reached the handover, so he could give them cash while still preserving the one million yen?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the bag to be handed over while its contents were still hidden from the recipient, with the amount checked only later?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the added cash belong to the company rather than to him personally?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the extra cash added so that the bag would be too heavy or bulky to be snatched easily?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did he add extra cash so that the total would be above one million yen, meaning a robber who found “one million yen” would be mistaken about how much was really there?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the one million yen in the bag as a partial payment, with the added cash needed because the extortion demand exceeded one million yen?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Did the extortion demand itself exceed one million yen?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the exact amount extorted more than one million yen but not a round sum like two million yen?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Was he able to gather only one million yen from available funds, so he added other cash he had on hand to try to meet the larger demand?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the extortion demand expressed in a foreign currency, requiring him to add cash to reach the equivalent amount?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the added cash make the bag’s total value equal to two million yen?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the extra cash added in order to reach a demanded amount that was somewhat over one million yen, not a neat multiple like two million?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the amount demanded by the extortioners not a fixed sum, but something like “all the cash in your bag,” so he had to decide how much to put in?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the extra cash added to make the bag contain a mix that would help identify the extortionists later?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the bag being carried in public before the handover, so that a bag known to contain exactly one million yen would be a target?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did he add extra cash because the extortionists would check only whether the bag contained at least one million yen, and he hoped to protect part of the money by concealing it among more cash?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the added cash counterfeit or otherwise not real currency?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the extortionists demand payment in a container that was already partly filled, requiring him to add cash to the one million yen already in it?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the demand for a payment amount that could only be made with a combination of bills, so he added cash to avoid giving exactly one million yen?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Would handing over only one million yen have failed to satisfy the extortionists, prompting retaliation against him or someone else?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the extortion demand specify a sum greater than one million yen that he still could not fully meet, so he added as much extra cash as he could?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the added cash come from a source specifically set aside for the extortion payment, rather than from his personal cash on hand?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the demand for one million yen plus some specific additional item or fee, with the added cash being for that extra?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the extortionists demand an amount greater than one million yen, and did he add extra cash to the one million so that the visible top layer of the bag would show the demanded larger amount?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Was the demand greater than one million yen, and did he add cash so the bag would look like it contained the demanded amount without actually containing that amount?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the total amount in the bag still less than the extortionists’ demanded amount?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did he hope the extortionists would see a thick bundle of cash and assume the demanded amount was present without counting it immediately?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did he add the extra cash in small bills or in a way that made the pile look larger than one million yen’s worth?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the demanded amount greater than one million yen but less than the total he could make the bag appear to contain?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Did he add extra cash primarily to change the bag’s appearance (thickness or bulk), rather than its actual value?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the added cash intended to be easily given up—so that if he was mugged en route to the extortion handover, the robber would take that cash and leave the one million yen payment intact?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the bag to be handed over in an exchange where the extortionists would release something or someone only after receiving it?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the exchange a hostage release?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did he add extra cash so that the bag would feel heavy enough that the extortionists would believe they had received the demanded amount without opening it in front of him?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did he add extra cash so that, when the bag was opened, the money would appear to be more than one million yen, fooling the criminals into thinking the larger demand had been met?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the appearance of “more than one million yen” created by putting a larger-denomination bill or bills on top of the bundles?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did he add the extra cash so that the bag would contain the one million yen plus enough additional cash to reach the demanded amount that the criminals would see at the handover?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Had he been mugged before, and did adding cash help ensure that even if his bag and the one million yen were stolen, the extortion handover could still go ahead somehow?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Was the extortion demand exactly for “one million yen plus whatever else he had” or otherwise connected to the amount he was known to carry?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the extortionists’ demand for an amount greater than one million yen, and did he add cash in order to make the total in the bag equal to one million yen plus that excess in a way that could be quickly separated during the exchange?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Did he add extra cash so the extortionists would believe the one million yen was only part of a larger sum he was carrying, making him seem able to pay more later?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did he add extra cash so that the bag would contain enough to satisfy a demand larger than one million yen, even though the total was still less than the original one million he had intended to protect?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the added cash placed in the bag so that the extortionists, on opening it, would see one million yen on top and additional money beneath, creating the impression that the full demanded amount was present?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did he add extra cash to the bag because the extortionists demanded that the money be wrapped or packed in a particular way, and the packaging itself required extra cash to fill it?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the cash added in the form of one or more large-denomination bills placed among the one million yen so that a quick glance would make the bundle look more valuable?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the extortionists demand a sum greater than one million yen, and did he add the extra cash in the hope that they would not count it carefully because they were rushed or in a hurry during the hostage exchange?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Was the extortion demand for a specific amount greater than one million yen?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the specific demanded amount less than what the bag would contain after he added the extra cash?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the criminals demand that all the money be handed over in one bag, so he added extra cash to prevent the one million yen being the only identifiable sum?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the extra cash added so that the total in the bag would be greater than the specific demanded amount?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the specific demanded amount greater than one million yen, and did he add extra cash to bring the bag as close as possible to that demand?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Was the specific demanded amount an amount that could plausibly be estimated from the thickness of a bundle, rather than one requiring exact counting?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the demanded amount exceed one million yen by an amount he could cover with the additional cash he had, allowing the bag to contain the full demanded amount after all?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the extra cash added so that, if the criminals counted the money and found it short, he could claim the shortfall was due to a counting error or that some had been lost?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the added cash in a different denomination (e.g., smaller bills) than the one million yen, making the stack look thicker for the same value?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did he add extra cash from his own wallet so the kidnappers would think he had given all the money he had, and thus not demand more?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Were the criminals he worried would attack him the same people who were extorting him, rather than a separate group?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the bag intended to be handed over and kept by the extortionists, so he would not recover any of the money including the added cash?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the added cash meant to ensure the exchange went through and the hostage was released, since he counted on the shortfall being discovered only after the release?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the extra cash marked or recorded (e.g., serial numbers noted) so that the extortionists could be traced after the handover?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Were the extortionists unable to count the money accurately at the moment of the handover (e.g., dark, hurried, or one hand occupied), so the visual bulk of the added cash could deceive them?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the extortion demand partly for something other than cash, so that the cash portion of the payment was exactly one million yen?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "did the criminals expect to receive exactly one million yen?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did he add the extra cash to fill the bag so that its fullness or weight matched what the larger demanded amount would look and feel like?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the actual total amount of cash in the bag, after adding the extra cash, greater than one million yen?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "was one million yen a figure the extortionists already knew about (e.g., the amount he had offered or they knew he possessed)?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the exchange arranged so that the bag changed hands and the hostage was released simultaneously, with no chance to open and count the bag before the release?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did he add the cash to make the payment look like a genuine, scrappy attempt to give everything he could gather, rather than a deliberate limited offer of exactly one million yen?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did adding the extra cash signal to the extortionists that he was making a genuine effort to meet their larger demand, so they would not punish him or the hostage for the shortfall?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the demanded amount only slightly more than one million yen?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Were the one million yen packaged in a way (bundles, straps, or a labeled envelope) that would visibly identify it as exactly one million yen?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did he add cash so that the bag would no longer be identifiable as the specific bag holding the one-million-yen ransom payment (i.e., to disguise the ransom bag)?\n\n<｜｜DSML｜｜ calls>\n<｜｜DSML｜｜ invoke name=\"context_update\">\n\n</｜｜DSML｜｜ invoke>\n</｜｜DSML｜｜ calls>",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was it important that the bag not contain exactly one million yen, because that specific recognizable sum would mark him as carrying the ransom and make him a target?",
+      "feedback": "no"
+    },
+    {
+      "type": "final",
+      "text": "The company president was being extorted and had to deliver a ransom during a hostage exchange. The extortionists demanded a specific amount substantially greater than one million yen, and he could only raise about one million yen of the money to give them.\n\nHe knew the hostage would only be released if the payment appeared to satisfy the demand. A bag visibly containing just the one million yen would either be recognized as short or, worse, signal that he was holding back money—putting him and the hostage at risk. So he added more cash of his own, bringing the bag's total above one million yen but still short of the demanded amount.\n\nThe purpose of the added cash was deceptive bulk: it made the pile of money look plausible as the larger demanded sum, so that at the handover the extortionists would glance at the thick bundle, assume the demand had been met, and release the hostage without carefully counting. By the time they discovered the shortfall, the exchange would already be complete. He accepted losing all the cash, including the extra he had added, since the bag was to be handed over and kept—his goal was to get the hostage released, not to recover the money.",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the main reason he added the cash specifically to protect himself from the extortionists, rather than to secure the hostage's release?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did he add the extra cash so the bag would look like ordinary company/business cash he was legitimately carrying, so that any criminals who learned of it would not realize it was ransom money and would not target him?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the amount of cash the extortionists demanded greater than one million yen?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did he add the extra cash so the extortionists would believe he had given all the money he had, so they would not come after him again for more?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did he add extra cash so that the one million yen would no longer be in neat identifiable bundles (e.g., ten bundles of 100,000 yen), so that the extortionists could not instantly see the amount was short?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the purpose of the added cash to make the extortionists believe they had received the full amount they demanded?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Would the extortionists have attacked him if they realized the bag held only one million yen—short of their larger demand—instead of what they believed was the full amount?\n\n<｜｜DSML｜｜ invoke name=\"context_update\">\n\n</｜｜DSML｜｜ invoke>\n</｜｜DSML｜｜ calls>",
+      "feedback": "no"
+    },
+    {
+      "type": "final",
+      "text": "The man was being blackmailed and had to deliver a ransom, with a hostage to be exchanged. The extortionists had named a sum substantially larger than one million yen. He could raise only about one million yen of cash, then added cash of his own, so the bag held more than one million yen but still less than the full demand.\n\nHis central worry was for his own safety: he feared that if the extortionists discovered the bag contained exactly one million yen—the precise, recognizable sum that would reveal he had not properly met their much larger demand—they would turn on him. Simply handing over one million yen would therefore be dangerous.\n\nBy adding extra cash, he made the bag's total no longer exactly one million yen. The fuller pile of cash was meant to look consistent with the much larger sum they demanded, so that at the exchange the extortionists would believe they had received the full amount and would not scrutinize or count it closely. Even though the bag was actually still short, that mistaken belief was what he needed to get through the handover safely. The money, including the cash he had added, was handed over for good; he was trading a bit more money for his own protection.",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "After he added the extra cash, did the bag contain exactly the full amount the extortionists demanded?",
+      "feedback": "no"
+    },
+    {
+      "type": "final",
+      "text": "The man was being extorted: an unavoidable situation forced him to deliver a ransom payment, with a hostage to be released in exchange. The extortionists named a sum substantially larger than one million yen, and he intended the one million yen to be part of that payment.\n\nHe feared for his own safety because of what the bag would be seen to contain. He worried that if the criminals discovered the bag held precisely one million yen—short of what they demanded—the deception would fail and they would turn on him. So he added more of his own cash to the bag, making its total exceed one million yen while it remained less than the full demanded amount.\n\nThe point of the added cash was to deceive the extortionists into believing they had received the entire amount they demanded. With the larger pile of cash, he hoped that at the handover they would look at the thick bundle, assume the demand had been satisfied, and not carefully count or scrutinize it; the shortfall would not be noticed until it was too late. That mistaken belief was what he wanted in order to protect himself and get through the exchange.\n\nThe money—including the extra cash he had contributed—was handed over and kept by the extortionists; he never expected to recover it. He was deliberately sacrificing a larger sum than the one million yen in order to create the appearance that the full demand had been met, thereby protecting himself from the extortionists.",
+      "feedback": "no"
+    }
+  ],
+  "termination": "budget_exhausted",
+  "revealed_source_answer": "His daughter had been kidnapped, and the kidnappers demanded fifty million yen in ransom.\nTo save money, he prepared bundles made mostly of blank paper, with genuine banknotes on the outside. The bag appeared to contain the full ransom, but the genuine money amounted to only one million yen.\nHe feared that the kidnappers would attack him if they discovered the deception. He therefore replaced the bundles at the top with bundles consisting entirely of genuine banknotes.\nThis increased the actual amount of money in the bag and made a superficial inspection less likely to reveal the fake bundles underneath."
+}

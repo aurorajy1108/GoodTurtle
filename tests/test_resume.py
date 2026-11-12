@@ -11,6 +11,16 @@ from test_loop import PUZZLE, FakeClient, evaluated
 
 
 class ResumeTests(unittest.TestCase):
+    def test_relocation_preserves_external_baseline_with_similar_prefix(self):
+        from scripts.resume_study import relocate_argument
+        source=Path('/tmp/round')
+        out=Path('/tmp/round_resumed')
+        self.assertEqual(relocate_argument('/tmp/round/runtime_snapshot/data.json',source,out),
+                         '/tmp/round_resumed/runtime_snapshot/data.json')
+        self.assertEqual(relocate_argument('/tmp/round_baseline/game',source,out),
+                         '/tmp/round_baseline/game')
+        self.assertEqual(relocate_argument('--group',source,out),'--group')
+
     def test_batch_resume_reuses_completed_source_and_preserves_schedule(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp);puzzles=[]

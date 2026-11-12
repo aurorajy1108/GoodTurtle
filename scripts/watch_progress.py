@@ -34,7 +34,8 @@ def read_events(path):
     return rows
 
 
-def collect_game(folder, batch_name, prefix):
+def collect_game(folder, batch_name, prefix, metadata=None):
+    metadata = metadata or {}
     events = read_events(folder/'trajectory.jsonl')
     result = read_json(folder/'result.json', {})
     config = read_json(folder/'config.json', {})
@@ -64,7 +65,8 @@ def collect_game(folder, batch_name, prefix):
     return {
         'id': batch_name+'/'+folder.name, 'batch': batch_name,
         'puzzle_id': start.get('puzzle_id', folder.name.split('_')[0]),
-        'condition': 'direct', 'name': folder.name,
+        'condition': metadata.get('condition') or next((c for c in ('answer_only','direct','session','transcript','source') if folder.name.endswith('_'+c)), 'direct'),
+        'source_puzzle': metadata.get('source'), 'name': folder.name,
         'status': result.get('status', 'starting'), 'error': error,
         'budget': config.get('max_questions', start.get('budget', 100)),
         'submissions': max(len(turns), result.get('submissions', 0)),
@@ -88,8 +90,11 @@ def collect_game(folder, batch_name, prefix):
 def collect(batches):
     games = []
     for folder, prefix in batches:
-        for path in sorted(folder.glob('*/trajectory.jsonl')):
-            games.append(collect_game(path.parent, folder.parent.parent.name, prefix))
+        rows = read_json(folder/'experiment_runs.json', []) or []
+        metadata = {row['run_dir']:row for row in rows if row.get('run_dir')}
+        name = folder.parent.name if folder.name == 'continual' else folder.parent.parent.name
+        for path in sorted(folder.glob('*/trajectory.jsonl'), key=lambda p: p.stat().st_mtime):
+            games.append(collect_game(path.parent, name, prefix, metadata.get(path.parent.name)))
     return {'updated_at': datetime.now(timezone.utc).isoformat(), 'games': games}
 
 

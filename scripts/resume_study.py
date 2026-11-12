@@ -14,7 +14,7 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
 from turtle_loop.engine import (dump, saved_player_note_recovery, saved_grader_reason_recovery,
                                 saved_player_json_recovery, saved_host_transport_recovery,
-                                saved_player_auto_recovery)
+                                saved_player_auto_recovery, saved_player_user_reprompt)
 from turtle_loop.host_context import RUNTIME_VERSION
 from scripts.study_20261102 import collect_costs
 
@@ -29,8 +29,20 @@ def collect_resume_costs(out, batch, gate_reused=False):
         dump(out/'cost_summary.json',merge_summaries([gate_cost,cl_cost]))
 
 
+def relocate_argument(value, source, out):
+    """Move paths inside the study, without rewriting similarly named siblings."""
+    path = Path(value)
+    if not path.is_absolute():
+        return value
+    try:
+        relative = path.relative_to(source)
+    except ValueError:
+        return value
+    return str(out/relative)
+
+
 def prepare(source, out, repair_player_note=False, repair_grader_reason=False, repair_player_json=False,
-            recover_host_transport=False, auto_player_format=False):
+            recover_host_transport=False, auto_player_format=False, user_reprompt=False):
     source,out=Path(source).resolve(),Path(out).resolve()
     wrapper=None
     if (source/'run_manifest.json').exists() and (source/'study/study_plan.json').exists():
@@ -43,9 +55,9 @@ def prepare(source, out, repair_player_note=False, repair_grader_reason=False, r
                 or gate.get('completed_calls')!=gate.get('planned_calls') or gate.get('errors')):
             raise ValueError('Verified wrapper must have a passed, complete Host gate and a stopped CL phase')
         source=wrapper/'study'
-    if sum((repair_player_note,repair_grader_reason,repair_player_json,recover_host_transport,auto_player_format))>1:
+    if sum((repair_player_note,repair_grader_reason,repair_player_json,recover_host_transport,auto_player_format,user_reprompt))>1:
         raise ValueError('Select one saved-response recovery mode at a time')
-    repair_any=repair_player_note or repair_grader_reason or repair_player_json or recover_host_transport or auto_player_format
+    repair_any=repair_player_note or repair_grader_reason or repair_player_json or recover_host_transport or auto_player_format or user_reprompt
     if out.exists() or source in out.parents or (wrapper and wrapper in out.parents):
         raise ValueError('Use a new output directory outside the original study')
     status=wrapper_status if wrapper else json.loads((source/'status.json').read_text())
@@ -83,11 +95,22 @@ def prepare(source, out, repair_player_note=False, repair_grader_reason=False, r
                 turns[e['submission']-1]['label']=e['label']
                 if e['event']=='evaluation':turns[e['submission']-1]['grade']={k:v for k,v in e.items() if k not in ('event','timestamp','submission','raw')}
         calls=[json.loads(x) for x in (game/'api_calls.jsonl').read_text().splitlines()]
+        if user_reprompt:
+            players=[c for c in calls if c.get('role')=='player']
+            if not players:raise ValueError('No saved Player response to reprompt')
+            last=players[-1]
+            marker={'response_id':last.get('response_id'),'raw_sha256':hashlib.sha256(last.get('text','').encode()).hexdigest(),
+                    'preserved_submissions':len(turns),'authorization':'user_requested_reprompt'}
+            calls_for_check=[c for c in calls if not (c.get('role')=='format_repair' and c.get('format_source_response_id')==last.get('response_id'))]
+            events=[json.loads(line) for line in (game/'trajectory.jsonl').read_text().splitlines()]
+            candidate=saved_player_user_reprompt(json.loads((game/'result.json').read_text()),calls_for_check,turns,json.loads((game/'config.json').read_text()),events)
+            if not candidate or candidate['action'] is not None or len(turns)>=json.loads((game/'config.json').read_text())['max_questions']-1:
+                raise ValueError('Saved response is not eligible for a user-directed question reprompt')
         args=(json.loads((game/'result.json').read_text()),calls,turns,json.loads((game/'config.json').read_text()))
         if args[0].get('evaluation_versions',{}).get('runtime_context_version') != RUNTIME_VERSION:
             raise ValueError('Recovery overlay would change the frozen runtime context protocol. '
                              'Use the archived compatible recovery code for this old study; new experiments use a fresh batch.')
-        recovery=(saved_player_auto_recovery(*args) if auto_player_format else
+        recovery=(candidate if user_reprompt else saved_player_auto_recovery(*args, [json.loads(line) for line in (game/'trajectory.jsonl').read_text().splitlines()]) if auto_player_format else
                   saved_host_transport_recovery(*args) if recover_host_transport else
                   saved_player_note_recovery(*args) if repair_player_note else
                   saved_player_json_recovery(*args) if repair_player_json else
@@ -96,27 +119,36 @@ def prepare(source, out, repair_player_note=False, repair_grader_reason=False, r
             raise ValueError('No supported saved DeepSeek recovery matches this archive')
         recovery_details={'run_dir':stopped[0]['run_dir'],'preserved_submissions':len(turns),
                           'source_response_id':recovery.get('response_id'),
-                          'kind':'auto_player_format' if auto_player_format else 'host_transport' if recover_host_transport else 'player_note' if repair_player_note else 'question_quote' if repair_player_json else 'grader_reason'}
+                          'kind':'user_reprompt' if user_reprompt else 'auto_player_format' if auto_player_format else 'host_transport' if recover_host_transport else 'player_note' if repair_player_note else 'question_quote' if repair_player_json else 'grader_reason'}
         if 'verified_pre_send_attempts' in recovery:
             recovery_details['verified_pre_send_attempts']=recovery['verified_pre_send_attempts']
         if recover_host_transport:
             recovery_details.update(recovery)
-        elif repair_player_note or repair_player_json or auto_player_format:
+        elif repair_player_note or repair_player_json or auto_player_format or user_reprompt:
             recovery_details.update(pending_submission=len(turns)+1,action=recovery['action'])
             if repair_player_note:recovery_details['removed_fields']=['text_note']
             else:recovery_details['format_recovery']=recovery['format_recovery']
         else:
             recovery_details.update(recovered_submission=turns[-1]['index'],grade=recovery['grade'],removed_fields=recovery['removed_fields'])
     shutil.copytree(source,out,ignore=shutil.ignore_patterns('__pycache__','*.pyc'))
+    # One-shot markers have already been recorded in the completed game's
+    # trajectory; they must not be applied again while restoring later games.
+    for run_dir in preserved_completed:
+        for name in ('player_format_reprompt.json','host_transport_recovery.json'):
+            (out/plan['jobs'][0]['name']/run_dir/name).unlink(missing_ok=True)
     if wrapper:
         shutil.copytree(wrapper/'host_gate',out/'host_gate_archive',ignore=shutil.ignore_patterns('__pycache__','*.pyc'))
         shutil.copy2(wrapper/'run_manifest.json',out/'original_verified_run_manifest.json')
     if recover_host_transport:
         dump(out/plan['jobs'][0]['name']/recovery_details['run_dir']/'host_transport_recovery.json', recovery)
+    if user_reprompt:
+        dump(out/plan['jobs'][0]['name']/recovery_details['run_dir']/'player_format_reprompt.json', marker)
+    elif auto_player_format:
+        (out/plan['jobs'][0]['name']/recovery_details['run_dir']/'player_format_reprompt.json').unlink(missing_ok=True)
     snap=out/'runtime_snapshot'
     changes={}
     if repair_any:
-        files=('engine.py','sessions.py','providers.py','action_text.py')+(('coverage.py','grader.py') if repair_grader_reason else ())
+        files=('engine.py','sessions.py','providers.py','action_text.py')+(('experiments.py',) if auto_player_format or user_reprompt else ())+(('coverage.py','grader.py') if repair_grader_reason else ())
         for name in files:
             dest=snap/'turtle_loop'/name
             before=hashlib.sha256(dest.read_bytes()).hexdigest() if dest.exists() else None
@@ -126,7 +158,7 @@ def prepare(source, out, repair_player_note=False, repair_grader_reason=False, r
                 'reason':('Automatic format recovery; solver actions are not regenerated; auxiliary formatter calls separately audited'
                           if auto_player_format else 'Exact DeepSeek message restoration and one explicit unanswered Host request replay'
                           if recover_host_transport else 'Explicit saved-response repair and exact DeepSeek chat recovery; no model resampling')}
-        if auto_player_format:
+        if auto_player_format or user_reprompt:
             for name in ('turtle_loop/player_format.py','configs/player_format_repair.json'):
                 dest=snap/name
                 dest.parent.mkdir(parents=True,exist_ok=True)
@@ -135,7 +167,7 @@ def prepare(source, out, repair_player_note=False, repair_grader_reason=False, r
                 changes[name]={'before_sha256':before,'after_sha256':hashlib.sha256(dest.read_bytes()).hexdigest(),
                                'reason':'Explicit opt-in to bounded automatic player format recovery; puzzle models/prompts/rubrics unchanged'}
     job=plan['jobs'][0]
-    argv=[v.replace(str(source),str(out)) for v in job['argv']]
+    argv=[relocate_argument(v,source,out) for v in job['argv']]
     if '--resume' not in argv: argv.append('--resume')
     argv[0]=sys.executable
     hashes={str(p.relative_to(snap)):hashlib.sha256(p.read_bytes()).hexdigest()

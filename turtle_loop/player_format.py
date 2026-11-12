@@ -59,6 +59,14 @@ def local_repair(raw, forced, policy):
         if set(prefix[0]) != {'type','text'} or prefix[0]['type'] not in ('question','final'):return None
         if forced and prefix[0]['type']!='final':return None
         return prefix
+    # A standalone final paragraph containing one complete interrogative can be
+    # recovered verbatim, without interpreting the preceding analysis as action.
+    paragraphs=re.split(r'\n\s*\n', raw.strip())
+    if (not forced and len(paragraphs)>1 and raw.count('?')==1
+            and '\n' not in paragraphs[-1]
+            and re.fullmatch(r"(?:Is|Are|Was|Were|Do|Does|Did|Has|Have|Had|Can|Could|Would|Will|Should)\s+[^?\n]+\?", paragraphs[-1])):
+        return {'type':'question','text':paragraphs[-1]}, {'method':'verbatim_final_question_paragraph',
+                'raw_sha256':hashlib.sha256(raw.encode()).hexdigest()}
     scope,meta=_scope(raw)
     candidate=_unfence(scope)
     try:pairs=json.loads(candidate,object_pairs_hook=lambda value:value)
@@ -160,8 +168,8 @@ def repair(raw, forced, policy, audit, event, source_response_id='', codex_calls
             raise ProtocolError('Format recovery cannot turn a question into a mandatory final')
         return fixed
     scope, _ = _scope(raw)
-    from .action_text import PREFIX_ACTION_HEAD
-    if PREFIX_ACTION_HEAD.search(scope):
+    from .action_text import PREFIX_ACTION_HEAD, GLUED_ACTION_HEAD
+    if PREFIX_ACTION_HEAD.search(scope) or GLUED_ACTION_HEAD.search(scope):
         raise ProtocolError('Ambiguous or incomplete prefix action; no model format repair allowed')
     try:json.loads(raw)
     except ValueError:pass

@@ -70,6 +70,7 @@ def main(argv=None):
     p.add_argument('--source-puzzles',default='all',help='CL source A whitelist, e.g. TS015,TS014,TS028; default all sources in selected sets/directions')
     p.add_argument('--directions',choices=['primary','bidirectional'],default='primary',help='primary: fixed anchor B; bidirectional also adds exploratory reverse positive pairs')
     p.add_argument('--source-policy',choices=['fixed','per-repeat'],default='fixed',help='fixed: solve each A once per batch and reuse its complete public experience; per-repeat: independently regenerate A for each block')
+    p.add_argument('--import-direct',help='Existing completed direct game to count once in the first scheduled block')
     p.add_argument('--memory',choices=['session','transcript','card','both'],default='session',help='session: original A Player messages continued into B (default); transcript/card/both: legacy new-conversation ablations')
     p.add_argument('--team-puzzles',default=','.join(OWNERS),help='Subset of TS038,TS002,TS014,TS022,TS042')
     p.add_argument('--repeat',type=int,default=3,help='Fresh B games per direction/condition; fixed source A is not repeated')
@@ -122,6 +123,8 @@ def main(argv=None):
         jobs.append(dict(name='continual',argv=[sys.executable,str(snap/'scripts/experiment.py'),'continual',*common,
           '--groups',str(snap/'configs/study_groups.json'),'--group','all','--memory',args.memory,'--controls','answer_only',
           '--source-feedback','answer','--source-policy',args.source_policy,'--out',str(out/'continual')]))
+        if args.import_direct:
+            jobs[-1]['argv'].extend(['--import-direct',str(Path(args.import_direct).resolve())])
     if args.suite in ['team','all']:
         teamargs=argparse.Namespace(command='team',puzzle=','.join(teams),strategies=args.strategies,repeat=args.repeat,seed=args.seed)
         blocks['team']=make_plan(teamargs,bank)

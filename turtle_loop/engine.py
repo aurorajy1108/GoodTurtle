@@ -272,7 +272,7 @@ def grade_final(text, rubric, requirements=None, submitted_explanation=None):
     return result
 
 
-def _saved_player_recovery(previous, calls, turns, config, mode):
+def _saved_player_recovery(previous, calls, turns, config, mode, events=()):
     """Recover a complete saved solo action without another model generation."""
     from .sessions import restorable_chat_records
     auxiliary=[c for c in calls if c.get('role')=='format_repair']
@@ -291,12 +291,30 @@ def _saved_player_recovery(previous, calls, turns, config, mode):
         return None
     last=calls[-1]
     player_calls=[c for c in calls if c.get('role')=='player']
+    ignored = set()
+    for event in events:
+        if event.get('event') != 'player_format_reprompt': continue
+        response_id = event.get('source_response_id')
+        matches = [c for c in player_calls if c.get('response_id') == response_id]
+        if (len(matches) != 1 or response_id in ignored or event.get('counts_as_submission') is not False
+                or event.get('authorization') != 'user_requested_reprompt'
+                or hashlib.sha256(matches[0].get('text','').encode()).hexdigest() != event.get('raw_sha256')):
+            return None
+        ignored.add(response_id)
+    player_calls=[c for c in player_calls if c.get('response_id') not in ignored]
     if (last.get('role')!='player' or len(player_calls)!=len(turns)+1
             or len({c.get('session_lane_id') for c in player_calls})!=1):
         return None
     try:
         format_recovery=None
-        if mode=='text_note':
+        if mode=='user_reprompt':
+            if last.get('finish_reason')!='stop' or not last.get('text','').strip():return None
+            try:parse_action(last['text'])
+            except ProtocolError:pass
+            else:return None
+            action=None
+            format_recovery={'method':'user_requested_reprompt','raw_sha256':hashlib.sha256(last['text'].encode()).hexdigest()}
+        elif mode=='text_note':
             raw=json.loads(last['text'])
             if set(raw)!={'type','text','text_note'} or not isinstance(raw['text_note'],str):return None
         elif mode=='auto_format':
@@ -327,7 +345,7 @@ def _saved_player_recovery(previous, calls, turns, config, mode):
                      'escaped_question_text_closing_quote')
                     or last.get('finish_reason')!='stop'):return None
         forced=len(turns)>=config['max_questions']-1
-        if mode!='auto_format':action=parse_action(last['text'],forced)
+        if mode not in ('auto_format','user_reprompt'):action=parse_action(last['text'],forced)
         elif action is not None and forced and action['type']!='final':return None
         for call,turn in zip(player_calls[:-1],turns):
             try:prior_action=parse_action(call['text'])
@@ -363,8 +381,12 @@ def saved_player_json_recovery(previous, calls, turns, config):
     return _saved_player_recovery(previous,calls,turns,config,'question_quote')
 
 
-def saved_player_auto_recovery(previous, calls, turns, config):
-    return _saved_player_recovery(previous,calls,turns,config,'auto_format')
+def saved_player_auto_recovery(previous, calls, turns, config, events=()):
+    return _saved_player_recovery(previous,calls,turns,config,'auto_format',events)
+
+
+def saved_player_user_reprompt(previous, calls, turns, config, events=()):
+    return _saved_player_recovery(previous,calls,turns,config,'user_reprompt',events)
 
 
 def saved_grader_reason_recovery(previous, calls, turns, config, puzzle):
@@ -422,7 +444,10 @@ def saved_host_transport_recovery(previous, calls, turns, config):
     original_calls=calls
     from .sessions import restorable_chat_records
     try:
-        if calls:calls=restorable_chat_records(calls[:-1])+[calls[-1]]
+        if calls:
+            # Include the final failed attempt while validating an immediately
+            # preceding proven pre-send retry, then retain the real failure.
+            calls=restorable_chat_records(calls[:-1]+[{**calls[-1], 'status':'ok'}])[:-1]+[calls[-1]]
     except (ValueError,TypeError,KeyError):return None
     roles = ('host', 'player', 'grader')
     if (previous.get('status') != 'error' or previous.get('stop_reason') != 'APIError'
@@ -446,9 +471,14 @@ def saved_host_transport_recovery(previous, calls, turns, config):
         return None
     from .sessions import GameSession, restore_context
     try:
-        if any(parse_action(c['text']) != {k: t[k] for k in ('type', 'text')}
-               for c, t in zip(players, turns)):
-            return None
+        for c,t in zip(players,turns):
+            try: action=parse_action(c['text'])
+            except ProtocolError:
+                from .player_format import local_repair, load_policy
+                fixed=local_repair(c['text'],False,load_policy())
+                if not fixed:return None
+                action=fixed[0]
+            if action != {k:t[k] for k in ('type','text')}:return None
         if sum(c.get('role') == 'host' for c in calls) != sum(t['type'] == 'question' for t in turns):
             return None
         for role in roles:
@@ -534,7 +564,22 @@ class Recorder:
         recovery=(saved_player_note_recovery(previous,recovery_calls,rec.turns,config)
                   or saved_player_json_recovery(previous,recovery_calls,rec.turns,config))
         if not recovery and (ROOT/'configs/player_format_repair.json').exists():
-            recovery=saved_player_auto_recovery(previous,recovery_calls,rec.turns,config)
+            recovery=saved_player_auto_recovery(previous,recovery_calls,rec.turns,config,events)
+        reprompt_marker = folder/'player_format_reprompt.json'
+        reprompt = None
+        if reprompt_marker.exists():
+            marker = json.loads(reprompt_marker.read_text())
+            players = [c for c in recovery_calls if c.get('role') == 'player']
+            if ((recovery and recovery['action'] is not None) or not players or len(rec.turns) != marker.get('preserved_submissions')
+                    or players[-1].get('response_id') != marker.get('response_id')
+                    or hashlib.sha256(players[-1].get('text','').encode()).hexdigest() != marker.get('raw_sha256')):
+                raise ValueError('Player format reprompt does not match the saved response')
+            filtered = [c for c in recovery_calls if not (c.get('role') == 'format_repair'
+                        and c.get('format_source_response_id') == marker['response_id'])]
+            reprompt = saved_player_user_reprompt(previous,filtered,rec.turns,config,events)
+            if not reprompt or reprompt['action'] is not None:
+                raise ValueError('Player format reprompt requires one complete invalid response and an intact session')
+            recovery = reprompt
         grade_recovery=saved_grader_reason_recovery(previous,rec.calls,rec.turns,config,puzzle)
         transport_recovery = None
         transport_marker = folder / 'host_transport_recovery.json'
@@ -555,10 +600,17 @@ class Recorder:
         rec.resumed = True
         rec.restore_sessions=bool(recovery or grade_recovery or transport_recovery)
         if transport_recovery:
-            rec.session_restore_calls = rec.calls[:-1]
+            from .sessions import restorable_chat_records
+            rec.session_restore_calls = restorable_chat_records(rec.calls[:-1]+[{**rec.calls[-1], 'status':'ok'}])[:-1]
             rec.pending_host_request = rec.calls[-1]['request']
             rec.event('host_transport_recovery', **transport_recovery)
         if recovery:
+            if reprompt:
+                rec.retry_player_format = True
+                rec.event('player_format_reprompt',source_response_id=reprompt['response_id'],
+                          raw_sha256=marker['raw_sha256'],counts_as_submission=False,
+                          authorization='user_requested_reprompt')
+                return rec
             if recovery['action'] is None:
                 rec.pending_player_raw=recovery
                 rec.event('pending_player_format_repair',source_response_id=recovery['response_id'])
@@ -796,6 +848,11 @@ def _play(puzzle, config, recorder, clients, prompts, player_context=None):
                 pending = None
             else:
                 payload = {'opening': puzzle['opening'], 'visible_history': history, 'turn_control': control}
+                if getattr(recorder,'retry_player_format',False):
+                    payload['format_correction'] = ('Your preceding response did not contain an actionable question. '
+                        'That response did not count as a submission. Ask a question now using exactly '
+                        'QUESTION on the first line followed by a newline and the question; no other text.')
+                    del recorder.retry_player_format
                 # An explicit controller overlay may resume an archived JSON
                 # prompt. Do not silently switch that experiment's protocol.
                 if 'prefix-v1' in prompts['player']:

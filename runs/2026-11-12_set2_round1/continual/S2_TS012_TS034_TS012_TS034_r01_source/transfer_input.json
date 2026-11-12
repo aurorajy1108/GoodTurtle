@@ -1,0 +1,507 @@
+{
+  "opening": "I went to the pantry in my hall. The fire alarm rang. What happened?",
+  "history": [
+    {
+      "type": "question",
+      "text": "Did the fire alarm ringing cause the narrator to open the pantry?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the narrator already planning to go to the pantry before the alarm rang?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the fire alarm caused by something in the pantry?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the thing in the pantry that caused the alarm related to cooking or food preparation?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the narrator cause the fire alarm by burning food or leaving a cooking appliance on?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the fire alarm triggered by steam or smoke from a cooking process rather than an actual fire?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was a cooking appliance in the pantry, such as a microwave or toaster, responsible for producing the steam or smoke?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the appliance a microwave?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the appliance a toaster?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the smoke or steam produced by the appliance itself malfunctioning or being used incorrectly?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the smoke or steam produced by something inside the appliance that was being heated normally?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the item being heated in the appliance food?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the narrator go to the pantry specifically to use this appliance?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the narrator intending to make a hot drink or warm food in the appliance?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Were the food and the appliance both left unattended long enough to trigger the alarm?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the narrator leave the pantry after starting the appliance but before the alarm rang?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the narrator still in the pantry when the fire alarm rang?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the narrator's presence in the pantry play a role in the alarm ringing?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the food in a container that was sealed when placed in the appliance?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the narrator open the appliance or the pantry before the alarm rang in a way that released smoke or steam?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the food something that naturally produces a lot of steam or smoke when heated, like bread or a liquid?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the food a liquid being heated, such as water, milk, or soup?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the food bread or a baked good being toasted or heated?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the food a snack food, such as popcorn or a pastry, that releases smoke or steam when heated?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the food being heated produce the smoke or steam that triggered the alarm?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the food a type that produces steam rather than smoke when heated?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the food burning or charring, producing smoke rather than just steam?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the smoke come from something other than the food itself, such as packaging or residue in the appliance?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the smoke produced by a reaction between the food and the heated appliance, such as fat spitting or a coating burning?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the food something greasy or oily that spattered when heated?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the appliance a kettle or other device meant to heat liquids?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the appliance a device that heats food directly by contact, such as a hot plate or grill?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the appliance an oven?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the alarm triggered while the appliance was still running, before the narrator removed the food?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the narrator successfully remove or stop the food/appliance before any real fire started?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Is the key trick that the narrator was heating food that was already burnt or charred from before?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the thing that triggered the alarm the narrator's food being heated in the appliance, with the \"reaction\" being that the food's coating or surface burned against the hot appliance surface?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the food wrapped in or coated with something (like oil, butter, or a glaze) that smoked when it hit the hot surface?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the food itself still cold or frozen when placed into the hot appliance?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the appliance already contain leftover food residue from a previous use that smoked when the appliance was heated?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the food placed on a surface or in/on something (like paper, foil, or a rack) that produced the smoke when heated?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the food contain fats or oils that smoked at the heating temperature even though the food wasn't \"burning\"?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the food a fatty meat, like bacon or sausage, that smokes and sizzles when cooked?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the smoke from the heated fat rise and reach the fire alarm, causing it to activate?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was this incident essentially a false alarm caused by cooking smoke, with no actual fire?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the appliance a microwave oven used to heat the food?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the narrator cooking food in the pantry using a cooking appliance?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Is the twist that the \"pantry\" was actually not really a pantry, but a small room where the narrator was cooking?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the narrator cooking the food to intentionally set off the fire alarm?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the food the narrator was heating something they had brought into the pantry from elsewhere rather than stored there?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the narrator intend to eat the food being heated?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the narrator heating up leftovers or a meal for themselves?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the fire alarm located near the pantry, so cooking smoke in the pantry reached it?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the narrator know the alarm was a false alarm rather than a real fire?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the food being heated inside the appliance covered or enclosed in a way that concentrated the smoke?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the narrator leave the appliance door or lid open, allowing smoke to escape and reach the alarm?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the cooking appliance built into the pantry, such as a pantry-mounted microwave?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the food the narrator heated a fatty food whose released fat/oil smoke triggered the alarm, with no actual burning fire occurring?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the narrator intend to cook the food in the pantry because that's where they normally prepared meals?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the pantry being used as a temporary kitchen because the main kitchen was unavailable or being renovated?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the narrator go to the pantry to heat up food using an appliance kept there, and did the resulting fat/oil smoke reach a nearby fire alarm, causing a false alarm?",
+      "feedback": "yes"
+    },
+    {
+      "type": "final",
+      "text": "The narrator had planned to go to the pantry to heat up some food for themselves using a cooking appliance kept there. While the food was heating, fats or oils in it gave off smoke; this was ordinary cooking smoke, not an actual fire. The smoke rose and reached a fire alarm located near the pantry, setting it off. So the alarm was a false alarm caused by cooking smoke, and there was no real fire.",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Was the food the narrator was heating itself the source of the fat/oil smoke, rather than some separate oil or grease?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the narrator place a separate oil, butter, or grease into the appliance (such as oiling a pan) which then smoked, rather than the food itself releasing the fat?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the separate oil or grease something the narrator deliberately added to the appliance, such as greasing a pan before heating food?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the oil or grease overheat and smoke because the appliance was set too high or preheated too long?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the narrator initially go to the pantry planning to use the appliance, but the alarm rang from the overheating oil before they actually cooked the food?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the appliance a stovetop or burner on which a pan with oil was being heated?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the narrator actually cook the food in the oil before or after the alarm rang, rather than the oil only being preheated?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the narrator add the food to the already-overheated oil, causing the oil to smoke heavily and set off the alarm?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the food something wet or moist, such that adding it to the hot oil caused the oil to spatter/smoke and trigger the alarm?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the narrator add food to the oil, and the food's own moisture/fat combined with the overheated oil to produce a burst of smoke that reached the alarm?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Did the food already contain fat that rendered out into the pan, adding to the smoke?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the smoke produced mainly by the added oil overheating after the food was placed in it, rather than by the food itself?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the narrator's own action of adding the food to the oil cause the oil to smoke and trigger the alarm?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the fire alarm's ringing the reason the narrator went to the pantry?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the narrator intend to heat/cook food in the pantry, but their cooking caused smoke that set off the alarm, so the trip ended with an unexpected alarm rather than the intended meal?",
+      "feedback": "yes"
+    },
+    {
+      "type": "final",
+      "text": "The narrator had planned to go to the pantry to cook or heat up food for themselves using a cooking appliance kept there. They deliberately added oil or grease to the appliance (for example, to grease a pan) and overheated it, setting it too high or preheating it too long. When the narrator added the food to the overheated oil, the oil smoked heavily. This cooking smoke rose and reached a fire alarm located near the pantry, causing it to ring. So the narrator's ordinary cooking produced smoke that triggered a false fire alarm, and there was no actual fire.",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Did the narrator previously put something in the oil or pan before the food — namely, did the narrator overheat the empty oil deliberately, so the smoke came before the food was added?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the food itself produce the smoke because it was cooked at too high a temperature, rather than the smoke coming primarily from added oil?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the \"food\" actually a pan or dish that had oil on it, so that the narrator was cooking with oil but the food was not yet in the pan when the alarm rang?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the narrator accidentally overheat the oil while preparing to cook, with the food present but not the cause of the smoke?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the food added to the pan after the oil had already begun smoking?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the narrator leave the pantry after going there, before the food was cooked and before the alarm rang?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the narrator distracted or called away in a way that caused them to forget the hot oil until it smoked?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the key detail that the pantry also contained the fire alarm, so smoke from the pan directly reached it?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the fire alarm actually inside the pantry where the narrator was cooking?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the narrator cooking food in oil that overheated, producing smoke inside the pantry, which set off the fire alarm located in that same pantry — a false alarm with no real fire?",
+      "feedback": "yes"
+    },
+    {
+      "type": "final",
+      "text": "The narrator went to the pantry intending to cook or heat up food for themselves. The pantry contained both the cooking appliance/pan and the fire alarm. While preparing the food, the narrator added oil and accidentally let it get too hot; the overheated oil began to smoke. Because they were still in the pantry, the smoke rose directly to the fire alarm located in that same pantry, triggering it. There was no real fire — the alarm was a false alarm caused by cooking smoke from overheated oil.",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Did the narrator's food itself contain something like a sauce, marinade, or coating that smoked when it was cooked, rather than plain overheated oil?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the \"cooking appliance\" something that heats food without a pan, like a toaster oven or microwave, rather than a stovetop with oil in a pan?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the oil poured into a pan and heated on a stove or burner in the pantry?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was there something specific about the pan—such as it being empty, dry, or nonstick—that caused the oil to overheat and smoke so readily?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the pantry being used as a kitchen because the narrator's actual kitchen was elsewhere and they chose to cook in the pantry for convenience?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the twist that the \"pantry\" is not a food storage room at all, but a place named \"Pantry\" — for example, a restaurant, a room, or a nickname?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the twist that the narrator is not a person but something else, such as an animal or a robot?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the twist that the fire alarm ringing was not a false alarm about smoke, but happened because the narrator's cooking actually did ignite something small?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the oil that smoked actually butter or margarine, which smokes at a lower temperature than oil?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the narrator add the oil and then add the food at some point, with the food entering the pan before the alarm rang?",
+      "feedback": "yes"
+    },
+    {
+      "type": "final",
+      "text": "The narrator went to the pantry intending to cook or heat food for themselves. The pantry was equipped with a stove and a pan, and the fire alarm was located in that same pantry. The narrator put oil in the pan and heated it on the stove, then added the food before the alarm rang. The cooking setup accidentally let the oil become overheated — the added oil, rather than the food itself, was the main source of the smoke. That smoke rose directly to the nearby fire alarm in the pantry and set it ringing. There was no actual fire; it was a false alarm caused by cooking smoke in the pantry.",
+      "feedback": "yes and no"
+    }
+  ],
+  "termination": "budget_exhausted",
+  "revealed_source_answer": "I cooked food with a very high temperature (without burning the food) in the pantry. However, I forgot to turn on the exhaust fan. Since the smoke detecter in the building is very sensitive, the grease fumes triggered the fire alarm.\n\nHere hall means a residential hall and pantry means its small shared kitchen plus food storage. The narrator enters before starting to cook, rather than fetching an ingredient from another room. The pan is initially empty before oil and food are added. Both the smoke detector and alarm are inside the pantry."
+}

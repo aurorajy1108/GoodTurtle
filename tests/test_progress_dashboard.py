@@ -58,3 +58,16 @@ class ProgressDashboardTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             self.assertEqual(collect([(Path(directory), '/run')])['games'], [])
             self.assertEqual(read_events(Path(directory)/'missing'), [])
+
+    def test_study_games_report_their_actual_condition_and_source(self):
+        with tempfile.TemporaryDirectory() as directory:
+            batch = Path(directory)/'round/continual'
+            game = batch/'S2_TS033_TS034_r01_session'
+            game.mkdir(parents=True)
+            (game/'trajectory.jsonl').write_text('{"event":"start","puzzle_id":"TS034"}\n')
+            (batch/'experiment_runs.json').write_text(json.dumps([{
+                'run_dir':game.name,'condition':'session','source':'TS033'}]))
+            row = collect([(batch,'/round')])['games'][0]
+            self.assertEqual((row['puzzle_id'],row['condition'],row['source_puzzle']),
+                             ('TS034','session','TS033'))
+            self.assertEqual(row['batch'],'round')

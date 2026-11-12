@@ -12,6 +12,17 @@ from test_loop import PUZZLE, FakeClient, evaluated
 
 
 class ExperimentTests(unittest.TestCase):
+    def test_resumed_source_prefix_ignores_only_audit_timestamps(self):
+        from turtle_loop.experiments import same_continuation
+        old={'boundary':{'opening':'A'},'calls':[{'request':{'messages':['original']},'text':'answer'}]}
+        reloaded=copy.deepcopy(old)
+        reloaded['calls'][0]['timestamp']='2026-11-11T00:00:00+00:00'
+        self.assertTrue(same_continuation(old,reloaded))
+        reloaded['calls'][0]['request']['messages']=['changed']
+        self.assertFalse(same_continuation(old,reloaded))
+        reloaded=copy.deepcopy(old);reloaded['boundary']['opening']='B'
+        self.assertFalse(same_continuation(old,reloaded))
+
     def setUp(self):
         self.temp=tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
@@ -19,6 +30,48 @@ class ExperimentTests(unittest.TestCase):
 
     def recorder(self):
         return Recorder(self.root/'game',PUZZLE,{'max_questions':3},load_prompts(),echo=False)
+
+    def test_historical_direct_is_counted_once_without_regeneration(self):
+        from turtle_loop.cli import configuration
+        source=copy.deepcopy(PUZZLE);source.update(id='SOURCE',opening='Source puzzle')
+        target=copy.deepcopy(PUZZLE);target.update(id='TARGET',opening='Target puzzle')
+        dataset=self.root/'dataset.json'
+        dataset.write_text(json.dumps({'schema_version':1,'puzzles':[source,target]}))
+        groups=self.root/'groups.json'
+        groups.write_text(json.dumps({'groups':[{'id':'G','puzzles':['SOURCE','TARGET'],
+            'directed_pairs':[['SOURCE','TARGET']],'relation':'positive'}]}))
+        profile={'provider':'deepseek','model':'fixture'}
+        config_path=self.root/'config.json'
+        config_path.write_text(json.dumps({'max_questions':3,'session_mode':'replay',
+                                          'player':profile,'host':profile,'grader':profile}))
+        config=configuration(Namespace(config=str(config_path),dry_run=True))
+        historical=Recorder(self.root/'historical',target,config,load_prompts(),echo=False)
+        old=historical.report('completed','budget_exhausted')
+        old.update(success=False,final_partial_score=.5)
+        (historical.folder/'result.json').write_text(json.dumps(old))
+        (historical.folder/'api_calls.jsonl').write_text('')
+        calls=[]
+        def factory(profile,role,audit):
+            def answer(i,payload):
+                calls.append(role)
+                return json.dumps({'type':'final','text':'submitted explanation'}) if role=='player' else evaluated()
+            return FakeClient(answer)
+        argv=['continual','--dataset',str(dataset),'--config',str(config_path),
+              '--groups',str(groups),'--group','all','--memory','transcript',
+              '--controls','answer_only','--repeat','1','--quiet','--on-error','stop',
+              '--import-direct',str(historical.folder),'--out',str(self.root/'batch')]
+        with patch.dict('os.environ',{'DEEPSEEK_API_KEY':'fixture'}), \
+             patch('turtle_loop.experiments.Client',side_effect=factory):
+            self.assertEqual(main(argv),0)
+        rows=json.loads((self.root/'batch/experiment_runs.json').read_text())
+        self.assertEqual(len(rows),4)
+        self.assertEqual(len([r for r in rows if r['condition']=='direct']),1)
+        self.assertEqual(sum(r=='player' for r in calls),3)
+        baseline=next(r for r in rows if r['condition']=='direct')
+        self.assertEqual(baseline['final_partial_score'],.5)
+        self.assertEqual(baseline['imported_direct']['path'],str(historical.folder.resolve()))
+        contrasts=json.loads((self.root/'batch/contrasts.json').read_text())
+        self.assertTrue(all(r['valid_pair'] and r['comparison_note'] for r in contrasts))
 
     def test_context_only_reaches_player_requirements_only_grader(self):
         puzzle=copy.deepcopy(PUZZLE)

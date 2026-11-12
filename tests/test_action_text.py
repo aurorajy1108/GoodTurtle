@@ -10,6 +10,50 @@ from turtle_loop.engine import Recorder, load_prompts, play
 from test_loop import PUZZLE, FakeClient, evaluated
 
 class PrefixTests(unittest.TestCase):
+    def test_terminal_try_question_with_earlier_test_prose(self):
+        raw='Let me test: is it blue? Better test: is it red? Try: was it green?'
+        self.assertEqual(parse_action(raw),{'type':'question','text':'was it green?'})
+        for text in ('Try: A? Try: B?', 'Test: A?\nTry: B?',
+                     'QUESTION\nA?\nTry: B?', 'Try: B? extra'):
+            with self.subTest(text=text), self.assertRaises(ProtocolError):parse_action(text)
+
+    def test_terminal_test_question_is_unique_verbatim_and_never_a_forced_final(self):
+        from turtle_loop.player_format import local_repair, load_policy, verbatim_proof
+        raw='Earlier I considered one option. Test: did the criminals expect exactly one million yen?'
+        action=parse_action(raw)
+        self.assertEqual(action,{'type':'question','text':'did the criminals expect exactly one million yen?'})
+        fixed,meta=local_repair(raw,False,load_policy())
+        self.assertEqual(fixed,action)
+        self.assertEqual(raw[slice(*meta['text_span'])],action['text'])
+        self.assertTrue(verbatim_proof(raw,action))
+        with self.assertRaises(ProtocolError):parse_action(raw,True)
+        for ambiguous in ('Test: A? Test: B?', 'QUESTION\nA?\nTest: B?',
+                          'Test: B? More words', 'Test: B?\nFINAL\nAnswer',
+                          'Test: a\nmultiline?'):
+            with self.subTest(raw=ambiguous),self.assertRaises(ProtocolError):parse_action(ambiguous)
+
+    def test_unique_glued_header_recovers_only_the_exact_final_question(self):
+        from turtle_loop.player_format import local_repair, load_policy, verbatim_proof
+        from turtle_loop.engine import parse_player_json
+        body='Was the amount estimated by bundle thickness?'
+        raw='Let me test the idea?QUESTION\n'+body
+        action,meta=parse_player_json(raw)
+        self.assertEqual(action,{'type':'question','text':body})
+        start,end=meta['text_span']
+        self.assertEqual(raw[start:end],body)
+        self.assertEqual(local_repair(raw,False,load_policy())[0],action)
+        self.assertTrue(verbatim_proof(raw,action))
+        self.assertFalse(verbatim_proof(raw,{'type':'question','text':'Was the amount estimated?'}))
+        abandoned='Test: A complex draft? Too compound.\nLet me ask.QUESTION\nActual?'
+        self.assertEqual(parse_action(abandoned),{'type':'question','text':'Actual?'})
+        self.assertEqual(parse_action('Let me ask. QUESTION\nExact question?'),
+                         {'type':'question','text':'Exact question?'})
+        for ambiguous in ('Thought?QUESTION\nA?\nFINAL\nGuess',
+                          'QUESTION\nA?QUESTION\nB?',
+                          '{"type":"question","text":"A?"}?QUESTION\nB?'):
+            with self.subTest(raw=ambiguous),self.assertRaises(ProtocolError):
+                parse_action(ambiguous)
+
     def test_punctuation_and_multiline_preserved(self):
         body='Is "A" using C:\\new?\nOr a literal \\?'
         self.assertEqual(parse_action('QUESTION\n'+body),{'type':'question','text':body})
