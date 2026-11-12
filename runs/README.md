@@ -8,4 +8,6 @@
 
 每批阅读 `index.html`、`trajectories.html` 或每局的 `trajectory.html`；先看result/status是否completed、interrupted、error或dry_run。不能从旧running字段直接推断当前进程仍在运行。
 
+最新正式结果：[2026-11-13 TS038 April / b 槽](2026-11-13_ts038_april_formal/README.md)：全局重复3、4，共4局均正常结束；包含结果、轨迹、冻结输入、压缩API日志及技术中断审计。
+
 实验继续暂停。本次整理没有重新启动模型。重点待审批次和轮次见 [审核清单](../docs/todo_human_review_20261027.md)。

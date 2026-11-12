@@ -4,9 +4,67 @@ import unittest
 from pathlib import Path
 
 from scripts.watch_progress import collect, read_events
+from scripts.serve_progress import artifact_path
 
 
 class ProgressDashboardTests(unittest.TestCase):
+    def test_formal_b_slot_shows_global_repeats_before_results_are_written(self):
+        with tempfile.TemporaryDirectory() as directory:
+            batch = Path(directory)/'tasks/mas-ts038-b/team'
+            game = batch/'TS038_r01_solo'
+            game.mkdir(parents=True)
+            (batch.parent/'assignment.json').write_text(json.dumps({
+                'preset':'full','runner':'april','repeat':2,'repeat_offset':2}))
+            (batch/'plan.json').write_text(json.dumps({'kind':'team','blocks':[
+                {'block':f'TS038_r{n:02d}','target':'TS038','repeat':n,
+                 'conditions':['solo','free_dialogue']} for n in (1,2)]}))
+            (game/'trajectory.jsonl').write_text('{"event":"start","puzzle_id":"TS038"}\n')
+            rows = collect([(batch,'/runs/0')])['games']
+            self.assertEqual(len(rows),4)
+            self.assertEqual({(r['condition'],r['global_repeat']) for r in rows},
+                             {('solo',3),('free_dialogue',3),('solo',4),('free_dialogue',4)})
+            self.assertEqual(rows[0]['global_repeat'],3)
+            self.assertTrue(all(r['runner']=='april' and r['preset']=='full' for r in rows))
+
+    def test_team_plan_keeps_unstarted_baseline_and_public_agent_activity(self):
+        with tempfile.TemporaryDirectory() as directory:
+            batch = Path(directory)/'smoke/team'
+            game = batch/'TS038_r01_free_dialogue'
+            game.mkdir(parents=True)
+            (batch/'plan.json').write_text(json.dumps({'kind':'team', 'blocks':[
+                {'block':'TS038_r01','target':'TS038','conditions':['free_dialogue','solo']}]}))
+            (batch.parent/'status.json').write_text('{"status":"stopped_on_error"}')
+            (game/'trajectory.jsonl').write_text('{"event":"start","puzzle_id":"TS038"}\n')
+            (game/'result.json').write_text('{"status":"error"}')
+            (game/'shared_dialogue.jsonl').write_text(json.dumps({
+                'speaker':'A','type':'discuss','text':'Public hypothesis','effective_next_speaker':'B',
+                'private':'MUST_NOT_LEAK'})+'\n')
+            rows = collect([(batch,'/runs/0')])['games']
+            self.assertEqual(len(rows), 2)
+            active, baseline = rows
+            self.assertEqual(active['condition'], 'free_dialogue')
+            self.assertEqual(active['actor_messages'], {'A':1,'B':0})
+            self.assertEqual((active['current_actor'],active['internal_messages']), ('B',1))
+            self.assertNotIn('MUST_NOT_LEAK',json.dumps(active))
+            self.assertEqual((baseline['puzzle_id'],baseline['condition'],baseline['status']),
+                             ('TS038','solo','not_started'))
+            self.assertTrue(baseline['blocked'])
+            self.assertIsNone(baseline['score'])
+
+    def test_local_server_only_serves_artifacts_inside_its_selected_batch(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            batch = root/'team'
+            batch.mkdir()
+            (batch/'result.json').write_text('{}')
+            (root/'.env').write_text('PRIVATE')
+            (batch/'escape.json').symlink_to(root/'.env')
+            mounts = [(batch,'/runs/0')]
+            self.assertEqual(artifact_path(mounts,'/runs/0/result.json'),(batch/'result.json').resolve())
+            for path in ('/.env','/runs/0/../.env','/runs/0/%2e%2e/.env',
+                         '/runs/0/escape.json','/runs/4/result.json'):
+                self.assertIsNone(artifact_path(mounts,path))
+
     def test_live_events_update_without_a_new_result_and_zero_score_is_real(self):
         with tempfile.TemporaryDirectory() as directory:
             batch = Path(directory)/'batch/web/run'

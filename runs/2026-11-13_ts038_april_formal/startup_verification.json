@@ -1,0 +1,16 @@
+{
+  "purpose": "Formal TS038 April b slot; global repeats 3 and 4",
+  "offline_tests": {
+    "run": 264,
+    "passed": 263,
+    "known_failure": "Existing TS034 historical context manifest mismatch; unchanged from prior run"
+  },
+  "regressions": "Canonical JSON bodies containing test:/try: remain verbatim; exact failed formal output passes offline round-trip.",
+  "prior_technical_failure": "runs/api/ts038_april_formal_20261113",
+  "model_calls_in_offline_checks": 0,
+  "dry_live_snapshot_files": 91,
+  "stop_policy": "Stop on any game error; never resume a free_dialogue game mid-way.",
+  "initial_api_calls": 22,
+  "initial_api_errors": 0,
+  "global_repeat_mapping_verified": true
+}

@@ -17,6 +17,19 @@ def action(kind, text, next_speaker='B'):
 
 
 class DialogueTests(unittest.TestCase):
+    def test_question_with_test_colon_survives_team_to_engine_json_round_trip(self):
+        body="Let's test: is it written? I'll probe whether a note exists."
+        team,rec=self.team(lambda i,p:'QUESTION NEXT=B\n'+body,
+                           lambda i,p:'FINAL\nAn explanation',max_discussion=0)
+        result=play(PUZZLE,{'max_questions':2},rec,
+                    dict(player=team,host=FakeClient(lambda i,p:'no'),
+                         grader=FakeClient(lambda i,p:evaluated((1,1)))),self.prompts)
+        self.assertEqual(result['status'],'completed')
+        self.assertEqual(rec.turns[0]['text'],body)
+        self.assertEqual(len(rec.turns),2)
+        events=[json.loads(x) for x in (rec.folder/'trajectory.jsonl').read_text().splitlines()]
+        self.assertFalse(any(e['event']=='dialogue_format_rejected' for e in events))
+
     def test_prose_and_note_metadata_compose_in_shared_dialogue(self):
         team,rec=self.team(lambda i,p:'A thought. {"type":"question","text":"Q?","next_speaker":"B","text_note":"rephrase"}',
                            lambda i,p:'{}',max_discussion=0)

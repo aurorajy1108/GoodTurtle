@@ -1,0 +1,84 @@
+{
+  "TS038/free_dialogue": {
+    "recorded_games": 2,
+    "completed_games": 2,
+    "success_rate_completed": 0.5,
+    "counted_questions": {
+      "n": 2,
+      "mean": 78,
+      "population_variance": 484,
+      "sample_variance": 968
+    },
+    "final_partial_score": {
+      "n": 2,
+      "mean": 0.75,
+      "population_variance": 0.0625,
+      "sample_variance": 0.125
+    },
+    "elapsed_seconds": {
+      "n": 2,
+      "mean": 1342.0990976250032,
+      "population_variance": 84672.65403465106,
+      "sample_variance": 169345.30806930212
+    },
+    "solver_attempts": {
+      "n": 2,
+      "mean": 107,
+      "population_variance": 2401,
+      "sample_variance": 4802
+    },
+    "solver_input_tokens": {
+      "n": 0,
+      "mean": null,
+      "population_variance": null,
+      "sample_variance": null
+    },
+    "solver_output_tokens": {
+      "n": 0,
+      "mean": null,
+      "population_variance": null,
+      "sample_variance": null
+    }
+  },
+  "TS038/solo": {
+    "recorded_games": 2,
+    "completed_games": 2,
+    "success_rate_completed": 0.5,
+    "counted_questions": {
+      "n": 2,
+      "mean": 93,
+      "population_variance": 49,
+      "sample_variance": 98
+    },
+    "final_partial_score": {
+      "n": 2,
+      "mean": 0.8,
+      "population_variance": 0.04000000000000001,
+      "sample_variance": 0.08000000000000002
+    },
+    "elapsed_seconds": {
+      "n": 2,
+      "mean": 1061.4536662915489,
+      "population_variance": 9966.542947964823,
+      "sample_variance": 19933.085895929646
+    },
+    "solver_attempts": {
+      "n": 2,
+      "mean": 93.5,
+      "population_variance": 42.25,
+      "sample_variance": 84.5
+    },
+    "solver_input_tokens": {
+      "n": 0,
+      "mean": null,
+      "population_variance": null,
+      "sample_variance": null
+    },
+    "solver_output_tokens": {
+      "n": 0,
+      "mean": null,
+      "population_variance": null,
+      "sample_variance": null
+    }
+  }
+}

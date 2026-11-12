@@ -5,11 +5,35 @@ from pathlib import Path
 from turtle_loop.action_text import parse_prefix_action
 from turtle_loop.engine import parse_action, ProtocolError
 from turtle_loop.codex_client import output_contract
-from turtle_loop.dialogue_contract import valid_dialogue_action
+from turtle_loop.dialogue_contract import valid_dialogue_action, dialogue_contract_text
 from turtle_loop.engine import Recorder, load_prompts, play
 from test_loop import PUZZLE, FakeClient, evaluated
 
 class PrefixTests(unittest.TestCase):
+    def test_valid_json_body_does_not_enter_plain_text_action_recovery(self):
+        from turtle_loop.engine import parse_player_json
+        body="Let's test: is it written? I'll probe whether a note exists."
+        prefix, _ = parse_player_json('QUESTION NEXT=A\n'+body)
+        canonical = json.dumps({k:prefix[k] for k in ('type','text')})
+        self.assertEqual(parse_action(canonical), {'type':'question','text':body})
+        dialogue = {**prefix, 'text':body+' Try: another hypothesis.'}
+        parsed, recovery = parse_player_json(json.dumps(dialogue))
+        self.assertEqual(parsed, dialogue)
+        self.assertIsNone(recovery)
+
+    def test_dialogue_instructions_use_executable_headers_not_the_action_placeholder(self):
+        allowed = ['question', 'final', 'discuss', 'pass']
+        contract = dialogue_contract_text(allowed)
+        self.assertNotIn('ACTION NEXT=', contract)
+        for kind in allowed:
+            for actor in ('A', 'B'):
+                header = kind.upper()+' NEXT='+actor
+                self.assertIn(header, contract)
+                self.assertTrue(valid_dialogue_action(parse_prefix_action(header+'\nBody'), allowed))
+        # The observed invalid output stays invalid: never guess its action type.
+        with self.assertRaises(ValueError):
+            parse_prefix_action('ACTION NEXT=A\nPlease ask whether it is written.')
+
     def test_terminal_try_question_with_earlier_test_prose(self):
         raw='Let me test: is it blue? Better test: is it red? Try: was it green?'
         self.assertEqual(parse_action(raw),{'type':'question','text':'was it green?'})

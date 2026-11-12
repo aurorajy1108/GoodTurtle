@@ -153,6 +153,12 @@ def parse_player_json(text):
             return parse_prefix_action(text), None
         except ValueError as exc:
             raise ProtocolError(str(exc)) from None
+    # Structured actions already delimit their body. Do not reinterpret words
+    # such as "test:" inside a valid JSON text field as a second action envelope.
+    try:
+        return json.loads(text, object_pairs_hook=_unique_player_object), None
+    except (ValueError, TypeError):
+        pass
     from .action_text import recover_prefix_action
     try:
         prefix_recovery=recover_prefix_action(text)

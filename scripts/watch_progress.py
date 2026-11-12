@@ -57,6 +57,11 @@ def collect_game(folder, batch_name, prefix, metadata=None):
                 if turn is not None:
                     turn['score'] = score
     calls = read_events(folder/'api_calls.jsonl')
+    dialogue = read_events(folder/'shared_dialogue.jsonl')
+    policy = read_json(folder/'dialogue_policy.json', {})
+    actors = {actor: sum(e.get('speaker') == actor for e in dialogue) for actor in ('A', 'B')}
+    current_actor = next((e.get('effective_next_speaker') for e in reversed(dialogue)
+                          if e.get('speaker') in ('A', 'B')), policy.get('start'))
     costs = [c.get('accounting', {}).get('estimated_cost_usd') for c in calls]
     known_costs = [c for c in costs if type(c) in (int, float)]
     url = prefix.rstrip('/') + '/' + folder.name
@@ -66,9 +71,12 @@ def collect_game(folder, batch_name, prefix, metadata=None):
     return {
         'id': batch_name+'/'+folder.name, 'batch': batch_name,
         'puzzle_id': start.get('puzzle_id', folder.name.split('_')[0]),
-        'condition': metadata.get('condition') or next((c for c in ('answer_only','direct','session','transcript','source') if folder.name.endswith('_'+c)), 'direct'),
+        'condition': metadata.get('condition') or next((c for c in ('free_dialogue','solo','answer_only','direct','session','transcript','source') if folder.name.endswith('_'+c)), 'direct'),
         'source_puzzle': metadata.get('source'), 'name': folder.name,
+        'preset': metadata.get('preset'), 'runner': metadata.get('runner'),
+        'global_repeat': metadata.get('global_repeat'),
         'status': result.get('status', 'starting'), 'error': error,
+        'success': result.get('success'), 'stop_reason': result.get('stop_reason'),
         'budget': config.get('max_questions', start.get('budget', 100)),
         'submissions': max(len(turns), result.get('submissions', 0)),
         'pending_feedback': sum('feedback' not in t for t in turns.values()),
@@ -82,9 +90,15 @@ def collect_game(folder, batch_name, prefix, metadata=None):
         'total_tokens': sum(c.get('usage', {}).get('total_tokens', 0) or 0 for c in calls),
         'cost_usd': sum(known_costs) if len(known_costs) == len(costs) and costs else None,
         'models': {role: config.get(role, {}).get('model', '—') for role in ('player', 'host', 'grader')},
+        'dialogue': [{k: e.get(k) for k in ('message_index', 'speaker', 'type', 'text',
+                      'timestamp', 'effective_next_speaker')} for e in dialogue[-12:]],
+        'actor_messages': actors, 'current_actor': current_actor,
+        'internal_messages': sum(e.get('type') in ('discuss', 'pass') for e in dialogue),
+        'started': bool(start),
         'links': {name: url+'/'+filename for name, filename in {
             'trajectory': 'trajectory.html', 'result': 'result.json',
-            'tokens': 'token_costs.csv', 'costs': 'cost_summary.json'}.items()},
+            'tokens': 'token_costs.csv', 'costs': 'cost_summary.json',
+            'dialogue': 'shared_dialogue.html'}.items()},
     }
 
 
@@ -93,9 +107,37 @@ def collect(batches):
     for folder, prefix in batches:
         rows = read_json(folder/'experiment_runs.json', []) or []
         metadata = {row['run_dir']:row for row in rows if row.get('run_dir')}
-        name = folder.parent.name if folder.name == 'continual' else folder.parent.parent.name
+        plan = read_json(folder/'plan.json', {})
+        assignment = read_json(folder.parent/'assignment.json', {})
+        if plan.get('kind') == 'team':
+            for block in plan.get('blocks', []):
+                for condition in block['conditions']:
+                    run_dir = block['block']+'_'+condition
+                    details = {'condition': condition, 'repeat': block.get('repeat'),
+                               **metadata.get(run_dir, {})}
+                    details.update(preset=assignment.get('preset'), runner=assignment.get('runner'))
+                    if assignment.get('preset') == 'full' and details.get('repeat') is not None:
+                        details['global_repeat'] = details['repeat']+assignment.get('repeat_offset', 0)
+                    metadata[run_dir] = details
+        name = folder.parent.name if folder.name in ('continual', 'team') else folder.parent.parent.name
+        found = set()
         for path in sorted(folder.glob('*/trajectory.jsonl'), key=lambda p: p.stat().st_mtime):
+            found.add(path.parent.name)
             games.append(collect_game(path.parent, name, prefix, metadata.get(path.parent.name)))
+        if plan.get('kind') == 'team':
+            study = read_json(folder.parent/'status.json', {})
+            for block in plan.get('blocks', []):
+                for condition in block['conditions']:
+                    run_dir = block['block']+'_'+condition
+                    if run_dir in found:
+                        continue
+                    row = collect_game(folder/run_dir, name, prefix, metadata.get(run_dir))
+                    row.update(puzzle_id=block['target'], status='not_started',
+                               blocked=study.get('status') in ('stopped_on_error', 'error', 'interrupted'),
+                               budget=plan.get('config', {}).get('max_questions', 100),
+                               models={r: plan.get('config', {}).get(r, {}).get('model', '—')
+                                       for r in ('player', 'host', 'grader')})
+                    games.append(row)
     return {'updated_at': datetime.now(timezone.utc).isoformat(), 'games': games}
 
 
