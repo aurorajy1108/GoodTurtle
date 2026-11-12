@@ -4,6 +4,9 @@ import ssl
 import tempfile
 import unittest
 import urllib.error
+import shutil
+import subprocess
+import sys
 from unittest.mock import patch
 
 from scripts.matched_self_review import solo_base_prompts
@@ -19,6 +22,18 @@ from test_sessions import Response
 
 @patch.dict('os.environ',{'DEEPSEEK_API_KEY':'fixture'})
 class BudgetedAgentsTests(unittest.TestCase):
+    def test_frozen_worker_cold_start_needs_no_parent_supervisor_module(self):
+        repo=Path(__file__).resolve().parents[1]
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp)
+            shutil.copytree(repo/'turtle_loop',root/'turtle_loop',ignore=shutil.ignore_patterns('__pycache__','*.pyc'))
+            (root/'scripts').mkdir()
+            for name in ('compute_matched_agents.py','matched_self_review.py'):
+                shutil.copy2(repo/'scripts'/name,root/'scripts'/name)
+            result=subprocess.run([sys.executable,str(root/'scripts/compute_matched_agents.py'),'--help'],
+                                  cwd=root,capture_output=True,text=True,timeout=15)
+            self.assertEqual(result.returncode,0,result.stderr)
+
     def config(self):
         return {'max_questions':4,'session_mode':'persistent',**{r:{'provider':'deepseek','model':r,
                 'max_output_tokens':8192,'max_retries':0,'extra_body':{'thinking':{'type':'disabled'}}}

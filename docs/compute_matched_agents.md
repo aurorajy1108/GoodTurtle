@@ -26,8 +26,8 @@ solo使用真实solo参考的基础prompt，不再从MAS参考继承角色描述
 ```bash
 python3.11 scripts/compute_matched_agents.py prepare \
   --reference runs/api/20261112_jiayang_supervised_v2/continuations/mas-ts038-a/attempt_01 \
-  --out runs/api/20261112_ts038_compute_matched_2x2_v2
-bash scripts/run_compute_matched_agents.sh runs/api/20261112_ts038_compute_matched_2x2_v2
+  --out runs/api/20261112_ts038_compute_matched_2x2_v3
+bash scripts/run_compute_matched_agents.sh runs/api/20261112_ts038_compute_matched_2x2_v3
 ```
 
 - `prepare`只写冻结计划，不调用API；`--reference`是含TS038两次已完成solo/MAS的study目录，仅用于冻结输入和确定预算，不给Player展示历史答案或参考trajectory。

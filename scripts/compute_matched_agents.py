@@ -14,7 +14,6 @@ import time
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
 from scripts.matched_self_review import prepare as prepare_solo,read,calls,sha,authorize_recovery
-from scripts.supervise_campaign import notify
 from turtle_loop.budgeted_agents import SolverBudget,BudgetedAgent
 from turtle_loop.dialogue import FreeDialoguePlayer,dialogue_settings
 from turtle_loop.engine import Recorder,dump,play
@@ -62,6 +61,11 @@ def prepare(reference,out):
     dump(out/'snapshot_hashes.json',{str(p.relative_to(snap)):sha(p) for p in snap.rglob('*')
                                     if p.is_file() and '__pycache__' not in p.parts})
     dump(out/'status.json',{'status':'prepared','planned_games':8,'completed_games':0,'active':{}})
+    # Cold-start the actual frozen entry point. Parent-only supervision helpers
+    # need not exist in the worker snapshot and must never be imported by it.
+    check=subprocess.run([sys.executable,str(snap/'scripts/compute_matched_agents.py'),'--help'],
+                         cwd=snap,capture_output=True,text=True,timeout=30)
+    if check.returncode:raise ValueError('Frozen worker cannot import: '+check.stderr[-1500:])
     dashboard(out)
     return plan
 
@@ -145,6 +149,7 @@ def dashboard(out):
 
 def run(out):
     import fcntl
+    from scripts.supervise_campaign import notify
     out=Path(out).resolve()
     lock=(out/'runner.lock').open('a');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
     snap=out/'runtime_snapshot';plan=read(out/'plan.json')
