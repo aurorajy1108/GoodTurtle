@@ -55,15 +55,27 @@ def evidence_is_verbatim(quote, submission):
     return matched
 
 
-def normalize_coverage_metadata(value):
-    """Drop only optional string explanations, without changing any judgments."""
+def normalize_coverage_metadata(value, rubric=None, requirements=None):
+    """Normalize exact field aliases and verified metadata; never change judgments."""
     value=copy.deepcopy(value)
     changes=[]
+    parents={f['id']:f['checkpoint_id'] for f in fact_specs(rubric)} if rubric else {}
     for name in ('fact_coverage','requirement_coverage'):
         items=value.get(name)
         if not isinstance(items,list):continue  # The strict validator reports this.
         for row in items:
             if not isinstance(row,dict):continue
+            for alias,canonical in (('fact_id','id'),('coverage','status')):
+                if alias not in row:continue
+                if canonical in row and row[canonical]!=row[alias]:
+                    raise ValueError('Conflicting coverage field aliases')
+                prior=row.pop(alias);row[canonical]=prior
+                changes.append({'field':name+'.'+str(row.get('id','?'))+'.'+alias,'action':'exact_field_alias','model':prior,'effective':prior})
+            if 'checkpoint_id' in row and rubric is not None:
+                if name!='fact_coverage' or not isinstance(row.get('id'),str) or parents.get(row.get('id'))!=row['checkpoint_id']:
+                    raise ValueError('Coverage checkpoint_id disagrees with the canonical fact ID')
+                prior=row.pop('checkpoint_id')
+                changes.append({'field':name+'.'+str(row.get('id','?'))+'.checkpoint_id','action':'verified_redundant_id','model':prior,'effective':None})
             for field in ('reason', 'reference'):
                 if field not in row:continue
                 if not isinstance(row[field],str):
@@ -77,7 +89,7 @@ def constrain(value, rubric, requirements, submission, protocol=PROTOCOL):
     """Validate evidence; legacy only caps credit, unified derives it from facts."""
     if protocol == UNIFIED_PROTOCOL and requirements:
         raise ValueError("Unified scoring requires completion facts to be mapped into checkpoints")
-    value, corrections = normalize_coverage_metadata(value)
+    value, corrections = normalize_coverage_metadata(value,rubric,requirements)
     def quote_exists(quote):
         return evidence_is_verbatim(quote, submission)
     def rows(name, specs):

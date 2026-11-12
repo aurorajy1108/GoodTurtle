@@ -68,6 +68,11 @@ def output_contract(user):
         ids=list(payload.get('source_sentences',{}))
         return obj({'repairs':{'type':'array','items':obj({'field':string,
                     'sentence_ids':{'type':'array','items':{'type':'string','enum':ids}}})}}),None,''
+    if payload.get('coverage_completion') is True:
+        from .coverage import coverage_schema
+        fields={k:v for k,v in coverage_schema().items() if k in payload['missing_fields']}
+        fields['consistent_with_existing_judgment']={'type':'boolean'}
+        return obj(fields),None,''
     if 'current_question' in payload and 'active_puzzle' in payload:
         schema=obj({'label':{'type':'string','enum':['yes','no','yes and no','irrelevant']}})
         return schema,'label','\nTRANSPORT OVERRIDE: Return a JSON object with one field label containing exactly your four-label answer. The controller exposes only that label. No explanations.'

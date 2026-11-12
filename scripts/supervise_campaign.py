@@ -49,7 +49,8 @@ def checkpoint(study):
 def choose_recovery(study):
     game,previous,calls,turns,config=checkpoint(study)
     args=(previous,calls,turns,config)
-    choices=[('--recover-transport',lambda:saved_transport_recovery(*args,game)),
+    choices=[('--complete-grader-coverage',lambda:saved_grader_reason_recovery(*args,read(game/'puzzle_private.json'),missing_coverage=True)),
+             ('--recover-transport',lambda:saved_transport_recovery(*args,game)),
              ('--auto-player-format',lambda:saved_player_auto_recovery(*args)),
              ('--recover-dialogue-action',lambda:saved_dialogue_action_recovery(*args,game)),
              ('--correct-untyped-player',lambda:saved_untyped_player_correction(*args)),
@@ -165,13 +166,13 @@ def supervise(args):
                             proof=job['attempts'][-1]['checkpoint']
                             folder=next(Path(job['latest_study']).glob('*/'+proof['game']),None)
                             if folder and (folder/'trajectory.jsonl').exists() and any(
-                                    e.get('event')=='transport_recovery_response_observed' and e.get('source_calls_sha256')==proof['calls_sha256'] for e in
+                                    e.get('event') in ('transport_recovery_response_observed','saved_grader_coverage_completed') and e.get('source_calls_sha256')==proof['calls_sha256'] for e in
                                     (json.loads(l) for l in (folder/'trajectory.jsonl').read_text().splitlines())):
                                 job['recovery_notified']=True
                                 notify(out,'已恢复运行',slot+' 已收到恢复后API答复，原轨迹和额度继续保留。',args.notify=='macos')
                         # Alert stalled requests; do not kill/replay an ambiguous call.
                         paths=list(Path(job['latest_study']).glob('*/**/api_calls.jsonl'))
-                        latest=max((p.stat().st_mtime for p in paths),default=job['started_at'])
+                        latest=max([job['started_at'],*(p.stat().st_mtime for p in paths)])
                         if time.time()-latest>args.stall_seconds and not job.get('stall_notified'):
                             job['stall_notified']=True
                             notify(out,'长时间未更新',slot+' 长时间未更新，请查看正在等待的API请求。',args.notify=='macos')

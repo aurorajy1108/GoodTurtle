@@ -17,7 +17,7 @@ from .host_context import (build_story_context, host_payload, story_fingerprint,
                            grader_story_context, context_policy, RUNTIME_VERSION)
 from .coverage import PROTOCOL, UNIFIED_PROTOCOL, COVERAGE_PROTOCOLS, fact_specs, requirement_specs, constrain
 from .host import answer_question
-from .grader import evaluate_final
+from .grader import evaluate_final, evaluate_returned
 
 LABELS = {'yes', 'no', 'yes and no', 'irrelevant'}
 ROOT = Path(__file__).resolve().parents[1]
@@ -377,8 +377,9 @@ def saved_player_auto_recovery(previous, calls, turns, config):
     return _saved_player_recovery(previous,calls,turns,config,'auto_format')
 
 
-def saved_grader_reason_recovery(previous, calls, turns, config, puzzle):
-    """Accept an already returned grade rejected only for explanation metadata."""
+def saved_grader_reason_recovery(previous, calls, turns, config, puzzle, missing_coverage=False):
+    """Recover an observed grade or omitted-evidence checkpoint without full regrading."""
+    original_calls=calls
     from .sessions import restorable_chat_records
     try:calls=restorable_chat_records(calls)
     except (ValueError,TypeError,KeyError):return None
@@ -395,7 +396,7 @@ def saved_grader_reason_recovery(previous, calls, turns, config, puzzle):
             or len({c.get('session_lane_id') for c in players})!=1):return None
     from .coverage import normalize_coverage_metadata
     from .sessions import GameSession
-    payload=None
+    payload=None;grader_lanes=[];completion_call=None
     try:
         for role in ('host','player','grader'):
             session=GameSession(role,'.',lambda *a,**k:None)
@@ -403,8 +404,16 @@ def saved_grader_reason_recovery(previous, calls, turns, config, puzzle):
                 session.restore_chat(calls)
                 if role=='grader':
                     for lane in session.lanes.values():
+                        grader_lanes.append((lane['response_id'],lane['previous']))
                         if lane['response_id']==last.get('response_id'):payload=lane['previous']
             finally:session.close()
+        if missing_coverage and payload and payload.get('coverage_completion') is True:
+            originals=[(c,p) for c in calls[:-1] if c.get('role')=='grader'
+                       for rid,p in grader_lanes if rid==c.get('response_id') and not p.get('coverage_completion')
+                       and json.loads(c['text'])==payload.get('original_evaluation')]
+            if len(originals)!=1:return None
+            completion_call=last
+            last,payload=originals[0]
         if (not payload or puzzle.get('grading_protocol') not in COVERAGE_PROTOCOLS
                 or payload.get('grading_protocol')!=puzzle.get('grading_protocol')
                 or payload.get('rubric')!=puzzle['rubric']
@@ -413,9 +422,24 @@ def saved_grader_reason_recovery(previous, calls, turns, config, puzzle):
                 or payload.get('required_facts')!=fact_specs(puzzle['rubric'])
                 or payload.get('required_completion')!=requirement_specs(puzzle.get('completion_requirements',[]))):
             return None
+        if missing_coverage:
+            from .grader import missing_coverage_fields
+            missing=missing_coverage_fields(last['text'],payload)
+            if not missing:return None
+            if completion_call:
+                from .grader import merge_coverage_reply,validate_frozen_judgment
+                merged,original,added=merge_coverage_reply(last['text'],completion_call['text'],payload)
+                raw=json.dumps(merged,ensure_ascii=False)
+                grade=grade_final(raw,puzzle['rubric'],puzzle.get('completion_requirements',[]),turns[-1]['text'],puzzle['grading_protocol'])
+                validate_frozen_judgment(original,grade,payload,added)
+                return {'raw':raw,'grade':grade,'response_id':last['response_id'],
+                        'completion_response_id':completion_call['response_id'],'missing_fields':missing,
+                        'calls_sha256':hashlib.sha256(json.dumps(original_calls,sort_keys=True).encode()).hexdigest()}
+            return {'raw':last['text'],'payload':payload,'response_id':last.get('response_id'),
+                    'missing_fields':missing,'calls_sha256':hashlib.sha256(json.dumps(original_calls,sort_keys=True).encode()).hexdigest()}
         raw=json.loads(last['text'])
         if not isinstance(raw,dict):return None
-        _,changes=normalize_coverage_metadata(raw)
+        _,changes=normalize_coverage_metadata(raw,puzzle['rubric'],puzzle.get('completion_requirements',[]))
         if not changes:return None
         grade=grade_final(last['text'],puzzle['rubric'],puzzle.get('completion_requirements',[]),turns[-1]['text'],puzzle['grading_protocol'])
         return {'grade':grade,'raw':last['text'],'response_id':last.get('response_id'),
@@ -555,6 +579,12 @@ class Recorder:
             recovery=saved_player_auto_recovery(previous,recovery_calls,rec.turns,config)
         grade_recovery=saved_grader_reason_recovery(previous,rec.calls,rec.turns,config,puzzle)
         transport_recovery = None
+        coverage_recovery=None
+        coverage_marker=folder/'grader_coverage_completion.json'
+        if coverage_marker.exists() and previous['status']!='completed':
+            coverage_recovery=saved_grader_reason_recovery(previous,rec.calls,rec.turns,config,puzzle,missing_coverage=True)
+            if not coverage_recovery or json.loads(coverage_marker.read_text())!=coverage_recovery:
+                raise ValueError('Saved grader coverage checkpoint mismatch')
         exact_transport=None
         marker=folder/'transport_recovery.json'
         if marker.exists() and previous['status']!='completed':
@@ -580,7 +610,7 @@ class Recorder:
             transport_recovery = saved_host_transport_recovery(previous, rec.calls, rec.turns, config)
             if not transport_recovery or json.loads(transport_marker.read_text()) != transport_recovery:
                 raise ValueError('Pending host transport recovery does not match the saved archive')
-        if config.get('session_mode','replay')=='persistent' and previous['status']!='completed' and not (recovery or grade_recovery or transport_recovery or dialogue_recovery or untyped_recovery or exact_transport):
+        if config.get('session_mode','replay')=='persistent' and previous['status']!='completed' and not (recovery or grade_recovery or transport_recovery or dialogue_recovery or untyped_recovery or exact_transport or coverage_recovery):
             raise ValueError('Persistent interrupted sessions require supported saved-response recovery or explicit checked DeepSeek pending-host transport recovery; no fresh-session fallback.')
         if previous['status'] == 'error':
             last = rec.calls[-1] if rec.calls else {}
@@ -588,10 +618,11 @@ class Recorder:
             recoverable = last.get('status') in ('transport_error','http_error','interrupted') or (
                 last.get('status') == 'invalid_response' and not last.get('raw_text',last.get('text','')).strip()
                 and any(s in diagnostic for s in ('usage limit','at capacity','rate limit','rate_limit')))
-            if not recoverable and not (recovery or grade_recovery or dialogue_recovery or untyped_recovery or exact_transport):
+            if not recoverable and not (recovery or grade_recovery or dialogue_recovery or untyped_recovery or exact_transport or coverage_recovery):
                 raise ValueError('Refuse to resample a protocol/model-output failure')
         rec.resumed = True
-        rec.restore_sessions=bool(recovery or grade_recovery or transport_recovery or dialogue_recovery or untyped_recovery or exact_transport)
+        rec.restore_sessions=bool(recovery or grade_recovery or transport_recovery or dialogue_recovery or untyped_recovery or exact_transport or coverage_recovery)
+        if coverage_recovery and 'grade' not in coverage_recovery:rec.pending_grader_coverage=coverage_recovery
         if exact_transport:
             rec.session_restore_calls=replay_records(rec.calls,events+[{'event':'transport_recovery',**exact_transport}])
             rec.pending_transport_call=rec.calls[-1]
@@ -618,6 +649,12 @@ class Recorder:
                           recovery=True,source_response_id=recovery['response_id'])
             rec.event('submission',**turn,raw_player_output=recovery['raw'],
                       recovered_from_response_id=recovery['response_id'])
+        if coverage_recovery and 'grade' in coverage_recovery:
+            turn=rec.turns[-1];turn.update(grade=coverage_recovery['grade'],label=coverage_recovery['grade']['label'])
+            rec.event('saved_grader_coverage_completed',submission=turn['index'],source_response_id=coverage_recovery['response_id'],
+                      completion_response_id=coverage_recovery['completion_response_id'],source_calls_sha256=coverage_recovery['calls_sha256'],additional_model_calls=0)
+            rec.event('evaluation',submission=turn['index'],**coverage_recovery['grade'],raw=coverage_recovery['raw'])
+            (folder/'grader_coverage_completion.json').unlink(missing_ok=True)
         if grade_recovery:
             turn=rec.turns[-1]
             turn.update(grade=grade_recovery['grade'],label=grade_recovery['grade']['label'])
@@ -787,6 +824,10 @@ def play(puzzle, config, recorder, clients, prompts, player_context=None, player
             if getattr(recorder,'restore_sessions',False):
                 client.restore_game(recorder.folder,recorder.event,
                                     getattr(recorder,'session_restore_calls',recorder.calls))
+                if getattr(client,'role',None)=='grader':
+                    from .grader import COVERAGE_COMPLETION_PROMPT
+                    client.coverage_completion_calls=sum(c.get('role')=='grader' and c.get('status')=='ok' and
+                        c.get('request',{}).get('messages',[{}])[0].get('content','').startswith(COVERAGE_COMPLETION_PROMPT) for c in recorder.calls)
                 pending=getattr(recorder,'pending_transport_call',None)
                 if pending and getattr(client,'role',None)==pending['role']:
                     client.expected_recovery_request=pending['request']
@@ -935,8 +976,19 @@ def _play(puzzle, config, recorder, clients, prompts, player_context=None):
                     grader_payload.update(grading_protocol=puzzle['grading_protocol'],
                                           required_facts=fact_specs(puzzle['rubric']),
                                           required_completion=requirement_specs(puzzle.get('completion_requirements', [])))
-                grade, raw_grade = evaluate_final(clients['grader'],prompts['grader'],grader_payload,
-                                                 lambda repair:recorder.event('grader_evidence_repair', submission=turn['index'], **repair))
+                audit_grade=lambda repair:recorder.event('grader_evidence_repair', submission=turn['index'], **repair)
+                saved_coverage=getattr(recorder,'pending_grader_coverage',None)
+                if saved_coverage:
+                    if any(grader_payload.get(k)!=saved_coverage['payload'].get(k) for k in
+                           ('opening','reference_answer','rubric','completion_requirements','grading_notes','submitted_explanation','grading_protocol','required_facts','required_completion')):
+                        raise ProtocolError('Saved coverage payload differs from frozen scoring inputs')
+                    grade,raw_grade=evaluate_returned(clients['grader'],saved_coverage['raw'],saved_coverage['payload'],audit_grade)
+                    recorder.event('saved_grader_coverage_completed',submission=turn['index'],source_response_id=saved_coverage['response_id'],
+                                   source_calls_sha256=saved_coverage['calls_sha256'])
+                    (recorder.folder/'grader_coverage_completion.json').unlink(missing_ok=True)
+                    del recorder.pending_grader_coverage
+                else:
+                    grade,raw_grade=evaluate_final(clients['grader'],prompts['grader'],grader_payload,audit_grade)
                 turn.update(grade=grade, label=grade['label'])
                 recorder.event('evaluation', submission=turn['index'], **grade, raw=raw_grade)
                 if not grade['complete']:
