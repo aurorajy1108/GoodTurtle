@@ -25,7 +25,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def controller_fingerprint():
     names=('engine.py','host.py','host_context.py','coverage.py','grader.py','providers.py',
-           'codex_client.py','experiments.py','sessions.py','dialogue.py','dialogue_contract.py','dialogue_recovery.py','transport_recovery.py','player_format.py','action_text.py')
+           'codex_client.py','experiments.py','sessions.py','dialogue.py','dialogue_contract.py','dialogue_recovery.py','transport_recovery.py','player_format.py','action_text.py','matched_self_review.py')
     files=[ROOT/'turtle_loop'/name for name in names]
     files.append(ROOT/'configs/player_format_repair.json')
     return hashlib.sha256(b''.join(p.read_bytes() for p in files if p.exists())).hexdigest()
@@ -392,6 +392,10 @@ def saved_grader_reason_recovery(previous, calls, turns, config, puzzle, missing
         return None
     last=calls[-1]
     players=[c for c in calls if c.get('role')=='player']
+    if any(c.get('self_review_phase') for c in players):
+        from .matched_self_review import submitted_review_actions
+        try:players=submitted_review_actions(calls)
+        except (ValueError,KeyError,TypeError):return None
     if (last.get('role')!='grader' or len(players)!=len(turns)
             or len({c.get('session_lane_id') for c in players})!=1):return None
     from .coverage import normalize_coverage_metadata
@@ -610,7 +614,14 @@ class Recorder:
             transport_recovery = saved_host_transport_recovery(previous, rec.calls, rec.turns, config)
             if not transport_recovery or json.loads(transport_marker.read_text()) != transport_recovery:
                 raise ValueError('Pending host transport recovery does not match the saved archive')
-        if config.get('session_mode','replay')=='persistent' and previous['status']!='completed' and not (recovery or grade_recovery or transport_recovery or dialogue_recovery or untyped_recovery or exact_transport or coverage_recovery):
+        self_review_recovery=None
+        self_review_marker=folder/'self_review_action_recovery.json'
+        if self_review_marker.exists() and previous['status']!='completed':
+            from .matched_self_review import saved_action_recovery
+            self_review_recovery=saved_action_recovery(previous,rec.calls,rec.turns,config,folder)
+            if not self_review_recovery or json.loads(self_review_marker.read_text())!=self_review_recovery:
+                raise ValueError('Self-review envelope checkpoint differs from original messages')
+        if config.get('session_mode','replay')=='persistent' and previous['status']!='completed' and not (recovery or grade_recovery or transport_recovery or dialogue_recovery or untyped_recovery or exact_transport or coverage_recovery or self_review_recovery):
             raise ValueError('Persistent interrupted sessions require supported saved-response recovery or explicit checked DeepSeek pending-host transport recovery; no fresh-session fallback.')
         if previous['status'] == 'error':
             last = rec.calls[-1] if rec.calls else {}
@@ -618,10 +629,13 @@ class Recorder:
             recoverable = last.get('status') in ('transport_error','http_error','interrupted') or (
                 last.get('status') == 'invalid_response' and not last.get('raw_text',last.get('text','')).strip()
                 and any(s in diagnostic for s in ('usage limit','at capacity','rate limit','rate_limit')))
-            if not recoverable and not (recovery or grade_recovery or dialogue_recovery or untyped_recovery or exact_transport or coverage_recovery):
+            if not recoverable and not (recovery or grade_recovery or dialogue_recovery or untyped_recovery or exact_transport or coverage_recovery or self_review_recovery):
                 raise ValueError('Refuse to resample a protocol/model-output failure')
         rec.resumed = True
-        rec.restore_sessions=bool(recovery or grade_recovery or transport_recovery or dialogue_recovery or untyped_recovery or exact_transport or coverage_recovery)
+        rec.restore_sessions=bool(recovery or grade_recovery or transport_recovery or dialogue_recovery or untyped_recovery or exact_transport or coverage_recovery or self_review_recovery)
+        if self_review_recovery:
+            rec.event('self_review_envelope_recovery',**self_review_recovery)
+            self_review_marker.unlink()
         if coverage_recovery and 'grade' not in coverage_recovery:rec.pending_grader_coverage=coverage_recovery
         if exact_transport:
             rec.session_restore_calls=replay_records(rec.calls,events+[{'event':'transport_recovery',**exact_transport}])
@@ -916,6 +930,9 @@ def _play(puzzle, config, recorder, clients, prompts, player_context=None):
                     del recorder.pending_player_raw
                 else:
                     reply = clients['player'].complete(prompts['player'], player_input)
+                # An explicitly budgeted actor may reserve its last available
+                # generation for FINAL before the public question limit.
+                forced = forced or getattr(clients['player'], 'compute_budget_final', False)
                 try:
                     action = parse_action(reply.text, forced, lambda details: recorder.event(
                         'player_format_recovery', submission=len(recorder.turns)+1, **details))
@@ -1004,7 +1021,8 @@ def _play(puzzle, config, recorder, clients, prompts, player_context=None):
                 if grade['complete']:
                     return recorder.report('completed', 'solved')
                 if forced:
-                    return recorder.report('completed', 'budget_exhausted')
+                    return recorder.report('completed', 'solver_budget_exhausted' if
+                        getattr(clients['player'], 'compute_budget_final', False) else 'budget_exhausted')
             recorder.report('running', None)
     except KeyboardInterrupt:
         recorder.event('interrupted', reason='user_interrupt')
