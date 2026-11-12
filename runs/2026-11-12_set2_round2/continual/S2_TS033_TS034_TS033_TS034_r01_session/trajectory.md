@@ -1,0 +1,878 @@
+# Turtle Soup trajectory
+
+Over a smartphone, a daughter begs for a life to be spared and a kidnapper shouts: bring one hundred million yen alone by noon tomorrow, or this hostage dies; no police. Hearing the demand, her father decides the ransom should not be paid. Why?
+
+Status: completed | counted questions: 100 | submissions: 100 | final partial score: 0.85
+
+[Token usage and estimated costs](token_costs.csv)
+
+## 1 · question
+
+Was the "daughter" on the phone not actually his real daughter—an impostor or recording used by the kidnappers?
+
+Host: no
+
+## 2 · question
+
+Did the father recognize the "kidnapper's" voice—i.e., was the caller someone he knew, revealing the kidnapping as fake or staged?
+
+Host: no
+
+## 3 · question
+
+Did the father conclude the kidnapping was fake because his daughter was not actually missing—he knew where she really was (e.g., she was with him, at school, or abroad)?
+
+Host: no
+
+## 4 · question
+
+Did the father decide not to pay because paying would be impossible—e.g., he could not obtain one hundred million yen by noon tomorrow?
+
+Host: no
+
+## 5 · question
+
+Did the father decide not to pay because he believed paying the ransom would not save his daughter—e.g., the kidnappers would kill her anyway?
+
+Host: yes
+
+## 6 · question
+
+Did the father believe the kidnappers would kill the daughter regardless of whether the ransom was paid?
+
+Host: no
+
+## 7 · question
+
+Did the father believe that one hundred million yen was far more than the kidnappers actually needed or would realistically demand, indicating the situation was not a normal ransom?
+
+Host: no
+
+## 8 · question
+
+Did the father believe his daughter would be dead (or the deadline impossible to meet) before the money could be delivered—e.g., because "by noon tomorrow" was too soon, or she was already fatally injured?
+
+Host: no
+
+## 9 · question
+
+Did the father believe his daughter was not actually in danger of dying—because he sensed she was not truly a hostage (e.g., the pleading was coerced/signaled she was safe, or her "life" refers to a pet or something else)?
+
+Host: no
+
+## 10 · question
+
+Was the father unable to comply with the demand in a way that doomed the attempt—specifically, did "no police" or "alone" make him realize that any payment attempt would be detected/foiled, so the kidnappers would never release her?
+
+Host: no
+
+## 11 · question
+
+Did the father realize that the kidnappers could not actually be holding his daughter—for example, because the call came from the daughter's own phone or a location that showed she was free?
+
+Host: yes
+
+## 12 · question
+
+Did the father realize his daughter was not kidnapped because the smartphone call revealed she was free—for example, she was speaking to him in person, or the smartphone was with him (not with her)?
+
+Host: yes
+
+## 13 · question
+
+Was the smartphone his daughter's own phone, and the father knew that phone was currently in his own possession (or somewhere she couldn't be calling from)—revealing the call could not be genuine?
+
+Host: no
+
+## 14 · question
+
+Did the father realize she was free because the smartphone call showed video/the daughter's surroundings—revealing she was in a safe or familiar place, not captive?
+
+Host: no
+
+## 15 · question
+
+Was the daughter physically present with her father at the time of the call—so that the "daughter begging over the smartphone" was impossible/ contradictory, revealing the whole thing as a scam?
+
+Host: no
+
+## 16 · question
+
+Did the father realize the call was not from his real daughter because of a technological tell on the smartphone—for example, it was a recorded voice, an AI-cloned voice, or the same recording/sentence played on a loop?
+
+Host: no
+
+## 17 · question
+
+Did the father know his daughter was incapable of speaking like that—for example, she was deaf, mute, an infant, or otherwise unable to make such a plea—revealing the call was fake?
+
+Host: no
+
+## 18 · question
+
+Did the father conclude the kidnapping was fake because his daughter was already dead—so she could not be begging for her life—making the call an impersonation?
+
+Host: no
+
+## 19 · question
+
+Did the father conclude his daughter was free because of something physically learned through the smartphone—for example, he could hear her voice coming from another room in the same house rather than through the phone?
+
+Host: no
+
+## 20 · question
+
+Did the father realize his daughter was behind the kidnapping herself (she staged her own kidnapping), so paying the ransom would just be giving money to her?
+
+Host: no
+
+## 21 · question
+
+Did the father realize his daughter was safe because the smartphone showed she was in a place she could only be if free—e.g., the GPS/location showed her at school, work, or home?
+
+Host: no
+
+## 22 · question
+
+Was the key that the daughter was communicating via a smartphone at all — meaning she had her own phone in hand, which a captive being held by kidnappers would not reasonably be allowed to use?
+
+Host: no
+
+## 23 · question
+
+Did the father decide not to pay because he realized, through the smartphone, that his daughter was not in the kidnappers' hands but was actually the one making the demand/working with them—so paying would be pointless?
+
+Host: no
+
+## 24 · question
+
+Did the father realize, from the smartphone, that the daughter's plea was not live—because the smartphone had no signal/service, or was in airplane mode, making any real call impossible?
+
+Host: no
+
+## 25 · question
+
+Was the smartphone a video-call device that revealed the daughter was safe—for example, he could see she was unharmed and in familiar surroundings, contradicting the kidnapper's threat?
+
+Host: no
+
+## 26 · question
+
+Did the father know his daughter was already safe because she was, in fact, in the same location as the kidnapper calling—i.e., she was with the criminals willingly, so "free" means she wasn't a hostage at all?
+
+Host: no
+
+## 27 · question
+
+Was the "kidnapping" actually something else on the smartphone—such as a movie, video, or game—that the father recognized as fiction, so no real ransom was warranted?
+
+Host: no
+
+## 28 · question
+
+Did the daughter communicate something in the call—a code word, a hint, or an odd phrasing—that signaled to her father she was actually safe/free, not a captive?
+
+Host: no
+
+## 29 · question
+
+Was the smartphone physically present with the father—i.e., he was holding/watching the phone, and the daughter's plea came through it in a way (like an app notification, an automated feature, or a prior recording) that showed it was not a live kidnapping call?
+
+Host: no
+
+## 30 · question
+
+Did the father realize that the person in the call was actually a different person than the daughter he believed was in danger—so no ransom was warranted?
+
+Host: no
+
+## 31 · question
+
+Did the smartphone call reveal that the daughter was in a position to escape or had escaped—e.g., the father could tell she was calling from a public place or moving freely—showing she wasn't truly a captive?
+
+Host: no
+
+## 32 · question
+
+Did the father realize the daughter was free because, during the call, he could hear two versions of her voice—the recorded "plea" and her real voice nearby—revealing the plea was fake?
+
+Host: no
+
+## 33 · question
+
+Did the father realize his daughter was free because her smartphone showed recent activity (social media posts, location sharing, messages) proving she was alive and free—contradicting the kidnapper's claim of holding her?
+
+Host: no
+
+## 34 · question
+
+Did the father, via caller ID or number displayed on the smartphone, recognize that the call was coming from a phone belonging to someone he knew was with his daughter—such as his wife or another family member—making a real kidnapping impossible/unlikely?
+
+Host: no
+
+## 35 · question
+
+Did the father resolve the situation by calling his daughter's smartphone himself and having her answer normally—proving she was safe and free, so the ransom demand was bogus?
+
+Host: no
+
+## 36 · question
+
+Did the father recognize the demand amount (one hundred million yen) as something only the daughter herself would know or use—such as an inside reference, indicating she is behind it or it is not a genuine ransom?
+
+<｜｜DSML｜｜ calls>
+<｜｜DSML｜｜ invoke name="get_puzzle_status"></｜｜DSML｜｜ parameter name="name">get_puzzle_status</｜｜DSML｜｜ parameter>
+<｜｜DSML｜｜ parameter name="parameters">{}</｜｜DSML｜｜ parameter>
+</｜｜DSML｜｜ invoke>
+</｜｜DSML｜｜ calls>
+
+Host: no
+
+## 37 · question
+
+Did the father know his daughter's real whereabouts (for example, she was in a hospital, in prison, or abroad) such that she could not possibly be in the kidnappers' hands—regardless of the phone call?
+
+Host: no
+
+## 38 · question
+
+Does the father actually have no daughter (or is estranged/the "daughter" identity is wrong), making the ransom demand impossible to be genuine?
+
+Host: no
+
+## 39 · question
+
+Was the daughter's plea delivered as a *text message or written chat* rather than a live voice call, revealing it was typed (and thus she was free to type)?
+
+Host: no
+
+## 40 · question
+
+Did the father already know his daughter had escaped or been released before/at the time of the call, so paying the ransom would be pointless because she was no longer a hostage?
+
+Host: no
+
+## 41 · question
+
+Did the father decide not to pay primarily because paying was not possible (money/access), rather than because it wouldn't save her?
+
+Host: no
+
+## 42 · question
+
+Did the father decide not to pay because he realized the "kidnapper" was unable to harm his daughter—for instance, the kidnapper was physically incapable (dead, in prison, bedridden, a child)—so there was nothing to fear and nothing worth paying?
+
+Host: no
+
+## 43 · question
+
+Did the father realize the "kidnapping" was actually his daughter running away/eloping with a lover and the ransom was a scheme by the couple, making payment pointless or foolish?
+
+Host: no
+
+## 44 · question
+
+Is the life being begged for actually the daughter's own life, or is she pleading to spare someone else (a third person or the kidnapper)?
+
+Host: yes
+
+## 45 · question
+
+Is the daughter pleading to spare the life of someone other than herself—i.e., she is not the hostage whose life is threatened?
+
+Host: yes
+
+## 46 · question
+
+Is the hostage whose life is threatened someone the father does not care about or actively dislikes—such that he is unwilling to pay a ransom for that person?
+
+Host: no
+
+## 47 · question
+
+Is the hostage the father's other child (a son, or another daughter)—i.e., a sibling of the daughter who is pleading?
+
+Host: no
+
+## 48 · question
+
+Is the hostage the father's wife (the daughter's mother)?
+
+Host: no
+
+## 49 · question
+
+Is the hostage someone the father loves but is not a close family member—for example, a lover, a grandchild, or a friend?
+
+Host: no
+
+## 50 · question
+
+Does the father genuinely care about the hostage whose life is threatened?
+
+Host: yes
+
+## 51 · question
+
+Is the hostage someone who is already dead or fatally doomed, so that paying the ransom cannot possibly save them?
+
+Host: no
+
+## 52 · question
+
+Is the hostage someone the daughter loves personally—for example, the daughter's boyfriend, husband, or child—rather than someone primarily connected to the father?
+
+Host: no
+
+## 53 · question
+
+Is the father's refusal tied to the specific demand that he come "alone" with "no police"—does he believe complying (going alone with the money) would put him or the hostage in greater danger, so he chooses not to go at all?
+
+Host: no
+
+## 54 · question
+
+Does the father believe he can save the hostage through other means (for example, the police are already involved, or he knows the hostage's location), making payment unnecessary?
+
+Host: no
+
+## 55 · question
+
+Does the demand actually involve a person threatening to kill themselves (a suicide/hostage-crisis), with the "kidnapper" and the one whose life is in danger possibly being the same person?
+
+Host: no
+
+## 56 · question
+
+Is the "hostage" whose life is threatened actually the father's pet or animal—something he loves—rather than a person?
+
+Host: no
+
+## 57 · question
+
+Is the daughter who is pleading herself in danger (directly threatened), separate from the other hostage?
+
+Host: no
+
+## 58 · question
+
+Is the "life to be spared" the life of an unborn child—i.e., the daughter is pregnant, and the hostage whose life is at stake is the baby?
+
+Host: no
+
+## 59 · question
+
+Is the hostage being held by a legitimate authority (in prison, in a hospital, in quarantine) rather than by actual kidnappers, so no ransom could release them?
+
+Host: no
+
+## 60 · question
+
+Was the ransom call misdirected—i.e., meant for a different person, and the father knows he is not the intended target (so the demand is not really about his family)?
+
+Host: no
+
+## 61 · question
+
+Is the daughter working with the police or authorities (an undercover/informant), and does the father refuse to pay because doing so would interfere with a police operation or endanger her role?
+
+Host: no
+
+## 62 · question
+
+Does the father believe that going to deliver the money would be a trap aimed at him (to rob or kill him), so that paying would not only fail to save the hostage but also endanger himself?
+
+Host: yes
+
+## 63 · question
+
+Is the "kidnapping" itself a fabrication designed to lure the father into a trap (for example, to rob or kill him), meaning there is no hostage at all?
+
+Host: no
+
+## 64 · question
+
+Does the father refuse to pay because he understands the only way to keep the hostage alive is to *not* deliver the money—e.g., the kidnapper intends to kill the hostage the moment the money arrives (the money is the trigger for killing the hostage)?
+
+Host: no
+
+## 65 · question
+
+Is the trap aimed specifically at the father (to harm, rob, or kill him), rather than at the hostage or someone else?
+
+Host: no
+
+## 66 · question
+
+Is the father himself involved in crime or wrongdoing connected to this situation (for example, the "hostage" is being held as leverage against the father's own criminal debt/actions)?
+
+Host: no
+
+## 67 · question
+
+Is the hostage a close blood relative of the father—such as his mother, father, brother, or sister?
+
+Host: no
+
+## 68 · question
+
+Is the life the daughter is begging to spare the life of the kidnapper himself (i.e., the person making the demand is threatening to die / be killed)?
+
+Host: no
+
+## 69 · question
+
+Is the life the daughter is begging to spare her father's own life—i.e., she's pleading with him to act safely and not risk himself?
+
+Host: yes
+
+## 70 · question
+
+Is there actually a separate hostage being held by the kidnapper, or is the "hostage" threat a pretext and the real target/victim is the father himself?
+
+Host: yes
+
+## 71 · question
+
+Is there actually a real, separate hostage being held by the kidnapper (a person other than the father who is physically captive)?
+
+Host: no
+
+## 72 · question
+
+Is the father himself the person making the threat (the "kidnapper"), threatening suicide or harm to himself, so that the daughter is pleading with him to spare his own life?
+
+Host: no
+
+## 73 · question
+
+Is the purpose of the ransom demand to lure the father somewhere so he can be harmed (robbed or killed)?
+
+Host: no
+
+## 74 · question
+
+Would paying the 100 million yen cost the father his own life or well-being—for example, it is the money he needs for his own survival, medical treatment, or livelihood?
+
+Host: no
+
+## 75 · question
+
+Does the father believe that if he pays the ransom, he (the father) will be killed—so refusing to pay is his way of staying alive, consistent with his daughter begging him to spare his own life?
+
+Host: no
+
+## 76 · question
+
+Is the father suffering from a condition (dementia, delusion, hearing voices) such that the "kidnapper" and the entire demand are not real—existing only in the father's mind?
+
+Host: no
+
+## 77 · question
+
+Is the demanded one hundred million yen significant because it equals a specific amount tied to the father—for example, a debt he owes, an insurance policy, an inheritance, or his total savings?
+
+Host: no
+
+## 78 · question
+
+Has the father given up on his own life or intends to die (e.g., suicidal, terminally choosing to refuse treatment), so he sees no point in paying the ransom even though his daughter begs him to live?
+
+Host: no
+
+## 79 · question
+
+Is the person whose life the daughter is pleading to spare the same person as the father who decides not to pay the ransom?
+
+Host: yes
+
+## 80 · question
+
+Is the father's life genuinely in physical danger in this situation (i.e., he might actually be killed)?
+
+Host: yes
+
+## 81 · question
+
+Is the father terminally ill, awaiting execution, or otherwise certain to die soon regardless of this ransom situation—such that his daughter wants him to spend money to save himself but he refuses?
+
+Host: no
+
+## 82 · question
+
+Is the father himself currently being held captive by the kidnapper—so that the "hostage" referred to in the threat is actually the father, and the ransom is effectively for his own release?
+
+Host: yes
+
+## 83 · question
+
+Does the father refuse the ransom to protect his family's finances—believing that paying 100 million yen would ruin his daughter/family, and he would rather die than cause that?
+
+Host: no
+
+## 84 · question
+
+Does the father decide not to pay because he believes the kidnappers will kill him whether or not the ransom is paid, so paying would only waste the money?
+
+Host: no
+
+## 85 · question
+
+Does the father personally know the kidnapper—i.e., the kidnapper is someone connected to him (a family member, former associate, employee, or rival)?
+
+Host: irrelevant
+
+## 86 · question
+
+Does the father refuse to pay because the only way to deliver the money is for his daughter (or another loved one) to bring it—and he fears they would be harmed or taken too, so he'd rather sacrifice himself?
+
+Host: yes
+
+## 87 · question
+
+Does the father believe that if his daughter comes to deliver the money, the kidnappers will keep him anyway AND also harm or abduct his daughter—so no one is saved and she is lost too?
+
+Host: yes
+
+## 88 · question
+
+Does the father refuse because the kidnappers' rule of "alone, no police" means the money can only be delivered by a vulnerable family member (his daughter), making a safe delivery impossible?
+
+Host: yes
+
+## 89 · question
+
+Would the daughter herself have to be the one to bring the money (she is the family member the kidnappers are directing to deliver it), meaning his refusal is specifically to keep her from walking into danger?
+
+Host: yes
+
+## 90 · final
+
+The father is himself the kidnappers' captive—the "hostage" whose life the caller threatens is him, and the ¥100 million is effectively the price of his own release. His daughter is free and reaches him over a smartphone, where she can hear the kidnapper's demand and begs her father to spare his own life—meaning she wants the ransom paid so he can survive. His life is genuinely in danger.
+
+But the kidnappers insist the money be brought "alone" and "by noon tomorrow," with "no police." That means the delivery can only be made by a vulnerable family member—his daughter. The father realizes that if she comes alone with the money, the kidnappers will not let him go anyway, and they will also seize or harm her; both of them would be lost, and the money gone too. Because a safe, police-protected delivery is ruled out by the "alone, no police" condition, paying cannot actually buy his freedom, and it would place his daughter directly in the criminals' hands. So rather than sacrifice his daughter to save himself, the father decides his own life is not worth that price and refuses to have the ransom paid—accepting his own danger to keep her from walking into the trap.
+
+This rests on the confirmed facts: he is the captive/hostage (not the daughter); the daughter is free, not in danger, and pleading for his life; his life is genuinely threatened; and he refuses because delivery would require his daughter to come alone, where the kidnappers would keep him and harm or take her as well, losing both.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 1,
+      "evidence": "The father is himself the kidnappers' captive—the 'hostage' ... His daughter is free and reaches him over a smartphone, where she can hear the kidnapper's demand",
+      "reason": "Identifies father as hostage and daughter as free on the ransom call."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "if she comes alone with the money, the kidnappers will not let him go anyway, and they will also seize or harm her; both of them would be lost",
+      "reason": "Daughter's danger if she brings ransom alone is present, but the witness-elimination killing motive is omitted."
+    },
+    {
+      "id": "C3",
+      "credit": 1,
+      "evidence": "rather than sacrifice his daughter to save himself, the father decides his own life is not worth that price and refuses to have the ransom paid—accepting his own danger to keep her from walking into the trap",
+      "reason": "Covers refusal to protect daughter despite danger to himself."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Full narrative incomplete: omits the daughter's wealth, the witness-elimination motive, that she is his only family, and the direct instruction not to pay or come; adds unsupported certainty that the kidnappers will not release him.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "covered",
+      "evidence": "The father is himself the kidnappers' captive—the 'hostage' ... His daughter is free and reaches him over a smartphone, where she can hear the kidnapper's demand"
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "if she comes alone with the money, the kidnappers will not let him go anyway, and they will also seize or harm her; both of them would be lost"
+    },
+    {
+      "id": "C3.F1",
+      "status": "covered",
+      "evidence": "rather than sacrifice his daughter to save himself ... refuses to have the ransom paid—accepting his own danger to keep her from walking into the trap"
+    }
+  ],
+  "requirement_coverage": [
+    {
+      "id": "R1",
+      "status": "partial",
+      "evidence": "The father is himself the kidnappers' captive—the 'hostage' ... His daughter is free and reaches him over a smartphone, where she can hear the kidnapper's demand"
+    },
+    {
+      "id": "R2",
+      "status": "covered",
+      "evidence": "the kidnappers insist the money be brought 'alone' and 'by noon tomorrow,' with 'no police.' ... That means the delivery can only be made by a vulnerable family member—his daughter"
+    },
+    {
+      "id": "R3",
+      "status": "partial",
+      "evidence": "if she comes alone with the money, the kidnappers will not let him go anyway, and they will also seize or harm her; both of them would be lost"
+    },
+    {
+      "id": "R4",
+      "status": "partial",
+      "evidence": "rather than sacrifice his daughter to save himself ... refuses to have the ransom paid—accepting his own danger to keep her from walking into the trap"
+    },
+    {
+      "id": "R5",
+      "status": "covered",
+      "evidence": "The father realizes that if she comes alone with the money ... both of them would be lost ... rather than sacrifice his daughter to save himself ... refuses"
+    }
+  ],
+  "contradictions": [],
+  "partial_score": 0.85,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v2",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 91 · question
+
+Did the father already know, before this call, that he was going to die anyway—so he was choosing to let himself be killed to save his daughter, but his death was not otherwise inevitable?
+
+Host: no
+
+## 92 · question
+
+Is the father physically held captive (bound/locked up) by the kidnappers at the time of this call?
+
+Host: yes
+
+## 93 · question
+
+Is the father's reason for refusing the ransom specifically that delivering the money would endanger his daughter?
+
+Host: yes
+
+## 94 · question
+
+Does the father believe the kidnappers would actually release him if the ransom were paid?
+
+Host: no
+
+## 95 · question
+
+Is the daughter the only person available who could realistically deliver the ransom (no other family member, and police forbidden), making her the one who would have to walk into danger?
+
+Host: yes
+
+## 96 · question
+
+Does the father believe that if his daughter came to deliver the ransom, the kidnappers would kill her (not merely detain her)?
+
+Host: yes
+
+## 97 · question
+
+Is the father's refusal meant to stop his daughter from coming to deliver the money—accepting his own likely death in order to keep her from being killed?
+
+Host: yes
+
+## 98 · final
+
+The father is himself the kidnappers' captive—the "hostage" whose death the caller threatens is him, and the ¥100 million is effectively the price of his own release. His daughter is free. Over the smartphone she hears the kidnapper's demand and begs her father to spare his own life—meaning she is willing to bring the money so that he can survive.
+
+But the demand is for the money to be brought "alone" by noon the next day, with "no police." The father understands what this means: the only person who could deliver it is his daughter, and if she comes alone to the kidnappers, they will kill her rather than free him. Indeed, he does not believe the kidnappers would release him even if paid—so paying would not save him, and it would send his daughter straight to her death. With "no police" and "alone" ruling out any safe, protected delivery, compliance cannot rescue him and would only add her life to the loss.
+
+Therefore the father decides the ransom should not be paid. His decision is really a message to his daughter: stay away. He accepts his own likely death rather than lure her into the trap—sacrificing himself to keep her alive.
+
+Confirmed through questioning: he is the captive/hostage (Q82, Q92); his daughter is free, not herself the hostage, and pleads for his life (Q45, Q57, Q69, Q79); his life is genuinely in danger (Q80); he would not be released even if paid (Q94); the daughter is the only available deliverer (Q95); and if she came alone the kidnappers would kill her (Q96), which is precisely why he refuses—to stop her from coming, at the cost of his own life (Q86, Q97).
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 1,
+      "evidence": "The father is himself the kidnappers' captive—the \"hostage\" ... His daughter is free. Over the smartphone she hears the kidnapper's demand",
+      "reason": "Identifies the father as hostage and the daughter as free on the ransom call."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "if she comes alone to the kidnappers, they will kill her rather than free him",
+      "reason": "Covers the daughter's danger if she brings ransom alone, but omits the witness-elimination motive."
+    },
+    {
+      "id": "C3",
+      "credit": 1,
+      "evidence": "He accepts his own likely death rather than lure her into the trap—sacrificing himself to keep her alive.",
+      "reason": "Clearly covers refusal to protect his daughter despite danger to himself."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Missing the daughter's wealth, the witness-elimination motive, that she is his only family, and the explicit instruction not to pay or come; adds unsupported certainty that payment would not secure his release.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "covered",
+      "evidence": "The father is himself the kidnappers' captive—the \"hostage\" ... His daughter is free. Over the smartphone she hears the kidnapper's demand"
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "if she comes alone to the kidnappers, they will kill her rather than free him"
+    },
+    {
+      "id": "C3.F1",
+      "status": "covered",
+      "evidence": "He accepts his own likely death rather than lure her into the trap—sacrificing himself to keep her alive."
+    }
+  ],
+  "requirement_coverage": [
+    {
+      "id": "R1",
+      "status": "partial",
+      "evidence": "The father is himself the kidnappers' captive—the \"hostage\" ... His daughter is free. Over the smartphone she hears the kidnapper's demand"
+    },
+    {
+      "id": "R2",
+      "status": "covered",
+      "evidence": "the demand is for the money to be brought \"alone\" by noon the next day, with \"no police.\" The father understands what this means: the only person who could deliver it is his daughter"
+    },
+    {
+      "id": "R3",
+      "status": "partial",
+      "evidence": "if she comes alone to the kidnappers, they will kill her rather than free him ... paying would not save him, and it would send his daughter straight to her death"
+    },
+    {
+      "id": "R4",
+      "status": "partial",
+      "evidence": "Therefore the father decides the ransom should not be paid. His decision is really a message to his daughter: stay away. He accepts his own likely death rather than lure her into the trap—sacrificing himself to keep her alive."
+    },
+    {
+      "id": "R5",
+      "status": "covered",
+      "evidence": "The father understands ... if she comes alone ... they will kill her ... he does not believe the kidnappers would release him even if paid ... He accepts his own likely death rather than lure her into the trap"
+    }
+  ],
+  "contradictions": [],
+  "partial_score": 0.85,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v2",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 99 · question
+
+Was the father already dead or dying at the time of the call—so the "father" deciding was impossible, and the real answer involves the daughter choosing not to pay because her father was already beyond saving?
+
+Host: no
+
+## 100 · final · mandatory final
+
+The father is himself the kidnappers' captive: the "hostage" whose life the caller threatens is the father, and the ¥100 million is the price the kidnappers are demanding for him. His daughter is free. Over the smartphone she hears the demand and begs her father to spare his own life—she is willing to bring the ransom so that he can survive.
+
+The kidnappers' terms are the key: the money must be brought "alone" by noon tomorrow, with "no police." The only person who could realistically deliver it is his daughter. The father understands that if she comes alone to the kidnappers she will not save him—he does not believe they would release him even if the money were paid—and they would instead kill her too. Because "alone" and "no police" rule out any safe, protected delivery, complying cannot rescue him and would only place his daughter directly in the murderers' hands.
+
+So he decides the ransom should not be paid. That decision is really his instruction to her: stay away. He would rather die himself than lure his daughter into the trap, and so he accepts his own likely death to keep her alive.
+
+This reconstruction is built on the facts confirmed during questioning: the father is the captive and hostage, not the daughter; the daughter is free and not herself in danger, and she pleads for his life; his own life is genuinely threatened; he does not expect to be released even if the ransom is paid; his daughter is the only available deliverer; and if she came alone the kidnappers would kill her—which is exactly why he refuses, protecting her at the cost of his own life.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 1,
+      "evidence": "The father is himself the kidnappers' captive: the \"hostage\" whose life the caller threatens is the father ... His daughter is free. Over the smartphone she hears the demand",
+      "reason": "Identifies the father as hostage and the daughter as free on the ransom call."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "if she comes alone to the kidnappers she will not save him—he does not believe they would release him even if the money were paid—and they would instead kill her too",
+      "reason": "Captures the daughter's danger if she brings the ransom alone, but omits the witness-elimination motive."
+    },
+    {
+      "id": "C3",
+      "credit": 1,
+      "evidence": "So he decides the ransom should not be paid. That decision is really his instruction to her: stay away. He would rather die himself than lure his daughter into the trap, and so he accepts his own likely death to keep her alive.",
+      "reason": "Clearly covers refusal to protect his daughter despite danger to himself."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Missing the daughter's wealth, the witness-elimination motive, that she is his only family, and the explicit instruction not to pay or come; adds unsupported certainty that payment would not secure his release.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "covered",
+      "evidence": "The father is himself the kidnappers' captive: the \"hostage\" whose life the caller threatens is the father ... His daughter is free. Over the smartphone she hears the demand"
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "if she comes alone to the kidnappers she will not save him—he does not believe they would release him even if the money were paid—and they would instead kill her too"
+    },
+    {
+      "id": "C3.F1",
+      "status": "covered",
+      "evidence": "So he decides the ransom should not be paid. That decision is really his instruction to her: stay away. He would rather die himself than lure his daughter into the trap, and so he accepts his own likely death to keep her alive."
+    }
+  ],
+  "requirement_coverage": [
+    {
+      "id": "R1",
+      "status": "partial",
+      "evidence": "The father is himself the kidnappers' captive: the \"hostage\" whose life the caller threatens is the father ... His daughter is free. Over the smartphone she hears the demand"
+    },
+    {
+      "id": "R2",
+      "status": "covered",
+      "evidence": "the money must be brought \"alone\" by noon tomorrow, with \"no police.\" The only person who could realistically deliver it is his daughter"
+    },
+    {
+      "id": "R3",
+      "status": "partial",
+      "evidence": "if she comes alone to the kidnappers she will not save him—he does not believe they would release him even if the money were paid—and they would instead kill her too"
+    },
+    {
+      "id": "R4",
+      "status": "partial",
+      "evidence": "So he decides the ransom should not be paid. That decision is really his instruction to her: stay away. He would rather die himself than lure his daughter into the trap, and so he accepts his own likely death to keep her alive."
+    },
+    {
+      "id": "R5",
+      "status": "covered",
+      "evidence": "The father understands that if she comes alone to the kidnappers she will not save him ... and they would instead kill her too ... He would rather die himself than lure his daughter into the trap, and so he accepts his own likely death to keep her alive."
+    }
+  ],
+  "contradictions": [],
+  "partial_score": 0.85,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v2",
+  "controller_corrections": []
+}
+```
+</details>

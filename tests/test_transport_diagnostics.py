@@ -19,6 +19,26 @@ class Response:
 
 
 class TransportDiagnosticsTests(unittest.TestCase):
+    @patch.dict('os.environ', {'DEEPSEEK_API_KEY':'fixture', 'TURTLE_DEEPSEEK_PROXY_MODE':'direct',
+                               'HTTPS_PROXY':'http://127.0.0.1:1'})
+    def test_direct_mode_bypasses_proxy_and_keeps_tls_verification(self):
+        import urllib.request
+        from turtle_loop.providers import TrackedHTTPSHandler
+        with patch('turtle_loop.providers.urllib.request.build_opener') as build:
+            client=self.make_client([])
+            handlers=build.call_args.args
+            proxy=next(h for h in handlers if isinstance(h,urllib.request.ProxyHandler))
+            self.assertEqual(proxy.proxies,{})
+            tls=next(h for h in handlers if isinstance(h,TrackedHTTPSHandler))
+            if tls._context is not None:
+                self.assertEqual(tls._context.verify_mode,ssl.CERT_REQUIRED)
+                self.assertTrue(tls._context.check_hostname)
+            self.assertEqual(client.proxy_mode,'direct')
+
+    @patch.dict('os.environ', {'DEEPSEEK_API_KEY':'fixture', 'TURTLE_DEEPSEEK_PROXY_MODE':'invalid'})
+    def test_proxy_mode_rejects_unknown_setting(self):
+        with self.assertRaises(ValueError):self.make_client([])
+
     @patch.dict('os.environ', {'DEEPSEEK_API_KEY':'fixture'})
     @patch('turtle_loop.providers.time.sleep')
     def test_generic_tls_error_during_connect_is_retryable_but_certificate_error_is_not(self, sleep):

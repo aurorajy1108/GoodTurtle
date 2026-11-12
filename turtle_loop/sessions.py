@@ -157,6 +157,18 @@ def completed_host_replay_records(records, events):
     fields = ('role', 'provider', 'model_requested', 'endpoint', 'game_session_id',
               'session_lane_id', 'session_turn', 'previous_response_id', 'request')
     for event in events:
+        if event.get('event')!='player_transport_recovery':continue
+        count=event.get('failed_count',0)
+        matches=[i for i in range(len(records)-count+1) if count and
+                 hashlib.sha256(json.dumps(records[i:i+count],sort_keys=True).encode()).hexdigest()==event.get('failed_sha256')]
+        if len(matches)!=1:raise ValueError('Saved Player transport recovery does not match archive')
+        start=matches[0];failed=records[start:start+count];end=start+count
+        if any(c.get('role')!='player' or c.get('status')!='transport_error' or c.get('safe_pre_send_retry') is not True for c in failed):
+            raise ValueError('Saved Player recovery contains an unsafe failure')
+        if end>=len(records):continue
+        if any(records[end].get(k)!=failed[0].get(k) for k in fields):raise ValueError('Player replay changed request')
+        skipped.update(range(start,end))
+    for event in events:
         if event.get('event') != 'host_transport_recovery':
             continue
         matches = [i for i, call in enumerate(records)
@@ -169,19 +181,56 @@ def completed_host_replay_records(records, events):
         if (hashlib.sha256(json.dumps(records[:index+1], sort_keys=True).encode()).hexdigest()
                 != event.get('calls_sha256')
                 or failed.get('role') != 'host' or failed.get('provider') != 'deepseek'
-                or failed.get('status') != 'transport_error' or not failed.get('request')
+                or failed.get('status') not in ('transport_error','invalid_response') or not failed.get('request')
                 or failed.get('text') or failed.get('response_id') or failed.get('usage')):
             raise ValueError('Saved Host replay authorization differs from its archive')
+        later_hashes={e.get('failed_call_sha256') for e in events if e.get('event')=='host_transport_recovery'}
+        next_ok=next((i for i in range(index+1,len(records)) if records[i].get('status')=='ok'),len(records))
+        later=next((i for i in range(index+1,next_ok) if hashlib.sha256(json.dumps(records[i],sort_keys=True).encode()).hexdigest() in later_hashes),None)
+        if later is not None:
+            segment=records[index+1:later+1]
+            if (any(any(c.get(k)!=failed.get(k) for k in fields) for c in segment)
+                    or segment[-1].get('status')!='transport_error'):
+                raise ValueError('Successive Host replays changed request')
+            restorable_chat_records(segment[:-1]+[{**segment[-1],'status':'ok'}])
+            skipped.add(index)
+            begin=index
+            while begin>0 and records[begin-1].get('status')=='transport_error' and records[begin-1].get('safe_pre_send_retry') is True and all(records[begin-1].get(k)==failed.get(k) for k in fields):
+                begin-=1
+            if begin<index:
+                restorable_chat_records(records[begin:index]+[{**failed,'status':'ok'}])
+                skipped.update(range(begin,index))
+            continue
         end = index + 1
         while end < len(records) and records[end].get('status') != 'ok':
             end += 1
         if end >= len(records):
-            continue  # Pending replay: the dedicated recovery path still owns it.
+            replay=records[index+1:]
+            if not replay:continue
+            if (any(any(call.get(k)!=failed.get(k) for k in fields) or call.get('status')!='transport_error' for call in replay)
+                    or any(call.get('safe_pre_send_retry') is not True for call in replay[:-1])):
+                raise ValueError('Pending Host replay changed request or has ambiguous intermediate attempts')
+            skipped.add(index)
+            begin=index
+            while begin>0 and records[begin-1].get('status')=='transport_error' and records[begin-1].get('safe_pre_send_retry') is True and all(records[begin-1].get(k)==failed.get(k) for k in fields):
+                begin-=1
+            if begin<index:
+                restorable_chat_records(records[begin:index]+[{**failed,'status':'ok'}])
+                skipped.update(range(begin,index))
+            continue
         replay = records[index+1:end+1]
         if (any(any(call.get(k) != failed.get(k) for k in fields) for call in replay)
                 or not replay[-1].get('text') or len(restorable_chat_records(replay)) != 1):
             raise ValueError('Saved Host replay changed its request or session position')
         skipped.add(index)
+        # Earlier verified pre-send attempts belong to the same failed request;
+        # validate them against the original final attempt before omitting it.
+        begin=index
+        while begin>0 and records[begin-1].get('status')=='transport_error' and records[begin-1].get('safe_pre_send_retry') is True and all(records[begin-1].get(k)==failed.get(k) for k in fields):
+            begin-=1
+        if begin<index:
+            restorable_chat_records(records[begin:index]+[{**failed,'status':'ok'}])
+            skipped.update(range(begin,index))
     return [call for i, call in enumerate(records) if i not in skipped]
 
 

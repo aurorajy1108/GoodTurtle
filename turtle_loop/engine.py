@@ -435,15 +435,16 @@ def saved_grader_reason_recovery(previous, calls, turns, config, puzzle):
     except (ValueError,TypeError,KeyError,ProtocolError):return None
 
 
-def saved_host_transport_recovery(previous, calls, turns, config):
+def saved_host_transport_recovery(previous, calls, turns, config, events=()):
     """Opt-in replay of one unanswered DeepSeek host request, never a saved reply.
 
     DeepSeek chat history is local. A failed transmission may still have been
     billed remotely; retain the failed audit record and explicitly disclose that.
     """
     original_calls=calls
-    from .sessions import restorable_chat_records
+    from .sessions import restorable_chat_records, completed_host_replay_records
     try:
+        calls=completed_host_replay_records(calls,events)
         if calls:
             # Include the final failed attempt while validating an immediately
             # preceding proven pre-send retry, then retain the real failure.
@@ -460,8 +461,9 @@ def saved_host_transport_recovery(previous, calls, turns, config):
         return None
     last = calls[-1]
     if (last.get('role') != 'host' or last.get('provider') != 'deepseek'
-            or last.get('status') != 'transport_error'
+            or last.get('status') not in ('transport_error','invalid_response')
             or last.get('text') or last.get('response_id') or last.get('usage')
+            or last.get('raw_text')
             or any(c.get('provider') != 'deepseek' or c.get('status') != 'ok'
                    or c.get('role') not in roles for c in calls[:-1])):
         return None
@@ -561,6 +563,28 @@ class Recorder:
         from .sessions import completed_host_replay_records
         recovery_calls = completed_host_replay_records(rec.calls, events)
         rec.session_restore_calls = recovery_calls
+        player_transport_marker = folder/'player_transport_recovery.json'
+        player_transport = None
+        if player_transport_marker.exists():
+            marker=json.loads(player_transport_marker.read_text())
+            count=marker['failed_count']; failed=rec.calls[-count:]
+            fields=('role','provider','model_requested','endpoint','game_session_id','session_lane_id','session_turn','previous_response_id','request')
+            if (not count or len(failed)!=count or len(rec.turns)!=marker['preserved_submissions']
+                    or hashlib.sha256(json.dumps(failed,sort_keys=True).encode()).hexdigest()!=marker['failed_sha256']
+                    or any(c.get('role')!='player' or c.get('status')!='transport_error' or c.get('safe_pre_send_retry') is not True
+                           or c.get('text') or c.get('response_id') or c.get('usage') for c in failed)
+                    or any(any(c.get(k)!=failed[0].get(k) for k in fields) for c in failed)
+                    or any('label' not in t for t in rec.turns)):
+                raise ValueError('Player transport recovery does not match the saved pre-send failures')
+            rec.session_restore_calls=completed_host_replay_records(rec.calls[:-count],events)
+            from .sessions import GameSession
+            for role in ('host','player','grader'):
+                session=GameSession(role,'.',lambda *a,**k:None)
+                try:session.restore_chat(rec.session_restore_calls)
+                finally:session.close()
+            rec.pending_player_request=failed[-1]['request']
+            player_transport=marker
+            rec.event('player_transport_recovery',**marker)
         recovery=(saved_player_note_recovery(previous,recovery_calls,rec.turns,config)
                   or saved_player_json_recovery(previous,recovery_calls,rec.turns,config))
         if not recovery and (ROOT/'configs/player_format_repair.json').exists():
@@ -584,10 +608,10 @@ class Recorder:
         transport_recovery = None
         transport_marker = folder / 'host_transport_recovery.json'
         if transport_marker.exists():
-            transport_recovery = saved_host_transport_recovery(previous, rec.calls, rec.turns, config)
+            transport_recovery = saved_host_transport_recovery(previous, rec.calls, rec.turns, config, events)
             if not transport_recovery or json.loads(transport_marker.read_text()) != transport_recovery:
                 raise ValueError('Pending host transport recovery does not match the saved archive')
-        if config.get('session_mode','replay')=='persistent' and previous['status']!='completed' and not (recovery or grade_recovery or transport_recovery):
+        if config.get('session_mode','replay')=='persistent' and previous['status']!='completed' and not (recovery or grade_recovery or transport_recovery or player_transport):
             raise ValueError('Persistent interrupted sessions require supported saved-response recovery or explicit checked DeepSeek pending-host transport recovery; no fresh-session fallback.')
         if previous['status'] == 'error':
             last = rec.calls[-1] if rec.calls else {}
@@ -595,18 +619,43 @@ class Recorder:
             recoverable = last.get('status') in ('transport_error','http_error','interrupted') or (
                 last.get('status') == 'invalid_response' and not last.get('raw_text',last.get('text','')).strip()
                 and any(s in diagnostic for s in ('usage limit','at capacity','rate limit','rate_limit')))
-            if not recoverable and not (recovery or grade_recovery):
+            if not recoverable and not (recovery or grade_recovery or transport_recovery):
                 raise ValueError('Refuse to resample a protocol/model-output failure')
         rec.resumed = True
-        rec.restore_sessions=bool(recovery or grade_recovery or transport_recovery)
+        rec.restore_sessions=bool(recovery or grade_recovery or transport_recovery or player_transport)
         if transport_recovery:
             from .sessions import restorable_chat_records
-            rec.session_restore_calls = restorable_chat_records(rec.calls[:-1]+[{**rec.calls[-1], 'status':'ok'}])[:-1]
+            normalized=completed_host_replay_records(rec.calls,events)
+            rec.session_restore_calls = restorable_chat_records(normalized[:-1]+[{**normalized[-1], 'status':'ok'}])[:-1]
             rec.pending_host_request = rec.calls[-1]['request']
             rec.event('host_transport_recovery', **transport_recovery)
+            saved_reply_path=folder/'host_saved_response.json'
+            if saved_reply_path.exists():
+                saved=json.loads(saved_reply_path.read_text())
+                failed=rec.calls[-1]
+                fields=('role','provider','model_requested','endpoint','game_session_id','session_lane_id','session_turn','previous_response_id','request')
+                if (any(saved.get(k)!=failed.get(k) for k in fields)
+                        or saved.get('status')!='ok' or saved.get('finish_reason')!='stop'
+                        or saved.get('text','').strip() not in LABELS or not saved.get('response_id')):
+                    raise ValueError('Saved Host response does not match the unanswered request')
+                replay_event={'event':'host_transport_recovery',**transport_recovery}
+                normalized=completed_host_replay_records(rec.calls+[saved],events+[replay_event])
+                from .sessions import GameSession
+                for role in ('host','player','grader'):
+                    session=GameSession(role,'.',lambda *a,**k:None)
+                    try:session.restore_chat(normalized)
+                    finally:session.close()
+                rec.audit(saved)
+                turn=rec.turns[-1];turn['label']=saved['text'].strip()
+                rec.event('host_feedback',submission=turn['index'],label=turn['label'],raw=saved['text'],
+                          recovered_from_response_id=saved['response_id'])
+                rec.session_restore_calls=normalized
+                del rec.pending_host_request
+                transport_marker.unlink()
+                saved_reply_path.unlink()
         if recovery:
             if reprompt:
-                rec.retry_player_format = True
+                rec.retry_player_format = marker.get('action_type','question')
                 rec.event('player_format_reprompt',source_response_id=reprompt['response_id'],
                           raw_sha256=marker['raw_sha256'],counts_as_submission=False,
                           authorization='user_requested_reprompt')
@@ -789,6 +838,8 @@ def play(puzzle, config, recorder, clients, prompts, player_context=None, player
                                     getattr(recorder,'session_restore_calls',recorder.calls))
                 if getattr(client, 'role', None) == 'host' and hasattr(recorder, 'pending_host_request'):
                     client.expected_recovery_request = recorder.pending_host_request
+                if getattr(client, 'role', None) == 'player' and hasattr(recorder, 'pending_player_request'):
+                    client.expected_recovery_request = recorder.pending_player_request
             elif getattr(client,'role',None)=='player' and player_continuation is not None:
                 client.inherit_game(recorder.folder,recorder.event,
                                     player_continuation['calls'],player_continuation['boundary'])
@@ -849,9 +900,14 @@ def _play(puzzle, config, recorder, clients, prompts, player_context=None):
             else:
                 payload = {'opening': puzzle['opening'], 'visible_history': history, 'turn_control': control}
                 if getattr(recorder,'retry_player_format',False):
-                    payload['format_correction'] = ('Your preceding response did not contain an actionable question. '
-                        'That response did not count as a submission. Ask a question now using exactly '
-                        'QUESTION on the first line followed by a newline and the question; no other text.')
+                    kind=recorder.retry_player_format
+                    if kind=='final':
+                        payload['format_correction'] = ('Your preceding response contained multiple actions and did not count. '
+                            'Submit exactly one final explanation: FINAL on the first line, then a newline and the explanation; no other action.')
+                    else:
+                        payload['format_correction'] = ('Your preceding response did not contain an actionable question. '
+                            'That response did not count as a submission. Ask a question now using exactly '
+                            'QUESTION on the first line followed by a newline and the question; no other text.')
                     del recorder.retry_player_format
                 # An explicit controller overlay may resume an archived JSON
                 # prompt. Do not silently switch that experiment's protocol.
@@ -867,6 +923,9 @@ def _play(puzzle, config, recorder, clients, prompts, player_context=None):
                     del recorder.pending_player_raw
                 else:
                     reply = clients['player'].complete(prompts['player'], player_input)
+                    if hasattr(recorder,'pending_player_request'):
+                        (recorder.folder/'player_transport_recovery.json').unlink(missing_ok=True)
+                        del recorder.pending_player_request
                 try:
                     action = parse_action(reply.text, forced, lambda details: recorder.event(
                         'player_format_recovery', submission=len(recorder.turns)+1, **details))

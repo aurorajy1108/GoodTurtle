@@ -6,6 +6,7 @@ Example: python3 scripts/watch_progress.py --publish runs/api/batch/web \
 Only this publisher's HTML and JSON are written; experiment records stay intact.
 """
 import argparse
+import fcntl
 import json
 import math
 import time
@@ -111,6 +112,14 @@ def main():
             parser.error('--batch must be folder=/url-prefix')
         batches.append((Path(folder).resolve(), prefix))
     args.publish.mkdir(parents=True, exist_ok=True)
+    # Only one publisher may update a dashboard directory at a time. Keep the
+    # descriptor open for the lifetime of the process so stale publishers
+    # cannot alternate old and current experiment snapshots.
+    lock = (args.publish/'.publisher.lock').open('a')
+    try:
+        fcntl.flock(lock.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except BlockingIOError:
+        parser.error('Another publisher is already using this dashboard directory')
     template = Path(__file__).resolve().parents[1]/'turtle_loop/web/progress.html'
     (args.publish/'index.html').write_text(template.read_text())
     while True:

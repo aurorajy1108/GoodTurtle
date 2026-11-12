@@ -1,0 +1,43 @@
+{
+  "argv": [
+    "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+    "/Users/tongmindy/Desktop/COMP1110/gp-comp1110/GoodTurtle/runs/api/20261112_set2_round2_ts035_host13_invalid_retry/runtime_snapshot/scripts/experiment.py",
+    "continual",
+    "--dataset",
+    "/Users/tongmindy/Desktop/COMP1110/gp-comp1110/GoodTurtle/runs/api/20261112_set2_round2_ts035_host13_invalid_retry/runtime_snapshot/data/dataset.json",
+    "--config",
+    "/Users/tongmindy/Desktop/COMP1110/gp-comp1110/GoodTurtle/runs/api/20261112_set2_round2_ts035_host13_invalid_retry/runtime_snapshot/configs/run.json",
+    "--repeat",
+    "1",
+    "--seed",
+    "20261103",
+    "--quiet",
+    "--on-error",
+    "stop",
+    "--groups",
+    "/Users/tongmindy/Desktop/COMP1110/gp-comp1110/GoodTurtle/runs/api/20261112_set2_round2_ts035_host13_invalid_retry/runtime_snapshot/configs/study_groups.json",
+    "--group",
+    "all",
+    "--memory",
+    "session",
+    "--controls",
+    "answer_only",
+    "--source-feedback",
+    "answer",
+    "--source-policy",
+    "fixed",
+    "--out",
+    "/Users/tongmindy/Desktop/COMP1110/gp-comp1110/GoodTurtle/runs/api/20261112_set2_round2_ts035_host13_invalid_retry/continual",
+    "--resume"
+  ],
+  "env_path": "/Users/tongmindy/Desktop/COMP1110/gp-comp1110/GoodTurtle/.env",
+  "planned_games": 12,
+  "round": 2,
+  "host": "TS034 v13",
+  "resumed_from": "/Users/tongmindy/Desktop/COMP1110/gp-comp1110/GoodTurtle/runs/api/20261112_set2_round2_ts033_session_reprompt97",
+  "pending_submission": 13,
+  "transport_environment": {
+    "TURTLE_DEEPSEEK_PROXY_MODE": "direct"
+  },
+  "saved_host_response_submission": 42
+}

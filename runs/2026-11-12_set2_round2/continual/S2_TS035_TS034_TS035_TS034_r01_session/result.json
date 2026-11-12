@@ -1,0 +1,304 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 99,
+  "final_attempts": 1,
+  "rejected_finals": 1,
+  "counted_questions": 100,
+  "submissions": 100,
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.0,
+  "best_partial_score": 0.0,
+  "latest_final": "The caller is a genuine kidnapper holding the daughter, and the threat is real in form: if unpaid, he threatens to kill her. But the father knows that paying the ransom would directly cause the kidnapper to kill her—the daughter can identify her captor, so once the money changes hands and he no longer needs her, she becomes a dangerous witness whom he must silence. Payment would thus not save her life but seal her death.\n\nAt the same time, the father cannot simply deliver the money as demanded. He has himself been lured and confined—trapped where he cannot leave—so he is physically unable to come alone with 100 million yen by noon. His refusal is therefore not a callous rejection but the only sensible response to an impossible demand: compliance would both be impossible on the kidnapper's terms and would give the kidnapper exactly the moment at which to kill the only person who could identify him. The father decides the ransom should not be paid because paying would doom his daughter, while the demand itself cannot be met.\n\nHis reasoning centers on the danger of payment rather than any belief that withholding money protects her, and it is not vengeance, a rescue plan, or buying time. The decisive facts are that the daughter can identify the kidnapper—so payment makes her a liability to be eliminated—and that the father is confined and unable to carry out the ransom drop.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0,
+        "evidence": "The caller is a genuine kidnapper holding the daughter",
+        "reason": "The submission contradicts C1 by making the daughter the held hostage, whereas the reference requires the father to be the hostage and the daughter to be free and receiving the call."
+      },
+      {
+        "id": "C2",
+        "credit": 0,
+        "evidence": "the father knows that paying the ransom would directly cause the kidnapper to kill her—the daughter can identify her captor, so once the money changes hands and he no longer needs her, she becomes a dangerous witness whom he must silence.",
+        "reason": "It identifies daughter-as-witness danger, but omits the required qualifiers that this is a fear and that it occurs if she brings the ransom alone; it also asserts certainty rather than fear."
+      },
+      {
+        "id": "C3",
+        "credit": 0,
+        "evidence": "The father decides the ransom should not be paid because paying would doom his daughter, while the demand itself cannot be met.",
+        "reason": "It identifies a refusal but omits the protective self-sacrifice element: he does not tell his daughter not to come in order to protect her despite danger to himself."
+      }
+    ],
+    "material_contradiction": true,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "The submission reverses the central hostage identity by saying the kidnapper is holding the daughter. It also replaces the father’s protective refusal with his alleged physical inability to deliver the ransom, omits that the daughter is his only family and that he tells her not to pay or come, and turns the father’s fear into certain knowledge. It therefore does not reconstruct the complete reference narrative.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "contradicted",
+        "evidence": "The caller is a genuine kidnapper holding the daughter"
+      },
+      {
+        "id": "C2.F1",
+        "status": "partial",
+        "evidence": "the father knows that paying the ransom would directly cause the kidnapper to kill her—the daughter can identify her captor, so once the money changes hands and he no longer needs her, she becomes a dangerous witness whom he must silence."
+      },
+      {
+        "id": "C3.F1",
+        "status": "partial",
+        "evidence": "The father decides the ransom should not be paid because paying would doom his daughter, while the demand itself cannot be met."
+      }
+    ],
+    "requirement_coverage": [
+      {
+        "id": "R1",
+        "status": "contradicted",
+        "evidence": "The caller is a genuine kidnapper holding the daughter"
+      },
+      {
+        "id": "R2",
+        "status": "contradicted",
+        "evidence": "the father cannot simply deliver the money as demanded. He has himself been lured and confined—trapped where he cannot leave—so he is physically unable to come alone with 100 million yen by noon."
+      },
+      {
+        "id": "R3",
+        "status": "partial",
+        "evidence": "the father knows that paying the ransom would directly cause the kidnapper to kill her—the daughter can identify her captor, so once the money changes hands and he no longer needs her, she becomes a dangerous witness whom he must silence."
+      },
+      {
+        "id": "R4",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "R5",
+        "status": "partial",
+        "evidence": "The father decides the ransom should not be paid because paying would doom his daughter, while the demand itself cannot be met."
+      }
+    ],
+    "contradictions": [
+      {
+        "quote": "The caller is a genuine kidnapper holding the daughter",
+        "reference": "The father is the hostage; his wealthy daughter is free and receives the kidnapper’s phone call.",
+        "checkpoint_ids": [
+          "C1"
+        ]
+      },
+      {
+        "quote": "the father cannot simply deliver the money as demanded. He has himself been lured and confined—trapped where he cannot leave—so he is physically unable to come alone with 100 million yen by noon.",
+        "reference": "The kidnapper orders his daughter to bring the ransom alone, and the father tells her not to pay or come.",
+        "checkpoint_ids": [
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "quote": "the father knows that paying the ransom would directly cause the kidnapper to kill her",
+        "reference": "He fears that, once she arrives with the money, the kidnapper will kill both of them to eliminate witnesses; the story establishes fear, not certainty.",
+        "checkpoint_ids": [
+          "C2"
+        ]
+      },
+      {
+        "quote": "His reasoning centers on the danger of payment rather than any belief that withholding money protects her",
+        "reference": "He refuses the ransom to protect his daughter despite the danger to himself.",
+        "checkpoint_ids": [
+          "C3"
+        ]
+      }
+    ],
+    "partial_score": 0.0,
+    "complete": false,
+    "label": "no",
+    "grading_protocol": "coverage-v2",
+    "controller_corrections": [
+      {
+        "field": "C2.credit",
+        "model": 0.5,
+        "effective": 0
+      },
+      {
+        "field": "C3.credit",
+        "model": 0.5,
+        "effective": 0
+      }
+    ]
+  },
+  "elapsed_seconds": 1930.9520563750993,
+  "usage": {
+    "grader": {
+      "http_attempts": 1,
+      "successful_responses": 1,
+      "seconds": 106.64966041699518,
+      "provider_reported_usage": {
+        "prompt_tokens": 5439,
+        "completion_tokens": 8346,
+        "total_tokens": 13785,
+        "prompt_cache_hit_tokens": 2688,
+        "prompt_cache_miss_tokens": 2751
+      }
+    },
+    "host": {
+      "http_attempts": 99,
+      "successful_responses": 99,
+      "seconds": 1633.6988355007488,
+      "provider_reported_usage": {
+        "prompt_tokens": 1625081,
+        "completion_tokens": 111124,
+        "total_tokens": 1736205,
+        "prompt_cache_hit_tokens": 1596032,
+        "prompt_cache_miss_tokens": 29049
+      }
+    },
+    "player": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 187.6032650039997,
+      "provider_reported_usage": {
+        "prompt_tokens": 2791780,
+        "completion_tokens": 6678,
+        "total_tokens": 2798458,
+        "prompt_cache_hit_tokens": 2771968,
+        "prompt_cache_miss_tokens": 19812
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "total": {
+      "calls": 200,
+      "unknown_cost_calls": 200,
+      "known_estimated_cost_usd": 0.0,
+      "estimated_cost_usd": null,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 4422300,
+        "cached_input_tokens": 4370688,
+        "cache_write_tokens": 0,
+        "output_tokens": 126148,
+        "reasoning_tokens": 118143,
+        "total_tokens": 4548448
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 100,
+        "total_tokens": 0
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 1,
+        "unknown_cost_calls": 1,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 5439,
+          "cached_input_tokens": 2688,
+          "cache_write_tokens": 0,
+          "output_tokens": 8346,
+          "reasoning_tokens": 7218,
+          "total_tokens": 13785
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 99,
+        "unknown_cost_calls": 99,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1625081,
+          "cached_input_tokens": 1596032,
+          "cache_write_tokens": 0,
+          "output_tokens": 111124,
+          "reasoning_tokens": 110925,
+          "total_tokens": 1736205
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 100,
+        "unknown_cost_calls": 100,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 2791780,
+          "cached_input_tokens": 2771968,
+          "cache_write_tokens": 0,
+          "output_tokens": 6678,
+          "reasoning_tokens": 0,
+          "total_tokens": 2798458
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 100,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "3ba6e81d-02d0-4718-a27f-c4debcfc6150",
+      "d5e01a23-b75e-4bd8-8c15-f5e7163f3509",
+      "e45c1d74-67a4-4eb6-949f-edff061a5077"
+    ],
+    "logical_input_chars": 3174901,
+    "delta_input_chars": 145466,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "5908fea8d67817a926cfa428f3349f2b9b572aedfa0290fc87188b431c3ec49c",
+    "grading_sha256": "828818963ca61808f202ef0364a3724586c4ef9b710f2e46c3bfe925cad1ad0c",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "8d764e3a9887e0ffdadd859f4c77a91d0e9758c38a33fdd3f0329d5cc4c0857b",
+    "controller_sha256": "93f89bb4d393fb2428b4ebca8c1d22a1dcfee6da5e1e81c843e8eb7950a5bd39",
+    "player_format_policy_sha256": "fbe0c8e24192584b0d306318bcd4cfa37f899a558d0db9f139e23de30fbc9e19",
+    "host_context_sha256": "80b02b034c01ec5d6d27f3d576ac3e752133b2db1969e59f0a5ce444d851365e",
+    "host_binding_version": "host-v13-ts034-user-accepted-20261111"
+  }
+}

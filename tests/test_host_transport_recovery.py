@@ -48,7 +48,7 @@ class HostTransportRecoveryTests(unittest.TestCase):
                 with self.subTest(change=change), self.assertRaises(ValueError):
                     completed_host_replay_records(broken, markers)
 
-    def interrupted(self, root):
+    def interrupted(self, root, invalid=False):
         config = {'max_questions': 3, 'session_mode': 'persistent', **{
             r: {'provider': 'deepseek', 'model': 'fixture', 'max_retries': 0}
             for r in ('host', 'player', 'grader')}}
@@ -61,6 +61,9 @@ class HostTransportRecoveryTests(unittest.TestCase):
                 requests[role].append(json.loads(req.data))
                 n = len(requests[role])
                 if role == 'host' and n == 2:
+                    if invalid:
+                        import io
+                        return io.BytesIO(b'not json')
                     raise urllib.error.URLError(ssl.SSLError(1, 'fixture TLS failure'))
                 text = json.dumps({'type': 'question', 'text': f'Question {n}?'}) if role == 'player' else 'yes'
                 return Response(text, f'{role}-{n}')
@@ -73,6 +76,25 @@ class HostTransportRecoveryTests(unittest.TestCase):
         self.assertEqual((result['submissions'], result['pending_feedback']), (2, 1))
         rec.calls = [json.loads(line) for line in (rec.folder/'api_calls.jsonl').read_text().splitlines()]
         return config, prompts, rec, result, requests
+
+    def test_invalid_host_response_requires_opt_in_and_preserves_request(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            config,prompts,rec,result,original=self.interrupted(Path(tmp),invalid=True)
+            self.assertEqual(rec.calls[-1]['status'],'invalid_response')
+            with self.assertRaisesRegex(ValueError,'Persistent interrupted'):
+                Recorder.restore(rec.folder,PUZZLE,config,prompts,echo=False)
+            proof=saved_host_transport_recovery(result,rec.calls,rec.turns,config)
+            self.assertIsNotNone(proof)
+            (rec.folder/'host_transport_recovery.json').write_text(json.dumps(proof))
+            restored=Recorder.restore(rec.folder,PUZZLE,config,prompts,echo=False)
+            self.assertEqual(restored.pending_host_request,original['host'][-1])
+            self.assertEqual(len(restored.turns),2)
+            self.assertEqual(restored.calls[-1]['status'],'invalid_response')
+            from turtle_loop.sessions import completed_host_replay_records
+            good={**rec.calls[-1],'status':'ok','text':'no','response_id':'retried','finish_reason':'stop'}
+            normalized=completed_host_replay_records(rec.calls+[good],[{'event':'host_transport_recovery',**proof}])
+            self.assertEqual(normalized[-1],good)
+            self.assertFalse(any(c['status']=='invalid_response' for c in normalized))
 
     def test_exact_request_replayed_before_next_player_and_failed_cost_retained(self):
         with tempfile.TemporaryDirectory() as tmp:

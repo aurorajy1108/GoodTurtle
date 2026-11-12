@@ -1,5 +1,6 @@
 """Small HTTP adapters; provider/model/endpoint can differ for each role."""
 import json
+import hashlib
 import errno
 import http.client
 import os
@@ -229,7 +230,14 @@ class Client:
     def __init__(self, profile, role, audit):
         validate_profile(profile)
         self.profile, self.role, self.audit = profile, role, audit
-        self.opener = urllib.request.build_opener(NoRedirect, TrackedHTTPSHandler())
+        self.proxy_mode = (os.environ.get('TURTLE_DEEPSEEK_PROXY_MODE', 'system')
+                           if profile.get('provider') == 'deepseek' else 'system')
+        if self.proxy_mode not in ('system', 'direct'):
+            raise ValueError('TURTLE_DEEPSEEK_PROXY_MODE must be system or direct')
+        handlers = [NoRedirect, TrackedHTTPSHandler()]
+        if self.proxy_mode == 'direct':
+            handlers.insert(0, urllib.request.ProxyHandler({}))
+        self.opener = urllib.request.build_opener(*handlers)
         self.session = None
 
     def begin_game(self, folder, event):
@@ -296,7 +304,6 @@ class Client:
 
     def _complete(self, system, user):
         if hasattr(self,'inherited_system_sha256'):
-            import hashlib
             if hashlib.sha256(system.encode()).hexdigest()!=self.inherited_system_sha256:
                 raise ValueError('Player system prompt changed across A and B; refusing a new lane')
         if hasattr(self,'pending_puzzle_boundary'):
@@ -362,9 +369,11 @@ class Client:
         for attempt in range(self.profile.get('max_retries', 2) + 1):
             start = time.monotonic()
             data = None
+            raw_response = None
             response_recorded = False
             phase = 'open'
             record = {**metadata, 'role': self.role, 'provider': self.profile['provider'],
+                      'network_proxy_mode': self.proxy_mode,
                       'json_action_mode':json_action,
                       'model_requested': self.profile['model'], 'endpoint': url,
                       'attempt': attempt + 1, 'request': body}
@@ -372,7 +381,8 @@ class Client:
                 request = urllib.request.Request(url, json.dumps(body).encode(), headers, method='POST')
                 with self.opener.open(request, timeout=self.profile.get('timeout', 120)) as response:
                     phase = 'read'
-                    data = json.loads(response.read())
+                    raw_response = response.read()
+                    data = json.loads(raw_response)
                 reply = parse_reply(kind, data)
                 reply.seconds = time.monotonic() - start
                 self.audit({**record, 'status': 'ok', 'seconds': reply.seconds,
@@ -403,6 +413,10 @@ class Client:
             except (json.JSONDecodeError, APIError) as exc:
                 if not response_recorded:
                     self.audit({**record, 'status': 'invalid_response', 'seconds': time.monotonic()-start,
+                                'response_error_type': type(exc).__name__,
+                                'response_error': str(exc),
+                                'response_bytes': len(raw_response) if raw_response is not None else None,
+                                'response_sha256': hashlib.sha256(raw_response).hexdigest() if raw_response is not None else None,
                                 'usage': data.get('usage', {}) if isinstance(data, dict) else {},
                                 'model_returned': data.get('model') if isinstance(data, dict) else None})
                 raise APIError(f'{self.role}: invalid/empty/truncated provider response') from None

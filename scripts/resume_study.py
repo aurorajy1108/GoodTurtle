@@ -42,7 +42,7 @@ def relocate_argument(value, source, out):
 
 
 def prepare(source, out, repair_player_note=False, repair_grader_reason=False, repair_player_json=False,
-            recover_host_transport=False, auto_player_format=False, user_reprompt=False):
+            recover_host_transport=False, auto_player_format=False, user_reprompt=False, reprompt_action='question'):
     source,out=Path(source).resolve(),Path(out).resolve()
     wrapper=None
     if (source/'run_manifest.json').exists() and (source/'study/study_plan.json').exists():
@@ -100,7 +100,8 @@ def prepare(source, out, repair_player_note=False, repair_grader_reason=False, r
             if not players:raise ValueError('No saved Player response to reprompt')
             last=players[-1]
             marker={'response_id':last.get('response_id'),'raw_sha256':hashlib.sha256(last.get('text','').encode()).hexdigest(),
-                    'preserved_submissions':len(turns),'authorization':'user_requested_reprompt'}
+                    'preserved_submissions':len(turns),'authorization':'user_requested_reprompt','action_type':reprompt_action}
+            if reprompt_action not in ('question','final'):raise ValueError('Invalid reprompt action')
             calls_for_check=[c for c in calls if not (c.get('role')=='format_repair' and c.get('format_source_response_id')==last.get('response_id'))]
             events=[json.loads(line) for line in (game/'trajectory.jsonl').read_text().splitlines()]
             candidate=saved_player_user_reprompt(json.loads((game/'result.json').read_text()),calls_for_check,turns,json.loads((game/'config.json').read_text()),events)
@@ -111,7 +112,7 @@ def prepare(source, out, repair_player_note=False, repair_grader_reason=False, r
             raise ValueError('Recovery overlay would change the frozen runtime context protocol. '
                              'Use the archived compatible recovery code for this old study; new experiments use a fresh batch.')
         recovery=(candidate if user_reprompt else saved_player_auto_recovery(*args, [json.loads(line) for line in (game/'trajectory.jsonl').read_text().splitlines()]) if auto_player_format else
-                  saved_host_transport_recovery(*args) if recover_host_transport else
+                  saved_host_transport_recovery(*args, [json.loads(line) for line in (game/'trajectory.jsonl').read_text().splitlines()]) if recover_host_transport else
                   saved_player_note_recovery(*args) if repair_player_note else
                   saved_player_json_recovery(*args) if repair_player_json else
                   saved_grader_reason_recovery(*args,json.loads((game/'puzzle_private.json').read_text())))

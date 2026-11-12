@@ -314,6 +314,9 @@ class TransportTests(unittest.TestCase):
             with patch.object(client.opener,'open',return_value=io.BytesIO(b'not json')):
                 with self.assertRaises(APIError):client.complete('s','u')
             self.assertEqual(logs[0]['status'],'invalid_response')
+            self.assertEqual(logs[0]['response_error_type'],'JSONDecodeError')
+            self.assertEqual(logs[0]['response_bytes'],8)
+            self.assertEqual(len(logs[0]['response_sha256']),64)
 
 if __name__ == '__main__':
     unittest.main()
