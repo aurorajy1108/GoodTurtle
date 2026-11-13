@@ -252,6 +252,12 @@ def make_plan(args, bank):
                     raise ValueError('Control source must differ from both A and B')
                 conditions = ['direct', 'transcript', 'card'] if args.memory == 'both' else ['direct', args.memory]
                 conditions += controls
+                selected_conditions=getattr(args,'conditions',None)
+                if selected_conditions:
+                    requested=selected_conditions.split(',')
+                    if len(set(requested))!=len(requested) or not set(requested)<=set(conditions):
+                        raise ValueError('--conditions must select unique enabled conditions')
+                    conditions=[c for c in conditions if c in requested]
                 rng.shuffle(conditions)
                 for repeat in range(1, args.repeat+1):
                     shift = (repeat - 1) % len(conditions)
@@ -770,6 +776,7 @@ def main(argv=None):
                        help='continue: record invalid game and run remaining independent conditions/blocks; never count API errors as puzzle failure')
         if name=='continual':
             p.add_argument('--import-direct',help='Existing completed target-game directory; count once and flag protocol differences')
+            p.add_argument('--conditions',help='Run only these enabled continual conditions, e.g. session,answer_only')
             p.add_argument('--groups',default=str(ROOT/'configs/transfer_groups.json'))
             p.add_argument('--group',default='G07',help='Comma-separated group IDs or all')
             p.add_argument('--pair',help='Optional directed SOURCE:TARGET filter within selected groups')

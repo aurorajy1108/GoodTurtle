@@ -171,6 +171,15 @@ def prepare(source, out, repair_player_note=False, repair_grader_reason=False, r
         if renewed:dump(out/plan['jobs'][0]['name']/recovery_details['run_dir']/'transport_read_window.json',renewed)
     if recover_host_transport:
         dump(out/plan['jobs'][0]['name']/recovery_details['run_dir']/'host_transport_recovery.json', recovery)
+        game_copy=out/plan['jobs'][0]['name']/recovery_details['run_dir']
+        old_marker=game_copy/'player_format_reprompt.json'
+        if old_marker.exists():
+            prior=json.loads(old_marker.read_text())
+            events=[json.loads(line) for line in (game_copy/'trajectory.jsonl').read_text().splitlines()]
+            if not any(e.get('event')=='player_format_reprompt' and e.get('source_response_id')==prior.get('response_id')
+                       and e.get('raw_sha256')==prior.get('raw_sha256') for e in events):
+                raise ValueError('Unconsumed Player reprompt marker cannot be discarded')
+            old_marker.unlink()
     if user_reprompt:
         dump(out/plan['jobs'][0]['name']/recovery_details['run_dir']/'player_format_reprompt.json', marker)
     elif auto_player_format:

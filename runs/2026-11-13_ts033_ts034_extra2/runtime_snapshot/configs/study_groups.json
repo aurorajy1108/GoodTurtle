@@ -1,0 +1,65 @@
+{
+  "schema_version": 2,
+  "directions": "primary",
+  "source": "User fixed-target design, 2026-11-02",
+  "interpretation": "Default: fixed anchor B. Optional reverse positive directions are exploratory. Negative/neutral only source. No inferred relations among non-anchor puzzles.",
+  "groups": [
+    {
+      "id": "S2_TS035_TS034",
+      "set_id": 2,
+      "puzzles": [
+        "TS035",
+        "TS034"
+      ],
+      "directed_pairs": [
+        [
+          "TS035",
+          "TS034"
+        ]
+      ],
+      "relation": "positive",
+      "anchor": "TS034",
+      "analysis_role": "primary",
+      "relation_status": "user_hypothesis_not_measured",
+      "direction": "to_anchor"
+    },
+    {
+      "id": "S2_TS033_TS034",
+      "set_id": 2,
+      "puzzles": [
+        "TS033",
+        "TS034"
+      ],
+      "directed_pairs": [
+        [
+          "TS033",
+          "TS034"
+        ]
+      ],
+      "relation": "negative",
+      "anchor": "TS034",
+      "analysis_role": "primary",
+      "relation_status": "user_hypothesis_not_measured",
+      "direction": "to_anchor"
+    },
+    {
+      "id": "S2_TS012_TS034",
+      "set_id": 2,
+      "puzzles": [
+        "TS012",
+        "TS034"
+      ],
+      "directed_pairs": [
+        [
+          "TS012",
+          "TS034"
+        ]
+      ],
+      "relation": "neutral",
+      "anchor": "TS034",
+      "analysis_role": "primary",
+      "relation_status": "user_hypothesis_not_measured",
+      "direction": "to_anchor"
+    }
+  ]
+}

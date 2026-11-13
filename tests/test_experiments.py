@@ -12,6 +12,20 @@ from test_loop import PUZZLE, FakeClient, evaluated
 
 
 class ExperimentTests(unittest.TestCase):
+    def test_selected_conditions_repeat_without_extra_direct_games(self):
+        groups=self.root/'selected_groups.json'
+        groups.write_text(json.dumps({'groups':[{'id':'G','puzzles':['A','B'],
+            'directed_pairs':[['A','B']],'relation':'negative'}]}))
+        args=Namespace(command='continual',groups=str(groups),group='G',pair=None,
+                       repeat=2,memory='session',controls='answer_only',source_feedback='answer',
+                       source_policy='fixed',seed=7,conditions='session,answer_only')
+        plan=make_plan(args,{'A':{},'B':{}})
+        self.assertEqual(len(plan),2)
+        self.assertEqual(sum(len(b['conditions']) for b in plan),4)
+        self.assertTrue(all(set(b['conditions'])=={'session','answer_only'} for b in plan))
+        args.conditions='session,missing'
+        with self.assertRaisesRegex(ValueError,'--conditions'):make_plan(args,{'A':{},'B':{}})
+
     def test_resumed_source_prefix_ignores_only_audit_timestamps(self):
         from turtle_loop.experiments import same_continuation
         old={'boundary':{'opening':'A'},'calls':[{'request':{'messages':['original']},'text':'answer'}]}

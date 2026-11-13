@@ -516,6 +516,17 @@ def saved_host_transport_recovery(previous, calls, turns, config, events=()):
     from .player_format import submitted_player_calls
     try:players=submitted_player_calls(calls,previous)
     except ValueError:return None
+    ignored=set()
+    for event in events:
+        if event.get('event')!='player_format_reprompt':continue
+        rid=event.get('source_response_id')
+        matches=[c for c in players if c.get('response_id')==rid]
+        if (len(matches)!=1 or rid in ignored or event.get('counts_as_submission') is not False
+                or event.get('authorization')!='user_requested_reprompt'
+                or hashlib.sha256(matches[0].get('text','').encode()).hexdigest()!=event.get('raw_sha256')):
+            return None
+        ignored.add(rid)
+    players=[c for c in players if c.get('response_id') not in ignored]
     prior_hosts = [c for c in calls[:-1] if c.get('role') == 'host']
     if len(players) != len(turns):
         return None
@@ -1090,6 +1101,21 @@ def _play(puzzle, config, recorder, clients, prompts, player_context=None):
                 # An explicitly budgeted actor may reserve its last available
                 # generation for FINAL before the public question limit.
                 forced = forced or getattr(clients['player'], 'compute_budget_final', False)
+                # User-approved handling for multiple QUESTION blocks: retain
+                # every response, request one question and do not spend quota.
+                if (recorder.folder/'auto_reprompt_questions.enabled').exists() and not forced:
+                    from .action_text import PREFIX_ACTION_HEAD, GLUED_ACTION_HEAD
+                    for _ in range(3):
+                        heads=[m.group('kind').upper() for m in PREFIX_ACTION_HEAD.finditer(reply.text)]
+                        heads += [m.group(1).upper() for m in GLUED_ACTION_HEAD.finditer(reply.text)]
+                        if len(heads)<2 or any(h!='QUESTION' for h in heads) or reply.finish_reason not in ('stop','completed','end_turn'):
+                            break
+                        recorder.event('player_format_reprompt',source_response_id=reply.response_id,
+                            raw_sha256=hashlib.sha256(reply.text.encode()).hexdigest(),counts_as_submission=False,
+                            authorization='user_requested_reprompt')
+                        payload['format_correction']=('Your preceding response contained multiple questions and did not count. '
+                            'Ask exactly one question: QUESTION on the first line, followed by the question; no other text or action.')
+                        reply=clients['player'].complete(prompts['player'],json.dumps(payload,ensure_ascii=False))
                 try:
                     action = parse_action(reply.text, forced, lambda details: recorder.event(
                         'player_format_recovery', submission=len(recorder.turns)+1, **details))

@@ -1,0 +1,309 @@
+{
+  "kind": "continual",
+  "seed": 20261113,
+  "arguments": {
+    "command": "continual",
+    "dataset": "/Users/tongmindy/Desktop/COMP1110/gp-comp1110/GoodTurtle/runs/api/20261113_ts033_ts034_extra2/runtime_snapshot/data/dataset.json",
+    "config": "/Users/tongmindy/Desktop/COMP1110/gp-comp1110/GoodTurtle/runs/api/20261113_ts033_ts034_extra2/runtime_snapshot/configs/run.json",
+    "repeat": 2,
+    "seed": 20261113,
+    "out": "/Users/tongmindy/Desktop/COMP1110/gp-comp1110/GoodTurtle/runs/api/20261113_ts033_ts034_extra2/continual",
+    "dry_run": true,
+    "quiet": true,
+    "resume": false,
+    "on_error": "stop",
+    "import_direct": null,
+    "conditions": "session,answer_only",
+    "groups": "/Users/tongmindy/Desktop/COMP1110/gp-comp1110/GoodTurtle/runs/api/20261113_ts033_ts034_extra2/runtime_snapshot/configs/study_groups.json",
+    "group": "S2_TS033_TS034",
+    "pair": null,
+    "memory": "session",
+    "source_policy": "fixed",
+    "controls": "answer_only",
+    "control_source": null,
+    "source_feedback": "answer"
+  },
+  "blocks": [
+    {
+      "block": "S2_TS033_TS034_TS033_TS034_r02",
+      "group": "S2_TS033_TS034",
+      "relation_hypothesis": "negative",
+      "source": "TS033",
+      "target": "TS034",
+      "analysis_role": "primary",
+      "source_policy": "fixed",
+      "repeat": 2,
+      "conditions": [
+        "session",
+        "answer_only"
+      ],
+      "control_source": null
+    },
+    {
+      "block": "S2_TS033_TS034_TS033_TS034_r01",
+      "group": "S2_TS033_TS034",
+      "relation_hypothesis": "negative",
+      "source": "TS033",
+      "target": "TS034",
+      "analysis_role": "primary",
+      "source_policy": "fixed",
+      "repeat": 1,
+      "conditions": [
+        "answer_only",
+        "session"
+      ],
+      "control_source": null
+    }
+  ],
+  "dialogue_policy": {
+    "roles": "complementary",
+    "scheduling": "adaptive",
+    "max_discussion": 4,
+    "start": "A",
+    "role_assignment": {
+      "A": {
+        "specialty": "investigator",
+        "instruction": "Develop and test explanations of identities, setting, event order and the main causal mechanism. Connect confirmed facts into a coherent story; explicitly distinguish hypotheses from host-confirmed facts."
+      },
+      "B": {
+        "specialty": "critic",
+        "instruction": "Challenge unsupported assumptions, propose alternative interpretations, and test missing causal links, motives and contradictions. Suggest discriminating questions rather than only criticizing. Help complete the story."
+      }
+    },
+    "protocol": "shared-dialogue-v3-prefix-v1",
+    "format_correction_max_retries": 2
+  },
+  "config": {
+    "max_questions": 100,
+    "session_mode": "persistent",
+    "context_policy": {
+      "host_examples_limit": 6,
+      "grader_examples_limit": 3,
+      "host_examples_max_chars": 6000,
+      "grader_examples_max_chars": 3000
+    },
+    "host": {
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "api_key_env": "DEEPSEEK_API_KEY",
+      "max_output_tokens": 32768,
+      "timeout": 600,
+      "max_retries": 2,
+      "extra_body": {
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "high"
+      }
+    },
+    "player": {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "api_key_env": "DEEPSEEK_API_KEY",
+      "max_output_tokens": 8192,
+      "timeout": 600,
+      "max_retries": 2,
+      "extra_body": {
+        "thinking": {
+          "type": "disabled"
+        },
+        "response_format": {
+          "type": "json_object"
+        }
+      }
+    },
+    "grader": {
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "api_key_env": "DEEPSEEK_API_KEY",
+      "max_output_tokens": 32768,
+      "timeout": 600,
+      "max_retries": 2,
+      "extra_body": {
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "high",
+        "response_format": {
+          "type": "json_object"
+        }
+      }
+    },
+    "pricing": {
+      "schema_version": 1,
+      "currency": "USD",
+      "checked_on": "2026-11-02",
+      "basis": "Standard text API-equivalent estimate, not an invoice or subscription-credit deduction",
+      "models": [
+        {
+          "providers": [
+            "codex_cli",
+            "openai",
+            "openai_chat"
+          ],
+          "model": "gpt-6.1-sol",
+          "endpoint_prefix": "https://api.openai.com/",
+          "input_per_million": 2.0,
+          "cached_input_per_million": 0.1,
+          "cache_write_per_million": 2.5,
+          "output_per_million": 10.0,
+          "long_context_threshold": 272000,
+          "long_input_multiplier": 2,
+          "long_output_multiplier": 1.5,
+          "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol"
+        },
+        {
+          "providers": [
+            "codex_cli",
+            "openai",
+            "openai_chat"
+          ],
+          "model": "gpt-6-luna",
+          "endpoint_prefix": "https://api.openai.com/",
+          "input_per_million": 0.1,
+          "cached_input_per_million": 0.01,
+          "cache_write_per_million": 0.125,
+          "output_per_million": 0.5,
+          "long_context_threshold": 272000,
+          "long_input_multiplier": 2,
+          "long_output_multiplier": 1.5,
+          "source": "https://developers.openai.com/api/docs/models/gpt-6-luna"
+        },
+        {
+          "providers": [
+            "codex_cli",
+            "openai",
+            "openai_chat"
+          ],
+          "model": "gpt-5",
+          "endpoint_prefix": "https://api.openai.com/",
+          "input_per_million": 1.25,
+          "cached_input_per_million": 0.125,
+          "output_per_million": 10.0,
+          "source": "https://developers.openai.com/api/docs/models/gpt-5"
+        },
+        {
+          "providers": [
+            "codex_cli",
+            "openai",
+            "openai_chat"
+          ],
+          "model": "gpt-5-2025-08-07",
+          "endpoint_prefix": "https://api.openai.com/",
+          "input_per_million": 1.25,
+          "cached_input_per_million": 0.125,
+          "output_per_million": 10.0,
+          "source": "https://developers.openai.com/api/docs/models/gpt-5"
+        },
+        {
+          "providers": [
+            "codex_cli",
+            "openai",
+            "openai_chat"
+          ],
+          "model": "gpt-5.6-luna",
+          "endpoint_prefix": "https://api.openai.com/",
+          "input_per_million": 0.2,
+          "cached_input_per_million": 0.02,
+          "cache_write_per_million": 0.25,
+          "output_per_million": 1.2,
+          "long_context_threshold": 272000,
+          "long_input_multiplier": 2,
+          "long_output_multiplier": 1.5,
+          "source": "https://developers.openai.com/api/docs/models/gpt-5.6-luna"
+        }
+      ]
+    }
+  },
+  "partner": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "max_output_tokens": 8192,
+    "timeout": 600,
+    "max_retries": 2,
+    "extra_body": {
+      "thinking": {
+        "type": "disabled"
+      },
+      "response_format": {
+        "type": "json_object"
+      }
+    }
+  },
+  "dataset_sha256": "087c044b0f15d39fb1228f3336519f96511378bff1f22c7a57b3326ce3c00dda",
+  "source_feedback": "answer",
+  "source_policy": "fixed",
+  "source_sampling_note": "fixed reuses one A per puzzle within this batch; B repeats are conditional on that A. Failures are never rerun to select a successful A.",
+  "per_game_budget": 100,
+  "budget_policy": "Fresh independent budget for A and every B condition; source feedback and memory calls consume no target submissions.",
+  "groups_snapshot": {
+    "schema_version": 2,
+    "directions": "primary",
+    "source": "User fixed-target design, 2026-11-02",
+    "interpretation": "Default: fixed anchor B. Optional reverse positive directions are exploratory. Negative/neutral only source. No inferred relations among non-anchor puzzles.",
+    "groups": [
+      {
+        "id": "S2_TS035_TS034",
+        "set_id": 2,
+        "puzzles": [
+          "TS035",
+          "TS034"
+        ],
+        "directed_pairs": [
+          [
+            "TS035",
+            "TS034"
+          ]
+        ],
+        "relation": "positive",
+        "anchor": "TS034",
+        "analysis_role": "primary",
+        "relation_status": "user_hypothesis_not_measured",
+        "direction": "to_anchor"
+      },
+      {
+        "id": "S2_TS033_TS034",
+        "set_id": 2,
+        "puzzles": [
+          "TS033",
+          "TS034"
+        ],
+        "directed_pairs": [
+          [
+            "TS033",
+            "TS034"
+          ]
+        ],
+        "relation": "negative",
+        "anchor": "TS034",
+        "analysis_role": "primary",
+        "relation_status": "user_hypothesis_not_measured",
+        "direction": "to_anchor"
+      },
+      {
+        "id": "S2_TS012_TS034",
+        "set_id": 2,
+        "puzzles": [
+          "TS012",
+          "TS034"
+        ],
+        "directed_pairs": [
+          [
+            "TS012",
+            "TS034"
+          ]
+        ],
+        "relation": "neutral",
+        "anchor": "TS034",
+        "analysis_role": "primary",
+        "relation_status": "user_hypothesis_not_measured",
+        "direction": "to_anchor"
+      }
+    ]
+  },
+  "meaning": "Context transfer only; weights unchanged. Seed controls scheduling, not API sampling.",
+  "controls_note": "Unrelated-source neutrality is a hypothesis requiring human review; history lengths are recorded, not matched. Shared buffer exposes pending question text but withholds unsynced answers.",
+  "condition_order": "Random base order rotated across repeats; shuffled blocks.",
+  "team_order": null
+}
