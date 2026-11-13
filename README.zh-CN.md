@@ -20,6 +20,8 @@ bash scripts/run_compute_matched_agents.sh runs/api/ts038_review_yourname_01
 
 **11月13日结果发布：** [CL Set1四次重复](results/20261113_verified_final/README.md)，直接打开[HTML轨迹索引](results/20261113_verified_final/index.html)。CL已完成39/39局；[MAS已续跑完成8/8局](results/20261113_mas_completed/README.md)，保留原截断私有笔记，剩余局在第84次提交以0%结束。结构、会话和费用核验通过，Host/Grader语义仍待人工复核。只汇总最新归档，避免续跑重复计数；[此前阶段分析](docs/results/cl_set1_20261112/interpretation.zh-CN.md)保留作历史记录。
 
+**MAS补至四次重复：** [最新已完成结果快照10/16局](results/20261113_mas_r1r4_progress/README.md)，可直接打开[HTML轨迹](results/20261113_mas_r1r4_progress/index.html)。本次新增单agent第4次（0%，100次提交）、MAS自查第3次（75%，81次提交）；未完成局单列，不进入成绩均值，旧局通过链接引用而非重复加总。
+
 **真实API测试修复：** [TS015方向判定、MAS首行契约、保存动作续跑、实时计数和DeepSeek费用](docs/live_test_repairs_20261111.md)。实测仍在进行，未宣称整批已通过。
 
 **团队运行：** [三组CL+三道MAS，两人各两次的一键脚本](docs/team_campaign_20261111.md)：6局小量测试、个人批跑、限并发全员150局与去重汇总。

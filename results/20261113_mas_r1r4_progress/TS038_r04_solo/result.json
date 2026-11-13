@@ -1,0 +1,278 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 98,
+  "final_attempts": 2,
+  "rejected_finals": 2,
+  "counted_questions": 100,
+  "submissions": 100,
+  "player_format_corrections": [],
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.0,
+  "best_partial_score": 0.0,
+  "latest_final": "This is a story of a person grieving a romantic partner who has died. Alone and in private, the writer repeatedly copies out the same line—\"You've disappointed me so much; I'm never coming back\"—writing it again and again, once per fresh sheet or entry, as successive attempts at wording a farewell. It looks like a breakup note, but it is not one: the writer is only rehearsing a goodbye they do not truly mean, and the note is never given to or seen by the partner, who is dead and cannot be reached. The repetitive writing is a ritual of anger and loss toward someone gone, not an actual leave-taking. The writer then sighs, \"I know I'm in trouble,\" acknowledging the painful, self-aware fact that they are still trapped in this loop—unable to let go of the lost partner and endlessly writing a goodbye they can never mean or deliver.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0,
+        "evidence": "the writer is only rehearsing a goodbye they do not truly mean, and the note is never given to or seen by the partner, who is dead and cannot be reached",
+        "reason": "The submission describes a private mourning ritual, not a murder and staged voluntary departure; required facts are absent and directly contradicted."
+      },
+      {
+        "id": "C2",
+        "credit": 0,
+        "evidence": "writing it again and again, once per fresh sheet or entry, as successive attempts at wording a farewell",
+        "reason": "The repetition is explained as wording practice, not failed attempts to forge the wife's handwriting."
+      },
+      {
+        "id": "C3",
+        "credit": 0,
+        "evidence": "\"I know I'm in trouble,\" acknowledging the painful, self-aware fact that they are still trapped in this loop—unable to let go of the lost partner",
+        "reason": "The sigh is interpreted as being emotionally trapped, not worrying about being caught due to inability to imitate handwriting."
+      }
+    ],
+    "material_contradiction": true,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "contradicted",
+        "evidence": "the writer is only rehearsing a goodbye they do not truly mean, and the note is never given to or seen by the partner, who is dead and cannot be reached"
+      },
+      {
+        "id": "C1.F2",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "C1.F3",
+        "status": "contradicted",
+        "evidence": "the writer is only rehearsing a goodbye they do not truly mean, and the note is never given to or seen by the partner, who is dead and cannot be reached"
+      },
+      {
+        "id": "C2.F1",
+        "status": "contradicted",
+        "evidence": "writing it again and again, once per fresh sheet or entry, as successive attempts at wording a farewell"
+      },
+      {
+        "id": "C2.F2",
+        "status": "contradicted",
+        "evidence": "writing it again and again... as successive attempts at wording a farewell ... acknowledging the painful, self-aware fact that they are still trapped in this loop"
+      },
+      {
+        "id": "C3.F1",
+        "status": "contradicted",
+        "evidence": "\"I know I'm in trouble,\" acknowledging the painful, self-aware fact that they are still trapped in this loop—unable to let go of the lost partner"
+      }
+    ],
+    "requirement_coverage": [],
+    "contradictions": [
+      {
+        "quote": "the writer is only rehearsing a goodbye they do not truly mean, and the note is never given to or seen by the partner, who is dead and cannot be reached",
+        "reference": "He tries to stage a voluntary departure with a forged leaving message",
+        "checkpoint_ids": [
+          "C1"
+        ]
+      },
+      {
+        "quote": "writing it again and again, once per fresh sheet or entry, as successive attempts at wording a farewell",
+        "reference": "The repetitions are failed attempts to imitate her handwriting, making him fear discovery",
+        "checkpoint_ids": [
+          "C2"
+        ]
+      },
+      {
+        "quote": "\"I know I'm in trouble,\" acknowledging the painful, self-aware fact that they are still trapped in this loop—unable to let go of the lost partner",
+        "reference": "His inability to imitate her handwriting leads him to worry about being caught.",
+        "checkpoint_ids": [
+          "C3"
+        ]
+      }
+    ],
+    "partial_score": 0.0,
+    "complete": false,
+    "label": "no",
+    "grading_protocol": "coverage-v3-unified",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 1814.440371667035,
+  "usage": {
+    "grader": {
+      "http_attempts": 2,
+      "successful_responses": 2,
+      "seconds": 144.15931191598065,
+      "provider_reported_usage": {
+        "prompt_tokens": 10313,
+        "completion_tokens": 13234,
+        "total_tokens": 23547,
+        "prompt_cache_hit_tokens": 7552,
+        "prompt_cache_miss_tokens": 2761
+      }
+    },
+    "host": {
+      "http_attempts": 98,
+      "successful_responses": 98,
+      "seconds": 1394.589972499758,
+      "provider_reported_usage": {
+        "prompt_tokens": 1522011,
+        "completion_tokens": 103928,
+        "total_tokens": 1625939,
+        "prompt_cache_hit_tokens": 1494912,
+        "prompt_cache_miss_tokens": 27099
+      }
+    },
+    "player": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 271.9624629148748,
+      "provider_reported_usage": {
+        "prompt_tokens": 1002604,
+        "completion_tokens": 6742,
+        "total_tokens": 1009346,
+        "prompt_cache_hit_tokens": 982656,
+        "prompt_cache_miss_tokens": 19948
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "estimate_assumptions": [
+      "peak_rate_reference_upper_estimate; off-peak rates are half; actual billing unknown"
+    ],
+    "total": {
+      "calls": 200,
+      "unknown_cost_calls": 0,
+      "known_estimated_cost_usd": 0.589455872,
+      "estimated_cost_usd": 0.589455872,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 2534928,
+        "cached_input_tokens": 2485120,
+        "cache_write_tokens": 0,
+        "output_tokens": 123904,
+        "reasoning_tokens": 115190,
+        "total_tokens": 2658832
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 100,
+        "total_tokens": 0
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 2,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.056383448,
+        "estimated_cost_usd": 0.056383448,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 10313,
+          "cached_input_tokens": 7552,
+          "cache_write_tokens": 0,
+          "output_tokens": 13234,
+          "reasoning_tokens": 11471,
+          "total_tokens": 23547
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 98,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.513101688,
+        "estimated_cost_usd": 0.513101688,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1522011,
+          "cached_input_tokens": 1494912,
+          "cache_write_tokens": 0,
+          "output_tokens": 103928,
+          "reasoning_tokens": 103719,
+          "total_tokens": 1625939
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 100,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.019970736,
+        "estimated_cost_usd": 0.019970736,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1002604,
+          "cached_input_tokens": 982656,
+          "cache_write_tokens": 0,
+          "output_tokens": 6742,
+          "reasoning_tokens": 0,
+          "total_tokens": 1009346
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 100,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "3c83e240-0913-46ec-ba2a-9bc1e9264e06",
+      "c3ac1ced-74a9-4d89-bf86-015cf3436e08",
+      "d5ee5c5f-b499-4719-b296-87f7d2667050"
+    ],
+    "logical_input_chars": 1909732,
+    "delta_input_chars": 135182,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "8f2ddbbd95f8552db795e6101df8e1ec6ac3755b6591d990fc66877d5a4b9d3b",
+    "grading_sha256": "ca184d8550ded2ca3f901e2f09673271411833e9d201f2febc0c774acef67093",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v3-unified",
+    "prompts_sha256": "533fed2879c5bee42d2b3da39a93449c142c58f51a3c16cb8bdd87a66efb2c8c",
+    "controller_sha256": "019f26c77e5eecd890c8d17b2112e35f37e26300eb63bddd39ee204784462bef",
+    "player_format_policy_sha256": "cf439ee1d60ae38374486aada319739646a5975284ff00bc877a3040047df56a",
+    "host_context_sha256": "4de8a9c689103080f87f7d2d62d3c0d145f07e715d5fe6e9b988f49249c5bcaf",
+    "host_binding_version": "host-v14-ai-20261111-forged-author"
+  }
+}

@@ -24,6 +24,8 @@ Open the output's `index.html` for trajectories, shared dialogue, private review
 
 **Published results (13 November):** [Completed CL Set1 four-repeat results](results/20261113_verified_final/README.md), with an [HTML trajectory index](results/20261113_verified_final/index.html). All 39 CL games finished. [MAS follow-up: all eight games completed](results/20261113_mas_completed/README.md); the previously truncated private review was retained and its game finished at submission 84 with score 0%. Structural, session and accounting checks passed; Host/Grader semantics remain pending human review. The [earlier interim snapshot](docs/results/cl_set1_20261112/interpretation.zh-CN.md) is retained as history.
 
+**Four-repeat MAS extension:** [Latest completed-results snapshot: 10/16 games](results/20261113_mas_r1r4_progress/README.md), with [HTML trajectories](results/20261113_mas_r1r4_progress/index.html). Newly published: solo repeat 4 (0%, 100 submissions) and MAS-review repeat 3 (75%, 81 submissions). Unfinished games are listed separately and excluded from outcome means; prior completed results are linked without duplication.
+
 English | [中文](README.zh-CN.md)
 
 ## Current team quickstart
