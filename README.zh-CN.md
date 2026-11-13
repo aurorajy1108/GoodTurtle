@@ -18,7 +18,7 @@ bash scripts/run_compute_matched_agents.sh runs/api/ts038_review_yourname_01
 
 输出的`index.html`可查看轨迹、公共对话、私有自查与统计。[全部参数和恢复方式](docs/compute_matched_agents.md)。若只想准备计划而不调用API：`python3.11 scripts/compute_matched_agents.py prepare --out 输出目录`。
 
-**11月13日结果发布：** [CL Set1四次重复与已完成MAS结果](results/20261113_verified_final/README.md)，直接打开[HTML轨迹索引](results/20261113_verified_final/index.html)。CL已完成39/39局，MAS完成7/8局；自查截断的未完成局不进入统计。结构、会话和费用核验通过，Host/Grader语义仍待人工复核。只汇总最新归档，避免续跑重复计数；[此前阶段分析](docs/results/cl_set1_20261112/interpretation.zh-CN.md)保留作历史记录。
+**11月13日结果发布：** [CL Set1四次重复](results/20261113_verified_final/README.md)，直接打开[HTML轨迹索引](results/20261113_verified_final/index.html)。CL已完成39/39局；[MAS已续跑完成8/8局](results/20261113_mas_completed/README.md)，保留原截断私有笔记，剩余局在第84次提交以0%结束。结构、会话和费用核验通过，Host/Grader语义仍待人工复核。只汇总最新归档，避免续跑重复计数；[此前阶段分析](docs/results/cl_set1_20261112/interpretation.zh-CN.md)保留作历史记录。
 
 **真实API测试修复：** [TS015方向判定、MAS首行契约、保存动作续跑、实时计数和DeepSeek费用](docs/live_test_repairs_20261111.md)。实测仍在进行，未宣称整批已通过。
 

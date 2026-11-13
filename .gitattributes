@@ -1,2 +1,3 @@
 # Preserve original rollout bytes, including CSV CRLF and model-output whitespace.
 results/20261113_verified_final/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+results/20261113_mas_completed/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
