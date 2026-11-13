@@ -1,0 +1,349 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 93,
+  "final_attempts": 4,
+  "rejected_finals": 4,
+  "counted_questions": 100,
+  "invalid_submissions": 3,
+  "protocol_intervention": "ambiguous_action_consumes_slot_then_single_action",
+  "submissions": 100,
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.8,
+  "best_partial_score": 0.8,
+  "latest_final": "The father is himself the hostage, not the daughter. The daughter is free and calling the kidnapper on her smartphone, begging him to spare her father's life. The father is close enough to the call — or receives it — to hear the kidnapper shout the demand: one hundred million yen, brought alone by noon tomorrow, or the hostage dies.\n\nThe father works out what \"alone\" means. To pay, his daughter would have to come to the kidnapper by herself, unprotected, carrying the money. He is convinced that if she did so, the kidnapper would kill him anyway and would also take or harm her. Paying would therefore not secure his own life and would put his daughter directly in the kidnapper's power.\n\nSo the father decides the ransom should not be paid. He is prepared to die rather than have the money spent to buy his own life, and his decision is chiefly aimed at protecting his daughter: if she never comes, she stays out of the kidnapper's reach. He has no real expectation of rescue and does not count on the kidnapper releasing him — he accepts his own death as the cost of keeping her away.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 1,
+        "evidence": "The father is himself the hostage, not the daughter. The daughter is free and calling the kidnapper on her smartphone, begging him to spare her father's life.",
+        "reason": "The father is identified as the hostage, and the daughter is free and receiving the ransom call with the kidnapper."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "To pay, his daughter would have to come to the kidnapper by herself, unprotected, carrying the money. He is convinced that if she did so, the kidnapper would kill him anyway and would also take or harm her.",
+        "reason": "It identifies the alone-arrival condition and danger to the daughter, but omits that both of them may be killed and the witness-elimination motive."
+      },
+      {
+        "id": "C3",
+        "credit": 1,
+        "evidence": "He is prepared to die rather than have the money spent to buy his own life, and his decision is chiefly aimed at protecting his daughter: if she never comes, she stays out of the kidnapper's reach. He ... accepts his own death as the cost of keeping her away.",
+        "reason": "It covers the protective refusal, keeping the daughter away, and accepting danger to his own life."
+      },
+      {
+        "id": "C4",
+        "credit": 0,
+        "evidence": "",
+        "reason": "The daughter's wealth is not stated or clearly entailed."
+      },
+      {
+        "id": "C5",
+        "credit": 0,
+        "evidence": "",
+        "reason": "The daughter's status as his only family is not stated or clearly entailed."
+      }
+    ],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "The core identity, conditional handoff danger, and protective refusal are reconstructed. However, the witness-elimination and both-person-killed qualifier is incomplete, and the daughter's wealth and only-family status are missing.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "covered",
+        "evidence": "The father is himself the hostage, not the daughter."
+      },
+      {
+        "id": "C1.F2",
+        "status": "covered",
+        "evidence": "The daughter is free and calling the kidnapper on her smartphone, begging him to spare her father's life."
+      },
+      {
+        "id": "C2.F1",
+        "status": "partial",
+        "evidence": "To pay, his daughter would have to come to the kidnapper by herself, unprotected, carrying the money. He is convinced that if she did so, the kidnapper would kill him anyway and would also take or harm her."
+      },
+      {
+        "id": "C3.F1",
+        "status": "covered",
+        "evidence": "his decision is chiefly aimed at protecting his daughter"
+      },
+      {
+        "id": "C3.F2",
+        "status": "covered",
+        "evidence": "He is prepared to die rather than have the money spent to buy his own life ... if she never comes, she stays out of the kidnapper's reach. He ... accepts his own death as the cost of keeping her away."
+      },
+      {
+        "id": "C4.F1",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "C5.F1",
+        "status": "missing",
+        "evidence": ""
+      }
+    ],
+    "requirement_coverage": [
+      {
+        "id": "R1",
+        "status": "covered",
+        "evidence": "The father is himself the hostage, not the daughter."
+      },
+      {
+        "id": "R2",
+        "status": "covered",
+        "evidence": "The daughter is free and calling the kidnapper on her smartphone, begging him to spare her father's life."
+      },
+      {
+        "id": "R3",
+        "status": "partial",
+        "evidence": "To pay, his daughter would have to come to the kidnapper by herself, unprotected, carrying the money. He is convinced that if she did so, the kidnapper would kill him anyway and would also take or harm her."
+      },
+      {
+        "id": "R4",
+        "status": "covered",
+        "evidence": "his decision is chiefly aimed at protecting his daughter"
+      },
+      {
+        "id": "R5",
+        "status": "covered",
+        "evidence": "He is prepared to die rather than have the money spent to buy his own life ... if she never comes, she stays out of the kidnapper's reach. He ... accepts his own death as the cost of keeping her away."
+      },
+      {
+        "id": "R6",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "R7",
+        "status": "missing",
+        "evidence": ""
+      }
+    ],
+    "contradictions": [],
+    "partial_score": 0.8,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v2",
+    "controller_corrections": [],
+    "completion_policy": "rubric_aligned_v1"
+  },
+  "elapsed_seconds": 1845.9275253720043,
+  "usage": {
+    "format_repair": {
+      "http_attempts": 3,
+      "successful_responses": 3,
+      "seconds": 56.80446208400099,
+      "provider_reported_usage": {
+        "input_tokens": 18954,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 239,
+        "reasoning_output_tokens": 114
+      }
+    },
+    "grader": {
+      "http_attempts": 5,
+      "successful_responses": 5,
+      "seconds": 252.44319642100163,
+      "provider_reported_usage": {
+        "prompt_tokens": 39278,
+        "completion_tokens": 20733,
+        "total_tokens": 60011,
+        "prompt_cache_hit_tokens": 31360,
+        "prompt_cache_miss_tokens": 7918
+      }
+    },
+    "host": {
+      "http_attempts": 93,
+      "successful_responses": 93,
+      "seconds": 1243.115827710979,
+      "provider_reported_usage": {
+        "prompt_tokens": 1662523,
+        "completion_tokens": 72775,
+        "total_tokens": 1735298,
+        "prompt_cache_hit_tokens": 1634560,
+        "prompt_cache_miss_tokens": 27963
+      }
+    },
+    "player": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 289.60406332403363,
+      "provider_reported_usage": {
+        "prompt_tokens": 1054381,
+        "completion_tokens": 9734,
+        "total_tokens": 1064115,
+        "prompt_cache_hit_tokens": 1032064,
+        "prompt_cache_miss_tokens": 22317
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "total": {
+      "calls": 201,
+      "unknown_cost_calls": 198,
+      "known_estimated_cost_usd": 0.040298,
+      "estimated_cost_usd": null,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 2775136,
+        "cached_input_tokens": 2697984,
+        "cache_write_tokens": 0,
+        "output_tokens": 103481,
+        "reasoning_tokens": 89042,
+        "total_tokens": 2878617
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 100,
+        "total_tokens": 0
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "format_repair",
+        "provider": "codex_cli",
+        "model": "gpt-6.1-sol",
+        "calls": 3,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.040298,
+        "estimated_cost_usd": 0.040298,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 18954,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 239,
+          "reasoning_tokens": 114,
+          "total_tokens": 19193
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 5,
+        "unknown_cost_calls": 5,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 39278,
+          "cached_input_tokens": 31360,
+          "cache_write_tokens": 0,
+          "output_tokens": 20733,
+          "reasoning_tokens": 16368,
+          "total_tokens": 60011
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 93,
+        "unknown_cost_calls": 93,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1662523,
+          "cached_input_tokens": 1634560,
+          "cache_write_tokens": 0,
+          "output_tokens": 72775,
+          "reasoning_tokens": 72560,
+          "total_tokens": 1735298
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 100,
+        "unknown_cost_calls": 100,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1054381,
+          "cached_input_tokens": 1032064,
+          "cache_write_tokens": 0,
+          "output_tokens": 9734,
+          "reasoning_tokens": 0,
+          "total_tokens": 1064115
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 100,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "107fe4e2-bf0c-4c59-be6b-ac0b4b518030",
+      "706e7910-e9dd-4b0f-9b4e-7a0ba75174b5",
+      "80dd905b-af8a-44e1-968d-7e185f07f759"
+    ],
+    "logical_input_chars": 3554423,
+    "delta_input_chars": 166775,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "5908fea8d67817a926cfa428f3349f2b9b572aedfa0290fc87188b431c3ec49c",
+    "grading_sha256": "a31632321bf7b7499ce2222df4dcc6e37fe22b8b446c9a94887c2b0bf1c7c08e",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "f99f0cbaf293322a5c2f208c86473e5a9aa3cb320962742d84cb53bf12979ae6",
+    "controller_sha256": "555bdceaad0c068fe1dbbeaed8a723115b7fd98325b456839f82f844df6deefc",
+    "player_format_policy_sha256": "fbe0c8e24192584b0d306318bcd4cfa37f899a558d0db9f139e23de30fbc9e19",
+    "host_context_sha256": "c6f3b033199dbf23d9921f80174b6aa70e05e6edaa366fa045cdb4ac82f4f52b",
+    "host_binding_version": "host-v17-ts034-witness-timeline-20261112",
+    "original_controller_sha256": "a73ae041fed4f286902c915609276c8308f66c919cbc580e47e17fd93d03a31b",
+    "pre_intervention_controller_sha256": "555bdceaad0c068fe1dbbeaed8a723115b7fd98325b456839f82f844df6deefc",
+    "protocol_intervention": "ambiguous_action_consumes_slot_then_single_action"
+  }
+}

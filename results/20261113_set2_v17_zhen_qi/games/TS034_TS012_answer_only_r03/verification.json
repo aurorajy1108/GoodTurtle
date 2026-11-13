@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "scope": "submission/feedback/counters/weighted scores/final answer/cost counters/source answer boundary",
+  "semantic_review": "assistant_selected_cases_only; no blanket human certification",
+  "submissions": 100,
+  "api_attempts": 200,
+  "protocol_interventions": 1,
+  "feedback_count": 99,
+  "auxiliary_successful_format_calls": 0,
+  "source_api_calls_sha256": "68403805a3ae8d30d07b4a9e3691d3c7d2cd81b0f7aa2463c0a2532e4eda1acb",
+  "source_files_sha256": {
+    "result.json": "f08163d6d6648ea28ffe50f9a53d6c7ad8fc0c6e3ed4d3322e4469fd6ff757b3",
+    "trajectory.jsonl": "ed5b6908ea4e84ef2f686b7e7daa36a554d7b80224b3d99870dec5b9f32466de",
+    "trajectory.md": "1ece798cbd49ee92880172b55155dec433f467916903a22a95add392e43567d8",
+    "trajectory.html": "ff2a918d4d8d47dbefb62a50017f208875637e8f6f4caae8a684fb85f1d27375",
+    "review_template.csv": "a3521e6b1dc4a3f5929898195f9446d9b5deb07ccb8577a0234124d67f31cbca",
+    "config.json": "2a474139b20bf95d9a43818066c49cfc134cfda6bbb3086349ea2e2d8f32b2a4",
+    "prompts.json": "ee4ac28fb3184a8ff547a10d1d6b50291a93e981635a5808b96b3d4fe91c8388",
+    "puzzle_private.json": "6cadb8e735f6bca2b815412dbd22254c2956284983d9e3df73b2a6f2b7ab4983",
+    "host_context.json": "3c59d8ea4ec6f9adbc8c30d9fb0fd01c9e8f48a93f512c1afe2d77aaa81232a0",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "64c31820443327839ce32e5128053650aacd3becf6b6746e94de79bb5620c17d",
+    "token_costs.csv": "66c7259b9910d83db11438b21c49be8ccea85b7e256642fad1b6f472053653f6",
+    "cost_summary.json": "3e10ffce142b28699ec2cd51d5fc5f34e90984f1d4b93ae6bbff4306bc4848c4",
+    "prior_experience.json": "e0495492894d2d8e7638f23f843d51e39c807350c073f83428507e2402650aac",
+    "human_review.csv": "d414adb8fcf02637885d68fa1ba1b07334338a26ef3bfe09c0b1b84fef6b8548"
+  },
+  "source_run": "runs/api/20261112_v17_remaining_two_invalid_continuation/run/TS034_TS012_answer_only_r03",
+  "response_accounting_sequence_sha256": "c62b8e06543d6c11f9bf21aa321dde9d8a3ea20b5e01dd8e2b6fffa9c469e23d",
+  "audit_request_bodies_omitted": true
+}

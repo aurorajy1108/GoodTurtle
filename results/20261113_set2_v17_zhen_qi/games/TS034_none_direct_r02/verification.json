@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "scope": "submission/feedback/counters/weighted scores/final answer/cost counters/source answer boundary",
+  "semantic_review": "assistant_selected_cases_only; no blanket human certification",
+  "submissions": 100,
+  "api_attempts": 200,
+  "protocol_interventions": 0,
+  "feedback_count": 100,
+  "auxiliary_successful_format_calls": 0,
+  "source_api_calls_sha256": "d880d68123445cc7c2309df9fd345f2a6c60bd8b7f29d6d5abfdd9354ca32631",
+  "source_files_sha256": {
+    "result.json": "99cf7c225df02b221cadb9adf50d5f7e1a97b76798ab36347d466d270bb1960e",
+    "trajectory.jsonl": "f7cb44bbe3ddd81e5b99a48f63ae2969e62543bf7da7d738dd0446beba1a3a21",
+    "trajectory.md": "62d21d772ccec689a60af4851c5140b7c94ab45f9f8e9ac7b0f78c835832e692",
+    "trajectory.html": "85c1372f72d30ac89748ca1c4e6fdfaeb53a2e21f91d5cf0d78c67f020cd9f6a",
+    "review_template.csv": "64f60cb3896036a943ef3e30ae30ea08697a2caf5070240b791ea5a8cddc92cd",
+    "config.json": "2a474139b20bf95d9a43818066c49cfc134cfda6bbb3086349ea2e2d8f32b2a4",
+    "prompts.json": "ee4ac28fb3184a8ff547a10d1d6b50291a93e981635a5808b96b3d4fe91c8388",
+    "puzzle_private.json": "6cadb8e735f6bca2b815412dbd22254c2956284983d9e3df73b2a6f2b7ab4983",
+    "host_context.json": "3c59d8ea4ec6f9adbc8c30d9fb0fd01c9e8f48a93f512c1afe2d77aaa81232a0",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "64c31820443327839ce32e5128053650aacd3becf6b6746e94de79bb5620c17d",
+    "token_costs.csv": "7990ebcf22d591f00cae34f80a664dc87d41d131dfebb5bc6cad5dace91017c5",
+    "cost_summary.json": "e470dba71dcfa565d1d7fbbcb25456a024dc7ae1fbcb521309da85b9e55d219f",
+    "human_review.csv": "64f60cb3896036a943ef3e30ae30ea08697a2caf5070240b791ea5a8cddc92cd"
+  },
+  "source_run": "runs/api/20261112_set2_v17_four_conditions_r3_parallel/run/TS034_none_direct_r02",
+  "response_accounting_sequence_sha256": "9d834277a88bc1f53dab400b1344f85cf0163208d179fe3ad715c8e6b1abf7e7",
+  "audit_request_bodies_omitted": true
+}

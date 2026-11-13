@@ -1,0 +1,822 @@
+[
+  {
+    "id": "G01",
+    "run_id": "TS034_TS033_answer_only_r05",
+    "submission": 56,
+    "text": "The father is physically unable to leave and deliver the ransom himself. His daughter is the person able to carry the money to the kidnapper. Paying would therefore require sending his daughter into the dangerous delivery, so instead of exposing her to that danger he decides the ransom should not be paid.",
+    "score": 0.475,
+    "credits": {
+      "C1": 0.5,
+      "C2": 0.5,
+      "C3": 0.5,
+      "C4": 0,
+      "C5": 0
+    },
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0.5,
+        "evidence": "The father is physically unable to leave and deliver the ransom himself. His daughter is the person able to carry the money to the kidnapper.",
+        "reason": "Identifies the father as unable to leave, implying he is the hostage, but omits that the daughter is free and receives the ransom call."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "Paying would therefore require sending his daughter into the dangerous delivery, so instead of exposing her to that danger he decides the ransom should not be paid.",
+        "reason": "Danger to the daughter is identified, but the alone-arrival, witness-elimination, and both-person fear are incomplete."
+      },
+      {
+        "id": "C3",
+        "credit": 0.5,
+        "evidence": "so instead of exposing her to that danger he decides the ransom should not be paid.",
+        "reason": "Protective refusal is identified, but communication that she must not pay or come and acceptance of danger to his own life are omitted."
+      },
+      {
+        "id": "C4",
+        "credit": 0,
+        "evidence": "",
+        "reason": "No mention or entailment that the daughter is wealthy."
+      },
+      {
+        "id": "C5",
+        "credit": 0,
+        "evidence": "",
+        "reason": "No mention or entailment that the daughter is his only family."
+      }
+    ],
+    "material_contradiction": false,
+    "contradictions": [],
+    "complete": false,
+    "decision": "correct",
+    "suggested_credits": {
+      "C1": 0,
+      "C2": 0.5,
+      "C3": 0.5,
+      "C4": 0,
+      "C5": 0
+    },
+    "suggested_score": 0.25,
+    "reason": "无法出门不蕴涵已被绑架；本次正文尚未说父亲人质。C1半分无依据，不能用后来#96获得的身份补写。建议47.5→25；不改变本局最终#100。",
+    "reviewer": "assistant_offline",
+    "human_confirmed": false
+  },
+  {
+    "id": "G02",
+    "run_id": "TS034_TS035_session_r05",
+    "submission": 77,
+    "text": "The father is the kidnapped hostage. The kidnapper has forced or allowed the daughter to speak over a smartphone: she begs for the father's life to be spared, and the kidnapper shouts the demand—one hundred million yen, brought alone by noon tomorrow, no police, or the hostage dies.\n\nThe father is able to communicate, and he instructs her not to pay. His reason is the demand's \"alone\" condition and his love for his daughter: he understands that obeying would send her, by herself, into the hands of dangerous criminals. She might be harmed, taken hostage too, or extorted further. Rather than let her risk herself to save him—even though she is begging to spare his life—he chooses to refuse the ransom, overruling her plea and accepting his own fate so that she stays out of danger.",
+    "score": 0.7,
+    "credits": {
+      "C1": 1,
+      "C2": 0.5,
+      "C3": 0.5,
+      "C4": 0,
+      "C5": 0
+    },
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 1,
+        "evidence": "The father is the kidnapped hostage. The kidnapper has forced or allowed the daughter to speak over a smartphone: she begs for the father's life to be spared, and the kidnapper shouts the demand",
+        "reason": "Father as hostage and daughter as the free recipient of the call are both clearly stated."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "he understands that obeying would send her, by herself, into the hands of dangerous criminals. She might be harmed, taken hostage too, or extorted further.",
+        "reason": "The alone-arrival danger to the daughter is captured, but the required both-person witness-elimination killing fear is absent."
+      },
+      {
+        "id": "C3",
+        "credit": 0.5,
+        "evidence": "he instructs her not to pay ... he chooses to refuse the ransom, overruling her plea and accepting his own fate so that she stays out of danger.",
+        "reason": "Protective refusal, communication not to pay, and acceptance of personal risk are present, but telling her not to come is not explicitly communicated."
+      },
+      {
+        "id": "C4",
+        "credit": 0,
+        "evidence": "",
+        "reason": "The daughter's wealth is not stated or clearly entailed."
+      },
+      {
+        "id": "C5",
+        "credit": 0,
+        "evidence": "",
+        "reason": "Only-family status is not stated or clearly entailed."
+      }
+    ],
+    "material_contradiction": false,
+    "contradictions": [],
+    "complete": false,
+    "decision": "correct",
+    "suggested_credits": {
+      "C1": 1,
+      "C2": 0.5,
+      "C3": 1,
+      "C4": 0,
+      "C5": 0
+    },
+    "suggested_score": 0.8,
+    "reason": "明确instructs/tells her not to pay，且接受自身风险；规则为not pay OR come，不要求再逐字说not come。C3应满分，建议70→80。",
+    "reviewer": "assistant_offline",
+    "human_confirmed": false
+  },
+  {
+    "id": "G03",
+    "run_id": "TS034_TS035_session_r05",
+    "submission": 88,
+    "text": "The father is the hostage. Over a smartphone, the kidnapper makes the daughter beg for her father's life to be spared and shouts the demand: one hundred million yen, brought alone by noon tomorrow, no police, or the hostage dies. The father, able to communicate, tells her not to pay.\n\nHis reason is the trap hidden in the demand. The insistence that the money be brought alone, by the daughter, with no police, is not a genuine exchange for his life—it is a setup to lure her by herself into the kidnapper's hands, where she would be seized or harmed. He realizes that if she obeys, she will not save him but will walk into the same danger, and that the kidnapper is someone who would harm her too. So he overrules her plea and refuses the ransom, preferring to risk his own life rather than let his daughter be lured alone into a trap.",
+    "score": 0.7,
+    "credits": {
+      "C1": 1,
+      "C2": 0.5,
+      "C3": 0.5,
+      "C4": 0,
+      "C5": 0
+    },
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 1,
+        "evidence": "The father is the hostage. Over a smartphone, the kidnapper makes the daughter beg for her father's life to be spared and shouts the demand",
+        "reason": "The father is clearly identified as the hostage, and the daughter is shown as the free recipient of the ransom call."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "The insistence that the money be brought alone, by the daughter, with no police, is not a genuine exchange for his life—it is a setup to lure her by herself into the kidnapper's hands, where she would be seized or harmed.",
+        "reason": "Alone-arrival danger to the daughter is covered, but the required fear that both may be killed to eliminate witnesses is omitted."
+      },
+      {
+        "id": "C3",
+        "credit": 0.5,
+        "evidence": "The father, able to communicate, tells her not to pay ... he overrules her plea and refuses the ransom, preferring to risk his own life rather than let his daughter be lured alone into a trap.",
+        "reason": "Protective refusal, communication not to pay, and acceptance of personal risk are present, but telling her not to come is not explicitly communicated."
+      },
+      {
+        "id": "C4",
+        "credit": 0,
+        "evidence": "",
+        "reason": "The daughter's wealth is not stated or clearly entailed."
+      },
+      {
+        "id": "C5",
+        "credit": 0,
+        "evidence": "",
+        "reason": "Only-family status is not stated or clearly entailed."
+      }
+    ],
+    "material_contradiction": false,
+    "contradictions": [],
+    "complete": false,
+    "decision": "correct",
+    "suggested_credits": {
+      "C1": 1,
+      "C2": 0.5,
+      "C3": 1,
+      "C4": 0,
+      "C5": 0
+    },
+    "suggested_score": 0.8,
+    "reason": "明确instructs/tells her not to pay，且接受自身风险；规则为not pay OR come，不要求再逐字说not come。C3应满分，建议70→80。",
+    "reviewer": "assistant_offline",
+    "human_confirmed": false
+  },
+  {
+    "id": "G04",
+    "run_id": "TS034_TS035_session_r05",
+    "submission": 100,
+    "text": "The father is the hostage. Over a smartphone, the kidnapper makes the daughter speak: she begs for her father's life to be spared, while the kidnapper shouts the demand—one hundred million yen, brought alone by noon tomorrow, no police, or the hostage dies. The father, who can communicate, tells her not to pay.\n\nHis reason is the demand's \"alone\" condition and his fear for her. The instruction that she bring the money by herself, without police, makes her unprotected and vulnerable. If she obeys, she would walk into the kidnapper's hands, where she could be seized, harmed, or extorted further; the kidnapper is someone who would harm her too. The father recognizes that paying would not reliably save him and would instead put his daughter in danger. So, even though she is begging to spare his life, he overrules her plea and refuses the ransom—accepting his own fate rather than letting her risk herself alone for him.",
+    "score": 0.7,
+    "credits": {
+      "C1": 1,
+      "C2": 0.5,
+      "C3": 0.5,
+      "C4": 0,
+      "C5": 0
+    },
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 1,
+        "evidence": "The father is the hostage. Over a smartphone, the kidnapper makes the daughter speak: she begs for her father's life to be spared, while the kidnapper shouts the demand",
+        "reason": "Father-as-hostage is explicit, and the daughter is presented as the free recipient of the ransom call."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "The instruction that she bring the money by herself, without police, makes her unprotected and vulnerable. If she obeys, she would walk into the kidnapper's hands, where she could be seized, harmed, or extorted further; the kidnapper is someone who would harm her too.",
+        "reason": "Alone-arrival danger to the daughter is covered, but the required fear that both of them may be killed to eliminate witnesses is omitted."
+      },
+      {
+        "id": "C3",
+        "credit": 0.5,
+        "evidence": "The father, who can communicate, tells her not to pay ... he overrules her plea and refuses the ransom—accepting his own fate rather than letting her risk herself alone for him.",
+        "reason": "Protective refusal, communication not to pay, and acceptance of personal risk are present, but telling her not to come is not explicit."
+      },
+      {
+        "id": "C4",
+        "credit": 0,
+        "evidence": "",
+        "reason": "The daughter's wealth is not stated or clearly entailed."
+      },
+      {
+        "id": "C5",
+        "credit": 0,
+        "evidence": "",
+        "reason": "Only-family status is not stated or clearly entailed."
+      }
+    ],
+    "material_contradiction": false,
+    "contradictions": [],
+    "complete": false,
+    "decision": "correct",
+    "suggested_credits": {
+      "C1": 1,
+      "C2": 0.5,
+      "C3": 1,
+      "C4": 0,
+      "C5": 0
+    },
+    "suggested_score": 0.8,
+    "reason": "明确instructs/tells her not to pay，且接受自身风险；规则为not pay OR come，不要求再逐字说not come。C3应满分，建议70→80。",
+    "reviewer": "assistant_offline",
+    "human_confirmed": false
+  },
+  {
+    "id": "G05",
+    "run_id": "TS034_TS012_answer_only_r04",
+    "submission": 99,
+    "text": "The father is the hostage. The kidnapper is on the smartphone with the daughter, demanding one hundred million yen, to be brought alone by noon the next day, or the father will be killed. The father hears this and decides the ransom must not be paid, chiefly to protect the daughter: the demand requires her to come alone into the kidnapper’s hands, so paying would put her in grave danger and risk her being seized or killed too. He would rather sacrifice himself than let her walk into that trap. His decision also reflects that he considers his own life effectively lost and does not expect the payment to save him.",
+    "score": 0.6,
+    "credits": {
+      "C1": 1,
+      "C2": 0.5,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0
+    },
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 1,
+        "evidence": "The father is the hostage.",
+        "reason": "Clearly identifies the father as the hostage and entails that the daughter is free and receives the kidnapper's demand."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "the demand requires her to come alone into the kidnapper’s hands, so paying would put her in grave danger and risk her being seized or killed too",
+        "reason": "Identifies conditional danger to the daughter if she comes alone, but omits the specific fear that both may be killed to eliminate witnesses."
+      },
+      {
+        "id": "C3",
+        "credit": 0,
+        "evidence": "decides the ransom must not be paid, chiefly to protect the daughter ... He would rather sacrifice himself than let her walk into that trap",
+        "reason": "Protective refusal and acceptance of personal risk are present, but the explanation does not explicitly state that he communicates to her that she must not pay or come."
+      },
+      {
+        "id": "C4",
+        "credit": 0,
+        "evidence": "",
+        "reason": "The submission does not state or entail that the daughter is wealthy."
+      },
+      {
+        "id": "C5",
+        "credit": 0,
+        "evidence": "",
+        "reason": "The submission does not state or entail that the daughter is his only family."
+      }
+    ],
+    "material_contradiction": true,
+    "contradictions": [
+      {
+        "quote": "he considers his own life effectively lost and does not expect the payment to save him",
+        "reference": "The father's supported fear is conditional: if his daughter brings the ransom alone, both may be killed to eliminate witnesses. The story does not establish that he believes death occurs regardless of payment or that payment will not save him.",
+        "checkpoint_ids": [
+          "C3"
+        ]
+      }
+    ],
+    "complete": false,
+    "decision": "boundary_review",
+    "suggested_credits": null,
+    "suggested_score": null,
+    "reason": "Grader自己承认保护性拒付和自我牺牲，却因缺通信给C3=0，不符half_credit。无救说法又被归入C3，和其他局归C2不同。建议C3至少半分；C2需统一裁决，若维持半分总分70，若无救主因使C2归零总分55。暂不生成唯一替代总分。",
+    "reviewer": "assistant_offline",
+    "human_confirmed": false
+  },
+  {
+    "id": "G06",
+    "run_id": "TS034_TS012_answer_only_r04",
+    "submission": 100,
+    "text": "The father is the hostage. Over the smartphone, the daughter is genuinely pleading with the kidnapper to spare him, while the kidnapper demands one hundred million yen, brought alone by noon the next day, or the father will be killed. The father hears the call from captivity and makes the decision that the ransom should not be paid. His central reason is to protect the daughter: the kidnapper requires her to bring the money alone, so complying would send her into the kidnapper's hands and expose her to being seized or killed too. He would rather sacrifice himself than let her take that risk. He also believes that paying would not secure his release, so the money would not save him. Thus he chooses to refuse the ransom rather than endanger the daughter or waste the payment.",
+    "score": 0.6,
+    "credits": {
+      "C1": 1,
+      "C2": 0.5,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0
+    },
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 1,
+        "evidence": "The father is the hostage. Over the smartphone, the daughter is genuinely pleading with the kidnapper to spare him",
+        "reason": "Clearly identifies the father as the hostage and entails that his daughter is free and receives the ransom call."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "the kidnapper requires her to bring the money alone, so complying would send her into the kidnapper's hands and expose her to being seized or killed too",
+        "reason": "Identifies the conditional danger to the daughter if she comes alone, but omits the specific fear that both of them may be killed to eliminate witnesses."
+      },
+      {
+        "id": "C3",
+        "credit": 0,
+        "evidence": "His central reason is to protect the daughter ... He would rather sacrifice himself than let her take that risk",
+        "reason": "Protective refusal and acceptance of danger to himself are present, but the submission does not clearly communicate to her that she must not pay or come."
+      },
+      {
+        "id": "C4",
+        "credit": 0,
+        "evidence": "",
+        "reason": "The submission does not state or entail that the daughter is wealthy."
+      },
+      {
+        "id": "C5",
+        "credit": 0,
+        "evidence": "",
+        "reason": "The submission does not state or entail that the daughter is his only family."
+      }
+    ],
+    "material_contradiction": true,
+    "contradictions": [
+      {
+        "quote": "He also believes that paying would not secure his release, so the money would not save him. Thus he chooses to refuse the ransom rather than endanger the daughter or waste the payment.",
+        "reference": "The story establishes only a conditional fear that if the daughter brings the ransom alone, both may be killed to eliminate witnesses. It does not establish that the father believes payment will not secure his release or that the money would not save him.",
+        "checkpoint_ids": [
+          "C3"
+        ]
+      }
+    ],
+    "complete": false,
+    "decision": "boundary_review",
+    "suggested_credits": null,
+    "suggested_score": null,
+    "reason": "Grader自己承认保护性拒付和自我牺牲，却因缺通信给C3=0，不符half_credit。无救说法又被归入C3，和其他局归C2不同。建议C3至少半分；C2需统一裁决，若维持半分总分70，若无救主因使C2归零总分55。暂不生成唯一替代总分。",
+    "reviewer": "assistant_offline",
+    "human_confirmed": false
+  },
+  {
+    "id": "G07",
+    "run_id": "TS034_TS012_session_r04",
+    "submission": 100,
+    "text": "The father is himself the hostage being held by the kidnapper. The daughter is free and, over the smartphone, is begging the kidnapper to spare her father's life. The kidnapper shouts the ransom demand—one hundred million yen brought alone by noon, with no police—but the demand is heard by the father. The father decides that the ransom should not be paid: he understands that the money cannot be raised from him while he is captive, and he wants to protect his family from the cost and danger of trying to pay it. Thus the “kidnapping” is of the father, not the daughter, and the daughter’s pleading is for her father’s life rather than her own.",
+    "score": 0.7,
+    "credits": {
+      "C1": 1,
+      "C2": 0.5,
+      "C3": 0.5,
+      "C4": 0,
+      "C5": 0
+    },
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 1,
+        "evidence": "The father is himself the hostage being held by the kidnapper. The daughter is free and, over the smartphone, is begging the kidnapper to spare her father's life.",
+        "reason": "The father is correctly identified as the hostage, and the daughter is presented as the free party on the smartphone taking the ransom call."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "he wants to protect his family from the cost and danger of trying to pay it",
+        "reason": "A general danger to the family/daughter from paying is mentioned, but the specific alone-arrival, witness-elimination, and both-person fear is incomplete."
+      },
+      {
+        "id": "C3",
+        "credit": 0.5,
+        "evidence": "The father decides that the ransom should not be paid ... he wants to protect his family from the cost and danger of trying to pay it.",
+        "reason": "A protective refusal is identified, but the required communication to the daughter not to pay or come and acceptance of danger to his own life are omitted."
+      },
+      {
+        "id": "C4",
+        "credit": 0,
+        "evidence": "",
+        "reason": "The daughter's wealth is not stated or entailed."
+      },
+      {
+        "id": "C5",
+        "credit": 0,
+        "evidence": "",
+        "reason": "The daughter being his only family is not stated or entailed."
+      }
+    ],
+    "material_contradiction": false,
+    "contradictions": [],
+    "complete": false,
+    "decision": "boundary_review",
+    "suggested_credits": null,
+    "suggested_score": null,
+    "reason": "protect family from cost and danger仅泛指家庭，C2半分是否已充分指向女儿身体危险需统一；不能按正确身份自动补全独自赴约机制。保留原分，待限定部分分范围。",
+    "reviewer": "assistant_offline",
+    "human_confirmed": false
+  },
+  {
+    "id": "G08",
+    "run_id": "TS034_TS033_answer_only_r05",
+    "submission": 100,
+    "text": "The father is himself the hostage whose life the kidnapper is threatening, yet he is physically unable to leave and deliver the ransom. The daughter is the person who would have to carry the money to the kidnapper in his place, which would expose her to serious danger. The father therefore rejects the ransom demand: paying would not be a safe rescue but would put his daughter in harm’s way, so he decides that no ransom should be paid.",
+    "score": 0.475,
+    "credits": {
+      "C1": 0.5,
+      "C2": 0.5,
+      "C3": 0.5,
+      "C4": 0,
+      "C5": 0
+    },
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0.5,
+        "evidence": "The father is himself the hostage whose life the kidnapper is threatening... The daughter is the person who would have to carry the money to the kidnapper in his place",
+        "reason": "Father-as-hostage is identified, but the daughter being free and receiving the ransom call is omitted."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "which would expose her to serious danger... paying would not be a safe rescue but would put his daughter in harm’s way",
+        "reason": "Danger to the daughter is identified, but the alone-arrival, witness-elimination, and both-person fear are incomplete."
+      },
+      {
+        "id": "C3",
+        "credit": 0.5,
+        "evidence": "The father therefore rejects the ransom demand: paying would not be a safe rescue but would put his daughter in harm’s way, so he decides that no ransom should be paid.",
+        "reason": "Protective refusal is identified, but communication that she must not pay or come and acceptance of danger to his own life are omitted."
+      },
+      {
+        "id": "C4",
+        "credit": 0,
+        "evidence": "",
+        "reason": "No mention or entailment that the daughter is wealthy."
+      },
+      {
+        "id": "C5",
+        "credit": 0,
+        "evidence": "",
+        "reason": "No mention or entailment that the daughter is his only family."
+      }
+    ],
+    "material_contradiction": false,
+    "contradictions": [],
+    "complete": false,
+    "decision": "keep",
+    "suggested_credits": {
+      "C1": 0.5,
+      "C2": 0.5,
+      "C3": 0.5,
+      "C4": 0,
+      "C5": 0
+    },
+    "suggested_score": 0.475,
+    "reason": "父亲人质已明确，但未明说/清楚蕴涵女儿接到索赎金电话；仅能送钱不覆盖整个复合项。保持C1半分，与#56缺身份区分。",
+    "reviewer": "assistant_offline",
+    "human_confirmed": false
+  },
+  {
+    "id": "G09",
+    "run_id": "TS034_none_direct_r05",
+    "submission": 95,
+    "text": "父亲自己就是人质。绑架者与父亲在一起，并通过智能手机让女儿转达要求：一百亿日元，由她独自送来，明天中午前，不得报警。由于父亲被扣押着，他知道付钱无法救自己——绑架者无论如何都会杀死他——而唯一能筹到并送出赎金的人是他的女儿，而且按绑架者的命令，她必须“独自”前来。如果她照做，她就会把自己交到会杀人的绑架者手中。父亲听到这些要求后，认定不能支付赎金：支付救不了他，反而会迫使女儿在没有保护的情况下走进危险。因此，他的拒绝既不是不愿为自己花钱，也不是出于原则，而是为了保护女儿，避免绑匪索要赎金的条件伤害她。",
+    "score": 0.55,
+    "credits": {
+      "C1": 1,
+      "C2": 0,
+      "C3": 0.5,
+      "C4": 0,
+      "C5": 0
+    },
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 1,
+        "evidence": "父亲自己就是人质。绑架者与父亲在一起，并通过智能手机让女儿转达要求... 唯一能筹到并送出赎金的人是他的女儿",
+        "reason": "The submission identifies the father as the hostage and presents the daughter as free and receiving/relaying the ransom demand."
+      },
+      {
+        "id": "C2",
+        "credit": 0,
+        "evidence": "他知道付钱无法救自己——绑架者无论如何都会杀死他",
+        "reason": "The required conditional fear that her arrival may get both killed to eliminate witnesses is contradicted by the submission's affirmative claim that the kidnapper will kill him regardless."
+      },
+      {
+        "id": "C3",
+        "credit": 0.5,
+        "evidence": "父亲听到这些要求后，认定不能支付赎金... 是为了保护女儿",
+        "reason": "Protective refusal is present, but the submission omits explicit communication that she must not pay or come and does not clearly express acceptance of danger to his own life."
+      },
+      {
+        "id": "C4",
+        "credit": 0,
+        "evidence": "",
+        "reason": "The daughter's wealth is not stated or clearly entailed."
+      },
+      {
+        "id": "C5",
+        "credit": 0,
+        "evidence": "",
+        "reason": "The daughter's status as his only family is not stated or clearly entailed."
+      }
+    ],
+    "material_contradiction": true,
+    "contradictions": [
+      {
+        "quote": "他知道付钱无法救自己——绑架者无论如何都会杀死他",
+        "reference": "The story establishes the father's conditional fear and refusal, not that either person is eventually killed. He fears that if his daughter brings the ransom alone, both of them may be killed to eliminate witnesses.",
+        "checkpoint_ids": [
+          "C2"
+        ]
+      }
+    ],
+    "complete": false,
+    "decision": "keep",
+    "suggested_credits": {
+      "C1": 1,
+      "C2": 0,
+      "C3": 0.5,
+      "C4": 0,
+      "C5": 0
+    },
+    "suggested_score": 0.55,
+    "reason": "中文恢复未改正文；一百亿是模型原文错误。已有无条件杀死父亲的中心矛盾，C2=0；C3保护性拒付半分。金额本身非独立计分项，不能据此修正文或额外编造扣分。",
+    "reviewer": "assistant_offline",
+    "human_confirmed": false
+  },
+  {
+    "id": "G10",
+    "run_id": "TS034_none_direct_r05",
+    "submission": 100,
+    "text": "The father is himself the hostage. The kidnapper is with him and has the daughter on the smartphone: she begs for a life to be spared, while the kidnapper shouts the demand—100 million yen, alone, by noon tomorrow, no police. Because the father is the captive, he knows the money cannot save him: the kidnapper is with him and will kill the hostage regardless of payment. He also knows the only person who could raise and deliver the ransom is his daughter, and the kidnapper insists she bring it \"alone,\" without police or anyone to protect her. Complying would therefore not rescue the father; it would only enrich a killer and force his daughter to walk unaccompanied into danger, since both father and daughter confirmed that her coming alone would put her at the kidnapper's mercy. That threat to his daughter—rather than any willingness or ability to pay—is what makes the father decide the ransom should not be paid. His refusal is meant to keep his daughter out of the trap the kidnapper has set.",
+    "score": 0.55,
+    "credits": {
+      "C1": 1,
+      "C2": 0,
+      "C3": 0.5,
+      "C4": 0,
+      "C5": 0
+    },
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 1,
+        "evidence": "The father is himself the hostage. The kidnapper is with him and has the daughter on the smartphone... the only person who could raise and deliver the ransom is his daughter",
+        "reason": "The father is identified as the hostage; the daughter is free and receives the ransom call."
+      },
+      {
+        "id": "C2",
+        "credit": 0,
+        "evidence": "he knows the money cannot save him: the kidnapper is with him and will kill the hostage regardless of payment",
+        "reason": "The required conditional fear that both might be killed if the daughter arrives alone to eliminate witnesses is contradicted by the affirmative claim that the kidnapper will kill the hostage regardless of payment."
+      },
+      {
+        "id": "C3",
+        "credit": 0.5,
+        "evidence": "That threat to his daughter... makes the father decide the ransom should not be paid. His refusal is meant to keep his daughter out of the trap the kidnapper has set.",
+        "reason": "Protective refusal is present, but the submission omits explicit communication that she must not pay or come and does not clearly accept danger to his own life."
+      },
+      {
+        "id": "C4",
+        "credit": 0,
+        "evidence": "",
+        "reason": "The daughter's wealth is not stated or entailed."
+      },
+      {
+        "id": "C5",
+        "credit": 0,
+        "evidence": "",
+        "reason": "The daughter's status as his only family is not stated or entailed."
+      }
+    ],
+    "material_contradiction": true,
+    "contradictions": [
+      {
+        "quote": "he knows the money cannot save him: the kidnapper is with him and will kill the hostage regardless of payment",
+        "reference": "The explanation concerns the father’s fear and decision; it does not establish that the kidnapper eventually kills either of them. He fears that if his daughter brings the ransom alone, both of them may be killed to eliminate witnesses.",
+        "checkpoint_ids": [
+          "C2"
+        ]
+      }
+    ],
+    "complete": false,
+    "decision": "keep",
+    "suggested_credits": {
+      "C1": 1,
+      "C2": 0,
+      "C3": 0.5,
+      "C4": 0,
+      "C5": 0
+    },
+    "suggested_score": 0.55,
+    "reason": "仍明确绑匪无论付款与否都会杀父亲，C2零分成立；保护性拒付但缺完整风险通信，C3半分。原55保留。",
+    "reviewer": "assistant_offline",
+    "human_confirmed": false
+  },
+  {
+    "id": "G11",
+    "run_id": "TS034_TS012_answer_only_r05",
+    "submission": 100,
+    "text": "The father knows that paying the ransom would not save his daughter but would doom her. The call is not a straightforward exchange of money for a life: the act of producing and handing over one hundred million yen would reveal something to the kidnapper—most centrally that the daughter can identify him—and that revelation would lead the kidnapper to kill her to silence her. So payment would trigger her death rather than prevent it.\n\nAt the same time, the father understands that he himself is the person the kidnapper is really after. The demand is aimed at drawing the father into the kidnapper's power, and paying would not only endanger the daughter but also put at risk another specific person whose life is tied to whether the money is paid; the kidnapper would turn on that person or on the daughter as a result. Thus paying would cost more lives than it could possibly save.\n\nTherefore the father concludes that the ransom must not be paid. He intends to save his daughter by some route other than paying the kidnapper's price, and in doing so he hopes to protect both her and the other person at risk. Refusing to pay keeps the kidnapper from gaining whatever the payment would unlock.",
+    "score": 0.25,
+    "credits": {
+      "C1": 0,
+      "C2": 0.5,
+      "C3": 0.5,
+      "C4": 0,
+      "C5": 0
+    },
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0,
+        "evidence": "At the same time, the father understands that he himself is the person the kidnapper is really after. The demand is aimed at drawing the father into the kidnapper's power",
+        "reason": "Directly contradicts the required fact that the father is already the kidnapped hostage; the submission treats the father as the free target to be lured, and the free daughter receiving the call is not identified."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "The father knows that paying the ransom would not save his daughter but would doom her... the act of producing and handing over one hundred million yen would reveal something to the kidnapper—most centrally that the daughter can identify him—and that revelation would lead the kidnapper to kill her to silence her.",
+        "reason": "Identifies a danger to the daughter tied to silencing, but omits that the fear is conditional on her coming alone and that both the father and daughter may be killed."
+      },
+      {
+        "id": "C3",
+        "credit": 0.5,
+        "evidence": "Therefore the father concludes that the ransom must not be paid. He intends to save his daughter by some route other than paying the kidnapper's price, and in doing so he hopes to protect both her and the other person at risk.",
+        "reason": "Protective refusal is present, but communication that she must not pay or come and acceptance of danger to his own life are missing."
+      },
+      {
+        "id": "C4",
+        "credit": 0,
+        "evidence": "",
+        "reason": "The daughter's wealth is not stated or entailed."
+      },
+      {
+        "id": "C5",
+        "credit": 0,
+        "evidence": "",
+        "reason": "The daughter's status as his only family is not stated or entailed."
+      }
+    ],
+    "material_contradiction": true,
+    "contradictions": [
+      {
+        "quote": "At the same time, the father understands that he himself is the person the kidnapper is really after. The demand is aimed at drawing the father into the kidnapper's power",
+        "reference": "The father is the kidnapped hostage; the kidnapper orders his free daughter to bring the ransom alone.",
+        "checkpoint_ids": [
+          "C1"
+        ]
+      }
+    ],
+    "complete": false,
+    "decision": "boundary_review",
+    "suggested_credits": null,
+    "suggested_score": null,
+    "reason": "同为女儿被当成现有人质、付款导致灭口/拒付保活的解释，原C2在零分与半分间波动。人物担忧与确定性替代机制及错角色对C2的影响须统一；不把所有角色错误机械重复扣分，也不直接纳入建议分均值。",
+    "reviewer": "assistant_offline",
+    "human_confirmed": false
+  },
+  {
+    "id": "G12",
+    "run_id": "TS034_TS035_answer_only_r05",
+    "submission": 100,
+    "text": "The daughter is genuinely being held elsewhere by a kidnapper, and she begs over the phone for her life to be spared while the kidnapper demands one hundred million yen, brought alone by noon the next day, with no police. The father can have someone else deliver money if needed, but he concludes that paying would not save her: the kidnapper would kill her after receiving the ransom because she could identify him. If the ransom is not paid, the kidnapper has an incentive to keep her alive as leverage rather than dispose of the only thing he can trade for money. The father therefore refuses to pay, choosing the course that gives his daughter the better chance of remaining alive while denying the kidnapper the payoff that would make killing her safe.",
+    "score": 0.25,
+    "credits": {
+      "C1": 0,
+      "C2": 0.5,
+      "C3": 0.5,
+      "C4": 0,
+      "C5": 0
+    },
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0,
+        "evidence": "The daughter is genuinely being held elsewhere by a kidnapper",
+        "reason": "The submission reverses the canonical roles: it makes the daughter the hostage, while the reference requires the father to be the kidnapped hostage and the daughter to be free and receiving the call."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "he concludes that paying would not save her: the kidnapper would kill her after receiving the ransom because she could identify him",
+        "reason": "It identifies a feared witness-elimination danger to the daughter after payment, but omits the required qualifiers that the father fears both of them may be killed and that this follows her bringing the ransom alone."
+      },
+      {
+        "id": "C3",
+        "credit": 0.5,
+        "evidence": "The father therefore refuses to pay, choosing the course that gives his daughter the better chance of remaining alive",
+        "reason": "A protective refusal is present, but the explanation does not say he communicates that she must not pay or come, and it does not show him accepting danger to his own life."
+      },
+      {
+        "id": "C4",
+        "credit": 0,
+        "evidence": "",
+        "reason": "No statement or clear entailment that the daughter is wealthy."
+      },
+      {
+        "id": "C5",
+        "credit": 0,
+        "evidence": "",
+        "reason": "No statement or clear entailment that the daughter is his only family."
+      }
+    ],
+    "material_contradiction": true,
+    "contradictions": [
+      {
+        "quote": "The daughter is genuinely being held elsewhere by a kidnapper",
+        "reference": "The father is the kidnapped hostage; his daughter is free and receives the ransom call.",
+        "checkpoint_ids": [
+          "C1"
+        ]
+      }
+    ],
+    "complete": false,
+    "decision": "boundary_review",
+    "suggested_credits": null,
+    "suggested_score": null,
+    "reason": "同为女儿被当成现有人质、付款导致灭口/拒付保活的解释，原C2在零分与半分间波动。人物担忧与确定性替代机制及错角色对C2的影响须统一；不把所有角色错误机械重复扣分，也不直接纳入建议分均值。",
+    "reviewer": "assistant_offline",
+    "human_confirmed": false
+  },
+  {
+    "id": "G13",
+    "run_id": "TS034_TS035_session_r04",
+    "submission": 100,
+    "text": "The father refuses to pay because he believes that paying the ransom would actually cause his daughter's death, while refusing gives her a chance to survive. Once the hundred million yen has been handed over, the daughter—having been held captive and able to identify the kidnapper—would be a dangerous witness. The kidnapper's safest course after receiving the money would therefore be to kill her rather than release her. So paying would not buy her life; it would remove the kidnapper's remaining reason to keep her alive and add a strong motive to eliminate her.\n\nThe threat that \"this hostage dies\" if the money is not brought is chiefly pressure to force payment. The father judges that paying, not refusing, makes her murder most certain: by refusing, he withholds the money and keeps alive whatever chance she has—the kidnapper may not go through with murder, the scheme may fail, or outside intervention may still save her. He chooses the course that avoids the outcome in which payment itself seals her fate, even though refusing does not guarantee her safety.",
+    "score": 0.1,
+    "credits": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 0.5,
+      "C4": 0,
+      "C5": 0
+    },
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0,
+        "evidence": "The father refuses to pay ... the daughter—having been held captive and able to identify the kidnapper—would be a dangerous witness",
+        "reason": "The submission reverses the required roles: it presents the father as the person who can pay or withhold the money and the daughter as the held captive, contradicting the required fact that the father is the hostage and the free daughter receives the ransom call."
+      },
+      {
+        "id": "C2",
+        "credit": 0,
+        "evidence": "Once the hundred million yen has been handed over, the daughter—having been held captive and able to identify the kidnapper—would be a dangerous witness. The kidnapper's safest course after receiving the money would therefore be to kill her rather than release her.",
+        "reason": "The required fear is that if the free daughter brings the ransom alone, both father and daughter may be killed to eliminate witnesses. The submission instead states that payment would cause the already-captive daughter to be killed, missing and contradicting the conditional both-person fear."
+      },
+      {
+        "id": "C3",
+        "credit": 0.5,
+        "evidence": "The father refuses to pay because he believes that paying the ransom would actually cause his daughter's death, while refusing gives her a chance to survive.",
+        "reason": "The submission identifies a protective refusal, but it omits the required communication that she must not pay or come and does not accept danger to his own life as the captive father."
+      },
+      {
+        "id": "C4",
+        "credit": 0,
+        "evidence": "",
+        "reason": "The submission does not state or clearly entail that the daughter is wealthy."
+      },
+      {
+        "id": "C5",
+        "credit": 0,
+        "evidence": "",
+        "reason": "The submission does not state or clearly entail that the daughter is his only family."
+      }
+    ],
+    "material_contradiction": true,
+    "contradictions": [
+      {
+        "quote": "The father refuses to pay ... once the hundred million yen has been handed over, the daughter—having been held captive and able to identify the kidnapper—would be a dangerous witness",
+        "reference": "The father is the hostage; his daughter is free and receives the ransom call.",
+        "checkpoint_ids": [
+          "C1"
+        ]
+      },
+      {
+        "quote": "Once the hundred million yen has been handed over, the daughter—having been held captive and able to identify the kidnapper—would be a dangerous witness. The kidnapper's safest course after receiving the money would therefore be to kill her rather than release her.",
+        "reference": "He fears that if his daughter brings the ransom alone, both of them may be killed to eliminate witnesses.",
+        "checkpoint_ids": [
+          "C2"
+        ]
+      }
+    ],
+    "complete": false,
+    "decision": "boundary_review",
+    "suggested_credits": null,
+    "suggested_score": null,
+    "reason": "同为女儿被当成现有人质、付款导致灭口/拒付保活的解释，原C2在零分与半分间波动。人物担忧与确定性替代机制及错角色对C2的影响须统一；不把所有角色错误机械重复扣分，也不直接纳入建议分均值。",
+    "reviewer": "assistant_offline",
+    "human_confirmed": false
+  }
+]

@@ -1,0 +1,751 @@
+[
+  {
+    "run_id": "TS034_TS012_answer_only_r04",
+    "source": "TS012",
+    "condition": "answer_only",
+    "repeat": 4,
+    "final_score": 0.6,
+    "best_score": 0.8,
+    "success": false,
+    "questions": 97,
+    "finals": 3,
+    "max_consecutive_no_questions": 23,
+    "identity_yes_regex_candidate": 11,
+    "final_credits": {
+      "C1": 1,
+      "C2": 0.5,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0
+    },
+    "final_sequence": [
+      {
+        "submission": 57,
+        "score": 0.8,
+        "credits": {
+          "C1": 1,
+          "C2": 0.5,
+          "C3": 1,
+          "C4": 0,
+          "C5": 0
+        }
+      },
+      {
+        "submission": 99,
+        "score": 0.6,
+        "credits": {
+          "C1": 1,
+          "C2": 0.5,
+          "C3": 0,
+          "C4": 0,
+          "C5": 0
+        }
+      },
+      {
+        "submission": 100,
+        "score": 0.6,
+        "credits": {
+          "C1": 1,
+          "C2": 0.5,
+          "C3": 0,
+          "C4": 0,
+          "C5": 0
+        }
+      }
+    ],
+    "protocol_interventions": 0,
+    "resumed": true,
+    "run_dir": "runs/api/20261113_v17_unified_network_recovery/run/TS034_TS012_answer_only_r04",
+    "total_tokens": null
+  },
+  {
+    "run_id": "TS034_TS012_answer_only_r05",
+    "source": "TS012",
+    "condition": "answer_only",
+    "repeat": 5,
+    "final_score": 0.25,
+    "best_score": 0.25,
+    "success": false,
+    "questions": 99,
+    "finals": 1,
+    "max_consecutive_no_questions": 27,
+    "identity_yes_regex_candidate": 79,
+    "final_credits": {
+      "C1": 0,
+      "C2": 0.5,
+      "C3": 0.5,
+      "C4": 0,
+      "C5": 0
+    },
+    "final_sequence": [
+      {
+        "submission": 100,
+        "score": 0.25,
+        "credits": {
+          "C1": 0,
+          "C2": 0.5,
+          "C3": 0.5,
+          "C4": 0,
+          "C5": 0
+        }
+      }
+    ],
+    "protocol_interventions": 0,
+    "resumed": false,
+    "run_dir": "runs/api/20261113_set2_v17_extend_r04_r05/run/TS034_TS012_answer_only_r05",
+    "total_tokens": null
+  },
+  {
+    "run_id": "TS034_TS012_session_r04",
+    "source": "TS012",
+    "condition": "session",
+    "repeat": 4,
+    "final_score": 0.7,
+    "best_score": 0.7,
+    "success": false,
+    "questions": 98,
+    "finals": 2,
+    "max_consecutive_no_questions": 4,
+    "identity_yes_regex_candidate": 16,
+    "final_credits": {
+      "C1": 1,
+      "C2": 0.5,
+      "C3": 0.5,
+      "C4": 0,
+      "C5": 0
+    },
+    "final_sequence": [
+      {
+        "submission": 92,
+        "score": 0.45,
+        "credits": {
+          "C1": 1,
+          "C2": 0,
+          "C3": 0,
+          "C4": 0,
+          "C5": 0
+        }
+      },
+      {
+        "submission": 100,
+        "score": 0.7,
+        "credits": {
+          "C1": 1,
+          "C2": 0.5,
+          "C3": 0.5,
+          "C4": 0,
+          "C5": 0
+        }
+      }
+    ],
+    "protocol_interventions": 0,
+    "resumed": true,
+    "run_dir": "runs/api/20261113_v17_unified_network_recovery/run/TS034_TS012_session_r04",
+    "total_tokens": null
+  },
+  {
+    "run_id": "TS034_TS012_session_r05",
+    "source": "TS012",
+    "condition": "session",
+    "repeat": 5,
+    "final_score": 0.7,
+    "best_score": 0.7,
+    "success": false,
+    "questions": 97,
+    "finals": 3,
+    "max_consecutive_no_questions": 11,
+    "identity_yes_regex_candidate": 10,
+    "final_credits": {
+      "C1": 1,
+      "C2": 0.5,
+      "C3": 0.5,
+      "C4": 0,
+      "C5": 0
+    },
+    "final_sequence": [
+      {
+        "submission": 82,
+        "score": 0.7,
+        "credits": {
+          "C1": 1,
+          "C2": 0.5,
+          "C3": 0.5,
+          "C4": 0,
+          "C5": 0
+        }
+      },
+      {
+        "submission": 91,
+        "score": 0.7,
+        "credits": {
+          "C1": 1,
+          "C2": 0.5,
+          "C3": 0.5,
+          "C4": 0,
+          "C5": 0
+        }
+      },
+      {
+        "submission": 100,
+        "score": 0.7,
+        "credits": {
+          "C1": 1,
+          "C2": 0.5,
+          "C3": 0.5,
+          "C4": 0,
+          "C5": 0
+        }
+      }
+    ],
+    "protocol_interventions": 0,
+    "resumed": false,
+    "run_dir": "runs/api/20261113_set2_v17_extend_r04_r05/run/TS034_TS012_session_r05",
+    "total_tokens": null
+  },
+  {
+    "run_id": "TS034_TS033_answer_only_r04",
+    "source": "TS033",
+    "condition": "answer_only",
+    "repeat": 4,
+    "final_score": 0.55,
+    "best_score": 0.55,
+    "success": false,
+    "questions": 97,
+    "finals": 3,
+    "max_consecutive_no_questions": 16,
+    "identity_yes_regex_candidate": 84,
+    "final_credits": {
+      "C1": 1,
+      "C2": 0,
+      "C3": 0.5,
+      "C4": 0,
+      "C5": 0
+    },
+    "final_sequence": [
+      {
+        "submission": 91,
+        "score": 0.55,
+        "credits": {
+          "C1": 1,
+          "C2": 0,
+          "C3": 0.5,
+          "C4": 0,
+          "C5": 0
+        }
+      },
+      {
+        "submission": 98,
+        "score": 0.55,
+        "credits": {
+          "C1": 1,
+          "C2": 0,
+          "C3": 0.5,
+          "C4": 0,
+          "C5": 0
+        }
+      },
+      {
+        "submission": 100,
+        "score": 0.55,
+        "credits": {
+          "C1": 1,
+          "C2": 0,
+          "C3": 0.5,
+          "C4": 0,
+          "C5": 0
+        }
+      }
+    ],
+    "protocol_interventions": 0,
+    "resumed": true,
+    "run_dir": "runs/api/20261113_v17_r04_host_transport_recovery/run/TS034_TS033_answer_only_r04",
+    "total_tokens": null
+  },
+  {
+    "run_id": "TS034_TS033_answer_only_r05",
+    "source": "TS033",
+    "condition": "answer_only",
+    "repeat": 5,
+    "final_score": 0.475,
+    "best_score": 0.475,
+    "success": false,
+    "questions": 96,
+    "finals": 4,
+    "max_consecutive_no_questions": 26,
+    "identity_yes_regex_candidate": null,
+    "final_credits": {
+      "C1": 0.5,
+      "C2": 0.5,
+      "C3": 0.5,
+      "C4": 0,
+      "C5": 0
+    },
+    "final_sequence": [
+      {
+        "submission": 1,
+        "score": 0.0,
+        "credits": {
+          "C1": 0,
+          "C2": 0,
+          "C3": 0,
+          "C4": 0,
+          "C5": 0
+        }
+      },
+      {
+        "submission": 56,
+        "score": 0.475,
+        "credits": {
+          "C1": 0.5,
+          "C2": 0.5,
+          "C3": 0.5,
+          "C4": 0,
+          "C5": 0
+        }
+      },
+      {
+        "submission": 97,
+        "score": 0.475,
+        "credits": {
+          "C1": 0.5,
+          "C2": 0.5,
+          "C3": 0.5,
+          "C4": 0,
+          "C5": 0
+        }
+      },
+      {
+        "submission": 100,
+        "score": 0.475,
+        "credits": {
+          "C1": 0.5,
+          "C2": 0.5,
+          "C3": 0.5,
+          "C4": 0,
+          "C5": 0
+        }
+      }
+    ],
+    "protocol_interventions": 0,
+    "resumed": false,
+    "run_dir": "runs/api/20261113_set2_v17_extend_r04_r05/run/TS034_TS033_answer_only_r05",
+    "total_tokens": null
+  },
+  {
+    "run_id": "TS034_TS033_session_r04",
+    "source": "TS033",
+    "condition": "session",
+    "repeat": 4,
+    "final_score": 0.8,
+    "best_score": 0.8,
+    "success": false,
+    "questions": 95,
+    "finals": 5,
+    "max_consecutive_no_questions": 10,
+    "identity_yes_regex_candidate": 15,
+    "final_credits": {
+      "C1": 1,
+      "C2": 0.5,
+      "C3": 1,
+      "C4": 0,
+      "C5": 0
+    },
+    "final_sequence": [
+      {
+        "submission": 31,
+        "score": 0.7,
+        "credits": {
+          "C1": 1,
+          "C2": 0.5,
+          "C3": 0.5,
+          "C4": 0,
+          "C5": 0
+        }
+      },
+      {
+        "submission": 52,
+        "score": 0.7,
+        "credits": {
+          "C1": 1,
+          "C2": 0.5,
+          "C3": 0.5,
+          "C4": 0,
+          "C5": 0
+        }
+      },
+      {
+        "submission": 65,
+        "score": 0.7,
+        "credits": {
+          "C1": 1,
+          "C2": 0.5,
+          "C3": 0.5,
+          "C4": 0,
+          "C5": 0
+        }
+      },
+      {
+        "submission": 73,
+        "score": 0.7,
+        "credits": {
+          "C1": 1,
+          "C2": 0.5,
+          "C3": 0.5,
+          "C4": 0,
+          "C5": 0
+        }
+      },
+      {
+        "submission": 100,
+        "score": 0.8,
+        "credits": {
+          "C1": 1,
+          "C2": 0.5,
+          "C3": 1,
+          "C4": 0,
+          "C5": 0
+        }
+      }
+    ],
+    "protocol_interventions": 0,
+    "resumed": true,
+    "run_dir": "runs/api/20261113_v17_unified_network_recovery/run/TS034_TS033_session_r04",
+    "total_tokens": null
+  },
+  {
+    "run_id": "TS034_TS033_session_r05",
+    "source": "TS033",
+    "condition": "session",
+    "repeat": 5,
+    "final_score": 0.0,
+    "best_score": 0.0,
+    "success": false,
+    "questions": 99,
+    "finals": 1,
+    "max_consecutive_no_questions": 34,
+    "identity_yes_regex_candidate": null,
+    "final_credits": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 0,
+      "C4": 0,
+      "C5": 0
+    },
+    "final_sequence": [
+      {
+        "submission": 100,
+        "score": 0.0,
+        "credits": {
+          "C1": 0,
+          "C2": 0,
+          "C3": 0,
+          "C4": 0,
+          "C5": 0
+        }
+      }
+    ],
+    "protocol_interventions": 0,
+    "resumed": false,
+    "run_dir": "runs/api/20261113_set2_v17_extend_r04_r05/run/TS034_TS033_session_r05",
+    "total_tokens": null
+  },
+  {
+    "run_id": "TS034_TS035_answer_only_r04",
+    "source": "TS035",
+    "condition": "answer_only",
+    "repeat": 4,
+    "final_score": 0.1,
+    "best_score": 0.1,
+    "success": false,
+    "questions": 99,
+    "finals": 1,
+    "max_consecutive_no_questions": 16,
+    "identity_yes_regex_candidate": null,
+    "final_credits": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 0.5,
+      "C4": 0,
+      "C5": 0
+    },
+    "final_sequence": [
+      {
+        "submission": 100,
+        "score": 0.1,
+        "credits": {
+          "C1": 0,
+          "C2": 0,
+          "C3": 0.5,
+          "C4": 0,
+          "C5": 0
+        }
+      }
+    ],
+    "protocol_interventions": 0,
+    "resumed": true,
+    "run_dir": "runs/api/20261113_v17_r04_host_transport_recovery/run/TS034_TS035_answer_only_r04",
+    "total_tokens": null
+  },
+  {
+    "run_id": "TS034_TS035_answer_only_r05",
+    "source": "TS035",
+    "condition": "answer_only",
+    "repeat": 5,
+    "final_score": 0.25,
+    "best_score": 0.25,
+    "success": false,
+    "questions": 99,
+    "finals": 1,
+    "max_consecutive_no_questions": 12,
+    "identity_yes_regex_candidate": null,
+    "final_credits": {
+      "C1": 0,
+      "C2": 0.5,
+      "C3": 0.5,
+      "C4": 0,
+      "C5": 0
+    },
+    "final_sequence": [
+      {
+        "submission": 100,
+        "score": 0.25,
+        "credits": {
+          "C1": 0,
+          "C2": 0.5,
+          "C3": 0.5,
+          "C4": 0,
+          "C5": 0
+        }
+      }
+    ],
+    "protocol_interventions": 0,
+    "resumed": true,
+    "run_dir": "runs/api/20261113_v17_unified_network_recovery/run/TS034_TS035_answer_only_r05",
+    "total_tokens": null
+  },
+  {
+    "run_id": "TS034_TS035_session_r04",
+    "source": "TS035",
+    "condition": "session",
+    "repeat": 4,
+    "final_score": 0.1,
+    "best_score": 0.1,
+    "success": false,
+    "questions": 98,
+    "finals": 2,
+    "max_consecutive_no_questions": 22,
+    "identity_yes_regex_candidate": null,
+    "final_credits": {
+      "C1": 0,
+      "C2": 0,
+      "C3": 0.5,
+      "C4": 0,
+      "C5": 0
+    },
+    "final_sequence": [
+      {
+        "submission": 99,
+        "score": 0.1,
+        "credits": {
+          "C1": 0,
+          "C2": 0,
+          "C3": 0.5,
+          "C4": 0,
+          "C5": 0
+        }
+      },
+      {
+        "submission": 100,
+        "score": 0.1,
+        "credits": {
+          "C1": 0,
+          "C2": 0,
+          "C3": 0.5,
+          "C4": 0,
+          "C5": 0
+        }
+      }
+    ],
+    "protocol_interventions": 0,
+    "resumed": true,
+    "run_dir": "runs/api/20261113_v17_unified_network_recovery/run/TS034_TS035_session_r04",
+    "total_tokens": null
+  },
+  {
+    "run_id": "TS034_TS035_session_r05",
+    "source": "TS035",
+    "condition": "session",
+    "repeat": 5,
+    "final_score": 0.7,
+    "best_score": 0.7,
+    "success": false,
+    "questions": 96,
+    "finals": 4,
+    "max_consecutive_no_questions": 22,
+    "identity_yes_regex_candidate": 50,
+    "final_credits": {
+      "C1": 1,
+      "C2": 0.5,
+      "C3": 0.5,
+      "C4": 0,
+      "C5": 0
+    },
+    "final_sequence": [
+      {
+        "submission": 62,
+        "score": 0.7,
+        "credits": {
+          "C1": 1,
+          "C2": 0.5,
+          "C3": 0.5,
+          "C4": 0,
+          "C5": 0
+        }
+      },
+      {
+        "submission": 77,
+        "score": 0.7,
+        "credits": {
+          "C1": 1,
+          "C2": 0.5,
+          "C3": 0.5,
+          "C4": 0,
+          "C5": 0
+        }
+      },
+      {
+        "submission": 88,
+        "score": 0.7,
+        "credits": {
+          "C1": 1,
+          "C2": 0.5,
+          "C3": 0.5,
+          "C4": 0,
+          "C5": 0
+        }
+      },
+      {
+        "submission": 100,
+        "score": 0.7,
+        "credits": {
+          "C1": 1,
+          "C2": 0.5,
+          "C3": 0.5,
+          "C4": 0,
+          "C5": 0
+        }
+      }
+    ],
+    "protocol_interventions": 0,
+    "resumed": true,
+    "run_dir": "runs/api/20261113_v17_unified_network_recovery/run/TS034_TS035_session_r05",
+    "total_tokens": null
+  },
+  {
+    "run_id": "TS034_none_direct_r04",
+    "source": "none",
+    "condition": "direct",
+    "repeat": 4,
+    "final_score": 0.8,
+    "best_score": 0.8,
+    "success": false,
+    "questions": 98,
+    "finals": 2,
+    "max_consecutive_no_questions": 15,
+    "identity_yes_regex_candidate": 6,
+    "final_credits": {
+      "C1": 1,
+      "C2": 0.5,
+      "C3": 1,
+      "C4": 0,
+      "C5": 0
+    },
+    "final_sequence": [
+      {
+        "submission": 99,
+        "score": 0.8,
+        "credits": {
+          "C1": 1,
+          "C2": 0.5,
+          "C3": 1,
+          "C4": 0,
+          "C5": 0
+        }
+      },
+      {
+        "submission": 100,
+        "score": 0.8,
+        "credits": {
+          "C1": 1,
+          "C2": 0.5,
+          "C3": 1,
+          "C4": 0,
+          "C5": 0
+        }
+      }
+    ],
+    "protocol_interventions": 0,
+    "resumed": true,
+    "run_dir": "runs/api/20261113_v17_unified_network_recovery/run/TS034_none_direct_r04",
+    "total_tokens": null
+  },
+  {
+    "run_id": "TS034_none_direct_r05",
+    "source": "none",
+    "condition": "direct",
+    "repeat": 5,
+    "final_score": 0.55,
+    "best_score": 0.55,
+    "success": false,
+    "questions": 97,
+    "finals": 3,
+    "max_consecutive_no_questions": 11,
+    "identity_yes_regex_candidate": 9,
+    "final_credits": {
+      "C1": 1,
+      "C2": 0,
+      "C3": 0.5,
+      "C4": 0,
+      "C5": 0
+    },
+    "final_sequence": [
+      {
+        "submission": 66,
+        "score": 0.55,
+        "credits": {
+          "C1": 1,
+          "C2": 0,
+          "C3": 0.5,
+          "C4": 0,
+          "C5": 0
+        }
+      },
+      {
+        "submission": 95,
+        "score": 0.55,
+        "credits": {
+          "C1": 1,
+          "C2": 0,
+          "C3": 0.5,
+          "C4": 0,
+          "C5": 0
+        }
+      },
+      {
+        "submission": 100,
+        "score": 0.55,
+        "credits": {
+          "C1": 1,
+          "C2": 0,
+          "C3": 0.5,
+          "C4": 0,
+          "C5": 0
+        }
+      }
+    ],
+    "protocol_interventions": 0,
+    "resumed": true,
+    "run_dir": "runs/api/20261113_v17_direct_r05_localized_final_recovery/run/TS034_none_direct_r05",
+    "total_tokens": null
+  }
+]

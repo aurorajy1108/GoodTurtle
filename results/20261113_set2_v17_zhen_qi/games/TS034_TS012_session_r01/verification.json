@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "scope": "submission/feedback/counters/weighted scores/final answer/cost counters/source answer boundary",
+  "semantic_review": "assistant_selected_cases_only; no blanket human certification",
+  "submissions": 100,
+  "api_attempts": 202,
+  "protocol_interventions": 0,
+  "feedback_count": 100,
+  "auxiliary_successful_format_calls": 0,
+  "source_api_calls_sha256": "b48b5a2fd473cda4960c6b30edaca8e67642d18f82a888cc2087f4c6c983760d",
+  "source_files_sha256": {
+    "result.json": "7e45c2ec64dfa0704e85ed70eccaf0050d86c999a52a4702e4c1c217567af417",
+    "trajectory.jsonl": "3d263995fd88f9e481502d6f131b15c20b4ef4ce917b3282550f4faa574c0b92",
+    "trajectory.md": "5884c211fb1c685d12faa60f7c2fbb4358a1cf8b39fd6a731293fdbebdc7262e",
+    "trajectory.html": "b5fb71ca3b04a0b33a35d3de51d466d75bfa7761377e0d7480ceeade1d9f5b06",
+    "review_template.csv": "1859a84f6e58f332485fa2f58700423bd63b92eb7450e03d87a1fa791c68d2ee",
+    "config.json": "2a474139b20bf95d9a43818066c49cfc134cfda6bbb3086349ea2e2d8f32b2a4",
+    "prompts.json": "ee4ac28fb3184a8ff547a10d1d6b50291a93e981635a5808b96b3d4fe91c8388",
+    "puzzle_private.json": "6cadb8e735f6bca2b815412dbd22254c2956284983d9e3df73b2a6f2b7ab4983",
+    "host_context.json": "3c59d8ea4ec6f9adbc8c30d9fb0fd01c9e8f48a93f512c1afe2d77aaa81232a0",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "64c31820443327839ce32e5128053650aacd3becf6b6746e94de79bb5620c17d",
+    "token_costs.csv": "400b08055dcbfe13373281f7b904bb0410fcde288f890b0438d5873cc83d5d80",
+    "cost_summary.json": "9782afe0d12e8a910df9a7d206cb0cef395717daa75574c83b2f92317e98945e",
+    "human_review.csv": "1859a84f6e58f332485fa2f58700423bd63b92eb7450e03d87a1fa791c68d2ee"
+  },
+  "source_run": "runs/api/20261112_set2_v17_context_r3/run/TS034_from_TS012_session_r01",
+  "response_accounting_sequence_sha256": "1e2aace0d3ca65376e743b173a1af982755e5ac06587ba054749b7c19e87dd38",
+  "audit_request_bodies_omitted": true
+}

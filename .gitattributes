@@ -5,3 +5,6 @@ results/20261113_mas_r1r4_progress/** -text whitespace=cr-at-eol,-blank-at-eol,-
 
 # Keep archived analysis CSV line endings intact.
 docs/results/**/*.csv -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+
+# Preserve the original Set2 v17 rollout bytes.
+results/20261113_set2_v17_zhen_qi/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof

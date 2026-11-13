@@ -1,0 +1,121 @@
+[
+  {
+    "source": "TS012",
+    "condition": "answer_only",
+    "n": 5,
+    "scores": [
+      0.65,
+      0.0,
+      0.15,
+      0.6,
+      0.25
+    ],
+    "mean": 0.33,
+    "sample_sd": 0.2841654447676564,
+    "identity_full": 2,
+    "sensitivity_n": 4,
+    "sensitivity_mean": 0.375
+  },
+  {
+    "source": "TS012",
+    "condition": "session",
+    "n": 5,
+    "scores": [
+      0.7,
+      0.7,
+      0.0,
+      0.7,
+      0.7
+    ],
+    "mean": 0.5599999999999999,
+    "sample_sd": 0.31304951684997057,
+    "identity_full": 4,
+    "sensitivity_n": 5,
+    "sensitivity_mean": 0.5599999999999999
+  },
+  {
+    "source": "TS033",
+    "condition": "answer_only",
+    "n": 5,
+    "scores": [
+      0.8,
+      0.7,
+      0.8,
+      0.55,
+      0.475
+    ],
+    "mean": 0.665,
+    "sample_sd": 0.14747881203752627,
+    "identity_full": 4,
+    "sensitivity_n": 4,
+    "sensitivity_mean": 0.63125
+  },
+  {
+    "source": "TS033",
+    "condition": "session",
+    "n": 5,
+    "scores": [
+      0.0,
+      0.1,
+      0.45,
+      0.8,
+      0.0
+    ],
+    "mean": 0.27,
+    "sample_sd": 0.3492849839314596,
+    "identity_full": 2,
+    "sensitivity_n": 5,
+    "sensitivity_mean": 0.27
+  },
+  {
+    "source": "TS035",
+    "condition": "answer_only",
+    "n": 5,
+    "scores": [
+      0.0,
+      0.8,
+      0.0,
+      0.1,
+      0.25
+    ],
+    "mean": 0.23,
+    "sample_sd": 0.33466401061363027,
+    "identity_full": 1,
+    "sensitivity_n": 5,
+    "sensitivity_mean": 0.23
+  },
+  {
+    "source": "TS035",
+    "condition": "session",
+    "n": 5,
+    "scores": [
+      0.0,
+      0.7,
+      0.55,
+      0.1,
+      0.7
+    ],
+    "mean": 0.41,
+    "sample_sd": 0.3361547262794322,
+    "identity_full": 3,
+    "sensitivity_n": 5,
+    "sensitivity_mean": 0.41
+  },
+  {
+    "source": "none",
+    "condition": "direct",
+    "n": 5,
+    "scores": [
+      0.25,
+      0.375,
+      0.8,
+      0.8,
+      0.55
+    ],
+    "mean": 0.555,
+    "sample_sd": 0.24773978283674994,
+    "identity_full": 3,
+    "sensitivity_n": 5,
+    "sensitivity_mean": 0.555
+  }
+]

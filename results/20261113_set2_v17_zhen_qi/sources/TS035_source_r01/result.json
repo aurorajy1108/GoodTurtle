@@ -1,0 +1,263 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 93,
+  "final_attempts": 7,
+  "rejected_finals": 7,
+  "counted_questions": 100,
+  "submissions": 100,
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.625,
+  "best_partial_score": 0.625,
+  "latest_final": "In the newly settled Meiji-era village, the dead were buried—not cremated—in the forest, the same forest where the local brown bears lived and foraged. The father's only daughter had died and was buried there. Bears are wary of unfamiliar living humans and rarely attack them, but a bear had dug up the daughter's grave and was eating her corpse. The father shot it and wept over her remains.\n\nWhat he understood was that this was not an isolated horror. Because the other villagers likewise buried their uncremated dead in the forest, the bears would also dig up their relatives' graves and eat the bodies. The father had just experienced the grief of seeing a relative's corpse eaten, and he feared the other villagers would suffer the same anguish—having their deceased relatives eaten by bears. The fear rests on the shared burial practice in bear country, not on bears attacking the living, disease, revenge, or a curse.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0.5,
+        "evidence": "The father's only daughter had died and was buried there. ... a bear had dug up the daughter's grave and was eating her corpse.",
+        "reason": "Already-dead daughter and buried corpse are covered, but the required epidemic cause is omitted."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "the dead were buried—not cremated—in the forest ... the other villagers likewise buried their uncremated dead in the forest",
+        "reason": "Forest burial and non-cremation are present, but no crematorium and insufficient fuel are not supplied."
+      },
+      {
+        "id": "C3",
+        "credit": 1,
+        "evidence": "a bear had dug up the daughter's grave and was eating her corpse. ... the bears would also dig up their relatives' graves and eat the bodies.",
+        "reason": "Grave exhumation and the father's fear of similar exhumations of other relatives are clearly covered."
+      }
+    ],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "The submission reconstructs the grave-scavenging fear and the shooting, but omits the epidemic that killed the daughter and other villagers, the lack of crematorium and fuel that led to forest burial, and the daily grave visit.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "partial",
+        "evidence": "The father's only daughter had died and was buried there. ... a bear had dug up the daughter's grave and was eating her corpse."
+      },
+      {
+        "id": "C2.F1",
+        "status": "partial",
+        "evidence": "the dead were buried—not cremated—in the forest ... the other villagers likewise buried their uncremated dead in the forest"
+      },
+      {
+        "id": "C3.F1",
+        "status": "covered",
+        "evidence": "a bear had dug up the daughter's grave and was eating her corpse. ... the bears would also dig up their relatives' graves and eat the bodies."
+      }
+    ],
+    "requirement_coverage": [
+      {
+        "id": "R1",
+        "status": "partial",
+        "evidence": "The father's only daughter had died and was buried there. ... the other villagers likewise buried their uncremated dead in the forest"
+      },
+      {
+        "id": "R2",
+        "status": "partial",
+        "evidence": "the dead were buried—not cremated—in the forest ... the other villagers likewise buried their uncremated dead in the forest"
+      },
+      {
+        "id": "R3",
+        "status": "partial",
+        "evidence": "a bear had dug up the daughter's grave and was eating her corpse."
+      },
+      {
+        "id": "R4",
+        "status": "covered",
+        "evidence": "The father shot it and wept over her remains."
+      },
+      {
+        "id": "R5",
+        "status": "covered",
+        "evidence": "the bears would also dig up their relatives' graves and eat the bodies. ... not on bears attacking the living, disease, revenge, or a curse."
+      }
+    ],
+    "contradictions": [],
+    "partial_score": 0.625,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v2",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 1710.7071480929953,
+  "usage": {
+    "grader": {
+      "http_attempts": 9,
+      "successful_responses": 9,
+      "seconds": 173.8800924840034,
+      "provider_reported_usage": {
+        "prompt_tokens": 57241,
+        "completion_tokens": 17923,
+        "total_tokens": 75164,
+        "prompt_cache_hit_tokens": 46976,
+        "prompt_cache_miss_tokens": 10265
+      }
+    },
+    "host": {
+      "http_attempts": 96,
+      "successful_responses": 93,
+      "seconds": 1224.4647517520425,
+      "provider_reported_usage": {
+        "prompt_tokens": 1513561,
+        "completion_tokens": 76154,
+        "total_tokens": 1589715,
+        "prompt_cache_hit_tokens": 1483008,
+        "prompt_cache_miss_tokens": 30553
+      }
+    },
+    "player": {
+      "http_attempts": 101,
+      "successful_responses": 100,
+      "seconds": 303.939570757022,
+      "provider_reported_usage": {
+        "prompt_tokens": 894879,
+        "completion_tokens": 4616,
+        "total_tokens": 899495,
+        "prompt_cache_hit_tokens": 873984,
+        "prompt_cache_miss_tokens": 20895
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "total": {
+      "calls": 206,
+      "unknown_cost_calls": 206,
+      "known_estimated_cost_usd": 0.0,
+      "estimated_cost_usd": null,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 2465681,
+        "cached_input_tokens": 2403968,
+        "cache_write_tokens": 0,
+        "output_tokens": 98693,
+        "reasoning_tokens": 88552,
+        "total_tokens": 2564374
+      },
+      "missing_token_calls": {
+        "input_tokens": 4,
+        "cached_input_tokens": 4,
+        "cache_write_tokens": 0,
+        "output_tokens": 4,
+        "reasoning_tokens": 104,
+        "total_tokens": 4
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 9,
+        "unknown_cost_calls": 9,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 57241,
+          "cached_input_tokens": 46976,
+          "cache_write_tokens": 0,
+          "output_tokens": 17923,
+          "reasoning_tokens": 12598,
+          "total_tokens": 75164
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 96,
+        "unknown_cost_calls": 96,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1513561,
+          "cached_input_tokens": 1483008,
+          "cache_write_tokens": 0,
+          "output_tokens": 76154,
+          "reasoning_tokens": 75954,
+          "total_tokens": 1589715
+        },
+        "missing_token_calls": {
+          "input_tokens": 3,
+          "cached_input_tokens": 3,
+          "cache_write_tokens": 0,
+          "output_tokens": 3,
+          "reasoning_tokens": 3,
+          "total_tokens": 3
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 101,
+        "unknown_cost_calls": 101,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 894879,
+          "cached_input_tokens": 873984,
+          "cache_write_tokens": 0,
+          "output_tokens": 4616,
+          "reasoning_tokens": 0,
+          "total_tokens": 899495
+        },
+        "missing_token_calls": {
+          "input_tokens": 1,
+          "cached_input_tokens": 1,
+          "cache_write_tokens": 0,
+          "output_tokens": 1,
+          "reasoning_tokens": 101,
+          "total_tokens": 1
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "64b6d633-64e8-477a-87a1-605dd08c90b6",
+      "6f68ad31-ae1a-4dbf-99fd-357f1800f45b",
+      "a5d70627-8161-4072-930b-e1c75ca1ffbe"
+    ],
+    "logical_input_chars": 2905399,
+    "delta_input_chars": 160264,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "f83d2aebe4ff29ad7bb173bfbd5cab4151f689941bfa7e56f140c7e2eadd857a",
+    "grading_sha256": "a42f820be88edcb7da6a7d91362a2443219656cae38fe3053cbdf7988aa1bf9a",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "f99f0cbaf293322a5c2f208c86473e5a9aa3cb320962742d84cb53bf12979ae6",
+    "controller_sha256": "fb5d410cb9eede83c5e9cbc9b71b8bee5c9570056dfff64b3908cb5b797cab3e",
+    "player_format_policy_sha256": "fbe0c8e24192584b0d306318bcd4cfa37f899a558d0db9f139e23de30fbc9e19",
+    "host_context_sha256": "1c6b39f76b788575c4083d23fcea56f62a5661196ff3e34469c371578edc5c24",
+    "host_binding_version": "host-v10-ts035-epidemic-boundary-20261108"
+  }
+}

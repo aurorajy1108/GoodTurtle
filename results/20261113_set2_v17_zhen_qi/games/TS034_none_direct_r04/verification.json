@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "scope": "submission/feedback/counters/weighted scores/final answer/cost counters/source answer boundary",
+  "semantic_review": "assistant_selected_cases_only; no blanket human certification",
+  "submissions": 100,
+  "api_attempts": 201,
+  "protocol_interventions": 0,
+  "feedback_count": 100,
+  "auxiliary_successful_format_calls": 0,
+  "source_api_calls_sha256": "f790c636b830b99b78e861b92a3c310a97fbd80aa0c5044debb966112d23e567",
+  "source_files_sha256": {
+    "result.json": "035114992260e8f45ea03e52de9d45c13f1a37c7d0fb4bbb843fceaf797fdf0a",
+    "trajectory.jsonl": "318164593792e9c3c31a45f6e69bfda84dd1e50fbd50769de547ac799da206da",
+    "trajectory.md": "aa136ac13f8ad91dfb1e917a8799a105cee13bc46f8cbe814ea54bec875b98d3",
+    "trajectory.html": "a8c199e5250693e8337a0ac2949f1cb3efb279877dda25da2ae20ed034501f5d",
+    "review_template.csv": "de3f07512b25487fb4b5ceea566917d557db86f1bbd950fd2ece4f8356bbf2e4",
+    "config.json": "2a474139b20bf95d9a43818066c49cfc134cfda6bbb3086349ea2e2d8f32b2a4",
+    "prompts.json": "ee4ac28fb3184a8ff547a10d1d6b50291a93e981635a5808b96b3d4fe91c8388",
+    "puzzle_private.json": "6cadb8e735f6bca2b815412dbd22254c2956284983d9e3df73b2a6f2b7ab4983",
+    "host_context.json": "3c59d8ea4ec6f9adbc8c30d9fb0fd01c9e8f48a93f512c1afe2d77aaa81232a0",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "64c31820443327839ce32e5128053650aacd3becf6b6746e94de79bb5620c17d",
+    "token_costs.csv": "1e04537ea803ff47aa5489df60ec050f37fa86f205021e46ed4b4a559b416aef",
+    "cost_summary.json": "f324aa5feccb7ad854aba756bc676df7e79c72b0691c8783f218029c20cf6b1c",
+    "human_review.csv": "20d3d52f0d320a552d359a114be2994edd2f947aa86c83f9f31416591c2de8dd"
+  },
+  "source_run": "runs/api/20261113_v17_unified_network_recovery/run/TS034_none_direct_r04",
+  "response_accounting_sequence_sha256": "7c328f286042a053264448ddcc509fd6fb5ba139e2c8055159d359333fce0af8",
+  "audit_request_bodies_omitted": true
+}

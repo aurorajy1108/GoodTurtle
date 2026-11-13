@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "scope": "submission/feedback/counters/weighted scores/final answer/cost counters/source answer boundary",
+  "semantic_review": "assistant_selected_cases_only; no blanket human certification",
+  "submissions": 100,
+  "api_attempts": 201,
+  "protocol_interventions": 0,
+  "feedback_count": 100,
+  "auxiliary_successful_format_calls": 0,
+  "source_api_calls_sha256": "caa70cdc71faea94a77273d9ee959552b587ef3917f55b6a9cc1b1fff5cf1846",
+  "source_files_sha256": {
+    "result.json": "cf3351999f60511ee1a30148fcc5a1044d39baf358613df6a06781a21728ed8c",
+    "trajectory.jsonl": "1b5ff058c75e685df78f2fe74c4cd40cd9947512f2735635cad8d5e79213bd44",
+    "trajectory.md": "89ea7b0d4bbfa80ee42d5e847652b3daa37fc63eef51518f26fae90aad6d79a5",
+    "trajectory.html": "acb7d20ebf1eaf646d698872cf70e65eae4a3406cfa378adeeebbedd3cafafae",
+    "review_template.csv": "e3e8450a628ab911c5f6c2e355b154ba6054bae62a5f13bf1f9ce795a03805e1",
+    "config.json": "2a474139b20bf95d9a43818066c49cfc134cfda6bbb3086349ea2e2d8f32b2a4",
+    "prompts.json": "ee4ac28fb3184a8ff547a10d1d6b50291a93e981635a5808b96b3d4fe91c8388",
+    "puzzle_private.json": "6cadb8e735f6bca2b815412dbd22254c2956284983d9e3df73b2a6f2b7ab4983",
+    "host_context.json": "3c59d8ea4ec6f9adbc8c30d9fb0fd01c9e8f48a93f512c1afe2d77aaa81232a0",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "64c31820443327839ce32e5128053650aacd3becf6b6746e94de79bb5620c17d",
+    "token_costs.csv": "f53e9a0caa21ce1798d38aea551554b39dbdab74f0adf89cc92e95493946eedb",
+    "cost_summary.json": "6cf9173ec00de4c59055a5a475b31ff8fcaf56946ea2d6948f27e0f1cc460a42",
+    "prior_experience.json": "0e09929fff1c00e540e935d5cea3c2a62a7b1b0927e40804791d571459e65710",
+    "human_review.csv": "3dbb17e0b901611dc9c4a27b4f95183f6cc754255a0332d4f25e2a37abf280de"
+  },
+  "source_run": "runs/api/20261113_v17_unified_network_recovery/run/TS034_TS035_answer_only_r05",
+  "response_accounting_sequence_sha256": "2cf0542f0636feb4a0c29162c1c514feff1026ea4c1e6b8c1dd76c81423025e7",
+  "audit_request_bodies_omitted": true
+}
