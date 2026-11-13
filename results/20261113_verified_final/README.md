@@ -2,6 +2,8 @@
 
 本批 CL 已完成39/39局：3个固定A前题、36个B实验（3类前题×3个条件×4次重复）。MAS计算预算对照已完成7/8局。只取每批最后一个权威归档，续跑副本不算额外重复。
 
+[详细结果与轨迹分析](analysis.zh-CN.md)包含后续语义检查发现的Host指代和Grader关系限定疑点；原始分数未更改。
+
 **核验范围：** 提交顺序、反馈唯一性、100次额度和强制交卷、分数加权与complete一致性、持久会话链、MAS公开聊天、计算上限和API费用逐项通过离线检查。所有模型Host判断和Grader语义评分仍为**待人工审核**；这份发布不声称人工已经逐条认定正确。
 
 直接打开[index.html](index.html)浏览全部46局HTML轨迹；[runs.csv](runs.csv)和[runs.json](runs.json)提供逐局结果。每局的`verification.json`列出核验范围、原文件及发布文件哈希、已知元数据问题；`review_template.csv`供后续人工复核。`self_review.html`可查看私有自查，MAS另有`shared_dialogue.html`。
