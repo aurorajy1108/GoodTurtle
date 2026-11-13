@@ -74,3 +74,23 @@ bash scripts/run_compute_matched_agents.sh runs/api/YOUR_PRIVATE_NOTE_CONTINUATI
 `private_note_recovery.json`绑定原调用、计划、会话和公共buffer的哈希。若它们对不上则拒绝恢复。恢复事件标记为保留不完整笔记的控制器修复；它不修改历史Host回答、Grader分数、模型或prompt文件，不代表语义疑点已经修复。新后续结果需要带此恢复说明，不混写成一次从未中断的原版本运行。
 
 Host的唯一标签格式与空正文也有受限恢复。[更新、CL续跑和本四组对照的`recover --from-run`命令](host_output_recovery.md)。
+
+## 从每条件2次补到4次，保留已完成结果
+
+```bash
+python3.11 scripts/compute_matched_agents.py extend \
+  --from-run YOUR_COMPLETED_2X2_RUN \
+  --total-repeats 4 \
+  --out runs/api/ts038_r1r4_yourname
+bash scripts/run_compute_matched_agents.sh runs/api/ts038_r1r4_yourname
+```
+
+- `extend`仅校验、复制和安排，不调用模型。`--from-run`必须为全部完成、无活跃worker的四组对照根目录；不得使用未完成、模拟或缺少条件的归档。
+- `--total-repeats`为每条件的**总次数**，默认4，允许2–20且必须大于现有次数。原重复号必须连续且从1开始；四个条件每个重复各有一局。
+- `--out`为尚不存在的新目录，不能位于原归档内。原归档不修改；旧结果、API调用、轨迹、配置及prompt文件逐字校验保留。
+- 原来每条件2次时，只增加重复3、4，共8局；新计划为16局，其中8局已完成。运行器跳过旧局，最多2个worker并行执行新局。
+- 新局使用原冻结模型配置、题目、评分、Host参考包和相同的计算预算；不会向新Player展示旧轨迹或答案。当前已测试的恢复控制器写入独立冻结快照，覆盖文件与哈希记入`extension_manifest.json`，注明新增重复的版本cohort。
+- 四次仍是同一题的探索性重复；原Host指代与Grader语义边界未因增加重复而自动解决。统计中的expected、配对差和完成数根据实际计划计算，不再固定为2次/8局。
+- `index.html`、`performance.json`、`cost_summary.json`覆盖新计划的全部16个唯一局；旧目录和扩展目录不可再次叠加计数或费用。
+
+本机11月13日扩展：CL Set1已达每条件4次，不重跑；TS038四组对照从`20261113_ts038_compute_matched_2x2_v8_private_note`扩展至`runs/api/20261113_ts038_compute_matched_2x2_r1r4`，仅新增四条件的第3、4次。团队其他题目/其他人的执行槽需要各自的实际归档才能确认，不能把未同步的结果算作已完成。

@@ -150,7 +150,7 @@ def dashboard(out):
     for condition in CONDITIONS:
         done=[r for r in rows if r['condition']==condition and r.get('status')=='completed']
         scores=[r['final_partial_score'] for r in done if r.get('final_partial_score') is not None]
-        performance.append({'condition':condition,'completed':len(done),'expected':2,
+        performance.append({'condition':condition,'completed':len(done),'expected':sum(s['condition']==condition for s in plan['jobs']),
             'successes':sum(r['success'] is True for r in done),
             'success_rate':sum(r['success'] is True for r in done)/len(done) if done else None,
             'mean_final_partial_score':statistics.mean(scores) if scores else None,
@@ -158,7 +158,7 @@ def dashboard(out):
             'solver_generations':[r['solver_compute'].get('generations') for r in done],
             'solver_output_tokens':[r['solver_compute'].get('output_tokens') for r in done]})
     contrasts=[]
-    for repeat in (1,2):
+    for repeat in sorted({s['repeat'] for s in plan['jobs']}):
         local={r['condition']:r for r in rows if r['repeat']==repeat and r.get('status')=='completed'}
         for baseline,treatment in [('solo','solo_review'),('mas','mas_review'),('solo_review','mas_review')]:
             if baseline in local and treatment in local and all(local[c].get('final_partial_score') is not None for c in (baseline,treatment)):
@@ -187,7 +187,9 @@ def run(out):
     snap=out/'runtime_snapshot';plan=read(out/'plan.json')
     for name,digest in read(out/'snapshot_hashes.json').items():
         if sha(snap/name)!=digest:raise ValueError('Frozen runtime changed: '+name)
-    state={'status':'running','pid':os.getpid(),'planned_games':8,'completed_games':0,'active':{},'recoveries':{}}
+    state={'status':'running','pid':os.getpid(),'planned_games':len(plan['jobs']),'completed_games':sum(
+        read(out/s['run_dir']/'result.json',{}).get('status')=='completed' for s in plan['jobs']),
+        'active':{},'recoveries':{}}
     pending=[];active={};failed=False
     for spec in plan['jobs']:
         result=read(out/spec['run_dir']/'result.json')
@@ -195,7 +197,7 @@ def run(out):
         if result and not authorize_recovery(out/spec['run_dir']):
             raise ValueError('Unverified stopped game; refusing to resample '+spec['run_dir'])
         pending.append((spec['run_dir'],bool(result)))
-    notify(out,'compute-matched pilot started','Eight TS038 games; two concurrent workers; shared solver caps and isolated role sessions.')
+    notify(out,'compute-matched pilot started',f"{len(plan['jobs'])} TS038 games planned; {len(pending)} remaining; shared solver caps and isolated role sessions.")
     try:
         while pending or active:
             while pending and len(active)<plan['workers']:
@@ -271,27 +273,106 @@ def recover(source,out,renew_read_window=None):
          'policy':'Original archive retained. Completed grades, actor phases, public buffers, quotas, model/prompt/config files and all costs preserved. Checked output-envelope or unobserved transport recovery only.'})
     dump(out/'snapshot_hashes.json',{str(p.relative_to(snap)):sha(p) for p in snap.rglob('*')
                                     if p.is_file() and '__pycache__' not in p.parts})
-    dump(out/'status.json',{'status':'prepared_recovery','planned_games':8,'active':{},'recovered_from':str(source)})
+    dump(out/'status.json',{'status':'prepared_recovery','planned_games':len(read(out/'plan.json')['jobs']),'active':{},'recovered_from':str(source)})
     dashboard(out)
     return stopped
 
 
+def extend(source,out,repeats=4):
+    """Preserve completed repeats and append only missing factorial repetitions."""
+    source,out=Path(source).resolve(),Path(out).resolve()
+    status=read(source/'status.json');old=read(source/'plan.json')
+    if not status or status.get('status')!='completed' or status.get('active'):
+        raise ValueError('Extend only a fully completed, stopped factorial run')
+    if out.exists() or source in out.parents:raise ValueError('Use a new sibling output directory')
+    if type(repeats) is not int or not 2<=repeats<=20:raise ValueError('Total repeats must be 2..20')
+    previous=sorted({s['repeat'] for s in old['jobs']})
+    if previous!=list(range(1,len(previous)+1)) or repeats<=len(previous):
+        raise ValueError('Requested repeat count must exceed contiguous existing repetitions')
+    if old.get('protocol')!='compute-agents-2x2-v1' or set(old['conditions'])!=set(CONDITIONS):
+        raise ValueError('Unexpected original factorial protocol or conditions')
+    if len({s['run_dir'] for s in old['jobs']})!=len(old['jobs']):raise ValueError('Duplicate original run')
+    expected={(i,c) for i in previous for c in CONDITIONS}
+    if {(s['repeat'],s['condition']) for s in old['jobs']}!=expected or len(old['jobs'])!=len(expected):
+        raise ValueError('Incomplete original factorial design')
+    caps={(s['generation_cap'],s['output_token_cap'],s['submission_cap']) for s in old['jobs']}
+    if len(caps)!=1:raise ValueError('Original budgets differ across conditions')
+    for name,h in read(source/'snapshot_hashes.json').items():
+        if sha(source/'runtime_snapshot'/name)!=h:raise ValueError('Original snapshot changed: '+name)
+    preserved={}
+    for spec in old['jobs']:
+        agents,review=CONDITIONS[spec['condition']]
+        if (spec['run_dir']!=f"TS038_r{spec['repeat']:02}_{spec['condition']}"
+                or spec['agents']!=agents or spec['review']!=review):raise ValueError('Original condition metadata differs')
+        game=source/spec['run_dir'];result=read(game/'result.json')
+        if not result or result['status']!='completed' or result.get('simulation') is not False:
+            raise ValueError('Unfinished or simulated original game')
+        preserved[spec['run_dir']]={str(p.relative_to(game)):sha(p) for p in game.rglob('*') if p.is_file()}
+    shutil.copytree(source,out,ignore=shutil.ignore_patterns('__pycache__','*.pyc','runner.lock'))
+    snap=out/'runtime_snapshot';overlay={}
+    # Preserve frozen model/puzzle/prompts/reference packs; update only the tested
+    # controller implementation and explicit incomplete-private-note recovery.
+    for name in ('turtle_loop/engine.py','turtle_loop/providers.py','turtle_loop/sessions.py',
+                 'turtle_loop/host.py','turtle_loop/host_output_recovery.py','turtle_loop/budgeted_agents.py',
+                 'turtle_loop/transport_recovery.py','turtle_loop/private_note_recovery.py',
+                 'scripts/matched_self_review.py','scripts/compute_matched_agents.py'):
+        dest=snap/name;overlay[name]={'before':sha(dest) if dest.exists() else None,'after':sha(ROOT/name)}
+        shutil.copy2(ROOT/name,dest)
+    added=[];generation_cap,output_token_cap,submission_cap=next(iter(caps))
+    for repeat in range(len(previous)+1,repeats+1):
+        for condition,(agents,review) in CONDITIONS.items():
+            added.append({'repeat':repeat,'condition':condition,'agents':agents,'review':review,
+                          'generation_cap':generation_cap,'output_token_cap':output_token_cap,
+                          'submission_cap':submission_cap,'run_dir':f"TS038_r{repeat:02}_{condition}",
+                          'extension_source':str(source),'cohort':'additional_repeats_private_note_recovery_v1'})
+    random.Random(20261113).shuffle(added)
+    plan={**old,'jobs':old['jobs']+added,'repeats':repeats,'planned_games':len(old['jobs'])+len(added),
+          'extended_from':str(source),'preserved_repeat_ids':previous,
+          'new_repeat_ids':list(range(len(previous)+1,repeats+1)),
+          'matching':'Identical available actor-generation/output/public-submission ceilings in every game; actual usage is reported separately.',
+          'limitations':old.get('limitations',[])+['Added repetitions retain original model, prompts and caps; record the controller recovery cohort. One puzzle remains exploratory.']}
+    dump(out/'plan.json',plan);dump(snap/'configs/compute_agents_plan.json',plan)
+    dump(out/'extension_manifest.json',{'source':str(source),'new_games':len(added),'preserved_games':len(old['jobs']),
+          'source_files_sha256':preserved,'controller_overlay':overlay,
+          'policy':'No reruns, source answer exposure or result selection. Frozen role inputs and budgets retained; only new repeat IDs start fresh games.'})
+    dump(out/'snapshot_hashes.json',{str(p.relative_to(snap)):sha(p) for p in snap.rglob('*')
+                                    if p.is_file() and '__pycache__' not in p.parts})
+    dump(out/'status.json',{'status':'prepared_extension','planned_games':len(plan['jobs']),
+                         'completed_games':len(old['jobs']),'active':{}})
+    check=subprocess.run([sys.executable,str(snap/'scripts/compute_matched_agents.py'),'--help'],
+                         cwd=snap,capture_output=True,text=True,timeout=30)
+    if check.returncode:raise ValueError('Extended frozen worker cannot import')
+    dashboard(out)
+    # dashboard regenerates presentation files, but never modifies original
+    # result/API/trajectory/config/prompt records. Keep source hashes for review.
+    for run_dir,files in preserved.items():
+        for name in ('result.json','api_calls.jsonl','trajectory.jsonl','config.json','prompts.json','puzzle_private.json'):
+            if sha(out/run_dir/name)!=files[name]:raise ValueError('Original experiment changed: '+run_dir+'/'+name)
+    return plan
+
+
 def main(argv=None):
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('command',choices=['prepare','run','worker','status','recover'])
+    parser.add_argument('command',choices=['prepare','run','worker','status','recover','extend'])
     parser.add_argument('--out',required=True)
     parser.add_argument('--reference',help='Completed frozen TS038 study used only to derive caps and frozen inputs')
     parser.add_argument('--dataset',help='Fresh dataset JSON containing TS038; defaults to repository turtle50_v5/private.json')
     parser.add_argument('--config',help='Fresh DeepSeek config; defaults to repository loop.deepseek.json')
     parser.add_argument('--game',help='Internal worker run_dir from plan')
     parser.add_argument('--resume',action='store_true')
-    parser.add_argument('--from-run',help='Stopped pilot to clone safely for recover; original directory is retained')
+    parser.add_argument('--from-run',help='recover: stopped pilot; extend: completed pilot. Original directory is retained.')
     parser.add_argument('--renew-read-window',metavar='REASON',help='Operator-only renewal for an exhausted unanswered judging-role read request; one per game, up to three further failures; recover only')
+    parser.add_argument('--total-repeats',type=int,default=4,help='extend: total repetitions per condition, including preserved results; default 4')
     args=parser.parse_args(argv)
     if args.renew_read_window and args.command!='recover':parser.error('--renew-read-window requires recover')
     if args.command=='prepare':
         prepare(args.reference,args.out,args.dataset,args.config);print('Prepared 8 games, no API calls.');return 0
     if args.command=='worker':return worker(args.out,args.game,args.resume)
+    if args.command=='extend':
+        if not args.from_run:parser.error('extend requires --from-run')
+        plan=extend(args.from_run,args.out,args.total_repeats)
+        print(json.dumps({'planned_games':plan['planned_games'],'new_games':len(plan['new_repeat_ids'])*len(CONDITIONS),
+                          'preserved_repeats':plan['preserved_repeat_ids'],'new_repeats':plan['new_repeat_ids']}));return 0
     if args.command=='recover':
         if not args.from_run:parser.error('recover requires --from-run')
         print(json.dumps(recover(args.from_run,args.out,args.renew_read_window)));return 0
