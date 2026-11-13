@@ -1,0 +1,1231 @@
+[
+  {
+    "block": "TS038_r01",
+    "condition": "solo",
+    "puzzle_id": "TS038",
+    "repeat": 1,
+    "run_dir": "TS038_r01_solo",
+    "source": null,
+    "target": "TS038",
+    "group": null,
+    "relation_hypothesis": null,
+    "analysis_role": null,
+    "source_policy": null,
+    "source_run_dir": null,
+    "source_context_sha256": null,
+    "control_source_run_dir": null,
+    "status": "completed",
+    "stop_reason": "budget_exhausted",
+    "simulation": false,
+    "success": false,
+    "host_questions": 98,
+    "final_attempts": 2,
+    "rejected_finals": 2,
+    "counted_questions": 100,
+    "submissions": 100,
+    "pending_feedback": 0,
+    "forced_final": true,
+    "final_partial_score": 0.9,
+    "best_partial_score": 0.9,
+    "latest_final": "The narrator murdered their spouse, then tried to make it seem the spouse had left voluntarily by forging a farewell note reading \"You've disappointed me so much; I'm never coming back.\" To imitate the spouse's handwriting, the narrator rehearsed that line repeatedly, producing seven practice copies. The seven repetitions themselves are the damning evidence: they show the narrator deliberately rehearsing the exact phrase used in the fake note, exposing the forgery and thus the murder. The closing \"Sigh, I know I'm in trouble\" is the narrator realizing that this handwriting practice will reveal what they did.",
+    "latest_grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 1,
+          "evidence": "The narrator murdered their spouse, then tried to make it seem the spouse had left voluntarily by forging a farewell note reading \"You've disappointed me so much; I'm never coming back.\"",
+          "reason": "Covers the murder and staged voluntary departure."
+        },
+        {
+          "id": "C2",
+          "credit": 1,
+          "evidence": "To imitate the spouse's handwriting, the narrator rehearsed that line repeatedly, producing seven practice copies.",
+          "reason": "Identifies the repeated message as handwriting-forgery attempts."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "The closing \"Sigh, I know I'm in trouble\" is the narrator realizing that this handwriting practice will reveal what they did.",
+          "reason": "Identifies fear of being caught, but omits the required cause that he could not successfully imitate her handwriting."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "The submission reconstructs the murder, staged departure note, and repeated handwriting-forgery attempts, but does not state that the attempts failed because he could not imitate the handwriting; it attributes discovery to the practice copies themselves, so R3/C3 are only partial.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "covered",
+          "evidence": "The narrator murdered their spouse, then tried to make it seem the spouse had left voluntarily by forging a farewell note reading \"You've disappointed me so much; I'm never coming back.\""
+        },
+        {
+          "id": "C2.F1",
+          "status": "covered",
+          "evidence": "To imitate the spouse's handwriting, the narrator rehearsed that line repeatedly, producing seven practice copies."
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "The closing \"Sigh, I know I'm in trouble\" is the narrator realizing that this handwriting practice will reveal what they did."
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "covered",
+          "evidence": "The narrator murdered their spouse"
+        },
+        {
+          "id": "R2",
+          "status": "covered",
+          "evidence": "tried to make it seem the spouse had left voluntarily by forging a farewell note"
+        },
+        {
+          "id": "R3",
+          "status": "partial",
+          "evidence": "To imitate the spouse's handwriting, the narrator rehearsed that line repeatedly... realizing that this handwriting practice will reveal what they did."
+        }
+      ],
+      "contradictions": [],
+      "partial_score": 0.9,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "elapsed_seconds": 1970.8594516250305,
+    "usage": {
+      "grader": {
+        "http_attempts": 2,
+        "successful_responses": 2,
+        "seconds": 125.86178366700187,
+        "provider_reported_usage": {
+          "prompt_tokens": 8734,
+          "completion_tokens": 8798,
+          "total_tokens": 17532,
+          "prompt_cache_hit_tokens": 6528,
+          "prompt_cache_miss_tokens": 2206
+        }
+      },
+      "host": {
+        "http_attempts": 98,
+        "successful_responses": 98,
+        "seconds": 1724.1785430398304,
+        "provider_reported_usage": {
+          "prompt_tokens": 1470324,
+          "completion_tokens": 95889,
+          "total_tokens": 1566213,
+          "prompt_cache_hit_tokens": 1443456,
+          "prompt_cache_miss_tokens": 26868
+        }
+      },
+      "player": {
+        "http_attempts": 100,
+        "successful_responses": 100,
+        "seconds": 118.448035673704,
+        "provider_reported_usage": {
+          "prompt_tokens": 692948,
+          "completion_tokens": 2162,
+          "total_tokens": 695110,
+          "prompt_cache_hit_tokens": 673152,
+          "prompt_cache_miss_tokens": 19796
+        }
+      }
+    },
+    "costs": {
+      "schema_version": 1,
+      "currency": "USD",
+      "basis": "standard_api_equivalent_not_actual_bill",
+      "total": {
+        "calls": 200,
+        "unknown_cost_calls": 200,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 2172006,
+          "cached_input_tokens": 2123136,
+          "cache_write_tokens": 0,
+          "output_tokens": 106849,
+          "reasoning_tokens": 103256,
+          "total_tokens": 2278855
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 100,
+          "total_tokens": 0
+        }
+      },
+      "by_role_model": [
+        {
+          "role": "grader",
+          "provider": "deepseek",
+          "model": "deepseek-v4-pro",
+          "calls": 2,
+          "unknown_cost_calls": 2,
+          "known_estimated_cost_usd": 0.0,
+          "estimated_cost_usd": null,
+          "actual_billed_cost_usd": null,
+          "tokens": {
+            "input_tokens": 8734,
+            "cached_input_tokens": 6528,
+            "cache_write_tokens": 0,
+            "output_tokens": 8798,
+            "reasoning_tokens": 7579,
+            "total_tokens": 17532
+          },
+          "missing_token_calls": {
+            "input_tokens": 0,
+            "cached_input_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "total_tokens": 0
+          }
+        },
+        {
+          "role": "host",
+          "provider": "deepseek",
+          "model": "deepseek-v4-pro",
+          "calls": 98,
+          "unknown_cost_calls": 98,
+          "known_estimated_cost_usd": 0.0,
+          "estimated_cost_usd": null,
+          "actual_billed_cost_usd": null,
+          "tokens": {
+            "input_tokens": 1470324,
+            "cached_input_tokens": 1443456,
+            "cache_write_tokens": 0,
+            "output_tokens": 95889,
+            "reasoning_tokens": 95677,
+            "total_tokens": 1566213
+          },
+          "missing_token_calls": {
+            "input_tokens": 0,
+            "cached_input_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "total_tokens": 0
+          }
+        },
+        {
+          "role": "player",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "calls": 100,
+          "unknown_cost_calls": 100,
+          "known_estimated_cost_usd": 0.0,
+          "estimated_cost_usd": null,
+          "actual_billed_cost_usd": null,
+          "tokens": {
+            "input_tokens": 692948,
+            "cached_input_tokens": 673152,
+            "cache_write_tokens": 0,
+            "output_tokens": 2162,
+            "reasoning_tokens": 0,
+            "total_tokens": 695110
+          },
+          "missing_token_calls": {
+            "input_tokens": 0,
+            "cached_input_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 100,
+            "total_tokens": 0
+          }
+        }
+      ]
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "session_transport": {
+      "session_ids": [
+        "7956c6e1-6185-41d9-bb5e-dd0d90b6f4df",
+        "ace2e07c-a61b-458e-859d-c36e5c8029c5",
+        "da2f8d3a-5f20-4746-b5b7-626772726d90"
+      ],
+      "logical_input_chars": 1794875,
+      "delta_input_chars": 118429,
+      "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+    },
+    "evaluation_versions": {
+      "story_sha256": "8f2ddbbd95f8552db795e6101df8e1ec6ac3755b6591d990fc66877d5a4b9d3b",
+      "grading_sha256": "b45687898c96ce287d149e65ef97c3ace0f95ce5ccfd722ce4b2d9d4588abd56",
+      "runtime_context_version": "single-cached-reference-session-v3",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "b430a523d94daea10f9b2661b707fee2c22a1be10b014835490d000d06e0a3bf",
+      "controller_sha256": "4b48007694f5f456f8c67d979005b43aeadbbbd5fda45dca38f534a1c699713f",
+      "player_format_policy_sha256": "fbe0c8e24192584b0d306318bcd4cfa37f899a558d0db9f139e23de30fbc9e19",
+      "host_context_sha256": "6ef204bc1f9c029351d2344d68946fac16ade3855f72f54df450f43d49a6e4e2",
+      "host_binding_version": "host-v9-human-20261102"
+    }
+  },
+  {
+    "block": "TS038_r01",
+    "condition": "free_dialogue",
+    "puzzle_id": "TS038",
+    "repeat": 1,
+    "run_dir": "TS038_r01_free_dialogue",
+    "source": null,
+    "target": "TS038",
+    "group": null,
+    "relation_hypothesis": null,
+    "analysis_role": null,
+    "source_policy": null,
+    "source_run_dir": null,
+    "source_context_sha256": null,
+    "control_source_run_dir": null,
+    "dialogue_roles": "complementary",
+    "dialogue_scheduling": "adaptive",
+    "dialogue_max_discussion": 4,
+    "dialogue_start": "A",
+    "status": "completed",
+    "stop_reason": "budget_exhausted",
+    "simulation": false,
+    "success": false,
+    "host_questions": 99,
+    "final_attempts": 1,
+    "rejected_finals": 1,
+    "counted_questions": 100,
+    "submissions": 100,
+    "pending_feedback": 0,
+    "forced_final": true,
+    "final_partial_score": 0.0,
+    "best_partial_score": 0.0,
+    "latest_final": "A human (the narrator) speaks the sentence \"You've disappointed me so much; I'm never coming back\" aloud to one other human, and it is shown repeated for emphasis rather than as a meaningful count. The person addressed is blameless — they did nothing to deserve the accusation of disappointing the narrator. Saying the line is not itself what creates the impending consequences; the narrator is simultaneously engaged in some separate wrongdoing, and it is that act, not the farewell, that will bring trouble. The narrator knows this: the \"trouble\" is a future, serious (not playful, not mere physical danger) consequence they anticipate. The lament serves as a deflection or self-justifying send-off spoken while the real transgression is underway, and the sigh \"I know I'm in trouble\" acknowledges that the coming reckoning stems from the concealed wrongful act rather than from the words themselves.",
+    "latest_grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0,
+          "evidence": "the narrator is simultaneously engaged in some separate wrongdoing",
+          "reason": "The submission identifies only an unspecified wrongdoing and does not identify the wife's murder or a staged voluntary departure."
+        },
+        {
+          "id": "C2",
+          "credit": 0,
+          "evidence": "A human (the narrator) speaks the sentence ... aloud to one other human, and it is shown repeated for emphasis rather than as a meaningful count.",
+          "reason": "The submission directly contradicts the required fact by describing spoken repetition for emphasis rather than written attempts to forge his wife's handwriting."
+        },
+        {
+          "id": "C3",
+          "credit": 0,
+          "evidence": "the 'trouble' is a future, serious ... consequence they anticipate ... the coming reckoning stems from the concealed wrongful act rather than from the words themselves.",
+          "reason": "The submission has generic anticipation of trouble but does not identify fear of being caught or link it to poor imitation of handwriting, so the half-credit condition is not met."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "The submission reframes the repeated sentence as an aloud farewell for emphasis and identifies only an unspecified concealed wrongdoing. It omits or contradicts the wife's murder, the staged voluntary departure, and the failed forged-handwriting attempts required by the canonical solution.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "C2.F1",
+          "status": "contradicted",
+          "evidence": "A human (the narrator) speaks the sentence ... aloud to one other human, and it is shown repeated for emphasis rather than as a meaningful count."
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "the 'trouble' is a future, serious ... consequence they anticipate ... the coming reckoning stems from the concealed wrongful act rather than from the words themselves."
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "R2",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "R3",
+          "status": "contradicted",
+          "evidence": "A human (the narrator) speaks the sentence ... aloud to one other human, and it is shown repeated for emphasis rather than as a meaningful count."
+        }
+      ],
+      "contradictions": [
+        {
+          "quote": "A human (the narrator) speaks the sentence ... aloud to one other human, and it is shown repeated for emphasis rather than as a meaningful count.",
+          "reference": "The repeated message represents attempts to forge his wife's handwriting; the repetitions are failed attempts to imitate her handwriting.",
+          "checkpoint_ids": [
+            "C2",
+            "C3"
+          ]
+        }
+      ],
+      "partial_score": 0.0,
+      "complete": false,
+      "label": "no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "elapsed_seconds": 1890.7903624169994,
+    "usage": {
+      "grader": {
+        "http_attempts": 1,
+        "successful_responses": 1,
+        "seconds": 41.62135174998548,
+        "provider_reported_usage": {
+          "prompt_tokens": 4014,
+          "completion_tokens": 3858,
+          "total_tokens": 7872,
+          "prompt_cache_hit_tokens": 2688,
+          "prompt_cache_miss_tokens": 1326
+        }
+      },
+      "host": {
+        "http_attempts": 99,
+        "successful_responses": 99,
+        "seconds": 1604.7914761655265,
+        "provider_reported_usage": {
+          "prompt_tokens": 2527749,
+          "completion_tokens": 113195,
+          "total_tokens": 2640944,
+          "prompt_cache_hit_tokens": 2478208,
+          "prompt_cache_miss_tokens": 49541
+        }
+      },
+      "partner": {
+        "http_attempts": 51,
+        "successful_responses": 51,
+        "seconds": 90.13108612364158,
+        "provider_reported_usage": {
+          "prompt_tokens": 962441,
+          "completion_tokens": 5293,
+          "total_tokens": 967734,
+          "prompt_cache_hit_tokens": 930048,
+          "prompt_cache_miss_tokens": 32393
+        }
+      },
+      "player": {
+        "http_attempts": 67,
+        "successful_responses": 67,
+        "seconds": 151.0942392545985,
+        "provider_reported_usage": {
+          "prompt_tokens": 1574635,
+          "completion_tokens": 11959,
+          "total_tokens": 1586594,
+          "prompt_cache_hit_tokens": 1536000,
+          "prompt_cache_miss_tokens": 38635
+        }
+      }
+    },
+    "costs": {
+      "schema_version": 1,
+      "currency": "USD",
+      "basis": "standard_api_equivalent_not_actual_bill",
+      "total": {
+        "calls": 218,
+        "unknown_cost_calls": 218,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 5068839,
+          "cached_input_tokens": 4946944,
+          "cache_write_tokens": 0,
+          "output_tokens": 134305,
+          "reasoning_tokens": 116133,
+          "total_tokens": 5203144
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 118,
+          "total_tokens": 0
+        }
+      },
+      "by_role_model": [
+        {
+          "role": "grader",
+          "provider": "deepseek",
+          "model": "deepseek-v4-pro",
+          "calls": 1,
+          "unknown_cost_calls": 1,
+          "known_estimated_cost_usd": 0.0,
+          "estimated_cost_usd": null,
+          "actual_billed_cost_usd": null,
+          "tokens": {
+            "input_tokens": 4014,
+            "cached_input_tokens": 2688,
+            "cache_write_tokens": 0,
+            "output_tokens": 3858,
+            "reasoning_tokens": 3157,
+            "total_tokens": 7872
+          },
+          "missing_token_calls": {
+            "input_tokens": 0,
+            "cached_input_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "total_tokens": 0
+          }
+        },
+        {
+          "role": "host",
+          "provider": "deepseek",
+          "model": "deepseek-v4-pro",
+          "calls": 99,
+          "unknown_cost_calls": 99,
+          "known_estimated_cost_usd": 0.0,
+          "estimated_cost_usd": null,
+          "actual_billed_cost_usd": null,
+          "tokens": {
+            "input_tokens": 2527749,
+            "cached_input_tokens": 2478208,
+            "cache_write_tokens": 0,
+            "output_tokens": 113195,
+            "reasoning_tokens": 112976,
+            "total_tokens": 2640944
+          },
+          "missing_token_calls": {
+            "input_tokens": 0,
+            "cached_input_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "total_tokens": 0
+          }
+        },
+        {
+          "role": "partner",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "calls": 51,
+          "unknown_cost_calls": 51,
+          "known_estimated_cost_usd": 0.0,
+          "estimated_cost_usd": null,
+          "actual_billed_cost_usd": null,
+          "tokens": {
+            "input_tokens": 962441,
+            "cached_input_tokens": 930048,
+            "cache_write_tokens": 0,
+            "output_tokens": 5293,
+            "reasoning_tokens": 0,
+            "total_tokens": 967734
+          },
+          "missing_token_calls": {
+            "input_tokens": 0,
+            "cached_input_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 51,
+            "total_tokens": 0
+          }
+        },
+        {
+          "role": "player",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "calls": 67,
+          "unknown_cost_calls": 67,
+          "known_estimated_cost_usd": 0.0,
+          "estimated_cost_usd": null,
+          "actual_billed_cost_usd": null,
+          "tokens": {
+            "input_tokens": 1574635,
+            "cached_input_tokens": 1536000,
+            "cache_write_tokens": 0,
+            "output_tokens": 11959,
+            "reasoning_tokens": 0,
+            "total_tokens": 1586594
+          },
+          "missing_token_calls": {
+            "input_tokens": 0,
+            "cached_input_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 67,
+            "total_tokens": 0
+          }
+        }
+      ]
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "session_transport": {
+      "session_ids": [
+        "0c10379f-bc7b-4a5f-852a-75303f1772c7",
+        "148ed861-d088-4f6c-8f42-dd03bb82a2df",
+        "9fccd13c-48de-4d16-9209-cd75e415bd4a",
+        "ce3b2179-561b-45d3-a08f-c175ee18e24f"
+      ],
+      "logical_input_chars": 9207320,
+      "delta_input_chars": 404993,
+      "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+    },
+    "evaluation_versions": {
+      "story_sha256": "8f2ddbbd95f8552db795e6101df8e1ec6ac3755b6591d990fc66877d5a4b9d3b",
+      "grading_sha256": "b45687898c96ce287d149e65ef97c3ace0f95ce5ccfd722ce4b2d9d4588abd56",
+      "runtime_context_version": "single-cached-reference-session-v3",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "cb57efeb8b143125b4358d61e7f4fcafb5f337e2761d6f3c45b91630297040a3",
+      "controller_sha256": "4b48007694f5f456f8c67d979005b43aeadbbbd5fda45dca38f534a1c699713f",
+      "player_format_policy_sha256": "fbe0c8e24192584b0d306318bcd4cfa37f899a558d0db9f139e23de30fbc9e19",
+      "host_context_sha256": "6ef204bc1f9c029351d2344d68946fac16ade3855f72f54df450f43d49a6e4e2",
+      "host_binding_version": "host-v9-human-20261102"
+    },
+    "dialogue_metrics": {
+      "settings": {
+        "roles": "complementary",
+        "scheduling": "adaptive",
+        "max_discussion": 4,
+        "start": "A",
+        "role_assignment": {
+          "A": {
+            "specialty": "investigator",
+            "instruction": "Develop and test explanations of identities, setting, event order and the main causal mechanism. Connect confirmed facts into a coherent story; explicitly distinguish hypotheses from host-confirmed facts."
+          },
+          "B": {
+            "specialty": "critic",
+            "instruction": "Challenge unsupported assumptions, propose alternative interpretations, and test missing causal links, motives and contradictions. Suggest discriminating questions rather than only criticizing. Help complete the story."
+          }
+        },
+        "protocol": "shared-dialogue-v3-prefix-v1",
+        "format_correction_max_retries": 2
+      },
+      "counts_by_actor": {
+        "A": {
+          "question": 50,
+          "discuss": 4,
+          "final": 1
+        },
+        "B": {
+          "question": 49,
+          "discuss": 1
+        }
+      },
+      "external_submissions": 100,
+      "internal_messages": 5
+    }
+  },
+  {
+    "block": "TS038_r02",
+    "condition": "free_dialogue",
+    "puzzle_id": "TS038",
+    "repeat": 2,
+    "run_dir": "TS038_r02_free_dialogue",
+    "source": null,
+    "target": "TS038",
+    "group": null,
+    "relation_hypothesis": null,
+    "analysis_role": null,
+    "source_policy": null,
+    "source_run_dir": null,
+    "source_context_sha256": null,
+    "control_source_run_dir": null,
+    "dialogue_roles": "complementary",
+    "dialogue_scheduling": "adaptive",
+    "dialogue_max_discussion": 4,
+    "dialogue_start": "A",
+    "status": "completed",
+    "stop_reason": "solved",
+    "simulation": false,
+    "success": true,
+    "host_questions": 34,
+    "final_attempts": 2,
+    "rejected_finals": 1,
+    "counted_questions": 35,
+    "submissions": 36,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": 1.0,
+    "best_partial_score": 1.0,
+    "latest_final": "A man has killed his wife/partner. To cover up the death and make it look as though she simply walked out on him, he writes a farewell note in her voice: \"You've disappointed me so much; I'm never coming back.\" Because she is already dead and he must pass the note off as her own writing, he practices that exact sentence repeatedly — the seven identical lines are his successive handwritten drafts as he tries to disguise his handwriting and produce a convincing forgery. The closing line is his own resigned realization: his real handwriting cannot be disguised, so the very note he is practicing will betray him — he knows he is in trouble.",
+    "latest_grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 1,
+          "evidence": "A man has killed his wife/partner. To cover up the death and make it look as though she simply walked out on him",
+          "reason": "Murder of the wife/partner and staging the departure as voluntary are both present."
+        },
+        {
+          "id": "C2",
+          "credit": 1,
+          "evidence": "he practices that exact sentence repeatedly — the seven identical lines are his successive handwritten drafts as he tries to disguise his handwriting and produce a convincing forgery",
+          "reason": "The repeated drafts are explicitly described as attempts to forge a note in her handwriting."
+        },
+        {
+          "id": "C3",
+          "credit": 1,
+          "evidence": "his real handwriting cannot be disguised, so the very note he is practicing will betray him — he knows he is in trouble",
+          "reason": "The inability to disguise/forge the handwriting is directly linked to fear of exposure."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": true,
+      "completion_note": "The submission reconstructs the complete reference narrative: murder, staged departure note, repeated forgery attempts, and fear of discovery from inability to imitate the handwriting.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "covered",
+          "evidence": "A man has killed his wife/partner. To cover up the death and make it look as though she simply walked out on him"
+        },
+        {
+          "id": "C2.F1",
+          "status": "covered",
+          "evidence": "he practices that exact sentence repeatedly — the seven identical lines are his successive handwritten drafts as he tries to disguise his handwriting and produce a convincing forgery"
+        },
+        {
+          "id": "C3.F1",
+          "status": "covered",
+          "evidence": "he tries to disguise his handwriting ... his real handwriting cannot be disguised, so the very note he is practicing will betray him — he knows he is in trouble"
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "covered",
+          "evidence": "A man has killed his wife/partner."
+        },
+        {
+          "id": "R2",
+          "status": "covered",
+          "evidence": "To cover up the death and make it look as though she simply walked out on him, he writes a farewell note in her voice: \"You've disappointed me so much; I'm never coming back.\""
+        },
+        {
+          "id": "R3",
+          "status": "covered",
+          "evidence": "he practices that exact sentence repeatedly — ... as he tries to disguise his handwriting and produce a convincing forgery ... his real handwriting cannot be disguised, so the very note he is practicing will betray him — he knows he is in trouble"
+        }
+      ],
+      "contradictions": [],
+      "partial_score": 1.0,
+      "complete": true,
+      "label": "yes",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "elapsed_seconds": 847.8422043749597,
+    "usage": {
+      "grader": {
+        "http_attempts": 2,
+        "successful_responses": 2,
+        "seconds": 130.2468490829924,
+        "provider_reported_usage": {
+          "prompt_tokens": 8913,
+          "completion_tokens": 12299,
+          "total_tokens": 21212,
+          "prompt_cache_hit_tokens": 6656,
+          "prompt_cache_miss_tokens": 2257
+        }
+      },
+      "host": {
+        "http_attempts": 34,
+        "successful_responses": 34,
+        "seconds": 628.8673703733366,
+        "provider_reported_usage": {
+          "prompt_tokens": 322960,
+          "completion_tokens": 53622,
+          "total_tokens": 376582,
+          "prompt_cache_hit_tokens": 311168,
+          "prompt_cache_miss_tokens": 11792
+        }
+      },
+      "partner": {
+        "http_attempts": 24,
+        "successful_responses": 24,
+        "seconds": 29.72150279174093,
+        "provider_reported_usage": {
+          "prompt_tokens": 180809,
+          "completion_tokens": 1013,
+          "total_tokens": 181822,
+          "prompt_cache_hit_tokens": 167424,
+          "prompt_cache_miss_tokens": 13385
+        }
+      },
+      "player": {
+        "http_attempts": 30,
+        "successful_responses": 30,
+        "seconds": 57.98263366392348,
+        "provider_reported_usage": {
+          "prompt_tokens": 276162,
+          "completion_tokens": 4020,
+          "total_tokens": 280182,
+          "prompt_cache_hit_tokens": 261760,
+          "prompt_cache_miss_tokens": 14402
+        }
+      }
+    },
+    "costs": {
+      "schema_version": 1,
+      "currency": "USD",
+      "basis": "standard_api_equivalent_not_actual_bill",
+      "total": {
+        "calls": 90,
+        "unknown_cost_calls": 90,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 788844,
+          "cached_input_tokens": 747008,
+          "cache_write_tokens": 0,
+          "output_tokens": 70954,
+          "reasoning_tokens": 64486,
+          "total_tokens": 859798
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 54,
+          "total_tokens": 0
+        }
+      },
+      "by_role_model": [
+        {
+          "role": "grader",
+          "provider": "deepseek",
+          "model": "deepseek-v4-pro",
+          "calls": 2,
+          "unknown_cost_calls": 2,
+          "known_estimated_cost_usd": 0.0,
+          "estimated_cost_usd": null,
+          "actual_billed_cost_usd": null,
+          "tokens": {
+            "input_tokens": 8913,
+            "cached_input_tokens": 6656,
+            "cache_write_tokens": 0,
+            "output_tokens": 12299,
+            "reasoning_tokens": 10939,
+            "total_tokens": 21212
+          },
+          "missing_token_calls": {
+            "input_tokens": 0,
+            "cached_input_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "total_tokens": 0
+          }
+        },
+        {
+          "role": "host",
+          "provider": "deepseek",
+          "model": "deepseek-v4-pro",
+          "calls": 34,
+          "unknown_cost_calls": 34,
+          "known_estimated_cost_usd": 0.0,
+          "estimated_cost_usd": null,
+          "actual_billed_cost_usd": null,
+          "tokens": {
+            "input_tokens": 322960,
+            "cached_input_tokens": 311168,
+            "cache_write_tokens": 0,
+            "output_tokens": 53622,
+            "reasoning_tokens": 53547,
+            "total_tokens": 376582
+          },
+          "missing_token_calls": {
+            "input_tokens": 0,
+            "cached_input_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "total_tokens": 0
+          }
+        },
+        {
+          "role": "partner",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "calls": 24,
+          "unknown_cost_calls": 24,
+          "known_estimated_cost_usd": 0.0,
+          "estimated_cost_usd": null,
+          "actual_billed_cost_usd": null,
+          "tokens": {
+            "input_tokens": 180809,
+            "cached_input_tokens": 167424,
+            "cache_write_tokens": 0,
+            "output_tokens": 1013,
+            "reasoning_tokens": 0,
+            "total_tokens": 181822
+          },
+          "missing_token_calls": {
+            "input_tokens": 0,
+            "cached_input_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 24,
+            "total_tokens": 0
+          }
+        },
+        {
+          "role": "player",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "calls": 30,
+          "unknown_cost_calls": 30,
+          "known_estimated_cost_usd": 0.0,
+          "estimated_cost_usd": null,
+          "actual_billed_cost_usd": null,
+          "tokens": {
+            "input_tokens": 276162,
+            "cached_input_tokens": 261760,
+            "cache_write_tokens": 0,
+            "output_tokens": 4020,
+            "reasoning_tokens": 0,
+            "total_tokens": 280182
+          },
+          "missing_token_calls": {
+            "input_tokens": 0,
+            "cached_input_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 30,
+            "total_tokens": 0
+          }
+        }
+      ]
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "session_transport": {
+      "session_ids": [
+        "01b03631-c07a-465c-9fcc-04ad2e2d2f25",
+        "12595558-8b4f-42cc-80a7-46aed7c0d31d",
+        "8b0e27f3-f767-48fa-b351-207b56335b86",
+        "b46245ce-908d-4ace-bcae-3a2096a3da75"
+      ],
+      "logical_input_chars": 1308055,
+      "delta_input_chars": 136553,
+      "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+    },
+    "evaluation_versions": {
+      "story_sha256": "8f2ddbbd95f8552db795e6101df8e1ec6ac3755b6591d990fc66877d5a4b9d3b",
+      "grading_sha256": "b45687898c96ce287d149e65ef97c3ace0f95ce5ccfd722ce4b2d9d4588abd56",
+      "runtime_context_version": "single-cached-reference-session-v3",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "cb57efeb8b143125b4358d61e7f4fcafb5f337e2761d6f3c45b91630297040a3",
+      "controller_sha256": "4b48007694f5f456f8c67d979005b43aeadbbbd5fda45dca38f534a1c699713f",
+      "player_format_policy_sha256": "fbe0c8e24192584b0d306318bcd4cfa37f899a558d0db9f139e23de30fbc9e19",
+      "host_context_sha256": "6ef204bc1f9c029351d2344d68946fac16ade3855f72f54df450f43d49a6e4e2",
+      "host_binding_version": "host-v9-human-20261102"
+    },
+    "dialogue_metrics": {
+      "settings": {
+        "roles": "complementary",
+        "scheduling": "adaptive",
+        "max_discussion": 4,
+        "start": "A",
+        "role_assignment": {
+          "A": {
+            "specialty": "investigator",
+            "instruction": "Develop and test explanations of identities, setting, event order and the main causal mechanism. Connect confirmed facts into a coherent story; explicitly distinguish hypotheses from host-confirmed facts."
+          },
+          "B": {
+            "specialty": "critic",
+            "instruction": "Challenge unsupported assumptions, propose alternative interpretations, and test missing causal links, motives and contradictions. Suggest discriminating questions rather than only criticizing. Help complete the story."
+          }
+        },
+        "protocol": "shared-dialogue-v3-prefix-v1",
+        "format_correction_max_retries": 2
+      },
+      "counts_by_actor": {
+        "A": {
+          "discuss": 18,
+          "question": 11,
+          "final": 1
+        },
+        "B": {
+          "question": 23,
+          "final": 1
+        }
+      },
+      "external_submissions": 36,
+      "internal_messages": 18
+    }
+  },
+  {
+    "block": "TS038_r02",
+    "condition": "solo",
+    "puzzle_id": "TS038",
+    "repeat": 2,
+    "run_dir": "TS038_r02_solo",
+    "source": null,
+    "target": "TS038",
+    "group": null,
+    "relation_hypothesis": null,
+    "analysis_role": null,
+    "source_policy": null,
+    "source_run_dir": null,
+    "source_context_sha256": null,
+    "control_source_run_dir": null,
+    "status": "completed",
+    "stop_reason": "solved",
+    "simulation": false,
+    "success": true,
+    "host_questions": 44,
+    "final_attempts": 1,
+    "rejected_finals": 0,
+    "counted_questions": 44,
+    "submissions": 45,
+    "pending_feedback": 0,
+    "forced_final": false,
+    "final_partial_score": 1.0,
+    "best_partial_score": 1.0,
+    "latest_final": "The killer murdered his wife and then forged a farewell note in her handwriting—\"You've disappointed me so much; I'm never coming back\"—so that her disappearance would look like she had voluntarily walked out on the marriage. To make the forgery convincing, he practiced copying her handwriting by writing the sentence over and over. Looking at the results of his practice, he sighs, \"I know I'm in trouble,\" because the writing is clearly his own rather than hers and would expose the note as a forgery.",
+    "latest_grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 1,
+          "evidence": "The killer murdered his wife and then forged a farewell note in her handwriting... so that her disappearance would look like she had voluntarily walked out on the marriage.",
+          "reason": "The submission clearly states the murder and the staged voluntary departure through a forged note."
+        },
+        {
+          "id": "C2",
+          "credit": 1,
+          "evidence": "To make the forgery convincing, he practiced copying her handwriting by writing the sentence over and over.",
+          "reason": "The repeated message is explicitly explained as practice attempts to forge the wife's handwriting."
+        },
+        {
+          "id": "C3",
+          "credit": 1,
+          "evidence": "the writing is clearly his own rather than hers and would expose the note as a forgery... he sighs, \"I know I'm in trouble\"",
+          "reason": "The submission links his inability to imitate her handwriting to his fear of being caught."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": true,
+      "completion_note": "Complete reference narrative reconstructed.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "covered",
+          "evidence": "The killer murdered his wife and then forged a farewell note in her handwriting—\"You've disappointed me so much; I'm never coming back\"—so that her disappearance would look like she had voluntarily walked out on the marriage."
+        },
+        {
+          "id": "C2.F1",
+          "status": "covered",
+          "evidence": "he practiced copying her handwriting by writing the sentence over and over"
+        },
+        {
+          "id": "C3.F1",
+          "status": "covered",
+          "evidence": "Looking at the results of his practice, he sighs, \"I know I'm in trouble,\" because the writing is clearly his own rather than hers and would expose the note as a forgery."
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "covered",
+          "evidence": "The killer murdered his wife"
+        },
+        {
+          "id": "R2",
+          "status": "covered",
+          "evidence": "forged a farewell note in her handwriting... so that her disappearance would look like she had voluntarily walked out on the marriage"
+        },
+        {
+          "id": "R3",
+          "status": "covered",
+          "evidence": "he practiced copying her handwriting by writing the sentence over and over... the writing is clearly his own rather than hers and would expose the note as a forgery"
+        }
+      ],
+      "contradictions": [],
+      "partial_score": 1.0,
+      "complete": true,
+      "label": "yes",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "elapsed_seconds": 454.7570279999636,
+    "usage": {
+      "grader": {
+        "http_attempts": 2,
+        "successful_responses": 2,
+        "seconds": 14.048996167024598,
+        "provider_reported_usage": {
+          "prompt_tokens": 4732,
+          "completion_tokens": 1588,
+          "total_tokens": 6320,
+          "prompt_cache_hit_tokens": 3072,
+          "prompt_cache_miss_tokens": 1660
+        }
+      },
+      "host": {
+        "http_attempts": 44,
+        "successful_responses": 44,
+        "seconds": 392.629586335388,
+        "provider_reported_usage": {
+          "prompt_tokens": 426399,
+          "completion_tokens": 31112,
+          "total_tokens": 457511,
+          "prompt_cache_hit_tokens": 412288,
+          "prompt_cache_miss_tokens": 14111
+        }
+      },
+      "player": {
+        "http_attempts": 45,
+        "successful_responses": 45,
+        "seconds": 47.25778033176903,
+        "provider_reported_usage": {
+          "prompt_tokens": 177846,
+          "completion_tokens": 1146,
+          "total_tokens": 178992,
+          "prompt_cache_hit_tokens": 168576,
+          "prompt_cache_miss_tokens": 9270
+        }
+      }
+    },
+    "costs": {
+      "schema_version": 1,
+      "currency": "USD",
+      "basis": "standard_api_equivalent_not_actual_bill",
+      "total": {
+        "calls": 91,
+        "unknown_cost_calls": 91,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 608977,
+          "cached_input_tokens": 583936,
+          "cache_write_tokens": 0,
+          "output_tokens": 33846,
+          "reasoning_tokens": 31965,
+          "total_tokens": 642823
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 45,
+          "total_tokens": 0
+        }
+      },
+      "by_role_model": [
+        {
+          "role": "grader",
+          "provider": "deepseek",
+          "model": "deepseek-v4-pro",
+          "calls": 2,
+          "unknown_cost_calls": 2,
+          "known_estimated_cost_usd": 0.0,
+          "estimated_cost_usd": null,
+          "actual_billed_cost_usd": null,
+          "tokens": {
+            "input_tokens": 4732,
+            "cached_input_tokens": 3072,
+            "cache_write_tokens": 0,
+            "output_tokens": 1588,
+            "reasoning_tokens": 946,
+            "total_tokens": 6320
+          },
+          "missing_token_calls": {
+            "input_tokens": 0,
+            "cached_input_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "total_tokens": 0
+          }
+        },
+        {
+          "role": "host",
+          "provider": "deepseek",
+          "model": "deepseek-v4-pro",
+          "calls": 44,
+          "unknown_cost_calls": 44,
+          "known_estimated_cost_usd": 0.0,
+          "estimated_cost_usd": null,
+          "actual_billed_cost_usd": null,
+          "tokens": {
+            "input_tokens": 426399,
+            "cached_input_tokens": 412288,
+            "cache_write_tokens": 0,
+            "output_tokens": 31112,
+            "reasoning_tokens": 31019,
+            "total_tokens": 457511
+          },
+          "missing_token_calls": {
+            "input_tokens": 0,
+            "cached_input_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 0,
+            "total_tokens": 0
+          }
+        },
+        {
+          "role": "player",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "calls": 45,
+          "unknown_cost_calls": 45,
+          "known_estimated_cost_usd": 0.0,
+          "estimated_cost_usd": null,
+          "actual_billed_cost_usd": null,
+          "tokens": {
+            "input_tokens": 177846,
+            "cached_input_tokens": 168576,
+            "cache_write_tokens": 0,
+            "output_tokens": 1146,
+            "reasoning_tokens": 0,
+            "total_tokens": 178992
+          },
+          "missing_token_calls": {
+            "input_tokens": 0,
+            "cached_input_tokens": 0,
+            "cache_write_tokens": 0,
+            "output_tokens": 0,
+            "reasoning_tokens": 45,
+            "total_tokens": 0
+          }
+        }
+      ]
+    },
+    "error": null,
+    "human_review_status": "pending",
+    "session_transport": {
+      "session_ids": [
+        "2761b89c-52bc-4548-bb5f-49f327fde5c9",
+        "7467a728-88e9-4346-bfe0-07a68f4c677e",
+        "9f44b9e9-4d58-45a7-9a12-40eebb311836"
+      ],
+      "logical_input_chars": 523748,
+      "delta_input_chars": 67593,
+      "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+    },
+    "evaluation_versions": {
+      "story_sha256": "8f2ddbbd95f8552db795e6101df8e1ec6ac3755b6591d990fc66877d5a4b9d3b",
+      "grading_sha256": "b45687898c96ce287d149e65ef97c3ace0f95ce5ccfd722ce4b2d9d4588abd56",
+      "runtime_context_version": "single-cached-reference-session-v3",
+      "grading_protocol": "coverage-v2",
+      "prompts_sha256": "b430a523d94daea10f9b2661b707fee2c22a1be10b014835490d000d06e0a3bf",
+      "controller_sha256": "4b48007694f5f456f8c67d979005b43aeadbbbd5fda45dca38f534a1c699713f",
+      "player_format_policy_sha256": "fbe0c8e24192584b0d306318bcd4cfa37f899a558d0db9f139e23de30fbc9e19",
+      "host_context_sha256": "6ef204bc1f9c029351d2344d68946fac16ade3855f72f54df450f43d49a6e4e2",
+      "host_binding_version": "host-v9-human-20261102"
+    }
+  }
+]

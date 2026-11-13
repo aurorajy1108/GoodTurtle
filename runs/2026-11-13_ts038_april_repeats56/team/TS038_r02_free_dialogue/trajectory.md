@@ -1,0 +1,371 @@
+# Turtle Soup trajectory
+
+"You've disappointed me so much; I'm never coming back." "You've disappointed me so much; I'm never coming back." "You've disappointed me so much; I'm never coming back." "You've disappointed me so much; I'm never coming back." "You've disappointed me so much; I'm never coming back." "You've disappointed me so much; I'm never coming back." "You've disappointed me so much; I'm never coming back."
+
+Sigh, I know I'm in trouble.
+
+Status: completed | counted questions: 35 | submissions: 36 | final partial score: 1.0
+
+[Token usage and estimated costs](token_costs.csv)
+
+## 1 · question
+
+Is a non-human animal or a recording/device the source of the repeated sentence?
+
+Host: no
+
+## 2 · question
+
+Is the repeated line spoken by a human being (or humans), not a machine or animal?
+
+Host: yes
+
+## 3 · question
+
+Is the repeated sentence being read or recited from something — a book, script, letter, or written text — rather than spoken spontaneously to a person?
+
+Host: yes
+
+## 4 · question
+
+Were the seven repetitions said by seven different people, one each?
+
+Host: no
+
+## 5 · question
+
+Was it one person repeating the line seven times, as in rehearsal or practice?
+
+Host: yes
+
+## 6 · question
+
+Is the person rehearsing or practicing in order to deceive someone — for example, memorizing a false statement or a scripted line to deliver convincingly?
+
+Host: yes
+
+## 7 · question
+
+Is the speaker practicing this line so they can deliver it convincingly on a specific occasion — like a performance, interview, confession, or public statement — rather than just studying or memorizing for its own sake?
+
+Host: no
+
+## 8 · question
+
+Is the deception about making the words appear to come from somewhere other than the speaker — e.g., a spirit, the dead, telepathy, or another entity?
+
+Host: yes
+
+## 9 · question
+
+Is the speaker pretending to be a medium communicating with the dead — repeating messages supposedly from spirits — when in fact they are just reciting a line they prepared themselves?
+
+Host: no
+
+## 10 · question
+
+Is the deceiver pretending the repeated words are messages from a supernatural or non-human source, while actually being the human who wrote/prepared them — is this an "alien/entity channeling" or similar hoax rather than a medium contacting the dead?
+
+Host: no
+
+## 11 · question
+
+Is the deceiver making the words appear to be spoken by a specific other living person (impersonation), rather than by a spirit, alien, or god?
+
+Host: yes
+
+## 12 · question
+
+Is the person rehearsing the repeated line in order to fool a listener into thinking those words were spoken by a particular other living person — as in practicing someone else's voice/words to impersonate them?
+
+Host: no
+
+## 13 · question
+
+Is the deception that the repeated words are being attributed to a real, specific living person who did not actually say/write them — i.e., a fabricated quote or plagiarism rather than voice impersonation?
+
+Host: yes
+
+## 14 · question
+
+Is the person rehearsing the fabricated quote so they can recite it aloud as though quoting the real person — for example, reading a fake quotation out loud in a speech, broadcast, or interview?
+
+Host: no
+
+## 15 · question
+
+Is the person rehearsing the fabricated quote privately in order to practice speaking it convincingly — but without a planned audience event — so the seven repetitions are just practice aloud?
+
+Host: no
+
+## 16 · question
+
+Is the person repeatedly writing the fabricated quote (e.g., forging a signature, practicing a fake handwritten note, or testifying by repeating it in writing) rather than speaking it aloud for an audience?
+
+Host: yes
+
+## 17 · question
+
+Is the person forging the real living person's handwriting/signature on a document — i.e., the repeated words are being written out as a fake handwritten note or signature attributed to that person?
+
+Host: no
+
+## 18 · question
+
+Is the person a journalist or writer fabricating a quotation attributed to a real living person, for inclusion in an article, book, or other published text?
+
+Host: no
+
+## 19 · question
+
+Is the person writing the fabricated quote as part of a school assignment or test — e.g., copying a fake quote as if it were a real source in an essay or exam answer?
+
+Host: no
+
+## 20 · question
+
+Is the words "You've disappointed me so much; I'm never coming back" being written repeatedly as a customer complaint/letter or in a review — i.e., the writer is composing a message that will be attributed to a real other person?
+
+Host: yes and no
+
+## 21 · question
+
+Is the person trying to create evidence/impression that the real living person actually said or wrote these words — i.e., faking proof of a statement — rather than merely quoting or referring to them?
+
+Host: yes
+
+## 22 · question
+
+Is the fabricated statement being written in the form of a note or message left by that real living person — e.g., a note that appears to be from them saying they are leaving/never coming back?
+
+Host: yes
+
+## 23 · question
+
+Is the deceiver writing this fake "I'm never coming back" note in order to make people believe the real person has run away or abandoned them — i.e., to explain that person's disappearance — when in fact the deceiver has harmed or killed that person?
+
+Host: yes
+
+## 24 · question
+
+Was the real person (whose note is being faked) the deceiver's spouse or romantic partner?
+
+Host: yes
+
+## 25 · question
+
+Is the final line "Sigh, I know I'm in trouble" spoken by the person who killed their partner — i.e., the murderer acknowledging they've been caught or will be caught?
+
+Host: yes and no
+
+## 26 · question
+
+Does this story originate from a well-known real criminal case or famous fictional detective plot (rather than being a made-up scenario)?
+
+Host: irrelevant
+
+## 27 · question
+
+Is the killer eventually caught or exposed?
+
+Host: irrelevant
+
+## 28 · question
+
+Are the seven identical lines separate practice drafts of the forged note, written repeatedly by the killer to perfect it before composing the final note?
+
+Host: yes
+
+## 29 · question
+
+Were these practice drafts on paper later found/discarded in a way that betrayed the killer — i.e., is the discovery of the repeated practice writings what exposes the forged note?
+
+Host: irrelevant
+
+## 30 · question
+
+Was the partner already dead at the time the seven practice drafts were written?
+
+Host: yes
+
+## 31 · final
+
+A person has killed their spouse/partner. To cover up the death and make it appear the partner simply walked out on them, the killer forges a farewell note in the partner's voice: "You've disappointed me so much; I'm never coming back." Because the partner is already dead and will no longer write anything, the killer repeatedly practices that exact sentence — the seven identical repetitions are successive drafts written to perfect the handwriting/forgery of the note — before producing the final version to pass off as the missing partner's own words. The closing line, "Sigh, I know I'm in trouble," is the killer's own grim acknowledgment of guilt and impending exposure as they rehearse the fabricated note.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "A person has killed their spouse/partner. To cover up the death and make it appear the partner simply walked out on them",
+      "reason": "Murder and staged voluntary departure are present, but the required identity of wife is generalized to spouse/partner."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "the killer repeatedly practices that exact sentence — the seven identical repetitions are successive drafts written to perfect the handwriting/forgery of the note",
+      "reason": "Repeated forgery/handwriting attempts are identified, but wife-specific identity is not specified."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "The closing line ... is the killer's own grim acknowledgment of guilt and impending exposure as they rehearse the fabricated note",
+      "reason": "Fear of exposure is present, but the required cause—inability to imitate her handwriting—is not stated."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Recovered murder and forged departure note, but omitted the wife identity and did not state that the repetitions were failed attempts caused by inability to imitate her handwriting.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "A person has killed their spouse/partner. To cover up the death and make it appear the partner simply walked out on them"
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "the killer repeatedly practices that exact sentence — the seven identical repetitions are successive drafts written to perfect the handwriting/forgery of the note"
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "the killer repeatedly practices that exact sentence — ... to perfect the handwriting/forgery of the note ... The closing line ... is the killer's own grim acknowledgment of guilt and impending exposure as they rehearse the fabricated note"
+    }
+  ],
+  "requirement_coverage": [
+    {
+      "id": "R1",
+      "status": "partial",
+      "evidence": "A person has killed their spouse/partner."
+    },
+    {
+      "id": "R2",
+      "status": "covered",
+      "evidence": "To cover up the death and make it appear the partner simply walked out on them, the killer forges a farewell note in the partner's voice: \"You've disappointed me so much; I'm never coming back.\""
+    },
+    {
+      "id": "R3",
+      "status": "partial",
+      "evidence": "the killer repeatedly practices that exact sentence — ... to perfect the handwriting/forgery of the note ... The closing line ... is the killer's own grim acknowledgment of guilt and impending exposure as they rehearse the fabricated note"
+    }
+  ],
+  "contradictions": [],
+  "partial_score": 0.5,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v2",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 32 · question
+
+Is the repeated practice writing done by typing on a keyboard or typewriter — i.e., a typed/printed note that won't be matched to the partner's handwriting — rather than by hand?
+
+Host: no
+
+## 33 · question
+
+Is the final line spoken not by the killer but by the person the note is addressed to — the one being "disappointed" and abandoned — realizing their situation?
+
+Host: no
+
+## 34 · question
+
+Is the "trouble" the killer refers to about the forgery being detectable — e.g., that the handwriting won't convincingly match the dead partner's?
+
+Host: yes
+
+## 35 · question
+
+Is it the killer's own handwriting — i.e., they cannot disguise it — so writing the note is itself evidence, making them recognize they are "in trouble"?
+
+Host: yes
+
+## 36 · final
+
+A man has killed his wife/partner. To cover up the death and make it look as though she simply walked out on him, he writes a farewell note in her voice: "You've disappointed me so much; I'm never coming back." Because she is already dead and he must pass the note off as her own writing, he practices that exact sentence repeatedly — the seven identical lines are his successive handwritten drafts as he tries to disguise his handwriting and produce a convincing forgery. The closing line is his own resigned realization: his real handwriting cannot be disguised, so the very note he is practicing will betray him — he knows he is in trouble.
+
+Host: yes
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 1,
+      "evidence": "A man has killed his wife/partner. To cover up the death and make it look as though she simply walked out on him",
+      "reason": "Murder of the wife/partner and staging the departure as voluntary are both present."
+    },
+    {
+      "id": "C2",
+      "credit": 1,
+      "evidence": "he practices that exact sentence repeatedly — the seven identical lines are his successive handwritten drafts as he tries to disguise his handwriting and produce a convincing forgery",
+      "reason": "The repeated drafts are explicitly described as attempts to forge a note in her handwriting."
+    },
+    {
+      "id": "C3",
+      "credit": 1,
+      "evidence": "his real handwriting cannot be disguised, so the very note he is practicing will betray him — he knows he is in trouble",
+      "reason": "The inability to disguise/forge the handwriting is directly linked to fear of exposure."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": true,
+  "completion_note": "The submission reconstructs the complete reference narrative: murder, staged departure note, repeated forgery attempts, and fear of discovery from inability to imitate the handwriting.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "covered",
+      "evidence": "A man has killed his wife/partner. To cover up the death and make it look as though she simply walked out on him"
+    },
+    {
+      "id": "C2.F1",
+      "status": "covered",
+      "evidence": "he practices that exact sentence repeatedly — the seven identical lines are his successive handwritten drafts as he tries to disguise his handwriting and produce a convincing forgery"
+    },
+    {
+      "id": "C3.F1",
+      "status": "covered",
+      "evidence": "he tries to disguise his handwriting ... his real handwriting cannot be disguised, so the very note he is practicing will betray him — he knows he is in trouble"
+    }
+  ],
+  "requirement_coverage": [
+    {
+      "id": "R1",
+      "status": "covered",
+      "evidence": "A man has killed his wife/partner."
+    },
+    {
+      "id": "R2",
+      "status": "covered",
+      "evidence": "To cover up the death and make it look as though she simply walked out on him, he writes a farewell note in her voice: \"You've disappointed me so much; I'm never coming back.\""
+    },
+    {
+      "id": "R3",
+      "status": "covered",
+      "evidence": "he practices that exact sentence repeatedly — ... as he tries to disguise his handwriting and produce a convincing forgery ... his real handwriting cannot be disguised, so the very note he is practicing will betray him — he knows he is in trouble"
+    }
+  ],
+  "contradictions": [],
+  "partial_score": 1.0,
+  "complete": true,
+  "label": "yes",
+  "grading_protocol": "coverage-v2",
+  "controller_corrections": []
+}
+```
+</details>

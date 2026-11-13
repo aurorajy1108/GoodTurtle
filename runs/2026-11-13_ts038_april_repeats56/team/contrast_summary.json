@@ -1,0 +1,30 @@
+{
+  "team/free_dialogue": {
+    "planned_pairs": 2,
+    "valid_pairs": 2,
+    "score_gain": {
+      "n": 2,
+      "mean": -0.45,
+      "population_variance": 0.2025,
+      "sample_variance": 0.405
+    },
+    "success_gain": {
+      "n": 2,
+      "mean": 0,
+      "population_variance": 0,
+      "sample_variance": 0
+    },
+    "question_saving_both_solved": {
+      "n": 1,
+      "mean": 9,
+      "population_variance": 0,
+      "sample_variance": null
+    },
+    "consumption_difference": {
+      "n": 2,
+      "mean": -4.5,
+      "population_variance": 20.25,
+      "sample_variance": 40.5
+    }
+  }
+}
