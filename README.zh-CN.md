@@ -22,6 +22,8 @@ bash scripts/run_compute_matched_agents.sh runs/api/ts038_review_yourname_01
 
 **MAS补至四次重复：** [最新已完成结果快照10/16局](results/20261113_mas_r1r4_progress/README.md)，可直接打开[HTML轨迹](results/20261113_mas_r1r4_progress/index.html)。本次新增单agent第4次（0%，100次提交）、MAS自查第3次（75%，81次提交）；未完成局单列，不进入成绩均值，旧局通过链接引用而非重复加总。
 
+**组友远端结果分析：** [Set2两轮＋April的TS038正式实验](docs/results/teammates_20261113/analysis.zh-CN.md)，固定main提交`6afda1c`核验28个唯一完成局。归档使用coverage-v2，Host、格式辅助模型和计算预算与本分支不同，当前应分组报告而非直接合并。
+
 **真实API测试修复：** [TS015方向判定、MAS首行契约、保存动作续跑、实时计数和DeepSeek费用](docs/live_test_repairs_20261111.md)。实测仍在进行，未宣称整批已通过。
 
 **团队运行：** [三组CL+三道MAS，两人各两次的一键脚本](docs/team_campaign_20261111.md)：6局小量测试、个人批跑、限并发全员150局与去重汇总。

@@ -1,0 +1,128 @@
+{
+  "remote_ref": "6afda1c1411542413cce848b4b862a7a9013ff6e",
+  "remote_branch": "origin/main",
+  "completed_unique_games": 28,
+  "set2": [
+    {
+      "round": 1,
+      "host": "host-v12-ts034-fear-boundary-20261109",
+      "target_games": 9,
+      "source_games": 3,
+      "scores_by_source": {
+        "TS035": {
+          "direct": 1.0,
+          "answer_only": 0.85,
+          "session": 0.25
+        },
+        "TS033": {
+          "direct": 0.85,
+          "answer_only": 0.1,
+          "session": 0.15
+        },
+        "TS012": {
+          "direct": 0.85,
+          "answer_only": 0.25,
+          "session": 0.25
+        }
+      },
+      "condition_means": {
+        "direct": 0.9,
+        "answer_only": 0.4,
+        "session": 0.21666666666666667
+      },
+      "target_successes_as_recorded": 0
+    },
+    {
+      "round": 2,
+      "host": "host-v13-ts034-user-accepted-20261111",
+      "target_games": 9,
+      "source_games": 3,
+      "scores_by_source": {
+        "TS035": {
+          "direct": 0.85,
+          "answer_only": 0.85,
+          "session": 0.0
+        },
+        "TS033": {
+          "direct": 0.25,
+          "answer_only": 1.0,
+          "session": 0.85
+        },
+        "TS012": {
+          "direct": 0.4,
+          "answer_only": 0.45,
+          "session": 0.85
+        }
+      },
+      "condition_means": {
+        "direct": 0.5,
+        "answer_only": 0.7666666666666666,
+        "session": 0.5666666666666667
+      },
+      "target_successes_as_recorded": 0
+    }
+  ],
+  "april": {
+    "solo": {
+      "n": 2,
+      "successes": 1,
+      "mean_score": 0.8,
+      "mean_submissions": 93.5
+    },
+    "free_dialogue": {
+      "n": 2,
+      "successes": 1,
+      "mean_score": 0.75,
+      "mean_submissions": 78.5
+    }
+  },
+  "source_prefix_checks": [
+    {
+      "round": 1,
+      "source": "TS033",
+      "source_context_sha256": "a96d614a6ab74d92b7757074aa5ec69cc07632eefe5d4073134b3404d22abe77",
+      "reveals_full_host_answer": true,
+      "fresh_B_quota": 100
+    },
+    {
+      "round": 1,
+      "source": "TS012",
+      "source_context_sha256": "51834548e346d8fe1a098d204c1dc8e21b674d842ef323f926b8df89e301e26b",
+      "reveals_full_host_answer": true,
+      "fresh_B_quota": 100
+    },
+    {
+      "round": 1,
+      "source": "TS035",
+      "source_context_sha256": "6607c716a432a2e56bc96da420cca0507f9af9d499315e37b9cca98a1656c1b5",
+      "reveals_full_host_answer": true,
+      "fresh_B_quota": 100
+    },
+    {
+      "round": 2,
+      "source": "TS012",
+      "source_context_sha256": "21acc0550a35a87482e742e07759ec656876a7db6b38ca71c3128285de8662b6",
+      "reveals_full_host_answer": true,
+      "fresh_B_quota": 100
+    },
+    {
+      "round": 2,
+      "source": "TS033",
+      "source_context_sha256": "8eb6f76bb8de90e010343d4068130299a755f888e079e87aa8ff884de2764c20",
+      "reveals_full_host_answer": true,
+      "fresh_B_quota": 100
+    },
+    {
+      "round": 2,
+      "source": "TS035",
+      "source_context_sha256": "b56ec4bf71ba89aa12640cd69e519fc97a94c9ee9b97ed7607354d7c1b9674bc",
+      "reveals_full_host_answer": true,
+      "fresh_B_quota": 100
+    }
+  ],
+  "caution": "Do not pool Host/protocol versions; partial score 1 does not mean complete under archived coverage-v2.",
+  "auxiliary_gpt61_format_calls": {
+    "set2_round1": 6,
+    "set2_round2": 1
+  }
+}

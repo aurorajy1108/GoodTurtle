@@ -26,6 +26,8 @@ Open the output's `index.html` for trajectories, shared dialogue, private review
 
 **Four-repeat MAS extension:** [Latest completed-results snapshot: 10/16 games](results/20261113_mas_r1r4_progress/README.md), with [HTML trajectories](results/20261113_mas_r1r4_progress/index.html). Newly published: solo repeat 4 (0%, 100 submissions) and MAS-review repeat 3 (75%, 81 submissions). Unfinished games are listed separately and excluded from outcome means; prior completed results are linked without duplication.
 
+**Teammate result review:** [Two Set2 rounds and April's formal TS038 runs](docs/results/teammates_20261113/analysis.zh-CN.md), covering 28 unique completed games from pinned main commit `6afda1c`. Archived coverage-v2 scoring, Host versions, auxiliary formatter models and solver budgets differ from this branch; report the cohorts separately.
+
 English | [中文](README.zh-CN.md)
 
 ## Current team quickstart
