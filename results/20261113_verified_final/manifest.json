@@ -1,0 +1,24 @@
+{
+  "created_hong_kong": "2026-11-13T10:35:06+08:00",
+  "cl_source_archive": "runs/api/20261112_set1_fixed_prefix_r1r4_v2_supervised_v5/continuations/cl-set1-fixed-prefix-r1r4/attempt_02",
+  "mas_source_archive": "runs/api/20261112_ts038_compute_matched_2x2_v7_read_window",
+  "included_games": 46,
+  "cl_completed": 39,
+  "mas_completed": 7,
+  "excluded": [
+    {
+      "suite": "mas",
+      "run_dir": "TS038_r01_mas_review",
+      "status": "error",
+      "submissions": 79,
+      "reason": "player: invalid/empty/truncated provider response",
+      "result_sha256": "34b86354f1ccb6ad893b58f6475d9796bd0f6ce1404367d5f96cdb3b46b3f185",
+      "api_calls_sha256": "4f4c61b1665864da4e2a70988106393c25513b39b98a224d9a71902759903041",
+      "included_in_outcome_statistics": false
+    }
+  ],
+  "scope": "Structural verification only. Host/Grader semantics remain pending human review.",
+  "raw_api_policy": "Complete original API logs and repeated request bodies stay in local source archives. api_audit.jsonl.gz retains every response, usage, error and exact request SHA256, not reconstructable request bodies.",
+  "cost_scope": "Included completed games only; excludes incomplete MAS cost and Host gate cost. Failed attempts within completed games are included. Unknown costs remain unknown. Do not add recovery copies.",
+  "inputs_policy": "Per-game frozen config, prompts, puzzle rubric and grading requirements are included; protocol snapshots are fingerprinted, not bundled."
+}

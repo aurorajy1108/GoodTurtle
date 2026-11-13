@@ -22,7 +22,7 @@ Choose a new output directory. This prepares a frozen snapshot and runs `solo`, 
 
 Open the output's `index.html` for trajectories, shared dialogue, private reviews, performance and token costs. [Every parameter, optional historical-reference mode and recovery behavior](docs/compute_matched_agents.md).
 
-**CL result snapshot:** [Set1 paired analysis and limitations](docs/results/cl_set1_20261112/interpretation.zh-CN.md). The four-repeat extension is still running; incomplete cases are not treated as zero or counted as finished.
+**Published results (13 November):** [Completed CL Set1 four-repeat results and seven completed MAS games](results/20261113_verified_final/README.md), with an [HTML trajectory index](results/20261113_verified_final/index.html). All 39 CL games finished; MAS is 7/8 with the truncated self-review run excluded. Structural, session and accounting checks passed; Host/Grader semantics remain pending human review. The [earlier interim snapshot](docs/results/cl_set1_20261112/interpretation.zh-CN.md) is retained as history.
 
 English | [中文](README.zh-CN.md)
 
