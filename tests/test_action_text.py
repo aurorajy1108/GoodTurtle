@@ -77,6 +77,21 @@ class PrefixTests(unittest.TestCase):
                           '{"type":"question","text":"A?"}?QUESTION\nB?'):
             with self.subTest(raw=ambiguous),self.assertRaises(ProtocolError):
                 parse_action(ambiguous)
+    def test_unique_inline_action_and_preamble_recover_verbatim_without_model(self):
+        from turtle_loop.engine import parse_player_json
+        from turtle_loop.player_format import is_untyped_prose, verbatim_proof
+        for raw in ('QUESTION Is this written?',
+                    'Thoughts remain hypothetical.\nQUESTION Is this written?',
+                    'Thoughts.\nFINAL: Keep this exact explanation.\nAnd this qualifier.'):
+            action, meta = parse_player_json(raw)
+            self.assertEqual(action['text'], raw[meta['text_span'][0]:meta['text_span'][1]])
+            self.assertTrue(verbatim_proof(raw, action))
+            self.assertFalse(is_untyped_prose(raw))
+        action, _ = parse_player_json('Notes.\nQUESTION NEXT=B Is this written?')
+        self.assertEqual(action, {'type': 'question', 'text': 'Is this written?', 'next_speaker': 'B'})
+        for raw in ('QUESTION First?\nFINAL Second.', 'Notes.\nQUESTION First?\nQUESTION Second.'):
+            with self.assertRaises(ProtocolError):
+                parse_action(raw)
 
     def test_punctuation_and_multiline_preserved(self):
         body='Is "A" using C:\\new?\nOr a literal \\?'
@@ -95,6 +110,14 @@ class PrefixTests(unittest.TestCase):
         self.assertFalse(valid_dialogue_action(action,['final'],True))
         self.assertFalse(valid_dialogue_action(parse_prefix_action('QUESTION\nQ?'),['question']))
         self.assertTrue(valid_dialogue_action(parse_prefix_action('FINAL\nAnswer'),['final'],True))
+
+    def test_dialogue_contract_lists_literal_headers_not_a_copyable_placeholder(self):
+        from turtle_loop.dialogue_contract import dialogue_contract_text
+        text=dialogue_contract_text(['question','discuss'])
+        self.assertNotIn('ACTION NEXT=',text)
+        for header in ('QUESTION NEXT=A','QUESTION NEXT=B','DISCUSS NEXT=A','DISCUSS NEXT=B'):
+            self.assertIn(header,text)
+            self.assertTrue(valid_dialogue_action(parse_prefix_action(header+'\nBody'),['question','discuss']))
 
     def test_archived_json_and_codex_text_contract(self):
         self.assertEqual(parse_action('{"type":"question","text":"Q?"}')['text'],'Q?')
@@ -163,9 +186,26 @@ class PrefixTests(unittest.TestCase):
                     'Preamble\n```text\nQUESTION\nQ?\n```'):
             with self.subTest(raw=raw), patch('turtle_loop.providers.Client') as formatter:
                 with self.assertRaises(ProtocolError):
-                    repair(raw,False,load_policy(),lambda c:None,lambda *a,**k:None)
+                    repair(raw,False,{**load_policy(),'multiple_actions':'reject'},lambda c:None,lambda *a,**k:None)
                 formatter.assert_not_called()
                 self.assertFalse(verbatim_proof(raw,{'type':'question','text':'Q?'}))
+
+    def test_explicit_last_complete_policy_preserves_last_question_without_model(self):
+        from turtle_loop.player_format import repair,load_policy
+        from unittest.mock import patch
+        body='Does "course" mean dishes?\nKeep this condition: before dinner.'
+        raw='QUESTION\nEarlier candidate?\n\nI will pivot.\nQUESTION\n'+body
+        with patch('turtle_loop.providers.Client') as formatter:
+            action,meta=repair(raw,False,{**load_policy(),'multiple_actions':'last_complete'},lambda c:None,lambda *a,**k:None)
+            self.assertEqual(action,{'type':'question','text':body})
+            self.assertEqual(meta['method'],'last_complete_prefix_action')
+            self.assertEqual(raw[meta['text_span'][0]:meta['text_span'][1]],body)
+            self.assertEqual(meta['model_calls'],0)
+            formatter.assert_not_called()
+        with self.assertRaises(ProtocolError):
+            repair(raw,True,load_policy(),lambda c:None,lambda *a,**k:None)
+        with self.assertRaises(ProtocolError):
+            repair(raw+'\nFINAL\n',False,load_policy(),lambda c:None,lambda *a,**k:None)
 
     def test_game_audits_preamble_without_extra_player_call(self):
         import tempfile

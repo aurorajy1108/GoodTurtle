@@ -1,0 +1,25 @@
+{
+  "version": "host-v13-ai-20261111-crossing",
+  "packs": [
+    "TS015"
+  ],
+  "context_sha256_before": {
+    "TS015": "c623a5e7d79c63d9efd9b62efb4dc116b50d83a75989c4d93e2c46d3033c1402"
+  },
+  "context_sha256_after": {
+    "TS015": "82a2bdc8adeaefede6e4753e91ae9cde474f590c3157407a74f1720e29f09134"
+  },
+  "source_run": "runs/api/20261111_live_smoke_v1",
+  "source_submission": 34,
+  "observed_label": "yes",
+  "reviewed_label": "yes and no",
+  "reason": "Canonical pass means cross the swift river, not follow a navigation route or heading.",
+  "original_examples_preserved": 13,
+  "added_ai_reviewed_examples": 5,
+  "human_confirmed": false,
+  "original_solution_and_rubric_unchanged": true,
+  "archive": "data/host_packs/archive/20261111_before_ts015_crossing/TS015.json",
+  "live_diagnostic": "runs/api/20261111_ts015_crossing_diagnostic_v1",
+  "diagnostic_passed": 6,
+  "diagnostic_total": 6
+}

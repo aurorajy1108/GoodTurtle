@@ -1,0 +1,503 @@
+{
+  "kind": "continual",
+  "seed": 20261111,
+  "arguments": {
+    "command": "continual",
+    "dataset": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/runs/api/20261112_set1_fixed_prefix_r1r4_v2/study/runtime_snapshot/data/dataset.json",
+    "config": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/runs/api/20261112_set1_fixed_prefix_r1r4_v2/study/runtime_snapshot/configs/run.json",
+    "repeat": 4,
+    "seed": 20261111,
+    "out": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/runs/api/20261112_set1_fixed_prefix_r1r4_v2/study/continual",
+    "dry_run": false,
+    "quiet": true,
+    "resume": true,
+    "on_error": "stop",
+    "groups": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/runs/api/20261112_set1_fixed_prefix_r1r4_v2/study/runtime_snapshot/configs/study_groups.json",
+    "group": "all",
+    "pair": null,
+    "memory": "session",
+    "source_policy": "fixed",
+    "controls": "answer_only",
+    "control_source": null,
+    "source_feedback": "answer"
+  },
+  "blocks": [
+    {
+      "block": "S1_TS014_TS013_TS014_TS013_r01",
+      "group": "S1_TS014_TS013",
+      "relation_hypothesis": "negative",
+      "source": "TS014",
+      "target": "TS013",
+      "analysis_role": "primary",
+      "source_policy": "fixed",
+      "repeat": 1,
+      "conditions": [
+        "answer_only",
+        "direct",
+        "session"
+      ],
+      "control_source": null
+    },
+    {
+      "block": "S1_TS014_TS013_TS014_TS013_r04",
+      "group": "S1_TS014_TS013",
+      "relation_hypothesis": "negative",
+      "source": "TS014",
+      "target": "TS013",
+      "analysis_role": "primary",
+      "source_policy": "fixed",
+      "repeat": 4,
+      "conditions": [
+        "answer_only",
+        "direct",
+        "session"
+      ],
+      "control_source": null
+    },
+    {
+      "block": "S1_TS014_TS013_TS014_TS013_r03",
+      "group": "S1_TS014_TS013",
+      "relation_hypothesis": "negative",
+      "source": "TS014",
+      "target": "TS013",
+      "analysis_role": "primary",
+      "source_policy": "fixed",
+      "repeat": 3,
+      "conditions": [
+        "session",
+        "answer_only",
+        "direct"
+      ],
+      "control_source": null
+    },
+    {
+      "block": "S1_TS028_TS013_TS028_TS013_r01",
+      "group": "S1_TS028_TS013",
+      "relation_hypothesis": "neutral",
+      "source": "TS028",
+      "target": "TS013",
+      "analysis_role": "primary",
+      "source_policy": "fixed",
+      "repeat": 1,
+      "conditions": [
+        "direct",
+        "answer_only",
+        "session"
+      ],
+      "control_source": null
+    },
+    {
+      "block": "S1_TS014_TS013_TS014_TS013_r02",
+      "group": "S1_TS014_TS013",
+      "relation_hypothesis": "negative",
+      "source": "TS014",
+      "target": "TS013",
+      "analysis_role": "primary",
+      "source_policy": "fixed",
+      "repeat": 2,
+      "conditions": [
+        "direct",
+        "session",
+        "answer_only"
+      ],
+      "control_source": null
+    },
+    {
+      "block": "S1_TS015_TS013_TS015_TS013_r04",
+      "group": "S1_TS015_TS013",
+      "relation_hypothesis": "positive",
+      "source": "TS015",
+      "target": "TS013",
+      "analysis_role": "primary",
+      "source_policy": "fixed",
+      "repeat": 4,
+      "conditions": [
+        "direct",
+        "answer_only",
+        "session"
+      ],
+      "control_source": null
+    },
+    {
+      "block": "S1_TS015_TS013_TS015_TS013_r01",
+      "group": "S1_TS015_TS013",
+      "relation_hypothesis": "positive",
+      "source": "TS015",
+      "target": "TS013",
+      "analysis_role": "primary",
+      "source_policy": "fixed",
+      "repeat": 1,
+      "conditions": [
+        "direct",
+        "answer_only",
+        "session"
+      ],
+      "control_source": null
+    },
+    {
+      "block": "S1_TS028_TS013_TS028_TS013_r04",
+      "group": "S1_TS028_TS013",
+      "relation_hypothesis": "neutral",
+      "source": "TS028",
+      "target": "TS013",
+      "analysis_role": "primary",
+      "source_policy": "fixed",
+      "repeat": 4,
+      "conditions": [
+        "direct",
+        "answer_only",
+        "session"
+      ],
+      "control_source": null
+    },
+    {
+      "block": "S1_TS015_TS013_TS015_TS013_r03",
+      "group": "S1_TS015_TS013",
+      "relation_hypothesis": "positive",
+      "source": "TS015",
+      "target": "TS013",
+      "analysis_role": "primary",
+      "source_policy": "fixed",
+      "repeat": 3,
+      "conditions": [
+        "session",
+        "direct",
+        "answer_only"
+      ],
+      "control_source": null
+    },
+    {
+      "block": "S1_TS015_TS013_TS015_TS013_r02",
+      "group": "S1_TS015_TS013",
+      "relation_hypothesis": "positive",
+      "source": "TS015",
+      "target": "TS013",
+      "analysis_role": "primary",
+      "source_policy": "fixed",
+      "repeat": 2,
+      "conditions": [
+        "answer_only",
+        "session",
+        "direct"
+      ],
+      "control_source": null
+    },
+    {
+      "block": "S1_TS028_TS013_TS028_TS013_r02",
+      "group": "S1_TS028_TS013",
+      "relation_hypothesis": "neutral",
+      "source": "TS028",
+      "target": "TS013",
+      "analysis_role": "primary",
+      "source_policy": "fixed",
+      "repeat": 2,
+      "conditions": [
+        "answer_only",
+        "session",
+        "direct"
+      ],
+      "control_source": null
+    },
+    {
+      "block": "S1_TS028_TS013_TS028_TS013_r03",
+      "group": "S1_TS028_TS013",
+      "relation_hypothesis": "neutral",
+      "source": "TS028",
+      "target": "TS013",
+      "analysis_role": "primary",
+      "source_policy": "fixed",
+      "repeat": 3,
+      "conditions": [
+        "session",
+        "direct",
+        "answer_only"
+      ],
+      "control_source": null
+    }
+  ],
+  "dialogue_policy": {
+    "roles": "complementary",
+    "scheduling": "adaptive",
+    "max_discussion": 4,
+    "start": "A",
+    "role_assignment": {
+      "A": {
+        "specialty": "investigator",
+        "instruction": "Develop and test explanations of identities, setting, event order and the main causal mechanism. Connect confirmed facts into a coherent story; explicitly distinguish hypotheses from host-confirmed facts."
+      },
+      "B": {
+        "specialty": "critic",
+        "instruction": "Challenge unsupported assumptions, propose alternative interpretations, and test missing causal links, motives and contradictions. Suggest discriminating questions rather than only criticizing. Help complete the story."
+      }
+    },
+    "protocol": "shared-dialogue-v3-prefix-v1",
+    "format_correction_max_retries": 2
+  },
+  "config": {
+    "max_questions": 100,
+    "session_mode": "persistent",
+    "context_policy": {
+      "host_examples_limit": 6,
+      "grader_examples_limit": 3,
+      "host_examples_max_chars": 6000,
+      "grader_examples_max_chars": 3000
+    },
+    "host": {
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "api_key_env": "DEEPSEEK_API_KEY",
+      "max_output_tokens": 32768,
+      "timeout": 600,
+      "max_retries": 2,
+      "extra_body": {
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "high"
+      }
+    },
+    "player": {
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "api_key_env": "DEEPSEEK_API_KEY",
+      "max_output_tokens": 8192,
+      "timeout": 600,
+      "max_retries": 2,
+      "extra_body": {
+        "thinking": {
+          "type": "disabled"
+        }
+      }
+    },
+    "grader": {
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "api_key_env": "DEEPSEEK_API_KEY",
+      "max_output_tokens": 32768,
+      "timeout": 600,
+      "max_retries": 2,
+      "extra_body": {
+        "thinking": {
+          "type": "enabled"
+        },
+        "reasoning_effort": "high",
+        "response_format": {
+          "type": "json_object"
+        }
+      }
+    },
+    "pricing": {
+      "schema_version": 1,
+      "currency": "USD",
+      "checked_on": "2026-11-02",
+      "basis": "Standard text API-equivalent estimate, not an invoice or subscription-credit deduction",
+      "models": [
+        {
+          "providers": [
+            "codex_cli",
+            "openai",
+            "openai_chat"
+          ],
+          "model": "gpt-6.1-sol",
+          "endpoint_prefix": "https://api.openai.com/",
+          "input_per_million": 2.0,
+          "cached_input_per_million": 0.1,
+          "cache_write_per_million": 2.5,
+          "output_per_million": 10.0,
+          "long_context_threshold": 272000,
+          "long_input_multiplier": 2,
+          "long_output_multiplier": 1.5,
+          "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol"
+        },
+        {
+          "providers": [
+            "codex_cli",
+            "openai",
+            "openai_chat"
+          ],
+          "model": "gpt-6-luna",
+          "endpoint_prefix": "https://api.openai.com/",
+          "input_per_million": 0.1,
+          "cached_input_per_million": 0.01,
+          "cache_write_per_million": 0.125,
+          "output_per_million": 0.5,
+          "long_context_threshold": 272000,
+          "long_input_multiplier": 2,
+          "long_output_multiplier": 1.5,
+          "source": "https://developers.openai.com/api/docs/models/gpt-6-luna"
+        },
+        {
+          "providers": [
+            "codex_cli",
+            "openai",
+            "openai_chat"
+          ],
+          "model": "gpt-5",
+          "endpoint_prefix": "https://api.openai.com/",
+          "input_per_million": 1.25,
+          "cached_input_per_million": 0.125,
+          "output_per_million": 10.0,
+          "source": "https://developers.openai.com/api/docs/models/gpt-5"
+        },
+        {
+          "providers": [
+            "codex_cli",
+            "openai",
+            "openai_chat"
+          ],
+          "model": "gpt-5-2025-08-07",
+          "endpoint_prefix": "https://api.openai.com/",
+          "input_per_million": 1.25,
+          "cached_input_per_million": 0.125,
+          "output_per_million": 10.0,
+          "source": "https://developers.openai.com/api/docs/models/gpt-5"
+        },
+        {
+          "providers": [
+            "codex_cli",
+            "openai",
+            "openai_chat"
+          ],
+          "model": "gpt-5.6-luna",
+          "endpoint_prefix": "https://api.openai.com/",
+          "input_per_million": 0.2,
+          "cached_input_per_million": 0.02,
+          "cache_write_per_million": 0.25,
+          "output_per_million": 1.2,
+          "long_context_threshold": 272000,
+          "long_input_multiplier": 2,
+          "long_output_multiplier": 1.5,
+          "source": "https://developers.openai.com/api/docs/models/gpt-5.6-luna"
+        },
+        {
+          "providers": [
+            "deepseek"
+          ],
+          "model": "deepseek-flash",
+          "endpoint_prefix": "https://api.deepseek.com/",
+          "input_per_million": 0.3,
+          "cached_input_per_million": 0.006,
+          "output_per_million": 1.2,
+          "off_peak_multiplier": 0.5,
+          "estimate_assumption": "peak_rate_reference_upper_estimate; off-peak rates are half; actual billing unknown",
+          "checked_on": "2026-11-11",
+          "source": "https://api-docs.deepseek.com/quick_start/pricing/"
+        },
+        {
+          "providers": [
+            "deepseek"
+          ],
+          "model": "deepseek-v4-pro",
+          "endpoint_prefix": "https://api.deepseek.com/",
+          "input_per_million": 1.32,
+          "cached_input_per_million": 0.044,
+          "output_per_million": 3.96,
+          "off_peak_multiplier": 0.5,
+          "estimate_assumption": "peak_rate_reference_upper_estimate; off-peak rates are half; actual billing unknown",
+          "checked_on": "2026-11-11",
+          "source": "https://api-docs.deepseek.com/quick_start/pricing/"
+        }
+      ]
+    }
+  },
+  "partner": {
+    "provider": "deepseek",
+    "model": "deepseek-flash",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "max_output_tokens": 8192,
+    "timeout": 600,
+    "max_retries": 2,
+    "extra_body": {
+      "thinking": {
+        "type": "disabled"
+      }
+    }
+  },
+  "dataset_sha256": "115f0609f472a8cf34d2cac5e5fa0e32ed4effb92cf774db6f14a3ec4386ea39",
+  "source_feedback": "answer",
+  "source_policy": "fixed",
+  "source_sampling_note": "fixed reuses one A per puzzle within this batch; B repeats are conditional on that A. Failures are never rerun to select a successful A.",
+  "per_game_budget": 100,
+  "budget_policy": "Fresh independent budget for A and every B condition; source feedback and memory calls consume no target submissions.",
+  "groups_snapshot": {
+    "schema_version": 2,
+    "directions": "primary",
+    "source": "User fixed-target design, 2026-11-02",
+    "interpretation": "Default: fixed anchor B. Optional reverse positive directions are exploratory. Negative/neutral only source. No inferred relations among non-anchor puzzles.",
+    "groups": [
+      {
+        "id": "S1_TS015_TS013",
+        "set_id": 1,
+        "puzzles": [
+          "TS015",
+          "TS013"
+        ],
+        "directed_pairs": [
+          [
+            "TS015",
+            "TS013"
+          ]
+        ],
+        "relation": "positive",
+        "anchor": "TS013",
+        "analysis_role": "primary",
+        "relation_status": "user_hypothesis_not_measured",
+        "direction": "to_anchor"
+      },
+      {
+        "id": "S1_TS014_TS013",
+        "set_id": 1,
+        "puzzles": [
+          "TS014",
+          "TS013"
+        ],
+        "directed_pairs": [
+          [
+            "TS014",
+            "TS013"
+          ]
+        ],
+        "relation": "negative",
+        "anchor": "TS013",
+        "analysis_role": "primary",
+        "relation_status": "user_hypothesis_not_measured",
+        "direction": "to_anchor"
+      },
+      {
+        "id": "S1_TS028_TS013",
+        "set_id": 1,
+        "puzzles": [
+          "TS028",
+          "TS013"
+        ],
+        "directed_pairs": [
+          [
+            "TS028",
+            "TS013"
+          ]
+        ],
+        "relation": "neutral",
+        "anchor": "TS013",
+        "analysis_role": "primary",
+        "relation_status": "user_hypothesis_not_measured",
+        "direction": "to_anchor"
+      }
+    ],
+    "source_selection": [
+      "TS015",
+      "TS014",
+      "TS028"
+    ]
+  },
+  "meaning": "Context transfer only; weights unchanged. Seed controls scheduling, not API sampling.",
+  "controls_note": "Unrelated-source neutrality is a hypothesis requiring human review; history lengths are recorded, not matched. Shared buffer exposes pending question text but withholds unsynced answers.",
+  "condition_order": "Random base order rotated across repeats; shuffled blocks.",
+  "team_order": null,
+  "extension": {
+    "original_study": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/runs/api/20261112_jiayang_supervised_v4/continuations/cl-set1-a/attempt_01",
+    "original_repeats": 2,
+    "total_repeats": 4,
+    "preserved_games": 21,
+    "new_games": 18
+  }
+}

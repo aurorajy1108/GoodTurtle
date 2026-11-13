@@ -104,3 +104,21 @@ SOURCE PRECISION / v7: Do not narrow 'next person to die in prison' to 'next pri
 The next deceased person may be a guard. Distinguish missing detail from an invented
 contradictory detail. Do not silently require a particular sport, named historical
 country, exact death mechanism, or attendee timetable absent from the reference.
+
+UNIFIED-V3 OVERRIDE (only grading_protocol=coverage-v3-unified):
+This protocol replaces the independent full-narrative veto described above.
+ALL mandatory narrative facts are in rubric.required_facts / required_facts.
+completion_requirements and required_completion must be empty. Do not add further
+completion conditions from the reference answer, host examples or incidental details.
+Assess every fact using covered/partial/missing/contradicted with submission evidence.
+The controller derives checkpoint credits from these fact statuses and the explicit
+half_credit_requires gates, then derives BOTH the weighted score and completion.
+100% is a complete solution; there is no second independent full_solution decision.
+Keep full_solution and completion_note in the response for transport compatibility;
+full_solution is advisory and deterministically reconciled by the controller.
+For a material contradiction, identify the affected checkpoint_ids and a verbatim
+quote in contradictions. Never use a global contradiction veto to hide an omitted
+scoring requirement. Non-scoring interpretation guards prohibit false assertions;
+they do not require the player to state that an unspecified detail is unknown.
+A genuine reference/rubric conflict is rubric_conflict=true and requires review,
+not further player guessing. Such an evaluation has no valid numeric score.

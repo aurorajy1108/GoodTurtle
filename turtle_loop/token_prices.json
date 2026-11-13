@@ -80,6 +80,34 @@
       "long_input_multiplier": 2,
       "long_output_multiplier": 1.5,
       "source": "https://developers.openai.com/api/docs/models/gpt-5.6-luna"
+    },
+    {
+      "providers": [
+        "deepseek"
+      ],
+      "model": "deepseek-flash",
+      "endpoint_prefix": "https://api.deepseek.com/",
+      "input_per_million": 0.3,
+      "cached_input_per_million": 0.006,
+      "output_per_million": 1.2,
+      "off_peak_multiplier": 0.5,
+      "estimate_assumption": "peak_rate_reference_upper_estimate; off-peak rates are half; actual billing unknown",
+      "checked_on": "2026-11-11",
+      "source": "https://api-docs.deepseek.com/quick_start/pricing/"
+    },
+    {
+      "providers": [
+        "deepseek"
+      ],
+      "model": "deepseek-v4-pro",
+      "endpoint_prefix": "https://api.deepseek.com/",
+      "input_per_million": 1.32,
+      "cached_input_per_million": 0.044,
+      "output_per_million": 3.96,
+      "off_peak_multiplier": 0.5,
+      "estimate_assumption": "peak_rate_reference_upper_estimate; off-peak rates are half; actual billing unknown",
+      "checked_on": "2026-11-11",
+      "source": "https://api-docs.deepseek.com/quick_start/pricing/"
     }
   ]
 }

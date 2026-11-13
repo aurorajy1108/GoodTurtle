@@ -1,0 +1,761 @@
+# Turtle Soup trajectory
+
+I am a student studying in the University of Hong Kong. I must choose my courses before the deadline. All of my courses were gone in one evening. What happened?
+
+Status: completed | counted questions: 100 | submissions: 100 | final partial score: 0.65
+
+[Token usage and estimated costs](token_costs.csv)
+
+## 1 · question
+
+Did someone else deliberately interfere with your course selections?
+
+Host: no
+
+## 2 · question
+
+Did you miss the course-selection deadline?
+
+Host: no
+
+## 3 · question
+
+Were your courses actually available at some point, and then they filled up?
+
+Host: no
+
+## 4 · question
+
+Were all the courses you wanted cancelled or not offered that semester?
+
+Host: no
+
+## 5 · question
+
+Did a technical or system problem prevent you from selecting courses?
+
+Host: no
+
+## 6 · question
+
+Does "all of my courses were gone" mean your existing course enrollments were removed?
+
+Host: no
+
+## 7 · question
+
+Does "gone" mean you had already completed or finished all your courses?
+
+Host: no
+
+## 8 · question
+
+Was the course selection process affected by a public holiday or university break?
+
+Host: no
+
+## 9 · question
+
+Did you perhaps choose your courses successfully, but then lose access to them due to not paying tuition fees?
+
+Host: no
+
+## 10 · question
+
+Did you oversleep or fall asleep and wake up after the deadline?
+
+Host: no
+
+## 11 · question
+
+Did you lose your course list or selection record because of a lost or broken device?
+
+Host: no
+
+## 12 · question
+
+Did you graduate, so that all of your courses were completed and behind you?
+
+Host: no
+
+## 13 · question
+
+Were all of your courses gone because you were expelled or suspended from the university?
+
+Host: no
+
+## 14 · question
+
+Were your courses gone from your planner because the university released them all at once with limited spots that filled instantly (a free-for-all enrollment)?
+
+Host: no
+
+## 15 · question
+
+Did you delete your courses yourself by mistake?
+
+Host: no
+
+## 16 · question
+
+Were all of your courses gone because you were placed on academic probation or had your enrollment cancelled by the university for academic reasons?
+
+Host: no
+
+## 17 · question
+
+Does "in one evening" refer to a single event happening in one night, such as a fire, flood, theft, or power failure, that destroyed the physical courses?
+
+Host: no
+
+## 18 · question
+
+Did your courses disappear because the university's course system reset due to a new semester or academic year?
+
+Host: no
+
+## 19 · question
+
+Is "evening" being used in a non-literal sense, such as a stage of life or a period of time?
+
+Host: no
+
+## 20 · question
+
+Did you attend a single event—such as a lecture, orientation, or fair—in the evening where course enrollment or add/drop happened, and all spots were taken by others there?
+
+Host: no
+
+## 21 · question
+
+Were the "courses" you lost not university courses, but something else called "courses," such as dishes in a meal?
+
+Host: yes
+
+## 22 · question
+
+Were the courses dishes served at a meal that you ate or that disappeared?
+
+Host: yes
+
+## 23 · question
+
+Was the meal a multi-course dinner that you ate over the evening?
+
+Host: yes
+
+## 24 · question
+
+Were the courses gone because someone else ate them (rather than you eating them)?
+
+Host: no
+
+## 25 · question
+
+Did you eat all the courses yourself, so they were gone by the end of the evening?
+
+Host: no
+
+## 26 · question
+
+Were the courses "gone" in the sense that they were no longer available to be chosen or served, rather than having been consumed?
+
+Host: yes
+
+## 27 · question
+
+Was the "student" identity also a wordplay, such that you were not really a university student?
+
+Host: no
+
+## 28 · question
+
+Were the courses gone because the restaurant or caterer ran out of those dishes?
+
+Host: no
+
+## 29 · question
+
+Were you at a dinner where the courses were placed on a shared table (such as a rotating lazy Susan or buffet), and other diners took them all before you could?
+
+Host: no
+
+## 30 · question
+
+Were the courses gone because the meal was cancelled or the reservation was lost?
+
+Host: no
+
+## 31 · question
+
+Did you choose the dishes, but they were then taken away or cleared without your eating them?
+
+Host: yes and no
+
+## 32 · question
+
+Were the dishes removed because you sent them back or rejected them?
+
+Host: yes
+
+## 33 · question
+
+Did you reject the dishes because they were not what you ordered?
+
+Host: no
+
+## 34 · question
+
+Did you send the dishes back because they were unsatisfactory (e.g., wrong temperature, poorly cooked, or not to your taste)?
+
+Host: yes
+
+## 35 · question
+
+Were the dishes cleared away by restaurant staff rather than sent back by you?
+
+Host: yes
+
+## 36 · question
+
+Did the staff clear the dishes because they mistakenly thought you had finished the meal?
+
+Host: no
+
+## 37 · question
+
+Were the dishes cleared because the restaurant was closing or the meal period ended?
+
+Host: no
+
+## 38 · question
+
+Were the dishes cleared by staff as part of a normal course-by-course service, so each dish was removed before you could eat it?
+
+Host: no
+
+## 39 · question
+
+Were you actually present at the table while the dishes were served and cleared?
+
+Host: yes
+
+## 40 · question
+
+Were the dishes cleared away by staff because you left the table temporarily?
+
+Host: no
+
+## 41 · question
+
+Were you unable to eat the dishes because of a physical constraint, such as wearing braces, having no hands free, or being unable to reach them?
+
+Host: no
+
+## 42 · question
+
+Was the food cleared because it was meant for display or a photo rather than eating?
+
+Host: no
+
+## 43 · question
+
+Were you unable to eat the dishes because you were fasting or on a diet?
+
+Host: no
+
+## 44 · question
+
+Were the dishes cleared away by staff because of a misunderstanding about which table the dishes belonged to?
+
+Host: no
+
+## 45 · question
+
+Was this a tasting menu or special dinner where each course was announced and served, but you were somehow not served your portion?
+
+Host: no
+
+## 46 · question
+
+Did you have a dining companion who ate or took your courses?
+
+Host: no
+
+## 47 · question
+
+Were the courses removed by staff because you complained about them or because they were unsatisfactory, and thus they were taken back to the kitchen?
+
+Host: yes
+
+## 48 · question
+
+Did you ask for the dishes to be taken back because you found them unsatisfactory?
+
+Host: yes
+
+## 49 · question
+
+Were the dishes unsatisfactory simply because you did not like the taste?
+
+Host: yes
+
+## 50 · question
+
+Did you dislike the taste because the dishes contained an ingredient you did not expect or did not want?
+
+Host: irrelevant
+
+## 51 · question
+
+Were the "courses" in your story also metaphorically connected to your university course selection—like a meal representing choosing classes?
+
+Host: no
+
+## 52 · question
+
+Was the dinner part of a special event, such as a banquet, ceremony, or celebration?
+
+Host: yes
+
+## 53 · question
+
+Was the banquet a wedding dinner?
+
+Host: no
+
+## 54 · question
+
+Was the banquet held in a Chinese restaurant with round tables?
+
+Host: irrelevant
+
+## 55 · question
+
+Was the unsatisfactory taste caused by the food being too spicy?
+
+Host: irrelevant
+
+## 56 · question
+
+Was the banquet organized so that food was served in multiple courses throughout one evening, and you sent back or rejected several courses you disliked?
+
+Host: yes
+
+## 57 · question
+
+Did you dislike the food because you were already full from a previous course or meal?
+
+Host: no
+
+## 58 · question
+
+Was there something unusual about you that made the normally acceptable food taste bad to you?
+
+Host: irrelevant
+
+## 59 · question
+
+Did the banquet take place on a specific occasion where certain dishes are traditionally served, such as a festival or religious ceremony?
+
+Host: no
+
+## 60 · question
+
+Did you personally order or choose the dishes that were served?
+
+Host: yes
+
+## 61 · question
+
+Were the dishes gone because the banquet had a fixed menu where dishes were predetermined, and you found you disliked them after tasting?
+
+Host: no
+
+## 62 · question
+
+Did you order the dishes without knowing what they actually were, such as due to a language barrier or misleading menu?
+
+Host: irrelevant
+
+## 63 · question
+
+Did you reject the dishes because they were served in an unappetizing way, such as being cold or looking wrong?
+
+Host: no
+
+## 64 · question
+
+Was the banquet a potluck where each guest brought a dish, and your dishes were disliked and sent back?
+
+Host: no
+
+## 65 · question
+
+Were you the host or organizer of the banquet?
+
+Host: no
+
+## 66 · question
+
+Was the unsatisfactory taste due to the food being spoiled or rotten?
+
+Host: irrelevant
+
+## 67 · question
+
+Did you personally order the banquet meal as a whole (e.g., choosing the banquet package), rather than choosing each dish?
+
+Host: no
+
+## 68 · question
+
+Did you reject the dishes because they contained meat or another ingredient forbidden by a religious or dietary restriction you follow?
+
+Host: no
+
+## 69 · question
+
+Were the dishes replaced after you sent them back, and then those replacements too were gone by the end of the evening?
+
+Host: no
+
+## 70 · question
+
+Was the banquet a fundraising or charity dinner?
+
+Host: irrelevant
+
+## 71 · question
+
+Did you reject the dishes because you were allergic to an ingredient in them?
+
+Host: no
+
+## 72 · question
+
+Was the dinner held in a setting where you were distracted from eating, such as a dinner-theater or a lecture with a meal?
+
+Host: no
+
+## 73 · question
+
+Did you send back the food because it was too rich or heavy for you?
+
+Host: irrelevant
+
+## 74 · question
+
+Were the dishes gone because you were at a tasting event and deliberately only tasted small portions, so the courses were cleared quickly in sequence?
+
+Host: no
+
+## 75 · question
+
+Is the puzzle's key wordplay that a "course" can be a dish, and "student" can mean someone attentive—so you were attentively studying/eating courses (dishes) that were cleared one by one?
+
+Host: yes and no
+
+## 76 · question
+
+Did you reject the dishes because they were too expensive or not worth the price?
+
+Host: no
+
+## 77 · question
+
+Was the banquet for an academic or university-related occasion?
+
+Host: yes
+
+## 78 · question
+
+Did the banquet take place at the University of Hong Kong?
+
+Host: yes
+
+## 79 · question
+
+Was the banquet a formal university dinner, such as a high-table dinner or hall dinner?
+
+Host: yes
+
+## 80 · question
+
+Was the university dinner organized for students to select or sign up for courses, such that "choosing courses" also refers to choosing dishes?
+
+Host: no
+
+## 81 · question
+
+Was the dinner held in a residential hall of HKU?
+
+Host: yes
+
+## 82 · question
+
+Was the dinner a hall event where students were required to attend and eat everything served, and you sent dishes back because you disliked them, resulting in all courses being gone?
+
+Host: yes and no
+
+## 83 · question
+
+Was the dinner a hall "high table" or formal hall dinner where there is a tradition that certain dishes (or all dishes) must be finished, and leftovers are not allowed?
+
+Host: yes and no
+
+## 84 · question
+
+Is "evening" here also a pun—like "evening" the time of day and "evening out" (making equal or leveling) the courses?
+
+Host: no
+
+## 85 · question
+
+Was the dinner an HKU hall "communal dinner" or "hall dinner" where a set menu of courses is served at a fixed time, and because you arrived late or service was quick, all dishes had already been served or cleared?
+
+Host: no
+
+## 86 · question
+
+Were the courses gone specifically because you sent them back, and the kitchen then did not replace them?
+
+Host: yes
+
+## 87 · question
+
+Did you send the dishes back because your complaint was about the quality of the cooking (e.g., poorly prepared), rather than your personal taste preferences?
+
+Host: no
+
+## 88 · question
+
+Did you send the dishes back because, after tasting them, you simply did not like their flavor?
+
+Host: yes
+
+## 89 · question
+
+Was there a rule or custom at the hall dinner that if a diner rejects a course, that course is removed and no replacement is given?
+
+Host: irrelevant
+
+## 90 · question
+
+Did you reject every course because each tasted bad, so by the end of the evening none of your courses remained?
+
+Host: yes
+
+## 91 · question
+
+Was the reason you disliked the taste something a normal diner would also dislike—i.e., the dishes genuinely tasted bad—rather than a peculiarity of your own palate?
+
+Host: irrelevant
+
+## 92 · question
+
+Did you reject the dishes simply on the basis of their taste after sampling them, with no other reason such as spoilage, ingredient restriction, or cooking error?
+
+Host: yes
+
+## 93 · question
+
+Was the "course selection" a pun where in the hall you had to choose which dishes (courses) you would eat, and you chose them but then sent them back?
+
+Host: yes
+
+## 94 · question
+
+Is the "deadline" also a pun, referring to a fixed time by which the hall dinner's courses had to be chosen or eaten?
+
+Host: no
+
+## 95 · question
+
+At the hall dinner, did you choose your courses (dishes) in advance, but when they were served you found each one's taste unpleasant and sent them back, so by evening's end all your chosen courses were gone?
+
+Host: yes
+
+## 96 · final
+
+The apparent university-course-selection story is wordplay. You were a student at the University of Hong Kong attending a formal hall dinner held in a residential hall. Because the dinner followed a multi-course set meal, “courses” meant the dishes served, and “choosing courses before the deadline” referred to selecting your dishes for the dinner. When each course arrived, you tasted it and disliked its flavor, so you sent it back to the kitchen as unsatisfactory. No replacements came, and you did the same with every course. By the end of the evening, all the courses you had chosen were gone, leaving you with none of your meal—hence “all of my courses were gone in one evening.”
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "The apparent university-course-selection story is wordplay. ... “courses” meant the dishes served",
+      "reason": "Courses is correctly identified as meal dishes rather than academic classes, but the mandatory high-table qualifier in C1.F2 is not supplied, so the checkpoint is partial."
+    },
+    {
+      "id": "C2",
+      "credit": 1,
+      "evidence": "“choosing courses before the deadline” referred to selecting your dishes for the dinner",
+      "reason": "The deadline is explicitly explained as meal-course selection, covering both required facts."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "you tasted it and disliked its flavor, so you sent it back to the kitchen as unsatisfactory. No replacements came ... all the courses you had chosen were gone",
+      "reason": "Disliking the food and the disappearance of all courses are present, but the waiter clearing leftovers, the three-course meal, and punctual arrival are missing or replaced by a kitchen-return mechanism."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "covered",
+      "evidence": "The apparent university-course-selection story is wordplay. ... “courses” meant the dishes served"
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "You were a student at the University of Hong Kong attending a formal hall dinner held in a residential hall. ... “courses” meant the dishes served"
+    },
+    {
+      "id": "C2.F1",
+      "status": "covered",
+      "evidence": "“choosing courses before the deadline” referred to selecting your dishes for the dinner"
+    },
+    {
+      "id": "C2.F2",
+      "status": "covered",
+      "evidence": "“choosing courses before the deadline” referred to selecting your dishes for the dinner"
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "you sent it back to the kitchen as unsatisfactory. No replacements came ... all the courses you had chosen were gone"
+    },
+    {
+      "id": "C3.F2",
+      "status": "partial",
+      "evidence": "You ... attending a formal hall dinner ... When each course arrived, you tasted it and disliked its flavor, so you sent it back to the kitchen"
+    },
+    {
+      "id": "C3.F3",
+      "status": "partial",
+      "evidence": "When each course arrived, you tasted it and disliked its flavor, so you sent it back to the kitchen as unsatisfactory. No replacements came, and you did the same with every course. By the end of the evening, all the courses you had chosen were gone"
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.65,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 97 · question
+
+Was the dinner's course selection actually done by someone else, so you did not personally choose the dishes you sent back?
+
+Host: no
+
+## 98 · question
+
+Was the dinner not a multi-course served meal at all, but a single set of dishes placed on the table together as one course?
+
+Host: no
+
+## 99 · question
+
+Did you send the dishes back not because of personal taste, but because the meal was part of a formal hall tradition in which a student's rejected course is removed and not replaced?
+
+Host: no
+
+## 100 · final · mandatory final
+
+The wordplay is on “courses” and “student.” You were a student at the University of Hong Kong attending a formal dinner in a residential hall. The “courses” were not classes but the dishes of a multi-course meal. Before the dinner you selected your dishes, which is the sense in which you had to “choose courses.” When the dishes were served, you tasted them and disliked the flavor, so you sent each course back as unsatisfactory, and no replacement was provided. Because you rejected every dish, all of your chosen courses were removed by the end of the evening—so “all of my courses were gone in one evening.” The apparent course-enrollment deadline and disappearance of classes are a misleading framing; the real event was a hall dinner at which every dish you had chosen was sent back and cleared away.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "The “courses” were not classes but the dishes of a multi-course meal.",
+      "reason": "The meal-course wordplay is correctly identified, but the required formal high-table/mandatory qualifier is missing, so the checkpoint is only partially covered."
+    },
+    {
+      "id": "C2",
+      "credit": 1,
+      "evidence": "Before the dinner you selected your dishes, which is the sense in which you had to “choose courses.”",
+      "reason": "The deadline is reframed as meal-course preference selection, covering the required facts."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "When the dishes were served, you tasted them and disliked the flavor, so you sent each course back as unsatisfactory, and no replacement was provided. Because you rejected every dish, all of your chosen courses were removed by the end of the evening.",
+      "reason": "Disliking the food and the disappearance of all chosen courses are present, but the waiter-clearing-leftovers mechanism, punctual arrival, three-course meal, and serving-next-dish detail are missing or replaced."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "attending a formal dinner in a residential hall. The “courses” were not classes but the dishes of a multi-course meal."
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "attending a formal dinner in a residential hall. The “courses” were not classes but the dishes of a multi-course meal."
+    },
+    {
+      "id": "C2.F1",
+      "status": "covered",
+      "evidence": "Before the dinner you selected your dishes, which is the sense in which you had to “choose courses.”"
+    },
+    {
+      "id": "C2.F2",
+      "status": "covered",
+      "evidence": "Before the dinner you selected your dishes, which is the sense in which you had to “choose courses.”"
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "you sent each course back as unsatisfactory, and no replacement was provided. ... all of your chosen courses were removed"
+    },
+    {
+      "id": "C3.F2",
+      "status": "partial",
+      "evidence": "When the dishes were served, you tasted them and disliked the flavor, so you sent each course back as unsatisfactory"
+    },
+    {
+      "id": "C3.F3",
+      "status": "partial",
+      "evidence": "you sent each course back as unsatisfactory, and no replacement was provided. Because you rejected every dish, all of your chosen courses were removed by the end of the evening"
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.65,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>

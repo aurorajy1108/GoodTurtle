@@ -78,7 +78,7 @@ def main(argv=None):
     p.add_argument('--sync-interval',type=int,default=4)
     add_dialogue_arguments(p)
     p.add_argument('--config',default='configs/loop.deepseek.json')
-    p.add_argument('--dataset',default='data/annotations/turtle50_v4/private.json')
+    p.add_argument('--dataset',default='data/annotations/turtle50_v5/private.json')
     p.add_argument('--seed',type=int,default=20261102,help='Scheduling only, not remote sampling seed')
     p.add_argument('--mode',choices=['plan','dry-run','run'],default='plan')
     p.add_argument('--on-error',choices=['stop','continue'],default='stop',help='Default stop prevents spending more calls after a failed game')

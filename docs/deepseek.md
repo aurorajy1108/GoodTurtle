@@ -78,7 +78,7 @@ python3 scripts/study_20261102.py \
 单独跑题或50题基线同样可用此配置，例如：
 
 ```sh
-python3 scripts/play.py run --dataset data/annotations/turtle50_v4/private.json \
+python3 scripts/play.py run --dataset data/annotations/turtle50_v5/private.json \
   --config configs/loop.deepseek.json --puzzle all --repeat 1 \
   --out runs/api/deepseek_50_solo
 ```

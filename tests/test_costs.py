@@ -9,6 +9,16 @@ from test_loop import PUZZLE
 
 
 class CostTests(unittest.TestCase):
+    def test_deepseek_exact_prices_keep_peak_assumption_and_checked_date(self):
+        for model,expected in [('deepseek-flash',.0003612),('deepseek-v4-pro',.0014608)]:
+            call=self.call(provider='deepseek',model_requested=model,endpoint='https://api.deepseek.com/chat/completions')
+            row=account_call(call,pricing_config())
+            self.assertAlmostEqual(row['estimated_cost_usd'],expected)
+            self.assertEqual(row['price_checked_on'],'2026-11-11')
+            self.assertEqual(row['price']['off_peak_multiplier'],.5)
+            self.assertIn('peak_rate_reference',row['estimate_assumption'])
+            self.assertIsNone(row['actual_billed_cost_usd'])
+
     def call(self, **overrides):
         return dict({'provider':'codex_cli','model_requested':'gpt-6.1-sol','role':'host','status':'ok',
                      'usage':{'input_tokens':1000,'cached_input_tokens':200,'output_tokens':100,

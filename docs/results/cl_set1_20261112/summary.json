@@ -1,0 +1,732 @@
+{
+  "as_of_hong_kong": "2026-11-12T20:11:31+08:00",
+  "study": "runs/api/20261112_set1_fixed_prefix_r1r4_v2_supervised_v2/continuations/cl-set1-fixed-prefix-r1r4/attempt_01",
+  "planned_source_games": 3,
+  "completed_source_games": 3,
+  "planned_target_games": 36,
+  "completed_target_games": 25,
+  "target_successes": 0,
+  "all_completed_targets_hit_100": true,
+  "global_balanced_repeats": [
+    1,
+    2
+  ],
+  "balanced_pooled_scores": {
+    "direct": {
+      "n": 6,
+      "mean": 0.35000000000000003,
+      "sample_sd": 0.2345207879911715,
+      "sample_variance": 0.05500000000000001
+    },
+    "answer_only": {
+      "n": 6,
+      "mean": 0.48333333333333334,
+      "sample_sd": 0.15055453054181622,
+      "sample_variance": 0.022666666666666672
+    },
+    "session": {
+      "n": 6,
+      "mean": 0.225,
+      "sample_sd": 0.26972207918522356,
+      "sample_variance": 0.07275
+    }
+  },
+  "by_source": [
+    {
+      "source": "TS014",
+      "complete_paired_repeats": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "scores": {
+        "direct": {
+          "n": 4,
+          "mean": 0.4,
+          "sample_sd": 0.28577380332470415,
+          "sample_variance": 0.08166666666666668
+        },
+        "answer_only": {
+          "n": 4,
+          "mean": 0.3375,
+          "sample_sd": 0.26575364531836626,
+          "sample_variance": 0.07062500000000001
+        },
+        "session": {
+          "n": 4,
+          "mean": 0.0625,
+          "sample_sd": 0.125,
+          "sample_variance": 0.015625
+        }
+      },
+      "contrasts_to_direct": {
+        "answer_only": {
+          "n": 4,
+          "mean": -0.0625,
+          "sample_sd": 0.5072392597844401,
+          "sample_variance": 0.2572916666666667
+        },
+        "session": {
+          "n": 4,
+          "mean": -0.3375,
+          "sample_sd": 0.3119161212035484,
+          "sample_variance": 0.09729166666666668
+        }
+      },
+      "score_vectors": {
+        "direct": [
+          0.65,
+          0.0,
+          0.55,
+          0.4
+        ],
+        "answer_only": [
+          0.25,
+          0.55,
+          0.0,
+          0.55
+        ],
+        "session": [
+          0.0,
+          0.0,
+          0.0,
+          0.25
+        ]
+      },
+      "source_context_hashes": [
+        "30c4f071d2ad9379503120fd1193630d33c94630fc426bbd67cd6ac4903d9f2b"
+      ]
+    },
+    {
+      "source": "TS015",
+      "complete_paired_repeats": [
+        1,
+        2
+      ],
+      "scores": {
+        "direct": {
+          "n": 2,
+          "mean": 0.325,
+          "sample_sd": 0.10606601717798214,
+          "sample_variance": 0.011250000000000003
+        },
+        "answer_only": {
+          "n": 2,
+          "mean": 0.55,
+          "sample_sd": 0.0,
+          "sample_variance": 0.0
+        },
+        "session": {
+          "n": 2,
+          "mean": 0.5,
+          "sample_sd": 0.21213203435596428,
+          "sample_variance": 0.04500000000000001
+        }
+      },
+      "contrasts_to_direct": {
+        "answer_only": {
+          "n": 2,
+          "mean": 0.22500000000000003,
+          "sample_sd": 0.10606601717798214,
+          "sample_variance": 0.011250000000000003
+        },
+        "session": {
+          "n": 2,
+          "mean": 0.175,
+          "sample_sd": 0.3181980515339464,
+          "sample_variance": 0.10125000000000003
+        }
+      },
+      "score_vectors": {
+        "direct": [
+          0.25,
+          0.4
+        ],
+        "answer_only": [
+          0.55,
+          0.55
+        ],
+        "session": [
+          0.65,
+          0.35
+        ]
+      },
+      "source_context_hashes": [
+        "90bea063269517dad01cfd1b30aff86c71d87ecc194ed19ff39c22a0a1cbb4ad"
+      ]
+    },
+    {
+      "source": "TS028",
+      "complete_paired_repeats": [
+        1,
+        2
+      ],
+      "scores": {
+        "direct": {
+          "n": 2,
+          "mean": 0.4,
+          "sample_sd": 0.21213203435596428,
+          "sample_variance": 0.04500000000000001
+        },
+        "answer_only": {
+          "n": 2,
+          "mean": 0.5,
+          "sample_sd": 0.21213203435596428,
+          "sample_variance": 0.04500000000000001
+        },
+        "session": {
+          "n": 2,
+          "mean": 0.175,
+          "sample_sd": 0.24748737341529162,
+          "sample_variance": 0.06124999999999999
+        }
+      },
+      "contrasts_to_direct": {
+        "answer_only": {
+          "n": 2,
+          "mean": 0.09999999999999998,
+          "sample_sd": 0.0,
+          "sample_variance": 0.0
+        },
+        "session": {
+          "n": 2,
+          "mean": -0.22500000000000003,
+          "sample_sd": 0.45961940777125593,
+          "sample_variance": 0.21125000000000002
+        }
+      },
+      "score_vectors": {
+        "direct": [
+          0.25,
+          0.55
+        ],
+        "answer_only": [
+          0.35,
+          0.65
+        ],
+        "session": [
+          0.35,
+          0.0
+        ]
+      },
+      "source_context_hashes": [
+        "1537cb42da39758bcc6344eebf2ea6625afa21357c0ab0831d2766960eaab7b4"
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "run_dir": "S1_TS014_TS013_TS014_TS013_r01_answer_only",
+      "source": "TS014",
+      "target": "TS013",
+      "repeat": 1,
+      "condition": "answer_only",
+      "status": "completed",
+      "success": false,
+      "submissions": 100,
+      "host_questions": 98,
+      "rejected_finals": 2,
+      "final_partial_score": 0.25,
+      "stop_reason": "budget_exhausted"
+    },
+    {
+      "run_dir": "S1_TS014_TS013_TS014_TS013_r01_direct",
+      "source": "TS014",
+      "target": "TS013",
+      "repeat": 1,
+      "condition": "direct",
+      "status": "completed",
+      "success": false,
+      "submissions": 100,
+      "host_questions": 98,
+      "rejected_finals": 2,
+      "final_partial_score": 0.65,
+      "stop_reason": "budget_exhausted"
+    },
+    {
+      "run_dir": "S1_TS014_TS013_TS014_TS013_r01_session",
+      "source": "TS014",
+      "target": "TS013",
+      "repeat": 1,
+      "condition": "session",
+      "status": "completed",
+      "success": false,
+      "submissions": 100,
+      "host_questions": 99,
+      "rejected_finals": 1,
+      "final_partial_score": 0.0,
+      "stop_reason": "budget_exhausted"
+    },
+    {
+      "run_dir": "S1_TS014_TS013_TS014_TS013_r04_answer_only",
+      "source": "TS014",
+      "target": "TS013",
+      "repeat": 4,
+      "condition": "answer_only",
+      "status": "completed",
+      "success": false,
+      "submissions": 100,
+      "host_questions": 98,
+      "rejected_finals": 2,
+      "final_partial_score": 0.55,
+      "stop_reason": "budget_exhausted"
+    },
+    {
+      "run_dir": "S1_TS014_TS013_TS014_TS013_r04_direct",
+      "source": "TS014",
+      "target": "TS013",
+      "repeat": 4,
+      "condition": "direct",
+      "status": "completed",
+      "success": false,
+      "submissions": 100,
+      "host_questions": 99,
+      "rejected_finals": 1,
+      "final_partial_score": 0.4,
+      "stop_reason": "budget_exhausted"
+    },
+    {
+      "run_dir": "S1_TS014_TS013_TS014_TS013_r04_session",
+      "source": "TS014",
+      "target": "TS013",
+      "repeat": 4,
+      "condition": "session",
+      "status": "completed",
+      "success": false,
+      "submissions": 100,
+      "host_questions": 99,
+      "rejected_finals": 1,
+      "final_partial_score": 0.25,
+      "stop_reason": "budget_exhausted"
+    },
+    {
+      "run_dir": "S1_TS014_TS013_TS014_TS013_r03_session",
+      "source": "TS014",
+      "target": "TS013",
+      "repeat": 3,
+      "condition": "session",
+      "status": "completed",
+      "success": false,
+      "submissions": 100,
+      "host_questions": 98,
+      "rejected_finals": 2,
+      "final_partial_score": 0.0,
+      "stop_reason": "budget_exhausted"
+    },
+    {
+      "run_dir": "S1_TS014_TS013_TS014_TS013_r03_answer_only",
+      "source": "TS014",
+      "target": "TS013",
+      "repeat": 3,
+      "condition": "answer_only",
+      "status": "completed",
+      "success": false,
+      "submissions": 100,
+      "host_questions": 99,
+      "rejected_finals": 1,
+      "final_partial_score": 0.0,
+      "stop_reason": "budget_exhausted"
+    },
+    {
+      "run_dir": "S1_TS014_TS013_TS014_TS013_r03_direct",
+      "source": "TS014",
+      "target": "TS013",
+      "repeat": 3,
+      "condition": "direct",
+      "status": "completed",
+      "success": false,
+      "submissions": 100,
+      "host_questions": 97,
+      "rejected_finals": 3,
+      "final_partial_score": 0.55,
+      "stop_reason": "budget_exhausted"
+    },
+    {
+      "run_dir": "S1_TS028_TS013_TS028_TS013_r01_direct",
+      "source": "TS028",
+      "target": "TS013",
+      "repeat": 1,
+      "condition": "direct",
+      "status": "completed",
+      "success": false,
+      "submissions": 100,
+      "host_questions": 99,
+      "rejected_finals": 1,
+      "final_partial_score": 0.25,
+      "stop_reason": "budget_exhausted"
+    },
+    {
+      "run_dir": "S1_TS028_TS013_TS028_TS013_r01_answer_only",
+      "source": "TS028",
+      "target": "TS013",
+      "repeat": 1,
+      "condition": "answer_only",
+      "status": "completed",
+      "success": false,
+      "submissions": 100,
+      "host_questions": 98,
+      "rejected_finals": 2,
+      "final_partial_score": 0.35,
+      "stop_reason": "budget_exhausted"
+    },
+    {
+      "run_dir": "S1_TS028_TS013_TS028_TS013_r01_session",
+      "source": "TS028",
+      "target": "TS013",
+      "repeat": 1,
+      "condition": "session",
+      "status": "completed",
+      "success": false,
+      "submissions": 100,
+      "host_questions": 97,
+      "rejected_finals": 3,
+      "final_partial_score": 0.35,
+      "stop_reason": "budget_exhausted"
+    },
+    {
+      "run_dir": "S1_TS014_TS013_TS014_TS013_r02_direct",
+      "source": "TS014",
+      "target": "TS013",
+      "repeat": 2,
+      "condition": "direct",
+      "status": "completed",
+      "success": false,
+      "submissions": 100,
+      "host_questions": 99,
+      "rejected_finals": 1,
+      "final_partial_score": 0.0,
+      "stop_reason": "budget_exhausted"
+    },
+    {
+      "run_dir": "S1_TS014_TS013_TS014_TS013_r02_session",
+      "source": "TS014",
+      "target": "TS013",
+      "repeat": 2,
+      "condition": "session",
+      "status": "completed",
+      "success": false,
+      "submissions": 100,
+      "host_questions": 99,
+      "rejected_finals": 1,
+      "final_partial_score": 0.0,
+      "stop_reason": "budget_exhausted"
+    },
+    {
+      "run_dir": "S1_TS014_TS013_TS014_TS013_r02_answer_only",
+      "source": "TS014",
+      "target": "TS013",
+      "repeat": 2,
+      "condition": "answer_only",
+      "status": "completed",
+      "success": false,
+      "submissions": 100,
+      "host_questions": 99,
+      "rejected_finals": 1,
+      "final_partial_score": 0.55,
+      "stop_reason": "budget_exhausted"
+    },
+    {
+      "run_dir": "S1_TS015_TS013_TS015_TS013_r04_direct",
+      "source": "TS015",
+      "target": "TS013",
+      "repeat": 4,
+      "condition": "direct",
+      "status": "completed",
+      "success": false,
+      "submissions": 100,
+      "host_questions": 98,
+      "rejected_finals": 2,
+      "final_partial_score": 0.55,
+      "stop_reason": "budget_exhausted"
+    },
+    {
+      "run_dir": "S1_TS015_TS013_TS015_TS013_r04_answer_only",
+      "source": "TS015",
+      "target": "TS013",
+      "repeat": 4,
+      "condition": "answer_only",
+      "status": "running",
+      "success": null,
+      "submissions": 58,
+      "host_questions": 58,
+      "rejected_finals": 0,
+      "final_partial_score": null,
+      "stop_reason": null
+    },
+    {
+      "run_dir": "S1_TS015_TS013_TS015_TS013_r04_session",
+      "source": "TS015",
+      "target": "TS013",
+      "repeat": 4,
+      "condition": "session",
+      "status": "planned",
+      "success": null,
+      "submissions": 0,
+      "host_questions": null,
+      "rejected_finals": null,
+      "final_partial_score": null,
+      "stop_reason": null
+    },
+    {
+      "run_dir": "S1_TS015_TS013_TS015_TS013_r01_direct",
+      "source": "TS015",
+      "target": "TS013",
+      "repeat": 1,
+      "condition": "direct",
+      "status": "completed",
+      "success": false,
+      "submissions": 100,
+      "host_questions": 98,
+      "rejected_finals": 2,
+      "final_partial_score": 0.25,
+      "stop_reason": "budget_exhausted"
+    },
+    {
+      "run_dir": "S1_TS015_TS013_TS015_TS013_r01_answer_only",
+      "source": "TS015",
+      "target": "TS013",
+      "repeat": 1,
+      "condition": "answer_only",
+      "status": "completed",
+      "success": false,
+      "submissions": 100,
+      "host_questions": 99,
+      "rejected_finals": 1,
+      "final_partial_score": 0.55,
+      "stop_reason": "budget_exhausted"
+    },
+    {
+      "run_dir": "S1_TS015_TS013_TS015_TS013_r01_session",
+      "source": "TS015",
+      "target": "TS013",
+      "repeat": 1,
+      "condition": "session",
+      "status": "completed",
+      "success": false,
+      "submissions": 100,
+      "host_questions": 94,
+      "rejected_finals": 6,
+      "final_partial_score": 0.65,
+      "stop_reason": "budget_exhausted"
+    },
+    {
+      "run_dir": "S1_TS028_TS013_TS028_TS013_r04_direct",
+      "source": "TS028",
+      "target": "TS013",
+      "repeat": 4,
+      "condition": "direct",
+      "status": "planned",
+      "success": null,
+      "submissions": 0,
+      "host_questions": null,
+      "rejected_finals": null,
+      "final_partial_score": null,
+      "stop_reason": null
+    },
+    {
+      "run_dir": "S1_TS028_TS013_TS028_TS013_r04_answer_only",
+      "source": "TS028",
+      "target": "TS013",
+      "repeat": 4,
+      "condition": "answer_only",
+      "status": "planned",
+      "success": null,
+      "submissions": 0,
+      "host_questions": null,
+      "rejected_finals": null,
+      "final_partial_score": null,
+      "stop_reason": null
+    },
+    {
+      "run_dir": "S1_TS028_TS013_TS028_TS013_r04_session",
+      "source": "TS028",
+      "target": "TS013",
+      "repeat": 4,
+      "condition": "session",
+      "status": "planned",
+      "success": null,
+      "submissions": 0,
+      "host_questions": null,
+      "rejected_finals": null,
+      "final_partial_score": null,
+      "stop_reason": null
+    },
+    {
+      "run_dir": "S1_TS015_TS013_TS015_TS013_r03_session",
+      "source": "TS015",
+      "target": "TS013",
+      "repeat": 3,
+      "condition": "session",
+      "status": "planned",
+      "success": null,
+      "submissions": 0,
+      "host_questions": null,
+      "rejected_finals": null,
+      "final_partial_score": null,
+      "stop_reason": null
+    },
+    {
+      "run_dir": "S1_TS015_TS013_TS015_TS013_r03_direct",
+      "source": "TS015",
+      "target": "TS013",
+      "repeat": 3,
+      "condition": "direct",
+      "status": "planned",
+      "success": null,
+      "submissions": 0,
+      "host_questions": null,
+      "rejected_finals": null,
+      "final_partial_score": null,
+      "stop_reason": null
+    },
+    {
+      "run_dir": "S1_TS015_TS013_TS015_TS013_r03_answer_only",
+      "source": "TS015",
+      "target": "TS013",
+      "repeat": 3,
+      "condition": "answer_only",
+      "status": "planned",
+      "success": null,
+      "submissions": 0,
+      "host_questions": null,
+      "rejected_finals": null,
+      "final_partial_score": null,
+      "stop_reason": null
+    },
+    {
+      "run_dir": "S1_TS015_TS013_TS015_TS013_r02_answer_only",
+      "source": "TS015",
+      "target": "TS013",
+      "repeat": 2,
+      "condition": "answer_only",
+      "status": "completed",
+      "success": false,
+      "submissions": 100,
+      "host_questions": 99,
+      "rejected_finals": 1,
+      "final_partial_score": 0.55,
+      "stop_reason": "budget_exhausted"
+    },
+    {
+      "run_dir": "S1_TS015_TS013_TS015_TS013_r02_session",
+      "source": "TS015",
+      "target": "TS013",
+      "repeat": 2,
+      "condition": "session",
+      "status": "completed",
+      "success": false,
+      "submissions": 100,
+      "host_questions": 81,
+      "rejected_finals": 19,
+      "final_partial_score": 0.35,
+      "stop_reason": "budget_exhausted"
+    },
+    {
+      "run_dir": "S1_TS015_TS013_TS015_TS013_r02_direct",
+      "source": "TS015",
+      "target": "TS013",
+      "repeat": 2,
+      "condition": "direct",
+      "status": "completed",
+      "success": false,
+      "submissions": 100,
+      "host_questions": 99,
+      "rejected_finals": 1,
+      "final_partial_score": 0.4,
+      "stop_reason": "budget_exhausted"
+    },
+    {
+      "run_dir": "S1_TS028_TS013_TS028_TS013_r02_answer_only",
+      "source": "TS028",
+      "target": "TS013",
+      "repeat": 2,
+      "condition": "answer_only",
+      "status": "completed",
+      "success": false,
+      "submissions": 100,
+      "host_questions": 99,
+      "rejected_finals": 1,
+      "final_partial_score": 0.65,
+      "stop_reason": "budget_exhausted"
+    },
+    {
+      "run_dir": "S1_TS028_TS013_TS028_TS013_r02_session",
+      "source": "TS028",
+      "target": "TS013",
+      "repeat": 2,
+      "condition": "session",
+      "status": "completed",
+      "success": false,
+      "submissions": 100,
+      "host_questions": 98,
+      "rejected_finals": 2,
+      "final_partial_score": 0.0,
+      "stop_reason": "budget_exhausted"
+    },
+    {
+      "run_dir": "S1_TS028_TS013_TS028_TS013_r02_direct",
+      "source": "TS028",
+      "target": "TS013",
+      "repeat": 2,
+      "condition": "direct",
+      "status": "completed",
+      "success": false,
+      "submissions": 100,
+      "host_questions": 98,
+      "rejected_finals": 2,
+      "final_partial_score": 0.55,
+      "stop_reason": "budget_exhausted"
+    },
+    {
+      "run_dir": "S1_TS028_TS013_TS028_TS013_r03_session",
+      "source": "TS028",
+      "target": "TS013",
+      "repeat": 3,
+      "condition": "session",
+      "status": "planned",
+      "success": null,
+      "submissions": 0,
+      "host_questions": null,
+      "rejected_finals": null,
+      "final_partial_score": null,
+      "stop_reason": null
+    },
+    {
+      "run_dir": "S1_TS028_TS013_TS028_TS013_r03_direct",
+      "source": "TS028",
+      "target": "TS013",
+      "repeat": 3,
+      "condition": "direct",
+      "status": "planned",
+      "success": null,
+      "submissions": 0,
+      "host_questions": null,
+      "rejected_finals": null,
+      "final_partial_score": null,
+      "stop_reason": null
+    },
+    {
+      "run_dir": "S1_TS028_TS013_TS028_TS013_r03_answer_only",
+      "source": "TS028",
+      "target": "TS013",
+      "repeat": 3,
+      "condition": "answer_only",
+      "status": "planned",
+      "success": null,
+      "submissions": 0,
+      "host_questions": null,
+      "rejected_finals": null,
+      "final_partial_score": null,
+      "stop_reason": null
+    }
+  ],
+  "limitations": [
+    "Only completed games enter outcome means; missing/running scores are never filled with zero.",
+    "Per-source comparisons use the same completed repeat IDs for all three conditions.",
+    "Pooled comparisons use only repeat IDs completed across every source and condition.",
+    "One fixed A prefix per source; B repetitions are conditional on it, not independent A experiences.",
+    "Model grades are descriptive outcomes, not human-verified successes. No Host judgments are changed.",
+    "Historical and new repetitions used recorded parser/controller overlays; preserve that cohort distinction."
+  ]
+}

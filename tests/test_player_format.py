@@ -54,24 +54,26 @@ class PlayerFormatTests(unittest.TestCase):
         self.assertIsNone(local_repair('Question: '+body, True, self.policy))
 
     def test_colon_variants_reject_multiple_actions_and_empty_bodies(self):
+        policy={**self.policy,'multiple_actions':'reject'}
         for raw in ('Question: First?\nQUESTION\nSecond?',
                     'QUESTION\nFirst?\nFinal: Guess', 'Question:   ',
                     'Questionable: A guess?', 'Discuss: A thought',
                     'Question NEXT=A: Q?',
                     '{"type":"question","text":"First?"}\nQuestion: Second?'):
             with self.subTest(raw=raw):
-                self.assertIsNone(local_repair(raw, False, self.policy))
+                self.assertIsNone(local_repair(raw, False, policy))
 
     def test_ambiguous_or_empty_prefix_actions_are_never_selected_by_formatter(self):
+        policy={**self.policy,'multiple_actions':'reject'}
         for raw in ('Prose\nQUESTION\nA?\nQUESTION\nB?',
                     'Prose\nQUESTION\nA?\nFINAL\nGuess',
                     'Prose\nQUESTION\n',
                     '{"type":"question","text":"A?"}\nQUESTION\nB?',
                     'Prose\nPASS\nSkip', 'Prose\nQUESTION NEXT=A\nQ?'):
             with self.subTest(raw=raw), patch('turtle_loop.providers.Client') as formatter:
-                self.assertIsNone(local_repair(raw, False, self.policy))
+                self.assertIsNone(local_repair(raw, False, policy))
                 with self.assertRaises(ProtocolError):
-                    repair(raw, False, self.policy, lambda *a:None, lambda *a,**k:None)
+                    repair(raw, False, policy, lambda *a:None, lambda *a,**k:None)
                 formatter.assert_not_called()
 
     def test_terminal_marker_and_fixed_last_candidate_do_not_use_quality(self):

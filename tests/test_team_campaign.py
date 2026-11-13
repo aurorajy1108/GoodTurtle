@@ -10,10 +10,24 @@ from turtle_loop.costs import cost_summary
 
 
 class CampaignTests(unittest.TestCase):
+    def test_report_reads_live_game_counts_instead_of_stale_batch_row(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            out=Path(tmp);folder=out/'task/continual';game=folder/'game';game.mkdir(parents=True)
+            stale={'condition':'session','target':'TS013','source':'TS015','repeat':1,'run_dir':'game',
+                   'status':'running','success':None,'submissions':0,'counted_questions':0,'costs':cost_summary([])}
+            (folder/'experiment_runs.json').write_text(json.dumps([stale]))
+            (game/'result.json').write_text(json.dumps({**stale,'submissions':17,'counted_questions':17}))
+            job={'id':'cl-set1-a','folder':'task','kind':'continual','set':1,'slot':'a','repeat_offset':0,'planned_games':1}
+            manifest={'runner':'reviewer','preset':'full','jobs':[job],'planned_games':1,'catalogue':[job],'source_policy':'fixed'}
+            (out/'campaign.json').write_text(json.dumps(manifest))
+            rows=report(out)
+            self.assertEqual(rows[0]['counted_questions'],17)
+            self.assertEqual(rows[0]['submissions'],17)
+
     def args(self,out,**kw):
         return argparse.Namespace(command='start',preset='full',runner='reviewer',tasks='cl-set1-a',workers=2,
             set1_positive='15',config=str(ROOT/'configs/loop.deepseek.json'),
-            dataset=str(ROOT/'data/annotations/turtle50_v4/private.json'),seed=20261111,host_gate='auto',
+            dataset=str(ROOT/'data/annotations/turtle50_v5/private.json'),seed=20261111,host_gate='auto',
             on_error='stop',poll_seconds=1,mode='plan',out=str(out),**kw)
 
     def test_assignment_and_repetition_counts_match_screenshots(self):
@@ -41,6 +55,9 @@ class CampaignTests(unittest.TestCase):
             self.assertEqual(len({j['protocol_hash'] for j in manifest['jobs']}),1)
             for job in manifest['jobs']:
                 config=json.loads((out/job['folder']/'runtime_snapshot/configs/run.json').read_text())
+                data=json.loads((out/job['folder']/'runtime_snapshot/data/dataset.json').read_text())
+                self.assertTrue(data['puzzles'])
+                self.assertEqual({p['grading_protocol'] for p in data['puzzles']},{'coverage-v3-unified'})
                 self.assertEqual(config['max_questions'],100)
                 self.assertEqual(config['player']['extra_body']['thinking']['type'],'disabled')
                 plan=json.loads((out/job['folder']/'study_plan.json').read_text())

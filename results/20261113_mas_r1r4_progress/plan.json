@@ -1,0 +1,381 @@
+{
+  "schema_version": 1,
+  "protocol": "compute-agents-2x2-v1",
+  "puzzle": "TS038",
+  "planned_games": 16,
+  "repeats": 4,
+  "conditions": {
+    "solo": [
+      1,
+      false
+    ],
+    "solo_review": [
+      1,
+      true
+    ],
+    "mas": [
+      2,
+      false
+    ],
+    "mas_review": [
+      2,
+      true
+    ]
+  },
+  "jobs": [
+    {
+      "repeat": 2,
+      "generation_cap": 225,
+      "output_token_cap": 77696,
+      "submission_cap": 100,
+      "reference_game": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/runs/api/20261112_jiayang_supervised_v2/continuations/mas-ts038-a/attempt_01/team/TS038_r02_free_dialogue",
+      "reference_calls_sha256": "13111ec0e32abd61aba989c5f40f31bd9f8d1a807356ebbc38870a034afed00b",
+      "reference_result_sha256": "547aaccfcf4bffda91efd0984c64dee6878b95d6015d52e77d3d132f7e04a394",
+      "reference_usage": {
+        "generations": 225,
+        "output_tokens": 77696,
+        "input_tokens": 13955752,
+        "cached_input_tokens": 13778816,
+        "known_cost_usd": 0.22898889599999986,
+        "unknown_cost_calls": 1
+      },
+      "unknown_reference_calls": 1,
+      "condition": "solo_review",
+      "agents": 1,
+      "review": true,
+      "run_dir": "TS038_r02_solo_review"
+    },
+    {
+      "repeat": 1,
+      "generation_cap": 225,
+      "output_token_cap": 77696,
+      "submission_cap": 100,
+      "reference_game": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/runs/api/20261112_jiayang_supervised_v2/continuations/mas-ts038-a/attempt_01/team/TS038_r01_free_dialogue",
+      "reference_calls_sha256": "fde3278d8d27ee64bdd0916069391abba70fe4492193e7e54dd92cfe43498f04",
+      "reference_result_sha256": "f760df50376b58b8580e34a997ea964bd806944c34532c5eafe1a2de9de3a12d",
+      "reference_usage": {
+        "generations": 139,
+        "output_tokens": 30660,
+        "input_tokens": 4005347,
+        "cached_input_tokens": 3911808,
+        "known_cost_usd": 0.08832454800000002,
+        "unknown_cost_calls": 0
+      },
+      "unknown_reference_calls": 0,
+      "condition": "solo",
+      "agents": 1,
+      "review": false,
+      "run_dir": "TS038_r01_solo"
+    },
+    {
+      "repeat": 1,
+      "generation_cap": 225,
+      "output_token_cap": 77696,
+      "submission_cap": 100,
+      "reference_game": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/runs/api/20261112_jiayang_supervised_v2/continuations/mas-ts038-a/attempt_01/team/TS038_r01_free_dialogue",
+      "reference_calls_sha256": "fde3278d8d27ee64bdd0916069391abba70fe4492193e7e54dd92cfe43498f04",
+      "reference_result_sha256": "f760df50376b58b8580e34a997ea964bd806944c34532c5eafe1a2de9de3a12d",
+      "reference_usage": {
+        "generations": 139,
+        "output_tokens": 30660,
+        "input_tokens": 4005347,
+        "cached_input_tokens": 3911808,
+        "known_cost_usd": 0.08832454800000002,
+        "unknown_cost_calls": 0
+      },
+      "unknown_reference_calls": 0,
+      "condition": "mas",
+      "agents": 2,
+      "review": false,
+      "run_dir": "TS038_r01_mas"
+    },
+    {
+      "repeat": 2,
+      "generation_cap": 225,
+      "output_token_cap": 77696,
+      "submission_cap": 100,
+      "reference_game": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/runs/api/20261112_jiayang_supervised_v2/continuations/mas-ts038-a/attempt_01/team/TS038_r02_free_dialogue",
+      "reference_calls_sha256": "13111ec0e32abd61aba989c5f40f31bd9f8d1a807356ebbc38870a034afed00b",
+      "reference_result_sha256": "547aaccfcf4bffda91efd0984c64dee6878b95d6015d52e77d3d132f7e04a394",
+      "reference_usage": {
+        "generations": 225,
+        "output_tokens": 77696,
+        "input_tokens": 13955752,
+        "cached_input_tokens": 13778816,
+        "known_cost_usd": 0.22898889599999986,
+        "unknown_cost_calls": 1
+      },
+      "unknown_reference_calls": 1,
+      "condition": "mas_review",
+      "agents": 2,
+      "review": true,
+      "run_dir": "TS038_r02_mas_review"
+    },
+    {
+      "repeat": 1,
+      "generation_cap": 225,
+      "output_token_cap": 77696,
+      "submission_cap": 100,
+      "reference_game": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/runs/api/20261112_jiayang_supervised_v2/continuations/mas-ts038-a/attempt_01/team/TS038_r01_free_dialogue",
+      "reference_calls_sha256": "fde3278d8d27ee64bdd0916069391abba70fe4492193e7e54dd92cfe43498f04",
+      "reference_result_sha256": "f760df50376b58b8580e34a997ea964bd806944c34532c5eafe1a2de9de3a12d",
+      "reference_usage": {
+        "generations": 139,
+        "output_tokens": 30660,
+        "input_tokens": 4005347,
+        "cached_input_tokens": 3911808,
+        "known_cost_usd": 0.08832454800000002,
+        "unknown_cost_calls": 0
+      },
+      "unknown_reference_calls": 0,
+      "condition": "solo_review",
+      "agents": 1,
+      "review": true,
+      "run_dir": "TS038_r01_solo_review"
+    },
+    {
+      "repeat": 2,
+      "generation_cap": 225,
+      "output_token_cap": 77696,
+      "submission_cap": 100,
+      "reference_game": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/runs/api/20261112_jiayang_supervised_v2/continuations/mas-ts038-a/attempt_01/team/TS038_r02_free_dialogue",
+      "reference_calls_sha256": "13111ec0e32abd61aba989c5f40f31bd9f8d1a807356ebbc38870a034afed00b",
+      "reference_result_sha256": "547aaccfcf4bffda91efd0984c64dee6878b95d6015d52e77d3d132f7e04a394",
+      "reference_usage": {
+        "generations": 225,
+        "output_tokens": 77696,
+        "input_tokens": 13955752,
+        "cached_input_tokens": 13778816,
+        "known_cost_usd": 0.22898889599999986,
+        "unknown_cost_calls": 1
+      },
+      "unknown_reference_calls": 1,
+      "condition": "solo",
+      "agents": 1,
+      "review": false,
+      "run_dir": "TS038_r02_solo"
+    },
+    {
+      "repeat": 2,
+      "generation_cap": 225,
+      "output_token_cap": 77696,
+      "submission_cap": 100,
+      "reference_game": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/runs/api/20261112_jiayang_supervised_v2/continuations/mas-ts038-a/attempt_01/team/TS038_r02_free_dialogue",
+      "reference_calls_sha256": "13111ec0e32abd61aba989c5f40f31bd9f8d1a807356ebbc38870a034afed00b",
+      "reference_result_sha256": "547aaccfcf4bffda91efd0984c64dee6878b95d6015d52e77d3d132f7e04a394",
+      "reference_usage": {
+        "generations": 225,
+        "output_tokens": 77696,
+        "input_tokens": 13955752,
+        "cached_input_tokens": 13778816,
+        "known_cost_usd": 0.22898889599999986,
+        "unknown_cost_calls": 1
+      },
+      "unknown_reference_calls": 1,
+      "condition": "mas",
+      "agents": 2,
+      "review": false,
+      "run_dir": "TS038_r02_mas"
+    },
+    {
+      "repeat": 1,
+      "generation_cap": 225,
+      "output_token_cap": 77696,
+      "submission_cap": 100,
+      "reference_game": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/runs/api/20261112_jiayang_supervised_v2/continuations/mas-ts038-a/attempt_01/team/TS038_r01_free_dialogue",
+      "reference_calls_sha256": "fde3278d8d27ee64bdd0916069391abba70fe4492193e7e54dd92cfe43498f04",
+      "reference_result_sha256": "f760df50376b58b8580e34a997ea964bd806944c34532c5eafe1a2de9de3a12d",
+      "reference_usage": {
+        "generations": 139,
+        "output_tokens": 30660,
+        "input_tokens": 4005347,
+        "cached_input_tokens": 3911808,
+        "known_cost_usd": 0.08832454800000002,
+        "unknown_cost_calls": 0
+      },
+      "unknown_reference_calls": 0,
+      "condition": "mas_review",
+      "agents": 2,
+      "review": true,
+      "run_dir": "TS038_r01_mas_review"
+    },
+    {
+      "repeat": 4,
+      "condition": "solo",
+      "agents": 1,
+      "review": false,
+      "generation_cap": 225,
+      "output_token_cap": 77696,
+      "submission_cap": 100,
+      "run_dir": "TS038_r04_solo",
+      "extension_source": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/runs/api/20261113_ts038_compute_matched_2x2_v8_private_note",
+      "cohort": "additional_repeats_private_note_recovery_v1"
+    },
+    {
+      "repeat": 3,
+      "condition": "mas_review",
+      "agents": 2,
+      "review": true,
+      "generation_cap": 225,
+      "output_token_cap": 77696,
+      "submission_cap": 100,
+      "run_dir": "TS038_r03_mas_review",
+      "extension_source": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/runs/api/20261113_ts038_compute_matched_2x2_v8_private_note",
+      "cohort": "additional_repeats_private_note_recovery_v1"
+    },
+    {
+      "repeat": 4,
+      "condition": "solo_review",
+      "agents": 1,
+      "review": true,
+      "generation_cap": 225,
+      "output_token_cap": 77696,
+      "submission_cap": 100,
+      "run_dir": "TS038_r04_solo_review",
+      "extension_source": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/runs/api/20261113_ts038_compute_matched_2x2_v8_private_note",
+      "cohort": "additional_repeats_private_note_recovery_v1"
+    },
+    {
+      "repeat": 4,
+      "condition": "mas",
+      "agents": 2,
+      "review": false,
+      "generation_cap": 225,
+      "output_token_cap": 77696,
+      "submission_cap": 100,
+      "run_dir": "TS038_r04_mas",
+      "extension_source": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/runs/api/20261113_ts038_compute_matched_2x2_v8_private_note",
+      "cohort": "additional_repeats_private_note_recovery_v1"
+    },
+    {
+      "repeat": 4,
+      "condition": "mas_review",
+      "agents": 2,
+      "review": true,
+      "generation_cap": 225,
+      "output_token_cap": 77696,
+      "submission_cap": 100,
+      "run_dir": "TS038_r04_mas_review",
+      "extension_source": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/runs/api/20261113_ts038_compute_matched_2x2_v8_private_note",
+      "cohort": "additional_repeats_private_note_recovery_v1"
+    },
+    {
+      "repeat": 3,
+      "condition": "solo_review",
+      "agents": 1,
+      "review": true,
+      "generation_cap": 225,
+      "output_token_cap": 77696,
+      "submission_cap": 100,
+      "run_dir": "TS038_r03_solo_review",
+      "extension_source": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/runs/api/20261113_ts038_compute_matched_2x2_v8_private_note",
+      "cohort": "additional_repeats_private_note_recovery_v1"
+    },
+    {
+      "repeat": 3,
+      "condition": "solo",
+      "agents": 1,
+      "review": false,
+      "generation_cap": 225,
+      "output_token_cap": 77696,
+      "submission_cap": 100,
+      "run_dir": "TS038_r03_solo",
+      "extension_source": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/runs/api/20261113_ts038_compute_matched_2x2_v8_private_note",
+      "cohort": "additional_repeats_private_note_recovery_v1"
+    },
+    {
+      "repeat": 3,
+      "condition": "mas",
+      "agents": 2,
+      "review": false,
+      "generation_cap": 225,
+      "output_token_cap": 77696,
+      "submission_cap": 100,
+      "run_dir": "TS038_r03_mas",
+      "extension_source": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/runs/api/20261113_ts038_compute_matched_2x2_v8_private_note",
+      "cohort": "additional_repeats_private_note_recovery_v1"
+    }
+  ],
+  "workers": 2,
+  "per_generation_output_cap": 2048,
+  "note_word_target": 160,
+  "dialogue_policy": {
+    "roles": "complementary",
+    "scheduling": "adaptive",
+    "max_discussion": 4,
+    "start": "A",
+    "role_assignment": {
+      "A": {
+        "specialty": "investigator",
+        "instruction": "Develop and test explanations of identities, setting, event order and the main causal mechanism. Connect confirmed facts into a coherent story; explicitly distinguish hypotheses from host-confirmed facts."
+      },
+      "B": {
+        "specialty": "critic",
+        "instruction": "Challenge unsupported assumptions, propose alternative interpretations, and test missing causal links, motives and contradictions. Suggest discriminating questions rather than only criticizing. Help complete the story."
+      }
+    },
+    "protocol": "shared-dialogue-v3-prefix-v1",
+    "format_correction_max_retries": 2
+  },
+  "reference_study": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/runs/api/20261112_jiayang_supervised_v2/continuations/mas-ts038-a/attempt_01",
+  "cap_derivation": [
+    {
+      "repeat": 1,
+      "generation_cap": 139,
+      "output_token_cap": 30660,
+      "submission_cap": 100,
+      "reference_game": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/runs/api/20261112_jiayang_supervised_v2/continuations/mas-ts038-a/attempt_01/team/TS038_r01_free_dialogue",
+      "reference_calls_sha256": "fde3278d8d27ee64bdd0916069391abba70fe4492193e7e54dd92cfe43498f04",
+      "reference_result_sha256": "f760df50376b58b8580e34a997ea964bd806944c34532c5eafe1a2de9de3a12d",
+      "reference_usage": {
+        "generations": 139,
+        "output_tokens": 30660,
+        "input_tokens": 4005347,
+        "cached_input_tokens": 3911808,
+        "known_cost_usd": 0.08832454800000002,
+        "unknown_cost_calls": 0
+      },
+      "unknown_reference_calls": 0
+    },
+    {
+      "repeat": 2,
+      "generation_cap": 225,
+      "output_token_cap": 77696,
+      "submission_cap": 100,
+      "reference_game": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/runs/api/20261112_jiayang_supervised_v2/continuations/mas-ts038-a/attempt_01/team/TS038_r02_free_dialogue",
+      "reference_calls_sha256": "13111ec0e32abd61aba989c5f40f31bd9f8d1a807356ebbc38870a034afed00b",
+      "reference_result_sha256": "547aaccfcf4bffda91efd0984c64dee6878b95d6015d52e77d3d132f7e04a394",
+      "reference_usage": {
+        "generations": 225,
+        "output_tokens": 77696,
+        "input_tokens": 13955752,
+        "cached_input_tokens": 13778816,
+        "known_cost_usd": 0.22898889599999986,
+        "unknown_cost_calls": 1
+      },
+      "unknown_reference_calls": 1
+    }
+  ],
+  "common_solver_caps": {
+    "generation_cap": 225,
+    "output_token_cap": 77696
+  },
+  "matching": "Identical available actor-generation/output/public-submission ceilings in every game; actual usage is reported separately.",
+  "review_schedule": "Floor differences across external slots 1..99. Only the first solver decision in a slot gets its scheduled private draft/review; no extra review for format corrections or subsequent public discussion.",
+  "isolation": "Solo base comes from actual solo; MAS base comes from actual MAS. Two MAS actors have distinct persistent sessions and shared public dialogue; their private reviews are not automatically shared.",
+  "limitations": [
+    "Budget ceilings are matched, not exact FLOPs or realized token expenditure.",
+    "Two repeats of one puzzle are exploratory.",
+    "Earlier solo_self_review_matched results used a MAS-contaminated base prompt and are excluded from this factorial comparison.",
+    "Added repetitions retain original model, prompts and caps; record the controller recovery cohort. One puzzle remains exploratory."
+  ],
+  "extended_from": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle/runs/api/20261113_ts038_compute_matched_2x2_v8_private_note",
+  "preserved_repeat_ids": [
+    1,
+    2
+  ],
+  "new_repeat_ids": [
+    3,
+    4
+  ]
+}

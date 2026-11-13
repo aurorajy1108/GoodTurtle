@@ -11,10 +11,9 @@ def dialogue_schema(allowed, forced=False):
 
 
 def dialogue_contract_text(allowed, forced=False):
-    headers = [kind.upper()+' NEXT='+actor for kind in allowed for actor in ('A', 'B')]
-    if forced:
-        headers += [kind.upper() for kind in allowed]
-    return ('Return exactly one plain text action. Choose one exact first line: '
+    headers=[kind.upper()+' NEXT='+actor for kind in allowed for actor in ('A','B')]
+    if forced:headers+=['FINAL']
+    return ('Return exactly one plain text action. Copy exactly ONE of these complete first lines: '
             + ' | '.join(headers)
             + '. Then a newline and nonempty body. No JSON, fences, or extra action blocks. '
             + ('NEXT is optional on the mandatory final.' if forced else 'NEXT is required.'))

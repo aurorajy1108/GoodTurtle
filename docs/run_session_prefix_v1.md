@@ -1,25 +1,26 @@
 # 新版本运行指南：CL 原始会话续接 + Player 纯文本协议
 
-分支：`fix/cl-session-prefix-compat-20261111`。本版同时兼容新的返回格式与 CL 原始会话续接。Python 3.10+，实验 loop 只使用标准库，无需模型 SDK。以下命令在仓库根目录执行。
+当前默认分支：`main`（11月13日已合入统一评分与恢复修复）。本版同时兼容新的返回格式与 CL 原始会话续接。Python 3.10+，实验 loop 只使用标准库，无需模型 SDK。以下命令在仓库根目录执行。
 
 ## 获取与配置
 
 首次下载：
 
 ```bash
-git clone --branch fix/cl-session-prefix-compat-20261111 \
+git clone --branch main \
   https://github.com/aurorajy1108/GoodTurtle.git
 cd GoodTurtle
 ```
 
-已有 clone，且尚无同名本地分支：
+已有 clone：
 
 ```bash
 git fetch origin
-git switch --track origin/fix/cl-session-prefix-compat-20261111
+git switch main
+git pull --ff-only
 ```
 
-已在此分支时用 `git pull --ff-only`。保留自己未提交的改动，不使用强制覆盖。在启动实验的同一个终端设置 key；已经 export 的终端无需重设：
+已在main时用 `git pull --ff-only`。保留自己未提交的改动，不使用强制覆盖。在启动实验的同一个终端设置 key；已经 export 的终端无需重设：
 
 ```bash
 export DEEPSEEK_API_KEY='YOUR_OWN_KEY'
@@ -60,7 +61,7 @@ bash scripts/start_set1_verified.sh runs/api/my_set1_prefix_once
 ```bash
 python3 scripts/run_set1_verified.py --mode run \
   --config configs/loop.deepseek.json \
-  --dataset data/annotations/turtle50_v4/private.json \
+  --dataset data/annotations/turtle50_v5/private.json \
   --seed 20261102 --out runs/api/my_set1_prefix_foreground
 ```
 
@@ -69,7 +70,7 @@ python3 scripts/run_set1_verified.py --mode run \
 | `--mode` | plan | plan只冻结；run先诊断再实验 |
 | `--out` | 必填 | 新目录，拒绝覆盖；plan和run不共用同一目录 |
 | `--config` | configs/loop.deepseek.json | 全角色模型配置，冻结后不变 |
-| `--dataset` | data/annotations/turtle50_v4/private.json | Git中已有完整题库和评分，无需原Excel |
+| `--dataset` | data/annotations/turtle50_v5/private.json | Git中已有完整题库和评分，无需原Excel |
 | `--seed` | 20261102 | 调度seed，不控制模型采样 |
 
 通用入口及全部参数见 [五组实验文档](study_20261102.md)。`--memory session` 是新默认；transcript 显式使用旧引用历史，card 为摘要，both 为 transcript+card。session 要求 persistent API Player；Codex CLI 跨题分支暂不支持，CL须选 transcript。

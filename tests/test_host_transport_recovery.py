@@ -26,6 +26,15 @@ class Response:
 
 @patch.dict('os.environ', {'DEEPSEEK_API_KEY': 'fixture'})
 class HostTransportRecoveryTests(unittest.TestCase):
+    def test_cancelled_pending_host_request_can_be_explicitly_replayed(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            config,_,rec,result,_=self.interrupted(Path(tmp))
+            cancelled=copy.deepcopy(result);cancelled.update(status='interrupted',stop_reason='user_interrupt')
+            calls=copy.deepcopy(rec.calls);calls[-1]['status']='interrupted'
+            self.assertIsNotNone(saved_host_transport_recovery(cancelled,calls,rec.turns,config))
+            calls[-1]['text']='An observed response must never be regenerated'
+            self.assertIsNone(saved_host_transport_recovery(cancelled,calls,rec.turns,config))
+
     def test_completed_authorized_replay_keeps_audit_but_restores_chat_on_next_resume(self):
         from turtle_loop.sessions import completed_host_replay_records, restorable_chat_records
         with tempfile.TemporaryDirectory() as tmp:

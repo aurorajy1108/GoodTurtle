@@ -1,6 +1,10 @@
 # 团队运行：3个CL set、3道MAS，两人各两次
 
-分支 `fix/cl-session-prefix-compat-20261111`。默认Set1只选15，16保留可选。每个实验有a/b两个**人工执行槽**：a跑重复1、2，b跑3、4；这与MAS内部两个模型Agent A/B不同。
+真实API小量测试新发现与有限恢复边界见 [11月11日修复记录](live_test_repairs_20261111.md)。其中新增MAS保存动作恢复，不等于所有free_dialogue中断都可续跑。
+
+分支 `main`。默认Set1只选15，16保留可选。每个实验有a/b两个**人工执行槽**：a跑重复1、2，b跑3、4；这与MAS内部两个模型Agent A/B不同。
+
+**当前评分标准：** 默认 `data/annotations/turtle50_v5/private.json` / `coverage-v3-unified`，100%与complete、立即结束一致。请按[main版本核对](main_sync_20261113.md)准备新目录；旧冻结目录续跑不自动升级协议，不与新版混算。
 
 ## 实验与分工
 
@@ -33,7 +37,7 @@ CL每条A→B比较direct、session、answer_only，每条件共4次B；每人21
 
 ```bash
 git fetch origin
-git switch fix/cl-session-prefix-compat-20261111
+git switch main
 git pull --ff-only
 ```
 
@@ -136,7 +140,7 @@ python3 scripts/team_campaign.py collect \
 | --workers | 2 | 同时执行的槽位批次数1–12 |
 | --set1-positive | 15 | 16替换15；both两道都选，full全员从150增至164局，不与默认混合 |
 | --config | configs/loop.deepseek.json | 全角色配置 |
-| --dataset | data/annotations/turtle50_v4/private.json | Git内完整题库 |
+| --dataset | data/annotations/turtle50_v5/private.json | Git内完整题库 |
 | --seed | 20261111 | 调度种子，按槽偏移，不控制API采样 |
 | --host-gate | auto | 含CL Set1先做20次诊断；none显式跳过 |
 | --on-error | stop | stop停止本机其他任务；continue继续其他槽；失败槽内部始终停止 |

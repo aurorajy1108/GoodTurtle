@@ -1,0 +1,39 @@
+{
+  "scope": "structural/counters/score arithmetic/session lineage/cost accounting; no human semantic certification",
+  "status": "passed",
+  "human_semantic_review": "pending",
+  "submissions": 100,
+  "api_attempts": 202,
+  "warnings": [],
+  "source_api_calls_sha256": "79a9d23061c9c6ff4add5d1d4de2af1fc6a8fe21b67587252e12df6af9c551bc",
+  "source_files_sha256": {
+    "result.json": "9aa6cc859081e27dbf9c69910a2e3cfb149f8d43c6da6277a72941a6e3f11e9c",
+    "trajectory.jsonl": "e330055013aa50c1ec890240f6f929a535629ed6f6aeb8a015e5e1efdbb8cc51",
+    "trajectory.md": "0347a249b500cbb3f62f9ce899bdea560ac4b5ce58dfa2fe1834d0b7dc6778b0",
+    "trajectory.html": "f04c9df73dc7d968ca9b5da1b3a9185b0f2a89a4ac5352a45e196611ed5afb9b",
+    "review_template.csv": "3580c6b7e46e6da52d50b34b45fc33038ba9691981339644c273643a3e7b13bb",
+    "config.json": "4307cf3c715247acc8faf9d322125607962ba66e56d5980b57d841ccb930bc1e",
+    "prompts.json": "fd0f3ea13c946e62222d317314549bea070bde6feb4c96d4bb9d525f03568bd4",
+    "puzzle_private.json": "6f9ca533f4259686032b2fcc5ced776bcfe1481dc79985c21d45f1400be08d8b",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "0a3fdde5e02a39bbfd5dea2afbce6b9ce2479134e71d8df316bc7b00195cca23",
+    "token_costs.csv": "5e21565927de5c40ea30d35a67550a8e2ca0a3f6d2ac17e762e21861abf9894e",
+    "cost_summary.json": "2dfae51ac8a52f79043b084181e2f0c9aa57d0a1bf552f59c1f0c1dc3d26ca57"
+  },
+  "published_files_sha256": {
+    "result.json": "9aa6cc859081e27dbf9c69910a2e3cfb149f8d43c6da6277a72941a6e3f11e9c",
+    "trajectory.jsonl": "e330055013aa50c1ec890240f6f929a535629ed6f6aeb8a015e5e1efdbb8cc51",
+    "trajectory.md": "0347a249b500cbb3f62f9ce899bdea560ac4b5ce58dfa2fe1834d0b7dc6778b0",
+    "trajectory.html": "f04c9df73dc7d968ca9b5da1b3a9185b0f2a89a4ac5352a45e196611ed5afb9b",
+    "review_template.csv": "3580c6b7e46e6da52d50b34b45fc33038ba9691981339644c273643a3e7b13bb",
+    "config.json": "4307cf3c715247acc8faf9d322125607962ba66e56d5980b57d841ccb930bc1e",
+    "prompts.json": "fd0f3ea13c946e62222d317314549bea070bde6feb4c96d4bb9d525f03568bd4",
+    "puzzle_private.json": "6f9ca533f4259686032b2fcc5ced776bcfe1481dc79985c21d45f1400be08d8b",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "0a3fdde5e02a39bbfd5dea2afbce6b9ce2479134e71d8df316bc7b00195cca23",
+    "token_costs.csv": "5e21565927de5c40ea30d35a67550a8e2ca0a3f6d2ac17e762e21861abf9894e",
+    "cost_summary.json": "2dfae51ac8a52f79043b084181e2f0c9aa57d0a1bf552f59c1f0c1dc3d26ca57"
+  },
+  "presentation_changes": [],
+  "api_audit_sha256": "f7b38a673e3d9c3f87828b669a77f498713ea909d5c51011ac20629e89387cc4"
+}

@@ -1,16 +1,42 @@
+**评分更新：** 新实验默认 v5，100% 与 complete、结束条件完全统一；旧结果不改写。[运行与验证说明](docs/unified_scoring_v3.md)。
+
 [English](Readme.md) | 中文
 
 # GoodTurtle — COMP1110
 
+**鲁棒恢复更新：** [Host标签格式归一化、空正文限次重试及旧CL/MAS续跑方法](docs/host_output_recovery.md)。保留原始回答与费用，不重问Player、不重置额度；已有断点请按指南复制到新目录恢复。
+
+## 自查与MAS的计算预算对照（一键运行）
+
+更新main后，在终端export自己的`DEEPSEEK_API_KEY`，或写入忽略的`.env.local`，然后执行：
+
+```bash
+bash scripts/run_compute_matched_agents.sh runs/api/ts038_review_yourname_01
+```
+
+选择一个新目录；不需要下载本机历史run。脚本直接使用仓库里的TS038、Host参考包和DeepSeek配置，冻结后运行普通单agent、单agent自查、普通MAS、MAS自查，每组2次、最多2局并行。每局统一上限225次Player生成、77,696个输出token、100次外部提交；MAS两人共享计算预算。Player为Flash且关闭thinking，Host/Grader沿用配置中的Pro。实际token、缓存、费用另行记录。
+
+输出的`index.html`可查看轨迹、公共对话、私有自查与统计。[全部参数和恢复方式](docs/compute_matched_agents.md)。若只想准备计划而不调用API：`python3.11 scripts/compute_matched_agents.py prepare --out 输出目录`。
+
+**11月13日结果发布：** [CL Set1四次重复](results/20261113_verified_final/README.md)，直接打开[HTML轨迹索引](results/20261113_verified_final/index.html)。CL已完成39/39局；[MAS已续跑完成8/8局](results/20261113_mas_completed/README.md)，保留原截断私有笔记，剩余局在第84次提交以0%结束。结构、会话和费用核验通过，Host/Grader语义仍待人工复核。只汇总最新归档，避免续跑重复计数；[此前阶段分析](docs/results/cl_set1_20261112/interpretation.zh-CN.md)保留作历史记录。
+
+**MAS补至四次重复：** [最新已完成结果快照10/16局](results/20261113_mas_r1r4_progress/README.md)，可直接打开[HTML轨迹](results/20261113_mas_r1r4_progress/index.html)。本次新增单agent第4次（0%，100次提交）、MAS自查第3次（75%，81次提交）；未完成局单列，不进入成绩均值，旧局通过链接引用而非重复加总。
+
+**组友远端结果分析：** [Set2两轮＋April的TS038正式实验](docs/results/teammates_20261113/analysis.zh-CN.md)，固定main提交`6afda1c`核验28个唯一完成局。归档使用coverage-v2，Host、格式辅助模型和计算预算与当前默认配置不同，当前应分组报告而非直接合并。
+
+**真实API测试修复：** [TS015方向判定、MAS首行契约、保存动作续跑、实时计数和DeepSeek费用](docs/live_test_repairs_20261111.md)。实测仍在进行，未宣称整批已通过。
+
 **团队运行：** [三组CL+三道MAS，两人各两次的一键脚本](docs/team_campaign_20261111.md)：6局小量测试、个人批跑、限并发全员150局与去重汇总。
+
+**11月13日main同步：** 统一评分、鲁棒恢复、组友dashboard和归档已合并到main。[版本核对与旧实验边界](docs/main_sync_20261113.md)。pull后只有新准备的实验采用新版；已有冻结实验保留原代码和评分，不混算。
 
 ## 当前团队一键运行
 
-使用 `fix/cl-session-prefix-compat-20261111` 分支，在仓库根目录、已export自己 `DEEPSEEK_API_KEY` 的终端执行。各人的task IDs、全部参数、输出与合并方式见上面的团队指南。
+使用 `main` 分支，在仓库根目录、已export自己 `DEEPSEEK_API_KEY` 的终端执行。各人的task IDs、全部参数、输出与合并方式见上面的团队指南。
 
 ```bash
 git fetch origin
-git switch fix/cl-session-prefix-compat-20261111
+git switch main
 git pull --ff-only
 ```
 
@@ -69,7 +95,7 @@ bash scripts/run_team_batch.sh coordinator all 4 runs/api/team_all_formal_v1
 ```text
 configs/                  模型配置、题目绑定、CL题对、路径迁移清单
 data/
-  annotations/turtle50_v4/ 当前50题汤底与评分标准；v2/v3供历史复现
+  annotations/turtle50_v5/ 当前50题统一评分与完成标准；v2/v3/v4供历史复现
   host_reference/         人工参考资料（上传不会自动改变Host）
     inbox/                按 TSxxx/source_id 收新上传；多题一份放 multi/
     sources/              已登记的完整原文、消息ID、分段与规范化问答
@@ -109,7 +135,7 @@ python3 scripts/host_reference.py validate
 
 ```sh
 python3 scripts/play.py run \
-  --dataset data/annotations/turtle50_v4/private.json \
+  --dataset data/annotations/turtle50_v5/private.json \
   --puzzle TS032 --config configs/loop.codex.json \
   --dry-run --out runs/api/my_preflight
 python3 -m unittest discover -s tests -q

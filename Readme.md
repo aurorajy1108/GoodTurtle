@@ -1,16 +1,44 @@
 # GoodTurtle — COMP1110
 
+**Scoring update:** new runs default to v5 / `coverage-v3-unified`: 100% means solved and ends the game. All mandatory narrative facts are scored; historical v4 results stay unchanged. [Details and checks](docs/unified_scoring_v3.md).
+
 **Team runs:** [Three CL sets and three MAS puzzles, two people × two repeats](docs/team_campaign_20261111.md): a six-game pilot, personal batches, bounded parallel execution of all 150 games, and deduplicated collection.
+
+**Set1 repeat extension:** [Reuse frozen A prefixes and extend to four B repeats](docs/cl_repeat_extension.md), adding 18 B games without rerunning the original 21 games; local verbatim action recovery and DeepSeek-only model interfaces.
+
+**Compute-matched MAS self-review:** [TS038 solo/MAS × explicit review](docs/compute_matched_agents.md): eight new games, common solver budgets, clean solo prompts, private per-agent reviews and shared public discussion.
+
+**Robust Host output:** [Local label-envelope normalization and bounded empty-response recovery](docs/host_output_recovery.md). Existing CL/MAS checkpoints can continue without regenerating Player actions, resetting quotas or discarding paid calls.
+
+## Run the self-review comparison
+
+After updating `main`, use Python 3.11 and set `DEEPSEEK_API_KEY` in your terminal or the ignored `.env.local` file. No historical run download is required:
+
+```bash
+bash scripts/run_compute_matched_agents.sh runs/api/ts038_review_yourname_01
+```
+
+Choose a new output directory. This prepares a frozen snapshot and runs `solo`, `solo_review`, `mas`, and `mas_review`, twice each, with two concurrent games. Every game has the same available budget: 225 combined Player generations, 77,696 output tokens and up to 100 external submissions. Player uses DeepSeek Flash with thinking disabled; Host/Grader use the checked-in DeepSeek Pro configuration. Private reviews stay in each solver's persistent session; MAS shares public discussion and host feedback. Actual usage and estimated cost are reported separately from budget ceilings.
+
+Open the output's `index.html` for trajectories, shared dialogue, private reviews, performance and token costs. [Every parameter, optional historical-reference mode and recovery behavior](docs/compute_matched_agents.md).
+
+**Published results (13 November):** [Completed CL Set1 four-repeat results](results/20261113_verified_final/README.md), with an [HTML trajectory index](results/20261113_verified_final/index.html). All 39 CL games finished. [MAS follow-up: all eight games completed](results/20261113_mas_completed/README.md); the previously truncated private review was retained and its game finished at submission 84 with score 0%. Structural, session and accounting checks passed; Host/Grader semantics remain pending human review. The [earlier interim snapshot](docs/results/cl_set1_20261112/interpretation.zh-CN.md) is retained as history.
+
+**Four-repeat MAS extension:** [Latest completed-results snapshot: 10/16 games](results/20261113_mas_r1r4_progress/README.md), with [HTML trajectories](results/20261113_mas_r1r4_progress/index.html). Newly published: solo repeat 4 (0%, 100 submissions) and MAS-review repeat 3 (75%, 81 submissions). Unfinished games are listed separately and excluded from outcome means; prior completed results are linked without duplication.
+
+**Teammate result review:** [Two Set2 rounds and April's formal TS038 runs](docs/results/teammates_20261113/analysis.zh-CN.md), covering 28 unique completed games from pinned main commit `6afda1c`. Archived coverage-v2 scoring, Host versions, auxiliary formatter models and solver budgets differ from the current defaults; report the cohorts separately.
 
 English | [中文](README.zh-CN.md)
 
+**Main synchronization (13 November):** `main` now includes unified v5 scoring, robust recovery and the teammate dashboard/archives. [Version checks and restart boundaries](docs/main_sync_20261113.md). Existing frozen studies retain their original code and scoring; pulling updates only changes newly prepared runs.
+
 ## Current team quickstart
 
-Use branch `fix/cl-session-prefix-compat-20261111`, run from the repository root, and export your own `DEEPSEEK_API_KEY` in the same terminal. [Task assignments, every parameter and result collection](docs/team_campaign_20261111.md).
+Use `main`, run from the repository root, and export your own `DEEPSEEK_API_KEY` in the same terminal. [Task assignments, every parameter and result collection](docs/team_campaign_20261111.md).
 
 ```bash
 git fetch origin
-git switch fix/cl-session-prefix-compat-20261111
+git switch main
 git pull --ff-only
 ```
 
@@ -34,7 +62,7 @@ bash scripts/run_team_batch.sh coordinator all 4 runs/api/team_all_formal_v1
 
 This schedules 150 games with up to four concurrent slots: CL Set1–3 (126 games) and MAS TS038/TS002/TS014 (24 games). Each experiment has two human execution slots, each running two repeats. The Set3 second operator and TS014 MAS second operator must each be assigned to one person from their listed candidates. Existing output directories are never overwritten. Each B has 100 fresh submissions; A is fixed within each execution slot, with its full answer revealed before B.
 
-**2026-11-11 branch:** [Run CL session continuation and the new Player response format](docs/run_session_prefix_v1.md), including Set1 and TS038 commands, all relevant parameters, costs and recovery limits.
+**Session protocol guide:** [Run CL session continuation and the new Player response format](docs/run_session_prefix_v1.md), including Set1 and TS038 commands, all relevant parameters, costs and recovery limits.
 
 **Historical Set1 recovery:** `start_set1_auto_continue.sh` targets an archived stopped rollout, not the new team campaign. For a current stopped CL task use the task-specific recovery instructions in the [campaign guide](docs/team_campaign_20261111.md).
 
@@ -74,7 +102,7 @@ New runs automatically export per-call `token_costs.csv`, per-game `costs_by_gam
 ```text
 configs/                  Model profiles, puzzle bindings, transfer pairs, path migration map
 data/
-  annotations/turtle50_v4/ Current 50-puzzle answers and scoring; v2/v3 are historical
+  annotations/turtle50_v5/ Current unified scoring; v2/v3/v4 are historical
   host_reference/         Human references; uploads do not automatically change the host
     inbox/                New uploads by TSxxx/source_id, or multi/ for multiple puzzles
     sources/              Registered messages, IDs, segments and normalized Q&A

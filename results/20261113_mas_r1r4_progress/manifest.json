@@ -1,0 +1,15 @@
+{
+  "as_of_hong_kong": "2026-11-13T14:26:25+08:00",
+  "source_archive": "runs/api/20261113_ts038_compute_matched_2x2_r1r4",
+  "planned_games": 16,
+  "completed_games": 10,
+  "newly_published": [
+    "TS038_r04_solo",
+    "TS038_r03_mas_review"
+  ],
+  "previous_published_games": 8,
+  "unfinished_games": 6,
+  "scope": "Completed, structurally audited results only. Host/Grader semantic review pending. Prior files linked without duplicate outcomes/costs.",
+  "cohort_note": "Repeats 3/4 preserve frozen original models, prompts, references and budgets; recorded controller recovery updates remain part of provenance.",
+  "local_api_policy": "Repeated full HTTP request bodies remain local; each newly exported game retains response text, usage, errors and request hashes in api_audit.jsonl.gz."
+}

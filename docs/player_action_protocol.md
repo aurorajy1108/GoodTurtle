@@ -1,5 +1,7 @@
 # Player action protocol: prefix-v1
 
+11月11日真实API修复：MAS契约改为列出完整首行，避免模型复制占位词。对于已保存的 `ACTION NEXT=B` 外壳加明确内层 `FINAL` 等类型，只在handoff一致时逐字恢复；有限的双agent保存动作恢复与实测记录见 [修复说明](live_test_repairs_20261111.md)。
+
 New games send `action_protocol: prefix-v1`. Player outputs plain text:
 
 ```text

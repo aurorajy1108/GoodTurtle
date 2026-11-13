@@ -167,6 +167,29 @@ class TeamPlayer:
         return reply
 
 
+def same_player_prefix(saved,current):
+    """Only top-level append-time timestamps may differ; never role messages."""
+    if (not isinstance(saved,dict) or not isinstance(current,dict)
+            or set(saved)!={'boundary','calls'} or set(current)!=set(saved)
+            or saved['boundary']!=current['boundary']
+            or not isinstance(saved['calls'],list) or not isinstance(current['calls'],list)):
+        return False
+    def clean(rows):return [{k:v for k,v in r.items() if k!='timestamp'} for r in rows]
+    return clean(saved['calls'])==clean(current['calls'])
+
+
+def fixed_source_checkpoint(rows, condition, pid):
+    """Find the original A, even if a resumed/extended schedule starts at r03.
+
+    A fixed source is an experiment artifact, not whichever repeat happens to
+    be visited first after scheduling. Never silently regenerate it.
+    """
+    matches=[r for r in rows if r.get('condition')==condition and r.get('puzzle_id')==pid]
+    if len(matches)>1:
+        raise ValueError('More than one fixed source checkpoint for '+pid)
+    return matches[0] if matches else None
+
+
 def experience(puzzle, recorder, result, feedback):
     """Whitelist public events. Never serialize the private Recorder/result wholesale."""
     value = {'opening': puzzle['opening'],
@@ -481,10 +504,13 @@ def run(args):
     resuming = getattr(args,'resume',False)
     if resuming:
         saved_plan=json.loads((folder/'plan.json').read_text())
-        if (saved_plan['config']!=config or saved_plan['partner']!=partner
-                or saved_plan['blocks']!=blocks
-                or saved_plan['dataset_sha256']!=hashlib.sha256(Path(args.dataset).read_bytes()).hexdigest()):
-            raise ValueError('Resume configuration, schedule or dataset mismatch')
+        mismatches=[name for name,expected,actual in (
+            ('config',saved_plan['config'],config),('partner',saved_plan['partner'],partner),
+            ('blocks',saved_plan['blocks'],blocks),
+            ('dataset_sha256',saved_plan['dataset_sha256'],hashlib.sha256(Path(args.dataset).read_bytes()).hexdigest()))
+            if expected!=actual]
+        if mismatches:
+            raise ValueError('Resume configuration, schedule or dataset mismatch: '+', '.join(mismatches))
         previous_args=saved_plan['arguments']
         for key in ('memory','source_feedback','source_policy','sync_interval','controls','control_source',
                     'dialogue_roles','dialogue_scheduling','dialogue_max_discussion','dialogue_start'):
@@ -551,7 +577,7 @@ def run(args):
                 raise ValueError('Resume partner changed')
             if saved_row['status']=='completed':
                 return rec,json.loads((rec.folder/'result.json').read_text())
-            if team=='free_dialogue' and rec.turns:
+            if team=='free_dialogue' and rec.turns and not hasattr(rec,'saved_dialogue_action') and not getattr(rec,'transport_checkpoint',{}).get('dialogue'):
                 raise ValueError('free_dialogue mid-game recovery is not supported; start a labeled new run')
             rec.event('resume',previous_status=saved_row['status'],preserved_submissions=len(rec.turns),
                       pending_feedback=sum('label' not in t for t in rec.turns))
@@ -570,10 +596,11 @@ def run(args):
             checkpoint={'boundary':continuation['boundary'],'calls':continuation['calls']}
             path=rec.folder/'player_continuation.json'
             if path.exists():
-                saved_checkpoint = json.loads(path.read_text())
-                if not same_continuation(saved_checkpoint,checkpoint):
+                saved=json.loads(path.read_text())
+                if not same_player_prefix(saved,checkpoint):
                     raise ValueError('Resume source Player prefix or puzzle boundary changed')
-                checkpoint = saved_checkpoint  # Preserve the original audited bytes and hash.
+                checkpoint=saved  # Preserve the original audited bytes and hash.
+                continuation={'calls':saved['calls'],'boundary':saved['boundary']}
             else:
                 dump(path,checkpoint)
             dump(rec.folder/'transfer_metadata.json',{
@@ -614,7 +641,9 @@ def run(args):
     def source_game(block, condition, pid, cache):
         if fixed_source and pid in cache:
             return cache[pid]
-        rec,result=game(block,condition,pid)
+        checkpoint=fixed_source_checkpoint(rows,condition,pid) if fixed_source else None
+        source_block={**block,'block':checkpoint['block'],'repeat':checkpoint['repeat']} if checkpoint else block
+        rec,result=game(source_block,condition,pid)
         entry={'rec':rec,'result':result,'context':None,'card':None,'prepared':False}
         cache[pid]=entry  # Also retain errors: never cherry-pick a new successful A.
         return entry
