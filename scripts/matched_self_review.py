@@ -202,6 +202,11 @@ def authorize_recovery(game):
             turns[e['submission']-1]['label'] = e['label']
             if e['event'] == 'evaluation':
                 turns[e['submission']-1]['grade'] = e
+    from turtle_loop.private_note_recovery import saved_private_note_recovery
+    proof=saved_private_note_recovery(previous,raw,turns,config,game)
+    if proof:
+        dump(game/'private_note_recovery.json',proof)
+        return 'retain_truncated_private_note'
     proof = saved_host_output_recovery(previous, raw, turns, config, game)
     if proof:
         dump(game/'host_output_recovery.json',proof)

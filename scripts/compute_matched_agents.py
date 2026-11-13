@@ -251,6 +251,7 @@ def recover(source,out,renew_read_window=None):
     for name in ('turtle_loop/engine.py','turtle_loop/providers.py','turtle_loop/sessions.py',
                  'turtle_loop/host.py','turtle_loop/host_output_recovery.py',
                  'turtle_loop/budgeted_agents.py','turtle_loop/transport_recovery.py',
+                 'turtle_loop/private_note_recovery.py',
                  'scripts/matched_self_review.py','scripts/compute_matched_agents.py'):
         dest=snap/name
         overlay[name]={'before':sha(dest) if dest.exists() else None,'after':sha(ROOT/name)}

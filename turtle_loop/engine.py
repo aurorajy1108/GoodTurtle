@@ -25,7 +25,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def controller_fingerprint():
     names=('engine.py','host.py','host_context.py','coverage.py','grader.py','providers.py',
-           'codex_client.py','experiments.py','sessions.py','dialogue.py','dialogue_contract.py','dialogue_recovery.py','transport_recovery.py','player_format.py','action_text.py','matched_self_review.py','host_output_recovery.py')
+           'codex_client.py','experiments.py','sessions.py','dialogue.py','dialogue_contract.py','dialogue_recovery.py','transport_recovery.py','player_format.py','action_text.py','matched_self_review.py','host_output_recovery.py','private_note_recovery.py','budgeted_agents.py')
     files=[ROOT/'turtle_loop'/name for name in names]
     files.append(ROOT/'configs/player_format_repair.json')
     return hashlib.sha256(b''.join(p.read_bytes() for p in files if p.exists())).hexdigest()
@@ -628,8 +628,15 @@ class Recorder:
             host_output=saved_host_output_recovery(previous,rec.calls,rec.turns,config,folder)
             if not host_output or json.loads(output_marker.read_text())!=host_output:
                 raise ValueError('Host output recovery differs from original audit or pending question')
+        private_note=None
+        note_marker=folder/'private_note_recovery.json'
+        if note_marker.exists() and previous['status']!='completed':
+            from .private_note_recovery import saved_private_note_recovery
+            private_note=saved_private_note_recovery(previous,rec.calls,rec.turns,config,folder)
+            if not private_note or json.loads(note_marker.read_text())!=private_note:
+                raise ValueError('Truncated private-note checkpoint differs from saved phases or dialogue')
         recovery_ok=bool(recovery or grade_recovery or transport_recovery or dialogue_recovery or
-                         untyped_recovery or exact_transport or coverage_recovery or self_review_recovery or host_output)
+                         untyped_recovery or exact_transport or coverage_recovery or self_review_recovery or host_output or private_note)
         if config.get('session_mode','replay')=='persistent' and previous['status']!='completed' and not recovery_ok:
             raise ValueError('Persistent interrupted sessions require supported saved-response recovery or explicit checked DeepSeek pending-host transport recovery; no fresh-session fallback.')
         if previous['status'] == 'error':
@@ -642,6 +649,10 @@ class Recorder:
                 raise ValueError('Refuse to resample a protocol/model-output failure')
         rec.resumed = True
         rec.restore_sessions=recovery_ok
+        if private_note:
+            if private_note['dialogue']:rec.transport_checkpoint=private_note
+            rec.event('private_note_recovery',**private_note)
+            note_marker.unlink()
         if host_output:
             rec.host_output_checkpoint=host_output
             if host_output['mode']=='normalize':rec.pending_host_output=host_output

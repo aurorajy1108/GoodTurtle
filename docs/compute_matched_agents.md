@@ -61,4 +61,16 @@ bash scripts/run_compute_matched_agents.sh runs/api/20261112_ts038_compute_match
 
 运行器每10秒检查进度，遇可验证的已有transport断点按原请求恢复，已返回的review不重生成；最多自动恢复3次。未知schema、截断、无法证明安全的请求等暂停并请求macOS通知，原始记录不删除或伪造。通知可见性由本机权限决定。
 
+11月13日补充：仅对预算控制器的私有draft/review，非空且`finish_reason=length`的正文可以保留为**不完整私有笔记**，继续生成原角色的action；不会补写或重新抽取该笔记。下一步phase payload明确标出这条笔记不完整、不是Host证据。原输出全文、finish_reason、生成次数和token费用保留且只计一次，仍受原225次/77,696 token/100次额度约束。另一名agent看不到私有笔记，除非原agent之后主动在公共讨论分享结论。
+
+公开action、Host、Grader的截断，以及空白、拒绝或工具调用不适用此规则。旧中断局可用下列命令校验并保留既有笔记，已完成的其他7局不重跑：
+
+```bash
+python3.11 scripts/compute_matched_agents.py recover --from-run YOUR_STOPPED_2X2_RUN \
+  --out runs/api/YOUR_PRIVATE_NOTE_CONTINUATION
+bash scripts/run_compute_matched_agents.sh runs/api/YOUR_PRIVATE_NOTE_CONTINUATION
+```
+
+`private_note_recovery.json`绑定原调用、计划、会话和公共buffer的哈希。若它们对不上则拒绝恢复。恢复事件标记为保留不完整笔记的控制器修复；它不修改历史Host回答、Grader分数、模型或prompt文件，不代表语义疑点已经修复。新后续结果需要带此恢复说明，不混写成一次从未中断的原版本运行。
+
 Host的唯一标签格式与空正文也有受限恢复。[更新、CL续跑和本四组对照的`recover --from-run`命令](host_output_recovery.md)。

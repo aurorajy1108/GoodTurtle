@@ -253,6 +253,19 @@ def read_deepseek_json(response, record):
         return data  # Normal refusal/truncation/label/schema checks still apply.
 
 
+def private_note_truncation(client, original_user, reply):
+    """Only private budgeted notes may be kept as an explicitly incomplete note."""
+    if (not getattr(client,'accept_private_note_length',False) or client.role not in ('player','partner')
+            or client.profile['provider']!='deepseek' or reply.finish_reason!='length' or not reply.text.strip()
+            or not reply.response_id or type(reply.usage.get('completion_tokens')) is not int
+            or reply.usage['completion_tokens']<=0):
+        return False
+    try:
+        phase=json.loads(original_user)['solver_phase']
+        return phase['phase'] in ('draft','review') and phase['force_final'] is False
+    except (ValueError,KeyError,TypeError):return False
+
+
 class Client:
     def __init__(self, profile, role, audit):
         validate_profile(profile)
@@ -413,6 +426,8 @@ class Client:
                 reply.seconds = time.monotonic() - start
                 empty_host=(self.role=='host' and self.profile['provider']=='deepseek'
                             and not reply.text.strip() and reply.finish_reason=='stop')
+                truncated_note=private_note_truncation(self,original_user,reply)
+                if truncated_note:record['accepted_incomplete_private_note']=True
                 if empty_host:
                     empty_count+=1
                     record['host_empty_attempt']=empty_count
@@ -428,7 +443,7 @@ class Client:
                                            empty_attempt=empty_count,additional_host_request=True)
                     continue  # Same body/lane; no assistant message was accepted.
                 # Truncated/refused outputs are recorded, not silently repaired/re-sampled.
-                if not reply.text.strip() or reply.finish_reason in ('length', 'max_tokens', 'incomplete', 'failed', 'refusal', 'content_filter', 'tool_use', 'tool_calls'):
+                if not reply.text.strip() or (reply.finish_reason in ('length', 'max_tokens', 'incomplete', 'failed', 'refusal', 'content_filter', 'tool_use', 'tool_calls') and not truncated_note):
                     raise APIError(f'{self.role}: empty, refused or truncated response ({reply.finish_reason})')
                 if lane is not None:
                     if kind == 'responses' and not reply.response_id:

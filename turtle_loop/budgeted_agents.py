@@ -101,6 +101,13 @@ class BudgetedAgent:
             user.update(action_protocol='prefix-v1',solver_phase={'phase':phase,'slot':slot,'actor':self.actor,
                         'force_final':force,'note_word_target':160,'remaining_generations':status['remaining_generations'],
                         'remaining_output_tokens':status['remaining_output_tokens']})
+            incomplete=[{'phase':c['reflection_phase'],'response_id':c['response_id'],
+                         'status':'incomplete_private_note_not_host_evidence'}
+                        for c in self.ledger.recorder.calls if c.get('role')==self.role
+                        and c.get('reflection_key','').startswith(decision+'/')
+                        and c.get('reflection_phase') in ('draft','review')
+                        and c.get('status')=='ok' and c.get('finish_reason')=='length']
+            if incomplete:user['solver_phase']['incomplete_private_notes']=incomplete
             if force:
                 user['turn_control']='This is the mandatory last turn because the solver or public budget is ending. Return FINAL now even if uncertain.'
                 if 'dialogue_control' in user:
@@ -114,10 +121,14 @@ class BudgetedAgent:
         self.compute_budget_final=bool(plan['user']['solver_phase']['force_final'] and slot<self.ledger.limit)
         self.active={'reflection_key':key,'reflection_phase':phase,'reflection_slot':slot,'reflection_actor':self.actor}
         self.profile['max_output_tokens']=plan['max_output_tokens']
-        reply=self.client.complete(system+phase_prompt('dialogue_control' in plan['user']),
-                                   json.dumps(plan['user'],ensure_ascii=False))
+        self.client.accept_private_note_length=phase in ('draft','review')
+        try:
+            reply=self.client.complete(system+phase_prompt('dialogue_control' in plan['user']),
+                                       json.dumps(plan['user'],ensure_ascii=False))
+        finally:self.client.accept_private_note_length=False
         self.ledger.recorder.event('solver_phase',slot=slot,actor=self.actor,phase=phase,
-                                   response_id=reply.response_id,text=reply.text)
+                                   response_id=reply.response_id,text=reply.text,
+                                   incomplete_private_note=reply.finish_reason=='length')
         return reply
 
     def complete(self,system,user):
