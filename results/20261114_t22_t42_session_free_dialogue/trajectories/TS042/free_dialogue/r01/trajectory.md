@@ -1,0 +1,748 @@
+# Turtle Soup trajectory
+
+A lady went to a shoe store and bought a pair of red high heels. These high heels foretold her death tonight.
+
+Status: completed | counted questions: 100 | submissions: 100 | final partial score: 0.35
+
+[Token usage and estimated costs](token_costs.csv)
+
+## 1 · question
+
+| Was the lady still alive when she bought the red high heels?
+
+Host: yes
+
+## 2 · question
+
+| 
+Did the heels themselves have a physical property (not supernatural) that caused or would cause her death?
+
+Host: yes
+
+## 3 · question
+
+| Were the heels deliberately made or altered by a person intending to harm the lady?
+
+Host: no
+
+## 4 · question
+
+| 
+Was the lady a snake or other animal whose venom/poison could be delivered through the heel (e.g., a poisonous spike hidden in the shoe)?
+
+Host: no
+
+## 5 · question
+
+| Did the heels' physical property cause her death through an accident (e.g., she fell or was struck because of them), rather than through poison or a weapon?
+
+Host: yes
+
+## 6 · question
+
+| 
+Did she die tonight because she was wearing or handling the red high heels at the time of the accident (as opposed to the heels being merely present)?
+
+Host: yes
+
+## 7 · question
+
+| Is the key physical property of the heels that they are red (e.g., red color causing harm/accident), rather than their height, shape, or material?
+
+Host: no
+
+## 8 · question
+
+| 
+Is the key physical property of the heels their height (high heels causing a fall or loss of balance)?
+
+Host: yes and no
+
+## 9 · question
+
+| Is the store setting or the act of buying the shoes in the store central to how the heels foretold/caused her death (as opposed to the death happening elsewhere later while wearing them)?
+
+Host: no
+
+## 10 · question
+
+| 
+Did the lady die by falling from a height (e.g., down stairs, off a ledge) because the high heels made her lose balance?
+
+Host: no
+
+## 11 · question
+
+| Did the lady die in a car crash where the high-heeled shoe physically interfered with her driving (e.g., the heel snagged or blocked the pedals), rather than her merely falling while walking?
+
+Host: no
+
+## 12 · question
+
+| 
+Did the lady die because the sharp pointed heel (stiletto) physically pierced/stabbed her body in a fall, rather than the shoe causing a trip?
+
+Host: no
+
+## 13 · question
+
+| Was the death caused by an electrical or fire hazard triggered by the heels (e.g., the heel's material, such as a metal or conductive part, making contact with something dangerous)?
+
+Host: no
+
+## 14 · question
+
+| 
+Did the lady die because the heels made her taller/heavier in a way that led to a fatal accident (e.g., struck by lightning, hit head on something at the new height), rather than a fall?
+
+Host: yes
+
+## 15 · question
+
+| Did the shoes being high heels make her taller such that she was struck by lightning?
+
+Host: no
+
+## 16 · question
+
+| 
+Did her increased height from the high heels cause her to strike her head on something overhead (e.g., a low doorway, ceiling, or beam)?
+
+Host: no
+
+## 17 · question
+
+| Did the added height from the heels matter not by changing what she hit, but by making her a more visible/targeted figure in a dangerous scenario (e.g., being seen over a crowd or barrier during an attack or shooting)?
+
+Host: no
+
+## 18 · question
+
+| 
+Did she die because the extra height from the heels increased the force/severity of a fall or the impact of landing, so that what would be survivable otherwise became fatal?
+
+Host: no
+
+## 19 · question
+
+| 
+Did the physical property that mattered involve the shoes' weight or the concentrated pressure under the thin heel (e.g., breaking through a fragile surface like ice, glass, or a rotting floor)?
+
+Host: no
+
+## 20 · question
+
+| Did the heels cause her death through the noise they made (e.g., the clicking of high heels alerting or provoking someone or an animal that then killed her)?
+
+Host: no
+
+## 21 · question
+
+| 
+Did the heels cause her death by making her slip or trip and fall onto a specific dangerous object or surface (e.g., onto tracks, into water, into machinery) — i.e., the fatal hazard was what she landed in, not the impact of the fall itself?
+
+Host: no
+
+## 22 · question
+
+| 
+Did the heel get caught in a mechanism or gap (e.g., escalator, elevator, door, grate) and drag or trap her in a way that killed her?
+
+Host: no
+
+## 23 · question
+
+| Did she die by drowning, with the high heels contributing (the shoes weighing her down or preventing her from swimming/escaping the water)?
+
+Host: no
+
+## 24 · question
+
+| 
+Did the fatal accident occur in a place where a door, window, or opening is involved — i.e., she fell or was pushed out of a window/off a balcony/building while wearing the heels?
+
+Host: no
+
+## 25 · question
+
+| Given many "no"s on mechanisms (fall, drowning, car, fire/electrical, mechanism-trap, lightning, head-strike, noise, weight-pressure): was the physical property that killed her simply that the heels made her walk abnormally/unsteadily, causing a fatal fall on flat ground or stairs — meaning the earlier "fall from a height" no was about height, not about falling at all?
+
+Host: no
+
+## 26 · question
+
+| 
+Was the lady killed by lightning-like or electrical force — actually, set that aside. New angle: Did the lady die because the shoes were made of a material that is dangerous in her environment — specifically, was the footwear's physical property related to it being a conductor or attractor of an external force (not electricity)?
+
+Host: no
+
+## 27 · question
+
+| Was the lady a performer or worker whose job specifically required or involved high heels (e.g., dancer, model, actress, waitress), and did she die during that activity?
+
+Host: yes and no
+
+## 28 · question
+
+| 
+Is the lady human?
+
+Host: yes
+
+## 29 · question
+
+| Is the "physical property" of the heels that killed her simply that they are a pair of high-heeled shoes that were physically worn on her feet — i.e., did she die because something about wearing high-heeled footwear on her feet set off a fatal event, with no hidden gadget, poison, or trap?
+
+Host: yes
+
+## 30 · question
+
+| 
+Since normal high heels worn on the feet triggered a fatal event with no gadget/trap: was the fatal event a thrombotic or circulation event (e.g., the heels' compression contributed to a fatal blood clot or she died from a condition aggravated by wearing them)?
+
+Host: no
+
+## 31 · question
+
+| Was the lady killed by an animal (e.g., snake, dog, insect bite) that was attracted to or triggered by her wearing the heels?
+
+Host: no
+
+## 32 · question
+
+| 
+Was the lady killed by another person (e.g., attacked, shot, stabbed, pushed) — with the heels relevant only because she was wearing them, not because they were used as a weapon?
+
+Host: yes
+
+## 33 · question
+
+| Was the lady killed by another person specifically because of the heels she was wearing — i.e., did the high heels make the killer choose, target, or identify her (e.g., an attacker who targeted women in red high heels, or someone who recognized her by them)?
+
+Host: no
+
+## 34 · question
+
+| 
+Was the person who killed her someone she knew or was closely connected to (e.g., a spouse, lover, or family member), rather than a stranger?
+
+Host: yes
+
+## 35 · question
+
+| Is the "foretelling" literal in the story — that is, did someone (the killer or another) actually tell or predict, before she died, that she would die tonight, making the heels somehow connected to that prediction (e.g., the killer gave her the red heels as a sign she would die)?
+
+Host: no
+
+## 36 · question
+
+| 
+Was the lady killed by a family member — specifically by her husband/partner in a domestic crime (e.g., she was murdered by her spouse)?
+
+Host: no
+
+## 37 · question
+
+| 
+Was the lady employed in adult entertainment (e.g., stripper, exotic dancer, prostitute) at the time of her death?
+
+Host: no
+
+## 38 · question
+
+| Was the person who killed her a close female friend or relative — specifically a jealous woman (e.g., a romantic rival or an envious acquaintance) who killed her out of jealousy or resentment connected to her appearance/the heels?
+
+Host: no
+
+## 39 · question
+
+| 
+Was the lady killed by a person in the course of a robbery or burglary (e.g., an intruder or mugger) — even though that person was someone she knew or was closely connected to?
+
+Host: no
+
+## 40 · question
+
+| 
+Was the lady's death intentional murder (the person meant to kill her), as opposed to negligent or accidental killing by another person?
+
+Host: no
+
+## 41 · question
+
+| Did the other person cause her death negligently through their job or professional duty (e.g., a doctor, surgeon, dentist, or nurse who made a fatal mistake) — making "someone she knew/connected to" refer to a professional relationship?
+
+Host: yes
+
+## 42 · question
+
+| 
+Was the professional a medical doctor or surgeon (as opposed to dentist, nurse, or other)?
+
+Host: no
+
+## 43 · question
+
+| Was the professional a dentist, and did the lady die during or from a dental procedure (e.g., a fatal complication under anesthesia), with the high heels connected to her being at the dentist's office/clinic?
+
+Host: no
+
+## 44 · question
+
+| 
+Was the negligent professional connected to footwear or podiatry — e.g., a podiatrist, shoe fitter, or a specialist treating her feet/legs — such that her feet or the heels are directly involved in the fatal error?
+
+Host: no
+
+## 45 · question
+
+| 
+Was the negligent professional in the beauty or cosmetics field (e.g., beautician, cosmetologist, hairdresser, aesthetic practitioner)?
+
+Host: no
+
+## 46 · question
+
+| Was the negligent professional a pharmacist or someone involved with medication/drugs (e.g., giving her a wrong or fatal dose), as opposed to a hands-on physical practitioner?
+
+Host: no
+
+## 47 · question
+
+| 
+Was the negligent professional someone in transportation (e.g., a taxi/bus/train/plane driver or pilot) who caused a fatal crash while she was a passenger wearing the heels?
+
+Host: no
+
+## 48 · question
+
+| 
+Was the lady executed by capital punishment tonight (she was a condemned prisoner whose scheduled execution was the "foretelling")?
+
+Host: no
+
+## 49 · question
+
+| Was the "negligent professional" actually a worker or tradesperson whose ordinary work caused a fatal accident to her (e.g., a construction/crane/factory worker whose mistake dropped or released something that hit her), rather than someone in medicine, beauty, or transport?
+
+Host: yes
+
+## 50 · question
+
+| 
+Was the fatal accident in a construction/workplace setting where something fell or was dropped from above and struck her — and did the high heels matter because they affected where she stood or her being at that spot?
+
+Host: no
+
+## 51 · question
+
+| 
+Did a negligent tradesperson's faulty work at her home (e.g., gas, electrical, plumbing, or heating work) cause a fatal fire, explosion, or gas leak that killed her?
+
+Host: no
+
+## 52 · question
+
+| 
+Was her death directly caused by another human being's action or failure to act (i.e., a person, not an inanimate hazard alone, brought about the fatal event)?
+
+Host: yes
+
+## 53 · question
+
+| Was the other person a driver of a vehicle who negligently hit her while she was walking (a pedestrian) in her high heels — with the heels possibly relevant because they affected how/where she was walking when struck?
+
+Host: no
+
+## 54 · question
+
+| 
+Was the high heel's height significant because she used the heel to do something — e.g., stepping on/operating a mechanism, a pedal, or a button (not a car pedal) — and that action set off the fatal event caused by another person?
+
+Host: no
+
+## 55 · question
+
+| Did the other person kill her with a firearm (shooting her), even though it was not an intentional murder — for example, a negligent or accidental shooting by someone she knew?
+
+Host: no
+
+## 56 · question
+
+| 
+Did the other person kill her through a blow or physical impact to her body (e.g., struck her, hit her with something, or pushed her into something solid) causing fatal trauma — as opposed to shooting, poisoning, or a vehicle?
+
+Host: yes
+
+## 57 · question
+
+| Was she killed because the other person struck her in a way connected to her wearing high heels — for example, the person stabbed her with the heel of her own shoe, or the impact was to her foot/leg or because of the shoe, rather than a plain blow to the head/body with a weapon?
+
+Host: yes
+
+## 58 · question
+
+| 
+Was she killed with her own high-heeled shoe — i.e., the other person struck her with the shoe (using the heel as the striking/impact object)?
+
+Host: no
+
+## 59 · question
+
+| 
+Did the fatal blow strike her leg or foot (the body area associated with the heels) and cause a bone fracture, with death resulting from a complication of that fracture (e.g., fat embolism) rather than the trauma itself?
+
+Host: no
+
+## 60 · question
+
+| Was the blow struck with a hard blunt object (a tool, weapon, or object) in the other person's hand, rather than with the bare body (fist/kick) or a vehicle/train?
+
+Host: no
+
+## 61 · question
+
+| 
+Was the fatal blow delivered by the bare body of the other person — e.g., a kick or a stomp (as opposed to a handheld object)?
+
+Host: no
+
+## 62 · question
+
+| Did a moving object or piece of equipment operated by the other person strike or roll over her foot/leg, causing the fatal injury?
+
+Host: no
+
+## 63 · question
+
+| 
+Is the "lady" a character in a fictional work (a film, play, or story) whose death happens within that work — i.e., the puzzle describes a fictional scene rather than a real event?
+
+Host: yes
+
+## 64 · question
+
+| Is this the fairy tale/film "The Red Shoes" — where the red shoes are enchanted and the wearer is forced to dance until death, and the "foretelling" is that the shoes are literally cursed?
+
+Host: no
+
+## 65 · question
+
+| 
+Is this a scene from a well-known specific film or play where a woman wearing red high heels is killed by another character in a manner where the shoes are a prominent visual or plot element (e.g., a famous movie murder scene)?
+
+Host: no
+
+## 66 · question
+
+| 
+Is the fictional work a film/movie (as opposed to a TV series, novel, play, or music video)?
+
+Host: irrelevant
+
+## 67 · question
+
+| Is the "fictional work" aspect just the host's way of framing the puzzle (i.e., the story is presented as fiction, but the important causal story is a realistic accident involving the heels), rather than the lady being a character in an external published work we must identify?
+
+Host: yes
+
+## 68 · question
+
+| 
+So the "fiction" framing is not a clue — back to a realistic accident. Since the fatal impact was done by another person without a handheld object or bare body and wasn't a vehicle: was she killed by a *horse* or *animal* ridden/driven by a person? Set aside — animal was no. Instead: Did the other person cause her death by *causing her to fall* — e.g., pulling a chair, tripping her, or knocking her off balance — so that she struck her head and died?
+
+Host: no
+
+## 69 · question
+
+| Was the other person a *coworker or employee* at the same place the lady was, whose negligence (not an attack) caused her death — and was the lady there as a *customer, client, or patient* rather than as a worker?
+
+Host: yes and no
+
+## 70 · question
+
+| 
+Was the lady a customer or client at a place of business where an employee's negligence killed her, while she was wearing the heels?
+
+Host: no
+
+## 71 · question
+
+| Was she struck by a machine or its moving part (e.g., a swinging or dropping component) that a coworker operated incorrectly, causing fatal trauma?
+
+Host: no
+
+## 72 · question
+
+| 
+Did the fatal impact come from a *door* — e.g., a swinging/revolving/automatic door operated or pushed by another person that struck her — with her high heels being the reason she was in that spot or couldn't move away quickly?
+
+Host: no
+
+## 73 · question
+
+| Was the fatal injury to her head (a head trauma), with the high heels being connected only to the situation or her position rather than being the striking object?
+
+Host: yes
+
+## 74 · question
+
+| 
+Did she die from a fatal head injury that occurred when another person's action/negligence caused her head to strike a hard surface (e.g., the ground, a curb, a counter, a step) — a fall or impact caused by that person, not by the heels themselves?
+
+Host: no
+
+## 75 · question
+
+| Was she struck in the head by a *door or gate* (e.g., a slamming door, a barrier, a garage door) operated or released by another person?
+
+Host: no
+
+## 76 · question
+
+| 
+Was the head trauma caused by a *falling or swinging heavy object* (e.g., a crane load, a wrecking ball, scaffolding, a sign, a tree limb) that another person released or failed to secure — striking her head directly rather than her falling onto something?
+
+Host: no
+
+## 77 · question
+
+| 
+Did the other person throw or toss a projectile-like object (e.g., a tool, a bottle, a piece of material) that struck her head and killed her?
+
+Host: yes
+
+## 78 · question
+
+| Was the thrown object a *shoe* — specifically her own high-heeled shoe or the other person's shoe thrown at her head?
+
+Host: no
+
+## 79 · question
+
+| 
+Was the thrown object part of the heels or footwear in any way (e.g., the heel itself broke off and was thrown, or she threw her own shoe and it came back / she was hit by it) — that is, did the thrown object have a connection to the red high heels specifically?
+
+Host: no
+
+## 80 · question
+
+| Was the object thrown by someone who was trying to throw it *at a target*, but it struck her instead because she was in the wrong place (or because the thrower missed) — a misdirected throw rather than an intentional throw at her?
+
+Host: yes
+
+## 81 · question
+
+| 
+Was the intended target of the throw a *game or sport target* (e.g., a ball game, a throwing contest, a target sport) — making this a sporting accident rather than a fight?
+
+Host: no
+
+## 82 · question
+
+| Was the thrower performing a work task — e.g., tossing/throwing an object as part of their job (like unloading, moving materials, or passing equipment) — rather than playing a game or fighting?
+
+With the confirmation that this was a misdirected throw at a target that hit her head, and she was a coworker at the same workplace, the likely picture: she was a worker (wearing red high heels as part of her outfit) at a workplace where a colleague threw something meant for another target; it missed and struck her head, killing her, and the heels were merely what she had on/where she stood. I need to pin the object and the job.
+
+Host: yes
+
+## 83 · question
+
+| 
+Was the thrower's job that of a *cook or kitchen worker* (e.g., throwing a knife, pan, or food toward a target/counter) — i.e., a restaurant/kitchen setting?
+
+Host: no
+
+## 84 · question
+
+| Was the thrower's job in the *entertainment or performance industry* (e.g., a stage performer, juggler, or circus act), so the object was thrown as part of a show or stunt?
+
+Host: yes
+
+## 85 · question
+
+| 
+Was the lady the *assistant* in a knife-throwing (or similar throwing) act — standing near the target board — and was she killed when the thrower's knife missed the target and struck her head?
+
+Host: yes and no
+
+## 86 · question
+
+| 
+Was the thrown object a knife or similar bladed throwing weapon (as opposed to a juggling club, pin, ball, or other non-bladed object)?
+
+Host: yes
+
+## 87 · question
+
+| Was the lady standing or strapped against the target board as the knife-thrower's human assistant when a knife missed her?
+
+Host: no
+
+## 88 · question
+
+| 
+Was the lady a performer or assistant who was *moving/not at the target board* (e.g., walking across the stage) when a knife thrown by another act's performer missed its intended target and struck her head?
+
+Host: no
+
+## 89 · question
+
+| 
+Was she located off to the side or backstage (not in the performance area itself) when the errant knife reached her — i.e., a place she wasn't expected to be in the knife's path?
+
+Host: no
+
+## 90 · question
+
+| Was she a *performer in a different act* (or a performer in the same show) who was on stage at the time — e.g., a dancer or singer — so she was in the performance area but not part of the knife-throwing act, and an errant knife from the knife-thrower's act struck her?
+
+Host: no
+
+## 91 · question
+
+| 
+Was the errant knife thrown by a knife-thrower performing *for an audience* (e.g., on a stage, in a circus, at a show) — and was the lady *in the audience* rather than part of the act?
+
+Host: yes and no
+
+## 92 · question
+
+| Was the knife thrown during a performance in front of an audience, but was the lady *not* a mere audience member — rather someone connected to the venue or show (e.g., staff, the thrower's partner, or a person involved with the performance)?
+
+Host: yes
+
+## 93 · question
+
+| 
+Was the lady the knife-thrower's *romantic partner or spouse-like partner* in the act — i.e., the person the thrower was in a relationship with, who was connected to the show but not standing at the target board that night?
+
+Host: irrelevant
+
+## 94 · question
+
+| 
+Was the lady the host or master of ceremonies of the show (announcing acts on stage), which is why she was connected to the performance but not part of the knife act and not at the target board?
+
+Host: no
+
+## 95 · question
+
+| Was the lady a *singer or musician* performing at the show (a separate act), so she was on stage as an entertainer rather than as the knife-thrower's assistant or a crew member?
+
+Host: no
+
+## 96 · question
+
+| 
+Was the lady a member of the audience who happened to be connected to the venue or show in another way (e.g., she was the owner, an investor, a VIP guest, or a friend/family of the performers) — but she was seated among the audience when the knife reached her?
+
+Host: no
+
+## 97 · question
+
+| 
+Was the lady part of the same knife-throwing act that killed her (i.e., she belonged to that act, in some role other than standing at the target board)?
+
+Host: yes
+
+## 98 · question
+
+| Was the lady the "target" in the act but standing *beside* the target board or in front of it (e.g., having just stepped away, or holding a prop), so she was in the act and near the board yet not strapped to it?
+
+Host: no
+
+## 99 · question
+
+| 
+Was the lady herself the knife-thrower — and she died when she was struck by a knife thrown *by someone else* (e.g., a fellow performer, an assistant, or a rival) rather than by her own throw?
+
+Host: yes and no
+
+## 100 · final · mandatory final
+
+| A human lady buys a pair of red high heels and is still alive at the purchase; that night she dies in an accident tied to wearing them. The "higher/taller" angle was a red herring — what mattered was simply that she was wearing ordinary high-heeled shoes (a mundane physical property, no gadget, poison, trap, or supernatural curse), and "foretold her death" is figurative: the shoes were just what she had on the night she died.
+
+She works in the entertainment/performance world at a show playing to an audience, and she belongs to the knife-throwing act itself — but not as the assistant strapped to or standing by the target board, not as an MC, singer, or other act's performer, and not as a seated spectator (connected to the show but not a mere audience member). A misdirected throw — a knife (a bladed throwing weapon) aimed at the intended target — missed and struck her head, and this fatal head trauma killed her. The thrower acted negligently as a worker/performer, not with intent to kill her; the death is a tragic stage accident, not murder. The high heels were incidental to the situation (her position/costume on the night), which is why nearly every "shoe physics" mechanism (falls, drowning, car pedals, fire, lightning, stiletto stabbing, etc.) was rejected.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "She works in the entertainment/performance world at a show playing to an audience, and she belongs to the knife-throwing act itself",
+      "reason": "Covers the performance/knife-throwing-act aspect, but omits the required circus identity and apple-on-head qualifier."
+    },
+    {
+      "id": "C2",
+      "credit": 0,
+      "evidence": "The \"higher/taller\" angle was a red herring — what mattered was simply that she was wearing ordinary high-heeled shoes ... The high heels were incidental to the situation",
+      "reason": "Directly contradicts the required fact that the high heels increased her effective height and caused the fatal misaim."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "A misdirected throw — a knife (a bladed throwing weapon) aimed at the intended target — missed and struck her head, and this fatal head trauma killed her.",
+      "reason": "Covers the fatal knife-to-head outcome, but omits the required 'fails to adjust aim' causal qualifier and the male partner."
+    }
+  ],
+  "material_contradiction": true,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "She works in the entertainment/performance world at a show playing to an audience, and she belongs to the knife-throwing act itself"
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "She works in the entertainment/performance world at a show playing to an audience, and she belongs to the knife-throwing act itself"
+    },
+    {
+      "id": "C2.F1",
+      "status": "contradicted",
+      "evidence": "The \"higher/taller\" angle was a red herring — what mattered was simply that she was wearing ordinary high-heeled shoes ... The high heels were incidental to the situation"
+    },
+    {
+      "id": "C2.F2",
+      "status": "contradicted",
+      "evidence": "The \"higher/taller\" angle was a red herring — what mattered was simply that she was wearing ordinary high-heeled shoes ... The high heels were incidental to the situation"
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "A misdirected throw — a knife (a bladed throwing weapon) aimed at the intended target — missed and struck her head, and this fatal head trauma killed her."
+    },
+    {
+      "id": "C3.F2",
+      "status": "partial",
+      "evidence": "A misdirected throw — a knife (a bladed throwing weapon) aimed at the intended target — missed and struck her head, and this fatal head trauma killed her."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [
+    {
+      "quote": "The \"higher/taller\" angle was a red herring — what mattered was simply that she was wearing ordinary high-heeled shoes ... The high heels were incidental to the situation",
+      "reference": "Her new high heels increase her effective height by a few centimeters.",
+      "checkpoint_ids": [
+        "C2"
+      ]
+    }
+  ],
+  "partial_score": 0.35,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>

@@ -1,0 +1,345 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "predecessor_puzzle": null,
+  "condition": "free_dialogue",
+  "repeat": 2,
+  "success": false,
+  "host_questions": 94,
+  "final_attempts": 6,
+  "rejected_finals": 6,
+  "counted_questions": 100,
+  "submissions": 100,
+  "player_format_corrections": [],
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.1,
+  "best_partial_score": 0.1,
+  "latest_final": "|\nA girl who was lost and exhausted came upon an empty house—deserted of living people, though its furnishings remained—and took shelter inside. During the night she saw, at the window of the room where she lay, a person she recognized standing outside and watching in. She was terrified of that watcher, and her fear kept her from falling asleep for hours; the figure stayed at the window, plainly visible, watching her the whole time, until sheer exhaustion finally forced her to sleep.\n\nThe next morning she woke and noticed the strange thing: the watcher was gone. But what mattered was where that figure had stood—the window faced directly onto the very spot where she had lain sleeping. The empty window and that clear line of sight together made her understand the truth the night had hidden from her: that person had been able to see her the entire time and had been watching her all night—not only while she was awake and frightened, but also for hours while she slept, defenseless and unaware. The realization that she had been observed the whole night long, utterly vulnerable, shattered her sense of safety, and she fled the house in terror.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0,
+        "evidence": "During the night she saw, at the window of the room where she lay, a person she recognized standing outside and watching in.",
+        "reason": "The required portrait-to-window mistake is absent and directly contradicted: she sees and recognizes a living person at the window during the night rather than mistaking anyone for a portrait."
+      },
+      {
+        "id": "C2",
+        "credit": 0,
+        "evidence": "She was terrified of that watcher, and her fear kept her from falling asleep for hours; the figure stayed at the window, plainly visible, watching her the whole time.",
+        "reason": "The unease and sleeplessness are attributed to a recognized living watcher, not to mistaking the watcher for a portrait, so the required causal facts are contradicted."
+      },
+      {
+        "id": "C3",
+        "credit": 0.5,
+        "evidence": "The next morning she woke and noticed the strange thing: the watcher was gone... The empty window and that clear line of sight together made her understand the truth... she fled the house in terror.",
+        "reason": "The morning disappearance and flight are covered, but the qualifier that the disappearance exposes the window is missing because no portrait-to-window exposure is described."
+      }
+    ],
+    "material_contradiction": true,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "contradicted",
+        "evidence": "During the night she saw, at the window of the room where she lay, a person she recognized standing outside and watching in."
+      },
+      {
+        "id": "C1.F2",
+        "status": "contradicted",
+        "evidence": "A girl who was lost and exhausted came upon an empty house—deserted of living people, though its furnishings remained—and took shelter inside. During the night she saw, at the window of the room where she lay, a person she recognized standing outside and watching in."
+      },
+      {
+        "id": "C2.F1",
+        "status": "contradicted",
+        "evidence": "She was terrified of that watcher, and her fear kept her from falling asleep for hours; the figure stayed at the window, plainly visible, watching her the whole time."
+      },
+      {
+        "id": "C2.F2",
+        "status": "contradicted",
+        "evidence": "She was terrified of that watcher, and her fear kept her from falling asleep for hours; the figure stayed at the window, plainly visible, watching her the whole time."
+      },
+      {
+        "id": "C3.F1",
+        "status": "partial",
+        "evidence": "The next morning she woke and noticed the strange thing: the watcher was gone. But what mattered was where that figure had stood—the window faced directly onto the very spot where she had lain sleeping. The empty window and that clear line of sight together made her understand the truth... she fled the house in terror."
+      },
+      {
+        "id": "C3.F2",
+        "status": "covered",
+        "evidence": "until sheer exhaustion finally forced her to sleep. The next morning she woke and noticed the strange thing: the watcher was gone."
+      },
+      {
+        "id": "C3.F3",
+        "status": "covered",
+        "evidence": "The empty window and that clear line of sight together made her understand the truth... that person had been able to see her the entire time and had been watching her all night... she fled the house in terror."
+      }
+    ],
+    "requirement_coverage": [],
+    "contradictions": [
+      {
+        "quote": "During the night she saw, at the window of the room where she lay, a person she recognized standing outside and watching in.",
+        "reference": "The apparent portrait is actually a window with a real person behind it; the lost girl mistakes a window with a real person outside for a portrait.",
+        "checkpoint_ids": [
+          "C1",
+          "C2"
+        ]
+      }
+    ],
+    "partial_score": 0.1,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v3-unified",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 1296.264089625,
+  "usage": {
+    "grader": {
+      "http_attempts": 6,
+      "successful_responses": 6,
+      "seconds": 154.6918777909998,
+      "provider_reported_usage": {
+        "prompt_tokens": 45437,
+        "completion_tokens": 22502,
+        "total_tokens": 67939,
+        "prompt_cache_hit_tokens": 37248,
+        "prompt_cache_miss_tokens": 8189
+      }
+    },
+    "host": {
+      "http_attempts": 94,
+      "successful_responses": 94,
+      "seconds": 921.4829512499997,
+      "provider_reported_usage": {
+        "prompt_tokens": 1546249,
+        "completion_tokens": 95748,
+        "total_tokens": 1641997,
+        "prompt_cache_hit_tokens": 1513088,
+        "prompt_cache_miss_tokens": 33161
+      }
+    },
+    "partner": {
+      "http_attempts": 48,
+      "successful_responses": 48,
+      "seconds": 94.83541129000044,
+      "provider_reported_usage": {
+        "prompt_tokens": 607883,
+        "completion_tokens": 3495,
+        "total_tokens": 611378,
+        "prompt_cache_hit_tokens": 583040,
+        "prompt_cache_miss_tokens": 24843
+      }
+    },
+    "player": {
+      "http_attempts": 58,
+      "successful_responses": 58,
+      "seconds": 122.5604844930003,
+      "provider_reported_usage": {
+        "prompt_tokens": 788170,
+        "completion_tokens": 5523,
+        "total_tokens": 793693,
+        "prompt_cache_hit_tokens": 760192,
+        "prompt_cache_miss_tokens": 27978
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "estimate_assumptions": [
+      "peak_rate_reference_upper_estimate; off-peak rates are half; actual billing unknown"
+    ],
+    "total": {
+      "calls": 206,
+      "unknown_cost_calls": 0,
+      "known_estimated_cost_usd": 0.625794076,
+      "estimated_cost_usd": 0.625794076,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 2987739,
+        "cached_input_tokens": 2893568,
+        "cache_write_tokens": 0,
+        "output_tokens": 127268,
+        "reasoning_tokens": 112481,
+        "total_tokens": 3115007
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 106,
+        "total_tokens": 0
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 6,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.101556312,
+        "estimated_cost_usd": 0.101556312,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 45437,
+          "cached_input_tokens": 37248,
+          "cache_write_tokens": 0,
+          "output_tokens": 22502,
+          "reasoning_tokens": 16939,
+          "total_tokens": 67939
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 94,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.489510472,
+        "estimated_cost_usd": 0.489510472,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1546249,
+          "cached_input_tokens": 1513088,
+          "cache_write_tokens": 0,
+          "output_tokens": 95748,
+          "reasoning_tokens": 95542,
+          "total_tokens": 1641997
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "partner",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 48,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.01514514,
+        "estimated_cost_usd": 0.01514514,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 607883,
+          "cached_input_tokens": 583040,
+          "cache_write_tokens": 0,
+          "output_tokens": 3495,
+          "reasoning_tokens": 0,
+          "total_tokens": 611378
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 48,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 58,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.019582152,
+        "estimated_cost_usd": 0.019582152,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 788170,
+          "cached_input_tokens": 760192,
+          "cache_write_tokens": 0,
+          "output_tokens": 5523,
+          "reasoning_tokens": 0,
+          "total_tokens": 793693
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 58,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "1d268290-87db-4d66-b476-6f1d32ddff76",
+      "626b9e1a-1deb-414a-91a0-142265c6cfeb",
+      "a0dd1f79-7308-4023-a1de-c7bf819453e8",
+      "ae679b8e-9505-4eb3-bf34-6c7ac2e929e2"
+    ],
+    "logical_input_chars": 4652483,
+    "delta_input_chars": 272595,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "7c58339299af1ffe5c8b62850b87419914bf050994fabb559168e536907297d8",
+    "grading_sha256": "8c8766064d4bd123188d1f3666ee10ffb54d8ffbe4f02ce3477847c0a7b35c85",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v3-unified",
+    "prompts_sha256": "c95150ba24dd57486633f8b8acdc715e4861fd9e112077b7598de481dead1678",
+    "controller_sha256": "a47d4ae46e78f39dbd6900233ccfd9367e0b0d911ac9345dc3b9b4e704451a13",
+    "player_format_policy_sha256": "cf439ee1d60ae38374486aada319739646a5975284ff00bc877a3040047df56a",
+    "host_context_sha256": "5d44680f053ed1c15963a67180e489f6280a408a8977dbd1a644f7f922badcfc",
+    "host_binding_version": "host-v9-human-20261102"
+  },
+  "dialogue_metrics": {
+    "settings": {
+      "roles": "complementary",
+      "scheduling": "adaptive",
+      "max_discussion": 4,
+      "start": "A",
+      "role_assignment": {
+        "A": {
+          "specialty": "investigator",
+          "instruction": "Develop and test explanations of identities, setting, event order and the main causal mechanism. Connect confirmed facts into a coherent story; explicitly distinguish hypotheses from host-confirmed facts."
+        },
+        "B": {
+          "specialty": "critic",
+          "instruction": "Challenge unsupported assumptions, propose alternative interpretations, and test missing causal links, motives and contradictions. Suggest discriminating questions rather than only criticizing. Help complete the story."
+        }
+      },
+      "protocol": "shared-dialogue-v3-prefix-v1",
+      "format_correction_max_retries": 2
+    },
+    "counts_by_actor": {
+      "A": {
+        "question": 47,
+        "discuss": 4,
+        "final": 5
+      },
+      "B": {
+        "question": 47,
+        "final": 1
+      }
+    },
+    "external_submissions": 100,
+    "internal_messages": 4
+  }
+}

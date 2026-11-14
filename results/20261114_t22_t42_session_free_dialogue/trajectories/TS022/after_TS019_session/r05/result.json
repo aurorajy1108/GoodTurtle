@@ -1,0 +1,282 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "predecessor_puzzle": "TS019",
+  "condition": "session",
+  "repeat": 6,
+  "success": false,
+  "host_questions": 99,
+  "final_attempts": 1,
+  "rejected_finals": 1,
+  "counted_questions": 100,
+  "submissions": 100,
+  "player_format_corrections": [],
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.0,
+  "best_partial_score": 0.0,
+  "latest_final": "The lost girl took shelter in what seemed to be an empty house. She was exhausted but could not sleep because she was not really alone: during the night she encountered and interacted with another person in the house. By morning that person was missing—there was no trace of them—and this absence was the “something strange” she noticed. The realization that someone had been with her in the supposedly empty house and had then vanished left her terrified, so she fled.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0,
+        "evidence": "during the night she encountered and interacted with another person in the house",
+        "reason": "The submission never presents a portrait or window; it asserts a person inside the house, directly contradicting the required portrait-is-a-window identity and the real person outside it."
+      },
+      {
+        "id": "C2",
+        "credit": 0,
+        "evidence": "She was exhausted but could not sleep because she was not really alone: during the night she encountered and interacted with another person in the house.",
+        "reason": "The cause of her sleeplessness is replaced with an in-house companion rather than feeling watched by an apparent portrait, so the required causal facts are contradicted."
+      },
+      {
+        "id": "C3",
+        "credit": 0,
+        "evidence": "The realization that someone had been with her in the supposedly empty house and had then vanished left her terrified, so she fled.",
+        "reason": "It omits the window exposure and contradicts the required realization that someone had watched her from outside through a window; although morning disappearance is covered, a contradicted required fact caps this checkpoint at zero."
+      }
+    ],
+    "material_contradiction": true,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "contradicted",
+        "evidence": "during the night she encountered and interacted with another person in the house"
+      },
+      {
+        "id": "C1.F2",
+        "status": "contradicted",
+        "evidence": "The lost girl took shelter in what seemed to be an empty house... during the night she encountered and interacted with another person in the house."
+      },
+      {
+        "id": "C2.F1",
+        "status": "contradicted",
+        "evidence": "She was exhausted but could not sleep because she was not really alone: during the night she encountered and interacted with another person in the house."
+      },
+      {
+        "id": "C2.F2",
+        "status": "contradicted",
+        "evidence": "could not sleep because she was not really alone"
+      },
+      {
+        "id": "C3.F1",
+        "status": "partial",
+        "evidence": "By morning that person was missing—there was no trace of them—and this absence was ... left her terrified, so she fled."
+      },
+      {
+        "id": "C3.F2",
+        "status": "partial",
+        "evidence": "By morning that person was missing—there was no trace of them"
+      },
+      {
+        "id": "C3.F3",
+        "status": "contradicted",
+        "evidence": "The realization that someone had been with her in the supposedly empty house and had then vanished left her terrified, so she fled."
+      }
+    ],
+    "requirement_coverage": [],
+    "contradictions": [
+      {
+        "quote": "during the night she encountered and interacted with another person in the house",
+        "reference": "Someone had been staring at her from outside the window all night; the apparent portrait was actually a window with a real person outside.",
+        "checkpoint_ids": [
+          "C1",
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "quote": "The realization that someone had been with her in the supposedly empty house and had then vanished left her terrified, so she fled.",
+        "reference": "She realized that what was on the wall wasn't a painting, but a window. Someone had been staring at her from outside the window all night.",
+        "checkpoint_ids": [
+          "C3"
+        ]
+      }
+    ],
+    "partial_score": 0.0,
+    "complete": false,
+    "label": "no",
+    "grading_protocol": "coverage-v3-unified",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 1100.493768583,
+  "usage": {
+    "grader": {
+      "http_attempts": 1,
+      "successful_responses": 1,
+      "seconds": 67.60861800000009,
+      "provider_reported_usage": {
+        "prompt_tokens": 4439,
+        "completion_tokens": 6769,
+        "total_tokens": 11208,
+        "prompt_cache_hit_tokens": 2944,
+        "prompt_cache_miss_tokens": 1495
+      }
+    },
+    "host": {
+      "http_attempts": 99,
+      "successful_responses": 99,
+      "seconds": 844.2359827889998,
+      "provider_reported_usage": {
+        "prompt_tokens": 1582382,
+        "completion_tokens": 64148,
+        "total_tokens": 1646530,
+        "prompt_cache_hit_tokens": 1553408,
+        "prompt_cache_miss_tokens": 28974
+      }
+    },
+    "player": {
+      "http_attempts": 101,
+      "successful_responses": 100,
+      "seconds": 185.81735612399984,
+      "provider_reported_usage": {
+        "prompt_tokens": 2178796,
+        "completion_tokens": 2690,
+        "total_tokens": 2181486,
+        "prompt_cache_hit_tokens": 2159360,
+        "prompt_cache_miss_tokens": 19436
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "estimate_assumptions": [
+      "peak_rate_reference_upper_estimate; off-peak rates are half; actual billing unknown"
+    ],
+    "total": {
+      "calls": 201,
+      "unknown_cost_calls": 1,
+      "known_estimated_cost_usd": 0.411544848,
+      "estimated_cost_usd": null,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 3765617,
+        "cached_input_tokens": 3715712,
+        "cache_write_tokens": 0,
+        "output_tokens": 73607,
+        "reasoning_tokens": 70008,
+        "total_tokens": 3839224
+      },
+      "missing_token_calls": {
+        "input_tokens": 1,
+        "cached_input_tokens": 1,
+        "cache_write_tokens": 0,
+        "output_tokens": 1,
+        "reasoning_tokens": 101,
+        "total_tokens": 1
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 1,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.028908176,
+        "estimated_cost_usd": 0.028908176,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 4439,
+          "cached_input_tokens": 2944,
+          "cache_write_tokens": 0,
+          "output_tokens": 6769,
+          "reasoning_tokens": 6063,
+          "total_tokens": 11208
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 99,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.360621712,
+        "estimated_cost_usd": 0.360621712,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1582382,
+          "cached_input_tokens": 1553408,
+          "cache_write_tokens": 0,
+          "output_tokens": 64148,
+          "reasoning_tokens": 63945,
+          "total_tokens": 1646530
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 101,
+        "unknown_cost_calls": 1,
+        "known_estimated_cost_usd": 0.02201496,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 2178796,
+          "cached_input_tokens": 2159360,
+          "cache_write_tokens": 0,
+          "output_tokens": 2690,
+          "reasoning_tokens": 0,
+          "total_tokens": 2181486
+        },
+        "missing_token_calls": {
+          "input_tokens": 1,
+          "cached_input_tokens": 1,
+          "cache_write_tokens": 0,
+          "output_tokens": 1,
+          "reasoning_tokens": 101,
+          "total_tokens": 1
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "08ecc88e-8637-433c-abb2-acb1d143b13d",
+      "6d13fd29-57ed-4c2e-8571-bf317630910b",
+      "d33a492a-34aa-48c0-9c0c-48ca4f0f53ea"
+    ],
+    "logical_input_chars": 1980638,
+    "delta_input_chars": 126114,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "7c58339299af1ffe5c8b62850b87419914bf050994fabb559168e536907297d8",
+    "grading_sha256": "8c8766064d4bd123188d1f3666ee10ffb54d8ffbe4f02ce3477847c0a7b35c85",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v3-unified",
+    "prompts_sha256": "533fed2879c5bee42d2b3da39a93449c142c58f51a3c16cb8bdd87a66efb2c8c",
+    "controller_sha256": "c750c12c1b961778115949b8f5d2b9cd6d848c5a20a7510158a73a34731e8d73",
+    "player_format_policy_sha256": "cf439ee1d60ae38374486aada319739646a5975284ff00bc877a3040047df56a",
+    "host_context_sha256": "5d44680f053ed1c15963a67180e489f6280a408a8977dbd1a644f7f922badcfc",
+    "host_binding_version": "host-v9-human-20261102",
+    "original_controller_sha256": "a47d4ae46e78f39dbd6900233ccfd9367e0b0d911ac9345dc3b9b4e704451a13"
+  }
+}

@@ -1,0 +1,337 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "predecessor_puzzle": null,
+  "condition": "free_dialogue",
+  "repeat": 4,
+  "success": false,
+  "host_questions": 94,
+  "final_attempts": 6,
+  "rejected_finals": 6,
+  "counted_questions": 100,
+  "submissions": 100,
+  "player_format_corrections": [],
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.5,
+  "best_partial_score": 0.5,
+  "latest_final": "A lost, exhausted girl with nowhere else to go took shelter in an empty, abandoned house, simply because it was the only refuge she could find—not because she was fleeing anyone. Believing she was alone and unobserved there, she lay down to rest.\n\nShe could not sleep, though: she was kept awake by an uneasy sense of being watched, a feeling tied to the house rather than to any sound or overnight event.\n\nEventually she fell asleep from sheer exhaustion. When she woke in the morning, in daylight, she noticed something that made her understand the truth and flee. What she understood was that she had not been alone: a living human stranger—an ordinary man she did not know—had been outside all night, awake and motionless, deliberately and patiently watching her. He had been watching her while she lay asleep and helpless, and what she had sensed in the dark as a vague feeling of being watched had been real all along and was him.\n\nNothing he did or threatened mattered; his motives were beside the point. The terror was the collapse of her assumption that the empty house made her safe and unseen. She realized she had been seen—calmly, deliberately observed—the whole night through, defenseless in sleep, while she believed herself hidden and alone. That shock at having been watched while she slept and believed herself safe is what drove her to flee the house in terror.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0.5,
+        "evidence": "a living human stranger—an ordinary man she did not know—had been outside all night, awake and motionless, deliberately and patiently watching her",
+        "reason": "Partial: a real person watching is present, but the required mistaken perception of that person as a portrait through a window is absent."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "She could not sleep, though: she was kept awake by an uneasy sense of being watched",
+        "reason": "Partial: uneasiness and sleeplessness from feeling watched are covered, but the required cause of mistaking the watcher for a portrait is absent."
+      },
+      {
+        "id": "C3",
+        "credit": 0.5,
+        "evidence": "When she woke in the morning, in daylight, she noticed something that made her understand the truth and flee",
+        "reason": "Partial: she eventually sleeps, realizes she was watched, and flees, but the required morning disappearance of the watcher and window exposure are not covered; no affirmative contradiction is present."
+      }
+    ],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "partial",
+        "evidence": "a living human stranger—an ordinary man she did not know—had been outside all night, awake and motionless, deliberately and patiently watching her"
+      },
+      {
+        "id": "C1.F2",
+        "status": "partial",
+        "evidence": "A lost, exhausted girl with nowhere else to go took shelter in an empty, abandoned house"
+      },
+      {
+        "id": "C2.F1",
+        "status": "partial",
+        "evidence": "She could not sleep, though: she was kept awake by an uneasy sense of being watched"
+      },
+      {
+        "id": "C2.F2",
+        "status": "partial",
+        "evidence": "She could not sleep, though: she was kept awake by an uneasy sense of being watched"
+      },
+      {
+        "id": "C3.F1",
+        "status": "partial",
+        "evidence": "When she woke in the morning, in daylight, she noticed something that made her understand the truth and flee"
+      },
+      {
+        "id": "C3.F2",
+        "status": "partial",
+        "evidence": "Eventually she fell asleep from sheer exhaustion. When she woke in the morning, in daylight"
+      },
+      {
+        "id": "C3.F3",
+        "status": "partial",
+        "evidence": "What she understood was that she had not been alone: a living human stranger ... had been outside all night ... watching her ... That shock ... is what drove her to flee the house in terror"
+      }
+    ],
+    "requirement_coverage": [],
+    "contradictions": [],
+    "partial_score": 0.5,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v3-unified",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 1755.997038542,
+  "usage": {
+    "grader": {
+      "http_attempts": 7,
+      "successful_responses": 7,
+      "seconds": 249.7170311250004,
+      "provider_reported_usage": {
+        "prompt_tokens": 48171,
+        "completion_tokens": 35006,
+        "total_tokens": 83177,
+        "prompt_cache_hit_tokens": 39040,
+        "prompt_cache_miss_tokens": 9131
+      }
+    },
+    "host": {
+      "http_attempts": 94,
+      "successful_responses": 94,
+      "seconds": 1088.7636392079996,
+      "provider_reported_usage": {
+        "prompt_tokens": 2340940,
+        "completion_tokens": 114281,
+        "total_tokens": 2455221,
+        "prompt_cache_hit_tokens": 2292992,
+        "prompt_cache_miss_tokens": 47948
+      }
+    },
+    "partner": {
+      "http_attempts": 79,
+      "successful_responses": 79,
+      "seconds": 266.3521842949998,
+      "provider_reported_usage": {
+        "prompt_tokens": 2583046,
+        "completion_tokens": 22299,
+        "total_tokens": 2605345,
+        "prompt_cache_hit_tokens": 2531840,
+        "prompt_cache_miss_tokens": 51206
+      }
+    },
+    "player": {
+      "http_attempts": 54,
+      "successful_responses": 54,
+      "seconds": 147.6042840829994,
+      "provider_reported_usage": {
+        "prompt_tokens": 1561686,
+        "completion_tokens": 9531,
+        "total_tokens": 1571217,
+        "prompt_cache_hit_tokens": 1511168,
+        "prompt_cache_miss_tokens": 50518
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "estimate_assumptions": [
+      "peak_rate_reference_upper_estimate; off-peak rates are half; actual billing unknown"
+    ],
+    "total": {
+      "calls": 234,
+      "unknown_cost_calls": 0,
+      "known_estimated_cost_usd": 0.862101456,
+      "estimated_cost_usd": 0.862101456,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 6533843,
+        "cached_input_tokens": 6375040,
+        "cache_write_tokens": 0,
+        "output_tokens": 181117,
+        "reasoning_tokens": 144156,
+        "total_tokens": 6714960
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 133,
+        "total_tokens": 0
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 7,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.15239444,
+        "estimated_cost_usd": 0.15239444,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 48171,
+          "cached_input_tokens": 39040,
+          "cache_write_tokens": 0,
+          "output_tokens": 35006,
+          "reasoning_tokens": 30077,
+          "total_tokens": 83177
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 94,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.616735768,
+        "estimated_cost_usd": 0.616735768,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 2340940,
+          "cached_input_tokens": 2292992,
+          "cache_write_tokens": 0,
+          "output_tokens": 114281,
+          "reasoning_tokens": 114079,
+          "total_tokens": 2455221
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "partner",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 79,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.05731164,
+        "estimated_cost_usd": 0.05731164,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 2583046,
+          "cached_input_tokens": 2531840,
+          "cache_write_tokens": 0,
+          "output_tokens": 22299,
+          "reasoning_tokens": 0,
+          "total_tokens": 2605345
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 79,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 54,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.035659608,
+        "estimated_cost_usd": 0.035659608,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1561686,
+          "cached_input_tokens": 1511168,
+          "cache_write_tokens": 0,
+          "output_tokens": 9531,
+          "reasoning_tokens": 0,
+          "total_tokens": 1571217
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 54,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "33f99113-e3a0-49e2-9b6b-d99aa5e8ba48",
+      "566bfa69-b069-46e6-9080-479ac56d0221",
+      "ca8bd3eb-cd83-4df2-acb5-f84308a3fb23",
+      "f2c6a09a-647e-4ffb-943b-55c56b9933c2"
+    ],
+    "logical_input_chars": 13301821,
+    "delta_input_chars": 540523,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "7c58339299af1ffe5c8b62850b87419914bf050994fabb559168e536907297d8",
+    "grading_sha256": "8c8766064d4bd123188d1f3666ee10ffb54d8ffbe4f02ce3477847c0a7b35c85",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v3-unified",
+    "prompts_sha256": "c95150ba24dd57486633f8b8acdc715e4861fd9e112077b7598de481dead1678",
+    "controller_sha256": "a47d4ae46e78f39dbd6900233ccfd9367e0b0d911ac9345dc3b9b4e704451a13",
+    "player_format_policy_sha256": "cf439ee1d60ae38374486aada319739646a5975284ff00bc877a3040047df56a",
+    "host_context_sha256": "5d44680f053ed1c15963a67180e489f6280a408a8977dbd1a644f7f922badcfc",
+    "host_binding_version": "host-v9-human-20261102"
+  },
+  "dialogue_metrics": {
+    "settings": {
+      "roles": "complementary",
+      "scheduling": "adaptive",
+      "max_discussion": 4,
+      "start": "A",
+      "role_assignment": {
+        "A": {
+          "specialty": "investigator",
+          "instruction": "Develop and test explanations of identities, setting, event order and the main causal mechanism. Connect confirmed facts into a coherent story; explicitly distinguish hypotheses from host-confirmed facts."
+        },
+        "B": {
+          "specialty": "critic",
+          "instruction": "Challenge unsupported assumptions, propose alternative interpretations, and test missing causal links, motives and contradictions. Suggest discriminating questions rather than only criticizing. Help complete the story."
+        }
+      },
+      "protocol": "shared-dialogue-v3-prefix-v1",
+      "format_correction_max_retries": 2
+    },
+    "counts_by_actor": {
+      "A": {
+        "question": 41,
+        "discuss": 7,
+        "final": 4
+      },
+      "B": {
+        "question": 53,
+        "discuss": 22,
+        "final": 2
+      }
+    },
+    "external_submissions": 100,
+    "internal_messages": 29
+  }
+}

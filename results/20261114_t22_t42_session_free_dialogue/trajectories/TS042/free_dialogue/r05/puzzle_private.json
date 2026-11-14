@@ -1,0 +1,73 @@
+{
+  "id": "TS042",
+  "opening": "A lady went to a shoe store and bought a pair of red high heels. These high heels foretold her death tonight.",
+  "answer": "The lady was an acrobat in a circus troupe. Her job was to balance an apple on her head while another male performer threw knives at it. But because of her high heels, she was a few centimeters taller than usual. The male performer, who hadn't adjusted, missed and threw the knife into her head.",
+  "rubric": [
+    {
+      "id": "C1",
+      "weight": 0.5,
+      "core": true,
+      "criterion": "The woman is a circus performer with an apple on her head during a knife-throwing act.",
+      "full_credit": "All required_facts must be covered, including their causal and narrative qualifiers. Faithful paraphrases count.",
+      "half_credit": "Some required facts are covered, with no contradiction; half_credit_requires gates still apply.",
+      "zero_credit": "No required facts are covered, a fact is contradicted, or a half-credit prerequisite is missing.",
+      "points": 50.0,
+      "required_facts": [
+        "The woman is a circus performer with an apple on her head during a knife-throwing act.",
+        "The woman is a circus performer who balances an apple on her head for a knife-throwing act"
+      ],
+      "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+    },
+    {
+      "id": "C2",
+      "weight": 0.3,
+      "core": false,
+      "criterion": "Her new high heels increase her effective height by a few centimeters.",
+      "full_credit": "All required_facts must be covered, including their causal and narrative qualifiers. Faithful paraphrases count.",
+      "half_credit": "Some required facts are covered, with no contradiction; half_credit_requires gates still apply.",
+      "zero_credit": "No required facts are covered, a fact is contradicted, or a half-credit prerequisite is missing.",
+      "points": 30.0,
+      "required_facts": [
+        "Her new high heels increase her effective height by a few centimeters.",
+        "High heels raise her head above its usual height"
+      ],
+      "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+    },
+    {
+      "id": "C3",
+      "weight": 0.2,
+      "core": false,
+      "criterion": "The knife thrower fails to adjust aim and fatally strikes her head.",
+      "full_credit": "All required_facts must be covered, including their causal and narrative qualifiers. Faithful paraphrases count.",
+      "half_credit": "Some required facts are covered, with no contradiction; half_credit_requires gates still apply.",
+      "zero_credit": "No required facts are covered, a fact is contradicted, or a half-credit prerequisite is missing.",
+      "points": 20.0,
+      "required_facts": [
+        "The knife thrower fails to adjust aim and fatally strikes her head.",
+        "Her male partner does not adjust his throw and hits her head, killing her"
+      ],
+      "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+    }
+  ],
+  "title": "红色高跟鞋预示死亡",
+  "story_family": "F042",
+  "quality_status": "正常",
+  "review_notes": "",
+  "source_row": "42",
+  "observed_score": null,
+  "completion_requirements": [],
+  "annotation_version": "turtle50-v3-host-repair-20261023",
+  "annotation_status": "ai_repair_pending_human",
+  "grading_notes": "AI three-review adjudication v2, pending human confirmation. Score only this submission. Apply full_credit/half_credit/zero_credit explicitly, with zero taking precedence for a materially contradictory checkpoint claim. An omitted qualifier can be partial; replacing the core identity/cause with a wrong one is not an omission. Faithful paraphrases count. Partial score and full narrative are separate outputs. AI independent review B, pending human approval. Credit is 0/.5/1 per checkpoint. Full narrative additionally requires all sourced completion requirements and no incompatible central claims. Judge the submitted explanation, not unasserted chat guesses. Accept faithful paraphrases; missing optional detail is not a contradiction. Do not demand unknown motives, devices or events. Score the stated fictional height/aim mechanism; do not introduce a physics reconstruction not in the story.\nUNIFIED-V3: Only rubric.required_facts determine scored narrative coverage. Do not invent additional mandatory events from the reference or host examples. Interpretation guards prohibit unsupported assertions but never require a player to recite a disclaimer.\n",
+  "annotation_provenance": {
+    "reviewers": [
+      "a",
+      "b",
+      "c"
+    ],
+    "selected_base": "b",
+    "adjudicator": "root",
+    "human_confirmed": false
+  },
+  "grading_protocol": "coverage-v3-unified"
+}

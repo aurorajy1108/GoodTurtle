@@ -1,0 +1,59 @@
+{
+  "scope": "structural/counters/score arithmetic/session lineage/cost accounting; no human semantic certification",
+  "status": "passed",
+  "human_semantic_review": "pending",
+  "submissions": 100,
+  "api_attempts": 205,
+  "warnings": [
+    "Some failed calls have unknown usage/cost; totals are not an actual bill."
+  ],
+  "source_api_calls_sha256": "11d6a0c78edca48b8c8b043f619870188e170701697a136b5a355ff680cac788",
+  "source_files_sha256": {
+    "result.json": "9945f90a2baaa392476457d10697a82cd852e78114b5fdc9256cd1ff8a91a02b",
+    "trajectory.jsonl": "272a86515444780b4b9124916ee1fb748a0995d0d4586df7c468c4367a0a3da4",
+    "trajectory.md": "6751cf9facee55165c72b942e2ba0f9103df6c0a7cb908da2089b303807f9096",
+    "trajectory.html": "2ee41e6106ba9235cf245cf385a55ca0b65d394230fcffe809401a2e99fcb1e1",
+    "review_template.csv": "3b1d553de692d23c69e6f2a29f83fb2e1c1c02ae46ba96d9037223e6598ec6cd",
+    "config.json": "4307cf3c715247acc8faf9d322125607962ba66e56d5980b57d841ccb930bc1e",
+    "prompts.json": "2293fcad2d75c545b454f5ac0b351c8f0d0b635d59ed01a87e246365943d699f",
+    "puzzle_private.json": "d45ee365914682d95bfd4ecfc392033c6c979a4c8721984d67c4f9f1bb639671",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "0a3fdde5e02a39bbfd5dea2afbce6b9ce2479134e71d8df316bc7b00195cca23",
+    "token_costs.csv": "13e35a05f073e444df97dc6a4e9136b5b8c4d36d85770b76eba53c857cda60fa",
+    "cost_summary.json": "adaba2d7bdbe4d9ba75f50c5d3b58844a768600abda109a83818dbeb112d004f",
+    "shared_dialogue.jsonl": "0af2cb7920f34976e64f539b0415d633d13a2186493d9fdd185aa01486ac3baf",
+    "shared_dialogue.html": "ed0ba8ea983e4977bafeca3126fa0db13e07d296d8b5912ecd1a9fe69c97aeb4",
+    "dialogue_metrics.json": "e4714e7459a652419ac3a74e5be2538a5a2f98d06c11e8f0f72ee6faeb389e84",
+    "dialogue_policy.json": "bef6bb0e727602dd5a00821ae0a6847992bf1eab6d8a3c8fe0681779e9753c5d",
+    "collaboration.jsonl": "dd80e59289b8e1a2cab5b2a5019d76f90748773d99b0cb96350bf3046067741e"
+  },
+  "published_files_sha256": {
+    "result.json": "9945f90a2baaa392476457d10697a82cd852e78114b5fdc9256cd1ff8a91a02b",
+    "trajectory.jsonl": "272a86515444780b4b9124916ee1fb748a0995d0d4586df7c468c4367a0a3da4",
+    "trajectory.md": "6751cf9facee55165c72b942e2ba0f9103df6c0a7cb908da2089b303807f9096",
+    "trajectory.html": "2ee41e6106ba9235cf245cf385a55ca0b65d394230fcffe809401a2e99fcb1e1",
+    "review_template.csv": "3b1d553de692d23c69e6f2a29f83fb2e1c1c02ae46ba96d9037223e6598ec6cd",
+    "config.json": "4307cf3c715247acc8faf9d322125607962ba66e56d5980b57d841ccb930bc1e",
+    "prompts.json": "2293fcad2d75c545b454f5ac0b351c8f0d0b635d59ed01a87e246365943d699f",
+    "puzzle_private.json": "d45ee365914682d95bfd4ecfc392033c6c979a4c8721984d67c4f9f1bb639671",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "0a3fdde5e02a39bbfd5dea2afbce6b9ce2479134e71d8df316bc7b00195cca23",
+    "token_costs.csv": "13e35a05f073e444df97dc6a4e9136b5b8c4d36d85770b76eba53c857cda60fa",
+    "cost_summary.json": "adaba2d7bdbe4d9ba75f50c5d3b58844a768600abda109a83818dbeb112d004f",
+    "shared_dialogue.jsonl": "0af2cb7920f34976e64f539b0415d633d13a2186493d9fdd185aa01486ac3baf",
+    "shared_dialogue.html": "ed0ba8ea983e4977bafeca3126fa0db13e07d296d8b5912ecd1a9fe69c97aeb4",
+    "dialogue_metrics.json": "e4714e7459a652419ac3a74e5be2538a5a2f98d06c11e8f0f72ee6faeb389e84",
+    "dialogue_policy.json": "bef6bb0e727602dd5a00821ae0a6847992bf1eab6d8a3c8fe0681779e9753c5d",
+    "collaboration.jsonl": "dd80e59289b8e1a2cab5b2a5019d76f90748773d99b0cb96350bf3046067741e"
+  },
+  "presentation_changes": [],
+  "api_audit_sha256": "1b7718dff04f02a1685c29924810e9103b4a5ba74c8bd87cbaa86321e7fadc5a",
+  "additional_copied_files_sha256": {
+    "host_context.json": "ddc9a67b731f7bf438fd0a8e54152e10a797974de1339d3b2b68c7242d76ad98",
+    "source_binding.json": "61cebf7ac3f48ed94563655a7eb801647fb31086d1a27c0818f7a89f65c7b518",
+    "partner_config.json": "c2e8a291df1c554b1c94f20fa63d5e7965959edf5a1f3583a876abd45e3f658b"
+  },
+  "omitted_source_files_sha256": {
+    "first_turn_billing_call.json": "7a22adb11160fb4716c6cf05d1c23303742aea980fd116988bdc7966ffa3b1ab"
+  }
+}

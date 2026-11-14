@@ -1,0 +1,263 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 93,
+  "final_attempts": 7,
+  "rejected_finals": 7,
+  "counted_questions": 100,
+  "submissions": 100,
+  "player_format_corrections": [],
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.75,
+  "best_partial_score": 0.75,
+  "latest_final": "The person regularly follows the same route between the public street and the school campus, and that route involves a level change at the campus entrance. No ordinary fixed staircase is nearby there; the entrance instead has escalators. The escalators are sometimes operating and sometimes switched off, and in particular the down escalator is usually stopped. So the person often “uses the stairs” by walking up or down the stationary stepped escalator surface—especially walking down it when leaving campus—rather than using a conventional staircase. Thus there are no staircases nearby in the ordinary sense, yet the person often uses stairs: the escalator steps, which serve as stairs when the escalator is not moving.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 1,
+        "evidence": "walking up or down the stationary stepped escalator surface ... the escalator steps, which serve as stairs when the escalator is not moving",
+        "reason": "The submission clearly identifies the stairs as the steps of a stopped/non-moving escalator."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "No ordinary fixed staircase is nearby there; the entrance instead has escalators ... walking up or down the stationary stepped escalator surface",
+        "reason": "It covers the absence of nearby ordinary fixed stairs and escalator-based access, but it omits the required qualifier that a pair of escalators provides the access."
+      },
+      {
+        "id": "C3",
+        "credit": 0.5,
+        "evidence": "",
+        "reason": "It does not mention one escalator being under maintenance, nor the causal event of the other escalator being stopped for people to walk on during that maintenance. The isolated mention of a stopped down escalator is not enough to cover the required facts."
+      }
+    ],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "covered",
+        "evidence": "walking up or down the stationary stepped escalator surface ... the escalator steps, which serve as stairs when the escalator is not moving"
+      },
+      {
+        "id": "C2.F1",
+        "status": "covered",
+        "evidence": "No ordinary fixed staircase is nearby there; the entrance instead has escalators ... walking up or down the stationary stepped escalator surface"
+      },
+      {
+        "id": "C2.F2",
+        "status": "partial",
+        "evidence": "No ordinary fixed staircase is nearby there; the entrance instead has escalators"
+      },
+      {
+        "id": "C3.F1",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "C3.F2",
+        "status": "partial",
+        "evidence": "in particular the down escalator is usually stopped"
+      },
+      {
+        "id": "C3.F3",
+        "status": "missing",
+        "evidence": ""
+      }
+    ],
+    "requirement_coverage": [],
+    "contradictions": [],
+    "partial_score": 0.75,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v3-unified",
+    "controller_corrections": [
+      {
+        "field": "C3.credit",
+        "model": 0,
+        "effective": 0.5
+      }
+    ]
+  },
+  "elapsed_seconds": 1796.353208084,
+  "usage": {
+    "grader": {
+      "http_attempts": 7,
+      "successful_responses": 7,
+      "seconds": 217.1175097089999,
+      "provider_reported_usage": {
+        "prompt_tokens": 45553,
+        "completion_tokens": 27890,
+        "total_tokens": 73443,
+        "prompt_cache_hit_tokens": 38400,
+        "prompt_cache_miss_tokens": 7153
+      }
+    },
+    "host": {
+      "http_attempts": 93,
+      "successful_responses": 93,
+      "seconds": 1409.868790162001,
+      "provider_reported_usage": {
+        "prompt_tokens": 1207109,
+        "completion_tokens": 147715,
+        "total_tokens": 1354824,
+        "prompt_cache_hit_tokens": 1182848,
+        "prompt_cache_miss_tokens": 24261
+      }
+    },
+    "player": {
+      "http_attempts": 101,
+      "successful_responses": 100,
+      "seconds": 166.67990324800007,
+      "provider_reported_usage": {
+        "prompt_tokens": 787243,
+        "completion_tokens": 3139,
+        "total_tokens": 790382,
+        "prompt_cache_hit_tokens": 767616,
+        "prompt_cache_miss_tokens": 19627
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "estimate_assumptions": [
+      "peak_rate_reference_upper_estimate; off-peak rates are half; actual billing unknown"
+    ],
+    "total": {
+      "calls": 201,
+      "unknown_cost_calls": 1,
+      "known_estimated_cost_usd": 0.804857788,
+      "estimated_cost_usd": null,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 2039905,
+        "cached_input_tokens": 1988864,
+        "cache_write_tokens": 0,
+        "output_tokens": 178744,
+        "reasoning_tokens": 171082,
+        "total_tokens": 2218649
+      },
+      "missing_token_calls": {
+        "input_tokens": 1,
+        "cached_input_tokens": 1,
+        "cache_write_tokens": 0,
+        "output_tokens": 1,
+        "reasoning_tokens": 101,
+        "total_tokens": 1
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 7,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.12157596,
+        "estimated_cost_usd": 0.12157596,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 45553,
+          "cached_input_tokens": 38400,
+          "cache_write_tokens": 0,
+          "output_tokens": 27890,
+          "reasoning_tokens": 23584,
+          "total_tokens": 73443
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 93,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.669021232,
+        "estimated_cost_usd": 0.669021232,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1207109,
+          "cached_input_tokens": 1182848,
+          "cache_write_tokens": 0,
+          "output_tokens": 147715,
+          "reasoning_tokens": 147498,
+          "total_tokens": 1354824
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 101,
+        "unknown_cost_calls": 1,
+        "known_estimated_cost_usd": 0.014260596,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 787243,
+          "cached_input_tokens": 767616,
+          "cache_write_tokens": 0,
+          "output_tokens": 3139,
+          "reasoning_tokens": 0,
+          "total_tokens": 790382
+        },
+        "missing_token_calls": {
+          "input_tokens": 1,
+          "cached_input_tokens": 1,
+          "cache_write_tokens": 0,
+          "output_tokens": 1,
+          "reasoning_tokens": 101,
+          "total_tokens": 1
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "9df5643b-7410-4940-a624-99209e3bdb39",
+      "b4d02004-df02-4fb2-afbe-5ac6e92d341e",
+      "d33a492a-34aa-48c0-9c0c-48ca4f0f53ea"
+    ],
+    "logical_input_chars": 2086796,
+    "delta_input_chars": 117640,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "dde7e775e16a5b518184c707673faf512b68700da21ab3a768b46b8031e247e2",
+    "grading_sha256": "516c3bd2302857ca5febe8e455b648f7b1208b6376ec0fc8830a209a202b1437",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v3-unified",
+    "prompts_sha256": "533fed2879c5bee42d2b3da39a93449c142c58f51a3c16cb8bdd87a66efb2c8c",
+    "controller_sha256": "ee91c7fff015b3da86d0449a67d9d7331524914b5ff1048aec9bc44bb2ea26c9",
+    "player_format_policy_sha256": "cf439ee1d60ae38374486aada319739646a5975284ff00bc877a3040047df56a",
+    "host_context_sha256": "0a599b8a03e1cc786f3eb322d92b7b89cbb11f553d19380b126d50e4ef1319fc",
+    "host_binding_version": "host-v9-human-20261102",
+    "original_controller_sha256": "a326d477673d8ee08ae1c93b35fb0082c9e51d4f183e2aa781194b75fb5bb1db"
+  }
+}

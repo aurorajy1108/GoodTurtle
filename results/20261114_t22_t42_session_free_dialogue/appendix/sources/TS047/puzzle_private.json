@@ -1,0 +1,87 @@
+{
+  "id": "TS047",
+  "opening": "The Guesthouse Portrait. A reporter visiting the countryside stays in a shabby guesthouse. In the dim room, there is a picture opposite her bed. The next morning, she is stunned. Why?",
+  "answer": "In poor light, she mistakes a window with a real man outside for a lifelike portrait. During the night, she feels watched and avoids looking at it. In daylight, she approaches it and realizes it is a window: the man was real, and she had been watched.",
+  "rubric": [
+    {
+      "id": "C1",
+      "weight": 0.4,
+      "core": true,
+      "criterion": "The apparent portrait is a window with a real man outside.",
+      "full_credit": "All required_facts must be covered, including their causal and narrative qualifiers. Faithful paraphrases count.",
+      "half_credit": "Some required facts are covered, with no contradiction; half_credit_requires gates still apply.",
+      "zero_credit": "No required facts are covered, a fact is contradicted, or a half-credit prerequisite is missing.",
+      "points": 40.0,
+      "required_facts": [
+        "Window plus outside real man.",
+        "In poor light the guest mistakes a window and a real man outside for a lifelike portrait"
+      ],
+      "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+    },
+    {
+      "id": "C2",
+      "weight": 0.2,
+      "core": false,
+      "criterion": "Dim light causes the portrait misidentification.",
+      "full_credit": "All required_facts must be covered, including their causal and narrative qualifiers. Faithful paraphrases count.",
+      "half_credit": "Some required facts are covered, with no contradiction; half_credit_requires gates still apply.",
+      "zero_credit": "No required facts are covered, a fact is contradicted, or a half-credit prerequisite is missing.",
+      "points": 20.0,
+      "required_facts": [
+        "Dim light makes the window/man seem a portrait."
+      ],
+      "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+    },
+    {
+      "id": "C3",
+      "weight": 0.2,
+      "core": false,
+      "criterion": "Feeling watched at night makes her avoid looking.",
+      "full_credit": "All required_facts must be covered, including their causal and narrative qualifiers. Faithful paraphrases count.",
+      "half_credit": "Some required facts are covered, with no contradiction; half_credit_requires gates still apply.",
+      "zero_credit": "No required facts are covered, a fact is contradicted, or a half-credit prerequisite is missing.",
+      "points": 20.0,
+      "required_facts": [
+        "Unease and avoidance during the night.",
+        "Feeling watched, she avoids looking at it during the night"
+      ],
+      "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+    },
+    {
+      "id": "C4",
+      "weight": 0.2,
+      "core": false,
+      "criterion": "Daylight reveals the window and real watcher, shocking her.",
+      "full_credit": "All required_facts must be covered, including their causal and narrative qualifiers. Faithful paraphrases count.",
+      "half_credit": "Some required facts are covered, with no contradiction; half_credit_requires gates still apply.",
+      "zero_credit": "No required facts are covered, a fact is contradicted, or a half-credit prerequisite is missing.",
+      "points": 20.0,
+      "required_facts": [
+        "Daylight realization explains shock.",
+        "Daylight reveals the window and makes her realize the watcher was real, shocking her"
+      ],
+      "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+    }
+  ],
+  "title": "旅店的画像",
+  "story_family": "F-WINDOW-PORTRAIT",
+  "quality_status": "同故事变体",
+  "review_notes": "与22题为同一核心故事的改写",
+  "source_row": "47",
+  "observed_score": null,
+  "completion_requirements": [],
+  "annotation_version": "turtle50-v3-host-repair-20261023",
+  "annotation_status": "ai_repair_pending_human",
+  "grading_notes": "AI three-review adjudication v2, pending human confirmation. Score only this submission. Apply full_credit/half_credit/zero_credit explicitly, with zero taking precedence for a materially contradictory checkpoint claim. An omitted qualifier can be partial; replacing the core identity/cause with a wrong one is not an omission. Faithful paraphrases count. Partial score and full narrative are separate outputs. AI independent review C, not human gold. Score sum(weight*credit), credit 0/0.5/1. Full narrative requires all listed supported requirements and no material contradictory mechanism; partial 1 alone does not override full narrative. Credit each distinct causal proposition once; do not penalize faithful paraphrase or omitted unknown details. Accept faithful paraphrase. Require the listed identities, events and causal links, not exact prose or unspecified incidental details.\nUNIFIED-V3: Only rubric.required_facts determine scored narrative coverage. Do not invent additional mandatory events from the reference or host examples. Interpretation guards prohibit unsupported assertions but never require a player to recite a disclaimer.\n",
+  "annotation_provenance": {
+    "reviewers": [
+      "a",
+      "b",
+      "c"
+    ],
+    "selected_base": "c",
+    "adjudicator": "root",
+    "human_confirmed": false
+  },
+  "grading_protocol": "coverage-v3-unified"
+}
