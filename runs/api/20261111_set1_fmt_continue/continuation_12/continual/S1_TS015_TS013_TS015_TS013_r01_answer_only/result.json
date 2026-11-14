@@ -1,0 +1,258 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 99,
+  "final_attempts": 1,
+  "rejected_finals": 1,
+  "counted_questions": 100,
+  "submissions": 100,
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.45,
+  "best_partial_score": 0.45,
+  "latest_final": "The apparent university setting is misdirection: \"courses\" are not academic classes but the courses of a meal. In one evening, the narrator attended a multi-course dinner as a guest. The narrator did not like the food, so left each course uneaten. The servers cleared the plates away between courses as normal service, so by the end of the evening every course was gone. Thus \"all my courses were gone in one evening\" means all the dinner courses were removed and never eaten by the narrator.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0.5,
+        "evidence": "The apparent university setting is misdirection: \"courses\" are not academic classes but the courses of a meal. In one evening, the narrator attended a multi-course dinner as a guest.",
+        "reason": "Identifies courses as meal courses, not academic classes, but omits the mandatory formal high-table dinner setting, so only partial credit."
+      },
+      {
+        "id": "C2",
+        "credit": 0,
+        "evidence": "",
+        "reason": "No mention of a deadline or meal-course preferences, so the checkpoint is absent."
+      },
+      {
+        "id": "C3",
+        "credit": 1,
+        "evidence": "The narrator did not like the food, so left each course uneaten. The servers cleared the plates away between courses as normal service, so by the end of the evening every course was gone.",
+        "reason": "Covers servers clearing the uneaten dishes so all meal courses disappear, satisfying the checkpoint."
+      }
+    ],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Missing the mandatory high-table dinner context, the meal-preference deadline, punctual attendance, and the student's request for the waiter to clear leftovers; the submission also presents the narrator as a guest rather than a mandatory attendee, so the complete reference narrative is not reconstructed.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "partial",
+        "evidence": "The apparent university setting is misdirection: \"courses\" are not academic classes but the courses of a meal. In one evening, the narrator attended a multi-course dinner as a guest."
+      },
+      {
+        "id": "C2.F1",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "C3.F1",
+        "status": "covered",
+        "evidence": "The narrator did not like the food, so left each course uneaten. The servers cleared the plates away between courses as normal service, so by the end of the evening every course was gone."
+      }
+    ],
+    "requirement_coverage": [
+      {
+        "id": "R1",
+        "status": "partial",
+        "evidence": "The apparent university setting is misdirection: \"courses\" are not academic classes but the courses of a meal. In one evening, the narrator attended a multi-course dinner as a guest."
+      },
+      {
+        "id": "R2",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "R3",
+        "status": "partial",
+        "evidence": "The narrator did not like the food, so left each course uneaten."
+      },
+      {
+        "id": "R4",
+        "status": "partial",
+        "evidence": "The servers cleared the plates away between courses as normal service, so by the end of the evening every course was gone."
+      }
+    ],
+    "contradictions": [],
+    "partial_score": 0.45,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v2",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 785.1090169170056,
+  "usage": {
+    "grader": {
+      "http_attempts": 1,
+      "successful_responses": 1,
+      "seconds": 73.31350458302768,
+      "provider_reported_usage": {
+        "prompt_tokens": 4431,
+        "completion_tokens": 5918,
+        "total_tokens": 10349,
+        "prompt_cache_hit_tokens": 3200,
+        "prompt_cache_miss_tokens": 1231
+      }
+    },
+    "host": {
+      "http_attempts": 99,
+      "successful_responses": 99,
+      "seconds": 586.2917235791974,
+      "provider_reported_usage": {
+        "prompt_tokens": 1492322,
+        "completion_tokens": 34673,
+        "total_tokens": 1526995,
+        "prompt_cache_hit_tokens": 1465088,
+        "prompt_cache_miss_tokens": 27234
+      }
+    },
+    "player": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 123.92500691776513,
+      "provider_reported_usage": {
+        "prompt_tokens": 753821,
+        "completion_tokens": 2993,
+        "total_tokens": 756814,
+        "prompt_cache_hit_tokens": 734976,
+        "prompt_cache_miss_tokens": 18845
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "total": {
+      "calls": 200,
+      "unknown_cost_calls": 200,
+      "known_estimated_cost_usd": 0.0,
+      "estimated_cost_usd": null,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 2250574,
+        "cached_input_tokens": 2203264,
+        "cache_write_tokens": 0,
+        "output_tokens": 43584,
+        "reasoning_tokens": 39848,
+        "total_tokens": 2294158
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 100,
+        "total_tokens": 0
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 1,
+        "unknown_cost_calls": 1,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 4431,
+          "cached_input_tokens": 3200,
+          "cache_write_tokens": 0,
+          "output_tokens": 5918,
+          "reasoning_tokens": 5377,
+          "total_tokens": 10349
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 99,
+        "unknown_cost_calls": 99,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1492322,
+          "cached_input_tokens": 1465088,
+          "cache_write_tokens": 0,
+          "output_tokens": 34673,
+          "reasoning_tokens": 34471,
+          "total_tokens": 1526995
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 100,
+        "unknown_cost_calls": 100,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 753821,
+          "cached_input_tokens": 734976,
+          "cache_write_tokens": 0,
+          "output_tokens": 2993,
+          "reasoning_tokens": 0,
+          "total_tokens": 756814
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 100,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "002a16d3-28b9-4734-a63c-d0a657e286f0",
+      "15d04bc9-7469-4813-93e7-594ed01b2454",
+      "d5fd258b-043c-438c-971c-83790c301f97"
+    ],
+    "logical_input_chars": 2353564,
+    "delta_input_chars": 125845,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+    "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "8d764e3a9887e0ffdadd859f4c77a91d0e9758c38a33fdd3f0329d5cc4c0857b",
+    "controller_sha256": "630feb6c08d2f9530d4a9567f983cdcbbb29581b6c019d188c435642556c78db",
+    "player_format_policy_sha256": "c552ce859dcef92e38da240bbd2fe22b0922328c4746f8da9ae8245c2e88d0cc",
+    "host_context_sha256": "3d82c64058a3f725abd9c438d32198022a2238d46dbbf45792bf84d0865c8f0f",
+    "host_binding_version": "host-v11-set1-causal-20261110"
+  }
+}

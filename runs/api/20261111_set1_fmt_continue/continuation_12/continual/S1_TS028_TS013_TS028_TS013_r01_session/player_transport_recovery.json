@@ -1,0 +1,9 @@
+{
+  "role": "player",
+  "failed_attempts": 1,
+  "next_submission": 72,
+  "transport_category": "timeout",
+  "transport_phase": "read",
+  "possible_duplicate_remote_charge": true,
+  "policy": "Restore completed DeepSeek chat only; omit trailing Player transport failures with no observed reply; retry the next Player action without resampling past turns. Failed read may already have been billed remotely."
+}

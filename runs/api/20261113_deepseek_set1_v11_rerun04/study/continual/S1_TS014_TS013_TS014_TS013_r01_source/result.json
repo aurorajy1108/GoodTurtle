@@ -1,0 +1,266 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 99,
+  "final_attempts": 1,
+  "rejected_finals": 1,
+  "counted_questions": 100,
+  "submissions": 100,
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.5,
+  "best_partial_score": 0.5,
+  "latest_final": "The student was academically capable and passed the written tests and exams. The course, however, also required a group project that had to be passed for the course to be passed. The project failed because of the student's own contribution: the student acted as the group's coordinator/submitter, and their contribution was judged substantively inadequate or incorrect by the course's standards, even though it was performed sincerely rather than through dishonesty, lateness, plagiarism, or refusal to do it. Because the group project was a mandatory pass component, that failure caused the student to fail the course despite otherwise passing the tests with flying colors.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 1,
+        "evidence": "The student was academically capable and passed the written tests and exams. The course, however, also required a group project that had to be passed for the course to be passed.",
+        "reason": "The submission identifies the student as individually strong and makes the course outcome substantially depend on passing the group project, which is a faithful paraphrase of the required checkpoint."
+      },
+      {
+        "id": "C2",
+        "credit": 0,
+        "evidence": "",
+        "reason": "The submission never says the other group members free-ride; it instead attributes the project failure to the student's own inadequate contribution, so the required fact is absent."
+      },
+      {
+        "id": "C3",
+        "credit": 0,
+        "evidence": "The project failed because of the student's own contribution: the student acted as the group's coordinator/submitter, and their contribution was judged substantively inadequate or incorrect by the course's standards",
+        "reason": "The required causal chain is that excessive workload from free-riders causes the poor project and failure; the submission replaces that with the student's own inadequate contribution, contradicting the checkpoint."
+      }
+    ],
+    "material_contradiction": true,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "The submission reconstructs a mandatory group project and resulting course failure, but it omits or contradicts the central narrative facts that all other group members free-ride and that their free-riding creates the excessive workload that causes the poor project.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "covered",
+        "evidence": "The student was academically capable and passed the written tests and exams. The course, however, also required a group project that had to be passed for the course to be passed."
+      },
+      {
+        "id": "C2.F1",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "C3.F1",
+        "status": "contradicted",
+        "evidence": "The project failed because of the student's own contribution: the student acted as the group's coordinator/submitter, and their contribution was judged substantively inadequate or incorrect by the course's standards"
+      }
+    ],
+    "requirement_coverage": [
+      {
+        "id": "R1",
+        "status": "partial",
+        "evidence": "also required a group project that had to be passed for the course to be passed... a mandatory pass component"
+      },
+      {
+        "id": "R2",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "R3",
+        "status": "contradicted",
+        "evidence": "The project failed because of the student's own contribution: the student acted as the group's coordinator/submitter, and their contribution was judged substantively inadequate or incorrect by the course's standards"
+      },
+      {
+        "id": "R4",
+        "status": "covered",
+        "evidence": "Because the group project was a mandatory pass component, that failure caused the student to fail the course despite otherwise passing the tests with flying colors."
+      }
+    ],
+    "contradictions": [
+      {
+        "quote": "The project failed because of the student's own contribution: the student acted as the group's coordinator/submitter, and their contribution was judged substantively inadequate or incorrect by the course's standards",
+        "reference": "The excessive workload makes the student complete the project poorly and fail the course; the workload overwhelms the otherwise strong student and the project is poor.",
+        "checkpoint_ids": [
+          "C3"
+        ]
+      }
+    ],
+    "partial_score": 0.5,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v2",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 7619.647315166978,
+  "usage": {
+    "grader": {
+      "http_attempts": 1,
+      "successful_responses": 1,
+      "seconds": 117.22172475000843,
+      "provider_reported_usage": {
+        "prompt_tokens": 3966,
+        "completion_tokens": 6860,
+        "total_tokens": 10826,
+        "prompt_cache_hit_tokens": 2688,
+        "prompt_cache_miss_tokens": 1278
+      }
+    },
+    "host": {
+      "http_attempts": 106,
+      "successful_responses": 104,
+      "seconds": 757.1895187991322,
+      "provider_reported_usage": {
+        "prompt_tokens": 1547114,
+        "completion_tokens": 42755,
+        "total_tokens": 1589869,
+        "prompt_cache_hit_tokens": 1519488,
+        "prompt_cache_miss_tokens": 27626
+      }
+    },
+    "player": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 122.64890178712085,
+      "provider_reported_usage": {
+        "prompt_tokens": 763314,
+        "completion_tokens": 3549,
+        "total_tokens": 766863,
+        "prompt_cache_hit_tokens": 742528,
+        "prompt_cache_miss_tokens": 20786
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "total": {
+      "calls": 207,
+      "unknown_cost_calls": 207,
+      "known_estimated_cost_usd": 0.0,
+      "estimated_cost_usd": null,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 2314394,
+        "cached_input_tokens": 2264704,
+        "cache_write_tokens": 0,
+        "output_tokens": 53164,
+        "reasoning_tokens": 48587,
+        "total_tokens": 2367558
+      },
+      "missing_token_calls": {
+        "input_tokens": 2,
+        "cached_input_tokens": 2,
+        "cache_write_tokens": 0,
+        "output_tokens": 2,
+        "reasoning_tokens": 102,
+        "total_tokens": 2
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 1,
+        "unknown_cost_calls": 1,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 3966,
+          "cached_input_tokens": 2688,
+          "cache_write_tokens": 0,
+          "output_tokens": 6860,
+          "reasoning_tokens": 6041,
+          "total_tokens": 10826
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 106,
+        "unknown_cost_calls": 106,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1547114,
+          "cached_input_tokens": 1519488,
+          "cache_write_tokens": 0,
+          "output_tokens": 42755,
+          "reasoning_tokens": 42546,
+          "total_tokens": 1589869
+        },
+        "missing_token_calls": {
+          "input_tokens": 2,
+          "cached_input_tokens": 2,
+          "cache_write_tokens": 0,
+          "output_tokens": 2,
+          "reasoning_tokens": 2,
+          "total_tokens": 2
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 100,
+        "unknown_cost_calls": 100,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 763314,
+          "cached_input_tokens": 742528,
+          "cache_write_tokens": 0,
+          "output_tokens": 3549,
+          "reasoning_tokens": 0,
+          "total_tokens": 766863
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 100,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "67058c30-a9cd-4632-9bf4-e9b47b016422",
+      "681f3582-b651-4929-92fd-9994e21a438f",
+      "8b105526-e87e-4a93-87ea-4c9c01f1ffb1"
+    ],
+    "logical_input_chars": 2470596,
+    "delta_input_chars": 131607,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "95a3d31f81a3ef0ebfa32f5ede191b4e24e727b55ced0a21d7ba42666a2392a4",
+    "grading_sha256": "475d22bca77f15b9707d0c4067d0a85ab70975edf0dbb10d3fdb3903cef5b48f",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "8d764e3a9887e0ffdadd859f4c77a91d0e9758c38a33fdd3f0329d5cc4c0857b",
+    "controller_sha256": "630feb6c08d2f9530d4a9567f983cdcbbb29581b6c019d188c435642556c78db",
+    "player_format_policy_sha256": "c552ce859dcef92e38da240bbd2fe22b0922328c4746f8da9ae8245c2e88d0cc",
+    "host_context_sha256": "ea68e2c136e09c8e2ea311c16e863acb761903c82c132d0545ea7c919ebe75fd",
+    "host_binding_version": "host-v11-set1-causal-20261110"
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 98,
+  "final_attempts": 2,
+  "rejected_finals": 2,
+  "counted_questions": 100,
+  "submissions": 100,
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.35,
+  "best_partial_score": 0.35,
+  "latest_final": "You are a University of Hong Kong student who had to select your courses before the deadline. The sentence is a pun. The word \"courses\" refers not to your university classes but to the successive courses of a restaurant dinner. In the evening, you were dining at a restaurant; a waiter, acting deliberately and as part of normal service, took the plates of food courses away one after another, so by the end of that one evening all the food courses were gone. The wording makes it sound as if all your university course selections had vanished, but the real event was simply the ordinary clearing of a multi-course restaurant meal. Confirmed earlier facts fit this: a person deliberately removed the \"courses,\" and that person was a waiter; the removal happened as normal service rather than through the online enrollment system, your account or credentials, another student, an administrator, or a university cancellation. The apparent loss of your academic courses is the misleading surface reading of the pun, not what actually occurred.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0.5,
+        "evidence": "The word \"courses\" refers not to your university classes but to the successive courses of a restaurant dinner.",
+        "reason": "The explanation correctly identifies courses as meal courses and rejects the academic reading, but it places them in a restaurant dinner rather than a formal high-table dinner, so the required dinner-setting qualifier is missing."
+      },
+      {
+        "id": "C2",
+        "credit": 0.0,
+        "evidence": "",
+        "reason": "No submitted sentence states that the deadline was for expressing meal-course preferences; the submission leaves the deadline as part of the academic surface reading."
+      },
+      {
+        "id": "C3",
+        "credit": 0.5,
+        "evidence": "a waiter, acting deliberately and as part of normal service, took the plates of food courses away one after another",
+        "reason": "The explanation has the waiter clearing food courses away, but it omits the required detail that the waiter cleared uneaten or leftover dishes."
+      }
+    ],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "The submission reconstructs the meal-course pun and waiter clearing, but it omits the mandatory formal high-table dinner setting, the meal-preference deadline, the on-time attendance and disliked uneaten portions of the three-course meal, and that the student asked the waiter to clear leftovers when serving each next course.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "partial",
+        "evidence": "The word \"courses\" refers not to your university classes but to the successive courses of a restaurant dinner."
+      },
+      {
+        "id": "C2.F1",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "C3.F1",
+        "status": "partial",
+        "evidence": "a waiter, acting deliberately and as part of normal service, took the plates of food courses away one after another, so by the end of that one evening all the food courses were gone"
+      }
+    ],
+    "requirement_coverage": [
+      {
+        "id": "R1",
+        "status": "partial",
+        "evidence": "The word \"courses\" refers not to your university classes but to the successive courses of a restaurant dinner."
+      },
+      {
+        "id": "R2",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "R3",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "R4",
+        "status": "partial",
+        "evidence": "a waiter, acting deliberately and as part of normal service, took the plates of food courses away one after another, so by the end of that one evening all the food courses were gone"
+      }
+    ],
+    "contradictions": [],
+    "partial_score": 0.35,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v2",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 846.1201362910215,
+  "usage": {
+    "format_repair": {
+      "http_attempts": 1,
+      "successful_responses": 1,
+      "seconds": 16.270707957999548,
+      "provider_reported_usage": {}
+    },
+    "grader": {
+      "http_attempts": 2,
+      "successful_responses": 2,
+      "seconds": 152.3938001250208,
+      "provider_reported_usage": {
+        "prompt_tokens": 10192,
+        "completion_tokens": 11970,
+        "total_tokens": 22162,
+        "prompt_cache_hit_tokens": 7552,
+        "prompt_cache_miss_tokens": 2640
+      }
+    },
+    "host": {
+      "http_attempts": 98,
+      "successful_responses": 98,
+      "seconds": 527.9867512909404,
+      "provider_reported_usage": {
+        "prompt_tokens": 1521964,
+        "completion_tokens": 30044,
+        "total_tokens": 1552008,
+        "prompt_cache_hit_tokens": 1493760,
+        "prompt_cache_miss_tokens": 28204
+      }
+    },
+    "player": {
+      "http_attempts": 101,
+      "successful_responses": 101,
+      "seconds": 147.64956220600288,
+      "provider_reported_usage": {
+        "prompt_tokens": 2369919,
+        "completion_tokens": 4709,
+        "total_tokens": 2374628,
+        "prompt_cache_hit_tokens": 2349056,
+        "prompt_cache_miss_tokens": 20863
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "total": {
+      "calls": 202,
+      "unknown_cost_calls": 202,
+      "known_estimated_cost_usd": 0.0,
+      "estimated_cost_usd": null,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 3902075,
+        "cached_input_tokens": 3850368,
+        "cache_write_tokens": 0,
+        "output_tokens": 46723,
+        "reasoning_tokens": 40483,
+        "total_tokens": 3948798
+      },
+      "missing_token_calls": {
+        "input_tokens": 1,
+        "cached_input_tokens": 1,
+        "cache_write_tokens": 0,
+        "output_tokens": 1,
+        "reasoning_tokens": 102,
+        "total_tokens": 1
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "format_repair",
+        "provider": "cursor_cli",
+        "model": "auto",
+        "calls": 1,
+        "unknown_cost_calls": 1,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        },
+        "missing_token_calls": {
+          "input_tokens": 1,
+          "cached_input_tokens": 1,
+          "cache_write_tokens": 0,
+          "output_tokens": 1,
+          "reasoning_tokens": 1,
+          "total_tokens": 1
+        }
+      },
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 2,
+        "unknown_cost_calls": 2,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 10192,
+          "cached_input_tokens": 7552,
+          "cache_write_tokens": 0,
+          "output_tokens": 11970,
+          "reasoning_tokens": 10636,
+          "total_tokens": 22162
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 98,
+        "unknown_cost_calls": 98,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1521964,
+          "cached_input_tokens": 1493760,
+          "cache_write_tokens": 0,
+          "output_tokens": 30044,
+          "reasoning_tokens": 29847,
+          "total_tokens": 1552008
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 101,
+        "unknown_cost_calls": 101,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 2369919,
+          "cached_input_tokens": 2349056,
+          "cache_write_tokens": 0,
+          "output_tokens": 4709,
+          "reasoning_tokens": 0,
+          "total_tokens": 2374628
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 101,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "3fde5fef-46b8-47f1-9c4a-a17de7f71ae2",
+      "49bf2a49-32ba-4b48-bd70-d539cc9b94b0",
+      "f29d3cff-dae3-46c3-acb2-9a0374abf95e"
+    ],
+    "logical_input_chars": 2674079,
+    "delta_input_chars": 140471,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+    "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "8d764e3a9887e0ffdadd859f4c77a91d0e9758c38a33fdd3f0329d5cc4c0857b",
+    "controller_sha256": "630feb6c08d2f9530d4a9567f983cdcbbb29581b6c019d188c435642556c78db",
+    "player_format_policy_sha256": "c552ce859dcef92e38da240bbd2fe22b0922328c4746f8da9ae8245c2e88d0cc",
+    "host_context_sha256": "3d82c64058a3f725abd9c438d32198022a2238d46dbbf45792bf84d0865c8f0f",
+    "host_binding_version": "host-v11-set1-causal-20261110"
+  }
+}
