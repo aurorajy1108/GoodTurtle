@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "scope": "submission/feedback/counters/weighted scores/final answer/cost counters/source answer boundary",
+  "semantic_review": "assistant_selected_cases_only; no blanket human certification",
+  "submissions": 100,
+  "api_attempts": 201,
+  "protocol_interventions": 0,
+  "feedback_count": 100,
+  "auxiliary_successful_format_calls": 0,
+  "source_api_calls_sha256": "d86e930405959ba2618de427701b3d0f15427883745612e9d5a66cc8b119093f",
+  "source_files_sha256": {
+    "result.json": "336f67e91894aac7ac8981618d8b8f9320e5c2c632826f26ef89f9e309c41c0b",
+    "trajectory.jsonl": "5f476816e1ff1887edd7effa95e49e55d90533f62276643f7359c488561e234e",
+    "trajectory.md": "afc10c510035aca7f190eeb14ccb32f0213e2344f8f1080893b70e3b6026cc0b",
+    "trajectory.html": "b7a802a93cca09dc6ac495a3a78c188eb38cd068c581e25c24dc2c85000154b3",
+    "review_template.csv": "b9d745b3b04787b3b0ba698d831a5e46028e291a7860548e0f7a9989b307be7d",
+    "config.json": "2a474139b20bf95d9a43818066c49cfc134cfda6bbb3086349ea2e2d8f32b2a4",
+    "prompts.json": "ee4ac28fb3184a8ff547a10d1d6b50291a93e981635a5808b96b3d4fe91c8388",
+    "puzzle_private.json": "7b88c411842b03b9263ae7957ff746602d8bf112aaa0c86195272f58926257c8",
+    "host_context.json": "33073cda33aeccafade43ec840c6282357abb571e42f8e3094a3796ec87558ac",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "64c31820443327839ce32e5128053650aacd3becf6b6746e94de79bb5620c17d",
+    "token_costs.csv": "293430fdc4704fbe770dbb102bf5756bbfa0f15420653d65c9e42cd7d9512ff9",
+    "cost_summary.json": "ceb3ce1aea0809ecc5795762a1fe249092138f7c15cc744751c420d92e96a688",
+    "human_review.csv": "b9d745b3b04787b3b0ba698d831a5e46028e291a7860548e0f7a9989b307be7d"
+  },
+  "source_run": "runs/api/20261111_set2_v6_fixed_source_r3/continual/S2_TS033_TS034_TS033_TS034_r03_source",
+  "response_accounting_sequence_sha256": "ce92cdf00365a078e5395397f8c4893c226518dc884e6f98c7712618dcc15efa",
+  "audit_request_bodies_omitted": true
+}

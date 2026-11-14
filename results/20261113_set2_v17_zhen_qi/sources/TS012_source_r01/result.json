@@ -1,0 +1,253 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 97,
+  "final_attempts": 3,
+  "rejected_finals": 3,
+  "counted_questions": 100,
+  "submissions": 100,
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.6,
+  "best_partial_score": 0.6,
+  "latest_final": "You went to the pantry in the hall to prepare a meal. The pantry was a kitchen/prep room that contained a stove and the fire alarm's smoke detector; it was also a room used for storing dry goods, but you used its stove to heat oil in a pot or pan. Food had already been placed into the oil and was frying when the oil overheated and produced smoke. The pot or pan remained on the stove as the smoke rose to the detector in the same room, and that cooking smoke set off the fire alarm. There was no actual fire or burning material and no other person involved; the alarm was triggered by smoke from the overheated oil during frying.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 1,
+        "evidence": "the oil overheated and produced smoke ... that cooking smoke set off the fire alarm. There was no actual fire or burning material",
+        "reason": "High-temperature cooking fumes trigger the alarm, and the no-burning-material statement covers the not-burning-food qualifier."
+      },
+      {
+        "id": "C2",
+        "credit": 0,
+        "evidence": "",
+        "reason": "The exhaust fan not being turned on is absent."
+      },
+      {
+        "id": "C3",
+        "credit": 0.5,
+        "evidence": "the fire alarm's smoke detector ... that cooking smoke set off the fire alarm",
+        "reason": "Smoke detector activation is present, but its sensitivity is not mentioned."
+      }
+    ],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Missing narrative elements: the exhaust fan was not switched on and the smoke detector's sensitivity is omitted. The high-temperature cooking and no-burning-material detail cover the unburnt-food requirement.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "covered",
+        "evidence": "the oil overheated and produced smoke ... that cooking smoke set off the fire alarm. There was no actual fire or burning material"
+      },
+      {
+        "id": "C2.F1",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "C3.F1",
+        "status": "partial",
+        "evidence": "the fire alarm's smoke detector ... that cooking smoke set off the fire alarm"
+      }
+    ],
+    "requirement_coverage": [
+      {
+        "id": "R1",
+        "status": "covered",
+        "evidence": "You went to the pantry in the hall to prepare a meal ... Food had already been placed into the oil and was frying when the oil overheated and produced smoke ... There was no actual fire or burning material"
+      },
+      {
+        "id": "R2",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "R3",
+        "status": "partial",
+        "evidence": "the fire alarm's smoke detector ... that cooking smoke set off the fire alarm"
+      }
+    ],
+    "contradictions": [],
+    "partial_score": 0.6,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v2",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 1576.2985299249995,
+  "usage": {
+    "grader": {
+      "http_attempts": 3,
+      "successful_responses": 3,
+      "seconds": 106.45780435999768,
+      "provider_reported_usage": {
+        "prompt_tokens": 14415,
+        "completion_tokens": 9522,
+        "total_tokens": 23937,
+        "prompt_cache_hit_tokens": 10880,
+        "prompt_cache_miss_tokens": 3535
+      }
+    },
+    "host": {
+      "http_attempts": 97,
+      "successful_responses": 97,
+      "seconds": 1177.8421303349824,
+      "provider_reported_usage": {
+        "prompt_tokens": 1345517,
+        "completion_tokens": 76069,
+        "total_tokens": 1421586,
+        "prompt_cache_hit_tokens": 1319808,
+        "prompt_cache_miss_tokens": 25709
+      }
+    },
+    "player": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 289.0872244289494,
+      "provider_reported_usage": {
+        "prompt_tokens": 673000,
+        "completion_tokens": 2031,
+        "total_tokens": 675031,
+        "prompt_cache_hit_tokens": 652928,
+        "prompt_cache_miss_tokens": 20072
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "total": {
+      "calls": 200,
+      "unknown_cost_calls": 200,
+      "known_estimated_cost_usd": 0.0,
+      "estimated_cost_usd": null,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 2032932,
+        "cached_input_tokens": 1983616,
+        "cache_write_tokens": 0,
+        "output_tokens": 87622,
+        "reasoning_tokens": 83797,
+        "total_tokens": 2120554
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 100,
+        "total_tokens": 0
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 3,
+        "unknown_cost_calls": 3,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 14415,
+          "cached_input_tokens": 10880,
+          "cache_write_tokens": 0,
+          "output_tokens": 9522,
+          "reasoning_tokens": 7944,
+          "total_tokens": 23937
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 97,
+        "unknown_cost_calls": 97,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1345517,
+          "cached_input_tokens": 1319808,
+          "cache_write_tokens": 0,
+          "output_tokens": 76069,
+          "reasoning_tokens": 75853,
+          "total_tokens": 1421586
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 100,
+        "unknown_cost_calls": 100,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 673000,
+          "cached_input_tokens": 652928,
+          "cache_write_tokens": 0,
+          "output_tokens": 2031,
+          "reasoning_tokens": 0,
+          "total_tokens": 675031
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 100,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "2494d37e-f54d-4ef6-bda7-238df6338539",
+      "6bb7ab7c-48ce-4046-a6ed-aff3804c68ec",
+      "d2347067-531d-4865-8d05-db375425c053"
+    ],
+    "logical_input_chars": 1553329,
+    "delta_input_chars": 108822,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "04995537df7e52769b14fe3c1e95fec045c7e37660653735687022427f6c2ee2",
+    "grading_sha256": "d79cd563efd1226a3a3c1080b72b6053ca8a0785c325dfa7aaeac55eceab83f2",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "f99f0cbaf293322a5c2f208c86473e5a9aa3cb320962742d84cb53bf12979ae6",
+    "controller_sha256": "fb5d410cb9eede83c5e9cbc9b71b8bee5c9570056dfff64b3908cb5b797cab3e",
+    "player_format_policy_sha256": "fbe0c8e24192584b0d306318bcd4cfa37f899a558d0db9f139e23de30fbc9e19",
+    "host_context_sha256": "356f7c1111341d64efa01a954f6addfafefefd35fdbbbf05179369664067ad02",
+    "host_binding_version": "host-v9-human-20261102"
+  }
+}

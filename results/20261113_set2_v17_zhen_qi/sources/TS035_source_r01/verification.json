@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "scope": "submission/feedback/counters/weighted scores/final answer/cost counters/source answer boundary",
+  "semantic_review": "assistant_selected_cases_only; no blanket human certification",
+  "submissions": 100,
+  "api_attempts": 206,
+  "protocol_interventions": 0,
+  "feedback_count": 100,
+  "auxiliary_successful_format_calls": 0,
+  "source_api_calls_sha256": "4bb8fe333f9637c310a358e4a8764f40755b09b9201fa958e52a38fe01bf4698",
+  "source_files_sha256": {
+    "result.json": "106c118cafb55577316304d456f1c9c29b45387b35098a0e710d10cecf0308be",
+    "trajectory.jsonl": "d403b2193b2efe209d9e90540312a38a1ec5372e2c39c64b4b4f95474d85667e",
+    "trajectory.md": "1dd07103dc09aec768fbe938855f31b78d1b5f43c54a9899eed2270c7b085e0c",
+    "trajectory.html": "5f4c75db881344ef995e3f9708223b290e12d40d7e3ee97052abddf0703cf940",
+    "review_template.csv": "9bf83d7cfb9184a6c3cdf543e917305618b6a07d5f2bb3e011deb719ff339ea1",
+    "config.json": "2a474139b20bf95d9a43818066c49cfc134cfda6bbb3086349ea2e2d8f32b2a4",
+    "prompts.json": "ee4ac28fb3184a8ff547a10d1d6b50291a93e981635a5808b96b3d4fe91c8388",
+    "puzzle_private.json": "4c66ded745336df0f263120dbaa5f0029f63091bcbdf7e1ee5a210dc43720f8f",
+    "host_context.json": "803e89f3f98e71043c7ce8046f2cc6be200bc41c0d07358955edb988b3efd971",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "64c31820443327839ce32e5128053650aacd3becf6b6746e94de79bb5620c17d",
+    "token_costs.csv": "5f3bdba76a42694df156efc2842da5fbc4449c8b71d714a156209eac4496d881",
+    "cost_summary.json": "04e9abdecaf56a6544b97dad5aa89b0848de2f50314c36d9e4283361666b755f",
+    "human_review.csv": "9bf83d7cfb9184a6c3cdf543e917305618b6a07d5f2bb3e011deb719ff339ea1"
+  },
+  "source_run": "runs/api/20261112_set2_v17_context_r3/run/TS035_source_r01",
+  "response_accounting_sequence_sha256": "2adf5562c591aae79925e4bed60f7ba1f626a1381e25151e86958882efe4b525",
+  "audit_request_bodies_omitted": true
+}

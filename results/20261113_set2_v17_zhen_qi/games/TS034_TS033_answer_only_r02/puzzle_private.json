@@ -1,0 +1,121 @@
+{
+  "id": "TS034",
+  "opening": "Over a smartphone, a daughter begs for a life to be spared and a kidnapper shouts: bring one hundred million yen alone by noon tomorrow, or this hostage dies; no police. Hearing the demand, her father decides the ransom should not be paid. Why?",
+  "answer": "The father is the hostage. His wealthy daughter is free and receives the kidnapper’s phone call.\nThe father hears the kidnapper order his daughter to bring the ransom alone. He fears that, once she arrives with the money, the kidnapper will kill both of them to eliminate witnesses.\nHis daughter is his only family. To protect her, he tells her not to pay the ransom or come to the meeting, even though refusing puts his own life at risk.\nThe explanation concerns the father’s fear and decision; it does not establish that the kidnapper eventually kills either of them.",
+  "rubric": [
+    {
+      "id": "C1",
+      "weight": 0.45,
+      "points": 45.0,
+      "core": true,
+      "criterion": "The father is the hostage, while his daughter is free and receives the ransom call.",
+      "full_credit": "The father is the hostage, while his daughter is free and receives the ransom call.",
+      "half_credit": "Father as hostage identified, but free daughter/call roles omitted.",
+      "zero_credit": "Missing or materially contradicted. Do not infer the required fact from earlier turns, the reference or another submission.",
+      "required_facts": [
+        "The father is the kidnapped hostage.",
+        "His daughter is free and receives the ransom call."
+      ],
+      "coverage_note": "Every qualifier must be covered for full credit. Faithful paraphrases and clear entailments count.",
+      "half_credit_requires": [
+        "C1.F1"
+      ]
+    },
+    {
+      "id": "C2",
+      "weight": 0.3,
+      "points": 30.0,
+      "core": false,
+      "criterion": "He fears that if his daughter brings the ransom alone, both of them may be killed to eliminate witnesses.",
+      "full_credit": "He fears that if his daughter brings the ransom alone, both of them may be killed to eliminate witnesses.",
+      "half_credit": "Danger to the daughter identified, but the alone-arrival, witness-elimination or both-person fear is incomplete.",
+      "zero_credit": "Missing or materially contradicted. Do not infer the required fact from earlier turns, the reference or another submission.",
+      "required_facts": [
+        "He fears that if his daughter brings the ransom alone, both of them may be killed to eliminate witnesses."
+      ],
+      "coverage_note": "Every qualifier must be covered for full credit. Faithful paraphrases and clear entailments count."
+    },
+    {
+      "id": "C3",
+      "weight": 0.2,
+      "points": 20.0,
+      "core": false,
+      "criterion": "He refuses to protect his daughter, tells her not to pay or come, and accepts the danger to his own life.",
+      "full_credit": "He refuses to protect his daughter, tells her not to pay or come, and accepts the danger to his own life.",
+      "half_credit": "Protective refusal identified, but communication or acceptance of his own risk is omitted.",
+      "zero_credit": "Missing or materially contradicted. Do not infer the required fact from earlier turns, the reference or another submission.",
+      "required_facts": [
+        "He refuses the ransom to protect his daughter.",
+        "He communicates that she must not pay or come, accepting the danger to his own life."
+      ],
+      "coverage_note": "Every qualifier must be covered for full credit. Faithful paraphrases and clear entailments count."
+    },
+    {
+      "id": "C4",
+      "weight": 0.02,
+      "points": 2.0,
+      "core": false,
+      "criterion": "His daughter is wealthy.",
+      "full_credit": "His daughter is wealthy.",
+      "half_credit": "No partial factual content is needed for this atomic detail; absent or uncertain wealth receives zero.",
+      "zero_credit": "Missing or materially contradicted. Do not infer the required fact from earlier turns, the reference or another submission.",
+      "required_facts": [
+        "His daughter is wealthy."
+      ],
+      "coverage_note": "Every qualifier must be covered for full credit. Faithful paraphrases and clear entailments count.",
+      "half_credit_requires": [
+        "C4.F1"
+      ]
+    },
+    {
+      "id": "C5",
+      "weight": 0.03,
+      "points": 3.0,
+      "core": false,
+      "criterion": "His daughter is his only family.",
+      "full_credit": "His daughter is his only family.",
+      "half_credit": "No partial factual content is needed for this atomic detail; an ordinary daughter/family relationship alone receives zero.",
+      "zero_credit": "Missing or materially contradicted. Do not infer the required fact from earlier turns, the reference or another submission.",
+      "required_facts": [
+        "His daughter is his only family."
+      ],
+      "coverage_note": "Every qualifier must be covered for full credit. Faithful paraphrases and clear entailments count.",
+      "half_credit_requires": [
+        "C5.F1"
+      ]
+    }
+  ],
+  "title": "父亲拒绝支付赎金",
+  "story_family": "F034",
+  "quality_status": "正常",
+  "review_notes": "",
+  "source_row": "34",
+  "observed_score": null,
+  "completion_requirements": [
+    "The father is the kidnapped hostage.",
+    "His daughter is free and receives the ransom call.",
+    "He fears that if his daughter brings the ransom alone, both of them may be killed to eliminate witnesses.",
+    "He refuses the ransom to protect his daughter.",
+    "He communicates that she must not pay or come, accepting the danger to his own life.",
+    "His daughter is wealthy.",
+    "His daughter is his only family."
+  ],
+  "annotation_version": "ts034-scoring-v6-aligned-20261111",
+  "annotation_status": "user_approved_weight_policy_assistant_authored_criteria",
+  "grading_notes": "TS034 scoring v6, replacing the v5 three-checkpoint/full-narrative split for this dataset only. Weights: identity roles 45%, conditional fear of witness killing of both after the daughter arrives alone 30%, protective refusal/communication and acceptance of personal risk 20%, daughter wealthy 2%, daughter only family 3%. The scored required facts and completion requirements are identical. Full credit for all checkpoints, complete fact coverage and no material contradiction means complete=true and the game stops. Do not require additional unspecified details or exact wording. For C4 and C5 award 1 when clearly stated or entailed and 0 when absent, uncertain or contradicted; half-credit is not intended for these atomic facts. A general refusal to pay, repeated opening, or a family relationship does not imply wealth or only-family status. Faithful paraphrases of not paying or staying away count for communication; do not require the exact word 'shout'. Judge only the current final. Fear or a conditional belief is not a confirmed actual killing or a known unconditional murder plan. Extra unsupported incidental detail alone is not a material contradiction; a central incompatible explanation must be quoted and assigned to its affected checkpoint(s). Do not demand that the player explicitly state that the eventual outcome is unknown when the submission makes no outcome claim. Do not merge submissions.",
+  "annotation_provenance": {
+    "reviewers": [
+      "a",
+      "b",
+      "c"
+    ],
+    "selected_base": "b",
+    "adjudicator": "root",
+    "human_confirmed": false,
+    "weight_policy": "45/30/20/2/3 approved by user in session on 2026-11-11",
+    "criteria_author": "assistant",
+    "semantic_grader_validation": "offline only; no new API calls"
+  },
+  "grading_protocol": "coverage-v2",
+  "completion_policy": "rubric_aligned_v1"
+}

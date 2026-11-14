@@ -1,0 +1,328 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 98,
+  "final_attempts": 2,
+  "rejected_finals": 2,
+  "counted_questions": 100,
+  "submissions": 100,
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.0,
+  "best_partial_score": 0.0,
+  "latest_final": "The daughter really is on the phone and recognizes her father; she is not an impostor, recording, or willing accomplice, and the demand is not a simple fraud. The father's refusal grows from a separate captivity: he is himself restrained and held hostage by someone unconnected to the daughter's kidnapper. Because of his own captivity he cannot act as a free man, and paying would enrich or strengthen his captor while not securing his own release—so he judges that the ransom should not be paid. His decision is thus forced by his own hostage situation rather than by a belief that his daughter's life is worth less than the money.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0,
+        "evidence": "he is himself restrained and held hostage by someone unconnected to the daughter's kidnapper",
+        "reason": "The father is identified as a hostage, but the daughter is implied to have her own kidnapper and is not free; the central identical hostage role is contradicted."
+      },
+      {
+        "id": "C2",
+        "credit": 0,
+        "evidence": "paying would enrich or strengthen his captor while not securing his own release",
+        "reason": "The required conditional fear that the daughter's solo arrival would expose both of them to witness-elimination killing is absent."
+      },
+      {
+        "id": "C3",
+        "credit": 0,
+        "evidence": "His decision is thus forced by his own hostage situation rather than by a belief that his daughter's life is worth less than the money.",
+        "reason": "The refusal is not protective of the daughter and does not include telling her not to pay or come; an alternative captivity motive is asserted."
+      },
+      {
+        "id": "C4",
+        "credit": 0,
+        "evidence": "",
+        "reason": "No statement that the daughter is wealthy."
+      },
+      {
+        "id": "C5",
+        "credit": 0,
+        "evidence": "",
+        "reason": "No statement that the daughter is his only family."
+      }
+    ],
+    "material_contradiction": true,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "The submission reconstructs a separate two-captor scenario: the father is held by an unconnected captor, and the daughter is implied to be kidnapped by another captor. It omits the daughter's free status, the conditional witness-killing fear, the protective refusal and communication to stay away, and the wealth and only-family facts.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "partial",
+        "evidence": "he is himself restrained and held hostage by someone unconnected to the daughter's kidnapper"
+      },
+      {
+        "id": "C1.F2",
+        "status": "contradicted",
+        "evidence": "he is himself restrained and held hostage by someone unconnected to the daughter's kidnapper"
+      },
+      {
+        "id": "C2.F1",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "C3.F1",
+        "status": "contradicted",
+        "evidence": "paying would enrich or strengthen his captor while not securing his own release—so he judges that the ransom should not be paid"
+      },
+      {
+        "id": "C3.F2",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "C4.F1",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "C5.F1",
+        "status": "missing",
+        "evidence": ""
+      }
+    ],
+    "requirement_coverage": [
+      {
+        "id": "R1",
+        "status": "partial",
+        "evidence": "he is himself restrained and held hostage by someone unconnected to the daughter's kidnapper"
+      },
+      {
+        "id": "R2",
+        "status": "contradicted",
+        "evidence": "he is himself restrained and held hostage by someone unconnected to the daughter's kidnapper"
+      },
+      {
+        "id": "R3",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "R4",
+        "status": "contradicted",
+        "evidence": "paying would enrich or strengthen his captor while not securing his own release—so he judges that the ransom should not be paid"
+      },
+      {
+        "id": "R5",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "R6",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "R7",
+        "status": "missing",
+        "evidence": ""
+      }
+    ],
+    "contradictions": [
+      {
+        "quote": "he is himself restrained and held hostage by someone unconnected to the daughter's kidnapper",
+        "reference": "The father is the hostage; his wealthy daughter is free and receives the ransom call.",
+        "checkpoint_ids": [
+          "C1"
+        ]
+      },
+      {
+        "quote": "paying would enrich or strengthen his captor while not securing his own release—so he judges that the ransom should not be paid",
+        "reference": "He fears that if his daughter brings the ransom alone, both of them may be killed to eliminate witnesses.",
+        "checkpoint_ids": [
+          "C2"
+        ]
+      },
+      {
+        "quote": "His decision is thus forced by his own hostage situation rather than by a belief that his daughter's life is worth less than the money.",
+        "reference": "He refuses the ransom to protect his daughter and tells her not to pay or come, accepting the danger to his own life.",
+        "checkpoint_ids": [
+          "C3"
+        ]
+      }
+    ],
+    "partial_score": 0.0,
+    "complete": false,
+    "label": "no",
+    "grading_protocol": "coverage-v2",
+    "controller_corrections": [],
+    "completion_policy": "rubric_aligned_v1"
+  },
+  "elapsed_seconds": 1898.346478956999,
+  "usage": {
+    "grader": {
+      "http_attempts": 2,
+      "successful_responses": 2,
+      "seconds": 219.34647203400164,
+      "provider_reported_usage": {
+        "prompt_tokens": 16741,
+        "completion_tokens": 17883,
+        "total_tokens": 34624,
+        "prompt_cache_hit_tokens": 12672,
+        "prompt_cache_miss_tokens": 4069
+      }
+    },
+    "host": {
+      "http_attempts": 98,
+      "successful_responses": 98,
+      "seconds": 1413.0473260599792,
+      "provider_reported_usage": {
+        "prompt_tokens": 1724817,
+        "completion_tokens": 81339,
+        "total_tokens": 1806156,
+        "prompt_cache_hit_tokens": 1697536,
+        "prompt_cache_miss_tokens": 27281
+      }
+    },
+    "player": {
+      "http_attempts": 101,
+      "successful_responses": 100,
+      "seconds": 262.63518596900394,
+      "provider_reported_usage": {
+        "prompt_tokens": 731135,
+        "completion_tokens": 2494,
+        "total_tokens": 733629,
+        "prompt_cache_hit_tokens": 710400,
+        "prompt_cache_miss_tokens": 20735
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "total": {
+      "calls": 201,
+      "unknown_cost_calls": 201,
+      "known_estimated_cost_usd": 0.0,
+      "estimated_cost_usd": null,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 2472693,
+        "cached_input_tokens": 2420608,
+        "cache_write_tokens": 0,
+        "output_tokens": 101716,
+        "reasoning_tokens": 96603,
+        "total_tokens": 2574409
+      },
+      "missing_token_calls": {
+        "input_tokens": 1,
+        "cached_input_tokens": 1,
+        "cache_write_tokens": 0,
+        "output_tokens": 1,
+        "reasoning_tokens": 101,
+        "total_tokens": 1
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 2,
+        "unknown_cost_calls": 2,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 16741,
+          "cached_input_tokens": 12672,
+          "cache_write_tokens": 0,
+          "output_tokens": 17883,
+          "reasoning_tokens": 15473,
+          "total_tokens": 34624
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 98,
+        "unknown_cost_calls": 98,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1724817,
+          "cached_input_tokens": 1697536,
+          "cache_write_tokens": 0,
+          "output_tokens": 81339,
+          "reasoning_tokens": 81130,
+          "total_tokens": 1806156
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 101,
+        "unknown_cost_calls": 101,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 731135,
+          "cached_input_tokens": 710400,
+          "cache_write_tokens": 0,
+          "output_tokens": 2494,
+          "reasoning_tokens": 0,
+          "total_tokens": 733629
+        },
+        "missing_token_calls": {
+          "input_tokens": 1,
+          "cached_input_tokens": 1,
+          "cache_write_tokens": 0,
+          "output_tokens": 1,
+          "reasoning_tokens": 101,
+          "total_tokens": 1
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "9d18e9a6-d9d0-428a-bc04-16ae1d2b6b79",
+      "f236302a-e9b2-4385-9c3e-8b78dcfc860d",
+      "fee4df34-b6b6-463e-aac5-57b2b1c58726"
+    ],
+    "logical_input_chars": 3210279,
+    "delta_input_chars": 150134,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "5908fea8d67817a926cfa428f3349f2b9b572aedfa0290fc87188b431c3ec49c",
+    "grading_sha256": "a31632321bf7b7499ce2222df4dcc6e37fe22b8b446c9a94887c2b0bf1c7c08e",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "f99f0cbaf293322a5c2f208c86473e5a9aa3cb320962742d84cb53bf12979ae6",
+    "controller_sha256": "a73ae041fed4f286902c915609276c8308f66c919cbc580e47e17fd93d03a31b",
+    "player_format_policy_sha256": "fbe0c8e24192584b0d306318bcd4cfa37f899a558d0db9f139e23de30fbc9e19",
+    "host_context_sha256": "c6f3b033199dbf23d9921f80174b6aa70e05e6edaa366fa045cdb4ac82f4f52b",
+    "host_binding_version": "host-v17-ts034-witness-timeline-20261112"
+  }
+}

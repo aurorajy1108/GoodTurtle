@@ -1,0 +1,499 @@
+<!doctype html><meta charset="utf-8"><title>Turtle Soup trajectory</title><style>body{font:16px/1.6 system-ui;max-width:1000px;margin:32px auto;padding:0 20px;background:#f6f7fa}article{background:white;padding:18px;margin:16px 0;border:1px solid #ddd;border-radius:10px}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit}summary{cursor:pointer}</style><h1>Turtle Soup trajectory</h1><pre>Over a smartphone, a daughter begs for a life to be spared and a kidnapper shouts: bring one hundred million yen alone by noon tomorrow, or this hostage dies; no police. Hearing the demand, her father decides the ransom should not be paid. Why?</pre><p>completed · count 100 · score 0.475</p><p><a href="token_costs.csv">Token usage and estimated costs</a> · <a href="cost_summary.json">Cost summary (USD estimate, not actual bill)</a></p><article><h2>1 · final</h2><pre>The father refuses to pay because paying would not save his daughter: the call is not a real kidnapping but a scam in which the “daughter’s” voice is fabricated or the caller is an impostor. He recognizes the demand as an extortion attempt and decides not to hand over the money.</pre><p>Host: <strong>no</strong></p><details><summary>Private evaluation</summary><pre>{
+  &quot;checkpoints&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;credit&quot;: 0,
+      &quot;evidence&quot;: &quot;the call is not a real kidnapping but a scam in which the “daughter’s” voice is fabricated or the caller is an impostor&quot;,
+      &quot;reason&quot;: &quot;Directly contradicts the required father-as-hostage and free-daughter-receives-the-call roles by asserting the call is not a real kidnapping and the daughter’s voice is fabricated.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2&quot;,
+      &quot;credit&quot;: 0,
+      &quot;evidence&quot;: &quot;The father refuses to pay because paying would not save his daughter: the call is not a real kidnapping but a scam&quot;,
+      &quot;reason&quot;: &quot;Omits the required conditional fear that the daughter’s arrival with the ransom alone may get both killed to eliminate witnesses; the scam explanation is a central incompatible alternative.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3&quot;,
+      &quot;credit&quot;: 0,
+      &quot;evidence&quot;: &quot;He recognizes the demand as an extortion attempt and decides not to hand over the money.&quot;,
+      &quot;reason&quot;: &quot;Does not state refusal to protect the daughter or communication not to pay/come; instead gives an incompatible fraud/extortion motive.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C4&quot;,
+      &quot;credit&quot;: 0,
+      &quot;evidence&quot;: &quot;&quot;,
+      &quot;reason&quot;: &quot;No mention or entailment that the daughter is wealthy.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C5&quot;,
+      &quot;credit&quot;: 0,
+      &quot;evidence&quot;: &quot;&quot;,
+      &quot;reason&quot;: &quot;No mention or entailment that the daughter is his only family.&quot;
+    }
+  ],
+  &quot;material_contradiction&quot;: true,
+  &quot;irrelevant&quot;: false,
+  &quot;rubric_conflict&quot;: false,
+  &quot;full_solution&quot;: false,
+  &quot;completion_note&quot;: &quot;The submission asserts the call is not a real kidnapping but a scam with a fabricated daughter voice/impostor, directly contradicting the canonical account that the father is the hostage and his free daughter receives the call. It omits the required conditional fear of witness killing, protective refusal/communication and acceptance of personal risk, and the wealth/only-family details.&quot;,
+  &quot;fact_coverage&quot;: [
+    {
+      &quot;id&quot;: &quot;C1.F1&quot;,
+      &quot;status&quot;: &quot;contradicted&quot;,
+      &quot;evidence&quot;: &quot;the call is not a real kidnapping but a scam&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C1.F2&quot;,
+      &quot;status&quot;: &quot;contradicted&quot;,
+      &quot;evidence&quot;: &quot;the “daughter’s” voice is fabricated or the caller is an impostor&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2.F1&quot;,
+      &quot;status&quot;: &quot;contradicted&quot;,
+      &quot;evidence&quot;: &quot;The father refuses to pay because paying would not save his daughter: the call is not a real kidnapping but a scam&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F1&quot;,
+      &quot;status&quot;: &quot;contradicted&quot;,
+      &quot;evidence&quot;: &quot;He recognizes the demand as an extortion attempt and decides not to hand over the money.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F2&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C4.F1&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C5.F1&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    }
+  ],
+  &quot;requirement_coverage&quot;: [
+    {
+      &quot;id&quot;: &quot;R1&quot;,
+      &quot;status&quot;: &quot;contradicted&quot;,
+      &quot;evidence&quot;: &quot;the call is not a real kidnapping but a scam&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R2&quot;,
+      &quot;status&quot;: &quot;contradicted&quot;,
+      &quot;evidence&quot;: &quot;the “daughter’s” voice is fabricated or the caller is an impostor&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R3&quot;,
+      &quot;status&quot;: &quot;contradicted&quot;,
+      &quot;evidence&quot;: &quot;The father refuses to pay because paying would not save his daughter: the call is not a real kidnapping but a scam&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R4&quot;,
+      &quot;status&quot;: &quot;contradicted&quot;,
+      &quot;evidence&quot;: &quot;He recognizes the demand as an extortion attempt and decides not to hand over the money.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R5&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R6&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R7&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    }
+  ],
+  &quot;contradictions&quot;: [
+    {
+      &quot;quote&quot;: &quot;the call is not a real kidnapping but a scam in which the “daughter’s” voice is fabricated or the caller is an impostor&quot;,
+      &quot;reference&quot;: &quot;The father is the kidnapped hostage; his daughter is free and receives the ransom call.&quot;,
+      &quot;checkpoint_ids&quot;: [
+        &quot;C1&quot;
+      ]
+    },
+    {
+      &quot;quote&quot;: &quot;The father refuses to pay because paying would not save his daughter: the call is not a real kidnapping but a scam&quot;,
+      &quot;reference&quot;: &quot;He fears that if his daughter brings the ransom alone, both of them may be killed to eliminate witnesses.&quot;,
+      &quot;checkpoint_ids&quot;: [
+        &quot;C2&quot;
+      ]
+    },
+    {
+      &quot;quote&quot;: &quot;He recognizes the demand as an extortion attempt and decides not to hand over the money.&quot;,
+      &quot;reference&quot;: &quot;He refuses the ransom to protect his daughter.&quot;,
+      &quot;checkpoint_ids&quot;: [
+        &quot;C3&quot;
+      ]
+    }
+  ],
+  &quot;partial_score&quot;: 0.0,
+  &quot;complete&quot;: false,
+  &quot;label&quot;: &quot;no&quot;,
+  &quot;grading_protocol&quot;: &quot;coverage-v2&quot;,
+  &quot;controller_corrections&quot;: [],
+  &quot;completion_policy&quot;: &quot;rubric_aligned_v1&quot;
+}</pre></details></article><article><h2>2 · question</h2><pre>Is the daughter actually being held hostage?</pre><p>Host: <strong>no</strong></p></article><article><h2>3 · question</h2><pre>Is the father able to pay the ransom?</pre><p>Host: <strong>yes</strong></p></article><article><h2>4 · question</h2><pre>Is the father present with his daughter at the time of the call?</pre><p>Host: <strong>no</strong></p></article><article><h2>5 · question</h2><pre>Does the father know where his daughter is at the time of the call?</pre><p>Host: <strong>irrelevant</strong></p></article><article><h2>6 · question</h2><pre>Does the daughter herself want the ransom not to be paid?</pre><p>Host: <strong>irrelevant</strong></p></article><article><h2>7 · question</h2><pre>Does the father suspect the caller is not actually a kidnapper?</pre><p>Host: <strong>no</strong></p></article><article><h2>8 · question</h2><pre>Is the daughter in on the kidnapping plot?</pre><p>Host: <strong>no</strong></p></article><article><h2>9 · question</h2><pre>Does the father believe paying the ransom would not result in his daughter&#x27;s release?</pre><p>Host: <strong>no</strong></p></article><article><h2>10 · question</h2><pre>Does the father&#x27;s decision relate to the money itself—such as where it came from or what paying it would cause?</pre><p>Host: <strong>yes</strong></p></article><article><h2>11 · question</h2><pre>Would paying the ransom require the father to commit a crime?</pre><p>Host: <strong>no</strong></p></article><article><h2>12 · question</h2><pre>Is the father unable to gather the full ransom money in time?</pre><p>Host: <strong>no</strong></p></article><article><h2>13 · question</h2><pre>Does the father believe that paying the ransom would cause harm beyond the loss of money?</pre><p>Host: <strong>yes</strong></p></article><article><h2>14 · question</h2><pre>Would paying the ransom bring harm to someone other than the daughter?</pre><p>Host: <strong>yes</strong></p></article><article><h2>15 · question</h2><pre>Would the harm from paying fall on other members of the father&#x27;s family?</pre><p>Host: <strong>no</strong></p></article><article><h2>16 · question</h2><pre>Does the father worry that paying one ransom would encourage further kidnappings or extortion?</pre><p>Host: <strong>no</strong></p></article><article><h2>17 · question</h2><pre>Is the father a public official or someone whose paying a ransom would enable a criminal or terrorist group?</pre><p>Host: <strong>no</strong></p></article><article><h2>18 · question</h2><pre>Would the ransom money, if paid, be needed to pay for the daughter&#x27;s own medical treatment or survival?</pre><p>Host: <strong>no</strong></p></article><article><h2>19 · question</h2><pre>Is the father himself the intended victim of a trap set by the kidnapper?</pre><p>Host: <strong>no</strong></p></article><article><h2>20 · question</h2><pre>Is the father&#x27;s refusal based on knowing the kidnapper&#x27;s identity or motive?</pre><p>Host: <strong>no</strong></p></article><article><h2>21 · question</h2><pre>Would paying the ransom cause financial ruin that would harm the daughter&#x27;s future?</pre><p>Host: <strong>irrelevant</strong></p></article><article><h2>22 · question</h2><pre>Does the father believe the kidnapper will harm the daughter regardless of whether the ransom is paid?</pre><p>Host: <strong>no</strong></p></article><article><h2>23 · question</h2><pre>Does the father&#x27;s decision protect someone who is also being threatened by the kidnapper?</pre><p>Host: <strong>no</strong></p></article><article><h2>24 · question</h2><pre>Would paying the ransom put the father himself in danger?</pre><p>Host: <strong>yes</strong></p></article><article><h2>25 · question</h2><pre>Would the danger to the father come during the act of delivering the money?</pre><p>Host: <strong>yes</strong></p></article><article><h2>26 · question</h2><pre>Is the danger during delivery because the kidnapper intends to kill or capture the father when he brings the money?</pre><p>Host: <strong>no</strong></p></article><article><h2>27 · question</h2><pre>Is the delivery dangerous because the police must be avoided and the father would be acting alone against armed criminals?</pre><p>Host: <strong>no</strong></p></article><article><h2>28 · question</h2><pre>Would the father be endangered because the money is being used as bait to catch the kidnapper?</pre><p>Host: <strong>no</strong></p></article><article><h2>29 · question</h2><pre>Is the money itself dangerous to possess or deliver—for example, stolen, marked, or otherwise traceable?</pre><p>Host: <strong>no</strong></p></article><article><h2>30 · question</h2><pre>Does the father plan to involve the police despite the &quot;no police&quot; warning?</pre><p>Host: <strong>no</strong></p></article><article><h2>31 · question</h2><pre>Is the danger to the father related to where he must go or to whom he must meet to deliver the money?</pre><p>Host: <strong>no</strong></p></article><article><h2>32 · question</h2><pre>Is the danger to the father caused by the kidnapper having leverage over him—such as a threat to accuse or expose him—if he delivers the money?</pre><p>Host: <strong>no</strong></p></article><article><h2>33 · question</h2><pre>Is the father&#x27;s own health or physical condition a reason that delivering the money would endanger him?</pre><p>Host: <strong>no</strong></p></article><article><h2>34 · question</h2><pre>Is the danger to the father caused by another criminal or third party who would target him once he is known to have access to such a large sum?</pre><p>Host: <strong>no</strong></p></article><article><h2>35 · question</h2><pre>Is the father endangered because the ransom money is not actually his own money?</pre><p>Host: <strong>no</strong></p></article><article><h2>36 · question</h2><pre>Is the father&#x27;s refusal based on a mistaken belief—that is, does he wrongly think paying would endanger him?</pre><p>Host: <strong>no</strong></p></article><article><h2>37 · question</h2><pre>Does the &quot;no police&quot; condition itself create the danger—so that if he paid without police the kidnapper would be free to harm him, but involving police would be safer?</pre><p>Host: <strong>no</strong></p></article><article><h2>38 · question</h2><pre>Is the danger to the father a consequence of the money being physically heavy or bulky to transport?</pre><p>Host: <strong>no</strong></p></article><article><h2>39 · question</h2><pre>Would the father have to obtain the money by doing something dangerous, such as withdrawing it from a location that exposes him?</pre><p>Host: <strong>no</strong></p></article><article><h2>40 · question</h2><pre>Is the father&#x27;s decision influenced by the fact that his daughter is an adult or otherwise independent?</pre><p>Host: <strong>no</strong></p></article><article><h2>41 · question</h2><pre>Is the father a police officer or otherwise officially forbidden from paying ransoms?</pre><p>Host: <strong>irrelevant</strong></p></article><article><h2>42 · question</h2><pre>Would the father&#x27;s act of paying the ransom expose a secret that would endanger him?</pre><p>Host: <strong>no</strong></p></article><article><h2>43 · question</h2><pre>Does the father have a genuine reason to believe his daughter is already dead?</pre><p>Host: <strong>no</strong></p></article><article><h2>44 · question</h2><pre>Is the father&#x27;s refusal because paying the ransom would violate a principle or agreement he values more than his daughter&#x27;s life?</pre><p>Host: <strong>no</strong></p></article><article><h2>45 · question</h2><pre>Is the &quot;danger to the father&quot; actually a danger of being arrested or detained?</pre><p>Host: <strong>no</strong></p></article><article><h2>46 · question</h2><pre>Is the father physically unable to deliver the money, such as being hospitalized or disabled?</pre><p>Host: <strong>yes</strong></p></article><article><h2>47 · question</h2><pre>Is the father hospitalized at the time of the call?</pre><p>Host: <strong>no</strong></p></article><article><h2>48 · question</h2><pre>Would delivering the money physically endanger the father&#x27;s life because of his health condition?</pre><p>Host: <strong>no</strong></p></article><article><h2>49 · question</h2><pre>Is the father disabled in a way that prevents him from traveling to deliver the ransom?</pre><p>Host: <strong>no</strong></p></article><article><h2>50 · question</h2><pre>Does the father&#x27;s physical condition mean that someone else would have to deliver the money in his place?</pre><p>Host: <strong>yes</strong></p></article><article><h2>51 · question</h2><pre>Is the father bedridden or otherwise unable to leave home?</pre><p>Host: <strong>irrelevant</strong></p></article><article><h2>52 · question</h2><pre>Would the person who must deliver the money in the father&#x27;s place be someone the father wants to protect from danger?</pre><p>Host: <strong>yes</strong></p></article><article><h2>53 · question</h2><pre>Is the person who would have to deliver the money the daughter herself?</pre><p>Host: <strong>yes</strong></p></article><article><h2>54 · question</h2><pre>Is the father&#x27;s decision a way of refusing to let his daughter take on the dangerous task of delivering the ransom?</pre><p>Host: <strong>yes</strong></p></article><article><h2>55 · question</h2><pre>Is the daughter the one making the delivery because the father cannot, and would she be endangered by doing so?</pre><p>Host: <strong>yes</strong></p></article><article><h2>56 · final</h2><pre>The father is physically unable to leave and deliver the ransom himself. His daughter is the person able to carry the money to the kidnapper. Paying would therefore require sending his daughter into the dangerous delivery, so instead of exposing her to that danger he decides the ransom should not be paid.</pre><p>Host: <strong>yes and no</strong></p><details><summary>Private evaluation</summary><pre>{
+  &quot;checkpoints&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;credit&quot;: 0.5,
+      &quot;evidence&quot;: &quot;The father is physically unable to leave and deliver the ransom himself. His daughter is the person able to carry the money to the kidnapper.&quot;,
+      &quot;reason&quot;: &quot;Identifies the father as unable to leave, implying he is the hostage, but omits that the daughter is free and receives the ransom call.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2&quot;,
+      &quot;credit&quot;: 0.5,
+      &quot;evidence&quot;: &quot;Paying would therefore require sending his daughter into the dangerous delivery, so instead of exposing her to that danger he decides the ransom should not be paid.&quot;,
+      &quot;reason&quot;: &quot;Danger to the daughter is identified, but the alone-arrival, witness-elimination, and both-person fear are incomplete.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3&quot;,
+      &quot;credit&quot;: 0.5,
+      &quot;evidence&quot;: &quot;so instead of exposing her to that danger he decides the ransom should not be paid.&quot;,
+      &quot;reason&quot;: &quot;Protective refusal is identified, but communication that she must not pay or come and acceptance of danger to his own life are omitted.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C4&quot;,
+      &quot;credit&quot;: 0,
+      &quot;evidence&quot;: &quot;&quot;,
+      &quot;reason&quot;: &quot;No mention or entailment that the daughter is wealthy.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C5&quot;,
+      &quot;credit&quot;: 0,
+      &quot;evidence&quot;: &quot;&quot;,
+      &quot;reason&quot;: &quot;No mention or entailment that the daughter is his only family.&quot;
+    }
+  ],
+  &quot;material_contradiction&quot;: false,
+  &quot;irrelevant&quot;: false,
+  &quot;rubric_conflict&quot;: false,
+  &quot;full_solution&quot;: false,
+  &quot;completion_note&quot;: &quot;The submitted explanation captures a protective refusal based on the danger of sending the daughter to the delivery and implies the father cannot leave, consistent with his being the hostage. However, it omits that the daughter is free and received the ransom call, the specific conditional fear that both may be killed to eliminate witnesses if she arrives alone, explicit communication that she must not pay or come and acceptance of his own risk, and that the daughter is wealthy and his only family.&quot;,
+  &quot;fact_coverage&quot;: [
+    {
+      &quot;id&quot;: &quot;C1.F1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;The father is physically unable to leave and deliver the ransom himself&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C1.F2&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2.F1&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;Paying would therefore require sending his daughter into the dangerous delivery, so instead of exposing her to that danger he decides the ransom should not be paid.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;so instead of exposing her to that danger he decides the ransom should not be paid.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F2&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C4.F1&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C5.F1&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    }
+  ],
+  &quot;requirement_coverage&quot;: [
+    {
+      &quot;id&quot;: &quot;R1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;The father is physically unable to leave and deliver the ransom himself&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R2&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R3&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;Paying would therefore require sending his daughter into the dangerous delivery, so instead of exposing her to that danger he decides the ransom should not be paid.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R4&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;so instead of exposing her to that danger he decides the ransom should not be paid.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R5&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R6&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R7&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    }
+  ],
+  &quot;contradictions&quot;: [],
+  &quot;partial_score&quot;: 0.475,
+  &quot;complete&quot;: false,
+  &quot;label&quot;: &quot;yes and no&quot;,
+  &quot;grading_protocol&quot;: &quot;coverage-v2&quot;,
+  &quot;controller_corrections&quot;: [],
+  &quot;completion_policy&quot;: &quot;rubric_aligned_v1&quot;
+}</pre></details></article><article><h2>57 · question</h2><pre>Is the daughter the hostage being held by the kidnapper?</pre><p>Host: <strong>no</strong></p></article><article><h2>58 · question</h2><pre>Is the person begging over the phone the daughter speaking on the kidnapper&#x27;s behalf to relay the demand, rather than herself being the captive?</pre><p>Host: <strong>no</strong></p></article><article><h2>59 · question</h2><pre>Is someone other than the daughter the actual hostage?</pre><p>Host: <strong>yes</strong></p></article><article><h2>60 · question</h2><pre>Is the hostage someone the daughter cares about, so that the daughter is the one relaying the kidnapper&#x27;s demand?</pre><p>Host: <strong>yes and no</strong></p></article><article><h2>61 · question</h2><pre>Is the hostage the daughter&#x27;s boyfriend or husband?</pre><p>Host: <strong>no</strong></p></article><article><h2>62 · question</h2><pre>Is the hostage the daughter&#x27;s child?</pre><p>Host: <strong>no</strong></p></article><article><h2>63 · question</h2><pre>Is the hostage a friend of the daughter?</pre><p>Host: <strong>no</strong></p></article><article><h2>64 · question</h2><pre>Is the hostage the father&#x27;s own child other than the daughter?</pre><p>Host: <strong>no</strong></p></article><article><h2>65 · question</h2><pre>Is the hostage the daughter&#x27;s mother?</pre><p>Host: <strong>no</strong></p></article><article><h2>66 · question</h2><pre>Is the daughter unrelated to the hostage, with the daughter instead being an accomplice or intermediary for the kidnapper?</pre><p>Host: <strong>no</strong></p></article><article><h2>67 · question</h2><pre>Is the hostage the daughter&#x27;s sibling?</pre><p>Host: <strong>no</strong></p></article><article><h2>68 · question</h2><pre>Is the hostage a pet or animal that the daughter cares about?</pre><p>Host: <strong>no</strong></p></article><article><h2>69 · question</h2><pre>Is the hostage the kidnapper himself—that is, is the kidnapper in a life-threatening situation and using the demand as a plea for help?</pre><p>Host: <strong>no</strong></p></article><article><h2>70 · question</h2><pre>Is the hostage someone the daughter has a professional or caretaking relationship with, such as a patient or client?</pre><p>Host: <strong>no</strong></p></article><article><h2>71 · question</h2><pre>Is the hostage the father&#x27;s wife or partner (the daughter&#x27;s mother or stepmother figure)?</pre><p>Host: <strong>no</strong></p></article><article><h2>72 · question</h2><pre>Is the hostage someone related to the father rather than to the daughter?</pre><p>Host: <strong>no</strong></p></article><article><h2>73 · question</h2><pre>Is the &quot;kidnapping&quot; actually staged—are the daughter and the hostage involved in a deception or performance rather than a genuine abduction?</pre><p>Host: <strong>no</strong></p></article><article><h2>74 · question</h2><pre>Is the daughter calling not to plead for the hostage&#x27;s life but because she is being forced to relay the kidnapper&#x27;s demand?</pre><p>Host: <strong>no</strong></p></article><article><h2>75 · question</h2><pre>Is the hostage a stranger to both the father and the daughter, abducted to pressure the father into paying?</pre><p>Host: <strong>no</strong></p></article><article><h2>76 · question</h2><pre>Is the hostage someone the father has a caring relationship with but the daughter does not personally know well?</pre><p>Host: <strong>no</strong></p></article><article><h2>77 · question</h2><pre>Is the hostage the daughter&#x27;s pet or companion animal that the father is not attached to?</pre><p>Host: <strong>no</strong></p></article><article><h2>78 · question</h2><pre>Is the hostage a person the daughter knows through work, such as a coworker or employer?</pre><p>Host: <strong>no</strong></p></article><article><h2>79 · question</h2><pre>Is the hostage the daughter&#x27;s lover who is not a boyfriend or husband—for example, a married man or secret partner?</pre><p>Host: <strong>no</strong></p></article><article><h2>80 · question</h2><pre>Is the hostage a child the daughter is responsible for, such as through babysitting or adoption?</pre><p>Host: <strong>no</strong></p></article><article><h2>81 · question</h2><pre>Is the hostage a famous person, public figure, or someone the daughter knows only indirectly through media or fandom?</pre><p>Host: <strong>no</strong></p></article><article><h2>82 · question</h2><pre>Is the hostage a woman?</pre><p>Host: <strong>no</strong></p></article><article><h2>83 · question</h2><pre>Is the hostage a child?</pre><p>Host: <strong>no</strong></p></article><article><h2>84 · question</h2><pre>Is the daughter&#x27;s plea based on concern for the hostage because she witnessed the abduction?</pre><p>Host: <strong>no</strong></p></article><article><h2>85 · question</h2><pre>Is the daughter&#x27;s plea about sparing the hostage based on the daughter having been threatened too, so that she pleads for both their lives?</pre><p>Host: <strong>no</strong></p></article><article><h2>86 · question</h2><pre>Is the hostage an animal other than a pet—such as livestock or a zoo animal?</pre><p>Host: <strong>no</strong></p></article><article><h2>87 · question</h2><pre>Is the hostage a human being?</pre><p>Host: <strong>yes</strong></p></article><article><h2>88 · question</h2><pre>Is the hostage the daughter&#x27;s acquaintance but not a close loved one—for example, a neighbor or classmate?</pre><p>Host: <strong>no</strong></p></article><article><h2>89 · question</h2><pre>Did the daughter arrange or agree to the kidnapping of the hostage herself?</pre><p>Host: <strong>no</strong></p></article><article><h2>90 · question</h2><pre>Is the hostage the daughter&#x27;s doctor, therapist, or someone with whom she has a confidential relationship?</pre><p>Host: <strong>no</strong></p></article><article><h2>91 · question</h2><pre>Is the daughter being held captive as well, even though she is not the hostage whose life is threatened?</pre><p>Host: <strong>no</strong></p></article><article><h2>92 · question</h2><pre>Is the hostage the father&#x27;s employee or subordinate, for whom the father feels responsible?</pre><p>Host: <strong>no</strong></p></article><article><h2>93 · question</h2><pre>Is the hostage the daughter&#x27;s teacher or mentor?</pre><p>Host: <strong>no</strong></p></article><article><h2>94 · question</h2><pre>Was the daughter present when the hostage was abducted?</pre><p>Host: <strong>yes and no</strong></p></article><article><h2>95 · question</h2><pre>Is the hostage the daughter&#x27;s relative by marriage rather than blood?</pre><p>Host: <strong>no</strong></p></article><article><h2>96 · question</h2><pre>Is the hostage the daughter&#x27;s father—that is, the very man receiving the demand?</pre><p>Host: <strong>yes</strong></p></article><article><h2>97 · final</h2><pre>The “hostage” is actually the father himself. He is physically unable to go out and deliver the ransom, and the daughter is the one able to carry the money to the kidnapper. Paying would therefore require sending the daughter into a dangerous delivery. At the same time, the demand is framed as a threat to the hostage’s life—the father—and he chooses that the ransom should not be paid rather than expose his daughter to that danger.</pre><p>Host: <strong>yes and no</strong></p><details><summary>Private evaluation</summary><pre>{
+  &quot;checkpoints&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;credit&quot;: 0.5,
+      &quot;evidence&quot;: &quot;The “hostage” is actually the father himself. He is physically unable to go out and deliver the ransom, and the daughter is the one able to carry the money to the kidnapper.&quot;,
+      &quot;reason&quot;: &quot;Identifies the father as hostage, but omits that the daughter is free and receives the ransom call.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2&quot;,
+      &quot;credit&quot;: 0.5,
+      &quot;evidence&quot;: &quot;Paying would therefore require sending the daughter into a dangerous delivery.&quot;,
+      &quot;reason&quot;: &quot;Danger to the daughter is identified, but the alone-arrival, witness-elimination, and both-person fear are incomplete.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3&quot;,
+      &quot;credit&quot;: 0.5,
+      &quot;evidence&quot;: &quot;he chooses that the ransom should not be paid rather than expose his daughter to that danger&quot;,
+      &quot;reason&quot;: &quot;Protective refusal is identified, but communication that she must not pay or come and acceptance of danger to his own life are omitted.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C4&quot;,
+      &quot;credit&quot;: 0,
+      &quot;evidence&quot;: &quot;&quot;,
+      &quot;reason&quot;: &quot;No mention or entailment that the daughter is wealthy.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C5&quot;,
+      &quot;credit&quot;: 0,
+      &quot;evidence&quot;: &quot;&quot;,
+      &quot;reason&quot;: &quot;No mention or entailment that the daughter is his only family.&quot;
+    }
+  ],
+  &quot;material_contradiction&quot;: false,
+  &quot;irrelevant&quot;: false,
+  &quot;rubric_conflict&quot;: false,
+  &quot;full_solution&quot;: false,
+  &quot;completion_note&quot;: &quot;The submission reconstructs the father-as-hostage and a protective refusal based on keeping the daughter away from the dangerous delivery. It omits that the daughter is free and received the ransom call, the conditional fear that both may be killed to eliminate witnesses if she arrives alone, explicit communication that she must not pay or come with acceptance of his own danger, and the wealth/only-family details. The added physical inability is unsupported but not materially contradictory.&quot;,
+  &quot;fact_coverage&quot;: [
+    {
+      &quot;id&quot;: &quot;C1.F1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;The “hostage” is actually the father himself&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C1.F2&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2.F1&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;Paying would therefore require sending the daughter into a dangerous delivery.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;he chooses that the ransom should not be paid rather than expose his daughter to that danger&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F2&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;The “hostage” is actually the father himself... the demand is framed as a threat to the hostage’s life—the father—and he chooses that the ransom should not be paid rather than expose his daughter to that danger.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C4.F1&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C5.F1&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    }
+  ],
+  &quot;requirement_coverage&quot;: [
+    {
+      &quot;id&quot;: &quot;R1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;The “hostage” is actually the father himself&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R2&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R3&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;Paying would therefore require sending the daughter into a dangerous delivery.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R4&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;he chooses that the ransom should not be paid rather than expose his daughter to that danger&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R5&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;The “hostage” is actually the father himself... the demand is framed as a threat to the hostage’s life—the father—and he chooses that the ransom should not be paid rather than expose his daughter to that danger.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R6&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R7&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    }
+  ],
+  &quot;contradictions&quot;: [],
+  &quot;partial_score&quot;: 0.475,
+  &quot;complete&quot;: false,
+  &quot;label&quot;: &quot;yes and no&quot;,
+  &quot;grading_protocol&quot;: &quot;coverage-v2&quot;,
+  &quot;controller_corrections&quot;: [],
+  &quot;completion_policy&quot;: &quot;rubric_aligned_v1&quot;
+}</pre></details></article><article><h2>98 · question</h2><pre>Is the father the one speaking with the kidnapper, while the kidnapped hostage is elsewhere?</pre><p>Host: <strong>no</strong></p></article><article><h2>99 · question</h2><pre>Is the father already dead or dying, so that paying the ransom cannot save him?</pre><p>Host: <strong>no</strong></p></article><article><h2>100 · final · mandatory final</h2><pre>The father is himself the hostage whose life the kidnapper is threatening, yet he is physically unable to leave and deliver the ransom. The daughter is the person who would have to carry the money to the kidnapper in his place, which would expose her to serious danger. The father therefore rejects the ransom demand: paying would not be a safe rescue but would put his daughter in harm’s way, so he decides that no ransom should be paid.</pre><p>Host: <strong>yes and no</strong></p><details><summary>Private evaluation</summary><pre>{
+  &quot;checkpoints&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;credit&quot;: 0.5,
+      &quot;evidence&quot;: &quot;The father is himself the hostage whose life the kidnapper is threatening... The daughter is the person who would have to carry the money to the kidnapper in his place&quot;,
+      &quot;reason&quot;: &quot;Father-as-hostage is identified, but the daughter being free and receiving the ransom call is omitted.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2&quot;,
+      &quot;credit&quot;: 0.5,
+      &quot;evidence&quot;: &quot;which would expose her to serious danger... paying would not be a safe rescue but would put his daughter in harm’s way&quot;,
+      &quot;reason&quot;: &quot;Danger to the daughter is identified, but the alone-arrival, witness-elimination, and both-person fear are incomplete.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3&quot;,
+      &quot;credit&quot;: 0.5,
+      &quot;evidence&quot;: &quot;The father therefore rejects the ransom demand: paying would not be a safe rescue but would put his daughter in harm’s way, so he decides that no ransom should be paid.&quot;,
+      &quot;reason&quot;: &quot;Protective refusal is identified, but communication that she must not pay or come and acceptance of danger to his own life are omitted.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C4&quot;,
+      &quot;credit&quot;: 0,
+      &quot;evidence&quot;: &quot;&quot;,
+      &quot;reason&quot;: &quot;No mention or entailment that the daughter is wealthy.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C5&quot;,
+      &quot;credit&quot;: 0,
+      &quot;evidence&quot;: &quot;&quot;,
+      &quot;reason&quot;: &quot;No mention or entailment that the daughter is his only family.&quot;
+    }
+  ],
+  &quot;material_contradiction&quot;: false,
+  &quot;irrelevant&quot;: false,
+  &quot;rubric_conflict&quot;: false,
+  &quot;full_solution&quot;: false,
+  &quot;completion_note&quot;: &quot;The submission reconstructs the father-as-hostage and a protective refusal based on keeping the daughter away from the dangerous delivery. It omits that the daughter is free and received the ransom call, the specific conditional fear that both may be killed to eliminate witnesses if she arrives alone, explicit communication that she must not pay or come with acceptance of his own danger, and the wealth/only-family details.&quot;,
+  &quot;fact_coverage&quot;: [
+    {
+      &quot;id&quot;: &quot;C1.F1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;The father is himself the hostage whose life the kidnapper is threatening&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C1.F2&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2.F1&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;which would expose her to serious danger... paying would not be a safe rescue but would put his daughter in harm’s way&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;The father therefore rejects the ransom demand: paying would not be a safe rescue but would put his daughter in harm’s way, so he decides that no ransom should be paid.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F2&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;The father is himself the hostage whose life the kidnapper is threatening... The father therefore rejects the ransom demand... he decides that no ransom should be paid.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C4.F1&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C5.F1&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    }
+  ],
+  &quot;requirement_coverage&quot;: [
+    {
+      &quot;id&quot;: &quot;R1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;The father is himself the hostage whose life the kidnapper is threatening&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R2&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R3&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;which would expose her to serious danger... paying would not be a safe rescue but would put his daughter in harm’s way&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R4&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;The father therefore rejects the ransom demand: paying would not be a safe rescue but would put his daughter in harm’s way, so he decides that no ransom should be paid.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R5&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;The father is himself the hostage whose life the kidnapper is threatening... The father therefore rejects the ransom demand... he decides that no ransom should be paid.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R6&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R7&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    }
+  ],
+  &quot;contradictions&quot;: [],
+  &quot;partial_score&quot;: 0.475,
+  &quot;complete&quot;: false,
+  &quot;label&quot;: &quot;yes and no&quot;,
+  &quot;grading_protocol&quot;: &quot;coverage-v2&quot;,
+  &quot;controller_corrections&quot;: [],
+  &quot;completion_policy&quot;: &quot;rubric_aligned_v1&quot;
+}</pre></details></article>

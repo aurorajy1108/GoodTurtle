@@ -1,0 +1,1194 @@
+# Turtle Soup trajectory
+
+In a newly settled village in Meiji-era Japan, a father finds a brown bear eating his only daughter in the forest. He shoots it and weeps over her remains. Knowing these wary bears rarely attack unfamiliar living humans, he nevertheless fears other villagers will also suffer having relatives eaten. Why?
+
+Status: completed | counted questions: 100 | submissions: 100 | final partial score: 0.625
+
+[Token usage and estimated costs](token_costs.csv)
+
+## 1 · question
+
+Does the father fear the villagers will suffer because they might be blamed or punished for the bear's existence or the death?
+
+Host: no
+
+## 2 · question
+
+Is the fear based on other bears being attracted to the village after this bear's blood or body is left in the forest?
+
+Host: no
+
+## 3 · question
+
+Does the father fear that the bear he killed was not actually a bear, but a transformed human or spirit, and that killing it will bring a curse on the village?
+
+Host: no
+
+## 4 · question
+
+Does the father fear the villagers will suffer because the bear's unusual behavior indicates it has acquired a taste for human flesh and will seek out more humans?
+
+Host: no
+
+## 5 · question
+
+Was the daughter already dead before the bear began eating her?
+
+Host: yes
+
+## 6 · question
+
+Did the daughter die in a way that left her body accessible to the bear, such as being buried or abandoned in the forest in a manner consistent with local custom?
+
+Host: yes
+
+## 7 · question
+
+In Meiji-era Japan, was there a custom of abandoning or exposing the bodies of the dead (or dying) in the forest/mountains, such that the daughter's body was left there and the bear fed on it?
+
+Host: no
+
+## 8 · question
+
+Was the daughter killed by the bear (rather than dying of illness or accident) but only after being left in the forest?
+
+Host: no
+
+## 9 · question
+
+Was the daughter's body left in the forest because she died of illness or another cause at home, and the body was temporarily placed or exposed there per some practice?
+
+Host: no
+
+## 10 · question
+
+Was the daughter still alive when she was left or sent into the forest, and died there for another reason before the bear fed on her?
+
+Host: no
+
+## 11 · question
+
+Was the daughter's death related to a practice of culling or abandoning infants/children in the forest?
+
+Host: no
+
+## 12 · question
+
+Was the daughter dead before being brought to the forest in the sense that only her remains (such as after cremation) were placed there?
+
+Host: yes
+
+## 13 · question
+
+Did the father place his daughter's cremated remains or bones in the forest as part of a burial or memorial custom, and the bear was feeding on them?
+
+Host: no
+
+## 14 · question
+
+Was the daughter's body (not cremated) placed in the forest after death as part of a burial custom, and the bear was scavenging the corpse rather than attacking a living person?
+
+Host: yes
+
+## 15 · question
+
+Is the father's fear based on the idea that if a bear eats human flesh from a corpse, it will develop a taste for humans and become a man-eater that endangers the whole village?
+
+Host: no
+
+## 16 · question
+
+Is the father's fear based on the belief that a bear which has eaten human flesh becomes a dangerous "man-eating bear" that must be killed, and that villagers will therefore be forced to hunt down other bears (or this one's kind), causing suffering or danger to relatives?
+
+Host: no
+
+## 17 · question
+
+Does the father fear that, because the bear ate his daughter's corpse, the villagers will consider the daughter's remains or the family spiritually polluted, and that this pollution or curse will affect relatives?
+
+Host: no
+
+## 18 · question
+
+Was this a specific historical incident in Meiji-era Japan (such as the Sankebetsu brown bear incident or a related case) rather than a purely fictional/riddle scenario?
+
+Host: no
+
+## 19 · question
+
+Does the father fear that the bear's consumption of human flesh means it was starving or desperate, implying a food shortage or environmental change that will drive many bears to attack the village?
+
+Host: no
+
+## 20 · question
+
+Was the daughter's corpse exposed in the forest as part of the practice of "sky burial" or allowing scavengers to consume remains, which is why the bear eating her was not itself unusual or unforeseen?
+
+Host: no
+
+## 21 · question
+
+Does the father fear that the villagers will suffer from disease or illness contracted by eating or handling food/water contaminated by the bear that ate human flesh?
+
+Host: no
+
+## 22 · question
+
+Does the father fear that the bear had rabies or another disease, and that its eating human flesh (or the villagers' contact with the bear's remains) will spread the disease to people?
+
+Host: no
+
+## 23 · question
+
+Does the father fear other villagers will also have their relatives' corpses eaten because there are multiple bears, or because dead bodies are commonly left in the forest?
+
+Host: yes
+
+## 24 · question
+
+Was the daughter's corpse placed in the forest because she died in an epidemic or famine, so that many other villagers' relatives are likewise dying and their bodies will be exposed?
+
+Host: yes
+
+## 25 · question
+
+Did the daughter die of a contagious disease (epidemic), and the father fears the disease will spread and kill other villagers' relatives, whose bodies will then also be eaten by bears?
+
+Host: yes and no
+
+## 26 · question
+
+Did the daughter die of a contagious disease (epidemic)?
+
+Host: yes and no
+
+## 27 · question
+
+Did the daughter die of famine or starvation?
+
+Host: no
+
+## 28 · question
+
+Did the daughter die of a disease that was not contagious (not an epidemic), such as an individual illness?
+
+Host: no
+
+## 29 · question
+
+Was the daughter's death caused by other people—such as murder, execution, or sacrifice—rather than by disease or accident?
+
+Host: no
+
+## 30 · question
+
+Did the daughter die as a result of a natural disaster, such as an earthquake, landslide, or flood?
+
+Host: no
+
+## 31 · question
+
+Was the daughter's corpse placed in the forest because the village lacked a proper cemetery or burial ground (for instance, the village being newly settled with no established graveyard)?
+
+Host: no
+
+## 32 · question
+
+Was the daughter's corpse placed in the forest because the ground was frozen or otherwise too hard to dig a grave?
+
+Host: no
+
+## 33 · question
+
+Did the daughter die of injuries or an accident—such as falling, drowning, or exposure—rather than disease?
+
+Host: no
+
+## 34 · question
+
+Was the daughter killed by the same bear that was eating her?
+
+Host: no
+
+## 35 · question
+
+Was the daughter already dead and buried when the bear dug up and ate her corpse?
+
+Host: yes
+
+## 36 · question
+
+Is the father's fear that the bear, having dug up and eaten a buried human corpse, will repeatedly dig up graves, so that other villagers' buried relatives will also have their corpses eaten?
+
+Host: no
+
+## 37 · question
+
+Is the father's fear that this bear will teach or lead other bears to dig up and eat buried human corpses, so that other villagers' graves will also be disturbed?
+
+Host: no
+
+## 38 · question
+
+Was the daughter's corpse buried in a shallow grave, so that the bear could easily dig it up?
+
+Host: irrelevant
+
+## 39 · question
+
+Does the father's fear concern the villagers blaming him—for instance, believing his daughter's death or burial brought the bear, or that he failed to protect the village—rather than the bears themselves?
+
+Host: no
+
+## 40 · question
+
+Is the father's fear that after he shot this bear, its mate or cubs (or another bear) will come seeking revenge on the village?
+
+Host: no
+
+## 41 · question
+
+Was the bear eating the daughter's corpse because the bear had been disturbed from its normal food source, and does the father fear that a widespread scarcity of the bears' natural food will drive many bears to scavenge human graves?
+
+Host: no
+
+## 42 · question
+
+Does the father fear that the villagers will suffer because, to prevent bears from eating their relatives' corpses, they will be forced to abandon their burial customs or guard graves constantly?
+
+Host: no
+
+## 43 · question
+
+Is the father's fear that the bear he killed was not acting alone—that the forest holds enough bears, or the conditions are such, that other villagers' buried relatives will also be dug up and eaten?
+
+Host: yes
+
+## 44 · question
+
+Is it relevant that this is a newly settled village—does the father fear that the villagers' graves are new/unprotected and the bears near the settlement have learned to dig them up?
+
+Host: yes and no
+
+## 45 · question
+
+Is it relevant that this is a newly settled village because the community has not yet established proper protection for graves?
+
+Host: no
+
+## 46 · question
+
+Is it relevant that the village is newly settled because the settlers are unfamiliar with the local bears' unusual scavenging behavior, so graves were not made bear-proof?
+
+Host: no
+
+## 47 · question
+
+Is it relevant that the village is newly settled because clearing the forest for settlement has reduced the bears' natural food or habitat, making them turn to scavenging human graves?
+
+Host: no
+
+## 48 · question
+
+Is it relevant that the village is newly settled because the settlement has disturbed bear hibernation sites or denning areas, and this disturbance is what causes the bears to dig up graves?
+
+Host: no
+
+## 49 · question
+
+Is it relevant that the village is newly settled because, before settlement, bears buried or cached their own dead in the forest, and human graves resemble this, so the bears unearth the graves?
+
+Host: no
+
+## 50 · question
+
+Does the father fear that the villagers' graves will be dug up because the same bear, or bears like it, have already learned to associate the smell of decayed human bodies with food?
+
+Host: no
+
+## 51 · question
+
+Does the father's fear involve the idea that bears that eat human flesh will become man-eaters—that is, they will go on to attack living people, not just corpses?
+
+Host: no
+
+## 52 · question
+
+Is the father's fear that, because bears are rare in attacking living humans but will scavenge corpses, other villagers' buried relatives will also be eaten—i.e., the fear is specifically about corpses being eaten, not living people being attacked?
+
+Host: yes
+
+## 53 · final
+
+The father had buried his only daughter in the forest after she died (of some illness or natural cause, not from the bear). The area was newly settled, and the local brown bears were wary of living humans—they rarely attacked people. But they would scavenge buried corpses, and one such bear dug up the daughter's grave and was eating her remains. The father shot it and mourned over what was left of her. His fear was not that the bears would begin attacking and killing living villagers, since these wary bears rarely attack unfamiliar living humans. Rather, he realized that the bears in the area had learned to scavenge human graves, and that the other villagers had also buried relatives in the forest. Thus he feared that other villagers would suffer the same horror—their dead relatives' bodies being dug up and eaten by bears—just as his daughter's had been.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "The father had buried his only daughter in the forest after she died (of some illness or natural cause, not from the bear). ... one such bear dug up the daughter's grave and was eating her remains.",
+      "reason": "Already-dead daughter and buried corpse are covered, but the epidemic qualifier is omitted and replaced by a vaguer illness/natural-cause claim."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "The father had buried his only daughter in the forest after she died ... the other villagers had also buried relatives in the forest.",
+      "reason": "Forest burial is present, but no crematorium and insufficient fuel are not mentioned, so the causal constraint is missing."
+    },
+    {
+      "id": "C3",
+      "credit": 1,
+      "evidence": "one such bear dug up the daughter's grave and was eating her remains. ... he feared that other villagers would suffer the same horror—their dead relatives' bodies being dug up and eaten by bears",
+      "reason": "Grave exhumation and the father's fear of similar exhumations of other relatives are clearly covered."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "The submission reconstructs the core buried-corpse exhumation fear, but omits required narrative elements: the epidemic cause for the daughter and other villagers, the lack of crematorium and fuel that motivated forest burial, and the daily grave visit.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "The father had buried his only daughter in the forest after she died (of some illness or natural cause, not from the bear). ... one such bear dug up the daughter's grave and was eating her remains."
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "The father had buried his only daughter in the forest after she died ... the other villagers had also buried relatives in the forest."
+    },
+    {
+      "id": "C3.F1",
+      "status": "covered",
+      "evidence": "one such bear dug up the daughter's grave and was eating her remains. ... he feared that other villagers would suffer the same horror—their dead relatives' bodies being dug up and eaten by bears"
+    }
+  ],
+  "requirement_coverage": [
+    {
+      "id": "R1",
+      "status": "partial",
+      "evidence": "she died (of some illness or natural cause, not from the bear)"
+    },
+    {
+      "id": "R2",
+      "status": "partial",
+      "evidence": "The father had buried his only daughter in the forest after she died ... the other villagers had also buried relatives in the forest."
+    },
+    {
+      "id": "R3",
+      "status": "partial",
+      "evidence": "one such bear dug up the daughter's grave and was eating her remains."
+    },
+    {
+      "id": "R4",
+      "status": "covered",
+      "evidence": "The father shot it and mourned over what was left of her."
+    },
+    {
+      "id": "R5",
+      "status": "covered",
+      "evidence": "His fear was not that the bears would begin attacking and killing living villagers ... he feared that other villagers would suffer the same horror—their dead relatives' bodies being dug up and eaten by bears"
+    }
+  ],
+  "contradictions": [],
+  "partial_score": 0.625,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v2",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 54 · question
+
+Did the father himself bury his daughter in the forest?
+
+Host: irrelevant
+
+## 55 · question
+
+Was the daughter's body in a grave that was not in the forest itself but was dug up and dragged into the forest by the bear?
+
+Host: no
+
+## 56 · question
+
+Is it relevant that the daughter was the father's *only* daughter—for instance, because he has no other children to continue the family line or care for him?
+
+Host: no
+
+## 57 · question
+
+Is the father's fear that the villagers will also lose relatives to *bears killing living people*, because he now realizes the bears' behavior is more aggressive than the usual wariness?
+
+Host: no
+
+## 58 · question
+
+Does the father fear that other villagers' relatives—who are still alive but ill or dying—will be buried and then eaten by bears, rather than that already-buried corpses will be dug up?
+
+Host: no
+
+## 59 · question
+
+Is the key issue that the villagers bury their dead in the forest, so that other villagers' graves will be dug up and their corpses eaten by bears?
+
+Host: yes
+
+## 60 · final
+
+The father's daughter had died and was buried in the forest, the village's burial ground. A brown bear dug up her grave and was eating her corpse—not attacking her as a living person, which fits the fact that these wary bears rarely attack unfamiliar living humans. The father shot the bear and wept over her remains. His fear was not of the bear's revenge, disease, or man-eating attacks on the living. Rather, realizing that these bears scavenge human graves, and that the other villagers also bury their dead in the forest, he feared that other villagers would likewise have their deceased relatives' bodies dug up and eaten by bears—suffering the same desecration he had just witnessed.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "The father's daughter had died and was buried in the forest ... A brown bear dug up her grave and was eating her corpse",
+      "reason": "Already-dead daughter and buried corpse are covered, but the epidemic qualifier is omitted."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "was buried in the forest, the village's burial ground ... other villagers also bury their dead in the forest",
+      "reason": "Forest burial is present, but no crematorium and insufficient fuel are not mentioned."
+    },
+    {
+      "id": "C3",
+      "credit": 1,
+      "evidence": "A brown bear dug up her grave and was eating her corpse ... he feared that other villagers would likewise have their deceased relatives' bodies dug up and eaten by bears",
+      "reason": "Grave exhumation and the fear of similar exhumations of other relatives are clearly covered."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "The submission covers the central grave-scavenging fear and the shooting, but omits the epidemic cause, the lack of crematorium and fuel that led to forest burial, and the daily grave visit.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "The father's daughter had died and was buried in the forest ... A brown bear dug up her grave and was eating her corpse"
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "was buried in the forest, the village's burial ground ... other villagers also bury their dead in the forest"
+    },
+    {
+      "id": "C3.F1",
+      "status": "covered",
+      "evidence": "A brown bear dug up her grave and was eating her corpse ... he feared that other villagers would likewise have their deceased relatives' bodies dug up and eaten by bears"
+    }
+  ],
+  "requirement_coverage": [
+    {
+      "id": "R1",
+      "status": "partial",
+      "evidence": "The father's daughter had died ... other villagers also bury their dead"
+    },
+    {
+      "id": "R2",
+      "status": "partial",
+      "evidence": "was buried in the forest, the village's burial ground"
+    },
+    {
+      "id": "R3",
+      "status": "partial",
+      "evidence": "A brown bear dug up her grave and was eating her corpse"
+    },
+    {
+      "id": "R4",
+      "status": "covered",
+      "evidence": "The father shot the bear and wept over her remains."
+    },
+    {
+      "id": "R5",
+      "status": "covered",
+      "evidence": "His fear was not of the bear's revenge, disease, or man-eating attacks on the living ... he feared that other villagers would likewise have their deceased relatives' bodies dug up and eaten by bears"
+    }
+  ],
+  "contradictions": [],
+  "partial_score": 0.625,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v2",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 61 · question
+
+Does the father fear that other villagers will suffer having relatives *eaten* specifically because the villagers, like him, will continue to bury their dead in the forest where bears scavenge?
+
+Host: yes
+
+## 62 · question
+
+Is the missing key that the father fears the bear's corpse or the human remains he found will attract other bears to the village's burial ground, or that the bear was one of many—something about *why* the bears are scavenging graves?
+
+Host: yes and no
+
+## 63 · question
+
+Does the father fear that the bear's corpse, left in or near the forest, will attract other bears to the area of the graves?
+
+Host: no
+
+## 64 · question
+
+Is the key fact that bears that have eaten human flesh must be killed, and that once a bear has eaten a human corpse it becomes a persistent grave-robber—so this bear's behavior shows the local bears have acquired this habit, meaning other villagers' graves are at risk?
+
+Host: no
+
+## 65 · question
+
+Does the father fear that, because the bear ate his daughter's corpse, her spirit cannot rest or be properly reborn, and that this spiritual harm will extend to other villagers' relatives whose graves are disturbed?
+
+Host: no
+
+## 66 · question
+
+Was the bear's eating of the daughter's corpse connected to the fact that the villagers' buried dead are not cremated but interred whole, making the bodies available to scavengers?
+
+Host: yes
+
+## 67 · final
+
+In this newly settled Meiji-era village, the dead—including the father's only daughter—were buried (not cremated) in the forest. A brown bear dug up the daughter's grave and was eating her corpse; the father shot the bear and wept over her remains. The bears were wary of living humans and rarely attacked them, but they readily scavenged the uncremated human dead buried in the forest. Since the other villagers likewise bury their dead whole in the forest, the father feared they would also suffer the same thing: other villagers' deceased relatives would be dug up and eaten by the bears.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "the dead—including the father's only daughter—were buried (not cremated) in the forest. A brown bear dug up the daughter's grave and was eating her corpse",
+      "reason": "The already-dead daughter and buried corpse are covered, but the epidemic cause is omitted."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "the dead ... were buried (not cremated) in the forest ... uncremated human dead buried in the forest",
+      "reason": "Forest burial and non-cremation are present, but the specific crematorium and insufficient-fuel constraint is not supplied."
+    },
+    {
+      "id": "C3",
+      "credit": 1,
+      "evidence": "A brown bear dug up the daughter's grave and was eating her corpse ... other villagers' deceased relatives would be dug up and eaten by the bears",
+      "reason": "The grave exhumation and the father's fear of similar exhumations of other relatives are clearly covered."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "The submission covers the grave exhumation and scavenging fear, but omits the epidemic cause, the lack of crematorium and fuel that led to forest burial, and the daily grave visit.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "the dead—including the father's only daughter—were buried (not cremated) in the forest. A brown bear dug up the daughter's grave and was eating her corpse"
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "the dead ... were buried (not cremated) in the forest ... uncremated human dead buried in the forest"
+    },
+    {
+      "id": "C3.F1",
+      "status": "covered",
+      "evidence": "A brown bear dug up the daughter's grave and was eating her corpse ... other villagers' deceased relatives would be dug up and eaten by the bears"
+    }
+  ],
+  "requirement_coverage": [
+    {
+      "id": "R1",
+      "status": "partial",
+      "evidence": "the dead—including the father's only daughter—were buried ... other villagers likewise bury their dead"
+    },
+    {
+      "id": "R2",
+      "status": "partial",
+      "evidence": "the dead ... were buried (not cremated) in the forest ... uncremated human dead buried in the forest"
+    },
+    {
+      "id": "R3",
+      "status": "partial",
+      "evidence": "A brown bear dug up the daughter's grave and was eating her corpse"
+    },
+    {
+      "id": "R4",
+      "status": "covered",
+      "evidence": "the father shot the bear and wept over her remains."
+    },
+    {
+      "id": "R5",
+      "status": "covered",
+      "evidence": "The bears were wary of living humans and rarely attacked them, but they readily scavenged the uncremated human dead buried in the forest ... other villagers' deceased relatives would be dug up and eaten by the bears"
+    }
+  ],
+  "contradictions": [],
+  "partial_score": 0.625,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v2",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 68 · question
+
+Is the bear the father shot the *only* bear involved—that is, is the concern not merely that this same bear will return, but that its behavior reveals something about other bears?
+
+Host: yes and no
+
+## 69 · question
+
+Does the father fear that, to protect the graves, the villagers will have to kill many bears, and that this dangerous task—or the bears' response—will harm the villagers?
+
+Host: no
+
+## 70 · question
+
+Does the father fear that the bear he killed had already eaten from other villagers' graves as well, and that this will be discovered—meaning other villagers have already suffered relatives eaten?
+
+Host: no
+
+## 71 · question
+
+Is the story's key twist that the father's daughter was not dead of illness but was herself a bear or bore the bear?
+
+Host: no
+
+## 72 · question
+
+Does the father fear that the villagers will also have their buried relatives eaten because bears in this region habitually scavenge graves—a general local behavior, not just this one bear's quirk?
+
+Host: no
+
+## 73 · question
+
+Does the father fear that the bear was driven to eat the corpse because it was starving during hibernation/denning season or winter, and this same hunger will drive bears to the graves again?
+
+Host: no
+
+## 74 · question
+
+Does the father fear that the villagers' buried relatives' bodies will be eaten by bears because the graves are in the forest where bears live and forage, rather than because of any special behavior learned by bears?
+
+Host: yes
+
+## 75 · final
+
+In this newly settled Meiji-era village, the dead were buried whole in the forest, the villagers' burial place. The father's only daughter had died and was buried there. A brown bear—wary of living humans and unlikely to attack them—dug up her grave and was eating her corpse. The father shot the bear and wept over her remains. What he realized was that the danger comes simply from burying uncremated bodies in the forest where bears live and forage: the bears will scavenge the graves. Since the other villagers likewise bury their dead in the forest, he feared they would suffer the same horror—their relatives' bodies being dug up and eaten by the bears.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "The father's only daughter had died and was buried there. A brown bear ... dug up her grave and was eating her corpse.",
+      "reason": "Already-dead daughter and buried corpse are covered, but the epidemic cause is omitted."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "the dead were buried whole in the forest ... burying uncremated bodies in the forest",
+      "reason": "Forest burial and non-cremation are present, but the crematorium and insufficient-fuel constraint is not supplied."
+    },
+    {
+      "id": "C3",
+      "credit": 1,
+      "evidence": "dug up her grave and was eating her corpse ... their relatives' bodies being dug up and eaten by the bears",
+      "reason": "Grave exhumation and the father's fear of similar exhumations of other relatives are clearly covered."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "The core grave-scavenging mechanism is reconstructed, but the submission omits the epidemic cause, the lack of crematorium and fuel motivating forest burial, and the daily grave visit.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "The father's only daughter had died and was buried there. A brown bear ... dug up her grave and was eating her corpse."
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "the dead were buried whole in the forest ... burying uncremated bodies in the forest"
+    },
+    {
+      "id": "C3.F1",
+      "status": "covered",
+      "evidence": "dug up her grave and was eating her corpse ... their relatives' bodies being dug up and eaten by the bears"
+    }
+  ],
+  "requirement_coverage": [
+    {
+      "id": "R1",
+      "status": "partial",
+      "evidence": "The father's only daughter had died ... other villagers likewise bury their dead"
+    },
+    {
+      "id": "R2",
+      "status": "partial",
+      "evidence": "the dead were buried whole in the forest ... burying uncremated bodies in the forest"
+    },
+    {
+      "id": "R3",
+      "status": "partial",
+      "evidence": "dug up her grave and was eating her corpse"
+    },
+    {
+      "id": "R4",
+      "status": "covered",
+      "evidence": "The father shot the bear and wept over her remains."
+    },
+    {
+      "id": "R5",
+      "status": "covered",
+      "evidence": "A brown bear—wary of living humans and unlikely to attack them—dug up her grave and was eating her corpse. … What he realized was that the danger comes simply from burying uncremated bodies in the forest where bears live and forage: the bears will scavenge the graves. … Since the other villagers likewise bury their dead in the forest, he feared they would suffer the same horror—their relatives' bodies being dug up and eaten by the bears."
+    }
+  ],
+  "contradictions": [],
+  "partial_score": 0.625,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v2",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 76 · question
+
+Is a crucial missing element that the villagers' burial custom involves leaving bodies above ground or in a way that makes them especially exposed to scavengers, rather than deep burial?
+
+Host: no
+
+## 77 · question
+
+Does the father fear that the villagers will suffer *knowing* their relatives are being eaten—i.e., the suffering is the anguish and horror of this knowledge rather than direct physical harm?
+
+Host: yes
+
+## 78 · question
+
+Is the reason the father knows they will suffer specifically that he has just experienced it himself—he now knows from his own grief that the villagers will feel the same anguish when their relatives are eaten?
+
+Host: yes
+
+## 79 · final
+
+In the newly settled Meiji-era village, the dead are buried whole in the forest, and the forest is where the local brown bears live and forage. The father's only daughter had died and was buried there. A bear—wary of living humans and unlikely to attack them—had dug up her grave and was eating her corpse. The father shot it and wept over her remains.
+
+The key is the father's own grief. He had just experienced the anguish of seeing his daughter's buried body eaten, and he understood that this was not a unique misfortune. Because the other villagers also bury their uncremated dead in the same forest, the bears will likewise scavenge their graves. He therefore feared the villagers would suffer as he did: the horror and grief of knowing their deceased relatives' bodies were being dug up and eaten by bears.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "The father's only daughter had died and was buried there. A bear ... had dug up her grave and was eating her corpse.",
+      "reason": "Already-dead daughter and buried corpse are covered, but the required epidemic cause is omitted."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "the dead are buried whole in the forest ... the other villagers also bury their uncremated dead in the same forest",
+      "reason": "Forest burial and non-cremation are present, but the stipulated crematorium and insufficient-fuel constraint is missing."
+    },
+    {
+      "id": "C3",
+      "credit": 1,
+      "evidence": "had dug up her grave and was eating her corpse ... the bears will likewise scavenge their graves ... their deceased relatives' bodies were being dug up and eaten by bears.",
+      "reason": "Grave exhumation and the father's fear of similar exhumations of other relatives are clearly covered."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "The submission reconstructs the grave-scavenging fear and the shooting, but omits the epidemic that killed the daughter and other villagers, the lack of crematorium and insufficient fuel that led to forest burial, and the daily grave visit.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "The father's only daughter had died and was buried there. A bear ... had dug up her grave and was eating her corpse."
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "the dead are buried whole in the forest ... the other villagers also bury their uncremated dead in the same forest"
+    },
+    {
+      "id": "C3.F1",
+      "status": "covered",
+      "evidence": "had dug up her grave and was eating her corpse ... the bears will likewise scavenge their graves ... their deceased relatives' bodies were being dug up and eaten by bears."
+    }
+  ],
+  "requirement_coverage": [
+    {
+      "id": "R1",
+      "status": "partial",
+      "evidence": "The father's only daughter had died and was buried there. ... the other villagers also bury their uncremated dead in the same forest"
+    },
+    {
+      "id": "R2",
+      "status": "partial",
+      "evidence": "the dead are buried whole in the forest ... the other villagers also bury their uncremated dead in the same forest"
+    },
+    {
+      "id": "R3",
+      "status": "partial",
+      "evidence": "A bear ... had dug up her grave and was eating her corpse."
+    },
+    {
+      "id": "R4",
+      "status": "covered",
+      "evidence": "The father shot it and wept over her remains."
+    },
+    {
+      "id": "R5",
+      "status": "covered",
+      "evidence": "He therefore feared the villagers would suffer as he did: the horror and grief of knowing their deceased relatives' bodies were being dug up and eaten by bears."
+    }
+  ],
+  "contradictions": [],
+  "partial_score": 0.625,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v2",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 80 · question
+
+Does the father fear the villagers will suffer a *practical* consequence—such as being unable to properly mourn, perform funeral rites, or ensure their relatives' souls rest—because the bodies are destroyed by bears?
+
+Host: no
+
+## 81 · question
+
+Will the villagers' relatives also be *killed* by bears—that is, does the father fear the bears will attack living villagers, contrary to the bears' usual wariness?
+
+Host: no
+
+## 82 · question
+
+Is the relevant fact that the village is newly settled because the other villagers have not yet buried relatives in the forest—their graves are still to come, so the father fears future burials will be desecrated?
+
+Host: no
+
+## 83 · question
+
+Is the father's fear that bears which have eaten human corpses will continue to dig up graves—so the specific fact that *this* bear ate human flesh means it will keep robbing the village graves, and others too?
+
+Host: no
+
+## 84 · question
+
+Does the father fear that the villagers' response to the bear threat—for example, digging up and cremating their buried dead to protect them—will cause them to suffer by violating their burial customs?
+
+Host: no
+
+## 85 · question
+
+Is the bear's eating of the daughter's corpse notable because the daughter was buried wrapped in a way, or with food offerings, that attracted the bear?
+
+Host: no
+
+## 86 · question
+
+Does the father fear that this bear was not scavenging out of natural behavior but was *driven* to it—for example, by a person who deliberately fed it human flesh or placed the daughter's body to lure it—so that the same will be done to other villagers' relatives?
+
+Host: no
+
+## 87 · question
+
+Is the intended reading that the father fears the villagers will suffer *having relatives eaten* because the bears will eat the villagers' relatives' bodies in the forest, which is the same thing that happened to him—and is the remaining question simply what makes this certain rather than merely possible?
+
+Host: yes and no
+
+## 88 · question
+
+Does the father fear that the villagers *themselves* will be eaten—that is, living villagers, not just their buried dead relatives?
+
+Host: no
+
+## 89 · question
+
+Does the father fear the villagers will suffer because, with the forest still full of bears that scavenge graves, they will be unable to prevent this—there is no feasible way to protect the graves?
+
+Host: no
+
+## 90 · question
+
+Is the bear a *brown* bear significant—does it connect to the Ainu or other local belief that brown bears are sacred/divine beings, so that the villagers' dead being eaten by a sacred bear has religious meaning?
+
+Host: no
+
+## 91 · question
+
+Is the key that the father fears the villagers will also suffer *having relatives eaten* by bears because the village is newly settled and has encroached on bear territory, meaning bears and human graves will inevitably be near each other—so he knows the graves cannot be protected?
+
+Host: no
+
+## 92 · question
+
+Does the father fear that the bear that ate his daughter was attracted to the grave not by the body itself but by something in the burial practice, such as a food offering, that will also attract bears to other villagers' graves?
+
+Host: no
+
+## 93 · question
+
+Is the father's fear that the villagers will suffer *having relatives eaten* because the bears will eat the villagers' *livestock or food stores*, leaving the villagers to starve?
+
+Host: no
+
+## 94 · question
+
+Is the father's fear simply generalized compassion—that because he knows the unbearable grief of a relative's body being eaten, he fears any other villager whose buried relative is likewise eaten by bears will feel that same grief?
+
+Host: yes
+
+## 95 · final
+
+In the newly settled Meiji-era village, the dead are buried whole in the forest, where the local brown bears live and forage. The father's only daughter had died and was buried there. Bears are wary of living humans and rarely attack them, but a bear had dug up the daughter's grave and was eating her corpse. The father shot it and wept over her remains.
+
+What he realized was that his daughter's body being eaten was not an isolated misfortune. Since the other villagers bury their uncremated dead in the same forest, bears will likewise dig up their relatives' graves and eat the corpses. The father had just felt the unbearable grief of seeing a relative's body eaten, and out of that compassion he feared the other villagers would suffer the same anguish when their deceased relatives' bodies were eaten by bears. The point is the shared burial practice and the grief that would follow, not bears attacking living people or any curse.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "The father's only daughter had died and was buried there. ... a bear had dug up the daughter's grave and was eating her corpse.",
+      "reason": "Already-dead daughter and buried corpse are covered, but the required epidemic cause is omitted."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "the dead are buried whole in the forest ... the other villagers bury their uncremated dead in the same forest",
+      "reason": "Forest burial and non-cremation are present, but the crematorium and insufficient-fuel constraint is missing."
+    },
+    {
+      "id": "C3",
+      "credit": 1,
+      "evidence": "a bear had dug up the daughter's grave and was eating her corpse. ... bears will likewise dig up their relatives' graves and eat the corpses.",
+      "reason": "Grave exhumation and the father's fear of similar exhumations of other relatives are clearly covered."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "The submission reconstructs the grave-scavenging fear and the shooting, but omits the epidemic that killed the daughter and other villagers, the lack of crematorium and fuel that led to forest burial, and the daily grave visit.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "The father's only daughter had died and was buried there. ... a bear had dug up the daughter's grave and was eating her corpse."
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "the dead are buried whole in the forest ... the other villagers bury their uncremated dead in the same forest"
+    },
+    {
+      "id": "C3.F1",
+      "status": "covered",
+      "evidence": "a bear had dug up the daughter's grave and was eating her corpse. ... bears will likewise dig up their relatives' graves and eat the corpses."
+    }
+  ],
+  "requirement_coverage": [
+    {
+      "id": "R1",
+      "status": "partial",
+      "evidence": "The father's only daughter had died and was buried there. ... the other villagers bury their uncremated dead in the same forest"
+    },
+    {
+      "id": "R2",
+      "status": "partial",
+      "evidence": "the dead are buried whole in the forest ... the other villagers bury their uncremated dead in the same forest"
+    },
+    {
+      "id": "R3",
+      "status": "partial",
+      "evidence": "a bear had dug up the daughter's grave and was eating her corpse."
+    },
+    {
+      "id": "R4",
+      "status": "covered",
+      "evidence": "The father shot it and wept over her remains."
+    },
+    {
+      "id": "R5",
+      "status": "covered",
+      "evidence": "bears will likewise dig up their relatives' graves and eat the corpses. ... not bears attacking living people or any curse."
+    }
+  ],
+  "contradictions": [],
+  "partial_score": 0.625,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v2",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 96 · question
+
+Is the father's fear that the villagers will *also* suffer having relatives eaten because the bear he killed was only one of several bears that have learned to scavenge the village graves?
+
+Host: no
+
+## 97 · question
+
+Is the crucial point that the father fears the villagers will suffer not from the bears but from *each other*—that the same fate befalling their relatives will cause social conflict, blame, or communal strife in the village?
+
+Host: no
+
+## 98 · question
+
+Is the father's fear that the villagers will suffer having relatives eaten because they will *also lose living relatives* to the bears—meaning the bears will start attacking living people after acquiring a taste for human flesh, contrary to their usual wariness?
+
+Host: no
+
+## 99 · question
+
+Is the missing element that the villagers' dead are buried in the forest but *without coffins or deep graves*, so the bears can easily reach the bodies—a practice the father now realizes is unsustainable?
+
+Host: no
+
+## 100 · final · mandatory final
+
+In the newly settled Meiji-era village, the dead were buried—not cremated—in the forest, the same forest where the local brown bears lived and foraged. The father's only daughter had died and was buried there. Bears are wary of unfamiliar living humans and rarely attack them, but a bear had dug up the daughter's grave and was eating her corpse. The father shot it and wept over her remains.
+
+What he understood was that this was not an isolated horror. Because the other villagers likewise buried their uncremated dead in the forest, the bears would also dig up their relatives' graves and eat the bodies. The father had just experienced the grief of seeing a relative's corpse eaten, and he feared the other villagers would suffer the same anguish—having their deceased relatives eaten by bears. The fear rests on the shared burial practice in bear country, not on bears attacking the living, disease, revenge, or a curse.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "The father's only daughter had died and was buried there. ... a bear had dug up the daughter's grave and was eating her corpse.",
+      "reason": "Already-dead daughter and buried corpse are covered, but the required epidemic cause is omitted."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "the dead were buried—not cremated—in the forest ... the other villagers likewise buried their uncremated dead in the forest",
+      "reason": "Forest burial and non-cremation are present, but no crematorium and insufficient fuel are not supplied."
+    },
+    {
+      "id": "C3",
+      "credit": 1,
+      "evidence": "a bear had dug up the daughter's grave and was eating her corpse. ... the bears would also dig up their relatives' graves and eat the bodies.",
+      "reason": "Grave exhumation and the father's fear of similar exhumations of other relatives are clearly covered."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "The submission reconstructs the grave-scavenging fear and the shooting, but omits the epidemic that killed the daughter and other villagers, the lack of crematorium and fuel that led to forest burial, and the daily grave visit.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "The father's only daughter had died and was buried there. ... a bear had dug up the daughter's grave and was eating her corpse."
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "the dead were buried—not cremated—in the forest ... the other villagers likewise buried their uncremated dead in the forest"
+    },
+    {
+      "id": "C3.F1",
+      "status": "covered",
+      "evidence": "a bear had dug up the daughter's grave and was eating her corpse. ... the bears would also dig up their relatives' graves and eat the bodies."
+    }
+  ],
+  "requirement_coverage": [
+    {
+      "id": "R1",
+      "status": "partial",
+      "evidence": "The father's only daughter had died and was buried there. ... the other villagers likewise buried their uncremated dead in the forest"
+    },
+    {
+      "id": "R2",
+      "status": "partial",
+      "evidence": "the dead were buried—not cremated—in the forest ... the other villagers likewise buried their uncremated dead in the forest"
+    },
+    {
+      "id": "R3",
+      "status": "partial",
+      "evidence": "a bear had dug up the daughter's grave and was eating her corpse."
+    },
+    {
+      "id": "R4",
+      "status": "covered",
+      "evidence": "The father shot it and wept over her remains."
+    },
+    {
+      "id": "R5",
+      "status": "covered",
+      "evidence": "the bears would also dig up their relatives' graves and eat the bodies. ... not on bears attacking the living, disease, revenge, or a curse."
+    }
+  ],
+  "contradictions": [],
+  "partial_score": 0.625,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v2",
+  "controller_corrections": []
+}
+```
+</details>

@@ -1,0 +1,15 @@
+{
+  "boundary": {
+    "protocol": "raw-role-session-v1",
+    "completed_puzzle_opening": "I went to the pantry in my hall. The fire alarm rang. What happened?",
+    "completed_puzzle_full_answer": "I cooked food with a very high temperature (without burning the food) in the pantry. However, I forgot to turn on the exhaust fan. Since the smoke detecter in the building is very sensitive, the grease fumes triggered the fire alarm.\n\nHere hall means a residential hall and pantry means its small shared kitchen plus food storage. The narrator enters before starting to cook, rather than fetching an ingredient from another room. The pan is initially empty before oil and food are added. Both the smoke detector and alarm are inside the pantry.",
+    "completed_puzzle_termination": "budget_exhausted",
+    "last_source_public_feedback": "yes and no",
+    "next_puzzle_opening": "Over a smartphone, a daughter begs for a life to be spared and a kidnapper shouts: bring one hundred million yen alone by noon tomorrow, or this hostage dies; no police. Hearing the demand, her father decides the ransom should not be paid. Why?",
+    "new_submission_budget": 100,
+    "instruction": "The preceding puzzle has ended. Its official full answer is shown above. Now solve the next independent puzzle. Reset the quota to the new budget; prior labels concern the old story only. Transfer hypotheses cautiously and verify them with the new Host. Follow the current action_protocol; never output predicted Host feedback."
+  },
+  "source_archive": "../../sources/TS012_source_r01",
+  "inherited_player_prefix_sha256": "c59adddbd9f3409bc4680aaed7b6fdd3412a9fd410a536bfa9fb38ab9b11f5c8",
+  "source_turns": 100
+}

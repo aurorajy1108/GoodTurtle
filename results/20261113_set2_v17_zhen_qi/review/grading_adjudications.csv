@@ -1,0 +1,14 @@
+id,run_id,submission,score,decision,suggested_score,reason
+G01,TS034_TS033_answer_only_r05,56,0.475,correct,0.25,无法出门不蕴涵已被绑架；本次正文尚未说父亲人质。C1半分无依据，不能用后来#96获得的身份补写。建议47.5→25；不改变本局最终#100。
+G02,TS034_TS035_session_r05,77,0.7,correct,0.8,明确instructs/tells her not to pay，且接受自身风险；规则为not pay OR come，不要求再逐字说not come。C3应满分，建议70→80。
+G03,TS034_TS035_session_r05,88,0.7,correct,0.8,明确instructs/tells her not to pay，且接受自身风险；规则为not pay OR come，不要求再逐字说not come。C3应满分，建议70→80。
+G04,TS034_TS035_session_r05,100,0.7,correct,0.8,明确instructs/tells her not to pay，且接受自身风险；规则为not pay OR come，不要求再逐字说not come。C3应满分，建议70→80。
+G05,TS034_TS012_answer_only_r04,99,0.6,boundary_review,,Grader自己承认保护性拒付和自我牺牲，却因缺通信给C3=0，不符half_credit。无救说法又被归入C3，和其他局归C2不同。建议C3至少半分；C2需统一裁决，若维持半分总分70，若无救主因使C2归零总分55。暂不生成唯一替代总分。
+G06,TS034_TS012_answer_only_r04,100,0.6,boundary_review,,Grader自己承认保护性拒付和自我牺牲，却因缺通信给C3=0，不符half_credit。无救说法又被归入C3，和其他局归C2不同。建议C3至少半分；C2需统一裁决，若维持半分总分70，若无救主因使C2归零总分55。暂不生成唯一替代总分。
+G07,TS034_TS012_session_r04,100,0.7,boundary_review,,protect family from cost and danger仅泛指家庭，C2半分是否已充分指向女儿身体危险需统一；不能按正确身份自动补全独自赴约机制。保留原分，待限定部分分范围。
+G08,TS034_TS033_answer_only_r05,100,0.475,keep,0.475,父亲人质已明确，但未明说/清楚蕴涵女儿接到索赎金电话；仅能送钱不覆盖整个复合项。保持C1半分，与#56缺身份区分。
+G09,TS034_none_direct_r05,95,0.55,keep,0.55,中文恢复未改正文；一百亿是模型原文错误。已有无条件杀死父亲的中心矛盾，C2=0；C3保护性拒付半分。金额本身非独立计分项，不能据此修正文或额外编造扣分。
+G10,TS034_none_direct_r05,100,0.55,keep,0.55,仍明确绑匪无论付款与否都会杀父亲，C2零分成立；保护性拒付但缺完整风险通信，C3半分。原55保留。
+G11,TS034_TS012_answer_only_r05,100,0.25,boundary_review,,同为女儿被当成现有人质、付款导致灭口/拒付保活的解释，原C2在零分与半分间波动。人物担忧与确定性替代机制及错角色对C2的影响须统一；不把所有角色错误机械重复扣分，也不直接纳入建议分均值。
+G12,TS034_TS035_answer_only_r05,100,0.25,boundary_review,,同为女儿被当成现有人质、付款导致灭口/拒付保活的解释，原C2在零分与半分间波动。人物担忧与确定性替代机制及错角色对C2的影响须统一；不把所有角色错误机械重复扣分，也不直接纳入建议分均值。
+G13,TS034_TS035_session_r04,100,0.1,boundary_review,,同为女儿被当成现有人质、付款导致灭口/拒付保活的解释，原C2在零分与半分间波动。人物担忧与确定性替代机制及错角色对C2的影响须统一；不把所有角色错误机械重复扣分，也不直接纳入建议分均值。

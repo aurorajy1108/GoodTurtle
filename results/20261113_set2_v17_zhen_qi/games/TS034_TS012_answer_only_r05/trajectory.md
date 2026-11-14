@@ -1,0 +1,745 @@
+# Turtle Soup trajectory
+
+Over a smartphone, a daughter begs for a life to be spared and a kidnapper shouts: bring one hundred million yen alone by noon tomorrow, or this hostage dies; no police. Hearing the demand, her father decides the ransom should not be paid. Why?
+
+Status: completed | counted questions: 100 | submissions: 100 | final partial score: 0.25
+
+[Token usage and estimated costs](token_costs.csv)
+
+## 1 · question
+
+Is the hostage actually the daughter herself, or does the father believe she is safe for another reason?
+
+Host: no
+
+## 2 · question
+
+Is the father refusing because paying would endanger more lives than it saves?
+
+Host: yes
+
+## 3 · question
+
+Is the father a police officer or public official acting in that role?
+
+Host: irrelevant
+
+## 4 · question
+
+Does paying the ransom fund or enable an organization that would kill many other people?
+
+Host: no
+
+## 5 · question
+
+Would paying the ransom set a precedent encouraging more kidnappings that would endanger many people?
+
+Host: no
+
+## 6 · question
+
+Is the "daughter" on the phone actually an impostor, not the real daughter?
+
+Host: no
+
+## 7 · question
+
+Would paying the 100 million yen financially ruin the father so that others depending on him (employees, family, patients) would be harmed?
+
+Host: no
+
+## 8 · question
+
+Is the kidnapper's demand itself a trap, so that paying the money would not actually save the daughter but would harm her or others?
+
+Host: no
+
+## 9 · question
+
+Does paying the ransom require breaking the law or violating a duty in a way that would cause greater harm?
+
+Host: no
+
+## 10 · question
+
+Does the father know that the daughter is in fact already dead?
+
+Host: no
+
+## 11 · question
+
+Is the daughter complicit in a staged kidnapping or scheme?
+
+Host: no
+
+## 12 · question
+
+Is the money itself the means of causing mass harm—for example, the ransom is not ordinary currency but something like a weapon, poison, or a release mechanism?
+
+Host: no
+
+## 13 · question
+
+Is the father himself the intended target or the real person the kidnapper wants to harm?
+
+Host: yes
+
+## 14 · question
+
+Does the kidnapper want the father to come alone to deliver the ransom, so that the father can be killed or captured?
+
+Host: no
+
+## 15 · question
+
+Is the father someone whose death or incapacitation would directly cause many other deaths—for example, a surgeon needed for an operation, or someone holding critical knowledge?
+
+Host: irrelevant
+
+## 16 · question
+
+Is the father being lured into a trap at the ransom handover, so that going there himself would be dangerous?
+
+Host: no
+
+## 17 · question
+
+Do the police know about the call, so that the father has already involved them despite the "no police" warning?
+
+Host: yes and no
+
+## 18 · question
+
+Did the father himself contact the police before or during this call?
+
+Host: yes and no
+
+## 19 · question
+
+Is the smartphone call being monitored or traced by police without the father's own initiative?
+
+Host: yes and no
+
+## 20 · question
+
+Has the father been instructed by police to refuse to pay?
+
+Host: no
+
+## 21 · question
+
+Is the father himself involved in crime or a police operation targeting the kidnapper?
+
+Host: irrelevant
+
+## 22 · question
+
+Does the father suspect that the caller is not actually a kidnapper but someone testing or scamming him?
+
+Host: no
+
+## 23 · question
+
+Is the father unable to pay because the demand of "one hundred million yen" means something other than currency—such as a hundred million yen's worth that he cannot lawfully obtain?
+
+Host: no
+
+## 24 · question
+
+Is the father a government official or public figure whose paying a ransom would be seen as funding criminals or conceding to terrorists?
+
+Host: irrelevant
+
+## 25 · question
+
+Does the father intend to save his daughter by a method other than paying—such as rescuing her himself or letting police handle it?
+
+Host: yes
+
+## 26 · question
+
+Is the father relying on the police to rescue his daughter rather than paying the ransom?
+
+Host: no
+
+## 27 · question
+
+Does the father believe that paying the ransom would directly reveal something or trigger an event that kills the daughter?
+
+Host: yes
+
+## 28 · question
+
+Is the father already secretly recording or tracing the call, so paying would show he cooperated and thereby doom her?
+
+Host: no
+
+## 29 · question
+
+Does the father know or suspect that the kidnapper is watching him and will kill the daughter if he is seen preparing or delivering the money?
+
+Host: no
+
+## 30 · question
+
+Does the demand "come alone by noon tomorrow" conflict with the father being physically unable to do so, so payment is impossible?
+
+Host: no
+
+## 31 · question
+
+Does the father believe the ransom call is a diversion while the daughter's real location or rescue is already known, so paying would be pointless?
+
+Host: no
+
+## 32 · question
+
+Would paying the ransom cause the daughter to be killed because it would prove she could identify the kidnapper?
+
+Host: yes
+
+## 33 · question
+
+Does the father know or believe the kidnapper intends to kill the daughter regardless of payment, so paying would not spare her life?
+
+Host: no
+
+## 34 · question
+
+Is the fear that if the father goes to deliver the money, the kidnapper will kill the daughter upon receiving it and then escape, so refusing is meant to keep her alive?
+
+Host: no
+
+## 35 · question
+
+Does the daughter have a medical condition—such as needing a transplant or rare drug—that the ransom money would have to fund, and the father instead wants it spent on that?
+
+Host: no
+
+## 36 · question
+
+Would paying the ransom cause the kidnapper to harm the daughter because the money would betray that the father had involved someone else?
+
+Host: no
+
+## 37 · question
+
+Is the father himself being blackmailed or coerced, such that the "kidnapping" is a pretext to force him into an act that would harm others?
+
+Host: no
+
+## 38 · question
+
+Is the "kidnapper" actually the daughter's doctor or caregiver, and the ransom is for a treatment that would harm her if paid?
+
+Host: no
+
+## 39 · question
+
+Is the father aware that the kidnapper is not a stranger but someone connected to the daughter, such as a boyfriend or accomplice?
+
+Host: irrelevant
+
+## 40 · question
+
+Would the father's payment require him to leave a safe location or abandon someone else who would die as a result?
+
+Host: no
+
+## 41 · question
+
+Would paying the ransom reveal the father's identity or location to the kidnapper, enabling the kidnapper to kill the father—and the father's death would in turn cause the daughter's death?
+
+Host: no
+
+## 42 · question
+
+Is the amount "one hundred million yen" significant because the father knows that raising it would require selling something—such as a family business or organ—that would kill or ruin the daughter?
+
+Host: no
+
+## 43 · question
+
+Would the act of paying deliver the ransom to a place or person where the daughter herself is being held, so payment would trigger the trap killing her?
+
+Host: no
+
+## 44 · question
+
+Does the father recognize the voice or background of the caller as someone he knows, and this recognition tells him the situation is different from an ordinary kidnapping?
+
+Host: no
+
+## 45 · question
+
+Is the daughter's plea itself coded—such that the father understands from her words that she is safe or that paying would harm her?
+
+Host: no
+
+## 46 · question
+
+Would the money, once paid, be used directly by the kidnapper to harm the daughter—for example, to buy something that she is allergic to or that poisons her?
+
+Host: no
+
+## 47 · question
+
+Does the father decide not to pay because he is not actually the daughter's father—or because the woman on the phone is not his daughter?
+
+Host: no
+
+## 48 · question
+
+Would paying the ransom cause the daughter to be killed because the kidnappers would then have no reason to keep her alive, and the father's refusal is a bluff to buy time for a rescue?
+
+Host: no
+
+## 49 · question
+
+Is the father physically incapable of delivering the money—for example, he is hospitalized, imprisoned, or dying—so he decides not to pay because payment cannot happen?
+
+Host: no
+
+## 50 · question
+
+Is the father's reason moral—he believes paying a ransom is wrong in principle and refuses on ethical grounds rather than because of a practical danger?
+
+Host: no
+
+## 51 · question
+
+Does paying the ransom require the father to reveal something to the kidnapper—such as a password, account, or location—that would then let the kidnapper kill the daughter?
+
+Host: no
+
+## 52 · question
+
+Is the daughter being held in a location that would be destroyed or made unusable to the father if he paid—such as his own home or business, which he would have to sell or empty to raise the money?
+
+Host: no
+
+## 53 · question
+
+Does the father realize that the call is not from his daughter's actual abductor but is a recorded or artificial voice—an AI/deepfake—and the real daughter is elsewhere?
+
+Host: no
+
+## 54 · question
+
+Is the ransom payment something that can be traced by authorities to the father himself as a crime—such as the money being counterfeit or marked, making him the suspect?
+
+Host: no
+
+## 55 · question
+
+Is the father the person who has taken the hostages, making the call an attempt to extract money from himself?
+
+Host: no
+
+## 56 · question
+
+Would the father's payment of one hundred million yen cause the kidnapper to kill the daughter because the kidnapper would then use that money to buy a weapon or hire someone, endangering many lives including hers?
+
+Host: no
+
+## 57 · question
+
+Is the daughter restrained or attached to a device or location such that paying requires the kidnapper to leave, which kills her?
+
+Host: no
+
+## 58 · question
+
+Would paying the ransom cause the daughter to die because the money would allow the kidnapper to escape and abandon her in a place where she cannot survive?
+
+Host: no
+
+## 59 · question
+
+Is there an explosive or release device connected to the ransom arrangement that would be armed by the payment and threaten many people including the daughter?
+
+Host: no
+
+## 60 · question
+
+Is the father's daughter a public figure or official whose kidnapping and the payment would have political consequences, so that paying would enable the kidnappers' cause?
+
+Host: no
+
+## 61 · question
+
+Does the father recognize this call as a known pattern—such as a "virtual kidnapping" scam—where the "daughter" only sounds like her but is not actually abducted, and paying would encourage the scammers?
+
+Host: no
+
+## 62 · question
+
+Is the daughter infected with a contagious disease or otherwise dangerous to others, so that paying to get her released would spread harm to many people?
+
+Host: no
+
+## 63 · question
+
+Does the kidnapper actually want the father to come personally, with the daughter merely the bait to bring him?
+
+Host: no
+
+## 64 · question
+
+Does the father believe that the kidnapper has the wrong person—that is, the demand is meant for someone else with the same name or a similar identity—so paying would not actually save her?
+
+Host: no
+
+## 65 · question
+
+Would paying the ransom reveal the father's identity or holdings to the kidnapper because the money can only come from a specific source he controls?
+
+Host: no
+
+## 66 · question
+
+Is the daughter being held somewhere that the payment procedure would reveal to the kidnapper that the father has already found her location, prompting the kidnapper to kill her?
+
+Host: no
+
+## 67 · question
+
+Is the person who contacted the police someone other than the father—such as the daughter herself, or another family member?
+
+Host: irrelevant
+
+## 68 · question
+
+Is the father himself a criminal or someone the police would arrest, so that involving the police would put him in danger or prevent him from saving her?
+
+Host: no
+
+## 69 · question
+
+Does the father intend to have the daughter rescued by someone he has already hired or arranged—such as a bodyguard or negotiator—rather than by police or himself?
+
+Host: no
+
+## 70 · question
+
+Does the father believe the daughter can free herself or already has a way to escape, so his refusal is meant to keep the kidnapper from moving her?
+
+Host: no
+
+## 71 · question
+
+Would paying signal to a criminal group that the father is wealthy or compliant, prompting them to target him or his family further and causing more deaths?
+
+Host: no
+
+## 72 · question
+
+Is the ransom call a distraction designed to occupy the father or draw his attention away from something the kidnapper is doing to him or his interests elsewhere?
+
+Host: no
+
+## 73 · question
+
+Does the father hold a secret or responsibility whose loss, if he were exposed or killed after paying, would endanger many other people—such as a witness protection arrangement or people relying on his silence?
+
+Host: irrelevant
+
+## 74 · question
+
+Is the daughter being held together with other hostages, so that paying would lead to all of them being killed?
+
+Host: no
+
+## 75 · question
+
+Is the smartphone itself the daughter's own phone, so its call/signal information would reveal her location to the kidnapper if the father responds or pays?
+
+Host: no
+
+## 76 · question
+
+In her plea, does the daughter convey hidden information to the father—such as a warning or a clue about the kidnapper—so that paying would reveal she told him and thus get her killed?
+
+Host: no
+
+## 77 · question
+
+Does the father's alternative rescue depend on the kidnapper's own plan failing—for example, that the kidnapper cannot actually collect the money or that the deadline cannot be met, so waiting saves lives?
+
+Host: no
+
+## 78 · question
+
+Does paying the ransom put at risk the life of someone other than the daughter—such as a specific person the father is protecting?
+
+Host: yes
+
+## 79 · question
+
+Is the other person the father is protecting also a hostage or captive, or someone whose life is directly tied to whether the ransom is paid?
+
+Host: yes
+
+## 80 · question
+
+Is paying the ransom impossible without revealing the location of this other captive person, which would cause that person to be killed?
+
+Host: no
+
+## 81 · question
+
+Is this other person a second hostage held by the same kidnapper, so that the kidnapper has promised to release both only if paid, but the father knows one will be killed regardless?
+
+Host: no
+
+## 82 · question
+
+Is the other person the kidnapper's own hostage or partner, such that paying would cause the kidnapper to kill that person or the daughter in a way the father anticipates?
+
+Host: yes
+
+## 83 · question
+
+Is the other person the kidnapper himself, whose death would occur (or is intended by the father) if the ransom is paid?
+
+Host: no
+
+## 84 · question
+
+Is the other person someone the father himself would have to kill, or cause to be killed, in order to obtain the one hundred million yen?
+
+Host: no
+
+## 85 · question
+
+Is the other person the father's other child, spouse, or relative also being held, where paying for one would cost the other's life?
+
+Host: no
+
+## 86 · question
+
+Is the other person a witness or informant whose safety depends on the kidnapper not receiving the money?
+
+Host: no
+
+## 87 · question
+
+Is the other person someone the daughter is protecting by staying captive—for example, paying would lead the kidnapper to release the daughter but then kill this other person instead?
+
+Host: no
+
+## 88 · question
+
+Is the other person someone whose life depends on the father keeping the one hundred million yen—such as a patient awaiting an operation the father was going to fund, or a debtor the father would ruin by paying?
+
+Host: no
+
+## 89 · question
+
+Is the other person an accomplice of the kidnapper—someone working with the kidnapper rather than a victim?
+
+Host: no
+
+## 90 · question
+
+Is the other person a police officer or someone involved in an operation to catch the kidnapper, whose life would be endangered if the ransom were paid?
+
+Host: no
+
+## 91 · question
+
+Is the other person someone the kidnapper loves or cares about—such that the kidnapper would kill that person or the daughter if the ransom were paid?
+
+Host: no
+
+## 92 · question
+
+Is the other person someone the father loves or cares about other than his daughter—such as a spouse or friend—whose life the kidnapper would take in exchange if the ransom were paid?
+
+Host: no
+
+## 93 · question
+
+Is the one hundred million yen money that is not the father's own—such as company funds, a trust for the daughter, or charity money—so paying it would harm others who depend on it?
+
+Host: no
+
+## 94 · question
+
+Would paying the ransom reveal to the kidnapper that the father has learned the kidnapper's identity or plan—so that paying would cause the kidnapper to kill the daughter to silence her?
+
+Host: no
+
+## 95 · question
+
+Does the father believe that as long as he does not pay, the kidnapper will keep the daughter alive—because the ransom is the only reason she is being kept alive?
+
+Host: no
+
+## 96 · question
+
+Does the father's alternative plan to save his daughter rely on a fact he knows but the kidnapper does not—such as that the daughter is not really in the location she appears to be, or that someone with her will intervene?
+
+Host: no
+
+## 97 · question
+
+Does the father plan to save the daughter by negotiating with the kidnapper—talking the kidnapper down or bargaining instead of simply paying the full demand?
+
+Host: no
+
+## 98 · question
+
+Does the kidnapper actually want the father to refuse—so the demand is designed to make him refuse, and paying would be against the kidnapper's plan?
+
+Host: no
+
+## 99 · question
+
+Is the father's refusal itself the thing that protects the other person—that is, by not paying, the father prevents the kidnapper from learning something that would let the kidnapper kill both the daughter and that other person?
+
+Host: no
+
+## 100 · final · mandatory final
+
+The father knows that paying the ransom would not save his daughter but would doom her. The call is not a straightforward exchange of money for a life: the act of producing and handing over one hundred million yen would reveal something to the kidnapper—most centrally that the daughter can identify him—and that revelation would lead the kidnapper to kill her to silence her. So payment would trigger her death rather than prevent it.
+
+At the same time, the father understands that he himself is the person the kidnapper is really after. The demand is aimed at drawing the father into the kidnapper's power, and paying would not only endanger the daughter but also put at risk another specific person whose life is tied to whether the money is paid; the kidnapper would turn on that person or on the daughter as a result. Thus paying would cost more lives than it could possibly save.
+
+Therefore the father concludes that the ransom must not be paid. He intends to save his daughter by some route other than paying the kidnapper's price, and in doing so he hopes to protect both her and the other person at risk. Refusing to pay keeps the kidnapper from gaining whatever the payment would unlock.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0,
+      "evidence": "At the same time, the father understands that he himself is the person the kidnapper is really after. The demand is aimed at drawing the father into the kidnapper's power",
+      "reason": "Directly contradicts the required fact that the father is already the kidnapped hostage; the submission treats the father as the free target to be lured, and the free daughter receiving the call is not identified."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "The father knows that paying the ransom would not save his daughter but would doom her... the act of producing and handing over one hundred million yen would reveal something to the kidnapper—most centrally that the daughter can identify him—and that revelation would lead the kidnapper to kill her to silence her.",
+      "reason": "Identifies a danger to the daughter tied to silencing, but omits that the fear is conditional on her coming alone and that both the father and daughter may be killed."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "Therefore the father concludes that the ransom must not be paid. He intends to save his daughter by some route other than paying the kidnapper's price, and in doing so he hopes to protect both her and the other person at risk.",
+      "reason": "Protective refusal is present, but communication that she must not pay or come and acceptance of danger to his own life are missing."
+    },
+    {
+      "id": "C4",
+      "credit": 0,
+      "evidence": "",
+      "reason": "The daughter's wealth is not stated or entailed."
+    },
+    {
+      "id": "C5",
+      "credit": 0,
+      "evidence": "",
+      "reason": "The daughter's status as his only family is not stated or entailed."
+    }
+  ],
+  "material_contradiction": true,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "The submission reconstructs the father as the free person the demand is aimed at luring into the kidnapper's power, rather than as the already kidnapped hostage. It omits the free daughter receiving the call, the conditional fear that both may be killed if she arrives alone, the communicated instruction not to pay or come, the daughter's wealth, and her status as his only family.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "contradicted",
+      "evidence": "At the same time, the father understands that he himself is the person the kidnapper is really after. The demand is aimed at drawing the father into the kidnapper's power"
+    },
+    {
+      "id": "C1.F2",
+      "status": "missing",
+      "evidence": ""
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "The father knows that paying the ransom would not save his daughter but would doom her... the act of producing and handing over one hundred million yen would reveal something to the kidnapper—most centrally that the daughter can identify him—and that revelation would lead the kidnapper to kill her to silence her."
+    },
+    {
+      "id": "C3.F1",
+      "status": "covered",
+      "evidence": "Therefore the father concludes that the ransom must not be paid. He intends to save his daughter by some route other than paying the kidnapper's price, and in doing so he hopes to protect both her and the other person at risk."
+    },
+    {
+      "id": "C3.F2",
+      "status": "missing",
+      "evidence": ""
+    },
+    {
+      "id": "C4.F1",
+      "status": "missing",
+      "evidence": ""
+    },
+    {
+      "id": "C5.F1",
+      "status": "missing",
+      "evidence": ""
+    }
+  ],
+  "requirement_coverage": [
+    {
+      "id": "R1",
+      "status": "contradicted",
+      "evidence": "At the same time, the father understands that he himself is the person the kidnapper is really after. The demand is aimed at drawing the father into the kidnapper's power"
+    },
+    {
+      "id": "R2",
+      "status": "missing",
+      "evidence": ""
+    },
+    {
+      "id": "R3",
+      "status": "partial",
+      "evidence": "The father knows that paying the ransom would not save his daughter but would doom her... the act of producing and handing over one hundred million yen would reveal something to the kidnapper—most centrally that the daughter can identify him—and that revelation would lead the kidnapper to kill her to silence her."
+    },
+    {
+      "id": "R4",
+      "status": "covered",
+      "evidence": "Therefore the father concludes that the ransom must not be paid. He intends to save his daughter by some route other than paying the kidnapper's price, and in doing so he hopes to protect both her and the other person at risk."
+    },
+    {
+      "id": "R5",
+      "status": "missing",
+      "evidence": ""
+    },
+    {
+      "id": "R6",
+      "status": "missing",
+      "evidence": ""
+    },
+    {
+      "id": "R7",
+      "status": "missing",
+      "evidence": ""
+    }
+  ],
+  "contradictions": [
+    {
+      "quote": "At the same time, the father understands that he himself is the person the kidnapper is really after. The demand is aimed at drawing the father into the kidnapper's power",
+      "reference": "The father is the kidnapped hostage; the kidnapper orders his free daughter to bring the ransom alone.",
+      "checkpoint_ids": [
+        "C1"
+      ]
+    }
+  ],
+  "partial_score": 0.25,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v2",
+  "controller_corrections": [],
+  "completion_policy": "rubric_aligned_v1"
+}
+```
+</details>

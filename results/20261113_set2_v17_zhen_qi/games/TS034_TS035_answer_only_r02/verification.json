@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "scope": "submission/feedback/counters/weighted scores/final answer/cost counters/source answer boundary",
+  "semantic_review": "assistant_selected_cases_only; no blanket human certification",
+  "submissions": 100,
+  "api_attempts": 202,
+  "protocol_interventions": 0,
+  "feedback_count": 100,
+  "auxiliary_successful_format_calls": 0,
+  "source_api_calls_sha256": "8fd486c1b0fe6a6c49d3142af577914f461bfde0546aa832e02a0a23a6ff4594",
+  "source_files_sha256": {
+    "result.json": "ed22c4a95df521543ab50a5b6560607c27b2744dc722bb183a92d869e90b7aff",
+    "trajectory.jsonl": "5511305d06c9c52b5da6f722e09d57c80055cb6f71386c56ef78cb5031a31365",
+    "trajectory.md": "257ac64eb3d488d90a8b54ec2a1dba24ae7fed0431649254afad7540c555d9a2",
+    "trajectory.html": "89d199b72e52f9bc823ca625d8000517cf7b43c7733b434aa53ab3720cdd8964",
+    "review_template.csv": "41d6b10e7bb6cdbe1cd4dbba2ce300f1314311b283a531b2351b9abdb8facd48",
+    "config.json": "2a474139b20bf95d9a43818066c49cfc134cfda6bbb3086349ea2e2d8f32b2a4",
+    "prompts.json": "ee4ac28fb3184a8ff547a10d1d6b50291a93e981635a5808b96b3d4fe91c8388",
+    "puzzle_private.json": "6cadb8e735f6bca2b815412dbd22254c2956284983d9e3df73b2a6f2b7ab4983",
+    "host_context.json": "3c59d8ea4ec6f9adbc8c30d9fb0fd01c9e8f48a93f512c1afe2d77aaa81232a0",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "64c31820443327839ce32e5128053650aacd3becf6b6746e94de79bb5620c17d",
+    "token_costs.csv": "7224641611667689b1a4a796694a6b50fc234797a08fc44c67b6302263577458",
+    "cost_summary.json": "c4e85ad66b4fd0477f1307e1e59edb83531526bd14e2614d4a7b736ff624673b",
+    "prior_experience.json": "0e09929fff1c00e540e935d5cea3c2a62a7b1b0927e40804791d571459e65710",
+    "human_review.csv": "41d6b10e7bb6cdbe1cd4dbba2ce300f1314311b283a531b2351b9abdb8facd48"
+  },
+  "source_run": "runs/api/20261112_set2_v17_four_conditions_r3_parallel/run/TS034_TS035_answer_only_r02",
+  "response_accounting_sequence_sha256": "60267a25f1a7c641ed13d537f73b287f3e60c477ec91a6efbb45666e7aef9a2d",
+  "audit_request_bodies_omitted": true
+}
