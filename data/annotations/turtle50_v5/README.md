@@ -31,5 +31,5 @@ snapshot; adopting v5 requires a new study. Do not silently regrade historical
 trajectories or resume a v4 rollout under v5 rules.
 
 Validation: deterministic scoring/loop checks and selected real API regression
-cases are described in `docs/unified_scoring_v3.md`. Model grading remains a
+cases are described in `docs/running/unified_scoring_v3.md`. Model grading remains a
 judgment task; passing these checks does not prove universal semantic accuracy.

@@ -1,16 +1,11 @@
-[English](README.md) | 中文
+# 文档入口
 
-# 当前文档导航
+- [目录结构、归档分支与旧文件查找](REPOSITORY_LAYOUT.md)
+- [组员快速运行](running/coworker_quickstart.md) · [全部参数](running/runtime_parameters.md)
+- [CL/MAS pipeline](running/experiment_pipelines.md) · [分工批跑](running/team_campaign_20261111.md)
+- [人工问答上传](../data/host_reference/README.zh-CN.md) · [Host审核说明](host/)
+- [综合结果分析](analysis/all_versions_20261114.md) · [项目主线与过程证据](analysis/project_story_20261114.md)
+- [轨迹审核报告](analysis/trajectory_review_20261114.md) · [待复核CSV](../results/reviews/20261114/review_questions_only.csv)
+- [历史说明](archive/)
 
-| 内容 | 文档 |
-| --- | --- |
-| 新同事运行入口 | [coworker_quickstart.md](coworker_quickstart.md) |
-| 上传人工trajectory | [Host reference指南](../data/host_reference/README.md) |
-| 对局和模型完整参数 | [runtime_parameters.md](runtime_parameters.md) |
-| CL / 双agent CLI、输出与参数 | [experiment_pipelines.md](experiment_pipelines.md) |
-| 当前Host边界和v7实验设计 | [host_repair_v7.md](host_repair_v7.md) |
-| 下一步与人工审核 | [todo_human_review_20261027.md](todo_human_review_20261027.md) |
-| 历史片段合并说明 | [history_qa_merge_20261026.md](history_qa_merge_20261026.md) |
-| 旧版本设计和原型 | [archive/README.md](archive/README.md) |
-
-当前JSON审核结论统一在 `data/host_reference/reviews/`，不再放docs/reviews。人工上传与模型运行结果分开管理。
+实验轨迹在`results/trajectories/`，人工参考在`data/host_reference/`，两者不混放。

@@ -12,7 +12,7 @@ Upload new human trajectories to `data/host_reference/inbox/`. Do not put them i
 | Review records | `reviews/` | Keep original answers separate from decisions, with puzzle, source, evidence, reviewer, date and reasons |
 | Runtime host input | `../host_packs/active/TSxxx.json` | Explicitly selected examples, bound through `configs/host_bindings.json` |
 
-The host loads the bound active pack for the current puzzle, then locally retrieves up to 6 relevant examples per question (6000 serialized characters by default). Only question, answer and necessary public history enter the prompt; provenance and review notes remain on disk. The grader independently selects up to 3 precedents. Selection IDs are logged in `trajectory.jsonl` as `reference_selection`. **It does not automatically scan the inbox or retrieve every human conversation.** Source files are treated as data, not executable instructions. See [runtime settings](../../docs/runtime_parameters.md).
+The host loads the bound active pack for the current puzzle, then locally retrieves up to 6 relevant examples per question (6000 serialized characters by default). Only question, answer and necessary public history enter the prompt; provenance and review notes remain on disk. The grader independently selects up to 3 precedents. Selection IDs are logged in `trajectory.jsonl` as `reference_selection`. **It does not automatically scan the inbox or retrieve every human conversation.** Source files are treated as data, not executable instructions. See [runtime settings](../../docs/running/runtime_parameters.md).
 
 ## Upload
 
@@ -71,9 +71,9 @@ The upload tool validates structure and locates paths; it does not automatically
 
 ## Existing references
 
-- **2026-10-30 review:** [report](../../docs/host_reference_audit_20261030.md), [workbook](../../outputs/20261030_host_reference_audit/host_reference_audit.xlsx), [source-preserving decisions](reviews/audit_20261030/). TS031/035/038 gained 102 reviewed examples; TS033 has one corrected causal label. Actual generation provenance is retained; this is not human gold or a measured accuracy gain. The 17 inbox uploads remain pending activation.
+- **2026-10-30 review:** [report](../../docs/host/host_reference_audit_20261030.md), [workbook](reviews/exports/20261030_host_reference_audit/host_reference_audit.xlsx), [source-preserving decisions](reviews/audit_20261030). TS031/035/038 gained 102 reviewed examples; TS033 has one corrected causal label. Actual generation provenance is retained; this is not human gold or a measured accuracy gain. The 17 inbox uploads remain pending activation.
 
-- [Shared conversations](sources/chatgpt_shares_20261026/) contain 633 visible messages and 311 player actions, covering TS032, TS033, TS034, TS037, TS039 and an external train puzzle. TS034 has two attempts. Historical paths follow the migration map.
+- [Shared conversations](sources/chatgpt_shares_20261026) contain 633 visible messages and 311 player actions, covering TS032, TS033, TS034, TS037, TS039 and an external train puzzle. TS034 has two attempts. Historical paths follow the migration map.
 - The 89 historical candidate excerpts for nine puzzles are in `data/host_packs/archive/LOOP_TS*_history_v1.json`; see [merge review](reviews/history_qa_merge_20261026.json). Excerpts alone do not establish a complete original conversation.
 - The earlier merge added 109 examples (88 historical and 21 from shared conversations); check the active pack and binding for current runtime inputs and each example's provenance.
-- The [Excel workbook](../../outputs/20261026_host_review/host_review_20261026.xlsx) and [review checklist](../../docs/todo_human_review_20261027.md) remain available. Historical paths can be resolved with `locate`.
+- The [Excel workbook](reviews/exports/20261026_host_review/host_review_20261026.xlsx) and [review checklist](../../docs/host/todo_human_review_20261027.md) remain available. Historical paths can be resolved with `locate`.

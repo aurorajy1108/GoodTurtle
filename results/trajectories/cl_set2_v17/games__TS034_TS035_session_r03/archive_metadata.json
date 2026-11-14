@@ -1,0 +1,45 @@
+{
+  "original_path": "results/20261113_set2_v17_zhen_qi/games/TS034_TS035_session_r03",
+  "archive_branch": "archive/full-repository-20261114",
+  "archive_commit": "c4ccc67eef8c09aa0c6987a464f468718f5015f4",
+  "source_files_sha256": {
+    "trajectory.jsonl": "ffb831f28c71562c3fb447735bf023242a31d1cd536561159c3bf4ab9377cf72",
+    "trajectory.md": "404a198e82f4f3ace566a2cd85d2d67e46d28c2604babdda641d2625904302fe",
+    "trajectory.html": "12d2dad9c78b41dda37cee95afee8612b6a92d3c04a5554ece9f33767f538ce0",
+    "result.json": "002e707da68330777d87779545e9f6fe7b971fbed8b8d787c22895acc14db368",
+    "config.json": "2a474139b20bf95d9a43818066c49cfc134cfda6bbb3086349ea2e2d8f32b2a4",
+    "puzzle_private.json": "6cadb8e735f6bca2b815412dbd22254c2956284983d9e3df73b2a6f2b7ab4983",
+    "host_context.json": "3c59d8ea4ec6f9adbc8c30d9fb0fd01c9e8f48a93f512c1afe2d77aaa81232a0",
+    "prompts.json": "ee4ac28fb3184a8ff547a10d1d6b50291a93e981635a5808b96b3d4fe91c8388",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "64c31820443327839ce32e5128053650aacd3becf6b6746e94de79bb5620c17d",
+    "cost_summary.json": "6d172ee1d02ba0e8032da6526720f578148bc7cbac8af480964440e7d3fe39a2",
+    "token_costs.csv": "2ef7acfc091e5e4a46f9646feeb574c01bc254138df75817d9327370f0205a46",
+    "review_template.csv": "275bc12ab3838e302c7690535e6d7addae990cee06bf85b5412353f204d00ff3",
+    "human_review.csv": "275bc12ab3838e302c7690535e6d7addae990cee06bf85b5412353f204d00ff3",
+    "verification.json": "b6618ace4c1355d3f49bd4cbe31e18c05e3bf19302d2f08d2d5803424bdfd821"
+  },
+  "compact_api": {
+    "mode": "existing_compact_audit_unchanged",
+    "source_sha256": "af4c93259ea087df88f127c41763e1b944d29b9077e7cf75dcc04bb9c157886a"
+  },
+  "published_files_sha256": {
+    "trajectory.jsonl": "ffb831f28c71562c3fb447735bf023242a31d1cd536561159c3bf4ab9377cf72",
+    "trajectory.md": "404a198e82f4f3ace566a2cd85d2d67e46d28c2604babdda641d2625904302fe",
+    "trajectory.html": "12d2dad9c78b41dda37cee95afee8612b6a92d3c04a5554ece9f33767f538ce0",
+    "result.json": "002e707da68330777d87779545e9f6fe7b971fbed8b8d787c22895acc14db368",
+    "config.json": "2a474139b20bf95d9a43818066c49cfc134cfda6bbb3086349ea2e2d8f32b2a4",
+    "puzzle_private.json": "6cadb8e735f6bca2b815412dbd22254c2956284983d9e3df73b2a6f2b7ab4983",
+    "host_context.json": "3c59d8ea4ec6f9adbc8c30d9fb0fd01c9e8f48a93f512c1afe2d77aaa81232a0",
+    "prompts.json": "ee4ac28fb3184a8ff547a10d1d6b50291a93e981635a5808b96b3d4fe91c8388",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "64c31820443327839ce32e5128053650aacd3becf6b6746e94de79bb5620c17d",
+    "cost_summary.json": "6d172ee1d02ba0e8032da6526720f578148bc7cbac8af480964440e7d3fe39a2",
+    "token_costs.csv": "2ef7acfc091e5e4a46f9646feeb574c01bc254138df75817d9327370f0205a46",
+    "review_template.csv": "275bc12ab3838e302c7690535e6d7addae990cee06bf85b5412353f204d00ff3",
+    "human_review.csv": "275bc12ab3838e302c7690535e6d7addae990cee06bf85b5412353f204d00ff3",
+    "verification.json": "b6618ace4c1355d3f49bd4cbe31e18c05e3bf19302d2f08d2d5803424bdfd821",
+    "api_audit.jsonl.gz": "af4c93259ea087df88f127c41763e1b944d29b9077e7cf75dcc04bb9c157886a"
+  },
+  "policy": "Core trajectory/result/config/puzzle bytes are unchanged. Full original request bodies, repeated checkpoints and original HTML remain on archive branch. Not a resumable raw runtime archive."
+}

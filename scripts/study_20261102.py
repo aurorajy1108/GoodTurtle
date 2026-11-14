@@ -2,7 +2,7 @@
 """Plan, dry-run or execute the five requested CL sets and five team puzzles.
 
 Default mode only writes a frozen plan: no model calls. All runs use a new output
-directory and immutable code/data/config copies. See docs/study_20261102.md.
+directory and immutable code/data/config copies. See docs/archive/guides/study_20261102.md.
 """
 import argparse
 import hashlib

@@ -14,6 +14,8 @@ English | [中文](README.zh-CN.md)
 | Audit batch completeness | `audit_sweep.py` |
 | Export an Excel review workbook | `export_host_review.py` (optional `openpyxl`; write to a new file rather than overwrite human edits) |
 | Package or verify the private dataset and host packs | `experiment_bundle.py` |
-| Historical three-label prototype and screening | `prepare.py`, `audit_screening.py`, `summarize_screening.py`, `summarize_pilot.py` |
+| List, verify and summarize published games; find an old result path | `results_catalog.py list / check / summarize / locate` |
+| Rebuild pinned analysis tables without dashboards | `build_all_versions_summary.py`, `analyze_transfer_process.py` |
+| Historical three-label prototype | `prepare.py`, `summarize_pilot.py`; retired screening scripts are on the [archive branch](https://github.com/aurorajy1108/GoodTurtle/tree/archive/full-repository-20261114/scripts) |
 
-Start with the [coworker quickstart](../docs/coworker_quickstart.md). The historical prototype is not the entry point for current four-label experiments. Use each script's `--help` for its options; see the documentation for complete parameters.
+Start with the [coworker quickstart](../docs/running/coworker_quickstart.md). The historical prototype is not the entry point for current four-label experiments. Use each script's `--help` for its options; see the documentation for complete parameters.

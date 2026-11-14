@@ -12,5 +12,5 @@
 总提交包含成功交卷；已计数问题=普通问题+失败/不完整交卷。
 错误或未评分的交卷不补造标签，null 分数不等于零。
 
-[完整 HTML 与私有评分](../../../../runs/2026-10-30_sol_luna_reference/trajectories.html)
-[审核疑点](../../../../runs/2026-10-30_sol_luna_reference/review_observations.json)
+[完整 HTML 与私有评分](https://github.com/aurorajy1108/GoodTurtle/blob/c4ccc67eef8c09aa0c6987a464f468718f5015f4/runs/2026-10-30_sol_luna_reference/trajectories.html)
+[审核疑点](https://github.com/aurorajy1108/GoodTurtle/blob/c4ccc67eef8c09aa0c6987a464f468718f5015f4/runs/2026-10-30_sol_luna_reference/review_observations.json)

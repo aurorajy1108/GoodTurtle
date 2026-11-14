@@ -1,167 +1,63 @@
 # GoodTurtle — COMP1110
 
-**Latest results (14 November):** [All-version analysis in Chinese](reports/20261114_all_versions/analysis.zh-CN.md) and [every formal trajectory](reports/20261114_all_versions/index.html), combining local results, Set2 v17, and the newly uploaded T22/T42 experiments. There are 168 formal/appendix archives, 167 unique observations; local CL Set1 is complete, and local TS038 2×2 has 15/16 completed games (the remaining game retains its 36-submission checkpoint). Original scores and version differences are preserved. [All local history and failed/superseded snapshots](results/20261114_local_history/README.md) are published separately and are **not** extra independent repetitions. [Results navigation and offline rebuilding](results/README.md). No experiment rerun is needed to browse these results after pulling `main`.
-
-**Research narrative and process evidence:** [Experience, search, feedback and final reconstruction](reports/20261114_transfer_process/project_story.zh-CN.md), with all 36 Set1 B process records, the first ten submissions verbatim, a fixed-A figure and six positive/negative-control case cards. Semantic reframing, strategy acquisition and complete reconstruction are distinguished; original scores stay unchanged.
-
-**Scoring update:** new runs default to v5 / `coverage-v3-unified`: 100% means solved and ends the game. All mandatory narrative facts are scored; historical v4 results stay unchanged. [Details and checks](docs/unified_scoring_v3.md).
-
-**Team runs:** [Three CL sets and three MAS puzzles, two people × two repeats](docs/team_campaign_20261111.md): a six-game pilot, personal batches, bounded parallel execution of all 150 games, and deduplicated collection.
-
-**Set1 repeat extension:** [Reuse frozen A prefixes and extend to four B repeats](docs/cl_repeat_extension.md), adding 18 B games without rerunning the original 21 games; local verbatim action recovery and DeepSeek-only model interfaces.
-
-**Compute-matched MAS self-review:** [TS038 solo/MAS × explicit review](docs/compute_matched_agents.md): eight new games, common solver budgets, clean solo prompts, private per-agent reviews and shared public discussion.
-
-**Robust Host output:** [Local label-envelope normalization and bounded empty-response recovery](docs/host_output_recovery.md). Existing CL/MAS checkpoints can continue without regenerating Player actions, resetting quotas or discarding paid calls.
-
-## Run the self-review comparison
-
-After updating `main`, use Python 3.11 and set `DEEPSEEK_API_KEY` in your terminal or the ignored `.env.local` file. No historical run download is required:
-
-```bash
-bash scripts/run_compute_matched_agents.sh runs/api/ts038_review_yourname_01
-```
-
-Choose a new output directory. This prepares a frozen snapshot and runs `solo`, `solo_review`, `mas`, and `mas_review`, twice each, with two concurrent games. Every game has the same available budget: 225 combined Player generations, 77,696 output tokens and up to 100 external submissions. Player uses DeepSeek Flash with thinking disabled; Host/Grader use the checked-in DeepSeek Pro configuration. Private reviews stay in each solver's persistent session; MAS shares public discussion and host feedback. Actual usage and estimated cost are reported separately from budget ceilings.
-
-Open the output's `index.html` for trajectories, shared dialogue, private reviews, performance and token costs. [Every parameter, optional historical-reference mode and recovery behavior](docs/compute_matched_agents.md).
-
-**Published results (13 November):** [Completed CL Set1 four-repeat results](results/20261113_verified_final/README.md), with an [HTML trajectory index](results/20261113_verified_final/index.html). All 39 CL games finished. [MAS follow-up: all eight games completed](results/20261113_mas_completed/README.md); the previously truncated private review was retained and its game finished at submission 84 with score 0%. Structural, session and accounting checks passed; Host/Grader semantics remain pending human review. The [earlier interim snapshot](docs/results/cl_set1_20261112/interpretation.zh-CN.md) is retained as history.
-
-**Four-repeat MAS extension:** [Earlier 10/16 snapshot](results/20261113_mas_r1r4_progress/README.md), with [HTML trajectories](results/20261113_mas_r1r4_progress/index.html). The [14 November inventory](reports/20261114_all_versions/formal_inventory.csv) supersedes its progress count: 15/16 completed; an unfinished MAS-review game is excluded from outcome means. Recovery copies are not additional repetitions.
-
-**Teammate result review:** [Two Set2 rounds and April's formal TS038 runs](docs/results/teammates_20261113/analysis.zh-CN.md), covering 28 unique completed games from pinned main commit `6afda1c`. Archived coverage-v2 scoring, Host versions, auxiliary formatter models and solver budgets differ from the current defaults; report the cohorts separately.
+An auditable Turtle Soup puzzle dataset and Host/Player/Grader pipeline, with
+continual in-context transfer and multi-agent experiments.
 
 English | [中文](README.zh-CN.md)
 
-**Main synchronization (13 November):** `main` now includes unified v5 scoring, robust recovery and the teammate dashboard/archives. [Version checks and restart boundaries](docs/main_sync_20261113.md). Existing frozen studies retain their original code and scoring; pulling updates only changes newly prepared runs.
+|Task|Location|
+|---|---|
+|Run experiments|[Quickstart](docs/running/coworker_quickstart.md) · [Every runtime parameter](docs/running/runtime_parameters.md)|
+|CL / MAS / self-review|[Experiment guide](docs/running/experiment_pipelines.md) · [Team commands](docs/running/team_campaign_20261111.md) · [Compute budgets](docs/running/compute_matched_agents.md)|
+|Upload human reference Q&A|[`data/host_reference/inbox/`](data/host_reference/inbox/README.md)|
+|Current Host inputs|[`data/host_packs/active/`](data/host_packs/README.md) and [`configs/host_bindings.json`](configs/host_bindings.json)|
+|Trajectories and results|[Results catalog](results/README.md)|
+|Research findings|[All-version analysis](docs/analysis/all_versions_20261114.md) · [Process evidence](docs/analysis/project_story_20261114.md)|
+|Moved files and full archive|[Repository layout](docs/REPOSITORY_LAYOUT.md)|
 
-## Current team quickstart
+## Run
 
-Use `main`, run from the repository root, and export your own `DEEPSEEK_API_KEY` in the same terminal. [Task assignments, every parameter and result collection](docs/team_campaign_20261111.md).
-
-```bash
-git fetch origin
-git switch main
-git pull --ff-only
-```
-
-Jiayang's small pilot: 4 CL games + 2 MAS games, one concurrent slot:
-
-```bash
-bash scripts/run_team_smoke.sh jiayang cl-set1-a,mas-ts038-a
-```
-
-Jiayang's formal batch: two repeats per condition, 21 CL + 4 MAS games, up to two concurrent slots:
+Use Python 3.11. Credentials belong in your environment or the ignored local
+environment file, never in tracked configuration. Provider/model options are in
+[`configs/loop.deepseek.json`](configs/loop.deepseek.json); command-line options are in the
+[runtime reference](docs/running/runtime_parameters.md).
 
 ```bash
-bash scripts/run_team_batch.sh jiayang cl-set1-a,mas-ts038-a 2
+python3 scripts/play.py --help
+python3 scripts/experiment.py --help
 ```
 
-Only ONE coordinator launches all team slots; others do not launch their own copies:
+For assigned studies, use the [team campaign guide](docs/running/team_campaign_20261111.md).
+Each B has a fresh 100-submission budget; unsuccessful submissions count. Frozen
+historical runs retain their original Host, scoring and configuration.
+
+## Read existing results
+
+No API key or model call is needed:
 
 ```bash
-bash scripts/run_team_batch.sh coordinator all 4 runs/api/team_all_formal_v1
+python3 scripts/results_catalog.py list --puzzle TS038
+python3 scripts/results_catalog.py check
+python3 scripts/results_catalog.py summarize
 ```
 
-This schedules 150 games with up to four concurrent slots: CL Set1–3 (126 games) and MAS TS038/TS002/TS014 (24 games). Each experiment has two human execution slots, each running two repeats. The Set3 second operator and TS014 MAS second operator must each be assigned to one person from their listed candidates. Existing output directories are never overwritten. Each B has 100 fresh submissions; A is fixed within each execution slot, with its full answer revealed before B.
+Open a game's `trajectory.html` or read `trajectory.md` / `trajectory.jsonl`.
+Cooperation and self-review transcripts stay alongside the game. Summary tables
+are Markdown/CSV/JSON; no aggregate visualization is required.
 
-**Session protocol guide:** [Run CL session continuation and the new Player response format](docs/run_session_prefix_v1.md), including Set1 and TS038 commands, all relevant parameters, costs and recovery limits.
+## Structure
 
-**Historical Set1 recovery:** `start_set1_auto_continue.sh` targets an archived stopped rollout, not the new team campaign. For a current stopped CL task use the task-specific recovery instructions in the [campaign guide](docs/team_campaign_20261111.md).
+`turtle_loop/`, `configs/`, `prompts/`, `scripts/`, `tests/` contain maintained code;
+`data/` contains puzzles and Host references; `docs/` contains guides and analysis;
+`results/` contains curated trajectories and tables. New local runs go to ignored
+`runs/api/`. See the [layout guide](docs/REPOSITORY_LAYOUT.md).
 
-**November 10 Set 1 rerun:** [verified launcher and settings](docs/set1_v11_rerun.md). Run `bash scripts/start_set1_verified.sh` in the terminal with `DEEPSEEK_API_KEY`: freeze inputs, run 20 Host diagnostics, then start 12 fresh CL games only if every check passes. Host causal boundaries were repaired; persistent reference bodies are cached once per role session. No MAS or extra repeats in this launcher.
+The full pre-cleanup repository, visualizations, original request bodies and old
+checkpoints remain on
+[`archive/full-repository-20261114`](https://github.com/aurorajy1108/GoodTurtle/tree/archive/full-repository-20261114).
+No Git history or original outcome was rewritten. AI review is distinguished from
+human-confirmed annotations.
 
-**Current DeepSeek defaults:** `configs/loop.deepseek.json` uses `deepseek-v4-pro / high` for Host/Grader and `deepseek-flash / thinking disabled` for Player/default MAS partner. The optional isolated format repairer is configured separately; see the [campaign guide](docs/team_campaign_20261111.md) for machines without Codex. See [provider setup](docs/deepseek.md).
-
-GoodTurtle studies in-context experience transfer (continual learning, or CL) and two-agent collaboration using lateral thinking puzzles. It includes **50 English puzzles and 161 scoring checkpoints**, configurable host, player and grader roles, trajectories, and experiment summaries.
-
-**Current study: CL Set1–3 and MAS TS038/TS002/TS014, two people × two repeats per experiment.** Scripts start paid calls only when explicitly run. Host behavior and scoring annotations still need validation; passing unit tests does not establish model accuracy. GPT model settings remain available through the explicit Codex configuration; they are not the team launchers' DeepSeek defaults. Host answers use four labels: `yes`, `no`, `yes and no`, and `irrelevant`.
-
-New optional MAS strategy: [`free_dialogue`](docs/mas_free_dialogue.md) gives two independent persistent agents one shared public chat, adaptive speaking order, and explicit role ablations. Select `--strategies solo,free_dialogue`; the existing four-strategy study default is preserved.
-
-The [current five-set study](docs/study_20261102.md) defaults to a fixed target B per set and one frozen A trajectory per source puzzle within a batch. Every B repeat has a fresh 100-submission budget; the session condition independently forks A's original Player messages, while direct and answer_only start new conversations. Reverse positive directions require `--directions bidirectional` and are exploratory; `--source-policy per-repeat` explicitly restores regenerating A. The study launcher defaults to writing a plan only.
-
-New runs use **one host judgment per question**, local retrieval of up to 6 reference Q&As (6000 characters), and a separate grader context with up to 3 precedents (3000 characters). Full story facts and scoring rules remain intact; provenance stays on disk. **Each game has persistent, isolated role sessions** with lossless context updates: Codex resumes explicit thread IDs, Responses chains response IDs, and other providers maintain local multi-turn messages. Set `session_mode: replay` for the stateless control. Session continuity does not make history free or guarantee equal results. Configure these options in [runtime parameters](docs/runtime_parameters.md); existing frozen runs retain their original policy. General persistent interruptions fail closed. Complete saved DeepSeek solo replies with a supported metadata or narrowly repairable question-quote error can be recovered in an explicitly annotated copy; see [recovery limits](docs/deepseek.md#字符串text_note及一次性续跑).
-
-New runs automatically export per-call `token_costs.csv`, per-game `costs_by_game.csv`, and `cost_summary.json` totals by role/model. USD values are standard API-equivalent estimates, including failed calls with reported usage; unknown usage/prices stay unknown. Codex subscription charges are not inferred from API prices. See [cost accounting and price configuration](docs/study_20261102.md#token-与费用记录自动启用).
-
-## Where to start
-
-| Task | Entry point |
-| --- | --- |
-| Run the current three CL sets and three MAS puzzles | [Assigned slots, smoke/formal/parallel scripts and collection](docs/team_campaign_20261111.md) |
-| Upload a human host reference trajectory | [Upload inbox](data/host_reference/inbox/); [reference guide](data/host_reference/README.md) |
-| Find archived human conversations and corrections | [Reference sources](data/host_reference/sources/) |
-| Review findings | [Applied human review](data/host_reference/reviews/human_20261102/manifest.json); [Original annotations](data/host_reference/sources/human_review_20261102/); [Review history](data/host_reference/reviews/) |
-| Run the five CL sets and five team puzzles | [November 2 experiment list, settings and commands](docs/study_20261102.md) |
-| Inspect examples currently used by the host | [Active packs](data/host_packs/active/); [bindings](configs/host_bindings.json) |
-| Run experiments | [Coworker quickstart](docs/coworker_quickstart.md) |
-| Find commands and model parameters | [Runtime parameters](docs/runtime_parameters.md); [CL and two-agent experiments](docs/experiment_pipelines.md); [v7 control design](docs/host_repair_v7.md) |
-| Find outstanding work | [Review checklist](docs/todo_human_review_20261027.md) |
-| Find older versions and reports | [Archived documentation](docs/archive/README.md); [run directory guide](runs/README.md) |
-
-## Repository layout
-
-```text
-configs/                  Model profiles, puzzle bindings, transfer pairs, path migration map
-data/
-  annotations/turtle50_v5/ Current unified scoring; v2/v3/v4 are historical
-  host_reference/         Human references; uploads do not automatically change the host
-    inbox/                New uploads by TSxxx/source_id, or multi/ for multiple puzzles
-    sources/              Registered messages, IDs, segments and normalized Q&A
-    reviews/              Decisions, conflicts, revisions and evidence
-  host_packs/
-    active/               One runtime pack per puzzle
-    archive/              Historical versions and candidates
-    local/                Unpublished local research packs, ignored by Git
-prompts/                  Current host, player, grader and review prompts
-  archive/                Historical prompts
-turtle_loop/             Game, shared buffer, CL, grading and provider implementation
-scripts/                  Commands for running, importing, validating and reporting
-tests/                    Offline regression and integration tests
-runs/                     Experiment trajectories and frozen runtime snapshots
-outputs/                  Deliverable reports, including Excel workbooks
-docs/                     Current documentation and historical archive
-```
-
-## Upload a human trajectory
-
-Run from the repository root:
-
-```sh
-python3 scripts/host_reference.py init \
-  --puzzle TS032 --source-id 20261028_chat01 \
-  --file /path/to/conversation.md
-python3 scripts/host_reference.py validate
-```
-
-This creates `data/host_reference/inbox/TS032/20261028_chat01/` with the source trajectory and `source.json`. Omit `--file` to create a template; `--source-url` records a share link without fetching it. For a conversation covering multiple puzzles, pass `--puzzle TS032,TS034` to create a folder under `inbox/multi/`.
-
-Check the role mapping and source before committing. **Uploading or pushing a trajectory does not add it to the host prompt.** Explicitly selected examples are added to the active pack after review. See the [reference guide](data/host_reference/README.md) for the full process.
-
-## Run and validate
-
-After configuring a model account, start with an offline preflight:
-
-```sh
-python3 scripts/play.py run \
-  --dataset data/annotations/turtle50_v4/private.json \
-  --puzzle TS032 --config configs/loop.codex.json \
-  --dry-run --out runs/api/my_preflight
-python3 -m unittest discover -s tests -q
-```
-
-`--dataset` selects the private dataset, `--puzzle` selects the puzzle, and `--config` selects the model profile. `--dry-run` makes no model calls; `--out` must name a new directory. When experiments resume, remove `--dry-run` as described in the quickstart. OpenAI, Anthropic and DeepSeek configurations are also supported.
-
-Each game allows at most 100 submissions, reserving the last for a forced final. Wrong or incomplete finals consume a submission; successful finals are recorded separately. Outputs include `trajectory.html`, scores and call costs. Host private information must not be sent to the player. CL here transfers context, not model weights.
-
-## Compatibility and history
-
-The 2026-10-28 reorganization moved paths and updated bindings and navigation without changing the 50 puzzles, scoring, actual host contexts or historical runs. The previous README is preserved in the [historical snapshot](docs/archive/README_before_cleanup_20261028.md).
-
-Use `python3 scripts/host_reference.py locate OLD_PATH` to locate paths recorded in older reviews or Excel files; mappings are in [repository_layout.json](configs/repository_layout.json). Existing runs retain their frozen snapshots.
-
-Player 输出协议：新实验使用固定前缀，单 agent 与 MAS 的格式、兼容性和计数规则见 [player_action_protocol.md](docs/player_action_protocol.md)。Host/Grader 格式保持不变。
-
-CL now defaults to original-role session continuation: finish A, reveal its full answer, then continue B with a fresh 100-submission budget. Repeated B games fork the same frozen A prefix. See [protocol, controls and launch commands](docs/cl_raw_session.md).
+Detailed prior CLI notes remain in the [English](docs/running/cli_reference.md) /
+[Chinese](docs/running/cli_reference.zh-CN.md) references; dated sections describe
+their archived study, not a current progress counter.

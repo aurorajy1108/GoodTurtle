@@ -1,0 +1,37 @@
+{
+  "archive_commit": "c4ccc67eef8c09aa0c6987a464f468718f5015f4",
+  "games": 191,
+  "frozen_file_hashes_verified": true,
+  "active_data_and_host_payloads_changed": false,
+  "model_calls": 0,
+  "status": "offline validation passed",
+  "copied_frozen_files_verified": 3068,
+  "submissions": 18576,
+  "original_outcomes_unchanged": true,
+  "semantic_certification": false,
+  "tests": {
+    "command": "python -m unittest discover -s tests -q",
+    "passed": 353,
+    "real_api_calls": 0
+  },
+  "protected_payloads": {
+    "verified_unchanged_runtime_dataset_host_test_files": 430,
+    "changes": []
+  },
+  "link_validation": {
+    "current_guide_broken_links": 0,
+    "trajectory_broken_links": 0,
+    "scope": "Current root/docs/scripts/data guides and canonical HTML; immutable historical source documents excluded."
+  },
+  "before": {
+    "tracked_files": 12530,
+    "tracked_bytes": 933190590
+  },
+  "after": {
+    "working_tree_files_approximately": 4083,
+    "working_tree_bytes_approximately": 132556540
+  },
+  "literal_credential_scan_flagged_files": [],
+  "archive_branch": "archive/full-repository-20261114",
+  "note": "Layout and integrity checks preserve historical outcomes; they do not certify every Host reply or causal research finding. Eight solo HTML navigation links to nonexistent shared dialogues removed; original HTML and metadata source hashes retained."
+}

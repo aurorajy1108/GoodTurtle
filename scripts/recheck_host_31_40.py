@@ -232,7 +232,7 @@ def export(path,rows,pending,resolved):
 def main():
     ap=argparse.ArgumentParser(description=__doc__)
     ap.add_argument('--apply',action='store_true',help='Apply this one-time review to active Host packs; refuses if already applied')
-    ap.add_argument('--out',type=Path,default=ROOT/'outputs/20261031_host_human_check/人工复核疑点_指定22题.xlsx',help='New single-sheet workbook for the specified 22 puzzle IDs; never overwrites existing files')
+    ap.add_argument('--out',type=Path,default=ROOT/'data/host_reference/reviews/exports/20261031_host_human_check/人工复核疑点_指定22题.xlsx',help='New single-sheet workbook for the specified 22 puzzle IDs; never overwrites existing files')
     args=ap.parse_args();rows=issues();resolved,pending=decisions()
     target={r['case_id'] for r in rows if 'TS031'<=r['puzzle_id']<='TS040'}
     assert set(resolved).isdisjoint(pending)

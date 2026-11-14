@@ -1,16 +1,16 @@
 # Documentation
 
-English | [中文](README.zh-CN.md)
+|Topic|Location|
+|---|---|
+|Layout and old artifacts|[Repository layout](REPOSITORY_LAYOUT.md)|
+|Run experiments|[Quickstart](running/coworker_quickstart.md) · [All parameters](running/runtime_parameters.md)|
+|CL / MAS / compute budget|[Pipelines](running/experiment_pipelines.md) · [Team campaign](running/team_campaign_20261111.md) · [Self-review](running/compute_matched_agents.md)|
+|Human reference upload|[Host reference guide](../data/host_reference/README.md)|
+|Host audits|[`host/`](host/)|
+|Research findings|[All-version analysis](analysis/all_versions_20261114.md) · [Process evidence](analysis/project_story_20261114.md)|
+|Trajectory review|[Review report](analysis/trajectory_review_20261114.md) · [Issue list](../results/reviews/20261114/review_questions_only.csv)|
+|Historical designs|[`archive/`](archive/)|
 
-| Topic | Document |
-| --- | --- |
-| Getting started | [Coworker quickstart](coworker_quickstart.md) |
-| Upload human trajectories | [Host reference guide](../data/host_reference/README.md) |
-| Game and model parameters | [Runtime parameters](runtime_parameters.md) |
-| CL and two-agent CLI, outputs and parameters | [Experiment pipelines](experiment_pipelines.md) |
-| Current host boundaries and v7 experiment design | [Host repair v7](host_repair_v7.md) |
-| Next steps and human review | [Review checklist](todo_human_review_20261027.md) |
-| Historical Q&A merge | [History merge](history_qa_merge_20261026.md) |
-| Older designs and prototypes | [Archive](archive/README.md) |
-
-Current JSON review records are in `data/host_reference/reviews/`. Human uploads and model run outputs are kept separately.
+Results belong in [`results/`](../results/README.md); new human Q&A belongs in
+[`data/host_reference/inbox/`](../data/host_reference/inbox/README.md).
+Full visualizations/checkpoints remain on the archive branch in the layout guide.

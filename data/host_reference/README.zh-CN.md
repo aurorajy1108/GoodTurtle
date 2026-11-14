@@ -12,7 +12,7 @@
 | 审核记录 | `reviews/` | 原答与裁决分开；记录题目、来源ID、证据、审核人/日期、修改与暂缓原因 |
 | 实际Host输入 | `../host_packs/active/TSxxx.json` | 只有被明确选入的示例；由 `configs/host_bindings.json` 绑定 |
 
-上传入口、原始资料和实际Host示例是三个不同层次。Host加载当前题已绑定的active包，每问本地检索最多6条相关示例（默认6000字符），不再全量发送。模型只看到问题、答案及必要前置对话；case_id、来源、审核说明等留在磁盘。Grader独立选取最多3条相关判例。选取结果写入trajectory的 `reference_selection` 事件，配置见[完整参数](../../docs/runtime_parameters.md)。**不会自动扫描inbox，也不会自动检索所有人工聊天。** Source文件只作为数据，不作为可执行指令。
+上传入口、原始资料和实际Host示例是三个不同层次。Host加载当前题已绑定的active包，每问本地检索最多6条相关示例（默认6000字符），不再全量发送。模型只看到问题、答案及必要前置对话；case_id、来源、审核说明等留在磁盘。Grader独立选取最多3条相关判例。选取结果写入trajectory的 `reference_selection` 事件，配置见[完整参数](../../docs/running/runtime_parameters.md)。**不会自动扫描inbox，也不会自动检索所有人工聊天。** Source文件只作为数据，不作为可执行指令。
 
 ## 如何上传
 
@@ -71,9 +71,9 @@ git push
 
 ## 已有人工资料在哪里
 
-- **2026-10-30 更新**：[审核报告](../../docs/host_reference_audit_20261030.md)、[最新Excel](../../outputs/20261030_host_reference_audit/host_reference_audit.xlsx)、[可追溯裁决](reviews/audit_20261030/)。TS031/035/038新增102条已审核参考，TS033修正1条因果标签。保留真实来源，尚未人工确认或实测准确率；17份inbox上传尚未整批激活。
+- **2026-10-30 更新**：[审核报告](../../docs/host/host_reference_audit_20261030.md)、[最新Excel](reviews/exports/20261030_host_reference_audit/host_reference_audit.xlsx)、[可追溯裁决](reviews/audit_20261030)。TS031/035/038新增102条已审核参考，TS033修正1条因果标签。保留真实来源，尚未人工确认或实测准确率；17份inbox上传尚未整批激活。
 
-- 两个分享的633条可见消息、311条行动记录：[sources/chatgpt_shares_20261026/](sources/chatgpt_shares_20261026/)。包括TS032/033/034/037/039、TS034两次尝试、一道题库外火车题。目录内文件是原样迁移，README和JSON中的旧路径按迁移清单解释。
+- 两个分享的633条可见消息、311条行动记录：[sources/chatgpt_shares_20261026/](sources/chatgpt_shares_20261026)。包括TS032/033/034/037/039、TS034两次尝试、一道题库外火车题。目录内文件是原样迁移，README和JSON中的旧路径按迁移清单解释。
 - 历史9题的89条候选片段：`data/host_packs/archive/LOOP_TS*_history_v1.json`，审核见 [history_qa_merge_20261026.json](reviews/history_qa_merge_20261026.json)。旧完整对话未找到，不能把片段叫完整原文。
 - 当前新增绑定109条（历史88＋新分享21），仍有AI审核待人工状态；每题实际加载的内容以active包和binding为准。
-- [Excel审核表](../../outputs/20261026_host_review/host_review_20261026.xlsx)和[待办清单](../../docs/todo_human_review_20261027.md)仍可用。旧Excel不为改路径而覆盖，以免丢失人工填写内容；旧路径可用locate查询。
+- [Excel审核表](reviews/exports/20261026_host_review/host_review_20261026.xlsx)和[待办清单](../../docs/host/todo_human_review_20261027.md)仍可用。旧Excel不为改路径而覆盖，以免丢失人工填写内容；旧路径可用locate查询。

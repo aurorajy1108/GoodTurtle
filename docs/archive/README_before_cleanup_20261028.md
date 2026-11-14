@@ -1,15 +1,15 @@
 # GoodTurtle — COMP1110
 
-2026-10-27：[后续 TODO、人工审核入口与实验恢复前检查](docs/todo_human_review_20261027.md)。按 Host 标签、评分规则、旧 trajectory、CL / 双 agent 对照设计列出优先级、具体题号/轮次及验收条件；本轮仅整理，实验继续暂停。
+2026-10-27：[后续 TODO、人工审核入口与实验恢复前检查](docs/host/todo_human_review_20261027.md)。按 Host 标签、评分规则、旧 trajectory、CL / 双 agent 对照设计列出优先级、具体题号/轮次及验收条件；本轮仅整理，实验继续暂停。
 
 2026-10-26 追加：两个公开分享已整理为 633 条可见消息、7 段游戏、311 条行动记录；21 条经 AI 核对的原问答已绑定 TS032/033/034/037/039。疑点、历史审核与完整问答见 [Excel 审核表](outputs/20261026_host_review/host_review_20261026.xlsx)；[来源、纠正记录、绑定范围及重建方式](data/human_trajectories/chatgpt_shares_20261026/README.md)。标签仍待人工确认，实验继续暂停。
 
-2026-10-26：9 道题的历史人工问答已审核合并并绑定；89 条中纳入 88 条（含 14 条改写），1 条暂缓。保留原始来源及逐条修改记录。[绑定范围与人工审核项](docs/history_qa_merge_20261026.md)。实验继续暂停。
+2026-10-26：9 道题的历史人工问答已审核合并并绑定；89 条中纳入 88 条（含 14 条改写），1 条暂缓。保留原始来源及逐条修改记录。[绑定范围与人工审核项](docs/host/history_qa_merge_20261026.md)。实验继续暂停。
 
-2026-10-24 v7：当前本地实验已暂停。新增来源事实约束与 TS015/016/023/036 专属边界，CL 增加 `answer_only` / `unrelated` 对照，双 agent 默认包含三调用的 `solo_reflect` 对照。**本轮只完成离线验证，不宣称 Host 准确率已经提高。** [本轮修复、全部新增参数和复跑前检查](docs/host_repair_v7.md)。
+2026-10-24 v7：当前本地实验已暂停。新增来源事实约束与 TS015/016/023/036 专属边界，CL 增加 `answer_only` / `unrelated` 对照，双 agent 默认包含三调用的 `solo_reflect` 对照。**本轮只完成离线验证，不宣称 Host 准确率已经提高。** [本轮修复、全部新增参数和复跑前检查](docs/host/host_repair_v7.md)。
 
 
-**同事运行入口：[从 clone 到实验的完整指南](docs/coworker_quickstart.md)**。Git 已包含完整 50 题、partial score 标注和所需 host packs；无需另取数据包，配置自己的模型账号即可运行。指南覆盖模型配置、所有 sweep 参数、CL、报告和后台运行。
+**同事运行入口：[从 clone 到实验的完整指南](docs/running/coworker_quickstart.md)**。Git 已包含完整 50 题、partial score 标注和所需 host packs；无需另取数据包，配置自己的模型账号即可运行。指南覆盖模型配置、所有 sweep 参数、CL、报告和后台运行。
 
 
 2026-10-23 追加：已加入多题重复双 agent 实验入口，冻结 host／rubric／代码快照，按题统计均值与方差，并提供三调用的单 agent 对照及独立提案合并策略。
@@ -21,7 +21,7 @@ python3 scripts/team_sweep.py --dataset data/annotations/turtle50_v4/private.jso
   --workers 3 --out runs/api/my_team_sweep
 ```
 
-共 36 局；加 `--dry-run` 零模型调用预检。打开输出目录的 `trajectories.html` 看全部轨迹，`results_zh.md` 看分题结果；每 20 秒更新一次，刷新文件即可看到新记录。[全部参数、策略差异及异常处理](docs/experiment_pipelines.md#多题重复实验冻结快照并发与完整轨迹)。完整题库与最终标注已入库；标注仍为 AI 审核待人工确认。
+共 36 局；加 `--dry-run` 零模型调用预检。打开输出目录的 `trajectories.html` 看全部轨迹，`results_zh.md` 看分题结果；每 20 秒更新一次，刷新文件即可看到新记录。[全部参数、策略差异及异常处理](docs/running/experiment_pipelines.md#多题重复实验冻结快照并发与完整轨迹)。完整题库与最终标注已入库；标注仍为 AI 审核待人工确认。
 
 研究海龟汤中的经验迁移与双 agent 合作。当前提供 **50 道英文题目**、评分标注和可配置的 host／player 实验框架。
 
@@ -43,7 +43,7 @@ python3 scripts/render_trajectories.py runs/api/20261023_three_review_rerun
 
 ## 新增：跨题经验迁移与双 agent（2026-10-22）
 
-入口 `python3 scripts/experiment.py`；完整实验设计、全部 CLI 参数与结果解读见 [实验 pipeline 指南](docs/experiment_pipelines.md)。
+入口 `python3 scripts/experiment.py`；完整实验设计、全部 CLI 参数与结果解读见 [实验 pipeline 指南](docs/running/experiment_pipelines.md)。
 
 若使用当前已登录的 Codex 账号，将 `--config` 改为 `configs/loop.codex.json`，无需 API key；从下一批新实验起，host 与复用其配置的 grader 使用 `gpt-6.1-sol`，player 使用 `gpt-6-luna`，均为 reasoning `high`。已启动批次保留各自冻结配置。该 backend 的独立参数与隔离方式见实验指南。
 
@@ -306,7 +306,7 @@ python3 scripts/play.py run --help
 python3 -m unittest discover -s tests -v
 ```
 
-目前完成离线模拟、模拟 HTTP 接口及计数/评分/日志测试；**尚未使用真实账号完成三家 API 的付费端到端验证**。模型和配置不会因出错自动替换。进一步的数据说明与历史实现区别见 [API loop 指南](docs/api_loop.md)。
+目前完成离线模拟、模拟 HTTP 接口及计数/评分/日志测试；**尚未使用真实账号完成三家 API 的付费端到端验证**。模型和配置不会因出错自动替换。进一步的数据说明与历史实现区别见 [API loop 指南](docs/running/api_loop.md)。
 
 ## 历史原型交付与状态
 
@@ -344,9 +344,9 @@ python3 -m unittest discover -s tests -v
 
 ## 非英语来源筛选（2026-10-09）
 
-新增 [6 道日语来源候选及英文转述](docs/nonenglish_candidates.md)，与原有 20 道 AI 草稿分开保存。[本批计数及筛选结果](runs/2026-10-09_nonenglish_screening/summary.md)持续更新。每题实跑一次，只有完整解出前超过 30 问、且 host 无重大错误的题才暂定保留；未完成和 host 污染的局不冒充难题。
+新增 [6 道日语来源候选及英文转述](docs/archive/guides/nonenglish_candidates.md)，与原有 20 道 AI 草稿分开保存。[本批计数及筛选结果](runs/2026-10-09_nonenglish_screening/summary.md)持续更新。每题实跑一次，只有完整解出前超过 30 问、且 host 无重大错误的题才暂定保留；未完成和 host 污染的局不冒充难题。
 
-另录入用户提供的中文来源题 [CN001：条件](docs/nonenglish_candidates.md#cn001--条件用户新增未试跑)，包含 [60 条专属 host 示例](data/host_packs/CN001.json)。原 sample 中的自杀、主动遗体捐献及女生亲自解剖均未获汤底支持，已按未知事实标注。此题仅在本地研究题库中，尚未试跑，也未加入发布 allowlist。可用 `python3 scripts/prepare.py host CN001 --local` 生成该题 host 消息。
+另录入用户提供的中文来源题 [CN001：条件](docs/archive/guides/nonenglish_candidates.md#cn001--条件用户新增未试跑)，包含 [60 条专属 host 示例](data/host_packs/CN001.json)。原 sample 中的自杀、主动遗体捐献及女生亲自解剖均未获汤底支持，已按未知事实标注。此题仅在本地研究题库中，尚未试跑，也未加入发布 allowlist。可用 `python3 scripts/prepare.py host CN001 --local` 生成该题 host 消息。
 
 [Host v0.5.1](docs/host_v05.md)统一增加身份/容器、因果关系、时点、信念/事实、上位概念、保证/可能、否定一致性等规则；本批每题配 41–57 条专属示例。先做实际模型校准，再冻结资料运行；这些标签与轨迹仍需人工审核。
 

@@ -50,18 +50,17 @@ venv/
 !/data/public/puzzles.jsonl
 !/data/public/loop_eraser_pillow.json
 
-# Frozen experiment outputs are separate from human reference data; publish deliberately.
-/runs/api/*
-# Published Set1 CL complete batches (for team analysis).
-!/runs/api/README.set1-cl-experiments.md
-!/runs/api/20261113_deepseek_set1_v11_rerun04/
-!/runs/api/20261113_deepseek_set1_v11_rerun04/**
-!/runs/api/20261111_set1_fmt_continue/
-!/runs/api/20261111_set1_fmt_continue/continuation_12/
-!/runs/api/20261111_set1_fmt_continue/continuation_12/**
-/outputs/20261026_host_review/previews/
-/outputs/20261030_host_reference_audit/previews/
-/outputs/20261031_host_human_check/previews/
+# Local execution and generated visualization stay out of main. Publish curated trajectories.
+/runs/*
+!/runs/README.md
+/reports/
+/outputs/
+/results/**/index.html
+/results/**/trajectories.html
+/results/**/round_report.html
+/results/**/round_comparison.html
+/results/**/figures/
+/results/**/previews/
 
 # Versioned unified score/completion annotations.
 !/data/annotations/turtle50_v5/

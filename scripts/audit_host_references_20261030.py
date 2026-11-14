@@ -206,7 +206,7 @@ def apply_decisions(rows):
 
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument('--out', type=Path, default=ROOT/'outputs/20261030_host_reference_audit/host_reference_audit.xlsx', help='New workbook path; existing file is not overwritten')
+    ap.add_argument('--out', type=Path, default=ROOT/'data/host_reference/reviews/exports/20261030_host_reference_audit/host_reference_audit.xlsx', help='New workbook path; existing file is not overwritten')
     ap.add_argument('--preview', action='store_true', help='Render representative workbook cells using Pillow')
     args = ap.parse_args()
     if args.out.exists(): raise SystemExit('Refusing to overwrite an existing review workbook; choose --out')

@@ -6,4 +6,4 @@
 
 2026-10-28 active包从当时绑定的50个包原样复制，所有旧包归档。整理没有新增、删改Host事实或示例。更新active前需要明确审核，保留来源与版本；不要将聊天全文直接贴进包。
 
-原始人工trajectory请上传到 [host_reference/inbox](../host_reference/inbox/)，流程见 [reference指南](../host_reference/README.md)。历史audit中的旧路径可用 `python3 scripts/host_reference.py locate OLD_PATH` 查找，不需要复制出另一套旧目录。
+原始人工trajectory请上传到 [host_reference/inbox](../host_reference/inbox)，流程见 [reference指南](../host_reference/README.md)。历史audit中的旧路径可用 `python3 scripts/host_reference.py locate OLD_PATH` 查找，不需要复制出另一套旧目录。
