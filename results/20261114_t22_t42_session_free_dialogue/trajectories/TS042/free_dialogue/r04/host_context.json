@@ -1,0 +1,29 @@
+{
+  "puzzle_id": "TS042",
+  "opening": "A lady went to a shoe store and bought a pair of red high heels. These high heels foretold her death tonight.",
+  "reference_answer": "The lady was an acrobat in a circus troupe. Her job was to balance an apple on her head while another male performer threw knives at it. But because of her high heels, she was a few centimeters taller than usual. The male performer, who hadn't adjusted, missed and threw the knife into her head.",
+  "canonical_solution": "The lady was an acrobat in a circus troupe. Her job was to balance an apple on her head while another male performer threw knives at it. But because of her high heels, she was a few centimeters taller than usual. The male performer, who hadn't adjusted, missed and threw the knife into her head.",
+  "canonical_facts": [
+    "The woman is a circus performer with an apple on her head during a knife-throwing act.",
+    "The woman is a circus performer who balances an apple on her head for a knife-throwing act",
+    "Her new high heels increase her effective height by a few centimeters.",
+    "High heels raise her head above its usual height",
+    "The knife thrower fails to adjust aim and fatally strikes her head.",
+    "Her male partner does not adjust his throw and hits her head, killing her"
+  ],
+  "explicit_negatives": [],
+  "unknown_details": [],
+  "irrelevant_details": [],
+  "completion_requirements": [],
+  "host_examples": [],
+  "review_status": "pending_human_review",
+  "binding_version": null,
+  "story_sha256": "3c0bb378612e18076715d420f3be928c9b572bb03dca015089c89ab2ceb2ea93",
+  "grading_sha256": "0853ee7b486de164ada66559ab23d6265837700f6fef2f7467ac17313d677abe",
+  "context_schema": "story-context-v2",
+  "event_order": [],
+  "knowledge_states": [],
+  "label_boundaries": [],
+  "verification_policy": "single",
+  "context_sha256": "380ec9d1fc6873f07fd3d44c33ff90eeb7e4073d5457bc60dbcc8bccf9849cf9"
+}

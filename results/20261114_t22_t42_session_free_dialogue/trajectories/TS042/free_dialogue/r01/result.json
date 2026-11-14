@@ -1,0 +1,340 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "predecessor_puzzle": null,
+  "condition": "free_dialogue",
+  "repeat": 1,
+  "success": false,
+  "host_questions": 99,
+  "final_attempts": 1,
+  "rejected_finals": 1,
+  "counted_questions": 100,
+  "submissions": 100,
+  "player_format_corrections": [],
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.35,
+  "best_partial_score": 0.35,
+  "latest_final": "| A human lady buys a pair of red high heels and is still alive at the purchase; that night she dies in an accident tied to wearing them. The \"higher/taller\" angle was a red herring — what mattered was simply that she was wearing ordinary high-heeled shoes (a mundane physical property, no gadget, poison, trap, or supernatural curse), and \"foretold her death\" is figurative: the shoes were just what she had on the night she died.\n\nShe works in the entertainment/performance world at a show playing to an audience, and she belongs to the knife-throwing act itself — but not as the assistant strapped to or standing by the target board, not as an MC, singer, or other act's performer, and not as a seated spectator (connected to the show but not a mere audience member). A misdirected throw — a knife (a bladed throwing weapon) aimed at the intended target — missed and struck her head, and this fatal head trauma killed her. The thrower acted negligently as a worker/performer, not with intent to kill her; the death is a tragic stage accident, not murder. The high heels were incidental to the situation (her position/costume on the night), which is why nearly every \"shoe physics\" mechanism (falls, drowning, car pedals, fire, lightning, stiletto stabbing, etc.) was rejected.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0.5,
+        "evidence": "She works in the entertainment/performance world at a show playing to an audience, and she belongs to the knife-throwing act itself",
+        "reason": "Covers the performance/knife-throwing-act aspect, but omits the required circus identity and apple-on-head qualifier."
+      },
+      {
+        "id": "C2",
+        "credit": 0,
+        "evidence": "The \"higher/taller\" angle was a red herring — what mattered was simply that she was wearing ordinary high-heeled shoes ... The high heels were incidental to the situation",
+        "reason": "Directly contradicts the required fact that the high heels increased her effective height and caused the fatal misaim."
+      },
+      {
+        "id": "C3",
+        "credit": 0.5,
+        "evidence": "A misdirected throw — a knife (a bladed throwing weapon) aimed at the intended target — missed and struck her head, and this fatal head trauma killed her.",
+        "reason": "Covers the fatal knife-to-head outcome, but omits the required 'fails to adjust aim' causal qualifier and the male partner."
+      }
+    ],
+    "material_contradiction": true,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "partial",
+        "evidence": "She works in the entertainment/performance world at a show playing to an audience, and she belongs to the knife-throwing act itself"
+      },
+      {
+        "id": "C1.F2",
+        "status": "partial",
+        "evidence": "She works in the entertainment/performance world at a show playing to an audience, and she belongs to the knife-throwing act itself"
+      },
+      {
+        "id": "C2.F1",
+        "status": "contradicted",
+        "evidence": "The \"higher/taller\" angle was a red herring — what mattered was simply that she was wearing ordinary high-heeled shoes ... The high heels were incidental to the situation"
+      },
+      {
+        "id": "C2.F2",
+        "status": "contradicted",
+        "evidence": "The \"higher/taller\" angle was a red herring — what mattered was simply that she was wearing ordinary high-heeled shoes ... The high heels were incidental to the situation"
+      },
+      {
+        "id": "C3.F1",
+        "status": "partial",
+        "evidence": "A misdirected throw — a knife (a bladed throwing weapon) aimed at the intended target — missed and struck her head, and this fatal head trauma killed her."
+      },
+      {
+        "id": "C3.F2",
+        "status": "partial",
+        "evidence": "A misdirected throw — a knife (a bladed throwing weapon) aimed at the intended target — missed and struck her head, and this fatal head trauma killed her."
+      }
+    ],
+    "requirement_coverage": [],
+    "contradictions": [
+      {
+        "quote": "The \"higher/taller\" angle was a red herring — what mattered was simply that she was wearing ordinary high-heeled shoes ... The high heels were incidental to the situation",
+        "reference": "Her new high heels increase her effective height by a few centimeters.",
+        "checkpoint_ids": [
+          "C2"
+        ]
+      }
+    ],
+    "partial_score": 0.35,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v3-unified",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 1077.2790648339999,
+  "usage": {
+    "grader": {
+      "http_attempts": 1,
+      "successful_responses": 1,
+      "seconds": 48.51287179199994,
+      "provider_reported_usage": {
+        "prompt_tokens": 4111,
+        "completion_tokens": 4993,
+        "total_tokens": 9104,
+        "prompt_cache_hit_tokens": 3456,
+        "prompt_cache_miss_tokens": 655
+      }
+    },
+    "host": {
+      "http_attempts": 99,
+      "successful_responses": 99,
+      "seconds": 753.529259587,
+      "provider_reported_usage": {
+        "prompt_tokens": 1001882,
+        "completion_tokens": 56830,
+        "total_tokens": 1058712,
+        "prompt_cache_hit_tokens": 981248,
+        "prompt_cache_miss_tokens": 20634
+      }
+    },
+    "partner": {
+      "http_attempts": 61,
+      "successful_responses": 61,
+      "seconds": 119.0295575419999,
+      "provider_reported_usage": {
+        "prompt_tokens": 994189,
+        "completion_tokens": 3725,
+        "total_tokens": 997914,
+        "prompt_cache_hit_tokens": 962816,
+        "prompt_cache_miss_tokens": 31373
+      }
+    },
+    "player": {
+      "http_attempts": 63,
+      "successful_responses": 62,
+      "seconds": 153.42772374799983,
+      "provider_reported_usage": {
+        "prompt_tokens": 1141518,
+        "completion_tokens": 8221,
+        "total_tokens": 1149739,
+        "prompt_cache_hit_tokens": 1108480,
+        "prompt_cache_miss_tokens": 33038
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "estimate_assumptions": [
+      "peak_rate_reference_upper_estimate; off-peak rates are half; actual billing unknown"
+    ],
+    "total": {
+      "calls": 224,
+      "unknown_cost_calls": 1,
+      "known_estimated_cost_usd": 0.362333812,
+      "estimated_cost_usd": null,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 3141700,
+        "cached_input_tokens": 3056000,
+        "cache_write_tokens": 0,
+        "output_tokens": 73769,
+        "reasoning_tokens": 60792,
+        "total_tokens": 3215469
+      },
+      "missing_token_calls": {
+        "input_tokens": 1,
+        "cached_input_tokens": 1,
+        "cache_write_tokens": 0,
+        "output_tokens": 1,
+        "reasoning_tokens": 124,
+        "total_tokens": 1
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 1,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.020788944,
+        "estimated_cost_usd": 0.020788944,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 4111,
+          "cached_input_tokens": 3456,
+          "cache_write_tokens": 0,
+          "output_tokens": 4993,
+          "reasoning_tokens": 4174,
+          "total_tokens": 9104
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 99,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.295458592,
+        "estimated_cost_usd": 0.295458592,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1001882,
+          "cached_input_tokens": 981248,
+          "cache_write_tokens": 0,
+          "output_tokens": 56830,
+          "reasoning_tokens": 56618,
+          "total_tokens": 1058712
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "partner",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 61,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.019658796,
+        "estimated_cost_usd": 0.019658796,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 994189,
+          "cached_input_tokens": 962816,
+          "cache_write_tokens": 0,
+          "output_tokens": 3725,
+          "reasoning_tokens": 0,
+          "total_tokens": 997914
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 61,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 63,
+        "unknown_cost_calls": 1,
+        "known_estimated_cost_usd": 0.02642748,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1141518,
+          "cached_input_tokens": 1108480,
+          "cache_write_tokens": 0,
+          "output_tokens": 8221,
+          "reasoning_tokens": 0,
+          "total_tokens": 1149739
+        },
+        "missing_token_calls": {
+          "input_tokens": 1,
+          "cached_input_tokens": 1,
+          "cache_write_tokens": 0,
+          "output_tokens": 1,
+          "reasoning_tokens": 63,
+          "total_tokens": 1
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "07c691d5-b19d-4434-a909-8563db2bfe0c",
+      "26b92f02-3c57-4f45-ba83-98ddaedfb3ef",
+      "5388621d-d1fd-487d-954e-bc91c5f749fd",
+      "88eb4ad9-60e3-4d01-95be-cb0f1dd606e5"
+    ],
+    "logical_input_chars": 6094998,
+    "delta_input_chars": 262800,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "3c0bb378612e18076715d420f3be928c9b572bb03dca015089c89ab2ceb2ea93",
+    "grading_sha256": "0853ee7b486de164ada66559ab23d6265837700f6fef2f7467ac17313d677abe",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v3-unified",
+    "prompts_sha256": "c95150ba24dd57486633f8b8acdc715e4861fd9e112077b7598de481dead1678",
+    "controller_sha256": "c750c12c1b961778115949b8f5d2b9cd6d848c5a20a7510158a73a34731e8d73",
+    "player_format_policy_sha256": "cf439ee1d60ae38374486aada319739646a5975284ff00bc877a3040047df56a",
+    "host_context_sha256": "380ec9d1fc6873f07fd3d44c33ff90eeb7e4073d5457bc60dbcc8bccf9849cf9",
+    "host_binding_version": null,
+    "original_controller_sha256": "a47d4ae46e78f39dbd6900233ccfd9367e0b0d911ac9345dc3b9b4e704451a13"
+  },
+  "dialogue_metrics": {
+    "settings": {
+      "roles": "complementary",
+      "scheduling": "adaptive",
+      "max_discussion": 4,
+      "start": "A",
+      "role_assignment": {
+        "A": {
+          "specialty": "investigator",
+          "instruction": "Develop and test explanations of identities, setting, event order and the main causal mechanism. Connect confirmed facts into a coherent story; explicitly distinguish hypotheses from host-confirmed facts."
+        },
+        "B": {
+          "specialty": "critic",
+          "instruction": "Challenge unsupported assumptions, propose alternative interpretations, and test missing causal links, motives and contradictions. Suggest discriminating questions rather than only criticizing. Help complete the story."
+        }
+      },
+      "protocol": "shared-dialogue-v3-prefix-v1",
+      "format_correction_max_retries": 2
+    },
+    "counts_by_actor": {
+      "A": {
+        "question": 42,
+        "discuss": 15,
+        "final": 1
+      },
+      "B": {
+        "question": 57,
+        "discuss": 4
+      }
+    },
+    "external_submissions": 100,
+    "internal_messages": 19
+  }
+}

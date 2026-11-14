@@ -1,0 +1,1463 @@
+# Turtle Soup trajectory
+
+A lady went to a shoe store and bought a pair of red high heels. These high heels foretold her death tonight.
+
+Status: completed | counted questions: 100 | submissions: 100 | final partial score: 0.75
+
+[Token usage and estimated costs](token_costs.csv)
+
+## 1 · question
+
+Is the lady still alive when she leaves the shoe store?
+
+Host: yes
+
+## 2 · question
+
+Is the red color of the high heels causally important to the death — e.g., it signals poison/danger, or the shoes came from a specific source tied to her fate?
+
+Host: no
+
+## 3 · question
+
+Is the "foretelling" based on an actual physical or biological causal chain (e.g., the shoes are poisoned or otherwise lethal), rather than some prophetic/supernatural means?
+
+Host: yes
+
+## 4 · question
+
+Is the lethal mechanism something on or in the shoes themselves (e.g., poison applied to the shoes), as opposed to something the shoes merely cause indirectly through how they are worn or obtained?
+
+Host: no
+
+## 5 · question
+
+Is the lady a human being?
+
+Host: yes
+
+## 6 · question
+
+Is the death caused indirectly through how the shoes affect her movement, balance, or behavior (e.g., she falls, can't run, is slowed, or is led somewhere)?
+
+Host: no
+
+## 7 · question
+
+Is the lady's death caused by another person (i.e., she is killed or murdered), as opposed to dying from an accident or natural/medical cause?
+
+Host: yes
+
+## 8 · question
+
+Did the killer choose or use the shoes (or the act of buying them) as part of the method of the killing?
+
+Host: no
+
+## 9 · question
+
+Is the store itself — its location, owner, staff, or the specific shop — connected to the killer or to the reason she was killed?
+
+Host: no
+
+## 10 · question
+
+Since the killer did not use the shoes as the weapon, and the store is unrelated — is the significance of the shoes that wearing/buying them signalled something to the killer, for example that she was planning to go somewhere (a date, a party, a meeting) where she could be targeted?
+
+Host: no
+
+## 11 · question
+
+Is the red high heels significant because of what they are made of, or what material/part of an animal they come from?
+
+Host: no
+
+## 12 · question
+
+Is the causal link between the shoes and her death something in her own mind or beliefs — e.g., she believed the shoes were cursed/poisoned and this belief led to her death?
+
+<continuation_notice>This is an automated reminder. Your context remains intact. Continue from where you left off.</continuation_notice>
+
+Host: no
+
+## 13 · question
+
+Was buying the shoes itself the trigger event — i.e., the act of purchase is what set the killer's plan in motion or caused her to be where she died?
+
+Host: no
+
+## 14 · question
+
+Does the lady die tonight by being struck, stabbed, or otherwise having her body directly attacked with a weapon or force by the killer?
+
+Host: yes
+
+## 15 · question
+
+Does the phrase "foretold her death" refer to the shoes being found on or near her body after she was killed — i.e., they serve as evidence/identification of her death rather than predicting it beforehand?
+
+Host: no
+
+## 16 · question
+
+Did the high heels previously belong to someone else — i.e., were they secondhand or otherwise connected to a person tied to her death?
+
+Host: irrelevant
+
+## 17 · question
+
+Did the lady die by being stabbed with one of the high heels themselves (the shoe or its heel used as the weapon)?
+
+Host: no
+
+## 18 · question
+
+Is the lady's job or occupation relevant to why she was killed — i.e., was she targeted because of her work or role?
+
+Host: no
+
+## 19 · question
+
+Is the word "heels" being used as a pun on something other than footwear — for example, a dog?
+
+Host: no
+
+## 20 · question
+
+Was the lady unaware that she was in danger — i.e., she did not know a killer was targeting her when she bought the shoes?
+
+Host: no
+
+## 21 · question
+
+Does the phrase "foretold her death" hinge on the shoes being a particular type that only makes sense in a specific real-world context — e.g., red heels as a marker of a specific role, status, or group (like a uniform, a profession's dress code, or a symbolic garment)?
+
+<continuation_notice>This is an automated reminder. Your context remains intact. Continue from where you left off.</continuation_notice>
+
+Host: no
+
+## 22 · question
+
+Did she buy the high heels in order to wear them out tonight — i.e., she was preparing to attend an event, date, or night out where the attack occurred?
+
+Host: yes
+
+## 23 · question
+
+Was the event she was dressing for tonight connected to her own death in an intentional way — e.g., she was going to meet the person who intended to kill her?
+
+Host: no
+
+## 24 · question
+
+Was the event she was dressing for tonight something she had to attend as a matter of obligation — such as a funeral, wedding, or formal ceremony?
+
+Host: yes
+
+## 25 · question
+
+Was the event a wedding?
+
+Host: no
+
+## 26 · question
+
+Was the event a funeral — specifically, her own funeral, or a funeral connected to her death?
+
+Host: no
+
+## 27 · question
+
+Was the event a public gathering with many people present (such as a ball, party, or performance), rather than a private or solitary occasion?
+
+Host: yes
+
+## 28 · question
+
+Is the event a ball or dance — i.e., an occasion where people dance and dress formally?
+
+Host: no
+
+## 29 · question
+
+Was the lady a performer or participant on stage at the event — i.e., someone who would be the center of attention / on display in front of the crowd?
+
+Host: yes
+
+## 30 · question
+
+Was the lady the bride at a wedding celebration, or another central ceremonial figure, at this public event where she would be on display?
+
+Host: no
+
+## 31 · question
+
+Is the lady a stage performer — e.g., a dancer, singer, magician's assistant, or similar — who was appearing at the event that night?
+
+Host: yes
+
+## 32 · question
+
+Was the lady a magician's assistant — that is, a performer who participates in an illusion where the audience is meant to believe she is being stabbed, pierced, or otherwise seemingly killed, but this time the trick was real and she actually died?
+
+Host: no
+
+## 33 · question
+
+Did the shoes reveal her death because they were part of her costume — i.e., the red high heels are worn as stage attire, and the "foretelling" is that she is dressed to perform, where a killer strikes?
+
+Host: no
+
+## 34 · question
+
+Was the lady a dancer — for example, a performer whose act involves her feet or legs, such that the shoes themselves are central to her performance?
+
+Host: no
+
+## 35 · question
+
+Was she killed during her performance, in front of the audience?
+
+Host: yes
+
+## 36 · question
+
+Was the audience meant to believe her death was part of the act — i.e., the killing was disguised as a staged stunt so the crowd didn't realize it was real until too late?
+
+Host: no
+
+## 37 · question
+
+Was the deadly act one where a knife or blade is thrown or thrust toward her as the target — i.e., a knife-throwing/blade-target type of act?
+
+Host: yes
+
+## 38 · question
+
+Was the person who threw the knife the killer — i.e., the person performing the knife-throwing was deliberately (or culpably) responsible for her death, rather than a genuine accident by a partner who intended no harm?
+
+Host: no
+
+## 39 · question
+
+Was she the one throwing the knives (the knife-thrower), and she was killed by someone in the audience or otherwise mid-act — not by a partner's thrown blade?
+
+Host: no
+
+## 40 · question
+
+Was the knife that killed her thrown by someone other than the person whose act it was — i.e., the killer was the one throwing, but not the intended partner/performer?
+
+Host: no
+
+## 41 · question
+
+Was her death caused by the knife-thrower's blade hitting her because something interfered with the act — e.g., she was pushed, startled, moved out of position, or the mechanism malfunctioned — resulting in her being impaled or stabbed?
+
+<continuation_notice>This is an automated reminder. Your context remains intact. Continue from where you left off.</continuation_notice>
+
+Host: yes
+
+## 42 · question
+
+Was she killed because she was struck by a knife that was *not* supposed to hit her — i.e., she was the target-position assistant and a blade that was meant to miss her (or hit a board) actually hit her body?
+
+<continuation_notice>This is an automated reminder. Your context remains intact. Continue from where you left off.</continuation_notice>
+
+Host: yes
+
+## 43 · question
+
+Did the high heels themselves affect her footing or body position during the act — e.g., a heel caught, slipped, wobbled, or broke — causing her to shift into the path of the blade?
+
+Host: yes
+
+## 44 · question
+
+Did the high heels cause her to lose balance or stumble because they were unfamiliar, improper for the stunt, or a size/fit problem — as opposed to breaking or catching on something?
+
+Host: no
+
+## 45 · question
+
+Did one of the heels physically break or catch on something on the stage (a crack, a groove, a cable) — causing her to lurch or change position so the blade struck her?
+
+Host: no
+
+## 46 · question
+
+Did the high heels make her physically taller or raise her stance (a higher stand) compared to what the act was calibrated for, so that a blade calculated to pass over/under her missed its intended line and struck her body?
+
+Host: yes
+
+## 47 · question
+
+Was the blade meant to pass over her (or under her) by a margin calibrated to her exact height/position, so that the added height from the new high heels brought her into the blade's true path?
+
+Host: yes
+
+## 48 · final
+
+The lady was a stage performer/assistant — the human target in a knife-throwing act, part of a public show before an audience that night. She had bought a new pair of red high heels that day to wear for her obligatory appearance; the purchase was ordinary shopping, the red color and the store irrelevant. The act's safety depended on a blade being thrown to miss her by a hair — its flight line calibrated to her exact height and stance. The unfamiliar new high heels raised her stance slightly, so that the blade that was supposed to whiz past her instead struck her body, stabbing her. The thrower had no intent to kill and the audience at first didn't realize it wasn't part of the act. So her death was caused by a human hand (the thrown blade) but by miscalculation rather than deliberate murder. The high heels "foretold" her death because the extra height they gave her put her into the blade's path.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "The lady was a stage performer/assistant — the human target in a knife-throwing act",
+      "reason": "Identifies her as a knife-throwing target but omits the circus identity and the apple balanced on her head."
+    },
+    {
+      "id": "C2",
+      "credit": 1,
+      "evidence": "unfamiliar new high heels raised her stance slightly ... extra height they gave her put her into the blade's path",
+      "reason": "Covers that the new high heels increased her effective height and thereby raised her head above its usual position."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "the blade that was supposed to whiz past her instead struck her body, stabbing her",
+      "reason": "Covers the failure to adjust aim and fatal result, but omits that the knife struck her head and that the thrower was her male partner."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "The lady was a stage performer/assistant — the human target in a knife-throwing act"
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "The lady was a stage performer/assistant — the human target in a knife-throwing act"
+    },
+    {
+      "id": "C2.F1",
+      "status": "covered",
+      "evidence": "unfamiliar new high heels raised her stance slightly ... extra height they gave her put her into the blade's path"
+    },
+    {
+      "id": "C2.F2",
+      "status": "covered",
+      "evidence": "unfamiliar new high heels raised her stance slightly ... extra height they gave her put her into the blade's path"
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "the blade that was supposed to whiz past her instead struck her body, stabbing her"
+    },
+    {
+      "id": "C3.F2",
+      "status": "partial",
+      "evidence": "The unfamiliar new high heels raised her stance slightly, so that the blade that was supposed to whiz past her instead struck her body, stabbing her. … The thrower had no intent to kill and the audience at first didn't realize it wasn't part of the act."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.65,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 49 · question
+
+Was the thrower a professional performer who had rehearsed the act with her many times — so that the only variable that changed tonight (and spoiled the calibration) was her new heels?
+
+Host: yes
+
+## 50 · question
+
+Did the thrower know the new heels would raise her stance and nonetheless throw on the old calibration — i.e., the "accident" was in fact deliberate, so it really was a murder disguised as a miscalculation?
+
+Host: no
+
+## 51 · question
+
+Was the "yes and no" about intent rather than mechanism — i.e., the physical story (heels raised her into the blade's path, thrower was a rehearsed professional, not deliberate murder) is right, but the part that's wrong is that the thrower was *not* entirely blameless — for example, they were careless/negligent in not noticing or accounting for her new heels?
+
+Host: no
+
+## 52 · question
+
+Did the lady herself cause the danger knowingly — for example, she was warned the new heels would throw off the act's calibration, but she wore them anyway, so her own choice contributed to her death?
+
+Host: no
+
+## 53 · question
+
+Was the blade thrown by a *machine* or mechanical launcher rather than by a person's hand — i.e., an automated knife-throwing device whose aim was calibrated to her old stance?
+
+<continuation_notice>This is an automated reminder. Your context remains intact. Continue from where you left off.</continuation_notice>
+
+Host: no
+
+## 54 · question
+
+Was the blade aimed to pass just over her head (or just beside/above a specific body point) so that it would clear her at her normal height — and the added height from the heels lifted that body point into the blade's path?
+
+Host: yes
+
+## 55 · question
+
+Did the thrower realize the mistake only after the blade had already left their hand — i.e., they threw on the rehearsed calibration without registering that she was standing taller because of the new heels, so there was no deliberate aim adjustment?
+
+Host: yes
+
+## 56 · question
+
+Was her death a pure accident with no intent to harm by anyone — the thrower simply threw as rehearsed and could not adjust before the blade left their hand?
+
+Host: yes
+
+## 57 · final
+
+The lady was a professional stage performer whose role was to stand as the human target in a knife-throwing act, performed with a rehearsed partner before a paying audience at a show she was obliged to appear in that night. That evening she had bought a new pair of red high heels — ordinary new shoes to wear for her public appearance; the red colour, the material and the shop were all incidental.
+
+The act's safety depended on exact geometry: the thrower had rehearsed throwing the blade so that it passed just over/above a particular point on her body and missed her by a hair, a flight line calibrated to her usual height. Wearing the new high heels made her stand slightly taller, so the body point the blade was meant to clear was now lifted into the blade's true path. The thrower, trusting the familiar calibration, released the knife before registering that she was standing taller and could not adjust; the blade struck her and she died on stage in front of the crowd, who did not think it was a staged stunt.
+
+So there was no murder: the thrower was not culpable, negligent, or deliberately aiming at her, and she was not knowingly courting danger — her death was a tragic accident. The high heels "foretold her death" in the literal physical sense that the extra height they gave her was exactly what put her into the path of the blade.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "professional stage performer whose role was to stand as the human target in a knife-throwing act, performed with a rehearsed partner before a paying audience",
+      "reason": "Identifies the woman as the human target in a knife-throwing act, but omits that she was a circus performer and that she balanced an apple on her head."
+    },
+    {
+      "id": "C2",
+      "credit": 1,
+      "evidence": "Wearing the new high heels made her stand slightly taller ... the extra height they gave her was exactly what put her into the path of the blade",
+      "reason": "Covers that the new high heels increased her effective height and thereby raised her head above its usual position."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "released the knife before registering that she was standing taller and could not adjust; the blade struck her and she died on stage",
+      "reason": "Covers the failure to adjust aim and the fatal result, but omits that the knife struck her head and that the thrower was her male partner."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "professional stage performer whose role was to stand as the human target in a knife-throwing act, performed with a rehearsed partner before a paying audience at a show she was obliged to appear in that night"
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "professional stage performer whose role was to stand as the human target in a knife-throwing act, performed with a rehearsed partner before a paying audience at a show she was obliged to appear in that night"
+    },
+    {
+      "id": "C2.F1",
+      "status": "covered",
+      "evidence": "Wearing the new high heels made her stand slightly taller ... the extra height they gave her was exactly what put her into the path of the blade"
+    },
+    {
+      "id": "C2.F2",
+      "status": "covered",
+      "evidence": "Wearing the new high heels made her stand slightly taller ... the extra height they gave her was exactly what put her into the path of the blade"
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "released the knife before registering that she was standing taller and could not adjust; the blade struck her and she died on stage"
+    },
+    {
+      "id": "C3.F2",
+      "status": "partial",
+      "evidence": "with a rehearsed partner ... released the knife before registering that she was standing taller and could not adjust; the blade struck her and she died on stage"
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.65,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 58 · question
+
+Is the remaining error about *what the foretelling means* — i.e., the heels did not merely happen to raise her height, but something the heels themselves *were* or *showed* (a defect, a marking, a hidden feature) literally signalled she would die tonight, as a piece of foreshadowing rather than simply the physical cause?
+
+Host: no
+
+## 59 · question
+
+Was the knife-thrower her act partner and lover/spouse, or someone with a personal relationship to her — i.e., the story hinges on a personal relationship between the target and the thrower?
+
+Host: no
+
+## 60 · question
+
+Was she a last-minute substitute filling in as the target (rather than the usual, rehearsed target), so the calibration and her height were never matched?
+
+Host: no
+
+## 61 · question
+
+Was tonight the first time she performed this knife-throwing act wearing high heels — i.e., she normally performed it in flat or low-heeled shoes, and the switch to heels was new?
+
+Host: yes
+
+## 62 · question
+
+Was the reason she wore the new heels instead of her usual flat shoes that the heels were needed for a *different* part of the evening — i.e., the event/performance was a special occasion (a formal gala show, a special engagement) where she had to be dressed up, so her usual costume footwear was replaced?
+
+Host: irrelevant
+
+## 63 · question
+
+Did the audience initially believe her death was part of the act — i.e., they thought it was a staged trick and only later realized it was real?
+
+Host: irrelevant
+
+## 64 · question
+
+In the act, was her role specifically to stand (or be fixed) motionless as the passive target for the thrown blades, rather than moving around the stage as part of the performance?
+
+Host: yes
+
+## 65 · question
+
+In the actual fatal moment, did she deviate from standing still — for example, did the added height of the heels make her *not* the passive target she was supposed to be in some mechanical sense, such as standing on a marked spot or being strapped to a board whose markings no longer lined up?
+
+Host: no
+
+## 66 · question
+
+Was the blade intended to pass between parts of her body — e.g., between her legs, under her arm, or through the gap beside her head — so that the added height from the heels shifted one of those body parts into the blade's path?
+
+Host: no
+
+## 67 · final
+
+The lady was the passive human target in a knife-throwing stage act: her job was to stand motionless while a professional, well-rehearsed thrower sent blades past her, the throws calibrated so a blade would clear a point on her body — passing just over her head — by a hair's margin, missing her by design.
+
+That evening she had bought a new pair of red high heels to wear for her public appearance at the show. It was the first time she performed the act in high heels rather than her usual flat shoes. The heels made her stand slightly taller than the height the throws had always been calibrated for, so the body point the blade was meant to clear was lifted into the blade's true path. The thrower threw as rehearsed and only realised the mistake after the blade had left the hand, too late to adjust. The blade struck her and she died on stage.
+
+Nobody intended her death: the thrower was not culpable, negligent, or aiming at her, she had not been warned, and she was not knowingly taking the risk — it was a pure accident. The high heels "foretold her death" literally: the extra height they gave her, on the first night she wore them for the act, was precisely what carried the point of her body into the path of a blade meant to miss.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "passive human target in a knife-throwing stage act: her job was to stand motionless while a professional, well-rehearsed thrower sent blades past her",
+      "reason": "Identifies the woman as the human target in a knife-throwing act, but omits that she is a circus performer and that she balances an apple on her head."
+    },
+    {
+      "id": "C2",
+      "credit": 1,
+      "evidence": "The heels made her stand slightly taller than the height the throws had always been calibrated for ... the body point the blade was meant to clear was lifted into the blade's true path",
+      "reason": "Covers that the new high heels increased her effective height and thereby raised the relevant head/body point above its usual position."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "The thrower threw as rehearsed and only realised the mistake after the blade had left the hand, too late to adjust. The blade struck her and she died on stage.",
+      "reason": "Covers the failure to adjust and the fatal result, but omits that the knife struck her head and that the thrower was her male partner."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "passive human target in a knife-throwing stage act: her job was to stand motionless while a professional, well-rehearsed thrower sent blades past her"
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "passive human target in a knife-throwing stage act: her job was to stand motionless while a professional, well-rehearsed thrower sent blades past her"
+    },
+    {
+      "id": "C2.F1",
+      "status": "covered",
+      "evidence": "The heels made her stand slightly taller than the height the throws had always been calibrated for"
+    },
+    {
+      "id": "C2.F2",
+      "status": "covered",
+      "evidence": "the throws calibrated so a blade would clear a point on her body — passing just over her head ... The heels made her stand slightly taller ... so the body point the blade was meant to clear was lifted into the blade's true path"
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "The thrower threw as rehearsed and only realised the mistake after the blade had left the hand, too late to adjust. The blade struck her and she died on stage."
+    },
+    {
+      "id": "C3.F2",
+      "status": "partial",
+      "evidence": "a professional, well-rehearsed thrower sent blades past her ... The thrower threw as rehearsed and only realised the mistake after the blade had left the hand, too late to adjust. The blade struck her and she died on stage."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.65,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 68 · question
+
+Was the point the blade was calibrated to clear specifically just above her head (so her head being lifted into the blade's path is what killed her)?
+
+Host: no
+
+## 69 · question
+
+The "over her head" detail is wrong. Was the target point on her body lower — for instance the blade was aimed to pass over her shoulder, beside her torso, or over her outstretched arm/hand — and the heels lifted that point into the blade's path?
+
+Host: no
+
+## 70 · final
+
+The lady was the human target in a knife-throwing stage act: her role was to stand motionless while a rehearsed professional thrower sent blades past her before an audience. The act's safety depended on exact geometry — a blade was thrown so that it would clear a specific point on her body by only a hair's margin.
+
+That night she appeared in a brand-new pair of red high heels, wearing heels for this act for the first time (the shoes' red colour, their material and the shop she bought them from are all incidental). The heels made her stand slightly taller than the height the throws had been calibrated for, lifting that specific point on her body into the blade's true path. The thrower threw exactly as rehearsed, realising the mistake only after the blade had already left the hand, too late to adjust — and the blade struck her, killing her on stage.
+
+No one intended her death: the thrower was not culpable, negligent, or aiming at her, and she had not been warned or knowingly taken the risk — it was a pure accident, not a murder. The high heels literally "foretold" her death: the few extra inches of height they gave her, on the very first night she wore them for the act, were precisely what carried the calibrated point of her body into the path of a blade that was meant to miss.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "The lady was the human target in a knife-throwing stage act: her role was to stand motionless while a rehearsed professional thrower sent blades past her before an audience.",
+      "reason": "Identifies the woman as the human target in a knife-throwing act but omits that she is a circus performer and that she balances an apple on her head."
+    },
+    {
+      "id": "C2",
+      "credit": 1,
+      "evidence": "The heels made her stand slightly taller than the height the throws had been calibrated for ... the few extra inches of height they gave her",
+      "reason": "Covers that the new high heels increased her effective height, which entails her head being raised above its usual position."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "The thrower threw exactly as rehearsed, realising the mistake only after the blade had already left the hand, too late to adjust — and the blade struck her, killing her on stage.",
+      "reason": "Covers the failure to adjust and the fatal result, but omits that the knife struck her head and that the thrower was her male partner."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "The lady was the human target in a knife-throwing stage act: her role was to stand motionless while a rehearsed professional thrower sent blades past her before an audience."
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "The lady was the human target in a knife-throwing stage act: her role was to stand motionless while a rehearsed professional thrower sent blades past her before an audience."
+    },
+    {
+      "id": "C2.F1",
+      "status": "covered",
+      "evidence": "The heels made her stand slightly taller than the height the throws had been calibrated for ... the few extra inches of height they gave her"
+    },
+    {
+      "id": "C2.F2",
+      "status": "covered",
+      "evidence": "The heels made her stand slightly taller than the height the throws had been calibrated for"
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "The thrower threw exactly as rehearsed, realising the mistake only after the blade had already left the hand, too late to adjust — and the blade struck her, killing her on stage."
+    },
+    {
+      "id": "C3.F2",
+      "status": "partial",
+      "evidence": "a rehearsed professional thrower sent blades past her ... The thrower threw exactly as rehearsed, realising the mistake only after the blade had already left the hand, too late to adjust — and the blade struck her, killing her on stage."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.65,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 71 · question
+
+Is the thrower a different person from the person whose act the show was billed as — i.e., she was the *thrower's* partner, but the thrower in tonight's fatal throw was not the usual thrower?
+
+Host: no
+
+## 72 · question
+
+Did the fatal blade travel as intended (a clean throw past her), striking her solely because she stood taller — i.e., it did not deflect, ricochet, slip, or fall from anything?
+
+Host: yes and no
+
+## 73 · question
+
+Without the heels — had she been her usual height — would the blade have missed her, so that the added height was necessary for her to be struck?
+
+Host: yes
+
+## 74 · question
+
+Was the blade's *intended* path different from "clean past her" — i.e., it was deliberately aimed to land in something (a board, a wall, a target, or an object near her) rather than simply to fly past her — so that the fatal strike depended on her being struck before it reached that target?
+
+Host: yes
+
+## 75 · final
+
+The lady was the motionless human assistant/target in a knife-throwing stage act, appearing before an audience at a show she was obliged to attend that night. The thrower was her regular, fully rehearsed professional partner: the knives were thrown so that each would clear a specific point of her silhouette by a hair's margin and bury itself in a target/board around her.
+
+That evening she wore a brand-new pair of red high heels — the first time she performed the act in heels rather than her usual flat shoes; she had bought them that day (the red colour, the material and the shop are all incidental). The heels made her stand slightly taller than the height the throws had always been calibrated for, lifting the specific body point the knife was meant to clear into the blade's true line of flight. The thrower released the throw exactly as rehearsed, realising the mistake only after the blade had left the hand, too late to adjust. The knife struck her instead of the board and killed her on stage.
+
+No one intended her death: the thrower was not culpable, negligent or aiming at her, she had not been warned and was not knowingly taking the risk — it was a pure accident, not a murder. The high heels literally "foretold" her death: the extra inches they gave her, on the very first night she wore them for the act, were precisely what carried the calibrated point of her body into the path of a blade that was meant to miss her and hit the target behind.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "The lady was the motionless human assistant/target in a knife-throwing stage act, appearing before an audience at a show she was obliged to attend that night.",
+      "reason": "Identifies the woman as the human target in a knife-throwing act, but omits that she is a circus performer and that she balances an apple on her head."
+    },
+    {
+      "id": "C2",
+      "credit": 1,
+      "evidence": "The heels made her stand slightly taller than the height the throws had always been calibrated for ... the extra inches they gave her.",
+      "reason": "Covers that the new high heels increased her effective height, which entails her head being raised above its usual position."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "The thrower released the throw exactly as rehearsed, realising the mistake only after the blade had left the hand, too late to adjust. The knife struck her instead of the board and killed her on stage.",
+      "reason": "Covers the failure to adjust and the fatal result, but omits that the knife struck her head and that the thrower was her male partner."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "The lady was the motionless human assistant/target in a knife-throwing stage act, appearing before an audience at a show she was obliged to attend that night."
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "The lady was the motionless human assistant/target in a knife-throwing stage act, appearing before an audience at a show she was obliged to attend that night."
+    },
+    {
+      "id": "C2.F1",
+      "status": "covered",
+      "evidence": "The heels made her stand slightly taller than the height the throws had always been calibrated for ... the extra inches they gave her."
+    },
+    {
+      "id": "C2.F2",
+      "status": "covered",
+      "evidence": "The heels made her stand slightly taller than the height the throws had always been calibrated for."
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "The thrower released the throw exactly as rehearsed, realising the mistake only after the blade had left the hand, too late to adjust. The knife struck her instead of the board and killed her on stage."
+    },
+    {
+      "id": "C3.F2",
+      "status": "partial",
+      "evidence": "The thrower was her regular, fully rehearsed professional partner ... The thrower released the throw exactly as rehearsed, realising the mistake only after the blade had left the hand, too late to adjust. The knife struck her instead of the board and killed her on stage."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.65,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 76 · question
+
+Did she die essentially immediately from the blade strike (at the scene), rather than surviving the strike and dying later that night?
+
+Host: yes
+
+## 77 · question
+
+Was there a physical board or target near her that the thrown knives were supposed to stick into?
+
+Host: no
+
+## 78 · final
+
+The lady was the motionless human assistant — the living target — in a knife-throwing stage act, performing before an audience at a show she had to appear in that night. The act's whole thrill and safety depended on precision: her partner, a fully rehearsed professional thrower, sent each blade so that it cleared a specific point of her body by only a hair's margin and flew on past her. There was no board or other object behind her for the knives to stick into; the narrow miss itself was the trick.
+
+That day she had bought a brand-new pair of red high heels to wear for the evening, and that night was the first time she performed the act in heels rather than her usual flat shoes (the red colour, the material and the shop are incidental). The heels made her stand slightly taller than the height the throws had always been calibrated for, so the specific point of her body that a blade was meant to clear by a hair was lifted into the blade's true line of flight. Had she been her usual height the blade would have missed her. The thrower let the knife go exactly as rehearsed and only registered the mistake after it had left the hand — too late to adjust — and the blade struck her, killing her at once.
+
+Nobody intended her death: the thrower was not culpable, negligent or aiming at her, she had not been warned and was not knowingly taking the risk — it was a pure accident, not a murder. The high heels literally "foretold" her death: the few extra inches they gave her, on the very first night she wore them for the act, were precisely what carried the calibrated point of her body into the path of a blade that was meant to pass her by.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "The lady was the motionless human assistant — the living target — in a knife-throwing stage act, performing before an audience at a show she had to appear in that night.",
+      "reason": "Identifies the woman as the human target in a knife-throwing act, but omits that she is a circus performer and that she balances an apple on her head."
+    },
+    {
+      "id": "C2",
+      "credit": 1,
+      "evidence": "The heels made her stand slightly taller than the height the throws had always been calibrated for ... the few extra inches they gave her",
+      "reason": "Covers that the new high heels increased her effective height, which clearly entails her head being raised above its usual position."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "The thrower let the knife go exactly as rehearsed and only registered the mistake after it had left the hand — too late to adjust — and the blade struck her, killing her at once.",
+      "reason": "Covers the failure to adjust and the fatal result, but omits that the knife struck her head and that the thrower was her male partner."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "The lady was the motionless human assistant — the living target — in a knife-throwing stage act, performing before an audience at a show she had to appear in that night."
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "The lady was the motionless human assistant — the living target — in a knife-throwing stage act, performing before an audience at a show she had to appear in that night."
+    },
+    {
+      "id": "C2.F1",
+      "status": "covered",
+      "evidence": "The heels made her stand slightly taller than the height the throws had always been calibrated for ... the few extra inches they gave her"
+    },
+    {
+      "id": "C2.F2",
+      "status": "covered",
+      "evidence": "The heels made her stand slightly taller than the height the throws had always been calibrated for"
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "The thrower let the knife go exactly as rehearsed and only registered the mistake after it had left the hand — too late to adjust — and the blade struck her, killing her at once."
+    },
+    {
+      "id": "C3.F2",
+      "status": "partial",
+      "evidence": "her partner, a fully rehearsed professional thrower ... The thrower let the knife go exactly as rehearsed and only registered the mistake after it had left the hand — too late to adjust — and the blade struck her, killing her at once."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.65,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 79 · question
+
+As the act was normally performed, were the knives routinely thrown so as to pass very close to — narrowly missing — parts of her body, making the danger real and visible to the audience?
+
+Host: yes
+
+## 80 · final
+
+A knife-thrower and his motionless female assistant performed a stage act in which the danger was real: knives were routinely thrown so as to pass a hair's breadth from specified points of her body, and it was her nerve in holding perfectly still that made the act work.
+
+Her thrower was her regular, fully rehearsed professional partner, and every throw had always been calibrated to her accustomed height and stance. That day she bought a pair of red high heels, and that night she wore them for the act for the first time, instead of her usual flat shoes.
+
+The extra height of the heels lifted a point of her body that the blade was supposed to clear into the blade's actual line of flight. Had she worn her usual shoes the knife would have missed her. Her partner threw exactly as he had rehearsed, understood what was happening only after the knife had left his hand, and could not stop it. The blade struck her and she died at once.
+
+No one meant her any harm and no one was at fault in the way of deliberate aim: it was a terrible accident, and she had not been warned or aware that the change of shoes had altered the geometry. The high heels "foretold" her death in the plainest way — the few inches of height she gained from the new shoes on the very night she first wore them were what put her body into the path of a knife that was meant to miss.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "A knife-thrower and his motionless female assistant performed a stage act in which the danger was real: knives were routinely thrown so as to pass a hair's breadth from specified points of her body",
+      "reason": "Identifies the woman as the human target in a knife-throwing act, but omits that she is a circus performer and that she balances an apple on her head."
+    },
+    {
+      "id": "C2",
+      "credit": 1,
+      "evidence": "The extra height of the heels lifted a point of her body that the blade was supposed to clear into the blade's actual line of flight ... the few inches of height she gained from the new shoes",
+      "reason": "Covers that the new high heels increased her effective height and, as a necessary effect of gaining height, raised her head above its usual position."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "Her partner threw exactly as he had rehearsed, understood what was happening only after the knife had left his hand, and could not stop it. The blade struck her and she died at once.",
+      "reason": "Covers the failure to adjust and the fatal result, but omits that the knife struck her head and does not explicitly identify the thrower as her male partner."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "A knife-thrower and his motionless female assistant performed a stage act in which the danger was real: knives were routinely thrown so as to pass a hair's breadth from specified points of her body"
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "A knife-thrower and his motionless female assistant performed a stage act in which the danger was real: knives were routinely thrown so as to pass a hair's breadth from specified points of her body"
+    },
+    {
+      "id": "C2.F1",
+      "status": "covered",
+      "evidence": "The extra height of the heels lifted a point of her body that the blade was supposed to clear into the blade's actual line of flight ... the few inches of height she gained from the new shoes"
+    },
+    {
+      "id": "C2.F2",
+      "status": "covered",
+      "evidence": "The extra height of the heels lifted a point of her body ... few inches of height she gained from the new shoes"
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "Her partner threw exactly as he had rehearsed, understood what was happening only after the knife had left his hand, and could not stop it. The blade struck her and she died at once."
+    },
+    {
+      "id": "C3.F2",
+      "status": "partial",
+      "evidence": "Her partner threw exactly as he had rehearsed, understood what was happening only after the knife had left his hand, and could not stop it. The blade struck her and she died at once."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.65,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 81 · final
+
+A woman worked as the assistant in a knife-throwing act: she stood motionless on stage in front of an audience while a professional knife-thrower threw blades so that they passed extremely close to her body without touching her, and the act depended on that precise, rehearsed near-miss.
+
+Earlier that day she went to a shoe store and bought a pair of red high heels, intending to wear them to her appearance that night. She wore them on stage for the first time, in place of her usual flat shoes, so she was standing slightly taller than she ever had during the act.
+
+Because she was taller, a part of her body that the thrown blade would normally have passed cleared was now in the blade's line. She would not have been hit at her usual height. The thrower threw just as rehearsed and could not react in time; the knife struck her and she died immediately, that night.
+
+It was an accident: no one aimed at her, no one intended her death, nobody had warned her, and she did not know the shoes had changed anything. The red high heels are what "foretold" her death — buying and wearing them raised her just enough to put her into the path of a blade that was meant to miss.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "A woman worked as the assistant in a knife-throwing act: she stood motionless on stage in front of an audience while a professional knife-thrower threw blades so that they passed extremely close to her body without touching her",
+      "reason": "Identifies the woman as the human target in a knife-throwing act, but omits that she is a circus performer and that she balances an apple on her head."
+    },
+    {
+      "id": "C2",
+      "credit": 1,
+      "evidence": "so she was standing slightly taller than she ever had during the act ... buying and wearing them raised her just enough",
+      "reason": "Covers that the new high heels increased her effective height, which clearly entails that her head was raised above its usual position."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "The thrower threw just as rehearsed and could not react in time; the knife struck her and she died immediately, that night.",
+      "reason": "Covers the thrower's failure to adjust and the fatal result, but omits that the knife struck her head and that the thrower was her male partner."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "A woman worked as the assistant in a knife-throwing act: she stood motionless on stage in front of an audience while a professional knife-thrower threw blades so that they passed extremely close to her body without touching her"
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "A woman worked as the assistant in a knife-throwing act: she stood motionless on stage in front of an audience while a professional knife-thrower threw blades so that they passed extremely close to her body without touching her"
+    },
+    {
+      "id": "C2.F1",
+      "status": "covered",
+      "evidence": "so she was standing slightly taller than she ever had during the act ... buying and wearing them raised her just enough"
+    },
+    {
+      "id": "C2.F2",
+      "status": "covered",
+      "evidence": "so she was standing slightly taller than she ever had during the act"
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "The thrower threw just as rehearsed and could not react in time; the knife struck her and she died immediately, that night."
+    },
+    {
+      "id": "C3.F2",
+      "status": "partial",
+      "evidence": "a professional knife-thrower threw blades ... The thrower threw just as rehearsed and could not react in time; the knife struck her and she died immediately, that night."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.65,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 82 · question
+
+Is the thrower a man — i.e., did the host's "yes and no" come from our phrase that the assistant was a woman and the thrower possibly male, where in fact the thrower was a woman?
+
+Host: yes
+
+## 83 · question
+
+Was the dangerous act one in which she was spun, blindfolded, or otherwise put through a moving/rotating apparatus — i.e., is there a setup detail of the act we haven't captured, such as a wheel of death, a rotating platform, or knives thrown around a moving target?
+
+Host: no
+
+## 84 · question
+
+Was the thrower a woman (i.e., the partner throwing the knives was female), so that "a lady" is definitely the target and the thrower's sex is not the missing detail?
+
+Host: no
+
+## 85 · question
+
+Was the fatal throw made by the act's usual, professional knife-thrower (the same person who normally performed the throwing), rather than by anyone else such as a volunteer or another performer?
+
+Host: yes
+
+## 86 · question
+
+Was she holding (or wearing) a prop or object that the knife was meant to strike, slice, or pass through?
+
+Host: yes
+
+## 87 · question
+
+Was the prop a small object she held out in her hand (or between her fingers) at a particular height, so that the knife was thrown to strike or slice that small object and the added height from the heels shifted it into the blade's path?
+
+Host: no
+
+## 88 · question
+
+Was the prop a balloon she held or stood in front of, so the knife was meant to burst the balloon and the heels shifted the balloon enough that the blade struck her body instead?
+
+Host: no
+
+## 89 · question
+
+Was the prop something attached to her body or part of her costume/outfit — i.e., worn on her person rather than held in the hand or held near her — such as an apple on her head, a target pinned to her, or something mounted on her?
+
+Host: yes
+
+## 90 · question
+
+Was the prop an object she *wore* as part of her outfit — something mounted on or attached to her body/clothing (not held in her hand, and not a balloon) — that the knife was meant to strike or slice?
+
+Host: no
+
+## 91 · question
+
+Was the prop an object balanced on or placed atop her head (such as an apple), which the knife was meant to split or knock off?
+
+Host: yes
+
+## 92 · question
+
+Was the object on her head something the added height from the heels shifted upward into the blade's path — i.e., the knife was thrown to pass just over the object (or just above it), and because she stood taller the object itself rose into the blade's line, so the blade struck the object or her instead of cleanly clearing it?
+
+Host: no
+
+## 93 · question
+
+Was the object on her head something the thrower aimed *at* directly — e.g., an apple to be split or knocked off her head — so the thrower was aiming the blade at the object at a height calibrated to her usual stance, and the extra height from the heels made the blade miss the object and hit her instead?
+
+Host: yes
+
+## 94 · question
+
+Was the object on her head an apple?
+
+Host: yes
+
+## 95 · final
+
+The lady was the motionless assistant in a knife-throwing act. Her partner in the act was the professional thrower, and the act's signature stunt was that she stood still with an apple balanced on top of her head while he threw a knife to split or knock the apple off. Every throw was aimed at the apple, at exactly the height it always sat when she stood in her usual flat shoes, and they had rehearsed it that way many times.
+
+That day she went to a shoe store and bought a pair of red high heels to wear for her appearance that night. It was the first time she performed the act in high heels instead of her flat shoes, so she stood slightly taller than usual and the apple on her head sat a little higher than the spot the thrower had always aimed at.
+
+He threw the knife exactly as rehearsed, at the apple's old position — but the extra height from the heels meant the blade missed the apple and struck her instead. He realised it only after the knife had left his hand, too late to stop it, and she died at once, that night, on stage.
+
+No one meant her any harm: the thrower was not aiming at her, was not negligent and had no idea the shoes would change anything; she had not been warned and did not know the heels had shifted the target. It was a tragic accident.
+
+The high heels "foretold" her death in the most literal way: wearing them for the first time raised her by those few inches, lifting the apple — and with it the line the knife travelled — so that a blade aimed at the apple on her head passed into her body instead.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "The lady was the motionless assistant in a knife-throwing act. ... she stood still with an apple balanced on top of her head while he threw a knife",
+      "reason": "Identifies the woman as the human target in a knife-throwing act and includes the apple on her head, but omits that she is a circus performer."
+    },
+    {
+      "id": "C2",
+      "credit": 1,
+      "evidence": "It was the first time she performed the act in high heels instead of her flat shoes, so she stood slightly taller than usual ... raised her by those few inches, lifting the apple",
+      "reason": "Covers that the new high heels increased her effective height and thereby raised her head above its usual position."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "He threw the knife exactly as rehearsed ... the blade missed the apple and struck her instead ... she died at once",
+      "reason": "Covers the failure to adjust and the fatal result, but does not specify that the knife struck her head, even though the apple-on-head detail is present."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "The lady was the motionless assistant in a knife-throwing act. ... she stood still with an apple balanced on top of her head while he threw a knife"
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "The lady was the motionless assistant in a knife-throwing act. ... she stood still with an apple balanced on top of her head while he threw a knife"
+    },
+    {
+      "id": "C2.F1",
+      "status": "covered",
+      "evidence": "It was the first time she performed the act in high heels instead of her flat shoes, so she stood slightly taller than usual ... raised her by those few inches"
+    },
+    {
+      "id": "C2.F2",
+      "status": "covered",
+      "evidence": "so she stood slightly taller than usual and the apple on her head sat a little higher than the spot the thrower had always aimed at ... raised her by those few inches, lifting the apple"
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "He threw the knife exactly as rehearsed ... the blade missed the apple and struck her instead ... she died at once"
+    },
+    {
+      "id": "C3.F2",
+      "status": "partial",
+      "evidence": "Her partner in the act was the professional thrower ... He threw the knife exactly as rehearsed ... the blade missed the apple and struck her instead ... she died at once"
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.65,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 96 · question
+
+Was the apple actually hit or knocked off by the blade — or did the blade miss the apple entirely and strike her, leaving the apple untouched?
+
+Host: yes
+
+## 97 · question
+
+To nail the exact physical detail: did the blade strike her *in the head* (because the apple sat higher and the knife, aimed where the apple used to be, hit her head/face instead of the apple)?
+
+Host: yes
+
+## 98 · final
+
+The lady was the assistant in a knife-throwing act, performed with a professional male thrower who was her regular, long-rehearsed partner. The stunt was simple: she stood motionless with an apple balanced on her head, and he threw a knife to hit the apple. Every throw was aimed at the apple exactly where it always sat, at the height it had when she stood in her usual flat shoes.
+
+That afternoon she went to a shoe store and bought a new pair of red high heels. That night she wore them for the act for the first time, instead of her flat shoes, so she — and the apple on her head — stood a few inches higher than ever before.
+
+He threw exactly as he had rehearsed, at the apple's old height. But the apple had risen with her, so the blade missed the apple, which was left untouched, and struck her head instead. He understood what had gone wrong only after the knife had left his hand, too late to stop it, and she died instantly that night.
+
+No one intended her death: the thrower was aiming at the apple, was not negligent and had no idea her new shoes would change anything, and she had not been warned or told of any risk. It was a tragic accident.
+
+The high heels "foretold" her death in the plainest physical sense: the few inches they added, on the very first night she wore them for the act, lifted her head to exactly the height at which the knife was aimed — put her where the apple was supposed to be.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "The lady was the assistant in a knife-throwing act, performed with a professional male thrower who was her regular, long-rehearsed partner. ... she stood motionless with an apple balanced on her head",
+      "reason": "Identifies the woman as the human target in a knife-throwing act with an apple on her head, but omits that she is an acrobat in a circus troupe."
+    },
+    {
+      "id": "C2",
+      "credit": 1,
+      "evidence": "so she — and the apple on her head — stood a few inches higher than ever before ... the few inches they added ... lifted her head to exactly the height at which the knife was aimed",
+      "reason": "Covers that the new high heels increased her effective height and thereby raised her head above its usual position."
+    },
+    {
+      "id": "C3",
+      "credit": 1,
+      "evidence": "He threw exactly as he had rehearsed, at the apple's old height. But the apple had risen with her, so the blade missed the apple ... and struck her head instead. He understood what had gone wrong only after the knife had left his hand, too late to stop it, and she died instantly that night.",
+      "reason": "Covers the male thrower's failure to adjust, the knife fatally striking her head, and her death."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "The lady was the assistant in a knife-throwing act, performed with a professional male thrower ... she stood motionless with an apple balanced on her head"
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "The lady was the assistant in a knife-throwing act, performed with a professional male thrower ... she stood motionless with an apple balanced on her head"
+    },
+    {
+      "id": "C2.F1",
+      "status": "covered",
+      "evidence": "so she — and the apple on her head — stood a few inches higher than ever before ... the few inches they added"
+    },
+    {
+      "id": "C2.F2",
+      "status": "covered",
+      "evidence": "the few inches they added ... lifted her head to exactly the height at which the knife was aimed"
+    },
+    {
+      "id": "C3.F1",
+      "status": "covered",
+      "evidence": "He threw exactly as he had rehearsed ... the blade missed the apple ... and struck her head instead ... too late to stop it, and she died instantly that night."
+    },
+    {
+      "id": "C3.F2",
+      "status": "covered",
+      "evidence": "performed with a professional male thrower who was her regular, long-rehearsed partner ... He threw exactly as he had rehearsed ... struck her head instead ... she died instantly that night."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.75,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 99 · question
+
+Did the thrower have no personal relationship with her beyond being her professional act partner — i.e., they were simply fellow performers, not friends, lovers or relatives?
+
+Host: irrelevant
+
+## 100 · final · mandatory final
+
+A lady was the motionless target in a knife-throwing act, working with a professional male thrower — a rehearsed partner. The signature stunt: she stood still with an apple balanced on her head while he threw a knife to hit the apple, each throw aimed at the apple exactly where it sat when she stood at her usual height in flat shoes.
+
+That day she went to a shoe store and bought a pair of red high heels, and that night she wore them for this act for the first time instead of her flat shoes. The heels raised her — and the apple on her head — a few inches higher than the thrower's aim had ever accounted for.
+
+He threw exactly as rehearsed, at the apple's old height. But the apple had moved up with her, so the knife missed the apple (leaving it untouched) and struck her head, killing her instantly that night. He recognised the mistake only after the blade had left his hand — too late to stop it. She had not been warned, no one intended her any harm, and the thrower had done nothing wrong: it was a tragic accident, not a murder.
+
+The high heels "foretold" her death in the most literal, physical way: the few inches of height they gave her, on the very first night she wore them for the act, lifted her head into precisely the line along which the knife was thrown — the place where the apple, not her head, was supposed to be.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "A lady was the motionless target in a knife-throwing act, working with a professional male thrower ... she stood still with an apple balanced on her head while he threw a knife to hit the apple",
+      "reason": "Identifies the woman as the human target in a knife-throwing act with an apple on her head, but omits that she is a circus performer."
+    },
+    {
+      "id": "C2",
+      "credit": 1,
+      "evidence": "The heels raised her — and the apple on her head — a few inches higher ... the few inches of height they gave her ... lifted her head into precisely the line along which the knife was thrown",
+      "reason": "Covers that the new high heels increased her effective height and thereby raised her head above its usual position."
+    },
+    {
+      "id": "C3",
+      "credit": 1,
+      "evidence": "working with a professional male thrower ... He threw exactly as rehearsed ... struck her head, killing her instantly ... He recognised the mistake only after the blade had left his hand — too late to stop it.",
+      "reason": "Covers the male thrower's failure to adjust, the fatal head strike, and the resulting death."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "A lady was the motionless target in a knife-throwing act, working with a professional male thrower ... she stood still with an apple balanced on her head while he threw a knife to hit the apple"
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "A lady was the motionless target in a knife-throwing act, working with a professional male thrower ... she stood still with an apple balanced on her head while he threw a knife to hit the apple"
+    },
+    {
+      "id": "C2.F1",
+      "status": "covered",
+      "evidence": "The heels raised her — and the apple on her head — a few inches higher than the thrower's aim had ever accounted for ... the few inches of height they gave her"
+    },
+    {
+      "id": "C2.F2",
+      "status": "covered",
+      "evidence": "the few inches of height they gave her ... lifted her head into precisely the line along which the knife was thrown"
+    },
+    {
+      "id": "C3.F1",
+      "status": "covered",
+      "evidence": "He threw exactly as rehearsed ... struck her head, killing her instantly ... He recognised the mistake only after the blade had left his hand — too late to stop it."
+    },
+    {
+      "id": "C3.F2",
+      "status": "covered",
+      "evidence": "working with a professional male thrower ... He threw exactly as rehearsed ... struck her head, killing her instantly that night."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.75,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>

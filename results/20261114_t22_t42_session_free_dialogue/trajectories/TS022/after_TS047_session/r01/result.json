@@ -1,0 +1,269 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 98,
+  "final_attempts": 2,
+  "rejected_finals": 2,
+  "counted_questions": 100,
+  "submissions": 100,
+  "player_format_corrections": [],
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.25,
+  "best_partial_score": 0.25,
+  "latest_final": "A lost, exhausted girl took shelter in what she thought was an empty house but could not sleep. She finally slept from exhaustion and woke in the morning. Daylight revealed a window or opening she had not registered in the dark; looking through it, she saw something that made her realize the house was dangerous or unsafe to remain in. That discovery—combined with the fact that the place was stranger or more threatening than it had appeared at night—terrified her, and she fled.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0,
+        "evidence": "Daylight revealed a window or opening she had not registered in the dark",
+        "reason": "The submission omits the apparent portrait and real watcher, replacing the required identity with a previously unregistered opening."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "took shelter in what she thought was an empty house but could not sleep",
+        "reason": "It captures the girl's inability to sleep but omits the required cause: feeling watched by a person mistaken for a portrait."
+      },
+      {
+        "id": "C3",
+        "credit": 0.5,
+        "evidence": "Daylight revealed a window or opening she had not registered in the dark; looking through it, she saw something that made her realize the house was dangerous or unsafe to remain in... and she fled.",
+        "reason": "It includes morning, a revealed window/opening, perceived danger, and flight, but omits that the watching figure was gone and that she realized someone had watched her from outside."
+      }
+    ],
+    "material_contradiction": true,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "contradicted",
+        "evidence": "Daylight revealed a window or opening she had not registered in the dark"
+      },
+      {
+        "id": "C1.F2",
+        "status": "partial",
+        "evidence": "A lost, exhausted girl took shelter in what she thought was an empty house"
+      },
+      {
+        "id": "C2.F1",
+        "status": "partial",
+        "evidence": "took shelter in what she thought was an empty house but could not sleep"
+      },
+      {
+        "id": "C2.F2",
+        "status": "partial",
+        "evidence": "but could not sleep"
+      },
+      {
+        "id": "C3.F1",
+        "status": "partial",
+        "evidence": "Daylight revealed a window or opening she had not registered in the dark; looking through it, she saw something that made her realize the house was dangerous or unsafe to remain in... and she fled."
+      },
+      {
+        "id": "C3.F2",
+        "status": "partial",
+        "evidence": "She finally slept from exhaustion and woke in the morning."
+      },
+      {
+        "id": "C3.F3",
+        "status": "partial",
+        "evidence": "Daylight revealed a window or opening she had not registered in the dark; looking through it, she saw something that made her realize the house was dangerous or unsafe to remain in... she fled."
+      }
+    ],
+    "requirement_coverage": [],
+    "contradictions": [
+      {
+        "quote": "Daylight revealed a window or opening she had not registered in the dark",
+        "reference": "The apparent portrait is actually a window with a real person behind it.",
+        "checkpoint_ids": [
+          "C1"
+        ]
+      }
+    ],
+    "partial_score": 0.25,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v3-unified",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 1041.984850667,
+  "usage": {
+    "grader": {
+      "http_attempts": 2,
+      "successful_responses": 2,
+      "seconds": 113.34336333299996,
+      "provider_reported_usage": {
+        "prompt_tokens": 9918,
+        "completion_tokens": 14446,
+        "total_tokens": 24364,
+        "prompt_cache_hit_tokens": 7296,
+        "prompt_cache_miss_tokens": 2622
+      }
+    },
+    "host": {
+      "http_attempts": 98,
+      "successful_responses": 98,
+      "seconds": 738.6897979979999,
+      "provider_reported_usage": {
+        "prompt_tokens": 1652548,
+        "completion_tokens": 70326,
+        "total_tokens": 1722874,
+        "prompt_cache_hit_tokens": 1622528,
+        "prompt_cache_miss_tokens": 30020
+      }
+    },
+    "player": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 186.68306758100042,
+      "provider_reported_usage": {
+        "prompt_tokens": 2338291,
+        "completion_tokens": 3869,
+        "total_tokens": 2342160,
+        "prompt_cache_hit_tokens": 2318848,
+        "prompt_cache_miss_tokens": 19443
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "estimate_assumptions": [
+      "peak_rate_reference_upper_estimate; off-peak rates are half; actual billing unknown"
+    ],
+    "total": {
+      "calls": 200,
+      "unknown_cost_calls": 0,
+      "known_estimated_cost_usd": 0.474885604,
+      "estimated_cost_usd": 0.474885604,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 4000757,
+        "cached_input_tokens": 3948672,
+        "cache_write_tokens": 0,
+        "output_tokens": 88641,
+        "reasoning_tokens": 83052,
+        "total_tokens": 4089398
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 100,
+        "total_tokens": 0
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 2,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.060988224,
+        "estimated_cost_usd": 0.060988224,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 9918,
+          "cached_input_tokens": 7296,
+          "cache_write_tokens": 0,
+          "output_tokens": 14446,
+          "reasoning_tokens": 12922,
+          "total_tokens": 24364
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 98,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.389508592,
+        "estimated_cost_usd": 0.389508592,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1652548,
+          "cached_input_tokens": 1622528,
+          "cache_write_tokens": 0,
+          "output_tokens": 70326,
+          "reasoning_tokens": 70130,
+          "total_tokens": 1722874
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 100,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.024388788,
+        "estimated_cost_usd": 0.024388788,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 2338291,
+          "cached_input_tokens": 2318848,
+          "cache_write_tokens": 0,
+          "output_tokens": 3869,
+          "reasoning_tokens": 0,
+          "total_tokens": 2342160
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 100,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "50a4d811-baa0-4f12-a319-b79c122817a1",
+      "7bc54041-1597-4dc1-afec-ad0b6f17de20",
+      "9f8d2eb3-cdba-428a-ae60-f92a7b7aca4f"
+    ],
+    "logical_input_chars": 2473263,
+    "delta_input_chars": 139419,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "7c58339299af1ffe5c8b62850b87419914bf050994fabb559168e536907297d8",
+    "grading_sha256": "8c8766064d4bd123188d1f3666ee10ffb54d8ffbe4f02ce3477847c0a7b35c85",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v3-unified",
+    "prompts_sha256": "533fed2879c5bee42d2b3da39a93449c142c58f51a3c16cb8bdd87a66efb2c8c",
+    "controller_sha256": "c3a6d2cd9be91285c0fee3a2d8b23b85cb470d7a4a0888217c0384c7f8f992b5",
+    "player_format_policy_sha256": "cf439ee1d60ae38374486aada319739646a5975284ff00bc877a3040047df56a",
+    "host_context_sha256": "5d44680f053ed1c15963a67180e489f6280a408a8977dbd1a644f7f922badcfc",
+    "host_binding_version": "host-v9-human-20261102"
+  }
+}

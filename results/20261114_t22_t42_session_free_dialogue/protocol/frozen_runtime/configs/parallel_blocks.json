@@ -1,0 +1,170 @@
+[
+  {
+    "block": "S3_TS047_TS022_TS047_TS022_r03",
+    "group": "S3_TS047_TS022",
+    "relation_hypothesis": "positive",
+    "source": "TS047",
+    "target": "TS022",
+    "analysis_role": "primary",
+    "source_policy": "fixed",
+    "repeat": 3,
+    "conditions": [
+      "session"
+    ],
+    "control_source": null
+  },
+  {
+    "block": "S3_TS045_TS022_TS045_TS022_r03",
+    "group": "S3_TS045_TS022",
+    "relation_hypothesis": "negative",
+    "source": "TS045",
+    "target": "TS022",
+    "analysis_role": "primary",
+    "source_policy": "fixed",
+    "repeat": 3,
+    "conditions": [
+      "session"
+    ],
+    "control_source": null
+  },
+  {
+    "block": "S3_TS019_TS022_TS019_TS022_r03",
+    "group": "S3_TS019_TS022",
+    "relation_hypothesis": "neutral",
+    "source": "TS019",
+    "target": "TS022",
+    "analysis_role": "primary",
+    "source_policy": "fixed",
+    "repeat": 3,
+    "conditions": [
+      "session"
+    ],
+    "control_source": null
+  },
+  {
+    "block": "S3_TS047_TS022_TS047_TS022_r04",
+    "group": "S3_TS047_TS022",
+    "relation_hypothesis": "positive",
+    "source": "TS047",
+    "target": "TS022",
+    "analysis_role": "primary",
+    "source_policy": "fixed",
+    "repeat": 4,
+    "conditions": [
+      "session"
+    ],
+    "control_source": null
+  },
+  {
+    "block": "S3_TS045_TS022_TS045_TS022_r04",
+    "group": "S3_TS045_TS022",
+    "relation_hypothesis": "negative",
+    "source": "TS045",
+    "target": "TS022",
+    "analysis_role": "primary",
+    "source_policy": "fixed",
+    "repeat": 4,
+    "conditions": [
+      "session"
+    ],
+    "control_source": null
+  },
+  {
+    "block": "S3_TS019_TS022_TS019_TS022_r04",
+    "group": "S3_TS019_TS022",
+    "relation_hypothesis": "neutral",
+    "source": "TS019",
+    "target": "TS022",
+    "analysis_role": "primary",
+    "source_policy": "fixed",
+    "repeat": 4,
+    "conditions": [
+      "session"
+    ],
+    "control_source": null
+  },
+  {
+    "block": "S3_TS047_TS022_TS047_TS022_r05",
+    "group": "S3_TS047_TS022",
+    "relation_hypothesis": "positive",
+    "source": "TS047",
+    "target": "TS022",
+    "analysis_role": "primary",
+    "source_policy": "fixed",
+    "repeat": 5,
+    "conditions": [
+      "session"
+    ],
+    "control_source": null
+  },
+  {
+    "block": "S3_TS045_TS022_TS045_TS022_r05",
+    "group": "S3_TS045_TS022",
+    "relation_hypothesis": "negative",
+    "source": "TS045",
+    "target": "TS022",
+    "analysis_role": "primary",
+    "source_policy": "fixed",
+    "repeat": 5,
+    "conditions": [
+      "session"
+    ],
+    "control_source": null
+  },
+  {
+    "block": "S3_TS019_TS022_TS019_TS022_r05",
+    "group": "S3_TS019_TS022",
+    "relation_hypothesis": "neutral",
+    "source": "TS019",
+    "target": "TS022",
+    "analysis_role": "primary",
+    "source_policy": "fixed",
+    "repeat": 5,
+    "conditions": [
+      "session"
+    ],
+    "control_source": null
+  },
+  {
+    "block": "S3_TS047_TS022_TS047_TS022_r06",
+    "group": "S3_TS047_TS022",
+    "relation_hypothesis": "positive",
+    "source": "TS047",
+    "target": "TS022",
+    "analysis_role": "primary",
+    "source_policy": "fixed",
+    "repeat": 6,
+    "conditions": [
+      "session"
+    ],
+    "control_source": null
+  },
+  {
+    "block": "S3_TS045_TS022_TS045_TS022_r06",
+    "group": "S3_TS045_TS022",
+    "relation_hypothesis": "negative",
+    "source": "TS045",
+    "target": "TS022",
+    "analysis_role": "primary",
+    "source_policy": "fixed",
+    "repeat": 6,
+    "conditions": [
+      "session"
+    ],
+    "control_source": null
+  },
+  {
+    "block": "S3_TS019_TS022_TS019_TS022_r06",
+    "group": "S3_TS019_TS022",
+    "relation_hypothesis": "neutral",
+    "source": "TS019",
+    "target": "TS022",
+    "analysis_role": "primary",
+    "source_policy": "fixed",
+    "repeat": 6,
+    "conditions": [
+      "session"
+    ],
+    "control_source": null
+  }
+]

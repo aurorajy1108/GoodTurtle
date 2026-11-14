@@ -1,0 +1,476 @@
+<!doctype html><meta charset="utf-8"><title>Turtle Soup trajectory</title><style>body{font:16px/1.6 system-ui;max-width:1000px;margin:32px auto;padding:0 20px;background:#f6f7fa}article{background:white;padding:18px;margin:16px 0;border:1px solid #ddd;border-radius:10px}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit}summary{cursor:pointer}</style><h1>Turtle Soup trajectory</h1><pre>I usually follow the same route to enter and exit the school campus. There are no staircases nearby but I often use the stairs. Why?</pre><p>completed · count 100 · score 0.75</p><p><a href="token_costs.csv">Token usage and estimated costs</a> · <a href="cost_summary.json">Cost summary (USD estimate, not actual bill)</a></p><article><h2>1 · question</h2><pre>Are the “stairs” not literal building stairs, such as stairs on an escalator or moving walkway?</pre><p>Host: <strong>yes</strong></p></article><article><h2>2 · question</h2><pre>Does the person use stairs that are part of a vehicle or transport system rather than a fixed school staircase?</pre><p>Host: <strong>yes</strong></p></article><article><h2>3 · question</h2><pre>Is the “staircase nearby” absent because the person enters/exits through a vehicle such as a bus?</pre><p>Host: <strong>no</strong></p></article><article><h2>4 · question</h2><pre>Does the person enter or exit the campus by an escalator?</pre><p>Host: <strong>yes</strong></p></article><article><h2>5 · question</h2><pre>Is the escalator part of a pedestrian bridge or overpass near the school campus?</pre><p>Host: <strong>irrelevant</strong></p></article><article><h2>6 · question</h2><pre>Does the person use the escalator inside a building on the campus route?</pre><p>Host: <strong>irrelevant</strong></p></article><article><h2>7 · question</h2><pre>Is the escalator located in a train or subway station?</pre><p>Host: <strong>irrelevant</strong></p></article><article><h2>8 · question</h2><pre>Does the person use the escalator as part of a daily commute to school?</pre><p>Host: <strong>yes</strong></p></article><article><h2>9 · question</h2><pre>Is the escalator in a shopping mall or commercial building along the commute?</pre><p>Host: <strong>irrelevant</strong></p></article><article><h2>10 · question</h2><pre>Is the person physically on the school campus when using the escalator?</pre><p>Host: <strong>no</strong></p></article><article><h2>11 · question</h2><pre>Does the person use the escalator to travel between ground level and campus level, since the campus is elevated or the route includes a height change?</pre><p>Host: <strong>yes</strong></p></article><article><h2>12 · question</h2><pre>Does the same route require the person to go up or down the escalator both when entering and when exiting the campus?</pre><p>Host: <strong>yes</strong></p></article><article><h2>13 · question</h2><pre>Does the person avoid literal staircases because they are carrying something heavy or bulky, such as a backpack or equipment?</pre><p>Host: <strong>no</strong></p></article><article><h2>14 · question</h2><pre>Is the escalator outdoors and exposed to the weather along a public pedestrian route?</pre><p>Host: <strong>irrelevant</strong></p></article><article><h2>15 · question</h2><pre>Does the person use the escalator because it is part of their normal walking route and avoids stairs due to a physical disability or mobility limitation?</pre><p>Host: <strong>yes and no</strong></p></article><article><h2>16 · question</h2><pre>Does the person have a physical disability or mobility limitation that makes the escalator preferable to stairs?</pre><p>Host: <strong>no</strong></p></article><article><h2>17 · question</h2><pre>Is the person a student at the school?</pre><p>Host: <strong>irrelevant</strong></p></article><article><h2>18 · question</h2><pre>Is the escalator in a public transport station that the person passes through on the commute?</pre><p>Host: <strong>irrelevant</strong></p></article><article><h2>19 · question</h2><pre>Is the school campus itself located on an upper level reached by the escalator, such as a hillside or elevated complex?</pre><p>Host: <strong>irrelevant</strong></p></article><article><h2>20 · question</h2><pre>Does the person use the escalator as a substitute for walking up or down a slope or hill along the route?</pre><p>Host: <strong>irrelevant</strong></p></article><article><h2>21 · question</h2><pre>Is the “same route to enter and exit” on foot, with the campus entrance reached via a level change that has an escalator instead of stairs?</pre><p>Host: <strong>yes</strong></p></article><article><h2>22 · question</h2><pre>Is the level change between a footbridge or overpass and the campus entrance?</pre><p>Host: <strong>irrelevant</strong></p></article><article><h2>23 · question</h2><pre>Does the level change occur at an entrance to an underground or subway pedestrian passage?</pre><p>Host: <strong>irrelevant</strong></p></article><article><h2>24 · question</h2><pre>Is the escalator located at a school gate or campus entrance that serves as a direct entrance point?</pre><p>Host: <strong>yes</strong></p></article><article><h2>25 · question</h2><pre>Does the campus entrance itself lie at an upper or lower level than the surrounding public street, with the escalator connecting them?</pre><p>Host: <strong>yes</strong></p></article><article><h2>26 · question</h2><pre>Is the person using the escalator because the campus entrance has no ordinary staircase nearby to reach it from the street?</pre><p>Host: <strong>yes</strong></p></article><article><h2>27 · final</h2><pre>The person’s usual walking route to and from the school campus involves a change in level between the public street and the campus entrance. At that entrance there is an escalator rather than an ordinary staircase nearby, so the person “uses the stairs” in the sense of riding the escalator up or down both when entering and when exiting the campus.</pre><p>Host: <strong>yes and no</strong></p><details><summary>Private evaluation</summary><pre>{
+  &quot;checkpoints&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;credit&quot;: 0,
+      &quot;evidence&quot;: &quot;riding the escalator up or down&quot;,
+      &quot;reason&quot;: &quot;The submission identifies the escalator as the stairs but says the person is riding it, contradicting the required fact that the escalator is no longer moving and being walked on as stairs.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2&quot;,
+      &quot;credit&quot;: 0.5,
+      &quot;evidence&quot;: &quot;At that entrance there is an escalator rather than an ordinary staircase nearby&quot;,
+      &quot;reason&quot;: &quot;The submission partially covers the absence of a nearby ordinary staircase and escalator-based access, but omits that a pair of escalators provides access and does not clearly state that campus access relies on escalators.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3&quot;,
+      &quot;credit&quot;: 0,
+      &quot;evidence&quot;: &quot;&quot;,
+      &quot;reason&quot;: &quot;The submission does not mention one escalator being under maintenance or the other escalator being stopped for people to walk on.&quot;
+    }
+  ],
+  &quot;material_contradiction&quot;: true,
+  &quot;irrelevant&quot;: false,
+  &quot;rubric_conflict&quot;: false,
+  &quot;full_solution&quot;: false,
+  &quot;completion_note&quot;: &quot;Scored facts remain missing, partial or contradicted; see fact_coverage.&quot;,
+  &quot;fact_coverage&quot;: [
+    {
+      &quot;id&quot;: &quot;C1.F1&quot;,
+      &quot;status&quot;: &quot;contradicted&quot;,
+      &quot;evidence&quot;: &quot;riding the escalator up or down&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2.F1&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;At that entrance there is an escalator rather than an ordinary staircase nearby ... riding the escalator up or down both when entering and when exiting the campus&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2.F2&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;there is an escalator rather than an ordinary staircase nearby&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F1&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F2&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F3&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    }
+  ],
+  &quot;requirement_coverage&quot;: [],
+  &quot;contradictions&quot;: [
+    {
+      &quot;quote&quot;: &quot;riding the escalator up or down&quot;,
+      &quot;reference&quot;: &quot;The other escalator will be paused so that people can use it as a staircase to enter and exit the campus.&quot;,
+      &quot;checkpoint_ids&quot;: [
+        &quot;C1&quot;
+      ]
+    }
+  ],
+  &quot;partial_score&quot;: 0.15,
+  &quot;complete&quot;: false,
+  &quot;label&quot;: &quot;yes and no&quot;,
+  &quot;grading_protocol&quot;: &quot;coverage-v3-unified&quot;,
+  &quot;controller_corrections&quot;: []
+}</pre></details></article><article><h2>28 · question</h2><pre>Is there a literal staircase elsewhere along the route that the person also uses?</pre><p>Host: <strong>no</strong></p></article><article><h2>29 · question</h2><pre>Is the “escalator” actually a staircase that can be converted or used as an escalator, such as at a school entrance with a moving stair mechanism?</pre><p>Host: <strong>no</strong></p></article><article><h2>30 · question</h2><pre>Does the person enter and exit the campus by riding the escalator in opposite directions, using the same escalator for both?</pre><p>Host: <strong>no</strong></p></article><article><h2>31 · question</h2><pre>Are there two separate escalators—one used when entering the campus and another used when exiting?</pre><p>Host: <strong>yes and no</strong></p></article><article><h2>32 · question</h2><pre>Does the person sometimes use a different level-changing method on one direction of the same route?</pre><p>Host: <strong>yes</strong></p></article><article><h2>33 · question</h2><pre>Is the different level-changing method an elevator or lift?</pre><p>Host: <strong>no</strong></p></article><article><h2>34 · question</h2><pre>Is the different level-changing method a ramp?</pre><p>Host: <strong>no</strong></p></article><article><h2>35 · question</h2><pre>Is the different level-changing method a vehicle, such as a car or bus, that takes the person up or down the level change?</pre><p>Host: <strong>no</strong></p></article><article><h2>36 · question</h2><pre>Is the different level-changing method a literal staircase?</pre><p>Host: <strong>no</strong></p></article><article><h2>37 · question</h2><pre>Is the different level-changing method a moving walkway or travelator?</pre><p>Host: <strong>no</strong></p></article><article><h2>38 · question</h2><pre>Does the person use a different escalator in one direction rather than a different type of level-changing method?</pre><p>Host: <strong>yes</strong></p></article><article><h2>39 · question</h2><pre>Is the different escalator used because the usual one only runs in one direction at different times of day?</pre><p>Host: <strong>no</strong></p></article><article><h2>40 · question</h2><pre>Are there two escalators side by side, one going up and one going down, so the person uses the up escalator when entering and the down escalator when exiting?</pre><p>Host: <strong>yes and no</strong></p></article><article><h2>41 · question</h2><pre>Does the person use stairs that are part of an escalator, such as walking up the escalator steps while it is in motion?</pre><p>Host: <strong>yes</strong></p></article><article><h2>42 · question</h2><pre>Does the person walk on the escalator instead of standing still, thereby literally using stairs?</pre><p>Host: <strong>yes</strong></p></article><article><h2>43 · final</h2><pre>The person’s usual walking route between the public street and the school campus involves a level change at the campus entrance. There is no ordinary staircase nearby; instead the entrance has escalators (with their stepped surfaces). The person uses these escalator stairs by walking up them when entering and walking down them when exiting—possibly choosing the appropriate up/down escalator—so although “no staircases are nearby,” the person often literally uses stairs in the form of escalator steps.</pre><p>Host: <strong>yes and no</strong></p><details><summary>Private evaluation</summary><pre>{
+  &quot;checkpoints&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;credit&quot;: 0.5,
+      &quot;evidence&quot;: &quot;uses these escalator stairs by walking up them when entering and walking down them when exiting&quot;,
+      &quot;reason&quot;: &quot;The submission identifies the stairs as escalator steps and says the person walks on them, but it does not state that the escalator is no longer moving.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2&quot;,
+      &quot;credit&quot;: 0.5,
+      &quot;evidence&quot;: &quot;There is no ordinary staircase nearby; instead the entrance has escalators ... uses these escalator stairs by walking up them when entering and walking down them when exiting&quot;,
+      &quot;reason&quot;: &quot;It covers the absence of a nearby ordinary staircase and reliance on escalators for access, but it does not clearly state that a pair of escalators provides this access.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3&quot;,
+      &quot;credit&quot;: 0,
+      &quot;evidence&quot;: &quot;&quot;,
+      &quot;reason&quot;: &quot;The submission does not mention one escalator being under maintenance or the other escalator being stopped for people to walk on.&quot;
+    }
+  ],
+  &quot;material_contradiction&quot;: false,
+  &quot;irrelevant&quot;: false,
+  &quot;rubric_conflict&quot;: false,
+  &quot;full_solution&quot;: false,
+  &quot;completion_note&quot;: &quot;Scored facts remain missing, partial or contradicted; see fact_coverage.&quot;,
+  &quot;fact_coverage&quot;: [
+    {
+      &quot;id&quot;: &quot;C1.F1&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;uses these escalator stairs by walking up them when entering and walking down them when exiting&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2.F1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;There is no ordinary staircase nearby; instead the entrance has escalators ... uses these escalator stairs by walking up them when entering and walking down them when exiting&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2.F2&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;the entrance has escalators&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F1&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F2&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F3&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    }
+  ],
+  &quot;requirement_coverage&quot;: [],
+  &quot;contradictions&quot;: [],
+  &quot;partial_score&quot;: 0.4,
+  &quot;complete&quot;: false,
+  &quot;label&quot;: &quot;yes and no&quot;,
+  &quot;grading_protocol&quot;: &quot;coverage-v3-unified&quot;,
+  &quot;controller_corrections&quot;: []
+}</pre></details></article><article><h2>44 · question</h2><pre>Is the key point that the person is not physically on campus when using the stairs, so the “no staircases nearby” refers to the campus area specifically?</pre><p>Host: <strong>no</strong></p></article><article><h2>45 · question</h2><pre>Does the person use the stairs of a double-decker bus or similar vehicle that is part of their commute to and from the campus?</pre><p>Host: <strong>no</strong></p></article><article><h2>46 · question</h2><pre>Are the “stairs” that the person uses located outside the school but part of the route between home and campus, while no staircase is near the campus entrance itself?</pre><p>Host: <strong>yes</strong></p></article><article><h2>47 · question</h2><pre>Does the person walk up/down a set of literal stairs somewhere along the commute before reaching the vicinity of the campus, even though no staircase is near the campus itself?</pre><p>Host: <strong>no</strong></p></article><article><h2>48 · question</h2><pre>Does the person use the escalator stairs—walking on them—rather than ordinary stairs, and is this what “often use the stairs” means?</pre><p>Host: <strong>yes</strong></p></article><article><h2>49 · final</h2><pre>The person follows the same on-foot route between the public street and the school campus entrance, where the ground level changes. No ordinary staircase is nearby; instead the entrance has escalators. The person often “uses the stairs” by walking on the stepped escalator surfaces—going up on the appropriate up-escalator when entering and down on the down-escalator when exiting—so the apparent contradiction is resolved because escalator steps are the “stairs” being used, not a conventional fixed staircase.</pre><p>Host: <strong>yes and no</strong></p><details><summary>Private evaluation</summary><pre>{
+  &quot;checkpoints&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;credit&quot;: 0.5,
+      &quot;evidence&quot;: &quot;walking on the stepped escalator surfaces—going up on the appropriate up-escalator when entering and down on the down-escalator when exiting&quot;,
+      &quot;reason&quot;: &quot;The submission identifies the stairs as escalator steps and says the person walks on them, but it does not state that the escalator is no longer moving.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2&quot;,
+      &quot;credit&quot;: 0.5,
+      &quot;evidence&quot;: &quot;No ordinary staircase is nearby; instead the entrance has escalators&quot;,
+      &quot;reason&quot;: &quot;It covers the absence of a nearby ordinary staircase and implies escalator-based access, but it does not clearly state that a pair of escalators provides the access.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3&quot;,
+      &quot;credit&quot;: 0,
+      &quot;evidence&quot;: &quot;&quot;,
+      &quot;reason&quot;: &quot;The submission does not mention one escalator being under maintenance or the other escalator being stopped for people to walk on.&quot;
+    }
+  ],
+  &quot;material_contradiction&quot;: false,
+  &quot;irrelevant&quot;: false,
+  &quot;rubric_conflict&quot;: false,
+  &quot;full_solution&quot;: false,
+  &quot;completion_note&quot;: &quot;Scored facts remain missing, partial or contradicted; see fact_coverage.&quot;,
+  &quot;fact_coverage&quot;: [
+    {
+      &quot;id&quot;: &quot;C1.F1&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;walking on the stepped escalator surfaces—going up on the appropriate up-escalator when entering and down on the down-escalator when exiting&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2.F1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;No ordinary staircase is nearby; instead the entrance has escalators ... walking on the stepped escalator surfaces&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2.F2&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;No ordinary staircase is nearby; instead the entrance has escalators&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F1&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F2&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F3&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    }
+  ],
+  &quot;requirement_coverage&quot;: [],
+  &quot;contradictions&quot;: [],
+  &quot;partial_score&quot;: 0.4,
+  &quot;complete&quot;: false,
+  &quot;label&quot;: &quot;yes and no&quot;,
+  &quot;grading_protocol&quot;: &quot;coverage-v3-unified&quot;,
+  &quot;controller_corrections&quot;: []
+}</pre></details></article><article><h2>50 · question</h2><pre>Does the “no staircases nearby” refer specifically to the school campus having no staircases near the route, while the stairs used are escalator stairs at the entrance?</pre><p>Host: <strong>yes</strong></p></article><article><h2>51 · question</h2><pre>Is the answer that the “stairs” are escalator steps, and the person walks on them rather than standing still, while the statement “no staircases nearby” excludes escalators?</pre><p>Host: <strong>yes</strong></p></article><article><h2>52 · final</h2><pre>The person’s usual route to and from the school passes through a level change at the campus entrance. There is no conventional fixed staircase near that part of the campus; instead there is an escalator. The person often “uses the stairs” in the sense of walking on the escalator’s stepped treads rather than merely standing on them, going up when entering and down when exiting the campus. Thus “no staircases nearby” is not contradicted because an escalator is not an ordinary staircase, even though its steps are the stairs the person uses.</pre><p>Host: <strong>yes and no</strong></p><details><summary>Private evaluation</summary><pre>{
+  &quot;checkpoints&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;credit&quot;: 0.5,
+      &quot;evidence&quot;: &quot;walking on the escalator’s stepped treads rather than merely standing on them&quot;,
+      &quot;reason&quot;: &quot;Identifies the stairs as escalator steps and describes walking on them, but omits the required qualifier that the escalator is no longer moving.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2&quot;,
+      &quot;credit&quot;: 0.5,
+      &quot;evidence&quot;: &quot;There is no conventional fixed staircase near that part of the campus; instead there is an escalator.&quot;,
+      &quot;reason&quot;: &quot;Covers the absence of nearby conventional stairs and escalator-based access, but omits that a pair of escalators provides the access.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3&quot;,
+      &quot;credit&quot;: 0,
+      &quot;evidence&quot;: &quot;&quot;,
+      &quot;reason&quot;: &quot;Does not mention one escalator being under maintenance or the other escalator being stopped for people to walk on.&quot;
+    }
+  ],
+  &quot;material_contradiction&quot;: false,
+  &quot;irrelevant&quot;: false,
+  &quot;rubric_conflict&quot;: false,
+  &quot;full_solution&quot;: false,
+  &quot;completion_note&quot;: &quot;Scored facts remain missing, partial or contradicted; see fact_coverage.&quot;,
+  &quot;fact_coverage&quot;: [
+    {
+      &quot;id&quot;: &quot;C1.F1&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;walking on the escalator’s stepped treads rather than merely standing on them ... its steps are the stairs the person uses&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2.F1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;There is no conventional fixed staircase near that part of the campus; instead there is an escalator. ... walking on the escalator’s stepped treads ... going up when entering and down when exiting the campus&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2.F2&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;There is no conventional fixed staircase near that part of the campus; instead there is an escalator.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F1&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F2&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F3&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    }
+  ],
+  &quot;requirement_coverage&quot;: [],
+  &quot;contradictions&quot;: [],
+  &quot;partial_score&quot;: 0.4,
+  &quot;complete&quot;: false,
+  &quot;label&quot;: &quot;yes and no&quot;,
+  &quot;grading_protocol&quot;: &quot;coverage-v3-unified&quot;,
+  &quot;controller_corrections&quot;: []
+}</pre></details></article><article><h2>53 · question</h2><pre>Is there a specific wordplay or ambiguity in the word “stairs” that I have not yet identified?</pre><p>Host: <strong>no</strong></p></article><article><h2>54 · question</h2><pre>Does the phrase “no staircases nearby” mean there is no staircase at the specific nearby location where the person enters/exits, even though an escalator is present there?</pre><p>Host: <strong>yes</strong></p></article><article><h2>55 · question</h2><pre>Is the person entering and exiting the campus by using an escalator that is located at a school entrance but is not considered a “staircase”?</pre><p>Host: <strong>yes</strong></p></article><article><h2>56 · question</h2><pre>Does the person use the escalator by standing on it rather than walking up its steps?</pre><p>Host: <strong>no</strong></p></article><article><h2>57 · question</h2><pre>Does the person use the “stairs” only when exiting the campus, not when entering?</pre><p>Host: <strong>no</strong></p></article><article><h2>58 · question</h2><pre>Does the person use a set of literal stairs on only part of the same route, so that they use stairs “nearby” the campus in one direction but not the other?</pre><p>Host: <strong>no</strong></p></article><article><h2>59 · question</h2><pre>Is the apparent contradiction resolved mainly by the fact that an escalator is a “moving staircase” and its stepped surface counts as stairs?</pre><p>Host: <strong>yes</strong></p></article><article><h2>60 · question</h2><pre>Does the person use the escalator as a shortcut or direct route because it is the only practical way to enter and exit the elevated or sunken campus entrance?</pre><p>Host: <strong>yes</strong></p></article><article><h2>61 · final</h2><pre>The person’s regular route to and from the school reaches a change in ground level at the campus entrance. There is no ordinary fixed staircase nearby there; instead, the entrance is served by an escalator, a “moving staircase” whose stepped surface counts as stairs. The person frequently uses those escalator steps—walking on them rather than just standing—to go up or down between the street level and the campus entrance, in both directions. Hence the person can say there are no staircases nearby while still often using “the stairs”: the stairs are the escalator steps, and the escalator is also the direct practical way through that level change.</pre><p>Host: <strong>yes and no</strong></p><details><summary>Private evaluation</summary><pre>{
+  &quot;checkpoints&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;credit&quot;: 0.5,
+      &quot;evidence&quot;: &quot;the entrance is served by an escalator, a “moving staircase” whose stepped surface counts as stairs. The person frequently uses those escalator steps—walking on them rather than just standing&quot;,
+      &quot;reason&quot;: &quot;The submission identifies the stairs as escalator steps and says the person walks on them, but it omits the required qualifier that the escalator is no longer moving.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2&quot;,
+      &quot;credit&quot;: 0.5,
+      &quot;evidence&quot;: &quot;There is no ordinary fixed staircase nearby there; instead, the entrance is served by an escalator ... the escalator is also the direct practical way through that level change.&quot;,
+      &quot;reason&quot;: &quot;The submission covers the absence of nearby ordinary stairs and reliance on an escalator for access, but it omits that a pair of escalators provides the access.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3&quot;,
+      &quot;credit&quot;: 0,
+      &quot;evidence&quot;: &quot;&quot;,
+      &quot;reason&quot;: &quot;The submission does not mention one escalator being under maintenance or the other escalator being stopped for people to walk on.&quot;
+    }
+  ],
+  &quot;material_contradiction&quot;: false,
+  &quot;irrelevant&quot;: false,
+  &quot;rubric_conflict&quot;: false,
+  &quot;full_solution&quot;: false,
+  &quot;completion_note&quot;: &quot;Scored facts remain missing, partial or contradicted; see fact_coverage.&quot;,
+  &quot;fact_coverage&quot;: [
+    {
+      &quot;id&quot;: &quot;C1.F1&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;the entrance is served by an escalator, a “moving staircase” whose stepped surface counts as stairs. The person frequently uses those escalator steps—walking on them rather than just standing&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2.F1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;There is no ordinary fixed staircase nearby there; instead, the entrance is served by an escalator ... the escalator is also the direct practical way through that level change.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2.F2&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;There is no ordinary fixed staircase nearby there; instead, the entrance is served by an escalator&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F1&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F2&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F3&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    }
+  ],
+  &quot;requirement_coverage&quot;: [],
+  &quot;contradictions&quot;: [],
+  &quot;partial_score&quot;: 0.4,
+  &quot;complete&quot;: false,
+  &quot;label&quot;: &quot;yes and no&quot;,
+  &quot;grading_protocol&quot;: &quot;coverage-v3-unified&quot;,
+  &quot;controller_corrections&quot;: []
+}</pre></details></article><article><h2>62 · question</h2><pre>Is the escalator used by the person actually outside the campus, and does “enter and exit the school campus” mean passing the campus boundary after using it?</pre><p>Host: <strong>yes and no</strong></p></article><article><h2>63 · question</h2><pre>Is the escalator itself outside the campus boundary?</pre><p>Host: <strong>irrelevant</strong></p></article><article><h2>64 · question</h2><pre>Is the person using the escalator “stairs” only incidentally, while the wording “no staircases nearby” is about the literal campus building having no stairs near the route?</pre><p>Host: <strong>no</strong></p></article><article><h2>65 · question</h2><pre>Is the person using an escalator whose treads flatten at the top and bottom, so that it functions like a staircase but is not called one?</pre><p>Host: <strong>no</strong></p></article><article><h2>66 · question</h2><pre>Does the person use the escalator to go between a lower street entrance and an elevated pedestrian area that is on the campus route, rather than between campus levels?</pre><p>Host: <strong>yes</strong></p></article><article><h2>67 · question</h2><pre>Is the elevated pedestrian area a walkway or concourse that leads directly to the school campus entrance?</pre><p>Host: <strong>irrelevant</strong></p></article><article><h2>68 · question</h2><pre>Is the elevated pedestrian area part of a transport hub, such as a station, from which the person then walks to campus?</pre><p>Host: <strong>irrelevant</strong></p></article><article><h2>69 · question</h2><pre>Is the elevated pedestrian area a bridge or overpass that crosses a road on the way to campus?</pre><p>Host: <strong>irrelevant</strong></p></article><article><h2>70 · question</h2><pre>Is the escalator the person uses an outdoor public escalator connecting a lower street level to a higher pedestrian level as part of the route to campus?</pre><p>Host: <strong>irrelevant</strong></p></article><article><h2>71 · question</h2><pre>Is the person carrying a bicycle or other wheeled item up or down the escalator?</pre><p>Host: <strong>irrelevant</strong></p></article><article><h2>72 · question</h2><pre>Is the person using the escalator not for transportation but because the escalator steps themselves are a staircase they deliberately exercise on?</pre><p>Host: <strong>no</strong></p></article><article><h2>73 · question</h2><pre>Is the person using an escalator at an entrance where ordinary stairs exist but are not “nearby” the route, while the escalator is directly on the route?</pre><p>Host: <strong>irrelevant</strong></p></article><article><h2>74 · question</h2><pre>Does the person enter and exit the campus through a building, and is the escalator inside that building rather than close to where the person walks outside?</pre><p>Host: <strong>irrelevant</strong></p></article><article><h2>75 · question</h2><pre>Does the person use the escalator at a mall or commercial building adjacent to the campus as a shortcut between street levels?</pre><p>Host: <strong>irrelevant</strong></p></article><article><h2>76 · question</h2><pre>Is the person’s use of “the stairs” simply riding the escalator, with no need for them to walk on it?</pre><p>Host: <strong>no</strong></p></article><article><h2>77 · question</h2><pre>Is the escalator used as a literal staircase because it is stopped or broken, so the person climbs its steps?</pre><p>Host: <strong>yes</strong></p></article><article><h2>78 · question</h2><pre>Is the escalator often stopped or out of service around the time the person commutes, so they frequently climb it as stairs?</pre><p>Host: <strong>yes</strong></p></article><article><h2>79 · final</h2><pre>The person regularly walks the same route into and out of the school campus, and that route includes a level change served by an escalator rather than an ordinary fixed staircase. Because the escalator is often stopped or out of service at commuting times, the person frequently has to climb or descend its stationary stepped surface as if it were a staircase. So “there are no staircases nearby” is true in the sense that there is no conventional staircase there, yet the person “often uses the stairs” because the escalator’s steps function as stairs when it is not moving.</pre><p>Host: <strong>yes and no</strong></p><details><summary>Private evaluation</summary><pre>{
+  &quot;checkpoints&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;credit&quot;: 1,
+      &quot;evidence&quot;: &quot;the escalator is often stopped or out of service at commuting times ... climb or descend its stationary stepped surface ... the escalator’s steps function as stairs when it is not moving.&quot;,
+      &quot;reason&quot;: &quot;The submission identifies the stairs as the steps of an escalator when it is stopped/not moving, covering the required fact.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2&quot;,
+      &quot;credit&quot;: 0.5,
+      &quot;evidence&quot;: &quot;level change served by an escalator rather than an ordinary fixed staircase ... there is no conventional staircase there ... the escalator’s steps function as stairs.&quot;,
+      &quot;reason&quot;: &quot;Covers the absence of nearby ordinary fixed stairs and escalator-based access, but omits that a pair of escalators provides the access.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3&quot;,
+      &quot;credit&quot;: 0.5,
+      &quot;evidence&quot;: &quot;&quot;,
+      &quot;reason&quot;: &quot;Does not mention one escalator being under maintenance or the other escalator being stopped for people to walk on; the required pair/maintenance qualifiers are absent.&quot;
+    }
+  ],
+  &quot;material_contradiction&quot;: false,
+  &quot;irrelevant&quot;: false,
+  &quot;rubric_conflict&quot;: false,
+  &quot;full_solution&quot;: false,
+  &quot;completion_note&quot;: &quot;Scored facts remain missing, partial or contradicted; see fact_coverage.&quot;,
+  &quot;fact_coverage&quot;: [
+    {
+      &quot;id&quot;: &quot;C1.F1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;the escalator is often stopped or out of service at commuting times ... climb or descend its stationary stepped surface ... the escalator’s steps function as stairs when it is not moving.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2.F1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;level change served by an escalator rather than an ordinary fixed staircase ... there is no conventional staircase there ... the escalator’s steps function as stairs.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2.F2&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;an escalator rather than an ordinary fixed staircase&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F1&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F2&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;the escalator is often stopped or out of service at commuting times&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F3&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    }
+  ],
+  &quot;requirement_coverage&quot;: [],
+  &quot;contradictions&quot;: [],
+  &quot;partial_score&quot;: 0.75,
+  &quot;complete&quot;: false,
+  &quot;label&quot;: &quot;yes and no&quot;,
+  &quot;grading_protocol&quot;: &quot;coverage-v3-unified&quot;,
+  &quot;controller_corrections&quot;: [
+    {
+      &quot;field&quot;: &quot;C3.credit&quot;,
+      &quot;model&quot;: 0,
+      &quot;effective&quot;: 0.5
+    }
+  ]
+}</pre></details></article><article><h2>80 · question</h2><pre>Is the person a maintenance worker or staff member whose job involves the escalator?</pre><p>Host: <strong>irrelevant</strong></p></article><article><h2>81 · question</h2><pre>Does the person often use the stairs because the escalator is intentionally switched off or not operating during their usual travel times, rather than being broken?</pre><p>Host: <strong>yes</strong></p></article><article><h2>82 · question</h2><pre>Is the escalator switched off outside of certain operating hours, such as early morning or late evening?</pre><p>Host: <strong>no</strong></p></article><article><h2>83 · question</h2><pre>Is the escalator switched off during specific scheduled periods, such as outside normal public transport service times or during energy-saving hours?</pre><p>Host: <strong>no</strong></p></article><article><h2>84 · question</h2><pre>Is the escalator switched off because it only operates on demand, such as when someone approaches or presses a button?</pre><p>Host: <strong>no</strong></p></article><article><h2>85 · question</h2><pre>Is the escalator switched off during periods of low traffic as an energy-saving measure?</pre><p>Host: <strong>no</strong></p></article><article><h2>86 · question</h2><pre>Is the escalator switched off at times when the person uses it because of security or safety reasons, such as at night?</pre><p>Host: <strong>no</strong></p></article><article><h2>87 · question</h2><pre>Is the escalator switched off because it is not powered, such as during a power outage or load shedding, when the person travels?</pre><p>Host: <strong>no</strong></p></article><article><h2>88 · question</h2><pre>Is the escalator usually switched off during the person&#x27;s commute because the building or station is closed at that time?</pre><p>Host: <strong>no</strong></p></article><article><h2>89 · question</h2><pre>Is the escalator turned off on purpose to discourage its use, for example to save costs or because walking is preferred?</pre><p>Host: <strong>no</strong></p></article><article><h2>90 · question</h2><pre>Is the escalator switched off at particular times under a published schedule, such as being turned off on weekends or holidays?</pre><p>Host: <strong>no</strong></p></article><article><h2>91 · question</h2><pre>Is the escalator switched off specifically during hours when few people use it, but not as a formal published schedule?</pre><p>Host: <strong>no</strong></p></article><article><h2>92 · question</h2><pre>Is the escalator switched off because the person arrives before it is turned on each morning?</pre><p>Host: <strong>no</strong></p></article><article><h2>93 · question</h2><pre>Is the escalator switched off in the evening when the person leaves the campus?</pre><p>Host: <strong>irrelevant</strong></p></article><article><h2>94 · question</h2><pre>Is the escalator switched off because of a rule that it must be stopped when no operator or attendant is present?</pre><p>Host: <strong>no</strong></p></article><article><h2>95 · question</h2><pre>Is the escalator switched off only for part of the year, such as during school holidays or a particular season?</pre><p>Host: <strong>irrelevant</strong></p></article><article><h2>96 · question</h2><pre>Is the escalator switched off during the person&#x27;s commute because of a timer setting that does not match their travel times?</pre><p>Host: <strong>no</strong></p></article><article><h2>97 · question</h2><pre>Is the escalator switched off at the same time every day as part of a regular maintenance or inspection routine?</pre><p>Host: <strong>no</strong></p></article><article><h2>98 · question</h2><pre>Did the host mean “yes and no” to indicate that the escalator is sometimes operating and sometimes switched off, so the person sometimes walks the steps and sometimes rides?</pre><p>Host: <strong>yes</strong></p></article><article><h2>99 · question</h2><pre>Is the escalator usually stopped in one direction—say, the down escalator—so the person often has to walk down its steps when leaving campus?</pre><p>Host: <strong>yes</strong></p></article><article><h2>100 · final · mandatory final</h2><pre>The person regularly follows the same route between the public street and the school campus, and that route involves a level change at the campus entrance. No ordinary fixed staircase is nearby there; the entrance instead has escalators. The escalators are sometimes operating and sometimes switched off, and in particular the down escalator is usually stopped. So the person often “uses the stairs” by walking up or down the stationary stepped escalator surface—especially walking down it when leaving campus—rather than using a conventional staircase. Thus there are no staircases nearby in the ordinary sense, yet the person often uses stairs: the escalator steps, which serve as stairs when the escalator is not moving.</pre><p>Host: <strong>yes and no</strong></p><details><summary>Private evaluation</summary><pre>{
+  &quot;checkpoints&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;credit&quot;: 1,
+      &quot;evidence&quot;: &quot;walking up or down the stationary stepped escalator surface ... the escalator steps, which serve as stairs when the escalator is not moving&quot;,
+      &quot;reason&quot;: &quot;The submission clearly identifies the stairs as the steps of a stopped/non-moving escalator.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2&quot;,
+      &quot;credit&quot;: 0.5,
+      &quot;evidence&quot;: &quot;No ordinary fixed staircase is nearby there; the entrance instead has escalators ... walking up or down the stationary stepped escalator surface&quot;,
+      &quot;reason&quot;: &quot;It covers the absence of nearby ordinary fixed stairs and escalator-based access, but it omits the required qualifier that a pair of escalators provides the access.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3&quot;,
+      &quot;credit&quot;: 0.5,
+      &quot;evidence&quot;: &quot;&quot;,
+      &quot;reason&quot;: &quot;It does not mention one escalator being under maintenance, nor the causal event of the other escalator being stopped for people to walk on during that maintenance. The isolated mention of a stopped down escalator is not enough to cover the required facts.&quot;
+    }
+  ],
+  &quot;material_contradiction&quot;: false,
+  &quot;irrelevant&quot;: false,
+  &quot;rubric_conflict&quot;: false,
+  &quot;full_solution&quot;: false,
+  &quot;completion_note&quot;: &quot;Scored facts remain missing, partial or contradicted; see fact_coverage.&quot;,
+  &quot;fact_coverage&quot;: [
+    {
+      &quot;id&quot;: &quot;C1.F1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;walking up or down the stationary stepped escalator surface ... the escalator steps, which serve as stairs when the escalator is not moving&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2.F1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;No ordinary fixed staircase is nearby there; the entrance instead has escalators ... walking up or down the stationary stepped escalator surface&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2.F2&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;No ordinary fixed staircase is nearby there; the entrance instead has escalators&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F1&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F2&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;in particular the down escalator is usually stopped&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F3&quot;,
+      &quot;status&quot;: &quot;missing&quot;,
+      &quot;evidence&quot;: &quot;&quot;
+    }
+  ],
+  &quot;requirement_coverage&quot;: [],
+  &quot;contradictions&quot;: [],
+  &quot;partial_score&quot;: 0.75,
+  &quot;complete&quot;: false,
+  &quot;label&quot;: &quot;yes and no&quot;,
+  &quot;grading_protocol&quot;: &quot;coverage-v3-unified&quot;,
+  &quot;controller_corrections&quot;: [
+    {
+      &quot;field&quot;: &quot;C3.credit&quot;,
+      &quot;model&quot;: 0,
+      &quot;effective&quot;: 0.5
+    }
+  ]
+}</pre></details></article>

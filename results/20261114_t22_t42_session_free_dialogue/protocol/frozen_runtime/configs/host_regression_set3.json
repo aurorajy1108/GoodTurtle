@@ -1,0 +1,50 @@
+[
+  {
+    "id": "47_window",
+    "puzzle_id": "TS047",
+    "question": "Was the apparent portrait actually a window?",
+    "expected": "yes"
+  },
+  {
+    "id": "47_real_painting",
+    "puzzle_id": "TS047",
+    "question": "Was the apparent portrait an actual painting?",
+    "expected": "no"
+  },
+  {
+    "id": "45_camera",
+    "puzzle_id": "TS045",
+    "question": "Did the pen contain a camera?",
+    "expected": "yes"
+  },
+  {
+    "id": "45_fake_body_parts",
+    "puzzle_id": "TS045",
+    "question": "Were the human heads and limbs seen through the camera merely props?",
+    "expected": "no"
+  },
+  {
+    "id": "19_stopped_other",
+    "puzzle_id": "TS019",
+    "question": "When one escalator was under maintenance, was the other escalator stopped so people could walk on it?",
+    "expected": "yes"
+  },
+  {
+    "id": "19_normal_stairs",
+    "puzzle_id": "TS019",
+    "question": "Were there conventional staircases nearby that the narrator normally used?",
+    "expected": "no"
+  },
+  {
+    "id": "22_window",
+    "puzzle_id": "TS022",
+    "question": "Was what the girl mistook for a portrait actually a window?",
+    "expected": "yes"
+  },
+  {
+    "id": "22_watched",
+    "puzzle_id": "TS022",
+    "question": "Had a real person been watching the girl from outside the window?",
+    "expected": "yes"
+  }
+]
