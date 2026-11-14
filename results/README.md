@@ -1,12 +1,13 @@
 # 实验结果与trajectory
 
-主分支保留191份正式轨迹（含前题、附录与两局技术中断），按批次各存一份。原分和冻结设置不改写。
+主分支保留206份正式轨迹（含前题、附录与三局技术中断／评分冲突），按批次各存一份。原分和冻结设置不改写。
 
 [全部逐局CSV](catalog.csv) · [机器可读目录](catalog.json) · [分条件汇总CSV](summary.csv) · [目录与归档规则](../docs/REPOSITORY_LAYOUT.md)
 
 |批次|归档局数|完整结束|轨迹目录|
 |---|---:|---:|---|
 |April_TS038_v9|9|8|[Markdown索引](trajectories/mas_ts038_april_v9/README.md)|
+|Set3_answer_only_20261114|15|14|[轨迹与分列得分](trajectories/cl_set3_answer_only_20261114/README.md)|
 |Set1_unified|39|39|[Markdown索引](trajectories/cl_set1_unified/README.md)|
 |Set2_extra2_v13|4|4|[Markdown索引](trajectories/cl_set2_extra2/README.md)|
 |Set2_legacy_round1|12|12|[Markdown索引](trajectories/cl_set2_legacy_round1/README.md)|

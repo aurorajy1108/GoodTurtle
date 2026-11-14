@@ -1,0 +1,279 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "predecessor_puzzle": null,
+  "condition": null,
+  "repeat": null,
+  "success": false,
+  "host_questions": 98,
+  "final_attempts": 2,
+  "rejected_finals": 2,
+  "counted_questions": 100,
+  "submissions": 100,
+  "player_format_corrections": [],
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.4,
+  "best_partial_score": 0.4,
+  "latest_final": "The girl, lost and exhausted, sheltered in what she took to be an empty house but could not sleep because she sensed she was being watched. She was right: a human figure stood outside the window all night, and in the darkness its face was visible to her as a face she had never seen before—so it was a stranger to her at that point. In the morning, now able to appraise that same window and face clearly, she recognized the watcher: the face she had glimpsed in the night belonged to the person connected with the house, who had been standing outside through the whole night while she lay helpless inside. She had mistaken the house for an empty refuge, when in fact its own occupant had been silently watching her the entire time; understanding this, she panicked and fled.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0.5,
+        "evidence": "a human figure stood outside the window all night",
+        "reason": "The explanation identifies a real person outside a window but omits the apparent portrait and the mistake that the window was a portrait, so all required facts are only partially covered."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "could not sleep because she sensed she was being watched",
+        "reason": "It links being watched to sleeplessness but never mentions mistaking the watcher for a portrait, so the causal qualifier is only partially covered."
+      },
+      {
+        "id": "C3",
+        "credit": 0,
+        "evidence": "In the morning, now able to appraise that same window and face clearly, she recognized the watcher",
+        "reason": "This affirmatively contradicts the required morning disappearance of the person and therefore zeroes the checkpoint."
+      }
+    ],
+    "material_contradiction": true,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "partial",
+        "evidence": "a human figure stood outside the window all night"
+      },
+      {
+        "id": "C1.F2",
+        "status": "partial",
+        "evidence": "sheltered in what she took to be an empty house ... a human figure stood outside the window all night"
+      },
+      {
+        "id": "C2.F1",
+        "status": "partial",
+        "evidence": "could not sleep because she sensed she was being watched"
+      },
+      {
+        "id": "C2.F2",
+        "status": "partial",
+        "evidence": "could not sleep because she sensed she was being watched"
+      },
+      {
+        "id": "C3.F1",
+        "status": "contradicted",
+        "evidence": "In the morning, now able to appraise that same window and face clearly, she recognized the watcher"
+      },
+      {
+        "id": "C3.F2",
+        "status": "contradicted",
+        "evidence": "In the morning, now able to appraise that same window and face clearly, she recognized the watcher"
+      },
+      {
+        "id": "C3.F3",
+        "status": "partial",
+        "evidence": "a human figure stood outside the window all night ... who had been standing outside through the whole night while she lay helpless inside ... understanding this, she panicked and fled."
+      }
+    ],
+    "requirement_coverage": [],
+    "contradictions": [
+      {
+        "quote": "In the morning, now able to appraise that same window and face clearly, she recognized the watcher: the face she had glimpsed in the night belonged to the person connected with the house",
+        "reference": "By morning the person is gone, exposing the window and causing her to flee.",
+        "checkpoint_ids": [
+          "C3"
+        ]
+      },
+      {
+        "quote": "In the morning, now able to appraise that same window and face clearly, she recognized the watcher",
+        "reference": "She eventually sleeps, and in the morning the figure is gone",
+        "checkpoint_ids": [
+          "C3"
+        ]
+      }
+    ],
+    "partial_score": 0.4,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v3-unified",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 1261.2250333869888,
+  "usage": {
+    "grader": {
+      "http_attempts": 2,
+      "successful_responses": 2,
+      "seconds": 105.7902423319756,
+      "provider_reported_usage": {
+        "prompt_tokens": 9951,
+        "completion_tokens": 10332,
+        "total_tokens": 20283,
+        "prompt_cache_hit_tokens": 7296,
+        "prompt_cache_miss_tokens": 2655
+      }
+    },
+    "host": {
+      "http_attempts": 98,
+      "successful_responses": 98,
+      "seconds": 983.6535857298877,
+      "provider_reported_usage": {
+        "prompt_tokens": 1482197,
+        "completion_tokens": 69306,
+        "total_tokens": 1551503,
+        "prompt_cache_hit_tokens": 1454848,
+        "prompt_cache_miss_tokens": 27349
+      }
+    },
+    "player": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 169.2721916870505,
+      "provider_reported_usage": {
+        "prompt_tokens": 735636,
+        "completion_tokens": 2819,
+        "total_tokens": 738455,
+        "prompt_cache_hit_tokens": 716160,
+        "prompt_cache_miss_tokens": 19476
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "estimate_assumptions": [
+      "peak_rate_reference_upper_estimate; off-peak rates are half; actual billing unknown"
+    ],
+    "total": {
+      "calls": 200,
+      "unknown_cost_calls": 0,
+      "known_estimated_cost_usd": 0.432828656,
+      "estimated_cost_usd": 0.432828656,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 2227784,
+        "cached_input_tokens": 2178304,
+        "cache_write_tokens": 0,
+        "output_tokens": 82457,
+        "reasoning_tokens": 77932,
+        "total_tokens": 2310241
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 100,
+        "total_tokens": 0
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 2,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.044740344,
+        "estimated_cost_usd": 0.044740344,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 9951,
+          "cached_input_tokens": 7296,
+          "cache_write_tokens": 0,
+          "output_tokens": 10332,
+          "reasoning_tokens": 8836,
+          "total_tokens": 20283
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 98,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.374565752,
+        "estimated_cost_usd": 0.374565752,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1482197,
+          "cached_input_tokens": 1454848,
+          "cache_write_tokens": 0,
+          "output_tokens": 69306,
+          "reasoning_tokens": 69096,
+          "total_tokens": 1551503
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 100,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.01352256,
+        "estimated_cost_usd": 0.01352256,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 735636,
+          "cached_input_tokens": 716160,
+          "cache_write_tokens": 0,
+          "output_tokens": 2819,
+          "reasoning_tokens": 0,
+          "total_tokens": 738455
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 100,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "265c1270-64e7-4e09-801f-ab0947b38fbf",
+      "8c024d32-aedf-4d62-a068-b71a94210d45",
+      "d0431dc8-7e9e-4272-a5e2-2b67452133e5"
+    ],
+    "logical_input_chars": 1882009,
+    "delta_input_chars": 121378,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "7c58339299af1ffe5c8b62850b87419914bf050994fabb559168e536907297d8",
+    "grading_sha256": "8c8766064d4bd123188d1f3666ee10ffb54d8ffbe4f02ce3477847c0a7b35c85",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v3-unified",
+    "prompts_sha256": "e70b675c3bc5b9ea59efc2e54fd11bc240bcc52e29251a42a47be33758b708e9",
+    "controller_sha256": "c750c12c1b961778115949b8f5d2b9cd6d848c5a20a7510158a73a34731e8d73",
+    "player_format_policy_sha256": "cf439ee1d60ae38374486aada319739646a5975284ff00bc877a3040047df56a",
+    "host_context_sha256": "5d44680f053ed1c15963a67180e489f6280a408a8977dbd1a644f7f922badcfc",
+    "host_binding_version": "host-v9-human-20261102"
+  }
+}

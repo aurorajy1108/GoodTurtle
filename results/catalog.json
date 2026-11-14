@@ -11179,5 +11179,905 @@
     "grading_protocol": "coverage-v2",
     "duplicate_of": null,
     "observation_sha256": "9a2200686372b5ee6e763dcb3d4b536de89538ae9449f0a7eb1d44de51a945b4"
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS047_answer_only_r01",
+    "suite": "Set3_answer_only_20261114",
+    "source": "TS047",
+    "condition": "answer_only",
+    "role": "target",
+    "primary": true,
+    "native_cohort": "20261114_set3_answer_only_r1r5",
+    "semantic_review": "assistant_offline_not_human_gold",
+    "puzzle": "TS022",
+    "status": "completed",
+    "success": false,
+    "score": 0.9,
+    "best_score": 0.9,
+    "submissions": 100,
+    "path": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS047_answer_only_r01",
+    "host_version": "host-v9-human-20261102",
+    "grading_protocol": "coverage-v3-unified",
+    "annotation_version": "turtle50-v3-host-repair-20261023",
+    "observation_sha256": "5d44680f053ed1c15963a67180e489f6280a408a8977dbd1a644f7f922badcfc",
+    "duplicate_of": null,
+    "models": {
+      "host": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high"
+        }
+      },
+      "player": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      },
+      "grader": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high",
+          "response_format": {
+            "type": "json_object"
+          }
+        }
+      }
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS047_answer_only_r01/trajectory.md"
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS045_answer_only_r01",
+    "suite": "Set3_answer_only_20261114",
+    "source": "TS045",
+    "condition": "answer_only",
+    "role": "target",
+    "primary": true,
+    "native_cohort": "20261114_set3_answer_only_r1r5",
+    "semantic_review": "assistant_offline_not_human_gold",
+    "puzzle": "TS022",
+    "status": "completed",
+    "success": false,
+    "score": 0.4,
+    "best_score": 0.4,
+    "submissions": 100,
+    "path": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS045_answer_only_r01",
+    "host_version": "host-v9-human-20261102",
+    "grading_protocol": "coverage-v3-unified",
+    "annotation_version": "turtle50-v3-host-repair-20261023",
+    "observation_sha256": "5d44680f053ed1c15963a67180e489f6280a408a8977dbd1a644f7f922badcfc",
+    "duplicate_of": null,
+    "models": {
+      "host": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high"
+        }
+      },
+      "player": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      },
+      "grader": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high",
+          "response_format": {
+            "type": "json_object"
+          }
+        }
+      }
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS045_answer_only_r01/trajectory.md"
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS019_answer_only_r01",
+    "suite": "Set3_answer_only_20261114",
+    "source": "TS019",
+    "condition": "answer_only",
+    "role": "target",
+    "primary": true,
+    "native_cohort": "20261114_set3_answer_only_r1r5",
+    "semantic_review": "assistant_offline_not_human_gold",
+    "puzzle": "TS022",
+    "status": "completed",
+    "success": false,
+    "score": 0.0,
+    "best_score": 0.0,
+    "submissions": 100,
+    "path": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS019_answer_only_r01",
+    "host_version": "host-v9-human-20261102",
+    "grading_protocol": "coverage-v3-unified",
+    "annotation_version": "turtle50-v3-host-repair-20261023",
+    "observation_sha256": "5d44680f053ed1c15963a67180e489f6280a408a8977dbd1a644f7f922badcfc",
+    "duplicate_of": null,
+    "models": {
+      "host": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high"
+        }
+      },
+      "player": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      },
+      "grader": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high",
+          "response_format": {
+            "type": "json_object"
+          }
+        }
+      }
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS019_answer_only_r01/trajectory.md"
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS047_answer_only_r02",
+    "suite": "Set3_answer_only_20261114",
+    "source": "TS047",
+    "condition": "answer_only",
+    "role": "target",
+    "primary": true,
+    "native_cohort": "20261114_set3_answer_only_r1r5",
+    "semantic_review": "not_offline_adjudicated",
+    "puzzle": "TS022",
+    "status": "completed",
+    "success": false,
+    "score": 0.9,
+    "best_score": 0.9,
+    "submissions": 100,
+    "path": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS047_answer_only_r02",
+    "host_version": "host-v9-human-20261102",
+    "grading_protocol": "coverage-v3-unified",
+    "annotation_version": "turtle50-v3-host-repair-20261023",
+    "observation_sha256": "5d44680f053ed1c15963a67180e489f6280a408a8977dbd1a644f7f922badcfc",
+    "duplicate_of": null,
+    "models": {
+      "host": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high"
+        }
+      },
+      "player": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      },
+      "grader": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high",
+          "response_format": {
+            "type": "json_object"
+          }
+        }
+      }
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS047_answer_only_r02/trajectory.md"
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS045_answer_only_r02",
+    "suite": "Set3_answer_only_20261114",
+    "source": "TS045",
+    "condition": "answer_only",
+    "role": "target",
+    "primary": true,
+    "native_cohort": "20261114_set3_answer_only_r1r5",
+    "semantic_review": "not_offline_adjudicated",
+    "puzzle": "TS022",
+    "status": "completed",
+    "success": false,
+    "score": 0.4,
+    "best_score": 0.4,
+    "submissions": 100,
+    "path": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS045_answer_only_r02",
+    "host_version": "host-v9-human-20261102",
+    "grading_protocol": "coverage-v3-unified",
+    "annotation_version": "turtle50-v3-host-repair-20261023",
+    "observation_sha256": "5d44680f053ed1c15963a67180e489f6280a408a8977dbd1a644f7f922badcfc",
+    "duplicate_of": null,
+    "models": {
+      "host": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high"
+        }
+      },
+      "player": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      },
+      "grader": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high",
+          "response_format": {
+            "type": "json_object"
+          }
+        }
+      }
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS045_answer_only_r02/trajectory.md"
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS019_answer_only_r02",
+    "suite": "Set3_answer_only_20261114",
+    "source": "TS019",
+    "condition": "answer_only",
+    "role": "target",
+    "primary": true,
+    "native_cohort": "20261114_set3_answer_only_r1r5",
+    "semantic_review": "not_offline_adjudicated",
+    "puzzle": "TS022",
+    "status": "completed",
+    "success": false,
+    "score": 0.25,
+    "best_score": 0.25,
+    "submissions": 100,
+    "path": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS019_answer_only_r02",
+    "host_version": "host-v9-human-20261102",
+    "grading_protocol": "coverage-v3-unified",
+    "annotation_version": "turtle50-v3-host-repair-20261023",
+    "observation_sha256": "5d44680f053ed1c15963a67180e489f6280a408a8977dbd1a644f7f922badcfc",
+    "duplicate_of": null,
+    "models": {
+      "host": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high"
+        }
+      },
+      "player": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      },
+      "grader": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high",
+          "response_format": {
+            "type": "json_object"
+          }
+        }
+      }
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS019_answer_only_r02/trajectory.md"
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS047_answer_only_r03",
+    "suite": "Set3_answer_only_20261114",
+    "source": "TS047",
+    "condition": "answer_only",
+    "role": "target",
+    "primary": true,
+    "native_cohort": "20261114_set3_answer_only_r1r5",
+    "semantic_review": "assistant_offline_not_human_gold",
+    "puzzle": "TS022",
+    "status": "error",
+    "success": null,
+    "score": null,
+    "best_score": null,
+    "submissions": 100,
+    "path": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS047_answer_only_r03",
+    "host_version": "host-v9-human-20261102",
+    "grading_protocol": "coverage-v3-unified",
+    "annotation_version": "turtle50-v3-host-repair-20261023",
+    "observation_sha256": "5d44680f053ed1c15963a67180e489f6280a408a8977dbd1a644f7f922badcfc",
+    "duplicate_of": null,
+    "models": {
+      "host": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high"
+        }
+      },
+      "player": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      },
+      "grader": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high",
+          "response_format": {
+            "type": "json_object"
+          }
+        }
+      }
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS047_answer_only_r03/trajectory.md"
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS045_answer_only_r03",
+    "suite": "Set3_answer_only_20261114",
+    "source": "TS045",
+    "condition": "answer_only",
+    "role": "target",
+    "primary": true,
+    "native_cohort": "20261114_set3_answer_only_r1r5",
+    "semantic_review": "not_offline_adjudicated",
+    "puzzle": "TS022",
+    "status": "completed",
+    "success": false,
+    "score": 0.4,
+    "best_score": 0.4,
+    "submissions": 100,
+    "path": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS045_answer_only_r03",
+    "host_version": "host-v9-human-20261102",
+    "grading_protocol": "coverage-v3-unified",
+    "annotation_version": "turtle50-v3-host-repair-20261023",
+    "observation_sha256": "5d44680f053ed1c15963a67180e489f6280a408a8977dbd1a644f7f922badcfc",
+    "duplicate_of": null,
+    "models": {
+      "host": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high"
+        }
+      },
+      "player": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      },
+      "grader": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high",
+          "response_format": {
+            "type": "json_object"
+          }
+        }
+      }
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS045_answer_only_r03/trajectory.md"
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS019_answer_only_r03",
+    "suite": "Set3_answer_only_20261114",
+    "source": "TS019",
+    "condition": "answer_only",
+    "role": "target",
+    "primary": true,
+    "native_cohort": "20261114_set3_answer_only_r1r5",
+    "semantic_review": "not_offline_adjudicated",
+    "puzzle": "TS022",
+    "status": "completed",
+    "success": false,
+    "score": 0.0,
+    "best_score": 0.0,
+    "submissions": 100,
+    "path": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS019_answer_only_r03",
+    "host_version": "host-v9-human-20261102",
+    "grading_protocol": "coverage-v3-unified",
+    "annotation_version": "turtle50-v3-host-repair-20261023",
+    "observation_sha256": "5d44680f053ed1c15963a67180e489f6280a408a8977dbd1a644f7f922badcfc",
+    "duplicate_of": null,
+    "models": {
+      "host": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high"
+        }
+      },
+      "player": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      },
+      "grader": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high",
+          "response_format": {
+            "type": "json_object"
+          }
+        }
+      }
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS019_answer_only_r03/trajectory.md"
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS047_answer_only_r04",
+    "suite": "Set3_answer_only_20261114",
+    "source": "TS047",
+    "condition": "answer_only",
+    "role": "target",
+    "primary": true,
+    "native_cohort": "20261114_set3_answer_only_r1r5",
+    "semantic_review": "not_offline_adjudicated",
+    "puzzle": "TS022",
+    "status": "completed",
+    "success": false,
+    "score": 0.1,
+    "best_score": 0.1,
+    "submissions": 100,
+    "path": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS047_answer_only_r04",
+    "host_version": "host-v9-human-20261102",
+    "grading_protocol": "coverage-v3-unified",
+    "annotation_version": "turtle50-v3-host-repair-20261023",
+    "observation_sha256": "5d44680f053ed1c15963a67180e489f6280a408a8977dbd1a644f7f922badcfc",
+    "duplicate_of": null,
+    "models": {
+      "host": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high"
+        }
+      },
+      "player": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      },
+      "grader": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high",
+          "response_format": {
+            "type": "json_object"
+          }
+        }
+      }
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS047_answer_only_r04/trajectory.md"
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS045_answer_only_r04",
+    "suite": "Set3_answer_only_20261114",
+    "source": "TS045",
+    "condition": "answer_only",
+    "role": "target",
+    "primary": true,
+    "native_cohort": "20261114_set3_answer_only_r1r5",
+    "semantic_review": "not_offline_adjudicated",
+    "puzzle": "TS022",
+    "status": "completed",
+    "success": false,
+    "score": 0.0,
+    "best_score": 0.0,
+    "submissions": 100,
+    "path": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS045_answer_only_r04",
+    "host_version": "host-v9-human-20261102",
+    "grading_protocol": "coverage-v3-unified",
+    "annotation_version": "turtle50-v3-host-repair-20261023",
+    "observation_sha256": "5d44680f053ed1c15963a67180e489f6280a408a8977dbd1a644f7f922badcfc",
+    "duplicate_of": null,
+    "models": {
+      "host": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high"
+        }
+      },
+      "player": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      },
+      "grader": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high",
+          "response_format": {
+            "type": "json_object"
+          }
+        }
+      }
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS045_answer_only_r04/trajectory.md"
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS019_answer_only_r04",
+    "suite": "Set3_answer_only_20261114",
+    "source": "TS019",
+    "condition": "answer_only",
+    "role": "target",
+    "primary": true,
+    "native_cohort": "20261114_set3_answer_only_r1r5",
+    "semantic_review": "not_offline_adjudicated",
+    "puzzle": "TS022",
+    "status": "completed",
+    "success": false,
+    "score": 0.35,
+    "best_score": 0.35,
+    "submissions": 100,
+    "path": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS019_answer_only_r04",
+    "host_version": "host-v9-human-20261102",
+    "grading_protocol": "coverage-v3-unified",
+    "annotation_version": "turtle50-v3-host-repair-20261023",
+    "observation_sha256": "5d44680f053ed1c15963a67180e489f6280a408a8977dbd1a644f7f922badcfc",
+    "duplicate_of": null,
+    "models": {
+      "host": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high"
+        }
+      },
+      "player": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      },
+      "grader": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high",
+          "response_format": {
+            "type": "json_object"
+          }
+        }
+      }
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS019_answer_only_r04/trajectory.md"
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS047_answer_only_r05",
+    "suite": "Set3_answer_only_20261114",
+    "source": "TS047",
+    "condition": "answer_only",
+    "role": "target",
+    "primary": true,
+    "native_cohort": "20261114_set3_answer_only_r1r5",
+    "semantic_review": "not_offline_adjudicated",
+    "puzzle": "TS022",
+    "status": "completed",
+    "success": false,
+    "score": 0.85,
+    "best_score": 0.85,
+    "submissions": 100,
+    "path": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS047_answer_only_r05",
+    "host_version": "host-v9-human-20261102",
+    "grading_protocol": "coverage-v3-unified",
+    "annotation_version": "turtle50-v3-host-repair-20261023",
+    "observation_sha256": "5d44680f053ed1c15963a67180e489f6280a408a8977dbd1a644f7f922badcfc",
+    "duplicate_of": null,
+    "models": {
+      "host": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high"
+        }
+      },
+      "player": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      },
+      "grader": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high",
+          "response_format": {
+            "type": "json_object"
+          }
+        }
+      }
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS047_answer_only_r05/trajectory.md"
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS045_answer_only_r05",
+    "suite": "Set3_answer_only_20261114",
+    "source": "TS045",
+    "condition": "answer_only",
+    "role": "target",
+    "primary": true,
+    "native_cohort": "20261114_set3_answer_only_r1r5",
+    "semantic_review": "not_offline_adjudicated",
+    "puzzle": "TS022",
+    "status": "completed",
+    "success": false,
+    "score": 0.5,
+    "best_score": 0.5,
+    "submissions": 100,
+    "path": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS045_answer_only_r05",
+    "host_version": "host-v9-human-20261102",
+    "grading_protocol": "coverage-v3-unified",
+    "annotation_version": "turtle50-v3-host-repair-20261023",
+    "observation_sha256": "5d44680f053ed1c15963a67180e489f6280a408a8977dbd1a644f7f922badcfc",
+    "duplicate_of": null,
+    "models": {
+      "host": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high"
+        }
+      },
+      "player": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      },
+      "grader": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high",
+          "response_format": {
+            "type": "json_object"
+          }
+        }
+      }
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS045_answer_only_r05/trajectory.md"
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS019_answer_only_r05",
+    "suite": "Set3_answer_only_20261114",
+    "source": "TS019",
+    "condition": "answer_only",
+    "role": "target",
+    "primary": true,
+    "native_cohort": "20261114_set3_answer_only_r1r5",
+    "semantic_review": "not_offline_adjudicated",
+    "puzzle": "TS022",
+    "status": "completed",
+    "success": false,
+    "score": 0.25,
+    "best_score": 0.25,
+    "submissions": 100,
+    "path": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS019_answer_only_r05",
+    "host_version": "host-v9-human-20261102",
+    "grading_protocol": "coverage-v3-unified",
+    "annotation_version": "turtle50-v3-host-repair-20261023",
+    "observation_sha256": "5d44680f053ed1c15963a67180e489f6280a408a8977dbd1a644f7f922badcfc",
+    "duplicate_of": null,
+    "models": {
+      "host": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high"
+        }
+      },
+      "player": {
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "disabled"
+          }
+        }
+      },
+      "grader": {
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "reasoning_effort": null,
+        "extra_body": {
+          "thinking": {
+            "type": "enabled"
+          },
+          "reasoning_effort": "high",
+          "response_format": {
+            "type": "json_object"
+          }
+        }
+      }
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS019_answer_only_r05/trajectory.md"
   }
 ]

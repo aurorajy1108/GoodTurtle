@@ -1,0 +1,281 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "predecessor_puzzle": null,
+  "condition": null,
+  "repeat": null,
+  "success": false,
+  "host_questions": 98,
+  "final_attempts": 2,
+  "rejected_finals": 2,
+  "counted_questions": 100,
+  "submissions": 100,
+  "player_format_corrections": [],
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.0,
+  "best_partial_score": 0.0,
+  "latest_final": "The lost girl, exhausted, sheltered in an empty house but was too frightened and uneasy to sleep. Before finally falling asleep, she saw a real living person outside through a window. When she woke the next morning, that person was inexplicably gone—without any body, blood, or trace—and the outside scene was visibly wrong without them. The disappearance of the only person she had seen, combined with the unnatural alteration of the outside view, convinced her that something dangerous had happened or was near, and she fled the house in terror.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0,
+        "evidence": "Before finally falling asleep, she saw a real living person outside through a window.",
+        "reason": "The required apparent-portrait-to-window misperception is absent; the submission states she directly saw a window with a living person outside, contradicting the portrait misunderstanding."
+      },
+      {
+        "id": "C2",
+        "credit": 0,
+        "evidence": "was too frightened and uneasy to sleep ... she saw a real living person outside through a window",
+        "reason": "Unease and sleeplessness appear, but the required cause—mistaking the watcher for a portrait—is contradicted by directly seeing a living person outside."
+      },
+      {
+        "id": "C3",
+        "credit": 0,
+        "evidence": "The disappearance of the only person she had seen ... convinced her that something dangerous had happened or was near, and she fled",
+        "reason": "Morning absence and flight are present, but the required window exposure and realization are replaced by a different discovery, contradicting the required cause."
+      }
+    ],
+    "material_contradiction": true,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "contradicted",
+        "evidence": "Before finally falling asleep, she saw a real living person outside through a window."
+      },
+      {
+        "id": "C1.F2",
+        "status": "contradicted",
+        "evidence": "Before finally falling asleep, she saw a real living person outside through a window."
+      },
+      {
+        "id": "C2.F1",
+        "status": "contradicted",
+        "evidence": "was too frightened and uneasy to sleep ... she saw a real living person outside through a window"
+      },
+      {
+        "id": "C2.F2",
+        "status": "contradicted",
+        "evidence": "was too frightened and uneasy to sleep ... she saw a real living person outside through a window"
+      },
+      {
+        "id": "C3.F1",
+        "status": "contradicted",
+        "evidence": "When she woke the next morning, that person was inexplicably gone ... the outside scene was visibly wrong without them."
+      },
+      {
+        "id": "C3.F2",
+        "status": "covered",
+        "evidence": "Before finally falling asleep, she saw a real living person outside through a window. When she woke the next morning, that person was inexplicably gone"
+      },
+      {
+        "id": "C3.F3",
+        "status": "contradicted",
+        "evidence": "The disappearance of the only person she had seen, combined with the unnatural alteration of the outside view, convinced her that something dangerous had happened or was near, and she fled the house in terror."
+      }
+    ],
+    "requirement_coverage": [],
+    "contradictions": [
+      {
+        "quote": "Before finally falling asleep, she saw a real living person outside through a window.",
+        "reference": "The lost girl mistakes a window with a real person outside for a portrait and only realizes it was a window the next morning.",
+        "checkpoint_ids": [
+          "C1",
+          "C2",
+          "C3"
+        ]
+      },
+      {
+        "quote": "The disappearance of the only person she had seen, combined with the unnatural alteration of the outside view, convinced her that something dangerous had happened or was near, and she fled the house in terror.",
+        "reference": "She realizes it was a window and someone had watched her from outside, so she flees.",
+        "checkpoint_ids": [
+          "C3"
+        ]
+      }
+    ],
+    "partial_score": 0.0,
+    "complete": false,
+    "label": "no",
+    "grading_protocol": "coverage-v3-unified",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 1092.0478641189984,
+  "usage": {
+    "grader": {
+      "http_attempts": 2,
+      "successful_responses": 2,
+      "seconds": 115.47227776798536,
+      "provider_reported_usage": {
+        "prompt_tokens": 9665,
+        "completion_tokens": 11893,
+        "total_tokens": 21558,
+        "prompt_cache_hit_tokens": 6528,
+        "prompt_cache_miss_tokens": 3137
+      }
+    },
+    "host": {
+      "http_attempts": 98,
+      "successful_responses": 98,
+      "seconds": 801.55808071309,
+      "provider_reported_usage": {
+        "prompt_tokens": 1482642,
+        "completion_tokens": 56369,
+        "total_tokens": 1539011,
+        "prompt_cache_hit_tokens": 1454464,
+        "prompt_cache_miss_tokens": 28178
+      }
+    },
+    "player": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 171.7142350008944,
+      "provider_reported_usage": {
+        "prompt_tokens": 735328,
+        "completion_tokens": 2547,
+        "total_tokens": 737875,
+        "prompt_cache_hit_tokens": 716160,
+        "prompt_cache_miss_tokens": 19168
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "estimate_assumptions": [
+      "peak_rate_reference_upper_estimate; off-peak rates are half; actual billing unknown"
+    ],
+    "total": {
+      "calls": 200,
+      "unknown_cost_calls": 0,
+      "known_estimated_cost_usd": 0.389040728,
+      "estimated_cost_usd": 0.389040728,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 2227635,
+        "cached_input_tokens": 2177152,
+        "cache_write_tokens": 0,
+        "output_tokens": 70809,
+        "reasoning_tokens": 66715,
+        "total_tokens": 2298444
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 100,
+        "total_tokens": 0
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 2,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.051524352,
+        "estimated_cost_usd": 0.051524352,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 9665,
+          "cached_input_tokens": 6528,
+          "cache_write_tokens": 0,
+          "output_tokens": 11893,
+          "reasoning_tokens": 10568,
+          "total_tokens": 21558
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 98,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.324412616,
+        "estimated_cost_usd": 0.324412616,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1482642,
+          "cached_input_tokens": 1454464,
+          "cache_write_tokens": 0,
+          "output_tokens": 56369,
+          "reasoning_tokens": 56147,
+          "total_tokens": 1539011
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 100,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.01310376,
+        "estimated_cost_usd": 0.01310376,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 735328,
+          "cached_input_tokens": 716160,
+          "cache_write_tokens": 0,
+          "output_tokens": 2547,
+          "reasoning_tokens": 0,
+          "total_tokens": 737875
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 100,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "6283af1f-8b66-4e03-a360-f222f4fb75da",
+      "8f7e3bc1-0019-4929-a2f5-b350e5cdf62d",
+      "c8b3d0d2-394e-4323-9b77-fc04a93932ce"
+    ],
+    "logical_input_chars": 1906095,
+    "delta_input_chars": 122688,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "7c58339299af1ffe5c8b62850b87419914bf050994fabb559168e536907297d8",
+    "grading_sha256": "8c8766064d4bd123188d1f3666ee10ffb54d8ffbe4f02ce3477847c0a7b35c85",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v3-unified",
+    "prompts_sha256": "e70b675c3bc5b9ea59efc2e54fd11bc240bcc52e29251a42a47be33758b708e9",
+    "controller_sha256": "c750c12c1b961778115949b8f5d2b9cd6d848c5a20a7510158a73a34731e8d73",
+    "player_format_policy_sha256": "cf439ee1d60ae38374486aada319739646a5975284ff00bc877a3040047df56a",
+    "host_context_sha256": "5d44680f053ed1c15963a67180e489f6280a408a8977dbd1a644f7f922badcfc",
+    "host_binding_version": "host-v9-human-20261102"
+  }
+}

@@ -1,0 +1,279 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "predecessor_puzzle": null,
+  "condition": null,
+  "repeat": null,
+  "success": false,
+  "host_questions": 98,
+  "final_attempts": 2,
+  "rejected_finals": 2,
+  "counted_questions": 100,
+  "submissions": 100,
+  "player_format_corrections": [],
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.4,
+  "best_partial_score": 0.4,
+  "latest_final": "The lost girl took shelter in a house that appeared empty of people. Exhausted, she could not sleep until she finally collapsed from fatigue. When she woke the next morning and went to the window, she saw ordinary people outside who were already looking toward that window—indeed, toward it before she had appeared there—and who seemed to know someone was inside the house. Because she was visible through the window, she realized the \"empty\" house had been under observation and that she was exposed to the watchers. Alarmed by their fixed, expectant attention and her own visibility, she fled in terror.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0.5,
+        "evidence": "\"went to the window, she saw ordinary people outside who were already looking toward that window\"",
+        "reason": "Identifies a window with real people outside, but omits the apparent-portrait misperception required for full credit."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "\"Exhausted, she could not sleep until she finally collapsed from fatigue.\"",
+        "reason": "Covers sleeplessness but not the required causal connection to mistaking a watching person for a portrait or resulting unease."
+      },
+      {
+        "id": "C3",
+        "credit": 0,
+        "evidence": "\"When she woke the next morning and went to the window, she saw ordinary people outside\"",
+        "reason": "Contradicts the required morning disappearance of the person; the watcher or people are still present."
+      }
+    ],
+    "material_contradiction": true,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "partial",
+        "evidence": "went to the window, she saw ordinary people outside who were already looking toward that window"
+      },
+      {
+        "id": "C1.F2",
+        "status": "partial",
+        "evidence": "The lost girl took shelter in a house that appeared empty of people."
+      },
+      {
+        "id": "C2.F1",
+        "status": "partial",
+        "evidence": "Exhausted, she could not sleep until she finally collapsed from fatigue."
+      },
+      {
+        "id": "C2.F2",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "C3.F1",
+        "status": "contradicted",
+        "evidence": "When she woke the next morning and went to the window, she saw ordinary people outside"
+      },
+      {
+        "id": "C3.F2",
+        "status": "contradicted",
+        "evidence": "When she woke the next morning and went to the window, she saw ordinary people outside"
+      },
+      {
+        "id": "C3.F3",
+        "status": "covered",
+        "evidence": "Because she was visible through the window, she realized the \"empty\" house had been under observation and that she was exposed to the watchers. Alarmed by their fixed, expectant attention and her own visibility, she fled in terror."
+      }
+    ],
+    "requirement_coverage": [],
+    "contradictions": [
+      {
+        "quote": "When she woke the next morning and went to the window, she saw ordinary people outside who were already looking toward that window—indeed, toward it before she had appeared there—and who seemed to know someone was inside the house.",
+        "reference": "By morning the person is gone, exposing the window and causing her to flee.",
+        "checkpoint_ids": [
+          "C3"
+        ]
+      },
+      {
+        "quote": "When she woke the next morning and went to the window, she saw ordinary people outside who were already looking toward that window—indeed, toward it before she had appeared there—and who seemed to know someone was inside the house.",
+        "reference": "She eventually sleeps, and in the morning the figure is gone.",
+        "checkpoint_ids": [
+          "C3"
+        ]
+      }
+    ],
+    "partial_score": 0.4,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v3-unified",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 1598.374445715017,
+  "usage": {
+    "grader": {
+      "http_attempts": 2,
+      "successful_responses": 2,
+      "seconds": 109.0073845309962,
+      "provider_reported_usage": {
+        "prompt_tokens": 10106,
+        "completion_tokens": 10838,
+        "total_tokens": 20944,
+        "prompt_cache_hit_tokens": 7424,
+        "prompt_cache_miss_tokens": 2682
+      }
+    },
+    "host": {
+      "http_attempts": 98,
+      "successful_responses": 98,
+      "seconds": 1326.7544359011517,
+      "provider_reported_usage": {
+        "prompt_tokens": 1509813,
+        "completion_tokens": 104325,
+        "total_tokens": 1614138,
+        "prompt_cache_hit_tokens": 1480960,
+        "prompt_cache_miss_tokens": 28853
+      }
+    },
+    "player": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 158.86433810100425,
+      "provider_reported_usage": {
+        "prompt_tokens": 750194,
+        "completion_tokens": 2890,
+        "total_tokens": 753084,
+        "prompt_cache_hit_tokens": 729472,
+        "prompt_cache_miss_tokens": 20722
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "estimate_assumptions": [
+      "peak_rate_reference_upper_estimate; off-peak rates are half; actual billing unknown"
+    ],
+    "total": {
+      "calls": 200,
+      "unknown_cost_calls": 0,
+      "known_estimated_cost_usd": 0.577222008,
+      "estimated_cost_usd": 0.577222008,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 2270113,
+        "cached_input_tokens": 2217856,
+        "cache_write_tokens": 0,
+        "output_tokens": 118053,
+        "reasoning_tokens": 113334,
+        "total_tokens": 2388166
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 100,
+        "total_tokens": 0
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 2,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.046785376,
+        "estimated_cost_usd": 0.046785376,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 10106,
+          "cached_input_tokens": 7424,
+          "cache_write_tokens": 0,
+          "output_tokens": 10838,
+          "reasoning_tokens": 9215,
+          "total_tokens": 20944
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 98,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.5163752,
+        "estimated_cost_usd": 0.5163752,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1509813,
+          "cached_input_tokens": 1480960,
+          "cache_write_tokens": 0,
+          "output_tokens": 104325,
+          "reasoning_tokens": 104119,
+          "total_tokens": 1614138
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 100,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.014061432,
+        "estimated_cost_usd": 0.014061432,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 750194,
+          "cached_input_tokens": 729472,
+          "cache_write_tokens": 0,
+          "output_tokens": 2890,
+          "reasoning_tokens": 0,
+          "total_tokens": 753084
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 100,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "1a6c0447-89bc-487b-9bc7-5237176937e9",
+      "584b4c06-aaf0-46ac-8e5b-8d74fa2f0ff7",
+      "fefb7473-5b54-4cce-8875-6bb803e8ca2f"
+    ],
+    "logical_input_chars": 1970908,
+    "delta_input_chars": 126955,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "7c58339299af1ffe5c8b62850b87419914bf050994fabb559168e536907297d8",
+    "grading_sha256": "8c8766064d4bd123188d1f3666ee10ffb54d8ffbe4f02ce3477847c0a7b35c85",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v3-unified",
+    "prompts_sha256": "e70b675c3bc5b9ea59efc2e54fd11bc240bcc52e29251a42a47be33758b708e9",
+    "controller_sha256": "c750c12c1b961778115949b8f5d2b9cd6d848c5a20a7510158a73a34731e8d73",
+    "player_format_policy_sha256": "cf439ee1d60ae38374486aada319739646a5975284ff00bc877a3040047df56a",
+    "host_context_sha256": "5d44680f053ed1c15963a67180e489f6280a408a8977dbd1a644f7f922badcfc",
+    "host_binding_version": "host-v9-human-20261102"
+  }
+}

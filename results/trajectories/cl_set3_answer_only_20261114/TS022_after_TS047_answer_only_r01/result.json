@@ -1,0 +1,269 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "predecessor_puzzle": null,
+  "condition": null,
+  "repeat": null,
+  "success": false,
+  "host_questions": 97,
+  "final_attempts": 3,
+  "rejected_finals": 3,
+  "counted_questions": 100,
+  "submissions": 100,
+  "player_format_corrections": [
+    {
+      "response_id": "53eb5a9b-6362-416a-9535-601722e5dd10",
+      "submission": 48
+    }
+  ],
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.9,
+  "best_partial_score": 0.9,
+  "latest_final": "The lost, exhausted girl took shelter in what appeared to be an empty house. In the dim room she saw a framed-looking image containing a man's figure and took it for a picture, so she did not understand that it was actually a window with a real man standing outside looking in at her. Even so, the figure disturbed her, and she felt watched, which is why she could not fall asleep despite her exhaustion; only when she collapsed from fatigue did she sleep. In the morning, in clear light, she recognized the \"picture\" as a window showing the real outdoors, and understood that the man was a living stranger who had been standing at the glass watching her while she lay there. Realizing that her feeling of being watched had been entirely justified—and how closely she had been observed—she fled the house in terror.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 1,
+        "evidence": "In the dim room she saw a framed-looking image containing a man's figure and took it for a picture, so she did not understand that it was actually a window with a real man standing outside looking in at her.",
+        "reason": "The apparent portrait is identified as actually a window with a real person behind it, and the girl mistakes the window/person for a portrait."
+      },
+      {
+        "id": "C2",
+        "credit": 1,
+        "evidence": "Even so, the figure disturbed her, and she felt watched, which is why she could not fall asleep despite her exhaustion",
+        "reason": "The watching figure mistaken for a portrait makes her uneasy and unable to sleep, covering the causal and narrative qualifiers."
+      },
+      {
+        "id": "C3",
+        "credit": 0.5,
+        "evidence": "only when she collapsed from fatigue did she sleep. In the morning, in clear light, she recognized the \"picture\" as a window ... and understood that the man was a living stranger who had been standing at the glass watching her while she lay there. ... she fled the house in terror.",
+        "reason": "The morning realization and flight are fully covered, but the required fact that the person/figure was gone by morning is omitted, blocking full credit."
+      }
+    ],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "covered",
+        "evidence": "she did not understand that it was actually a window with a real man standing outside looking in at her"
+      },
+      {
+        "id": "C1.F2",
+        "status": "covered",
+        "evidence": "The lost, exhausted girl took shelter in what appeared to be an empty house. In the dim room she saw a framed-looking image containing a man's figure and took it for a picture"
+      },
+      {
+        "id": "C2.F1",
+        "status": "covered",
+        "evidence": "the figure disturbed her, and she felt watched, which is why she could not fall asleep despite her exhaustion"
+      },
+      {
+        "id": "C2.F2",
+        "status": "covered",
+        "evidence": "the figure disturbed her, and she felt watched, which is why she could not fall asleep"
+      },
+      {
+        "id": "C3.F1",
+        "status": "partial",
+        "evidence": "In the morning, in clear light, she recognized the \"picture\" as a window showing the real outdoors ... Realizing that her feeling of being watched had been entirely justified ... she fled the house in terror."
+      },
+      {
+        "id": "C3.F2",
+        "status": "partial",
+        "evidence": "only when she collapsed from fatigue did she sleep"
+      },
+      {
+        "id": "C3.F3",
+        "status": "covered",
+        "evidence": "In the morning, in clear light, she recognized the \"picture\" as a window showing the real outdoors, and understood that the man was a living stranger who had been standing at the glass watching her while she lay there. ... she fled the house in terror."
+      }
+    ],
+    "requirement_coverage": [],
+    "contradictions": [],
+    "partial_score": 0.9,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v3-unified",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 1558.8779477979988,
+  "usage": {
+    "grader": {
+      "http_attempts": 3,
+      "successful_responses": 3,
+      "seconds": 125.2951691110211,
+      "provider_reported_usage": {
+        "prompt_tokens": 16659,
+        "completion_tokens": 12822,
+        "total_tokens": 29481,
+        "prompt_cache_hit_tokens": 10368,
+        "prompt_cache_miss_tokens": 6291
+      }
+    },
+    "host": {
+      "http_attempts": 97,
+      "successful_responses": 97,
+      "seconds": 1255.8245001380274,
+      "provider_reported_usage": {
+        "prompt_tokens": 1519478,
+        "completion_tokens": 98438,
+        "total_tokens": 1617916,
+        "prompt_cache_hit_tokens": 1489920,
+        "prompt_cache_miss_tokens": 29558
+      }
+    },
+    "player": {
+      "http_attempts": 101,
+      "successful_responses": 101,
+      "seconds": 174.01228063507006,
+      "provider_reported_usage": {
+        "prompt_tokens": 846872,
+        "completion_tokens": 3909,
+        "total_tokens": 850781,
+        "prompt_cache_hit_tokens": 825472,
+        "prompt_cache_miss_tokens": 21400
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "estimate_assumptions": [
+      "peak_rate_reference_upper_estimate; off-peak rates are half; actual billing unknown"
+    ],
+    "total": {
+      "calls": 201,
+      "unknown_cost_calls": 0,
+      "known_estimated_cost_usd": 0.569986584,
+      "estimated_cost_usd": 0.569986584,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 2383009,
+        "cached_input_tokens": 2325760,
+        "cache_write_tokens": 0,
+        "output_tokens": 115169,
+        "reasoning_tokens": 108550,
+        "total_tokens": 2498178
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 101,
+        "total_tokens": 0
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 3,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.059535432,
+        "estimated_cost_usd": 0.059535432,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 16659,
+          "cached_input_tokens": 10368,
+          "cache_write_tokens": 0,
+          "output_tokens": 12822,
+          "reasoning_tokens": 10331,
+          "total_tokens": 29481
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 97,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.49438752,
+        "estimated_cost_usd": 0.49438752,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1519478,
+          "cached_input_tokens": 1489920,
+          "cache_write_tokens": 0,
+          "output_tokens": 98438,
+          "reasoning_tokens": 98219,
+          "total_tokens": 1617916
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 101,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.016063632,
+        "estimated_cost_usd": 0.016063632,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 846872,
+          "cached_input_tokens": 825472,
+          "cache_write_tokens": 0,
+          "output_tokens": 3909,
+          "reasoning_tokens": 0,
+          "total_tokens": 850781
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 101,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "110495cb-0717-4d88-8952-787d59da250f",
+      "9d5700f9-e47a-4b5e-829d-ef91fc38db18",
+      "d0472f33-eb45-4d55-8dbe-a755ed0e6718"
+    ],
+    "logical_input_chars": 2210257,
+    "delta_input_chars": 134859,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "7c58339299af1ffe5c8b62850b87419914bf050994fabb559168e536907297d8",
+    "grading_sha256": "8c8766064d4bd123188d1f3666ee10ffb54d8ffbe4f02ce3477847c0a7b35c85",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v3-unified",
+    "prompts_sha256": "e70b675c3bc5b9ea59efc2e54fd11bc240bcc52e29251a42a47be33758b708e9",
+    "controller_sha256": "c750c12c1b961778115949b8f5d2b9cd6d848c5a20a7510158a73a34731e8d73",
+    "player_format_policy_sha256": "cf439ee1d60ae38374486aada319739646a5975284ff00bc877a3040047df56a",
+    "host_context_sha256": "5d44680f053ed1c15963a67180e489f6280a408a8977dbd1a644f7f922badcfc",
+    "host_binding_version": "host-v9-human-20261102"
+  }
+}

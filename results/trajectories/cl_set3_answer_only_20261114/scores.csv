@@ -1,0 +1,16 @@
+run,source,target,condition,repeat,online_status,submissions,online_final_score,online_best_score,online_solved,final_attempts,offline_final_score,offline_review_status,score_conflict,legacy_judgment_score,coverage_derived_score,known_estimated_cost_usd,trajectory
+TS022_after_TS047_answer_only_r01,TS047,TS022,answer_only,1,completed,100,0.9,0.9,False,3,0.9,assistant_offline_not_human_gold,False,,,0.569986584,TS022_after_TS047_answer_only_r01/trajectory.md
+TS022_after_TS045_answer_only_r01,TS045,TS022,answer_only,1,completed,100,0.4,0.4,False,2,0.4,assistant_offline_not_human_gold,False,,,0.577222008,TS022_after_TS045_answer_only_r01/trajectory.md
+TS022_after_TS019_answer_only_r01,TS019,TS022,answer_only,1,completed,100,0.0,0.0,False,2,0.4,assistant_offline_not_human_gold,False,,,0.389040728,TS022_after_TS019_answer_only_r01/trajectory.md
+TS022_after_TS047_answer_only_r02,TS047,TS022,answer_only,2,completed,100,0.9,0.9,False,2,,not_offline_adjudicated,False,,,0.45127252,TS022_after_TS047_answer_only_r02/trajectory.md
+TS022_after_TS045_answer_only_r02,TS045,TS022,answer_only,2,completed,100,0.4,0.4,False,2,,not_offline_adjudicated,False,,,0.32331692,TS022_after_TS045_answer_only_r02/trajectory.md
+TS022_after_TS019_answer_only_r02,TS019,TS022,answer_only,2,completed,100,0.25,0.25,False,1,,not_offline_adjudicated,False,,,0.4265038,TS022_after_TS019_answer_only_r02/trajectory.md
+TS022_after_TS047_answer_only_r03,TS047,TS022,answer_only,3,error,100,,,,1,0.5,assistant_offline_not_human_gold,True,0.35,0.5,0.550881188,TS022_after_TS047_answer_only_r03/trajectory.md
+TS022_after_TS045_answer_only_r03,TS045,TS022,answer_only,3,completed,100,0.4,0.4,False,2,,not_offline_adjudicated,False,,,0.432828656,TS022_after_TS045_answer_only_r03/trajectory.md
+TS022_after_TS019_answer_only_r03,TS019,TS022,answer_only,3,completed,100,0.0,0.0,False,1,,not_offline_adjudicated,False,,,0.544149932,TS022_after_TS019_answer_only_r03/trajectory.md
+TS022_after_TS047_answer_only_r04,TS047,TS022,answer_only,4,completed,100,0.1,0.1,False,1,,not_offline_adjudicated,False,,,0.54519178,TS022_after_TS047_answer_only_r04/trajectory.md
+TS022_after_TS045_answer_only_r04,TS045,TS022,answer_only,4,completed,100,0.0,0.0,False,1,,not_offline_adjudicated,False,,,0.423897084,TS022_after_TS045_answer_only_r04/trajectory.md
+TS022_after_TS019_answer_only_r04,TS019,TS022,answer_only,4,completed,100,0.35,0.35,False,2,,not_offline_adjudicated,False,,,0.52790114,TS022_after_TS019_answer_only_r04/trajectory.md
+TS022_after_TS047_answer_only_r05,TS047,TS022,answer_only,5,completed,100,0.85,0.85,False,6,,not_offline_adjudicated,False,,,0.534524724,TS022_after_TS047_answer_only_r05/trajectory.md
+TS022_after_TS045_answer_only_r05,TS045,TS022,answer_only,5,completed,100,0.5,0.5,False,2,,not_offline_adjudicated,False,,,0.669913748,TS022_after_TS045_answer_only_r05/trajectory.md
+TS022_after_TS019_answer_only_r05,TS019,TS022,answer_only,5,completed,100,0.25,0.25,False,1,,not_offline_adjudicated,False,,,0.40241568,TS022_after_TS019_answer_only_r05/trajectory.md

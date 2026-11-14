@@ -1,0 +1,165 @@
+{
+  "game": "TS022_after_TS047_answer_only_r03",
+  "submission_index": 100,
+  "reviewer": "assistant_offline_not_human_gold",
+  "host_changed": false,
+  "new_api_calls": 0,
+  "review_policy": "first_batch_review/unified23/review_policy.json",
+  "submission": "A lost, exhausted girl took shelter in an empty house. Because she was frightened and overtired, she could not sleep. She finally collapsed from exhaustion—and that is exactly what her watcher had been waiting for. During the night a person outside stood at a window and observed her while she slept.\n\nThe room and window were not the private refuge she assumed. The window was completely without any curtain or blind, and it faced a place where a person could easily stand outside and look straight in. In the morning, in daylight, she saw the window and its surroundings clearly and understood what she had missed in the dark: she had been fully visible all night, and someone had in fact watched her through that uncovered window while she slept. Realizing that she had been observed while vulnerable and alone—and that the watcher could still be nearby—she panicked and fled the house in terror.",
+  "original_online_status": "error",
+  "accepted_online_final_score": null,
+  "original_legacy_weighted_score": 0.35,
+  "original_coverage_derived_score": 0.5,
+  "offline_review_score": 0.5,
+  "solved": false,
+  "review_credits": {
+    "C1": 0.5,
+    "C2": 0.5,
+    "C3": 0.5
+  },
+  "fact_rationales": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "reason_zh": "明确窗户和窗外真人，但未写画像及其误认。"
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "reason_zh": "写明借宿与窗外真人；误认成画像缺失。"
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "reason_zh": "明确害怕与失眠，但画像误认导致不安的因果链缺失；害怕的来源未指定，不能据此推定其明确排除了画像误认。"
+    },
+    {
+      "id": "C2.F2",
+      "status": "partial",
+      "reason_zh": "覆盖不安／失眠结果，未覆盖感觉被画像盯着的原因；按已有宽 partial 口径判部分覆盖。"
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "reason_zh": "覆盖清晨发现曾被窗外的人观察并逃离，遗漏人影消失这一触发。"
+    },
+    {
+      "id": "C3.F2",
+      "status": "partial",
+      "reason_zh": "覆盖最终睡着，遗漏清晨人影消失。"
+    },
+    {
+      "id": "C3.F3",
+      "status": "covered",
+      "reason_zh": "覆盖窗户、窗外观看及由此恐惧逃离。"
+    }
+  ],
+  "deterministic_review": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0.5,
+        "evidence": "During the night a person outside stood at a window and observed her while she slept.",
+        "reason": "Correctly identifies a window with a real person outside, but entirely omits the apparent portrait and the girl's mistake of the watcher for a portrait."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "Because she was frightened and overtired, she could not sleep.",
+        "reason": "The submission gives sleeplessness but replaces the required cause—mistaking the watching person for a portrait and feeling watched by it—with being frightened and overtired."
+      },
+      {
+        "id": "C3",
+        "credit": 0.5,
+        "evidence": "In the morning, in daylight, she saw the window and its surroundings clearly ... someone had in fact watched her through that uncovered window while she slept. Realizing that she had been observed ... she panicked and fled the house in terror.",
+        "reason": "Covers the realization that it was a window and that someone watched from outside, causing her to flee, but omits that the person was gone by morning and instead leaves the watcher possibly still nearby."
+      }
+    ],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "partial",
+        "evidence": "During the night a person outside stood at a window and observed her while she slept."
+      },
+      {
+        "id": "C1.F2",
+        "status": "partial",
+        "evidence": "A lost, exhausted girl took shelter in an empty house. ... During the night a person outside stood at a window and observed her while she slept."
+      },
+      {
+        "id": "C2.F1",
+        "status": "partial",
+        "evidence": "Because she was frightened and overtired, she could not sleep."
+      },
+      {
+        "id": "C2.F2",
+        "status": "partial",
+        "evidence": "Because she was frightened and overtired, she could not sleep."
+      },
+      {
+        "id": "C3.F1",
+        "status": "partial",
+        "evidence": "In the morning, in daylight, she saw the window and its surroundings clearly and understood what she had missed in the dark: she had been fully visible all night, and someone had in fact watched her through that uncovered window while she slept. Realizing that she had been observed while vulnerable and alone—and that the watcher could still be nearby—she panicked and fled the house in terror."
+      },
+      {
+        "id": "C3.F2",
+        "status": "partial",
+        "evidence": "She finally collapsed from exhaustion"
+      },
+      {
+        "id": "C3.F3",
+        "status": "covered",
+        "evidence": "In the morning, in daylight, she saw the window and its surroundings clearly and understood what she had missed in the dark: she had been fully visible all night, and someone had in fact watched her through that uncovered window while she slept. Realizing that she had been observed while vulnerable and alone—and that the watcher could still be nearby—she panicked and fled the house in terror."
+      }
+    ],
+    "requirement_coverage": [],
+    "contradictions": [],
+    "partial_score": 0.5,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v3-unified",
+    "controller_corrections": [
+      {
+        "field": "C2.credit",
+        "model": 0,
+        "effective": 0.5
+      }
+    ]
+  },
+  "semantic_decision_zh": "害怕／失眠是部分覆盖；未明示画像误认，不等于否定画像误认。文本未规定另一个恐惧来源，不把笼统害怕自动判成与画像因果互斥。",
+  "missing_core_facts": [
+    "初见误把窗户和窗外真人当画像",
+    "感觉画像盯着自己导致失眠",
+    "清晨人影消失促成识别窗户"
+  ],
+  "unsupported_embellishments": [
+    {
+      "quote": "that is exactly what her watcher had been waiting for",
+      "assessment_zh": "观看者等待她睡着的意图没有参考依据，记录为无依据添加；未与已知事实形成可定位的评分矛盾，不另创扣分项。"
+    },
+    {
+      "quote": "the watcher could still be nearby",
+      "assessment_zh": "可能仍在附近不等于清晨仍站在窗口；不构成对人影消失的明确否定，但也不覆盖该事实。"
+    }
+  ],
+  "limitations": [
+    "Single-assistant semantic review, not human gold.",
+    "The frozen partial-credit rule awards half credit for partial facts without a C1/C2 prerequisite gate. A 50% score does not mean the portrait/window twist was solved.",
+    "Under a stricter causal reading that sets C2 to zero, sensitivity score is 35%; this is not the primary score under the previously declared review policy.",
+    "Raw online grading remains conflicted; offline adjudication does not retroactively make the online execution successful."
+  ],
+  "source_response_ids": {
+    "player0": "2f061dc6-cbff-4845-9abe-0d631e1e7b59",
+    "grader1": "7b866af5-fb65-481c-96f1-f481a37e37d3",
+    "grader2": "af9a16be-55e1-4ebf-9900-1d8e71ae93a4"
+  },
+  "evidence_files": {
+    "trajectory": "../TS022_after_TS047_answer_only_r03/trajectory.jsonl",
+    "result": "../TS022_after_TS047_answer_only_r03/result.json"
+  }
+}

@@ -1,0 +1,290 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "predecessor_puzzle": null,
+  "condition": null,
+  "repeat": null,
+  "success": false,
+  "host_questions": 98,
+  "final_attempts": 2,
+  "rejected_finals": 2,
+  "counted_questions": 100,
+  "submissions": 100,
+  "player_format_corrections": [],
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.4,
+  "best_partial_score": 0.4,
+  "latest_final": "A lost, exhausted girl shelters in an empty house but cannot sleep. By morning, having finally slept from exhaustion, she notices something outside through a window that has changed overnight: an animal that had been visible in the surrounding view is now missing. That missing living creature, together with the altered view, tells her the house has been moved or otherwise changed while she slept, revealing she is not where she believed and that some danger is nearby. The realization terrifies her, and she flees the house.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0.5,
+        "evidence": "A lost, exhausted girl shelters in an empty house... notices something outside through a window that has changed overnight: an animal that had been visible in the surrounding view is now missing.",
+        "reason": "The portrait/window with a real person is absent; the core identity is replaced by a missing animal."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "cannot sleep. By morning, having finally slept from exhaustion",
+        "reason": "Sleeplessness appears but not the required cause: mistaking a watching person for a portrait and feeling watched."
+      },
+      {
+        "id": "C3",
+        "credit": 0,
+        "evidence": "an animal that had been visible in the surrounding view is now missing... tells her the house has been moved or otherwise changed while she slept... she flees the house",
+        "reason": "The explanation replaces the disappearing person/watcher realization with an animal disappearance and changed house, so the required causal narrative is contradicted."
+      }
+    ],
+    "material_contradiction": true,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "C1.F2",
+        "status": "partial",
+        "evidence": "A lost, exhausted girl shelters in an empty house"
+      },
+      {
+        "id": "C2.F1",
+        "status": "partial",
+        "evidence": "cannot sleep. By morning, having finally slept from exhaustion"
+      },
+      {
+        "id": "C2.F2",
+        "status": "partial",
+        "evidence": "cannot sleep. By morning, having finally slept from exhaustion"
+      },
+      {
+        "id": "C3.F1",
+        "status": "contradicted",
+        "evidence": "an animal that had been visible in the surrounding view is now missing"
+      },
+      {
+        "id": "C3.F2",
+        "status": "partial",
+        "evidence": "By morning, having finally slept from exhaustion... an animal that had been visible in the surrounding view is now missing"
+      },
+      {
+        "id": "C3.F3",
+        "status": "contradicted",
+        "evidence": "tells her the house has been moved or otherwise changed while she slept"
+      }
+    ],
+    "requirement_coverage": [],
+    "contradictions": [
+      {
+        "quote": "an animal that had been visible in the surrounding view is now missing",
+        "reference": "By morning the person is gone, exposing the window and causing her to flee.",
+        "checkpoint_ids": [
+          "C3"
+        ]
+      },
+      {
+        "quote": "tells her the house has been moved or otherwise changed while she slept",
+        "reference": "She realizes it was a window and someone had watched her from outside, so she flees.",
+        "checkpoint_ids": [
+          "C3"
+        ]
+      }
+    ],
+    "partial_score": 0.4,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v3-unified",
+    "controller_corrections": [
+      {
+        "field": "C1.credit",
+        "model": 0,
+        "effective": 0.5
+      },
+      {
+        "field": "C2.credit",
+        "model": 0,
+        "effective": 0.5
+      }
+    ]
+  },
+  "elapsed_seconds": 961.1326210779953,
+  "usage": {
+    "grader": {
+      "http_attempts": 2,
+      "successful_responses": 2,
+      "seconds": 112.01925127700088,
+      "provider_reported_usage": {
+        "prompt_tokens": 10037,
+        "completion_tokens": 10192,
+        "total_tokens": 20229,
+        "prompt_cache_hit_tokens": 7296,
+        "prompt_cache_miss_tokens": 2741
+      }
+    },
+    "host": {
+      "http_attempts": 98,
+      "successful_responses": 98,
+      "seconds": 680.3782617259421,
+      "provider_reported_usage": {
+        "prompt_tokens": 1509059,
+        "completion_tokens": 41254,
+        "total_tokens": 1550313,
+        "prompt_cache_hit_tokens": 1480960,
+        "prompt_cache_miss_tokens": 28099
+      }
+    },
+    "player": {
+      "http_attempts": 101,
+      "successful_responses": 100,
+      "seconds": 165.10698813715135,
+      "provider_reported_usage": {
+        "prompt_tokens": 746126,
+        "completion_tokens": 2508,
+        "total_tokens": 748634,
+        "prompt_cache_hit_tokens": 726016,
+        "prompt_cache_miss_tokens": 20110
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "estimate_assumptions": [
+      "peak_rate_reference_upper_estimate; off-peak rates are half; actual billing unknown"
+    ],
+    "total": {
+      "calls": 201,
+      "unknown_cost_calls": 1,
+      "known_estimated_cost_usd": 0.32331692,
+      "estimated_cost_usd": null,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 2265222,
+        "cached_input_tokens": 2214272,
+        "cache_write_tokens": 0,
+        "output_tokens": 53954,
+        "reasoning_tokens": 49703,
+        "total_tokens": 2319176
+      },
+      "missing_token_calls": {
+        "input_tokens": 1,
+        "cached_input_tokens": 1,
+        "cache_write_tokens": 0,
+        "output_tokens": 1,
+        "reasoning_tokens": 101,
+        "total_tokens": 1
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 2,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.044299464,
+        "estimated_cost_usd": 0.044299464,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 10037,
+          "cached_input_tokens": 7296,
+          "cache_write_tokens": 0,
+          "output_tokens": 10192,
+          "reasoning_tokens": 8646,
+          "total_tokens": 20229
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 98,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.26561876,
+        "estimated_cost_usd": 0.26561876,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1509059,
+          "cached_input_tokens": 1480960,
+          "cache_write_tokens": 0,
+          "output_tokens": 41254,
+          "reasoning_tokens": 41057,
+          "total_tokens": 1550313
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 101,
+        "unknown_cost_calls": 1,
+        "known_estimated_cost_usd": 0.013398696,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 746126,
+          "cached_input_tokens": 726016,
+          "cache_write_tokens": 0,
+          "output_tokens": 2508,
+          "reasoning_tokens": 0,
+          "total_tokens": 748634
+        },
+        "missing_token_calls": {
+          "input_tokens": 1,
+          "cached_input_tokens": 1,
+          "cache_write_tokens": 0,
+          "output_tokens": 1,
+          "reasoning_tokens": 101,
+          "total_tokens": 1
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "91965241-f9b7-4525-83d9-b23fc34a6aeb",
+      "a3c11552-67f5-45eb-8e92-6ccbaed53ce7",
+      "b780f095-b00f-4132-907c-f2549161a8ba"
+    ],
+    "logical_input_chars": 1964481,
+    "delta_input_chars": 122646,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "7c58339299af1ffe5c8b62850b87419914bf050994fabb559168e536907297d8",
+    "grading_sha256": "8c8766064d4bd123188d1f3666ee10ffb54d8ffbe4f02ce3477847c0a7b35c85",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v3-unified",
+    "prompts_sha256": "e70b675c3bc5b9ea59efc2e54fd11bc240bcc52e29251a42a47be33758b708e9",
+    "controller_sha256": "c750c12c1b961778115949b8f5d2b9cd6d848c5a20a7510158a73a34731e8d73",
+    "player_format_policy_sha256": "cf439ee1d60ae38374486aada319739646a5975284ff00bc877a3040047df56a",
+    "host_context_sha256": "5d44680f053ed1c15963a67180e489f6280a408a8977dbd1a644f7f922badcfc",
+    "host_binding_version": "host-v9-human-20261102"
+  }
+}
