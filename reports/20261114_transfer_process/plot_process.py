@@ -31,4 +31,7 @@ axes[1].set(ylabel='Original final reconstruction score (%)',ylim=(0,100),title=
 fig.suptitle('TS015 → TS013: one fixed A, four B repeats per condition',fontsize=12)
 fig.savefig(ROOT/'semantic_entry_vs_final.png',dpi=200)
 fig.savefig(ROOT/'semantic_entry_vs_final.svg')
+# Matplotlib emits trailing spaces in SVG path lines; normalize this derived file.
+svg = ROOT/'semantic_entry_vs_final.svg'
+svg.write_text('\n'.join(line.rstrip() for line in svg.read_text().splitlines())+'\n')
 plt.close(fig)
