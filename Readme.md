@@ -2,6 +2,8 @@
 
 **Latest results (14 November):** [All-version analysis in Chinese](reports/20261114_all_versions/analysis.zh-CN.md) and [every formal trajectory](reports/20261114_all_versions/index.html), combining local results, Set2 v17, and the newly uploaded T22/T42 experiments. There are 168 formal/appendix archives, 167 unique observations; local CL Set1 is complete, and local TS038 2×2 has 15/16 completed games (the remaining game retains its 36-submission checkpoint). Original scores and version differences are preserved. [All local history and failed/superseded snapshots](results/20261114_local_history/README.md) are published separately and are **not** extra independent repetitions. [Results navigation and offline rebuilding](results/README.md). No experiment rerun is needed to browse these results after pulling `main`.
 
+**Research narrative and process evidence:** [Experience, search, feedback and final reconstruction](reports/20261114_transfer_process/project_story.zh-CN.md), with all 36 Set1 B process records, the first ten submissions verbatim, a fixed-A figure and six positive/negative-control case cards. Semantic reframing, strategy acquisition and complete reconstruction are distinguished; original scores stay unchanged.
+
 **Scoring update:** new runs default to v5 / `coverage-v3-unified`: 100% means solved and ends the game. All mandatory narrative facts are scored; historical v4 results stay unchanged. [Details and checks](docs/unified_scoring_v3.md).
 
 **Team runs:** [Three CL sets and three MAS puzzles, two people × two repeats](docs/team_campaign_20261111.md): a six-game pilot, personal batches, bounded parallel execution of all 150 games, and deduplicated collection.
