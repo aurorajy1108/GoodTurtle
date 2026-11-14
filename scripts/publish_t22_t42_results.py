@@ -45,6 +45,7 @@ def publish(report, frozen_runtime, out):
         accepted.append((source, dest, row, scope, audit, calls))
     out.mkdir(parents=True)
     replacements = {str(source): dest.as_posix() for source, dest, *_ in accepted}
+    (out / '.gitattributes').write_text('# Preserve exact source CSV line endings and whitespace inside model transcripts.\n*.csv whitespace=-trailing-space,cr-at-eol\ntrajectory.md whitespace=-trailing-space\ntrajectory.html whitespace=-trailing-space\nshared_dialogue.html whitespace=-trailing-space\n')
     manifest = []
     for source, dest, row, scope, audit, calls in accepted:
         target = out / dest
