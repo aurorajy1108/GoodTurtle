@@ -1,0 +1,34 @@
+{
+  "games": 206,
+  "completed": 203,
+  "technical_errors": 3,
+  "submissions": 20076,
+  "new_since_previous_analysis": 39,
+  "new_targets": 33,
+  "new_sources": 6,
+  "new_by_cohort": {
+    "cl_set1_teammate_20261111": 12,
+    "cl_set1_teammate_20261113": 12,
+    "Set3_answer_only_20261114": 15
+  },
+  "new_submissions": 3852,
+  "new_first10_rows": 390,
+  "duplicate_timed_submission_observations": [],
+  "cl_primary_targets": 146,
+  "cl_accepted": 145,
+  "cl_solved": 0,
+  "host_feedback_labels": {
+    "no": 13896,
+    "yes": 3741,
+    "irrelevant": 1098,
+    "yes and no": 722
+  },
+  "legacy_full_score_incomplete_evaluations": 13,
+  "legacy_full_score_incomplete_games": 5,
+  "model_calls": 0,
+  "online_grades_modified": false,
+  "qualitatively_reviewed_new_targets": 33,
+  "new_targets_without_qualitative_notes": [],
+  "semantic_scope": "Exact reviewed targets are recorded in results/reviews/20261114/latest_update_notes.json: final, first ten and selected key questions, not exhaustive question-level review. Mechanical validation covers all games. This script cannot certify semantic reading of later additions.",
+  "analysis_policy": "Separate protocols, sources and cohorts; no selective mixing of offline grades, no source/appendix/technical-error outcome imputation."
+}

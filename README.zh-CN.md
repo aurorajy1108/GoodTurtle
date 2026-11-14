@@ -11,7 +11,7 @@
 |上传人工问答|[`data/host_reference/inbox/`](data/host_reference/inbox/README.zh-CN.md)|
 |实际Host参考|[`data/host_packs/active/`](data/host_packs/README.md) 和 [`configs/host_bindings.json`](configs/host_bindings.json)|
 |实验traj、分数、费用|[结果与轨迹索引](results/README.md)|
-|研究结论|[旧新版综合分析](docs/analysis/all_versions_20261114.md) · [项目主线和过程证据](docs/analysis/project_story_20261114.md)|
+|研究结论|[最新206局与新增发现](docs/analysis/latest_results_20261114.md) · [原分析快照](docs/analysis/all_versions_20261114.md) · [过程证据](docs/analysis/project_story_20261114.md)|
 |找旧文件、恢复旧页面|[目录结构与归档分支](docs/REPOSITORY_LAYOUT.md)|
 
 ## 运行

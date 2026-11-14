@@ -7,7 +7,7 @@
 |CL / MAS / compute budget|[Pipelines](running/experiment_pipelines.md) · [Team campaign](running/team_campaign_20261111.md) · [Self-review](running/compute_matched_agents.md)|
 |Human reference upload|[Host reference guide](../data/host_reference/README.md)|
 |Host audits|[`host/`](host/)|
-|Research findings|[All-version analysis](analysis/all_versions_20261114.md) · [Process evidence](analysis/project_story_20261114.md)|
+|Research findings|[Latest 206-game update](analysis/latest_results_20261114.md) · [Prior snapshot](analysis/all_versions_20261114.md) · [Process evidence](analysis/project_story_20261114.md)|
 |Trajectory review|[Review report](analysis/trajectory_review_20261114.md) · [Issue list](../results/reviews/20261114/review_questions_only.csv)|
 |Historical designs|[`archive/`](archive/)|
 

@@ -4,6 +4,8 @@
 
 [全部逐局CSV](catalog.csv) · [机器可读目录](catalog.json) · [分条件汇总CSV](summary.csv) · [目录与归档规则](../docs/REPOSITORY_LAYOUT.md)
 
+[最新分析：206局、新增39局及结论修订](../docs/analysis/latest_results_20261114.md)。本次新整合15局Set3答案条件；另外24局Set1此前已收录，现纳入正文分析。旧168档案分析表保留为历史快照，当前全量数字见[最新更新表](tables/20261114_latest_update/README.md)。
+
 |批次|归档局数|完整结束|轨迹目录|
 |---|---:|---:|---|
 |April_TS038_v9|9|8|[Markdown索引](trajectories/mas_ts038_april_v9/README.md)|

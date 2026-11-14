@@ -12,7 +12,7 @@ English | [中文](README.zh-CN.md)
 |Upload human reference Q&A|[`data/host_reference/inbox/`](data/host_reference/inbox/README.md)|
 |Current Host inputs|[`data/host_packs/active/`](data/host_packs/README.md) and [`configs/host_bindings.json`](configs/host_bindings.json)|
 |Trajectories and results|[Results catalog](results/README.md)|
-|Research findings|[All-version analysis](docs/analysis/all_versions_20261114.md) · [Process evidence](docs/analysis/project_story_20261114.md)|
+|Research findings|[Latest 206-game update](docs/analysis/latest_results_20261114.md) · [Prior snapshot](docs/analysis/all_versions_20261114.md) · [Process evidence](docs/analysis/project_story_20261114.md)|
 |Moved files and full archive|[Repository layout](docs/REPOSITORY_LAYOUT.md)|
 
 ## Run

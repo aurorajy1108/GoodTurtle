@@ -1,0 +1,3357 @@
+[
+  {
+    "id": "cl_set1_teammate_20261111::S1_TS014_TS013_TS014_TS013_r01_answer_only",
+    "status": "completed",
+    "raw_online_score": 0.5,
+    "raw_online_success": false,
+    "final": "The student's seemingly academic story is actually about a meal. \"Courses\" means the courses of a multi-course meal, and \"choosing courses before the deadline\" mirrors choosing from a menu/order. The student was on the HKU campus dining with a group at a restaurant/counter, facing a server, and had deliberately given the server an instruction about the student's own dishes. The student asked the server to clear away or take away the dishes before the meal was finished. Those cleared dishes were the student's own meal courses, and the other person — the server — deliberately carried out that instruction, so the student's food was removed/taken rather than kept. Thus, by the end of that evening, all of the student's courses were \"gone\": not because the university system failed, the courses were filled by competitors, or anyone sabotaged the enrollment, but because the student's own spoken request at the counter caused the server to take away the student's food courses. The \"deadline\" and \"course selection\" framing is the pun that disguised this dining mishap.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0,
+          "evidence": "Courses means the courses of a multi-course meal ... dining with a group at a restaurant/counter",
+          "reason": "Identifies meal rather than academic courses, but substitutes restaurant/counter for the required formal high-table dinner; this contradicts required fact C1.F1 and caps credit at 0."
+        },
+        {
+          "id": "C2",
+          "credit": 1,
+          "evidence": "choosing courses before the deadline mirrors choosing from a menu/order",
+          "reason": "Clearly connects the deadline to meal-course selection rather than academic registration, satisfying the checkpoint."
+        },
+        {
+          "id": "C3",
+          "credit": 1,
+          "evidence": "The student asked the server to clear away or take away the dishes before the meal was finished ... all of the student's courses were \"gone\"",
+          "reason": "The server clears uneaten dishes and all courses disappear, satisfying the causal checkpoint."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Missing the mandatory high-table dinner setting, punctual attendance, disliked taste and leftover portions of the three-course meal, and the waiter's clearing of leftovers when serving each next dish. The submission replaces the formal high-table dinner with a restaurant/counter, contradicting the canonical setting and C1/R1.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "contradicted",
+          "evidence": "The student was on the HKU campus dining with a group at a restaurant/counter"
+        },
+        {
+          "id": "C2.F1",
+          "status": "covered",
+          "evidence": "choosing courses before the deadline mirrors choosing from a menu/order"
+        },
+        {
+          "id": "C3.F1",
+          "status": "covered",
+          "evidence": "The student asked the server to clear away or take away the dishes before the meal was finished ... Thus, by the end of that evening, all of the student's courses were \"gone\""
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "contradicted",
+          "evidence": "The student was on the HKU campus dining with a group at a restaurant/counter"
+        },
+        {
+          "id": "R2",
+          "status": "covered",
+          "evidence": "choosing courses before the deadline mirrors choosing from a menu/order"
+        },
+        {
+          "id": "R3",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "R4",
+          "status": "partial",
+          "evidence": "The student asked the server to clear away or take away the dishes before the meal was finished ... all of the student's courses were \"gone\""
+        }
+      ],
+      "contradictions": [
+        {
+          "quote": "The student was on the HKU campus dining with a group at a restaurant/counter",
+          "reference": "Courses means dishes at a mandatory high-table dinner, not academic classes.",
+          "checkpoint_ids": [
+            "C1"
+          ]
+        }
+      ],
+      "partial_score": 0.5,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set1_teammate_20261111/S1_TS014_TS013_TS014_TS013_r01_answer_only/trajectory.html",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "cl_set1_teammate_20261111::S1_TS014_TS013_TS014_TS013_r01_direct",
+    "status": "completed",
+    "raw_online_score": 0.45,
+    "raw_online_success": false,
+    "final": "The wordplay is on \"courses.\" You are an HKU student, but in this story \"my courses\" are the courses of a meal served at a catered event (a banquet, not a restaurant), so it is not a course-registration story. The meal courses were actually served to you at the table, but you did not eat and finish them yourself. You made a comment indicating you were full or could not eat more — and you meant it; you did not want more of those courses, and you were not upset. Because of your own remark, the catering staff believed you were done and cleared the table, so the remaining courses were removed while the meal was still under way. Thus all the meal's courses came and went in that one evening from your perspective: they were served, you declined or stopped on account of feeling full, and they were cleared away by the staff rather than by you eating them, so \"all my courses were gone\" describes the food courses vanishing from your table over dinner, with the academic meaning of \"courses\" being the misleading pun rather than the actual event.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The wordplay is on \"courses.\" You are an HKU student, but in this story \"my courses\" are the courses of a meal served at a catered event (a banquet, not a restaurant), so it is not a course-registration story.",
+          "reason": "Meal courses rather than academic courses are identified, but the specific formal high-table dinner setting is not stated."
+        },
+        {
+          "id": "C2",
+          "credit": 0,
+          "evidence": "",
+          "reason": "The submission does not mention a deadline or that the deadline was for meal-course preferences."
+        },
+        {
+          "id": "C3",
+          "credit": 1,
+          "evidence": "Because of your own remark, the catering staff believed you were done and cleared the table, so the remaining courses were removed while the meal was still under way... all the meal's courses came and went in that one evening",
+          "reason": "The submission states that staff clear the uneaten remaining courses, making all the meal courses disappear."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "The submission identifies meal courses and staff clearing, but omits the meal-preference deadline and does not reconstruct the canonical dislike-of-taste motivation, on-time attendance, or explicit request to clear leftovers when each next dish is served. It also substitutes fullness as the reason for not finishing, conflicting with the reference.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The wordplay is on \"courses.\" You are an HKU student, but in this story \"my courses\" are the courses of a meal served at a catered event (a banquet, not a restaurant), so it is not a course-registration story."
+        },
+        {
+          "id": "C2.F1",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "C3.F1",
+          "status": "covered",
+          "evidence": "Because of your own remark, the catering staff believed you were done and cleared the table, so the remaining courses were removed while the meal was still under way. Thus all the meal's courses came and went in that one evening"
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "partial",
+          "evidence": "The wordplay is on \"courses.\" You are an HKU student, but in this story \"my courses\" are the courses of a meal served at a catered event (a banquet, not a restaurant), so it is not a course-registration story."
+        },
+        {
+          "id": "R2",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "R3",
+          "status": "contradicted",
+          "evidence": "You made a comment indicating you were full or could not eat more — and you meant it; you did not want more of those courses, and you were not upset."
+        },
+        {
+          "id": "R4",
+          "status": "partial",
+          "evidence": "Because of your own remark, the catering staff believed you were done and cleared the table, so the remaining courses were removed while the meal was still under way."
+        }
+      ],
+      "contradictions": [
+        {
+          "quote": "You made a comment indicating you were full or could not eat more — and you meant it; you did not want more of those courses, and you were not upset.",
+          "reference": "The student attends on time but dislikes the food and leaves portions of the three-course meal",
+          "checkpoint_ids": []
+        }
+      ],
+      "partial_score": 0.45,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set1_teammate_20261111/S1_TS014_TS013_TS014_TS013_r01_direct/trajectory.html",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "cl_set1_teammate_20261111::S1_TS014_TS013_TS014_TS013_r01_session",
+    "status": "completed",
+    "raw_online_score": 0.0,
+    "raw_online_success": false,
+    "final": "The student genuinely lost the course enrollments: they were removed from the official record, not merely hidden on screen. The student had earlier set up something of a personal or administrative nature (unrelated to their academic program or studies), and before the deadline they asked a university staff member to cancel or remove that arrangement. Processing that cancellation necessarily required the courses to be cleared as well—so the staff member removed them. The student did not want to lose the courses and did not foresee that cancelling the arrangement would wipe their enrollment. Thus, in a single evening, all the courses they had intended to keep disappeared, leaving them with nothing to choose before the deadline. The disappearance was the required consequence of cancelling that earlier self-arranged item, not the result of other students filling places, a course cancellation, a system/administrative error, disciplinary or eligibility action, or the student deliberately dropping the courses.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0,
+          "evidence": "The student genuinely lost the course enrollments: they were removed from the official record, not merely hidden on screen.",
+          "reason": "The submission identifies courses as academic enrollments/records, directly contradicting the required meal-course high-table dinner interpretation."
+        },
+        {
+          "id": "C2",
+          "credit": 0,
+          "evidence": "before the deadline they asked a university staff member to cancel or remove that arrangement ... leaving them with nothing to choose before the deadline.",
+          "reason": "The deadline is tied to an administrative cancellation and academic course choice, not to expressing meal-course preferences."
+        },
+        {
+          "id": "C3",
+          "credit": 0,
+          "evidence": "Processing that cancellation necessarily required the courses to be cleared as well—so the staff member removed them.",
+          "reason": "The disappearance is attributed to staff cancellation/removal, not to a waiter clearing uneaten dishes."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "The submission reconstructs an academic enrollment-cancellation story rather than the required high-table dinner narrative. It omits or contradicts the meal-course pun, the meal-preference deadline, punctual dinner attendance, disliked food and leftovers, and the waiter clearing dishes.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "contradicted",
+          "evidence": "The student genuinely lost the course enrollments: they were removed from the official record, not merely hidden on screen."
+        },
+        {
+          "id": "C2.F1",
+          "status": "contradicted",
+          "evidence": "before the deadline they asked a university staff member to cancel or remove that arrangement ... leaving them with nothing to choose before the deadline."
+        },
+        {
+          "id": "C3.F1",
+          "status": "contradicted",
+          "evidence": "Processing that cancellation necessarily required the courses to be cleared as well—so the staff member removed them."
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "contradicted",
+          "evidence": "The student genuinely lost the course enrollments: they were removed from the official record, not merely hidden on screen."
+        },
+        {
+          "id": "R2",
+          "status": "contradicted",
+          "evidence": "before the deadline they asked a university staff member to cancel or remove that arrangement ... leaving them with nothing to choose before the deadline."
+        },
+        {
+          "id": "R3",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "R4",
+          "status": "contradicted",
+          "evidence": "Processing that cancellation necessarily required the courses to be cleared as well—so the staff member removed them."
+        }
+      ],
+      "contradictions": [
+        {
+          "quote": "The student genuinely lost the course enrollments: they were removed from the official record, not merely hidden on screen.",
+          "reference": "Courses means dishes at a mandatory high-table dinner, not academic classes",
+          "checkpoint_ids": [
+            "C1"
+          ]
+        },
+        {
+          "quote": "before the deadline they asked a university staff member to cancel or remove that arrangement ... leaving them with nothing to choose before the deadline.",
+          "reference": "The deadline is for meal preferences",
+          "checkpoint_ids": [
+            "C2"
+          ]
+        },
+        {
+          "quote": "Processing that cancellation necessarily required the courses to be cleared as well—so the staff member removed them.",
+          "reference": "At the student’s request the waiter clears leftovers when serving each next dish, so all courses disappear",
+          "checkpoint_ids": [
+            "C3"
+          ]
+        }
+      ],
+      "partial_score": 0.0,
+      "complete": false,
+      "label": "no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set1_teammate_20261111/S1_TS014_TS013_TS014_TS013_r01_session/trajectory.html",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "cl_set1_teammate_20261111::S1_TS014_TS013_TS014_TS013_r01_source",
+    "status": "completed",
+    "raw_online_score": 0.85,
+    "raw_online_success": false,
+    "final": "A very capable student aced every test and exam, but the course required passing a group project as a mandatory gate: failing that project alone fails the course regardless of exam scores. In the group, one member refused from the start to do their assigned share. The student—trying to save the project and being capable—took over far more than their own share, covering the refusing member's portion. But the project had been designed so that each member genuinely contributes and cooperates; the refusing member's deliberate non-participation, combined with the improvised takeover, meant the project was not completed to the required standard as a real collaborative effort. The student's own portion also contained an unintentional error that further hurt the group's grade, though correcting that error alone would not have been enough to pass. Because the group project is the pass/fail gate, the failed project failed the course—despite the student's outstanding test and exam performance. The refusal was intentional on the member's part, but the student's failure was an unintended consequence of the student's well-meant over-contribution in a broken group.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 1,
+          "evidence": "A very capable student aced every test and exam, but the course required passing a group project as a mandatory gate: failing that project alone fails the course regardless of exam scores.",
+          "reason": "Identifies the individually strong student and substantial grade dependence on the group project, satisfying the checkpoint."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "In the group, one member refused from the start to do their assigned share.",
+          "reason": "Only one refusing member is identified, not all the other group members free-riding; the required 'all' qualifier is missing."
+        },
+        {
+          "id": "C3",
+          "credit": 1,
+          "evidence": "took over far more than their own share, covering the refusing member's portion. ... meant the project was not completed to the required standard ... the failed project failed the course",
+          "reason": "Shows excessive workload leading to a poor project and course failure, satisfying the causal chain."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "The submission reconstructs most of the causal chain but omits that all the other group members free-ride; it names only one refusing member, so the complete reference narrative is not reconstructed.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "covered",
+          "evidence": "A very capable student aced every test and exam, but the course required passing a group project as a mandatory gate: failing that project alone fails the course regardless of exam scores."
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "In the group, one member refused from the start to do their assigned share."
+        },
+        {
+          "id": "C3.F1",
+          "status": "covered",
+          "evidence": "took over far more than their own share, covering the refusing member's portion. ... meant the project was not completed to the required standard ... the failed project failed the course"
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "covered",
+          "evidence": "the course required passing a group project as a mandatory gate: failing that project alone fails the course regardless of exam scores."
+        },
+        {
+          "id": "R2",
+          "status": "partial",
+          "evidence": "In the group, one member refused from the start to do their assigned share."
+        },
+        {
+          "id": "R3",
+          "status": "covered",
+          "evidence": "took over far more than their own share, covering the refusing member's portion. ... the project was not completed to the required standard"
+        },
+        {
+          "id": "R4",
+          "status": "covered",
+          "evidence": "failing that project alone fails the course regardless of exam scores. ... despite the student's outstanding test and exam performance."
+        }
+      ],
+      "contradictions": [],
+      "partial_score": 0.85,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set1_teammate_20261111/S1_TS014_TS013_TS014_TS013_r01_source/trajectory.html",
+    "semantic_review_scope": "Export only; reading or semantic certification is not implied by this script."
+  },
+  {
+    "id": "cl_set1_teammate_20261111::S1_TS015_TS013_TS015_TS013_r01_answer_only",
+    "status": "completed",
+    "raw_online_score": 0.45,
+    "raw_online_success": false,
+    "final": "The apparent university setting is misdirection: \"courses\" are not academic classes but the courses of a meal. In one evening, the narrator attended a multi-course dinner as a guest. The narrator did not like the food, so left each course uneaten. The servers cleared the plates away between courses as normal service, so by the end of the evening every course was gone. Thus \"all my courses were gone in one evening\" means all the dinner courses were removed and never eaten by the narrator.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The apparent university setting is misdirection: \"courses\" are not academic classes but the courses of a meal. In one evening, the narrator attended a multi-course dinner as a guest.",
+          "reason": "Identifies courses as meal courses, not academic classes, but omits the mandatory formal high-table dinner setting, so only partial credit."
+        },
+        {
+          "id": "C2",
+          "credit": 0,
+          "evidence": "",
+          "reason": "No mention of a deadline or meal-course preferences, so the checkpoint is absent."
+        },
+        {
+          "id": "C3",
+          "credit": 1,
+          "evidence": "The narrator did not like the food, so left each course uneaten. The servers cleared the plates away between courses as normal service, so by the end of the evening every course was gone.",
+          "reason": "Covers servers clearing the uneaten dishes so all meal courses disappear, satisfying the checkpoint."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Missing the mandatory high-table dinner context, the meal-preference deadline, punctual attendance, and the student's request for the waiter to clear leftovers; the submission also presents the narrator as a guest rather than a mandatory attendee, so the complete reference narrative is not reconstructed.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The apparent university setting is misdirection: \"courses\" are not academic classes but the courses of a meal. In one evening, the narrator attended a multi-course dinner as a guest."
+        },
+        {
+          "id": "C2.F1",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "C3.F1",
+          "status": "covered",
+          "evidence": "The narrator did not like the food, so left each course uneaten. The servers cleared the plates away between courses as normal service, so by the end of the evening every course was gone."
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "partial",
+          "evidence": "The apparent university setting is misdirection: \"courses\" are not academic classes but the courses of a meal. In one evening, the narrator attended a multi-course dinner as a guest."
+        },
+        {
+          "id": "R2",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "R3",
+          "status": "partial",
+          "evidence": "The narrator did not like the food, so left each course uneaten."
+        },
+        {
+          "id": "R4",
+          "status": "partial",
+          "evidence": "The servers cleared the plates away between courses as normal service, so by the end of the evening every course was gone."
+        }
+      ],
+      "contradictions": [],
+      "partial_score": 0.45,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set1_teammate_20261111/S1_TS015_TS013_TS015_TS013_r01_answer_only/trajectory.html",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "cl_set1_teammate_20261111::S1_TS015_TS013_TS015_TS013_r01_direct",
+    "status": "completed",
+    "raw_online_score": 0.75,
+    "raw_online_success": false,
+    "final": "The central trick is a deliberate misdirection in wording. The \"courses\" were not university classes but the dishes of a meal, and the \"deadline\" was the sign-up/registration cutoff for a formal dinner held by the student's university hall/college. Students had to pre-select their menu dishes by that deadline.\n\nOn the evening of the dinner, the student attended in person and was served the chosen dishes one course after another. Because it was a formal, multi-course dinner, each plate was cleared away to make way for the next course—even though the student had not managed to finish everything on it, leaving some good food uneaten. So course by course the plates were taken away, and by the end of that single evening every course the student had chosen had come and gone.\n\nThus \"all of my courses were gone in one evening\" simply describes a normal hall dinner: the whole sequence of courses was served and cleared within that one evening, and the remaining food the student hadn't finished disappeared with the plates. Nothing sinister happened—no one stole the student's food and there was no disaster. The apparent \"course-registration catastrophe\" is only the misleading use of academic-sounding words (\"courses,\" \"deadline\") to describe choosing and eating dishes at a hall dinner, with the plates being cleared away by the waiting staff.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The \"courses\" were not university classes but the dishes of a meal, and the \"deadline\" was the sign-up/registration cutoff for a formal dinner held by the student's university hall/college.",
+          "reason": "Correctly distinguishes meal courses from academic classes and places them at a formal dinner, but omits the required high-table dinner qualifier."
+        },
+        {
+          "id": "C2",
+          "credit": 1,
+          "evidence": "the \"deadline\" was the sign-up/registration cutoff for a formal dinner held by the student's university hall/college. Students had to pre-select their menu dishes by that deadline.",
+          "reason": "Clearly connects the deadline to pre-selecting meal-course choices rather than academic registration."
+        },
+        {
+          "id": "C3",
+          "credit": 1,
+          "evidence": "each plate was cleared away to make way for the next course—even though the student had not managed to finish everything on it, leaving some good food uneaten. So course by course the plates were taken away... the remaining food the student hadn't finished disappeared with the plates... plates being cleared away by the waiting staff.",
+          "reason": "Covers the required fact that the waiter/clearing staff removes uneaten dishes, making all courses disappear."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "The explanation captures meal courses and the menu-preference deadline, but it is incomplete: it omits the mandatory high-table setting, does not state that the student disliked the food or attended on time, and omits the crucial causal detail that the student asked the waiter to clear the leftovers. It instead attributes clearing to ordinary formal-dinner service, so it does not fully reconstruct the required narrative.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The \"courses\" were not university classes but the dishes of a meal, and the \"deadline\" was the sign-up/registration cutoff for a formal dinner held by the student's university hall/college."
+        },
+        {
+          "id": "C2.F1",
+          "status": "covered",
+          "evidence": "the \"deadline\" was the sign-up/registration cutoff for a formal dinner held by the student's university hall/college. Students had to pre-select their menu dishes by that deadline."
+        },
+        {
+          "id": "C3.F1",
+          "status": "covered",
+          "evidence": "each plate was cleared away to make way for the next course—even though the student had not managed to finish everything on it, leaving some good food uneaten. So course by course the plates were taken away... the remaining food the student hadn't finished disappeared with the plates... plates being cleared away by the waiting staff."
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "partial",
+          "evidence": "The \"courses\" were not university classes but the dishes of a meal, and the \"deadline\" was the sign-up/registration cutoff for a formal dinner held by the student's university hall/college."
+        },
+        {
+          "id": "R2",
+          "status": "covered",
+          "evidence": "the \"deadline\" was the sign-up/registration cutoff for a formal dinner held by the student's university hall/college. Students had to pre-select their menu dishes by that deadline."
+        },
+        {
+          "id": "R3",
+          "status": "partial",
+          "evidence": "On the evening of the dinner, the student attended in person and was served the chosen dishes one course after another. Because it was a formal, multi-course dinner, each plate was cleared away to make way for the next course—even though the student had not managed to finish everything on it, leaving some good food uneaten."
+        },
+        {
+          "id": "R4",
+          "status": "partial",
+          "evidence": "each plate was cleared away to make way for the next course—even though the student had not managed to finish everything on it, leaving some good food uneaten. So course by course the plates were taken away... plates being cleared away by the waiting staff."
+        }
+      ],
+      "contradictions": [],
+      "partial_score": 0.75,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set1_teammate_20261111/S1_TS015_TS013_TS015_TS013_r01_direct/trajectory.html",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "cl_set1_teammate_20261111::S1_TS015_TS013_TS015_TS013_r01_session",
+    "status": "completed",
+    "raw_online_score": 0.35,
+    "raw_online_success": false,
+    "final": "You are a University of Hong Kong student who had to select your courses before the deadline. The sentence is a pun. The word \"courses\" refers not to your university classes but to the successive courses of a restaurant dinner. In the evening, you were dining at a restaurant; a waiter, acting deliberately and as part of normal service, took the plates of food courses away one after another, so by the end of that one evening all the food courses were gone. The wording makes it sound as if all your university course selections had vanished, but the real event was simply the ordinary clearing of a multi-course restaurant meal. Confirmed earlier facts fit this: a person deliberately removed the \"courses,\" and that person was a waiter; the removal happened as normal service rather than through the online enrollment system, your account or credentials, another student, an administrator, or a university cancellation. The apparent loss of your academic courses is the misleading surface reading of the pun, not what actually occurred.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The word \"courses\" refers not to your university classes but to the successive courses of a restaurant dinner.",
+          "reason": "The explanation correctly identifies courses as meal courses and rejects the academic reading, but it places them in a restaurant dinner rather than a formal high-table dinner, so the required dinner-setting qualifier is missing."
+        },
+        {
+          "id": "C2",
+          "credit": 0.0,
+          "evidence": "",
+          "reason": "No submitted sentence states that the deadline was for expressing meal-course preferences; the submission leaves the deadline as part of the academic surface reading."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "a waiter, acting deliberately and as part of normal service, took the plates of food courses away one after another",
+          "reason": "The explanation has the waiter clearing food courses away, but it omits the required detail that the waiter cleared uneaten or leftover dishes."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "The submission reconstructs the meal-course pun and waiter clearing, but it omits the mandatory formal high-table dinner setting, the meal-preference deadline, the on-time attendance and disliked uneaten portions of the three-course meal, and that the student asked the waiter to clear leftovers when serving each next course.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The word \"courses\" refers not to your university classes but to the successive courses of a restaurant dinner."
+        },
+        {
+          "id": "C2.F1",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "a waiter, acting deliberately and as part of normal service, took the plates of food courses away one after another, so by the end of that one evening all the food courses were gone"
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "partial",
+          "evidence": "The word \"courses\" refers not to your university classes but to the successive courses of a restaurant dinner."
+        },
+        {
+          "id": "R2",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "R3",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "R4",
+          "status": "partial",
+          "evidence": "a waiter, acting deliberately and as part of normal service, took the plates of food courses away one after another, so by the end of that one evening all the food courses were gone"
+        }
+      ],
+      "contradictions": [],
+      "partial_score": 0.35,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set1_teammate_20261111/S1_TS015_TS013_TS015_TS013_r01_session/trajectory.html",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "cl_set1_teammate_20261111::S1_TS015_TS013_TS015_TS013_r01_source",
+    "status": "completed",
+    "raw_online_score": 0.0,
+    "raw_online_success": false,
+    "final": "The puzzle turns on the double meaning of \"course.\" The narrator is a genuinely smart and attentive classroom student enrolled in an academic course, but they could not \"pass the course\" because \"course\" also denotes a physical watercourse—a waterway or channel—and \"pass\" there means to get past or across it. The acknowledged failure involved not being able to get past that named water course, so the student never completed the academic class. The waterway is not merely a wording trick: it is a real obstacle connected to the failure. It was not a flood, a difficult commute, a swim test, a boating or sports class, a river-crossing field exercise, drowning, or an administrative error. In short, the student failed the academic class because the same \"course\" was a physical waterway they could not pass, so they could not successfully pass the course in the school sense either.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0,
+          "evidence": "\"course\" also denotes a physical watercourse—a waterway or channel ... the student failed the academic class ... could not successfully pass the course in the school sense either.",
+          "reason": "The submission identifies a watercourse reading of 'course' but then explicitly asserts an academic class failure, contradicting the required fact that the course is a river course, not a school subject."
+        },
+        {
+          "id": "C2",
+          "credit": 0,
+          "evidence": "The submission does not mention the current or lack of equipment.",
+          "reason": "The required swift-current and lack-of-equipment explanation is missing."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Identifies a watercourse pun but omits the river setting, swift current, and missing equipment; it also contradicts the non-academic reading by saying the student failed the academic class.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "contradicted",
+          "evidence": "The narrator is a genuinely smart and attentive classroom student enrolled in an academic course ... the student never completed the academic class ... the student failed the academic class because the same \"course\" was a physical waterway they could not pass, so they could not successfully pass the course in the school sense either."
+        },
+        {
+          "id": "C2.F1",
+          "status": "missing",
+          "evidence": ""
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "partial",
+          "evidence": "\"course\" also denotes a physical watercourse—a waterway or channel"
+        },
+        {
+          "id": "R2",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "R3",
+          "status": "contradicted",
+          "evidence": "the student failed the academic class because the same \"course\" was a physical waterway they could not pass, so they could not successfully pass the course in the school sense either."
+        }
+      ],
+      "contradictions": [
+        {
+          "quote": "The narrator is a genuinely smart and attentive classroom student enrolled in an academic course ... the student failed the academic class ... could not successfully pass the course in the school sense either.",
+          "reference": "Course refers to the course of a river, not a school subject; pass means cross the river, not pass a class.",
+          "checkpoint_ids": [
+            "C1"
+          ]
+        }
+      ],
+      "partial_score": 0.0,
+      "complete": false,
+      "label": "no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set1_teammate_20261111/S1_TS015_TS013_TS015_TS013_r01_source/trajectory.html",
+    "semantic_review_scope": "Export only; reading or semantic certification is not implied by this script."
+  },
+  {
+    "id": "cl_set1_teammate_20261111::S1_TS028_TS013_TS028_TS013_r01_answer_only",
+    "status": "completed",
+    "raw_online_score": 0.75,
+    "raw_online_success": false,
+    "final": "The riddle rests on a double meaning of \"courses\": they are not university classes but the dishes of a meal. The student personally chose, in advance and before a deadline, which dishes would be served at a dinner they attended—a university/hall/society organized meal. At the dinner the food was individually plated and served one course at a time. The student ate part of the courses but did not finish everything: uneaten food was still on the plates when they were cleared. The reason was not that the portions were too large or that the student was too full, and not that the food was spoiled or badly cooked; the dishes simply were not to the student's taste, so the student stopped eating them. In the normal course of a served dinner the waiting staff brought each next course and removed the previous one, acting as well on the student's signal to clear the plates. So, course by course, the staff deliberately carried the food away. By the end of that one evening every one of the student's chosen courses had vanished: some had been eaten and the remaining uneaten portions had been cleared away by the serving staff. That staff clearing is the \"deliberate action by another person,\" and the advance menu choice is the \"deadline.\" Nothing went wrong with class registration, the enrolment system, course capacity, or any cancellation—the \"courses\" were merely the dinner's dishes, eaten in part and cleared away over a single evening.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "they are not university classes but the dishes of a meal ... a dinner they attended—a university/hall/society organized meal",
+          "reason": "Identifies meal courses rather than academic classes in a dinner setting, but omits the required formal high-table dinner qualifier."
+        },
+        {
+          "id": "C2",
+          "credit": 1,
+          "evidence": "The student personally chose, in advance and before a deadline, which dishes would be served at a dinner they attended",
+          "reason": "Clearly states the deadline was for expressing meal-course preferences."
+        },
+        {
+          "id": "C3",
+          "credit": 1,
+          "evidence": "uneaten food was still on the plates when they were cleared ... waiting staff brought each next course and removed the previous one, acting as well on the student's signal to clear the plates ... every one of the student's chosen courses had vanished",
+          "reason": "Covers the waiter clearing uneaten dishes and causing all courses to disappear, including the student's request/signal."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "The submission reconstructs the core meal-course wordplay, menu-preference deadline, disliked food left uneaten, and staff clearing causing all courses to disappear. It omits the mandatory high-table dinner qualifier and the on-time attendance/three-course meal details, so it does not reconstruct the complete reference narrative.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "they are not university classes but the dishes of a meal ... a dinner they attended—a university/hall/society organized meal"
+        },
+        {
+          "id": "C2.F1",
+          "status": "covered",
+          "evidence": "The student personally chose, in advance and before a deadline, which dishes would be served at a dinner they attended"
+        },
+        {
+          "id": "C3.F1",
+          "status": "covered",
+          "evidence": "uneaten food was still on the plates when they were cleared ... waiting staff brought each next course and removed the previous one, acting as well on the student's signal to clear the plates ... every one of the student's chosen courses had vanished"
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "partial",
+          "evidence": "they are not university classes but the dishes of a meal ... a dinner they attended—a university/hall/society organized meal"
+        },
+        {
+          "id": "R2",
+          "status": "covered",
+          "evidence": "The student personally chose, in advance and before a deadline, which dishes would be served at a dinner they attended"
+        },
+        {
+          "id": "R3",
+          "status": "partial",
+          "evidence": "The student ate part of the courses but did not finish everything: uneaten food was still on the plates ... the dishes simply were not to the student's taste, so the student stopped eating them."
+        },
+        {
+          "id": "R4",
+          "status": "covered",
+          "evidence": "waiting staff brought each next course and removed the previous one, acting as well on the student's signal to clear the plates ... every one of the student's chosen courses had vanished: some had been eaten and the remaining uneaten portions had been cleared away by the serving staff."
+        }
+      ],
+      "contradictions": [],
+      "partial_score": 0.75,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set1_teammate_20261111/S1_TS028_TS013_TS028_TS013_r01_answer_only/trajectory.html",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "cl_set1_teammate_20261111::S1_TS028_TS013_TS028_TS013_r01_direct",
+    "status": "completed",
+    "raw_online_score": 0.8,
+    "raw_online_success": false,
+    "final": "The apparent crisis was a deliberate wordplay: the “courses” that vanished were not university classes but the food courses of a formal hall dinner (“high table dinner”), and “choosing courses before the deadline” alluded to selecting dishes for the meal.\n\nOn that evening the student attended the high table dinner and personally did a physical, ordinary-seeming action involving the food or drink being consumed at the table. That action was enough of a breach of the dinner’s expected etiquette that the serving staff responded by clearing the courses away. As a result, the dishes that were meant for the student never reached them, so all of “their courses” were gone within that single evening.\n\nThe explicit “no” answers rule out the ordinary academic explanations (system removal, other students taking places, missed deadline, account access, device damage) as well as the more specific meal explanations that were tested — being finished eating, leaving the seat, a formal tradition, cutlery signals, toasts, passing drinks, serving others, choking or spilling. What remains established is that the student was a diner at a high table dinner, consumed food or drink there, took a physical action they thought was harmless, and that action led the staff to clear the courses, leaving the student with none.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 1,
+          "evidence": "“courses” that vanished were not university classes but the food courses of a formal hall dinner (“high table dinner”)",
+          "reason": "Clearly identifies the wordplay: courses are meal courses at a formal high-table dinner, not academic classes."
+        },
+        {
+          "id": "C2",
+          "credit": 1,
+          "evidence": "“choosing courses before the deadline” alluded to selecting dishes for the meal.",
+          "reason": "The deadline is correctly tied to selecting meal dishes, satisfying the meal-course-preference requirement."
+        },
+        {
+          "id": "C3",
+          "credit": 0,
+          "evidence": "the serving staff responded by clearing the courses away ... the dishes that were meant for the student never reached them",
+          "reason": "The causal mechanism is wrong or missing: it does not say the waiter cleared uneaten leftovers at the student’s request, and it affirmatively claims the dishes never reached the student, contradicting the served-and-tasted leftovers narrative."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "The submission covers the meal-course wordplay and the deadline for meal preferences, but it omits/contradicts that the student attended on time, disliked the food, left uneaten portions, and asked the waiter to clear leftovers when serving each next course. It instead claims the dishes never reached the student.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "covered",
+          "evidence": "“courses” that vanished were not university classes but the food courses of a formal hall dinner (“high table dinner”)"
+        },
+        {
+          "id": "C2.F1",
+          "status": "covered",
+          "evidence": "“choosing courses before the deadline” alluded to selecting dishes for the meal."
+        },
+        {
+          "id": "C3.F1",
+          "status": "contradicted",
+          "evidence": "the serving staff responded by clearing the courses away ... the dishes that were meant for the student never reached them"
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "covered",
+          "evidence": "“courses” that vanished were not university classes but the food courses of a formal hall dinner (“high table dinner”)"
+        },
+        {
+          "id": "R2",
+          "status": "covered",
+          "evidence": "“choosing courses before the deadline” alluded to selecting dishes for the meal."
+        },
+        {
+          "id": "R3",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "R4",
+          "status": "contradicted",
+          "evidence": "the dishes that were meant for the student never reached them"
+        }
+      ],
+      "contradictions": [
+        {
+          "quote": "the dishes that were meant for the student never reached them",
+          "reference": "Dishes are served as individual portions. The narrator tastes each dish before asking for the disliked leftovers to be removed.",
+          "checkpoint_ids": [
+            "C3"
+          ]
+        }
+      ],
+      "partial_score": 0.8,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set1_teammate_20261111/S1_TS028_TS013_TS028_TS013_r01_direct/trajectory.html",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "cl_set1_teammate_20261111::S1_TS028_TS013_TS028_TS013_r01_session",
+    "status": "completed",
+    "raw_online_score": 0.55,
+    "raw_online_success": false,
+    "final": "The student at the University of Hong Kong had to \"choose his courses before the deadline,\" but the phrase is a pun: he was pre-ordering the dishes (courses) for a formal multi-course dinner at the university, and he did pre-select them. In that evening's dinner, the courses associated with him were not served to him. The food was physically removed—plates cleared away—and other diners or staff were involved, not the student acting alone. So from his perspective, all of \"his courses\" were gone in one evening: the courses he had chosen for the banquet were cleared away before he could eat them. The apparent academic course-registration crisis is really a dinner-course mix-up.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "pre-ordering the dishes (courses) for a formal multi-course dinner at the university",
+          "reason": "Identifies meal courses rather than academic classes, but omits the formal high-table dinner qualifier."
+        },
+        {
+          "id": "C2",
+          "credit": 1,
+          "evidence": "had to \"choose his courses before the deadline,\" but the phrase is a pun: he was pre-ordering the dishes (courses)",
+          "reason": "Clearly states the deadline was for expressing meal-course preferences."
+        },
+        {
+          "id": "C3",
+          "credit": 0,
+          "evidence": "the courses associated with him were not served to him ... cleared away before he could eat them",
+          "reason": "Contradicts the required fact that the waiter cleared uneaten leftovers after the narrator tasted them; also omits the waiter and says food was cleared before eating."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Missing high-table/mandatory qualifier; deadline covered; omits and contradicts punctual attendance, tasting, disliking, leaving portions, and the waiter clearing leftovers at the student's request. Submission says the courses were not served and were cleared before he could eat them.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "pre-ordering the dishes (courses) for a formal multi-course dinner at the university ... The apparent academic course-registration crisis is really a dinner-course mix-up."
+        },
+        {
+          "id": "C2.F1",
+          "status": "covered",
+          "evidence": "had to \"choose his courses before the deadline,\" but the phrase is a pun: he was pre-ordering the dishes (courses) ... and he did pre-select them."
+        },
+        {
+          "id": "C3.F1",
+          "status": "contradicted",
+          "evidence": "the courses associated with him were not served to him ... cleared away before he could eat them."
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "partial",
+          "evidence": "pre-ordering the dishes (courses) for a formal multi-course dinner at the university ... The apparent academic course-registration crisis is really a dinner-course mix-up."
+        },
+        {
+          "id": "R2",
+          "status": "covered",
+          "evidence": "had to \"choose his courses before the deadline,\" but the phrase is a pun: he was pre-ordering the dishes (courses) ... and he did pre-select them."
+        },
+        {
+          "id": "R3",
+          "status": "contradicted",
+          "evidence": "the courses associated with him were not served to him ... cleared away before he could eat them."
+        },
+        {
+          "id": "R4",
+          "status": "contradicted",
+          "evidence": "plates cleared away ... other diners or staff were involved ... cleared away before he could eat them."
+        }
+      ],
+      "contradictions": [
+        {
+          "quote": "the courses associated with him were not served to him",
+          "reference": "Dishes are served as individual portions. The narrator tastes each dish before asking for the disliked leftovers to be removed.",
+          "checkpoint_ids": [
+            "C3"
+          ]
+        },
+        {
+          "quote": "the courses he had chosen for the banquet were cleared away before he could eat them",
+          "reference": "The narrator tastes each dish before asking for the disliked leftovers to be removed, and does not leave before all courses are served.",
+          "checkpoint_ids": [
+            "C3"
+          ]
+        }
+      ],
+      "partial_score": 0.55,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set1_teammate_20261111/S1_TS028_TS013_TS028_TS013_r01_session/trajectory.html",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "cl_set1_teammate_20261111::S1_TS028_TS013_TS028_TS013_r01_source",
+    "status": "completed",
+    "raw_online_score": 1.0,
+    "raw_online_success": true,
+    "final": "The person started on an upper floor of a building, 30 meters vertically above his car, which was parked in the underground garage. He stepped into an elevator (already at/near it, so no walking steps before boarding) and rode it down the full 30 meters to the garage level. After exiting the elevator, his car was only five steps away. So although he was 30 meters from the car in vertical distance, he only had to take five walking steps—on the garage level—to get into the car, with the elevator covering the height.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 1,
+          "evidence": "The person started on an upper floor of a building, 30 meters vertically above his car... So although he was 30 meters from the car in vertical distance, he only had to take five walking steps... with the elevator covering the height.",
+          "reason": "The submission clearly identifies the 30 meters as vertical distance covered by the elevator rather than walking distance."
+        },
+        {
+          "id": "C2",
+          "credit": 1,
+          "evidence": "The person started on an upper floor of a building... He stepped into an elevator ... and rode it down the full 30 meters to the garage level... his car, which was parked in the underground garage.",
+          "reason": "The explanation describes an elevator ride from an upper floor to an underground parking garage, satisfying the checkpoint."
+        },
+        {
+          "id": "C3",
+          "credit": 1,
+          "evidence": "After exiting the elevator, his car was only five steps away... he only had to take five walking steps—on the garage level—to get into the car",
+          "reason": "The car is described as only five steps from the elevator exit, satisfying the near-elevator and few-step requirement."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": true,
+      "completion_note": "Complete reference narrative reconstructed.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "covered",
+          "evidence": "The person started on an upper floor of a building, 30 meters vertically above his car... So although he was 30 meters from the car in vertical distance, he only had to take five walking steps... with the elevator covering the height."
+        },
+        {
+          "id": "C2.F1",
+          "status": "covered",
+          "evidence": "The person started on an upper floor of a building, 30 meters vertically above his car, which was parked in the underground garage. … He stepped into an elevator (already at/near it, so no walking steps before boarding) and rode it down the full 30 meters to the garage level."
+        },
+        {
+          "id": "C3.F1",
+          "status": "covered",
+          "evidence": "After exiting the elevator, his car was only five steps away... he only had to take five walking steps—on the garage level—to get into the car"
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "covered",
+          "evidence": "The person started on an upper floor of a building, 30 meters vertically above his car... So although he was 30 meters from the car in vertical distance, he only had to take five walking steps... with the elevator covering the height."
+        },
+        {
+          "id": "R2",
+          "status": "covered",
+          "evidence": "The person started on an upper floor of a building, 30 meters vertically above his car, which was parked in the underground garage. … He stepped into an elevator (already at/near it, so no walking steps before boarding) and rode it down the full 30 meters to the garage level."
+        },
+        {
+          "id": "R3",
+          "status": "covered",
+          "evidence": "After exiting the elevator, his car was only five steps away... he only had to take five walking steps—on the garage level—to get into the car"
+        }
+      ],
+      "contradictions": [],
+      "partial_score": 1.0,
+      "complete": true,
+      "label": "yes",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set1_teammate_20261111/S1_TS028_TS013_TS028_TS013_r01_source/trajectory.html",
+    "semantic_review_scope": "Export only; reading or semantic certification is not implied by this script."
+  },
+  {
+    "id": "cl_set1_teammate_20261113::S1_TS014_TS013_TS014_TS013_r01_answer_only",
+    "status": "completed",
+    "raw_online_score": 0.4,
+    "raw_online_success": false,
+    "final": "The \"courses\" were not university classes but food courses at a restaurant. The opening's academic wording is a misleading frame: the student was dining out and had ordered a meal of several courses. During that single evening, the student complained that the food was bad—the complaint concerned the food itself, not merely the service. As a result, the staff removed the courses from the table, and the student was left without the meal. Thus \"all of my courses were gone in one evening\" means all the food courses were taken away together after the student's complaint, rather than the student losing academic course selections before a deadline.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The \"courses\" were not university classes but food courses at a restaurant.",
+          "reason": "Identifies meal/food courses rather than academic classes, but omits the defining formal high-table dinner setting and instead says restaurant, so only partial credit."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "the student was dining out and had ordered a meal of several courses",
+          "reason": "Meal choice is identified, but the explanation never connects the deadline to expressing meal-course preferences, so it is only partial."
+        },
+        {
+          "id": "C3",
+          "credit": 0,
+          "evidence": "the staff removed the courses from the table, and the student was left without the meal",
+          "reason": "Dishes disappearing is identified, but the waiter clearing uneaten leftovers is omitted; this matches the stated half-credit boundary."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "The submission captures the food-courses pun but reconstructs a materially different causal mechanism: a complaint causes staff to remove all courses together, rather than the narrator disliking leftovers and asking the waiter to clear them as each next dish is served. It also omits the mandatory high-table dinner, the meal-preference deadline, punctual attendance, and the three-course/leftover detail.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The \"courses\" were not university classes but food courses at a restaurant."
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "the student was dining out and had ordered a meal of several courses"
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "the staff removed the courses from the table, and the student was left without the meal"
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "partial",
+          "evidence": "The \"courses\" were not university classes but food courses at a restaurant."
+        },
+        {
+          "id": "R2",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "R3",
+          "status": "partial",
+          "evidence": "the student complained that the food was bad"
+        },
+        {
+          "id": "R4",
+          "status": "contradicted",
+          "evidence": "all the food courses were taken away together after the student's complaint"
+        }
+      ],
+      "contradictions": [
+        {
+          "quote": "all the food courses were taken away together after the student's complaint",
+          "reference": "At the student’s request the waiter clears leftovers when serving each next dish, so all courses disappear.",
+          "checkpoint_ids": [
+            "C3"
+          ]
+        }
+      ],
+      "partial_score": 0.4,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": [
+        {
+          "field": "C3.credit",
+          "model": 0.5,
+          "effective": 0
+        }
+      ]
+    },
+    "trajectory": "results/trajectories/cl_set1_teammate_20261113/S1_TS014_TS013_TS014_TS013_r01_answer_only/trajectory.html",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "cl_set1_teammate_20261113::S1_TS014_TS013_TS014_TS013_r01_direct",
+    "status": "completed",
+    "raw_online_score": 0.0,
+    "raw_online_success": false,
+    "final": "I was a student at HKU who personally and deliberately acted to drop all of my courses in a single evening—this was my own doing, not a university error, not a system glitch, and not forced on me by anyone else. I intentionally gave the courses up rather than having them taken from me, and the action was not undertaken to benefit myself, nor to benefit another person, nor out of impulse or strong emotion.\n\nDespite the deliberate nature of the act, the reason was none of the circumstances typically assumed: it was not about money or tuition, not a deadline pressure, not dissatisfaction with the teaching or content, not a change of major or program, not a health emergency, not a job or career move, not studying elsewhere or on exchange, not a disciplinary or eligibility matter, not a misunderstanding of the rules, not a protest, and not connected to the political situation or a disaster. I was still alive and remained a student in the ordinary sense.\n\nWhat remains established from the public answers is the shape of the story: a personally initiated, intentional, complete dropping of every course on one evening—an act of giving the courses up as something I chose to do, for a reason that was neither self-serving nor altruistic nor coerced. Beyond confirming those characteristics, the puzzle's specific hidden motivation was not pinned down by the questions asked.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0,
+          "evidence": "I was a student at HKU who personally and deliberately acted to drop all of my courses in a single evening",
+          "reason": "The submission treats courses as academic courses the student deliberately dropped, directly contradicting the required meal-course meaning."
+        },
+        {
+          "id": "C2",
+          "credit": 0,
+          "evidence": "not a deadline pressure",
+          "reason": "No meal-course preference deadline is identified; the explanation denies deadline pressure and gives no meal-choice content."
+        },
+        {
+          "id": "C3",
+          "credit": 0,
+          "evidence": "I intentionally gave the courses up rather than having them taken from me",
+          "reason": "The disappearance is attributed to the student's own intentional dropping, not the waiter clearing uneaten dishes."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "The submission reconstructs none of the reference narrative. It treats courses as academic courses the student deliberately dropped, denies deadline pressure, and attributes disappearance to the student's own act. Missing: the meal-course pun, mandatory high-table dinner, meal-preference deadline, punctual attendance, dislike of the food leaving portions, and the waiter clearing leftovers at the student's request.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "contradicted",
+          "evidence": "I was a student at HKU who personally and deliberately acted to drop all of my courses in a single evening"
+        },
+        {
+          "id": "C2.F1",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "C3.F1",
+          "status": "contradicted",
+          "evidence": "I intentionally gave the courses up rather than having them taken from me"
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "contradicted",
+          "evidence": "I was a student at HKU who personally and deliberately acted to drop all of my courses in a single evening"
+        },
+        {
+          "id": "R2",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "R3",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "R4",
+          "status": "contradicted",
+          "evidence": "I intentionally gave the courses up rather than having them taken from me"
+        }
+      ],
+      "contradictions": [
+        {
+          "quote": "I was a student at HKU who personally and deliberately acted to drop all of my courses in a single evening",
+          "reference": "Courses means dishes at a mandatory high-table dinner, not academic classes.",
+          "checkpoint_ids": [
+            "C1"
+          ]
+        },
+        {
+          "quote": "I intentionally gave the courses up rather than having them taken from me",
+          "reference": "At the student’s request the waiter clears leftovers when serving each next dish, so all courses disappear.",
+          "checkpoint_ids": [
+            "C3"
+          ]
+        }
+      ],
+      "partial_score": 0.0,
+      "complete": false,
+      "label": "no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set1_teammate_20261113/S1_TS014_TS013_TS014_TS013_r01_direct/trajectory.html",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "cl_set1_teammate_20261113::S1_TS014_TS013_TS014_TS013_r01_session",
+    "status": "completed",
+    "raw_online_score": 0.0,
+    "raw_online_success": false,
+    "final": "The student was at HKU and needed to choose courses before the deadline. Rather than the courses simply filling up or vanishing through a system error or accidental click, the loss was caused by the student's own request made in a spoken/phone conversation with someone able to act on the enrollment record. The student asked that person to check, confirm, or resolve a problem with the courses—not to switch them. That person then carried out an operation on the student's enrollment at the student's request, which ended up clearing all the courses from the record. Later, when the student checked, all the courses were gone, as though they had disappeared in one evening. So the student lost the courses because their own request to that person led to their enrollment being wiped.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0,
+          "evidence": "The student was at HKU and needed to choose courses before the deadline.",
+          "reason": "The submission treats courses as academic course selections rather than meal courses at a formal high-table dinner, directly contradicting C1."
+        },
+        {
+          "id": "C2",
+          "credit": 0,
+          "evidence": "The student was at HKU and needed to choose courses before the deadline... spoken/phone conversation with someone able to act on the enrollment record.",
+          "reason": "The deadline is presented as an academic course-choice deadline, not a deadline for expressing meal-course preferences, so the required fact is contradicted."
+        },
+        {
+          "id": "C3",
+          "credit": 0,
+          "evidence": "That person then carried out an operation on the student's enrollment at the student's request, which ended up clearing all the courses from the record.",
+          "reason": "The required waiter clearing uneaten dishes is absent and contradicted by an operation on an enrollment record by an unspecified person."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "The submission reconstructs an academic enrollment-record failure instead of the required high-table dinner narrative. Missing: courses as dishes at a mandatory dinner; the deadline as meal preferences; the narrator attending on time, disliking the food, and leaving portions; and the waiter clearing leftovers at the narrator's request. The central causal mechanism is contradicted.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "contradicted",
+          "evidence": "The student was at HKU and needed to choose courses before the deadline."
+        },
+        {
+          "id": "C2.F1",
+          "status": "contradicted",
+          "evidence": "The student was at HKU and needed to choose courses before the deadline... spoken/phone conversation with someone able to act on the enrollment record."
+        },
+        {
+          "id": "C3.F1",
+          "status": "contradicted",
+          "evidence": "That person then carried out an operation on the student's enrollment at the student's request, which ended up clearing all the courses from the record."
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "contradicted",
+          "evidence": "The student was at HKU and needed to choose courses before the deadline."
+        },
+        {
+          "id": "R2",
+          "status": "contradicted",
+          "evidence": "The student was at HKU and needed to choose courses before the deadline... spoken/phone conversation with someone able to act on the enrollment record."
+        },
+        {
+          "id": "R3",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "R4",
+          "status": "contradicted",
+          "evidence": "That person then carried out an operation on the student's enrollment at the student's request, which ended up clearing all the courses from the record."
+        }
+      ],
+      "contradictions": [
+        {
+          "quote": "The student was at HKU and needed to choose courses before the deadline... spoken/phone conversation with someone able to act on the enrollment record.",
+          "reference": "Courses means dishes at a mandatory high-table dinner, not academic classes; the deadline is for meal preferences.",
+          "checkpoint_ids": [
+            "C1",
+            "C2"
+          ]
+        },
+        {
+          "quote": "That person then carried out an operation on the student's enrollment at the student's request, which ended up clearing all the courses from the record.",
+          "reference": "At the student’s request the waiter clears leftovers when serving each next dish, so all courses disappear.",
+          "checkpoint_ids": [
+            "C3"
+          ]
+        }
+      ],
+      "partial_score": 0.0,
+      "complete": false,
+      "label": "no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set1_teammate_20261113/S1_TS014_TS013_TS014_TS013_r01_session/trajectory.html",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "cl_set1_teammate_20261113::S1_TS014_TS013_TS014_TS013_r01_source",
+    "status": "completed",
+    "raw_online_score": 0.5,
+    "raw_online_success": false,
+    "final": "The student was academically capable and passed the written tests and exams. The course, however, also required a group project that had to be passed for the course to be passed. The project failed because of the student's own contribution: the student acted as the group's coordinator/submitter, and their contribution was judged substantively inadequate or incorrect by the course's standards, even though it was performed sincerely rather than through dishonesty, lateness, plagiarism, or refusal to do it. Because the group project was a mandatory pass component, that failure caused the student to fail the course despite otherwise passing the tests with flying colors.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 1,
+          "evidence": "The student was academically capable and passed the written tests and exams. The course, however, also required a group project that had to be passed for the course to be passed.",
+          "reason": "The submission identifies the student as individually strong and makes the course outcome substantially depend on passing the group project, which is a faithful paraphrase of the required checkpoint."
+        },
+        {
+          "id": "C2",
+          "credit": 0,
+          "evidence": "",
+          "reason": "The submission never says the other group members free-ride; it instead attributes the project failure to the student's own inadequate contribution, so the required fact is absent."
+        },
+        {
+          "id": "C3",
+          "credit": 0,
+          "evidence": "The project failed because of the student's own contribution: the student acted as the group's coordinator/submitter, and their contribution was judged substantively inadequate or incorrect by the course's standards",
+          "reason": "The required causal chain is that excessive workload from free-riders causes the poor project and failure; the submission replaces that with the student's own inadequate contribution, contradicting the checkpoint."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "The submission reconstructs a mandatory group project and resulting course failure, but it omits or contradicts the central narrative facts that all other group members free-ride and that their free-riding creates the excessive workload that causes the poor project.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "covered",
+          "evidence": "The student was academically capable and passed the written tests and exams. The course, however, also required a group project that had to be passed for the course to be passed."
+        },
+        {
+          "id": "C2.F1",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "C3.F1",
+          "status": "contradicted",
+          "evidence": "The project failed because of the student's own contribution: the student acted as the group's coordinator/submitter, and their contribution was judged substantively inadequate or incorrect by the course's standards"
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "partial",
+          "evidence": "also required a group project that had to be passed for the course to be passed... a mandatory pass component"
+        },
+        {
+          "id": "R2",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "R3",
+          "status": "contradicted",
+          "evidence": "The project failed because of the student's own contribution: the student acted as the group's coordinator/submitter, and their contribution was judged substantively inadequate or incorrect by the course's standards"
+        },
+        {
+          "id": "R4",
+          "status": "covered",
+          "evidence": "Because the group project was a mandatory pass component, that failure caused the student to fail the course despite otherwise passing the tests with flying colors."
+        }
+      ],
+      "contradictions": [
+        {
+          "quote": "The project failed because of the student's own contribution: the student acted as the group's coordinator/submitter, and their contribution was judged substantively inadequate or incorrect by the course's standards",
+          "reference": "The excessive workload makes the student complete the project poorly and fail the course; the workload overwhelms the otherwise strong student and the project is poor.",
+          "checkpoint_ids": [
+            "C3"
+          ]
+        }
+      ],
+      "partial_score": 0.5,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set1_teammate_20261113/S1_TS014_TS013_TS014_TS013_r01_source/trajectory.html",
+    "semantic_review_scope": "Export only; reading or semantic certification is not implied by this script."
+  },
+  {
+    "id": "cl_set1_teammate_20261113::S1_TS015_TS013_TS015_TS013_r01_answer_only",
+    "status": "completed",
+    "raw_online_score": 0.55,
+    "raw_online_success": false,
+    "final": "The wordplay is on \"courses.\" They are not academic classes but the successive dishes of a banquet meal, and the \"deadline\" is the advance-ordering deadline for that dinner. The student, a guest at a formal multi-course banquet that evening, had successfully pre-selected their dishes before the ordering cutoff. But when the meal was served, the student voluntarily passed all of their own pre-selected courses to a particular person they knew at the table, because for their own reasons the student could not or would not eat those dishes themselves. The servers then cleared the plates as the meal progressed, and the student sat in place throughout. So by the end of the single evening, every course that had been chosen/reserved for the student had been given away and taken off the table — \"all of my courses were gone.\" The academic framing (HKU student, choosing courses before a deadline) is a decoy; the reality is a banquet where the student gave away each of their food courses to someone else, emptying their place at the table in one evening.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "They are not academic classes but the successive dishes of a banquet meal ... a formal multi-course banquet",
+          "reason": "Identifies meal courses, a formal dinner setting, and rejects the academic-class reading, but omits the specific high-table dinner setting required for full credit."
+        },
+        {
+          "id": "C2",
+          "credit": 1,
+          "evidence": "the \"deadline\" is the advance-ordering deadline for that dinner ... had successfully pre-selected their dishes before the ordering cutoff",
+          "reason": "Clearly covers that the deadline was for expressing meal-course preferences."
+        },
+        {
+          "id": "C3",
+          "credit": 0,
+          "evidence": "the student voluntarily passed all of their own pre-selected courses to a particular person they knew at the table ... The servers then cleared the plates as the meal progressed",
+          "reason": "The causal mechanism is contradicted: the dishes are described as passed to another person rather than uneaten leftovers cleared by the waiter at the student's request."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "The submission omits the mandatory high-table dinner setting, the student's punctual attendance, the disliked food and uneaten portions of the three-course meal, and the waiter clearing leftovers at the student's request. Instead it supplies an incompatible mechanism in which the student passed the courses to another person, conflicting with the reference narrative.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "They are not academic classes but the successive dishes of a banquet meal ... a formal multi-course banquet"
+        },
+        {
+          "id": "C2.F1",
+          "status": "covered",
+          "evidence": "the \"deadline\" is the advance-ordering deadline for that dinner ... had successfully pre-selected their dishes before the ordering cutoff"
+        },
+        {
+          "id": "C3.F1",
+          "status": "contradicted",
+          "evidence": "the student voluntarily passed all of their own pre-selected courses to a particular person they knew at the table ... The servers then cleared the plates as the meal progressed"
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "partial",
+          "evidence": "They are not academic classes but the successive dishes of a banquet meal ... a formal multi-course banquet"
+        },
+        {
+          "id": "R2",
+          "status": "covered",
+          "evidence": "the \"deadline\" is the advance-ordering deadline for that dinner ... had successfully pre-selected their dishes before the ordering cutoff"
+        },
+        {
+          "id": "R3",
+          "status": "partial",
+          "evidence": "for their own reasons the student could not or would not eat those dishes themselves ... the student sat in place throughout"
+        },
+        {
+          "id": "R4",
+          "status": "contradicted",
+          "evidence": "the student voluntarily passed all of their own pre-selected courses to a particular person they knew at the table ... The servers then cleared the plates as the meal progressed"
+        }
+      ],
+      "contradictions": [
+        {
+          "quote": "the student voluntarily passed all of their own pre-selected courses to a particular person they knew at the table, because for their own reasons the student could not or would not eat those dishes themselves.",
+          "reference": "At the student’s request the waiter clears leftovers when serving each next dish; the narrator did not finish all the food and the disappearance is not caused by all dishes being eaten by the narrator or by other attendees.",
+          "checkpoint_ids": [
+            "C3"
+          ]
+        }
+      ],
+      "partial_score": 0.55,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set1_teammate_20261113/S1_TS015_TS013_TS015_TS013_r01_answer_only/trajectory.html",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "cl_set1_teammate_20261113::S1_TS015_TS013_TS015_TS013_r01_direct",
+    "status": "completed",
+    "raw_online_score": 1.0,
+    "raw_online_success": false,
+    "final": "The opening is a wordplay trap. \"Courses\" and the \"deadline\" do not refer to academic modules and course registration at all; they refer to the dishes (courses of a meal) that the student had to choose in advance for a university hall/high-table dinner. She is a student at HKU and did make her menu choices by the dinner deadline, but the puzzle is about the meal, not her degree.\n\nAt the formal hall dinner, the dishes she had chosen were served to her, but she managed only to taste a small portion of each one. Her plates were then cleared by the waiting staff before she had finished, and the unfinished food was taken away and thrown out rather than kept for her. Because the dishes had been removed and discarded, by the end of the evening all the courses she had chosen were \"gone,\" leaving her without a full dinner even though nothing supernatural or academic had happened.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 1,
+          "evidence": "\"Courses\" ... do not refer to academic modules and course registration at all; they refer to the dishes (courses of a meal) ... for a university hall/high-table dinner.",
+          "reason": "The submission identifies meal courses at a formal high-table dinner and explicitly rejects academic classes."
+        },
+        {
+          "id": "C2",
+          "credit": 1,
+          "evidence": "did make her menu choices by the dinner deadline",
+          "reason": "The submission connects the deadline to meal-course preferences."
+        },
+        {
+          "id": "C3",
+          "credit": 1,
+          "evidence": "Her plates were then cleared by the waiting staff before she had finished ... all the courses she had chosen were \"gone.\"",
+          "reason": "The submission has waiting staff clearing uneaten dishes, causing all the courses to disappear."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Missing several mandatory narrative qualifiers: the dinner is mandatory, the student attends on time and dislikes the food, the meal is a three-course meal, and the clearing occurs at the student's request when the waiter serves each next dish. The submission covers the dishes-not-academic wordplay and waiter-cleared disappearance, but omits those causal and contextual elements.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "covered",
+          "evidence": "they refer to the dishes (courses of a meal) that the student had to choose in advance for a university hall/high-table dinner"
+        },
+        {
+          "id": "C2.F1",
+          "status": "covered",
+          "evidence": "did make her menu choices by the dinner deadline"
+        },
+        {
+          "id": "C3.F1",
+          "status": "covered",
+          "evidence": "Her plates were then cleared by the waiting staff before she had finished ... all the courses she had chosen were \"gone\""
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "partial",
+          "evidence": "they refer to the dishes (courses of a meal) that the student had to choose in advance for a university hall/high-table dinner"
+        },
+        {
+          "id": "R2",
+          "status": "covered",
+          "evidence": "did make her menu choices by the dinner deadline"
+        },
+        {
+          "id": "R3",
+          "status": "partial",
+          "evidence": "she managed only to taste a small portion of each one ... before she had finished"
+        },
+        {
+          "id": "R4",
+          "status": "partial",
+          "evidence": "Her plates were then cleared by the waiting staff before she had finished ... all the courses she had chosen were \"gone\""
+        }
+      ],
+      "contradictions": [],
+      "partial_score": 1.0,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set1_teammate_20261113/S1_TS015_TS013_TS015_TS013_r01_direct/trajectory.html",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "cl_set1_teammate_20261113::S1_TS015_TS013_TS015_TS013_r01_session",
+    "status": "completed",
+    "raw_online_score": 0.8,
+    "raw_online_success": false,
+    "final": "The puzzle is a pun on \"courses,\" and the story is purely about a meal, not about university class registration.\n\nThe narrator is a University of Hong Kong student attending a formal hall dinner (a High Table Dinner). \"Courses\" are the courses of the meal—the dishes—not academic subjects. Before the dinner, the student had to choose/pre-order their dishes through the hall's meal system before a cutoff (the \"deadline\").\n\nAt the dinner, the meal ran as a formal, programmed multi-course banquet. Each dish was served and then cleared away by staff in sequence to keep to the event's schedule. The student was present and seated, with their own pre-ordered courses in front of them, and ate from them; the remaining dishes were progressively removed by the servers as the program went on.\n\nThus, in that one evening, all the courses the student had chosen before the deadline were served and then taken away, one after another. \"All of my courses were gone in one evening\" means the entire multi-course dinner was served and cleared within that single evening. The apparent paradox of a student \"losing all their courses\" is simply the wordplay: meal courses (dishes) versus academic courses (classes).",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 1,
+          "evidence": "\"Courses\" are the courses of the meal—the dishes—not academic subjects. ... attending a formal hall dinner (a High Table Dinner).",
+          "reason": "Clearly identifies meal courses at a formal high-table dinner and explicitly distinguishes them from academic classes."
+        },
+        {
+          "id": "C2",
+          "credit": 1,
+          "evidence": "Before the dinner, the student had to choose/pre-order their dishes through the hall's meal system before a cutoff (the \"deadline\").",
+          "reason": "Directly connects the deadline to choosing meal courses."
+        },
+        {
+          "id": "C3",
+          "credit": 0,
+          "evidence": "Each dish was served and then cleared away by staff in sequence to keep to the event's schedule.",
+          "reason": "The explanation replaces the required causal mechanism—waiter clearing uneaten leftovers at the student's request—with routine staff clearing according to the event schedule."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "The submission captures the meal-course wordplay and the meal-preference deadline, but it omits that the student disliked the food, left uneaten portions, and asked the waiter to clear them; it instead attributes the clearing to the event schedule, so it does not reconstruct the complete reference narrative.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "covered",
+          "evidence": "The narrator is a University of Hong Kong student attending a formal hall dinner (a High Table Dinner). … \"Courses\" are the courses of the meal—the dishes—not academic subjects."
+        },
+        {
+          "id": "C2.F1",
+          "status": "covered",
+          "evidence": "Before the dinner, the student had to choose/pre-order their dishes through the hall's meal system before a cutoff (the \"deadline\")."
+        },
+        {
+          "id": "C3.F1",
+          "status": "contradicted",
+          "evidence": "Each dish was served and then cleared away by staff in sequence to keep to the event's schedule... the remaining dishes were progressively removed by the servers as the program went on."
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "partial",
+          "evidence": "The narrator is a University of Hong Kong student attending a formal hall dinner (a High Table Dinner). \"Courses\" are the courses of the meal—the dishes—not academic subjects."
+        },
+        {
+          "id": "R2",
+          "status": "covered",
+          "evidence": "Before the dinner, the student had to choose/pre-order their dishes through the hall's meal system before a cutoff (the \"deadline\")."
+        },
+        {
+          "id": "R3",
+          "status": "partial",
+          "evidence": "The student was present and seated, with their own pre-ordered courses in front of them, and ate from them; the remaining dishes were progressively removed by the servers as the program went on."
+        },
+        {
+          "id": "R4",
+          "status": "contradicted",
+          "evidence": "Each dish was served and then cleared away by staff in sequence to keep to the event's schedule... the remaining dishes were progressively removed by the servers as the program went on."
+        }
+      ],
+      "contradictions": [
+        {
+          "quote": "Each dish was served and then cleared away by staff in sequence to keep to the event's schedule... the remaining dishes were progressively removed by the servers as the program went on.",
+          "reference": "At the student’s request the waiter clears leftovers when serving each next dish, so all courses disappear.",
+          "checkpoint_ids": [
+            "C3"
+          ]
+        }
+      ],
+      "partial_score": 0.8,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set1_teammate_20261113/S1_TS015_TS013_TS015_TS013_r01_session/trajectory.html",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "cl_set1_teammate_20261113::S1_TS015_TS013_TS015_TS013_r01_source",
+    "status": "completed",
+    "raw_online_score": 0.875,
+    "raw_online_success": false,
+    "final": "The puzzle turns on a pun on the word \"course.\" The speaker really is a bright, attentive student in class—that part is deliberately misleading, making us imagine an academic failure. But \"pass the course\" is not about passing a class. \"The course\" is a watercourse: the river/stream itself.\n\nThe student, traveling on foot along a route whose far side lay across the water, came to the river and could not get across. The water was too deep, too wide, or too fast to wade, and there was no bridge, boat, or other means of crossing. So the student literally could not \"pass the course\"—could not cross the watercourse—and had to turn back.\n\nThere was no academic failing at all: no exam was failed, no grade was missed, and the student was not kept from class. \"I could not pass the course\" means only \"I could not get across the river,\" and being smart and attentive in class could not help with that impassable watercourse.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 1,
+          "evidence": "The puzzle turns on a pun on the word \"course.\" ... \"The course\" is a watercourse: the river/stream itself.",
+          "reason": "The submission explicitly reinterprets course as the river/watercourse and says there was no academic failing, covering the required contrast."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "The water was too deep, too wide, or too fast to wade, and there was no bridge, boat, or other means of crossing.",
+          "reason": "Lack of crossing equipment is clearly stated, but the too-swift current is only offered as one uncommitted alternative, so half credit for the required causal detail."
+        }
+      ],
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "covered",
+          "evidence": "The puzzle turns on a pun on the word \"course.\" ... \"The course\" is a watercourse: the river/stream itself."
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "The water was too deep, too wide, or too fast to wade, and there was no bridge, boat, or other means of crossing."
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "covered",
+          "evidence": "\"The course\" is a watercourse: the river/stream itself. … The student, traveling on foot along a route whose far side lay across the water, came to the river and could not get across."
+        },
+        {
+          "id": "R2",
+          "status": "partial",
+          "evidence": "The water was too deep, too wide, or too fast to wade, and there was no bridge, boat, or other means of crossing."
+        },
+        {
+          "id": "R3",
+          "status": "covered",
+          "evidence": "So the student literally could not \"pass the course\"—could not cross the watercourse—and had to turn back."
+        }
+      ],
+      "contradictions": [],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "The river/course pun and pass-as-cross meaning are reconstructed, but the required swift-current cause is only an uncommitted alternative (too deep, too wide, or too fast), while lack of crossing equipment is explicitly stated. Therefore R2/C2.F1 are only partial and the complete canonical narrative is not fully reconstructed.",
+      "partial_score": 0.875,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set1_teammate_20261113/S1_TS015_TS013_TS015_TS013_r01_source/trajectory.html",
+    "semantic_review_scope": "Export only; reading or semantic certification is not implied by this script."
+  },
+  {
+    "id": "cl_set1_teammate_20261113::S1_TS028_TS013_TS028_TS013_r01_answer_only",
+    "status": "completed",
+    "raw_online_score": 0.55,
+    "raw_online_success": false,
+    "final": "The puzzle turns on wordplay: “courses” are not university classes but the dishes/courses of a meal. The HKU student had pre-selected a menu of meal courses for a shared or group meal, choosing them from a menu as an advance order before an ordering deadline. That evening the caterer or kitchen prepared and stored the chosen courses. The student then rejected or returned the courses he had chosen, and the caterer, acting deliberately, discarded the prepared dishes rather than serving them. Thus, in one evening, all of “his courses” were gone — not because the university cancelled them, not because other students enrolled first, and not because of a computer error, but because his chosen meal courses were prepared and then thrown away after he himself rejected them.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "“courses” are not university classes but the dishes/courses of a meal.",
+          "reason": "Identifies meal rather than academic courses, but omits the required formal high-table dinner setting."
+        },
+        {
+          "id": "C2",
+          "credit": 1,
+          "evidence": "The HKU student had pre-selected a menu of meal courses for a shared or group meal, choosing them from a menu as an advance order before an ordering deadline.",
+          "reason": "States that the deadline was for ordering meal-course preferences."
+        },
+        {
+          "id": "C3",
+          "credit": 0,
+          "evidence": "the caterer, acting deliberately, discarded the prepared dishes rather than serving them",
+          "reason": "Contradicts the required fact that the waiter clears uneaten leftovers; it substitutes a caterer discarding prepared dishes after the student rejected them."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "The submission reconstructs only a partial meal-course reading. Missing: formal high-table dinner setting, on-time attendance and disliked-food portions, and waiter-cleared leftovers. The submission instead says the caterer discarded prepared dishes after the student rejected them, which reverses the reference causal sequence.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "“courses” are not university classes but the dishes/courses of a meal."
+        },
+        {
+          "id": "C2.F1",
+          "status": "covered",
+          "evidence": "The HKU student had pre-selected a menu of meal courses for a shared or group meal, choosing them from a menu as an advance order before an ordering deadline."
+        },
+        {
+          "id": "C3.F1",
+          "status": "contradicted",
+          "evidence": "the caterer, acting deliberately, discarded the prepared dishes rather than serving them"
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "partial",
+          "evidence": "“courses” are not university classes but the dishes/courses of a meal."
+        },
+        {
+          "id": "R2",
+          "status": "covered",
+          "evidence": "The HKU student had pre-selected a menu of meal courses for a shared or group meal, choosing them from a menu as an advance order before an ordering deadline."
+        },
+        {
+          "id": "R3",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "R4",
+          "status": "contradicted",
+          "evidence": "the caterer, acting deliberately, discarded the prepared dishes rather than serving them"
+        }
+      ],
+      "contradictions": [
+        {
+          "quote": "the student then rejected or returned the courses he had chosen, and the caterer, acting deliberately, discarded the prepared dishes rather than serving them",
+          "reference": "At the student’s request the waiter clears leftovers when serving each next dish, so all courses disappear.",
+          "checkpoint_ids": [
+            "C3"
+          ]
+        }
+      ],
+      "partial_score": 0.55,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set1_teammate_20261113/S1_TS028_TS013_TS028_TS013_r01_answer_only/trajectory.html",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "cl_set1_teammate_20261113::S1_TS028_TS013_TS028_TS013_r01_direct",
+    "status": "completed",
+    "raw_online_score": 0.7,
+    "raw_online_success": false,
+    "final": "The student is not describing an academic disaster at all; the word \"courses\" is being used in its culinary sense. On one evening the student attended a formal university high-table dinner. During that single meal, servers repeatedly took the dishes (the \"courses\") away from the table and carried them off to the kitchen, where the plates were cleared and the leftovers discarded. By the end of the evening the table was empty — every \"course\" had been removed and discarded. The student then humorously framed this as \"all my courses were gone in one evening,\" playing on the panic of a student whose academic course selections have all been taken before the deadline. The real academic courses were never in danger; the entire \"loss\" is the pun. The reason for the student's phrasing and the odd \"one evening\" detail is the joke: what vanished were the dinner's dishes, cleared and discarded by the servers, not any university classes.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 1,
+          "evidence": "the word \"courses\" is being used in its culinary sense...On one evening the student attended a formal university high-table dinner...not any university classes.",
+          "reason": "Identifies the culinary meaning, formal high-table dinner, and explicitly excludes academic classes."
+        },
+        {
+          "id": "C2",
+          "credit": 0,
+          "evidence": "academic course selections have all been taken before the deadline",
+          "reason": "The only deadline mentioned is the academic-selection framing; the submission never states the deadline was for expressing meal-course preferences."
+        },
+        {
+          "id": "C3",
+          "credit": 1,
+          "evidence": "servers repeatedly took the dishes (the \"courses\") away from the table...the leftovers discarded...every \"course\" had been removed and discarded.",
+          "reason": "Dishes are cleared as uneaten leftovers and disappear by the end of the meal."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Missing meal-preference deadline and booking, punctual attendance, disliking/tasting the three-course meal, and the student's request for the waiter to clear leftovers when serving each next course; the submission recovers only the culinary pun and server clearing.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "covered",
+          "evidence": "the word \"courses\" is being used in its culinary sense...On one evening the student attended a formal university high-table dinner...not any university classes."
+        },
+        {
+          "id": "C2.F1",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "C3.F1",
+          "status": "covered",
+          "evidence": "servers repeatedly took the dishes...the leftovers discarded...every \"course\" had been removed and discarded."
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "partial",
+          "evidence": "the word \"courses\" is being used in its culinary sense...a formal university high-table dinner...not any university classes."
+        },
+        {
+          "id": "R2",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "R3",
+          "status": "partial",
+          "evidence": "the leftovers discarded"
+        },
+        {
+          "id": "R4",
+          "status": "partial",
+          "evidence": "servers repeatedly took the dishes...where the plates were cleared and the leftovers discarded...every \"course\" had been removed and discarded."
+        }
+      ],
+      "contradictions": [],
+      "partial_score": 0.7,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set1_teammate_20261113/S1_TS028_TS013_TS028_TS013_r01_direct/trajectory.html",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "cl_set1_teammate_20261113::S1_TS028_TS013_TS028_TS013_r01_session",
+    "status": "completed",
+    "raw_online_score": 0.4,
+    "raw_online_success": false,
+    "final": "The apparent loss of university courses is a pun. The “student” was not choosing HKU classes but the food courses of a meal. Those courses were served progressively during the evening: each dish was brought out, eaten, and then cleared or replaced by the next course. By the end of that single evening, every course had been served and removed, so there were no courses left. That is why “all my courses were gone in one evening”—the meal’s courses had all been consumed and cleared away, not the student’s academic course registrations.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "not choosing HKU classes but the food courses of a meal",
+          "reason": "Identifies courses as food at a dinner rather than academic classes, but omits the formal high-table dinner setting."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "not choosing HKU classes but the food courses of a meal",
+          "reason": "Meal-course choice is identified, but the deadline connection is missing."
+        },
+        {
+          "id": "C3",
+          "credit": 0,
+          "evidence": "each dish was brought out, eaten, and then cleared or replaced by the next course ... all consumed and cleared away",
+          "reason": "Contradicts the required fact that the waiter clears uneaten dishes; it instead asserts all courses were consumed and then cleared away."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "The submission uses the meal-course pun, but it omits the mandatory formal high-table setting and the deadline for meal preferences. It also omits on-time attendance, disliking the food and leaving uneaten portions, and instead asserts that all courses were consumed, which contradicts the reference's causal explanation that the waiter cleared uneaten leftovers at the student's request.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "not choosing HKU classes but the food courses of a meal"
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "not choosing HKU classes but the food courses of a meal"
+        },
+        {
+          "id": "C3.F1",
+          "status": "contradicted",
+          "evidence": "Those courses were served progressively during the evening: each dish was brought out, eaten, and then cleared or replaced by the next course. … That is why “all my courses were gone in one evening”—the meal’s courses had all been consumed and cleared away, not the student’s academic course registrations."
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "partial",
+          "evidence": "not choosing HKU classes but the food courses of a meal"
+        },
+        {
+          "id": "R2",
+          "status": "partial",
+          "evidence": "not choosing HKU classes but the food courses of a meal"
+        },
+        {
+          "id": "R3",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "R4",
+          "status": "contradicted",
+          "evidence": "Those courses were served progressively during the evening: each dish was brought out, eaten, and then cleared or replaced by the next course. … That is why “all my courses were gone in one evening”—the meal’s courses had all been consumed and cleared away, not the student’s academic course registrations."
+        }
+      ],
+      "contradictions": [
+        {
+          "quote": "Those courses were served progressively during the evening: each dish was brought out, eaten, and then cleared or replaced by the next course. … That is why “all my courses were gone in one evening”—the meal’s courses had all been consumed and cleared away, not the student’s academic course registrations.",
+          "reference": "The narrator did not finish all the food; the disappearance is not caused by all dishes being eaten by the narrator or by other attendees.",
+          "checkpoint_ids": [
+            "C3"
+          ]
+        }
+      ],
+      "partial_score": 0.4,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set1_teammate_20261113/S1_TS028_TS013_TS028_TS013_r01_session/trajectory.html",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "cl_set1_teammate_20261113::S1_TS028_TS013_TS028_TS013_r01_source",
+    "status": "completed",
+    "raw_online_score": 1.0,
+    "raw_online_success": true,
+    "final": "The person started on an upper floor of a building whose parking garage was underneath it, and his car was parked on a lower garage level about 30 meters below him. The “30 meters away” was the straight-line vertical drop between his floor and the car, not a walking distance. He was at the elevator and boarded it without any counted steps; the elevator rode down to the garage level and covered nearly all of the 30-meter separation. When he exited into the garage, the car was nearby on that same level, so he took only five steps from the elevator to the car and got in. The elevator—not walking—did the traveling implied by the 30-meter figure, leaving just five steps.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 1,
+          "evidence": "The “30 meters away” was the straight-line vertical drop between his floor and the car, not a walking distance.",
+          "reason": "Clearly states the 30 meters is primarily vertical distance and not walking distance."
+        },
+        {
+          "id": "C2",
+          "credit": 1,
+          "evidence": "The person started on an upper floor of a building whose parking garage was underneath it ... the elevator rode down to the garage level",
+          "reason": "Identifies an elevator from a high floor to a garage underneath the building, which faithfully paraphrases an underground parking garage."
+        },
+        {
+          "id": "C3",
+          "credit": 1,
+          "evidence": "When he exited into the garage, the car was nearby on that same level, so he took only five steps from the elevator to the car and got in.",
+          "reason": "Clearly indicates the car is immediately accessible from the elevator and only five steps were needed."
+        }
+      ],
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "covered",
+          "evidence": "The “30 meters away” was the straight-line vertical drop between his floor and the car, not a walking distance."
+        },
+        {
+          "id": "C2.F1",
+          "status": "covered",
+          "evidence": "The person started on an upper floor of a building whose parking garage was underneath it ... the elevator rode down to the garage level"
+        },
+        {
+          "id": "C3.F1",
+          "status": "covered",
+          "evidence": "When he exited into the garage, the car was nearby on that same level, so he took only five steps from the elevator to the car and got in."
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "covered",
+          "evidence": "The person started on an upper floor of a building ... The “30 meters away” was the straight-line vertical drop between his floor and the car, not a walking distance."
+        },
+        {
+          "id": "R2",
+          "status": "covered",
+          "evidence": "building whose parking garage was underneath it ... the elevator rode down to the garage level"
+        },
+        {
+          "id": "R3",
+          "status": "covered",
+          "evidence": "When he exited into the garage, the car was nearby on that same level, so he took only five steps from the elevator to the car and got in."
+        }
+      ],
+      "contradictions": [],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": true,
+      "completion_note": "Complete reference narrative reconstructed: vertical distance is emphasized, the elevator carries him from a high floor to an underground-style garage underneath the building, and the car is only a few steps from the elevator exit.",
+      "partial_score": 1.0,
+      "complete": true,
+      "label": "yes",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set1_teammate_20261113/S1_TS028_TS013_TS028_TS013_r01_source/trajectory.html",
+    "semantic_review_scope": "Export only; reading or semantic certification is not implied by this script."
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS047_answer_only_r01",
+    "status": "completed",
+    "raw_online_score": 0.9,
+    "raw_online_success": false,
+    "final": "The lost, exhausted girl took shelter in what appeared to be an empty house. In the dim room she saw a framed-looking image containing a man's figure and took it for a picture, so she did not understand that it was actually a window with a real man standing outside looking in at her. Even so, the figure disturbed her, and she felt watched, which is why she could not fall asleep despite her exhaustion; only when she collapsed from fatigue did she sleep. In the morning, in clear light, she recognized the \"picture\" as a window showing the real outdoors, and understood that the man was a living stranger who had been standing at the glass watching her while she lay there. Realizing that her feeling of being watched had been entirely justified—and how closely she had been observed—she fled the house in terror.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 1,
+          "evidence": "In the dim room she saw a framed-looking image containing a man's figure and took it for a picture, so she did not understand that it was actually a window with a real man standing outside looking in at her.",
+          "reason": "The apparent portrait is identified as actually a window with a real person behind it, and the girl mistakes the window/person for a portrait."
+        },
+        {
+          "id": "C2",
+          "credit": 1,
+          "evidence": "Even so, the figure disturbed her, and she felt watched, which is why she could not fall asleep despite her exhaustion",
+          "reason": "The watching figure mistaken for a portrait makes her uneasy and unable to sleep, covering the causal and narrative qualifiers."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "only when she collapsed from fatigue did she sleep. In the morning, in clear light, she recognized the \"picture\" as a window ... and understood that the man was a living stranger who had been standing at the glass watching her while she lay there. ... she fled the house in terror.",
+          "reason": "The morning realization and flight are fully covered, but the required fact that the person/figure was gone by morning is omitted, blocking full credit."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "covered",
+          "evidence": "she did not understand that it was actually a window with a real man standing outside looking in at her"
+        },
+        {
+          "id": "C1.F2",
+          "status": "covered",
+          "evidence": "The lost, exhausted girl took shelter in what appeared to be an empty house. In the dim room she saw a framed-looking image containing a man's figure and took it for a picture"
+        },
+        {
+          "id": "C2.F1",
+          "status": "covered",
+          "evidence": "the figure disturbed her, and she felt watched, which is why she could not fall asleep despite her exhaustion"
+        },
+        {
+          "id": "C2.F2",
+          "status": "covered",
+          "evidence": "the figure disturbed her, and she felt watched, which is why she could not fall asleep"
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "In the morning, in clear light, she recognized the \"picture\" as a window showing the real outdoors ... Realizing that her feeling of being watched had been entirely justified ... she fled the house in terror."
+        },
+        {
+          "id": "C3.F2",
+          "status": "partial",
+          "evidence": "only when she collapsed from fatigue did she sleep"
+        },
+        {
+          "id": "C3.F3",
+          "status": "covered",
+          "evidence": "In the morning, in clear light, she recognized the \"picture\" as a window showing the real outdoors, and understood that the man was a living stranger who had been standing at the glass watching her while she lay there. ... she fled the house in terror."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.9,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS047_answer_only_r01/trajectory.md",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS045_answer_only_r01",
+    "status": "completed",
+    "raw_online_score": 0.4,
+    "raw_online_success": false,
+    "final": "The lost girl took shelter in a house that appeared empty of people. Exhausted, she could not sleep until she finally collapsed from fatigue. When she woke the next morning and went to the window, she saw ordinary people outside who were already looking toward that window—indeed, toward it before she had appeared there—and who seemed to know someone was inside the house. Because she was visible through the window, she realized the \"empty\" house had been under observation and that she was exposed to the watchers. Alarmed by their fixed, expectant attention and her own visibility, she fled in terror.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "\"went to the window, she saw ordinary people outside who were already looking toward that window\"",
+          "reason": "Identifies a window with real people outside, but omits the apparent-portrait misperception required for full credit."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "\"Exhausted, she could not sleep until she finally collapsed from fatigue.\"",
+          "reason": "Covers sleeplessness but not the required causal connection to mistaking a watching person for a portrait or resulting unease."
+        },
+        {
+          "id": "C3",
+          "credit": 0,
+          "evidence": "\"When she woke the next morning and went to the window, she saw ordinary people outside\"",
+          "reason": "Contradicts the required morning disappearance of the person; the watcher or people are still present."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "went to the window, she saw ordinary people outside who were already looking toward that window"
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "The lost girl took shelter in a house that appeared empty of people."
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "Exhausted, she could not sleep until she finally collapsed from fatigue."
+        },
+        {
+          "id": "C2.F2",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "C3.F1",
+          "status": "contradicted",
+          "evidence": "When she woke the next morning and went to the window, she saw ordinary people outside"
+        },
+        {
+          "id": "C3.F2",
+          "status": "contradicted",
+          "evidence": "When she woke the next morning and went to the window, she saw ordinary people outside"
+        },
+        {
+          "id": "C3.F3",
+          "status": "covered",
+          "evidence": "Because she was visible through the window, she realized the \"empty\" house had been under observation and that she was exposed to the watchers. Alarmed by their fixed, expectant attention and her own visibility, she fled in terror."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [
+        {
+          "quote": "When she woke the next morning and went to the window, she saw ordinary people outside who were already looking toward that window—indeed, toward it before she had appeared there—and who seemed to know someone was inside the house.",
+          "reference": "By morning the person is gone, exposing the window and causing her to flee.",
+          "checkpoint_ids": [
+            "C3"
+          ]
+        },
+        {
+          "quote": "When she woke the next morning and went to the window, she saw ordinary people outside who were already looking toward that window—indeed, toward it before she had appeared there—and who seemed to know someone was inside the house.",
+          "reference": "She eventually sleeps, and in the morning the figure is gone.",
+          "checkpoint_ids": [
+            "C3"
+          ]
+        }
+      ],
+      "partial_score": 0.4,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS045_answer_only_r01/trajectory.md",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS019_answer_only_r01",
+    "status": "completed",
+    "raw_online_score": 0.0,
+    "raw_online_success": false,
+    "final": "The lost girl, exhausted, sheltered in an empty house but was too frightened and uneasy to sleep. Before finally falling asleep, she saw a real living person outside through a window. When she woke the next morning, that person was inexplicably gone—without any body, blood, or trace—and the outside scene was visibly wrong without them. The disappearance of the only person she had seen, combined with the unnatural alteration of the outside view, convinced her that something dangerous had happened or was near, and she fled the house in terror.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0,
+          "evidence": "Before finally falling asleep, she saw a real living person outside through a window.",
+          "reason": "The required apparent-portrait-to-window misperception is absent; the submission states she directly saw a window with a living person outside, contradicting the portrait misunderstanding."
+        },
+        {
+          "id": "C2",
+          "credit": 0,
+          "evidence": "was too frightened and uneasy to sleep ... she saw a real living person outside through a window",
+          "reason": "Unease and sleeplessness appear, but the required cause—mistaking the watcher for a portrait—is contradicted by directly seeing a living person outside."
+        },
+        {
+          "id": "C3",
+          "credit": 0,
+          "evidence": "The disappearance of the only person she had seen ... convinced her that something dangerous had happened or was near, and she fled",
+          "reason": "Morning absence and flight are present, but the required window exposure and realization are replaced by a different discovery, contradicting the required cause."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "contradicted",
+          "evidence": "Before finally falling asleep, she saw a real living person outside through a window."
+        },
+        {
+          "id": "C1.F2",
+          "status": "contradicted",
+          "evidence": "Before finally falling asleep, she saw a real living person outside through a window."
+        },
+        {
+          "id": "C2.F1",
+          "status": "contradicted",
+          "evidence": "was too frightened and uneasy to sleep ... she saw a real living person outside through a window"
+        },
+        {
+          "id": "C2.F2",
+          "status": "contradicted",
+          "evidence": "was too frightened and uneasy to sleep ... she saw a real living person outside through a window"
+        },
+        {
+          "id": "C3.F1",
+          "status": "contradicted",
+          "evidence": "When she woke the next morning, that person was inexplicably gone ... the outside scene was visibly wrong without them."
+        },
+        {
+          "id": "C3.F2",
+          "status": "covered",
+          "evidence": "Before finally falling asleep, she saw a real living person outside through a window. When she woke the next morning, that person was inexplicably gone"
+        },
+        {
+          "id": "C3.F3",
+          "status": "contradicted",
+          "evidence": "The disappearance of the only person she had seen, combined with the unnatural alteration of the outside view, convinced her that something dangerous had happened or was near, and she fled the house in terror."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [
+        {
+          "quote": "Before finally falling asleep, she saw a real living person outside through a window.",
+          "reference": "The lost girl mistakes a window with a real person outside for a portrait and only realizes it was a window the next morning.",
+          "checkpoint_ids": [
+            "C1",
+            "C2",
+            "C3"
+          ]
+        },
+        {
+          "quote": "The disappearance of the only person she had seen, combined with the unnatural alteration of the outside view, convinced her that something dangerous had happened or was near, and she fled the house in terror.",
+          "reference": "She realizes it was a window and someone had watched her from outside, so she flees.",
+          "checkpoint_ids": [
+            "C3"
+          ]
+        }
+      ],
+      "partial_score": 0.0,
+      "complete": false,
+      "label": "no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS019_answer_only_r01/trajectory.md",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS047_answer_only_r02",
+    "status": "completed",
+    "raw_online_score": 0.9,
+    "raw_online_success": false,
+    "final": "Exhausted and lost, the girl took shelter in what seemed an empty house. In the dim room she saw what she took to be a framed picture of a man. Uneasy at being watched by the \"portrait,\" she could not sleep, and only exhaustion finally made her doze off. In the morning light she noticed something strange: the \"picture\" was not a painting at all—its frame surrounded glass, and through it she could now see the real outdoor world. It was a window. That meant the man she had thought was depicted in a picture had actually been a real man outside the window all night, watching her as she lay there in the dark. Realizing she had been observed the whole time, she fled the house in terror.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 1,
+          "evidence": "the \"picture\" was not a painting at all—its frame surrounded glass... It was a window. That meant the man she had thought was depicted in a picture had actually been a real man outside the window all night",
+          "reason": "All C1 required facts are covered: the apparent portrait is actually a window, and the girl took shelter and mistook a real person outside it for a portrait."
+        },
+        {
+          "id": "C2",
+          "credit": 1,
+          "evidence": "Uneasy at being watched by the \"portrait,\" she could not sleep, and only exhaustion finally made her doze off.",
+          "reason": "All C2 required facts are explicitly covered: mistaking the watcher for a portrait makes her uneasy and unable to sleep, and feeling watched by the apparent portrait keeps her awake."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "In the morning light she noticed something strange: the \"picture\" was not a painting at all—its frame surrounded glass... It was a window... Realizing she had been observed the whole time, she fled the house in terror.",
+          "reason": "The submission covers eventual sleep, morning recognition of the window, and fleeing, but it does not state or clearly entail that the person/figure was gone by morning, so the required qualifier is missing."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "covered",
+          "evidence": "the \"picture\" was not a painting at all—its frame surrounded glass... It was a window. That meant the man she had thought was depicted in a picture had actually been a real man outside the window all night"
+        },
+        {
+          "id": "C1.F2",
+          "status": "covered",
+          "evidence": "Exhausted and lost, the girl took shelter in what seemed an empty house. In the dim room she saw what she took to be a framed picture of a man... the \"picture\" was not a painting at all—its frame surrounded glass... It was a window."
+        },
+        {
+          "id": "C2.F1",
+          "status": "covered",
+          "evidence": "Uneasy at being watched by the \"portrait,\" she could not sleep"
+        },
+        {
+          "id": "C2.F2",
+          "status": "covered",
+          "evidence": "Uneasy at being watched by the \"portrait,\" she could not sleep"
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "In the morning light she noticed something strange: the \"picture\" was not a painting at all—its frame surrounded glass... It was a window... Realizing she had been observed the whole time, she fled the house in terror."
+        },
+        {
+          "id": "C3.F2",
+          "status": "partial",
+          "evidence": "only exhaustion finally made her doze off. In the morning light she noticed something strange: the \"picture\" was not a painting at all—its frame surrounded glass, and through it she could now see the real outdoor world."
+        },
+        {
+          "id": "C3.F3",
+          "status": "covered",
+          "evidence": "In the morning light she noticed something strange: the \"picture\" was not a painting at all—its frame surrounded glass, and through it she could now see the real outdoor world. … It was a window. … That meant the man she had thought was depicted in a picture had actually been a real man outside the window all night, watching her as she lay there in the dark. … Realizing she had been observed the whole time, she fled the house in terror."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.9,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS047_answer_only_r02/trajectory.md",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS045_answer_only_r02",
+    "status": "completed",
+    "raw_online_score": 0.4,
+    "raw_online_success": false,
+    "final": "A lost, exhausted girl shelters in an empty house but cannot sleep. By morning, having finally slept from exhaustion, she notices something outside through a window that has changed overnight: an animal that had been visible in the surrounding view is now missing. That missing living creature, together with the altered view, tells her the house has been moved or otherwise changed while she slept, revealing she is not where she believed and that some danger is nearby. The realization terrifies her, and she flees the house.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "A lost, exhausted girl shelters in an empty house... notices something outside through a window that has changed overnight: an animal that had been visible in the surrounding view is now missing.",
+          "reason": "The portrait/window with a real person is absent; the core identity is replaced by a missing animal."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "cannot sleep. By morning, having finally slept from exhaustion",
+          "reason": "Sleeplessness appears but not the required cause: mistaking a watching person for a portrait and feeling watched."
+        },
+        {
+          "id": "C3",
+          "credit": 0,
+          "evidence": "an animal that had been visible in the surrounding view is now missing... tells her the house has been moved or otherwise changed while she slept... she flees the house",
+          "reason": "The explanation replaces the disappearing person/watcher realization with an animal disappearance and changed house, so the required causal narrative is contradicted."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "A lost, exhausted girl shelters in an empty house"
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "cannot sleep. By morning, having finally slept from exhaustion"
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "cannot sleep. By morning, having finally slept from exhaustion"
+        },
+        {
+          "id": "C3.F1",
+          "status": "contradicted",
+          "evidence": "an animal that had been visible in the surrounding view is now missing"
+        },
+        {
+          "id": "C3.F2",
+          "status": "partial",
+          "evidence": "By morning, having finally slept from exhaustion... an animal that had been visible in the surrounding view is now missing"
+        },
+        {
+          "id": "C3.F3",
+          "status": "contradicted",
+          "evidence": "tells her the house has been moved or otherwise changed while she slept"
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [
+        {
+          "quote": "an animal that had been visible in the surrounding view is now missing",
+          "reference": "By morning the person is gone, exposing the window and causing her to flee.",
+          "checkpoint_ids": [
+            "C3"
+          ]
+        },
+        {
+          "quote": "tells her the house has been moved or otherwise changed while she slept",
+          "reference": "She realizes it was a window and someone had watched her from outside, so she flees.",
+          "checkpoint_ids": [
+            "C3"
+          ]
+        }
+      ],
+      "partial_score": 0.4,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": [
+        {
+          "field": "C1.credit",
+          "model": 0,
+          "effective": 0.5
+        },
+        {
+          "field": "C2.credit",
+          "model": 0,
+          "effective": 0.5
+        }
+      ]
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS045_answer_only_r02/trajectory.md",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS019_answer_only_r02",
+    "status": "completed",
+    "raw_online_score": 0.25,
+    "raw_online_success": false,
+    "final": "The girl was lost and, exhausted, entered what she believed was an empty, ordinary house and fell asleep. She did not realize that a transparent part of the house—its windows or glass wall—allowed people outside to see straight in. A group of people gathered outside and watched her, including throughout the night; from her side the house had seemed private and unobserved.\n\nWhen she woke the next morning, after finally sleeping from exhaustion, she noticed something strange: through the glass she could see the watchers—people standing motionless and staring in at her. The horrifying realization was that she had not been alone or private at all; these strangers had been watching her while she slept. The house’s apparent emptiness had deceived her because its transparency was not obvious to her until that morning. Terrified by being observed through the transparent walls/windows, she fled.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "through the glass she could see the watchers—people standing motionless and staring in at her",
+          "reason": "Identifies a window-like transparent surface and watchers outside, but entirely omits the apparent portrait mistaken for a painting, so the central portrait/window identity is only partly covered."
+        },
+        {
+          "id": "C2",
+          "credit": 0,
+          "evidence": "The girl was lost and, exhausted, entered what she believed was an empty, ordinary house and fell asleep.",
+          "reason": "No required fact is covered: the submission does not mention the apparent portrait, unease, or being kept awake by feeling watched."
+        },
+        {
+          "id": "C3",
+          "credit": 0,
+          "evidence": "through the glass she could see the watchers—people standing motionless and staring in at her",
+          "reason": "The required fact that the person/figure is gone by morning is contradicted: the submission has the watchers still visible and staring at her in the morning."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "transparent part of the house—its windows or glass wall—allowed people outside to see straight in ... through the glass she could see the watchers—people standing motionless and staring in at her"
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "The girl was lost and, exhausted, entered what she believed was an empty, ordinary house"
+        },
+        {
+          "id": "C2.F1",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "C2.F2",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "C3.F1",
+          "status": "contradicted",
+          "evidence": "through the glass she could see the watchers—people standing motionless and staring in at her"
+        },
+        {
+          "id": "C3.F2",
+          "status": "contradicted",
+          "evidence": "When she woke the next morning, after finally sleeping from exhaustion, she noticed something strange: through the glass she could see the watchers—people standing motionless and staring in at her"
+        },
+        {
+          "id": "C3.F3",
+          "status": "covered",
+          "evidence": "The horrifying realization was that she had not been alone or private at all; these strangers had been watching her while she slept. ... Terrified by being observed through the transparent walls/windows, she fled."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [
+        {
+          "quote": "through the glass she could see the watchers—people standing motionless and staring in at her",
+          "reference": "She eventually sleeps, and in the morning the figure is gone.",
+          "checkpoint_ids": [
+            "C3"
+          ]
+        }
+      ],
+      "partial_score": 0.25,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS019_answer_only_r02/trajectory.md",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS047_answer_only_r03",
+    "status": "error",
+    "raw_online_score": null,
+    "raw_online_success": null,
+    "final": "A lost, exhausted girl took shelter in an empty house. Because she was frightened and overtired, she could not sleep. She finally collapsed from exhaustion—and that is exactly what her watcher had been waiting for. During the night a person outside stood at a window and observed her while she slept.\n\nThe room and window were not the private refuge she assumed. The window was completely without any curtain or blind, and it faced a place where a person could easily stand outside and look straight in. In the morning, in daylight, she saw the window and its surroundings clearly and understood what she had missed in the dark: she had been fully visible all night, and someone had in fact watched her through that uncovered window while she slept. Realizing that she had been observed while vulnerable and alone—and that the watcher could still be nearby—she panicked and fled the house in terror.",
+    "grade": null,
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS047_answer_only_r03/trajectory.md",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS045_answer_only_r03",
+    "status": "completed",
+    "raw_online_score": 0.4,
+    "raw_online_success": false,
+    "final": "The girl, lost and exhausted, sheltered in what she took to be an empty house but could not sleep because she sensed she was being watched. She was right: a human figure stood outside the window all night, and in the darkness its face was visible to her as a face she had never seen before—so it was a stranger to her at that point. In the morning, now able to appraise that same window and face clearly, she recognized the watcher: the face she had glimpsed in the night belonged to the person connected with the house, who had been standing outside through the whole night while she lay helpless inside. She had mistaken the house for an empty refuge, when in fact its own occupant had been silently watching her the entire time; understanding this, she panicked and fled.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "a human figure stood outside the window all night",
+          "reason": "The explanation identifies a real person outside a window but omits the apparent portrait and the mistake that the window was a portrait, so all required facts are only partially covered."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "could not sleep because she sensed she was being watched",
+          "reason": "It links being watched to sleeplessness but never mentions mistaking the watcher for a portrait, so the causal qualifier is only partially covered."
+        },
+        {
+          "id": "C3",
+          "credit": 0,
+          "evidence": "In the morning, now able to appraise that same window and face clearly, she recognized the watcher",
+          "reason": "This affirmatively contradicts the required morning disappearance of the person and therefore zeroes the checkpoint."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "a human figure stood outside the window all night"
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "sheltered in what she took to be an empty house ... a human figure stood outside the window all night"
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "could not sleep because she sensed she was being watched"
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "could not sleep because she sensed she was being watched"
+        },
+        {
+          "id": "C3.F1",
+          "status": "contradicted",
+          "evidence": "In the morning, now able to appraise that same window and face clearly, she recognized the watcher"
+        },
+        {
+          "id": "C3.F2",
+          "status": "contradicted",
+          "evidence": "In the morning, now able to appraise that same window and face clearly, she recognized the watcher"
+        },
+        {
+          "id": "C3.F3",
+          "status": "partial",
+          "evidence": "a human figure stood outside the window all night ... who had been standing outside through the whole night while she lay helpless inside ... understanding this, she panicked and fled."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [
+        {
+          "quote": "In the morning, now able to appraise that same window and face clearly, she recognized the watcher: the face she had glimpsed in the night belonged to the person connected with the house",
+          "reference": "By morning the person is gone, exposing the window and causing her to flee.",
+          "checkpoint_ids": [
+            "C3"
+          ]
+        },
+        {
+          "quote": "In the morning, now able to appraise that same window and face clearly, she recognized the watcher",
+          "reference": "She eventually sleeps, and in the morning the figure is gone",
+          "checkpoint_ids": [
+            "C3"
+          ]
+        }
+      ],
+      "partial_score": 0.4,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS045_answer_only_r03/trajectory.md",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS019_answer_only_r03",
+    "status": "completed",
+    "raw_online_score": 0.0,
+    "raw_online_success": false,
+    "final": "A lost child wandered away from home and, exhausted, took shelter in a house that appeared empty. She was too frightened to sleep: looking out the window in the dim light (moonlight or a lamp, not pitch darkness), she saw a figure outside and, in her fear and exhaustion, mistook it for something monstrous—a ghost or monster.\n\nOnly when she finally collapsed from exhaustion, slept through the night, and woke the next morning did she get a clear look. The same figure was still there, and in daylight she recognized it for what it really was: a real, living person who had been deliberately watching and waiting for her all night. Realizing that a human being had been silently watching her—someone who had known she was inside—she was terrified and fled the house.\n\nThe strangeness she noticed was the view through the window: the person she had taken for a monster the night before was in fact a real watcher, and seeing that clearly was what drove her to run.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0,
+          "evidence": "in her fear and exhaustion, mistook it for something monstrous—a ghost or monster",
+          "reason": "The required portrait misidentification is contradicted by the submitted ghost/monster misidentification; C1.F2 is contradicted, so checkpoint credit is zero."
+        },
+        {
+          "id": "C2",
+          "credit": 0,
+          "evidence": "She was too frightened to sleep: looking out the window ... mistook it for something monstrous—a ghost or monster",
+          "reason": "The specified cause (mistaking the watching person for a portrait) is replaced by a monster misidentification, contradicting C2.F1; partial insomnia coverage cannot earn credit."
+        },
+        {
+          "id": "C3",
+          "credit": 0,
+          "evidence": "The same figure was still there, and in daylight she recognized it for what it really was",
+          "reason": "C3.F1 and C3.F2 require the figure to be gone by morning; the submission explicitly says it was still there, a material contradiction."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "looking out the window ... saw a figure outside ... in daylight she recognized it for what it really was: a real, living person"
+        },
+        {
+          "id": "C1.F2",
+          "status": "contradicted",
+          "evidence": "in her fear and exhaustion, mistook it for something monstrous—a ghost or monster"
+        },
+        {
+          "id": "C2.F1",
+          "status": "contradicted",
+          "evidence": "She was too frightened to sleep: looking out the window ... mistook it for something monstrous—a ghost or monster"
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "She was too frightened to sleep: looking out the window ... saw a figure outside"
+        },
+        {
+          "id": "C3.F1",
+          "status": "contradicted",
+          "evidence": "The same figure was still there, and in daylight she recognized it for what it really was"
+        },
+        {
+          "id": "C3.F2",
+          "status": "contradicted",
+          "evidence": "The same figure was still there"
+        },
+        {
+          "id": "C3.F3",
+          "status": "covered",
+          "evidence": "The strangeness she noticed was the view through the window: the person she had taken for a monster the night before was in fact a real watcher, and seeing that clearly was what drove her to run."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [
+        {
+          "quote": "in her fear and exhaustion, mistook it for something monstrous—a ghost or monster",
+          "reference": "The lost girl takes shelter in a house and mistakes a window with a real person outside for a portrait.",
+          "checkpoint_ids": [
+            "C1"
+          ]
+        },
+        {
+          "quote": "mistook it for something monstrous—a ghost or monster",
+          "reference": "Mistaking the watching person for a portrait makes the girl uneasy and unable to sleep.",
+          "checkpoint_ids": [
+            "C2"
+          ]
+        },
+        {
+          "quote": "The same figure was still there, and in daylight she recognized it for what it really was",
+          "reference": "By morning the person is gone, exposing the window and causing her to flee.",
+          "checkpoint_ids": [
+            "C3"
+          ]
+        }
+      ],
+      "partial_score": 0.0,
+      "complete": false,
+      "label": "no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS019_answer_only_r03/trajectory.md",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS047_answer_only_r04",
+    "status": "completed",
+    "raw_online_score": 0.1,
+    "raw_online_success": false,
+    "final": "The girl, exhausted, took shelter in a house she believed was empty, but she could not sleep because she was afraid: in the darkness she had made out a face or figure at a window and felt she was being watched all night. That watcher was not a ghost or a misperception—by daylight she came to understand it was a real living person who had been outside, observing her through the window.\n\nThe house had not truly been empty after all: someone had been using or living in it, unknown to her, which is why a real person was there to watch her. When morning came she looked out and saw the tell-tale evidence that the man had indeed been there, spying on her during the night—evidence that had been invisible or misunderstood in the dark. Recognizing that she had been watched through the night by a real intruder, and that the supposedly empty house concealed this, she panicked and fled in terror.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0,
+          "evidence": "in the darkness she had made out a face or figure at a window and felt she was being watched all night",
+          "reason": "The required portrait-to-window misperception is absent and replaced by seeing a face or figure at a window from the start, contradicting the core identity of the apparent portrait."
+        },
+        {
+          "id": "C2",
+          "credit": 0,
+          "evidence": "she could not sleep because she was afraid: in the darkness she had made out a face or figure at a window and felt she was being watched all night",
+          "reason": "It captures unease and sleeplessness, but the required cause—mistaking the watcher for a portrait—is missing and replaced by seeing a figure at a window."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "by daylight she came to understand it was a real living person who had been outside, observing her through the window ... Recognizing that she had been watched through the night by a real intruder ... she panicked and fled in terror",
+          "reason": "It covers the realization that a real person watched her from outside through the window and that she fled, but it omits that the figure was gone in the morning, that this exposed the window, and that she eventually slept."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "contradictions": [
+        {
+          "quote": "in the darkness she had made out a face or figure at a window and felt she was being watched all night",
+          "reference": "The apparent portrait was actually a window with a real person outside; the girl mistook the real person outside for a portrait.",
+          "checkpoint_ids": [
+            "C1",
+            "C2"
+          ]
+        }
+      ],
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "contradicted",
+          "evidence": "in the darkness she had made out a face or figure at a window and felt she was being watched all night"
+        },
+        {
+          "id": "C1.F2",
+          "status": "contradicted",
+          "evidence": "The girl, exhausted, took shelter in a house she believed was empty, but she could not sleep because she was afraid: in the darkness she had made out a face or figure at a window and felt she was being watched all night."
+        },
+        {
+          "id": "C2.F1",
+          "status": "contradicted",
+          "evidence": "she could not sleep because she was afraid: in the darkness she had made out a face or figure at a window and felt she was being watched all night"
+        },
+        {
+          "id": "C2.F2",
+          "status": "contradicted",
+          "evidence": "in the darkness she had made out a face or figure at a window and felt she was being watched all night"
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "Recognizing that she had been watched through the night by a real intruder, and that the supposedly empty house concealed this, she panicked and fled in terror"
+        },
+        {
+          "id": "C3.F2",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "C3.F3",
+          "status": "covered",
+          "evidence": "by daylight she came to understand it was a real living person who had been outside, observing her through the window. Recognizing that she had been watched through the night by a real intruder, and that the supposedly empty house concealed this, she panicked and fled in terror."
+        }
+      ],
+      "requirement_coverage": [],
+      "partial_score": 0.1,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": [],
+      "coverage_completion": {
+        "added_fields": [
+          "fact_coverage",
+          "requirement_coverage"
+        ],
+        "original_checkpoint_credits": {
+          "C1": 0,
+          "C2": 0,
+          "C3": 0.5
+        },
+        "judgments_changed": false,
+        "coverage_completion_calls": 1
+      }
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS047_answer_only_r04/trajectory.md",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS045_answer_only_r04",
+    "status": "completed",
+    "raw_online_score": 0.0,
+    "raw_online_success": false,
+    "final": "A lost, exhausted girl took shelter in what was genuinely an empty house and lay down to rest. All through the night she was kept awake by fear: a figure was at the window, looking in and watching her as she tried to sleep. She could have recognized the truth earlier, since it was there and plainly visible the whole time, but in the dark she took it at face value—a person outside, staring in. Finally, worn out, she fell asleep.\n\nWhen she woke in the morning the figure was gone, and daylight showed her what the window truly was and what she had actually been seeing. The \"watcher\" had never been a real intruder outside the glass; the dark pane had been acting as a mirror, throwing back an image from within, so that what terrified her all night was a reflection rather than a person in the yard. Understanding that the thing she had feared and stared at through the long night was an illusion—and what that implied about the room around her—she panicked and fled the house in terror.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0,
+          "evidence": "The \"watcher\" had never been a real intruder outside the glass; the dark pane had been acting as a mirror, throwing back an image from within, so that what terrified her all night was a reflection rather than a person in the yard.",
+          "reason": "Contradicts the required real-person-behind-the-window identity; the submission makes the watcher a reflection, not a real person."
+        },
+        {
+          "id": "C2",
+          "credit": 0,
+          "evidence": "All through the night she was kept awake by fear: a figure was at the window, looking in and watching her as she tried to sleep. ... but in the dark she took it at face value—a person outside, staring in.",
+          "reason": "The unease/insomnia is tied to an outside figure or later reflection, not to mistaking a watching person for a portrait; the required portrait misperception is contradicted/omitted."
+        },
+        {
+          "id": "C3",
+          "credit": 0,
+          "evidence": "When she woke in the morning the figure was gone, and daylight showed her what the window truly was and what she had actually been seeing. The \"watcher\" had never been a real intruder outside the glass...",
+          "reason": "Although the figure is gone and she flees, the causal revelation is inverted: no outside watcher was ever there, contradicting the required morning realization and cause of flight."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "contradicted",
+          "evidence": "The \"watcher\" had never been a real intruder outside the glass; the dark pane had been acting as a mirror, throwing back an image from within, so that what terrified her all night was a reflection rather than a person in the yard."
+        },
+        {
+          "id": "C1.F2",
+          "status": "contradicted",
+          "evidence": "A lost, exhausted girl took shelter in what was genuinely an empty house and lay down to rest. ... but in the dark she took it at face value—a person outside, staring in. ... The \"watcher\" had never been a real intruder outside the glass; the dark pane had been acting as a mirror..."
+        },
+        {
+          "id": "C2.F1",
+          "status": "contradicted",
+          "evidence": "All through the night she was kept awake by fear: a figure was at the window, looking in and watching her as she tried to sleep. ... but in the dark she took it at face value—a person outside, staring in."
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "All through the night she was kept awake by fear: a figure was at the window, looking in and watching her as she tried to sleep."
+        },
+        {
+          "id": "C3.F1",
+          "status": "contradicted",
+          "evidence": "When she woke in the morning the figure was gone, and daylight showed her what the window truly was and what she had actually been seeing. The \"watcher\" had never been a real intruder outside the glass; the dark pane had been acting as a mirror..."
+        },
+        {
+          "id": "C3.F2",
+          "status": "covered",
+          "evidence": "Finally, worn out, she fell asleep. When she woke in the morning the figure was gone"
+        },
+        {
+          "id": "C3.F3",
+          "status": "contradicted",
+          "evidence": "daylight showed her what the window truly was and what she had actually been seeing. The \"watcher\" had never been a real intruder outside the glass; the dark pane had been acting as a mirror, throwing back an image from within, so that what terrified her all night was a reflection rather than a person in the yard. Understanding... she panicked and fled the house in terror."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [
+        {
+          "quote": "The \"watcher\" had never been a real intruder outside the glass; the dark pane had been acting as a mirror, throwing back an image from within, so that what terrified her all night was a reflection rather than a person in the yard.",
+          "reference": "The apparent portrait was actually a window with a real person outside watching her all night.",
+          "checkpoint_ids": [
+            "C1",
+            "C3"
+          ]
+        },
+        {
+          "quote": "but in the dark she took it at face value—a person outside, staring in.",
+          "reference": "She mistook the watching person for a portrait, and feeling watched by the apparent portrait kept her awake.",
+          "checkpoint_ids": [
+            "C2"
+          ]
+        }
+      ],
+      "partial_score": 0.0,
+      "complete": false,
+      "label": "no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS045_answer_only_r04/trajectory.md",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS019_answer_only_r04",
+    "status": "completed",
+    "raw_online_score": 0.35,
+    "raw_online_success": false,
+    "final": "The girl was lost and took shelter in a house that seemed empty. Alone and exhausted, she struggled to sleep, then finally slept. While she slept, an intruder with no legitimate claim to the house was outside the window/opening, watching her. She was unaware at the time; when she woke she found evidence that someone had been observing her during sleep. Realizing she had been watched while defenseless, she was terrified and fled the house.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "While she slept, an intruder with no legitimate claim to the house was outside the window/opening, watching her.",
+          "reason": "The window and a real outside watcher are present, but the apparent portrait and the mistaken portrait-to-window realization are omitted, so the required facts are only partially covered."
+        },
+        {
+          "id": "C2",
+          "credit": 0,
+          "evidence": "Alone and exhausted, she struggled to sleep, then finally slept. ... She was unaware at the time.",
+          "reason": "The explanation replaces the portrait-induced unease with being alone/exhausted and explicitly says she was unaware, contradicting the required causal fact that feeling watched by the apparent portrait kept her awake."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "when she woke she found evidence that someone had been observing her during sleep. Realizing she had been watched while defenseless, she was terrified and fled the house.",
+          "reason": "It covers waking, realizing she was watched, and fleeing, but omits that the figure was gone in the morning and that the window was thereby exposed."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "While she slept, an intruder with no legitimate claim to the house was outside the window/opening, watching her."
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "The girl was lost and took shelter in a house that seemed empty. ... an intruder with no legitimate claim to the house was outside the window/opening, watching her."
+        },
+        {
+          "id": "C2.F1",
+          "status": "contradicted",
+          "evidence": "Alone and exhausted, she struggled to sleep, then finally slept. ... She was unaware at the time."
+        },
+        {
+          "id": "C2.F2",
+          "status": "contradicted",
+          "evidence": "Alone and exhausted, she struggled to sleep, then finally slept. ... She was unaware at the time."
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "when she woke she found evidence that someone had been observing her during sleep. Realizing she had been watched while defenseless, she was terrified and fled the house."
+        },
+        {
+          "id": "C3.F2",
+          "status": "partial",
+          "evidence": "struggled to sleep, then finally slept. ... when she woke she found evidence that someone had been observing her during sleep."
+        },
+        {
+          "id": "C3.F3",
+          "status": "partial",
+          "evidence": "an intruder with no legitimate claim to the house was outside the window/opening, watching her. ... when she woke she found evidence that someone had been observing her during sleep. Realizing she had been watched while defenseless, she was terrified and fled the house."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [
+        {
+          "quote": "Alone and exhausted, she struggled to sleep, then finally slept. While she slept, an intruder with no legitimate claim to the house was outside the window/opening, watching her. She was unaware at the time.",
+          "reference": "Mistaking the watching person for a portrait makes the girl uneasy and unable to sleep; Feeling watched by the apparent portrait keeps her awake.",
+          "checkpoint_ids": [
+            "C2"
+          ]
+        }
+      ],
+      "partial_score": 0.35,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS019_answer_only_r04/trajectory.md",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS047_answer_only_r05",
+    "status": "completed",
+    "raw_online_score": 0.85,
+    "raw_online_success": false,
+    "final": "The lost, exhausted girl took shelter in an empty house. During the night she saw a man apparently framed like a picture and assumed it was a portrait on the wall—a painted figure, not a real person. In reality the frame was a window frame, and the man was a real person outside, watching her through the window while she was awake and unable to sleep. Eventually exhaustion made her fall asleep. In the morning she noticed that the “portrait” was empty: the man was gone. A painted portrait could not become blank, so she realized that what she had taken for a picture was actually a window, and that the man had been real and had been watching her while she was awake. The realization that she had been observed by a real man through the window terrified her, and she fled the house.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 1,
+          "evidence": "In reality the frame was a window frame, and the man was a real person outside, watching her through the window.",
+          "reason": "The apparent portrait is correctly identified as a window with a real person outside, satisfying the core misidentification."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "During the night she saw a man apparently framed like a picture and assumed it was a portrait on the wall—a painted figure, not a real person. In reality the frame was a window frame, and the man was a real person outside, watching her through the window while she was awake and unable to sleep.",
+          "reason": "The submission includes sleeplessness, but it omits the required unease and does not causally connect mistaking the portrait for the person to the girl's inability to sleep."
+        },
+        {
+          "id": "C3",
+          "credit": 1,
+          "evidence": "In the morning she noticed that the “portrait” was empty: the man was gone. A painted portrait could not become blank, so she realized that what she had taken for a picture was actually a window... The realization... terrified her, and she fled the house.",
+          "reason": "The morning disappearance, realization that the portrait was a window, the watcher being real and outside, and the terror-induced flight are all covered."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "covered",
+          "evidence": "In reality the frame was a window frame, and the man was a real person outside, watching her through the window."
+        },
+        {
+          "id": "C1.F2",
+          "status": "covered",
+          "evidence": "The lost, exhausted girl took shelter in an empty house. During the night she saw a man apparently framed like a picture and assumed it was a portrait on the wall—a painted figure, not a real person."
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "During the night she saw a man apparently framed like a picture and assumed it was a portrait on the wall—a painted figure, not a real person. In reality the frame was a window frame, and the man was a real person outside, watching her through the window while she was awake and unable to sleep."
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "the man was a real person outside, watching her through the window while she was awake and unable to sleep."
+        },
+        {
+          "id": "C3.F1",
+          "status": "covered",
+          "evidence": "In the morning she noticed that the “portrait” was empty: the man was gone. A painted portrait could not become blank, so she realized that what she had taken for a picture was actually a window... The realization that she had been observed by a real man through the window terrified her, and she fled the house."
+        },
+        {
+          "id": "C3.F2",
+          "status": "covered",
+          "evidence": "Eventually exhaustion made her fall asleep. In the morning she noticed that the “portrait” was empty: the man was gone."
+        },
+        {
+          "id": "C3.F3",
+          "status": "covered",
+          "evidence": "the man was a real person outside, watching her through the window while she was awake... she realized that what she had taken for a picture was actually a window... The realization... terrified her, and she fled the house."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.85,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS047_answer_only_r05/trajectory.md",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS045_answer_only_r05",
+    "status": "completed",
+    "raw_online_score": 0.5,
+    "raw_online_success": false,
+    "final": "Exhausted and lost, the girl took shelter in what appeared to be an empty house. She could not fall asleep because she sensed she was being watched: a single watcher was outside at the window during the night. Too afraid to close her eyes, she stayed awake while it stood there watching her. Eventually exhaustion overcame her and she slept. In the morning she noticed the strangeness: the watcher was gone. Its disappearance confirmed that her night-long sense of being watched had been real—someone had stood outside the window watching her through the night and had left only after she finally slept. Realizing the house was not safe and that the watcher might return, she fled in terror.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "a single watcher was outside at the window during the night ... someone had stood outside the window watching her",
+          "reason": "The explanation includes a real watcher outside a window, but it never says the apparent portrait was actually a window or that the girl mistook the person for a portrait."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "She could not fall asleep because she sensed she was being watched: a single watcher was outside at the window during the night. Too afraid to close her eyes, she stayed awake",
+          "reason": "It captures unease and sleeplessness caused by feeling watched, but omits the required cause that she mistook the watching person for a portrait."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "In the morning she noticed the strangeness: the watcher was gone ... someone had stood outside the window watching her through the night ... she fled in terror",
+          "reason": "The morning disappearance and flight are covered, and it realizes someone watched from outside the window, but it does not cover the qualifier that the person's absence exposed the window."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "a single watcher was outside at the window during the night ... someone had stood outside the window watching her"
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "Exhausted and lost, the girl took shelter in what appeared to be an empty house ... a single watcher was outside at the window during the night"
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "She could not fall asleep because she sensed she was being watched: a single watcher was outside at the window during the night. Too afraid to close her eyes, she stayed awake"
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "She could not fall asleep because she sensed she was being watched ... Too afraid to close her eyes, she stayed awake"
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "In the morning she noticed the strangeness: the watcher was gone ... Realizing the house was not safe and that the watcher might return, she fled in terror"
+        },
+        {
+          "id": "C3.F2",
+          "status": "covered",
+          "evidence": "Eventually exhaustion overcame her and she slept. In the morning she noticed the strangeness: the watcher was gone."
+        },
+        {
+          "id": "C3.F3",
+          "status": "covered",
+          "evidence": "someone had stood outside the window watching her through the night ... she fled in terror"
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.5,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS045_answer_only_r05/trajectory.md",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  },
+  {
+    "id": "set3_answer_only_20261114::TS022_after_TS019_answer_only_r05",
+    "status": "completed",
+    "raw_online_score": 0.25,
+    "raw_online_success": false,
+    "final": "A lost and exhausted girl wandered into what seemed to be an empty house. She could not sleep, but eventually fell asleep from pure exhaustion.\n\nShe was not as alone as she believed. During the night a stranger—a peeping intruder—stood outside the house at a window, watching her the entire time she slept. When she woke, she first sensed rather than saw that the house was not truly empty: there were signs that someone had been there and had stood near where she slept. She then saw the watcher's eyes at the window, looking back at her.\n\nThe watcher was no longer at the window when she truly fled: what drove her out in terror was what she saw about the watcher himself once he moved away from the glass—something that only became visible when his face/eyes were no longer pressed to the pane, revealing the true and horrifying nature of the man who had spent the whole night watching over her sleep. Realizing she had been secretly observed all night by this figure, she fled the house in terror.",
+    "grade": {
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "a stranger—a peeping intruder—stood outside the house at a window, watching her the entire time she slept... saw the watcher's eyes at the window",
+          "reason": "Partial: it has a real person outside/window, but it never says the apparent portrait was actually a window or that she mistook the person for a portrait."
+        },
+        {
+          "id": "C2",
+          "credit": 0,
+          "evidence": "She could not sleep, but eventually fell asleep from pure exhaustion.",
+          "reason": "The required causal qualifier is absent: there is no portrait mistaken for a watching person and no claim that feeling watched by it kept her awake."
+        },
+        {
+          "id": "C3",
+          "credit": 0,
+          "evidence": "When she woke... She then saw the watcher's eyes at the window, looking back at her.",
+          "reason": "Contradicts the required morning disappearance: the watcher is still at the window when she wakes, so the required C3 facts are contradicted and credit is 0."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "a stranger—a peeping intruder—stood outside the house at a window, watching her the entire time she slept... saw the watcher's eyes at the window"
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "A lost and exhausted girl wandered into what seemed to be an empty house."
+        },
+        {
+          "id": "C2.F1",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "C2.F2",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "C3.F1",
+          "status": "contradicted",
+          "evidence": "When she woke... She then saw the watcher's eyes at the window, looking back at her."
+        },
+        {
+          "id": "C3.F2",
+          "status": "contradicted",
+          "evidence": "When she woke... She then saw the watcher's eyes at the window, looking back at her."
+        },
+        {
+          "id": "C3.F3",
+          "status": "partial",
+          "evidence": "Realizing she had been secretly observed all night by this figure, she fled the house in terror."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [
+        {
+          "quote": "When she woke... She then saw the watcher's eyes at the window, looking back at her.",
+          "reference": "By morning the person is gone, exposing the window and causing her to flee.",
+          "checkpoint_ids": [
+            "C3"
+          ]
+        },
+        {
+          "quote": "When she woke... She then saw the watcher's eyes at the window, looking back at her.",
+          "reference": "She eventually sleeps, and in the morning the figure is gone.",
+          "checkpoint_ids": [
+            "C3"
+          ]
+        },
+        {
+          "quote": "what drove her out in terror was what she saw about the watcher himself once he moved away from the glass—something that only became visible when his face/eyes were no longer pressed to the pane, revealing the true and horrifying nature of the man",
+          "reference": "She realizes it was a window and someone had watched her from outside, so she flees; the shock is discovering a real watcher, not recognizing a criminal or a previously dead person.",
+          "checkpoint_ids": [
+            "C3"
+          ]
+        }
+      ],
+      "partial_score": 0.25,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    },
+    "trajectory": "results/trajectories/cl_set3_answer_only_20261114/TS022_after_TS019_answer_only_r05/trajectory.md",
+    "semantic_review_scope": "Target final and first ten read by assistant; selected key questions inspected. No exhaustive new question-level Host certification."
+  }
+]
