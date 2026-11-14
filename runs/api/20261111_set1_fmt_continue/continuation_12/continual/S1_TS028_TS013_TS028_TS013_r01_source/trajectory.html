@@ -1,0 +1,265 @@
+<!doctype html><meta charset="utf-8"><title>Turtle Soup trajectory</title><style>body{font:16px/1.6 system-ui;max-width:1000px;margin:32px auto;padding:0 20px;background:#f6f7fa}article{background:white;padding:18px;margin:16px 0;border:1px solid #ddd;border-radius:10px}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:inherit}summary{cursor:pointer}</style><h1>Turtle Soup trajectory</h1><pre>A person is 30 meters away from his car, but he only took five steps to get in the car. Why is this?</pre><p>completed · count 51 · score 1.0</p><p><a href="token_costs.csv">Token usage and estimated costs</a> · <a href="cost_summary.json">Cost summary (USD estimate, not actual bill)</a></p><article><h2>1 · question</h2><pre>Is the car moving when he takes the five steps?</pre><p>Host: <strong>no</strong></p></article><article><h2>2 · question</h2><pre>Is the person at the top of a staircase or elevated place relative to the car?</pre><p>Host: <strong>yes</strong></p></article><article><h2>3 · question</h2><pre>Did the person cover the 30-meter distance by his own walking or stepping?</pre><p>Host: <strong>no</strong></p></article><article><h2>4 · question</h2><pre>Is the person on a structure that moves him closer to the car (like an escalator, elevator, or moving walkway)?</pre><p>Host: <strong>yes</strong></p></article><article><h2>5 · question</h2><pre>Is the structure an escalator?</pre><p>Host: <strong>no</strong></p></article><article><h2>6 · question</h2><pre>Is the structure an elevator?</pre><p>Host: <strong>yes</strong></p></article><article><h2>7 · question</h2><pre>Does the door of the car open directly onto the elevator&#x27;s landing area, so the 30-meter distance is between the elevator and the car as measured in a straight vertical or separate-level sense?</pre><p>Host: <strong>yes</strong></p></article><article><h2>8 · question</h2><pre>Is the car parked in a multi-story parking garage?</pre><p>Host: <strong>no</strong></p></article><article><h2>9 · question</h2><pre>Is the 30-meter distance measured horizontally along the ground while the person is actually directly above or below the car vertically?</pre><p>Host: <strong>no</strong></p></article><article><h2>10 · question</h2><pre>Did the person use the elevator to travel down to the level where the car is parked?</pre><p>Host: <strong>yes</strong></p></article><article><h2>11 · question</h2><pre>Is the car a toy or model car rather than a full-sized vehicle?</pre><p>Host: <strong>no</strong></p></article><article><h2>12 · question</h2><pre>Does the &quot;30 meters&quot; refer to distance along the path the car would travel or the road route, rather than straight-line distance between the person and the car?</pre><p>Host: <strong>no</strong></p></article><article><h2>13 · question</h2><pre>Was the person on a ferry or ship, and the car was 30 meters below on the vehicle deck, reached by elevator?</pre><p>Host: <strong>no</strong></p></article><article><h2>14 · question</h2><pre>Was the person inside a building and the car was parked on a different floor, accessible by elevator?</pre><p>Host: <strong>yes</strong></p></article><article><h2>15 · question</h2><pre>Was the 30-meter distance measured as the vertical difference in height between the person&#x27;s floor and the car&#x27;s floor?</pre><p>Host: <strong>yes</strong></p></article><article><h2>16 · question</h2><pre>Did the person take five steps to get from his starting position into the elevator, not into the car?</pre><p>Host: <strong>no</strong></p></article><article><h2>17 · question</h2><pre>Did the elevator carry him directly into or adjacent to the car so that, after riding it, only five steps were needed to reach the car?</pre><p>Host: <strong>yes</strong></p></article><article><h2>18 · question</h2><pre>Was the person initially 30 meters above the car, took five steps into an elevator, and the elevator descended to the car&#x27;s level, after which he got into the car?</pre><p>Host: <strong>yes and no</strong></p></article><article><h2>19 · question</h2><pre>Was the person initially above the car (on a higher floor) rather than below it?</pre><p>Host: <strong>yes</strong></p></article><article><h2>20 · question</h2><pre>Did he take five steps into the elevator, then ride it down, and then take additional steps to reach the car?</pre><p>Host: <strong>no</strong></p></article><article><h2>21 · question</h2><pre>Did the elevator open directly at the car, so after riding down he needed no further steps to reach the car?</pre><p>Host: <strong>no</strong></p></article><article><h2>22 · question</h2><pre>Did he take exactly five steps in total: five steps into the elevator, with the elevator itself delivering him to the car?</pre><p>Host: <strong>yes and no</strong></p></article><article><h2>23 · question</h2><pre>Were the five steps taken after he exited the elevator, on the same level as the car?</pre><p>Host: <strong>yes</strong></p></article><article><h2>24 · question</h2><pre>Was he initially on a higher floor, rode an elevator down, and then took five steps from the elevator to his car?</pre><p>Host: <strong>yes</strong></p></article><article><h2>25 · final</h2><pre>The person was on a higher floor of a building, 30 meters (vertically) above where his car was parked below. He took five steps, entered an elevator, and rode it down to the car&#x27;s level. On exiting the elevator he took only five steps to get into his car; the large 30-meter separation was mainly the vertical height difference covered by the elevator, not by walking.</pre><p>Host: <strong>yes and no</strong></p><details><summary>Private evaluation</summary><pre>{
+  &quot;checkpoints&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;credit&quot;: 1,
+      &quot;evidence&quot;: &quot;30 meters (vertically) above where his car was parked below... the large 30-meter separation was mainly the vertical height difference covered by the elevator, not by walking.&quot;,
+      &quot;reason&quot;: &quot;The submission clearly identifies the 30 meters as primarily vertical distance and states it was not walking distance.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2&quot;,
+      &quot;credit&quot;: 0.5,
+      &quot;evidence&quot;: &quot;The person was on a higher floor of a building... entered an elevator, and rode it down to the car&#x27;s level.&quot;,
+      &quot;reason&quot;: &quot;The elevator route from a high floor to the car&#x27;s level below is given, but the required underground parking garage is not stated or entailed.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3&quot;,
+      &quot;credit&quot;: 1,
+      &quot;evidence&quot;: &quot;On exiting the elevator he took only five steps to get into his car&quot;,
+      &quot;reason&quot;: &quot;The explanation says the car required only five steps from the elevator exit, satisfying the few-step and near-elevator condition.&quot;
+    }
+  ],
+  &quot;material_contradiction&quot;: false,
+  &quot;irrelevant&quot;: false,
+  &quot;rubric_conflict&quot;: false,
+  &quot;full_solution&quot;: false,
+  &quot;completion_note&quot;: &quot;The vertical-distance and elevator explanations are present, but the submission omits that the elevator descends specifically to an underground parking garage, saying only &#x27;the car&#x27;s level&#x27; below. This missing garage qualifier prevents full narrative reconstruction.&quot;,
+  &quot;fact_coverage&quot;: [
+    {
+      &quot;id&quot;: &quot;C1.F1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;30 meters (vertically) above where his car was parked below... the large 30-meter separation was mainly the vertical height difference covered by the elevator, not by walking.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2.F1&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;The person was on a higher floor of a building... entered an elevator, and rode it down to the car&#x27;s level.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;On exiting the elevator he took only five steps to get into his car&quot;
+    }
+  ],
+  &quot;requirement_coverage&quot;: [
+    {
+      &quot;id&quot;: &quot;R1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;The person was on a higher floor of a building, 30 meters (vertically) above where his car was parked below... the large 30-meter separation was mainly the vertical height difference covered by the elevator, not by walking.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R2&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;He took five steps, entered an elevator, and rode it down to the car&#x27;s level.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R3&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;On exiting the elevator he took only five steps to get into his car&quot;
+    }
+  ],
+  &quot;contradictions&quot;: [],
+  &quot;partial_score&quot;: 0.85,
+  &quot;complete&quot;: false,
+  &quot;label&quot;: &quot;yes and no&quot;,
+  &quot;grading_protocol&quot;: &quot;coverage-v2&quot;,
+  &quot;controller_corrections&quot;: []
+}</pre></details></article><article><h2>26 · question</h2><pre>Did he start 30 meters away as a diagonal distance (both vertically and horizontally) rather than purely vertical separation?</pre><p>Host: <strong>yes</strong></p></article><article><h2>27 · question</h2><pre>After exiting the elevator on the car&#x27;s level, was the car within five steps of the elevator?</pre><p>Host: <strong>yes</strong></p></article><article><h2>28 · question</h2><pre>Were the five steps taken on the higher floor before entering the elevator (rather than after exiting it)?</pre><p>Host: <strong>no</strong></p></article><article><h2>29 · question</h2><pre>Was the car located on the same level as where he exited the elevator, and did he take the five steps on that lower level to reach it?</pre><p>Host: <strong>yes</strong></p></article><article><h2>30 · question</h2><pre>Did the person ride the elevator down to reach the car&#x27;s level?</pre><p>Host: <strong>yes</strong></p></article><article><h2>31 · final</h2><pre>The person was on an upper level of a building, and his car was parked on a lower level. The straight-line distance between him and the car was 30 meters, largely due to the vertical height difference (along with some horizontal separation). He took five steps, entered an elevator, and rode it down to the car&#x27;s level. After exiting the elevator, the car was only about five steps away, so he walked just five steps to get in.</pre><p>Host: <strong>yes and no</strong></p><details><summary>Private evaluation</summary><pre>{
+  &quot;checkpoints&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;credit&quot;: 1,
+      &quot;evidence&quot;: &quot;The straight-line distance between him and the car was 30 meters, largely due to the vertical height difference&quot;,
+      &quot;reason&quot;: &quot;The submission explains the 30 meters as primarily vertical height difference rather than walking distance.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2&quot;,
+      &quot;credit&quot;: 0.5,
+      &quot;evidence&quot;: &quot;He took five steps, entered an elevator, and rode it down to the car&#x27;s level.&quot;,
+      &quot;reason&quot;: &quot;Elevator transport from an upper level to the car&#x27;s lower level is given, but the required underground parking garage is not specified.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3&quot;,
+      &quot;credit&quot;: 1,
+      &quot;evidence&quot;: &quot;After exiting the elevator, the car was only about five steps away, so he walked just five steps to get in.&quot;,
+      &quot;reason&quot;: &quot;The car is described as only about five steps from the elevator exit, satisfying the near-elevator and few-step requirement.&quot;
+    }
+  ],
+  &quot;material_contradiction&quot;: false,
+  &quot;irrelevant&quot;: false,
+  &quot;rubric_conflict&quot;: false,
+  &quot;full_solution&quot;: false,
+  &quot;completion_note&quot;: &quot;The vertical-distance and elevator explanations are present, but the submission omits that the elevator descends specifically to an underground parking garage, saying only &#x27;the car&#x27;s level&#x27; on a lower level. This missing garage qualifier prevents full narrative reconstruction.&quot;,
+  &quot;fact_coverage&quot;: [
+    {
+      &quot;id&quot;: &quot;C1.F1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;The straight-line distance between him and the car was 30 meters, largely due to the vertical height difference&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2.F1&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;The person was on an upper level of a building, and his car was parked on a lower level... He took five steps, entered an elevator, and rode it down to the car&#x27;s level.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;After exiting the elevator, the car was only about five steps away, so he walked just five steps to get in.&quot;
+    }
+  ],
+  &quot;requirement_coverage&quot;: [
+    {
+      &quot;id&quot;: &quot;R1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;The straight-line distance between him and the car was 30 meters, largely due to the vertical height difference&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R2&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;He took five steps, entered an elevator, and rode it down to the car&#x27;s level.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R3&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;After exiting the elevator, the car was only about five steps away, so he walked just five steps to get in.&quot;
+    }
+  ],
+  &quot;contradictions&quot;: [],
+  &quot;partial_score&quot;: 0.85,
+  &quot;complete&quot;: false,
+  &quot;label&quot;: &quot;yes and no&quot;,
+  &quot;grading_protocol&quot;: &quot;coverage-v2&quot;,
+  &quot;controller_corrections&quot;: []
+}</pre></details></article><article><h2>32 · question</h2><pre>Did he take the five steps after exiting the elevator, and were those the only steps he took between his starting position and the car?</pre><p>Host: <strong>yes</strong></p></article><article><h2>33 · question</h2><pre>Did he enter the elevator without walking (e.g., it was right at his starting position, or he was already in/at the elevator)?</pre><p>Host: <strong>yes</strong></p></article><article><h2>34 · final</h2><pre>The person was already at or immediately beside an elevator on an upper level, about 30 meters (straight-line, including vertical height and some horizontal offset) from his car parked below. He did not need to walk to the elevator: he entered it and rode down to the car&#x27;s level. On exiting the elevator, the car was only five steps away. Thus, the only steps he took between his starting position and getting into the car were five steps after leaving the elevator; the 30-meter gap was closed mostly by the elevator, not by walking.</pre><p>Host: <strong>yes and no</strong></p><details><summary>Private evaluation</summary><pre>{
+  &quot;checkpoints&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;credit&quot;: 1,
+      &quot;evidence&quot;: &quot;about 30 meters (straight-line, including vertical height and some horizontal offset) from his car parked below... the 30-meter gap was closed mostly by the elevator, not by walking&quot;,
+      &quot;reason&quot;: &quot;The submission explains the 30-meter gap as mostly vertical travel by elevator rather than walking, with the remaining horizontal offset requiring only five steps.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2&quot;,
+      &quot;credit&quot;: 0.5,
+      &quot;evidence&quot;: &quot;The person was already at or immediately beside an elevator on an upper level... he entered it and rode down to the car&#x27;s level.&quot;,
+      &quot;reason&quot;: &quot;The elevator takes him from an upper level down to the car&#x27;s level, but the required underground parking garage is not specified.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3&quot;,
+      &quot;credit&quot;: 1,
+      &quot;evidence&quot;: &quot;On exiting the elevator, the car was only five steps away... the only steps he took between his starting position and getting into the car were five steps after leaving the elevator&quot;,
+      &quot;reason&quot;: &quot;The car is described as only five steps from the elevator exit, satisfying the near-elevator and few-step requirement.&quot;
+    }
+  ],
+  &quot;material_contradiction&quot;: false,
+  &quot;irrelevant&quot;: false,
+  &quot;rubric_conflict&quot;: false,
+  &quot;full_solution&quot;: false,
+  &quot;completion_note&quot;: &quot;The vertical-distance and elevator explanations are present, but the submission omits that the elevator descends specifically to an underground parking garage, saying only &#x27;the car&#x27;s level&#x27; below. This missing garage qualifier prevents full narrative reconstruction.&quot;,
+  &quot;fact_coverage&quot;: [
+    {
+      &quot;id&quot;: &quot;C1.F1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;about 30 meters (straight-line, including vertical height and some horizontal offset) from his car parked below... the 30-meter gap was closed mostly by the elevator, not by walking&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2.F1&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;The person was already at or immediately beside an elevator on an upper level... he entered it and rode down to the car&#x27;s level.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;On exiting the elevator, the car was only five steps away... the only steps he took between his starting position and getting into the car were five steps after leaving the elevator&quot;
+    }
+  ],
+  &quot;requirement_coverage&quot;: [
+    {
+      &quot;id&quot;: &quot;R1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;about 30 meters (straight-line, including vertical height and some horizontal offset) from his car parked below... the 30-meter gap was closed mostly by the elevator, not by walking&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R2&quot;,
+      &quot;status&quot;: &quot;partial&quot;,
+      &quot;evidence&quot;: &quot;The person was already at or immediately beside an elevator on an upper level... he entered it and rode down to the car&#x27;s level.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R3&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;On exiting the elevator, the car was only five steps away... the only steps he took between his starting position and getting into the car were five steps after leaving the elevator&quot;
+    }
+  ],
+  &quot;contradictions&quot;: [],
+  &quot;partial_score&quot;: 0.85,
+  &quot;complete&quot;: false,
+  &quot;label&quot;: &quot;yes and no&quot;,
+  &quot;grading_protocol&quot;: &quot;coverage-v2&quot;,
+  &quot;controller_corrections&quot;: []
+}</pre></details></article><article><h2>35 · question</h2><pre>Is the person inside the elevator when we say he is 30 meters from the car?</pre><p>Host: <strong>no</strong></p></article><article><h2>36 · question</h2><pre>Did the car&#x27;s location itself change between when the person was 30 meters away and when he took the five steps—for example, was the car driven to him, or carried by the elevator?</pre><p>Host: <strong>no</strong></p></article><article><h2>37 · question</h2><pre>Could the &quot;car&quot; be a cable car or elevator car (i.e., the passenger car of the elevator) rather than an automobile?</pre><p>Host: <strong>no</strong></p></article><article><h2>38 · question</h2><pre>Was he 30 meters away from the car measured along the floor of the upper level (horizontally), before entering the elevator?</pre><p>Host: <strong>no</strong></p></article><article><h2>39 · question</h2><pre>Does the five-step count refer to steps he takes while physically walking, as opposed to the vertical travel of the elevator?</pre><p>Host: <strong>yes</strong></p></article><article><h2>40 · question</h2><pre>Did the elevator travel the full 30 meters vertically, so that all remaining horizontal distance was covered by five walking steps?</pre><p>Host: <strong>yes</strong></p></article><article><h2>41 · question</h2><pre>Was he inside a tall building at the top, with the car parked on the ground, and he rode the elevator down the full 30 meters, then took five steps to the car?</pre><p>Host: <strong>yes and no</strong></p></article><article><h2>42 · question</h2><pre>Was the car parked on the ground level?</pre><p>Host: <strong>no</strong></p></article><article><h2>43 · question</h2><pre>Was the car parked below ground level (e.g., in an underground garage)?</pre><p>Host: <strong>yes</strong></p></article><article><h2>44 · question</h2><pre>Was the car parked in an underground parking garage beneath the building?</pre><p>Host: <strong>yes</strong></p></article><article><h2>45 · question</h2><pre>Was the person initially at street level (ground floor) when he was 30 meters from his car?</pre><p>Host: <strong>no</strong></p></article><article><h2>46 · question</h2><pre>Was the person initially above ground level (on an upper floor) when he was 30 meters from his car?</pre><p>Host: <strong>yes</strong></p></article><article><h2>47 · question</h2><pre>Was he on the ground floor only briefly—did he get off the elevator at ground level and then take an escalator or stairs down to the underground garage?</pre><p>Host: <strong>no</strong></p></article><article><h2>48 · question</h2><pre>Did a single elevator ride take him from the upper floor all the way down to the underground garage level?</pre><p>Host: <strong>yes</strong></p></article><article><h2>49 · question</h2><pre>Was the 30-meter distance the vertical height difference between his starting upper floor and the underground garage level where the car was parked?</pre><p>Host: <strong>yes</strong></p></article><article><h2>50 · question</h2><pre>Did he take five steps on the upper floor to reach the elevator before riding it down?</pre><p>Host: <strong>no</strong></p></article><article><h2>51 · question</h2><pre>Did the five steps happen at the underground garage level, after exiting the elevator, to reach the car?</pre><p>Host: <strong>yes</strong></p></article><article><h2>52 · final</h2><pre>The person started on an upper floor of a building, 30 meters vertically above his car, which was parked in the underground garage. He stepped into an elevator (already at/near it, so no walking steps before boarding) and rode it down the full 30 meters to the garage level. After exiting the elevator, his car was only five steps away. So although he was 30 meters from the car in vertical distance, he only had to take five walking steps—on the garage level—to get into the car, with the elevator covering the height.</pre><p>Host: <strong>yes</strong></p><details><summary>Private evaluation</summary><pre>{
+  &quot;checkpoints&quot;: [
+    {
+      &quot;id&quot;: &quot;C1&quot;,
+      &quot;credit&quot;: 1,
+      &quot;evidence&quot;: &quot;The person started on an upper floor of a building, 30 meters vertically above his car... So although he was 30 meters from the car in vertical distance, he only had to take five walking steps... with the elevator covering the height.&quot;,
+      &quot;reason&quot;: &quot;The submission clearly identifies the 30 meters as vertical distance covered by the elevator rather than walking distance.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2&quot;,
+      &quot;credit&quot;: 1,
+      &quot;evidence&quot;: &quot;The person started on an upper floor of a building... He stepped into an elevator ... and rode it down the full 30 meters to the garage level... his car, which was parked in the underground garage.&quot;,
+      &quot;reason&quot;: &quot;The explanation describes an elevator ride from an upper floor to an underground parking garage, satisfying the checkpoint.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3&quot;,
+      &quot;credit&quot;: 1,
+      &quot;evidence&quot;: &quot;After exiting the elevator, his car was only five steps away... he only had to take five walking steps—on the garage level—to get into the car&quot;,
+      &quot;reason&quot;: &quot;The car is described as only five steps from the elevator exit, satisfying the near-elevator and few-step requirement.&quot;
+    }
+  ],
+  &quot;material_contradiction&quot;: false,
+  &quot;irrelevant&quot;: false,
+  &quot;rubric_conflict&quot;: false,
+  &quot;full_solution&quot;: true,
+  &quot;completion_note&quot;: &quot;Complete reference narrative reconstructed.&quot;,
+  &quot;fact_coverage&quot;: [
+    {
+      &quot;id&quot;: &quot;C1.F1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;The person started on an upper floor of a building, 30 meters vertically above his car... So although he was 30 meters from the car in vertical distance, he only had to take five walking steps... with the elevator covering the height.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C2.F1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;The person started on an upper floor of a building, 30 meters vertically above his car, which was parked in the underground garage. … He stepped into an elevator (already at/near it, so no walking steps before boarding) and rode it down the full 30 meters to the garage level.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;C3.F1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;After exiting the elevator, his car was only five steps away... he only had to take five walking steps—on the garage level—to get into the car&quot;
+    }
+  ],
+  &quot;requirement_coverage&quot;: [
+    {
+      &quot;id&quot;: &quot;R1&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;The person started on an upper floor of a building, 30 meters vertically above his car... So although he was 30 meters from the car in vertical distance, he only had to take five walking steps... with the elevator covering the height.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R2&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;The person started on an upper floor of a building, 30 meters vertically above his car, which was parked in the underground garage. … He stepped into an elevator (already at/near it, so no walking steps before boarding) and rode it down the full 30 meters to the garage level.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;R3&quot;,
+      &quot;status&quot;: &quot;covered&quot;,
+      &quot;evidence&quot;: &quot;After exiting the elevator, his car was only five steps away... he only had to take five walking steps—on the garage level—to get into the car&quot;
+    }
+  ],
+  &quot;contradictions&quot;: [],
+  &quot;partial_score&quot;: 1.0,
+  &quot;complete&quot;: true,
+  &quot;label&quot;: &quot;yes&quot;,
+  &quot;grading_protocol&quot;: &quot;coverage-v2&quot;,
+  &quot;controller_corrections&quot;: []
+}</pre></details></article>

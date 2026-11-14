@@ -1,0 +1,274 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 99,
+  "final_attempts": 1,
+  "rejected_finals": 1,
+  "counted_questions": 100,
+  "submissions": 100,
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.875,
+  "best_partial_score": 0.875,
+  "latest_final": "The puzzle turns on a pun on the word \"course.\" The speaker really is a bright, attentive student in class—that part is deliberately misleading, making us imagine an academic failure. But \"pass the course\" is not about passing a class. \"The course\" is a watercourse: the river/stream itself.\n\nThe student, traveling on foot along a route whose far side lay across the water, came to the river and could not get across. The water was too deep, too wide, or too fast to wade, and there was no bridge, boat, or other means of crossing. So the student literally could not \"pass the course\"—could not cross the watercourse—and had to turn back.\n\nThere was no academic failing at all: no exam was failed, no grade was missed, and the student was not kept from class. \"I could not pass the course\" means only \"I could not get across the river,\" and being smart and attentive in class could not help with that impassable watercourse.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 1,
+        "evidence": "The puzzle turns on a pun on the word \"course.\" ... \"The course\" is a watercourse: the river/stream itself.",
+        "reason": "The submission explicitly reinterprets course as the river/watercourse and says there was no academic failing, covering the required contrast."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "The water was too deep, too wide, or too fast to wade, and there was no bridge, boat, or other means of crossing.",
+        "reason": "Lack of crossing equipment is clearly stated, but the too-swift current is only offered as one uncommitted alternative, so half credit for the required causal detail."
+      }
+    ],
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "covered",
+        "evidence": "The puzzle turns on a pun on the word \"course.\" ... \"The course\" is a watercourse: the river/stream itself."
+      },
+      {
+        "id": "C2.F1",
+        "status": "partial",
+        "evidence": "The water was too deep, too wide, or too fast to wade, and there was no bridge, boat, or other means of crossing."
+      }
+    ],
+    "requirement_coverage": [
+      {
+        "id": "R1",
+        "status": "covered",
+        "evidence": "\"The course\" is a watercourse: the river/stream itself. … The student, traveling on foot along a route whose far side lay across the water, came to the river and could not get across."
+      },
+      {
+        "id": "R2",
+        "status": "partial",
+        "evidence": "The water was too deep, too wide, or too fast to wade, and there was no bridge, boat, or other means of crossing."
+      },
+      {
+        "id": "R3",
+        "status": "covered",
+        "evidence": "So the student literally could not \"pass the course\"—could not cross the watercourse—and had to turn back."
+      }
+    ],
+    "contradictions": [],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "The river/course pun and pass-as-cross meaning are reconstructed, but the required swift-current cause is only an uncommitted alternative (too deep, too wide, or too fast), while lack of crossing equipment is explicitly stated. Therefore R2/C2.F1 are only partial and the complete canonical narrative is not fully reconstructed.",
+    "partial_score": 0.875,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v2",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 860.6215751249983,
+  "usage": {
+    "format_repair": {
+      "http_attempts": 1,
+      "successful_responses": 1,
+      "seconds": 24.01670037501026,
+      "provider_reported_usage": {}
+    },
+    "grader": {
+      "http_attempts": 2,
+      "successful_responses": 2,
+      "seconds": 58.92471704099444,
+      "provider_reported_usage": {
+        "prompt_tokens": 4559,
+        "completion_tokens": 5222,
+        "total_tokens": 9781,
+        "prompt_cache_hit_tokens": 2304,
+        "prompt_cache_miss_tokens": 2255
+      }
+    },
+    "host": {
+      "http_attempts": 102,
+      "successful_responses": 102,
+      "seconds": 564.9970922131615,
+      "provider_reported_usage": {
+        "prompt_tokens": 1351920,
+        "completion_tokens": 32786,
+        "total_tokens": 1384706,
+        "prompt_cache_hit_tokens": 1325184,
+        "prompt_cache_miss_tokens": 26736
+      }
+    },
+    "player": {
+      "http_attempts": 101,
+      "successful_responses": 101,
+      "seconds": 207.75535667286022,
+      "provider_reported_usage": {
+        "prompt_tokens": 1029493,
+        "completion_tokens": 15943,
+        "total_tokens": 1045436,
+        "prompt_cache_hit_tokens": 1010304,
+        "prompt_cache_miss_tokens": 19189
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "total": {
+      "calls": 206,
+      "unknown_cost_calls": 206,
+      "known_estimated_cost_usd": 0.0,
+      "estimated_cost_usd": null,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 2385972,
+        "cached_input_tokens": 2337792,
+        "cache_write_tokens": 0,
+        "output_tokens": 53951,
+        "reasoning_tokens": 37160,
+        "total_tokens": 2439923
+      },
+      "missing_token_calls": {
+        "input_tokens": 1,
+        "cached_input_tokens": 1,
+        "cache_write_tokens": 0,
+        "output_tokens": 1,
+        "reasoning_tokens": 102,
+        "total_tokens": 1
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "format_repair",
+        "provider": "cursor_cli",
+        "model": "auto",
+        "calls": 1,
+        "unknown_cost_calls": 1,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        },
+        "missing_token_calls": {
+          "input_tokens": 1,
+          "cached_input_tokens": 1,
+          "cache_write_tokens": 0,
+          "output_tokens": 1,
+          "reasoning_tokens": 1,
+          "total_tokens": 1
+        }
+      },
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 2,
+        "unknown_cost_calls": 2,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 4559,
+          "cached_input_tokens": 2304,
+          "cache_write_tokens": 0,
+          "output_tokens": 5222,
+          "reasoning_tokens": 4575,
+          "total_tokens": 9781
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 102,
+        "unknown_cost_calls": 102,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1351920,
+          "cached_input_tokens": 1325184,
+          "cache_write_tokens": 0,
+          "output_tokens": 32786,
+          "reasoning_tokens": 32585,
+          "total_tokens": 1384706
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 101,
+        "unknown_cost_calls": 101,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1029493,
+          "cached_input_tokens": 1010304,
+          "cache_write_tokens": 0,
+          "output_tokens": 15943,
+          "reasoning_tokens": 0,
+          "total_tokens": 1045436
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 101,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "af821bd2-7d50-4702-aacc-b6316e79e427",
+      "d1617b2b-b55e-445e-863c-285f7a057d2a",
+      "d6ad769c-1b69-4dfb-9738-890ed1d5199d"
+    ],
+    "logical_input_chars": 1889955,
+    "delta_input_chars": 111999,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "5f133f2c7c9b35d240674a345c097e2de3c4be06b24aaa40952415bfb2f3f6b1",
+    "grading_sha256": "6f9f08700b2e7432366a5812ad57c37a6f6e4db514a12509b92ba53e77161d88",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "8d764e3a9887e0ffdadd859f4c77a91d0e9758c38a33fdd3f0329d5cc4c0857b",
+    "controller_sha256": "630feb6c08d2f9530d4a9567f983cdcbbb29581b6c019d188c435642556c78db",
+    "player_format_policy_sha256": "c552ce859dcef92e38da240bbd2fe22b0922328c4746f8da9ae8245c2e88d0cc",
+    "host_context_sha256": "c623a5e7d79c63d9efd9b62efb4dc116b50d83a75989c4d93e2c46d3033c1402",
+    "host_binding_version": "host-v9-human-20261102"
+  }
+}

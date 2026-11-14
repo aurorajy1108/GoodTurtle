@@ -1,0 +1,259 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 99,
+  "final_attempts": 1,
+  "rejected_finals": 1,
+  "counted_questions": 100,
+  "submissions": 100,
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.85,
+  "best_partial_score": 0.85,
+  "latest_final": "A very capable student aced every test and exam, but the course required passing a group project as a mandatory gate: failing that project alone fails the course regardless of exam scores. In the group, one member refused from the start to do their assigned share. The student—trying to save the project and being capable—took over far more than their own share, covering the refusing member's portion. But the project had been designed so that each member genuinely contributes and cooperates; the refusing member's deliberate non-participation, combined with the improvised takeover, meant the project was not completed to the required standard as a real collaborative effort. The student's own portion also contained an unintentional error that further hurt the group's grade, though correcting that error alone would not have been enough to pass. Because the group project is the pass/fail gate, the failed project failed the course—despite the student's outstanding test and exam performance. The refusal was intentional on the member's part, but the student's failure was an unintended consequence of the student's well-meant over-contribution in a broken group.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 1,
+        "evidence": "A very capable student aced every test and exam, but the course required passing a group project as a mandatory gate: failing that project alone fails the course regardless of exam scores.",
+        "reason": "Identifies the individually strong student and substantial grade dependence on the group project, satisfying the checkpoint."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "In the group, one member refused from the start to do their assigned share.",
+        "reason": "Only one refusing member is identified, not all the other group members free-riding; the required 'all' qualifier is missing."
+      },
+      {
+        "id": "C3",
+        "credit": 1,
+        "evidence": "took over far more than their own share, covering the refusing member's portion. ... meant the project was not completed to the required standard ... the failed project failed the course",
+        "reason": "Shows excessive workload leading to a poor project and course failure, satisfying the causal chain."
+      }
+    ],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "The submission reconstructs most of the causal chain but omits that all the other group members free-ride; it names only one refusing member, so the complete reference narrative is not reconstructed.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "covered",
+        "evidence": "A very capable student aced every test and exam, but the course required passing a group project as a mandatory gate: failing that project alone fails the course regardless of exam scores."
+      },
+      {
+        "id": "C2.F1",
+        "status": "partial",
+        "evidence": "In the group, one member refused from the start to do their assigned share."
+      },
+      {
+        "id": "C3.F1",
+        "status": "covered",
+        "evidence": "took over far more than their own share, covering the refusing member's portion. ... meant the project was not completed to the required standard ... the failed project failed the course"
+      }
+    ],
+    "requirement_coverage": [
+      {
+        "id": "R1",
+        "status": "covered",
+        "evidence": "the course required passing a group project as a mandatory gate: failing that project alone fails the course regardless of exam scores."
+      },
+      {
+        "id": "R2",
+        "status": "partial",
+        "evidence": "In the group, one member refused from the start to do their assigned share."
+      },
+      {
+        "id": "R3",
+        "status": "covered",
+        "evidence": "took over far more than their own share, covering the refusing member's portion. ... the project was not completed to the required standard"
+      },
+      {
+        "id": "R4",
+        "status": "covered",
+        "evidence": "failing that project alone fails the course regardless of exam scores. ... despite the student's outstanding test and exam performance."
+      }
+    ],
+    "contradictions": [],
+    "partial_score": 0.85,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v2",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 1873.1697985419887,
+  "usage": {
+    "grader": {
+      "http_attempts": 1,
+      "successful_responses": 1,
+      "seconds": 92.59047308302252,
+      "provider_reported_usage": {
+        "prompt_tokens": 4078,
+        "completion_tokens": 5377,
+        "total_tokens": 9455,
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 4078
+      }
+    },
+    "host": {
+      "http_attempts": 99,
+      "successful_responses": 99,
+      "seconds": 1552.3627612499695,
+      "provider_reported_usage": {
+        "prompt_tokens": 1424834,
+        "completion_tokens": 63066,
+        "total_tokens": 1487900,
+        "prompt_cache_hit_tokens": 1398016,
+        "prompt_cache_miss_tokens": 26818
+      }
+    },
+    "player": {
+      "http_attempts": 103,
+      "successful_responses": 100,
+      "seconds": 223.09993637207663,
+      "provider_reported_usage": {
+        "prompt_tokens": 1094550,
+        "completion_tokens": 15998,
+        "total_tokens": 1110548,
+        "prompt_cache_hit_tokens": 1075456,
+        "prompt_cache_miss_tokens": 19094
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "total": {
+      "calls": 203,
+      "unknown_cost_calls": 203,
+      "known_estimated_cost_usd": 0.0,
+      "estimated_cost_usd": null,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 2523462,
+        "cached_input_tokens": 2473472,
+        "cache_write_tokens": 0,
+        "output_tokens": 84441,
+        "reasoning_tokens": 67521,
+        "total_tokens": 2607903
+      },
+      "missing_token_calls": {
+        "input_tokens": 3,
+        "cached_input_tokens": 3,
+        "cache_write_tokens": 0,
+        "output_tokens": 3,
+        "reasoning_tokens": 103,
+        "total_tokens": 3
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 1,
+        "unknown_cost_calls": 1,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 4078,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 5377,
+          "reasoning_tokens": 4665,
+          "total_tokens": 9455
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 99,
+        "unknown_cost_calls": 99,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1424834,
+          "cached_input_tokens": 1398016,
+          "cache_write_tokens": 0,
+          "output_tokens": 63066,
+          "reasoning_tokens": 62856,
+          "total_tokens": 1487900
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 103,
+        "unknown_cost_calls": 103,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1094550,
+          "cached_input_tokens": 1075456,
+          "cache_write_tokens": 0,
+          "output_tokens": 15998,
+          "reasoning_tokens": 0,
+          "total_tokens": 1110548
+        },
+        "missing_token_calls": {
+          "input_tokens": 3,
+          "cached_input_tokens": 3,
+          "cache_write_tokens": 0,
+          "output_tokens": 3,
+          "reasoning_tokens": 103,
+          "total_tokens": 3
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "655c8177-c00e-4908-aa28-95706a8d4c51",
+      "8cea727e-5afc-4a8e-bbaf-f59daa362987",
+      "b9b925bb-43b5-4420-8e8d-09fbf72f38c7"
+    ],
+    "logical_input_chars": 2397982,
+    "delta_input_chars": 124940,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "95a3d31f81a3ef0ebfa32f5ede191b4e24e727b55ced0a21d7ba42666a2392a4",
+    "grading_sha256": "475d22bca77f15b9707d0c4067d0a85ab70975edf0dbb10d3fdb3903cef5b48f",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "8d764e3a9887e0ffdadd859f4c77a91d0e9758c38a33fdd3f0329d5cc4c0857b",
+    "controller_sha256": "b07ff6ded17c62c12e34e2c2e79b96542fcd4b803d2df90ab5ea17f7227f3db0",
+    "player_format_policy_sha256": "04246370c5edf579e03dbc52635b4daea0774fd148017a5c7901d2c126192148",
+    "host_context_sha256": "3a32e7c39f83a9cb609da08660df39f1929b92053f29e17f4f50fb9afcda1e82",
+    "host_binding_version": "host-v11-set1-causal-20261110",
+    "original_controller_sha256": "3d71323b5f54ca7c1d34a53e56553a3848c21ada5762f58ad1b564f8df0a5866"
+  }
+}

@@ -1,0 +1,3375 @@
+{
+  "version": "host-v9-human-20261102",
+  "review_status": "human_labels_and_delegated_adjudication",
+  "replace_host_examples": true,
+  "solution": "A had a mechanical pencil with no usable lead. The eraser covered the lead-refill opening, so A picked up/removed the eraser, inserted new lead, then used the pencil to write the message on the blank sheet.",
+  "canonical_facts": [
+    "The pencil had no usable lead.",
+    "The eraser covered the lead-refill opening.",
+    "A removed the eraser, inserted lead, and then wrote with the pencil.",
+    "A removes the eraser that covers the refill opening; the eraser is not an actuator that moves an internal mechanism.",
+    "The inserted pencil lead is the material that subsequently makes the marks on the paper."
+  ],
+  "explicit_negatives": [
+    "The eraser was not being used as an erasing or marking tool in this explanation.",
+    "Removing the eraser opened the refill access; it did not directly expose or extend the writing tip.",
+    "The eraser itself is removed; it is not a separate tool used to remove another pencil component. Graphite is carbon but is not charcoal. No separate drawing machine is involved."
+  ],
+  "unknown_details": [
+    "The eraser colour, pencil brand and exact loading hardware beyond the covered refill opening are unspecified."
+  ],
+  "irrelevant_details": [
+    "Eraser colour, pencil brand, handedness and exact hardware design are incidental."
+  ],
+  "host_examples": [
+    {
+      "case_id": "AUDIT_001",
+      "question": "Did the eraser itself leave a visible mark on the paper, rather than being used to erase something?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q001",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_002",
+      "question": "Was the message readable from pressure impressions made by the eraser, without adding pigment or erasing existing writing?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q002",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_003",
+      "question": "Did the message become visible because material on the eraser was deposited onto the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q003",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_004",
+      "question": "Did rubbing with the eraser remove a coating or surface layer from the paper, making the message visible?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q004",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_005",
+      "question": "Was the message already present on or beneath the sheet before A used the eraser, and did the eraser merely reveal it?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q005",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_006",
+      "question": "Did A make the message visible as holes or tears in the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q006",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_007",
+      "question": "Did A use the eraser to move or press a separate writing implement against the paper, with that implement making the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q007",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_008",
+      "question": "Did heat generated by rubbing the eraser cause the message to become visible?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q008",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_009",
+      "question": "Was the message formed by applying a marking substance to the paper while the eraser blocked part of it?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q009",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_010",
+      "question": "Was the paper light-sensitive, so that the eraser’s shadow helped make a message appear?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q010",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_011",
+      "question": "Did the eraser’s shape or pattern act as a printing die, with ink supplied separately and transferred to the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q011",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_012",
+      "question": "Was the recipient meant to infer the message from where A placed the eraser, rather than from any change to the sheet?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q012",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_013",
+      "question": "Did the eraser chemically react with a separate substance on the paper to produce the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q013",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_014",
+      "question": "Was the object an ordinary stationery eraser, but used for a purpose other than erasing?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Supported by removing the eraser cap, inserting lead and writing with the refilled mechanical pencil.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q014",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_015",
+      "question": "Did static charge from the eraser rearrange loose particles on the paper to form the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q015",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_016",
+      "question": "Did A use the eraser to fold or bend the sheet so its shape or arrangement conveyed the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q016",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_017",
+      "question": "Was the message readable from words already on the eraser itself, without changing the sheet?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q017",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_018",
+      "question": "Was the message ultimately conveyed somewhere other than the sheet of paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q018",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_019",
+      "question": "Was the eraser removed from the pencil rather than used on the paper?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Clarified subject, time, count or source scope after independent semantic audit; AI proposal pending human review.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q019",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_020",
+      "question": "Did A use the eraser to operate a computer that then printed the message on the sheet?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q021",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_021",
+      "question": "Did A use the eraser to steer the drawing tool’s path, rather than merely start a preset design?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q034",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_022",
+      "question": "Was the marking tool’s path determined by a physical guide or template?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q035",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_023",
+      "question": "Did A use the eraser to turn a rotary control, rather than press a button or switch?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q036",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_024",
+      "question": "When A moved the eraser, did that motion mechanically drive the marking tool, rather than merely trigger a separate source of motion?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q039",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_025",
+      "question": "Does air pressure directly supply the energy that moves the marking tool?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q041",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_026",
+      "question": "Did rotation of a wheel mechanically drive the marking tool’s motion?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q050",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_027",
+      "question": "Was the component A altered or removed a cap or cover protecting the marking tip?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q063",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_028",
+      "question": "Did A use the eraser to remove part of a pencil so it could make the intended marks?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The eraser itself is removed to allow lead refilling. It is not a lever, actuator or separate tool that adjusts a drawing machine or removes another pencil component.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q064",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_029",
+      "question": "Was the part A removed from the pencil its wood or graphite at the writing end, so the pencil point could make marks?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q065",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_030",
+      "question": "Was the part removed from the pencil an exterior layer, such as paint or a label?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q066",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_031",
+      "question": "Was the removed part the pencil’s attached eraser, rather than its paint, label, or another exterior layer?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Supported by removing the eraser cap, inserting lead and writing with the refilled mechanical pencil.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q067",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_032",
+      "question": "After A removed the pencil’s attached eraser, did the exposed ferrule itself touch the paper and make the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q070",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_033",
+      "question": "Was the pencil itself the marking tool that traced the message?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Supported by removing the eraser cap, inserting lead and writing with the refilled mechanical pencil.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q071",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_034",
+      "question": "Did A use the eraser to abrade paint or another coating from the pencil’s exterior?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q072",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_035",
+      "question": "Did A use the separate eraser to abrade the pencil’s attached eraser until it detached?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This introduces a separate eraser or third drawing apparatus; the canonical eraser is the pencil’s own refill cap.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q075",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_036",
+      "question": "Did A use the separate eraser as a wedge or lever against the pencil’s ferrule to loosen its attached eraser?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This introduces a separate eraser or third drawing apparatus; the canonical eraser is the pencil’s own refill cap.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q076",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_037",
+      "question": "Did the separate eraser contact the pencil’s attached eraser to provide extra grip while A pulled it off, rather than act as a lever against the ferrule?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This introduces a separate eraser or third drawing apparatus; the canonical eraser is the pencil’s own refill cap.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q077",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_038",
+      "question": "Did A use the separate eraser to get a better grip while pulling the pencil’s attached eraser off, rather than to rub or push it off?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This introduces a separate eraser or third drawing apparatus; the canonical eraser is the pencil’s own refill cap.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q078",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_039",
+      "question": "Did the separate eraser increase friction against the pencil’s attached eraser while A pulled it off?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This introduces a separate eraser or third drawing apparatus; the canonical eraser is the pencil’s own refill cap.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q090",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_040",
+      "question": "Was the separate eraser essential for gripping the pencil’s attached eraser during removal, rather than merely incidental?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This introduces a separate eraser or third drawing apparatus; the canonical eraser is the pencil’s own refill cap.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q091",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_041",
+      "question": "Did A use the separate eraser to grip the pencil’s attached eraser while pulling it off?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This introduces a separate eraser or third drawing apparatus; the canonical eraser is the pencil’s own refill cap.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q094",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_042",
+      "question": "Did A use the separate eraser to push or pry the pencil’s attached eraser off?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This introduces a separate eraser or third drawing apparatus; the canonical eraser is the pencil’s own refill cap.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q095",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_043",
+      "question": "Did A use the separate eraser to rotate the pencil’s attached eraser while pulling it off?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This introduces a separate eraser or third drawing apparatus; the canonical eraser is the pencil’s own refill cap.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_discuss/Q096",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_044",
+      "question": "Did A use the eraser as a stamp, applying ink or another marking substance to it to print the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q001",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_045",
+      "question": "Was there something on or in the paper that A could reveal or make visible by rubbing it with the eraser?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q002",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_046",
+      "question": "Did A press the eraser against the paper to make an embossed or indented message, rather than mark it with pigment?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q003",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_047",
+      "question": "Did A use the eraser to remove or damage the paper itself so the resulting pattern conveyed the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q004",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_048",
+      "question": "Did rubbing the eraser generate heat that made the paper darken, as with thermal paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q005",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_049",
+      "question": "Did A use a dirty eraser to transfer graphite or another substance from the eraser onto the paper, forming the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q006",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_050",
+      "question": "Did A use a writing or marking tool hidden inside or attached to the eraser?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The built-in eraser is attached to the mechanical pencil before being removed; OR does not require hiding inside.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q007",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_051",
+      "question": "Did A leave the message by using the eraser to cast a shadow or block light on the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q008",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_052",
+      "question": "Did A use the eraser as a mask, applying a marking substance around it so the uncovered area formed the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q009",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_053",
+      "question": "Did A leave the message by arranging eraser crumbs or shavings on the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q010",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_054",
+      "question": "Did A use the eraser to move separate objects onto the paper and arrange them into a message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q012",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_055",
+      "question": "Did A use the eraser to move a separate writing instrument, such as a pencil or pen, across the paper so that instrument wrote the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q013",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_056",
+      "question": "Did A use the eraser to operate a machine, such as a printer, that then put the message on the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q014",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_057",
+      "question": "Did A use the eraser to manipulate a living thing, which then made the message on the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q016",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_058",
+      "question": "Did A use the eraser to position or move an optical object, such as a mirror or lens, so that light caused the message to appear on the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q017",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_059",
+      "question": "Did the object A manipulated cause a chemical reaction with the paper that produced the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q018",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_060",
+      "question": "Was the powder deposited onto the paper flour or another food ingredient?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q027",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_061",
+      "question": "Did A use the eraser to grip or rub a separate piece of charcoal across the paper, with the charcoal leaving the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q031",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_062",
+      "question": "Did A use the eraser to make the charcoal move indirectly—for example, by nudging or tipping something that caused the charcoal to roll or slide across the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q032",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_063",
+      "question": "Did A use the eraser to move or hold the paper against a stationary piece of charcoal, so the paper rubbing over the charcoal left the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q033",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_064",
+      "question": "Did the charcoal itself make physical contact with the paper while leaving the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q034",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_065",
+      "question": "Did the charcoal rub against an intermediary surface that then transferred carbon onto the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q035",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_066",
+      "question": "Did A use the eraser to manipulate the charcoal so that loose charcoal dust, rather than the charcoal itself, settled onto the paper to form the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q036",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_067",
+      "question": "Was the charcoal rubbed on the reverse side of the paper, with the message becoming visible on the front side?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q037",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_068",
+      "question": "Did A use the eraser to rub or move the charcoal in a way that caused carbon particles to become airborne and reach the paper without the charcoal touching it?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q038",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_069",
+      "question": "Did A use the eraser to move or rub the charcoal so that carbon particles transferred to the paper by static electricity, without the charcoal or airborne particles touching it?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q039",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_070",
+      "question": "Was the charcoal rubbed against another sheet or layer placed over the blank paper, transferring carbon through that layer to leave the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q040",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_071",
+      "question": "Did A use the eraser to move the charcoal against a surface other than the paper, creating a pattern there that was then transferred to the paper by a method other than transferring carbon from that surface?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q041",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_072",
+      "question": "Did carbon from the charcoal reach the paper indirectly by being transferred from A’s hand or fingers?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q042",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_073",
+      "question": "Did A use the eraser to manipulate the charcoal so it rubbed on a surface other than the paper, and did that action cause the message to appear on the paper without transferring carbon from that surface?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q043",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_074",
+      "question": "Did A use the eraser to move the charcoal across a perforated stencil or screen held above the paper, so charcoal dust passed through its openings to form the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q044",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_075",
+      "question": "Was the charcoal part of a process that caused a different solid substance—not carbon from the charcoal—to reach the paper and form the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q045",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_076",
+      "question": "Did charcoal rub off onto the eraser, which A then used to transfer the carbon from the eraser onto the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q046",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_077",
+      "question": "Was the paper light-sensitive, with the charcoal blocking light to create the message when the paper was exposed or developed?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q047",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_078",
+      "question": "Did A use the eraser to manipulate the charcoal so carbon transferred to the paper on or through a person’s clothing or another wearable item?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q048",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_079",
+      "question": "Did carbon from the charcoal reach the paper by being transferred through some intermediary object or material other than A’s hand, clothing, or a layer placed over the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q049",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_080",
+      "question": "Was the charcoal involved only indirectly—as a source of energy or to trigger an event—rather than supplying carbon that reached the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q050",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_081",
+      "question": "Did A use the eraser to manipulate an object that caused the charcoal itself to rub against the paper, even though A did not move the charcoal directly?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q051",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_082",
+      "question": "Did A use the eraser to manipulate the charcoal so that it left a pattern on a surface other than the paper, and that pattern was then reproduced on the paper by a person tracing or copying it?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q052",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_083",
+      "question": "Did A use the eraser to make charcoal particles strike the paper directly, rather than having them settle or transfer by rubbing?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q053",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_084",
+      "question": "Did the separate solid substance that formed the message reach the paper at all?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Graphite from the pencil is deposited on the paper; earlier charcoal claims remain false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q054",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_085",
+      "question": "Did carbon from the charcoal reach the paper as a gas or vapor and then deposit there as a solid?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q055",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_086",
+      "question": "Was carbon from the charcoal carried to the paper in a liquid, such as water, and then left there as a solid?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q056",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_087",
+      "question": "Did A use the eraser to manipulate the charcoal so that air currents carried carbon particles onto the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q057",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_088",
+      "question": "Did carbon from the charcoal physically touch the paper as solid particles, even though the charcoal itself did not?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q058",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_089",
+      "question": "Did carbon from the charcoal reach a coating or other layer on the paper, forming the message there without touching the paper itself?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q059",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_090",
+      "question": "Was the charcoal part of a larger object, such as a charcoal pencil or charcoal-coated tool, rather than a separate piece of charcoal?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q060",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_091",
+      "question": "Was the solid substance that formed the message a material other than carbon from the charcoal?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "The mark is graphite from pencil lead, not carbon originating in charcoal. This does not deny that graphite is carbon.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q061",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_092",
+      "question": "Did A use the charcoal as an abrasive to scrape or grind another material into particles that formed the message on the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q063",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_093",
+      "question": "Did A use the eraser to move the charcoal so that it caused a different solid substance to fall or scatter onto the paper and form the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q065",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_094",
+      "question": "Was the solid material that formed the message ash from the charcoal, rather than carbon from the charcoal itself?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q066",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_095",
+      "question": "Did the charcoal’s role involve rubbing it against the eraser itself, causing the eraser to shed material that formed the message on the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q067",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_096",
+      "question": "Did the charcoal dislodge a solid material that was already present on another surface, and did that material then reach the paper to form the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q068",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_097",
+      "question": "Did the charcoal have a coating of a different solid substance that was rubbed off and deposited on the paper to form the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This assumes charcoal. The story uses graphite pencil lead and eraser removal for refilling; charcoal is not the mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q070",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_098",
+      "question": "Did graphite from the pencil lead directly mark the paper, even though the lead itself did not touch it?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q075",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_099",
+      "question": "Did the pencil lead itself physically touch the paper while the message was being made?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Supported by removing the eraser cap, inserting lead and writing with the refilled mechanical pencil.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q076",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_100",
+      "question": "Was the eraser attached to the pencil whose lead touched the paper, so that A moved the pencil by holding or manipulating its eraser end?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q077",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_101",
+      "question": "Was the eraser attached to the pencil as its built-in eraser, with A holding the pencil by that eraser end?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q078",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_102",
+      "question": "Was the graphite lead detached from its pencil, with A using the eraser to hold or guide the exposed lead as it wrote on the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q079",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_103",
+      "question": "Was the graphite lead part of an intact pencil, with A using a separate eraser to push or guide the pencil while it wrote?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q080",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_104",
+      "question": "Did A use the eraser as a weight or counterweight that caused the pencil to move and write on the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q081",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_105",
+      "question": "Did A use the eraser to support or stabilize the pencil while another force or movement caused the pencil to write?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q082",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_106",
+      "question": "Did A use the eraser to remove an obstruction or release a mechanism, allowing the pencil to move and write on the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The eraser itself is removed to allow lead refilling. It is not a lever, actuator or separate tool that adjusts a drawing machine or removes another pencil component.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q083",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_107",
+      "question": "Did A use the eraser to rotate or spin the pencil, causing its lead to trace the message on the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q084",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_108",
+      "question": "Did A use the eraser to trigger or cause another person to write the message with the pencil?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q085",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_109",
+      "question": "Did A use the eraser to manipulate a third object, which in turn caused the pencil or its lead to move across the paper and write the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This introduces a separate eraser or third drawing apparatus; the canonical eraser is the pencil’s own refill cap.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q086",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_110",
+      "question": "Did the third object move the paper beneath the pencil, causing the pencil lead to trace the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This introduces a separate eraser or third drawing apparatus; the canonical eraser is the pencil’s own refill cap.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q087",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_111",
+      "question": "Was the third object a string, thread, or cord that A manipulated with the eraser to move the pencil across the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This introduces a separate eraser or third drawing apparatus; the canonical eraser is the pencil’s own refill cap.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q088",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_112",
+      "question": "Was the third object a mechanical part or simple tool, such as a lever, that moved the pencil across the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This introduces a separate eraser or third drawing apparatus; the canonical eraser is the pencil’s own refill cap.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q089",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_113",
+      "question": "Did the third object move the pencil by rolling or sliding under the influence of gravity?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This introduces a separate eraser or third drawing apparatus; the canonical eraser is the pencil’s own refill cap.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q090",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_114",
+      "question": "Was the third object a sloped surface or ramp that A adjusted with the eraser, allowing the pencil to slide or roll downhill across the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This introduces a separate eraser or third drawing apparatus; the canonical eraser is the pencil’s own refill cap.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q091",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_115",
+      "question": "Was the third object a vehicle or wheeled toy that moved the pencil across the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This introduces a separate eraser or third drawing apparatus; the canonical eraser is the pencil’s own refill cap.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q093",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_116",
+      "question": "Was the third object a lever or seesaw that pivoted to move the pencil across the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This introduces a separate eraser or third drawing apparatus; the canonical eraser is the pencil’s own refill cap.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q094",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_117",
+      "question": "Did A use the eraser to manipulate the third object by pushing or nudging it?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This introduces a separate eraser or third drawing apparatus; the canonical eraser is the pencil’s own refill cap.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q095",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_118",
+      "question": "Was the third object a wheel or roller that moved the pencil as it turned or rolled?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This introduces a separate eraser or third drawing apparatus; the canonical eraser is the pencil’s own refill cap.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q096",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_119",
+      "question": "Was the third object a spring or other elastic object that A released with the eraser, causing it to move the pencil across the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This introduces a separate eraser or third drawing apparatus; the canonical eraser is the pencil’s own refill cap.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q097",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_120",
+      "question": "Was the third object a ruler that A nudged with the eraser, causing it to move the pencil across the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. This introduces a separate eraser or third drawing apparatus; the canonical eraser is the pencil’s own refill cap.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/team/TS031_r01_solo/Q098",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_121",
+      "question": "Did the eraser leave the message by removing a layer or substance from the sheet, thereby revealing the message underneath?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261023_repaired_host_rerun/team/TS031_r01_solo/Q001",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_122",
+      "question": "Did A use the eraser as a stamp or marking tool, depositing something onto the paper to form the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261023_repaired_host_rerun/team/TS031_r01_solo/Q002",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_123",
+      "question": "Did A write the message by pressing the eraser into the paper, leaving indentations that could be read by touch or under suitable lighting?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261023_repaired_host_rerun/team/TS031_r01_solo/Q003",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_124",
+      "question": "Did A use friction or heat from the eraser to form the message on the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261023_repaired_host_rerun/team/TS031_r01_solo/Q004",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_125",
+      "question": "Was the message conveyed by the eraser itself—for example, by its shape, markings, or position on the blank sheet—rather than being written onto the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261023_repaired_host_rerun/team/TS031_r01_solo/Q005",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_126",
+      "question": "Did A use the eraser to cast a shadow or otherwise alter the light falling on the paper so that the message became visible?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261023_repaired_host_rerun/team/TS031_r01_solo/Q006",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_127",
+      "question": "Did the eraser mechanically trigger a writing instrument, such as a pencil or pen, to move across the paper and write the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261023_repaired_host_rerun/team/TS031_r01_solo/Q009",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_128",
+      "question": "Did the eraser trigger another person or animal to write the message on the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261023_repaired_host_rerun/team/TS031_r01_solo/Q010",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_129",
+      "question": "Did A use the eraser to trigger a non-electronic machine or mechanism that printed or otherwise formed the message on the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261023_repaired_host_rerun/team/TS031_r01_solo/Q011",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_130",
+      "question": "Did A use the eraser to erase a mark or writing on a separate surface, and did that erasure trigger the mechanism that produced the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Refilling pencil lead, not this alternative marking mechanism or apparatus, explains the eraser.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261023_repaired_host_rerun/team/TS031_r01_solo/Q013",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "R01",
+      "question": "Did the eraser itself create the letters, instead of rubbing anything out?",
+      "answer": "no",
+      "rationale": "The single marking claim is false; the contrast is not an independent true event.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R02",
+      "question": "Was a pencil attached to the eraser before A removed it?",
+      "answer": "yes",
+      "rationale": "It was the removable eraser on this pencil.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R03",
+      "question": "Did lifting the eraser immediately push the lead out through the tip?",
+      "answer": "no",
+      "rationale": "Refill access is not lead advancement.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R04",
+      "question": "Was an additional eraser used as a lever to dismantle the pencil?",
+      "answer": "no",
+      "rationale": "An invented alternative mechanism, not an unspecified incidental fact.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R05",
+      "question": "Was the message written using charcoal?",
+      "answer": "no",
+      "rationale": "The writing material was pencil lead, not charcoal.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R06",
+      "question": "Was the writing material charcoal or graphite?",
+      "answer": "yes",
+      "rationale": "Inclusive OR; graphite supports the disjunction, not charcoal.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R07",
+      "question": "Was the pencil made by a Japanese company?",
+      "answer": "irrelevant",
+      "rationale": "Brand origin does not explain the refill.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R08",
+      "question": "Was the eraser removed and was the message printed using it as a rubber stamp?",
+      "answer": "yes and no",
+      "rationale": "Two independent events, one true and one false.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R09",
+      "question": "Did taking off the eraser make the refill port accessible?",
+      "answer": "yes",
+      "rationale": "Refill access is the explanatory purpose.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "V4_TS031_001",
+      "question": "Did A press the eraser against a mechanical part to actuate it and expose the lead?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Relational correction from post-run audit, pending human confirmation.",
+      "review_status": "ai_audit_root_adjudicated_pending_human"
+    },
+    {
+      "case_id": "V4_TS031_002",
+      "question": "Did A remove the eraser itself to uncover the lead-refill opening?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Relational correction from post-run audit, pending human confirmation.",
+      "review_status": "ai_audit_root_adjudicated_pending_human"
+    },
+    {
+      "case_id": "V4_TS031_003",
+      "question": "Was the graphite lead A inserted later used to make the marks?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Relational correction from post-run audit, pending human confirmation.",
+      "review_status": "ai_audit_root_adjudicated_pending_human"
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_001",
+      "question": "Did A use the eraser itself to make visible marks on the paper, rather than erase existing writing?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_001",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A use the eraser itself to make visible marks on the paper, rather than erase existing writing?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_002",
+      "question": "Did A use the eraser to remove something from the paper so that a message underneath became visible?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_002",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A use the eraser to remove something from the paper so that a message underneath became visible?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_003",
+      "question": "Did A use the eraser to apply ink or another pigment to the paper?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_004",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A use the eraser to apply ink or another pigment to the paper?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_004",
+      "question": "Did A use the eraser to press or emboss a message into the paper, leaving indentations rather than visible pigment?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_005",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A use the eraser to press or emboss a message into the paper, leaving indentations rather than visible pigment?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_005",
+      "question": "Did A use the pencil’s graphite to write the message on the paper?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_007",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A use the pencil’s graphite to write the message on the paper?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_006",
+      "question": "Did A use the eraser to sharpen or shape the pencil’s graphite tip before writing the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_008",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A use the eraser to sharpen or shape the pencil’s graphite tip before writing the message?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_007",
+      "question": "Did A use the eraser to hold or guide the pencil while writing the message?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_009",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A use the eraser to hold or guide the pencil while writing the message?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_008",
+      "question": "Did A use the eraser to hold the blank sheet in place while writing the message with the pencil?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_010",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A use the eraser to hold the blank sheet in place while writing the message with the pencil?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_009",
+      "question": "Was A unable to use a separate pencil, so they chose the pencil with an attached eraser instead?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_018",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was A unable to use a separate pencil, so they chose the pencil with an attached eraser instead?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_010",
+      "question": "Did A remove or move the eraser to uncover the pencil’s writing tip before writing?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_022",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A remove or move the eraser to uncover the pencil’s writing tip before writing?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_011",
+      "question": "Did A press the eraser, which functioned as a button on a mechanical pencil, to advance the graphite lead before writing?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_027",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A press the eraser, which functioned as a button on a mechanical pencil, to advance the graphite lead before writing?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_012",
+      "question": "Did A sharpen the pencil with a separate pencil sharpener before writing?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_030",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A sharpen the pencil with a separate pencil sharpener before writing?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_013",
+      "question": "Was the pencil’s graphite writing tip already exposed and usable when A picked up the item?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_031",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was the pencil’s graphite writing tip already exposed and usable when A picked up the item?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_014",
+      "question": "Did A use a sharpener built into the eraser to sharpen the pencil before writing?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_032",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A use a sharpener built into the eraser to sharpen the pencil before writing?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_015",
+      "question": "Did A sharpen the pencil’s graphite tip by any method before writing?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_035",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A sharpen the pencil’s graphite tip by any method before writing?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_016",
+      "question": "Was the eraser physically covering or enclosing the pencil’s graphite writing tip?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_037",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was the eraser physically covering or enclosing the pencil’s graphite writing tip?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_017",
+      "question": "Did A obtain graphite from inside the pencil and use that graphite to write, rather than writing with the pencil’s tip?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_044",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A obtain graphite from inside the pencil and use that graphite to write, rather than writing with the pencil’s tip?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_018",
+      "question": "Did A attach or embed the separate piece of graphite in the eraser, using the eraser to hold it while writing?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_049",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A attach or embed the separate piece of graphite in the eraser, using the eraser to hold it while writing?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_019",
+      "question": "Did A insert the separate piece of graphite into the broken end of the pencil, so the pencil held it as a makeshift writing tip?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_051",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A insert the separate piece of graphite into the broken end of the pencil, so the pencil held it as a makeshift writing tip?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_020",
+      "question": "Did A use the pencil as a straightedge or guide while making the message with the separate piece of graphite?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_055",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A use the pencil as a straightedge or guide while making the message with the separate piece of graphite?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_021",
+      "question": "Was the pencil used as part of a larger contraption or setup that enabled A to write with the separate graphite?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "逐项核对汤面、汤底和问句；此问题在独立表述下可保留。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_061",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "source_verbatim",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was the pencil used as part of a larger contraption or setup that enabled A to write with the separate graphite?",
+        "original_answer": "no",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_022",
+      "question": "Did removing the eraser provide access for adding pencil lead, rather than using the eraser as a marking tool?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "移除盖子是访问步骤，不是拿橡皮作为刻画工具。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_003",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "reviewer_rewrite",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A use the eraser as a tool to make a message with some other material, rather than using the eraser itself to mark or erase the paper?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_023",
+      "question": "Did A remove the eraser because it covered the mechanical pencil's lead-refill opening?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "明确真实目的，避免只拿起整个普通铅笔的错误因果。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_011",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "reviewer_rewrite",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A pick up the eraser because a pencil was attached to it or otherwise incorporated into it, and then use that pencil to write the message?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_024",
+      "question": "Was this a mechanical pencil with a removable eraser covering its refill opening?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "消除 ordinary pencil 对木制铅笔的歧义。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_013",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "reviewer_rewrite",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was the eraser attached to the end of an ordinary pencil, as a pencil-top eraser?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_025",
+      "question": "Was the message meant to demonstrate or reveal that the eraser had a pencil attached to it?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "展示附带铅笔不是写留言的解释性目的。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_016",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "reviewer_rewrite",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Was the message meant to demonstrate or reveal that the eraser had a pencil attached to it?",
+        "original_answer": "irrelevant",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_026",
+      "question": "Did A insert replacement graphite lead inside the mechanical pencil and then write using that pencil?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "铅芯在笔内，非外置独立绘图装置。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_048",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "reviewer_rewrite",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A use the eraser-attached pencil as a holder or support for a separate piece of graphite while writing?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_027",
+      "question": "Did A use the pencil to prop up an external apparatus that held a separate piece of graphite for writing?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "独立外部支撑装置不是汤底。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_057",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "reviewer_rewrite",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the pencil support the separate graphite indirectly, through another object or part, while A wrote?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "REVIEW_20261030_TS031_028",
+      "question": "Does the story require a separate guide or support apparatus in addition to the refilled mechanical pencil?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "不将内部笔结构重新解释成第三个装置。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_085",
+        "source_file": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_sha256": "c335bbf2d54bdc891a55b1b9ea4c1020ad61e90879a6a7afbacf8e01c5054ab8",
+        "source_kind": "model_generated",
+        "question_origin": "reviewer_rewrite",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did the pencil support an object that helped guide or control the separate graphite as it rubbed across the paper?",
+        "original_answer": "yes",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_RUN_TS031_006",
+      "question": "Did A use the eraser together with a pencil to write the message?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "宽泛地使用橡皮和铅笔完成写字流程成立；没有断言橡皮直接画字。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_006",
+        "audit_case": "RUN_TS031_006",
+        "source": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_kind": "model_generated",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A use the eraser together with a pencil to write the message?",
+        "original_answer": "yes",
+        "question_origin": "source_verbatim",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_RUN_TS031_015",
+      "question": "Did A pick up the pencil because they needed to use its graphite tip to write the message?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "需要用铅芯写留言这一宽泛目的成立，不表示铅芯起初可用。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_015",
+        "audit_case": "RUN_TS031_015",
+        "source": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_kind": "model_generated",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A pick up the pencil because they needed to use its graphite tip to write the message?",
+        "original_answer": "yes",
+        "question_origin": "source_verbatim",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "RECHECK_20261031_RUN_TS031_048",
+      "question": "Did A use the eraser-attached pencil as a holder or support for a separate piece of graphite while writing?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "替换铅芯本来是独立补充材料，装入笔内后由笔夹持；问句没有说外置装置。",
+      "review_status": "reviewed_reference_pending_human",
+      "provenance": {
+        "source_case": "RUN_TS031_048",
+        "audit_case": "RUN_TS031_048",
+        "source": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+        "source_kind": "model_generated",
+        "answer_origin": "ai_source_based_adjudication",
+        "original_question": "Did A use the eraser-attached pencil as a holder or support for a separate piece of graphite while writing?",
+        "original_answer": "yes",
+        "question_origin": "source_verbatim",
+        "reviewer": "codex_root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS031_003",
+      "question": "Did A use the eraser as a tool to make a message with some other material, rather than using the eraser itself to mark or erase the paper?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "橡皮参与补芯流程，但不是施加书写材料的工具；原问工具角色有重要歧义。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS031_003",
+        "audit_case": "RUN_TS031_003",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 63,
+        "human_confirmed": false,
+        "original_question": "Did A use the eraser as a tool to make a message with some other material, rather than using the eraser itself to mark or erase the paper?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS031_011",
+      "question": "Did A pick up the eraser because a pencil was attached to it or otherwise incorporated into it, and then use that pencil to write the message?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "与铅笔相连为真；拿橡皮的关键目的是打开补芯口，不是只拿起可用的铅笔。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS031_011",
+        "audit_case": "RUN_TS031_011",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 63,
+        "human_confirmed": false,
+        "original_question": "Did A pick up the eraser because a pencil was attached to it or otherwise incorporated into it, and then use that pencil to write the message?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS031_013",
+      "question": "Was the eraser attached to the end of an ordinary pencil, as a pencil-top eraser?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "附带橡皮为真，ordinary pencil可指木制铅笔或普通自动铅笔；保留此身份歧义。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS031_013",
+        "audit_case": "RUN_TS031_013",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 57,
+        "human_confirmed": false,
+        "original_question": "Was the eraser attached to the end of an ordinary pencil, as a pencil-top eraser?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS031_020",
+      "question": "Was the pencil attached to the eraser unusual in some way that mattered to why A used it?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "这支笔当时缺可用铅芯的状态对动作有意义；不表示罕见型号或特殊机器。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS031_020",
+        "audit_case": "RUN_TS031_020",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 57,
+        "human_confirmed": false,
+        "original_question": "Was the pencil attached to the eraser unusual in some way that mattered to why A used it?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS031_057",
+      "question": "Did the pencil support the separate graphite indirectly, through another object or part, while A wrote?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "another object or part可指内部夹芯部件，也可指另一台装置；不得静默换指代。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS031_057",
+        "audit_case": "RUN_TS031_057",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 58,
+        "human_confirmed": false,
+        "original_question": "Did the pencil support the separate graphite indirectly, through another object or part, while A wrote?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS031_069",
+      "question": "Did the pencil indirectly support the separate graphite by supporting something that played a role in creating the message?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "内部夹芯结构与玩家外部支撑物假设混淆；原句重要指代未定。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS031_069",
+        "audit_case": "RUN_TS031_069",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 58,
+        "human_confirmed": false,
+        "original_question": "Did the pencil indirectly support the separate graphite by supporting something that played a role in creating the message?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS031_077",
+      "question": "Did the pencil support an object that A used to make the message by physically marking, cutting, or otherwise altering the paper?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "可解释为内部铅芯接触纸，也可延续额外装置，不能无条件肯定后者。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS031_077",
+        "audit_case": "RUN_TS031_077",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 59,
+        "human_confirmed": false,
+        "original_question": "Did the pencil support an object that A used to make the message by physically marking, cutting, or otherwise altering the paper?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS031_079",
+      "question": "Was the tool that the pencil indirectly supported used to make the message by applying pressure to the paper?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "铅芯施压为真，前提“间接支撑的另一个工具”不明确。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS031_079",
+        "audit_case": "RUN_TS031_079",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 59,
+        "human_confirmed": false,
+        "original_question": "Was the tool that the pencil indirectly supported used to make the message by applying pressure to the paper?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS031_082",
+      "question": "Did A move the refilled mechanical pencil’s graphite tip across the paper while pressing it to write?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "书写铅芯移动并接触纸；以明确改写采纳人工yes，不肯定外置支架。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS031_082",
+        "audit_case": "RUN_TS031_082",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 60,
+        "human_confirmed": false,
+        "original_question": "Did A move the pressure-applying tool across the paper while pressing it, rather than keeping it in one place?",
+        "original_answer": "yes",
+        "question_origin": "reviewer_rewrite",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS031_083",
+      "question": "Did the tool make the message by rubbing or scraping across the paper under pressure?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "若tool指铅芯，摩擦纸成立；若指先前假设的另一装置，其存在不成立。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS031_083",
+        "audit_case": "RUN_TS031_083",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": null,
+        "human_confirmed": false,
+        "original_question": "Did the tool make the message by rubbing or scraping across the paper under pressure?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS031_084",
+      "question": "Was the tool that rubbed or scraped across the paper a separate piece of graphite?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "是铅芯材料，但不是游离于笔外、由额外装置支撑的书写工具。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS031_084",
+        "audit_case": "RUN_TS031_084",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 61,
+        "human_confirmed": false,
+        "original_question": "Was the tool that rubbed or scraped across the paper a separate piece of graphite?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS031_085",
+      "question": "Did the pencil support an object that helped guide or control the separate graphite as it rubbed across the paper?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "可指笔内夹芯结构，也可指错误的外置导向器，不能确认额外装置。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS031_085",
+        "audit_case": "RUN_TS031_085",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 61,
+        "human_confirmed": false,
+        "original_question": "Did the pencil support an object that helped guide or control the separate graphite as it rubbed across the paper?",
+        "original_answer": "yes",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    },
+    {
+      "case_id": "ADJ_20261102_RUN_TS031_095",
+      "question": "Was the pencil physically touching the object it indirectly supported?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "object无确定指代；笔内结构存在接触，先前外置支撑物并不存在。",
+      "review_status": "delegated_adjudication",
+      "provenance": {
+        "source_case": "RUN_TS031_095",
+        "audit_case": "RUN_TS031_095",
+        "answer_origin": "ai_delegated_adjudication",
+        "source_kind": "model_generated",
+        "source_file": "data/host_reference/sources/human_review_20261102/review.xlsx",
+        "source_sha256": "7185b8a95fa77ac8d33621375d21ece50514d2371ef28f8236c6544a5820e97c",
+        "workbook_row": 62,
+        "human_confirmed": false,
+        "original_question": "Was the pencil physically touching the object it indirectly supported?",
+        "original_answer": "no",
+        "question_origin": "source_question",
+        "reviewer": "codex_root"
+      }
+    }
+  ],
+  "verification_policy": "independent_then_adjudicate_v1",
+  "label_boundaries": [
+    "Removing the eraser to refill the pencil is not holding a usable ordinary pencil by its eraser. Separate replacement lead goes INSIDE the mechanical pencil.",
+    "Resolve tool/support/other object references from the question and its history. Do not silently relabel an asserted external apparatus as internal pencil parts. If genuinely ambiguous, use yes and no; reject a specified external drawing mechanism with no.",
+    "A no to removing the eraser TO UNCOVER THE WRITING TIP does not deny removing it TO OPEN THE REFILL PORT. Preserve the causal predicate, not only the verb remove.",
+    "Use together can describe the overall remove/refill/write process without asserting that the eraser marks the paper. Separate replacement lead can be inserted inside the pencil; separate alone does not entail an external machine."
+  ]
+}

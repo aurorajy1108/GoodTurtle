@@ -1,0 +1,507 @@
+{
+  "opening": "I am a very smart student who always pass tests and exams with flying colors. I failed the course. Why?",
+  "history": [
+    {
+      "type": "question",
+      "text": "Was the failure related to something about how the course was conducted or graded rather than to the student's academic ability?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail for a reason involving cheating or academic dishonesty?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because of an administrative error or mix-up (such as records or identity)?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because they did not fulfill a course requirement (such as attendance, an assignment, or an exam they skipped)?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because of a rule or policy specific to the course (such as a grading curve or a policy the student violated)?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because of something the student did during the course (as opposed to something outside the student's actions)?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because of a misunderstanding or mistake about the course's instructions or requirements?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student's action intentional (they knowingly did something that caused the failure)?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student do something during the course that unintentionally caused their own failure, such as submitting the wrong work or sitting the wrong exam?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the student submit work for the wrong course or the wrong version of the exam?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the mix-up involve the student submitting an answer that was not in the required format (e.g., wrong answer sheet, wrong box, or answer not recognized)?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student accidentally complete or submit someone else's work (or have their work mixed up with another student's)?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student's unintentional action involve them registering for or enrolling in the wrong course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student stop attending or stop submitting work partway through the course because they mistakenly believed they had already passed or completed it?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student's unintentional action involve taking the course pass/fail or auditing it instead of for a grade, by mistake?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student accidentally miss a deadline or an exam because of an error in timing or scheduling (e.g., misread date/time)?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student's unintentional action involve accidentally dropping or withdrawing from the course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student accidentally submit their work to the wrong place (e.g., wrong folder, wrong assignment slot, or wrong recipient), so it was never counted?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student's unintentional action involve writing or completing work for a different assignment than the one being graded?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student's unintentional action involve a physical mistake with the exam or assignment, such as their work being lost, damaged, or left behind?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student's unintentional action involve them not actually being enrolled in the course despite believing they were?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the failure caused by an answer the student gave on a test that was correct but not accepted (e.g., a grading error or keying mistake)?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student's unintentional action involve helping someone else in a way that was mistakenly treated as wrongdoing?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student's unintentional action involve signing or filling in something that caused a penalty, such as an incorrect student ID or exam number on their paper?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student's unintentional action involve them setting or impacting the grading in a way that backfired (e.g., choosing a harder grading option, or the curve being set by their own high score)?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because the course's pass requirement depended on something other than the tests and exams the student did well on (e.g., participation, a project, or coursework)?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Is the non-exam component something the student had to complete during the course (such as attendance/participation in class)?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Is that component attendance specifically (being physically present in classes or sessions)?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the component class participation (actively taking part in discussions or activities during class)?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the component a project, paper, or other coursework assignment submitted during the course?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the coursework a group project (involving other students)?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the student's own unintentional action within the group project cause the failure (e.g., the group relied on the student but the student's part went wrong)?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the student unintentionally fail to complete their assigned portion of the group project (or contribute what the group expected)?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student's part of the group project contain an unintentional error or mistake that damaged the group's grade?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the error involve plagiarism or improperly cited/borrowed material in the student's portion of the group project?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the error in the student's portion come from the student producing work that was too advanced or sophisticated, causing it to be suspected as not their own?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the error something the student could have avoided had they paid more attention or known something they didn't know?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the group project's grade depend on the group members evaluating each other (peer evaluation of contributions)?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the error in the student's portion related to the content being factually or technically wrong (as opposed to a formatting or presentation issue)?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the student's assigned or assumed role within the group (e.g., leader, or doing the group's work themselves) the source of the problem?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student's portion of the group project an oral or live presentation (as opposed to written work)?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the student's error involve the group project being on the wrong topic or answering a different question than was assigned?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the whole group penalized for the student's error, such that everyone in the group failed the course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student unintentionally do more of the group project than their share (taking over others' work), and this caused the failure?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the student's over-contribution cause failure because the project required each member's individual contribution to be identifiable, and the student's work masked or replaced others' contributions?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student take over others' work because the other group members were not contributing (or the student thought they were helping), leading to a situation where the group's work could not be verified as the group's own?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the failure ultimately because the teacher treated the student's extra work (doing others' parts) as a form of academic dishonesty or rule violation, even though it was well-intentioned?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the group's project suspected of being produced by an outside source (e.g., purchased or AI-generated) because its quality was inconsistent with the group, and this led to failure?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the \"student\" something other than a human person (e.g., an animal, a robot, or an AI)?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student's extra work cause the group to miss or not submit some required deliverable (an omission), rather than the work being wrong?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did a group member (rather than the instructor) report or cause the issue that led to the failure?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did a group member complain to the instructor that the student had done that member's work for them (or was doing the whole project)?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did a group member take credit for the student's work, or present the student's contribution as their own, changing who got credit?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did a group member sabotage the project or the student's portion, causing the student's work to appear wrong?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the group member involved someone whose portion of the work the student had taken over?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the member tell the instructor that some of the submitted work was not theirs (not recognizing or not knowing the student had done it), which triggered the failure?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Does the group project include an individual component (e.g., an individual report or reflection) that is graded separately per student?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the student give their own assigned part of the project to another member to do, while the student did that member's part — leaving the student's own part done poorly or wrongly by someone else?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to prove or demonstrate their own contribution to the project, so they received no credit for their portion?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the group member(s) exclude the student from the final group submission or fail to include the student's name/contribution in what was handed in?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student's project graded individually (as if the student did it alone) rather than as a group, resulting in a failing grade?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student's grade on the project based on the group's teamwork/process (how well the group collaborated), and the student's taking over others' work made the group's collaboration appear poor?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student and the member both submit a version of the same section (overlapping work), producing a contradiction or duplicate in the final project that caused failure?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Would the group project have passed if the error in the student's portion had not been present?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Because the student did the member's work, that member effectively had no contribution, and the project was rejected for lacking a genuine contribution from every member?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the student taking over/taking on more than their share of the group project the actual reason for the failure (as opposed to an incidental detail)?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Is the \"group project\" a practical, hands-on exercise (e.g., a lab, simulation, or real-world task) rather than a written academic assignment?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the member whose work the student took over act intentionally (knowingly) in a way that led to the student's failure?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the member formally withdraw from or leave the group (or request to be removed from the group) after the student took over their work?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the member's intentional action result in the student's own contribution being removed, disqualified, or not counted for the project's grade?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the project subject to an oral defense/viva where each member had to explain their own portion to the instructor?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the member intentionally tell the instructor that the student was doing the whole project / taking over everyone's work?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the member intentionally withhold their contribution (refuse to do their part), even though the student had taken it over?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the member's intentional withholding of their contribution cause the group project to fail?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the member refuse to give permission/consent for their portion (which the student had done) to be included, so the submission was rejected?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student the person who submitted the project on the group's behalf (i.e., the designated submitter or group leader)?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the project submitted without the member's withheld portion — i.e., incomplete — and that incompleteness caused the project to fail?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the member knowingly tell the instructor that the portion attributed to them was not actually their own work (exposing that the student had written it)?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the member ultimately pass the course (or the project) while the student failed?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the member withhold their contribution out of resentment that the student had taken over their work (i.e., as a reaction to the student's takeover)?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Under the course's rules, when one member fails to do their part and another member covers it, is the covering member (the student) the one held responsible/penalized?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the member first withhold/refuse to do their part, and then the student took over that part to compensate?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the instructor reject/fail the project because a group member refused to participate (the member's non-participation itself being the problem), regardless of the student covering it?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the group project a mandatory gate — i.e., failing the project alone automatically fails the course regardless of other grades?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the member intend for the project—and thus the student—to fail (i.e., was the member's refusal aimed at causing failure)?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the project fail because the refusing member possessed a skill, resource, or access the student lacked, so the student's replacement of that portion was inadequate in quality?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is this a normal school or university academic course (the kind with classes, exams, and graded group projects)?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the project failed for a formal/procedural reason (e.g., eligibility, authorship declaration, or group-composition rules) rather than because of the quality of its academic content?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the instructor fail the project because it appeared to be essentially the work of one student (the student) rather than a genuine multi-person group effort?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "After initially refusing, did the member insist on including their own (poor or wrong) version of the portion, replacing the student's version and degrading the project's content?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the \"contribution\" the member withheld something other than written content — such as a required physical presence, a presentation role, or a signature?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the instructor notice and flag the portion attributed to the refusing member because it did not match that member's known ability or writing style (revealing the student had written it)?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did an automated plagiarism or AI-detection check flag the student's portion of the project, contributing to the failure?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student's own assigned section end up inadequately done because the student redirected effort to cover the refusing member's section, and that shortfall is what failed the project?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the project fail because the refusing member would not take part in submitting/co-signing the group's final project (e.g., refused to submit their part for combining or refused to endorse the submission)?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the member withhold information, data, or materials that the student needed to complete the student's own portion of the project?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the project fail because the assignment specified that each named member must personally author their own assigned part, and the refusing member's part was authored by someone else (the student) instead?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "When the instructor asked the members to confirm or vouch for their individual contributions, did the refusing member decline to confirm the portion attributed to them (intentionally), causing the project to be failed?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the refusing member, intentionally, take control of handing in the group project and submit it in a way that omitted or broke the student's contribution (i.e., sabotaged the submission itself)?",
+      "feedback": "no"
+    },
+    {
+      "type": "final",
+      "text": "A very capable student aced every test and exam, but the course required passing a group project as a mandatory gate: failing that project alone fails the course regardless of exam scores. In the group, one member refused from the start to do their assigned share. The student—trying to save the project and being capable—took over far more than their own share, covering the refusing member's portion. But the project had been designed so that each member genuinely contributes and cooperates; the refusing member's deliberate non-participation, combined with the improvised takeover, meant the project was not completed to the required standard as a real collaborative effort. The student's own portion also contained an unintentional error that further hurt the group's grade, though correcting that error alone would not have been enough to pass. Because the group project is the pass/fail gate, the failed project failed the course—despite the student's outstanding test and exam performance. The refusal was intentional on the member's part, but the student's failure was an unintended consequence of the student's well-meant over-contribution in a broken group.",
+      "feedback": "yes and no"
+    }
+  ],
+  "termination": "budget_exhausted",
+  "revealed_source_answer": "The course has a group project which contributes significantly towards the final grades. Unfortunately, everyone in the group except me is a free rider. Due to the huge workload, I completed the project poorly, received a poor grade and thus failed the course."
+}

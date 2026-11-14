@@ -1,0 +1,125 @@
+{
+  "TS013/answer_only": {
+    "recorded_games": 3,
+    "completed_games": 3,
+    "success_rate_completed": 0.0,
+    "counted_questions": {
+      "n": 3,
+      "mean": 100,
+      "population_variance": 0,
+      "sample_variance": 0
+    },
+    "final_partial_score": {
+      "n": 3,
+      "mean": 0.5666666666666667,
+      "population_variance": 0.017222222222222222,
+      "sample_variance": 0.025833333333333333
+    },
+    "elapsed_seconds": {
+      "n": 3,
+      "mean": 1156.6265555000184,
+      "population_variance": 71276.05930368991,
+      "sample_variance": 106914.08895553487
+    },
+    "solver_attempts": {
+      "n": 3,
+      "mean": 101.66666666666667,
+      "population_variance": 5.555555555555555,
+      "sample_variance": 8.333333333333334
+    },
+    "solver_input_tokens": {
+      "n": 0,
+      "mean": null,
+      "population_variance": null,
+      "sample_variance": null
+    },
+    "solver_output_tokens": {
+      "n": 0,
+      "mean": null,
+      "population_variance": null,
+      "sample_variance": null
+    }
+  },
+  "TS013/direct": {
+    "recorded_games": 3,
+    "completed_games": 3,
+    "success_rate_completed": 0.0,
+    "counted_questions": {
+      "n": 3,
+      "mean": 100,
+      "population_variance": 0,
+      "sample_variance": 0
+    },
+    "final_partial_score": {
+      "n": 3,
+      "mean": 0.6666666666666667,
+      "population_variance": 0.02388888888888889,
+      "sample_variance": 0.035833333333333335
+    },
+    "elapsed_seconds": {
+      "n": 3,
+      "mean": 1004.1242787779871,
+      "population_variance": 105618.53892874614,
+      "sample_variance": 158427.80839311922
+    },
+    "solver_attempts": {
+      "n": 3,
+      "mean": 100.33333333333333,
+      "population_variance": 0.2222222222222222,
+      "sample_variance": 0.3333333333333333
+    },
+    "solver_input_tokens": {
+      "n": 0,
+      "mean": null,
+      "population_variance": null,
+      "sample_variance": null
+    },
+    "solver_output_tokens": {
+      "n": 0,
+      "mean": null,
+      "population_variance": null,
+      "sample_variance": null
+    }
+  },
+  "TS013/session": {
+    "recorded_games": 3,
+    "completed_games": 3,
+    "success_rate_completed": 0.0,
+    "counted_questions": {
+      "n": 3,
+      "mean": 100,
+      "population_variance": 0,
+      "sample_variance": 0
+    },
+    "final_partial_score": {
+      "n": 3,
+      "mean": 0.3,
+      "population_variance": 0.05166666666666667,
+      "sample_variance": 0.07750000000000001
+    },
+    "elapsed_seconds": {
+      "n": 3,
+      "mean": 1238.449566778009,
+      "population_variance": 90473.35714172696,
+      "sample_variance": 135710.03571259044
+    },
+    "solver_attempts": {
+      "n": 3,
+      "mean": 100.66666666666667,
+      "population_variance": 0.2222222222222222,
+      "sample_variance": 0.3333333333333333
+    },
+    "solver_input_tokens": {
+      "n": 0,
+      "mean": null,
+      "population_variance": null,
+      "sample_variance": null
+    },
+    "solver_output_tokens": {
+      "n": 0,
+      "mean": null,
+      "population_variance": null,
+      "sample_variance": null
+    }
+  }
+}

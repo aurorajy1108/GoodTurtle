@@ -1,0 +1,266 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 99,
+  "final_attempts": 1,
+  "rejected_finals": 1,
+  "counted_questions": 100,
+  "submissions": 100,
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.8,
+  "best_partial_score": 0.8,
+  "latest_final": "The apparent crisis was a deliberate wordplay: the “courses” that vanished were not university classes but the food courses of a formal hall dinner (“high table dinner”), and “choosing courses before the deadline” alluded to selecting dishes for the meal.\n\nOn that evening the student attended the high table dinner and personally did a physical, ordinary-seeming action involving the food or drink being consumed at the table. That action was enough of a breach of the dinner’s expected etiquette that the serving staff responded by clearing the courses away. As a result, the dishes that were meant for the student never reached them, so all of “their courses” were gone within that single evening.\n\nThe explicit “no” answers rule out the ordinary academic explanations (system removal, other students taking places, missed deadline, account access, device damage) as well as the more specific meal explanations that were tested — being finished eating, leaving the seat, a formal tradition, cutlery signals, toasts, passing drinks, serving others, choking or spilling. What remains established is that the student was a diner at a high table dinner, consumed food or drink there, took a physical action they thought was harmless, and that action led the staff to clear the courses, leaving the student with none.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 1,
+        "evidence": "“courses” that vanished were not university classes but the food courses of a formal hall dinner (“high table dinner”)",
+        "reason": "Clearly identifies the wordplay: courses are meal courses at a formal high-table dinner, not academic classes."
+      },
+      {
+        "id": "C2",
+        "credit": 1,
+        "evidence": "“choosing courses before the deadline” alluded to selecting dishes for the meal.",
+        "reason": "The deadline is correctly tied to selecting meal dishes, satisfying the meal-course-preference requirement."
+      },
+      {
+        "id": "C3",
+        "credit": 0,
+        "evidence": "the serving staff responded by clearing the courses away ... the dishes that were meant for the student never reached them",
+        "reason": "The causal mechanism is wrong or missing: it does not say the waiter cleared uneaten leftovers at the student’s request, and it affirmatively claims the dishes never reached the student, contradicting the served-and-tasted leftovers narrative."
+      }
+    ],
+    "material_contradiction": true,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "The submission covers the meal-course wordplay and the deadline for meal preferences, but it omits/contradicts that the student attended on time, disliked the food, left uneaten portions, and asked the waiter to clear leftovers when serving each next course. It instead claims the dishes never reached the student.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "covered",
+        "evidence": "“courses” that vanished were not university classes but the food courses of a formal hall dinner (“high table dinner”)"
+      },
+      {
+        "id": "C2.F1",
+        "status": "covered",
+        "evidence": "“choosing courses before the deadline” alluded to selecting dishes for the meal."
+      },
+      {
+        "id": "C3.F1",
+        "status": "contradicted",
+        "evidence": "the serving staff responded by clearing the courses away ... the dishes that were meant for the student never reached them"
+      }
+    ],
+    "requirement_coverage": [
+      {
+        "id": "R1",
+        "status": "covered",
+        "evidence": "“courses” that vanished were not university classes but the food courses of a formal hall dinner (“high table dinner”)"
+      },
+      {
+        "id": "R2",
+        "status": "covered",
+        "evidence": "“choosing courses before the deadline” alluded to selecting dishes for the meal."
+      },
+      {
+        "id": "R3",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "R4",
+        "status": "contradicted",
+        "evidence": "the dishes that were meant for the student never reached them"
+      }
+    ],
+    "contradictions": [
+      {
+        "quote": "the dishes that were meant for the student never reached them",
+        "reference": "Dishes are served as individual portions. The narrator tastes each dish before asking for the disliked leftovers to be removed.",
+        "checkpoint_ids": [
+          "C3"
+        ]
+      }
+    ],
+    "partial_score": 0.8,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v2",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 667.60791875,
+  "usage": {
+    "grader": {
+      "http_attempts": 1,
+      "successful_responses": 1,
+      "seconds": 69.65306808400783,
+      "provider_reported_usage": {
+        "prompt_tokens": 4592,
+        "completion_tokens": 5675,
+        "total_tokens": 10267,
+        "prompt_cache_hit_tokens": 3072,
+        "prompt_cache_miss_tokens": 1520
+      }
+    },
+    "host": {
+      "http_attempts": 99,
+      "successful_responses": 99,
+      "seconds": 468.2692209928937,
+      "provider_reported_usage": {
+        "prompt_tokens": 1467137,
+        "completion_tokens": 24494,
+        "total_tokens": 1491631,
+        "prompt_cache_hit_tokens": 1440768,
+        "prompt_cache_miss_tokens": 26369
+      }
+    },
+    "player": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 128.18136388179846,
+      "provider_reported_usage": {
+        "prompt_tokens": 722917,
+        "completion_tokens": 3466,
+        "total_tokens": 726383,
+        "prompt_cache_hit_tokens": 702720,
+        "prompt_cache_miss_tokens": 20197
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "total": {
+      "calls": 200,
+      "unknown_cost_calls": 200,
+      "known_estimated_cost_usd": 0.0,
+      "estimated_cost_usd": null,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 2194646,
+        "cached_input_tokens": 2146560,
+        "cache_write_tokens": 0,
+        "output_tokens": 33635,
+        "reasoning_tokens": 29227,
+        "total_tokens": 2228281
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 100,
+        "total_tokens": 0
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 1,
+        "unknown_cost_calls": 1,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 4592,
+          "cached_input_tokens": 3072,
+          "cache_write_tokens": 0,
+          "output_tokens": 5675,
+          "reasoning_tokens": 4942,
+          "total_tokens": 10267
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 99,
+        "unknown_cost_calls": 99,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1467137,
+          "cached_input_tokens": 1440768,
+          "cache_write_tokens": 0,
+          "output_tokens": 24494,
+          "reasoning_tokens": 24285,
+          "total_tokens": 1491631
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 100,
+        "unknown_cost_calls": 100,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 722917,
+          "cached_input_tokens": 702720,
+          "cache_write_tokens": 0,
+          "output_tokens": 3466,
+          "reasoning_tokens": 0,
+          "total_tokens": 726383
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 100,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "11c62ea3-e862-474d-8e03-b6f62fed7f2a",
+      "446f0fd5-9878-4bc0-8299-3e9818fb2bca",
+      "acb59e47-6a6c-4fb0-ad8f-cea31776c00f"
+    ],
+    "logical_input_chars": 2131211,
+    "delta_input_chars": 118930,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+    "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "8d764e3a9887e0ffdadd859f4c77a91d0e9758c38a33fdd3f0329d5cc4c0857b",
+    "controller_sha256": "630feb6c08d2f9530d4a9567f983cdcbbb29581b6c019d188c435642556c78db",
+    "player_format_policy_sha256": "c552ce859dcef92e38da240bbd2fe22b0922328c4746f8da9ae8245c2e88d0cc",
+    "host_context_sha256": "3d82c64058a3f725abd9c438d32198022a2238d46dbbf45792bf84d0865c8f0f",
+    "host_binding_version": "host-v11-set1-causal-20261110"
+  }
+}

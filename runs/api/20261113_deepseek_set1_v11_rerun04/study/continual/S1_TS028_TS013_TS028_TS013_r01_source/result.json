@@ -1,0 +1,253 @@
+{
+  "status": "completed",
+  "stop_reason": "solved",
+  "simulation": false,
+  "success": true,
+  "host_questions": 89,
+  "final_attempts": 11,
+  "rejected_finals": 10,
+  "counted_questions": 99,
+  "submissions": 100,
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 1.0,
+  "best_partial_score": 1.0,
+  "latest_final": "The person started on an upper floor of a building whose parking garage was underneath it, and his car was parked on a lower garage level about 30 meters below him. The “30 meters away” was the straight-line vertical drop between his floor and the car, not a walking distance. He was at the elevator and boarded it without any counted steps; the elevator rode down to the garage level and covered nearly all of the 30-meter separation. When he exited into the garage, the car was nearby on that same level, so he took only five steps from the elevator to the car and got in. The elevator—not walking—did the traveling implied by the 30-meter figure, leaving just five steps.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 1,
+        "evidence": "The “30 meters away” was the straight-line vertical drop between his floor and the car, not a walking distance.",
+        "reason": "Clearly states the 30 meters is primarily vertical distance and not walking distance."
+      },
+      {
+        "id": "C2",
+        "credit": 1,
+        "evidence": "The person started on an upper floor of a building whose parking garage was underneath it ... the elevator rode down to the garage level",
+        "reason": "Identifies an elevator from a high floor to a garage underneath the building, which faithfully paraphrases an underground parking garage."
+      },
+      {
+        "id": "C3",
+        "credit": 1,
+        "evidence": "When he exited into the garage, the car was nearby on that same level, so he took only five steps from the elevator to the car and got in.",
+        "reason": "Clearly indicates the car is immediately accessible from the elevator and only five steps were needed."
+      }
+    ],
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "covered",
+        "evidence": "The “30 meters away” was the straight-line vertical drop between his floor and the car, not a walking distance."
+      },
+      {
+        "id": "C2.F1",
+        "status": "covered",
+        "evidence": "The person started on an upper floor of a building whose parking garage was underneath it ... the elevator rode down to the garage level"
+      },
+      {
+        "id": "C3.F1",
+        "status": "covered",
+        "evidence": "When he exited into the garage, the car was nearby on that same level, so he took only five steps from the elevator to the car and got in."
+      }
+    ],
+    "requirement_coverage": [
+      {
+        "id": "R1",
+        "status": "covered",
+        "evidence": "The person started on an upper floor of a building ... The “30 meters away” was the straight-line vertical drop between his floor and the car, not a walking distance."
+      },
+      {
+        "id": "R2",
+        "status": "covered",
+        "evidence": "building whose parking garage was underneath it ... the elevator rode down to the garage level"
+      },
+      {
+        "id": "R3",
+        "status": "covered",
+        "evidence": "When he exited into the garage, the car was nearby on that same level, so he took only five steps from the elevator to the car and got in."
+      }
+    ],
+    "contradictions": [],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": true,
+    "completion_note": "Complete reference narrative reconstructed: vertical distance is emphasized, the elevator carries him from a high floor to an underground-style garage underneath the building, and the car is only a few steps from the elevator exit.",
+    "partial_score": 1.0,
+    "complete": true,
+    "label": "yes",
+    "grading_protocol": "coverage-v2",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 7115.2689193749975,
+  "usage": {
+    "grader": {
+      "http_attempts": 11,
+      "successful_responses": 11,
+      "seconds": 420.06506603895104,
+      "provider_reported_usage": {
+        "prompt_tokens": 89384,
+        "completion_tokens": 37109,
+        "total_tokens": 126493,
+        "prompt_cache_hit_tokens": 78080,
+        "prompt_cache_miss_tokens": 11304
+      }
+    },
+    "host": {
+      "http_attempts": 111,
+      "successful_responses": 103,
+      "seconds": 1263.8222404562111,
+      "provider_reported_usage": {
+        "prompt_tokens": 1301328,
+        "completion_tokens": 84827,
+        "total_tokens": 1386155,
+        "prompt_cache_hit_tokens": 1275904,
+        "prompt_cache_miss_tokens": 25424
+      }
+    },
+    "player": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 122.92628637215239,
+      "provider_reported_usage": {
+        "prompt_tokens": 851716,
+        "completion_tokens": 4401,
+        "total_tokens": 856117,
+        "prompt_cache_hit_tokens": 830720,
+        "prompt_cache_miss_tokens": 20996
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "total": {
+      "calls": 222,
+      "unknown_cost_calls": 222,
+      "known_estimated_cost_usd": 0.0,
+      "estimated_cost_usd": null,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 2242428,
+        "cached_input_tokens": 2184704,
+        "cache_write_tokens": 0,
+        "output_tokens": 126337,
+        "reasoning_tokens": 114101,
+        "total_tokens": 2368765
+      },
+      "missing_token_calls": {
+        "input_tokens": 8,
+        "cached_input_tokens": 8,
+        "cache_write_tokens": 0,
+        "output_tokens": 8,
+        "reasoning_tokens": 108,
+        "total_tokens": 8
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 11,
+        "unknown_cost_calls": 11,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 89384,
+          "cached_input_tokens": 78080,
+          "cache_write_tokens": 0,
+          "output_tokens": 37109,
+          "reasoning_tokens": 29458,
+          "total_tokens": 126493
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 111,
+        "unknown_cost_calls": 111,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1301328,
+          "cached_input_tokens": 1275904,
+          "cache_write_tokens": 0,
+          "output_tokens": 84827,
+          "reasoning_tokens": 84643,
+          "total_tokens": 1386155
+        },
+        "missing_token_calls": {
+          "input_tokens": 8,
+          "cached_input_tokens": 8,
+          "cache_write_tokens": 0,
+          "output_tokens": 8,
+          "reasoning_tokens": 8,
+          "total_tokens": 8
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 100,
+        "unknown_cost_calls": 100,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 851716,
+          "cached_input_tokens": 830720,
+          "cache_write_tokens": 0,
+          "output_tokens": 4401,
+          "reasoning_tokens": 0,
+          "total_tokens": 856117
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 100,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "031ad937-1e89-4dc5-9a08-853022c99cd8",
+      "3eadc5bb-a23c-4520-98e6-09818b9c2a70",
+      "ad94d89e-c61c-4276-be57-625d31154365"
+    ],
+    "logical_input_chars": 2585449,
+    "delta_input_chars": 145255,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "30cf65018ae290c9e7e0f0fad12082e953571ed7f48c01497dbdb182c2a47b2a",
+    "grading_sha256": "4022d38efc0762eabfc2b4ab4b7d9556c03006d851c7a112e02b0c56af6a9ad2",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "8d764e3a9887e0ffdadd859f4c77a91d0e9758c38a33fdd3f0329d5cc4c0857b",
+    "controller_sha256": "630feb6c08d2f9530d4a9567f983cdcbbb29581b6c019d188c435642556c78db",
+    "player_format_policy_sha256": "c552ce859dcef92e38da240bbd2fe22b0922328c4746f8da9ae8245c2e88d0cc",
+    "host_context_sha256": "775b5299856722c72e13f0020dbf0d54da64d8296f1477dd82c13a7435ccc7a9",
+    "host_binding_version": "host-v5.1-20261023"
+  }
+}
