@@ -1,0 +1,6 @@
+# Preserve transcript whitespace and original CSV line endings.
+*.csv whitespace=-trailing-space,cr-at-eol
+trajectory.md whitespace=-trailing-space
+trajectory.html whitespace=-trailing-space
+shared_dialogue.html whitespace=-trailing-space
+self_review.html whitespace=-trailing-space

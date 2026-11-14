@@ -1,0 +1,108 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "01b014b5f9aef09819cdd533e797febfa2816e696c70a1e59de98e25f446e5af",
+    "trajectory.jsonl": "0e4cf5237f8b7015b91f3c6fd6b03e9ec1223b69e1dff920f240e138a79ad03d",
+    "trajectory.md": "29b5a331c229d943313a32ee73382d8bb94eaad76e108d4ab187818998ec6571",
+    "trajectory.html": "dd3332dcb480b599e38d3814ec2022d98114b3525d57e3125b80401238f99ad6",
+    "config.json": "4307cf3c715247acc8faf9d322125607962ba66e56d5980b57d841ccb930bc1e",
+    "prompts.json": "fd0f3ea13c946e62222d317314549bea070bde6feb4c96d4bb9d525f03568bd4",
+    "puzzle_private.json": "6f9ca533f4259686032b2fcc5ced776bcfe1481dc79985c21d45f1400be08d8b",
+    "host_context.json": "5a9950c0f880eb2b3e29fe91d532a8cd18294ac44492e73caaa6aa2e55f64277",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "0a3fdde5e02a39bbfd5dea2afbce6b9ce2479134e71d8df316bc7b00195cca23",
+    "cost_summary.json": "ac60169436c3be3cbe0c3a45d551e7f84dde340d610731b06edae38487d5e070",
+    "token_costs.csv": "a5e26e9ebb2e73528df0ce9289e771ebecce3b05a8bc9ae98444346f62a70c3d",
+    "human_review.csv": "a56f26df53bf57c6984b14e9eb2726d9dd59fcfa9be5585456077ee2a8b85219",
+    "review_template.csv": "a56f26df53bf57c6984b14e9eb2726d9dd59fcfa9be5585456077ee2a8b85219",
+    "transfer_metadata.json": "197fa16c1bc1d19de502c928abf857ea550ab1640d150b0ff969f11fb3ff0f3f",
+    "player_continuation.json": "d94ca3c0a2648bf2e8f62e484ed330cc51e98128b9e07cc2c8cecfdeb739ee83"
+  },
+  "api_audit": {
+    "source_raw_sha256": "4e3b55569b42d689f1250a446119d7b7b27a9be8ff19c24073def7b74c3fe444",
+    "source_raw_bytes": 17733163,
+    "published_sha256": "5811d820e6f3da7bab9fccdc4e0a8ded4c425f8108b02fc29dc14df9c5260542",
+    "attempts": 200
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261112_set1_fixed_prefix_r1r4_v2_supervised_v2/continuations/cl-set1-fixed-prefix-r1r4/attempt_01/continual/S1_TS014_TS013_TS014_TS013_r03_session",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "01b014b5f9aef09819cdd533e797febfa2816e696c70a1e59de98e25f446e5af",
+      "signature": "80676eb7c5d75ec4043149fc4e27ede87776d6cb326d3f13e234ac37a5bdfa96",
+      "event_count": 607,
+      "trajectory_sha256": "0e4cf5237f8b7015b91f3c6fd6b03e9ec1223b69e1dff920f240e138a79ad03d",
+      "first_submission": "2026-11-12T10:39:55.794675+00:00",
+      "first_text": "Did the student lose their course selections because their account was hacked or accessed by someone else?",
+      "archive_scope": "observed_history"
+    },
+    {
+      "source": "runs/api/20261112_set1_fixed_prefix_r1r4_v2_supervised_v3/continuations/cl-set1-fixed-prefix-r1r4/attempt_01/continual/S1_TS014_TS013_TS014_TS013_r03_session",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "01b014b5f9aef09819cdd533e797febfa2816e696c70a1e59de98e25f446e5af",
+      "signature": "80676eb7c5d75ec4043149fc4e27ede87776d6cb326d3f13e234ac37a5bdfa96",
+      "event_count": 607,
+      "trajectory_sha256": "0e4cf5237f8b7015b91f3c6fd6b03e9ec1223b69e1dff920f240e138a79ad03d",
+      "first_submission": "2026-11-12T10:39:55.794675+00:00",
+      "first_text": "Did the student lose their course selections because their account was hacked or accessed by someone else?",
+      "archive_scope": "observed_history"
+    },
+    {
+      "source": "runs/api/20261112_set1_fixed_prefix_r1r4_v2_supervised_v4/continuations/cl-set1-fixed-prefix-r1r4/attempt_01/continual/S1_TS014_TS013_TS014_TS013_r03_session",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "01b014b5f9aef09819cdd533e797febfa2816e696c70a1e59de98e25f446e5af",
+      "signature": "80676eb7c5d75ec4043149fc4e27ede87776d6cb326d3f13e234ac37a5bdfa96",
+      "event_count": 607,
+      "trajectory_sha256": "0e4cf5237f8b7015b91f3c6fd6b03e9ec1223b69e1dff920f240e138a79ad03d",
+      "first_submission": "2026-11-12T10:39:55.794675+00:00",
+      "first_text": "Did the student lose their course selections because their account was hacked or accessed by someone else?",
+      "archive_scope": "observed_history"
+    },
+    {
+      "source": "runs/api/20261112_set1_fixed_prefix_r1r4_v2_supervised_v4/continuations/cl-set1-fixed-prefix-r1r4/attempt_02/continual/S1_TS014_TS013_TS014_TS013_r03_session",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "01b014b5f9aef09819cdd533e797febfa2816e696c70a1e59de98e25f446e5af",
+      "signature": "80676eb7c5d75ec4043149fc4e27ede87776d6cb326d3f13e234ac37a5bdfa96",
+      "event_count": 607,
+      "trajectory_sha256": "0e4cf5237f8b7015b91f3c6fd6b03e9ec1223b69e1dff920f240e138a79ad03d",
+      "first_submission": "2026-11-12T10:39:55.794675+00:00",
+      "first_text": "Did the student lose their course selections because their account was hacked or accessed by someone else?",
+      "archive_scope": "observed_history"
+    },
+    {
+      "source": "runs/api/20261112_set1_fixed_prefix_r1r4_v2_supervised_v5/continuations/cl-set1-fixed-prefix-r1r4/attempt_01/continual/S1_TS014_TS013_TS014_TS013_r03_session",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "01b014b5f9aef09819cdd533e797febfa2816e696c70a1e59de98e25f446e5af",
+      "signature": "80676eb7c5d75ec4043149fc4e27ede87776d6cb326d3f13e234ac37a5bdfa96",
+      "event_count": 607,
+      "trajectory_sha256": "0e4cf5237f8b7015b91f3c6fd6b03e9ec1223b69e1dff920f240e138a79ad03d",
+      "first_submission": "2026-11-12T10:39:55.794675+00:00",
+      "first_text": "Did the student lose their course selections because their account was hacked or accessed by someone else?",
+      "archive_scope": "observed_history"
+    },
+    {
+      "source": "runs/api/20261112_set1_fixed_prefix_r1r4_v2_supervised_v5/continuations/cl-set1-fixed-prefix-r1r4/attempt_02/continual/S1_TS014_TS013_TS014_TS013_r03_session",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "01b014b5f9aef09819cdd533e797febfa2816e696c70a1e59de98e25f446e5af",
+      "signature": "80676eb7c5d75ec4043149fc4e27ede87776d6cb326d3f13e234ac37a5bdfa96",
+      "event_count": 607,
+      "trajectory_sha256": "0e4cf5237f8b7015b91f3c6fd6b03e9ec1223b69e1dff920f240e138a79ad03d",
+      "first_submission": "2026-11-12T10:39:55.794675+00:00",
+      "first_text": "Did the student lose their course selections because their account was hacked or accessed by someone else?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

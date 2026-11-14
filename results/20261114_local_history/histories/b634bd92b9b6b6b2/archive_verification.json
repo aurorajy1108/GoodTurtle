@@ -1,0 +1,61 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "4f5f2fd5d6d48df1b53f52102b047ce604f795f19edb7f64f8f03e59ff4f70af",
+    "trajectory.jsonl": "dbbd66260570c5af49da1ed136d49faa7688d6b41c8d47d4bf5daf094048fe8c",
+    "trajectory.md": "c54a36808540cc1825a543a800dab5f1afecc8a807c6f45666dfa7bbf6baa617",
+    "trajectory.html": "1a8af4abe8b1d998809c254ad649a6c1027d9f6c01c66f57d5c6dabb01e0f98d",
+    "config.json": "4307cf3c715247acc8faf9d322125607962ba66e56d5980b57d841ccb930bc1e",
+    "prompts.json": "2293fcad2d75c545b454f5ac0b351c8f0d0b635d59ed01a87e246365943d699f",
+    "puzzle_private.json": "c01a39bd4b8af6fb50d2f9bed46102d70dfc3b607728363b47501821cf04f406",
+    "host_context.json": "a9be0c92867631e3a6030e94c7bb2add9c4a322a04ac7697c64dccc9deef3db1",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "0a3fdde5e02a39bbfd5dea2afbce6b9ce2479134e71d8df316bc7b00195cca23",
+    "cost_summary.json": "9d5d4d57c7e4a84a2631d5be4df3c76b1563c09d375360590133b1ff48b1ccb5",
+    "token_costs.csv": "d173598e9cfee18282c8c124cf8f52d83d2be61deb9929c6daed5ad16af3795f",
+    "human_review.csv": "dcb1a55d5d4e15d7af6a9737ef2e43a4ec10b4b24d73f98361915b49e752daec",
+    "review_template.csv": "dcb1a55d5d4e15d7af6a9737ef2e43a4ec10b4b24d73f98361915b49e752daec",
+    "shared_dialogue.jsonl": "889431dbe3b8a6007c2c2c4aed69c442d3e33a626c063446f462c9674c54fbd3",
+    "shared_dialogue.html": "1c1f70df47d9c3a09fc1f77d5077eab801988fd2df3b4b1860e2ed11fd858950",
+    "dialogue_metrics.json": "023e32039e5a816c3834cb3f16bdd5221aa4aedf7b7eaf45b10b71c66f53fb4d",
+    "dialogue_policy.json": "bef6bb0e727602dd5a00821ae0a6847992bf1eab6d8a3c8fe0681779e9753c5d",
+    "collaboration.jsonl": "114ba3b5f592fc4625e977651c94b7631eac3be98b6c7d5e32592c139edcb67e",
+    "self_review.html": "42d76ed501048b31631a6e74c2042aa687c670eb8d4a8cfea1d70e6951b6585a",
+    "solver_compute.json": "bb42ee32cd85524d1c85e47b91cf76f5471879ce4196cd733d29d879e4820ae2"
+  },
+  "api_audit": {
+    "source_raw_sha256": "96244de67025bfbf2ed800283f6c217db63af828d77cc19e366fae8a937c1f8a",
+    "source_raw_bytes": 205719,
+    "published_sha256": "4922bf9245b9512db87341b79c93e718cde978429d3fd652b5f60c8caf0f036f",
+    "attempts": 12
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261113_ts038_compute_matched_2x2_r1r4/TS038_r04_mas_review",
+      "status_as_recorded": "error",
+      "simulation": false,
+      "submissions": 3,
+      "result_sha256": "4f5f2fd5d6d48df1b53f52102b047ce604f795f19edb7f64f8f03e59ff4f70af",
+      "signature": "b634bd92b9b6b6b2296f253d96a943449dc183eb74b2f05aae1c8dbe0c0f1634",
+      "event_count": 40,
+      "trajectory_sha256": "dbbd66260570c5af49da1ed136d49faa7688d6b41c8d47d4bf5daf094048fe8c",
+      "first_submission": "2026-11-13T05:25:48.348394+00:00",
+      "first_text": "Are the seven repetitions spoken by seven distinct people (or entities), rather than one person repeating the phrase?",
+      "archive_scope": "observed_history"
+    },
+    {
+      "source": "runs/api/20261113_ts038_compute_matched_2x2_r1r4_v2_partial/TS038_r04_mas_review",
+      "status_as_recorded": "error",
+      "simulation": false,
+      "submissions": 3,
+      "result_sha256": "4f5f2fd5d6d48df1b53f52102b047ce604f795f19edb7f64f8f03e59ff4f70af",
+      "signature": "b634bd92b9b6b6b2296f253d96a943449dc183eb74b2f05aae1c8dbe0c0f1634",
+      "event_count": 40,
+      "trajectory_sha256": "dbbd66260570c5af49da1ed136d49faa7688d6b41c8d47d4bf5daf094048fe8c",
+      "first_submission": "2026-11-13T05:25:48.348394+00:00",
+      "first_text": "Are the seven repetitions spoken by seven distinct people (or entities), rather than one person repeating the phrase?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

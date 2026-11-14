@@ -1,0 +1,87 @@
+{
+  "status": "interrupted",
+  "stop_reason": "user_interrupt",
+  "simulation": false,
+  "success": null,
+  "host_questions": 14,
+  "final_attempts": 1,
+  "rejected_finals": 1,
+  "counted_questions": 15,
+  "submissions": 15,
+  "pending_feedback": 0,
+  "forced_final": false,
+  "final_partial_score": 0.35,
+  "best_partial_score": 0.35,
+  "latest_final": "I was frying food in oil in the pantry off the hall. The frying released airborne grease particles, which reached a nearby smoke detector and triggered the fire alarm. There was no fire; the alarm was set off by the cooking aerosol.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0.5,
+        "evidence": "“frying food in oil... released airborne grease particles” and “There was no fire”",
+        "reason": "Identifies cooking fumes and distinguishes them from a fire, but does not establish that the cooking was at high temperature or that the food was not burned."
+      },
+      {
+        "id": "C2",
+        "credit": 0,
+        "evidence": "No mention of the exhaust fan.",
+        "reason": "Does not state that the exhaust fan was left off."
+      },
+      {
+        "id": "C3",
+        "credit": 0.5,
+        "evidence": "“grease particles... reached a nearby smoke detector and triggered the fire alarm”",
+        "reason": "Identifies the detector and causal link, but omits that it was sensitive."
+      }
+    ],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "The explanation omits the high-temperature cooking/no-burn detail, the exhaust fan being off, and the detector’s sensitivity.",
+    "partial_score": 0.35,
+    "complete": false,
+    "label": "yes and no"
+  },
+  "elapsed_seconds": 263.6106683330145,
+  "usage": {
+    "grader": {
+      "http_attempts": 1,
+      "successful_responses": 1,
+      "seconds": 7.1528010840993375,
+      "provider_reported_usage": {
+        "input_tokens": 3698,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 219,
+        "reasoning_output_tokens": 0
+      }
+    },
+    "host": {
+      "http_attempts": 14,
+      "successful_responses": 14,
+      "seconds": 111.87368970690295,
+      "provider_reported_usage": {
+        "input_tokens": 50073,
+        "cached_input_tokens": 13824,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1308,
+        "reasoning_output_tokens": 1067
+      }
+    },
+    "player": {
+      "http_attempts": 15,
+      "successful_responses": 15,
+      "seconds": 137.82268533320166,
+      "provider_reported_usage": {
+        "input_tokens": 34325,
+        "cached_input_tokens": 3328,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3135,
+        "reasoning_output_tokens": 2565
+      }
+    }
+  },
+  "error": null,
+  "human_review_status": "pending"
+}

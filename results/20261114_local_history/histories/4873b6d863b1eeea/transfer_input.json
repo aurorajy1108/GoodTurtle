@@ -1,0 +1,507 @@
+{
+  "opening": "A lost girl found an empty house. She was exhausted but couldn't fall asleep.\nThe next morning, having finally fallen asleep from exhaustion, she woke up, noticed something strange, and fled the house in terror.",
+  "history": [
+    {
+      "type": "question",
+      "text": "Was something inside the house the reason she initially couldn't fall asleep?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the thing inside the house that kept her awake a person?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the thing that kept her awake an animal?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the thing that kept her awake a sound coming from inside the house?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the thing inside the house that kept her awake an inanimate object?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the inanimate object a mirror?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object that kept her awake a clock?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object that kept her awake a source of light?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object that kept her awake a doll?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object that kept her awake a human-shaped figure, such as a statue or mannequin?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object frightening to her because it looked like something dangerous?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object something she could use, rather than merely observe?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the object a weapon?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object furniture or part of the house’s furnishings?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object a communication device, such as a telephone or radio?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did she interact with or use the object during the night?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object something that could provide her with food or water?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object a bed or bedding?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object a map or other document?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the object's presence make her suspect that someone else had been in the house recently?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object an appliance or machine?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object a vehicle or a means of transportation?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object a tool?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object a musical instrument?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the object keep her awake by producing a smell?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object something she could use to find her way or escape the house?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the object a key?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object a door?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object a compass?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object a window?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was there something unusual about what she could see through the window at night?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the view through the window show something that made her realize the house was in a dangerous or impossible location?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the window look out onto another interior space rather than outdoors?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the unusual view through the window at night involve something in the sky, such as the moon or stars?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the unusual view through the window caused by something physically present outside the house?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the unusual thing outside the window an animal?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the unusual thing outside the window a person?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the person outside the window looking directly at her?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the person outside the window a threat to the girl?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Was the person outside the window physically present there in the morning as well?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the person she saw outside the window a ghost or other supernatural apparition?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the person outside the window alive?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the person outside the window someone the girl knew?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the person outside the window the owner or a resident of the house?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the person outside intend to harm the girl?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the person outside looking at her from inside another building?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the person outside trying to get into the house?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the person outside the window visible only because of a reflection in the glass?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the person outside the window at ground level?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the person outside the window in or on a moving vehicle?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the person outside the window in danger or in need of help?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the strange thing she noticed after waking the same person she had seen outside the window during the night?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the strange thing she noticed after waking inside the house?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the strange thing she noticed inside the house after waking a person?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the strange thing she noticed inside the house after waking an inanimate object?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the strange inanimate object she noticed inside the house after waking something that had not been there before she fell asleep?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the strange object she noticed after waking a picture or photograph?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did she notice the strange object only because it became visible in daylight?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the object she noticed after waking have a connection to the person she had seen outside the window during the night?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the object she noticed after waking something that belonged to the person she had seen outside the window?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the object she noticed after waking evidence that the person outside the window had been inside the house?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object she noticed after waking a piece of clothing?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the inanimate object she noticed after waking a trace or mark left by the person outside, such as a footprint or handprint?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the strange object she noticed after waking a body part?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object she noticed after waking a shadow cast by the person she had seen outside the window?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object she noticed after waking a device that could capture or display an image of the person she had seen outside?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the strange object she noticed after waking a coffin or a casket?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object she noticed after waking a physical representation of the person she had seen outside the window, such as a statue or model?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object she noticed after waking something that showed or indicated where the person outside the window was?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object she noticed after waking part of the window or its surroundings?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the strange object part of the window glass itself?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object she noticed after waking a window covering, such as curtains, blinds, or shutters?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the strange object she noticed after waking a window latch or lock?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object she noticed after waking the window frame?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the strange object she noticed after waking a windowsill?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the strange object she noticed after waking outside the house, near the window?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the strange object she noticed after waking a window sill ornament or decoration?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object she noticed after waking a security feature of the window, such as bars or a screen?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object she noticed after waking a curtain rod or other hardware used to hang window coverings?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object she noticed after waking attached to the wall beside the window?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the strange object above the window?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the strange object she noticed after waking a hole or opening in the wall near the window?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object she noticed after waking a part of the window’s mechanism for opening or closing it?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object she noticed after waking a fixture or feature of the house immediately around the window, rather than a separate item?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object she noticed after waking a piece of furniture?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object she noticed after waking a sign or marker associated with the window?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object she noticed after waking something that could be seen from the window?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object she noticed after waking a structural part of the house, rather than a movable item?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the strange structural object she noticed after waking a staircase or ladder?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the structural object she noticed after waking a wall?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the strange structural object she noticed after waking the roof?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the strange structural object she noticed after waking the ceiling?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the structural object she noticed after waking a door or doorway?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the object she noticed after waking a structural feature of the house other than the window itself?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the structural feature she noticed after waking the floor?.",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the strange thing she noticed after waking the window itself?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the window broken?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the window appear different after she woke than it had during the night?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the window become opaque or otherwise stop being transparent after she woke?",
+      "feedback": "no"
+    },
+    {
+      "type": "final",
+      "text": "The girl was in a house with a window that looked out onto a living person who was watching her. Seeing that person made her afraid to sleep, though the watcher was not necessarily an actual threat. Once exhaustion overcame her, she fell asleep. In the morning, she realized the window itself had changed from how it looked at night: it was no longer transparent. The watcher was gone, and the change in the window was connected to that person, but the clues do not establish the exact mechanism. Frightened by what she saw, she fled.",
+      "feedback": "yes and no"
+    }
+  ],
+  "termination": "budget_exhausted",
+  "revealed_source_answer": "The lost girl came across a small house.\nThere was a portrait hanging on the wall inside.\nShe decided to get some sleep first, but she felt like the person in the portrait was staring at her. She felt uneasy and couldn't fall asleep for a long time.\nThe next morning, the girl woke up to find that the person in the portrait was gone. She realized that what was on the wall wasn't a painting, but a window. Someone had been staring at her from outside the window all night.\nRealizing the truth, the girl was terrified and fled the house."
+}

@@ -1,0 +1,266 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 99,
+  "final_attempts": 1,
+  "rejected_finals": 1,
+  "counted_questions": 100,
+  "submissions": 100,
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.55,
+  "best_partial_score": 0.55,
+  "latest_final": "The story is a wordplay puzzle: \"courses\" are not academic classes but the dishes/courses of a catered meal. I was a HKU student who had to choose my meal/course selections before a deadline, and I submitted my choices. However, the meal took place that evening and the dishes I had selected were all served and eaten (by others at the event and/or in the course of the meal) before I could have them—so all \"my courses\" were gone in one evening. My own submission/choice set the meal in motion, which is why the opening says I caused it, and why the dishes vanished that same evening at the catered event.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0.5,
+        "evidence": "\"courses are not academic classes but the dishes/courses of a catered meal\"",
+        "reason": "Identifies meal courses rather than academic classes but omits the formal high-table dinner setting, so only the half-credit condition is met."
+      },
+      {
+        "id": "C2",
+        "credit": 1,
+        "evidence": "\"had to choose my meal/course selections before a deadline, and I submitted my choices\"",
+        "reason": "The deadline is connected to meal/course preferences, satisfying the checkpoint."
+      },
+      {
+        "id": "C3",
+        "credit": 0,
+        "evidence": "\"the dishes I had selected were all served and eaten (by others at the event and/or in the course of the meal) before I could have them\"",
+        "reason": "Contradicts the required causal mechanism: the waiter clears uneaten dishes. The disappearance is instead attributed to others eating the dishes, so zero takes precedence over the half-credit omission condition."
+      }
+    ],
+    "material_contradiction": true,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Missing or contradicted elements: formal high-table dinner setting, mandatory nature, punctual attendance, disliking the food, leaving uneaten portions, and the waiter clearing leftovers at the student's request. The submission instead claims the selected dishes were eaten by others before the narrator could have them.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "partial",
+        "evidence": "\"courses are not academic classes but the dishes/courses of a catered meal\""
+      },
+      {
+        "id": "C2.F1",
+        "status": "covered",
+        "evidence": "\"had to choose my meal/course selections before a deadline, and I submitted my choices\""
+      },
+      {
+        "id": "C3.F1",
+        "status": "contradicted",
+        "evidence": "\"the dishes I had selected were all served and eaten (by others at the event and/or in the course of the meal) before I could have them\""
+      }
+    ],
+    "requirement_coverage": [
+      {
+        "id": "R1",
+        "status": "partial",
+        "evidence": "\"courses are not academic classes but the dishes/courses of a catered meal\""
+      },
+      {
+        "id": "R2",
+        "status": "covered",
+        "evidence": "\"had to choose my meal/course selections before a deadline, and I submitted my choices\""
+      },
+      {
+        "id": "R3",
+        "status": "contradicted",
+        "evidence": "\"the dishes I had selected were all served and eaten (by others at the event and/or in the course of the meal) before I could have them\""
+      },
+      {
+        "id": "R4",
+        "status": "contradicted",
+        "evidence": "\"the dishes I had selected were all served and eaten (by others at the event and/or in the course of the meal) before I could have them\""
+      }
+    ],
+    "contradictions": [
+      {
+        "quote": "the dishes I had selected were all served and eaten (by others at the event and/or in the course of the meal) before I could have them",
+        "reference": "At the student's request the waiter clears leftovers when serving each next dish, so all courses disappear.",
+        "checkpoint_ids": [
+          "C3"
+        ]
+      }
+    ],
+    "partial_score": 0.55,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v2",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 1735.8380908329273,
+  "usage": {
+    "grader": {
+      "http_attempts": 1,
+      "successful_responses": 1,
+      "seconds": 81.74713754106779,
+      "provider_reported_usage": {
+        "prompt_tokens": 3743,
+        "completion_tokens": 4833,
+        "total_tokens": 8576,
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 3743
+      }
+    },
+    "host": {
+      "http_attempts": 99,
+      "successful_responses": 99,
+      "seconds": 1323.9924425906502,
+      "provider_reported_usage": {
+        "prompt_tokens": 2007021,
+        "completion_tokens": 42959,
+        "total_tokens": 2049980,
+        "prompt_cache_hit_tokens": 1966336,
+        "prompt_cache_miss_tokens": 40685
+      }
+    },
+    "player": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 328.0710699997144,
+      "provider_reported_usage": {
+        "prompt_tokens": 852142,
+        "completion_tokens": 4281,
+        "total_tokens": 856423,
+        "prompt_cache_hit_tokens": 831744,
+        "prompt_cache_miss_tokens": 20398
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "total": {
+      "calls": 200,
+      "unknown_cost_calls": 200,
+      "known_estimated_cost_usd": 0.0,
+      "estimated_cost_usd": null,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 2862906,
+        "cached_input_tokens": 2798080,
+        "cache_write_tokens": 0,
+        "output_tokens": 52073,
+        "reasoning_tokens": 46774,
+        "total_tokens": 2914979
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 100,
+        "total_tokens": 0
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 1,
+        "unknown_cost_calls": 1,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 3743,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 4833,
+          "reasoning_tokens": 4019,
+          "total_tokens": 8576
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 99,
+        "unknown_cost_calls": 99,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 2007021,
+          "cached_input_tokens": 1966336,
+          "cache_write_tokens": 0,
+          "output_tokens": 42959,
+          "reasoning_tokens": 42755,
+          "total_tokens": 2049980
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 100,
+        "unknown_cost_calls": 100,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 852142,
+          "cached_input_tokens": 831744,
+          "cache_write_tokens": 0,
+          "output_tokens": 4281,
+          "reasoning_tokens": 0,
+          "total_tokens": 856423
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 100,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "3f4d2bac-f6a3-46bd-8010-cb3d6f6bc788",
+      "42bf8d74-e9f5-4cb2-b9e5-6754245e176c",
+      "cc757363-d7ba-4969-96f9-811b36d6cc03"
+    ],
+    "logical_input_chars": 2551758,
+    "delta_input_chars": 201731,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+    "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+    "runtime_context_version": "single-retrieved-session-v2",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "58f75bf1ac8a5a5ccc884896d10fe780e6ed70544c49c3a245aef33699ef3b1a",
+    "controller_sha256": "adf771530293e9a55f49e7da477fcfbe3da2acf25bf3dde5c008a7edc7c565aa",
+    "host_context_sha256": "abba53f677876ba9858fbcef8c71541084256984188b95c83b0f36d6720eb4fa",
+    "host_binding_version": "host-v10-ts013-causal-20261108",
+    "original_controller_sha256": "2fec43b23fc7dfe2b48ea9e3dd3ad6b4a2757d6e01fe80bcdea66fc80cdd3db7"
+  }
+}

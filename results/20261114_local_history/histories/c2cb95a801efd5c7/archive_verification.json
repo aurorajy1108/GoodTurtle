@@ -1,0 +1,39 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "7caaaa1dab0627eba5d61722613853f8c332005ac8b4217edf6b05de1e627f80",
+    "trajectory.jsonl": "ff82185049236a24f5e5bdbe66485381a1ec5c7c3137bee4609af172fb156255",
+    "trajectory.md": "338018da7936dbe11787b4300314337b5e21a76f9ac75945c471fe5e9f74e9b0",
+    "trajectory.html": "4e8dbf9a286baa549e675d987c648a99f6653d2a6e1be07e78ca061aa9aadfb8",
+    "config.json": "a014f81ea9e104679e8f092a1f109161aea61071386b2e945a24be08c367d75c",
+    "partner_config.json": "489a968c9ed96d8e89aa0c6dcd2216c2a2dd1c4b68415ba6cf332611cf340f1c",
+    "prompts.json": "fc46446f09444f43c20df1c19fbb54338043bc29e602a6373a8af5b06ee85640",
+    "puzzle_private.json": "0d97b7c7f51356a496e59bad231b92684dc56fbb9fe3ef59bcc53f05517f6e87",
+    "host_context.json": "f5bf26f31194953a451e178d37ba52f11c4845772039d05bde5790635582bde8",
+    "human_review.csv": "3bb3f7055398421962d1ef9cfae7891bef32c5ddca10fa8fef76bd4517efc4ac",
+    "review_template.csv": "3bb3f7055398421962d1ef9cfae7891bef32c5ddca10fa8fef76bd4517efc4ac",
+    "collaboration.jsonl": "26897eb997530f78918cf854649c7ccffdfb578ac5638a5910326daa4c5deb68"
+  },
+  "api_audit": {
+    "source_raw_sha256": "e910b1aaf9651cfb5e6a6b2f236fa8a83536e2e076bb2db8550ab523c2a6dc17",
+    "source_raw_bytes": 5626595,
+    "published_sha256": "9952920674208e0362a65dc6ddfb9f7d6b0741e9e28726ee52f52a0dbc491cc0",
+    "attempts": 389
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261023_team_local_extra/batches/TS009/TS009_r03_independent",
+      "status_as_recorded": "interrupted",
+      "simulation": false,
+      "submissions": 97,
+      "result_sha256": "7caaaa1dab0627eba5d61722613853f8c332005ac8b4217edf6b05de1e627f80",
+      "signature": "c2cb95a801efd5c7de65eed0cdc052f4ccc88d566cbef1fe56054175a48a0177",
+      "event_count": 196,
+      "trajectory_sha256": "ff82185049236a24f5e5bdbe66485381a1ec5c7c3137bee4609af172fb156255",
+      "first_submission": "2026-10-23T15:25:48.157275+00:00",
+      "first_text": "Was he physically involved in the car accident?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

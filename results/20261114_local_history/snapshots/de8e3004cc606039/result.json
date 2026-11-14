@@ -1,0 +1,146 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 99,
+  "final_attempts": 1,
+  "rejected_finals": 1,
+  "counted_questions": 100,
+  "submissions": 100,
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.25,
+  "best_partial_score": 0.25,
+  "latest_final": "The girl was in a house with a window that looked out onto a living person who was watching her. Seeing that person made her afraid to sleep, though the watcher was not necessarily an actual threat. Once exhaustion overcame her, she fell asleep. In the morning, she realized the window itself had changed from how it looked at night: it was no longer transparent. The watcher was gone, and the change in the window was connected to that person, but the clues do not establish the exact mechanism. Frightened by what she saw, she fled.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0.5,
+        "evidence": "a window that looked out onto a living person who was watching her",
+        "reason": "Identifies a window and a real outside watcher, but omits that she initially mistook them for a portrait."
+      },
+      {
+        "id": "C2",
+        "credit": 0,
+        "evidence": "Seeing that person made her afraid to sleep",
+        "reason": "Connects seeing the watcher to sleeplessness, but never identifies a mistaken portrait, as required for either full or half credit."
+      },
+      {
+        "id": "C3",
+        "credit": 0,
+        "evidence": "the window itself had changed from how it looked at night: it was no longer transparent",
+        "reason": "Although the watcher disappears by morning, the explanation replaces discovery of the window with a physical change in its transparency as the cause of her flight."
+      }
+    ],
+    "material_contradiction": true,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Missing the initial portrait misidentification and its role in keeping her awake. The morning revelation is incorrectly replaced by a change in window transparency rather than recognition that the apparent portrait was a real outside watcher.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "partial",
+        "evidence": "The girl was in a house with a window that looked out onto a living person who was watching her."
+      },
+      {
+        "id": "C2.F1",
+        "status": "partial",
+        "evidence": "Seeing that person made her afraid to sleep"
+      },
+      {
+        "id": "C3.F1",
+        "status": "contradicted",
+        "evidence": "In the morning, she realized the window itself had changed from how it looked at night: it was no longer transparent. The watcher was gone, and the change in the window was connected to that person, but the clues do not establish the exact mechanism. Frightened by what she saw, she fled."
+      }
+    ],
+    "requirement_coverage": [
+      {
+        "id": "R1",
+        "status": "partial",
+        "evidence": "The girl was in a house with a window that looked out onto a living person who was watching her."
+      },
+      {
+        "id": "R2",
+        "status": "partial",
+        "evidence": "Seeing that person made her afraid to sleep"
+      },
+      {
+        "id": "R3",
+        "status": "covered",
+        "evidence": "Once exhaustion overcame her, she fell asleep. In the morning ... The watcher was gone"
+      },
+      {
+        "id": "R4",
+        "status": "contradicted",
+        "evidence": "In the morning, she realized the window itself had changed from how it looked at night: it was no longer transparent. The watcher was gone, and the change in the window was connected to that person, but the clues do not establish the exact mechanism. Frightened by what she saw, she fled."
+      }
+    ],
+    "contradictions": [
+      {
+        "quote": "In the morning, she realized the window itself had changed from how it looked at night: it was no longer transparent.",
+        "reference": "The morning discovery is that the apparent portrait was actually a window, now lacking the person who had watched her from outside; a physical change in the window is not the revelation.",
+        "checkpoint_ids": [
+          "C3"
+        ]
+      }
+    ],
+    "partial_score": 0.25,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v2",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 2907.4776250841096,
+  "usage": {
+    "grader": {
+      "http_attempts": 1,
+      "successful_responses": 1,
+      "seconds": 35.285899833077565,
+      "provider_reported_usage": {
+        "input_tokens": 18162,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1318,
+        "reasoning_output_tokens": 507
+      }
+    },
+    "host": {
+      "http_attempts": 199,
+      "successful_responses": 199,
+      "seconds": 1699.55946800136,
+      "provider_reported_usage": {
+        "input_tokens": 3777821,
+        "cached_input_tokens": 410752,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8240,
+        "reasoning_output_tokens": 4984
+      }
+    },
+    "player": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 1171.6030670003965,
+      "provider_reported_usage": {
+        "input_tokens": 376434,
+        "cached_input_tokens": 175616,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 41035,
+        "reasoning_output_tokens": 37463
+      }
+    }
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "evaluation_versions": {
+    "story_sha256": "7c58339299af1ffe5c8b62850b87419914bf050994fabb559168e536907297d8",
+    "grading_sha256": "be5b601345a90399a5825bf74b290b5c313ad52555b666c466ec0a8cd80d881f",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "28d70e41f9f66353fc7cf9666eb1c3fe925432202ac2cc87791eebbfc049e11a",
+    "controller_sha256": "ee8c0759b759eb73528ecdbfc34f8c35fe00de843db206b08630ff3214536163",
+    "host_context_sha256": "0bbe502549fcd33c6b2570eaf26c0e4fe7a3c233da571fee5847dded07af0486",
+    "host_binding_version": "host-v5.1-20261023"
+  }
+}

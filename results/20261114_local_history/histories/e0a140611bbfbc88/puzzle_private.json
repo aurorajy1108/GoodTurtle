@@ -1,0 +1,74 @@
+{
+  "id": "TS019",
+  "opening": "I usually follow the same route to enter and exit the school campus. There are no staircases nearby but I often use the stairs. Why?",
+  "answer": "There is a pair of escalators connecting the campus. I must take the escalator to get to the campus since there are no staircases nearby. One of these escalators is often under maintenance. When this happens, the other escalator will be paused so that people can use it as a staircase to enter and exit the campus.",
+  "rubric": [
+    {
+      "id": "C1",
+      "weight": 0.5,
+      "core": true,
+      "criterion": "The stairs are an escalator that is no longer moving.",
+      "full_credit": "The stairs are an escalator that is no longer moving.",
+      "half_credit": "Escalator identified without stopped status",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+      "points": 50.0,
+      "required_facts": [
+        "The stairs are an escalator that is no longer moving."
+      ],
+      "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+    },
+    {
+      "id": "C2",
+      "weight": 0.3,
+      "core": false,
+      "criterion": "There are no nearby conventional stairs, and campus access relies on escalators.",
+      "full_credit": "There are no nearby conventional stairs, and campus access relies on escalators.",
+      "half_credit": "Escalator access identified without pair/no-stairs context",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+      "points": 30.0,
+      "required_facts": [
+        "There are no nearby conventional stairs, and campus access relies on escalators."
+      ],
+      "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+    },
+    {
+      "id": "C3",
+      "weight": 0.2,
+      "core": false,
+      "criterion": "When one escalator is under maintenance, the OTHER escalator is stopped for people to walk on.",
+      "full_credit": "When one escalator is under maintenance, the OTHER escalator is stopped for people to walk on.",
+      "half_credit": "Maintenance-related stopping is identified but the answer does not specify which escalator; explicitly claiming the maintained escalator is walked on is zero for this checkpoint.",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+      "points": 20.0,
+      "required_facts": [
+        "When one escalator is under maintenance, the OTHER escalator is stopped for people to walk on."
+      ],
+      "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+    }
+  ],
+  "title": "没有楼梯却走楼梯：扶梯",
+  "story_family": "F-CAMPUS-STAIRS",
+  "quality_status": "相似题面异解",
+  "review_notes": "与20题题面仅often/always有差异",
+  "source_row": "19",
+  "observed_score": null,
+  "completion_requirements": [
+    "A pair of escalators provides access to campus where there are no nearby ordinary stairs",
+    "One escalator is often under maintenance",
+    "During that maintenance the OTHER escalator is stopped so people can walk on its steps in both directions"
+  ],
+  "annotation_version": "turtle50-v3-host-repair-20261023",
+  "annotation_status": "ai_repair_pending_human",
+  "grading_notes": "AI three-review adjudication v2, pending human confirmation. Score only this submission. Apply full_credit/half_credit/zero_credit explicitly, with zero taking precedence for a materially contradictory checkpoint claim. An omitted qualifier can be partial; replacing the core identity/cause with a wrong one is not an omission. Faithful paraphrases count. Partial score and full narrative are separate outputs. AI independent review B, pending human approval. Credit is 0/.5/1 per checkpoint. Full narrative additionally requires all sourced completion requirements and no incompatible central claims. Judge the submitted explanation, not unasserted chat guesses. Accept faithful paraphrases; missing optional detail is not a contradiction. Do not demand unknown motives, devices or events. Accept faithful paraphrase. Require the listed identities, events and causal links, not exact prose or unspecified incidental details.",
+  "annotation_provenance": {
+    "reviewers": [
+      "a",
+      "b",
+      "c"
+    ],
+    "selected_base": "b",
+    "adjudicator": "root",
+    "human_confirmed": false
+  },
+  "grading_protocol": "coverage-v2"
+}

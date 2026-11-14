@@ -1,0 +1,207 @@
+# Turtle Soup trajectory
+
+"You've disappointed me so much; I'm never coming back." "You've disappointed me so much; I'm never coming back." "You've disappointed me so much; I'm never coming back." "You've disappointed me so much; I'm never coming back." "You've disappointed me so much; I'm never coming back." "You've disappointed me so much; I'm never coming back." "You've disappointed me so much; I'm never coming back."
+
+Sigh, I know I'm in trouble.
+
+Status: error | counted questions: 33 | submissions: 33 | final partial score: None
+
+[Token usage and estimated costs](token_costs.csv)
+
+## 1 · question
+
+The same sentence is repeated seven times. Is the repetition itself—specifically the count seven—significant to the puzzle's solution?
+
+Host: no
+
+## 2 · question
+
+You said the count seven is not significant. Is the significance instead that the seven repetitions are seven separate speakers (for example, seven people each saying it), rather than one person repeating it?
+
+Host: no
+
+## 3 · question
+
+Is the speaker hearing these repeated lines as recordings/echoes (for example, a parrot or audio playback) rather than multiple distinct people saying them?
+
+Host: no
+
+## 4 · question
+
+Does the phrase "I'm in trouble" mean the speaker is facing a punishment or consequence for something, rather than being in danger?
+
+Host: yes
+
+## 5 · question
+
+Is the repeated line something the speaker himself previously said (or wrote) to someone, now being repeated back to him?
+
+Host: no
+
+## 6 · question
+
+Is the repeated line being spoken by a single entity/character toward the narrator (i.e., the narrator is the one being told "You've disappointed me")?
+
+Host: no
+
+## 7 · question
+
+Is the narrator/speaker the one saying "You've disappointed me so much; I'm never coming back" each time—i.e., he is addressing someone and declaring he won't return?
+
+Host: no
+
+## 8 · question
+
+Is the narrator overhearing this line being said by one person to another person (i.e., the narrator is an outside observer, not a participant)?
+
+Host: no
+
+## 9 · question
+
+Is the narrator himself a non-human entity (an animal, object, or machine) that is being told this?
+
+Host: no
+
+## 10 · question
+
+Is the repeated line directed at the narrator (i.e., the narrator is the "you" being told they disappointed someone and that someone won't come back)?
+
+Host: yes
+
+## 11 · question
+
+So the narrator is being told this (he is the "you"). Is the one saying it someone close to the narrator who is leaving him for good—such as a spouse, partner, or family member?
+
+Host: no
+
+## 12 · question
+
+Is the one saying the line a customer or client of the narrator (i.e., the narrator disappointed a customer, who now refuses to return to the narrator's business)?
+
+Host: no
+
+## 13 · question
+
+Is the person saying the line an authority figure over the narrator (e.g., a boss, teacher, coach, or parent-like superior)?
+
+Host: no
+
+## 14 · question
+
+Is the repeated line coming from multiple identical sources—i.e., not one person but many copies/sources all saying it—such that the narrator is being told this by several identical entities at once?
+
+Host: no
+
+## 15 · question
+
+Is the narrator experiencing this same failure repeatedly (e.g., repeatedly making the same mistake, retrying something, or reliving the same event), such that the sentence is said to him again and again for that reason?
+
+Host: no
+
+## 16 · question
+
+Is the repeated sentence a single person's identical remark spoken once per occurrence—specifically, is it the same line the narrator keeps hearing because it's actually his own inner voice or conscience scolding himself, rather than another person?
+
+Host: no
+
+## 17 · question
+
+Is the narrator being addressed by exactly one person who says this line—and is that person a stranger (someone the narrator doesn't personally know)?
+
+Host: no
+
+## 18 · question
+
+Is the repeated line a message the narrator is reading (e.g., written text, a note, comments, a screen), rather than speech he hears?
+
+Host: yes
+
+## 19 · question
+
+Breakthrough—he's reading it. Is the narrator reading these seven identical sentences as written feedback/reviews/messages left by multiple different people (e.g., online comments, review posts), all expressing the same complaint?
+
+Host: no
+
+## 20 · question
+
+Is the narrator reading these seven identical lines from a single written source that he himself composed or set up—for example, text he wrote and arranged to be displayed (like a sign, an automated message, or a template that got repeated)?
+
+Host: yes
+
+## 21 · question
+
+Is the narrator reading this because it's a message he himself wrote (a complaint/breakup note/letter he composed and then, upon rereading, realizes was mistaken—e.g., he wrote it to send, or he wrote it in code expecting no one would read it)?
+
+Host: no
+
+## 22 · question
+
+He arranged to have the line displayed. Is the display device malfunctioning—malfunctioning such that it repeats the same message over and over instead of doing what it should?
+
+Host: no
+
+## 23 · question
+
+Did the narrator set up this written message to be shown to someone else (an audience), intending them to read it—so that its being displayed is the intended purpose, not an accident or malfunction?
+
+Host: yes
+
+## 24 · question
+
+Consider the famous "man reads his own tombstone / wrote a note to himself" style. But better: the narrator set up a message displayed to an audience. Is this a situation where the narrator is now reading that message because he is about to be executed/put to death or buried—i.e., the display is a headstone, plaque, or epitaph he arranged for himself?
+
+Host: no
+
+## 25 · question
+
+Is the narrator now reading this message as part of a performance or show he is putting on—i.e., he is the person on stage/screen, and the message is his own material (like a sign he holds up, subtitle, or part of his act), so it is meant to be seen by his audience including himself?
+
+Host: no
+
+## 26 · question
+
+Did the narrator set up this written message to be read at a specific future moment or occasion (for example, a letter or note to be opened later, an automated reminder, or a message to be revealed on a particular occasion), rather than to be seen continuously?
+
+Host: irrelevant
+
+## 27 · question
+
+Is the message one the narrator put up as a rule or demand for others (for example, a sign in his shop/home stating a condition), and "I'm in trouble" because he now realizes that condition has turned against him—someone is leaving and won't return?
+
+Host: no
+
+## 28 · question
+
+Is the narrator reading this message in a context of a game, competition, or contest—where the message is essentially the "you lose / you disappoint me" notification shown when he is eliminated or fails?
+
+Host: no
+
+## 29 · question
+
+Did the narrator write and display this message in order to end a relationship or walk away from someone/something (a "I'm never coming back" declaration), and "I'm in trouble" because that decision has now backfired or been turned against him?
+
+Host: no
+
+## 30 · question
+
+Is this an online or social-media context—did the narrator post or publish this message publicly (to an online audience), and is he now reading it as he faces consequences for it?
+
+Host: no
+
+## 31 · question
+
+Is the message the narrator wrote/arranged something offensive or embarrassing (a complaint, an insult, or a rant) whose public display has now caused him trouble—i.e., he's in trouble for having posted it where an audience could see it?
+
+Host: no
+
+## 32 · question
+
+Is the "audience" this message was set up for a single specific person (not a general public)—i.e., the narrator set up this message to be read by one particular individual?
+
+Host: yes
+
+## 33 · question
+
+Was this message set up by the narrator to be read by the specific person as a farewell/breakup statement—i.e., the narrator wrote "You've disappointed me so much; I'm never coming back" addressed to that one person, intending them to read it when he left, but now the narrator himself is reading it (perhaps because he never actually left, or is returning)?
+
+Host: no

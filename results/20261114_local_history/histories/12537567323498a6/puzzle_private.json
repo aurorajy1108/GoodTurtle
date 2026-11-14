@@ -1,0 +1,75 @@
+{
+  "id": "TS032",
+  "opening": "At school, A caused classmate B to transfer elsewhere. They met again at university, began dating, and married after starting work. Everyone thought they were a loving couple. Years later B disappeared, and A was arrested on suspicion of murdering B. What happened between them?",
+  "answer": "A had photographed a murder committed by B’s parent and reported it. The arrest forced B to move away to live with relatives. A felt guilty.\nA’s surname later changed after parental divorce and remarriage. At university, A recognized B, but B did not recognize A. They genuinely fell in love and married.\nYears later, B recognized A as the former classmate. B mistakenly believed A had not recognized B and did not know about B’s criminal parent. Ashamed and afraid of rejection, B disappeared, leaving divorce papers and an apology. B never learned that A had reported the crime.\nUnable to find B, A fabricated evidence and falsely confessed to murdering B. A hoped the news would reach B, communicate acceptance of B’s past, and persuade B to return to clear A’s name. B was alive.",
+  "rubric": [
+    {
+      "id": "C1",
+      "weight": 0.5,
+      "core": true,
+      "criterion": "B is alive but disappeared voluntarily; A falsely confesses to murder to reach B.",
+      "full_credit": "B is alive but disappeared voluntarily; A falsely confesses to murder to reach B.",
+      "half_credit": "False murder confession or living voluntary disappearance identified, but not both",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+      "points": 50.0
+    },
+    {
+      "id": "C2",
+      "weight": 0.25,
+      "core": false,
+      "criterion": "Years earlier A reported a murder by B’s parent, leading B to move; A later changed surname.",
+      "full_credit": "Years earlier A reported a murder by B’s parent, leading B to move; A later changed surname.",
+      "half_credit": "Prior crime report identified but move or surname change omitted",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+      "points": 25.0
+    },
+    {
+      "id": "C3",
+      "weight": 0.15,
+      "core": false,
+      "criterion": "B later recognizes A but fears A does not know B’s family background, so leaves in shame.",
+      "full_credit": "B later recognizes A but fears A does not know B’s family background, so leaves in shame.",
+      "half_credit": "Recognition identified but mistaken belief and shame omitted",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+      "points": 15.0
+    },
+    {
+      "id": "C4",
+      "weight": 0.1,
+      "core": false,
+      "criterion": "A knew the past and loved B, hoping B will return to clear A’s name and reunite.",
+      "full_credit": "A knew the past and loved B, hoping B will return to clear A’s name and reunite.",
+      "half_credit": "Acceptance identified without news appeal to return and clear A",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+      "points": 10.0
+    }
+  ],
+  "title": "失踪的配偶与假自白",
+  "story_family": "F032",
+  "quality_status": "正常",
+  "review_notes": "",
+  "source_row": "32",
+  "observed_score": null,
+  "completion_requirements": [
+    "A photographed and reported a murder by B’s parent; the arrest caused B to move away and A felt guilty",
+    "A’s surname changed after parental divorce and remarriage",
+    "At university A recognized B but B did not recognize A; they genuinely fell in love and married",
+    "B later recognized A, mistakenly believed A did not know the family history, and feared rejection",
+    "B voluntarily disappeared alive, leaving divorce papers and an apology, and never learned that A had reported the crime",
+    "A fabricated evidence and confessed falsely to killing B to reach B through the news",
+    "A hopes to communicate acceptance and make B return to clear A’s name"
+  ],
+  "annotation_version": "turtle50-v2-three-review-2026-10-23",
+  "annotation_status": "ai_three_review_adjudicated_pending_human",
+  "grading_notes": "AI three-review adjudication v2, pending human confirmation. Score only this submission. Apply full_credit/half_credit/zero_credit explicitly, with zero taking precedence for a materially contradictory checkpoint claim. An omitted qualifier can be partial; replacing the core identity/cause with a wrong one is not an omission. Faithful paraphrases count. Partial score and full narrative are separate outputs. AI independent review B, pending human approval. Credit is 0/.5/1 per checkpoint. Full narrative additionally requires all sourced completion requirements and no incompatible central claims. Judge the submitted explanation, not unasserted chat guesses. Accept faithful paraphrases; missing optional detail is not a contradiction. Do not demand unknown motives, devices or events. Accept faithful paraphrase. Require the listed identities, events and causal links, not exact prose or unspecified incidental details.",
+  "annotation_provenance": {
+    "reviewers": [
+      "a",
+      "b",
+      "c"
+    ],
+    "selected_base": "b",
+    "adjudicator": "root",
+    "human_confirmed": false
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "status": "error",
+  "stop_reason": "ProtocolError",
+  "simulation": false,
+  "success": null,
+  "host_questions": 60,
+  "final_attempts": 0,
+  "rejected_finals": 0,
+  "counted_questions": 60,
+  "submissions": 60,
+  "pending_feedback": 0,
+  "forced_final": false,
+  "final_partial_score": null,
+  "best_partial_score": null,
+  "latest_final": null,
+  "latest_grade": null,
+  "elapsed_seconds": 619.2087095830357,
+  "usage": {
+    "grader": {
+      "http_attempts": 0,
+      "successful_responses": 0,
+      "seconds": 0,
+      "provider_reported_usage": {}
+    },
+    "host": {
+      "http_attempts": 60,
+      "successful_responses": 60,
+      "seconds": 437.8326643301407,
+      "provider_reported_usage": {
+        "prompt_tokens": 703881,
+        "completion_tokens": 26169,
+        "total_tokens": 730050,
+        "prompt_cache_hit_tokens": 685952,
+        "prompt_cache_miss_tokens": 17929
+      }
+    },
+    "player": {
+      "http_attempts": 61,
+      "successful_responses": 61,
+      "seconds": 180.10690836946014,
+      "provider_reported_usage": {
+        "prompt_tokens": 355458,
+        "completion_tokens": 7155,
+        "total_tokens": 362613,
+        "prompt_cache_hit_tokens": 342912,
+        "prompt_cache_miss_tokens": 12546
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "total": {
+      "calls": 121,
+      "unknown_cost_calls": 121,
+      "known_estimated_cost_usd": 0.0,
+      "estimated_cost_usd": null,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 1059339,
+        "cached_input_tokens": 1028864,
+        "cache_write_tokens": 0,
+        "output_tokens": 33324,
+        "reasoning_tokens": 26048,
+        "total_tokens": 1092663
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 61,
+        "total_tokens": 0
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 60,
+        "unknown_cost_calls": 60,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 703881,
+          "cached_input_tokens": 685952,
+          "cache_write_tokens": 0,
+          "output_tokens": 26169,
+          "reasoning_tokens": 26048,
+          "total_tokens": 730050
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 61,
+        "unknown_cost_calls": 61,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 355458,
+          "cached_input_tokens": 342912,
+          "cache_write_tokens": 0,
+          "output_tokens": 7155,
+          "reasoning_tokens": 0,
+          "total_tokens": 362613
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 61,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": "Player must return one unambiguous JSON object",
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "516c88a8-2a1b-49c3-bdb4-f569da296d15",
+      "8da7f743-eb16-4a19-9136-fa15830daedb"
+    ],
+    "logical_input_chars": 1228969,
+    "delta_input_chars": 80113,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+    "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "f126e581cf260d0996c576cc0c439189d7b0341691ddf02ec05893389f6bb8a0",
+    "controller_sha256": "cb8610e8525dc1b283f34f71a6809a9ff906c67440c70def6a4b176a3a1a4ff2",
+    "host_context_sha256": "3d82c64058a3f725abd9c438d32198022a2238d46dbbf45792bf84d0865c8f0f",
+    "host_binding_version": "host-v11-set1-causal-20261110"
+  }
+}

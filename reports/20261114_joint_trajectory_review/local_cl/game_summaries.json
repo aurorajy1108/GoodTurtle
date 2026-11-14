@@ -1,0 +1,1593 @@
+[
+  {
+    "game_id": "S1_TS014_TS013_TS014_TS013_r01_answer_only",
+    "source_family": "TS014",
+    "mode": "answer_only",
+    "submissions": 100,
+    "questions": 98,
+    "final_attempts": 2,
+    "success": false,
+    "first_supported_core_breakthrough": 65,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.25,
+    "best_score": 0.25,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 98,
+        "score": 0.25,
+        "label": "yes and no"
+      },
+      {
+        "submission": 100,
+        "score": 0.25,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 95,
+      "ambiguous": 3,
+      "suspect": 2
+    },
+    "inherited_source": [],
+    "trajectory_notes": "Q14自行动作、Q65菜品突破、Q69-70服务员；Q77托盘canteen和Q87获取/点食物误导。Q98/100食物投诉被服务员解读的错机制，无截止选餐。"
+  },
+  {
+    "game_id": "S1_TS014_TS013_TS014_TS013_r01_direct",
+    "source_family": "TS014",
+    "mode": "direct",
+    "submissions": 100,
+    "questions": 98,
+    "final_attempts": 2,
+    "success": false,
+    "first_supported_core_breakthrough": 21,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.65,
+    "best_score": 0.65,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 96,
+        "score": 0.65,
+        "label": "yes and no"
+      },
+      {
+        "submission": 100,
+        "score": 0.65,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 95,
+      "suspect": 2,
+      "ambiguous": 3
+    },
+    "inherited_source": [],
+    "trajectory_notes": "Q21-23菜品，Q48-49本人要求+不喜味道，Q79高桌，Q93截止选餐；Q80错误否定晚宴为选菜报名相关，Q94否定混合截止命题。末卷96→100维持0.65，遗漏强制、按时、三道及逐道收残。"
+  },
+  {
+    "game_id": "S1_TS014_TS013_TS014_TS013_r01_session",
+    "source_family": "TS014",
+    "mode": "session",
+    "submissions": 100,
+    "questions": 99,
+    "final_attempts": 1,
+    "success": false,
+    "first_supported_core_breakthrough": null,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.0,
+    "best_score": 0.0,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 100,
+        "score": 0.0,
+        "label": "no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 99,
+      "suspect": 1
+    },
+    "inherited_source": [
+      {
+        "source_turns": 89,
+        "source_response_id": "78ea8ee0-3dba-42aa-b378-2ac0d6f99073",
+        "prefix_sha256": "c5e1edb191549dd64acb92ff2142941b3e0db126abadace7bee604dcae33466d"
+      }
+    ],
+    "trajectory_notes": "Q1-33学科注册连续否定，Q34另有人=服务员为潜在突破；Q50错误肯定遮挡课程屏幕导致后半49问持续排查屏幕/眼镜/光线，末卷0分。固定A学科项目上下文未帮助跳出学科框架。"
+  },
+  {
+    "game_id": "S1_TS014_TS013_TS014_TS013_r01_source",
+    "source_family": "TS014",
+    "mode": "source",
+    "submissions": 89,
+    "questions": 82,
+    "final_attempts": 7,
+    "success": true,
+    "first_supported_core_breakthrough": 17,
+    "breakthrough_kind": "source-specific causal/word-sense pivot",
+    "final_score": 1.0,
+    "best_score": 1.0,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 21,
+        "score": 0.75,
+        "label": "yes and no"
+      },
+      {
+        "submission": 28,
+        "score": 0.5,
+        "label": "yes and no"
+      },
+      {
+        "submission": 48,
+        "score": 0.5,
+        "label": "yes and no"
+      },
+      {
+        "submission": 60,
+        "score": 0.75,
+        "label": "yes and no"
+      },
+      {
+        "submission": 72,
+        "score": 0.75,
+        "label": "yes and no"
+      },
+      {
+        "submission": 80,
+        "score": 0.75,
+        "label": "yes and no"
+      },
+      {
+        "submission": 89,
+        "score": 1.0,
+        "label": "yes"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 77,
+      "ambiguous": 11,
+      "suspect": 1
+    },
+    "inherited_source": [],
+    "trajectory_notes": "首个项目突破Q17，超量工作Q46-47，所有其他人不贡献Q86-87；Q20确认不存在的单独及格门槛，引发长时间细化。最终Q89成功。"
+  },
+  {
+    "game_id": "S1_TS014_TS013_TS014_TS013_r02_answer_only",
+    "source_family": "TS014",
+    "mode": "answer_only",
+    "submissions": 100,
+    "questions": 99,
+    "final_attempts": 1,
+    "success": false,
+    "first_supported_core_breakthrough": 28,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.55,
+    "best_score": 0.55,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 100,
+        "score": 0.55,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 98,
+      "ambiguous": 1,
+      "suspect": 1
+    },
+    "inherited_source": [],
+    "trajectory_notes": "Q27-28菜品、Q50-51截止报餐、Q72高桌、Q81没吃完即收走；Q93把自身拒食与亲手清盘并否，抑制主动请求线。末卷漏强制且错误说没来得及吃，0.55。"
+  },
+  {
+    "game_id": "S1_TS014_TS013_TS014_TS013_r02_direct",
+    "source_family": "TS014",
+    "mode": "direct",
+    "submissions": 100,
+    "questions": 99,
+    "final_attempts": 1,
+    "success": false,
+    "first_supported_core_breakthrough": null,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.0,
+    "best_score": 0.0,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 100,
+        "score": 0.0,
+        "label": "no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 99,
+      "ambiguous": 1
+    },
+    "inherited_source": [],
+    "trajectory_notes": "Q7自愿放弃、Q61他人代行，Q74 paid service广义可含服务员但玩家误投选课代理；Q75-99重复细化代理，无任何菜品突破，末卷0分。"
+  },
+  {
+    "game_id": "S1_TS014_TS013_TS014_TS013_r02_session",
+    "source_family": "TS014",
+    "mode": "session",
+    "submissions": 100,
+    "questions": 99,
+    "final_attempts": 1,
+    "success": false,
+    "first_supported_core_breakthrough": null,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.0,
+    "best_score": 0.0,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 100,
+        "score": 0.0,
+        "label": "no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 99,
+      "suspect": 1
+    },
+    "inherited_source": [
+      {
+        "source_turns": 89,
+        "source_response_id": "78ea8ee0-3dba-42aa-b378-2ac0d6f99073",
+        "prefix_sha256": "c5e1edb191549dd64acb92ff2142941b3e0db126abadace7bee604dcae33466d"
+      }
+    ],
+    "trajectory_notes": "Q1本人动作、Q17他人动作本可连接本人请求服务员；Q20误肯定校方员工/权威，Q33请求为真被解释成表单，Q34-99行政流程枚举；末卷0分。"
+  },
+  {
+    "game_id": "S1_TS014_TS013_TS014_TS013_r03_answer_only",
+    "source_family": "TS014",
+    "mode": "answer_only",
+    "submissions": 100,
+    "questions": 99,
+    "final_attempts": 1,
+    "success": false,
+    "first_supported_core_breakthrough": null,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.0,
+    "best_score": 0.0,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 100,
+        "score": 0.0,
+        "label": "no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 100
+    },
+    "inherited_source": [],
+    "trajectory_notes": "Q3他人清除、Q14帮助都符合服务员，本应质疑学科假定；却Q5-99长时间枚举好心删除学科的理由。无菜品突破，末卷0。"
+  },
+  {
+    "game_id": "S1_TS014_TS013_TS014_TS013_r03_direct",
+    "source_family": "TS014",
+    "mode": "direct",
+    "submissions": 100,
+    "questions": 97,
+    "final_attempts": 3,
+    "success": false,
+    "first_supported_core_breakthrough": 27,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.55,
+    "best_score": 0.55,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 89,
+        "score": 0.55,
+        "label": "yes and no"
+      },
+      {
+        "submission": 92,
+        "score": 0.55,
+        "label": "yes and no"
+      },
+      {
+        "submission": 100,
+        "score": 0.55,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 98,
+      "ambiguous": 2
+    },
+    "inherited_source": [],
+    "trajectory_notes": "Q27菜品、Q58逐道、Q69截止报名、Q95高桌；Q89/92反复吃完错机制，Q99弃剩菜才加入但末卷把弃置放宴后而非逐道本人请求，仍0.55。"
+  },
+  {
+    "game_id": "S1_TS014_TS013_TS014_TS013_r03_session",
+    "source_family": "TS014",
+    "mode": "session",
+    "submissions": 100,
+    "questions": 98,
+    "final_attempts": 2,
+    "success": false,
+    "first_supported_core_breakthrough": null,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.0,
+    "best_score": 0.0,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 99,
+        "score": 0.0,
+        "label": "no"
+      },
+      {
+        "submission": 100,
+        "score": 0.0,
+        "label": "no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 99,
+      "suspect": 1
+    },
+    "inherited_source": [
+      {
+        "source_turns": 89,
+        "source_response_id": "78ea8ee0-3dba-42aa-b378-2ac0d6f99073",
+        "prefix_sha256": "c5e1edb191549dd64acb92ff2142941b3e0db126abadace7bee604dcae33466d"
+      }
+    ],
+    "trajectory_notes": "Q34他人、Q39-40本人请求和Q54例行动作本可导向服务员；Q36错误校方行政身份加固原A学科语境。近末Q99/100两次同一错误行政结论，0分。"
+  },
+  {
+    "game_id": "S1_TS014_TS013_TS014_TS013_r04_answer_only",
+    "source_family": "TS014",
+    "mode": "answer_only",
+    "submissions": 100,
+    "questions": 98,
+    "final_attempts": 2,
+    "success": false,
+    "first_supported_core_breakthrough": 45,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.55,
+    "best_score": 0.55,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 99,
+        "score": 0.55,
+        "label": "yes and no"
+      },
+      {
+        "submission": 100,
+        "score": 0.55,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 98,
+      "ambiguous": 1,
+      "suspect": 1
+    },
+    "inherited_source": [],
+    "trajectory_notes": "Q45菜品、Q63/82截止菜单、Q73服务员、Q90拒食；Q93偏好OR被错否，之后未问到味道。末两卷99/100相近0.55，例行清盘替代本人因不喜欢请求。"
+  },
+  {
+    "game_id": "S1_TS014_TS013_TS014_TS013_r04_direct",
+    "source_family": "TS014",
+    "mode": "direct",
+    "submissions": 100,
+    "questions": 99,
+    "final_attempts": 1,
+    "success": false,
+    "first_supported_core_breakthrough": 92,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.4,
+    "best_score": 0.4,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 100,
+        "score": 0.4,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 97,
+      "ambiguous": 1,
+      "suspect": 2
+    },
+    "inherited_source": [],
+    "trajectory_notes": "Q11普通职务权限被误当行政，Q59错误否定declining broad category。Q92才菜品，Q95服务员；预算末无食物偏好/本人请求事实。C2虚给半分。"
+  },
+  {
+    "game_id": "S1_TS014_TS013_TS014_TS013_r04_session",
+    "source_family": "TS014",
+    "mode": "session",
+    "submissions": 100,
+    "questions": 99,
+    "final_attempts": 1,
+    "success": false,
+    "first_supported_core_breakthrough": 71,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.25,
+    "best_score": 0.25,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 100,
+        "score": 0.25,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 1,
+    "exact_repeated_questions": [
+      {
+        "text": "Did the student's courses disappear because the student was logged into the system on more than one device and the accounts conflicted?",
+        "count": 2
+      }
+    ],
+    "review_verdict_counts": {
+      "ok": 98,
+      "suspect": 1,
+      "ambiguous": 1
+    },
+    "inherited_source": [
+      {
+        "source_turns": 89,
+        "source_response_id": "78ea8ee0-3dba-42aa-b378-2ac0d6f99073",
+        "prefix_sha256": "c5e1edb191549dd64acb92ff2142941b3e0db126abadace7bee604dcae33466d"
+      }
+    ],
+    "trajectory_notes": "Q42/43完全重复多设备问。Q70-71菜品，Q76清走；Q91混合反馈被当成确认临时离桌，虽Q92-99反复否定仍写入末卷，0.25。"
+  },
+  {
+    "game_id": "S1_TS015_TS013_TS015_TS013_r01_answer_only",
+    "source_family": "TS015",
+    "mode": "answer_only",
+    "submissions": 100,
+    "questions": 99,
+    "final_attempts": 1,
+    "success": false,
+    "first_supported_core_breakthrough": 3,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.55,
+    "best_score": 0.55,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 100,
+        "score": 0.55,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 98,
+      "ambiguous": 1,
+      "suspect": 1
+    },
+    "inherited_source": [],
+    "trajectory_notes": "受A词义转换启发Q3迅速菜品，Q45截止菜品；从Q19到99围绕“吃掉”和选择先后不断重复，虽完整吃完多次no，末卷仍写consumed by you，0.55。"
+  },
+  {
+    "game_id": "S1_TS015_TS013_TS015_TS013_r01_direct",
+    "source_family": "TS015",
+    "mode": "direct",
+    "submissions": 100,
+    "questions": 98,
+    "final_attempts": 2,
+    "success": false,
+    "first_supported_core_breakthrough": 21,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.25,
+    "best_score": 0.25,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 89,
+        "score": 0.25,
+        "label": "yes and no"
+      },
+      {
+        "submission": 100,
+        "score": 0.25,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 99,
+      "ambiguous": 1
+    },
+    "inherited_source": [],
+    "trajectory_notes": "Q21菜品、Q38先尝、Q40没吃完、Q58下道、Q84强制均已得到；却未问主观味道/本人请求，Q88笼统solution=yes导致Q89/100改写标准服务且不解释截止，0.25。"
+  },
+  {
+    "game_id": "S1_TS015_TS013_TS015_TS013_r01_session",
+    "source_family": "TS015",
+    "mode": "session",
+    "submissions": 100,
+    "questions": 94,
+    "final_attempts": 6,
+    "success": false,
+    "first_supported_core_breakthrough": 2,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.65,
+    "best_score": 0.65,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 82,
+        "score": 0.5,
+        "label": "yes and no"
+      },
+      {
+        "submission": 83,
+        "score": 0.65,
+        "label": "yes and no"
+      },
+      {
+        "submission": 84,
+        "score": 0.65,
+        "label": "yes and no"
+      },
+      {
+        "submission": 98,
+        "score": 0.65,
+        "label": "yes and no"
+      },
+      {
+        "submission": 99,
+        "score": 0.65,
+        "label": "yes and no"
+      },
+      {
+        "submission": 100,
+        "score": 0.65,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 97,
+      "ambiguous": 3
+    },
+    "inherited_source": [
+      {
+        "source_turns": 100,
+        "source_response_id": "fada8b11-72bb-4d8b-b8ef-a55ba94be52a",
+        "prefix_sha256": "bd13ec864e365feb3f3a058be40c2d0fdcd12c47ecc1313129aebfa6ca22fec4"
+      }
+    ],
+    "trajectory_notes": "Q2菜品，Q8正式需要选菜；中段大量混合问引入错因，Q75-81终于主动拒食不满意。Q82/83/84连投，Q98/99/100再次近同投，最多0.65；未继续问高桌强制、三道按时、逐道残食，部分末卷删味道。"
+  },
+  {
+    "game_id": "S1_TS015_TS013_TS015_TS013_r02_answer_only",
+    "source_family": "TS015",
+    "mode": "answer_only",
+    "submissions": 100,
+    "questions": 99,
+    "final_attempts": 1,
+    "success": false,
+    "first_supported_core_breakthrough": 3,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.55,
+    "best_score": 0.55,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 100,
+        "score": 0.55,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 97,
+      "ambiguous": 3
+    },
+    "inherited_source": [],
+    "trajectory_notes": "Q3菜品、Q6截止、Q8提前选；Q48突然问不存在的exactly4.0/GPA，明显话题污染。随后大量食物场景枚举仍不问本人厌味请求，末卷宣称凭词义消失且排除staff clearance，0.55。"
+  },
+  {
+    "game_id": "S1_TS015_TS013_TS015_TS013_r02_direct",
+    "source_family": "TS015",
+    "mode": "direct",
+    "submissions": 100,
+    "questions": 99,
+    "final_attempts": 1,
+    "success": false,
+    "first_supported_core_breakthrough": 10,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.4,
+    "best_score": 0.4,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 100,
+        "score": 0.4,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 98,
+      "ambiguous": 1,
+      "suspect": 1
+    },
+    "inherited_source": [],
+    "trajectory_notes": "Q10菜品、Q36 RSVP、Q53部分吃、Q74本人导致、Q75/77完成当前食物请求都有；玩家追逐固定“Im done”而漏不喜欢味道和选餐，末卷添加误解且重新说academic deadline，0.4评分疑偏高。"
+  },
+  {
+    "game_id": "S1_TS015_TS013_TS015_TS013_r02_session",
+    "source_family": "TS015",
+    "mode": "session",
+    "submissions": 100,
+    "questions": 81,
+    "final_attempts": 19,
+    "success": false,
+    "first_supported_core_breakthrough": 7,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.35,
+    "best_score": 0.35,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 37,
+        "score": 0.35,
+        "label": "yes and no"
+      },
+      {
+        "submission": 41,
+        "score": 0.35,
+        "label": "yes and no"
+      },
+      {
+        "submission": 45,
+        "score": 0.35,
+        "label": "yes and no"
+      },
+      {
+        "submission": 47,
+        "score": 0.35,
+        "label": "yes and no"
+      },
+      {
+        "submission": 53,
+        "score": 0.35,
+        "label": "yes and no"
+      },
+      {
+        "submission": 57,
+        "score": 0.35,
+        "label": "yes and no"
+      },
+      {
+        "submission": 61,
+        "score": 0.35,
+        "label": "yes and no"
+      },
+      {
+        "submission": 65,
+        "score": 0.35,
+        "label": "yes and no"
+      },
+      {
+        "submission": 68,
+        "score": 0.35,
+        "label": "yes and no"
+      },
+      {
+        "submission": 72,
+        "score": 0.35,
+        "label": "yes and no"
+      },
+      {
+        "submission": 75,
+        "score": 0.35,
+        "label": "yes and no"
+      },
+      {
+        "submission": 85,
+        "score": 0.25,
+        "label": "yes and no"
+      },
+      {
+        "submission": 88,
+        "score": 0.25,
+        "label": "yes and no"
+      },
+      {
+        "submission": 91,
+        "score": 0.35,
+        "label": "yes and no"
+      },
+      {
+        "submission": 93,
+        "score": 0.35,
+        "label": "yes and no"
+      },
+      {
+        "submission": 95,
+        "score": 0.35,
+        "label": "yes and no"
+      },
+      {
+        "submission": 98,
+        "score": 0.35,
+        "label": "yes and no"
+      },
+      {
+        "submission": 99,
+        "score": 0.35,
+        "label": "yes and no"
+      },
+      {
+        "submission": 100,
+        "score": 0.35,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 97,
+      "suspect": 2,
+      "ambiguous": 1
+    },
+    "inherited_source": [
+      {
+        "source_turns": 100,
+        "source_response_id": "fada8b11-72bb-4d8b-b8ef-a55ba94be52a",
+        "prefix_sha256": "bd13ec864e365feb3f3a058be40c2d0fdcd12c47ecc1313129aebfa6ca22fec4"
+      }
+    ],
+    "trajectory_notes": "Q7菜品很早，Q12收走；19次FINAL在Q37-100大多重复0.35模板，缺少新事实。Q63/74提前菜单已知却末卷仍把截止只称misdirection，C2持续0；Q84 leftovers被过推doggy bags造成Q85退至0.25后恢复。"
+  },
+  {
+    "game_id": "S1_TS015_TS013_TS015_TS013_r02_source",
+    "source_family": "TS015",
+    "mode": "source",
+    "submissions": 100,
+    "questions": 96,
+    "final_attempts": 4,
+    "success": false,
+    "first_supported_core_breakthrough": 13,
+    "breakthrough_kind": "source-specific causal/word-sense pivot",
+    "final_score": 0.875,
+    "best_score": 0.875,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 96,
+        "score": 0.875,
+        "label": "yes and no"
+      },
+      {
+        "submission": 97,
+        "score": 0.875,
+        "label": "yes and no"
+      },
+      {
+        "submission": 98,
+        "score": 0.875,
+        "label": "yes and no"
+      },
+      {
+        "submission": 100,
+        "score": 0.875,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 91,
+      "ambiguous": 3,
+      "suspect": 6
+    },
+    "inherited_source": [],
+    "trajectory_notes": "非学科Q13，水道Q20，横渡Q42，急流Q50，正确词义Q93/95；Q32/58/63/74等误导沿河路线、远岸活动。Q96-100四次近同FINAL始终漏适当装备，无新证据进展。"
+  },
+  {
+    "game_id": "S1_TS015_TS013_TS015_TS013_r03_answer_only",
+    "source_family": "TS015",
+    "mode": "answer_only",
+    "submissions": 100,
+    "questions": 98,
+    "final_attempts": 2,
+    "success": false,
+    "first_supported_core_breakthrough": 5,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.65,
+    "best_score": 0.65,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 47,
+        "score": 0.55,
+        "label": "yes and no"
+      },
+      {
+        "submission": 100,
+        "score": 0.65,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 97,
+      "suspect": 1,
+      "ambiguous": 2
+    },
+    "inherited_source": [],
+    "trajectory_notes": "Q5菜品、Q21偏好截止、Q36下道收走、Q55-60本人请求及不满意接近；Q57整道未尝被错肯定，末卷继承，0.65有C3矛盾复核点。"
+  },
+  {
+    "game_id": "S1_TS015_TS013_TS015_TS013_r03_direct",
+    "source_family": "TS015",
+    "mode": "direct",
+    "submissions": 100,
+    "questions": 99,
+    "final_attempts": 1,
+    "success": false,
+    "first_supported_core_breakthrough": 19,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.25,
+    "best_score": 0.25,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 100,
+        "score": 0.25,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 98,
+      "ambiguous": 1,
+      "suspect": 1
+    },
+    "inherited_source": [],
+    "trajectory_notes": "Q19菜品、Q39味道、Q40尝后拒绝很接近；Q74“整桌清空”过宽，引发集体投诉/整桌原因长分支。Q89直接反应无误解已知，但末卷仅投诉触发全餐丢弃，未写本人请求和逐道；0.25。"
+  },
+  {
+    "game_id": "S1_TS015_TS013_TS015_TS013_r03_session",
+    "source_family": "TS015",
+    "mode": "session",
+    "submissions": 100,
+    "questions": 95,
+    "final_attempts": 5,
+    "success": false,
+    "first_supported_core_breakthrough": 2,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.55,
+    "best_score": 0.55,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 92,
+        "score": 0.55,
+        "label": "yes and no"
+      },
+      {
+        "submission": 93,
+        "score": 0.55,
+        "label": "yes and no"
+      },
+      {
+        "submission": 96,
+        "score": 0.55,
+        "label": "yes and no"
+      },
+      {
+        "submission": 98,
+        "score": 0.55,
+        "label": "yes and no"
+      },
+      {
+        "submission": 100,
+        "score": 0.55,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 98,
+      "ambiguous": 2
+    },
+    "inherited_source": [
+      {
+        "source_turns": 100,
+        "source_response_id": "fada8b11-72bb-4d8b-b8ef-a55ba94be52a",
+        "prefix_sha256": "bd13ec864e365feb3f3a058be40c2d0fdcd12c47ecc1313129aebfa6ca22fec4"
+      }
+    ],
+    "trajectory_notes": "Q2菜品、Q53-54高桌和预选、Q91截止、Q99本人选自己餐；Q92/93/96/98/100五次近同FINAL仍全消耗/例行清盘，0.55。"
+  },
+  {
+    "game_id": "S1_TS015_TS013_TS015_TS013_r04_answer_only",
+    "source_family": "TS015",
+    "mode": "answer_only",
+    "submissions": 100,
+    "questions": 98,
+    "final_attempts": 2,
+    "success": false,
+    "first_supported_core_breakthrough": 61,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.5,
+    "best_score": 0.5,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 89,
+        "score": 0.25,
+        "label": "yes and no"
+      },
+      {
+        "submission": 100,
+        "score": 0.5,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 96,
+      "ambiguous": 4
+    },
+    "inherited_source": [],
+    "trajectory_notes": "Q41清桌、Q48用餐、Q61才确认菜品；Q53把菜品+全吃完合问遭no延迟词义突破。Q86服务员、Q88不满意；末卷Q100较89加预点菜单升0.5，但漏截止/高桌/本人明确请求与味道等。"
+  },
+  {
+    "game_id": "S1_TS015_TS013_TS015_TS013_r04_direct",
+    "source_family": "TS015",
+    "mode": "direct",
+    "submissions": 100,
+    "questions": 98,
+    "final_attempts": 2,
+    "success": false,
+    "first_supported_core_breakthrough": 38,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.55,
+    "best_score": 0.55,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 99,
+        "score": 0.55,
+        "label": "yes and no"
+      },
+      {
+        "submission": 100,
+        "score": 0.55,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 97,
+      "ambiguous": 3
+    },
+    "inherited_source": [],
+    "trajectory_notes": "Q38菜品、Q42选菜单，但Q44/69元语言双关问no被误当否定正确选餐/截止。反复全吃完no到Q98，末卷99/100仍写全部吃完，0.55。"
+  },
+  {
+    "game_id": "S1_TS015_TS013_TS015_TS013_r04_session",
+    "source_family": "TS015",
+    "mode": "session",
+    "submissions": 100,
+    "questions": 99,
+    "final_attempts": 1,
+    "success": false,
+    "first_supported_core_breakthrough": 2,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.25,
+    "best_score": 0.25,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 100,
+        "score": 0.25,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 98,
+      "suspect": 1,
+      "ambiguous": 1
+    },
+    "inherited_source": [
+      {
+        "source_turns": 100,
+        "source_response_id": "fada8b11-72bb-4d8b-b8ef-a55ba94be52a",
+        "prefix_sha256": "bd13ec864e365feb3f3a058be40c2d0fdcd12c47ecc1313129aebfa6ca22fec4"
+      }
+    ],
+    "trajectory_notes": "Q2菜品很早，Q6错误他人first的时序使后94问几乎全部围绕其他食客抢食/错票。很多混合问含已真选餐+错抢食得M，玩家将M读成部分抢食确认；末卷0.25。"
+  },
+  {
+    "game_id": "S1_TS028_TS013_TS028_TS013_r01_answer_only",
+    "source_family": "TS028",
+    "mode": "answer_only",
+    "submissions": 100,
+    "questions": 98,
+    "final_attempts": 2,
+    "success": false,
+    "first_supported_core_breakthrough": 31,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.35,
+    "best_score": 0.35,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 34,
+        "score": 0.25,
+        "label": "yes and no"
+      },
+      {
+        "submission": 100,
+        "score": 0.35,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 96,
+      "suspect": 1,
+      "ambiguous": 3
+    },
+    "inherited_source": [],
+    "trajectory_notes": "Q31菜品、Q53部分吃余下清走、Q90本人行为；Q33错误整句yes引Q34吃完，后虽Q35/48否定多次，仍未探不喜口味；末卷只正常清盘，0.35。"
+  },
+  {
+    "game_id": "S1_TS028_TS013_TS028_TS013_r01_direct",
+    "source_family": "TS028",
+    "mode": "direct",
+    "submissions": 100,
+    "questions": 99,
+    "final_attempts": 1,
+    "success": false,
+    "first_supported_core_breakthrough": 45,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.25,
+    "best_score": 0.25,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 100,
+        "score": 0.25,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 100
+    },
+    "inherited_source": [],
+    "trajectory_notes": "Q3自主放弃、Q40物理移走、Q45菜品、Q55-56高桌，Q94清走；没有问味道和明确请求。Q83混合“放面前+遮住”被误追覆盖物，Q84 incidental无信息后仍继续。末卷保留未确认触发，不编完整错因，0.25。"
+  },
+  {
+    "game_id": "S1_TS028_TS013_TS028_TS013_r01_session",
+    "source_family": "TS028",
+    "mode": "session",
+    "submissions": 100,
+    "questions": 97,
+    "final_attempts": 3,
+    "success": false,
+    "first_supported_core_breakthrough": 18,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.35,
+    "best_score": 0.35,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 73,
+        "score": 0.35,
+        "label": "yes and no"
+      },
+      {
+        "submission": 94,
+        "score": 0.35,
+        "label": "yes and no"
+      },
+      {
+        "submission": 100,
+        "score": 0.35,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 97,
+      "ambiguous": 3
+    },
+    "inherited_source": [
+      {
+        "source_turns": 100,
+        "source_response_id": "769858a0-fda1-4bfa-a513-06dabd99a2f2",
+        "prefix_sha256": "8de0ab79c78415784ed6da34578a4dc393a7560ca9f1c12f7b0263475f830d2d"
+      }
+    ],
+    "trajectory_notes": "Q18菜品、Q36不喜、Q58每道不喜欢、Q72主动送回很早接近，Q73却写eaten by no one；Q81/89纠正部分吃后94/100约0.35，整局从不追截止及高桌强制。"
+  },
+  {
+    "game_id": "S1_TS028_TS013_TS028_TS013_r01_source",
+    "source_family": "TS028",
+    "mode": "source",
+    "submissions": 100,
+    "questions": 91,
+    "final_attempts": 9,
+    "success": false,
+    "first_supported_core_breakthrough": 23,
+    "breakthrough_kind": "source-specific causal/word-sense pivot",
+    "final_score": 0.75,
+    "best_score": 0.9,
+    "final_regression": 0.15,
+    "final_scores": [
+      {
+        "submission": 25,
+        "score": 0.5,
+        "label": "yes and no"
+      },
+      {
+        "submission": 36,
+        "score": 0.5,
+        "label": "yes and no"
+      },
+      {
+        "submission": 46,
+        "score": 0.5,
+        "label": "yes and no"
+      },
+      {
+        "submission": 59,
+        "score": 0.75,
+        "label": "yes and no"
+      },
+      {
+        "submission": 72,
+        "score": 0.85,
+        "label": "yes and no"
+      },
+      {
+        "submission": 80,
+        "score": 0.5,
+        "label": "yes and no"
+      },
+      {
+        "submission": 86,
+        "score": 0.85,
+        "label": "yes and no"
+      },
+      {
+        "submission": 93,
+        "score": 0.9,
+        "label": "yes and no"
+      },
+      {
+        "submission": 100,
+        "score": 0.75,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 91,
+      "ambiguous": 8,
+      "suspect": 1
+    },
+    "inherited_source": [],
+    "trajectory_notes": "Q23电梯、Q26垂直、Q70-71电梯口、Q90地下车库。Q93最接近完整0.9，Q100重新写成underground or lower-level并删车紧贴出口，退至0.75。C3把five steps与immediately beside分得过细有复核价值。"
+  },
+  {
+    "game_id": "S1_TS028_TS013_TS028_TS013_r02_answer_only",
+    "source_family": "TS028",
+    "mode": "answer_only",
+    "submissions": 100,
+    "questions": 99,
+    "final_attempts": 1,
+    "success": false,
+    "first_supported_core_breakthrough": 7,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.65,
+    "best_score": 0.65,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 100,
+        "score": 0.65,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 99,
+      "ambiguous": 1
+    },
+    "inherited_source": [],
+    "trajectory_notes": "Q7菜品、Q42不喜欢、Q63尝后发现、Q76拒吃、Q78残食清走、Q85-87截止、Q97每道部分吃；末Q99复合确认接近，但没有问高桌强制和本人请求逐道清残，最终0.65。"
+  },
+  {
+    "game_id": "S1_TS028_TS013_TS028_TS013_r02_direct",
+    "source_family": "TS028",
+    "mode": "direct",
+    "submissions": 100,
+    "questions": 98,
+    "final_attempts": 2,
+    "success": false,
+    "first_supported_core_breakthrough": 19,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.55,
+    "best_score": 0.55,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 87,
+        "score": 0.55,
+        "label": "yes and no"
+      },
+      {
+        "submission": 100,
+        "score": 0.55,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 98,
+      "ambiguous": 2
+    },
+    "inherited_source": [],
+    "trajectory_notes": "Q18-19菜品，Q9选择表/credentials OR被过推密码，Q22给予服务员被过推赠食，Q44“吃完被清”no被误读排除所有waiter，Q87/100都明确否认正确机制；0.55。"
+  },
+  {
+    "game_id": "S1_TS028_TS013_TS028_TS013_r02_session",
+    "source_family": "TS028",
+    "mode": "session",
+    "submissions": 100,
+    "questions": 98,
+    "final_attempts": 2,
+    "success": false,
+    "first_supported_core_breakthrough": null,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.0,
+    "best_score": 0.0,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 95,
+        "score": 0.0,
+        "label": "no"
+      },
+      {
+        "submission": 100,
+        "score": 0.0,
+        "label": "no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 100
+    },
+    "inherited_source": [
+      {
+        "source_turns": 100,
+        "source_response_id": "769858a0-fda1-4bfa-a513-06dabd99a2f2",
+        "prefix_sha256": "8de0ab79c78415784ed6da34578a4dc393a7560ca9f1c12f7b0263475f830d2d"
+      }
+    ],
+    "trajectory_notes": "几乎全局学科注册机制枚举；Q57和Q90确实两次提出食物，但均把词义与“全部吃完导致消失”绑定，no正确拒绝整体却被玩家误用为排除食物，未问原子菜品。Q95/100再写已经多次否定的未保存/同步，0分。"
+  },
+  {
+    "game_id": "S1_TS028_TS013_TS028_TS013_r03_answer_only",
+    "source_family": "TS028",
+    "mode": "answer_only",
+    "submissions": 100,
+    "questions": 99,
+    "final_attempts": 1,
+    "success": false,
+    "first_supported_core_breakthrough": 21,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.4,
+    "best_score": 0.4,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 100,
+        "score": 0.4,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 100
+    },
+    "inherited_source": [],
+    "trajectory_notes": "Q21菜品、Q40-41选餐、Q47事前选、Q51进食后消失；长期误读“尝过每道”与“吃光每道”区别，多次no却继续菜单列表失效枚举。最终凭空写自己服务而非diner，直接违反Q26/67等，0.4。"
+  },
+  {
+    "game_id": "S1_TS028_TS013_TS028_TS013_r03_direct",
+    "source_family": "TS028",
+    "mode": "direct",
+    "submissions": 100,
+    "questions": 98,
+    "final_attempts": 2,
+    "success": false,
+    "first_supported_core_breakthrough": 7,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.65,
+    "best_score": 0.65,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 93,
+        "score": 0.5,
+        "label": "yes and no"
+      },
+      {
+        "submission": 100,
+        "score": 0.65,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 98,
+      "ambiguous": 2
+    },
+    "inherited_source": [],
+    "trajectory_notes": "Q7菜品、Q17提前、Q26主动不吃，Q41固定数量把三道套餐过推选择配额，随后反复规则及skip。Q90弃残、Q96提前menu；Q100新加入deadline从Q93的0.5升0.65，但仍无本人请求味道及逐道上菜残食。"
+  },
+  {
+    "game_id": "S1_TS028_TS013_TS028_TS013_r03_session",
+    "source_family": "TS028",
+    "mode": "session",
+    "submissions": 100,
+    "questions": 89,
+    "final_attempts": 11,
+    "success": false,
+    "first_supported_core_breakthrough": 23,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.25,
+    "best_score": 0.55,
+    "final_regression": 0.3,
+    "final_scores": [
+      {
+        "submission": 25,
+        "score": 0.25,
+        "label": "yes and no"
+      },
+      {
+        "submission": 36,
+        "score": 0.25,
+        "label": "yes and no"
+      },
+      {
+        "submission": 41,
+        "score": 0.25,
+        "label": "yes and no"
+      },
+      {
+        "submission": 46,
+        "score": 0.25,
+        "label": "yes and no"
+      },
+      {
+        "submission": 55,
+        "score": 0.25,
+        "label": "yes and no"
+      },
+      {
+        "submission": 61,
+        "score": 0.25,
+        "label": "yes and no"
+      },
+      {
+        "submission": 69,
+        "score": 0.55,
+        "label": "yes and no"
+      },
+      {
+        "submission": 75,
+        "score": 0.55,
+        "label": "yes and no"
+      },
+      {
+        "submission": 97,
+        "score": 0.25,
+        "label": "yes and no"
+      },
+      {
+        "submission": 99,
+        "score": 0.25,
+        "label": "yes and no"
+      },
+      {
+        "submission": 100,
+        "score": 0.25,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 96,
+      "suspect": 3,
+      "ambiguous": 1
+    },
+    "inherited_source": [
+      {
+        "source_turns": 100,
+        "source_response_id": "769858a0-fda1-4bfa-a513-06dabd99a2f2",
+        "prefix_sha256": "8de0ab79c78415784ed6da34578a4dc393a7560ca9f1c12f7b0263475f830d2d"
+      }
+    ],
+    "trajectory_notes": "Q22-23菜品、Q28高桌；Q40错误学科截止background使前6次FINAL反复0.25。Q64/68/74终于餐前菜单deadline，Q69/75升0.55；随后Q79-95追无关学科是否安全，Q97/99/100遗忘已确认菜单截止退0.25，是明确末卷知识遗失。"
+  },
+  {
+    "game_id": "S1_TS028_TS013_TS028_TS013_r04_answer_only",
+    "source_family": "TS028",
+    "mode": "answer_only",
+    "submissions": 100,
+    "questions": 97,
+    "final_attempts": 3,
+    "success": false,
+    "first_supported_core_breakthrough": 14,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.55,
+    "best_score": 0.55,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 75,
+        "score": 0.55,
+        "label": "yes and no"
+      },
+      {
+        "submission": 88,
+        "score": 0.55,
+        "label": "yes and no"
+      },
+      {
+        "submission": 100,
+        "score": 0.55,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 98,
+      "ambiguous": 2
+    },
+    "inherited_source": [],
+    "trajectory_notes": "Q14菜品、Q27提前、Q55餐前截止、Q66/72逐道上下菜；核心动作仍未问本人不喜欢请求。Q75/88/100三次同型0.55，措辞误称食物已消耗而非剩菜。"
+  },
+  {
+    "game_id": "S1_TS028_TS013_TS028_TS013_r04_direct",
+    "source_family": "TS028",
+    "mode": "direct",
+    "submissions": 100,
+    "questions": 99,
+    "final_attempts": 1,
+    "success": false,
+    "first_supported_core_breakthrough": null,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.0,
+    "best_score": 0.0,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 100,
+        "score": 0.0,
+        "label": "no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 100
+    },
+    "inherited_source": [],
+    "trajectory_notes": "全局99问题均未跳出学科注册范围，数十种支付/身份/时间/技术近义变体反复no。没有一次原子词义探测，末卷反而选择Q32/68已否定的系统新轮次reset，0分。A电梯结构没有可观察有效迁移。"
+  },
+  {
+    "game_id": "S1_TS028_TS013_TS028_TS013_r04_session",
+    "source_family": "TS028",
+    "mode": "session",
+    "submissions": 100,
+    "questions": 97,
+    "final_attempts": 3,
+    "success": false,
+    "first_supported_core_breakthrough": 13,
+    "breakthrough_kind": "meal-course interpretation confirmed",
+    "final_score": 0.65,
+    "best_score": 0.65,
+    "final_regression": 0.0,
+    "final_scores": [
+      {
+        "submission": 74,
+        "score": 0.55,
+        "label": "yes and no"
+      },
+      {
+        "submission": 99,
+        "score": 0.65,
+        "label": "yes and no"
+      },
+      {
+        "submission": 100,
+        "score": 0.65,
+        "label": "yes and no"
+      }
+    ],
+    "exact_repeated_question_extra_turns": 0,
+    "exact_repeated_questions": [],
+    "review_verdict_counts": {
+      "ok": 97,
+      "ambiguous": 2,
+      "suspect": 1
+    },
+    "inherited_source": [
+      {
+        "source_turns": 100,
+        "source_response_id": "769858a0-fda1-4bfa-a513-06dabd99a2f2",
+        "prefix_sha256": "8de0ab79c78415784ed6da34578a4dc393a7560ca9f1c12f7b0263475f830d2d"
+      }
+    ],
+    "trajectory_notes": "Q13菜品、Q45截止、Q72选餐成功、Q75高桌、Q88服务员清；Q74吃完错FINAL0.55后不断合问吃全部/未吃全，Q82混合被误读未尝，末Q99/100改成完全未吃。表观0.65上升可能含C3错误半分，已记评分疑点。"
+  }
+]

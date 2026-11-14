@@ -1,0 +1,74 @@
+{
+  "id": "TS028",
+  "opening": "A person is 30 meters away from his car, but he only took five steps to get in the car. Why is this?",
+  "answer": "He works on a high floor. He takes the elevator down to the underground garage to get in his car. His car is parked right at the underground elevator entrance.",
+  "rubric": [
+    {
+      "id": "C1",
+      "weight": 0.5,
+      "core": true,
+      "criterion": "The 30 meters are primarily vertical distance down several floors, not walking distance.",
+      "full_credit": "The 30 meters are primarily vertical distance down several floors, not walking distance.",
+      "half_credit": "Vertical distance identified without explaining little walking",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+      "points": 50.0,
+      "required_facts": [
+        "The 30 meters are primarily vertical distance down several floors, not walking distance."
+      ],
+      "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+    },
+    {
+      "id": "C2",
+      "weight": 0.3,
+      "core": false,
+      "criterion": "He takes an elevator from a high floor to an underground parking garage.",
+      "full_credit": "He takes an elevator from a high floor to an underground parking garage.",
+      "half_credit": "Elevator identified without high-floor-to-garage route",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+      "points": 30.0,
+      "required_facts": [
+        "He takes an elevator from a high floor to an underground parking garage."
+      ],
+      "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+    },
+    {
+      "id": "C3",
+      "weight": 0.2,
+      "core": false,
+      "criterion": "His car is parked immediately beside the elevator, requiring only a few steps.",
+      "full_credit": "His car is parked immediately beside the elevator, requiring only a few steps.",
+      "half_credit": "Car near elevator identified without few-step implication",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+      "points": 20.0,
+      "required_facts": [
+        "His car is parked immediately beside the elevator, requiring only a few steps."
+      ],
+      "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+    }
+  ],
+  "title": "三十米只走五步",
+  "story_family": "F028",
+  "quality_status": "正常",
+  "review_notes": "",
+  "source_row": "28",
+  "observed_score": null,
+  "completion_requirements": [
+    "The person starts on a high floor and the distance to the car is largely vertical",
+    "An elevator carries him to the underground garage",
+    "The car is parked immediately beside the elevator exit, so only a few steps are needed"
+  ],
+  "annotation_version": "turtle50-v3-host-repair-20261023",
+  "annotation_status": "ai_repair_pending_human",
+  "grading_notes": "AI three-review adjudication v2, pending human confirmation. Score only this submission. Apply full_credit/half_credit/zero_credit explicitly, with zero taking precedence for a materially contradictory checkpoint claim. An omitted qualifier can be partial; replacing the core identity/cause with a wrong one is not an omission. Faithful paraphrases count. Partial score and full narrative are separate outputs. AI independent review B, pending human approval. Credit is 0/.5/1 per checkpoint. Full narrative additionally requires all sourced completion requirements and no incompatible central claims. Judge the submitted explanation, not unasserted chat guesses. Accept faithful paraphrases; missing optional detail is not a contradiction. Do not demand unknown motives, devices or events. Accept faithful paraphrase. Require the listed identities, events and causal links, not exact prose or unspecified incidental details.",
+  "annotation_provenance": {
+    "reviewers": [
+      "a",
+      "b",
+      "c"
+    ],
+    "selected_base": "b",
+    "adjudicator": "root",
+    "human_confirmed": false
+  },
+  "grading_protocol": "coverage-v2"
+}

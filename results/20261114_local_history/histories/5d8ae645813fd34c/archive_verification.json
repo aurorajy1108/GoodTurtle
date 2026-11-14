@@ -1,0 +1,31 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "6fb231e0fa5c6bd493e2a14d99bdfd4892f86df9bc0ae9e41fda85d276f45110",
+    "trajectory.jsonl": "92b4c2e47cb7848cb66b4065eb48e77da2beb345e3aebd2be971826ee36efd76",
+    "config.json": "a014f81ea9e104679e8f092a1f109161aea61071386b2e945a24be08c367d75c",
+    "prompts.json": "fc46446f09444f43c20df1c19fbb54338043bc29e602a6373a8af5b06ee85640",
+    "puzzle_private.json": "0d97b7c7f51356a496e59bad231b92684dc56fbb9fe3ef59bcc53f05517f6e87",
+    "host_context.json": "f5bf26f31194953a451e178d37ba52f11c4845772039d05bde5790635582bde8"
+  },
+  "api_audit": null,
+  "aliases": [
+    {
+      "source": "runs/api/20261023_host_reliability/frozen_inputs/20261023_team_local_extra/TS009_r03_solo_reflect",
+      "status_as_recorded": "running",
+      "simulation": false,
+      "submissions": 64,
+      "result_sha256": "6fb231e0fa5c6bd493e2a14d99bdfd4892f86df9bc0ae9e41fda85d276f45110",
+      "signature": "5d8ae645813fd34c3fa9281f92924fe15e5d90244ad318e180796f1faeb509eb",
+      "event_count": 129,
+      "trajectory_sha256": "92b4c2e47cb7848cb66b4065eb48e77da2beb345e3aebd2be971826ee36efd76",
+      "first_submission": "2026-10-23T14:07:15.650269+00:00",
+      "first_text": "Did his stopping to tie his shoelace play a causal role in the accident?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim.",
+  "derived_presentation_files_sha256": {
+    "trajectory.html": "a27a31326a59ff206f2b0b561504aaaa4a76de56e19f93f118f275784d8f8168"
+  }
+}

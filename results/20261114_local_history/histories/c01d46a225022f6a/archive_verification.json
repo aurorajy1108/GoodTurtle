@@ -1,0 +1,42 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "750c6649900bd521a7c9852c72d78f7d15e5bc9bc4a0297b45be2ff14d27ec73",
+    "trajectory.jsonl": "56e0f4e10f7b033633f3b01ab5f078570b51d05701c7fc536603c2f31267eac2",
+    "trajectory.md": "2d05394f8610b19b019558913b7fee320fa81de23a8ac01fa33bb38c3ad810a2",
+    "trajectory.html": "307dc0cdfcb88b96fa7fa907f6d5b5b4dced5ef34b716f21aeae9374b06500ae",
+    "config.json": "2f478a93b148e08ef772bb1729ef0c18373ea9b3511902600a95a8bde32762cf",
+    "prompts.json": "e435cae9a3407f827f9739e8dcceaa108287cf79ef118d4ad496edfdec1d5b81",
+    "puzzle_private.json": "aa6e5852a0c7efd39fea167a84628635d47ef59311c2d858b5c8b7d3d77230bb",
+    "host_context.json": "e29f11e1c47b8b4eff8a6da7e91d0b4740c0dbe8f115a75b3f1f01114fae2f37",
+    "pricing_snapshot.json": "64c31820443327839ce32e5128053650aacd3becf6b6746e94de79bb5620c17d",
+    "cost_summary.json": "600a9de880c9eaff73ddccb30e020901c755c6bc05c70402322ebcb70319bc6a",
+    "token_costs.csv": "f2191de5c5a230732e09adb2f9c25924f80084069af8599d4bb4d4f2fcc6421a",
+    "human_review.csv": "70bc2bd02aa869313a5a2834eb0a042af2d36969e13cda48d18aab7702e8f385",
+    "review_template.csv": "70bc2bd02aa869313a5a2834eb0a042af2d36969e13cda48d18aab7702e8f385",
+    "transfer_input.json": "22a81d3bd12a0630b839b1dd01ebf24ebf8034f7743a2050ea0681dca77b7d0a",
+    "source_answer_reveal.json": "89694b3af43c76ec9ed70359959992c85432e2acec462c251a95c6e5453faec9"
+  },
+  "api_audit": {
+    "source_raw_sha256": "38bb3f24df552a32b54b91e797b762b6ab0551153b89cbda322ccd8d7ab67bfa",
+    "source_raw_bytes": 693109,
+    "published_sha256": "84ba015eab032f9a8a2b5dab6f4d1a934418815d7c9e0fb45766563d0129cdfc",
+    "attempts": 40
+  },
+  "aliases": [
+    {
+      "source": "runs/api/2026-11-02_set1_once_resume01/continual/S1_TS028_TS013_TS028_TS013_r01_source",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 14,
+      "result_sha256": "750c6649900bd521a7c9852c72d78f7d15e5bc9bc4a0297b45be2ff14d27ec73",
+      "signature": "c01d46a225022f6a06565608ecfa8dee5d837feaac75ca6bc3ebab31b6cab585",
+      "event_count": 42,
+      "trajectory_sha256": "56e0f4e10f7b033633f3b01ab5f078570b51d05701c7fc536603c2f31267eac2",
+      "first_submission": "2026-11-03T00:22:43.377846+00:00",
+      "first_text": "Did the person take five unusually large steps, each covering several meters?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

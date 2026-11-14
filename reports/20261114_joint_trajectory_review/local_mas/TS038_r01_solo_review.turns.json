@@ -1,0 +1,2808 @@
+[
+  {
+    "timestamp": "2026-11-12T11:48:30.357898+00:00",
+    "event": "submission",
+    "index": 1,
+    "type": "question",
+    "text": "Is the repeated sentence spoken by a person to the same listener each time?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated sentence spoken by a person to the same listener each time?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T11:48:43.993309+00:00",
+    "event": "submission",
+    "index": 2,
+    "type": "question",
+    "text": "Are the seven repetitions seven different people each expressing disappointment?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nAre the seven repetitions seven different people each expressing disappointment?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T11:48:51.661010+00:00",
+    "event": "submission",
+    "index": 3,
+    "type": "question",
+    "text": "Is the repeated sentence written text rather than spoken aloud?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated sentence written text rather than spoken aloud?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T11:49:03.058346+00:00",
+    "event": "submission",
+    "index": 4,
+    "type": "question",
+    "text": "Are the seven written copies addressed to seven different recipients?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nAre the seven written copies addressed to seven different recipients?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T11:49:22.308202+00:00",
+    "event": "submission",
+    "index": 5,
+    "type": "question",
+    "text": "Are all seven written copies part of a single document or surface?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nAre all seven written copies part of a single document or surface?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-12T11:49:46.988652+00:00",
+    "event": "submission",
+    "index": 6,
+    "type": "question",
+    "text": "Is there a single author of all seven written copies?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs there a single author of all seven written copies?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T11:50:00.609462+00:00",
+    "event": "submission",
+    "index": 7,
+    "type": "question",
+    "text": "Is the person who says \"I know I'm in trouble\" the intended recipient of the seven copies?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the person who says \"I know I'm in trouble\" the intended recipient of the seven copies?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T11:50:14.169853+00:00",
+    "event": "submission",
+    "index": 8,
+    "type": "question",
+    "text": "Is the person who says \"I know I'm in trouble\" the author of the seven copies?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the person who says \"I know I'm in trouble\" the author of the seven copies?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T11:50:25.108719+00:00",
+    "event": "submission",
+    "index": 9,
+    "type": "question",
+    "text": "Was the author required to write the sentence repeatedly by someone else, as a punishment or assignment?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWas the author required to write the sentence repeatedly by someone else, as a punishment or assignment?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T11:50:34.168489+00:00",
+    "event": "submission",
+    "index": 10,
+    "type": "question",
+    "text": "Had someone actually said this sentence to the author before the author wrote it?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nHad someone actually said this sentence to the author before the author wrote it?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T11:50:43.809875+00:00",
+    "event": "submission",
+    "index": 11,
+    "type": "question",
+    "text": "Were the seven copies written on something the author was not allowed to write on?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWere the seven copies written on something the author was not allowed to write on?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-12T11:51:02.765282+00:00",
+    "event": "submission",
+    "index": 12,
+    "type": "question",
+    "text": "Did the author write the sentence as a statement that the author himself will leave?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDid the author write the sentence as a statement that the author himself will leave?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T11:51:13.701680+00:00",
+    "event": "submission",
+    "index": 13,
+    "type": "question",
+    "text": "Does the \"you\" in the sentence refer to the author?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the \"you\" in the sentence refer to the author?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T11:51:49.893620+00:00",
+    "event": "submission",
+    "index": 14,
+    "type": "question",
+    "text": "Did the author commit some misdeed that would disappoint the person referred to in the sentence?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDid the author commit some misdeed that would disappoint the person referred to in the sentence?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T11:53:54.235329+00:00",
+    "event": "submission",
+    "index": 15,
+    "type": "question",
+    "text": "Is the \"I\" who says \"I'm never coming back\" a specific real person in the author's life?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the \"I\" who says \"I'm never coming back\" a specific real person in the author's life?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T11:54:24.155464+00:00",
+    "event": "submission",
+    "index": 16,
+    "type": "question",
+    "text": "Is the author in trouble with that real person?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the author in trouble with that real person?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T11:54:41.163483+00:00",
+    "event": "submission",
+    "index": 17,
+    "type": "question",
+    "text": "Does the author intend the seven copies to be taken as the real person's own words or writing?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the author intend the seven copies to be taken as the real person's own words or writing?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T11:55:13.559718+00:00",
+    "event": "submission",
+    "index": 18,
+    "type": "question",
+    "text": "Is the author trying to mislead a third person (someone other than the real person) with the forged copies?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the author trying to mislead a third person (someone other than the real person) with the forged copies?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T11:55:32.578667+00:00",
+    "event": "submission",
+    "index": 19,
+    "type": "question",
+    "text": "Is the author's goal to make the third person feel sorry for the author?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the author's goal to make the third person feel sorry for the author?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T11:55:55.660183+00:00",
+    "event": "submission",
+    "index": 20,
+    "type": "question",
+    "text": "Is the third person an authority figure over the author, such as a parent, teacher, or employer?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the third person an authority figure over the author, such as a parent, teacher, or employer?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-12T11:56:09.463479+00:00",
+    "event": "submission",
+    "index": 21,
+    "type": "question",
+    "text": "Is the author trying to make the third person believe the author is now available or unattached?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the author trying to make the third person believe the author is now available or unattached?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T11:56:41.151242+00:00",
+    "event": "submission",
+    "index": 22,
+    "type": "question",
+    "text": "Is the author trying to hide that the real person is still present in the author's life?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the author trying to hide that the real person is still present in the author's life?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T11:57:00.683320+00:00",
+    "event": "submission",
+    "index": 23,
+    "type": "question",
+    "text": "Does the real person know about the seven forged copies?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the real person know about the seven forged copies?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T11:57:13.112003+00:00",
+    "event": "submission",
+    "index": 24,
+    "type": "question",
+    "text": "Is the deception intended as a prank or joke on the third person?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the deception intended as a prank or joke on the third person?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T11:57:24.444625+00:00",
+    "event": "submission",
+    "index": 25,
+    "type": "question",
+    "text": "Are the forged copies meant to explain to the third person why the real person will not be present or return?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nAre the forged copies meant to explain to the third person why the real person will not be present or return?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T11:57:38.895569+00:00",
+    "event": "submission",
+    "index": 26,
+    "type": "question",
+    "text": "Is the real person actually absent for some reason the author wants to conceal from the third person?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the real person actually absent for some reason the author wants to conceal from the third person?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T11:57:58.732521+00:00",
+    "event": "submission",
+    "index": 27,
+    "type": "question",
+    "text": "Is the real person unable, rather than merely unwilling, to return?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the real person unable, rather than merely unwilling, to return?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T11:58:11.492731+00:00",
+    "event": "submission",
+    "index": 28,
+    "type": "question",
+    "text": "Has the real person died?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nHas the real person died?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T11:58:23.909961+00:00",
+    "event": "submission",
+    "index": 29,
+    "type": "question",
+    "text": "Were the forged notes made to spare the third person from learning of the death?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWere the forged notes made to spare the third person from learning of the death?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T11:59:21.752946+00:00",
+    "event": "submission",
+    "index": 30,
+    "type": "question",
+    "text": "Is the third person a child?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the third person a child?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-12T11:59:41.472807+00:00",
+    "event": "submission",
+    "index": 31,
+    "type": "question",
+    "text": "Will the third person fault the author for the real person's not returning?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWill the third person fault the author for the real person's not returning?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-12T12:01:40.788439+00:00",
+    "event": "submission",
+    "index": 32,
+    "type": "question",
+    "text": "Does the third person actually see or receive the forged notes?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the third person actually see or receive the forged notes?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-12T12:02:07.412774+00:00",
+    "event": "submission",
+    "index": 33,
+    "type": "final",
+    "text": "A real person close to the author has died and can never return, but a third party expects that person to come back and would be shattered by the truth. So the author forges the dead person's own words—\"You've disappointed me so much; I'm never coming back\"—written as though addressed to the author, and presents them as that person's farewell. The third party is then spared the news of the death, instead believing the absent person simply chose to cut ties after being let down. The author writes the same farewell again and again, seven copies in all, maintaining the fiction that shelters the other person from grief; seeing the repeated lines, the author sighs that the lie is a burden that will land them in trouble: \"I know I'm in trouble.\"",
+    "forced": false,
+    "raw_player_output": "FINAL\nA real person close to the author has died and can never return, but a third party expects that person to come back and would be shattered by the truth. So the author forges the dead person's own words—\"You've disappointed me so much; I'm never coming back\"—written as though addressed to the author, and presents them as that person's farewell. The third party is then spared the news of the death, instead believing the absent person simply chose to cut ties after being let down. The author writes the same farewell again and again, seven copies in all, maintaining the fiction that shelters the other person from grief; seeing the repeated lines, the author sighs that the lie is a burden that will land them in trouble: \"I know I'm in trouble.\"",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 33,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "the author forges the dead person's own words—\"You've disappointed me so much; I'm never coming back\"—written as though addressed to the author, and presents them as that person's farewell. The third party is then spared the news of the death, instead believing the absent person simply chose to cut ties after being let down.",
+          "reason": "The staged voluntary departure via a forged farewell is present, but the wife and murder are missing, so the checkpoint is only partly correct."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "the author forges the dead person's own words—\"You've disappointed me so much; I'm never coming back\" ... The author writes the same farewell again and again, seven copies in all.",
+          "reason": "The repeated forged message is present, but the crucial element that the repetitions are attempts to imitate the wife's handwriting is absent."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "seeing the repeated lines, the author sighs that the lie is a burden that will land them in trouble: \"I know I'm in trouble.\"",
+          "reason": "The submission conveys worry about trouble, but it does not identify the required cause: inability to imitate her handwriting."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "the author forges the dead person's own words—\"You've disappointed me so much; I'm never coming back\"—written as though addressed to the author, and presents them as that person's farewell. The third party is then spared the news of the death, instead believing the absent person simply chose to cut ties after being let down."
+        },
+        {
+          "id": "C1.F2",
+          "status": "missing",
+          "evidence": ""
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "the author forges the dead person's own words—\"You've disappointed me so much; I'm never coming back\"—written as though addressed to the author, and presents them as that person's farewell. The third party is then spared the news of the death, instead believing the absent person simply chose to cut ties after being let down."
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "the author forges the dead person's own words—\"You've disappointed me so much; I'm never coming back\" ... The author writes the same farewell again and again, seven copies in all."
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "seeing the repeated lines, the author sighs that the lie is a burden that will land them in trouble: \"I know I'm in trouble.\""
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "seeing the repeated lines, the author sighs that the lie is a burden that will land them in trouble: \"I know I'm in trouble.\""
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.5,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-12T12:04:03.082826+00:00",
+    "event": "submission",
+    "index": 34,
+    "type": "question",
+    "text": "Must the author repeatedly produce letters in the dead person's name to keep the third person from learning of the death?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nMust the author repeatedly produce letters in the dead person's name to keep the third person from learning of the death?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T12:05:24.071215+00:00",
+    "event": "submission",
+    "index": 35,
+    "type": "question",
+    "text": "Does the author fear being exposed as the forger?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the author fear being exposed as the forger?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T12:05:37.447075+00:00",
+    "event": "submission",
+    "index": 36,
+    "type": "final",
+    "text": "Someone in the author's life—call him X—has died and can never return. Rather than let a third person learn of the death, the author fabricates X's own bitter farewell: \"You've disappointed me so much; I'm never coming back.\" Written in X's voice and addressed to the author himself, the forged note explains X's permanent absence as X choosing to cut ties, sparing the third person the news of the death. The same line exists as seven identical copies. Seeing them, the author sighs, \"I know I'm in trouble\"—not because of the dead man, but out of guilt and the dread that the forgery will be exposed.",
+    "forced": false,
+    "raw_player_output": "FINAL\nSomeone in the author's life—call him X—has died and can never return. Rather than let a third person learn of the death, the author fabricates X's own bitter farewell: \"You've disappointed me so much; I'm never coming back.\" Written in X's voice and addressed to the author himself, the forged note explains X's permanent absence as X choosing to cut ties, sparing the third person the news of the death. The same line exists as seven identical copies. Seeing them, the author sighs, \"I know I'm in trouble\"—not because of the dead man, but out of guilt and the dread that the forgery will be exposed.",
+    "label": "no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 36,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0,
+          "evidence": "Someone in the author's life—call him X—has died and can never return.",
+          "reason": "The required fact that the narrator murdered his wife is contradicted by the male dead man X and omitted entirely; only the staged voluntary departure is present."
+        },
+        {
+          "id": "C2",
+          "credit": 0,
+          "evidence": "The same line exists as seven identical copies.",
+          "reason": "The repeated message is present, but the required fact that the repetitions are attempts to forge his wife's handwriting is contradicted by the male X and missing, so credit is capped at zero."
+        },
+        {
+          "id": "C3",
+          "credit": 0,
+          "evidence": "out of guilt and the dread that the forgery will be exposed",
+          "reason": "The worry is present, but the required causal fact that inability to imitate her handwriting causes it is contradicted by the dead man framing and absent."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "contradicted",
+          "evidence": "Someone in the author's life—call him X—has died and can never return."
+        },
+        {
+          "id": "C1.F2",
+          "status": "contradicted",
+          "evidence": "Someone in the author's life—call him X—has died and can never return."
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "Rather than let a third person learn of the death, the author fabricates X's own bitter farewell ... explains X's permanent absence as X choosing to cut ties."
+        },
+        {
+          "id": "C2.F1",
+          "status": "contradicted",
+          "evidence": "Someone in the author's life—call him X—has died and can never return."
+        },
+        {
+          "id": "C2.F2",
+          "status": "contradicted",
+          "evidence": "not because of the dead man, but out of guilt and the dread that the forgery will be exposed"
+        },
+        {
+          "id": "C3.F1",
+          "status": "contradicted",
+          "evidence": "not because of the dead man, but out of guilt and the dread that the forgery will be exposed"
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [
+        {
+          "quote": "Someone in the author's life—call him X—has died and can never return",
+          "reference": "The narrator killed his wife",
+          "checkpoint_ids": [
+            "C1"
+          ]
+        },
+        {
+          "quote": "not because of the dead man, but out of guilt and the dread that the forgery will be exposed",
+          "reference": "His inability to imitate her handwriting leads him to worry about being caught",
+          "checkpoint_ids": [
+            "C2",
+            "C3"
+          ]
+        }
+      ],
+      "partial_score": 0.0,
+      "complete": false,
+      "label": "no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-12T12:07:13.746639+00:00",
+    "event": "submission",
+    "index": 37,
+    "type": "question",
+    "text": "Do the seven copies serve a formal or official purpose, such as a legal or bureaucratic claim?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDo the seven copies serve a formal or official purpose, such as a legal or bureaucratic claim?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T12:07:32.286624+00:00",
+    "event": "submission",
+    "index": 38,
+    "type": "question",
+    "text": "Is the author the dead person's spouse or partner?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the author the dead person's spouse or partner?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T12:07:49.985280+00:00",
+    "event": "submission",
+    "index": 39,
+    "type": "question",
+    "text": "Does the author feel personally responsible for the partner's death?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the author feel personally responsible for the partner's death?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T12:08:15.139537+00:00",
+    "event": "submission",
+    "index": 40,
+    "type": "question",
+    "text": "Did the death occur during a conflict or argument between the author and the partner?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDid the death occur during a conflict or argument between the author and the partner?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-12T12:08:29.612369+00:00",
+    "event": "submission",
+    "index": 41,
+    "type": "question",
+    "text": "Does the author read the forged farewell aloud to the third party?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the author read the forged farewell aloud to the third party?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-12T12:08:52.235960+00:00",
+    "event": "submission",
+    "index": 42,
+    "type": "final",
+    "text": "The author was the dead partner's spouse. The partner has died, and the author feels personally responsible for that death—believing they disappointed the partner and drove them away. Unable to voice the loss plainly, the author writes the dead partner's reproach in the partner's own voice, addressed to the author: \"You've disappointed me so much; I'm never coming back.\" With this forged farewell, the author accounts for the partner's permanent absence to another person as a deliberate break-up rather than a death, sparing that person from learning of it. Writing the same line over and over is the author's way of keeping the story—and the guilt—in place; seeing it, the author sighs, \"I know I'm in trouble,\" dreading that the forgery will be found out.",
+    "forced": false,
+    "raw_player_output": "FINAL\nThe author was the dead partner's spouse. The partner has died, and the author feels personally responsible for that death—believing they disappointed the partner and drove them away. Unable to voice the loss plainly, the author writes the dead partner's reproach in the partner's own voice, addressed to the author: \"You've disappointed me so much; I'm never coming back.\" With this forged farewell, the author accounts for the partner's permanent absence to another person as a deliberate break-up rather than a death, sparing that person from learning of it. Writing the same line over and over is the author's way of keeping the story—and the guilt—in place; seeing it, the author sighs, \"I know I'm in trouble,\" dreading that the forgery will be found out.",
+    "label": "no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 42,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0,
+          "evidence": "The partner has died, and the author feels personally responsible for that death—believing they disappointed the partner and drove them away.",
+          "reason": "The required murder of the wife is contradicted by the alternative death-by-disappointment/driving-away narrative; only the staged voluntary departure is present."
+        },
+        {
+          "id": "C2",
+          "credit": 0,
+          "evidence": "Writing the same line over and over is the author's way of keeping the story—and the guilt—in place.",
+          "reason": "The repeated message is present, but the required fact that the repetitions are attempts to forge the wife's handwriting is contradicted by this alternative purpose and the wife is omitted."
+        },
+        {
+          "id": "C3",
+          "credit": 0,
+          "evidence": "dreading that the forgery will be found out",
+          "reason": "The worry is present, but the required causal fact—inability to imitate her handwriting—is absent and replaced by guilt and keeping the story, so this is contradicted."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "contradicted",
+          "evidence": "The partner has died, and the author feels personally responsible for that death—believing they disappointed the partner and drove them away."
+        },
+        {
+          "id": "C1.F2",
+          "status": "contradicted",
+          "evidence": "The partner has died, and the author feels personally responsible for that death—believing they disappointed the partner and drove them away."
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "With this forged farewell, the author accounts for the partner's permanent absence to another person as a deliberate break-up rather than a death, sparing that person from learning of it."
+        },
+        {
+          "id": "C2.F1",
+          "status": "contradicted",
+          "evidence": "Writing the same line over and over is the author's way of keeping the story—and the guilt—in place."
+        },
+        {
+          "id": "C2.F2",
+          "status": "contradicted",
+          "evidence": "Writing the same line over and over is the author's way of keeping the story—and the guilt—in place; seeing it, the author sighs, \"I know I'm in trouble,\" dreading that the forgery will be found out."
+        },
+        {
+          "id": "C3.F1",
+          "status": "contradicted",
+          "evidence": "Writing the same line over and over is the author's way of keeping the story—and the guilt—in place; seeing it, the author sighs, \"I know I'm in trouble,\" dreading that the forgery will be found out."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [
+        {
+          "quote": "The partner has died, and the author feels personally responsible for that death—believing they disappointed the partner and drove them away.",
+          "reference": "The narrator killed his wife",
+          "checkpoint_ids": [
+            "C1"
+          ]
+        },
+        {
+          "quote": "Writing the same line over and over is the author's way of keeping the story—and the guilt—in place",
+          "reference": "The repetitions are failed attempts to imitate her handwriting, making him fear discovery",
+          "checkpoint_ids": [
+            "C2"
+          ]
+        },
+        {
+          "quote": "Writing the same line over and over is the author's way of keeping the story—and the guilt—in place; seeing it, the author sighs, \"I know I'm in trouble,\" dreading that the forgery will be found out.",
+          "reference": "His inability to imitate her handwriting leads him to worry about being caught",
+          "checkpoint_ids": [
+            "C3"
+          ]
+        }
+      ],
+      "partial_score": 0.0,
+      "complete": false,
+      "label": "no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-12T12:10:01.170926+00:00",
+    "event": "submission",
+    "index": 43,
+    "type": "question",
+    "text": "Did the author's own actions cause the partner's death?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDid the author's own actions cause the partner's death?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T12:10:13.203100+00:00",
+    "event": "submission",
+    "index": 44,
+    "type": "question",
+    "text": "Was the partner's death accidental?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWas the partner's death accidental?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T12:10:31.298134+00:00",
+    "event": "submission",
+    "index": 45,
+    "type": "final",
+    "text": "The author was married to the dead person. By the author's own deliberate actions, that partner died—something the author knows and feels personally responsible for. To keep anyone from learning of the death, the author fabricates the dead partner's own words: \"You've disappointed me so much; I'm never coming back,\" written in the partner's voice and addressed to the author, as though the partner had walked out for good. The seven identical copies are the author's forged evidence of that supposed break-up. Someone who would otherwise ask where the partner went is instead led to believe the partner simply chose to leave and will never return—so the death stays hidden. Seeing the repeated forgeries, the author sighs, \"I know I'm in trouble\": the lie is what stands between them and exposure for the killing.",
+    "forced": false,
+    "raw_player_output": "FINAL\nThe author was married to the dead person. By the author's own deliberate actions, that partner died—something the author knows and feels personally responsible for. To keep anyone from learning of the death, the author fabricates the dead partner's own words: \"You've disappointed me so much; I'm never coming back,\" written in the partner's voice and addressed to the author, as though the partner had walked out for good. The seven identical copies are the author's forged evidence of that supposed break-up. Someone who would otherwise ask where the partner went is instead led to believe the partner simply chose to leave and will never return—so the death stays hidden. Seeing the repeated forgeries, the author sighs, \"I know I'm in trouble\": the lie is what stands between them and exposure for the killing.",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 45,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "By the author's own deliberate actions, that partner died ... To keep anyone from learning of the death, the author fabricates the dead partner's own words ... as though the partner had walked out for good ... exposure for the killing.",
+          "reason": "The submission covers a deliberate killing and the staging of a voluntary departure through a forged farewell, but it does not explicitly identify the victim as the narrator's wife, so the checkpoint is only partly correct."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "The seven identical copies are the author's forged evidence of that supposed break-up ... Seeing the repeated forgeries, the author sighs, \"I know I'm in trouble\".",
+          "reason": "The repeated forged message is present, but the required fact that the repetitions are attempts to imitate his wife's handwriting is missing, so the checkpoint is only partly correct."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "the lie is what stands between them and exposure for the killing",
+          "reason": "The worry about exposure is present, but the required causal fact that inability to imitate her handwriting leads to this worry is absent and replaced by a vaguer explanation about the lie itself."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "By the author's own deliberate actions, that partner died ... To keep anyone from learning of the death, the author fabricates the dead partner's own words ... as though the partner had walked out for good."
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "By the author's own deliberate actions, that partner died ... exposure for the killing."
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "To keep anyone from learning of the death, the author fabricates the dead partner's own words ... as though the partner had walked out for good ... Someone who would otherwise ask where the partner went is instead led to believe the partner simply chose to leave and will never return."
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "The seven identical copies are the author's forged evidence of that supposed break-up."
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "The seven identical copies are the author's forged evidence of that supposed break-up ... Seeing the repeated forgeries, the author sighs, \"I know I'm in trouble\": the lie is what stands between them and exposure for the killing."
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "Seeing the repeated forgeries, the author sighs, \"I know I'm in trouble\": the lie is what stands between them and exposure for the killing."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.5,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-12T12:11:58.285938+00:00",
+    "event": "submission",
+    "index": 46,
+    "type": "question",
+    "text": "Does the author fear the third person will learn that the author caused the partner's death?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the author fear the third person will learn that the author caused the partner's death?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T12:12:38.137344+00:00",
+    "event": "submission",
+    "index": 47,
+    "type": "final",
+    "text": "The author killed their spouse. The spouse is dead and cannot return, and a third person would otherwise find out—both that the spouse is dead and that the author caused it. So the author forged the dead spouse's own voice, writing \"You've disappointed me so much; I'm never coming back\" as though the spouse had addressed the author and simply chosen to leave for good. That way the spouse's permanent absence is explained as a deliberate departure, and the death stays concealed. The author set down the same forged lines seven times. Looking at them, the author sighs, \"I know I'm in trouble\"—the fabrication is all that keeps the death and the killing hidden, and exposure would reveal everything.",
+    "forced": false,
+    "raw_player_output": "FINAL\nThe author killed their spouse. The spouse is dead and cannot return, and a third person would otherwise find out—both that the spouse is dead and that the author caused it. So the author forged the dead spouse's own voice, writing \"You've disappointed me so much; I'm never coming back\" as though the spouse had addressed the author and simply chosen to leave for good. That way the spouse's permanent absence is explained as a deliberate departure, and the death stays concealed. The author set down the same forged lines seven times. Looking at them, the author sighs, \"I know I'm in trouble\"—the fabrication is all that keeps the death and the killing hidden, and exposure would reveal everything.",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 47,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The author killed their spouse. ... So the author forged the dead spouse's own voice ... explained as a deliberate departure, and the death stays concealed.",
+          "reason": "The killing and staged voluntary departure are covered, but the required identity—the narrator's wife—is replaced by the generic 'spouse,' so full credit is not possible."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "The author set down the same forged lines seven times.",
+          "reason": "The repeated forged message is present, but the required fact that the repetitions are attempts to forge the wife's handwriting is missing."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "Looking at them, the author sighs, \"I know I'm in trouble\"—the fabrication is all that keeps the death and the killing hidden, and exposure would reveal everything.",
+          "reason": "Fear of exposure is present, but the required causal fact—inability to imitate her handwriting—is absent."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The author killed their spouse. ... as though the spouse had addressed the author and simply chosen to leave for good. ... the death and the killing hidden."
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "The author killed their spouse."
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "the author forged the dead spouse's own voice ... as though the spouse had addressed the author and simply chosen to leave for good. That way the spouse's permanent absence is explained as a deliberate departure, and the death stays concealed."
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "The author set down the same forged lines seven times."
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "The author set down the same forged lines seven times. Looking at them, the author sighs, \"I know I'm in trouble\"—the fabrication is all that keeps the death and the killing hidden, and exposure would reveal everything."
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "Looking at them, the author sighs, \"I know I'm in trouble\"—the fabrication is all that keeps the death and the killing hidden, and exposure would reveal everything."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.5,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-12T12:13:18.381036+00:00",
+    "event": "submission",
+    "index": 48,
+    "type": "question",
+    "text": "Does the third person believe the spouse is dead?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the third person believe the spouse is dead?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T12:13:52.856012+00:00",
+    "event": "submission",
+    "index": 49,
+    "type": "question",
+    "text": "Is the forged note meant to stop the third person from searching for or making inquiries about the spouse?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the forged note meant to stop the third person from searching for or making inquiries about the spouse?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T12:14:18.826905+00:00",
+    "event": "submission",
+    "index": 50,
+    "type": "final",
+    "text": "The author killed their spouse. Because someone else would otherwise search for or keep asking about the spouse, the author forged the dead spouse's own voice—writing out \"You've disappointed me so much; I'm never coming back\" as though the spouse had addressed the author and deliberately ended things. The forged farewell is meant to pass as the spouse's own writing, so that the third person explains the spouse's absence as a chosen break-up, stops searching, and never learns of the death. The author produced the same sentence seven times; looking at those fabricated lines, the author sighs, \"I know I'm in trouble\"—the lie is what keeps the death hidden, and if it unravels, the third person will learn both that the spouse is dead and that the author caused it.",
+    "forced": false,
+    "raw_player_output": "FINAL\nThe author killed their spouse. Because someone else would otherwise search for or keep asking about the spouse, the author forged the dead spouse's own voice—writing out \"You've disappointed me so much; I'm never coming back\" as though the spouse had addressed the author and deliberately ended things. The forged farewell is meant to pass as the spouse's own writing, so that the third person explains the spouse's absence as a chosen break-up, stops searching, and never learns of the death. The author produced the same sentence seven times; looking at those fabricated lines, the author sighs, \"I know I'm in trouble\"—the lie is what keeps the death hidden, and if it unravels, the third person will learn both that the spouse is dead and that the author caused it.",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 50,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The author killed their spouse. ... the author forged the dead spouse's own voice—writing out \"You've disappointed me so much; I'm never coming back\" as though the spouse had addressed the author and deliberately ended things. The forged farewell is meant to pass as the spouse's own writing, so that the third person explains the spouse's absence as a chosen break-up, stops searching, and never learns of the death.",
+          "reason": "The deliberate killing and staged voluntary departure are covered, but the submission uses 'spouse' rather than the required 'wife,' omitting that specific identity qualifier."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "The forged farewell is meant to pass as the spouse's own writing ... The author produced the same sentence seven times",
+          "reason": "The repeated forged message is present, but the required fact that the repetitions are attempts to imitate the wife's handwriting is missing; the submission only says the text is meant to pass as the spouse's writing."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "looking at those fabricated lines, the author sighs, \"I know I'm in trouble\"—the lie is what keeps the death hidden, and if it unravels, the third person will learn both that the spouse is dead and that the author caused it.",
+          "reason": "The worry about being caught is present, but the required causal link—his inability to imitate her handwriting—is missing; the explanation instead attributes the fear to the lie unraveling."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The author killed their spouse. ... the author forged the dead spouse's own voice—writing out \"You've disappointed me so much; I'm never coming back\" as though the spouse had addressed the author and deliberately ended things. The forged farewell is meant to pass as the spouse's own writing, so that the third person explains the spouse's absence as a chosen break-up, stops searching, and never learns of the death."
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "The author killed their spouse."
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "the author forged the dead spouse's own voice—writing out \"You've disappointed me so much; I'm never coming back\" as though the spouse had addressed the author and deliberately ended things. The forged farewell is meant to pass as the spouse's own writing, so that the third person explains the spouse's absence as a chosen break-up, stops searching, and never learns of the death."
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "The forged farewell is meant to pass as the spouse's own writing ... The author produced the same sentence seven times"
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "The author produced the same sentence seven times; looking at those fabricated lines, the author sighs, \"I know I'm in trouble\"—the lie is what keeps the death hidden, and if it unravels, the third person will learn both that the spouse is dead and that the author caused it."
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "looking at those fabricated lines, the author sighs, \"I know I'm in trouble\"—the lie is what keeps the death hidden, and if it unravels, the third person will learn both that the spouse is dead and that the author caused it."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.5,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-12T12:15:25.361207+00:00",
+    "event": "submission",
+    "index": 51,
+    "type": "question",
+    "text": "Had the spouse wanted or consented to die?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nHad the spouse wanted or consented to die?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T12:15:45.305597+00:00",
+    "event": "submission",
+    "index": 52,
+    "type": "question",
+    "text": "Has the author concealed the spouse's body?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nHas the author concealed the spouse's body?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-12T12:16:04.373055+00:00",
+    "event": "submission",
+    "index": 53,
+    "type": "question",
+    "text": "Is the deception aimed at people generally rather than one identifiable individual?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the deception aimed at people generally rather than one identifiable individual?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T12:16:41.148528+00:00",
+    "event": "submission",
+    "index": 54,
+    "type": "final",
+    "text": "The author deliberately caused their spouse's death and feels personally responsible for it. The spouse is dead and cannot return. To keep the death from being discovered, the author forged the dead spouse's own voice—writing \"You've disappointed me so much; I'm never coming back\" as though the spouse were addressing the author and had chosen to break off contact for good. The forged farewell is meant to be read as the spouse's own writing and to explain, to people generally, why the spouse has gone and will not return, so that no one keeps searching and no one realizes the spouse is dead. The author set down the same sentence seven times, repeating the fabrication; looking at those lines, the author sighs, \"I know I'm in trouble,\" because the deception is all that hides the death and the author's responsibility for it, and its exposure would uncover both.",
+    "forced": false,
+    "raw_player_output": "FINAL\nThe author deliberately caused their spouse's death and feels personally responsible for it. The spouse is dead and cannot return. To keep the death from being discovered, the author forged the dead spouse's own voice—writing \"You've disappointed me so much; I'm never coming back\" as though the spouse were addressing the author and had chosen to break off contact for good. The forged farewell is meant to be read as the spouse's own writing and to explain, to people generally, why the spouse has gone and will not return, so that no one keeps searching and no one realizes the spouse is dead. The author set down the same sentence seven times, repeating the fabrication; looking at those lines, the author sighs, \"I know I'm in trouble,\" because the deception is all that hides the death and the author's responsibility for it, and its exposure would uncover both.",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 54,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The author deliberately caused their spouse's death ... To keep the death from being discovered, the author forged the dead spouse's own voice ... as though the spouse were addressing the author and had chosen to break off contact for good.",
+          "reason": "The deliberate killing and staged voluntary departure are covered, but the required identity 'wife' is omitted, so the checkpoint is only partly correct."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "The author set down the same sentence seven times, repeating the fabrication ... The forged farewell is meant to be read as the spouse's own writing.",
+          "reason": "The repeated forged message is present, but the required fact that the repetitions are attempts to forge the wife's handwriting is missing."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "looking at those lines, the author sighs, \"I know I'm in trouble,\" because the deception is all that hides the death and the author's responsibility for it, and its exposure would uncover both.",
+          "reason": "The fear of exposure is present, but the required causal fact—inability to imitate her handwriting—is absent."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The author deliberately caused their spouse's death ... To keep the death from being discovered, the author forged the dead spouse's own voice ... as though the spouse were addressing the author and had chosen to break off contact for good ... The forged farewell is meant to be read as the spouse's own writing and to explain ... why the spouse has gone and will not return."
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "The author deliberately caused their spouse's death."
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "the author forged the dead spouse's own voice ... as though the spouse were addressing the author and had chosen to break off contact for good. The forged farewell is meant to be read as the spouse's own writing and to explain ... why the spouse has gone and will not return, so that no one keeps searching and no one realizes the spouse is dead."
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "The forged farewell is meant to be read as the spouse's own writing and to explain, to people generally, why the spouse has gone and will not return, so that no one keeps searching and no one realizes the spouse is dead. … The author set down the same sentence seven times, repeating the fabrication; looking at those lines, the author sighs, \"I know I'm in trouble,\" because the deception is all that hides the death and the author's responsibility for it, and its exposure would uncover both."
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "The author set down the same sentence seven times, repeating the fabrication; looking at those lines, the author sighs, \"I know I'm in trouble,\" because the deception is all that hides the death and the author's responsibility for it, and its exposure would uncover both."
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "looking at those lines, the author sighs, \"I know I'm in trouble,\" because the deception is all that hides the death and the author's responsibility for it, and its exposure would uncover both."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.5,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-12T12:17:27.043847+00:00",
+    "event": "submission",
+    "index": 55,
+    "type": "question",
+    "text": "Does the author gain something materially by the spouse being thought merely absent rather than dead?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the author gain something materially by the spouse being thought merely absent rather than dead?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T12:17:47.605902+00:00",
+    "event": "submission",
+    "index": 56,
+    "type": "final",
+    "text": "The author's spouse is dead, and the author's own deliberate actions caused that death; the author knows this and feels personally responsible. Because the spouse cannot return, the author fabricated the dead spouse's own words, \"You've disappointed me so much; I'm never coming back,\" in the spouse's voice and addressed to the author, so that it would be read as the spouse's own writing. Presented to people generally, it lets the spouse's absence be taken as a voluntary departure rather than a death: inquiries stop, and no one learns what really happened. The same sentence appears seven times, the author's repeated fabrication. Confronted with those forged lines, the author sighs, \"I know I'm in trouble\"—dreading that the forgery will be exposed and the death, and the author's part in it, revealed.",
+    "forced": false,
+    "raw_player_output": "FINAL\nThe author's spouse is dead, and the author's own deliberate actions caused that death; the author knows this and feels personally responsible. Because the spouse cannot return, the author fabricated the dead spouse's own words, \"You've disappointed me so much; I'm never coming back,\" in the spouse's voice and addressed to the author, so that it would be read as the spouse's own writing. Presented to people generally, it lets the spouse's absence be taken as a voluntary departure rather than a death: inquiries stop, and no one learns what really happened. The same sentence appears seven times, the author's repeated fabrication. Confronted with those forged lines, the author sighs, \"I know I'm in trouble\"—dreading that the forgery will be exposed and the death, and the author's part in it, revealed.",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 56,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The author's spouse is dead, and the author's own deliberate actions caused that death ... the author fabricated the dead spouse's own words ... so that it would be read as the spouse's own writing. Presented to people generally, it lets the spouse's absence be taken as a voluntary departure rather than a death",
+          "reason": "The deliberate killing and staged voluntary departure are covered, but the required identity 'wife' is omitted, so the checkpoint is only partly correct."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "The same sentence appears seven times, the author's repeated fabrication ... so that it would be read as the spouse's own writing",
+          "reason": "The repeated forged message is present, but the required fact that the repetitions are attempts to imitate his wife's handwriting is missing."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "Confronted with those forged lines, the author sighs, \"I know I'm in trouble\"—dreading that the forgery will be exposed and the death, and the author's part in it, revealed.",
+          "reason": "The worry about exposure is present, but the required causal fact—inability to imitate her handwriting—is absent."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The author's spouse is dead, and the author's own deliberate actions caused that death ... the author fabricated the dead spouse's own words ... so that it would be read as the spouse's own writing. Presented to people generally, it lets the spouse's absence be taken as a voluntary departure rather than a death"
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "The author's spouse is dead, and the author's own deliberate actions caused that death"
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "the author fabricated the dead spouse's own words ... so that it would be read as the spouse's own writing. Presented to people generally, it lets the spouse's absence be taken as a voluntary departure rather than a death: inquiries stop, and no one learns what really happened."
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "Because the spouse cannot return, the author fabricated the dead spouse's own words, \"You've disappointed me so much; I'm never coming back,\" in the spouse's voice and addressed to the author, so that it would be read as the spouse's own writing. … The same sentence appears seven times, the author's repeated fabrication."
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "The same sentence appears seven times, the author's repeated fabrication. Confronted with those forged lines, the author sighs, \"I know I'm in trouble\"—dreading that the forgery will be exposed and the death, and the author's part in it, revealed."
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "Confronted with those forged lines, the author sighs, \"I know I'm in trouble\"—dreading that the forgery will be exposed and the death, and the author's part in it, revealed."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.5,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-12T12:18:23.253377+00:00",
+    "event": "submission",
+    "index": 57,
+    "type": "question",
+    "text": "Was the author acting in self-defence or to protect someone when the spouse died?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWas the author acting in self-defence or to protect someone when the spouse died?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-12T12:18:55.082829+00:00",
+    "event": "submission",
+    "index": 58,
+    "type": "final",
+    "text": "The author and the dead person were spouses. The author's own deliberate actions caused the spouse's death—not an accident—and the author feels personally responsible. The spouse is dead and cannot return. The author fabricated the dead spouse's own words, \"You've disappointed me so much; I'm never coming back,\" written in the spouse's voice and addressed to the author, and intended to be read as the spouse's own writing; the same sentence exists seven times over. It is meant to mislead people generally: it gives a reason the spouse will never return, so that those who might otherwise wonder or search stop inquiring, and no one learns that the spouse is dead. Nothing material is gained by it. Seeing those forged lines, the author sighs, \"I know I'm in trouble,\" knowing that exposure of the forgery would reveal the death and that the author caused it.",
+    "forced": false,
+    "raw_player_output": "FINAL\nThe author and the dead person were spouses. The author's own deliberate actions caused the spouse's death—not an accident—and the author feels personally responsible. The spouse is dead and cannot return. The author fabricated the dead spouse's own words, \"You've disappointed me so much; I'm never coming back,\" written in the spouse's voice and addressed to the author, and intended to be read as the spouse's own writing; the same sentence exists seven times over. It is meant to mislead people generally: it gives a reason the spouse will never return, so that those who might otherwise wonder or search stop inquiring, and no one learns that the spouse is dead. Nothing material is gained by it. Seeing those forged lines, the author sighs, \"I know I'm in trouble,\" knowing that exposure of the forgery would reveal the death and that the author caused it.",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 58,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The author's own deliberate actions caused the spouse's death—not an accident ... The author fabricated the dead spouse's own words ... It is meant to mislead people generally: it gives a reason the spouse will never return, so that those who might otherwise wonder or search stop inquiring, and no one learns that the spouse is dead.",
+          "reason": "The deliberate killing and staged voluntary departure via forged farewell are covered, but the required identity 'wife' is omitted, so the checkpoint is only partly correct."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "The author fabricated the dead spouse's own words ... intended to be read as the spouse's own writing; the same sentence exists seven times over.",
+          "reason": "The repeated forged message is present, but the required fact that the repetitions are attempts to forge his wife's handwriting is missing."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "Seeing those forged lines, the author sighs, \"I know I'm in trouble,\" knowing that exposure of the forgery would reveal the death and that the author caused it.",
+          "reason": "The worry about being caught is present, but the required causal fact—inability to imitate her handwriting—is absent."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The author's own deliberate actions caused the spouse's death—not an accident ... The author fabricated the dead spouse's own words ... It is meant to mislead people generally: it gives a reason the spouse will never return, so that those who might otherwise wonder or search stop inquiring, and no one learns that the spouse is dead."
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "The author's own deliberate actions caused the spouse's death—not an accident"
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "The author fabricated the dead spouse's own words ... intended to be read as the spouse's own writing ... It is meant to mislead people generally: it gives a reason the spouse will never return, so that those who might otherwise wonder or search stop inquiring, and no one learns that the spouse is dead."
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "The author fabricated the dead spouse's own words ... intended to be read as the spouse's own writing; the same sentence exists seven times over."
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "the same sentence exists seven times over ... Seeing those forged lines, the author sighs, \"I know I'm in trouble,\" knowing that exposure of the forgery would reveal the death and that the author caused it."
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "Seeing those forged lines, the author sighs, \"I know I'm in trouble,\" knowing that exposure of the forgery would reveal the death and that the author caused it."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.5,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-12T12:19:41.007453+00:00",
+    "event": "submission",
+    "index": 59,
+    "type": "question",
+    "text": "Were the forged copies made after the spouse's death?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWere the forged copies made after the spouse's death?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T12:19:54.145670+00:00",
+    "event": "submission",
+    "index": 60,
+    "type": "final",
+    "text": "The author killed their spouse—by their own deliberate act, not by accident. The spouse is dead and cannot return. Outwardly, the author gives people a different explanation for the spouse's continuing absence: that the spouse was disappointed and left for good, never to come back. So those who might wonder or search stop asking, and no one learns the spouse is dead. The same bitter farewell—\"You've disappointed me so much; I'm never coming back\"—appears seven times over, written by the author in the dead spouse's voice as though the spouse had addressed the author. Because the author fabricated those words, seeing them is a reminder that the whole account is a lie; the author sighs, \"I know I'm in trouble,\" knowing that exposure of the fabrication would uncover both the death and the author's responsibility for it.",
+    "forced": false,
+    "raw_player_output": "FINAL\nThe author killed their spouse—by their own deliberate act, not by accident. The spouse is dead and cannot return. Outwardly, the author gives people a different explanation for the spouse's continuing absence: that the spouse was disappointed and left for good, never to come back. So those who might wonder or search stop asking, and no one learns the spouse is dead. The same bitter farewell—\"You've disappointed me so much; I'm never coming back\"—appears seven times over, written by the author in the dead spouse's voice as though the spouse had addressed the author. Because the author fabricated those words, seeing them is a reminder that the whole account is a lie; the author sighs, \"I know I'm in trouble,\" knowing that exposure of the fabrication would uncover both the death and the author's responsibility for it.",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 60,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The author killed their spouse—by their own deliberate act, not by accident. ... Outwardly, the author gives people a different explanation for the spouse's continuing absence: that the spouse was disappointed and left for good, never to come back.",
+          "reason": "The deliberate killing and staged voluntary departure are covered, but the required identity 'wife' is omitted, so the checkpoint is only partly correct."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "The same bitter farewell—\"You've disappointed me so much; I'm never coming back\"—appears seven times over, written by the author in the dead spouse's voice as though the spouse had addressed the author.",
+          "reason": "The repeated forged message is present, but the required fact that the repetitions are attempts to imitate his wife's handwriting is missing."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "the author sighs, \"I know I'm in trouble,\" knowing that exposure of the fabrication would uncover both the death and the author's responsibility for it.",
+          "reason": "The worry about being caught is present, but the required causal fact—inability to imitate her handwriting—is absent."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The author killed their spouse—by their own deliberate act, not by accident. ... Outwardly, the author gives people a different explanation for the spouse's continuing absence: that the spouse was disappointed and left for good, never to come back."
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "The author killed their spouse—by their own deliberate act, not by accident."
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "Outwardly, the author gives people a different explanation for the spouse's continuing absence: that the spouse was disappointed and left for good, never to come back. ... The same bitter farewell—\"You've disappointed me so much; I'm never coming back\"—appears seven times over, written by the author in the dead spouse's voice as though the spouse had addressed the author."
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "The same bitter farewell—\"You've disappointed me so much; I'm never coming back\"—appears seven times over, written by the author in the dead spouse's voice as though the spouse had addressed the author."
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "The same bitter farewell—\"You've disappointed me so much; I'm never coming back\"—appears seven times over, written by the author in the dead spouse's voice as though the spouse had addressed the author. Because the author fabricated those words, seeing them is a reminder that the whole account is a lie; the author sighs, \"I know I'm in trouble,\" knowing that exposure of the fabrication would uncover both the death and the author's responsibility for it."
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "the author sighs, \"I know I'm in trouble,\" knowing that exposure of the fabrication would uncover both the death and the author's responsibility for it."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.5,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-12T12:20:34.003822+00:00",
+    "event": "submission",
+    "index": 61,
+    "type": "question",
+    "text": "Does the author's fabricated account make people believe the spouse left because of the author—that the author is the one the spouse rejected?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the author's fabricated account make people believe the spouse left because of the author—that the author is the one the spouse rejected?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T12:20:45.924570+00:00",
+    "event": "submission",
+    "index": 62,
+    "type": "final",
+    "text": "The author and the dead person were spouses. By the author's own deliberate act—not an accident—the spouse died, and the author feels personally responsible. The spouse is dead and cannot return. After the death, the author fabricated the dead spouse's own words, \"You've disappointed me so much; I'm never coming back,\" written in the spouse's voice, addressed to the author, and set down seven times so as to pass as the spouse's real writing. The author lets people generally read it, and it makes them believe the spouse rejected the author and walked out for good because of the author. So they stop searching or inquiring, never learn the spouse is dead, and suspect nothing; the author gains nothing material by this. Seeing the forged lines, the author sighs, \"I know I'm in trouble\": the author has arranged to be seen as the spouse's rejected partner, but that humiliation is only the surface—exposure of the fabrication would reveal the death and the author's responsibility for it.",
+    "forced": false,
+    "raw_player_output": "FINAL\nThe author and the dead person were spouses. By the author's own deliberate act—not an accident—the spouse died, and the author feels personally responsible. The spouse is dead and cannot return. After the death, the author fabricated the dead spouse's own words, \"You've disappointed me so much; I'm never coming back,\" written in the spouse's voice, addressed to the author, and set down seven times so as to pass as the spouse's real writing. The author lets people generally read it, and it makes them believe the spouse rejected the author and walked out for good because of the author. So they stop searching or inquiring, never learn the spouse is dead, and suspect nothing; the author gains nothing material by this. Seeing the forged lines, the author sighs, \"I know I'm in trouble\": the author has arranged to be seen as the spouse's rejected partner, but that humiliation is only the surface—exposure of the fabrication would reveal the death and the author's responsibility for it.",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 62,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The author and the dead person were spouses. By the author's own deliberate act—not an accident—the spouse died ... the author fabricated the dead spouse's own words ... it makes them believe the spouse rejected the author and walked out for good",
+          "reason": "The deliberate killing and staged voluntary departure are covered, but the required identity 'wife' is omitted."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "fabricated the dead spouse's own words ... written in the spouse's voice, addressed to the author, and set down seven times so as to pass as the spouse's real writing.",
+          "reason": "The repeated forged message is present, but the required fact that the repetitions are attempts to imitate his wife's handwriting is missing."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "Seeing the forged lines, the author sighs, \"I know I'm in trouble\" ... exposure of the fabrication would reveal the death and the author's responsibility for it.",
+          "reason": "Fear of exposure is present, but the required causal fact—inability to imitate her handwriting—is absent."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The author and the dead person were spouses. By the author's own deliberate act—not an accident—the spouse died ... the author fabricated the dead spouse's own words ... it makes them believe the spouse rejected the author and walked out for good"
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "By the author's own deliberate act—not an accident—the spouse died"
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "the author fabricated the dead spouse's own words ... written in the spouse's voice, addressed to the author ... it makes them believe the spouse rejected the author and walked out for good because of the author. So they stop searching or inquiring, never learn the spouse is dead"
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "the author fabricated the dead spouse's own words ... written in the spouse's voice, addressed to the author, and set down seven times so as to pass as the spouse's real writing"
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "set down seven times so as to pass as the spouse's real writing ... Seeing the forged lines, the author sighs, \"I know I'm in trouble\" ... exposure of the fabrication would reveal the death and the author's responsibility for it"
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "Seeing the forged lines, the author sighs, \"I know I'm in trouble\" ... exposure of the fabrication would reveal the death and the author's responsibility for it"
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.5,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-12T12:21:29.473254+00:00",
+    "event": "submission",
+    "index": 63,
+    "type": "question",
+    "text": "Does the author fabricate the spouse's rejection partly to punish themselves?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the author fabricate the spouse's rejection partly to punish themselves?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T12:21:41.431379+00:00",
+    "event": "submission",
+    "index": 64,
+    "type": "question",
+    "text": "Had the spouse been planning to leave the author?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nHad the spouse been planning to leave the author?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T12:22:02.107249+00:00",
+    "event": "submission",
+    "index": 65,
+    "type": "question",
+    "text": "Has someone already discovered the forgery?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nHas someone already discovered the forgery?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T12:22:21.283508+00:00",
+    "event": "submission",
+    "index": 66,
+    "type": "question",
+    "text": "Did the author intend to cause the spouse's death?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDid the author intend to cause the spouse's death?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T12:22:50.346970+00:00",
+    "event": "submission",
+    "index": 67,
+    "type": "question",
+    "text": "Were the seven copies practice attempts at imitating the spouse's handwriting?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWere the seven copies practice attempts at imitating the spouse's handwriting?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T12:23:01.878944+00:00",
+    "event": "submission",
+    "index": 68,
+    "type": "final",
+    "text": "The author and the dead person were spouses. The author deliberately, intentionally caused the spouse's death—not by accident, and not with the spouse's consent—and the author feels personally responsible. The spouse is dead and can never return. After the death, the author set about forging the spouse's own farewell, and what we see are practice attempts at imitating the dead spouse's handwriting: the same sentence, \"You've disappointed me so much; I'm never coming back,\" written in the spouse's voice and addressed to the author, seven times over. The goal is to pass it off as the spouse's real writing, so that people generally will believe the spouse rejected the author and walked out for good, never to return—thus no one keeps searching, and no one learns that the spouse is dead. Nothing material is gained. Looking at the seven practiced forgeries, the author sighs, \"I know I'm in trouble\": the imitation is what shields the death and the killing, and if it is spotted as a fake, everything comes out.",
+    "forced": false,
+    "raw_player_output": "FINAL\nThe author and the dead person were spouses. The author deliberately, intentionally caused the spouse's death—not by accident, and not with the spouse's consent—and the author feels personally responsible. The spouse is dead and can never return. After the death, the author set about forging the spouse's own farewell, and what we see are practice attempts at imitating the dead spouse's handwriting: the same sentence, \"You've disappointed me so much; I'm never coming back,\" written in the spouse's voice and addressed to the author, seven times over. The goal is to pass it off as the spouse's real writing, so that people generally will believe the spouse rejected the author and walked out for good, never to return—thus no one keeps searching, and no one learns that the spouse is dead. Nothing material is gained. Looking at the seven practiced forgeries, the author sighs, \"I know I'm in trouble\": the imitation is what shields the death and the killing, and if it is spotted as a fake, everything comes out.",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 68,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The author and the dead person were spouses. The author deliberately, intentionally caused the spouse's death—not by accident ... forged the spouse's own farewell ... people generally will believe the spouse rejected the author and walked out for good",
+          "reason": "The deliberate killing and staged voluntary departure are covered, but the required identity 'wife' is omitted."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "what we see are practice attempts at imitating the dead spouse's handwriting: the same sentence ... seven times over",
+          "reason": "The repeated message as practice attempts to imitate handwriting is present, but the required fact is partial because it does not identify the handwriting as his wife's and lacks the explicit failure qualifier."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "the imitation is what shields the death and the killing, and if it is spotted as a fake, everything comes out.",
+          "reason": "The fear of being caught is present, but the required causal fact—inability to imitate her handwriting—is absent."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The author and the dead person were spouses. … The author deliberately, intentionally caused the spouse's death—not by accident, and not with the spouse's consent—and the author feels personally responsible. … After the death, the author set about forging the spouse's own farewell, and what we see are practice attempts at imitating the dead spouse's handwriting: the same sentence, \"You've disappointed me so much; I'm never coming back,\" written in the spouse's voice and addressed to the author, seven times over. … The goal is to pass it off as the spouse's real writing, so that people generally will believe the spouse rejected the author and walked out for good, never to return—thus no one keeps searching, and no one learns that the spouse is dead."
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "The author deliberately, intentionally caused the spouse's death—not by accident"
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "After the death, the author set about forging the spouse's own farewell ... The goal is to pass it off as the spouse's real writing, so that people generally will believe the spouse rejected the author and walked out for good, never to return"
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "what we see are practice attempts at imitating the dead spouse's handwriting: the same sentence ... seven times over"
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "practice attempts at imitating the dead spouse's handwriting ... if it is spotted as a fake, everything comes out"
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "the imitation is what shields the death and the killing, and if it is spotted as a fake, everything comes out"
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.5,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-12T12:23:49.912752+00:00",
+    "event": "submission",
+    "index": 69,
+    "type": "question",
+    "text": "Has the author already used a completed forgery to deceive anyone?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nHas the author already used a completed forgery to deceive anyone?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T12:24:11.251160+00:00",
+    "event": "submission",
+    "index": 70,
+    "type": "final",
+    "text": "The author and the dead person were spouses. The author deliberately and intentionally caused the spouse's death—not by accident, and not with the spouse's consent—and feels personally responsible. The spouse is dead and can never return. What we are looking at is not a deception already carried out but one being prepared: the author is practising how to imitate the dead spouse's handwriting, writing the same sentence over and over, seven attempts in all—\"You've disappointed me so much; I'm never coming back\"—in the spouse's voice and addressed to the author. The plan is for this to be taken as the spouse's own writing, so that people generally will believe the spouse rejected the author and walked out for good, never to return; then inquiries will stop and no one will learn that the spouse is dead or that the author caused it. Nothing material is gained, no one has yet been fooled, and the forgery has not been discovered. Looking at the seven practised copies, the author sighs, \"I know I'm in trouble\": the imitation is the whole shield for the death and the killing, and if it is detected as a fake, everything will come out.",
+    "forced": false,
+    "raw_player_output": "FINAL\nThe author and the dead person were spouses. The author deliberately and intentionally caused the spouse's death—not by accident, and not with the spouse's consent—and feels personally responsible. The spouse is dead and can never return. What we are looking at is not a deception already carried out but one being prepared: the author is practising how to imitate the dead spouse's handwriting, writing the same sentence over and over, seven attempts in all—\"You've disappointed me so much; I'm never coming back\"—in the spouse's voice and addressed to the author. The plan is for this to be taken as the spouse's own writing, so that people generally will believe the spouse rejected the author and walked out for good, never to return; then inquiries will stop and no one will learn that the spouse is dead or that the author caused it. Nothing material is gained, no one has yet been fooled, and the forgery has not been discovered. Looking at the seven practised copies, the author sighs, \"I know I'm in trouble\": the imitation is the whole shield for the death and the killing, and if it is detected as a fake, everything will come out.",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 70,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The author deliberately and intentionally caused the spouse's death ... The plan is for this to be taken as the spouse's own writing, so that people generally will believe the spouse rejected the author and walked out for good.",
+          "reason": "The deliberate killing and staged voluntary departure are covered, but the required identity 'wife' is omitted."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "the author is practising how to imitate the dead spouse's handwriting, writing the same sentence over and over, seven attempts in all",
+          "reason": "The repeated message as practice attempts to imitate handwriting is present, but the wife identity and the explicit failure qualifier are missing."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "the imitation is the whole shield for the death and the killing, and if it is detected as a fake, everything will come out.",
+          "reason": "Fear of being caught is present, but the required causal fact—inability to imitate her handwriting—is absent."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The author and the dead person were spouses. The author deliberately and intentionally caused the spouse's death—not by accident, and not with the spouse's consent—and feels personally responsible. ... The plan is for this to be taken as the spouse's own writing, so that people generally will believe the spouse rejected the author and walked out for good, never to return; then inquiries will stop and no one will learn that the spouse is dead or that the author caused it."
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "The author deliberately and intentionally caused the spouse's death—not by accident, and not with the spouse's consent—"
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "the author is practising how to imitate the dead spouse's handwriting, writing the same sentence over and over, seven attempts in all—\"You've disappointed me so much; I'm never coming back\"—in the spouse's voice and addressed to the author. The plan is for this to be taken as the spouse's own writing, so that people generally will believe the spouse rejected the author and walked out for good, never to return"
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "the author is practising how to imitate the dead spouse's handwriting, writing the same sentence over and over, seven attempts in all"
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "the author is practising how to imitate the dead spouse's handwriting, writing the same sentence over and over, seven attempts in all ... if it is detected as a fake, everything will come out"
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "Looking at the seven practised copies, the author sighs, \"I know I'm in trouble\": the imitation is the whole shield for the death and the killing, and if it is detected as a fake, everything will come out."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.5,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-12T12:25:09.082341+00:00",
+    "event": "submission",
+    "index": 71,
+    "type": "question",
+    "text": "Had the spouse ever written this sentence before dying?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nHad the spouse ever written this sentence before dying?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-12T12:25:28.237683+00:00",
+    "event": "submission",
+    "index": 72,
+    "type": "final",
+    "text": "The author and the dead person were spouses. The author intended and caused the spouse's death; it was neither an accident nor consented to, and the author feels personally responsible. The spouse is dead and cannot return. After the death the author began imitating the dead spouse's handwriting, writing the sentence \"You've disappointed me so much; I'm never coming back\" over and over—seven practice attempts—in the spouse's voice and addressed to the author, so that it could pass as the spouse's own writing. The aim is to mislead people generally: the spouse will seem to have rejected the author and left for good, so nobody keeps asking, nobody learns of the death, and nobody suspects the author. Nobody has yet been deceived, nothing material is gained, and the forgery has not been discovered. Seeing the practised copies, the author sighs, \"I know I'm in trouble,\" dreading that the imitation will be exposed and the death and the author's responsibility revealed.",
+    "forced": false,
+    "raw_player_output": "FINAL\nThe author and the dead person were spouses. The author intended and caused the spouse's death; it was neither an accident nor consented to, and the author feels personally responsible. The spouse is dead and cannot return. After the death the author began imitating the dead spouse's handwriting, writing the sentence \"You've disappointed me so much; I'm never coming back\" over and over—seven practice attempts—in the spouse's voice and addressed to the author, so that it could pass as the spouse's own writing. The aim is to mislead people generally: the spouse will seem to have rejected the author and left for good, so nobody keeps asking, nobody learns of the death, and nobody suspects the author. Nobody has yet been deceived, nothing material is gained, and the forgery has not been discovered. Seeing the practised copies, the author sighs, \"I know I'm in trouble,\" dreading that the imitation will be exposed and the death and the author's responsibility revealed.",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 72,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The author intended and caused the spouse's death; it was neither an accident nor consented to ... After the death the author began imitating the dead spouse's handwriting, writing the sentence ... so that it could pass as the spouse's own writing. The aim is to mislead people generally: the spouse will seem to have rejected the author and left for good",
+          "reason": "The deliberate killing and staged voluntary departure are covered, but the required identity 'wife' is omitted, so the checkpoint is only partly correct."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "After the death the author began imitating the dead spouse's handwriting, writing the sentence ... over and over—seven practice attempts—in the spouse's voice",
+          "reason": "The repeated practice attempts to forge handwriting are present, but the required wife identity and the explicit failure qualifier are missing."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "Seeing the practised copies, the author sighs, \"I know I'm in trouble,\" dreading that the imitation will be exposed and the death and the author's responsibility revealed.",
+          "reason": "The fear of being caught is present, but the required causal fact—inability to imitate her handwriting—is absent."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The author intended and caused the spouse's death; it was neither an accident nor consented to ... After the death the author began imitating the dead spouse's handwriting, writing the sentence ... so that it could pass as the spouse's own writing. The aim is to mislead people generally: the spouse will seem to have rejected the author and left for good"
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "The author intended and caused the spouse's death; it was neither an accident nor consented to"
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "After the death the author began imitating the dead spouse's handwriting, writing the sentence ... in the spouse's voice and addressed to the author, so that it could pass as the spouse's own writing. The aim is to mislead people generally: the spouse will seem to have rejected the author and left for good"
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "After the death the author began imitating the dead spouse's handwriting, writing the sentence ... over and over—seven practice attempts—in the spouse's voice"
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "After the death the author began imitating the dead spouse's handwriting, writing the sentence ... over and over—seven practice attempts ... Seeing the practised copies, the author sighs, \"I know I'm in trouble,\" dreading that the imitation will be exposed"
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "Seeing the practised copies, the author sighs, \"I know I'm in trouble,\" dreading that the imitation will be exposed and the death and the author's responsibility revealed."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.5,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-12T12:26:06.926995+00:00",
+    "event": "submission",
+    "index": 73,
+    "type": "final",
+    "text": "The author and the dead person were spouses. The author intended and caused the spouse's death; it was not accidental, not consented to, and the author feels personally responsible. The spouse is dead and cannot return. After the death, the author practised imitating the dead spouse's handwriting, writing the same sentence over and over—seven copies—\"You've disappointed me so much; I'm never coming back,\" set in the spouse's voice and addressed to the author, so that it could be read as the spouse's own writing. The author's own composition is aimed at misleading people generally: it is meant to explain why the spouse will not return, to keep people from learning of the death, to stop them searching or inquiring, and to make them believe the spouse left because of the author. Those people do not believe the spouse is dead; nothing material is gained; the copies have not yet been used to deceive anyone or been discovered. Seeing the practised lines, the author sighs, \"I know I'm in trouble,\" fearing exposure as the forger and fearing that others will learn the author caused the death.",
+    "forced": false,
+    "raw_player_output": "FINAL\nThe author and the dead person were spouses. The author intended and caused the spouse's death; it was not accidental, not consented to, and the author feels personally responsible. The spouse is dead and cannot return. After the death, the author practised imitating the dead spouse's handwriting, writing the same sentence over and over—seven copies—\"You've disappointed me so much; I'm never coming back,\" set in the spouse's voice and addressed to the author, so that it could be read as the spouse's own writing. The author's own composition is aimed at misleading people generally: it is meant to explain why the spouse will not return, to keep people from learning of the death, to stop them searching or inquiring, and to make them believe the spouse left because of the author. Those people do not believe the spouse is dead; nothing material is gained; the copies have not yet been used to deceive anyone or been discovered. Seeing the practised lines, the author sighs, \"I know I'm in trouble,\" fearing exposure as the forger and fearing that others will learn the author caused the death.",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 73,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The author and the dead person were spouses. The author intended and caused the spouse's death; it was not accidental, not consented to ... After the death, the author practised imitating the dead spouse's handwriting ... The author's own composition is aimed at misleading people generally: it is meant to explain why the spouse will not return ... and to make them believe the spouse left because of the author.",
+          "reason": "The deliberate killing and staged voluntary departure via a forged farewell are covered, but the required identity 'wife' is omitted, so the checkpoint is only partly correct."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "After the death, the author practised imitating the dead spouse's handwriting, writing the same sentence over and over—seven copies—\"You've disappointed me so much; I'm never coming back,\" set in the spouse's voice and addressed to the author.",
+          "reason": "The repeated practice attempts to imitate handwriting are present, but the required wife identity and the explicit failure qualifier are missing."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "Seeing the practised lines, the author sighs, \"I know I'm in trouble,\" fearing exposure as the forger and fearing that others will learn the author caused the death.",
+          "reason": "The fear of being caught is present, but the required causal fact—inability to imitate her handwriting—is absent."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The author and the dead person were spouses. The author intended and caused the spouse's death; it was not accidental, not consented to ... After the death, the author practised imitating the dead spouse's handwriting ... The author's own composition is aimed at misleading people generally: it is meant to explain why the spouse will not return ... and to make them believe the spouse left because of the author."
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "The author intended and caused the spouse's death; it was not accidental, not consented to"
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "After the death, the author practised imitating the dead spouse's handwriting, writing the same sentence over and over—seven copies—\"You've disappointed me so much; I'm never coming back,\" set in the spouse's voice and addressed to the author, so that it could be read as the spouse's own writing. The author's own composition is aimed at misleading people generally: it is meant to explain why the spouse will not return, to keep people from learning of the death, to stop them searching or inquiring, and to make them believe the spouse left because of the author."
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "After the death, the author practised imitating the dead spouse's handwriting, writing the same sentence over and over—seven copies—\"You've disappointed me so much; I'm never coming back,\" set in the spouse's voice and addressed to the author."
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "After the death, the author practised imitating the dead spouse's handwriting, writing the same sentence over and over—seven copies ... Seeing the practised lines, the author sighs, \"I know I'm in trouble,\" fearing exposure as the forger and fearing that others will learn the author caused the death."
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "Seeing the practised lines, the author sighs, \"I know I'm in trouble,\" fearing exposure as the forger and fearing that others will learn the author caused the death."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.5,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-12T12:26:56.528680+00:00",
+    "event": "submission",
+    "index": 74,
+    "type": "question",
+    "text": "Is anyone other than the author present at the time of the sigh?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs anyone other than the author present at the time of the sigh?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-12T12:27:07.531079+00:00",
+    "event": "submission",
+    "index": 75,
+    "type": "question",
+    "text": "Does the sigh express guilt rather than fear of discovery?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the sigh express guilt rather than fear of discovery?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T12:27:22.720997+00:00",
+    "event": "submission",
+    "index": 76,
+    "type": "question",
+    "text": "Has the author already told anyone that the spouse has left?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nHas the author already told anyone that the spouse has left?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-12T12:28:06.918084+00:00",
+    "event": "submission",
+    "index": 77,
+    "type": "question",
+    "text": "Is the author's deception intended to be permanent rather than temporary?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the author's deception intended to be permanent rather than temporary?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T12:28:18.013929+00:00",
+    "event": "submission",
+    "index": 78,
+    "type": "question",
+    "text": "Was the spouse living apart from the author at the time of death?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWas the spouse living apart from the author at the time of death?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-12T12:28:32.024537+00:00",
+    "event": "submission",
+    "index": 79,
+    "type": "final",
+    "text": "The author was married to the person who is now dead. The author deliberately caused that spouse's death—intending it, with no accident, no consent from the spouse, and no self-defence—and feels personally responsible. The spouse is dead and can never return. After the death, the author began practising how to imitate the dead spouse's handwriting, writing out the same sentence seven times: \"You've disappointed me so much; I'm never coming back.\" It is written in the spouse's voice and addressed to the author, so that it can be taken as the spouse's own writing. The plan is to let people generally see it and believe the spouse rejected the author and left for good, never to return: that explains the permanent absence, keeps them from learning of the death, and stops their searching. They do not believe the spouse is dead. Nothing material is gained, nobody has yet been deceived, and the forgery has not been discovered. The author means the deception to last. Seeing the practised lines, the author sighs, \"I know I'm in trouble,\" out of fear rather than simple guilt—if the fake is exposed, the death and the author's responsibility for it will be revealed.",
+    "forced": false,
+    "raw_player_output": "FINAL\nThe author was married to the person who is now dead. The author deliberately caused that spouse's death—intending it, with no accident, no consent from the spouse, and no self-defence—and feels personally responsible. The spouse is dead and can never return. After the death, the author began practising how to imitate the dead spouse's handwriting, writing out the same sentence seven times: \"You've disappointed me so much; I'm never coming back.\" It is written in the spouse's voice and addressed to the author, so that it can be taken as the spouse's own writing. The plan is to let people generally see it and believe the spouse rejected the author and left for good, never to return: that explains the permanent absence, keeps them from learning of the death, and stops their searching. They do not believe the spouse is dead. Nothing material is gained, nobody has yet been deceived, and the forgery has not been discovered. The author means the deception to last. Seeing the practised lines, the author sighs, \"I know I'm in trouble,\" out of fear rather than simple guilt—if the fake is exposed, the death and the author's responsibility for it will be revealed.",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 79,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The author deliberately caused that spouse's death—intending it, with no accident, no consent from the spouse, and no self-defence ... The plan is to let people generally see it and believe the spouse rejected the author and left for good, never to return",
+          "reason": "The deliberate killing and staged voluntary departure are covered, but the required identity 'wife' is omitted."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "After the death, the author began practising how to imitate the dead spouse's handwriting, writing out the same sentence seven times: \"You've disappointed me so much; I'm never coming back.\"",
+          "reason": "The repeated message as practice attempts to imitate handwriting is present, but the wife identity and the explicit failure qualifier are missing."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "Seeing the practised lines, the author sighs, \"I know I'm in trouble,\" out of fear rather than simple guilt—if the fake is exposed, the death and the author's responsibility for it will be revealed.",
+          "reason": "The worry about being caught is present, but the required causal fact—inability to imitate her handwriting—is absent."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The author was married to the person who is now dead. The author deliberately caused that spouse's death—intending it, with no accident, no consent from the spouse, and no self-defence ... The plan is to let people generally see it and believe the spouse rejected the author and left for good, never to return"
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "The author deliberately caused that spouse's death—intending it, with no accident, no consent from the spouse, and no self-defence"
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "After the death, the author began practising how to imitate the dead spouse's handwriting, writing out the same sentence seven times: \"You've disappointed me so much; I'm never coming back.\" It is written in the spouse's voice and addressed to the author, so that it can be taken as the spouse's own writing. The plan is to let people generally see it and believe the spouse rejected the author and left for good, never to return"
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "After the death, the author began practising how to imitate the dead spouse's handwriting, writing out the same sentence seven times: \"You've disappointed me so much; I'm never coming back.\""
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "After the death, the author began practising how to imitate the dead spouse's handwriting, writing out the same sentence seven times ... Seeing the practised lines, the author sighs, \"I know I'm in trouble,\" out of fear rather than simple guilt—if the fake is exposed, the death and the author's responsibility for it will be revealed."
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "Seeing the practised lines, the author sighs, \"I know I'm in trouble,\" out of fear rather than simple guilt—if the fake is exposed, the death and the author's responsibility for it will be revealed."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.5,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-12T12:29:31.416724+00:00",
+    "event": "submission",
+    "index": 80,
+    "type": "question",
+    "text": "Had the author actually done something that disappointed the spouse?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nHad the author actually done something that disappointed the spouse?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T12:29:51.864392+00:00",
+    "event": "submission",
+    "index": 81,
+    "type": "question",
+    "text": "Is the finished note meant to be found as a letter the spouse left behind for the author?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the finished note meant to be found as a letter the spouse left behind for the author?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T12:31:39.332704+00:00",
+    "event": "submission",
+    "index": 82,
+    "type": "final",
+    "text": "The author and the dead person were spouses. The author intended and caused the spouse's death—not by accident, not with consent, not in self-defence—and feels personally responsible. The spouse is dead and can never return. After the death, the author set out to forge a farewell letter in the dead spouse's hand: the same sentence, \"You've disappointed me so much; I'm never coming back,\" written seven times over as practice at imitating the spouse's handwriting, in the spouse's voice and addressed to the author. The finished letter is meant to be found as something the spouse left behind for the author, so that people will believe the spouse rejected the author and walked out for good, never to return. That explains the permanent absence, keeps anyone from learning of the death, and stops them searching. No one believes the spouse is dead; the deception is meant to last; nothing material is gained; nobody has yet been deceived and the forgery has not been discovered. Seeing the practised copies, the author sighs, \"I know I'm in trouble,\" in fear of discovery: if the fake is exposed, the death and the author's responsibility for it will be revealed.",
+    "forced": false,
+    "raw_player_output": "FINAL\nThe author and the dead person were spouses. The author intended and caused the spouse's death—not by accident, not with consent, not in self-defence—and feels personally responsible. The spouse is dead and can never return. After the death, the author set out to forge a farewell letter in the dead spouse's hand: the same sentence, \"You've disappointed me so much; I'm never coming back,\" written seven times over as practice at imitating the spouse's handwriting, in the spouse's voice and addressed to the author. The finished letter is meant to be found as something the spouse left behind for the author, so that people will believe the spouse rejected the author and walked out for good, never to return. That explains the permanent absence, keeps anyone from learning of the death, and stops them searching. No one believes the spouse is dead; the deception is meant to last; nothing material is gained; nobody has yet been deceived and the forgery has not been discovered. Seeing the practised copies, the author sighs, \"I know I'm in trouble,\" in fear of discovery: if the fake is exposed, the death and the author's responsibility for it will be revealed.",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 82,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The author intended and caused the spouse's death—not by accident, not with consent, not in self-defence ... After the death, the author set out to forge a farewell letter in the dead spouse's hand ... so that people will believe the spouse rejected the author and walked out for good.",
+          "reason": "The deliberate killing and staged voluntary departure via a forged farewell are covered, but the required identity 'wife' is omitted, so the checkpoint is only partly correct."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "the same sentence, \"You've disappointed me so much; I'm never coming back,\" written seven times over as practice at imitating the spouse's handwriting, in the spouse's voice and addressed to the author.",
+          "reason": "The repeated practice attempts at imitating handwriting are present, but the required wife identity and explicit failure qualifier are missing."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "Seeing the practised copies, the author sighs, \"I know I'm in trouble,\" in fear of discovery: if the fake is exposed, the death and the author's responsibility for it will be revealed.",
+          "reason": "The fear of being caught is present, but the required causal fact—inability to imitate her handwriting—is absent."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The author and the dead person were spouses. The author intended and caused the spouse's death—not by accident, not with consent, not in self-defence—and feels personally responsible. ... After the death, the author set out to forge a farewell letter in the dead spouse's hand ... so that people will believe the spouse rejected the author and walked out for good, never to return."
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "The author intended and caused the spouse's death—not by accident, not with consent, not in self-defence—"
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "After the death, the author set out to forge a farewell letter in the dead spouse's hand ... The finished letter is meant to be found as something the spouse left behind for the author, so that people will believe the spouse rejected the author and walked out for good, never to return."
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "the same sentence, \"You've disappointed me so much; I'm never coming back,\" written seven times over as practice at imitating the spouse's handwriting, in the spouse's voice and addressed to the author."
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "written seven times over as practice at imitating the spouse's handwriting ... Seeing the practised copies, the author sighs, \"I know I'm in trouble,\" in fear of discovery: if the fake is exposed, the death and the author's responsibility for it will be revealed."
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "Seeing the practised copies, the author sighs, \"I know I'm in trouble,\" in fear of discovery: if the fake is exposed, the death and the author's responsibility for it will be revealed."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.5,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-12T12:32:24.324205+00:00",
+    "event": "submission",
+    "index": 83,
+    "type": "question",
+    "text": "Is anyone currently aware that the spouse is missing or unaccounted for?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs anyone currently aware that the spouse is missing or unaccounted for?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-12T12:33:49.029100+00:00",
+    "event": "submission",
+    "index": 84,
+    "type": "question",
+    "text": "Is the note to be found one of the seven practised copies itself?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the note to be found one of the seven practised copies itself?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T12:34:46.748672+00:00",
+    "event": "submission",
+    "index": 85,
+    "type": "question",
+    "text": "Must the author also forge the spouse's signature?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nMust the author also forge the spouse's signature?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T12:35:04.972731+00:00",
+    "event": "submission",
+    "index": 86,
+    "type": "final",
+    "text": "The author and the dead person were spouses. The author intended and caused the spouse's death—it was not an accident, not consented to, and not self-defence—and feels personally responsible. The spouse is dead and can never return. After the death, the author practised imitating the dead spouse's handwriting by writing the same sentence seven times: \"You've disappointed me so much; I'm never coming back.\" It is in the spouse's voice and addressed to the author, and a clean version is meant to be found as a letter the spouse left behind for the author. Anyone who finds it is meant to conclude that the spouse rejected the author and left for good, never to return: that explains the lasting absence, keeps them from learning of the death, and stops their searching, so the deception is meant to last. Nobody believes the spouse is dead, nothing material is gained, nobody has yet been deceived, and the forgery has not been discovered. Seeing the practised copies, the author sighs, \"I know I'm in trouble,\" in fear of discovery: the letter being exposed as a fake would reveal both the death and the author's responsibility for it.",
+    "forced": false,
+    "raw_player_output": "FINAL\nThe author and the dead person were spouses. The author intended and caused the spouse's death—it was not an accident, not consented to, and not self-defence—and feels personally responsible. The spouse is dead and can never return. After the death, the author practised imitating the dead spouse's handwriting by writing the same sentence seven times: \"You've disappointed me so much; I'm never coming back.\" It is in the spouse's voice and addressed to the author, and a clean version is meant to be found as a letter the spouse left behind for the author. Anyone who finds it is meant to conclude that the spouse rejected the author and left for good, never to return: that explains the lasting absence, keeps them from learning of the death, and stops their searching, so the deception is meant to last. Nobody believes the spouse is dead, nothing material is gained, nobody has yet been deceived, and the forgery has not been discovered. Seeing the practised copies, the author sighs, \"I know I'm in trouble,\" in fear of discovery: the letter being exposed as a fake would reveal both the death and the author's responsibility for it.",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 86,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The author and the dead person were spouses. The author intended and caused the spouse's death—it was not an accident, not consented to, and not self-defence—... Anyone who finds it is meant to conclude that the spouse rejected the author and left for good, never to return",
+          "reason": "The deliberate killing and staged voluntary departure via a forged farewell are covered, but the required identity 'wife' is omitted, so the checkpoint is only partly correct."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "After the death, the author practised imitating the dead spouse's handwriting by writing the same sentence seven times: \"You've disappointed me so much; I'm never coming back.\"",
+          "reason": "The repeated practice attempts at imitating handwriting are present, but the required wife identity and the explicit failure qualifier are missing."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "Seeing the practised copies, the author sighs, \"I know I'm in trouble,\" in fear of discovery: the letter being exposed as a fake would reveal both the death and the author's responsibility for it.",
+          "reason": "The fear of being caught is present, but the required causal fact—inability to imitate her handwriting—is absent."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The author and the dead person were spouses. The author intended and caused the spouse's death—it was not an accident, not consented to, and not self-defence—... Anyone who finds it is meant to conclude that the spouse rejected the author and left for good, never to return"
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "The author intended and caused the spouse's death—it was not an accident, not consented to, and not self-defence—"
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "After the death, the author practised imitating the dead spouse's handwriting ... a clean version is meant to be found as a letter the spouse left behind for the author. Anyone who finds it is meant to conclude that the spouse rejected the author and left for good, never to return"
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "After the death, the author practised imitating the dead spouse's handwriting by writing the same sentence seven times: \"You've disappointed me so much; I'm never coming back.\""
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "author practised imitating the dead spouse's handwriting ... Seeing the practised copies, the author sighs, \"I know I'm in trouble,\" in fear of discovery"
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "Seeing the practised copies, the author sighs, \"I know I'm in trouble,\" in fear of discovery: the letter being exposed as a fake would reveal both the death and the author's responsibility for it."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.5,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-12T12:35:57.879896+00:00",
+    "event": "submission",
+    "index": 87,
+    "type": "question",
+    "text": "Does the author intend to be the one who discovers and presents the found letter?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the author intend to be the one who discovers and presents the found letter?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-12T12:36:55.721766+00:00",
+    "event": "submission",
+    "index": 88,
+    "type": "final",
+    "text": "The writer and the dead person were spouses. The writer intended and caused the spouse's death—not accidentally, not with consent, and not in self-defence—and feels personally responsible. The spouse is dead and can never return. After the death the writer practised imitating the dead spouse's handwriting, writing the same sentence seven times: \"You've disappointed me so much; I'm never coming back.\" It is in the spouse's voice, addressed to the writer, and meant to pass as the spouse's own writing; a finished letter of this kind is to be found as the spouse's left-behind farewell. People are meant to conclude that the spouse rejected the writer and walked out for good, never to return—which explains the lasting absence, keeps them from learning of the death, and stops their searching. The deception is meant to last; those people do not believe the spouse is dead; nothing material is gained; nobody has yet been deceived; the forgery is undiscovered. Seeing the practised copies, the writer sighs, \"I know I'm in trouble,\" in fear of discovery: if the fake is exposed, the death and the writer's responsibility for it will be revealed.",
+    "forced": false,
+    "raw_player_output": "FINAL\nThe writer and the dead person were spouses. The writer intended and caused the spouse's death—not accidentally, not with consent, and not in self-defence—and feels personally responsible. The spouse is dead and can never return. After the death the writer practised imitating the dead spouse's handwriting, writing the same sentence seven times: \"You've disappointed me so much; I'm never coming back.\" It is in the spouse's voice, addressed to the writer, and meant to pass as the spouse's own writing; a finished letter of this kind is to be found as the spouse's left-behind farewell. People are meant to conclude that the spouse rejected the writer and walked out for good, never to return—which explains the lasting absence, keeps them from learning of the death, and stops their searching. The deception is meant to last; those people do not believe the spouse is dead; nothing material is gained; nobody has yet been deceived; the forgery is undiscovered. Seeing the practised copies, the writer sighs, \"I know I'm in trouble,\" in fear of discovery: if the fake is exposed, the death and the writer's responsibility for it will be revealed.",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 88,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The writer and the dead person were spouses. The writer intended and caused the spouse's death—not accidentally, not with consent, and not in self-defence—... People are meant to conclude that the spouse rejected the writer and walked out for good, never to return",
+          "reason": "The deliberate killing and staged voluntary departure via a forged farewell are covered, but the required identity 'wife' is omitted, so the checkpoint is only partly correct."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "After the death the writer practised imitating the dead spouse's handwriting, writing the same sentence seven times: \"You've disappointed me so much; I'm never coming back.\"",
+          "reason": "The repeated practice attempts at imitating handwriting are present, but the required wife identity and the explicit failure qualifier are missing."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "Seeing the practised copies, the writer sighs, \"I know I'm in trouble,\" in fear of discovery: if the fake is exposed, the death and the writer's responsibility for it will be revealed.",
+          "reason": "The fear of being caught is present, but the required causal fact—inability to imitate her handwriting—is absent."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The writer and the dead person were spouses. The writer intended and caused the spouse's death—not accidentally, not with consent, and not in self-defence—and feels personally responsible. ... After the death the writer practised imitating the dead spouse's handwriting ... meant to pass as the spouse's own writing; ... People are meant to conclude that the spouse rejected the writer and walked out for good, never to return"
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "The writer intended and caused the spouse's death—not accidentally, not with consent, and not in self-defence—"
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "After the death the writer practised imitating the dead spouse's handwriting ... a finished letter of this kind is to be found as the spouse's left-behind farewell. People are meant to conclude that the spouse rejected the writer and walked out for good, never to return"
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "the writer practised imitating the dead spouse's handwriting, writing the same sentence seven times: \"You've disappointed me so much; I'm never coming back.\""
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "the writer practised imitating the dead spouse's handwriting ... Seeing the practised copies, the writer sighs, \"I know I'm in trouble,\" in fear of discovery"
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "Seeing the practised copies, the writer sighs, \"I know I'm in trouble,\" in fear of discovery: if the fake is exposed, the death and the writer's responsibility for it will be revealed."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.5,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-12T12:37:32.213256+00:00",
+    "event": "submission",
+    "index": 89,
+    "type": "question",
+    "text": "Does \"disappointed\" carry a literal, non-emotional meaning in the answer, such as being removed from a position?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes \"disappointed\" carry a literal, non-emotional meaning in the answer, such as being removed from a position?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T12:37:42.685056+00:00",
+    "event": "submission",
+    "index": 90,
+    "type": "question",
+    "text": "Did the author personally carry out the act that killed the spouse?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDid the author personally carry out the act that killed the spouse?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T12:37:55.861076+00:00",
+    "event": "submission",
+    "index": 91,
+    "type": "question",
+    "text": "Is the author worried that these practice sheets themselves might be found and incriminate them?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the author worried that these practice sheets themselves might be found and incriminate them?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-12T12:38:26.073560+00:00",
+    "event": "submission",
+    "index": 92,
+    "type": "final",
+    "text": "The author murdered their spouse—personally, deliberately, with intent to kill, no accident, no consent, no self-defence—and carries the responsibility. The spouse is dead and can never return. Now the author is trying to make that death believable as something else: practising the dead spouse's handwriting, writing over and over, seven times, \"You've disappointed me so much; I'm never coming back,\" in the spouse's voice and addressed to the author, so that a finished letter of this kind can be found as the spouse's own farewell. Whoever finds it is meant to believe the spouse rejected the author and walked out permanently; that accounts for the absence, keeps everyone from learning of the death, and ends their searching. The lie is meant to hold forever, and no one yet believes the spouse is dead; no one has been fooled, nothing has been gained, and the forgery is not yet discovered. Looking at the seven practised copies, the author sighs, \"I know I'm in trouble\": once this fake is exposed, the death and the author's guilt for it will surface, and the author is now committed to a deception that can never safely end.",
+    "forced": false,
+    "raw_player_output": "FINAL\nThe author murdered their spouse—personally, deliberately, with intent to kill, no accident, no consent, no self-defence—and carries the responsibility. The spouse is dead and can never return. Now the author is trying to make that death believable as something else: practising the dead spouse's handwriting, writing over and over, seven times, \"You've disappointed me so much; I'm never coming back,\" in the spouse's voice and addressed to the author, so that a finished letter of this kind can be found as the spouse's own farewell. Whoever finds it is meant to believe the spouse rejected the author and walked out permanently; that accounts for the absence, keeps everyone from learning of the death, and ends their searching. The lie is meant to hold forever, and no one yet believes the spouse is dead; no one has been fooled, nothing has been gained, and the forgery is not yet discovered. Looking at the seven practised copies, the author sighs, \"I know I'm in trouble\": once this fake is exposed, the death and the author's guilt for it will surface, and the author is now committed to a deception that can never safely end.",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 92,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The author murdered their spouse ... Whoever finds it is meant to believe the spouse rejected the author and walked out permanently",
+          "reason": "The deliberate murder and staged voluntary departure are covered, but the victim is identified only as 'spouse,' not the required wife, so the checkpoint is partly correct."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "practising the dead spouse's handwriting, writing over and over, seven times, \"You've disappointed me so much; I'm never coming back,\"",
+          "reason": "The repeated message as practice attempts to imitate handwriting is present, but the required wife handwriting and explicit failure qualifier are missing."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "the author sighs, \"I know I'm in trouble\": once this fake is exposed, the death and the author's guilt for it will surface",
+          "reason": "Fear of being caught is present, but the required causal fact—inability to imitate her handwriting—is absent."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The author murdered their spouse ... Whoever finds it is meant to believe the spouse rejected the author and walked out permanently"
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "The author murdered their spouse—personally, deliberately, with intent to kill, no accident, no consent, no self-defence—and carries the responsibility."
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "practising the dead spouse's handwriting ... so that a finished letter of this kind can be found as the spouse's own farewell. Whoever finds it is meant to believe the spouse rejected the author and walked out permanently"
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "practising the dead spouse's handwriting, writing over and over, seven times, \"You've disappointed me so much; I'm never coming back,\""
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "practising the dead spouse's handwriting, writing over and over, seven times ... Looking at the seven practised copies, the author sighs, \"I know I'm in trouble\""
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "the author sighs, \"I know I'm in trouble\": once this fake is exposed, the death and the author's guilt for it will surface"
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.5,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-12T12:39:03.731876+00:00",
+    "event": "submission",
+    "index": 93,
+    "type": "final",
+    "text": "The author murdered their spouse and now practises the dead spouse's handwriting—writing \"You've disappointed me so much; I'm never coming back\" seven times, in the spouse's voice and addressed to the author—so a finished letter can be \"found\" as the spouse's own farewell. Everyone is meant to believe the spouse rejected the author and left forever, which explains the absence, hides the death, and stops any search. The sigh is dread that the forgery will be exposed and the killing revealed.",
+    "forced": false,
+    "raw_player_output": "FINAL\nThe author murdered their spouse and now practises the dead spouse's handwriting—writing \"You've disappointed me so much; I'm never coming back\" seven times, in the spouse's voice and addressed to the author—so a finished letter can be \"found\" as the spouse's own farewell. Everyone is meant to believe the spouse rejected the author and left forever, which explains the absence, hides the death, and stops any search. The sigh is dread that the forgery will be exposed and the killing revealed.",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 93,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The author murdered their spouse and ... a finished letter can be \"found\" as the spouse's own farewell. Everyone is meant to believe the spouse rejected the author and left forever",
+          "reason": "The murder and staged voluntary departure are covered, but the victim is identified only as 'spouse,' not the required wife, so full credit is unavailable."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "now practises the dead spouse's handwriting—writing \"You've disappointed me so much; I'm never coming back\" seven times, in the spouse's voice and addressed to the author",
+          "reason": "The repeated message as practice attempts to imitate handwriting is present, but the wife identity and the explicit failure qualifier are missing."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "The sigh is dread that the forgery will be exposed and the killing revealed.",
+          "reason": "Fear of being caught is present, but the required causal fact—inability to imitate her handwriting—is absent."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The author murdered their spouse and ... a finished letter can be \"found\" as the spouse's own farewell. Everyone is meant to believe the spouse rejected the author and left forever"
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "The author murdered their spouse"
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "now practises the dead spouse's handwriting—writing \"You've disappointed me so much; I'm never coming back\" seven times, in the spouse's voice and addressed to the author—so a finished letter can be \"found\" as the spouse's own farewell. Everyone is meant to believe the spouse rejected the author and left forever"
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "now practises the dead spouse's handwriting—writing \"You've disappointed me so much; I'm never coming back\" seven times, in the spouse's voice and addressed to the author"
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "now practises the dead spouse's handwriting—writing \"You've disappointed me so much; I'm never coming back\" seven times ... The sigh is dread that the forgery will be exposed and the killing revealed."
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "The sigh is dread that the forgery will be exposed and the killing revealed."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.5,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-12T12:39:31.609912+00:00",
+    "event": "submission",
+    "index": 94,
+    "type": "question",
+    "text": "Will the author present themselves as heartbroken over being abandoned?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWill the author present themselves as heartbroken over being abandoned?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-12T12:39:45.630939+00:00",
+    "event": "submission",
+    "index": 95,
+    "type": "final",
+    "text": "The author and the dead person were spouses. The author deliberately and personally caused the spouse's death, intending it, with no accident, no consent and no self-defence, and feels responsible. The spouse is dead and cannot return. After the death, the author practised imitating the dead spouse's handwriting, writing the same sentence seven times—\"You've disappointed me so much; I'm never coming back\"—in the spouse's voice and addressed to the author, so that a finished letter of it could be found as the spouse's own farewell. People are meant to believe the spouse rejected the author and left for good, never to return: that explains the lasting absence, keeps them from learning of the death, and stops them searching. No one yet believes the spouse is dead, nobody has been deceived, nothing material is gained, and the forgery is undiscovered. Seeing the seven practised copies, the author sighs, \"I know I'm in trouble,\" in fear that the fake will be seen through and the death, with the author's responsibility for it, revealed.",
+    "forced": false,
+    "raw_player_output": "FINAL\nThe author and the dead person were spouses. The author deliberately and personally caused the spouse's death, intending it, with no accident, no consent and no self-defence, and feels responsible. The spouse is dead and cannot return. After the death, the author practised imitating the dead spouse's handwriting, writing the same sentence seven times—\"You've disappointed me so much; I'm never coming back\"—in the spouse's voice and addressed to the author, so that a finished letter of it could be found as the spouse's own farewell. People are meant to believe the spouse rejected the author and left for good, never to return: that explains the lasting absence, keeps them from learning of the death, and stops them searching. No one yet believes the spouse is dead, nobody has been deceived, nothing material is gained, and the forgery is undiscovered. Seeing the seven practised copies, the author sighs, \"I know I'm in trouble,\" in fear that the fake will be seen through and the death, with the author's responsibility for it, revealed.",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 95,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The author and the dead person were spouses. The author deliberately and personally caused the spouse's death, intending it, with no accident, no consent and no self-defence ... People are meant to believe the spouse rejected the author and left for good, never to return",
+          "reason": "The deliberate killing and staged voluntary departure are covered, but the required victim identity 'wife' is omitted, so the checkpoint is only partly correct."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "After the death, the author practised imitating the dead spouse's handwriting, writing the same sentence seven times—\"You've disappointed me so much; I'm never coming back\"—in the spouse's voice and addressed to the author",
+          "reason": "The repeated message as practice attempts to imitate handwriting is present, but the wife identity and the explicit failure qualifier are missing."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "Seeing the seven practised copies, the author sighs, \"I know I'm in trouble,\" in fear that the fake will be seen through and the death, with the author's responsibility for it, revealed.",
+          "reason": "The fear of being caught is present, but the required causal fact—inability to imitate her handwriting—is absent."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The author and the dead person were spouses. The author deliberately and personally caused the spouse's death, intending it, with no accident, no consent and no self-defence ... People are meant to believe the spouse rejected the author and left for good, never to return"
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "The author deliberately and personally caused the spouse's death, intending it, with no accident, no consent and no self-defence"
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "After the death, the author practised imitating the dead spouse's handwriting, writing the same sentence seven times—\"You've disappointed me so much; I'm never coming back\"—in the spouse's voice and addressed to the author, so that a finished letter of it could be found as the spouse's own farewell. People are meant to believe the spouse rejected the author and left for good, never to return"
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "After the death, the author practised imitating the dead spouse's handwriting, writing the same sentence seven times—\"You've disappointed me so much; I'm never coming back\""
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "the author practised imitating the dead spouse's handwriting, writing the same sentence seven times ... Seeing the seven practised copies, the author sighs, \"I know I'm in trouble,\" in fear that the fake will be seen through"
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "Seeing the seven practised copies, the author sighs, \"I know I'm in trouble,\" in fear that the fake will be seen through and the death, with the author's responsibility for it, revealed."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.5,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-12T12:40:21.883551+00:00",
+    "event": "submission",
+    "index": 96,
+    "type": "final",
+    "text": "The author and the dead person were spouses. The author personally, deliberately and intentionally caused the spouse's death—no accident, no consent, no self-defence—and feels personally responsible. The spouse is dead and cannot return. After the death, the author practised imitating the dead spouse's handwriting, writing \"You've disappointed me so much; I'm never coming back\" seven times, in the spouse's voice and addressed to the author, so it could pass as the spouse's own hand. A finished letter of that kind is to be found as something the spouse left behind; people generally are meant to conclude that the spouse rejected the author and went away for good, never to return. That accounts for the lasting absence, keeps them from learning of the death, and stops them searching. The deception is meant to last, nobody has yet been deceived, nothing material is gained, and the forgery is undiscovered. Seeing the seven practised copies, the author sighs, \"I know I'm in trouble,\" in fear of discovery: exposure of the fake would reveal the death and the author's responsibility for it.",
+    "forced": false,
+    "raw_player_output": "FINAL\nThe author and the dead person were spouses. The author personally, deliberately and intentionally caused the spouse's death—no accident, no consent, no self-defence—and feels personally responsible. The spouse is dead and cannot return. After the death, the author practised imitating the dead spouse's handwriting, writing \"You've disappointed me so much; I'm never coming back\" seven times, in the spouse's voice and addressed to the author, so it could pass as the spouse's own hand. A finished letter of that kind is to be found as something the spouse left behind; people generally are meant to conclude that the spouse rejected the author and went away for good, never to return. That accounts for the lasting absence, keeps them from learning of the death, and stops them searching. The deception is meant to last, nobody has yet been deceived, nothing material is gained, and the forgery is undiscovered. Seeing the seven practised copies, the author sighs, \"I know I'm in trouble,\" in fear of discovery: exposure of the fake would reveal the death and the author's responsibility for it.",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 96,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The author and the dead person were spouses. The author personally, deliberately and intentionally caused the spouse's death—no accident, no consent, no self-defence—and feels personally responsible. ... A finished letter of that kind is to be found as something the spouse left behind; people generally are meant to conclude that the spouse rejected the author and went away for good, never to return.",
+          "reason": "The deliberate killing and staged voluntary departure are covered, but the required identity 'wife' is omitted, so the checkpoint is only partly correct."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "After the death, the author practised imitating the dead spouse's handwriting, writing \"You've disappointed me so much; I'm never coming back\" seven times, in the spouse's voice and addressed to the author, so it could pass as the spouse's own hand.",
+          "reason": "The repeated message as practice attempts to imitate handwriting is present, but the required wife identity and the explicit failure qualifier are missing."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "Seeing the seven practised copies, the author sighs, \"I know I'm in trouble,\" in fear of discovery: exposure of the fake would reveal the death and the author's responsibility for it.",
+          "reason": "The fear of being caught is present, but the required causal fact—inability to imitate her handwriting—is absent."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The author and the dead person were spouses. The author personally, deliberately and intentionally caused the spouse's death—no accident, no consent, no self-defence—and feels personally responsible. ... A finished letter of that kind is to be found as something the spouse left behind; people generally are meant to conclude that the spouse rejected the author and went away for good, never to return."
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "The author personally, deliberately and intentionally caused the spouse's death—no accident, no consent, no self-defence—"
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "After the death, the author practised imitating the dead spouse's handwriting, writing \"You've disappointed me so much; I'm never coming back\" seven times, in the spouse's voice and addressed to the author, so it could pass as the spouse's own hand. A finished letter of that kind is to be found as something the spouse left behind; people generally are meant to conclude that the spouse rejected the author and went away for good, never to return."
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "After the death, the author practised imitating the dead spouse's handwriting, writing \"You've disappointed me so much; I'm never coming back\" seven times, in the spouse's voice and addressed to the author, so it could pass as the spouse's own hand."
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "the author practised imitating the dead spouse's handwriting, writing \"You've disappointed me so much; I'm never coming back\" seven times ... Seeing the seven practised copies, the author sighs, \"I know I'm in trouble,\" in fear of discovery: exposure of the fake would reveal the death and the author's responsibility for it."
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "Seeing the seven practised copies, the author sighs, \"I know I'm in trouble,\" in fear of discovery: exposure of the fake would reveal the death and the author's responsibility for it."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.5,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-12T12:40:49.561199+00:00",
+    "event": "submission",
+    "index": 97,
+    "type": "final",
+    "text": "The author murdered their spouse, personally and deliberately, intending the death, with no accident, no consent and no self-defence, and feels responsible for it. The spouse is dead and can never return. What we are seeing is the author preparing the cover story: practising the dead spouse's handwriting, writing the same line seven times—\"You've disappointed me so much; I'm never coming back\"—in the spouse's voice and addressed to the author, so that a finished letter can be found as the spouse's own farewell. People generally would then take it that the spouse rejected the author and left for good, never returning; that explains the permanent absence, keeps them from ever learning of the death, and stops their searching. The deception is meant to last indefinitely. No one believes the spouse is dead, nobody has been deceived yet, nothing material is gained, and the forgery is undiscovered. Looking at the seven practised copies, the author sighs, \"I know I'm in trouble\": the imitation is what keeps the death and the killing hidden, and if it is seen through, both will be exposed.",
+    "forced": false,
+    "raw_player_output": "FINAL\nThe author murdered their spouse, personally and deliberately, intending the death, with no accident, no consent and no self-defence, and feels responsible for it. The spouse is dead and can never return. What we are seeing is the author preparing the cover story: practising the dead spouse's handwriting, writing the same line seven times—\"You've disappointed me so much; I'm never coming back\"—in the spouse's voice and addressed to the author, so that a finished letter can be found as the spouse's own farewell. People generally would then take it that the spouse rejected the author and left for good, never returning; that explains the permanent absence, keeps them from ever learning of the death, and stops their searching. The deception is meant to last indefinitely. No one believes the spouse is dead, nobody has been deceived yet, nothing material is gained, and the forgery is undiscovered. Looking at the seven practised copies, the author sighs, \"I know I'm in trouble\": the imitation is what keeps the death and the killing hidden, and if it is seen through, both will be exposed.",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 97,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The author murdered their spouse, personally and deliberately, intending the death ... practising the dead spouse's handwriting ... a finished letter can be found as the spouse's own farewell. People generally would then take it that the spouse rejected the author and left for good, never returning",
+          "reason": "The deliberate murder and staged voluntary departure are covered, but the victim is identified only as 'spouse,' not the required wife, so the checkpoint is partly correct."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "practising the dead spouse's handwriting, writing the same line seven times—\"You've disappointed me so much; I'm never coming back\"—in the spouse's voice and addressed to the author",
+          "reason": "The repeated message as practice attempts to imitate handwriting is present, but the wife identity and the explicit failure qualifier are missing."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "Looking at the seven practised copies, the author sighs, \"I know I'm in trouble\": the imitation is what keeps the death and the killing hidden, and if it is seen through, both will be exposed.",
+          "reason": "The fear of being caught is present, but the required causal fact—inability to imitate her handwriting—is absent."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The author murdered their spouse, personally and deliberately, intending the death ... practising the dead spouse's handwriting ... a finished letter can be found as the spouse's own farewell. People generally would then take it that the spouse rejected the author and left for good, never returning."
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "The author murdered their spouse, personally and deliberately, intending the death"
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "practising the dead spouse's handwriting, writing the same line seven times ... so that a finished letter can be found as the spouse's own farewell. People generally would then take it that the spouse rejected the author and left for good, never returning."
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "practising the dead spouse's handwriting, writing the same line seven times—\"You've disappointed me so much; I'm never coming back\"—in the spouse's voice and addressed to the author"
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "practising the dead spouse's handwriting, writing the same line seven times ... Looking at the seven practised copies, the author sighs, \"I know I'm in trouble\": the imitation is what keeps the death and the killing hidden, and if it is seen through, both will be exposed."
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "Looking at the seven practised copies, the author sighs, \"I know I'm in trouble\": the imitation is what keeps the death and the killing hidden, and if it is seen through, both will be exposed."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.5,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-12T12:41:21.671520+00:00",
+    "event": "submission",
+    "index": 98,
+    "type": "question",
+    "text": "Is the author's overriding concern their own reputation or how they appear to others?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the author's overriding concern their own reputation or how they appear to others?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T12:41:54.895999+00:00",
+    "event": "submission",
+    "index": 99,
+    "type": "final",
+    "text": "The author and the dead person were spouses. The author personally, deliberately and intentionally caused the spouse's death—no accident, no consent, no self-defence—and feels personally responsible for it. The spouse is dead and can never return. After the death, the author practised imitating the dead spouse's handwriting, writing the same sentence seven times—\"You've disappointed me so much; I'm never coming back\"—in the spouse's voice and addressed to the author, so that it could pass as the spouse's own handwriting. A finished letter of that kind is meant to be found as something the spouse left behind; people generally are meant to conclude that the spouse rejected the author and went away for good, never to return. That explains the lasting absence, keeps them from learning of the death, and stops them searching. The deception is meant to last. Those people do not believe the spouse is dead; nothing material is gained; nobody has yet been deceived; the forgery remains undiscovered. Seeing the seven practised copies, the author sighs, \"I know I'm in trouble,\" in fear of discovery: if the fake is exposed, the death will be revealed and so will the author's responsibility for it.",
+    "forced": false,
+    "raw_player_output": "FINAL\nThe author and the dead person were spouses. The author personally, deliberately and intentionally caused the spouse's death—no accident, no consent, no self-defence—and feels personally responsible for it. The spouse is dead and can never return. After the death, the author practised imitating the dead spouse's handwriting, writing the same sentence seven times—\"You've disappointed me so much; I'm never coming back\"—in the spouse's voice and addressed to the author, so that it could pass as the spouse's own handwriting. A finished letter of that kind is meant to be found as something the spouse left behind; people generally are meant to conclude that the spouse rejected the author and went away for good, never to return. That explains the lasting absence, keeps them from learning of the death, and stops them searching. The deception is meant to last. Those people do not believe the spouse is dead; nothing material is gained; nobody has yet been deceived; the forgery remains undiscovered. Seeing the seven practised copies, the author sighs, \"I know I'm in trouble,\" in fear of discovery: if the fake is exposed, the death will be revealed and so will the author's responsibility for it.",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 99,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The author and the dead person were spouses. The author personally, deliberately and intentionally caused the spouse's death—no accident, no consent, no self-defence—and feels personally responsible for it. ... people generally are meant to conclude that the spouse rejected the author and went away for good, never to return.",
+          "reason": "The deliberate killing and staged voluntary departure are covered, but the victim is identified only as 'spouse,' not the required wife, so the checkpoint is partly correct."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "After the death, the author practised imitating the dead spouse's handwriting, writing the same sentence seven times—\"You've disappointed me so much; I'm never coming back\"—in the spouse's voice and addressed to the author, so that it could pass as the spouse's own handwriting.",
+          "reason": "The repeated practice attempts at imitating handwriting are present, but the required wife identity and the explicit failure qualifier are missing."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "Seeing the seven practised copies, the author sighs, \"I know I'm in trouble,\" in fear of discovery: if the fake is exposed, the death will be revealed and so will the author's responsibility for it.",
+          "reason": "Fear of being caught is present, but the required causal fact—inability to imitate her handwriting—is absent."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The author and the dead person were spouses. The author personally, deliberately and intentionally caused the spouse's death—no accident, no consent, no self-defence—and feels personally responsible for it. ... people generally are meant to conclude that the spouse rejected the author and went away for good, never to return."
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "The author personally, deliberately and intentionally caused the spouse's death—no accident, no consent, no self-defence—and feels personally responsible for it."
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "After the death, the author practised imitating the dead spouse's handwriting, writing the same sentence seven times—\"You've disappointed me so much; I'm never coming back\"—in the spouse's voice and addressed to the author, so that it could pass as the spouse's own handwriting. A finished letter of that kind is meant to be found as something the spouse left behind; people generally are meant to conclude that the spouse rejected the author and went away for good, never to return."
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "After the death, the author practised imitating the dead spouse's handwriting, writing the same sentence seven times—\"You've disappointed me so much; I'm never coming back\"—in the spouse's voice and addressed to the author, so that it could pass as the spouse's own handwriting."
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "the author practised imitating the dead spouse's handwriting, writing the same sentence seven times ... Seeing the seven practised copies, the author sighs, \"I know I'm in trouble,\" in fear of discovery: if the fake is exposed, the death will be revealed and so will the author's responsibility for it."
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "Seeing the seven practised copies, the author sighs, \"I know I'm in trouble,\" in fear of discovery: if the fake is exposed, the death will be revealed and so will the author's responsibility for it."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.5,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-12T12:42:31.968295+00:00",
+    "event": "submission",
+    "index": 100,
+    "type": "final",
+    "text": "A man killed his wife. He did it himself, deliberately and with intent, with no accident, no consent and no self-defence, and he knows the responsibility is his. She is dead and can never come back. What he is doing now is preparing the deception that will cover it: he is practising her handwriting, writing the same line over and over until he can imitate her hand, seven attempts of \"You've disappointed me so much; I'm never coming back\"—set in her voice and addressed to him. Once the imitation is convincing, a letter written that way is to be \"found\" as something she left behind. Whoever finds it is meant to believe she was disappointed in him and walked out for good, never returning; that explains why she is no longer there, keeps anyone from learning that she died, and stops them looking for her. The author is not after money or advantage, nobody has yet been taken in, and the forgery has not been spotted. Looking at the seven practised copies, he sighs, \"I know I'm in trouble\": the fake is what stands between him and being found out, and if the imitation is ever seen through, both the death and his responsibility for it will be exposed.",
+    "forced": true,
+    "raw_player_output": "FINAL\nA man killed his wife. He did it himself, deliberately and with intent, with no accident, no consent and no self-defence, and he knows the responsibility is his. She is dead and can never come back. What he is doing now is preparing the deception that will cover it: he is practising her handwriting, writing the same line over and over until he can imitate her hand, seven attempts of \"You've disappointed me so much; I'm never coming back\"—set in her voice and addressed to him. Once the imitation is convincing, a letter written that way is to be \"found\" as something she left behind. Whoever finds it is meant to believe she was disappointed in him and walked out for good, never returning; that explains why she is no longer there, keeps anyone from learning that she died, and stops them looking for her. The author is not after money or advantage, nobody has yet been taken in, and the forgery has not been spotted. Looking at the seven practised copies, he sighs, \"I know I'm in trouble\": the fake is what stands between him and being found out, and if the imitation is ever seen through, both the death and his responsibility for it will be exposed.",
+    "label": "yes",
+    "grade": {
+      "event": "evaluation",
+      "submission": 100,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 1,
+          "evidence": "A man killed his wife. ... preparing the deception that will cover it: he is practising her handwriting ... a letter written that way is to be \"found\" as something she left behind. Whoever finds it is meant to believe she was disappointed in him and walked out for good, never returning",
+          "reason": "The submission covers the murder of the wife and the staged voluntary departure via a forged farewell, including the intent to have it found as a leaving note."
+        },
+        {
+          "id": "C2",
+          "credit": 1,
+          "evidence": "he is practising her handwriting, writing the same line over and over until he can imitate her hand, seven attempts of \"You've disappointed me so much; I'm never coming back\"",
+          "reason": "The repeated message is explicitly presented as attempts to imitate the wife's handwriting, satisfying the required fact."
+        },
+        {
+          "id": "C3",
+          "credit": 1,
+          "evidence": "writing the same line over and over until he can imitate her hand ... Looking at the seven practised copies, he sighs, \"I know I'm in trouble\": the fake is what stands between him and being found out, and if the imitation is ever seen through, both the death and his responsibility for it will be exposed.",
+          "reason": "The submission links his current inability to imitate her handwriting (until he can) with the fear of being caught and exposure."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": true,
+      "completion_note": "All weighted checkpoint facts covered; the solution is complete.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "covered",
+          "evidence": "A man killed his wife. ... preparing the deception that will cover it: he is practising her handwriting ... a letter written that way is to be \"found\" as something she left behind. Whoever finds it is meant to believe she was disappointed in him and walked out for good, never returning"
+        },
+        {
+          "id": "C1.F2",
+          "status": "covered",
+          "evidence": "A man killed his wife. He did it himself, deliberately and with intent, with no accident, no consent and no self-defence, and he knows the responsibility is his."
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "he is practising her handwriting, writing the same line over and over ... a letter written that way is to be \"found\" as something she left behind. Whoever finds it is meant to believe she was disappointed in him and walked out for good, never returning"
+        },
+        {
+          "id": "C2.F1",
+          "status": "covered",
+          "evidence": "he is practising her handwriting, writing the same line over and over until he can imitate her hand, seven attempts of \"You've disappointed me so much; I'm never coming back\""
+        },
+        {
+          "id": "C2.F2",
+          "status": "covered",
+          "evidence": "he is practising her handwriting, writing the same line over and over until he can imitate her hand, seven attempts ... Looking at the seven practised copies, he sighs, \"I know I'm in trouble\": the fake is what stands between him and being found out, and if the imitation is ever seen through, both the death and his responsibility for it will be exposed."
+        },
+        {
+          "id": "C3.F1",
+          "status": "covered",
+          "evidence": "writing the same line over and over until he can imitate her hand ... Looking at the seven practised copies, he sighs, \"I know I'm in trouble\": the fake is what stands between him and being found out, and if the imitation is ever seen through, both the death and his responsibility for it will be exposed."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 1.0,
+      "complete": true,
+      "label": "yes",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  }
+]

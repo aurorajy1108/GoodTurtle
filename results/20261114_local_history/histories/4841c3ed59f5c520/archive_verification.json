@@ -1,0 +1,37 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "80ecb4a1ba47c6c346d363592c0f72055dd7205749ab62bec2f66ff3c49dc2a1",
+    "trajectory.jsonl": "8425e3293998e3d45ba4dee3e75b0b983e92cd347421f402e45e62424efd13f8",
+    "trajectory.md": "6f4b8b0747900efb2c79ae509585f881319e5e1108b52f1e6c5dd6d0340125a8",
+    "trajectory.html": "f8ab9ee9b99033d95aec4d42461677b31d4fd65caa605139be081a969478a27d",
+    "config.json": "a014f81ea9e104679e8f092a1f109161aea61071386b2e945a24be08c367d75c",
+    "prompts.json": "77501f946e5b59e400b7e0a48f2911d688062b6c2f6c25e0caab2e1a574a6344",
+    "puzzle_private.json": "f8e59ec492f389bd23df99b5cc00aa35e5c9d732e3445a4a5e829a9c9655e2d2",
+    "human_review.csv": "aa89690ff8c85ef9b8b6aa5cd712bde498ed69cfbd967c2c1720d77bd0dbcae6",
+    "review_template.csv": "aa89690ff8c85ef9b8b6aa5cd712bde498ed69cfbd967c2c1720d77bd0dbcae6",
+    "transfer_input.json": "72618f2e7f321852ac9c7af600e56d861810b850d0c897e4734226acb7fc7464"
+  },
+  "api_audit": {
+    "source_raw_sha256": "343f95ff232af1b6803b73532482cc4be801430ee9a899f5e847ace3469222de",
+    "source_raw_bytes": 2429654,
+    "published_sha256": "1a90f0ba91cdeaf4ed0589c8b8b39171207dbdb453aba0c39c838ddcffe3f75a",
+    "attempts": 200
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261022_codex_rerun/positive/G07_TS022_TS047_r02_source",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "80ecb4a1ba47c6c346d363592c0f72055dd7205749ab62bec2f66ff3c49dc2a1",
+      "signature": "4841c3ed59f5c520d7e6232d8a530810311aab7b1e16b02526b1f6304b52044b",
+      "event_count": 201,
+      "trajectory_sha256": "8425e3293998e3d45ba4dee3e75b0b983e92cd347421f402e45e62424efd13f8",
+      "first_submission": "2026-10-22T15:49:49.397188+00:00",
+      "first_text": "Was the house itself genuinely empty of other people when she entered it?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

@@ -1,0 +1,56 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "96444dd3e410f2d63e07531136b6b7a21b4232a74ee1626c07a37a44d60f685c",
+    "trajectory.jsonl": "497d504ecf2db92801e31300d24eef73e07999df6808656fecb61a650fbfd314",
+    "trajectory.md": "5ae232ff8b1524345a2130048ee0d8727a1bcdd86be4ac8d5b64024b0239b1ad",
+    "trajectory.html": "d02f8b3c377c57cf3c87c9bc375e81eb9a93864ab4448d4e20ecbc47ca0af7b3",
+    "config.json": "4307cf3c715247acc8faf9d322125607962ba66e56d5980b57d841ccb930bc1e",
+    "prompts.json": "fd0f3ea13c946e62222d317314549bea070bde6feb4c96d4bb9d525f03568bd4",
+    "puzzle_private.json": "6f9ca533f4259686032b2fcc5ced776bcfe1481dc79985c21d45f1400be08d8b",
+    "host_context.json": "5a9950c0f880eb2b3e29fe91d532a8cd18294ac44492e73caaa6aa2e55f64277",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "0a3fdde5e02a39bbfd5dea2afbce6b9ce2479134e71d8df316bc7b00195cca23",
+    "cost_summary.json": "f37e07c8ee167ddd723e85143abe826bac7fac03395d83c3cb8f735776d9b988",
+    "token_costs.csv": "17d49d281a343820b96282e3e5836df1a31a6199c101453880073d4e28d2b837",
+    "human_review.csv": "172603edf33d4396eb0904ebc68f9738cb9da5d2a4e8840a79202c0bfb62261b",
+    "review_template.csv": "172603edf33d4396eb0904ebc68f9738cb9da5d2a4e8840a79202c0bfb62261b",
+    "transfer_metadata.json": "66edf9d95bbd811a5a559010db9c7ad7f455e8dc4f5111aa73d8d87e8238d84e",
+    "player_continuation.json": "908d03fc8215aee183e9bab2ef6232df08f0bc5aee00c65e50df2f5f2e833daa"
+  },
+  "api_audit": {
+    "source_raw_sha256": "721610f29aae7aaf42baa55a15c8d5e39b8f3ebc73c9ee4e2d849872fefd7858",
+    "source_raw_bytes": 8239131,
+    "published_sha256": "280c3d31240cf2297926e9a5e7bb3050e07fc6c1401da9f894ba491d7349f01a",
+    "attempts": 120
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261111_jiayang_full_v5_r1r2/tasks/cl-set1-a/continual/S1_TS015_TS013_TS015_TS013_r02_session",
+      "status_as_recorded": "error",
+      "simulation": false,
+      "submissions": 58,
+      "result_sha256": "96444dd3e410f2d63e07531136b6b7a21b4232a74ee1626c07a37a44d60f685c",
+      "signature": "575fe6ecc7bac029375c8fc95330d79d03a90ed53575824dfa6ce0bb24bed89e",
+      "event_count": 354,
+      "trajectory_sha256": "ce3b1d296f347a3b1ebc5921565408930792dd119660e7dcc7d589901c322c08",
+      "first_submission": "2026-11-11T15:36:44.923948+00:00",
+      "first_text": "Were the courses taken by other students before this student could enroll?",
+      "archive_scope": "observed_history"
+    },
+    {
+      "source": "runs/api/20261112_jiayang_supervised/continuations/cl-set1-a/attempt_01/continual/S1_TS015_TS013_TS015_TS013_r02_session",
+      "status_as_recorded": "error",
+      "simulation": false,
+      "submissions": 58,
+      "result_sha256": "96444dd3e410f2d63e07531136b6b7a21b4232a74ee1626c07a37a44d60f685c",
+      "signature": "575fe6ecc7bac029375c8fc95330d79d03a90ed53575824dfa6ce0bb24bed89e",
+      "event_count": 356,
+      "trajectory_sha256": "497d504ecf2db92801e31300d24eef73e07999df6808656fecb61a650fbfd314",
+      "first_submission": "2026-11-11T15:36:44.923948+00:00",
+      "first_text": "Were the courses taken by other students before this student could enroll?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

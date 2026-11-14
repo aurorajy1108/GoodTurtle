@@ -1,0 +1,941 @@
+[
+  {
+    "timestamp": "2026-11-12T17:38:47.012394+00:00",
+    "event": "submission",
+    "index": 1,
+    "type": "question",
+    "text": "Is the repeated sentence spoken by seven different people?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated sentence spoken by seven different people?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:38:51.251134+00:00",
+    "event": "submission",
+    "index": 2,
+    "type": "question",
+    "text": "Is the repeated sentence spoken by one person to seven different people?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated sentence spoken by one person to seven different people?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:38:56.970001+00:00",
+    "event": "submission",
+    "index": 3,
+    "type": "question",
+    "text": "Is the repeated sentence being read or heard by the narrator rather than spoken in a conversation?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated sentence being read or heard by the narrator rather than spoken in a conversation?",
+    "label": "yes and no"
+  },
+  {
+    "timestamp": "2026-11-12T17:39:56.210717+00:00",
+    "event": "submission",
+    "index": 4,
+    "type": "question",
+    "text": "Does the repetition appear in written form, such as a note, letter, or message?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the repetition appear in written form, such as a note, letter, or message?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T17:40:00.192212+00:00",
+    "event": "submission",
+    "index": 5,
+    "type": "question",
+    "text": "Are the seven identical sentences part of a single written message?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nAre the seven identical sentences part of a single written message?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:40:07.000446+00:00",
+    "event": "submission",
+    "index": 6,
+    "type": "question",
+    "text": "Are the seven identical sentences seven separate written messages from the same sender?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nAre the seven identical sentences seven separate written messages from the same sender?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:40:18.717349+00:00",
+    "event": "submission",
+    "index": 7,
+    "type": "question",
+    "text": "Are the repeated sentences encountered as text the narrator is composing or editing?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nAre the repeated sentences encountered as text the narrator is composing or editing?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T17:40:23.320760+00:00",
+    "event": "submission",
+    "index": 8,
+    "type": "question",
+    "text": "Is the narrator writing a book or article in which this sentence repeatedly appears?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator writing a book or article in which this sentence repeatedly appears?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:40:25.886203+00:00",
+    "event": "submission",
+    "index": 9,
+    "type": "question",
+    "text": "Is the narrator editing or reviewing text that was generated automatically, such as by a computer?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator editing or reviewing text that was generated automatically, such as by a computer?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:40:28.601295+00:00",
+    "event": "submission",
+    "index": 10,
+    "type": "question",
+    "text": "Is the narrator a student or teacher dealing with repeated lines written as a punishment?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator a student or teacher dealing with repeated lines written as a punishment?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:40:31.710262+00:00",
+    "event": "submission",
+    "index": 11,
+    "type": "question",
+    "text": "Is the narrator hearing the sentence repeatedly inside their own mind or memory while trying to write?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator hearing the sentence repeatedly inside their own mind or memory while trying to write?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:40:44.693778+00:00",
+    "event": "submission",
+    "index": 12,
+    "type": "question",
+    "text": "Is the narrator typing the sentence repeatedly on a device, such as in a text field that keeps rejecting or resetting?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator typing the sentence repeatedly on a device, such as in a text field that keeps rejecting or resetting?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:40:48.409730+00:00",
+    "event": "submission",
+    "index": 13,
+    "type": "question",
+    "text": "Is the narrator copying the sentence repeatedly onto something, such as filling out duplicate forms?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator copying the sentence repeatedly onto something, such as filling out duplicate forms?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T17:40:55.679315+00:00",
+    "event": "submission",
+    "index": 14,
+    "type": "question",
+    "text": "Is the narrator filling out a form that requires them to copy a statement as a declaration or oath?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator filling out a form that requires them to copy a statement as a declaration or oath?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:40:58.448446+00:00",
+    "event": "submission",
+    "index": 15,
+    "type": "question",
+    "text": "Is the narrator writing the same sentence on multiple copies of a document, such as a contract or form?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator writing the same sentence on multiple copies of a document, such as a contract or form?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:41:14.629755+00:00",
+    "event": "submission",
+    "index": 16,
+    "type": "question",
+    "text": "Is the narrator a child repeatedly writing the sentence as lines for misbehavior, but the puzzle's twist is that the \"disappointment\" is not about them?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator a child repeatedly writing the sentence as lines for misbehavior, but the puzzle's twist is that the \"disappointment\" is not about them?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:41:17.837626+00:00",
+    "event": "submission",
+    "index": 17,
+    "type": "question",
+    "text": "Is the narrator copying the sentence onto seven separate items that will be given or sent to others?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator copying the sentence onto seven separate items that will be given or sent to others?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:41:32.853704+00:00",
+    "event": "submission",
+    "index": 18,
+    "type": "question",
+    "text": "Are the seven sentences written on a single sheet or surface, repeated seven times?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nAre the seven sentences written on a single sheet or surface, repeated seven times?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-12T17:41:40.599442+00:00",
+    "event": "submission",
+    "index": 19,
+    "type": "question",
+    "text": "Is the narrator repeatedly writing the sentence while practicing penmanship or calligraphy?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator repeatedly writing the sentence while practicing penmanship or calligraphy?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T17:41:52.037900+00:00",
+    "event": "submission",
+    "index": 20,
+    "type": "question",
+    "text": "Is the narrator writing the sentence with a group of people, such as a class, where everyone copies the same line?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator writing the sentence with a group of people, such as a class, where everyone copies the same line?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:41:55.455157+00:00",
+    "event": "submission",
+    "index": 21,
+    "type": "question",
+    "text": "Is the narrator practicing writing a sentence they intend to say to someone, rehearsing a breakup or rejection line?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator practicing writing a sentence they intend to say to someone, rehearsing a breakup or rejection line?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:41:59.770623+00:00",
+    "event": "submission",
+    "index": 22,
+    "type": "question",
+    "text": "Is the sentence a sample or model sentence the narrator is copying as handwriting practice?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the sentence a sample or model sentence the narrator is copying as handwriting practice?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T17:43:28.402928+00:00",
+    "event": "submission",
+    "index": 23,
+    "type": "question",
+    "text": "Does the narrator realize the sample sentence's meaning applies to their own situation, hence \"I know I'm in trouble\"?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the narrator realize the sample sentence's meaning applies to their own situation, hence \"I know I'm in trouble\"?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:43:34.535082+00:00",
+    "event": "submission",
+    "index": 24,
+    "type": "question",
+    "text": "Is the narrator a prisoner or inmate doing handwriting practice as part of rehabilitation?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator a prisoner or inmate doing handwriting practice as part of rehabilitation?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:43:39.072948+00:00",
+    "event": "submission",
+    "index": 25,
+    "type": "question",
+    "text": "Is the narrator an artificial intelligence or machine learning model being trained on repeated text?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator an artificial intelligence or machine learning model being trained on repeated text?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:43:42.716640+00:00",
+    "event": "submission",
+    "index": 26,
+    "type": "question",
+    "text": "Is the narrator a forger or someone practicing to reproduce another person's handwriting?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator a forger or someone practicing to reproduce another person's handwriting?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T17:43:46.684573+00:00",
+    "event": "submission",
+    "index": 27,
+    "type": "question",
+    "text": "Is the sentence being copied from a sample of the handwriting the narrator wants to forge?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the sentence being copied from a sample of the handwriting the narrator wants to forge?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-12T17:43:52.375351+00:00",
+    "event": "submission",
+    "index": 28,
+    "type": "question",
+    "text": "Does the narrator now realize they have been caught, which is why they say \"I know I'm in trouble\"?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the narrator now realize they have been caught, which is why they say \"I know I'm in trouble\"?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:43:57.532138+00:00",
+    "event": "submission",
+    "index": 29,
+    "type": "question",
+    "text": "Are the seven copies written on a document, such as a check or signature line, where a repeated signature would look suspicious?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nAre the seven copies written on a document, such as a check or signature line, where a repeated signature would look suspicious?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:44:01.929743+00:00",
+    "event": "submission",
+    "index": 30,
+    "type": "question",
+    "text": "Is the narrator writing the lines as a handwriting exercise given by someone else, like a teacher or therapist?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator writing the lines as a handwriting exercise given by someone else, like a teacher or therapist?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:44:05.633424+00:00",
+    "event": "submission",
+    "index": 31,
+    "type": "question",
+    "text": "Is the narrator's trouble caused by their handwriting being recognized from the practice sheets?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator's trouble caused by their handwriting being recognized from the practice sheets?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:44:11.018087+00:00",
+    "event": "submission",
+    "index": 32,
+    "type": "question",
+    "text": "Is the narrator a counterfeiter practicing a signature to forge documents?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator a counterfeiter practicing a signature to forge documents?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:44:33.747314+00:00",
+    "event": "submission",
+    "index": 33,
+    "type": "question",
+    "text": "Is the narrator forging a document in order to impersonate someone else?",
+    "forced": false,
+    "raw_player_output": "Since \"forger/handwriting practice\" was yes but counterfeiter specifically no, let me probe the forger identity differently.\n\nQUESTION\nIs the narrator forging a document in order to impersonate someone else?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T17:44:54.692345+00:00",
+    "event": "submission",
+    "index": 34,
+    "type": "question",
+    "text": "Is the narrator a student forging a parent's signature, such as on a permission slip or report card?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator a student forging a parent's signature, such as on a permission slip or report card?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:44:57.492699+00:00",
+    "event": "submission",
+    "index": 35,
+    "type": "question",
+    "text": "Is the narrator forging a signature on a financial document, such as a check or will?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator forging a signature on a financial document, such as a check or will?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:45:02.773928+00:00",
+    "event": "submission",
+    "index": 36,
+    "type": "question",
+    "text": "Is the narrator forging a signature belonging to a deceased person?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator forging a signature belonging to a deceased person?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:45:06.186412+00:00",
+    "event": "submission",
+    "index": 37,
+    "type": "question",
+    "text": "Is the narrator forging a signature in order to gain access to something, such as an account or entry?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator forging a signature in order to gain access to something, such as an account or entry?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:45:10.767500+00:00",
+    "event": "submission",
+    "index": 38,
+    "type": "question",
+    "text": "Is the person whose handwriting is being copied someone the narrator knows personally?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the person whose handwriting is being copied someone the narrator knows personally?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T17:45:14.007090+00:00",
+    "event": "submission",
+    "index": 39,
+    "type": "question",
+    "text": "Is the person whose handwriting is being copied related to the narrator?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the person whose handwriting is being copied related to the narrator?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T17:45:17.682218+00:00",
+    "event": "submission",
+    "index": 40,
+    "type": "question",
+    "text": "Is the narrator trying to impersonate a family member in order to obtain money or an inheritance?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator trying to impersonate a family member in order to obtain money or an inheritance?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:45:21.237914+00:00",
+    "event": "submission",
+    "index": 41,
+    "type": "question",
+    "text": "Is the family member being impersonated the narrator's spouse?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the family member being impersonated the narrator's spouse?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T17:45:24.711262+00:00",
+    "event": "submission",
+    "index": 42,
+    "type": "question",
+    "text": "Is the narrator forging the spouse's signature to cover up something, such as a debt or a secret?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator forging the spouse's signature to cover up something, such as a debt or a secret?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:45:36.770571+00:00",
+    "event": "submission",
+    "index": 43,
+    "type": "question",
+    "text": "Is the narrator forging the spouse's signature to complete a transaction that requires the spouse's consent?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator forging the spouse's signature to complete a transaction that requires the spouse's consent?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:45:40.456544+00:00",
+    "event": "submission",
+    "index": 44,
+    "type": "question",
+    "text": "Is the narrator forging the spouse's signature on a document related to their marriage, such as divorce papers?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator forging the spouse's signature on a document related to their marriage, such as divorce papers?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:45:43.734633+00:00",
+    "event": "submission",
+    "index": 45,
+    "type": "question",
+    "text": "Does the narrator's spouse know about the forgery?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the narrator's spouse know about the forgery?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:45:49.674867+00:00",
+    "event": "submission",
+    "index": 46,
+    "type": "question",
+    "text": "Is the statement being practiced the exact words a suicide note or farewell message?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the statement being practiced the exact words a suicide note or farewell message?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T17:45:54.813226+00:00",
+    "event": "submission",
+    "index": 47,
+    "type": "question",
+    "text": "Is the narrator forging the spouse's suicide note, making it appear the spouse wrote it?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator forging the spouse's suicide note, making it appear the spouse wrote it?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:45:57.685722+00:00",
+    "event": "submission",
+    "index": 48,
+    "type": "question",
+    "text": "Is the narrator practicing the note in their own hand in order to pass it off as a note from the spouse who has died?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator practicing the note in their own hand in order to pass it off as a note from the spouse who has died?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T17:46:05.244295+00:00",
+    "event": "submission",
+    "index": 49,
+    "type": "question",
+    "text": "Did the narrator kill the spouse?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDid the narrator kill the spouse?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T17:46:08.414489+00:00",
+    "event": "submission",
+    "index": 50,
+    "type": "question",
+    "text": "Did the narrator stage the spouse's death to look like a suicide?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDid the narrator stage the spouse's death to look like a suicide?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:46:11.422423+00:00",
+    "event": "submission",
+    "index": 51,
+    "type": "question",
+    "text": "Was the narrator's writing practice intended to make the suicide note appear to be written by the spouse?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWas the narrator's writing practice intended to make the suicide note appear to be written by the spouse?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:46:16.428056+00:00",
+    "event": "submission",
+    "index": 52,
+    "type": "question",
+    "text": "Did the narrator practice the note so that the spouse would appear to have written the line \"You've disappointed me so much; I'm never coming back\" repeatedly?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDid the narrator practice the note so that the spouse would appear to have written the line \"You've disappointed me so much; I'm never coming back\" repeatedly?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:46:21.030749+00:00",
+    "event": "submission",
+    "index": 53,
+    "type": "question",
+    "text": "Is the narrator practicing the spouse's handwriting so their own writings will be mistaken for the dead spouse's?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator practicing the spouse's handwriting so their own writings will be mistaken for the dead spouse's?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T17:46:27.117452+00:00",
+    "event": "submission",
+    "index": 54,
+    "type": "question",
+    "text": "Are the seven repeated lines meant to fake evidence that the spouse wrote a suicide note—i.e., the narrator will claim the note was written by the spouse?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nAre the seven repeated lines meant to fake evidence that the spouse wrote a suicide note—i.e., the narrator will claim the note was written by the spouse?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:46:30.900961+00:00",
+    "event": "submission",
+    "index": 55,
+    "type": "question",
+    "text": "Is the seven-times-repeated line handwriting practice that gives the narrator samples to compare or fill in, so forged documents will pass as the spouse's?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the seven-times-repeated line handwriting practice that gives the narrator samples to compare or fill in, so forged documents will pass as the spouse's?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T17:47:19.730077+00:00",
+    "event": "submission",
+    "index": 56,
+    "type": "question",
+    "text": "Does the narrator want documents to appear to have been written by the spouse so the narrator can benefit after the spouse's death (such as a will leaving everything to the narrator)?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the narrator want documents to appear to have been written by the spouse so the narrator can benefit after the spouse's death (such as a will leaving everything to the narrator)?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:47:25.856375+00:00",
+    "event": "submission",
+    "index": 57,
+    "type": "question",
+    "text": "Is the narrator practicing the spouse's handwriting in order to forge a confession by the spouse?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator practicing the spouse's handwriting in order to forge a confession by the spouse?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:47:29.207490+00:00",
+    "event": "submission",
+    "index": 58,
+    "type": "question",
+    "text": "Is the narrator practicing the spouse's handwriting in order to forge letters that make it seem the spouse left and abandoned the narrator (\"I'm never coming back\")?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator practicing the spouse's handwriting in order to forge letters that make it seem the spouse left and abandoned the narrator (\"I'm never coming back\")?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T17:47:47.406448+00:00",
+    "event": "submission",
+    "index": 59,
+    "type": "question",
+    "text": "Did the narrator want to create evidence that the spouse simply ran away, so nobody would search for the murdered spouse?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDid the narrator want to create evidence that the spouse simply ran away, so nobody would search for the murdered spouse?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T17:47:52.209028+00:00",
+    "event": "submission",
+    "index": 60,
+    "type": "question",
+    "text": "Are the seven copies written on separate sheets that will be sent to the narrator (or left to be found) as apparent letters from the departed spouse?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nAre the seven copies written on separate sheets that will be sent to the narrator (or left to be found) as apparent letters from the departed spouse?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:48:00.833542+00:00",
+    "event": "submission",
+    "index": 61,
+    "type": "question",
+    "text": "Is the \"I know I'm in trouble\" because the narrator's handwriting practice sheets were found, revealing the forgery plan?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the \"I know I'm in trouble\" because the narrator's handwriting practice sheets were found, revealing the forgery plan?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:48:06.068526+00:00",
+    "event": "submission",
+    "index": 62,
+    "type": "question",
+    "text": "Does the narrator say \"I know I'm in trouble\" because they realize they have used their own handwriting, rather than the spouse's, on the final forged letter?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the narrator say \"I know I'm in trouble\" because they realize they have used their own handwriting, rather than the spouse's, on the final forged letter?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:48:13.911633+00:00",
+    "event": "submission",
+    "index": 63,
+    "type": "question",
+    "text": "Does the narrator say \"I know I'm in trouble\" because their practiced line accidentally appears in a letter that was supposed to be genuinely from the spouse?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the narrator say \"I know I'm in trouble\" because their practiced line accidentally appears in a letter that was supposed to be genuinely from the spouse?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:48:17.763600+00:00",
+    "event": "submission",
+    "index": 64,
+    "type": "question",
+    "text": "Does the narrator say \"I know I'm in trouble\" because they are now reading their own forged letters back as if they were the spouse's messages (the repeated sentence appears as received messages)?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the narrator say \"I know I'm in trouble\" because they are now reading their own forged letters back as if they were the spouse's messages (the repeated sentence appears as received messages)?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:48:22.922374+00:00",
+    "event": "submission",
+    "index": 65,
+    "type": "question",
+    "text": "Is the \"trouble\" that the repeated line, practiced by the narrator, ended up in a font or template the narrator is now using—so their forgery is self-evident?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the \"trouble\" that the repeated line, practiced by the narrator, ended up in a font or template the narrator is now using—so their forgery is self-evident?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:48:27.785759+00:00",
+    "event": "submission",
+    "index": 66,
+    "type": "question",
+    "text": "Did the narrator make an error while forging—leaving the practice sheets or using the same wording seven times—that exposed the deception?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDid the narrator make an error while forging—leaving the practice sheets or using the same wording seven times—that exposed the deception?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:48:33.413930+00:00",
+    "event": "submission",
+    "index": 67,
+    "type": "question",
+    "text": "Is the \"I know I'm in trouble\" said by the narrator upon being confronted, because the forged letters have been traced back to the narrator's handwriting practice?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the \"I know I'm in trouble\" said by the narrator upon being confronted, because the forged letters have been traced back to the narrator's handwriting practice?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:48:38.303150+00:00",
+    "event": "submission",
+    "index": 68,
+    "type": "question",
+    "text": "Is the \"trouble\" that the narrator realizes the seven letters, being identical word-for-word, look obviously fake rather than like genuine separate messages from the spouse?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the \"trouble\" that the narrator realizes the seven letters, being identical word-for-word, look obviously fake rather than like genuine separate messages from the spouse?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:48:43.250750+00:00",
+    "event": "submission",
+    "index": 69,
+    "type": "question",
+    "text": "Are the seven sentences actually the narrator's practice attempts, and the narrator is now looking at them and sighing because the practice sheets will incriminate them if found?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nAre the seven sentences actually the narrator's practice attempts, and the narrator is now looking at them and sighing because the practice sheets will incriminate them if found?",
+    "label": "yes and no"
+  },
+  {
+    "timestamp": "2026-11-12T17:49:48.069280+00:00",
+    "event": "submission",
+    "index": 70,
+    "type": "question",
+    "text": "Is the narrator's \"I know I'm in trouble\" because they now realize the repeated sentence is a clue pointing to the fate of the spouse, and the narrator fears being suspected?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator's \"I know I'm in trouble\" because they now realize the repeated sentence is a clue pointing to the fate of the spouse, and the narrator fears being suspected?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:49:58.606850+00:00",
+    "event": "submission",
+    "index": 71,
+    "type": "question",
+    "text": "Is the narrator a character in a story who is discovering that their own incriminating habit (repeatedly writing the line) has been preserved in a way that exposes the murder?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator a character in a story who is discovering that their own incriminating habit (repeatedly writing the line) has been preserved in a way that exposes the murder?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:50:02.919636+00:00",
+    "event": "submission",
+    "index": 72,
+    "type": "question",
+    "text": "Did the narrator forge the seven copies as letters supposedly written by the spouse, intending to show the spouse deliberately left?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDid the narrator forge the seven copies as letters supposedly written by the spouse, intending to show the spouse deliberately left?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:50:08.587588+00:00",
+    "event": "submission",
+    "index": 73,
+    "type": "question",
+    "text": "Were the seven copies made as practice before writing a single forged farewell letter?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWere the seven copies made as practice before writing a single forged farewell letter?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T17:50:45.434134+00:00",
+    "event": "submission",
+    "index": 74,
+    "type": "question",
+    "text": "Does the narrator realize they are \"in trouble\" because the seven practice copies, containing the same line that now appears in the forged farewell letter, prove the letter is a forgery?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the narrator realize they are \"in trouble\" because the seven practice copies, containing the same line that now appears in the forged farewell letter, prove the letter is a forgery?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:50:56.475115+00:00",
+    "event": "submission",
+    "index": 75,
+    "type": "question",
+    "text": "Were the seven practice copies left behind because the narrator forgot to destroy them?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWere the seven practice copies left behind because the narrator forgot to destroy them?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-12T17:51:06.302593+00:00",
+    "event": "submission",
+    "index": 76,
+    "type": "question",
+    "text": "Is the narrator's trouble that the forgery does not look like the spouse's handwriting at all, because the narrator's attempts all miss the mark?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator's trouble that the forgery does not look like the spouse's handwriting at all, because the narrator's attempts all miss the mark?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T17:51:21.972180+00:00",
+    "event": "submission",
+    "index": 77,
+    "type": "question",
+    "text": "Does the narrator discover, from comparing the seven practice attempts to the intended model, that they cannot successfully imitate the spouse's handwriting?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the narrator discover, from comparing the seven practice attempts to the intended model, that they cannot successfully imitate the spouse's handwriting?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T17:51:27.296064+00:00",
+    "event": "submission",
+    "index": 78,
+    "type": "question",
+    "text": "Are the seven identical sentences the narrator's own failed attempts—each looking the same because the narrator has a distinctive handwriting that matches their own, not the spouse's?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nAre the seven identical sentences the narrator's own failed attempts—each looking the same because the narrator has a distinctive handwriting that matches their own, not the spouse's?",
+    "label": "yes and no"
+  },
+  {
+    "timestamp": "2026-11-12T17:51:45.421975+00:00",
+    "event": "submission",
+    "index": 79,
+    "type": "question",
+    "text": "Is the reason the seven attempts are identical that the narrator wrote all seven lines where someone can see them, giving away that one person wrote each one?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the reason the seven attempts are identical that the narrator wrote all seven lines where someone can see them, giving away that one person wrote each one?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:51:52.878067+00:00",
+    "event": "submission",
+    "index": 80,
+    "type": "question",
+    "text": "Are the seven sentences meant to be seen as seven separate suicide notes or farewell messages left by the spouse on different occasions?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nAre the seven sentences meant to be seen as seven separate suicide notes or farewell messages left by the spouse on different occasions?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:51:58.628944+00:00",
+    "event": "submission",
+    "index": 81,
+    "type": "question",
+    "text": "Is the \"trouble\" that the narrator must now write the forged farewell letter convincingly but knows their practiced attempts reveal they cannot mimic the spouse's handwriting well enough?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the \"trouble\" that the narrator must now write the forged farewell letter convincingly but knows their practiced attempts reveal they cannot mimic the spouse's handwriting well enough?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T17:52:04.729355+00:00",
+    "event": "submission",
+    "index": 82,
+    "type": "question",
+    "text": "Does the narrator's trouble also stem from the fact that the final forged farewell letter must contain this exact line, which the seven failed attempts show is recognizable as the narrator's own handwriting?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the narrator's trouble also stem from the fact that the final forged farewell letter must contain this exact line, which the seven failed attempts show is recognizable as the narrator's own handwriting?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T17:52:30.910283+00:00",
+    "event": "submission",
+    "index": 83,
+    "type": "question",
+    "text": "Does the narrator ultimately write the forged farewell letter in their own handwriting, because they cannot imitate the spouse's, ensuring the forgery will be detected?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the narrator ultimately write the forged farewell letter in their own handwriting, because they cannot imitate the spouse's, ensuring the forgery will be detected?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-12T17:52:47.867223+00:00",
+    "event": "submission",
+    "index": 84,
+    "type": "question",
+    "text": "Is the narrator's \"I know I'm in trouble\" spoken as they realize the handwriting comparison will expose them, but they have already sent or submitted the forged letter?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the narrator's \"I know I'm in trouble\" spoken as they realize the handwriting comparison will expose them, but they have already sent or submitted the forged letter?",
+    "label": "yes and no"
+  },
+  {
+    "timestamp": "2026-11-12T17:53:19.335123+00:00",
+    "event": "submission",
+    "index": 85,
+    "type": "question",
+    "text": "Was the forged letter already submitted before the narrator discovered the handwriting problem?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWas the forged letter already submitted before the narrator discovered the handwriting problem?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-12T17:53:28.529114+00:00",
+    "event": "submission",
+    "index": 86,
+    "type": "question",
+    "text": "Does the narrator realize the seven practice attempts are themselves dangerous evidence that proves they were forging the spouse's handwriting?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the narrator realize the seven practice attempts are themselves dangerous evidence that proves they were forging the spouse's handwriting?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-12T17:53:48.100528+00:00",
+    "event": "submission",
+    "index": 87,
+    "type": "final",
+    "text": "The narrator murdered their spouse and tried to cover it up by making it appear the spouse had deliberately left (\"You've disappointed me so much; I'm never coming back\"), so that no one would search for the missing spouse. To do this, the narrator needed to forge the spouse's handwriting, and practiced copying that same farewell line seven times before writing the final forged letter. But the practice attempts revealed the narrator could not successfully imitate the spouse's handwriting—the seven copies all looked like the narrator's own hand rather than the spouse's, and were themselves incriminating evidence of the forgery plot. Looking at these failed attempts, the narrator sighs, \"I know I'm in trouble,\" realizing the forgery will be exposed and the murder discovered.",
+    "forced": false,
+    "raw_player_output": "I have enough confirmed facts to attempt a final.\n\nFINAL\nThe narrator murdered their spouse and tried to cover it up by making it appear the spouse had deliberately left (\"You've disappointed me so much; I'm never coming back\"), so that no one would search for the missing spouse. To do this, the narrator needed to forge the spouse's handwriting, and practiced copying that same farewell line seven times before writing the final forged letter. But the practice attempts revealed the narrator could not successfully imitate the spouse's handwriting—the seven copies all looked like the narrator's own hand rather than the spouse's, and were themselves incriminating evidence of the forgery plot. Looking at these failed attempts, the narrator sighs, \"I know I'm in trouble,\" realizing the forgery will be exposed and the murder discovered.",
+    "label": "yes",
+    "grade": {
+      "event": "evaluation",
+      "submission": 87,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 1,
+          "evidence": "The narrator murdered their spouse and tried to cover it up by making it appear the spouse had deliberately left ... so that no one would search for the missing spouse.",
+          "reason": "Covers murder and staged voluntary departure; 'spouse' is a faithful paraphrase for wife."
+        },
+        {
+          "id": "C2",
+          "credit": 1,
+          "evidence": "the narrator needed to forge the spouse's handwriting, and practiced copying that same farewell line seven times before writing the final forged letter.",
+          "reason": "Covers the repeated message as attempts to forge the spouse's handwriting."
+        },
+        {
+          "id": "C3",
+          "credit": 1,
+          "evidence": "the practice attempts revealed the narrator could not successfully imitate the spouse's handwriting ... Looking at these failed attempts, the narrator sighs, \"I know I'm in trouble,\" realizing the forgery will be exposed and the murder discovered.",
+          "reason": "Covers causal link from failed imitation to fear of being caught."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": true,
+      "completion_note": "Complete reference narrative reconstructed; 'spouse' is accepted as a faithful paraphrase for wife.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "covered",
+          "evidence": "The narrator murdered their spouse and tried to cover it up by making it appear the spouse had deliberately left ... so that no one would search for the missing spouse."
+        },
+        {
+          "id": "C2.F1",
+          "status": "covered",
+          "evidence": "the narrator needed to forge the spouse's handwriting, and practiced copying that same farewell line seven times before writing the final forged letter."
+        },
+        {
+          "id": "C3.F1",
+          "status": "covered",
+          "evidence": "the practice attempts revealed the narrator could not successfully imitate the spouse's handwriting ... Looking at these failed attempts, the narrator sighs, \"I know I'm in trouble,\" realizing the forgery will be exposed and the murder discovered."
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "covered",
+          "evidence": "The narrator murdered their spouse"
+        },
+        {
+          "id": "R2",
+          "status": "covered",
+          "evidence": "tried to cover it up by making it appear the spouse had deliberately left ... the narrator needed to forge the spouse's handwriting"
+        },
+        {
+          "id": "R3",
+          "status": "covered",
+          "evidence": "the practice attempts revealed the narrator could not successfully imitate the spouse's handwriting ... realizing the forgery will be exposed and the murder discovered."
+        }
+      ],
+      "contradictions": [],
+      "partial_score": 1.0,
+      "complete": true,
+      "label": "yes",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    }
+  }
+]

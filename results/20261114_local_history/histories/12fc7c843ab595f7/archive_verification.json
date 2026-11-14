@@ -1,0 +1,41 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "928c5af92d85fff71cdf2c3c9d5b41847f7ec27c9b15388c53d65e269f751f6b",
+    "trajectory.jsonl": "b1c4478f17d138196892f13ddcd97508483096467ce65e75a05d394cffe4f940",
+    "trajectory.md": "889df57dc12d1cf68e92b547c75e375a7d8854e92c7988e538cf5ad0e17d5fdc",
+    "trajectory.html": "154d8c7c19e0dddc1116227fdd7f3fffe9a4eb0065ea782a3c0a3dd27c29b23c",
+    "config.json": "2a474139b20bf95d9a43818066c49cfc134cfda6bbb3086349ea2e2d8f32b2a4",
+    "prompts.json": "d717281a9319d3f8435356c0724cf2c212d645a20f47af1527e025f6ef4ddb9e",
+    "puzzle_private.json": "29e954e99ae4cf044cdbb6058560998d599b9623b77eef50de93599f1faf9c85",
+    "host_context.json": "c80b84a66145d906d85bb2a50bbd94da2aff535c699ab2176432ae662505367d",
+    "runtime_context_policy.json": "e1e7012baad0875d7349da9e5abadea818f3f7a6ebca0a5f1b15eb69a80e1c74",
+    "pricing_snapshot.json": "64c31820443327839ce32e5128053650aacd3becf6b6746e94de79bb5620c17d",
+    "cost_summary.json": "26a024e32f316ace8d5151066c941ed944c9b570e2a7dfb83522a93a57335072",
+    "token_costs.csv": "6eb3b907f01a3c48409df57bf781dba10cc34937dea136ec7160181fa7f4e35a",
+    "human_review.csv": "9c5bcf45d8bfc14b3598efc27ef4fb7aa30e57f886c23cb9f26ac3254ad9dd1d",
+    "review_template.csv": "9c5bcf45d8bfc14b3598efc27ef4fb7aa30e57f886c23cb9f26ac3254ad9dd1d"
+  },
+  "api_audit": {
+    "source_raw_sha256": "cce6d1f133829f71e30cc944610a96c8a811b06d87d4976d9e5c67f391b9b509",
+    "source_raw_bytes": 12564653,
+    "published_sha256": "96353b26df2fac976e4f610acf0f3e52325a27c30e3b90a4e3c55a59147917f4",
+    "attempts": 200
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261108_deepseek_ts013_hostfix_once/TS013_r01",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "928c5af92d85fff71cdf2c3c9d5b41847f7ec27c9b15388c53d65e269f751f6b",
+      "signature": "12fc7c843ab595f7ec736f91adabf3cae2b726408e00ebd35f328545b908daca",
+      "event_count": 606,
+      "trajectory_sha256": "b1c4478f17d138196892f13ddcd97508483096467ce65e75a05d394cffe4f940",
+      "first_submission": "2026-11-08T02:35:11.572044+00:00",
+      "first_text": "Did another person intentionally remove or take your course selections?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

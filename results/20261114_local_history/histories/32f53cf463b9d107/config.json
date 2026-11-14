@@ -1,0 +1,21 @@
+{
+  "max_questions": 100,
+  "host": {
+    "provider": "codex_cli",
+    "model": "gpt-6-luna",
+    "reasoning_effort": "high",
+    "timeout": 240
+  },
+  "player": {
+    "provider": "codex_cli",
+    "model": "gpt-6-luna",
+    "reasoning_effort": "high",
+    "timeout": 240
+  },
+  "grader": {
+    "provider": "codex_cli",
+    "model": "gpt-6-luna",
+    "reasoning_effort": "high",
+    "timeout": 240
+  }
+}

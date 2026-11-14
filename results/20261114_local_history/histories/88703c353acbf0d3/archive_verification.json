@@ -1,0 +1,43 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "d77556d9854ca8af7841034e66fab0b6f827ae26710ef70abbbebdd5765e3788",
+    "trajectory.jsonl": "0dc6e7044b0d911c2eb98c1561e9b6fe246f84f23ac60d478054456b55c0f1dc",
+    "trajectory.md": "0ebc2c83d6f9f35d404b80a361f065357adf7adc35afc9631d99ab54d75152c8",
+    "trajectory.html": "368ec8bd00180b086952e0cbc4b590673f869a86c062c01a75a3ab994c6903aa",
+    "config.json": "4307cf3c715247acc8faf9d322125607962ba66e56d5980b57d841ccb930bc1e",
+    "prompts.json": "a9dba37a156716f526e0d9a31a06fc4baea1abfbe4ba7028933a716384597a2e",
+    "puzzle_private.json": "29e954e99ae4cf044cdbb6058560998d599b9623b77eef50de93599f1faf9c85",
+    "host_context.json": "699185720c8010aa01be314332377a1b8915dd67d4d09bd5d1df1e291b5257be",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "0a3fdde5e02a39bbfd5dea2afbce6b9ce2479134e71d8df316bc7b00195cca23",
+    "cost_summary.json": "44ab4417bbd7fea57bac204b341665fb9ab12c9b7258198557142fee8c1d69e8",
+    "token_costs.csv": "056ccc794b9cfe3d83d9a00d6e8ccec05495a347a81480ae3fa992112c3ee1c9",
+    "human_review.csv": "3f5f9d09ec43aa8da76f7ba32aa4a5c0d3dba25a00fcea5608c3093ec53d7883",
+    "review_template.csv": "3f5f9d09ec43aa8da76f7ba32aa4a5c0d3dba25a00fcea5608c3093ec53d7883",
+    "transfer_metadata.json": "7977bafd29f4f45bce8d50aa47c5f81e887d8db8b23efb50efa85b9957e44939",
+    "prior_experience.json": "d99024a597c2390fe67a696d26e1cb3810457119ea85a3bde73a4d6b1a5f093f"
+  },
+  "api_audit": {
+    "source_raw_sha256": "e2ff84d555638c992e4a33b6a14a266c9684b63bd5508e207eecc201e7351307",
+    "source_raw_bytes": 9985643,
+    "published_sha256": "e318ad3d37a3af712e55ebe174a7c5bedbfdadd3e6846e797b92c4571feeff9d",
+    "attempts": 200
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261111_live_smoke_v2_cl_resume01/continual/S1_TS015_TS013_TS015_TS013_r01_answer_only",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "d77556d9854ca8af7841034e66fab0b6f827ae26710ef70abbbebdd5765e3788",
+      "signature": "88703c353acbf0d3ef00accae0a8e0bbc296176e947a7b4ded3342e13daa66ef",
+      "event_count": 606,
+      "trajectory_sha256": "0dc6e7044b0d911c2eb98c1561e9b6fe246f84f23ac60d478054456b55c0f1dc",
+      "first_submission": "2026-11-11T10:58:58.788778+00:00",
+      "first_text": "Did the student lose their course places because of an action taken by someone else?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

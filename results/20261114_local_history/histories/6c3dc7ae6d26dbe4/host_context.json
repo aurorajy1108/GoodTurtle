@@ -1,0 +1,276 @@
+{
+  "puzzle_id": "TS023",
+  "opening": "In the darkness, a man strikes a match and yells, \"It's you?!\" Then, in terror and despair, he dies.",
+  "reference_answer": "The man was a prisoner. In order to escape, he bribed a prison guard. The two agreed that the next time someone in the prison died, he would hide inside the coffin. After it was transported out and buried, the guard would dig him back up.\n \nThen one day, someone in the prison finally passed away, and he quickly hid inside the coffin. When the coffin was buried and everything around him was pitch black, he struck a match to take a look. He found that lying next to him—the prison guard who was supposed to be waiting to escape with him—was already dead. Knowing his own death was certain, he could only wait to die in terror and despair.",
+  "canonical_solution": "The man was a prisoner. In order to escape, he bribed a prison guard. The two agreed that the next time someone in the prison died, he would hide inside the coffin. After it was transported out and buried, the guard would dig him back up.\n \nThen one day, someone in the prison finally passed away, and he quickly hid inside the coffin. When the coffin was buried and everything around him was pitch black, he struck a match to take a look. He found that lying next to him—the prison guard who was supposed to be waiting to escape with him—was already dead. Knowing his own death was certain, he could only wait to die in terror and despair.",
+  "canonical_facts": [
+    "The man is a prisoner who bribes a guard to arrange escape",
+    "He will hide in the next deceased person’s coffin, be carried out and buried",
+    "The guard is supposed to dig him up afterward",
+    "Once buried, he strikes a match and recognizes the guard’s corpse beside him",
+    "The intended rescuer is dead, leaving him trapped to die"
+  ],
+  "explicit_negatives": [
+    "The guard is dead when recognized; he cannot perform the promised rescue.",
+    "The prisoner enters the coffin alive and discovers the corpse’s identity only after burial."
+  ],
+  "unknown_details": [
+    "The precise cause of the guard’s death and exact elapsed time before the prisoner dies are unspecified."
+  ],
+  "irrelevant_details": [
+    "Unspecified names, exact dates, object brands and colors are incidental."
+  ],
+  "completion_requirements": [
+    "The man is a prisoner who bribes a guard to arrange escape",
+    "He will hide in the next deceased person’s coffin, be carried out and buried",
+    "The guard is supposed to dig him up afterward",
+    "Once buried, he strikes a match and recognizes the guard’s corpse beside him",
+    "The intended rescuer is dead, leaving him trapped to die"
+  ],
+  "host_examples": [
+    {
+      "case_id": "V4_TS023_001",
+      "question": "Was the man a prisoner trying to escape?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS023_002",
+      "question": "Did he bribe a prison guard to help him escape?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS023_003",
+      "question": "Did he hide inside a coffin to be carried outside the prison?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS023_004",
+      "question": "Was the coffin meant to contain a deceased person?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS023_005",
+      "question": "Was he already buried when he lit the match?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS023_006",
+      "question": "Was the person he recognized the guard who had agreed to rescue him?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS023_007",
+      "question": "Was the guard alive beside him when the match was lit?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS023_008",
+      "question": "Did the escape plan depend on the guard digging up the coffin after burial?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS023_009",
+      "question": "Did he realize that his intended rescuer could no longer rescue him?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS023_010",
+      "question": "Was the cry caused by seeing the guard’s dead body?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS023_011",
+      "question": "Did he deliberately kill the guard as the planned way to escape?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS023_012",
+      "question": "Was the match intended to start a fire as the escape mechanism?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS023_013",
+      "question": "Did a living attacker kill him immediately after he struck the match?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS023_014",
+      "question": "Was he a prisoner and was the guard alive in the coffin?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS023_015",
+      "question": "Was the coffin red?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS023_016",
+      "question": "Exactly how many minutes after striking the match did he die?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS023_017",
+      "question": "Was the guard the rescuer, rather than a stranger with no role in the plan?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS023_018",
+      "question": "Did he climb into the coffin knowing his intended rescuer was its corpse?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS023_019",
+      "question": "Was a second accomplice guaranteed to dig him out?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS023_020",
+      "question": "Was he already dead when carried out in the coffin?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    }
+  ],
+  "review_status": "ai_audit_root_adjudicated_pending_human",
+  "binding_version": "audit-v4-20261023",
+  "story_sha256": "6e6ea7eabb42f6e387794f1a2bb7d9ec10071bf6ae28640252258c26999de20b",
+  "context_sha256": "f0e4ee89a4d88c7e449d6345198d343fe8067bc98a1a113c6a441a23c56b25d3"
+}

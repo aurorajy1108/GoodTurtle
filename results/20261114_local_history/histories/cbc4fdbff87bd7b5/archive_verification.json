@@ -1,0 +1,42 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "910a120ff57285e9339359d76a8b059d9e3725e8e233f10fc8b86564d8350f14",
+    "trajectory.jsonl": "19800f1eb7383f803b88ca874ed92980e75513af2bc14358780f654c4ac1e88c",
+    "trajectory.md": "52a4a9f9b99d3cac2e556c0619d5d446ec622bb4692d76fb30ba1caea3ec0bab",
+    "trajectory.html": "610847196f11afe695075623d23b169546ac1fd240363736d969e2c9b7e11caf",
+    "config.json": "2f478a93b148e08ef772bb1729ef0c18373ea9b3511902600a95a8bde32762cf",
+    "partner_config.json": "ad142a86d2076e9e5ec92d25c18b5938496e49107ab34fa24d04db4b90f09283",
+    "prompts.json": "e435cae9a3407f827f9739e8dcceaa108287cf79ef118d4ad496edfdec1d5b81",
+    "puzzle_private.json": "b1c69c4db95e2279cc8972e3b68d76291d9518a2f7c306619dbb37a204b5574e",
+    "host_context.json": "8f235fc20be67ee92e7960123d947f4a0473dd8db366ded6d93fa14a56e3aab0",
+    "pricing_snapshot.json": "64c31820443327839ce32e5128053650aacd3becf6b6746e94de79bb5620c17d",
+    "cost_summary.json": "c1cb175a3a722da97cf521cf612d39ff3812d4f46001a87b394af5e099f5dbfb",
+    "token_costs.csv": "16542d8b59b2c53beb187235507917f4365067516987f72c843e61690bd241f2",
+    "human_review.csv": "b2b326ff1ffd1a8e1025ed53384f4bfe061ef89edeefcdf376c16db8ea8fc8ba",
+    "review_template.csv": "b2b326ff1ffd1a8e1025ed53384f4bfe061ef89edeefcdf376c16db8ea8fc8ba",
+    "collaboration.jsonl": "78aa818c284d5b2efbf639bf7dc94f868985621c80b957b3e7f997ef19ea1e4b"
+  },
+  "api_audit": {
+    "source_raw_sha256": "9f82bcdf9368cc8c945147c28b9c1dcaf632485c2cc1ed900c1962b348ca8f2f",
+    "source_raw_bytes": 21347975,
+    "published_sha256": "ca13d988c46befb1f2664578912d64b7eb1a37c9b7a31dc7b7663e3a01a3a277",
+    "attempts": 501
+  },
+  "aliases": [
+    {
+      "source": "runs/api/2026-11-02_ts038_team_once_resume01/team/TS038_r01_solo_reflect",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "910a120ff57285e9339359d76a8b059d9e3725e8e233f10fc8b86564d8350f14",
+      "signature": "cbc4fdbff87bd7b52f0edf253b2693bb13fa4944a31470bd88ef055d0ec80e15",
+      "event_count": 291,
+      "trajectory_sha256": "19800f1eb7383f803b88ca874ed92980e75513af2bc14358780f654c4ac1e88c",
+      "first_submission": "2026-11-02T13:41:48.324049+00:00",
+      "first_text": "In the story, are the seven instances intended as seven distinct spoken utterances occurring at the same time?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

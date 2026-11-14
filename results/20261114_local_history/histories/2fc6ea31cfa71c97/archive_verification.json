@@ -1,0 +1,61 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "154441e620d6a89fc72ec682371de51bb4981e78d6ee5177a690653bfed472bd",
+    "trajectory.jsonl": "baf277886aca349463b6b4ab058b4a0cf5ce1f75afb577107c7b64dd389a87dd",
+    "trajectory.md": "498ce0a293ec568ee23be8d2854ab3202151ed71c0663f7800aa79181329becc",
+    "trajectory.html": "8a6764784ebfe9b4c13454e92a272de407f7feaa7d1da7d3c657822df2d87c5e",
+    "config.json": "4307cf3c715247acc8faf9d322125607962ba66e56d5980b57d841ccb930bc1e",
+    "prompts.json": "2293fcad2d75c545b454f5ac0b351c8f0d0b635d59ed01a87e246365943d699f",
+    "puzzle_private.json": "c01a39bd4b8af6fb50d2f9bed46102d70dfc3b607728363b47501821cf04f406",
+    "host_context.json": "a9be0c92867631e3a6030e94c7bb2add9c4a322a04ac7697c64dccc9deef3db1",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "0a3fdde5e02a39bbfd5dea2afbce6b9ce2479134e71d8df316bc7b00195cca23",
+    "cost_summary.json": "f6f9d1f7ba5e5c8204779c93aa4aa1ef7070757b2d18b2dbaea854377cfd7eec",
+    "token_costs.csv": "1f5702917caa87b6d27bfd4c467e3d10e256f663fd5ea7d5e1f546f08f307235",
+    "human_review.csv": "6fe9e411c6fd2601541ec0a669b55679dc3aa1a30f5d1dae212a25f376cebadc",
+    "review_template.csv": "6fe9e411c6fd2601541ec0a669b55679dc3aa1a30f5d1dae212a25f376cebadc",
+    "shared_dialogue.jsonl": "d72dbc09bbec3d0ee3f9fd28c32e308a5c64b1d1507bfbb1ef9455e8305f8efa",
+    "shared_dialogue.html": "e8f29c9d519329d3d842cc77c4b24533d84e68dedc6294601c0a4836c3844c81",
+    "dialogue_metrics.json": "114cec5359e18db0b922952740c353bc9cbd941683163dbed30f05807c336bb5",
+    "dialogue_policy.json": "bef6bb0e727602dd5a00821ae0a6847992bf1eab6d8a3c8fe0681779e9753c5d",
+    "collaboration.jsonl": "97207f68c0507c9a6e48b93ca53547839ae10c839405e89db53ad9b32498a8b1",
+    "self_review.html": "93f52bbe2da96cedbf7c7733470b45ca0334663f40bf719c369fca09f082f8fb",
+    "solver_compute.json": "2a654eeac1aa25abb88e6d8d6c98bfdc699ff3643e007e2cdd75781f749543d0"
+  },
+  "api_audit": {
+    "source_raw_sha256": "548d9468a38cc03be75f9f43341a5f0c53546cb436ab5ac9e92dc675290d7cf1",
+    "source_raw_bytes": 3385514,
+    "published_sha256": "397dbf0e389d148fae5a0db9a954dffbe2d083bfaee117dc2aeaac1ad1380068",
+    "attempts": 82
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261113_ts038_compute_matched_2x2_r1r4/TS038_r04_mas",
+      "status_as_recorded": "error",
+      "simulation": false,
+      "submissions": 40,
+      "result_sha256": "154441e620d6a89fc72ec682371de51bb4981e78d6ee5177a690653bfed472bd",
+      "signature": "2fc6ea31cfa71c978f7ada8a9e798278c1fa3b5bca1800e0c7570f1e07321f76",
+      "event_count": 332,
+      "trajectory_sha256": "baf277886aca349463b6b4ab058b4a0cf5ce1f75afb577107c7b64dd389a87dd",
+      "first_submission": "2026-11-13T05:13:37.905678+00:00",
+      "first_text": "What is being repeated seven times—the words of one person speaking repeatedly, seven separate people each saying the same sentence, or something else (e.g. a recording/message)?",
+      "archive_scope": "observed_history"
+    },
+    {
+      "source": "runs/api/20261113_ts038_compute_matched_2x2_r1r4_v2_partial/TS038_r04_mas",
+      "status_as_recorded": "error",
+      "simulation": false,
+      "submissions": 40,
+      "result_sha256": "154441e620d6a89fc72ec682371de51bb4981e78d6ee5177a690653bfed472bd",
+      "signature": "2fc6ea31cfa71c978f7ada8a9e798278c1fa3b5bca1800e0c7570f1e07321f76",
+      "event_count": 332,
+      "trajectory_sha256": "baf277886aca349463b6b4ab058b4a0cf5ce1f75afb577107c7b64dd389a87dd",
+      "first_submission": "2026-11-13T05:13:37.905678+00:00",
+      "first_text": "What is being repeated seven times—the words of one person speaking repeatedly, seven separate people each saying the same sentence, or something else (e.g. a recording/message)?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

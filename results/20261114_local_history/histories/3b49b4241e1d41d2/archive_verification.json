@@ -1,0 +1,121 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "8b6fc26cd1e87d9330c85e7323a418f81c2b2a4b3c360ea024b91dbb7b71fb55",
+    "trajectory.jsonl": "74c5b76eec92225e578348b0d18d8dbb74ef75340395fc558c0f9610571a713e",
+    "trajectory.md": "62afaac6abd78369098d48a487bcd2ca8ab8287edbdabbf109418a8f0db1b362",
+    "trajectory.html": "012ffeea3e8d07aa72e0aaac5d801f1d7388eef2df658e310d1174b1fde8698b",
+    "config.json": "2a474139b20bf95d9a43818066c49cfc134cfda6bbb3086349ea2e2d8f32b2a4",
+    "prompts.json": "d717281a9319d3f8435356c0724cf2c212d645a20f47af1527e025f6ef4ddb9e",
+    "puzzle_private.json": "32040f5ef21aad65cf2a2cc44cafae9c044a68fda4dafbf18f040f0f0f2b2108",
+    "host_context.json": "55cd9936dcef0999a289fc2ecb13446150c3006c4d448a42fa34f81f04e0005c",
+    "runtime_context_policy.json": "e1e7012baad0875d7349da9e5abadea818f3f7a6ebca0a5f1b15eb69a80e1c74",
+    "pricing_snapshot.json": "64c31820443327839ce32e5128053650aacd3becf6b6746e94de79bb5620c17d",
+    "cost_summary.json": "aeaab7c5847a62adbdca1fec6e6bb8ca72ed4195e8a3e0323ab0202e780a028f",
+    "token_costs.csv": "6eba4ce337e144edccd29ec9987fe5db1601dc65d01523faf1d1e828b76ac50c",
+    "human_review.csv": "a5d04cbcdd26c7ccf9df6a9cf725b132e81e91a2f32f60005ced4d729b2fb5d6",
+    "review_template.csv": "d38b7337692c4ecc75cd01998dc52685828e22e41e2e6204c78c92dc1d8fdac6",
+    "transfer_input.json": "53b907db0ee1000ecceb21f5c0b504d451b16e933797400460891fd7c66b8e07",
+    "source_answer_reveal.json": "f221af03e25d54e5e789969fe11814cfe50e0e2cb61d914c12210f6c77fd2b77"
+  },
+  "api_audit": {
+    "source_raw_sha256": "e5c6a767b5324f3d6b7180522dbd0c50d8c3e33eb182ef9a28bbe6531bc9bf42",
+    "source_raw_bytes": 12256814,
+    "published_sha256": "cbf063dacc67adb877d4144e480e33144d09b800ca4a3b87e15f3483663f5d7a",
+    "attempts": 200
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261109_deepseek_set1_cl_grade_resume02/continual/S1_TS014_TS013_TS014_TS013_r01_source",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "8b6fc26cd1e87d9330c85e7323a418f81c2b2a4b3c360ea024b91dbb7b71fb55",
+      "signature": "3b49b4241e1d41d2514ec81ed35a67bf4919803ee97094ed6e39b38d1182f8ea",
+      "event_count": 629,
+      "trajectory_sha256": "b8dc8ab780e8169faf396e1fc5e373adda96f71de59f1c9191009a5342792bcc",
+      "first_submission": "2026-11-08T07:31:37.690745+00:00",
+      "first_text": "Did the student fail because of something they did themselves rather than an external circumstance?",
+      "archive_scope": "observed_history"
+    },
+    {
+      "source": "runs/api/20261109_deepseek_set1_cl_inner_quotes_merged_check/continual/S1_TS014_TS013_TS014_TS013_r01_source",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "8b6fc26cd1e87d9330c85e7323a418f81c2b2a4b3c360ea024b91dbb7b71fb55",
+      "signature": "3b49b4241e1d41d2514ec81ed35a67bf4919803ee97094ed6e39b38d1182f8ea",
+      "event_count": 630,
+      "trajectory_sha256": "0fe0d03e01920c76d14cb0fb69b937d382c6ca639ea13d9d75ae74e0f1a1f3c4",
+      "first_submission": "2026-11-08T07:31:37.690745+00:00",
+      "first_text": "Did the student fail because of something they did themselves rather than an external circumstance?",
+      "archive_scope": "observed_history"
+    },
+    {
+      "source": "runs/api/20261109_deepseek_set1_cl_inner_quotes_recovery_check/continual/S1_TS014_TS013_TS014_TS013_r01_source",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "8b6fc26cd1e87d9330c85e7323a418f81c2b2a4b3c360ea024b91dbb7b71fb55",
+      "signature": "3b49b4241e1d41d2514ec81ed35a67bf4919803ee97094ed6e39b38d1182f8ea",
+      "event_count": 630,
+      "trajectory_sha256": "0fe0d03e01920c76d14cb0fb69b937d382c6ca639ea13d9d75ae74e0f1a1f3c4",
+      "first_submission": "2026-11-08T07:31:37.690745+00:00",
+      "first_text": "Did the student fail because of something they did themselves rather than an external circumstance?",
+      "archive_scope": "observed_history"
+    },
+    {
+      "source": "runs/api/20261109_deepseek_set1_cl_json_resume03/continual/S1_TS014_TS013_TS014_TS013_r01_source",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "8b6fc26cd1e87d9330c85e7323a418f81c2b2a4b3c360ea024b91dbb7b71fb55",
+      "signature": "3b49b4241e1d41d2514ec81ed35a67bf4919803ee97094ed6e39b38d1182f8ea",
+      "event_count": 630,
+      "trajectory_sha256": "0fe0d03e01920c76d14cb0fb69b937d382c6ca639ea13d9d75ae74e0f1a1f3c4",
+      "first_submission": "2026-11-08T07:31:37.690745+00:00",
+      "first_text": "Did the student fail because of something they did themselves rather than an external circumstance?",
+      "archive_scope": "observed_history"
+    },
+    {
+      "source": "runs/api/20261109_deepseek_set1_cl_quote_recovery_check/continual/S1_TS014_TS013_TS014_TS013_r01_source",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "8b6fc26cd1e87d9330c85e7323a418f81c2b2a4b3c360ea024b91dbb7b71fb55",
+      "signature": "3b49b4241e1d41d2514ec81ed35a67bf4919803ee97094ed6e39b38d1182f8ea",
+      "event_count": 629,
+      "trajectory_sha256": "b8dc8ab780e8169faf396e1fc5e373adda96f71de59f1c9191009a5342792bcc",
+      "first_submission": "2026-11-08T07:31:37.690745+00:00",
+      "first_text": "Did the student fail because of something they did themselves rather than an external circumstance?",
+      "archive_scope": "observed_history"
+    },
+    {
+      "source": "runs/api/20261109_deepseek_set1_cl_quotes_resume04/continual/S1_TS014_TS013_TS014_TS013_r01_source",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "8b6fc26cd1e87d9330c85e7323a418f81c2b2a4b3c360ea024b91dbb7b71fb55",
+      "signature": "3b49b4241e1d41d2514ec81ed35a67bf4919803ee97094ed6e39b38d1182f8ea",
+      "event_count": 631,
+      "trajectory_sha256": "74c5b76eec92225e578348b0d18d8dbb74ef75340395fc558c0f9610571a713e",
+      "first_submission": "2026-11-08T07:31:37.690745+00:00",
+      "first_text": "Did the student fail because of something they did themselves rather than an external circumstance?",
+      "archive_scope": "observed_history"
+    },
+    {
+      "source": "runs/api/20261110_deepseek_set1_cl_tls_recovery_check/continual/S1_TS014_TS013_TS014_TS013_r01_source",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "8b6fc26cd1e87d9330c85e7323a418f81c2b2a4b3c360ea024b91dbb7b71fb55",
+      "signature": "3b49b4241e1d41d2514ec81ed35a67bf4919803ee97094ed6e39b38d1182f8ea",
+      "event_count": 631,
+      "trajectory_sha256": "74c5b76eec92225e578348b0d18d8dbb74ef75340395fc558c0f9610571a713e",
+      "first_submission": "2026-11-08T07:31:37.690745+00:00",
+      "first_text": "Did the student fail because of something they did themselves rather than an external circumstance?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

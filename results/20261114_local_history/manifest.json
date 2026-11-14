@@ -1,0 +1,17 @@
+{
+  "inventory_entries": 910,
+  "observed_history_archives": 193,
+  "status_counts": {
+    "completed": 137,
+    "error": 36,
+    "interrupted": 15,
+    "running": 5
+  },
+  "rollout_families": 161,
+  "source_root": "/Users/aurorasun/Desktop/COMP1110/GP/GoodTurtle",
+  "raw_requests_policy": "Original repeated HTTP requests remain local. Every response/error/usage in selected archives is included with exact request hashes.",
+  "statistics_policy": "Historical archive, NOT an analysis sample. Do not sum recovery snapshots, shared prefixes, demos, versions, or aliases as independent experiments.",
+  "result_snapshots": 910,
+  "distinct_api_archives": 199,
+  "snapshot_policy": "All result snapshots, including simulation, zero-turn errors, superseded checkpoints, and aliases, are retained separately; none is an additional independent trial."
+}

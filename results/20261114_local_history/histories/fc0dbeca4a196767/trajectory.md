@@ -1,0 +1,2355 @@
+# Turtle Soup trajectory
+
+"You've disappointed me so much; I'm never coming back." "You've disappointed me so much; I'm never coming back." "You've disappointed me so much; I'm never coming back." "You've disappointed me so much; I'm never coming back." "You've disappointed me so much; I'm never coming back." "You've disappointed me so much; I'm never coming back." "You've disappointed me so much; I'm never coming back."
+
+Sigh, I know I'm in trouble.
+
+Status: completed | counted questions: 100 | submissions: 100 | final partial score: 0.5
+
+[Token usage and estimated costs](token_costs.csv)
+
+## 1 · question
+
+Is the repeated sentence spoken by seven distinct individuals?
+
+Host: no
+
+## 2 · question
+
+Not seven distinct speakers. Could the sentence be one person quoting/repeating, or a recorded/machine voice repeating? Is the repetition of the exact sentence itself significant to the puzzle (a known quote, lyric, or message played on repeat)?
+
+Host: yes and no
+
+## 3 · question
+
+Is the same person (one single individual) saying this repeated sentence to the listener?
+
+Host: no
+
+## 4 · question
+
+Is "You've disappointed me so much; I'm never coming back" written text (e.g., on a note, sign, letter, or screen) rather than spoken aloud?
+
+Host: yes
+
+## 5 · question
+
+It's written text. Is this text something the listener is reading repeatedly (e.g., re-reading a single note/message over and over), and could the "seven times" reflect the same phrase appearing in a written form such as a book, log, or repeated print?
+
+Host: yes and no
+
+## 6 · question
+
+Are there seven separate written instances (seven notes, letters, or messages), each containing this same sentence?
+
+Host: yes
+
+## 7 · question
+
+Are the seven notes/messages all authored by the same original source (e.g., copied, automated, or a form letter), rather than seven independent authors expressing their own feelings?
+
+Host: yes
+
+## 8 · question
+
+All seven identical notes come from the same source. Now the key question: is this a known real-world object — for example, the messages inside a set of fortune cookies, or a repeated printed message such as on product packaging? Is the "source" a computer/automated system (like identical error messages or auto-replies) rather than a person?
+
+Host: no
+
+## 9 · question
+
+Is the person who reacts with "I know I'm in trouble" the same person who wrote these seven notes themselves?
+
+Host: yes
+
+## 10 · question
+
+Are the seven identical notes drafts or practice attempts at composing one single message that the writer intends to send/give to someone (rather than seven messages meant for seven recipients)?
+
+Host: yes
+
+## 11 · question
+
+The writer made drafts of one intended message. Let me test the target: is the intended recipient a romantic partner (e.g., a breakup note the writer keeps redrafting but can't get right), such that the content — "I'm never coming back" — expresses leaving them? And separately: does "I know I'm in trouble" mean the writer realizes the recipient/others will be upset they left (a consequence of leaving), rather than the writer being literally punished for writing the notes?
+
+Host: yes and no
+
+## 12 · question
+
+Is the intended recipient of the message the writer's romantic partner (spouse, boyfriend, or girlfriend)?
+
+Host: no
+
+## 13 · question
+
+Is the intended recipient a family member (parent, child, or sibling) of the writer?
+
+Host: irrelevant
+
+## 14 · question
+
+Is the writer "in trouble" because someone else has found or seen these seven written copies?
+
+Host: no
+
+## 15 · question
+
+Is the "trouble" a consequence the writer anticipates from actually sending/delivering the message to its recipient (rather than trouble arising from composing or possessing the drafts)?
+
+Host: no
+
+## 16 · question
+
+Is the writer composing this message because an authority (a parent, teacher, boss, or court) required or ordered them to write it?
+
+Host: no
+
+## 17 · question
+
+Is the recipient someone the writer doesn't know personally — a stranger, public figure, or organization?
+
+Host: irrelevant
+
+## 18 · question
+
+Is the reason for making seven identical copies that the writer is practicing the physical act of writing/handwriting (penmanship), rather than refining what the message says?
+
+Host: yes
+
+## 19 · question
+
+Is the writer practicing handwriting in order to imitate or match a specific other person's handwriting (i.e., for forgery)?
+
+Host: yes
+
+## 20 · question
+
+Is the purpose of the forged note to make others believe that the person whose handwriting is being copied has voluntarily left/run away (concealing that something happened to them)?
+
+Host: yes
+
+## 21 · question
+
+Has the person whose handwriting is being forged already died (so the note is covering up their death)?
+
+Host: yes
+
+## 22 · question
+
+Did the writer (the forger) cause the death of the person whose handwriting is being copied — i.e., is the forger the killer?
+
+Host: yes
+
+## 23 · question
+
+Is the line "Sigh, I know I'm in trouble" spoken by the killer (the forger)?
+
+Host: yes
+
+## 24 · final
+
+A killer murdered someone and is now covering up the death. By repeatedly writing the sentence "You've disappointed me so much; I'm never coming back" over and over, the killer is practicing to forge the dead victim's handwriting, so that a note can be produced that appears to be written by the victim. That forged farewell note is meant to make everyone believe the victim stormed off and voluntarily left/walked away forever, explaining their disappearance and concealing that they were killed. The repeated identical line is simply the killer's penmanship practice — reproduced seven times to perfect the imitation of the victim's hand. The killer's sigh, "I know I'm in trouble," is the murderer's resigned acknowledgment that the crime and forgery will eventually bring consequences/catch up with them.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "A killer murdered someone and is now covering up the death. ... forged farewell note is meant to make everyone believe the victim stormed off and voluntarily left/walked away forever, explaining their disappearance and concealing that they were killed.",
+      "reason": "Covers the killing and the staged voluntary departure with a forged note, but omits that the victim was his wife and does not explicitly identify the narrator as killer."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "By repeatedly writing the sentence ... the killer is practicing to forge the dead victim's handwriting ... The repeated identical line is simply the killer's penmanship practice — reproduced seven times to perfect the imitation of the victim's hand.",
+      "reason": "Identifies the repeated writing as forgery practice, but omits wife's handwriting and failed attempts; fear of discovery is only partially implied."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "The killer's sigh, \"I know I'm in trouble,\" is the murderer's resigned acknowledgment that the crime and forgery will eventually bring consequences/catch up with them.",
+      "reason": "Captures worry about being caught, but omits the causal inability to imitate her handwriting."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "A killer murdered someone and is now covering up the death. ... forged farewell note is meant to make everyone believe the victim stormed off and voluntarily left/walked away forever, explaining their disappearance and concealing that they were killed."
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "A killer murdered someone"
+    },
+    {
+      "id": "C1.F3",
+      "status": "covered",
+      "evidence": "That forged farewell note is meant to make everyone believe the victim stormed off and voluntarily left/walked away forever, explaining their disappearance and concealing that they were killed."
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "By repeatedly writing the sentence ... the killer is practicing to forge the dead victim's handwriting"
+    },
+    {
+      "id": "C2.F2",
+      "status": "partial",
+      "evidence": "The repeated identical line is simply the killer's penmanship practice — reproduced seven times to perfect the imitation of the victim's hand. The killer's sigh, \"I know I'm in trouble,\" is the murderer's resigned acknowledgment that the crime and forgery will eventually bring consequences/catch up with them."
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "The killer's sigh, \"I know I'm in trouble,\" is the murderer's resigned acknowledgment that the crime and forgery will eventually bring consequences/catch up with them."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.5,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 25 · question
+
+Was the victim's death accidental or unintended (the forger caused it without planning to kill)?
+
+Host: no
+
+## 26 · question
+
+Was the handwriting practice/forgery done before the victim was killed (i.e., the killer prepared it in advance)?
+
+Host: no
+
+## 27 · question
+
+Does "I know I'm in trouble" mean the killer expects to be caught or punished for the murder?
+
+Host: yes
+
+## 28 · question
+
+Is the forged note specifically meant to be read by the victim's loved ones (family/partner), so that they believe the victim chose to leave and therefore don't search for or report them missing?
+
+Host: yes and no
+
+## 29 · final
+
+The writer is a murderer who has just deliberately killed someone. Afterwards — not before — the killer sets about forging the dead victim's handwriting so a note can be "found" that appears to be written by the victim. The seven identical lines are handwriting practice: the killer writes the same sentence over and over to perfect the imitation of the victim's hand. The repeated sentence is the text of the forged farewell note — the victim apparently saying "You've disappointed me so much; I'm never coming back" — and its purpose is to make people believe the victim chose to walk away voluntarily and will never return, thereby explaining their disappearance and concealing that they were murdered. The final sigh, "I know I'm in trouble," is the killer's own resignation that the deception will not hold and that they will be caught and punished for the killing.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "The writer is a murderer who has just deliberately killed someone. ... forged farewell note ... make people believe the victim chose to walk away voluntarily and will never return, thereby explaining their disappearance and concealing that they were murdered.",
+      "reason": "Covers the murder and the staged voluntary departure with a forged note, but omits that the victim was his wife."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "the killer sets about forging the dead victim's handwriting ... the killer writes the same sentence over and over to perfect the imitation of the victim's hand.",
+      "reason": "Identifies the repeated writing as handwriting forgery practice, but omits the wife-specific handwriting and explicit failed attempts."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "The final sigh, \"I know I'm in trouble,\" is the killer's own resignation that the deception will not hold and that they will be caught and punished for the killing.",
+      "reason": "Captures worry about being caught, but omits the causal inability to imitate her handwriting."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "The writer is a murderer who has just deliberately killed someone. ... forged farewell note ... make people believe the victim chose to walk away voluntarily and will never return, thereby explaining their disappearance and concealing that they were murdered."
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "The writer is a murderer who has just deliberately killed someone."
+    },
+    {
+      "id": "C1.F3",
+      "status": "covered",
+      "evidence": "The repeated sentence is the text of the forged farewell note — the victim apparently saying \"You've disappointed me so much; I'm never coming back\" — and its purpose is to make people believe the victim chose to walk away voluntarily and will never return, thereby explaining their disappearance and concealing that they were murdered."
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "the killer sets about forging the dead victim's handwriting ... the killer writes the same sentence over and over to perfect the imitation of the victim's hand."
+    },
+    {
+      "id": "C2.F2",
+      "status": "partial",
+      "evidence": "the killer writes the same sentence over and over to perfect the imitation of the victim's hand. ... The final sigh, \"I know I'm in trouble,\" is the killer's own resignation that the deception will not hold and that they will be caught and punished for the killing."
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "The final sigh, \"I know I'm in trouble,\" is the killer's own resignation that the deception will not hold and that they will be caught and punished for the killing."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.5,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 30 · question
+
+Is the person whose handwriting is being forged the same person whom the writer killed?
+
+Host: yes
+
+## 31 · question
+
+Does the killer intend the forged note to be discovered and used as the explanation for the victim's absence?
+
+Host: yes
+
+## 32 · final
+
+A killer has deliberately killed a person. After the killing, the killer practices forging that dead victim's handwriting: the seven identical written lines are the killer's penmanship practice, made to imitate the victim's hand. The sentence practiced — "You've disappointed me so much; I'm never coming back" — becomes a forged note that appears to have been written by the victim. The killer intends this forged note to be discovered and to explain the victim's absence, so that everyone believes the victim chose to leave voluntarily and will never return, thereby concealing the killing. The killer's sigh, "I know I'm in trouble," acknowledges that he will be caught and punished for the crime.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "A killer has deliberately killed a person. ... The killer intends this forged note to be discovered and to explain the victim's absence, so that everyone believes the victim chose to leave voluntarily and will never return, thereby concealing the killing.",
+      "reason": "Covers the murder and the staged voluntary departure with a forged note, but omits that the victim was his wife."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "the seven identical written lines are the killer's penmanship practice, made to imitate the victim's hand.",
+      "reason": "Identifies the repetitions as attempts to forge the victim's handwriting, but omits that it is his wife's handwriting and that the attempts are failed."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "The killer's sigh, \"I know I'm in trouble,\" acknowledges that he will be caught and punished for the crime.",
+      "reason": "Captures worry about being caught, but omits the causal inability to imitate her handwriting."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "A killer has deliberately killed a person. ... The killer intends this forged note to be discovered and to explain the victim's absence, so that everyone believes the victim chose to leave voluntarily and will never return, thereby concealing the killing."
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "A killer has deliberately killed a person."
+    },
+    {
+      "id": "C1.F3",
+      "status": "covered",
+      "evidence": "The killer intends this forged note to be discovered and to explain the victim's absence, so that everyone believes the victim chose to leave voluntarily and will never return, thereby concealing the killing."
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "the seven identical written lines are the killer's penmanship practice, made to imitate the victim's hand."
+    },
+    {
+      "id": "C2.F2",
+      "status": "partial",
+      "evidence": "the seven identical written lines are the killer's penmanship practice, made to imitate the victim's hand. ... The killer's sigh, \"I know I'm in trouble,\" acknowledges that he will be caught and punished for the crime."
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "The killer's sigh, \"I know I'm in trouble,\" acknowledges that he will be caught and punished for the crime."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.5,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 33 · question
+
+Did the killer and the victim know each other personally before the killing?
+
+Host: yes
+
+## 34 · question
+
+Is the sentence being practiced ("You've disappointed me so much; I'm never coming back") exactly the text that will appear in the forged note?
+
+Host: yes
+
+## 35 · question
+
+Is the killer's motive financial gain (e.g., inheritance, money, or insurance)?
+
+Host: irrelevant
+
+## 36 · question
+
+Does "I know I'm in trouble" mean the killer already senses that this forgery enterprise will expose them — that they will be caught because of it?
+
+Host: yes
+
+## 37 · question
+
+Is the forged note intended to make people believe the victim has died by suicide (rather than believing the victim simply moved away)?
+
+Host: no
+
+## 38 · question
+
+Did the killing follow a personal rejection or abandonment (e.g., the victim was leaving or ending a relationship with the killer), making the forged "I'm never coming back" note grimly ironic?
+
+Host: irrelevant
+
+## 39 · question
+
+By the time the killer sighs "I know I'm in trouble," has the crime or forgery already been discovered (so it's not merely anticipated)?
+
+Host: no
+
+## 40 · question
+
+Is the forged item a note or letter that the victim would appear to have written and left behind?
+
+Host: yes
+
+## 41 · question
+
+Is a key twist that the killer realizes having written the same line seven times is itself suspicious/obviously fake — i.e., the repetition would betray the forgery, which is why he knows he's in trouble?
+
+Host: no
+
+## 42 · question
+
+Was the killing something like a mercy killing, assisted death, or otherwise consented by the victim (rather than a hostile murder)?
+
+Host: irrelevant
+
+## 43 · question
+
+Is the forged note written as if the victim is addressing the killer themself — i.e., the victim appears to be leaving the killer?
+
+Host: yes
+
+## 44 · question
+
+Is the point of addressing the forged note to the killer — making the victim seem to have left the killer — to deflect suspicion from the killer and make them look like the wronged/abandoned party?
+
+Host: yes
+
+## 45 · final
+
+A killer deliberately murdered someone they knew, and now — before anyone has discovered the crime — sets about covering it up by faking a disappearance. Because the note must look as though the dead victim wrote it, the killer practises imitating the victim's handwriting, writing the same line over and over, seven times: "You've disappointed me so much; I'm never coming back." That practised line is exactly the text of the forged note, and the note is written as if the victim is addressing the killer themself — as if the victim were disappointed in the killer and abandoning them forever. The point of addressing it to the killer is to make the killer appear to be the wronged, abandoned party and thereby deflect suspicion from them, while accounting for the victim's absence as a voluntary departure. The sigh, "I know I'm in trouble," is the killer's anticipatory dread: they sense this forgery will be imperfect and will eventually expose them, so they expect to be caught and punished.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "A killer deliberately murdered someone they knew, and now — before anyone has discovered the crime — sets about covering it up by faking a disappearance. ... accounting for the victim's absence as a voluntary departure.",
+      "reason": "Covers the murder and the staged voluntary departure with a forged note, but omits that the victim was his wife."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "the killer practises imitating the victim's handwriting, writing the same line over and over, seven times: \"You've disappointed me so much; I'm never coming back.\" ... they sense this forgery will be imperfect",
+      "reason": "Identifies the repetitions as attempts to imitate the victim's handwriting and anticipates imperfection, but omits that it is his wife's handwriting and that the repeated attempts are failed."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "The sigh, \"I know I'm in trouble,\" is the killer's anticipatory dread: they sense this forgery will be imperfect and will eventually expose them, so they expect to be caught and punished.",
+      "reason": "Captures worry about being caught, but omits the specific causal inability to imitate her handwriting."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "A killer deliberately murdered someone they knew, and now — before anyone has discovered the crime — sets about covering it up by faking a disappearance. ... accounting for the victim's absence as a voluntary departure."
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "A killer deliberately murdered someone they knew"
+    },
+    {
+      "id": "C1.F3",
+      "status": "covered",
+      "evidence": "sets about covering it up by faking a disappearance. ... the note is written as if the victim is addressing the killer themself — as if the victim were disappointed in the killer and abandoning them forever. ... accounting for the victim's absence as a voluntary departure."
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "the killer practises imitating the victim's handwriting, writing the same line over and over, seven times"
+    },
+    {
+      "id": "C2.F2",
+      "status": "partial",
+      "evidence": "the killer practises imitating the victim's handwriting, writing the same line over and over, seven times ... they sense this forgery will be imperfect and will eventually expose them, so they expect to be caught and punished."
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "they sense this forgery will be imperfect and will eventually expose them, so they expect to be caught and punished."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.5,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 46 · final
+
+Someone the killer knew was deliberately murdered by the killer. The killing has not yet been discovered. To cover it up, the killer forges a note in the dead victim's handwriting. To imitate that handwriting, the killer practises writing the same sentence seven times — "You've disappointed me so much; I'm never coming back" — and this practised sentence is exactly the text of the forged note. The note is a note or letter the victim appears to have written and left behind, addressed to the killer: it reads as the victim telling the killer they are disappointed and are leaving them forever. The point of this is to deflect suspicion from the killer, making the killer look like the wronged party the victim abandoned. The killer's sigh, "I know I'm in trouble," is spoken by the killer, who expects to be caught and punished — sensing that this forgery will expose them.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "Someone the killer knew was deliberately murdered by the killer. ... To cover it up, the killer forges a note in the dead victim's handwriting. ... The note ... reads as the victim telling the killer they are disappointed and are leaving them forever.",
+      "reason": "Covers the killing and the staged voluntary departure with a forged note, but omits that the victim was his wife."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "To imitate that handwriting, the killer practises writing the same sentence seven times — \"You've disappointed me so much; I'm never coming back\" — and this practised sentence is exactly the text of the forged note.",
+      "reason": "Identifies the repeated writing as attempts to imitate the victim's handwriting, but omits that it is his wife's handwriting and that the attempts are failed."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "The killer's sigh, \"I know I'm in trouble,\" is spoken by the killer, who expects to be caught and punished — sensing that this forgery will expose them.",
+      "reason": "Captures worry about being caught, but omits the causal inability to imitate her handwriting."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "Someone the killer knew was deliberately murdered by the killer. ... To cover it up, the killer forges a note in the dead victim's handwriting. ... The note ... reads as the victim telling the killer they are disappointed and are leaving them forever."
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "Someone the killer knew was deliberately murdered by the killer."
+    },
+    {
+      "id": "C1.F3",
+      "status": "covered",
+      "evidence": "To cover it up, the killer forges a note in the dead victim's handwriting. ... The note is a note or letter the victim appears to have written and left behind, addressed to the killer: it reads as the victim telling the killer they are disappointed and are leaving them forever."
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "To imitate that handwriting, the killer practises writing the same sentence seven times — \"You've disappointed me so much; I'm never coming back\" — and this practised sentence is exactly the text of the forged note."
+    },
+    {
+      "id": "C2.F2",
+      "status": "partial",
+      "evidence": "the killer practises writing the same sentence seven times ... The killer's sigh, \"I know I'm in trouble,\" is spoken by the killer, who expects to be caught and punished — sensing that this forgery will expose them."
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "The killer's sigh, \"I know I'm in trouble,\" is spoken by the killer, who expects to be caught and punished — sensing that this forgery will expose them."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.5,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 47 · question
+
+Is the purpose of the forged note that everyone believes the victim is still alive but has left on their own, so that no one searches for the victim or reports them missing?
+
+Host: yes
+
+## 48 · question
+
+Did the victim live with, or have a close ongoing personal relationship with, the killer such that a personal "I'm leaving you" note would be believable to others?
+
+Host: yes
+
+## 49 · final
+
+A person the killer knew closely and lived with (or was deeply involved with) has been deliberately murdered by the killer, and the crime is not yet discovered. To hide it, the killer must make it appear that the victim is still alive but has simply walked out and abandoned the killer. So the killer forges a note in the dead victim's handwriting. To copy that handwriting convincingly, the killer practises by writing the same sentence over and over, seven times: "You've disappointed me so much; I'm never coming back." That practised sentence is exactly the text of the forged note, which appears to be a note the victim wrote and left behind. The note is addressed to the killer themself, reading as the victim telling the killer they are disappointed and are leaving them forever. This explains the victim's absence as a voluntary departure — everyone believes the victim is alive and has simply left on their own, so nobody searches for them or reports them missing — and it deflects suspicion from the killer, recasting the killer as the wronged, abandoned party. The final sigh, "I know I'm in trouble," is the killer's own anticipatory dread: they sense the forgery will eventually give them away, so they expect to be caught and punished for the murder.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "A person the killer knew closely and lived with (or was deeply involved with) has been deliberately murdered by the killer ... This explains the victim's absence as a voluntary departure",
+      "reason": "Covers the murder and the staged voluntary departure with a forged note, but omits that the victim was his wife."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "To copy that handwriting convincingly, the killer practises by writing the same sentence over and over, seven times ... they sense the forgery will eventually give them away",
+      "reason": "Identifies the repeated writing as attempts to imitate the victim's handwriting and anticipates exposure, but omits that it is his wife's handwriting and that the attempts are failed."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "The final sigh, \"I know I'm in trouble,\" is the killer's own anticipatory dread: they sense the forgery will eventually give them away, so they expect to be caught and punished for the murder.",
+      "reason": "Captures worry about being caught, but omits the specific causal inability to imitate her handwriting."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "A person the killer knew closely and lived with (or was deeply involved with) has been deliberately murdered by the killer ... This explains the victim's absence as a voluntary departure"
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "A person the killer knew closely and lived with (or was deeply involved with) has been deliberately murdered by the killer"
+    },
+    {
+      "id": "C1.F3",
+      "status": "covered",
+      "evidence": "To hide it, the killer must make it appear that the victim is still alive but has simply walked out and abandoned the killer. So the killer forges a note in the dead victim's handwriting ... This explains the victim's absence as a voluntary departure"
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "To copy that handwriting convincingly, the killer practises by writing the same sentence over and over, seven times ... That practised sentence is exactly the text of the forged note"
+    },
+    {
+      "id": "C2.F2",
+      "status": "partial",
+      "evidence": "the killer practises by writing the same sentence over and over, seven times ... they sense the forgery will eventually give them away, so they expect to be caught and punished for the murder"
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "they sense the forgery will eventually give them away, so they expect to be caught and punished for the murder"
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.5,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 50 · question
+
+Does the killer plan to show or present the forged note to other people (to support the story that the victim left)?
+
+Host: yes
+
+## 51 · question
+
+Has the killer hidden or disposed of the victim's body (so the absence can plausibly be explained as the victim having left)?
+
+Host: irrelevant
+
+## 52 · question
+
+Is the killer's \"I'm in trouble\" dread about being caught and punished for the murder — i.e., legal/culpability consequences — rather than about being punished by the victim or some other person?
+
+Host: yes
+
+## 53 · final
+
+A killer deliberately caused the death of someone he knew and lived with, and the killing has not yet been discovered. To keep anyone from searching for the victim or reporting them missing, he needs it to seem that the victim is still alive but has simply walked out on him. So he forges a note in the dead victim's handwriting — first practising the imitation of that handwriting by writing the same line over and over, seven times: "You've disappointed me so much; I'm never coming back." Those seven sheets are his penmanship practice, and the practised sentence is precisely the text of the forged note. The note is a farewell note the victim appears to have written and left behind, addressed to the killer himself, so that it reads as the victim telling him he has disappointed them and they are leaving him forever. He intends to show this note to others: it accounts for the victim's absence as a voluntary departure, so no one looks for the victim, and it casts the killer as the abandoned party rather than a suspect. His sigh — "I know I'm in trouble" — is his own dread of the legal consequences: he expects the murder and the forgery to be found out and himself to be caught and punished.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "A killer deliberately caused the death of someone he knew and lived with ... it accounts for the victim's absence as a voluntary departure",
+      "reason": "Covers the killing and staged voluntary departure with a forged note, but omits that the victim was his wife."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "first practising the imitation of that handwriting by writing the same line over and over, seven times ... Those seven sheets are his penmanship practice",
+      "reason": "Identifies the repeated writing as attempts to imitate the victim's handwriting, but omits that it is his wife's handwriting and that the attempts are failed."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "His sigh — \"I know I'm in trouble\" — is his own dread of the legal consequences: he expects the murder and the forgery to be found out and himself to be caught and punished.",
+      "reason": "Captures worry about being caught, but omits the causal inability to imitate her handwriting."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "A killer deliberately caused the death of someone he knew and lived with ... he needs it to seem that the victim is still alive but has simply walked out on him ... it accounts for the victim's absence as a voluntary departure"
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "A killer deliberately caused the death of someone he knew and lived with"
+    },
+    {
+      "id": "C1.F3",
+      "status": "covered",
+      "evidence": "he forges a note in the dead victim's handwriting ... The note is a farewell note the victim appears to have written and left behind, addressed to the killer himself, so that it reads as the victim telling him he has disappointed them and they are leaving him forever. ... it accounts for the victim's absence as a voluntary departure"
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "first practising the imitation of that handwriting by writing the same line over and over, seven times: \"You've disappointed me so much; I'm never coming back.\" Those seven sheets are his penmanship practice"
+    },
+    {
+      "id": "C2.F2",
+      "status": "partial",
+      "evidence": "first practising the imitation of that handwriting by writing the same line over and over, seven times ... His sigh — \"I know I'm in trouble\" — is his own dread of the legal consequences: he expects the murder and the forgery to be found out and himself to be caught and punished."
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "His sigh — \"I know I'm in trouble\" — is his own dread of the legal consequences: he expects the murder and the forgery to be found out and himself to be caught and punished."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.5,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 54 · question
+
+Does the killer act alone — i.e., no one else helped with either the killing or the forgery?
+
+Host: yes
+
+## 55 · question
+
+Are the seven practice sheets eventually discovered and used as evidence against the killer?
+
+Host: irrelevant
+
+## 56 · question
+
+Was the killing premeditated — planned by the killer in advance of the act?
+
+Host: irrelevant
+
+## 57 · question
+
+Is the forged note actually believed — do people accept that the victim left of their own accord?
+
+Host: irrelevant
+
+## 58 · question
+
+Was the killing a criminal/unlawful act (murder), as opposed to something lawful such as war, an execution, or self-defense?
+
+Host: yes
+
+## 59 · question
+
+Does the specific number seven (as opposed to any other number of copies) carry meaning in the solution?
+
+Host: no
+
+## 60 · question
+
+Does the killer plan to keep up an ongoing impersonation of the living victim (e.g., sending messages or otherwise acting as if the victim is alive elsewhere), rather than just leaving a single note?
+
+Host: no
+
+## 61 · final
+
+A man has criminally murdered someone he knew and lived with. Nothing has yet been discovered, and he acts alone. To prevent the victim being looked for or reported missing, he needs it to seem that the victim is still alive but has walked out on him of their own accord. So he sets about forging a farewell note in the dead victim's handwriting. To master the imitation of that handwriting he practises it over and over, writing out the same line repeatedly — "You've disappointed me so much; I'm never coming back" — and that practised line is exactly the text of the forged note. The note is one the victim appears to have written and left behind, addressed to the killer himself: it reads as the victim telling him he has disappointed them and that they are leaving him for good. He intends to show it to others, so that the victim's absence is explained as a voluntary departure — everyone believes the victim is alive and has simply gone, so nobody searches or reports them missing — and so that he appears to be the wronged, abandoned party rather than a suspect. As he practises the forgery he sighs, "I know I'm in trouble": it is his own anticipatory dread that the murder and the false note will be found out and that he will be caught and punished.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "A man has criminally murdered someone he knew and lived with. ... it is ... explained as a voluntary departure — everyone believes the victim is alive and has simply gone",
+      "reason": "Covers the murder and the staged voluntary departure with a forged note, but omits that the victim was his wife."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "he practices it over and over, writing out the same line repeatedly — \"You've disappointed me so much; I'm never coming back\" — and that practised line is exactly the text of the forged note",
+      "reason": "Identifies the repeated line as handwriting forgery practice, but omits that it is his wife's handwriting and that the attempts are failed."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "As he practises the forgery he sighs, \"I know I'm in trouble\": it is his own anticipatory dread that the murder and the false note will be found out and that he will be caught and punished.",
+      "reason": "Captures worry about being caught, but omits the causal inability to imitate her handwriting."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "A man has criminally murdered someone he knew and lived with. ... everyone believes the victim is alive and has simply gone, so nobody searches or reports them missing"
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "A man has criminally murdered someone he knew and lived with."
+    },
+    {
+      "id": "C1.F3",
+      "status": "covered",
+      "evidence": "So he sets about forging a farewell note in the dead victim's handwriting. ... it reads as the victim telling him he has disappointed them and that they are leaving him for good."
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "To master the imitation of that handwriting he practises it over and over, writing out the same line repeatedly — \"You've disappointed me so much; I'm never coming back\" — and that practised line is exactly the text of the forged note."
+    },
+    {
+      "id": "C2.F2",
+      "status": "partial",
+      "evidence": "To master the imitation of that handwriting he practises it over and over, writing out the same line repeatedly — \"You've disappointed me so much; I'm never coming back\" — and that practised line is exactly the text of the forged note. … As he practises the forgery he sighs, \"I know I'm in trouble\": it is his own anticipatory dread that the murder and the false note will be found out and that he will be caught and punished."
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "As he practises the forgery he sighs, \"I know I'm in trouble\": it is his own anticipatory dread that the murder and the false note will be found out and that he will be caught and punished."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.5,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 62 · question
+
+Do the other people come to believe that the victim is still alive (simply living elsewhere), rather than believing the victim is dead?
+
+Host: irrelevant
+
+## 63 · question
+
+Absent the forged note, would the killer have been the obvious suspect in the victim's disappearance?
+
+Host: irrelevant
+
+## 64 · final
+
+A murderer is practising the handwriting of the person he killed, writing the same farewell line over and over, so that he can produce a forged note that seems to have been written by the victim — a note making it look as though the victim simply walked out and left of their own accord. That is his handwriting practice; the practised sentence is the text of the fake note. The sigh "I know I'm in trouble" is the killer's: he knows the forgery will expose him and he will be caught.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "A murderer is practising the handwriting of the person he killed ... a note making it look as though the victim simply walked out and left of their own accord.",
+      "reason": "Covers the killing and forged voluntary-departure note, but omits that the victim was his wife."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "practising the handwriting of the person he killed, writing the same farewell line over and over ... he knows the forgery will expose him and he will be caught.",
+      "reason": "Identifies the repetition as attempts to imitate the victim's handwriting and anticipates exposure, but omits that it is his wife's handwriting and that the attempts are explicitly failed."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "The sigh \"I know I'm in trouble\" is the killer's: he knows the forgery will expose him and he will be caught.",
+      "reason": "Captures worry about being caught, but omits the specific causal inability to imitate her handwriting."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "A murderer is practising the handwriting of the person he killed ... a note making it look as though the victim simply walked out and left of their own accord."
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "the person he killed"
+    },
+    {
+      "id": "C1.F3",
+      "status": "covered",
+      "evidence": "so that he can produce a forged note that seems to have been written by the victim — a note making it look as though the victim simply walked out and left of their own accord."
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "practising the handwriting of the person he killed, writing the same farewell line over and over"
+    },
+    {
+      "id": "C2.F2",
+      "status": "partial",
+      "evidence": "writing the same farewell line over and over ... he knows the forgery will expose him and he will be caught."
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "he knows the forgery will expose him and he will be caught."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.5,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 65 · question
+
+Before the victim died, had the victim actually written a similar farewell message of their own (which the killer is now imitating/copying)?
+
+Host: irrelevant
+
+## 66 · question
+
+Is the story set in a medical or hospital context?
+
+Host: no
+
+## 67 · question
+
+Does the killer present the forged note as something he himself received (e.g., a letter or message sent to him), rather than something found lying around?
+
+Host: irrelevant
+
+## 68 · question
+
+Are there other people besides the killer and the victim (e.g., a household or family) who must be convinced by the note that the victim left voluntarily?
+
+Host: yes
+
+## 69 · question
+
+Is the person whose death the killer caused the very author of the seven written copies — i.e., are "the killer," "the forger," and "the dead victim" three roles that in fact belong to only two distinct people?
+
+Host: yes and no
+
+## 70 · question
+
+Is the forged note's main purpose to conceal the killing — rather than to make the killer look like a jilted or wronged party?
+
+Host: yes
+
+## 71 · final
+
+A killer has murdered someone he knew and lived with — a criminal killing, not yet discovered. To keep the killing from ever being found out, he must ensure the victim's disappearance is never treated as a death at all: the victim has to seem to have left of their own accord. So he practises forging the dead victim's handwriting, writing the same line over and over — "You've disappointed me so much; I'm never coming back" — because he needs to imitate that person's hand convincingly. That practised line is exactly the text of the forged note. The forged note is made to look like a note the victim wrote and left behind, and it is what convinces the other people in the victim's life that the victim voluntarily walked out and is not coming back. Believing the departure was voluntary, they do not search for the victim or report them missing, and the murder goes undiscovered. The sigh, "I know I'm in trouble," is the killer's own anticipatory dread: he senses that this forgery will eventually expose him, and that he will be caught and punished for the killing.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "A killer has murdered someone he knew and lived with ... the victim has to seem to have left of their own accord ... a forged note ... convinces the other people ... that the victim voluntarily walked out and is not coming back.",
+      "reason": "Covers the murder and staged voluntary departure with a forged note, but omits that the victim was his wife."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "he practises forging the dead victim's handwriting, writing the same line over and over ... because he needs to imitate that person's hand convincingly ... He senses that this forgery will eventually expose him.",
+      "reason": "Identifies the repeated line as handwriting-forgery practice and anticipates exposure, but omits that it is his wife's handwriting and that the attempts are explicitly failed."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "The sigh, \"I know I'm in trouble,\" is the killer's own anticipatory dread: he senses that this forgery will eventually expose him, and that he will be caught and punished for the killing.",
+      "reason": "Captures worry about being caught, but omits the specific causal inability to imitate her handwriting."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "A killer has murdered someone he knew and lived with ... the victim has to seem to have left of their own accord ... The forged note ... convinces the other people ... that the victim voluntarily walked out and is not coming back."
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "A killer has murdered someone he knew and lived with"
+    },
+    {
+      "id": "C1.F3",
+      "status": "covered",
+      "evidence": "So he practises forging the dead victim's handwriting ... That practised line is exactly the text of the forged note. The forged note is made to look like a note the victim wrote and left behind, and it is what convinces the other people in the victim's life that the victim voluntarily walked out and is not coming back."
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "he practises forging the dead victim's handwriting, writing the same line over and over ... because he needs to imitate that person's hand convincingly."
+    },
+    {
+      "id": "C2.F2",
+      "status": "partial",
+      "evidence": "he practises forging the dead victim's handwriting, writing the same line over and over ... The sigh, \"I know I'm in trouble,\" is the killer's own anticipatory dread: he senses that this forgery will eventually expose him, and that he will be caught and punished for the killing."
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "The sigh, \"I know I'm in trouble,\" is the killer's own anticipatory dread: he senses that this forgery will eventually expose him, and that he will be caught and punished for the killing."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.5,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 72 · final
+
+A man has murdered someone he knew, someone he lived with — a criminal killing as yet undiscovered. He now sets out to disguise the killing as a simple departure: he wants it to appear that the victim is alive and has walked away of their own free will, so that no one treats the victim as dead or goes looking. To that end he practises forging the dead person's handwriting, copying the same line again and again — "You've disappointed me so much; I'm never coming back" — perfecting the imitation of that hand. This repeated line is precisely the wording of the note he is forging. The forged note is meant to pass as something the victim wrote and left behind: read as the victim's own words, it would make the people around them believe the victim has simply chosen to leave and is not coming back — a voluntary departure, not a death. As he practises, he sighs, "I know I'm in trouble": it is his own anticipatory dread that the forgery will give him away and that he will be caught and punished for the murder.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "A man has murdered someone he knew, someone he lived with ... He now sets out to disguise the killing as a simple departure ... a voluntary departure, not a death.",
+      "reason": "Covers the murder and the staged voluntary departure with a forged note, but omits that the victim was his wife."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "he practises forging the dead person's handwriting, copying the same line again and again ... perfecting the imitation of that hand ... the forgery will give him away",
+      "reason": "Identifies the repeated writing as attempts to imitate the victim's handwriting and anticipates exposure, but omits that it is his wife's handwriting and that the attempts are explicitly failed."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "As he practises, he sighs, \"I know I'm in trouble\": it is his own anticipatory dread that the forgery will give him away and that he will be caught and punished for the murder.",
+      "reason": "Captures worry about being caught, but omits the specific causal inability to imitate her handwriting."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "A man has murdered someone he knew, someone he lived with ... He now sets out to disguise the killing as a simple departure ... a voluntary departure, not a death."
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "A man has murdered someone he knew, someone he lived with"
+    },
+    {
+      "id": "C1.F3",
+      "status": "covered",
+      "evidence": "He now sets out to disguise the killing as a simple departure ... he practises forging the dead person's handwriting ... This repeated line is precisely the wording of the note he is forging."
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "he practises forging the dead person's handwriting, copying the same line again and again ... perfecting the imitation of that hand."
+    },
+    {
+      "id": "C2.F2",
+      "status": "partial",
+      "evidence": "he practises forging the dead person's handwriting, copying the same line again and again ... As he practises, he sighs, \"I know I'm in trouble\": it is his own anticipatory dread that the forgery will give him away and that he will be caught and punished for the murder."
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "it is his own anticipatory dread that the forgery will give him away and that he will be caught and punished for the murder."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.5,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 73 · question
+
+Is the handwriting being imitated that of the person the killer murdered — one and the same individual?
+
+Host: yes
+
+## 74 · final
+
+A man has murdered someone he lived with, and the killing has not yet been discovered. To hide it, he is forging a note in the dead person's handwriting, so that it will seem the victim wrote a farewell and left of their own accord. Because he must copy that person's hand convincingly, he practises it — writing the same sentence over and over, "You've disappointed me so much; I'm never coming back" — and that sentence is exactly the text of the note he is faking. The point of the note is to disguise a murder as a voluntary departure: those around the victim, reading the note, receive it as the victim having simply left and not coming back, so the death is not suspected. His sigh, "I know I'm in trouble," is the murderer's own dread — he knows this forgery will be his undoing and that he will be caught and punished for the killing.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "A man has murdered someone he lived with ... he is forging a note in the dead person's handwriting ... The point of the note is to disguise a murder as a voluntary departure",
+      "reason": "Covers the murder and the staged voluntary departure with a forged note, but omits that the victim was his wife."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "he practises it — writing the same sentence over and over ... that sentence is exactly the text of the note he is faking ... he knows this forgery will be his undoing",
+      "reason": "Identifies the repeated writing as attempts to imitate the victim's handwriting and anticipates exposure, but omits that it is his wife's handwriting and that the attempts are explicitly failed."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "His sigh, \"I know I'm in trouble,\" is the murderer's own dread — he knows this forgery will be his undoing and that he will be caught and punished for the killing.",
+      "reason": "Captures worry about being caught, but omits the specific causal inability to imitate her handwriting."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "A man has murdered someone he lived with ... The point of the note is to disguise a murder as a voluntary departure"
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "A man has murdered someone he lived with"
+    },
+    {
+      "id": "C1.F3",
+      "status": "covered",
+      "evidence": "he is forging a note in the dead person's handwriting, so that it will seem the victim wrote a farewell and left of their own accord."
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "he practises it — writing the same sentence over and over, \"You've disappointed me so much; I'm never coming back\" — and that sentence is exactly the text of the note he is faking."
+    },
+    {
+      "id": "C2.F2",
+      "status": "partial",
+      "evidence": "he practises it — writing the same sentence over and over ... he knows this forgery will be his undoing and that he will be caught and punished for the killing."
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "he knows this forgery will be his undoing and that he will be caught and punished for the killing."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.5,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 75 · question
+
+Does the killer intend to give himself up or confess, rather than merely hoping to avoid discovery?
+
+Host: no
+
+## 76 · question
+
+Does the forged note deliberately make the killer himself the one the victim is disappointed in — i.e., is the note's grievance aimed at the killer?
+
+Host: yes and no
+
+## 77 · question
+
+Was the victim someone dependent on the killer's care — e.g., elderly, ill, disabled, or a child in their charge?
+
+Host: irrelevant
+
+## 78 · question
+
+Are the seven written copies themselves what will be found and read as the victim's farewell message?
+
+Host: no
+
+## 79 · question
+
+Does the sigh reflect the killer's frustration that he cannot convincingly imitate the victim's handwriting (the practice isn't going well)?
+
+Host: yes
+
+## 80 · final
+
+A man has murdered someone he knew and lived with; the killing has not yet been discovered. He needs the death to look like a voluntary departure — the victim apparently walking out on him and never coming back — so he must forge a farewell note in the dead victim's handwriting. But he cannot produce a convincing imitation: he sits writing out the same sentence again and again, over and over — "You've disappointed me so much; I'm never coming back" — and the repeated copies are the visible signs of his repeated failed attempts to get the victim's hand right. That sentence is exactly the text of the note he is faking. As he struggles over yet another attempt, he sighs, "I know I'm in trouble": he can see his forgery won't fool anyone, that the imitation is too poor, and that the deception will collapse and he will be caught and punished for the murder.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "A man has murdered someone he knew and lived with ... He needs the death to look like a voluntary departure ... he must forge a farewell note in the dead victim's handwriting.",
+      "reason": "Covers the murder and staged voluntary departure with a forged note, but omits that the victim was his wife."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "he sits writing out the same sentence again and again, over and over ... the repeated copies are the visible signs of his repeated failed attempts to get the victim's hand right.",
+      "reason": "Identifies the repetitions as failed handwriting-forgery attempts, but omits that it is his wife's handwriting."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "he cannot produce a convincing imitation ... he can see his forgery won't fool anyone, that the imitation is too poor, and that the deception will collapse and he will be caught and punished for the murder.",
+      "reason": "Captures the inability to imitate and the resulting fear of being caught, but omits that it is her handwriting specifically."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "A man has murdered someone he knew and lived with ... He needs the death to look like a voluntary departure ... he must forge a farewell note in the dead victim's handwriting."
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "A man has murdered someone he knew and lived with"
+    },
+    {
+      "id": "C1.F3",
+      "status": "covered",
+      "evidence": "He needs the death to look like a voluntary departure ... he must forge a farewell note in the dead victim's handwriting."
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "he sits writing out the same sentence again and again, over and over ... the repeated copies are the visible signs of his repeated failed attempts to get the victim's hand right."
+    },
+    {
+      "id": "C2.F2",
+      "status": "partial",
+      "evidence": "the repeated copies are the visible signs of his repeated failed attempts to get the victim's hand right ... he can see his forgery won't fool anyone, that the imitation is too poor, and that the deception will collapse and he will be caught and punished for the murder."
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "he cannot produce a convincing imitation ... he can see his forgery won't fool anyone, that the imitation is too poor, and that the deception will collapse and he will be caught and punished for the murder."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.5,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 81 · question
+
+Did the killer choose this exact wording because it makes a voluntary departure believable — i.e., it reads as the kind of farewell a person writes when leaving someone for good?
+
+Host: yes
+
+## 82 · final
+
+A man has murdered someone he knew and lived with; the killing has not been discovered. To keep it hidden, he must make the death look not like a death at all but like a voluntary departure — the victim apparently walking out on him and never coming back — and for that he needs a farewell note in the dead victim's own handwriting. He has chosen the wording for exactly that reason: "You've disappointed me so much; I'm never coming back" reads as the kind of thing a person writes when leaving someone for good. But he cannot easily reproduce that person's hand, so he keeps practising it, copying out the same sentence again and again, over and over — the repeated copies being his attempts to imitate the dead person's handwriting — and that same sentence is the text of the note he is forging. As the practice goes badly, he sighs, "I know I'm in trouble": he is frustrated and uneasy because he cannot convincingly fake the hand, and he dreads that the forgery will give him away and that he will be caught and punished for the murder.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "A man has murdered someone he knew and lived with ... he must make the death look not like a death at all but like a voluntary departure ... he needs a farewell note in the dead victim's own handwriting",
+      "reason": "Covers the murder and staged voluntary departure with a forged note, but omits that the victim was his wife."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "he keeps practising it, copying out the same sentence again and again ... the repeated copies being his attempts to imitate the dead person's handwriting ... he cannot convincingly fake the hand",
+      "reason": "Identifies the repetitions as failed handwriting-forgery attempts, but omits that it is his wife's handwriting."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "he is frustrated and uneasy because he cannot convincingly fake the hand, and he dreads that the forgery will give him away and that he will be caught and punished for the murder",
+      "reason": "Captures the causal link from inability to imitate the handwriting to fear of being caught, but omits that it is her handwriting specifically."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "A man has murdered someone he knew and lived with ... he must make the death look not like a death at all but like a voluntary departure ... he needs a farewell note in the dead victim's own handwriting"
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "A man has murdered someone he knew and lived with"
+    },
+    {
+      "id": "C1.F3",
+      "status": "covered",
+      "evidence": "he must make the death look not like a death at all but like a voluntary departure ... he needs a farewell note in the dead victim's own handwriting ... that same sentence is the text of the note he is forging"
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "he keeps practising it, copying out the same sentence again and again ... the repeated copies being his attempts to imitate the dead person's handwriting"
+    },
+    {
+      "id": "C2.F2",
+      "status": "partial",
+      "evidence": "he cannot easily reproduce that person's hand, so he keeps practising ... the repeated copies being his attempts to imitate the dead person's handwriting ... he cannot convincingly fake the hand, and he dreads that the forgery will give him away"
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "he is frustrated and uneasy because he cannot convincingly fake the hand, and he dreads that the forgery will give him away and that he will be caught and punished for the murder"
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.5,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 83 · final
+
+A man has murdered someone he knew and lived with, and the killing has not been discovered; he acted alone and plans no confession. To keep the murder from ever being found out, he must make it appear that the victim is not dead at all but has simply walked out of his life for good — and for that he needs a farewell note written in the dead victim's own hand. The line he is writing, "You've disappointed me so much; I'm never coming back," is chosen precisely because it reads as the kind of thing a person writes when leaving someone for good. Because he must reproduce that dead person's handwriting convincingly, he practises it, copying the same sentence again and again, over and over — these repeated copies are his practised attempts at imitating that hand, and that same sentence is exactly the text of the forged note he is producing. The forged note is to pass as something the victim wrote and left, so that the people around them conclude the victim left of their own accord and is not coming back, and therefore do not treat the victim as dead or search for them — the murder stays hidden. As his practice goes badly, he sighs, "I know I'm in trouble": he is frustrated that he cannot convincingly fake the hand, and he dreads that this forgery will give him away and that he will be caught and punished for the killing.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "A man has murdered someone he knew and lived with ... he must make it appear that the victim is not dead at all but has simply walked out of his life for good ... a farewell note written in the dead victim's own hand",
+      "reason": "Covers the murder and the staged voluntary departure with a forged note, but omits that the victim was his wife."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "he practises it, copying the same sentence again and again, over and over — these repeated copies are his practised attempts at imitating that hand ... he cannot convincingly fake the hand",
+      "reason": "Identifies the repeated writing as handwriting-forgery attempts and includes failure, but omits that it is his wife's handwriting."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "As his practice goes badly, he sighs, \"I know I'm in trouble\": he is frustrated that he cannot convincingly fake the hand, and he dreads that this forgery will give him away and that he will be caught and punished for the killing.",
+      "reason": "Captures the causal link from inability to imitate the handwriting to fear of being caught, but omits that it is her handwriting specifically."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "A man has murdered someone he knew and lived with ... he must make it appear that the victim is not dead at all but has simply walked out of his life for good ... a farewell note written in the dead victim's own hand"
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "A man has murdered someone he knew and lived with"
+    },
+    {
+      "id": "C1.F3",
+      "status": "covered",
+      "evidence": "he must make it appear that the victim is not dead at all but has simply walked out of his life for good ... he needs a farewell note written in the dead victim's own hand ... that same sentence is exactly the text of the forged note he is producing."
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "Because he must reproduce that dead person's handwriting convincingly, he practises it, copying the same sentence again and again, over and over — these repeated copies are his practised attempts at imitating that hand"
+    },
+    {
+      "id": "C2.F2",
+      "status": "partial",
+      "evidence": "these repeated copies are his practised attempts at imitating that hand ... As his practice goes badly ... he cannot convincingly fake the hand, and he dreads that this forgery will give him away"
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "he cannot convincingly fake the hand, and he dreads that this forgery will give him away and that he will be caught and punished for the killing."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.5,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 84 · final
+
+The person writing the same line over and over is a murderer. He has killed someone he knew and lived with, the crime is still undiscovered, and he is now covering it up. To stop the death from ever being investigated, he must create the impression that the victim is alive and has chosen to leave him forever. So he is forging a farewell note in the dead victim's handwriting. The sentence he keeps copying — "You've disappointed me so much; I'm never coming back" — is the text he has chosen for that fake note because it sounds like a genuine goodbye, and he repeats it again and again as handwriting practice, trying to imitate the dead person's hand. The finished forged note will look like something the victim wrote and left behind; when the killer shows it to the people around them, they will accept that the victim walked out voluntarily and is simply gone, so no one will look for the victim and the murder will stay hidden. His sigh, "I know I'm in trouble," comes from the killer himself: the imitation is not going well, and he knows that this forgery is the weak point that will expose him and get him caught and punished for the murder.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "He has killed someone he knew and lived with ... he must create the impression that the victim is alive and has chosen to leave him forever. ... he is forging a farewell note in the dead victim's handwriting.",
+      "reason": "Covers the murder and the staged voluntary departure with a forged farewell note, but omits that the victim was his wife."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "he repeats it again and again as handwriting practice, trying to imitate the dead person's hand.",
+      "reason": "Identifies the repeated writing as attempts to imitate the victim's handwriting, but omits that it is his wife's handwriting and does not fully carry the explicit failed-attempt qualifier."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "the imitation is not going well, and he knows that this forgery is the weak point that will expose him and get him caught and punished for the murder.",
+      "reason": "Captures the causal link from poor imitation to fear of being caught, but omits that the handwriting being imitated is specifically hers."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "He has killed someone he knew and lived with ... he must create the impression that the victim is alive and has chosen to leave him forever. ... he is forging a farewell note in the dead victim's handwriting."
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "He has killed someone he knew and lived with"
+    },
+    {
+      "id": "C1.F3",
+      "status": "covered",
+      "evidence": "he must create the impression that the victim is alive and has chosen to leave him forever. So he is forging a farewell note in the dead victim's handwriting."
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "he repeats it again and again as handwriting practice, trying to imitate the dead person's hand"
+    },
+    {
+      "id": "C2.F2",
+      "status": "partial",
+      "evidence": "he repeats it again and again as handwriting practice, trying to imitate the dead person's hand. ... the imitation is not going well, and he knows that this forgery is the weak point that will expose him"
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "the imitation is not going well, and he knows that this forgery is the weak point that will expose him and get him caught and punished for the murder."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.5,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 85 · question
+
+Is the killer's difficulty with the forgery due to his own poor literacy or handwriting ability, rather than the victim's hand being unusual?
+
+Host: irrelevant
+
+## 86 · question
+
+Did the killer cause the victim's death by direct physical violence (rather than indirectly, e.g., poison or arranging an accident)?
+
+Host: irrelevant
+
+## 87 · final
+
+The person copying the same sentence again and again is a murderer. He has killed someone he knew and lived with; the crime is so far undiscovered, he acted alone, and he has no intention of confessing. He needs to hide the killing by making it look as if no death occurred at all — as if the victim is alive and has simply walked out of his life for good. To do that he is forging a single farewell note in the dead person's handwriting. The seven repeated sheets are only practice, not the message itself: he keeps copying the same line — "You've disappointed me so much; I'm never coming back" — over and over, trying to imitate that person's hand convincingly. He chose that wording precisely because it sounds like a real goodbye someone writes when leaving for good. The forged note is meant to pass as something the victim wrote and left behind, so that the people around them accept that the victim left of their own accord and is not coming back, and therefore do not search for the victim or treat them as dead, and the murder stays hidden. The sigh, "I know I'm in trouble," is the killer's own: the imitation is going badly and he cannot convincingly fake the handwriting, and he dreads that this forgery will give him away and that he will be caught and punished for the killing.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "He has killed someone he knew and lived with ... He needs to hide the killing by making it look as if no death occurred at all — as if the victim is alive and has simply walked out of his life for good. To do that he is forging a single farewell note in the dead person's handwriting.",
+      "reason": "Covers the murder and the staged voluntary departure with a forged farewell note, but omits that the victim was his wife."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "he keeps copying the same line ... over and over, trying to imitate that person's hand convincingly ... the imitation is going badly",
+      "reason": "Identifies the repeated writing as handwriting-forgery practice and includes failure, but omits that it is his wife's handwriting."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "the imitation is going badly and he cannot convincingly fake the handwriting, and he dreads that this forgery will give him away and that he will be caught and punished for the killing.",
+      "reason": "Captures the causal inability to imitate the handwriting and the resulting fear of being caught, but omits that it is specifically her handwriting."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "He has killed someone he knew and lived with ... He needs to hide the killing by making it look as if no death occurred at all — as if the victim is alive and has simply walked out of his life for good. To do that he is forging a single farewell note in the dead person's handwriting."
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "He has killed someone he knew and lived with"
+    },
+    {
+      "id": "C1.F3",
+      "status": "covered",
+      "evidence": "He needs to hide the killing by making it look as if no death occurred at all — as if the victim is alive and has simply walked out of his life for good. To do that he is forging a single farewell note in the dead person's handwriting."
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "he keeps copying the same line — \"You've disappointed me so much; I'm never coming back\" — over and over, trying to imitate that person's hand convincingly."
+    },
+    {
+      "id": "C2.F2",
+      "status": "partial",
+      "evidence": "he keeps copying the same line ... over and over, trying to imitate that person's hand convincingly. ... the imitation is going badly and he cannot convincingly fake the handwriting, and he dreads that this forgery will give him away"
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "the imitation is going badly and he cannot convincingly fake the handwriting, and he dreads that this forgery will give him away and that he will be caught and punished for the killing."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.5,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 88 · question
+
+Is the sigh's "trouble" mainly that the killer knows he is already guilty/doomed regardless — that there is no real escape for him now — rather than specifically about the handwriting practice failing?
+
+Host: no
+
+## 89 · question
+
+Is there deliberate irony in the note's wording — that the killer writes "I'm never coming back" in the victim's voice when it is actually the killer who has made sure the victim never comes back?
+
+Host: yes
+
+## 90 · final
+
+A man has murdered someone he knew and lived with; he acted alone, the killing is still undiscovered, and he has no plan to confess. To keep it hidden he must make the death look like no death at all — as if the victim simply chose to walk out on him and never come back — so he is forging a farewell note in the dead person's handwriting. The repeated copies we see are only his handwriting practice, not the message: again and again he writes the same sentence, "You've disappointed me so much; I'm never coming back," because that is the text he wants the forged note to bear, chosen because it reads like a genuine goodbye. He repeats it because he is trying to imitate the dead person's hand and it is going badly. The forged note, made to seem something the victim wrote and left behind, is to convince the other people in their lives that the victim left of their own accord, so that no one searches for the victim or treats it as a death. The line carries a grim irony: in the victim's voice it says "I'm never coming back," when in truth it is the killer who has ensured the victim will never come back. His sigh, "I know I'm in trouble," is the killer's own — the imitation is coming out badly, he knows he cannot convincingly fake the handwriting, and he dreads that this forgery will be what exposes him and gets him caught and punished for the murder.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "A man has murdered someone he knew and lived with ... he must make the death look like no death at all — as if the victim simply chose to walk out on him and never come back — so he is forging a farewell note in the dead person's handwriting.",
+      "reason": "Covers the murder and the staged voluntary departure with a forged farewell note, but omits that the victim was his wife."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "again and again he writes the same sentence, \"You've disappointed me so much; I'm never coming back,\" ... because he is trying to imitate the dead person's hand and it is going badly.",
+      "reason": "Identifies the repeated writing as attempts to imitate the victim's handwriting and includes failure, but omits that it is his wife's handwriting."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "the imitation is coming out badly, he knows he cannot convincingly fake the handwriting, and he dreads that this forgery will be what exposes him and gets him caught and punished for the murder.",
+      "reason": "Captures the causal link from poor handwriting imitation to fear of being caught, but omits that the handwriting is specifically hers."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "A man has murdered someone he knew and lived with ... he must make the death look like no death at all — as if the victim simply chose to walk out on him and never come back — so he is forging a farewell note in the dead person's handwriting."
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "A man has murdered someone he knew and lived with"
+    },
+    {
+      "id": "C1.F3",
+      "status": "covered",
+      "evidence": "he must make the death look like no death at all — as if the victim simply chose to walk out on him and never come back — so he is forging a farewell note in the dead person's handwriting."
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "again and again he writes the same sentence, \"You've disappointed me so much; I'm never coming back,\" ... because he is trying to imitate the dead person's hand"
+    },
+    {
+      "id": "C2.F2",
+      "status": "partial",
+      "evidence": "He repeats it because he is trying to imitate the dead person's hand and it is going badly ... he dreads that this forgery will be what exposes him"
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "the imitation is coming out badly, he knows he cannot convincingly fake the handwriting, and he dreads that this forgery will be what exposes him and gets him caught and punished for the murder."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.5,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 91 · question
+
+Is the forged note actually addressed to someone other than the killer (with the victim's disappointment in the killer merely being its subject), rather than addressed to the killer himself?
+
+Host: no
+
+## 92 · final
+
+A man has murdered someone he knew and lived with. The killing is still undiscovered, he acted alone, and he will not confess. To keep it hidden he must make it seem that there was no death at all — that the victim chose to walk out on him and never come back — so he is forging a farewell note in the dead person's handwriting. The repeated sheets are only his practice at that handwriting, not the message itself: he copies the line "You've disappointed me so much; I'm never coming back" again and again because it is the text the forged note must carry, worded to sound like a genuine goodbye. He repeats it because he cannot yet imitate the dead person's hand convincingly, and the practice is going badly. The forged note, addressed to him, is meant to look as though the victim wrote it and left; shown to the other people in their lives, it makes the victim's going look voluntary, so nobody searches or suspects a death, and the murder stays hidden. The wording is deliberately ironic — in the victim's mouth "I'm never coming back," though it is the killer who has made sure of that. His sigh, "I know I'm in trouble," is the killer's own: the imitation keeps failing, and he dreads that this forgery will expose him and get him caught and punished for the murder.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "A man has murdered someone he knew and lived with ... he must make it seem that there was no death at all — that the victim chose to walk out on him and never come back — so he is forging a farewell note in the dead person's handwriting.",
+      "reason": "Covers the murder and staged voluntary departure with a forged note, but omits that the victim was his wife."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "he copies the line \"You've disappointed me so much; I'm never coming back\" again and again ... because he cannot yet imitate the dead person's hand convincingly, and the practice is going badly.",
+      "reason": "Identifies repeated writing as failed handwriting-forgery attempts, but omits wife's handwriting."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "the imitation keeps failing, and he dreads that this forgery will expose him and get him caught and punished for the murder",
+      "reason": "Captures inability to imitate and resulting fear, but omits that it is her handwriting."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "A man has murdered someone he knew and lived with ... he must make it seem that there was no death at all — that the victim chose to walk out on him and never come back — so he is forging a farewell note in the dead person's handwriting."
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "A man has murdered someone he knew and lived with"
+    },
+    {
+      "id": "C1.F3",
+      "status": "covered",
+      "evidence": "To keep it hidden he must make it seem that there was no death at all — that the victim chose to walk out on him and never come back — so he is forging a farewell note in the dead person's handwriting."
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "he copies the line \"You've disappointed me so much; I'm never coming back\" again and again because it is the text the forged note must carry ... he cannot yet imitate the dead person's hand convincingly"
+    },
+    {
+      "id": "C2.F2",
+      "status": "partial",
+      "evidence": "He repeats it because he cannot yet imitate the dead person's hand convincingly, and the practice is going badly ... the imitation keeps failing, and he dreads that this forgery will expose him and get him caught and punished"
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "the imitation keeps failing, and he dreads that this forgery will expose him and get him caught and punished for the murder"
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.5,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 93 · question
+
+Does the forged note imply the victim left with someone else — an affair or elopement — rather than simply leaving alone?
+
+Host: no
+
+## 94 · question
+
+Is the reason the killer keeps writing the line that he is copying it directly from an existing sample of the victim's writing (e.g., a letter the victim had written), so the wording is the victim's own words rather than the killer's invention?
+
+Host: no
+
+## 95 · final
+
+The person copying the line again and again is a murderer. He deliberately killed someone he knew and lived with; he acted alone, the killing is still undiscovered, and he will not confess. To keep it hidden he needs the death to look like no death at all — as if the victim simply chose to leave him and never return — so he is forging a farewell note in the dead person's own hand. The repeated sheets are only his practice at that handwriting, not the message that will be found; and the words are his own invention, not copied from anything the victim ever wrote. He keeps writing "You've disappointed me so much; I'm never coming back" because that is the text the forged note is to carry, chosen precisely because it reads like a genuine goodbye. He repeats it because he is trying to imitate the dead person's hand convincingly and it is not going well. The forged note, addressed to him, is meant to pass as something the victim wrote and left behind; shown to the other people in their lives, it makes the victim's going look voluntary, so no one searches for the victim or suspects a killing, and the murder stays hidden. There is deliberate irony in the wording: in the victim's voice "I'm never coming back," though it is the killer who has ensured the victim never will. His sigh, "I know I'm in trouble," is the killer's own — frustration that the imitation keeps failing, and dread that this forged note will be what exposes him and gets him caught and punished for the murder.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "He deliberately killed someone he knew and lived with ... he needs the death to look like no death at all — as if the victim simply chose to leave him and never return — so he is forging a farewell note in the dead person's own hand.",
+      "reason": "Covers the murder and staged voluntary departure with a forged note, but omits that the victim was his wife."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "The repeated sheets are only his practice at that handwriting ... he is trying to imitate the dead person's hand convincingly and it is not going well.",
+      "reason": "Identifies the repeated writing as failed handwriting-forgery attempts, but omits that it is his wife's handwriting."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "His sigh, \"I know I'm in trouble,\" is the killer's own — frustration that the imitation keeps failing, and dread that this forged note will be what exposes him and gets him caught and punished for the murder.",
+      "reason": "Captures the inability to imitate the handwriting and the resulting fear of being caught, but omits that the handwriting is specifically hers."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "He deliberately killed someone he knew and lived with ... he needs the death to look like no death at all — as if the victim simply chose to leave him and never return — so he is forging a farewell note in the dead person's own hand."
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "He deliberately killed someone he knew and lived with"
+    },
+    {
+      "id": "C1.F3",
+      "status": "covered",
+      "evidence": "he needs the death to look like no death at all — as if the victim simply chose to leave him and never return — so he is forging a farewell note in the dead person's own hand."
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "The repeated sheets are only his practice at that handwriting ... he is trying to imitate the dead person's hand convincingly and it is not going well."
+    },
+    {
+      "id": "C2.F2",
+      "status": "partial",
+      "evidence": "he is trying to imitate the dead person's hand convincingly and it is not going well. ... His sigh, \"I know I'm in trouble,\" is the killer's own — frustration that the imitation keeps failing, and dread that this forged note will be what exposes him and gets him caught and punished for the murder."
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "His sigh, \"I know I'm in trouble,\" is the killer's own — frustration that the imitation keeps failing, and dread that this forged note will be what exposes him and gets him caught and punished for the murder."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.5,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 96 · final
+
+The person writing the line over and over is a murderer. He deliberately killed someone he had known and lived with; he acted alone, the killing is as yet undiscovered, and he has no intention of confessing. To prevent it being discovered he must erase the very idea of a death — the victim must seem to have walked out on him of their own accord and to be never coming back — and to that end he is forging a farewell note in the dead person's own handwriting. The repeated sheets are only his practice at that handwriting, not the message itself, and the wording is his own invention rather than anything the victim ever wrote: he keeps copying "You've disappointed me so much; I'm never coming back" because that is the text the forged note is to bear, chosen because it reads like a genuine goodbye, and he repeats it because his imitation of the dead person's hand is not convincing and the practice is going badly. The forged note is meant to pass as something the victim wrote and left behind — it is addressed to the killer himself — so that the people around them accept a voluntary departure rather than a death, and the murder stays hidden. The line carries a deliberate irony: in the victim's voice, "I'm never coming back," though it is the killer who has made certain of it. His sigh, "I know I'm in trouble," is the killer's own: he is frustrated that the handwriting will not come out right, and he dreads that this forgery is precisely what will expose him and get him caught and punished for the murder.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "He deliberately killed someone he had known and lived with ... he must erase the very idea of a death — the victim must seem to have walked out on him of their own accord and to be never coming back — and to that end he is forging a farewell note in the dead person's own handwriting.",
+      "reason": "Covers the murder and staging a voluntary departure with a forged farewell note, but omits that the victim was his wife."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "The repeated sheets are only his practice at that handwriting ... he repeats it because his imitation of the dead person's hand is not convincing and the practice is going badly.",
+      "reason": "Identifies the repeated lines as failed attempts to imitate the victim's handwriting, but omits that it is his wife's handwriting."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "he is frustrated that the handwriting will not come out right, and he dreads that this forgery is precisely what will expose him and get him caught and punished for the murder.",
+      "reason": "Captures the causal connection from inability to imitate the handwriting to fear of being caught, but omits that it is specifically her handwriting."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "He deliberately killed someone he had known and lived with ... he must erase the very idea of a death — the victim must seem to have walked out on him of their own accord and to be never coming back — and to that end he is forging a farewell note in the dead person's own handwriting."
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "He deliberately killed someone he had known and lived with"
+    },
+    {
+      "id": "C1.F3",
+      "status": "covered",
+      "evidence": "he must erase the very idea of a death — the victim must seem to have walked out on him of their own accord and to be never coming back — and to that end he is forging a farewell note in the dead person's own handwriting."
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "The repeated sheets are only his practice at that handwriting ... he keeps copying \"You've disappointed me so much; I'm never coming back\" because that is the text the forged note is to bear ... his imitation of the dead person's hand is not convincing"
+    },
+    {
+      "id": "C2.F2",
+      "status": "partial",
+      "evidence": "he repeats it because his imitation of the dead person's hand is not convincing and the practice is going badly ... he dreads that this forgery is precisely what will expose him and get him caught and punished for the murder."
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "he is frustrated that the handwriting will not come out right, and he dreads that this forgery is precisely what will expose him and get him caught and punished for the murder."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.5,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 97 · question
+
+Is the victim already dead at the moment the killer is writing these practice lines (i.e., the killing has already happened when he practises the handwriting)?
+
+Host: yes
+
+## 98 · final
+
+The person writing the same line over and over is a murderer. He had known and lived with his victim, and he deliberately killed them; he acted alone, the killing is still undiscovered, and he will not confess. At the moment he is writing, the victim is already dead.
+
+To keep the killing from ever coming to light he must do away with the very idea of a death: it has to seem that the victim chose to walk out on him and is never coming back. So he is forging a farewell note in the dead person's own handwriting. The repeated sheets are only his practice at that hand — not the message that will be found — and the words are his own invention, not anything the victim wrote. He keeps copying "You've disappointed me so much; I'm never coming back" because that is the text the forged note is to bear, chosen because it reads like a genuine goodbye; and he repeats it because his imitation of the dead person's handwriting is not convincing and the practice is going badly.
+
+The forged note is meant to pass as something the victim wrote and left behind — it is addressed to the killer himself — so that the people around them accept a voluntary departure instead of a death, and the murder stays hidden. The wording carries a deliberate irony: in the victim's voice, "I'm never coming back," though it is the killer who has made that certain.
+
+His sigh, "I know I'm in trouble," is the killer's own: he is frustrated that the imitation will not come out right, and he dreads that this forged note is precisely what will expose him and get him caught and punished for the murder.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "He had known and lived with his victim, and he deliberately killed them ... he is forging a farewell note in the dead person's own handwriting ... it has to seem that the victim chose to walk out on him and is never coming back.",
+      "reason": "Covers the murder and staging a voluntary departure with a forged farewell note, but omits that the victim was his wife."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "The repeated sheets are only his practice at that hand ... his imitation of the dead person's handwriting is not convincing and the practice is going badly.",
+      "reason": "Identifies the repeated writing as failed handwriting-forgery attempts, but omits that it is his wife's handwriting."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "he is frustrated that the imitation will not come out right, and he dreads that this forged note is precisely what will expose him and get him caught and punished for the murder.",
+      "reason": "Captures the causal link from poor handwriting imitation to fear of being caught, but omits that the handwriting is specifically hers."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "He had known and lived with his victim, and he deliberately killed them ... it has to seem that the victim chose to walk out on him and is never coming back ... he is forging a farewell note in the dead person's own handwriting."
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "He had known and lived with his victim, and he deliberately killed them"
+    },
+    {
+      "id": "C1.F3",
+      "status": "covered",
+      "evidence": "it has to seem that the victim chose to walk out on him and is never coming back. So he is forging a farewell note in the dead person's own handwriting."
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "The repeated sheets are only his practice at that hand ... He keeps copying \"You've disappointed me so much; I'm never coming back\" because that is the text the forged note is to bear"
+    },
+    {
+      "id": "C2.F2",
+      "status": "partial",
+      "evidence": "he repeats it because his imitation of the dead person's handwriting is not convincing and the practice is going badly ... he dreads that this forged note is precisely what will expose him and get him caught and punished for the murder."
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "he is frustrated that the imitation will not come out right, and he dreads that this forged note is precisely what will expose him and get him caught and punished for the murder."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.5,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 99 · final
+
+The same sentence is being written out over and over. This is handwritten practice — one man copying another person's hand, not the message that will be found.
+
+That man is a murderer. He deliberately killed the person whose handwriting he is copying, someone he had known and lived with; he acted alone; and at the moment he sits practising, the victim is already dead. The killing has not been discovered, and he will not confess.
+
+He is forging a farewell note in the dead person's hand. The practised line — "You've disappointed me so much; I'm never coming back" — is his own wording, chosen because it reads like a genuine goodbye, and it is exactly the text the forged note is to bear. He repeats it because he cannot yet imitate the dead person's handwriting convincingly; the practice is going badly. The forged note is addressed to him and is meant to pass as something the victim wrote and left behind, so that the death is taken for a voluntary departure.
+
+There is a deliberate irony: in the victim's voice the note says "I'm never coming back," when it is the killer who has made that certain. His sigh, "I know I'm in trouble," is the killer's own — the imitation will not come out right, and he dreads that this forgery is what will expose him and get him caught and punished for the murder.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "He deliberately killed the person whose handwriting he is copying, someone he had known and lived with ... so that the death is taken for a voluntary departure.",
+      "reason": "Covers the murder and staging a voluntary departure with a forged farewell note, but omits that the victim was his wife."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "This is handwritten practice — one man copying another person's hand ... He repeats it because he cannot yet imitate the dead person's handwriting convincingly; the practice is going badly.",
+      "reason": "Identifies the repeated writing as failed handwriting-forgery attempts, but omits that it is his wife's handwriting."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "His sigh, \"I know I'm in trouble,\" is the killer's own — the imitation will not come out right, and he dreads that this forgery is what will expose him and get him caught and punished for the murder.",
+      "reason": "Captures the causal link from poor handwriting imitation to fear of being caught, but omits that the handwriting is specifically hers."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "He deliberately killed the person whose handwriting he is copying, someone he had known and lived with ... so that the death is taken for a voluntary departure."
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "He deliberately killed the person whose handwriting he is copying, someone he had known and lived with"
+    },
+    {
+      "id": "C1.F3",
+      "status": "covered",
+      "evidence": "He is forging a farewell note in the dead person's hand. ... The forged note is addressed to him and is meant to pass as something the victim wrote and left behind, so that the death is taken for a voluntary departure."
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "This is handwritten practice — one man copying another person's hand ... The practised line ... is exactly the text the forged note is to bear."
+    },
+    {
+      "id": "C2.F2",
+      "status": "partial",
+      "evidence": "He repeats it because he cannot yet imitate the dead person's handwriting convincingly; the practice is going badly. ... he dreads that this forgery is what will expose him and get him caught and punished for the murder."
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "the imitation will not come out right, and he dreads that this forgery is what will expose him and get him caught and punished for the murder."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.5,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 100 · final · mandatory final
+
+The repeated line is written text, made by one author: it is handwriting practice — one man copying someone else's hand, not the note that will be found.
+
+That man is a murderer. He deliberately killed the person whose handwriting he copies — someone he had known and lived with — acting alone, and by the time he sits practising, that victim is already dead. The killing is so far undiscovered and he does not mean to confess.
+
+What he is making is a forged farewell note in the dead person's hand. The practised line — "You've disappointed me so much; I'm never coming back" — is his own invention, chosen because it reads like a genuine goodbye, and it is exactly the text the forged note is to carry. He writes it over and over because his imitation of the dead person's hand is not yet convincing: the practice is going badly. The forged note, addressed to him, is meant to pass as something the victim wrote and left behind, so that the death is read as a voluntary departure rather than a killing.
+
+The wording is deliberately ironic: in the victim's voice the note says "I'm never coming back," though it is the killer who has guaranteed it. His sigh, "I know I'm in trouble," is the killer's own — the imitation will not come out right, and he dreads that this forgery will be what exposes him and gets him caught and punished for the murder.
+
+Host: yes and no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0.5,
+      "evidence": "He deliberately killed the person whose handwriting he copies — someone he had known and lived with ... the death is read as a voluntary departure rather than a killing.",
+      "reason": "Covers the murder and staging a voluntary departure with a forged farewell note, but omits that the victim was his wife."
+    },
+    {
+      "id": "C2",
+      "credit": 0.5,
+      "evidence": "it is handwriting practice — one man copying someone else's hand ... He writes it over and over because his imitation of the dead person's hand is not yet convincing",
+      "reason": "Identifies the repeated writing as failed attempts to imitate the victim's handwriting, but omits that it is his wife's handwriting."
+    },
+    {
+      "id": "C3",
+      "credit": 0.5,
+      "evidence": "the imitation will not come out right, and he dreads that this forgery will be what exposes him and gets him caught and punished for the murder.",
+      "reason": "Captures the causal link from poor handwriting imitation to fear of being caught, but omits that the handwriting is specifically hers."
+    }
+  ],
+  "material_contradiction": false,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "partial",
+      "evidence": "He deliberately killed the person whose handwriting he copies — someone he had known and lived with ... the death is read as a voluntary departure rather than a killing."
+    },
+    {
+      "id": "C1.F2",
+      "status": "partial",
+      "evidence": "He deliberately killed the person whose handwriting he copies — someone he had known and lived with"
+    },
+    {
+      "id": "C1.F3",
+      "status": "covered",
+      "evidence": "What he is making is a forged farewell note in the dead person's hand. ... so that the death is read as a voluntary departure rather than a killing."
+    },
+    {
+      "id": "C2.F1",
+      "status": "partial",
+      "evidence": "it is handwriting practice — one man copying someone else's hand ... exactly the text the forged note is to carry."
+    },
+    {
+      "id": "C2.F2",
+      "status": "partial",
+      "evidence": "He writes it over and over because his imitation of the dead person's hand is not yet convincing: the practice is going badly. ... he dreads that this forgery will be what exposes him and gets him caught and punished for the murder."
+    },
+    {
+      "id": "C3.F1",
+      "status": "partial",
+      "evidence": "the imitation will not come out right, and he dreads that this forgery will be what exposes him and gets him caught and punished for the murder."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [],
+  "partial_score": 0.5,
+  "complete": false,
+  "label": "yes and no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>

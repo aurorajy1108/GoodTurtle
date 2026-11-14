@@ -1,0 +1,37 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "766bad61b1a0eaaadb4f9b3e2262ad246c5938356f425960ef4ff5fc88c2df40",
+    "trajectory.jsonl": "8d11a19bc4f4e9a1f0827a2994d99bfcc17fe7bdf212e0c0e4acf7594e417ad3",
+    "trajectory.md": "55ce920ea12f08d7183843861c3136273d89512c617fa3d7b29df80397518635",
+    "trajectory.html": "64d14b3cbe86f7904e3d69e9d680e850d05f49cab3c50be0f80859dd018a621f",
+    "config.json": "a014f81ea9e104679e8f092a1f109161aea61071386b2e945a24be08c367d75c",
+    "prompts.json": "464909ce81859886160c1541bece3c308662bfb51dbf52c11d604dddef80aed8",
+    "puzzle_private.json": "4369d48465b15c003ae90056b80ebea434995de1a3ddcb3d2bf19b46d3dad1e0",
+    "host_context.json": "b5e2a43262c4dd94e40dd6028c2a5dad2f74bb52a1eea6b0291ac14c2257a394",
+    "human_review.csv": "f9f3264de36cb1dde6e1963f1c01bb08d03fd858b7abac94d5be0cd87c5827de",
+    "review_template.csv": "f9f3264de36cb1dde6e1963f1c01bb08d03fd858b7abac94d5be0cd87c5827de"
+  },
+  "api_audit": {
+    "source_raw_sha256": "06a295d9506ca0b8bfcd80cb07420c40cc33d7875b09baff7c60155c47c37232",
+    "source_raw_bytes": 213400,
+    "published_sha256": "29d420c03acadb006ad1b1fc7a5d9800ebaaab894042da33c5e6f3cf6ece0771",
+    "attempts": 30
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261023_repaired_host_rerun/negative/G01_TS012_TS017_r01_source",
+      "status_as_recorded": "interrupted",
+      "simulation": false,
+      "submissions": 15,
+      "result_sha256": "766bad61b1a0eaaadb4f9b3e2262ad246c5938356f425960ef4ff5fc88c2df40",
+      "signature": "84262f7c841758c2dd56652b4f3612cc50ee8ec9bf6b00b310ac205e642e3243",
+      "event_count": 32,
+      "trajectory_sha256": "8d11a19bc4f4e9a1f0827a2994d99bfcc17fe7bdf212e0c0e4acf7594e417ad3",
+      "first_submission": "2026-10-23T10:20:59.658516+00:00",
+      "first_text": "Did something you did in the pantry directly cause the fire alarm to ring?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

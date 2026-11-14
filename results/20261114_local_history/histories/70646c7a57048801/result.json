@@ -1,0 +1,181 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 91,
+  "final_attempts": 9,
+  "rejected_finals": 9,
+  "counted_questions": 100,
+  "submissions": 100,
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.425,
+  "best_partial_score": 0.425,
+  "latest_final": "Kameda was a king locked in a court power struggle with Umio, a political rival. Kameda ordered Umio’s assassination, and the struggle ended with Umio’s faction defeated. Kameda’s body was cremated, the ordinary funerary custom for a king, so its fragmentation did not mean he had lost. Umio’s body was buried by Kameda’s faction; burial was not itself a disgrace, but the fact that Umio’s opponents controlled his remains showed that his faction could no longer determine his fate or carry out its own rites. People therefore judged Umio the likely political loser, even though his body was intact and Kameda’s was reduced to fragments.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0.5,
+        "evidence": "“Kameda’s body was cremated” and “Umio’s body was buried”.",
+        "reason": "Identifies postmortem bodies rather than injuries to living fighters, but omits excavated skeletons and the historical comparison context."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "“Kameda’s body was cremated, the ordinary funerary custom for a king, so its fragmentation did not mean he had lost.”",
+        "reason": "Correctly connects fragmentation to cremation, but describes a royal custom rather than establishing the culture’s general customary funeral."
+      },
+      {
+        "id": "C3",
+        "credit": 0,
+        "evidence": "“Umio’s body was buried by Kameda’s faction”.",
+        "reason": "The contrasting burial and intact body support absence of cremation, but secrecy is omitted. The required condition for half credit—secret burial—is not covered."
+      },
+      {
+        "id": "C4",
+        "credit": 0.5,
+        "evidence": "“Kameda ordered Umio’s assassination, and the struggle ended with Umio’s faction defeated.”",
+        "reason": "Identifies political defeat and assassination by the rival’s side, but does not identify poisoning."
+      }
+    ],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Missing Umio’s ducal identity, excavated skeletal remains and lecture photographs, a culture-wide cremation custom, explicit honorable royal burial, poisoning, and secret disposal. Denial of the customary funeral is only partly reconstructed through references to the faction’s own rites.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "partial",
+        "evidence": "Kameda’s body was cremated ... Umio’s body was buried by Kameda’s faction"
+      },
+      {
+        "id": "C2.F1",
+        "status": "covered",
+        "evidence": "Kameda’s body was cremated, the ordinary funerary custom for a king, so its fragmentation did not mean he had lost."
+      },
+      {
+        "id": "C2.F2",
+        "status": "partial",
+        "evidence": "the ordinary funerary custom for a king"
+      },
+      {
+        "id": "C3.F1",
+        "status": "partial",
+        "evidence": "Umio’s body was buried by Kameda’s faction"
+      },
+      {
+        "id": "C3.F2",
+        "status": "covered",
+        "evidence": "Kameda’s body was cremated ... Umio’s body was buried by Kameda’s faction ... his body was intact and Kameda’s was reduced to fragments."
+      },
+      {
+        "id": "C4.F1",
+        "status": "partial",
+        "evidence": "Kameda ordered Umio’s assassination, and the struggle ended with Umio’s faction defeated."
+      }
+    ],
+    "requirement_coverage": [
+      {
+        "id": "R1",
+        "status": "partial",
+        "evidence": "Kameda was a king locked in a court power struggle with Umio, a political rival."
+      },
+      {
+        "id": "R2",
+        "status": "partial",
+        "evidence": "the ordinary funerary custom for a king"
+      },
+      {
+        "id": "R3",
+        "status": "partial",
+        "evidence": "Kameda’s body was cremated, the ordinary funerary custom for a king, so its fragmentation did not mean he had lost."
+      },
+      {
+        "id": "R4",
+        "status": "covered",
+        "evidence": "Kameda’s body was cremated ... Umio’s body was buried by Kameda’s faction ... his body was intact and Kameda’s was reduced to fragments."
+      },
+      {
+        "id": "R5",
+        "status": "partial",
+        "evidence": "Kameda ordered Umio’s assassination ... Umio’s body was buried by Kameda’s faction"
+      },
+      {
+        "id": "R6",
+        "status": "partial",
+        "evidence": "his faction could no longer determine his fate or carry out its own rites. People therefore judged Umio the likely political loser, even though his body was intact and Kameda’s was reduced to fragments."
+      }
+    ],
+    "contradictions": [],
+    "partial_score": 0.425,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v2",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 5963.696492249845,
+  "usage": {
+    "grader": {
+      "http_attempts": 9,
+      "successful_responses": 9,
+      "seconds": 487.2077914613765,
+      "provider_reported_usage": {
+        "input_tokens": 76797,
+        "cached_input_tokens": 17280,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 16207,
+        "reasoning_output_tokens": 6672
+      }
+    },
+    "host": {
+      "http_attempts": 188,
+      "successful_responses": 188,
+      "seconds": 1851.7278434992768,
+      "provider_reported_usage": {
+        "input_tokens": 1662692,
+        "cached_input_tokens": 419968,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 13779,
+        "reasoning_output_tokens": 10558
+      }
+    },
+    "partner": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 1401.9053926204797,
+      "provider_reported_usage": {
+        "input_tokens": 395171,
+        "cached_input_tokens": 178048,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 57995,
+        "reasoning_output_tokens": 52731
+      }
+    },
+    "player": {
+      "http_attempts": 200,
+      "successful_responses": 200,
+      "seconds": 2221.5056480062194,
+      "provider_reported_usage": {
+        "input_tokens": 791577,
+        "cached_input_tokens": 296192,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 76374,
+        "reasoning_output_tokens": 67160
+      }
+    }
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "evaluation_versions": {
+    "story_sha256": "edf0fb14af6ff2c56f5cf8abeedb0b4f0b01fb8d2ef7982f524e0eb7ea0be857",
+    "grading_sha256": "2960ae295ed782f634852e1ae079f98e13ba244c157043903a8f9c43469b42ee",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "28d70e41f9f66353fc7cf9666eb1c3fe925432202ac2cc87791eebbfc049e11a",
+    "controller_sha256": "6e0ffa6bef13e372d03254c85fa74f707f68dc1cab5be94458e7e7360015fe92",
+    "host_context_sha256": "56e714ad3e8433f6f04bb510ef831cd75d3eed19a2bb88ab404334e1a1f0fd6e",
+    "host_binding_version": "host-v5.1-20261023"
+  }
+}

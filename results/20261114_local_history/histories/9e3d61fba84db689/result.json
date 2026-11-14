@@ -1,0 +1,87 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 96,
+  "final_attempts": 4,
+  "rejected_finals": 4,
+  "counted_questions": 100,
+  "submissions": 100,
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 1.0,
+  "best_partial_score": 1.0,
+  "latest_final": "The “portrait” was actually a window. In the dim light it looked like a picture, but in daylight the reporter realized she was looking through a real window at a person outside, staring directly into the room. That person was doing something threatening or alarming, which stunned her; the exact nature of the threat and the person’s motive aren’t established by the clues.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 1,
+        "evidence": "The “portrait” was actually a window, with a real person outside staring into the room.",
+        "reason": "Accurately identifies both the window and the real person outside."
+      },
+      {
+        "id": "C2",
+        "credit": 1,
+        "evidence": "“In the dim light it looked like a picture,” and the person outside was “staring directly into the room.”",
+        "reason": "Connects poor lighting to mistaking the watcher for a portrait."
+      },
+      {
+        "id": "C3",
+        "credit": 1,
+        "evidence": "“In daylight the reporter realized she was looking through a real window”; this “stunned her.”",
+        "reason": "Covers the daylight discovery and her shock."
+      }
+    ],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "The explanation omits that she felt watched during the night and avoided looking at the apparent portrait. It otherwise gives the central reveal; the asserted threat is unsupported but does not materially contradict the reference.",
+    "partial_score": 1.0,
+    "complete": false,
+    "label": "yes and no"
+  },
+  "elapsed_seconds": 2828.4139187920373,
+  "usage": {
+    "grader": {
+      "http_attempts": 4,
+      "successful_responses": 4,
+      "seconds": 51.000717458548024,
+      "provider_reported_usage": {
+        "input_tokens": 11969,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1447,
+        "reasoning_output_tokens": 617
+      }
+    },
+    "host": {
+      "http_attempts": 96,
+      "successful_responses": 96,
+      "seconds": 1233.5619437065907,
+      "provider_reported_usage": {
+        "input_tokens": 378994,
+        "cached_input_tokens": 169984,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8737,
+        "reasoning_output_tokens": 7067
+      }
+    },
+    "player": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 1542.9492074528243,
+      "provider_reported_usage": {
+        "input_tokens": 362444,
+        "cached_input_tokens": 151168,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 30381,
+        "reasoning_output_tokens": 26618
+      }
+    }
+  },
+  "error": null,
+  "human_review_status": "pending"
+}

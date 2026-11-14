@@ -1,0 +1,42 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "f2a351d98fd4ecd5fc78e452b8aa8840d46d65fdfde78a18acb8db9ce6b204c9",
+    "trajectory.jsonl": "ab3fc7de1927b07cf262f58a3ce74ee3bf0567dd287b7f9312d3d5d207a445da",
+    "trajectory.md": "4cc3f8dd8a02518e0858c3dbc9fdb30bbc9d0a1b73e5d54eead2b9af33317a4e",
+    "trajectory.html": "cd6e203e4066b1cabd34601682c5141c12d8dbcad5934c33f9e37d22a9635d4c",
+    "config.json": "2f478a93b148e08ef772bb1729ef0c18373ea9b3511902600a95a8bde32762cf",
+    "prompts.json": "a1dd2d2ca8afe1a9f9dd540b8c4c71b8c01679fc71e6511290d8eafffecbeaa0",
+    "puzzle_private.json": "29e954e99ae4cf044cdbb6058560998d599b9623b77eef50de93599f1faf9c85",
+    "host_context.json": "8bb2ff6f9105c5ae110ff476710d36110ed2bef53a0c3e5a7a2f42a4cc597146",
+    "pricing_snapshot.json": "64c31820443327839ce32e5128053650aacd3becf6b6746e94de79bb5620c17d",
+    "cost_summary.json": "02041939e5b0185597ff15cc8a8afb90e07b0a0ee43b3dbf3d32b7ee9051759b",
+    "token_costs.csv": "7f5ccdc0432ca9c71581787edce11502cd6f11c3a6977ce5b4bd1ffc69a9783c",
+    "human_review.csv": "8cb157094ecf743afc3ca73e9d5b55fc557b8018a0f5aa91a232b60cf33fbe87",
+    "review_template.csv": "8cb157094ecf743afc3ca73e9d5b55fc557b8018a0f5aa91a232b60cf33fbe87",
+    "transfer_metadata.json": "6e8e29fc6e7ce34ee23ce5bca7971cc88c0659591b7a419b7e4ae883635012b9",
+    "prior_experience.json": "22a81d3bd12a0630b839b1dd01ebf24ebf8034f7743a2050ea0681dca77b7d0a"
+  },
+  "api_audit": {
+    "source_raw_sha256": "afce674cb53c9e5be38a2f9cb4b18c4f5b02993374090e62588f0205691bf252",
+    "source_raw_bytes": 8208749,
+    "published_sha256": "81cb45137d22c443a40225354a48330da8c90e8a36921d8efedb4ff474f056ea",
+    "attempts": 260
+  },
+  "aliases": [
+    {
+      "source": "runs/api/2026-11-02_set1_once_resume01/continual/S1_TS028_TS013_TS028_TS013_r01_transcript",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "f2a351d98fd4ecd5fc78e452b8aa8840d46d65fdfde78a18acb8db9ce6b204c9",
+      "signature": "7bf62ebd0e8b58822c8474a4b72873a7b0795e2dbf2284abb08af29e1e7b1fb8",
+      "event_count": 257,
+      "trajectory_sha256": "ab3fc7de1927b07cf262f58a3ce74ee3bf0567dd287b7f9312d3d5d207a445da",
+      "first_submission": "2026-11-03T00:31:35.121648+00:00",
+      "first_text": "Did “all of my courses were gone” mean that the courses disappeared from the university’s online course-registration system, rather than that the classes themselves ceased to exist?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

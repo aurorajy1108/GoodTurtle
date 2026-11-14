@@ -1,0 +1,64 @@
+{
+  "status": "interrupted",
+  "stop_reason": "user_interrupt",
+  "simulation": false,
+  "success": null,
+  "host_questions": 93,
+  "final_attempts": 0,
+  "rejected_finals": 0,
+  "counted_questions": 93,
+  "submissions": 93,
+  "pending_feedback": 1,
+  "forced_final": false,
+  "final_partial_score": null,
+  "best_partial_score": null,
+  "latest_final": null,
+  "latest_grade": null,
+  "elapsed_seconds": 3998.449617374921,
+  "usage": {
+    "grader": {
+      "http_attempts": 0,
+      "successful_responses": 0,
+      "seconds": 0,
+      "provider_reported_usage": {}
+    },
+    "host": {
+      "http_attempts": 92,
+      "successful_responses": 92,
+      "seconds": 850.5708771285135,
+      "provider_reported_usage": {
+        "input_tokens": 721817,
+        "cached_input_tokens": 236544,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 14201,
+        "reasoning_output_tokens": 12603
+      }
+    },
+    "partner": {
+      "http_attempts": 93,
+      "successful_responses": 93,
+      "seconds": 1157.3890858308878,
+      "provider_reported_usage": {
+        "input_tokens": 341772,
+        "cached_input_tokens": 149504,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 25169,
+        "reasoning_output_tokens": 21524
+      }
+    },
+    "player": {
+      "http_attempts": 186,
+      "successful_responses": 186,
+      "seconds": 1987.4119078342337,
+      "provider_reported_usage": {
+        "input_tokens": 672730,
+        "cached_input_tokens": 273536,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 49761,
+        "reasoning_output_tokens": 42896
+      }
+    }
+  },
+  "error": null,
+  "human_review_status": "pending"
+}

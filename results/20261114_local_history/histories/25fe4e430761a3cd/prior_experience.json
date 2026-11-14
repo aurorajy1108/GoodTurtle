@@ -1,0 +1,307 @@
+{
+  "opening": "I am a very smart student who is very attentive in my class. I could not pass the course. Why?",
+  "history": [
+    {
+      "type": "question",
+      "text": "Was the student unable to pass because of something unrelated to their academic performance in the class?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because they did not complete a required exam or assignment, despite paying attention in class?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because they were absent from too many classes, even though they paid attention whenever they attended?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because they were not officially enrolled in the course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because they became unable to take the final assessment due to a medical or physical problem?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student prevented from passing because the course itself was cancelled or discontinued before they could complete it?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because they had not paid a required tuition fee?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because the instructor deliberately gave them a failing grade for a disciplinary reason unrelated to their academic work?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because they died before the course was completed?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the course require the student to demonstrate a practical or physical skill that attentiveness and intelligence alone could not provide?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did an administrative or clerical error cause the student to be recorded as failing despite actually meeting the course requirements?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did something outside the classroom prevent the student from receiving a passing grade, rather than cause them to perform poorly on the coursework?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did another person’s action directly cause the student to receive a failing result?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student ineligible to pass because of a personal legal or eligibility status, such as being too young or otherwise not meeting a rule for the course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to pass because they were taking the course as an observer or auditor, for whom passing was not possible?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the “course” an academic course in a school or university, rather than a nonacademic course or route?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the “course” a course of action or route that the student needed to follow, rather than an educational course?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the “course” a physical route or track that the student had to travel along?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the “course” a prescribed course of action that the student had to carry out successfully, rather than something they had to study?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the “course” a course in a competitive game or contest that the student had to complete or navigate?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the “course” a course of treatment or medication that the student was undergoing, rather than an educational course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the “course” a serving of food in a meal, rather than a class or route?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the “course” a sequence or progression of events that the student was expected to survive or endure, rather than an action they had to perform?}",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the “course” the course of a river or other flowing body of water that the student could not cross?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail to pass the river because they could not physically cross it, such as because they could not swim?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to cross the river because there was no bridge, boat, or other means of getting across?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the river too wide or dangerous for the student to cross by swimming?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the student a human person?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the student trying to reach a school or class on the opposite bank of the river?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was crossing the river itself part of a test or requirement that the student had to complete?}",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the student stranded on one side of the river and trying to reach a specific destination on the other side?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student need to cross the river in order to continue traveling toward somewhere they wanted to go?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "final",
+      "text": "The “course” was the course of a river, not an academic class. Although the student was intelligent and attentive, they could not pass it because they were on the wrong bank and had no bridge, boat, or other way across; the river was too wide and dangerous to swim.",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Was the river impassable because it was flooded or unusually swollen at that time?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to cross because the river was not physically crossable at that moment, such as being frozen, blocked, or otherwise impassable?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student trying to cross the river in order to return home?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to cross because they lacked the money or permission needed to use a privately owned crossing or other available means of transport?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to cross because they were physically confined or restrained on their side of the river?",
+      "feedback": "no"
+    },
+    {
+      "type": "final",
+      "text": "“Course” refers to the course of a river, not an academic class. The student was on one bank and needed to get to the other, but the river was too wide and dangerous to swim, and there was no bridge, boat, or other crossing available. Thus, despite being intelligent and attentive, they could not pass the river.",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to cross because the river had no ford or shallow section at the place where they encountered it?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student physically present at the river, rather than merely studying or viewing it on a map, diagram, or screen?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the student attempting to cross the river on foot, rather than using any vehicle or watercraft?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the student trying to reach a destination located on the opposite bank of the river?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the student trying to travel along the river’s course, rather than cross from one bank to the other?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student trying to cross the river at a location where the river forms an international or other political boundary?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to cross because they were afraid to enter the river?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the river too deep to be crossed safely by wading, in addition to being too wide or dangerous to swim?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the river an actual geographic river in the outside world, rather than a representation, image, or feature of an artificial setting?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the student trying to cross the river because they were fleeing from an immediate danger on their side?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to pass the river because the river was flowing in the opposite direction from the direction the student needed to travel?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student trying to pass the river by going around it rather than crossing through or over it?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to pass the river because its current was too strong for them to move against?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the student attempting to cross the river in a direction that required moving against its current?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the student attempting to cross the river by swimming?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the student attempting to cross the river using a vehicle, such as a car or bicycle?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student attempting to move upstream along the river rather than cross from one bank to the other?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student trying to cross the river by walking or swimming directly through the water without any external assistance? વ્ય",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the student attempting to cross the river using a boat or other watercraft?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to cross because they lacked the physical strength to overcome the river’s current?",
+      "feedback": "yes"
+    },
+    {
+      "type": "final",
+      "text": "“Course” refers to the course of a real river, not an academic class. The student was physically at the river and tried to cross it, but had no vehicle or boat and could not overcome the river’s strong current because they lacked the physical strength to do so. Thus, their intelligence and attentiveness were irrelevant: they simply could not pass the river.",
+      "feedback": "yes"
+    }
+  ],
+  "termination": "solved",
+  "revealed_source_answer": "I was standing in front of a river. I cannot pass the course of the river because the current is too swift and I don't have suitable equipm."
+}

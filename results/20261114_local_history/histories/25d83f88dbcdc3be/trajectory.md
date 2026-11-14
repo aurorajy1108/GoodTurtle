@@ -1,0 +1,185 @@
+# Turtle Soup trajectory
+
+I went to the pantry in my hall. The fire alarm rang. What happened?
+
+Status: error | counted questions: 30 | submissions: 30 | final partial score: None
+
+## 1 · question
+
+Did something in the pantry cause the fire alarm to activate?
+
+Host: yes
+
+## 2 · question
+
+Did food in the pantry start smoking or burn, triggering the alarm?
+
+Host: no
+
+## 3 · question
+
+Was there an actual fire somewhere in the pantry?
+
+Host: no
+
+## 4 · question
+
+Did an appliance or device in the pantry emit something that triggered the alarm, such as steam, smoke, or dust?
+
+Host: yes and no
+
+## 5 · question
+
+Was the alarm triggered by dust or another airborne particle from a non-food item in the pantry?
+
+Host: no
+
+## 6 · question
+
+Did an aerosol or other airborne chemical from something in the pantry trigger the fire alarm?
+
+Host: yes
+
+## 7 · question
+
+Did someone spray an aerosol product in the pantry, such as air freshener or insect spray, shortly before the alarm rang?
+
+Host: no
+
+## 8 · question
+
+Did opening or moving something in the pantry release an airborne chemical that set off the alarm?
+
+Host: no
+
+## 9 · question
+
+Did a chemical leak or slowly escape from a container stored in the pantry, triggering the fire alarm?
+
+Host: no
+
+## 10 · question
+
+Did a device or appliance in the pantry release the chemical that triggered the alarm?
+
+Host: yes and no
+
+## 11 · question
+
+Was the airborne chemical produced by a chemical reaction involving something in the pantry?
+
+Host: no
+
+## 12 · question
+
+Did a substance naturally evaporating from an item stored in the pantry trigger the alarm?
+
+Host: no
+
+## 13 · question
+
+Was the alarm triggered by fumes or gas released by a malfunctioning appliance or device stored in the pantry?
+
+Host: no
+
+## 14 · question
+
+Did an air-freshener device in the pantry release fragrance during its normal operation, triggering the alarm?
+
+Host: no
+
+## 15 · question
+
+Was the airborne chemical emitted as a normal byproduct of a device’s operation, rather than escaping from a stored substance?
+
+Host: yes
+
+## 16 · question
+
+Did an air purifier or ionizer in the pantry generate ozone during normal operation, which then triggered the fire alarm?
+
+Host: no
+
+## 17 · question
+
+Was the device a laser printer or photocopier that emitted ozone during normal operation?
+
+Host: no
+
+## 18 · question
+
+Was the device a fuel-burning appliance that released combustion gases during normal operation?
+
+Host: no
+
+## 19 · question
+
+Was the device charging a battery, releasing hydrogen or another gas as a normal byproduct?
+
+Host: no
+
+## 20 · question
+
+Did the device use ultraviolet light during normal operation?
+
+Host: no
+
+## 21 · question
+
+Was it an electric insect-repellent vaporizer that released insecticide into the air during normal operation?
+
+Host: no
+
+## 22 · question
+
+Was the device a humidifier that released water vapor into the air during normal operation?
+
+Host: no
+
+## 23 · question
+
+Was the device a kitchen appliance being used in the pantry when the alarm went off?
+
+Host: yes and no
+
+## 24 · question
+
+Was the device an electric kettle that released steam while boiling water, triggering the fire alarm?
+
+Host: no
+
+## 25 · question
+
+Was a microwave oven operating in the pantry when it emitted the airborne chemical that triggered the alarm?
+
+Host: yes and no
+
+## 26 · question
+
+Did the microwave emit ozone because of electrical arcing while it was operating?
+
+Host: no
+
+## 27 · question
+
+Did the microwave heat food, releasing vapors from the food that triggered the fire alarm, even though the food did not burn or smoke?
+
+Host: yes and no
+
+## 28 · question
+
+Was the microwave heating food when the alarm went off?
+
+Host: yes and no
+
+## 29 · question
+
+Did the microwave’s heating of food release fumes or volatile compounds that triggered the fire alarm?
+
+Host: yes and no
+
+## 30 · question
+
+Was the microwave operating without heating food when the alarm went off?
+
+Host: yes and no

@@ -1,0 +1,73 @@
+{
+  "id": "TS038",
+  "opening": "\"You've disappointed me so much; I'm never coming back.\" \"You've disappointed me so much; I'm never coming back.\" \"You've disappointed me so much; I'm never coming back.\" \"You've disappointed me so much; I'm never coming back.\" \"You've disappointed me so much; I'm never coming back.\" \"You've disappointed me so much; I'm never coming back.\" \"You've disappointed me so much; I'm never coming back.\"\n\nSigh, I know I'm in trouble.",
+  "answer": "I killed my wife and faked the evidence to make it look like she had simply run away from home, but no matter how many times I tried, I couldn't quite manage to imitate her handwriting.",
+  "rubric": [
+    {
+      "id": "C1",
+      "weight": 0.5,
+      "core": true,
+      "criterion": "The narrator murdered his wife and staged her disappearance as a voluntary departure.",
+      "full_credit": "All required_facts must be covered, including their causal and narrative qualifiers. Faithful paraphrases count.",
+      "half_credit": "Some required facts are covered, with no contradiction; half_credit_requires gates still apply.",
+      "zero_credit": "No required facts are covered, a fact is contradicted, or a half-credit prerequisite is missing.",
+      "points": 50.0,
+      "required_facts": [
+        "The narrator murdered his wife and staged her disappearance as a voluntary departure.",
+        "The narrator killed his wife",
+        "He tries to stage a voluntary departure with a forged leaving message"
+      ],
+      "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+    },
+    {
+      "id": "C2",
+      "weight": 0.3,
+      "core": false,
+      "criterion": "The repeated message represents attempts to forge his wife’s handwriting.",
+      "full_credit": "All required_facts must be covered, including their causal and narrative qualifiers. Faithful paraphrases count.",
+      "half_credit": "Some required facts are covered, with no contradiction; half_credit_requires gates still apply.",
+      "zero_credit": "No required facts are covered, a fact is contradicted, or a half-credit prerequisite is missing.",
+      "points": 30.0,
+      "required_facts": [
+        "The repeated message represents attempts to forge his wife’s handwriting.",
+        "The repetitions are failed attempts to imitate her handwriting, making him fear discovery"
+      ],
+      "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+    },
+    {
+      "id": "C3",
+      "weight": 0.2,
+      "core": false,
+      "criterion": "His inability to imitate her handwriting leads him to worry about being caught.",
+      "full_credit": "All required_facts must be covered, including their causal and narrative qualifiers. Faithful paraphrases count.",
+      "half_credit": "Some required facts are covered, with no contradiction; half_credit_requires gates still apply.",
+      "zero_credit": "No required facts are covered, a fact is contradicted, or a half-credit prerequisite is missing.",
+      "points": 20.0,
+      "required_facts": [
+        "His inability to imitate her handwriting leads him to worry about being caught."
+      ],
+      "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+    }
+  ],
+  "title": "重复的绝交留言",
+  "story_family": "F038",
+  "quality_status": "正常",
+  "review_notes": "",
+  "source_row": "38",
+  "observed_score": null,
+  "completion_requirements": [],
+  "annotation_version": "turtle50-v3-host-repair-20261023",
+  "annotation_status": "ai_repair_pending_human",
+  "grading_notes": "AI three-review adjudication v2, pending human confirmation. Score only this submission. Apply full_credit/half_credit/zero_credit explicitly, with zero taking precedence for a materially contradictory checkpoint claim. An omitted qualifier can be partial; replacing the core identity/cause with a wrong one is not an omission. Faithful paraphrases count. Partial score and full narrative are separate outputs. AI independent review B, pending human approval. Credit is 0/.5/1 per checkpoint. Full narrative additionally requires all sourced completion requirements and no incompatible central claims. Judge the submitted explanation, not unasserted chat guesses. Accept faithful paraphrases; missing optional detail is not a contradiction. Do not demand unknown motives, devices or events. Accept faithful paraphrase. Require the listed identities, events and causal links, not exact prose or unspecified incidental details.\nUNIFIED-V3: Only rubric.required_facts determine scored narrative coverage. Do not invent additional mandatory events from the reference or host examples. Interpretation guards prohibit unsupported assertions but never require a player to recite a disclaimer.\n",
+  "annotation_provenance": {
+    "reviewers": [
+      "a",
+      "b",
+      "c"
+    ],
+    "selected_base": "b",
+    "adjudicator": "root",
+    "human_confirmed": false
+  },
+  "grading_protocol": "coverage-v3-unified"
+}

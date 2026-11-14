@@ -1,0 +1,246 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 69,
+  "final_attempts": 31,
+  "rejected_finals": 31,
+  "counted_questions": 100,
+  "submissions": 100,
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.7,
+  "best_partial_score": 0.7,
+  "latest_final": "“Courses” meant the successive dishes at a formal banquet, not university classes. The HKU student tasted each dish, disliked its taste, and asked the banquet staff to remove it before finishing. The staff complied each time, so all the meal’s courses were gone by the end of the evening.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 1,
+        "evidence": "“Courses” meant the successive dishes at a formal banquet, not university classes.",
+        "reason": "Identifies meal courses rather than academic classes and supplies the formal dinner setting, faithfully paraphrasing a high-table dinner."
+      },
+      {
+        "id": "C2",
+        "credit": 0,
+        "evidence": "",
+        "reason": "Does not explain the deadline or connect it to expressing meal preferences."
+      },
+      {
+        "id": "C3",
+        "credit": 1,
+        "evidence": "asked the banquet staff to remove it before finishing. The staff complied each time, so all the meal’s courses were gone",
+        "reason": "The serving staff clear unfinished dishes, explicitly causing all the courses to disappear."
+      }
+    ],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Missing mandatory attendance, the meal-preference deadline, punctual arrival, the three-course detail, and clearing timed to serving each next dish. The expanded narrative’s booking confirmation is also omitted.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "covered",
+        "evidence": "“Courses” meant the successive dishes at a formal banquet, not university classes."
+      },
+      {
+        "id": "C2.F1",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "C3.F1",
+        "status": "covered",
+        "evidence": "asked the banquet staff to remove it before finishing. The staff complied each time, so all the meal’s courses were gone by the end of the evening."
+      }
+    ],
+    "requirement_coverage": [
+      {
+        "id": "R1",
+        "status": "partial",
+        "evidence": "“Courses” meant the successive dishes at a formal banquet, not university classes."
+      },
+      {
+        "id": "R2",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "R3",
+        "status": "partial",
+        "evidence": "The HKU student tasted each dish, disliked its taste, and asked the banquet staff to remove it before finishing."
+      },
+      {
+        "id": "R4",
+        "status": "partial",
+        "evidence": "asked the banquet staff to remove it before finishing. The staff complied each time, so all the meal’s courses were gone by the end of the evening."
+      }
+    ],
+    "contradictions": [],
+    "partial_score": 0.7,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v2",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 3865.7135951250093,
+  "usage": {
+    "grader": {
+      "http_attempts": 31,
+      "successful_responses": 31,
+      "seconds": 777.8499571249122,
+      "provider_reported_usage": {
+        "input_tokens": 250729,
+        "cached_input_tokens": 49152,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 27083,
+        "reasoning_output_tokens": 7962
+      }
+    },
+    "host": {
+      "http_attempts": 140,
+      "successful_responses": 140,
+      "seconds": 1827.827926875092,
+      "provider_reported_usage": {
+        "input_tokens": 1352740,
+        "cached_input_tokens": 329216,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7006,
+        "reasoning_output_tokens": 4672
+      }
+    },
+    "player": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 1258.5410745822592,
+      "provider_reported_usage": {
+        "input_tokens": 1076251,
+        "cached_input_tokens": 218240,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 26579,
+        "reasoning_output_tokens": 20902
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "total": {
+      "calls": 271,
+      "unknown_cost_calls": 0,
+      "known_estimated_cost_usd": 3.0367906,
+      "estimated_cost_usd": 3.0367906,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 2679720,
+        "cached_input_tokens": 596608,
+        "cache_write_tokens": 0,
+        "output_tokens": 60668,
+        "reasoning_tokens": 0,
+        "total_tokens": 2740388
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 271,
+        "total_tokens": 0
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "codex_cli",
+        "model": "gpt-6.1-sol",
+        "calls": 31,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.6788992,
+        "estimated_cost_usd": 0.6788992,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 250729,
+          "cached_input_tokens": 49152,
+          "cache_write_tokens": 0,
+          "output_tokens": 27083,
+          "reasoning_tokens": 0,
+          "total_tokens": 277812
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 31,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "codex_cli",
+        "model": "gpt-6.1-sol",
+        "calls": 140,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 2.1500296,
+        "estimated_cost_usd": 2.1500296,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1352740,
+          "cached_input_tokens": 329216,
+          "cache_write_tokens": 0,
+          "output_tokens": 7006,
+          "reasoning_tokens": 0,
+          "total_tokens": 1359746
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 140,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "codex_cli",
+        "model": "gpt-5.6-luna",
+        "calls": 100,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.2078618,
+        "estimated_cost_usd": 0.2078618,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1076251,
+          "cached_input_tokens": 218240,
+          "cache_write_tokens": 0,
+          "output_tokens": 26579,
+          "reasoning_tokens": 0,
+          "total_tokens": 1102830
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 100,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "evaluation_versions": {
+    "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+    "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+    "controller_sha256": "82e800578271590049e19eca916337060fba902340416c353f93b900a2098d98",
+    "host_context_sha256": "c803af7b204b713d9dc47cd4014bf561ebf46fc4f22068b0ab0ccf9b30d415d9",
+    "host_binding_version": "host-v9-human-20261102"
+  }
+}

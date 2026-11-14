@@ -1,0 +1,36 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "3ba02c00b0d5304dcfd50ddb1eab225ebc52bace7289998884e4cda3bed5de24",
+    "trajectory.jsonl": "cca51bccb170d0648c1beae3d81dd4b61c360cb02d9835edb2a264938f1a3a9f",
+    "trajectory.md": "70f7e9424cf79b9b89c47bcc72e4447d07ec809e1a32c3b22e9174a053cfd430",
+    "trajectory.html": "f2c9ce60e43c4e236a566bc2e0a4fa05c2f30b0afeed4a2437bc0bfa1a45b33e",
+    "config.json": "af79d8f1af842d47a7cd0d251ee130ba2bcfa7a50fa1dd8bf8cdd443d411721f",
+    "prompts.json": "77501f946e5b59e400b7e0a48f2911d688062b6c2f6c25e0caab2e1a574a6344",
+    "puzzle_private.json": "f8e59ec492f389bd23df99b5cc00aa35e5c9d732e3445a4a5e829a9c9655e2d2",
+    "human_review.csv": "11086a7354b3bf34f6105fbcf5eba8552025d50f7ad6fd25b364739592a59c3e",
+    "review_template.csv": "11086a7354b3bf34f6105fbcf5eba8552025d50f7ad6fd25b364739592a59c3e"
+  },
+  "api_audit": {
+    "source_raw_sha256": "8ce046b3c70f5eec20038a468f007554d391b0fe7de10bba077833d35fecab44",
+    "source_raw_bytes": 456531,
+    "published_sha256": "b96da6c239a62dffe7b6623ac28d73c6e2bfb8e820b08ddf4936824c11262fe4",
+    "attempts": 71
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261022_codex_pilot/positive/G07_TS022_TS047_r02_source",
+      "status_as_recorded": "error",
+      "simulation": false,
+      "submissions": 35,
+      "result_sha256": "3ba02c00b0d5304dcfd50ddb1eab225ebc52bace7289998884e4cda3bed5de24",
+      "signature": "6000a46b061de2510a95fbcfae3014abe37a92213526d2c7a7cbffbcaddde973",
+      "event_count": 72,
+      "trajectory_sha256": "cca51bccb170d0648c1beae3d81dd4b61c360cb02d9835edb2a264938f1a3a9f",
+      "first_submission": "2026-10-22T15:10:09.337854+00:00",
+      "first_text": "Was the strange thing she noticed something inside the house?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

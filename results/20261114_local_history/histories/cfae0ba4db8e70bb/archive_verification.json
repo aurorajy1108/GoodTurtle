@@ -1,0 +1,49 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "34b86354f1ccb6ad893b58f6475d9796bd0f6ce1404367d5f96cdb3b46b3f185",
+    "trajectory.jsonl": "8c6c926b25e29d6dfa6ccb6666856a908b2ed9a7f35d5c3e5a366bc3822d8e13",
+    "trajectory.md": "23cedc5a205ea6cb0c7cb307e67cac9b6a494d7b4fd661298ea12c1d6a482eb7",
+    "trajectory.html": "508fbc968bbe6c077e98edbbeb6f7a7827dedece106b257de6872aaaded8541e",
+    "config.json": "4307cf3c715247acc8faf9d322125607962ba66e56d5980b57d841ccb930bc1e",
+    "prompts.json": "2293fcad2d75c545b454f5ac0b351c8f0d0b635d59ed01a87e246365943d699f",
+    "puzzle_private.json": "c01a39bd4b8af6fb50d2f9bed46102d70dfc3b607728363b47501821cf04f406",
+    "host_context.json": "a9be0c92867631e3a6030e94c7bb2add9c4a322a04ac7697c64dccc9deef3db1",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "0a3fdde5e02a39bbfd5dea2afbce6b9ce2479134e71d8df316bc7b00195cca23",
+    "cost_summary.json": "651634e1652dfbbc217c7a730fdfd205ea40ee98e1eea3e9a8db16111dfa6d0f",
+    "token_costs.csv": "7e8e14c320619e0c091a7e3b81527f6ed89fbf619041710c4a8e7795290f11c1",
+    "human_review.csv": "b65f55a38b4e305003b0a2dd1edfabf47092a0fd78882f5cd45d001193383944",
+    "review_template.csv": "8dc78c257fcae2b3b5f63db908f4e47987c7c2ac817bc0d41d183c7e6a708003",
+    "shared_dialogue.jsonl": "24315a6dbe6706765e2c7bc1196784008cbb89e8a8eee5c2de828db0165ed10a",
+    "shared_dialogue.html": "2efff6d9f3c0b1526321d661fbfa2f3c2a3e3ea3b5b21f6a637be262532a4192",
+    "dialogue_metrics.json": "334ec0cad681b13626904c4b18da4be0b7cfa1484e38079d876e7cbaa97c1965",
+    "dialogue_policy.json": "bef6bb0e727602dd5a00821ae0a6847992bf1eab6d8a3c8fe0681779e9753c5d",
+    "collaboration.jsonl": "bfd0e751e1c6ffe29168a25a1c8c3ba3db1fa6db4e55a941c49367233407747d",
+    "self_review.html": "8197609cc45bc565358471ef0e71a1825b5c20771422a7042873ceac735ae6d0",
+    "solver_compute.json": "b0700d02e727dbdecd45cd8dacaee0aaf6c07b3b196f0eed9cb0c56875020dfc",
+    "transport_read_window.json": "b1677e795de1a2f01885a1b0b99b9192ea1dd58fe3b6dbf57f83b67aa5444edb"
+  },
+  "api_audit": {
+    "source_raw_sha256": "4f4c61b1665864da4e2a70988106393c25513b39b98a224d9a71902759903041",
+    "source_raw_bytes": 43452603,
+    "published_sha256": "f05444296912b78423dbc2b0f0d32fa8113ae26633d485fa86b5d2b1a6d9d46b",
+    "attempts": 269
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261112_ts038_compute_matched_2x2_v7_read_window/TS038_r01_mas_review",
+      "status_as_recorded": "error",
+      "simulation": false,
+      "submissions": 79,
+      "result_sha256": "34b86354f1ccb6ad893b58f6475d9796bd0f6ce1404367d5f96cdb3b46b3f185",
+      "signature": "cfae0ba4db8e70bb306822cc87226cb258f30ba2d8725fc32902ff057d4d4c91",
+      "event_count": 928,
+      "trajectory_sha256": "8c6c926b25e29d6dfa6ccb6666856a908b2ed9a7f35d5c3e5a366bc3822d8e13",
+      "first_submission": "2026-11-12T12:43:30.666976+00:00",
+      "first_text": "Was the repeated line spoken by a non-human animal (such as a parrot)?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

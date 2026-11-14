@@ -1,0 +1,565 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-11-14T03:37:23.424293+00:00",
+  "human_confirmed": false,
+  "physical_archives": 131,
+  "physical_submissions": 12631,
+  "distinct_raw_trajectory_sha256": 131,
+  "raw_byte_duplicate_groups": [],
+  "distinct_timestamped_submission_histories": 130,
+  "distinct_text_type_label_histories": 130,
+  "unique_experimental_observations": 130,
+  "unique_experimental_submissions": 12531,
+  "confirmed_observational_aliases": [
+    {
+      "canonical_archive_id": "coworker_legacy_set2::round2::S2_TS033_TS034_TS033_TS034_r01_source",
+      "members": [
+        "coworker_legacy_set2::round2::S2_TS033_TS034_TS033_TS034_r01_source",
+        "coworker_other::2026-11-13_ts033_ts034_extra2__S2_TS033_TS034_TS033_TS034_r02_source"
+      ],
+      "timestamped_submission_events_sha256": "627248142fea64a69a5709c36d71a9594831a5d51b803f2d0d826ab47b07dc5e",
+      "same_result_and_frozen_context": true,
+      "same_full_trajectory_except_source_answer_reveal": true,
+      "same_question_text_type_labels": true,
+      "submissions_each": 100,
+      "extra_physical_archives": 1,
+      "extra_physical_submissions": 100,
+      "event_counts_by_archive": {
+        "coworker_legacy_set2::round2::S2_TS033_TS034_TS033_TS034_r01_source": {
+          "start": 1,
+          "session_open": 6,
+          "session_turn": 203,
+          "submission": 100,
+          "reference_selection": 100,
+          "host_review": 99,
+          "host_feedback": 99,
+          "player_format_recovery": 45,
+          "error": 3,
+          "session_close": 12,
+          "player_format_reprompt": 3,
+          "resume": 3,
+          "session_reopen": 6,
+          "session_restored": 6,
+          "evaluation": 1,
+          "source_answer_reveal": 3
+        },
+        "coworker_other::2026-11-13_ts033_ts034_extra2__S2_TS033_TS034_TS033_TS034_r02_source": {
+          "start": 1,
+          "session_open": 6,
+          "session_turn": 203,
+          "submission": 100,
+          "reference_selection": 100,
+          "host_review": 99,
+          "host_feedback": 99,
+          "player_format_recovery": 45,
+          "error": 3,
+          "session_close": 12,
+          "player_format_reprompt": 3,
+          "resume": 3,
+          "session_reopen": 6,
+          "session_restored": 6,
+          "evaluation": 1,
+          "source_answer_reveal": 14
+        }
+      },
+      "api_archive_hashes": [
+        {
+          "archive_id": "coworker_legacy_set2::round2::S2_TS033_TS034_TS033_TS034_r01_source",
+          "compressed_file_sha256": "a26a380c6e2bc36029f2e98d0037e18f018f93538fac1bdf15478942ea58921b",
+          "decompressed_sha256": "d2056acc93f6f3e25acb3b7aa8398abb02f61e9d7044c4bc0518442ebdc30f20"
+        },
+        {
+          "archive_id": "coworker_other::2026-11-13_ts033_ts034_extra2__S2_TS033_TS034_TS033_TS034_r02_source",
+          "compressed_file_sha256": "bbc58d634b2a54a12a77cbe73cbb0e3b5cea1faee52e81e82202eb4df2d3d25f",
+          "decompressed_sha256": "d2056acc93f6f3e25acb3b7aa8398abb02f61e9d7044c4bc0518442ebdc30f20"
+        }
+      ],
+      "reason": "Same 100 timestamped submission events, observed labels, result, puzzle and host; only later answer-reveal bookkeeping differs. Not an independent source replicate."
+    }
+  ],
+  "shared_timestamped_submission_events": [
+    {
+      "a": "coworker_legacy_set2::round2::S2_TS033_TS034_TS033_TS034_r01_source",
+      "b": "coworker_other::2026-11-13_ts033_ts034_extra2__S2_TS033_TS034_TS033_TS034_r02_source",
+      "shared_events": 100
+    }
+  ],
+  "source_exposure_clusters": [
+    {
+      "cohort": "local_cl_set1_fixed_prefix_r1r4",
+      "source_puzzle_id": "TS014",
+      "physical_source_archives_in_cohort": [
+        "local_cl::S1_TS014_TS013_TS014_TS013_r01_source"
+      ],
+      "source_canonical_observations_in_cohort": [
+        "local_cl::S1_TS014_TS013_TS014_TS013_r01_source"
+      ],
+      "source_canonical_archives_verified_from_inheritance": [
+        "local_cl::S1_TS014_TS013_TS014_TS013_r01_source"
+      ],
+      "target_exposures": 8,
+      "target_conditions": {
+        "answer_only": 4,
+        "session": 4
+      },
+      "target_archives": [
+        "local_cl::S1_TS014_TS013_TS014_TS013_r01_answer_only",
+        "local_cl::S1_TS014_TS013_TS014_TS013_r01_session",
+        "local_cl::S1_TS014_TS013_TS014_TS013_r02_answer_only",
+        "local_cl::S1_TS014_TS013_TS014_TS013_r02_session",
+        "local_cl::S1_TS014_TS013_TS014_TS013_r03_answer_only",
+        "local_cl::S1_TS014_TS013_TS014_TS013_r03_session",
+        "local_cl::S1_TS014_TS013_TS014_TS013_r04_answer_only",
+        "local_cl::S1_TS014_TS013_TS014_TS013_r04_session"
+      ],
+      "note": "Repeated exposure to one fixed A does not create independent A observations. Direct controls contain no A exposure; never duplicate a common control once per A."
+    },
+    {
+      "cohort": "local_cl_set1_fixed_prefix_r1r4",
+      "source_puzzle_id": "TS015",
+      "physical_source_archives_in_cohort": [
+        "local_cl::S1_TS015_TS013_TS015_TS013_r02_source"
+      ],
+      "source_canonical_observations_in_cohort": [
+        "local_cl::S1_TS015_TS013_TS015_TS013_r02_source"
+      ],
+      "source_canonical_archives_verified_from_inheritance": [
+        "local_cl::S1_TS015_TS013_TS015_TS013_r02_source"
+      ],
+      "target_exposures": 8,
+      "target_conditions": {
+        "answer_only": 4,
+        "session": 4
+      },
+      "target_archives": [
+        "local_cl::S1_TS015_TS013_TS015_TS013_r01_answer_only",
+        "local_cl::S1_TS015_TS013_TS015_TS013_r01_session",
+        "local_cl::S1_TS015_TS013_TS015_TS013_r02_answer_only",
+        "local_cl::S1_TS015_TS013_TS015_TS013_r02_session",
+        "local_cl::S1_TS015_TS013_TS015_TS013_r03_answer_only",
+        "local_cl::S1_TS015_TS013_TS015_TS013_r03_session",
+        "local_cl::S1_TS015_TS013_TS015_TS013_r04_answer_only",
+        "local_cl::S1_TS015_TS013_TS015_TS013_r04_session"
+      ],
+      "note": "Repeated exposure to one fixed A does not create independent A observations. Direct controls contain no A exposure; never duplicate a common control once per A."
+    },
+    {
+      "cohort": "local_cl_set1_fixed_prefix_r1r4",
+      "source_puzzle_id": "TS028",
+      "physical_source_archives_in_cohort": [
+        "local_cl::S1_TS028_TS013_TS028_TS013_r01_source"
+      ],
+      "source_canonical_observations_in_cohort": [
+        "local_cl::S1_TS028_TS013_TS028_TS013_r01_source"
+      ],
+      "source_canonical_archives_verified_from_inheritance": [
+        "local_cl::S1_TS028_TS013_TS028_TS013_r01_source"
+      ],
+      "target_exposures": 8,
+      "target_conditions": {
+        "answer_only": 4,
+        "session": 4
+      },
+      "target_archives": [
+        "local_cl::S1_TS028_TS013_TS028_TS013_r01_answer_only",
+        "local_cl::S1_TS028_TS013_TS028_TS013_r01_session",
+        "local_cl::S1_TS028_TS013_TS028_TS013_r02_answer_only",
+        "local_cl::S1_TS028_TS013_TS028_TS013_r02_session",
+        "local_cl::S1_TS028_TS013_TS028_TS013_r03_answer_only",
+        "local_cl::S1_TS028_TS013_TS028_TS013_r03_session",
+        "local_cl::S1_TS028_TS013_TS028_TS013_r04_answer_only",
+        "local_cl::S1_TS028_TS013_TS028_TS013_r04_session"
+      ],
+      "note": "Repeated exposure to one fixed A does not create independent A observations. Direct controls contain no A exposure; never duplicate a common control once per A."
+    },
+    {
+      "cohort": "coworkers_set2_v17_fixed_sources_r01_r05",
+      "source_puzzle_id": "TS012",
+      "physical_source_archives_in_cohort": [
+        "coworkers::sources/TS012_source_r01"
+      ],
+      "source_canonical_observations_in_cohort": [
+        "coworkers::sources/TS012_source_r01"
+      ],
+      "source_canonical_archives_verified_from_inheritance": [
+        "coworkers::sources/TS012_source_r01"
+      ],
+      "target_exposures": 10,
+      "target_conditions": {
+        "answer_only": 5,
+        "session": 5
+      },
+      "target_archives": [
+        "coworkers::games/TS034_TS012_answer_only_r01",
+        "coworkers::games/TS034_TS012_answer_only_r02",
+        "coworkers::games/TS034_TS012_answer_only_r03",
+        "coworkers::games/TS034_TS012_answer_only_r04",
+        "coworkers::games/TS034_TS012_answer_only_r05",
+        "coworkers::games/TS034_TS012_session_r01",
+        "coworkers::games/TS034_TS012_session_r02",
+        "coworkers::games/TS034_TS012_session_r03",
+        "coworkers::games/TS034_TS012_session_r04",
+        "coworkers::games/TS034_TS012_session_r05"
+      ],
+      "note": "Repeated exposure to one fixed A does not create independent A observations. Direct controls contain no A exposure; never duplicate a common control once per A."
+    },
+    {
+      "cohort": "coworkers_set2_v17_fixed_sources_r01_r05",
+      "source_puzzle_id": "TS033",
+      "physical_source_archives_in_cohort": [
+        "coworkers::sources/TS033_source_r01"
+      ],
+      "source_canonical_observations_in_cohort": [
+        "coworkers::sources/TS033_source_r01"
+      ],
+      "source_canonical_archives_verified_from_inheritance": [
+        "coworkers::sources/TS033_source_r01"
+      ],
+      "target_exposures": 10,
+      "target_conditions": {
+        "answer_only": 5,
+        "session": 5
+      },
+      "target_archives": [
+        "coworkers::games/TS034_TS033_answer_only_r01",
+        "coworkers::games/TS034_TS033_answer_only_r02",
+        "coworkers::games/TS034_TS033_answer_only_r03",
+        "coworkers::games/TS034_TS033_answer_only_r04",
+        "coworkers::games/TS034_TS033_answer_only_r05",
+        "coworkers::games/TS034_TS033_session_r01",
+        "coworkers::games/TS034_TS033_session_r02",
+        "coworkers::games/TS034_TS033_session_r03",
+        "coworkers::games/TS034_TS033_session_r04",
+        "coworkers::games/TS034_TS033_session_r05"
+      ],
+      "note": "Repeated exposure to one fixed A does not create independent A observations. Direct controls contain no A exposure; never duplicate a common control once per A."
+    },
+    {
+      "cohort": "coworkers_set2_v17_fixed_sources_r01_r05",
+      "source_puzzle_id": "TS035",
+      "physical_source_archives_in_cohort": [
+        "coworkers::sources/TS035_source_r01"
+      ],
+      "source_canonical_observations_in_cohort": [
+        "coworkers::sources/TS035_source_r01"
+      ],
+      "source_canonical_archives_verified_from_inheritance": [
+        "coworkers::sources/TS035_source_r01"
+      ],
+      "target_exposures": 10,
+      "target_conditions": {
+        "answer_only": 5,
+        "session": 5
+      },
+      "target_archives": [
+        "coworkers::games/TS034_TS035_answer_only_r01",
+        "coworkers::games/TS034_TS035_answer_only_r02",
+        "coworkers::games/TS034_TS035_answer_only_r03",
+        "coworkers::games/TS034_TS035_answer_only_r04",
+        "coworkers::games/TS034_TS035_answer_only_r05",
+        "coworkers::games/TS034_TS035_session_r01",
+        "coworkers::games/TS034_TS035_session_r02",
+        "coworkers::games/TS034_TS035_session_r03",
+        "coworkers::games/TS034_TS035_session_r04",
+        "coworkers::games/TS034_TS035_session_r05"
+      ],
+      "note": "Repeated exposure to one fixed A does not create independent A observations. Direct controls contain no A exposure; never duplicate a common control once per A."
+    },
+    {
+      "cohort": "coworker_legacy_set2_round1",
+      "source_puzzle_id": "TS012",
+      "physical_source_archives_in_cohort": [
+        "coworker_legacy_set2::round1::S2_TS012_TS034_TS012_TS034_r01_source"
+      ],
+      "source_canonical_observations_in_cohort": [
+        "coworker_legacy_set2::round1::S2_TS012_TS034_TS012_TS034_r01_source"
+      ],
+      "source_canonical_archives_verified_from_inheritance": [
+        "coworker_legacy_set2::round1::S2_TS012_TS034_TS012_TS034_r01_source"
+      ],
+      "target_exposures": 2,
+      "target_conditions": {
+        "answer_only": 1,
+        "session": 1
+      },
+      "target_archives": [
+        "coworker_legacy_set2::round1::S2_TS012_TS034_TS012_TS034_r01_answer_only",
+        "coworker_legacy_set2::round1::S2_TS012_TS034_TS012_TS034_r01_session"
+      ],
+      "note": "Repeated exposure to one fixed A does not create independent A observations. Direct controls contain no A exposure; never duplicate a common control once per A."
+    },
+    {
+      "cohort": "coworker_legacy_set2_round1",
+      "source_puzzle_id": "TS033",
+      "physical_source_archives_in_cohort": [
+        "coworker_legacy_set2::round1::S2_TS033_TS034_TS033_TS034_r01_source"
+      ],
+      "source_canonical_observations_in_cohort": [
+        "coworker_legacy_set2::round1::S2_TS033_TS034_TS033_TS034_r01_source"
+      ],
+      "source_canonical_archives_verified_from_inheritance": [
+        "coworker_legacy_set2::round1::S2_TS033_TS034_TS033_TS034_r01_source"
+      ],
+      "target_exposures": 2,
+      "target_conditions": {
+        "answer_only": 1,
+        "session": 1
+      },
+      "target_archives": [
+        "coworker_legacy_set2::round1::S2_TS033_TS034_TS033_TS034_r01_answer_only",
+        "coworker_legacy_set2::round1::S2_TS033_TS034_TS033_TS034_r01_session"
+      ],
+      "note": "Repeated exposure to one fixed A does not create independent A observations. Direct controls contain no A exposure; never duplicate a common control once per A."
+    },
+    {
+      "cohort": "coworker_legacy_set2_round1",
+      "source_puzzle_id": "TS035",
+      "physical_source_archives_in_cohort": [
+        "coworker_legacy_set2::round1::S2_TS035_TS034_TS035_TS034_r01_source"
+      ],
+      "source_canonical_observations_in_cohort": [
+        "coworker_legacy_set2::round1::S2_TS035_TS034_TS035_TS034_r01_source"
+      ],
+      "source_canonical_archives_verified_from_inheritance": [
+        "coworker_legacy_set2::round1::S2_TS035_TS034_TS035_TS034_r01_source"
+      ],
+      "target_exposures": 2,
+      "target_conditions": {
+        "answer_only": 1,
+        "session": 1
+      },
+      "target_archives": [
+        "coworker_legacy_set2::round1::S2_TS035_TS034_TS035_TS034_r01_answer_only",
+        "coworker_legacy_set2::round1::S2_TS035_TS034_TS035_TS034_r01_session"
+      ],
+      "note": "Repeated exposure to one fixed A does not create independent A observations. Direct controls contain no A exposure; never duplicate a common control once per A."
+    },
+    {
+      "cohort": "coworker_legacy_set2_round2",
+      "source_puzzle_id": "TS012",
+      "physical_source_archives_in_cohort": [
+        "coworker_legacy_set2::round2::S2_TS012_TS034_TS012_TS034_r01_source"
+      ],
+      "source_canonical_observations_in_cohort": [
+        "coworker_legacy_set2::round2::S2_TS012_TS034_TS012_TS034_r01_source"
+      ],
+      "source_canonical_archives_verified_from_inheritance": [
+        "coworker_legacy_set2::round2::S2_TS012_TS034_TS012_TS034_r01_source"
+      ],
+      "target_exposures": 2,
+      "target_conditions": {
+        "answer_only": 1,
+        "session": 1
+      },
+      "target_archives": [
+        "coworker_legacy_set2::round2::S2_TS012_TS034_TS012_TS034_r01_answer_only",
+        "coworker_legacy_set2::round2::S2_TS012_TS034_TS012_TS034_r01_session"
+      ],
+      "note": "Repeated exposure to one fixed A does not create independent A observations. Direct controls contain no A exposure; never duplicate a common control once per A."
+    },
+    {
+      "cohort": "coworker_legacy_set2_round2",
+      "source_puzzle_id": "TS033",
+      "physical_source_archives_in_cohort": [
+        "coworker_legacy_set2::round2::S2_TS033_TS034_TS033_TS034_r01_source"
+      ],
+      "source_canonical_observations_in_cohort": [
+        "coworker_legacy_set2::round2::S2_TS033_TS034_TS033_TS034_r01_source"
+      ],
+      "source_canonical_archives_verified_from_inheritance": [
+        "coworker_legacy_set2::round2::S2_TS033_TS034_TS033_TS034_r01_source"
+      ],
+      "target_exposures": 2,
+      "target_conditions": {
+        "answer_only": 1,
+        "session": 1
+      },
+      "target_archives": [
+        "coworker_legacy_set2::round2::S2_TS033_TS034_TS033_TS034_r01_answer_only",
+        "coworker_legacy_set2::round2::S2_TS033_TS034_TS033_TS034_r01_session"
+      ],
+      "note": "Repeated exposure to one fixed A does not create independent A observations. Direct controls contain no A exposure; never duplicate a common control once per A."
+    },
+    {
+      "cohort": "coworker_legacy_set2_round2",
+      "source_puzzle_id": "TS035",
+      "physical_source_archives_in_cohort": [
+        "coworker_legacy_set2::round2::S2_TS035_TS034_TS035_TS034_r01_source"
+      ],
+      "source_canonical_observations_in_cohort": [
+        "coworker_legacy_set2::round2::S2_TS035_TS034_TS035_TS034_r01_source"
+      ],
+      "source_canonical_archives_verified_from_inheritance": [
+        "coworker_legacy_set2::round2::S2_TS035_TS034_TS035_TS034_r01_source"
+      ],
+      "target_exposures": 2,
+      "target_conditions": {
+        "answer_only": 1,
+        "session": 1
+      },
+      "target_archives": [
+        "coworker_legacy_set2::round2::S2_TS035_TS034_TS035_TS034_r01_answer_only",
+        "coworker_legacy_set2::round2::S2_TS035_TS034_TS035_TS034_r01_session"
+      ],
+      "note": "Repeated exposure to one fixed A does not create independent A observations. Direct controls contain no A exposure; never duplicate a common control once per A."
+    },
+    {
+      "cohort": "coworker_other_2026-11-13_ts033_ts034_extra2",
+      "source_puzzle_id": "TS033",
+      "physical_source_archives_in_cohort": [
+        "coworker_other::2026-11-13_ts033_ts034_extra2__S2_TS033_TS034_TS033_TS034_r02_source"
+      ],
+      "source_canonical_observations_in_cohort": [
+        "coworker_legacy_set2::round2::S2_TS033_TS034_TS033_TS034_r01_source"
+      ],
+      "source_canonical_archives_verified_from_inheritance": [
+        "coworker_legacy_set2::round2::S2_TS033_TS034_TS033_TS034_r01_source"
+      ],
+      "target_exposures": 4,
+      "target_conditions": {
+        "answer_only": 2,
+        "session": 2
+      },
+      "target_archives": [
+        "coworker_other::2026-11-13_ts033_ts034_extra2__S2_TS033_TS034_TS033_TS034_r01_answer_only",
+        "coworker_other::2026-11-13_ts033_ts034_extra2__S2_TS033_TS034_TS033_TS034_r01_session",
+        "coworker_other::2026-11-13_ts033_ts034_extra2__S2_TS033_TS034_TS033_TS034_r02_answer_only",
+        "coworker_other::2026-11-13_ts033_ts034_extra2__S2_TS033_TS034_TS033_TS034_r02_session"
+      ],
+      "note": "Repeated exposure to one fixed A does not create independent A observations. Direct controls contain no A exposure; never duplicate a common control once per A."
+    }
+  ],
+  "historical_baseline_imports": [
+    {
+      "archive_id": "coworker_legacy_set2::round1::S2_TS033_TS034_TS033_TS034_r01_direct",
+      "path": "/Users/tongmindy/Desktop/COMP1110/gp-comp1110/GoodTurtle/runs/api/20261111_191242_set2_first_round_v12_baseline",
+      "block": "S2_TS033_TS034_TS033_TS034_r01",
+      "trajectory_sha256": "63fd23fa8e0e6701683c38433a215f6865b12bd57c60cbad83168c27c34f3704",
+      "result_sha256": "cce238f12d70e4bf91b594baa8a9f7b974ee38d199015a808551bc1cc9df8258",
+      "reason": "Historical direct baseline was completed before the source game and includes audited recoveries; inspect frozen versions before interpreting comparisons.",
+      "within_131_same_raw_hash_matches": [
+        "coworker_legacy_set2::round1::S2_TS033_TS034_TS033_TS034_r01_direct"
+      ],
+      "note": "Imported historical baseline is present once in this inventory; deduplicate again if its earlier standalone publication is added."
+    }
+  ],
+  "same_observation_AI_review_disagreements": [
+    {
+      "a": "coworker_legacy_set2::round2::S2_TS033_TS034_TS033_TS034_r01_source",
+      "b": "coworker_other::2026-11-13_ts033_ts034_extra2__S2_TS033_TS034_TS033_TS034_r02_source",
+      "differing_AI_review_rows": [
+        {
+          "submission": 8,
+          "question": "Was the \"one million yen\" not his own money but something he was obliged to carry and deliver, such as a ransom or payment?",
+          "actual_label": "yes and no",
+          "a_verdict": "ok",
+          "a_recommended_label_raw": null,
+          "a_effective_recommendation": "yes and no",
+          "a_reason": "非本人钱为假，交款义务为真，独立组合适合混合；不能由此排除赎款。",
+          "b_verdict": "ambiguous",
+          "b_recommended_label_raw": null,
+          "b_effective_recommendation": "yes and no",
+          "b_reason": "own money的否定错误，但义务支付/赎金分支正确，yes and no合理；应该拆问而不是以9问确认自己的钱就放弃ransom。",
+          "verdict_difference": true,
+          "effective_label_difference": false,
+          "interpretation": "AI review emphasis or ambiguity characterization differs; both preserve the original label. This is not a gold-label conflict.",
+          "human_confirmed": false
+        },
+        {
+          "submission": 40,
+          "question": "Did the added cash serve a practical purpose other than theft protection—for example, was it added so the bag would be the right weight or shape for some physical use?",
+          "actual_label": "yes",
+          "a_verdict": "ok",
+          "a_recommended_label_raw": null,
+          "a_effective_recommendation": "yes",
+          "a_reason": "目的不只是防钱被抢，而是使绑匪误信赎款真假以免本人遇袭；“比如weight/shape”不限定泛类practical purpose，yes可成立但不确认重量支线。",
+          "b_verdict": "ambiguous",
+          "b_recommended_label_raw": null,
+          "b_effective_recommendation": "yes",
+          "b_reason": "除了防普通盗窃之外确有伪装赎金目的，weight/shape只是for example；yes没有确认重量/支撑物理用途，Player接着过度沿这些例子查。",
+          "verdict_difference": true,
+          "effective_label_difference": false,
+          "interpretation": "AI review emphasis or ambiguity characterization differs; both preserve the original label. This is not a gold-label conflict.",
+          "human_confirmed": false
+        },
+        {
+          "submission": 57,
+          "question": "Was the unavoidable situation one where the bag would be inspected or weighed—for example, at an airport, bank, or official checkpoint—so he added cash to make the bag's physical appearance plausible?",
+          "actual_label": "no",
+          "a_verdict": "ok",
+          "a_recommended_label_raw": null,
+          "a_effective_recommendation": "no",
+          "a_reason": "本问所提替代身份、事件或因果机制与该局冻结故事不符，拒绝完整命题合理。冻结故事：女儿被绑索5000万，父亲为省钱用白纸内芯真钞外皮伪装，真实仅100万；怕查穿后挨袭，换顶层全真钞掩盖下层假包，非把全部纸都换真。",
+          "b_verdict": "ambiguous",
+          "b_recommended_label_raw": "yes and no",
+          "b_effective_recommendation": "yes and no",
+          "b_reason": "广义检查场景与kidnapper superficial inspection相符，机场/银行只是for example；若把示例误当限定而No，会过度排除正确检查方向。来源只规定担忧可能检查，不保证实际检查。",
+          "verdict_difference": true,
+          "effective_label_difference": true,
+          "interpretation": "AI audit recommendation difference requiring adjudication; no source relabeling applied.",
+          "human_confirmed": false
+        },
+        {
+          "submission": 83,
+          "question": "Was the added cash put into the bag at a different time than the one million yen—for instance, added later so the bag would always appear to contain roughly the same thing?",
+          "actual_label": "yes",
+          "a_verdict": "ok",
+          "a_recommended_label_raw": null,
+          "a_effective_recommendation": "yes",
+          "a_reason": "先备100万真钞+白纸包、后换顶层真钞，added later成立；例子保持相似外观不能推成经常携同一袋的行为习惯。",
+          "b_verdict": "ambiguous",
+          "b_recommended_label_raw": null,
+          "b_effective_recommendation": "yes",
+          "b_reason": "后加现金的顺序正确，但always appear roughly same不是确认日常固定现金习惯；89再次因真正习惯假设而No。",
+          "verdict_difference": true,
+          "effective_label_difference": false,
+          "interpretation": "AI review emphasis or ambiguity characterization differs; both preserve the original label. This is not a gold-label conflict.",
+          "human_confirmed": false
+        },
+        {
+          "submission": 93,
+          "question": "Was the added cash ever meant to be seen by another person (such as a criminal, official, or onlooker), or was it purely for his own handling of the bag?",
+          "actual_label": "yes",
+          "a_verdict": "ok",
+          "a_recommended_label_raw": null,
+          "a_effective_recommendation": "yes",
+          "a_reason": "问句核心主张受到该局冻结故事或普通语义蕴含支持，肯定可成立。冻结故事：女儿被绑索5000万，父亲为省钱用白纸内芯真钞外皮伪装，真实仅100万；怕查穿后挨袭，换顶层全真钞掩盖下层假包，非把全部纸都换真。",
+          "b_verdict": "ambiguous",
+          "b_recommended_label_raw": "yes",
+          "b_effective_recommendation": "yes",
+          "b_reason": "这是双选问而非标准yes/no，yes可保留为确认“给他人看”分支，但不能把它当同时肯定purely own handling。",
+          "verdict_difference": true,
+          "effective_label_difference": false,
+          "interpretation": "AI review emphasis or ambiguity characterization differs; both preserve the original label. This is not a gold-label conflict.",
+          "human_confirmed": false
+        },
+        {
+          "submission": 100,
+          "question": "The company president had been mugged and thereafter avoided carrying large sums. But an unavoidable situation forced him to carry exactly one million yen in a bag. He feared that if criminals learned the bag held one million yen, they would attack him for it—so he added more of his own cash.\n\nThe key, established through the questioning: the one million yen was his own money (Questions 9), and the extra cash served a practical purpose other than merely protecting the money from thieves—specifically it was meant to be seen by another person, in particular a criminal, who would draw a specific conclusion from seeing it (Questions 40, 90, 93, 94). Weight and bulk were irrelevant (Question 77), and the cash was added after the one million yen was already in the bag, not before (Questions 83, 84). All straightforward \"make the amount look smaller/different\" and \"hide the million under decoys\" theories were ruled out.\n\nThe reconstruction that best fits these confirmed facts: by adding cash so the bag visibly held more than the single, conspicuous million-yen bundle, the president made the bag present itself to any would-be robber as a larger, mixed, ordinary commercial load rather than as the specific one-million-yen prize. The extra cash was there to be *seen*—to shape what a criminal concluded from the bag's visible contents—so that the million yen would no longer stand out as the obvious, targeted sum, and the president would not be singled out for the attack he feared. He traded losing a visible portion of extra cash for not being attacked over the identifiable million.\n\nI acknowledge uncertainty: roughly forty early probes on disguising the amount were rejected, and the exact conclusion the criminal was meant to draw was not fully isolated before the mandatory final. The core explanation rests on the confirmed facts that the added cash was his own, added after the million, practical rather than weight-based, and deliberately meant to be seen by a criminal to change his assessment of the bag.",
+          "actual_label": "no",
+          "a_verdict": "ok",
+          "a_recommended_label_raw": null,
+          "a_effective_recommendation": "no",
+          "a_reason": "逐项比对本次FINAL的评分事实和独立完成要求；部分覆盖/未完成的公开反馈可成立。冻结故事：女儿被绑索5000万，父亲为省钱用白纸内芯真钞外皮伪装，真实仅100万；怕查穿后挨袭，换顶层全真钞掩盖下层假包，非把全部纸都换真。",
+          "b_verdict": "ambiguous",
+          "b_recommended_label_raw": null,
+          "b_effective_recommendation": "no",
+          "b_reason": "末卷没有绑架、五千万赎金、空白纸假钞束或真实上层遮盖，0分合理；还把90的No当正支持。官方A答案随后仍被揭晓，不能重抽“成功A”修饰设计。",
+          "verdict_difference": true,
+          "effective_label_difference": false,
+          "interpretation": "AI review emphasis or ambiguity characterization differs; both preserve the original label. This is not a gold-label conflict.",
+          "human_confirmed": false
+        }
+      ],
+      "normalization": "A null recommended_label means preserve actual_label. It is equivalent to explicitly recommending actual_label; these representation differences are omitted.",
+      "note": "Same source, independent AI audit emphasis; not extra experimental samples, human adjudication or gold-label conflicts. Q8/Q40 ambiguity specifically concerns compound-question interpretation and solver over-inference, while preserving the observed label."
+    }
+  ],
+  "rules": [
+    "A whole-file SHA256 is an archival identity, not a sufficient experimental independence test: appended answer reveals change it.",
+    "Collapse only the confirmed shared timestamped submission stream, matching labels, unchanged result and frozen contexts. Do not collapse different runs merely because the same puzzle/story is used.",
+    "Repeated A-prefix/answer exposure does not multiply the number of independent source plays.",
+    "An error attempt remains an audited archive, but is excluded from completed denominators.",
+    "A pre-published imported direct baseline is not a post-A run. A common direct control is counted once, not once per source comparison."
+  ]
+}

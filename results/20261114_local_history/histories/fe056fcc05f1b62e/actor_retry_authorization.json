@@ -1,0 +1,13 @@
+{
+  "calls_count": 12,
+  "calls_sha256": "6d96d3ede6548006b65187b931e7a73967dbd182fa6fa1330a3dc7283a3f2ae4",
+  "request_sha256": "9ff1b5bb9c5aa7f33373be583a241077a6ab25ac06600d6cbc3b1d32513e3146",
+  "role": "player",
+  "authorization": "user_requested_same_request_retry",
+  "additional_attempts": 1,
+  "possible_duplicate_generation": true,
+  "possible_duplicate_remote_charge": true,
+  "reserved_unobserved_output_tokens": 2048,
+  "reason": "User explicitly requested same-request retries on 2026-11-13, preserving original checkpoints and recording possible duplicate generation and charge.",
+  "authorized_at": "2026-11-13T13:54:33.377925+00:00"
+}

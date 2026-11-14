@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "currency": "USD",
+  "basis": "standard_api_equivalent_not_actual_bill",
+  "estimate_assumptions": [
+    "peak_rate_reference_upper_estimate; off-peak rates are half; actual billing unknown"
+  ],
+  "total": {
+    "calls": 219,
+    "unknown_cost_calls": 2,
+    "known_estimated_cost_usd": 0.734240884,
+    "estimated_cost_usd": null,
+    "actual_billed_cost_usd": null,
+    "tokens": {
+      "input_tokens": 6359392,
+      "cached_input_tokens": 6208128,
+      "cache_write_tokens": 0,
+      "output_tokens": 183181,
+      "reasoning_tokens": 125153,
+      "total_tokens": 6542573
+    },
+    "missing_token_calls": {
+      "input_tokens": 2,
+      "cached_input_tokens": 2,
+      "cache_write_tokens": 0,
+      "output_tokens": 2,
+      "reasoning_tokens": 148,
+      "total_tokens": 2
+    }
+  },
+  "by_role_model": [
+    {
+      "role": "grader",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "calls": 10,
+      "unknown_cost_calls": 0,
+      "known_estimated_cost_usd": 0.15571248,
+      "estimated_cost_usd": 0.15571248,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 82093,
+        "cached_input_tokens": 69120,
+        "cache_write_tokens": 0,
+        "output_tokens": 34229,
+        "reasoning_tokens": 27284,
+        "total_tokens": 116322
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "role": "host",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "calls": 62,
+      "unknown_cost_calls": 1,
+      "known_estimated_cost_usd": 0.450007888,
+      "estimated_cost_usd": null,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 804616,
+        "cached_input_tokens": 783872,
+        "cache_write_tokens": 0,
+        "output_tokens": 98014,
+        "reasoning_tokens": 97869,
+        "total_tokens": 902630
+      },
+      "missing_token_calls": {
+        "input_tokens": 1,
+        "cached_input_tokens": 1,
+        "cache_write_tokens": 0,
+        "output_tokens": 1,
+        "reasoning_tokens": 1,
+        "total_tokens": 1
+      }
+    },
+    {
+      "role": "partner",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "calls": 53,
+      "unknown_cost_calls": 0,
+      "known_estimated_cost_usd": 0.051362568,
+      "estimated_cost_usd": 0.051362568,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 1604402,
+        "cached_input_tokens": 1552128,
+        "cache_write_tokens": 0,
+        "output_tokens": 21973,
+        "reasoning_tokens": 0,
+        "total_tokens": 1626375
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 53,
+        "total_tokens": 0
+      }
+    },
+    {
+      "role": "player",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "calls": 94,
+      "unknown_cost_calls": 1,
+      "known_estimated_cost_usd": 0.077157948,
+      "estimated_cost_usd": null,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 3868281,
+        "cached_input_tokens": 3803008,
+        "cache_write_tokens": 0,
+        "output_tokens": 28965,
+        "reasoning_tokens": 0,
+        "total_tokens": 3897246
+      },
+      "missing_token_calls": {
+        "input_tokens": 1,
+        "cached_input_tokens": 1,
+        "cache_write_tokens": 0,
+        "output_tokens": 1,
+        "reasoning_tokens": 94,
+        "total_tokens": 1
+      }
+    }
+  ]
+}

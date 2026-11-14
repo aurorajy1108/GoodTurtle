@@ -1,0 +1,507 @@
+{
+  "opening": "I am a very smart student who is very attentive in my class. I could not pass the course. Why?",
+  "history": [
+    {
+      "type": "question",
+      "text": "Did the student fail because of something they did or failed to do during the course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because of an error made by someone other than the student?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail despite attending class and being attentive because of a rule or policy of the course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student enrolled in the wrong course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail the course because of a physical or mental condition affecting them at the time of an exam or assessment?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because the course was graded on something other than academic performance, such as attendance or participation?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because of a misunderstanding about which class or section they were supposed to be in?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because they were unable to take or complete the final exam or a required assessment?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because of a mistake in how their work was recorded, graded, or submitted?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the student's failure related to the fact that they are a student in a class with other students?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because the course required something the student was not permitted to do or could not access outside of class?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student actually attending the correct class physically, but their enrollment records did not reflect it?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because they were attending the class but were not actually enrolled in it?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail the course even though they understood and learned the material well?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the \"course\" a formal academic class at a school or university?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the \"course\" a series of medical treatments?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the \"course\" a meal course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the \"course\" a race or route?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to pass the course because the race or route itself was impossible or couldn't be completed?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student attending the class as a spectator or observer of a race, rather than as a participant?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is \"pass the course\" here meaning to overtake or go past the race route/obstacle?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the \"course\" a golf course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the race or route a course in a sport other than golf?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the \"course\" a nautical route or sailing course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did I misunderstand earlier—when the host said \"course\" was a race/route, was that a misleading confirmation? Specifically, is the \"course\" here actually the academic class after all?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the student a human being?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Is the \"class\" an academic classroom setting?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Is the word \"course\" in the opening referring to the academic class, while my earlier \"yes\" that it was a race/route was about a different word (e.g., \"course\" in a different sense elsewhere)?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the student a non-human entity, such as an AI or animal?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail the academic course because of a scheduling or timing issue, such as the class they attended being held at a different time than their actual course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because the course they were enrolled in was taught in a language they did not understand, even though they attended attentively?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because they were never actually registered for the course whose class they attended?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the student a person who is \"very smart\" and \"attentive\" but who is being figuratively described—for example, the \"student\" is actually a racehorse?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the student a real human taking a driver's education or racing course where \"pass\" means to overtake?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the student blind or visually impaired?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because they were enrolled in a course but attended a different class that they thought was the same course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the \"class\" a social class or category rather than a lesson?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because the exam or assessment tested material that was never taught in the class they attentively attended?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because of their own actions or choices, rather than circumstances outside their control?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the word \"pass\" here not about passing/failing the course academically, but about physically passing something (like passing a test of another kind)?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Does \"pass the course\" mean to physically go past or overtake while on the race/route?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Does \"pass\" mean to be successful in a test or examination (i.e., academically tested), while \"the course\" means something other than the academic course?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Is the \"course\" here the student's academic course of study (a program), rather than a single class?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Does \"pass\" here refer to passing a physical exam or medical test rather than an academic one?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the \"course\" a literal path or track the student must physically traverse?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Is the student physically unable to traverse the course (e.g., because of a physical disability or barrier), even though they attend class attentively?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Is this the paradox of a school where the graduation requirement is to physically pass through or cross a course/obstacle, but the student—despite being smart and attentive in class—cannot do so?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the course a physical obstacle course (like an assault course) that the student must physically complete to pass the class?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the student's failure due to a physical barrier of their own body—such as being too large, too small, or otherwise physically unable to fit or navigate the course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Does the physical course require the student to swim or cross water?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because they never learned to swim, despite being attentive in class?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the class a swimming class, where the \"course\" is a swimming course/stroke?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the student unable to swim because they are a non-human animal that cannot swim—yet they are \"attentive in class\" as a pet or trained animal?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the student physically a person but the \"course\" they must pass is a water hazard/obstacle as part of a physical test they must perform to graduate from this class?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Is the class a driver's education or driving class, and the \"course\" a driving course/route?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Does the physical course involve a body of water that the student must cross by bridge, boat, or similar—related to the class subject?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Is the class a physical education or swimming-related class where students must demonstrate swimming to pass?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the class a geography or earth science class, and \"the course\" a river or waterway being studied?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Is the class a test of the student's ability to physically reach or access the class/exam location, where the route (course) requires crossing water?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Does the student fail because they can attend the class (lectures) easily, but the lab or practical exam is held across a body of water the student cannot cross?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the student enrolled in a course that requires completing a physical journey or expedition along a water route as part of the assessment?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Does the student miss or cannot complete the exam because a body of water physically blocks their route to the exam location?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the class a class in a subject like oceanography or marine biology where students study a waterway, and \"pass the course\" refers to the waterway (the \"course\" of a river) rather than the class?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Does the word \"course\" in \"pass the course\" refer to a waterway (as in the course of a river)?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Does \"pass the course\" mean to navigate or travel along the waterway (the river's course)?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Does \"pass the course\" mean to be located alongside or to flow past the waterway?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Does \"pass the course\" mean successfully passing a test or exam about the waterway/river?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is \"the course\" here grammatically the object of \"pass\" in the sense of a school subject named after a river (e.g., \"The Amazon\" course)?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Does the student need to cross the waterway/river to physically get to their class or school?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the student unable to \"pass the course\" because they cannot swim or cross the river, even though the course itself is academic (so I mistakenly separated words)?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the student unable to pass the course because they are a vessel or object that is physically stuck or too large to travel the waterway?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the reason the student can't pass the course tied to a physical disability that specifically prevents swimming, even though the student otherwise attends class attentively?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the \"class\" being attended in a building or room that is named after or located on a river/waterway, and the student must cross that waterway to reach the exam?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Does the student attend the class faithfully, but their actual enrollment is in a different class that occurs across a waterway they cannot cross?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because the waterway/course (e.g., a river) changed its path or no longer exists, making something invalid?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the student attending the class aboard a boat or ship that travels the waterway?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is \"the course\" (the waterway) unrelated to the class the student attends—i.e., they're two separate things in the story?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Is the student physically unable to \"pass\" the waterway because they are on foot and there is no bridge, while the class is something else entirely?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Does the student's failure involve both the class and the waterway as part of a single cause?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the \"waterway/course\" something the student must deal with, but the class the student attends is irrelevant to it?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Is the phrase \"pass the course\" being used in its normal sense—passing an academic class—despite \"course\" separately also meaning a waterway?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Does the class and the waterway share the same name (e.g., the class is about the river of the same name)?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Is the student at a maritime or naval academy, where passing a physical water route is a graduation requirement?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is \"the course\" a race course for a water-based race (like a rowing or swimming race)?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Does \"the course\" in the opening involve water?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Does \"pass the course\" mean the student lets water flow past or through them?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Does \"the course\" refer to the course of an illness or medical condition?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is \"the course\" a water channel/path (like a riverbed or canal) that carries flowing water?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Is the student someone who operates or controls flow in this water channel (e.g., a canal lock keeper or dam operator)?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the student deaf or hard of hearing?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Is the statement about water physically flowing along its course—i.e., \"the water could not pass the course\"—rather than about the student passing a class?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is \"the course\" the course of a stream that has dried up or been blocked, causing a problem for the student?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is \"pass\" here a mountain pass (a route through mountains) rather than the verb \"to pass\"?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is \"pass\" here a noun—a permit, ticket, or authorization—rather than a verb?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the fact that the student is smart and attentive in class irrelevant to why they failed?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Is the reason the student failed something that had nothing to do with intelligence or attention—a purely physical or external circumstance?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Does the student fail because they cannot cross the river/waterway to physically reach where the exam or class takes place?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the student's physical limitation the inability to swim?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the student's physical inability due to being a wheelchair user or having a mobility impairment?",
+      "feedback": "no"
+    },
+    {
+      "type": "final",
+      "text": "The student is a human who is genuinely smart and pays close attention in class, but intelligence and attentiveness turned out to be irrelevant to the outcome. The failure was caused by an external, purely physical circumstance, not by anything the student did or failed to do in the coursework, not by a grading or enrollment error, and not by a physical or mental condition affecting them during an assessment.\n\nThe wordplay centers on the word \"course.\" In the answer, \"course\" refers to a water channel—a river's or stream's course—not the academic class the student attends. The host confirmed that the course involves water and is a channel carrying flowing water, and that this waterway is separate from the class. The student physically could not pass (traverse/cross) this water channel, and the host confirmed the student was physically unable to traverse it and that the crossing would require water/swimming.\n\nSo the causal story is: the student was a dedicated, capable student in class, but something external and physical involving a waterway (a river course/channel) prevented them from completing the required crossing. Because the crossing could not be made, the student could not \"pass the course,\" and therefore failed—despite their intelligence and attentiveness having no bearing on the reason. I was unable to pin down the exact specific circumstance (e.g., flooding, a missing bridge) within the remaining budget, but the core hidden trick is that \"the course\" is a literal water channel the student could not physically get across, while the classroom performance was a red herring.",
+      "feedback": "yes and no"
+    }
+  ],
+  "termination": "budget_exhausted",
+  "revealed_source_answer": "I was standing in front of a river. I cannot pass the course of the river because the current is too swift and I don't have suitable equipm."
+}

@@ -1,0 +1,61 @@
+{
+  "id": "TS012",
+  "opening": "I went to the pantry in my hall. The fire alarm rang. What happened?",
+  "answer": "I cooked food with a very high temperature (without burning the food) in the pantry. However, I forgot to turn on the exhaust fan. Since the smoke detecter in the building is very sensitive, the grease fumes triggered the fire alarm.",
+  "rubric": [
+    {
+      "id": "C1",
+      "weight": 0.5,
+      "core": true,
+      "criterion": "High-temperature cooking produces fumes triggering the alarm, not burning food.",
+      "full_credit": "High-temperature cooking produces fumes triggering the alarm, not burning food.",
+      "half_credit": "Cooking grease fumes identified, but high temperature or explicitly unburnt food omitted. Frying alone does not establish unusually high temperature.",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+      "points": 50.0
+    },
+    {
+      "id": "C2",
+      "weight": 0.3,
+      "core": false,
+      "criterion": "The exhaust fan was not turned on.",
+      "full_credit": "The exhaust fan was not turned on.",
+      "half_credit": "No half credit: exhaust fan off is atomic",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+      "points": 30.0
+    },
+    {
+      "id": "C3",
+      "weight": 0.2,
+      "core": false,
+      "criterion": "A sensitive smoke detector is activated by the fumes.",
+      "full_credit": "A sensitive smoke detector is activated by the fumes.",
+      "half_credit": "Detector identified without smoke sensitivity",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+      "points": 20.0
+    }
+  ],
+  "title": "厨房火警：烹饪",
+  "story_family": "F-FIRE-ALARM",
+  "quality_status": "同题不同解",
+  "review_notes": "与17、18题题面完全相同，但答案不同",
+  "source_row": "12",
+  "observed_score": null,
+  "completion_requirements": [
+    "The narrator cooks at high temperature in the pantry without burning the food",
+    "The exhaust fan was not switched on",
+    "Cooking grease fumes trigger a sensitive smoke detector and the fire alarm"
+  ],
+  "annotation_version": "turtle50-v2-three-review-2026-10-23",
+  "annotation_status": "ai_three_review_adjudicated_pending_human",
+  "grading_notes": "AI three-review adjudication v2, pending human confirmation. Score only this submission. Apply full_credit/half_credit/zero_credit explicitly, with zero taking precedence for a materially contradictory checkpoint claim. An omitted qualifier can be partial; replacing the core identity/cause with a wrong one is not an omission. Faithful paraphrases count. Partial score and full narrative are separate outputs. AI independent review B, pending human approval. Credit is 0/.5/1 per checkpoint. Full narrative additionally requires all sourced completion requirements and no incompatible central claims. Judge the submitted explanation, not unasserted chat guesses. Accept faithful paraphrases; missing optional detail is not a contradiction. Do not demand unknown motives, devices or events. Accept faithful paraphrase. Require the listed identities, events and causal links, not exact prose or unspecified incidental details.",
+  "annotation_provenance": {
+    "reviewers": [
+      "a",
+      "b",
+      "c"
+    ],
+    "selected_base": "b",
+    "adjudicator": "root",
+    "human_confirmed": false
+  }
+}

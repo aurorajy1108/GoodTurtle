@@ -1,0 +1,39 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "7ff9d76a49ce229dd514a6610fd75b4975c863ab340ce2f8e1d0a06a6061d2d9",
+    "trajectory.jsonl": "b03ebb2a5fa683296434328090e8828785bd4211f0daab55f53b15721d40961e",
+    "trajectory.md": "1226243f43f21042f027220759376e7e373714b0cb524beb1c68350fb049dfdc",
+    "trajectory.html": "4bf79afbf0768d18fecfc4c9bf07cdc7245f409eb3c88ed056110b4ca0dac4eb",
+    "config.json": "a014f81ea9e104679e8f092a1f109161aea61071386b2e945a24be08c367d75c",
+    "partner_config.json": "489a968c9ed96d8e89aa0c6dcd2216c2a2dd1c4b68415ba6cf332611cf340f1c",
+    "prompts.json": "229c9b162e1ccad47a332ecc5b8130273ed37b2e3e8db9c7ce9edb23ca50061c",
+    "puzzle_private.json": "2fd616e37e47136b862a34614ca35e6c6f9f8a739d42f2f92b0ea1c089142212",
+    "host_context.json": "695473af1e85f3895d5ffdf5af98797af76d00494373fbba5c059d93502d7334",
+    "human_review.csv": "54cec4330cd231a6da8e7e228a5fd6434da0f6ea8d01e1b382246882a6a69f60",
+    "review_template.csv": "54cec4330cd231a6da8e7e228a5fd6434da0f6ea8d01e1b382246882a6a69f60",
+    "collaboration.jsonl": "3e3a2f1c940e548744735c23d1148745235df918de3c1654cacbae12acf38a7d"
+  },
+  "api_audit": {
+    "source_raw_sha256": "6059e08db0241e630ccb8e4398a1fb5283a381a790e6f781794db993fb49cca5",
+    "source_raw_bytes": 13970817,
+    "published_sha256": "b9bd7fa17c451dfe111fbc2e4c519155618236e2c5e0e83c9544dccc6b2a1a5f",
+    "attempts": 400
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261023_three_review_rerun/team/TS031_r01_discuss",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "7ff9d76a49ce229dd514a6610fd75b4975c863ab340ce2f8e1d0a06a6061d2d9",
+      "signature": "9d2e6f02e9fc01325e1e1b76c027ddb9cbd1f88ea147178e01bc131278721a31",
+      "event_count": 201,
+      "trajectory_sha256": "b03ebb2a5fa683296434328090e8828785bd4211f0daab55f53b15721d40961e",
+      "first_submission": "2026-10-23T10:55:27.260489+00:00",
+      "first_text": "Was the message transferred from a mark already on the eraser when A pressed it onto the paper?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

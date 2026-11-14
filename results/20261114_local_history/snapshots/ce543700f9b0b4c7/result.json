@@ -1,0 +1,191 @@
+{
+  "status": "error",
+  "stop_reason": "ProtocolError",
+  "simulation": false,
+  "success": null,
+  "host_questions": 24,
+  "final_attempts": 1,
+  "rejected_finals": 0,
+  "counted_questions": 24,
+  "submissions": 25,
+  "player_format_corrections": [],
+  "pending_feedback": 1,
+  "forced_final": false,
+  "final_partial_score": null,
+  "best_partial_score": null,
+  "latest_final": "The man was in a multi-storey parking garage. His car was 30 meters away in the sense of being on a different floor, and an elevator carried him most of that distance. When the elevator reached the floor where his car was parked, he was only a few steps from the car, so he needed just five steps to get in.",
+  "latest_grade": null,
+  "elapsed_seconds": 230.0945287499344,
+  "usage": {
+    "grader": {
+      "http_attempts": 1,
+      "successful_responses": 1,
+      "seconds": 49.55524987494573,
+      "provider_reported_usage": {
+        "prompt_tokens": 3902,
+        "completion_tokens": 6405,
+        "total_tokens": 10307,
+        "prompt_cache_hit_tokens": 2176,
+        "prompt_cache_miss_tokens": 1726
+      }
+    },
+    "host": {
+      "http_attempts": 24,
+      "successful_responses": 24,
+      "seconds": 149.3624689585995,
+      "provider_reported_usage": {
+        "prompt_tokens": 138224,
+        "completion_tokens": 13831,
+        "total_tokens": 152055,
+        "prompt_cache_hit_tokens": 132736,
+        "prompt_cache_miss_tokens": 5488
+      }
+    },
+    "player": {
+      "http_attempts": 25,
+      "successful_responses": 25,
+      "seconds": 30.91801757994108,
+      "provider_reported_usage": {
+        "prompt_tokens": 63233,
+        "completion_tokens": 516,
+        "total_tokens": 63749,
+        "prompt_cache_hit_tokens": 58240,
+        "prompt_cache_miss_tokens": 4993
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "estimate_assumptions": [
+      "peak_rate_reference_upper_estimate; off-peak rates are half; actual billing unknown"
+    ],
+    "total": {
+      "calls": 50,
+      "unknown_cost_calls": 0,
+      "known_estimated_cost_usd": 0.098059708,
+      "estimated_cost_usd": 0.098059708,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 205359,
+        "cached_input_tokens": 193152,
+        "cache_write_tokens": 0,
+        "output_tokens": 20752,
+        "reasoning_tokens": 19829,
+        "total_tokens": 226111
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 25,
+        "total_tokens": 0
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 1,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.027737864,
+        "estimated_cost_usd": 0.027737864,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 3902,
+          "cached_input_tokens": 2176,
+          "cache_write_tokens": 0,
+          "output_tokens": 6405,
+          "reasoning_tokens": 6046,
+          "total_tokens": 10307
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 24,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.067855304,
+        "estimated_cost_usd": 0.067855304,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 138224,
+          "cached_input_tokens": 132736,
+          "cache_write_tokens": 0,
+          "output_tokens": 13831,
+          "reasoning_tokens": 13783,
+          "total_tokens": 152055
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 25,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.00246654,
+        "estimated_cost_usd": 0.00246654,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 63233,
+          "cached_input_tokens": 58240,
+          "cache_write_tokens": 0,
+          "output_tokens": 516,
+          "reasoning_tokens": 0,
+          "total_tokens": 63749
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 25,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": "Invalid evaluator fields",
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "83936ed7-8148-4396-bc63-b70897fbdb30",
+      "9d2ea632-0977-4ab7-80e8-2d6bf5124339",
+      "a4f4a6c2-73a7-4a63-b887-6e0c56dc5258"
+    ],
+    "logical_input_chars": 131201,
+    "delta_input_chars": 28811,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "30cf65018ae290c9e7e0f0fad12082e953571ed7f48c01497dbdb182c2a47b2a",
+    "grading_sha256": "67b2733a506e84b947a42c22de5a31ee346966bde9689bfcc8d6547977c0b693",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v3-unified",
+    "prompts_sha256": "533fed2879c5bee42d2b3da39a93449c142c58f51a3c16cb8bdd87a66efb2c8c",
+    "controller_sha256": "b82a635b09c45c89835b3659c8ec60926b9f8cfe01966c210f464cc247dda831",
+    "player_format_policy_sha256": "fbe0c8e24192584b0d306318bcd4cfa37f899a558d0db9f139e23de30fbc9e19",
+    "host_context_sha256": "d06e8827b0011aa3a4b99507fc8046d3ab9563114e57cab2ee03fa0e585f7aba",
+    "host_binding_version": "host-v5.1-20261023"
+  }
+}

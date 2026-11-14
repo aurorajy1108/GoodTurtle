@@ -1,0 +1,40 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "59dba7480498c6cec330e9acd10f5c953cb883f48ff9f8adf0ed88881d775fb9",
+    "trajectory.jsonl": "61ff09be3e7b5fe4ec5c88633cf30aab6f85fca4c7da527fcbe42dd2ec736596",
+    "trajectory.md": "557e02bf079a02fb6bf33559d211118b80d00611fc9344d6598e238bb60a8f66",
+    "trajectory.html": "a758e03cdb754c916e599b51d0651588870d5471f1e3994f2314429f789f380d",
+    "config.json": "2f478a93b148e08ef772bb1729ef0c18373ea9b3511902600a95a8bde32762cf",
+    "prompts.json": "e435cae9a3407f827f9739e8dcceaa108287cf79ef118d4ad496edfdec1d5b81",
+    "puzzle_private.json": "b1c69c4db95e2279cc8972e3b68d76291d9518a2f7c306619dbb37a204b5574e",
+    "host_context.json": "8f235fc20be67ee92e7960123d947f4a0473dd8db366ded6d93fa14a56e3aab0",
+    "pricing_snapshot.json": "64c31820443327839ce32e5128053650aacd3becf6b6746e94de79bb5620c17d",
+    "cost_summary.json": "86c77f52006f8721bc74f4d53aecaea70eee5da9c3832d271ec0ebfedb971737",
+    "token_costs.csv": "aba75b6247400d7b4ce4b7ad03177e497e25f84416f584ae32b538deeebe9047",
+    "human_review.csv": "ba7e99c0ea42ec8f69027f7ed2e29fd81d035da64c20d3719727ff8ae32fb77e",
+    "review_template.csv": "ba7e99c0ea42ec8f69027f7ed2e29fd81d035da64c20d3719727ff8ae32fb77e"
+  },
+  "api_audit": {
+    "source_raw_sha256": "9f7d351350027a9b7acf780f2c8a621d09b1489e0dab51d3eda10955584b81ee",
+    "source_raw_bytes": 17861079,
+    "published_sha256": "ddbd2653c0b593907307f684240ddb65a49b43bf1d3598e5890c400c9149eace",
+    "attempts": 290
+  },
+  "aliases": [
+    {
+      "source": "runs/api/2026-11-02_ts038_team_once_resume01/team/TS038_r01_solo",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "59dba7480498c6cec330e9acd10f5c953cb883f48ff9f8adf0ed88881d775fb9",
+      "signature": "331fd96059a368665391d834c1d66b0cb6b2af44531da82a530863f056285f0e",
+      "event_count": 290,
+      "trajectory_sha256": "61ff09be3e7b5fe4ec5c88633cf30aab6f85fca4c7da527fcbe42dd2ec736596",
+      "first_submission": "2026-11-02T16:31:42.850815+00:00",
+      "first_text": "Are the repeated statements being made by different people, rather than one person saying the same sentence multiple times?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

@@ -1,0 +1,37 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "6b0a430de4d110c39263508afcdbc3a284fc93e9a296e9eed8c7b4ca2bd5e5da",
+    "trajectory.jsonl": "bc0dc04ce596c9c2ef27f38a0671d2cebd3f6e5f78e25afbb0d30cc858c98177",
+    "trajectory.md": "bdc4711585c190ceaa33b305f4ed3705ba071080b9f6e8cea3b62486d24899c9",
+    "trajectory.html": "70ae3dbf30688e92d83bccc2c5d27644994faeda6a872e272b6536692fd03bf3",
+    "config.json": "a014f81ea9e104679e8f092a1f109161aea61071386b2e945a24be08c367d75c",
+    "prompts.json": "b09d2cf2b79c213d00edfc08f1360e3a6e17b95214b96f57d7c1e30290695558",
+    "puzzle_private.json": "0e9983e3851f8b979096dcba0ce52bcb4409ec4e62eda45530b2f9585dac7e85",
+    "host_context.json": "b9bd35167db22b6cfd8b080a8dfe77619e1a96dd14e4aa38d6dad14e0d686ff1",
+    "human_review.csv": "d267b85377dcb99810948529ba9200491813f39b868184d3dacba7baf5a6c0c3",
+    "review_template.csv": "d267b85377dcb99810948529ba9200491813f39b868184d3dacba7baf5a6c0c3"
+  },
+  "api_audit": {
+    "source_raw_sha256": "d0b596c101add5a7789190b5d75e744794c12352e4e9afc355120953aa4e3104",
+    "source_raw_bytes": 7805171,
+    "published_sha256": "5a2f6532bd0979685e0488f24b88ce8dc6d3e3eb1de38e501c3ea6732556a0d5",
+    "attempts": 312
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261024_host_v5_small/batches/TS036/TS036_r01_solo",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "6b0a430de4d110c39263508afcdbc3a284fc93e9a296e9eed8c7b4ca2bd5e5da",
+      "signature": "a965fa5d67f8a07aa34a4b1feebd4d284b3f99f839a446f415714861088ded39",
+      "event_count": 298,
+      "trajectory_sha256": "bc0dc04ce596c9c2ef27f38a0671d2cebd3f6e5f78e25afbb0d30cc858c98177",
+      "first_submission": "2026-10-23T17:03:48.293801+00:00",
+      "first_text": "Are Kameda and Umio both people?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

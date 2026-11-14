@@ -1,0 +1,43 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "d81f18d3122c713c1c18ccb05241203c99e66e38ba062b70fc81b8c1060430e0",
+    "trajectory.jsonl": "35bbad97b710991de916f24a7c90e85866cbb65f67d8c534ec8b6d1c482c1dcd",
+    "trajectory.md": "fc9db3528e4c8703a58c4b39e5ef10959b48c5a95f02e7c9c4e176d2a570562d",
+    "trajectory.html": "cd47c8f9520222e7bab479f3d31cc6707e4bc230b69f9675079d795ad9d453f0",
+    "config.json": "4307cf3c715247acc8faf9d322125607962ba66e56d5980b57d841ccb930bc1e",
+    "prompts.json": "a9dba37a156716f526e0d9a31a06fc4baea1abfbe4ba7028933a716384597a2e",
+    "puzzle_private.json": "29e954e99ae4cf044cdbb6058560998d599b9623b77eef50de93599f1faf9c85",
+    "host_context.json": "699185720c8010aa01be314332377a1b8915dd67d4d09bd5d1df1e291b5257be",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "0a3fdde5e02a39bbfd5dea2afbce6b9ce2479134e71d8df316bc7b00195cca23",
+    "cost_summary.json": "229a74a982a4d0766d65fdbcedf26e4701cb8238990120ff7ac23740ab991aae",
+    "token_costs.csv": "a459e7bb4a311ee51437ef8dee278b0b3f7ea4c46b764151a8adcb5c82c465c6",
+    "human_review.csv": "c4b9b7bc55d869df90888425aa74ad027c8233d50022b1b08903a78a02623b54",
+    "review_template.csv": "c4b9b7bc55d869df90888425aa74ad027c8233d50022b1b08903a78a02623b54",
+    "transfer_metadata.json": "82897b5373712896ef45fa6e0dcfcdd147aaf60ad586bd0bf19571f56a2ab114",
+    "player_continuation.json": "2965f8259dccfb5340e3ee2c33a1a57a0476d76600c5cac5865d64395a2a2546"
+  },
+  "api_audit": {
+    "source_raw_sha256": "9ace430f8299c5ffa3f8604513b406c339a0915f1932d7e1eddaff321ab4727d",
+    "source_raw_bytes": 517586,
+    "published_sha256": "ece6d64edf6c182b294d5c9df6dbf14e50dd3eae460d845f2355bb198804b1b6",
+    "attempts": 7
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261111_live_smoke_v2_cl_resume01/continual/S1_TS015_TS013_TS015_TS013_r01_session",
+      "status_as_recorded": "error",
+      "simulation": false,
+      "submissions": 3,
+      "result_sha256": "d81f18d3122c713c1c18ccb05241203c99e66e38ba062b70fc81b8c1060430e0",
+      "signature": "995f08e2e825425d556a381d205e0fa2c9a9dfded02d12e1574868855eaa7ce7",
+      "event_count": 28,
+      "trajectory_sha256": "35bbad97b710991de916f24a7c90e85866cbb65f67d8c534ec8b6d1c482c1dcd",
+      "first_submission": "2026-11-11T11:18:59.677908+00:00",
+      "first_text": "Were the student's courses gone because someone else—such as another student or a person—removed or took them?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

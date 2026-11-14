@@ -1,0 +1,39 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "e22e213cf84bd4a1d5ad7e142343a221dadb8a657b493d570f603eb20c380892",
+    "trajectory.jsonl": "90893059dfb5d809a779e2b79670d1d283ae168f470a3a8b4f0b2bbf8c5afd66",
+    "trajectory.md": "3c1292bb6a7da7d318e4898a21ea07936c6cd8bb48c6ad7a6494d6f3a6566f68",
+    "trajectory.html": "e815e8ef18c73b9a006a4cb878c5fa26b6729195431556ace15cd542420cba9a",
+    "config.json": "08d2187c28075d0a59d9a14953c08f5f094edb9fd06fccbe50633dbf2bea2d01",
+    "partner_config.json": "489a968c9ed96d8e89aa0c6dcd2216c2a2dd1c4b68415ba6cf332611cf340f1c",
+    "prompts.json": "0a3f1cbcc4d8a896fe50dd7047766bb101587948339862672eeda6e4c3c9ad8f",
+    "puzzle_private.json": "4a603f1a8037298666a80654beabae712df1efa54fcc1b41f2b3175dd5e89617",
+    "host_context.json": "98c01bf9f6150e473257e7bb79bfa899e4078f04a225d15e8dcae8b8e7eb00eb",
+    "human_review.csv": "660e1651566e9a7d396887d13d7e928449e32ff1613a267d601d5819f82012e0",
+    "review_template.csv": "660e1651566e9a7d396887d13d7e928449e32ff1613a267d601d5819f82012e0",
+    "collaboration.jsonl": "3ac8007e91c46c730cbb7d38ba90571e7cae6ca55f77d57033c420b19a622938"
+  },
+  "api_audit": {
+    "source_raw_sha256": "b4f38927bf56ee66d755b4a1379dd80ccb66c32bdbbfd2b46eae47356407487b",
+    "source_raw_bytes": 9500493,
+    "published_sha256": "9520b9a869dddfa01a5c226600c9715b3803316505961fbaf617a17e4b9e15fe",
+    "attempts": 300
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261024_repair_v6_study/games/batches/TS023/TS023_r02_shared_buffer",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "e22e213cf84bd4a1d5ad7e142343a221dadb8a657b493d570f603eb20c380892",
+      "signature": "77f3618b981c334bd2aa51327b628143aff9dee89ab440d641a0f22255b15bbf",
+      "event_count": 300,
+      "trajectory_sha256": "90893059dfb5d809a779e2b79670d1d283ae168f470a3a8b4f0b2bbf8c5afd66",
+      "first_submission": "2026-10-24T08:08:55.611496+00:00",
+      "first_text": "Is the man aboard a vessel at sea when he strikes the match?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

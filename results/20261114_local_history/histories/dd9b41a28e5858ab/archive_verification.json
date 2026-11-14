@@ -1,0 +1,42 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "fd2986b416593c77f23e900529b8da7f7f2cf4e7e7d01f2d82c15cb0042c582c",
+    "trajectory.jsonl": "84c1a87afb747088919cd591434fed86d9ce318434285b63139796dfa2490d6b",
+    "trajectory.md": "aabe678a1e51777d97c6260e652a21b292dfefc513f6a60800d7330a1af8d4fb",
+    "trajectory.html": "c201941e44735d7e1a19c66bdbb62c4958e6e298ebd4b7ec9f6292ee582c4507",
+    "config.json": "2f478a93b148e08ef772bb1729ef0c18373ea9b3511902600a95a8bde32762cf",
+    "prompts.json": "a1dd2d2ca8afe1a9f9dd540b8c4c71b8c01679fc71e6511290d8eafffecbeaa0",
+    "puzzle_private.json": "29e954e99ae4cf044cdbb6058560998d599b9623b77eef50de93599f1faf9c85",
+    "host_context.json": "8bb2ff6f9105c5ae110ff476710d36110ed2bef53a0c3e5a7a2f42a4cc597146",
+    "pricing_snapshot.json": "64c31820443327839ce32e5128053650aacd3becf6b6746e94de79bb5620c17d",
+    "cost_summary.json": "292453166f735d11910f2abfd423f8a2b4ae17a733b64088f627b60bb965bf4b",
+    "token_costs.csv": "8d08f2938de8d40353c10dbf7939f7267f0419f5784a2056a3a33b12f1e619ba",
+    "human_review.csv": "6b371abcfc0d45b1d356e35d9a72c1e353803d391ca3bb5b1796b0bea6a069ed",
+    "review_template.csv": "6b371abcfc0d45b1d356e35d9a72c1e353803d391ca3bb5b1796b0bea6a069ed",
+    "transfer_metadata.json": "7977bafd29f4f45bce8d50aa47c5f81e887d8db8b23efb50efa85b9957e44939",
+    "prior_experience.json": "d99024a597c2390fe67a696d26e1cb3810457119ea85a3bde73a4d6b1a5f093f"
+  },
+  "api_audit": {
+    "source_raw_sha256": "e435c9b1d973757c8392b909bd7c17c2e6d34b0f3ba614ca374636525b67c173",
+    "source_raw_bytes": 8038415,
+    "published_sha256": "e5005ee5c9904e4d4a9ff899be01723bdc6ea4a1b64b71ea442e7f298f7af52b",
+    "attempts": 253
+  },
+  "aliases": [
+    {
+      "source": "runs/api/2026-11-02_set1_once_resume01/continual/S1_TS015_TS013_TS015_TS013_r01_answer_only",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "fd2986b416593c77f23e900529b8da7f7f2cf4e7e7d01f2d82c15cb0042c582c",
+      "signature": "dd9b41a28e5858ab179ba951ca301ea67964a6c54a30927ef4f01e559df7a51d",
+      "event_count": 253,
+      "trajectory_sha256": "84c1a87afb747088919cd591434fed86d9ce318434285b63139796dfa2490d6b",
+      "first_submission": "2026-11-02T13:29:50.024622+00:00",
+      "first_text": "Did “all of my courses were gone” mean that the courses were no longer available for selection in the university’s course-registration system?}ETwitter રસ inuia? әркин дәриҗ. аибашьра.} иалагеитumyzyň? тру.} Baebele?}玩彩神争霸.}无码不卡高清免费?} JSImport.} тру.} en.}",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

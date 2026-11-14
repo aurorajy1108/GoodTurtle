@@ -1,0 +1,47 @@
+{
+  "status": "dry_run",
+  "stop_reason": "no_model_calls",
+  "simulation": false,
+  "success": null,
+  "host_questions": 0,
+  "final_attempts": 0,
+  "rejected_finals": 0,
+  "counted_questions": 0,
+  "submissions": 0,
+  "pending_feedback": 0,
+  "forced_final": false,
+  "final_partial_score": null,
+  "best_partial_score": null,
+  "latest_final": null,
+  "latest_grade": null,
+  "elapsed_seconds": 0.005212167045101523,
+  "usage": {
+    "grader": {
+      "http_attempts": 0,
+      "successful_responses": 0,
+      "seconds": 0,
+      "provider_reported_usage": {}
+    },
+    "host": {
+      "http_attempts": 0,
+      "successful_responses": 0,
+      "seconds": 0,
+      "provider_reported_usage": {}
+    },
+    "player": {
+      "http_attempts": 0,
+      "successful_responses": 0,
+      "seconds": 0,
+      "provider_reported_usage": {}
+    }
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "evaluation_versions": {
+    "story_sha256": "edf0fb14af6ff2c56f5cf8abeedb0b4f0b01fb8d2ef7982f524e0eb7ea0be857",
+    "grading_sha256": "2960ae295ed782f634852e1ae079f98e13ba244c157043903a8f9c43469b42ee",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "28d70e41f9f66353fc7cf9666eb1c3fe925432202ac2cc87791eebbfc049e11a",
+    "controller_sha256": "bb17a55aa5ecca29a6bbfcd7a823686a8f64e83f4c7595e1623b0233888937f3"
+  }
+}

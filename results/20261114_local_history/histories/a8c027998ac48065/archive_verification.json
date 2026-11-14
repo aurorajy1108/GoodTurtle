@@ -1,0 +1,61 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "e9b3507e59352b9a043f93391df06f16627a4780ce014268b6c72e924649e9db",
+    "trajectory.jsonl": "74673bfd1c14f2daabd0015910df2d2327c6d99483a4d7ce2c36e82b22d2c3a8",
+    "trajectory.md": "dfd88907b5f58610bbb40149584c885fb60f4e96b15ea5e7411dab73977238fa",
+    "trajectory.html": "dfb5efb7dec73e5f89b259de7ab23659eff31dd64690c548c7aa632d3aed10d8",
+    "config.json": "4307cf3c715247acc8faf9d322125607962ba66e56d5980b57d841ccb930bc1e",
+    "prompts.json": "2293fcad2d75c545b454f5ac0b351c8f0d0b635d59ed01a87e246365943d699f",
+    "puzzle_private.json": "c01a39bd4b8af6fb50d2f9bed46102d70dfc3b607728363b47501821cf04f406",
+    "host_context.json": "a9be0c92867631e3a6030e94c7bb2add9c4a322a04ac7697c64dccc9deef3db1",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "0a3fdde5e02a39bbfd5dea2afbce6b9ce2479134e71d8df316bc7b00195cca23",
+    "cost_summary.json": "9d731393a2a64dfcb6ceff0ba02b66ba5c2ba2a85978838e77724004026feb78",
+    "token_costs.csv": "86eb12739e4cd83a5c778a8390bf70e35088caa1e3f9d454feaf11959c2c813b",
+    "human_review.csv": "c57749d32edb23a05c8da950f2cfdea36e40de3924678aa21b9c464955302bc6",
+    "review_template.csv": "c57749d32edb23a05c8da950f2cfdea36e40de3924678aa21b9c464955302bc6",
+    "shared_dialogue.jsonl": "367467dfac20d7c0928372cb7cb0416ab0acbb65e3e66e319d0371b217eeae41",
+    "shared_dialogue.html": "d23a488fa13bea95394ea2a437332e04acbf6f0e8ee0f7d6c7816ddc86b82425",
+    "dialogue_metrics.json": "061569620db3f2d5581a893de891eca5d3f7fa9c85fd276fcb146cd4effae0c4",
+    "dialogue_policy.json": "bef6bb0e727602dd5a00821ae0a6847992bf1eab6d8a3c8fe0681779e9753c5d",
+    "collaboration.jsonl": "af8992d72deb03c3eaede4c763fbcdcb7d37a8fd5b17c4d228393aa509746153",
+    "self_review.html": "93f52bbe2da96cedbf7c7733470b45ca0334663f40bf719c369fca09f082f8fb",
+    "solver_compute.json": "2d34e9cddbe1db46936901f96979e5cac454d519811f1b68e03b4354eb3bddac"
+  },
+  "api_audit": {
+    "source_raw_sha256": "f3681120cff587515b446cdfcad22642dd9e37aa867b575666878e7abbc12316",
+    "source_raw_bytes": 110012,
+    "published_sha256": "16d682e81362bcf5d2ebd0ac61f8e74feacde5edb45f711fdb00393fb1bcdceb",
+    "attempts": 6
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261113_ts038_compute_matched_2x2_r1r4/TS038_r03_mas",
+      "status_as_recorded": "error",
+      "simulation": false,
+      "submissions": 3,
+      "result_sha256": "e9b3507e59352b9a043f93391df06f16627a4780ce014268b6c72e924649e9db",
+      "signature": "a8c027998ac48065fae834fdca53bdf06f23f49ce55b2063f924fd6d9d9fcc95",
+      "event_count": 31,
+      "trajectory_sha256": "74673bfd1c14f2daabd0015910df2d2327c6d99483a4d7ce2c36e82b22d2c3a8",
+      "first_submission": "2026-11-13T06:14:30.975761+00:00",
+      "first_text": "Was the repeated line spoken by one person, or by several different people?",
+      "archive_scope": "observed_history"
+    },
+    {
+      "source": "runs/api/20261113_ts038_compute_matched_2x2_r1r4_v3_actor_authorized/TS038_r03_mas",
+      "status_as_recorded": "error",
+      "simulation": false,
+      "submissions": 3,
+      "result_sha256": "e9b3507e59352b9a043f93391df06f16627a4780ce014268b6c72e924649e9db",
+      "signature": "a8c027998ac48065fae834fdca53bdf06f23f49ce55b2063f924fd6d9d9fcc95",
+      "event_count": 31,
+      "trajectory_sha256": "74673bfd1c14f2daabd0015910df2d2327c6d99483a4d7ce2c36e82b22d2c3a8",
+      "first_submission": "2026-11-13T06:14:30.975761+00:00",
+      "first_text": "Was the repeated line spoken by one person, or by several different people?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

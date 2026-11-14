@@ -1,0 +1,41 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "0bc76661579f571c40776b23ebb364345485a1bb8adf4293fbdc7c2e690cbafd",
+    "trajectory.jsonl": "87a18621b2b88f7a70f475acad5f96fcbe950fd01d2f6c785a7365c3b57e6fbc",
+    "trajectory.md": "f77ee2641b6bc98416c2abcca076510662947d5f824e40d1ee9b5af1293dd40f",
+    "trajectory.html": "61ee57cf2c026c66d375ef16a1ba17b39078d75df66549f67f030476c2e2cc1b",
+    "config.json": "4307cf3c715247acc8faf9d322125607962ba66e56d5980b57d841ccb930bc1e",
+    "prompts.json": "a9dba37a156716f526e0d9a31a06fc4baea1abfbe4ba7028933a716384597a2e",
+    "puzzle_private.json": "29e954e99ae4cf044cdbb6058560998d599b9623b77eef50de93599f1faf9c85",
+    "host_context.json": "699185720c8010aa01be314332377a1b8915dd67d4d09bd5d1df1e291b5257be",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "0a3fdde5e02a39bbfd5dea2afbce6b9ce2479134e71d8df316bc7b00195cca23",
+    "cost_summary.json": "a32ff5d52cd0dac521a0af2adfcf225050ffcc52ae54d85a15ee1c15bf6c34f2",
+    "token_costs.csv": "e1af1af5a535d1780a99682ba0a87fd4066a59731ee7d132ccde808f03582a44",
+    "human_review.csv": "181400a903afd036332ca4c44a035a96a48e89a8f0925d8ed93c992378eb527b",
+    "review_template.csv": "181400a903afd036332ca4c44a035a96a48e89a8f0925d8ed93c992378eb527b"
+  },
+  "api_audit": {
+    "source_raw_sha256": "a69f23c2343b9a48f4789262d979d350b85b38f8af1f751d5fc3e65e150f06a5",
+    "source_raw_bytes": 10929400,
+    "published_sha256": "4e2f325c85e50161d816fac1db57e04c115588db4f8ab3ba54b5b9dcaa922162",
+    "attempts": 201
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261111_live_smoke_v2_cl_resume01/continual/S1_TS015_TS013_TS015_TS013_r01_direct",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "0bc76661579f571c40776b23ebb364345485a1bb8adf4293fbdc7c2e690cbafd",
+      "signature": "9c350d35e145ab82c26843632e07d52c99c137300a391e11cc1be420cf1d298a",
+      "event_count": 609,
+      "trajectory_sha256": "87a18621b2b88f7a70f475acad5f96fcbe950fd01d2f6c785a7365c3b57e6fbc",
+      "first_submission": "2026-11-11T10:34:31.406984+00:00",
+      "first_text": "Did the student lose access to the course-selection system rather than have their chosen courses taken by other students?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

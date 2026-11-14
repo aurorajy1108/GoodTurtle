@@ -1,0 +1,507 @@
+{
+  "opening": "I am a very smart student who is very attentive in my class. I could not pass the course. Why?",
+  "history": [
+    {
+      "type": "question",
+      "text": "Was the student unable to pass because of something unrelated to their academic knowledge or attentiveness?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because they did not complete or submit a required assignment or examination? ",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because they violated a course rule, such as cheating or using prohibited materials?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because the course required a physical ability that they lacked?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because their attendance record did not meet the course requirement, despite paying attention whenever they were present?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to pass because they misunderstood the language in which the course or its assessment was conducted?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student prevented from passing by an event or circumstance outside the student's control?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the student prevented from passing because of an error or decision made by the instructor or school?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to pass because they became seriously ill or died before the course was completed?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student prevented from passing because they were unexpectedly detained, imprisoned, or otherwise legally unable to continue the course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student prevented from completing the course because of an accidental injury or physical accident?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student prevented from completing the course because a natural disaster or other major external emergency disrupted their education?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student forced to leave or relocate before the course ended because of a personal circumstance outside their control?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to pass because they were required to perform an unavoidable duty or obligation elsewhere during the course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student prevented from passing because a close family member or other loved one died during the course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student prevented from passing because another person deliberately interfered with the student's ability to complete the course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to pass because they were not officially enrolled in the course when they attended it?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to pass because they could not afford the required tuition, fees, or course materials?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the course itself discontinued or otherwise ended before the student could complete it?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student disqualified from passing because their status or identity changed during the course, rather than because they missed classes or assessments?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student prevented from passing because a technical failure, such as a power or computer outage, disrupted a required part of the course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to pass because a change in a law, government rule, or other official regulation made continuing the course impossible?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to pass because they were expelled or suspended from the school for a reason unrelated to this course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student attend and pay attention in a different course from the one they were officially required to pass?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to pass because another student or group member failed to perform a required part of the coursework?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did passing the course depend on an external selection, lottery, or other decision unrelated to the student's performance, and did that process result in the student not passing?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to pass because they were unexpectedly unable to be physically present for a required course activity, for a reason not involving illness, injury, detention, relocation, duty, disaster, or a technical failure?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to pass because an unexpected transportation or access problem prevented them from reaching a required course activity?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to pass because the course or its required assessment took place at a time when the student was asleep or otherwise unaware of it, without being absent for any of the previously mentioned reasons?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Does “pass the course” mean something other than receiving a passing academic grade?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Does “pass the course” mean physically getting past or traversing something, rather than completing an educational curriculum?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the “course” a physical route or passage that the student was trying to traverse, rather than an educational course?}",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to traverse the route because the route was physically too narrow for them to fit through?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to traverse the route because a physical obstacle blocked the route?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the route a passage through water, and was the student unable to traverse it because they could not swim?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to traverse the route because they became lost or could not determine which way to go?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the physical route a road or path intended to be traversed by a vehicle? ",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the physical route a course in a game or sport, such as an obstacle course, rather than an ordinary passage from one place to another?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to pass the sporting course because they failed to achieve the required score or performance, rather than because they could not physically traverse it?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student trying to complete an obstacle course as part of a sporting or recreational activity?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student a participant in a race, and did an external event stop the race before the student could finish?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the sporting course a golf course?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the course part of a board game or card game?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the course part of a video game?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the “student” a non-human participant, such as an animal, rather than a human student?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student participating in a sport involving horses, and did the horse prevent them from completing the course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the sporting course a skiing or snowboarding course?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the sporting course a motor-racing course or track used by vehicles?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the sporting course a running or athletic course that the student was required to complete on foot?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the sporting course used for a bicycle race or cycling event?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the sporting course a swimming course or swimming event?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the sporting course part of a martial-arts or combat-sports activity, where an external event prevented the student from completing it?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was an ordinary weather condition, such as rain, wind, or fog, what prevented the student from completing the sporting course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student participating in an archery or shooting sport, with an external event preventing them from completing the course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student trying to pass an object, such as a ball, to another participant as part of the sporting activity?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was an unusual event involving an animal what prevented the student from completing the sporting course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the sporting course part of an aviation activity, such as flying an aircraft or piloting a drone?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the sporting course part of a team sport, rather than an individual sport?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the sporting course part of gymnastics or an acrobatic activity?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the sporting course cancelled before the student could complete it?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the sporting course a rowing, canoeing, kayaking, or other boat-racing course?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the student taking part in a driving or vehicle-handling course, and did the vehicle itself unexpectedly become unusable?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student themselves become unable to continue the sporting activity because of an unexpected event during it?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student disqualified from the sporting activity before completing the course, rather than being physically unable to continue?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to complete the sporting course because the rules required them to stop when a particular event occurred?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student prevented from completing the sporting course because the course became unavailable or inaccessible during the attempt, rather than because of anything that happened to the student personally?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student trying to pass or overtake another competitor, rather than traverse the sporting course itself?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did another participant’s action cause the sporting activity to end before the student could complete the course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the sporting course part of a competitive event that an official unexpectedly stopped before the student could complete it? ",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the “student” an observer, judge, or official at the sporting event rather than a participant trying to complete the course?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the sporting activity played on a court or field, rather than involving a route that the student physically travelled?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the student participating in a sport involving a ball while trying to traverse the course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student trying to complete the sporting course while operating or riding a vehicle, rather than travelling on foot?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student trying to traverse a course while riding or standing on a board, such as in skateboarding, surfing, or snowboarding?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to pass the sporting course because the course was closed or unavailable before the student began attempting it?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to pass the sporting course because the course was being used by someone else at the relevant time?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail to traverse the course because they were waiting for the other user to finish, and the available opportunity to pass ended before they could begin?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to pass because another person was physically occupying the course at the exact time the student needed to use it?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the sporting course a golf course, where another person was occupying the course when the student attempted to play?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the sporting course a bowling lane, with another person physically occupying the lane when the student needed to use it?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the course a recreational water slide, with another person occupying the slide when the student needed to use it?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the sporting course a climbing route or wall that another person was occupying when the student tried to use it?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the course a one-person amusement or recreational passage, such as a slide or zip line, that another person was using when the student needed to use it?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the sporting course a tennis court, and was another player physically occupying the court when the student needed to use it?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the sporting course a lane or track in a sport where participants use separate lanes, and was another participant occupying the relevant lane?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "final",
+      "text": "The “course” was not an academic class but a sporting course. The student was perfectly capable and attentive, but could not pass because another person was physically occupying the course at the exact time the student needed to use it, leaving no opportunity to complete it.",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Was the sporting course a specific piece of physical equipment that only one person could use at a time, and was another person using that equipment?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the sporting course a ski slope or downhill skiing route that another person was occupying when the student tried to use it?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the sporting course part of a winter sport involving snow or ice?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "final",
+      "text": "“Course” referred to a sporting course rather than a class. The attentive, capable student was unable to complete it because another person was physically occupying the course when the student needed to use it, so the student could not undertake the required attempt before the opportunity ended.",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "final",
+      "text": "“Course” referred to a sporting course, not an academic class. The student was capable and attentive, but could not pass because another person was occupying the course when the student needed to use it, preventing the required attempt.",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "final",
+      "text": "“Course” meant a sporting course, not an academic class. The student was capable and attentive, but another person was occupying the course when the student needed to use it, so the student could not make the required attempt and therefore could not pass.",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "final",
+      "text": "The “course” was a sporting course rather than an academic class. The student was capable and attentive, but another person was occupying the course at the relevant time, preventing the student from using it and making the required attempt, so they could not pass.",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "final",
+      "text": "“Course” referred to a sporting course, not an academic class. The student was capable and attentive, but another person was occupying the course at the relevant time. Because the student could not use the course while it was occupied, they never got the opportunity to make the required attempt and therefore could not pass.",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "final",
+      "text": "“Course” means a sporting course, not an academic class. The student was capable and attentive, but another person was occupying the course at the required time, so the student never had access to it and could not make the attempt needed to pass.",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "final",
+      "text": "“Course” meant a sporting course, not an academic class. The student was intelligent and attentive, but another person was physically occupying the course at the relevant time. Consequently, the student could not use the course and make the attempt required to pass it.",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "final",
+      "text": "“Student” and “course” were being used in a sporting sense, not an academic one. The student was capable and attentive, but another person was occupying the course at the critical time. Since the student could not use it for the required sporting attempt before the opportunity ended, they failed to pass.",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "final",
+      "text": "“Course” referred to a sporting course, not an academic class. The student was capable and attentive, but another person was physically occupying the course at the relevant time, so the student could not use it and complete the required sporting attempt before the opportunity to pass ended.",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "final",
+      "text": "“Course” referred to a sporting course, not an academic class. The capable and attentive student had a limited opportunity to attempt it, but another person was physically occupying the course then. Thus the student could not use it or make the required attempt before the opportunity ended, so they failed to pass.",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "final",
+      "text": "The wording is deliberately misleading: “student” and “course” do not refer to academics. The student was attempting a sporting course and was capable of completing it, but another person was using or physically occupying the course at the critical time. The student therefore could not make the required attempt before the opportunity ended, so they failed to pass despite being intelligent and attentive.",
+      "feedback": "yes and no"
+    }
+  ],
+  "termination": "budget_exhausted",
+  "revealed_source_answer": "I was standing in front of a course in which a match is being held. Therefore I could not pass it."
+}

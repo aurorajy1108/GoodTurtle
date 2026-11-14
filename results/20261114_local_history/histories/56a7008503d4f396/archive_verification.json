@@ -1,0 +1,54 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "5d44d95c9c81e539f4d1f26c6d900d23d1cb1ff1d39f60c53650086e7f7159d0",
+    "trajectory.jsonl": "3c3e000e54bfdc7bcb9af2569363cf68829e9f5225f3d9e9a206d9db11f9579d",
+    "trajectory.md": "d96e9db4dbec3faa9eb1edc69e63e0293b233128752f4371f573276fabf2f30b",
+    "trajectory.html": "22278f1025c24eed78e2c24a45931b9de8043ef6abf067a1c11b350820763f71",
+    "config.json": "2a474139b20bf95d9a43818066c49cfc134cfda6bbb3086349ea2e2d8f32b2a4",
+    "prompts.json": "0965f6c6d21dc910e8df9628eec1a0a66306ea6a619edcf11029b8d3a91b2360",
+    "puzzle_private.json": "32040f5ef21aad65cf2a2cc44cafae9c044a68fda4dafbf18f040f0f0f2b2108",
+    "host_context.json": "433abd10cfa3d0138a5b18d60a052539737793be23a958d9dbdb4c1c80e0eaa3",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "64c31820443327839ce32e5128053650aacd3becf6b6746e94de79bb5620c17d",
+    "cost_summary.json": "83ee627c5457b223e2fe673e06529ee1bd1d46284ad7c1a27d4fb982cbdaa331",
+    "token_costs.csv": "bccbdc227c07d0d9dc5f557828360880f31dd50701eceed1e9e970e7a1b82785",
+    "human_review.csv": "7d691ca9ffa8241a166530800fae4a3e96af26d626883a4b41fe31135cfd1d91",
+    "review_template.csv": "7d691ca9ffa8241a166530800fae4a3e96af26d626883a4b41fe31135cfd1d91"
+  },
+  "api_audit": {
+    "source_raw_sha256": "3a114169cb1ea812ef3149980b9471044665e1a0d5f003370a455452cde6b4de",
+    "source_raw_bytes": 6769038,
+    "published_sha256": "e0af5899c8ec2784c9bb77620ae282ff3adb0c1f5ad0e7d98861043685190f5e",
+    "attempts": 159
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261110_deepseek_set1_v11_once/study/continual/S1_TS014_TS013_TS014_TS013_r01_source",
+      "status_as_recorded": "error",
+      "simulation": false,
+      "submissions": 78,
+      "result_sha256": "5d44d95c9c81e539f4d1f26c6d900d23d1cb1ff1d39f60c53650086e7f7159d0",
+      "signature": "56a7008503d4f396f7870ec68386a8dc23d8e2cc119644791d25f954f57011fd",
+      "event_count": 478,
+      "trajectory_sha256": "3c3e000e54bfdc7bcb9af2569363cf68829e9f5225f3d9e9a206d9db11f9579d",
+      "first_submission": "2026-11-10T07:55:50.651509+00:00",
+      "first_text": "Did the student fail the course because of something they intentionally did?",
+      "archive_scope": "observed_history"
+    },
+    {
+      "source": "runs/api/20261111_set1_v11_saved79_final_check/continual/S1_TS014_TS013_TS014_TS013_r01_source",
+      "status_as_recorded": "error",
+      "simulation": false,
+      "submissions": 78,
+      "result_sha256": "5d44d95c9c81e539f4d1f26c6d900d23d1cb1ff1d39f60c53650086e7f7159d0",
+      "signature": "56a7008503d4f396f7870ec68386a8dc23d8e2cc119644791d25f954f57011fd",
+      "event_count": 478,
+      "trajectory_sha256": "3c3e000e54bfdc7bcb9af2569363cf68829e9f5225f3d9e9a206d9db11f9579d",
+      "first_submission": "2026-11-10T07:55:50.651509+00:00",
+      "first_text": "Did the student fail the course because of something they intentionally did?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

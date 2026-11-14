@@ -1,0 +1,39 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "cd91f9151a6735610e69a541f663b0a07b969d5adf10847b1782952a1b4a8dcd",
+    "trajectory.jsonl": "f1167daac3408a31c843ccf9a9c543c5a6b3fa558553873e33e671e337f181b0",
+    "trajectory.md": "ab00334e97d931614f66403e25cbafe451d41021f2d4e68faac8c74aebe49e7d",
+    "trajectory.html": "d55c54ea96da61297d5d0c8216b75a5ce2e2c9531037077c30c2657971ffc71f",
+    "config.json": "a014f81ea9e104679e8f092a1f109161aea61071386b2e945a24be08c367d75c",
+    "partner_config.json": "489a968c9ed96d8e89aa0c6dcd2216c2a2dd1c4b68415ba6cf332611cf340f1c",
+    "prompts.json": "fc46446f09444f43c20df1c19fbb54338043bc29e602a6373a8af5b06ee85640",
+    "puzzle_private.json": "6f67be85fdf07118100e1ddae362697378ee835d3aacb49d8cba25e4143c2e6d",
+    "host_context.json": "4c98cebf37705272120e264293e2ed61b850fd05f2319f240fa6841d27ae0935",
+    "human_review.csv": "886555fae77920c1e88f56216939351496df83ed7df61b4a78812fe7158c13e9",
+    "review_template.csv": "886555fae77920c1e88f56216939351496df83ed7df61b4a78812fe7158c13e9",
+    "collaboration.jsonl": "194ca89658cdfa75864c49a074a643b798ed620498af4c4acabfe9da9ff79b5c"
+  },
+  "api_audit": {
+    "source_raw_sha256": "a9a0585a68ecc3e5e9a8984f79a24db2d691a67739e9fca1364ac63379c1384a",
+    "source_raw_bytes": 6776359,
+    "published_sha256": "506faa647ecad7c1809673d4eaef7c85632f23d38f27a4cd714549701d6b0ecf",
+    "attempts": 400
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261023_team_hard_repeats/batches/TS033/TS033_r03_independent",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "cd91f9151a6735610e69a541f663b0a07b969d5adf10847b1782952a1b4a8dcd",
+      "signature": "d2cf66bde18a10575e2553dd759dc21c14a64a9bd6b9a1426a05d7590f4be383",
+      "event_count": 201,
+      "trajectory_sha256": "f1167daac3408a31c843ccf9a9c543c5a6b3fa558553873e33e671e337f181b0",
+      "first_submission": "2026-10-23T14:53:45.672605+00:00",
+      "first_text": "Was the extra cash meant to make it harder for criminals to identify the bag as containing exactly one million yen?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

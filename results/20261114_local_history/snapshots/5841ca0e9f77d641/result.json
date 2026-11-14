@@ -1,0 +1,87 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 92,
+  "final_attempts": 8,
+  "rejected_finals": 8,
+  "counted_questions": 100,
+  "submissions": 100,
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.45,
+  "best_partial_score": 0.7,
+  "latest_final": "The narrator went to the pantry to join someone they already knew for a cigarette. Both smoked there, and together their cigarette smoke reached enough to activate a smoke detector and sound the fire alarm. There was no actual fire, and they had not deliberately set off the alarm. The clues don’t establish exactly where the detector was or the precise circumstances that led them to smoke in the pantry.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0.5,
+        "evidence": "“join someone they already knew for a cigarette” in the pantry; their cigarette smoke activated the alarm",
+        "reason": "Identifies pantry cigarette smoking and smoke-triggered alarm, but does not establish that the other smoker was a friend or that there were multiple friends."
+      },
+      {
+        "id": "C2",
+        "credit": 0,
+        "evidence": "No mention of windows or the exhaust fan.",
+        "reason": "The required ventilation omissions are not covered."
+      },
+      {
+        "id": "C3",
+        "credit": 1,
+        "evidence": "“There was no actual fire” and cigarette smoke activated the detector.",
+        "reason": "Clearly attributes the alarm to smoke rather than a building fire."
+      }
+    ],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "The explanation omits the failure to open the windows and turn on the exhaust fan, and does not identify the companions as friends; therefore it does not reconstruct the complete reference narrative.",
+    "partial_score": 0.45,
+    "complete": false,
+    "label": "yes and no"
+  },
+  "elapsed_seconds": 2951.5438054581173,
+  "usage": {
+    "grader": {
+      "http_attempts": 8,
+      "successful_responses": 8,
+      "seconds": 106.18492108304054,
+      "provider_reported_usage": {
+        "input_tokens": 23566,
+        "cached_input_tokens": 2048,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2811,
+        "reasoning_output_tokens": 1105
+      }
+    },
+    "host": {
+      "http_attempts": 92,
+      "successful_responses": 92,
+      "seconds": 1196.62465171027,
+      "provider_reported_usage": {
+        "input_tokens": 376248,
+        "cached_input_tokens": 159744,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8782,
+        "reasoning_output_tokens": 7081
+      }
+    },
+    "player": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 1647.840759415878,
+      "provider_reported_usage": {
+        "input_tokens": 387068,
+        "cached_input_tokens": 145408,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 38120,
+        "reasoning_output_tokens": 33759
+      }
+    }
+  },
+  "error": null,
+  "human_review_status": "pending"
+}

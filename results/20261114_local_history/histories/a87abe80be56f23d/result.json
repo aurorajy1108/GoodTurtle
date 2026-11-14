@@ -1,0 +1,246 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 91,
+  "final_attempts": 9,
+  "rejected_finals": 9,
+  "counted_questions": 100,
+  "submissions": 100,
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.6,
+  "best_partial_score": 0.6,
+  "latest_final": "The student passed all tests and exams, but the course also graded group work. Their group performed poorly primarily because the student’s own contribution was of poor quality: although they understood the subject and what was required, they executed their part badly. The resulting group-work grade was low enough to make the student’s overall course grade failing.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 1,
+        "evidence": "The student passed all tests and exams, but the course also graded group work. ... The resulting group-work grade was low enough to make the student’s overall course grade failing.",
+        "reason": "Identifies individual academic strength and group work whose grade substantially affects the course outcome."
+      },
+      {
+        "id": "C2",
+        "credit": 0,
+        "evidence": "",
+        "reason": "Does not identify any other group members as free riders."
+      },
+      {
+        "id": "C3",
+        "credit": 0.5,
+        "evidence": "Their group performed poorly primarily because the student’s own contribution was of poor quality ... The resulting group-work grade was low enough to make the student’s overall course grade failing.",
+        "reason": "Connects poor project performance to course failure, but omits excessive workload as the cause of the poor performance."
+      }
+    ],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Missing all other members free-riding and the resulting excessive workload overwhelming the student. Poor execution alone does not reconstruct that causal explanation.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "covered",
+        "evidence": "The student passed all tests and exams, but the course also graded group work. ... The resulting group-work grade was low enough to make the student’s overall course grade failing."
+      },
+      {
+        "id": "C2.F1",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "C3.F1",
+        "status": "partial",
+        "evidence": "Their group performed poorly primarily because the student’s own contribution was of poor quality: although they understood the subject and what was required, they executed their part badly. The resulting group-work grade was low enough to make the student’s overall course grade failing."
+      }
+    ],
+    "requirement_coverage": [
+      {
+        "id": "R1",
+        "status": "covered",
+        "evidence": "the course also graded group work. ... The resulting group-work grade was low enough to make the student’s overall course grade failing."
+      },
+      {
+        "id": "R2",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "R3",
+        "status": "partial",
+        "evidence": "Their group performed poorly primarily because the student’s own contribution was of poor quality: although they understood the subject and what was required, they executed their part badly."
+      },
+      {
+        "id": "R4",
+        "status": "covered",
+        "evidence": "The student passed all tests and exams ... The resulting group-work grade was low enough to make the student’s overall course grade failing."
+      }
+    ],
+    "contradictions": [],
+    "partial_score": 0.6,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v2",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 3772.3026680829935,
+  "usage": {
+    "grader": {
+      "http_attempts": 9,
+      "successful_responses": 9,
+      "seconds": 210.67911466705846,
+      "provider_reported_usage": {
+        "input_tokens": 72678,
+        "cached_input_tokens": 21504,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7930,
+        "reasoning_output_tokens": 2034
+      }
+    },
+    "host": {
+      "http_attempts": 186,
+      "successful_responses": 186,
+      "seconds": 2429.7285223286017,
+      "provider_reported_usage": {
+        "input_tokens": 1856150,
+        "cached_input_tokens": 465408,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10560,
+        "reasoning_output_tokens": 7392
+      }
+    },
+    "player": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 1130.4888488741708,
+      "provider_reported_usage": {
+        "input_tokens": 587934,
+        "cached_input_tokens": 198400,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 20298,
+        "reasoning_output_tokens": 15257
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "total": {
+      "calls": 295,
+      "unknown_cost_calls": 0,
+      "known_estimated_cost_usd": 3.2236556,
+      "estimated_cost_usd": 3.2236556,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 2516762,
+        "cached_input_tokens": 685312,
+        "cache_write_tokens": 0,
+        "output_tokens": 38788,
+        "reasoning_tokens": 0,
+        "total_tokens": 2555550
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 295,
+        "total_tokens": 0
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "codex_cli",
+        "model": "gpt-6.1-sol",
+        "calls": 9,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.1837984,
+        "estimated_cost_usd": 0.1837984,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 72678,
+          "cached_input_tokens": 21504,
+          "cache_write_tokens": 0,
+          "output_tokens": 7930,
+          "reasoning_tokens": 0,
+          "total_tokens": 80608
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 9,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "codex_cli",
+        "model": "gpt-6.1-sol",
+        "calls": 186,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 2.9336248,
+        "estimated_cost_usd": 2.9336248,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1856150,
+          "cached_input_tokens": 465408,
+          "cache_write_tokens": 0,
+          "output_tokens": 10560,
+          "reasoning_tokens": 0,
+          "total_tokens": 1866710
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 186,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "codex_cli",
+        "model": "gpt-5.6-luna",
+        "calls": 100,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.1062324,
+        "estimated_cost_usd": 0.1062324,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 587934,
+          "cached_input_tokens": 198400,
+          "cache_write_tokens": 0,
+          "output_tokens": 20298,
+          "reasoning_tokens": 0,
+          "total_tokens": 608232
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 100,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "evaluation_versions": {
+    "story_sha256": "95a3d31f81a3ef0ebfa32f5ede191b4e24e727b55ced0a21d7ba42666a2392a4",
+    "grading_sha256": "475d22bca77f15b9707d0c4067d0a85ab70975edf0dbb10d3fdb3903cef5b48f",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "ee2355155bc93572faf555bea747de2352440d723da28eaad5060002be9cb0c8",
+    "controller_sha256": "82e800578271590049e19eca916337060fba902340416c353f93b900a2098d98",
+    "host_context_sha256": "e9964bdd370fd71c26b14aa9a646e6e8f23dadfbfdf11122ddfd69cf4418adc6",
+    "host_binding_version": "host-v9-human-20261102"
+  }
+}

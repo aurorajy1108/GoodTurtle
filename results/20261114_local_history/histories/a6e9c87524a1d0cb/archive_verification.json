@@ -1,0 +1,42 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "d0101f3d6908aa68d66dbe282714f20f5c453cd0df455478ca352fdd278dd668",
+    "trajectory.jsonl": "3f7d2ee62f2630f01f075fca1e58dc8ab400b38f2ea015ae7f58209faf6464d8",
+    "trajectory.md": "e79829276807c2db210c7dbf0de456f62c209189596017f5aab729270545e8d3",
+    "trajectory.html": "be6ded6585ceec8d4fd60ac42af12fa73d76eaca76e77926c8ced9507c90fb0b",
+    "config.json": "2f478a93b148e08ef772bb1729ef0c18373ea9b3511902600a95a8bde32762cf",
+    "partner_config.json": "ad142a86d2076e9e5ec92d25c18b5938496e49107ab34fa24d04db4b90f09283",
+    "prompts.json": "e435cae9a3407f827f9739e8dcceaa108287cf79ef118d4ad496edfdec1d5b81",
+    "puzzle_private.json": "b1c69c4db95e2279cc8972e3b68d76291d9518a2f7c306619dbb37a204b5574e",
+    "host_context.json": "8f235fc20be67ee92e7960123d947f4a0473dd8db366ded6d93fa14a56e3aab0",
+    "pricing_snapshot.json": "64c31820443327839ce32e5128053650aacd3becf6b6746e94de79bb5620c17d",
+    "cost_summary.json": "9983805821f34f11d873195c67fbf00413ff5bfcb9bc062762f9209593f5d9bf",
+    "token_costs.csv": "362cf240cdd209b2b3c446643c93d7e2102f4684ba99a56ae7ee9dbad1e844c8",
+    "human_review.csv": "95530b845301040457073cdf1fa21472871651a295a1ad484ca6f267b9cd565d",
+    "review_template.csv": "e7512a0d85e49493ca3c07e1df042066c9a89ed759e15c15c9678d29cc5fba09",
+    "collaboration.jsonl": "8477ad4ea8689105787390133fd5c9f0792249a8ee1e67f2557687e07027feef"
+  },
+  "api_audit": {
+    "source_raw_sha256": "833e2df583b800bc50732f6d5267705d7579ac394e83afc51008613bdc7b571b",
+    "source_raw_bytes": 21184217,
+    "published_sha256": "7d3d9f87259fda15dd34e20750e5525b75cab4a9a5af6288a92d65b29884b1a5",
+    "attempts": 494
+  },
+  "aliases": [
+    {
+      "source": "runs/api/2026-11-02_ts038_team_once_resume01/team/TS038_r01_independent",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "d0101f3d6908aa68d66dbe282714f20f5c453cd0df455478ca352fdd278dd668",
+      "signature": "a6e9c87524a1d0cb27e8f789d5388ef8b558955d83a73ce6f5ef5db84879e4f3",
+      "event_count": 292,
+      "trajectory_sha256": "3f7d2ee62f2630f01f075fca1e58dc8ab400b38f2ea015ae7f58209faf6464d8",
+      "first_submission": "2026-11-02T07:42:42.066019+00:00",
+      "first_text": "Are the seven identical statements made by seven different people?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

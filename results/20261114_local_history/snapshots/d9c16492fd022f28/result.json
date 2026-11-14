@@ -1,0 +1,276 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 99,
+  "final_attempts": 1,
+  "rejected_finals": 1,
+  "counted_questions": 100,
+  "submissions": 100,
+  "player_format_corrections": [],
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.0,
+  "best_partial_score": 0.0,
+  "latest_final": "The student's courses disappeared from the enrollment system during one evening because of a system-wide enrolment reset: the university's course-selection platform discarded the student's saved course selections when a new selection round replaced the previous one, requiring students to choose again. This was not a normal case of other students taking all the places, nor the student dropping the courses, missing a deadline or payment, being hacked, or looking at the wrong semester or campus. The student's prior selections were invalidated by the reset, so by the time the student checked in the evening, none of the chosen courses remained.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0,
+        "evidence": "The student's courses disappeared from the enrollment system during one evening because of a system-wide enrolment reset: the university's course-selection platform discarded the student's saved course selections...",
+        "reason": "The submission treats courses as academic enrolments and contradicts the required meal-course identity."
+      },
+      {
+        "id": "C2",
+        "credit": 0,
+        "evidence": "No mention of meal-course preferences or a meal-preference deadline; the submission describes academic re-selection only.",
+        "reason": "The required meal-preference deadline facts are absent."
+      },
+      {
+        "id": "C3",
+        "credit": 0,
+        "evidence": "system-wide enrolment reset: the university's course-selection platform discarded the student's saved course selections when a new selection round replaced the previous one",
+        "reason": "The submission replaces the waiter clearing uneaten dishes with an academic reset cause, contradicting the required causal facts."
+      }
+    ],
+    "material_contradiction": true,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "contradicted",
+        "evidence": "The student's courses disappeared from the enrollment system during one evening because of a system-wide enrolment reset: the university's course-selection platform discarded the student's saved course selections when a new selection round replaced the previous one"
+      },
+      {
+        "id": "C1.F2",
+        "status": "contradicted",
+        "evidence": "the university's course-selection platform discarded the student's saved course selections"
+      },
+      {
+        "id": "C2.F1",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "C2.F2",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "C3.F1",
+        "status": "contradicted",
+        "evidence": "system-wide enrolment reset: the university's course-selection platform discarded the student's saved course selections when a new selection round replaced the previous one"
+      },
+      {
+        "id": "C3.F2",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "C3.F3",
+        "status": "contradicted",
+        "evidence": "system-wide enrolment reset: the university's course-selection platform discarded the student's saved course selections when a new selection round replaced the previous one"
+      }
+    ],
+    "requirement_coverage": [],
+    "contradictions": [
+      {
+        "quote": "The student's courses disappeared from the enrollment system during one evening because of a system-wide enrolment reset: the university's course-selection platform discarded the student's saved course selections when a new selection round replaced the previous one",
+        "reference": "Courses refers to meal courses at a formal high-table dinner, not academic classes.",
+        "checkpoint_ids": [
+          "C1"
+        ]
+      },
+      {
+        "quote": "system-wide enrolment reset: the university's course-selection platform discarded the student's saved course selections when a new selection round replaced the previous one",
+        "reference": "The waiter clears uneaten dishes, making all the courses disappear.",
+        "checkpoint_ids": [
+          "C3"
+        ]
+      }
+    ],
+    "partial_score": 0.0,
+    "complete": false,
+    "label": "no",
+    "grading_protocol": "coverage-v3-unified",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 694.3256413330091,
+  "usage": {
+    "grader": {
+      "http_attempts": 1,
+      "successful_responses": 1,
+      "seconds": 36.53118358307984,
+      "provider_reported_usage": {
+        "prompt_tokens": 4789,
+        "completion_tokens": 2836,
+        "total_tokens": 7625,
+        "prompt_cache_hit_tokens": 3328,
+        "prompt_cache_miss_tokens": 1461
+      }
+    },
+    "host": {
+      "http_attempts": 99,
+      "successful_responses": 99,
+      "seconds": 412.79004941810854,
+      "provider_reported_usage": {
+        "prompt_tokens": 1455240,
+        "completion_tokens": 12370,
+        "total_tokens": 1467610,
+        "prompt_cache_hit_tokens": 1428736,
+        "prompt_cache_miss_tokens": 26504
+      }
+    },
+    "player": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 243.48004970455077,
+      "provider_reported_usage": {
+        "prompt_tokens": 740025,
+        "completion_tokens": 2625,
+        "total_tokens": 742650,
+        "prompt_cache_hit_tokens": 720126,
+        "prompt_cache_miss_tokens": 19899
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "estimate_assumptions": [
+      "peak_rate_reference_upper_estimate; off-peak rates are half; actual billing unknown"
+    ],
+    "total": {
+      "calls": 200,
+      "unknown_cost_calls": 0,
+      "known_estimated_cost_usd": 0.173580832,
+      "estimated_cost_usd": 0.173580832,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 2200054,
+        "cached_input_tokens": 2152190,
+        "cache_write_tokens": 0,
+        "output_tokens": 17831,
+        "reasoning_tokens": 14218,
+        "total_tokens": 2217885
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 100,
+        "total_tokens": 0
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 1,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.013305512,
+        "estimated_cost_usd": 0.013305512,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 4789,
+          "cached_input_tokens": 3328,
+          "cache_write_tokens": 0,
+          "output_tokens": 2836,
+          "reasoning_tokens": 2046,
+          "total_tokens": 7625
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 99,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.146834864,
+        "estimated_cost_usd": 0.146834864,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1455240,
+          "cached_input_tokens": 1428736,
+          "cache_write_tokens": 0,
+          "output_tokens": 12370,
+          "reasoning_tokens": 12172,
+          "total_tokens": 1467610
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 100,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.013440456,
+        "estimated_cost_usd": 0.013440456,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 740025,
+          "cached_input_tokens": 720126,
+          "cache_write_tokens": 0,
+          "output_tokens": 2625,
+          "reasoning_tokens": 0,
+          "total_tokens": 742650
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 100,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "6831683c-546a-4e73-b167-d66d1a132383",
+      "792fd90a-be79-485a-aa9c-c396b8c4fcd2",
+      "ca525373-556b-4383-ae0e-91f293745c64"
+    ],
+    "logical_input_chars": 2360155,
+    "delta_input_chars": 124535,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+    "grading_sha256": "8f36cc594b03d7530e282b727b7a357000970fc86e0e2971590597f7c206c18b",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v3-unified",
+    "prompts_sha256": "533fed2879c5bee42d2b3da39a93449c142c58f51a3c16cb8bdd87a66efb2c8c",
+    "controller_sha256": "f392be030b07d8d3f700b23c9322f38df26ab5cf43d775f1d66aad5d3999bb81",
+    "player_format_policy_sha256": "cf439ee1d60ae38374486aada319739646a5975284ff00bc877a3040047df56a",
+    "host_context_sha256": "6237bbab6b4d9a8bf33160a32cbc0a64e9bceb8a5d97c7be98f70266f130cd12",
+    "host_binding_version": "host-v11-set1-causal-20261110"
+  }
+}

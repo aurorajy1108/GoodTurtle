@@ -1,0 +1,73 @@
+{
+  "id": "TS023",
+  "opening": "In the darkness, a man strikes a match and yells, \"It's you?!\" Then, in terror and despair, he dies.",
+  "answer": "The man was a prisoner. In order to escape, he bribed a prison guard. The two agreed that the next time someone in the prison died, he would hide inside the coffin. After it was transported out and buried, the guard would dig him back up.\n \nThen one day, someone in the prison finally passed away, and he quickly hid inside the coffin. When the coffin was buried and everything around him was pitch black, he struck a match to take a look. He found that lying next to him—the prison guard who was supposed to be waiting to escape with him—was already dead. Knowing his own death was certain, he could only wait to die in terror and despair.",
+  "rubric": [
+    {
+      "id": "C1",
+      "weight": 0.5,
+      "core": true,
+      "criterion": "The man is a prisoner hiding in a coffin as part of a prison-escape plan.",
+      "full_credit": "The man is a prisoner hiding in a coffin as part of a prison-escape plan.",
+      "half_credit": "Prison escape identified without coffin concealment",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+      "points": 50.0
+    },
+    {
+      "id": "C2",
+      "weight": 0.25,
+      "core": false,
+      "criterion": "The bribed guard meant to dig him out is the corpse inside the coffin.",
+      "full_credit": "The bribed guard meant to dig him out is the corpse inside the coffin.",
+      "half_credit": "Guard corpse identified without intended rescue role",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+      "points": 25.0
+    },
+    {
+      "id": "C3",
+      "weight": 0.15,
+      "core": false,
+      "criterion": "He lights a match in the coffin and discovers the guard’s dead body.",
+      "full_credit": "He lights a match in the coffin and discovers the guard’s dead body.",
+      "half_credit": "Match lighting identified without recognition of guard",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+      "points": 15.0
+    },
+    {
+      "id": "C4",
+      "weight": 0.1,
+      "core": false,
+      "criterion": "He realizes no one can rescue him from burial, so he will die trapped.",
+      "full_credit": "He realizes no one can rescue him from burial, so he will die trapped.",
+      "half_credit": "Entrapment identified without rescuer’s death as reason",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses.",
+      "points": 10.0
+    }
+  ],
+  "title": "棺材里的狱警",
+  "story_family": "F023",
+  "quality_status": "正常",
+  "review_notes": "",
+  "source_row": "23",
+  "observed_score": null,
+  "completion_requirements": [
+    "The man is a prisoner who bribes a guard to arrange escape",
+    "He will hide in the next deceased person’s coffin, be carried out and buried",
+    "The guard is supposed to dig him up afterward",
+    "Once buried, he strikes a match and recognizes the guard’s corpse beside him",
+    "The intended rescuer is dead, leaving him trapped to die"
+  ],
+  "annotation_version": "turtle50-v2-three-review-2026-10-23",
+  "annotation_status": "ai_three_review_adjudicated_pending_human",
+  "grading_notes": "AI three-review adjudication v2, pending human confirmation. Score only this submission. Apply full_credit/half_credit/zero_credit explicitly, with zero taking precedence for a materially contradictory checkpoint claim. An omitted qualifier can be partial; replacing the core identity/cause with a wrong one is not an omission. Faithful paraphrases count. Partial score and full narrative are separate outputs. AI independent review B, pending human approval. Credit is 0/.5/1 per checkpoint. Full narrative additionally requires all sourced completion requirements and no incompatible central claims. Judge the submitted explanation, not unasserted chat guesses. Accept faithful paraphrases; missing optional detail is not a contradiction. Do not demand unknown motives, devices or events. Accept faithful paraphrase. Require the listed identities, events and causal links, not exact prose or unspecified incidental details.",
+  "annotation_provenance": {
+    "reviewers": [
+      "a",
+      "b",
+      "c"
+    ],
+    "selected_base": "b",
+    "adjudicator": "root",
+    "human_confirmed": false
+  }
+}

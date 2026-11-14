@@ -1,0 +1,47 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "a888f8add2dbf9b4feffc46f15089ea9b239c39ed828b060f774cf99117a2a26",
+    "trajectory.jsonl": "4161fa839975ccd3034c8afe10de1b7516395fae171163af34d689adc40ce4d1",
+    "trajectory.md": "74870e3d1f2e0b48d00babe96c7e98e5440b728ca3d5afb25f897add0c18c62b",
+    "trajectory.html": "223d8f35874feda1aa3849a81851b2cd96236bc82a93929a634758845f1ff73f",
+    "config.json": "4307cf3c715247acc8faf9d322125607962ba66e56d5980b57d841ccb930bc1e",
+    "partner_config.json": "c2e8a291df1c554b1c94f20fa63d5e7965959edf5a1f3583a876abd45e3f658b",
+    "prompts.json": "a81d1dab037a22f0f3a32d4fa8964a18521d93b8894ea666c96a4dfbbf1ef6c3",
+    "puzzle_private.json": "b1c69c4db95e2279cc8972e3b68d76291d9518a2f7c306619dbb37a204b5574e",
+    "host_context.json": "8f235fc20be67ee92e7960123d947f4a0473dd8db366ded6d93fa14a56e3aab0",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "0a3fdde5e02a39bbfd5dea2afbce6b9ce2479134e71d8df316bc7b00195cca23",
+    "cost_summary.json": "2fd0aa690aa705dc2150c8a34f8c5c3aa156314e9ae7127f2f4ce35b92fe5220",
+    "token_costs.csv": "888ad89e89d541f40853b5bfaffe48a000198b1c6c31afa6ea0172cca094af1c",
+    "human_review.csv": "e4f74011de1e5dd937a8d00802640c1c9d3ad2bc306aeb94b4f65f66ddd7988c",
+    "review_template.csv": "7757f37169824e86509983080c875b8fa6705df0d4d930abf0c6322b8a59a0d0",
+    "shared_dialogue.jsonl": "c2bdeb13465d7063fcde50ae85fafd30d86a3ca6b2572603feb7e5af630e63ea",
+    "shared_dialogue.html": "a72d0ac27901d1668da42a51c9a313ae49586c15014a73b195c13328cd76af9b",
+    "dialogue_metrics.json": "5e92ce4bec31e4f764edd0666f5834067bcb5e1081cbf27f9e119540f1c6c331",
+    "dialogue_policy.json": "bef6bb0e727602dd5a00821ae0a6847992bf1eab6d8a3c8fe0681779e9753c5d",
+    "collaboration.jsonl": "4111587e61ffa99ba2ab4517442b9075b18ce56d453da4b221d4036e7cb9119b"
+  },
+  "api_audit": {
+    "source_raw_sha256": "cd9c998b7ec0b40cb7f995b0b52320e94d27348eb9aa6d297e3879e8e80d8913",
+    "source_raw_bytes": 13191747,
+    "published_sha256": "7d2d87c8e590e86b702839e3655cbc768a4bf235259f1b26e91af759e07545e6",
+    "attempts": 150
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261111_live_smoke_v2_mas_resume01/team/TS038_r01_free_dialogue",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 62,
+      "result_sha256": "a888f8add2dbf9b4feffc46f15089ea9b239c39ed828b060f774cf99117a2a26",
+      "signature": "fabf8f3f353bbf1c0e28ce53d7d608f5ceda607c69a9cb47906932b5247b7576",
+      "event_count": 578,
+      "trajectory_sha256": "4161fa839975ccd3034c8afe10de1b7516395fae171163af34d689adc40ce4d1",
+      "first_submission": "2026-11-11T09:53:38.841203+00:00",
+      "first_text": "The same sentence is printed seven times, and the speaker says \"I know I'm in trouble.\" Is the repetition directly produced by the speaker (e.g., by speaking or writing it repeatedly), or is the speaker reading/hearing seven separate instances created by someone or something else?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

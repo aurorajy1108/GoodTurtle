@@ -1,0 +1,41 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "ec00ad1cf04271a5221e84567fc75c7e0afe6b23231edd8222ddb0cc7636b949",
+    "trajectory.jsonl": "a9484e09e3ec1f08a485a5d8e0465bacb43b28aa3211fecbc00b4ed52a8e1163",
+    "trajectory.md": "b9f6dfe59c5ed1c7b0fe5cd8123fa507151f06044ca1eb76fcfba8cdb5bff5a9",
+    "trajectory.html": "cb942d1d6fa56033aa2991e80678c28cb8f47f84d928d5f46c7e81b8e95a2c1c",
+    "config.json": "4307cf3c715247acc8faf9d322125607962ba66e56d5980b57d841ccb930bc1e",
+    "prompts.json": "fd0f3ea13c946e62222d317314549bea070bde6feb4c96d4bb9d525f03568bd4",
+    "puzzle_private.json": "6f9ca533f4259686032b2fcc5ced776bcfe1481dc79985c21d45f1400be08d8b",
+    "host_context.json": "5a9950c0f880eb2b3e29fe91d532a8cd18294ac44492e73caaa6aa2e55f64277",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "0a3fdde5e02a39bbfd5dea2afbce6b9ce2479134e71d8df316bc7b00195cca23",
+    "cost_summary.json": "1cb54a2851aed8a1f73e76deb1623ae84b1316b28af442e7b7dc4267613da16a",
+    "token_costs.csv": "29e0f73f2b1642c35affa9a2f11a8e3dfdef42fc6ec135d4305f22d729f48727",
+    "human_review.csv": "c7812fd9373433a35cecc94e2f4440cda6a393855f4a2523daea565383351d99",
+    "review_template.csv": "c7812fd9373433a35cecc94e2f4440cda6a393855f4a2523daea565383351d99"
+  },
+  "api_audit": {
+    "source_raw_sha256": "413d156cfbbc52f5820932e7d9a93eddedccf087d515d9323ff34949698bf828",
+    "source_raw_bytes": 9864574,
+    "published_sha256": "fa53e3eb70b058044523eb59134034c4df5db541cd0b6fa9b1ccd936ce6971f0",
+    "attempts": 200
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261112_set1_fixed_prefix_r1r4_v2_supervised_v5/continuations/cl-set1-fixed-prefix-r1r4/attempt_02/continual/S1_TS015_TS013_TS015_TS013_r03_direct",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "ec00ad1cf04271a5221e84567fc75c7e0afe6b23231edd8222ddb0cc7636b949",
+      "signature": "9925d2af9d7ce0698ec1556d138d77017cf0919e2f8c618f7483805e8e2f88c6",
+      "event_count": 606,
+      "trajectory_sha256": "a9484e09e3ec1f08a485a5d8e0465bacb43b28aa3211fecbc00b4ed52a8e1163",
+      "first_submission": "2026-11-12T16:29:25.505063+00:00",
+      "first_text": "Did the courses disappear from your selection because you missed a course-selection deadline?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

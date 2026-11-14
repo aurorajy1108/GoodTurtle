@@ -1,0 +1,37 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "fbcb1c40948b736f1d0514cd5d0f914f0dbaadce4ba4e63990d0fe6a33e51c99",
+    "trajectory.jsonl": "86c016d8b05e4d9c8d16aa5a93066af4852e2b53b58823fbf50fe7d39e9e90b5",
+    "trajectory.md": "7db674930aa10ce666dce4d304adbb5d023456bff10121416d05a8e17450ea11",
+    "trajectory.html": "8e3410a5f96b6bbac310b075f81114c7f03e3a7b28ef52a3fb590689e686265f",
+    "config.json": "08d2187c28075d0a59d9a14953c08f5f094edb9fd06fccbe50633dbf2bea2d01",
+    "prompts.json": "0a3f1cbcc4d8a896fe50dd7047766bb101587948339862672eeda6e4c3c9ad8f",
+    "puzzle_private.json": "50e1163c07abbd95b9087b18fdafde73d2b356fe89dc8ff9cf4287feb5270640",
+    "host_context.json": "f11378373e494311a309d7186cabf5376f2c731165e19800777162a66ec81f91",
+    "human_review.csv": "401740ed5c3589a7e27b9f6090ce76626c7b35936754be77c08d5ed361e96ecf",
+    "review_template.csv": "401740ed5c3589a7e27b9f6090ce76626c7b35936754be77c08d5ed361e96ecf"
+  },
+  "api_audit": {
+    "source_raw_sha256": "0266f88f074e7701a138a25e6bbcfa4f246f1bbe94eed85fc8e619b3a9fb2bbd",
+    "source_raw_bytes": 2673200,
+    "published_sha256": "05cb3802d696b7116695e17cead89c7b13235a99e4633459f6050b776559cd58",
+    "attempts": 118
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261024_repair_v6_study/games/batches/TS036/TS036_r03_solo",
+      "status_as_recorded": "interrupted",
+      "simulation": false,
+      "submissions": 39,
+      "result_sha256": "fbcb1c40948b736f1d0514cd5d0f914f0dbaadce4ba4e63990d0fe6a33e51c99",
+      "signature": "431cba1447258eed96f2d6a590002615c67b9de282d96504b34f364fd931bdc0",
+      "event_count": 117,
+      "trajectory_sha256": "86c016d8b05e4d9c8d16aa5a93066af4852e2b53b58823fbf50fe7d39e9e90b5",
+      "first_submission": "2026-10-24T12:09:11.767113+00:00",
+      "first_text": "Were Kameda and Umio both physical objects rather than people?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

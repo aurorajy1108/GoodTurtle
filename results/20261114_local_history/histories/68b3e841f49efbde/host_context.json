@@ -1,0 +1,169 @@
+{
+  "puzzle_id": "TS022",
+  "opening": "A lost girl found an empty house. She was exhausted but couldn't fall asleep.\nThe next morning, having finally fallen asleep from exhaustion, she woke up, noticed something strange, and fled the house in terror.",
+  "reference_answer": "The lost girl came across a small house.\nThere was a portrait hanging on the wall inside.\nShe decided to get some sleep first, but she felt like the person in the portrait was staring at her. She felt uneasy and couldn't fall asleep for a long time.\nThe next morning, the girl woke up to find that the person in the portrait was gone. She realized that what was on the wall wasn't a painting, but a window. Someone had been staring at her from outside the window all night.\nRealizing the truth, the girl was terrified and fled the house.",
+  "canonical_solution": "The lost girl came across a small house.\nThere was a portrait hanging on the wall inside.\nShe decided to get some sleep first, but she felt like the person in the portrait was staring at her. She felt uneasy and couldn't fall asleep for a long time.\nThe next morning, the girl woke up to find that the person in the portrait was gone. She realized that what was on the wall wasn't a painting, but a window. Someone had been staring at her from outside the window all night.\nRealizing the truth, the girl was terrified and fled the house.",
+  "canonical_facts": [
+    "The lost girl takes shelter in a house and mistakes a window with a real person outside for a portrait",
+    "Feeling watched by the apparent portrait keeps her awake",
+    "She eventually sleeps, and in the morning the figure is gone",
+    "She realizes it was a window and someone had watched her from outside, so she flees"
+  ],
+  "explicit_negatives": [
+    "There is no actual painting depicting an object; the supposed portrait itself is a window.",
+    "The shock is discovering a real watcher, not recognizing a criminal or a previously dead person."
+  ],
+  "unknown_details": [],
+  "irrelevant_details": [
+    "Watcher occupation, name, criminal history and motive are unspecified and not required.",
+    "Exact house dimensions and window material are incidental."
+  ],
+  "completion_requirements": [
+    "The lost girl takes shelter in a house and mistakes a window with a real person outside for a portrait",
+    "Feeling watched by the apparent portrait keeps her awake",
+    "She eventually sleeps, and in the morning the figure is gone",
+    "She realizes it was a window and someone had watched her from outside, so she flees"
+  ],
+  "host_examples": [
+    {
+      "case_id": "R01",
+      "question": "Was the apparent portrait actually a window?",
+      "answer": "yes",
+      "rationale": "Physical identity, not a painting of a window.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R02",
+      "question": "Was there a real person outside the window?",
+      "answer": "yes",
+      "rationale": "The apparent painted figure was real.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R03",
+      "question": "Did an actual painting depict a window?",
+      "answer": "no",
+      "rationale": "No actual painting is involved.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R04",
+      "question": "Was the object she thought was a portrait man-made?",
+      "answer": "yes",
+      "rationale": "The window itself is man-made.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R05",
+      "question": "Did the apparent painting show a manufactured object rather than a human?",
+      "answer": "no",
+      "rationale": "The seen figure was a real human, not a depicted object.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R06",
+      "question": "Was she scared because the window proved she had been watched?",
+      "answer": "yes",
+      "rationale": "Correct causal discovery.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R07",
+      "question": "Was she scared because she recognized a wanted criminal?",
+      "answer": "no",
+      "rationale": "Unsupported identity is substituted as the explanatory cause.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R08",
+      "question": "Did the watcher have a job as a teacher?",
+      "answer": "irrelevant",
+      "rationale": "Occupation is unspecified and not needed.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R09",
+      "question": "Had the watcher ever been to prison?",
+      "answer": "irrelevant",
+      "rationale": "Personal history is incidental.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R10",
+      "question": "Was the window wooden?",
+      "answer": "irrelevant",
+      "rationale": "Frame material is incidental.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R11",
+      "question": "Was the watcher a ghost?",
+      "answer": "no",
+      "rationale": "The watcher was a real person.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R12",
+      "question": "Did the glass transform into a painting overnight?",
+      "answer": "no",
+      "rationale": "Misinterpretation, not physical transformation.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R13",
+      "question": "Was it a window, and was the watcher a supernatural spirit?",
+      "answer": "yes and no",
+      "rationale": "Independent true identity and false watcher claim.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R14",
+      "question": "Was it either a window or a framed photograph?",
+      "answer": "yes",
+      "rationale": "Inclusive OR: window is supported.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R15",
+      "question": "Was the house a miniature dollhouse?",
+      "answer": "no",
+      "rationale": "Ordinary house; small does not imply a miniature.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R16",
+      "question": "Was the house unusually small compared with a normal house?",
+      "answer": "irrelevant",
+      "rationale": "Small is stated but abnormal comparative size is neither established nor explanatory.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R17",
+      "question": "Was the person gone by morning?",
+      "answer": "yes",
+      "rationale": "This is explicit in this version.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    }
+  ],
+  "review_status": "pending_human_review",
+  "binding_version": "four-label-repair-20261023",
+  "story_sha256": "7c58339299af1ffe5c8b62850b87419914bf050994fabb559168e536907297d8",
+  "context_sha256": "a2821021388a95f5e62b450e9e89160cce0f7aaf864cc72247f252014bd7e775"
+}

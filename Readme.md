@@ -1,5 +1,7 @@
 # GoodTurtle — COMP1110
 
+**Latest results (14 November):** [All-version analysis in Chinese](reports/20261114_all_versions/analysis.zh-CN.md) and [every formal trajectory](reports/20261114_all_versions/index.html), combining local results, Set2 v17, and the newly uploaded T22/T42 experiments. There are 168 formal/appendix archives, 167 unique observations; local CL Set1 is complete, and local TS038 2×2 has 15/16 completed games (the remaining game retains its 36-submission checkpoint). Original scores and version differences are preserved. [All local history and failed/superseded snapshots](results/20261114_local_history/README.md) are published separately and are **not** extra independent repetitions. [Results navigation and offline rebuilding](results/README.md). No experiment rerun is needed to browse these results after pulling `main`.
+
 **Scoring update:** new runs default to v5 / `coverage-v3-unified`: 100% means solved and ends the game. All mandatory narrative facts are scored; historical v4 results stay unchanged. [Details and checks](docs/unified_scoring_v3.md).
 
 **Team runs:** [Three CL sets and three MAS puzzles, two people × two repeats](docs/team_campaign_20261111.md): a six-game pilot, personal batches, bounded parallel execution of all 150 games, and deduplicated collection.
@@ -24,7 +26,7 @@ Open the output's `index.html` for trajectories, shared dialogue, private review
 
 **Published results (13 November):** [Completed CL Set1 four-repeat results](results/20261113_verified_final/README.md), with an [HTML trajectory index](results/20261113_verified_final/index.html). All 39 CL games finished. [MAS follow-up: all eight games completed](results/20261113_mas_completed/README.md); the previously truncated private review was retained and its game finished at submission 84 with score 0%. Structural, session and accounting checks passed; Host/Grader semantics remain pending human review. The [earlier interim snapshot](docs/results/cl_set1_20261112/interpretation.zh-CN.md) is retained as history.
 
-**Four-repeat MAS extension:** [Latest completed-results snapshot: 10/16 games](results/20261113_mas_r1r4_progress/README.md), with [HTML trajectories](results/20261113_mas_r1r4_progress/index.html). Newly published: solo repeat 4 (0%, 100 submissions) and MAS-review repeat 3 (75%, 81 submissions). Unfinished games are listed separately and excluded from outcome means; prior completed results are linked without duplication.
+**Four-repeat MAS extension:** [Earlier 10/16 snapshot](results/20261113_mas_r1r4_progress/README.md), with [HTML trajectories](results/20261113_mas_r1r4_progress/index.html). The [14 November inventory](reports/20261114_all_versions/formal_inventory.csv) supersedes its progress count: 15/16 completed; an unfinished MAS-review game is excluded from outcome means. Recovery copies are not additional repetitions.
 
 **Teammate result review:** [Two Set2 rounds and April's formal TS038 runs](docs/results/teammates_20261113/analysis.zh-CN.md), covering 28 unique completed games from pinned main commit `6afda1c`. Archived coverage-v2 scoring, Host versions, auxiliary formatter models and solver budgets differ from the current defaults; report the cohorts separately.
 

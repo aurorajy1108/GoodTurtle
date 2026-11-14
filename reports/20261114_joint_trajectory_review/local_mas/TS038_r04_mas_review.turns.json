@@ -1,0 +1,362 @@
+[
+  {
+    "timestamp": "2026-11-13T05:25:48.348394+00:00",
+    "event": "submission",
+    "index": 1,
+    "type": "question",
+    "text": "Are the seven repetitions spoken by seven distinct people (or entities), rather than one person repeating the phrase?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Are the seven repetitions spoken by seven distinct people (or entities), rather than one person repeating the phrase?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T05:26:00.925158+00:00",
+    "event": "submission",
+    "index": 2,
+    "type": "question",
+    "text": "Did one single person say the phrase repeatedly (the same voice uttering it seven times)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Did one single person say the phrase repeatedly (the same voice uttering it seven times)?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T05:26:12.616619+00:00",
+    "event": "submission",
+    "index": 3,
+    "type": "question",
+    "text": "Are the seven repetitions written text (e.g., printed messages, screens, letters) rather than something spoken aloud?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Are the seven repetitions written text (e.g., printed messages, screens, letters) rather than something spoken aloud?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:56:24.255641+00:00",
+    "event": "submission",
+    "index": 4,
+    "type": "question",
+    "text": "Were the seven written messages produced or sent by a single source (e.g., the same sender, device, or author), rather than coming from seven independent origins?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Were the seven written messages produced or sent by a single source (e.g., the same sender, device, or author), rather than coming from seven independent origins?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:56:36.341859+00:00",
+    "event": "submission",
+    "index": 5,
+    "type": "question",
+    "text": "Are the seven identical written messages electronic/digital (e.g., texts, emails, app notifications) rather than on paper?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Are the seven identical written messages electronic/digital (e.g., texts, emails, app notifications) rather than on paper?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:56:51.947179+00:00",
+    "event": "submission",
+    "index": 6,
+    "type": "question",
+    "text": "Was the phrase written repeatedly as a punishment — i.e., the person was made to write it out over and over (like \"writing lines\" as school discipline)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Was the phrase written repeatedly as a punishment — i.e., the person was made to write it out over and over (like \\\"writing lines\\\" as school discipline)?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:57:07.348633+00:00",
+    "event": "submission",
+    "index": 7,
+    "type": "question",
+    "text": "Did a single person write and leave seven identical copies of this note to complain about a business or service — i.e., a customer saying they'll never return?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Did a single person write and leave seven identical copies of this note to complain about a business or service — i.e., a customer saying they'll never return?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:57:22.375221+00:00",
+    "event": "submission",
+    "index": 8,
+    "type": "question",
+    "text": "Was the phrase written by a human (by hand or typed by a person), rather than produced automatically by a machine or device?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Was the phrase written by a human (by hand or typed by a person), rather than produced automatically by a machine or device?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:57:33.335446+00:00",
+    "event": "submission",
+    "index": 9,
+    "type": "question",
+    "text": "Is the person who says \"I know I'm in trouble\" the same person who wrote the seven notes?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the person who says \\\"I know I'm in trouble\\\" the same person who wrote the seven notes?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:57:44.071904+00:00",
+    "event": "submission",
+    "index": 10,
+    "type": "question",
+    "text": "Did the writer intend other people to actually read the notes as a real farewell (i.e., meant to make others believe they were leaving for good)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Did the writer intend other people to actually read the notes as a real farewell (i.e., meant to make others believe they were leaving for good)?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:58:02.562086+00:00",
+    "event": "submission",
+    "index": 11,
+    "type": "question",
+    "text": "Did the writer not genuinely intend to leave, but write the notes so others would believe they were leaving (a hoax, prank, or attention-seeking stunt)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Did the writer not genuinely intend to leave, but write the notes so others would believe they were leaving (a hoax, prank, or attention-seeking stunt)?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:59:21.625607+00:00",
+    "event": "submission",
+    "index": 12,
+    "type": "question",
+    "text": "Were the seven identical notes given to seven different people, who then compared them (e.g., discovering they'd each received the same message)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Were the seven identical notes given to seven different people, who then compared them (e.g., discovering they'd each received the same message)?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:59:33.036073+00:00",
+    "event": "submission",
+    "index": 13,
+    "type": "question",
+    "text": "Did \"I'm never coming back\" mean the writer intended to die (the notes being a suicide/farewell note), rather than simply moving away or ending a relationship?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Did \\\"I'm never coming back\\\" mean the writer intended to die (the notes being a suicide/farewell note), rather than simply moving away or ending a relationship?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:59:46.510423+00:00",
+    "event": "submission",
+    "index": 14,
+    "type": "question",
+    "text": "Is the writer a child running away from home, who now realizes they're \"in trouble\" for it?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the writer a child running away from home, who now realizes they're \\\"in trouble\\\" for it?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:59:57.509960+00:00",
+    "event": "submission",
+    "index": 15,
+    "type": "question",
+    "text": "Is the note addressed to one specific individual person the writer knows personally (e.g., a partner, friend, or family member), rather than an institution, company, or group?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the note addressed to one specific individual person the writer knows personally (e.g., a partner, friend, or family member), rather than an institution, company, or group?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T14:01:03.058236+00:00",
+    "event": "submission",
+    "index": 16,
+    "type": "question",
+    "text": "A wrote the notes himself and is now worried about being \"in trouble.\" Could the seven identical notes be pages/objects in his own possession—for example, seven copies he made for himself rather than messages delivered anywhere? And critically: has the addressee actually seen any of the notes?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"A wrote the notes himself and is now worried about being \\\"in trouble.\\\" Could the seven identical notes be pages/objects in his own possession—for example, seven copies he made for himself rather than messages delivered anywhere? And critically: has the addressee actually seen any of the notes?\"}",
+    "label": "yes and no"
+  },
+  {
+    "timestamp": "2026-11-13T14:02:16.970555+00:00",
+    "event": "submission",
+    "index": 17,
+    "type": "question",
+    "text": "Did the writer never actually give or deliver the notes to their intended reader—so the notes ended up being found by someone else (or otherwise read only after the fact)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Did the writer never actually give or deliver the notes to their intended reader—so the notes ended up being found by someone else (or otherwise read only after the fact)?\"}",
+    "label": "yes and no"
+  },
+  {
+    "timestamp": "2026-11-13T14:03:45.243490+00:00",
+    "event": "submission",
+    "index": 18,
+    "type": "question",
+    "text": "Is the person to whom the farewell note is addressed the writer's romantic partner or spouse?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the person to whom the farewell note is addressed the writer's romantic partner or spouse?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T14:05:18.977402+00:00",
+    "event": "submission",
+    "index": 19,
+    "type": "question",
+    "text": "Is the addressee a relative of the writer—such as a parent, sibling, or other family member?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the addressee a relative of the writer—such as a parent, sibling, or other family member?\"}",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-13T14:07:02.167232+00:00",
+    "event": "submission",
+    "index": 20,
+    "type": "question",
+    "text": "Did the intended addressee ever actually see or receive any of the seven notes?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Did the intended addressee ever actually see or receive any of the seven notes?\"}",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-13T14:07:33.575177+00:00",
+    "event": "submission",
+    "index": 21,
+    "type": "question",
+    "text": "Were the seven identical notes seven separate physical pieces of paper?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Were the seven identical notes seven separate physical pieces of paper?\"}",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-13T14:07:52.298860+00:00",
+    "event": "submission",
+    "index": 22,
+    "type": "question",
+    "text": "Is the writer a fictional character—that is, does the farewell note appear within a book, story, poem, or published written work?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the writer a fictional character—that is, does the farewell note appear within a book, story, poem, or published written work?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T14:08:22.315394+00:00",
+    "event": "submission",
+    "index": 23,
+    "type": "question",
+    "text": "Before writing the farewell, had the writer done something that wronged or disappointed the addressee?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Before writing the farewell, had the writer done something that wronged or disappointed the addressee?\"}",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-13T14:10:15.558711+00:00",
+    "event": "submission",
+    "index": 24,
+    "type": "question",
+    "text": "Is the scenario set in an institutional context such as a hospital, prison, school, or workplace?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the scenario set in an institutional context such as a hospital, prison, school, or workplace?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T14:10:56.022860+00:00",
+    "event": "submission",
+    "index": 25,
+    "type": "question",
+    "text": "Is the \"trouble\" the writer fears a legal or official one — e.g., being caught by police or an authority — rather than merely hurting or upsetting the addressee?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the \\\"trouble\\\" the writer fears a legal or official one — e.g., being caught by police or an authority — rather than merely hurting or upsetting the addressee?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T14:11:11.128408+00:00",
+    "event": "submission",
+    "index": 26,
+    "type": "question",
+    "text": "Is the writer planning to fake their own death or disappearance (e.g., to escape debts, claim insurance, or evade responsibility), using the notes as proof they've \"gone for good\"?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the writer planning to fake their own death or disappearance (e.g., to escape debts, claim insurance, or evade responsibility), using the notes as proof they've \\\"gone for good\\\"?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T14:11:44.755956+00:00",
+    "event": "submission",
+    "index": 27,
+    "type": "question",
+    "text": "Were the seven identical handwritten copies produced as handwriting specimens/exemplars — the same sentence written out repeatedly, e.g. for investigators to compare against a note in a case?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Were the seven identical handwritten copies produced as handwriting specimens/exemplars — the same sentence written out repeatedly, e.g. for investigators to compare against a note in a case?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T14:12:01.115023+00:00",
+    "event": "submission",
+    "index": 28,
+    "type": "question",
+    "text": "Is the writer about to be imprisoned or sent far away for a long time, so the notes are a real goodbye to that one person — and the \"trouble\" is a looming punishment?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the writer about to be imprisoned or sent far away for a long time, so the notes are a real goodbye to that one person — and the \\\"trouble\\\" is a looming punishment?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T14:12:16.531519+00:00",
+    "event": "submission",
+    "index": 29,
+    "type": "question",
+    "text": "Is the writer's legal trouble directly caused by these notes themselves (e.g., the notes are evidence or constitute the offense), rather than unrelated to the notes?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the writer's legal trouble directly caused by these notes themselves (e.g., the notes are evidence or constitute the offense), rather than unrelated to the notes?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T14:12:39.212550+00:00",
+    "event": "submission",
+    "index": 30,
+    "type": "question",
+    "text": "Is the writer planning to flee or go into hiding from the law (go on the run), with the notes being their real goodbye because they're disappearing from that person's life?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the writer planning to flee or go into hiding from the law (go on the run), with the notes being their real goodbye because they're disappearing from that person's life?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T14:13:12.564719+00:00",
+    "event": "submission",
+    "index": 31,
+    "type": "question",
+    "text": "Is the writer being deported, exiled, or officially banned from the country or place where the addressee lives — so that \"I'm never coming back\" is literally true and the \"trouble\" is that official action?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the writer being deported, exiled, or officially banned from the country or place where the addressee lives — so that \\\"I'm never coming back\\\" is literally true and the \\\"trouble\\\" is that official action?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T14:13:26.119823+00:00",
+    "event": "submission",
+    "index": 32,
+    "type": "question",
+    "text": "Is the addressee someone the writer is legally responsible for — a dependent, a minor child, or a patient — so that walking away (\"never coming back\") would itself be the source of the \"trouble\"?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the addressee someone the writer is legally responsible for — a dependent, a minor child, or a patient — so that walking away (\\\"never coming back\\\") would itself be the source of the \\\"trouble\\\"?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T14:13:44.299620+00:00",
+    "event": "submission",
+    "index": 33,
+    "type": "question",
+    "text": "Has anyone actually died in this story?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Has anyone actually died in this story?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T14:13:56.854859+00:00",
+    "event": "submission",
+    "index": 34,
+    "type": "question",
+    "text": "Did the writer cause that death (directly, through negligence, or in some way be responsible for it)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Did the writer cause that death (directly, through negligence, or in some way be responsible for it)?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T14:14:22.825584+00:00",
+    "event": "submission",
+    "index": 35,
+    "type": "question",
+    "text": "Is the person to whom the farewell note is addressed the same person the writer caused to die?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the person to whom the farewell note is addressed the same person the writer caused to die?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T14:14:44.385106+00:00",
+    "event": "submission",
+    "index": 36,
+    "type": "question",
+    "text": "Is the writer facing a criminal charge or prosecution from the state for causing the death, rather than only a civil lawsuit or claim?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the writer facing a criminal charge or prosecution from the state for causing the death, rather than only a civil lawsuit or claim?\"}",
+    "label": "no"
+  }
+]

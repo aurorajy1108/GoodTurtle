@@ -1,0 +1,169 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 94,
+  "final_attempts": 6,
+  "rejected_finals": 6,
+  "counted_questions": 100,
+  "submissions": 100,
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.875,
+  "best_partial_score": 0.875,
+  "latest_final": "A prisoner arranged with a prison guard to escape by hiding in a coffin during a funeral. The plan was for the coffin to be buried outside the prison, after which the guard—who was supposed to be alive and waiting outside—would open it. The guard died after making the arrangement but before the prisoner entered the coffin. Unaware of this, the prisoner hid beside the guard’s body and was buried. When he struck a match and recognized the guard, he realized the rescue would never come. He could not open the coffin or summon help, and died trapped underground. The match revealed that the plan had failed; it did not trigger the danger. The answers do not establish his exact physical cause of death.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 1,
+        "evidence": "A prisoner arranged with a prison guard to escape by hiding in a coffin during a funeral.",
+        "reason": "Identifies the prisoner, escape motive, and his own concealment inside a coffin."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "The guard died after making the arrangement but before the prisoner entered the coffin. Unaware of this, the prisoner hid beside the guard’s body and was buried.",
+        "reason": "Correctly identifies the corpse as the intended guard rescuer without contradicting the sequence. The bribe is omitted, and opening the coffin after burial only partially specifies the promised digging-out arrangement."
+      },
+      {
+        "id": "C3",
+        "credit": 1,
+        "evidence": "Unaware of this, the prisoner hid beside the guard’s body and was buried. When he struck a match and recognized the guard, he realized the rescue would never come.",
+        "reason": "Clearly describes recognizing the dead guard by matchlight inside the buried coffin."
+      },
+      {
+        "id": "C4",
+        "credit": 1,
+        "evidence": "When he struck a match and recognized the guard, he realized the rescue would never come. He could not open the coffin or summon help, and died trapped underground.",
+        "reason": "Connects the rescuer’s death to the realization that rescue is impossible and to the prisoner’s death underground."
+      }
+    ],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Missing the bribe and the agreement to use the next deceased person’s coffin. Rescue by opening the buried coffin is described, but digging him up is not clearly specified.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "covered",
+        "evidence": "A prisoner arranged with a prison guard to escape by hiding in a coffin during a funeral."
+      },
+      {
+        "id": "C1.F2",
+        "status": "covered",
+        "evidence": "Unaware of this, the prisoner hid beside the guard’s body and was buried."
+      },
+      {
+        "id": "C2.F1",
+        "status": "covered",
+        "evidence": "The guard died after making the arrangement but before the prisoner entered the coffin. Unaware of this, the prisoner hid beside the guard’s body and was buried."
+      },
+      {
+        "id": "C2.F2",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "C2.F3",
+        "status": "partial",
+        "evidence": "The plan was for the coffin to be buried outside the prison, after which the guard—who was supposed to be alive and waiting outside—would open it."
+      },
+      {
+        "id": "C3.F1",
+        "status": "covered",
+        "evidence": "Unaware of this, the prisoner hid beside the guard’s body and was buried. When he struck a match and recognized the guard, he realized the rescue would never come."
+      },
+      {
+        "id": "C4.F1",
+        "status": "covered",
+        "evidence": "When he struck a match and recognized the guard, he realized the rescue would never come. He could not open the coffin or summon help, and died trapped underground."
+      }
+    ],
+    "requirement_coverage": [
+      {
+        "id": "R1",
+        "status": "partial",
+        "evidence": "A prisoner arranged with a prison guard to escape by hiding in a coffin during a funeral."
+      },
+      {
+        "id": "R2",
+        "status": "partial",
+        "evidence": "A prisoner arranged with a prison guard to escape by hiding in a coffin during a funeral. The plan was for the coffin to be buried outside the prison, after which the guard—who was supposed to be alive and waiting outside—would open it."
+      },
+      {
+        "id": "R3",
+        "status": "partial",
+        "evidence": "The plan was for the coffin to be buried outside the prison, after which the guard—who was supposed to be alive and waiting outside—would open it."
+      },
+      {
+        "id": "R4",
+        "status": "covered",
+        "evidence": "Unaware of this, the prisoner hid beside the guard’s body and was buried. When he struck a match and recognized the guard, he realized the rescue would never come."
+      },
+      {
+        "id": "R5",
+        "status": "covered",
+        "evidence": "The guard died after making the arrangement but before the prisoner entered the coffin. ... When he struck a match and recognized the guard, he realized the rescue would never come. He could not open the coffin or summon help, and died trapped underground."
+      }
+    ],
+    "contradictions": [],
+    "partial_score": 0.875,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v2",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 2850.5987269578036,
+  "usage": {
+    "grader": {
+      "http_attempts": 6,
+      "successful_responses": 6,
+      "seconds": 188.89908391726203,
+      "provider_reported_usage": {
+        "input_tokens": 53384,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8044,
+        "reasoning_output_tokens": 1600
+      }
+    },
+    "host": {
+      "http_attempts": 192,
+      "successful_responses": 192,
+      "seconds": 1391.2319939935114,
+      "provider_reported_usage": {
+        "input_tokens": 1747011,
+        "cached_input_tokens": 257024,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10916,
+        "reasoning_output_tokens": 7700
+      }
+    },
+    "player": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 1269.41407500091,
+      "provider_reported_usage": {
+        "input_tokens": 385253,
+        "cached_input_tokens": 163968,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 43244,
+        "reasoning_output_tokens": 38401
+      }
+    }
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "evaluation_versions": {
+    "story_sha256": "6e6ea7eabb42f6e387794f1a2bb7d9ec10071bf6ae28640252258c26999de20b",
+    "grading_sha256": "c97b4664a9cd4ae52addd7dfb845037825cc2cb00c56443e7a7ceeaffc0d2a4e",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "5e8670d5cd1d8953946f0fe19d410ee9e4ea62aacb2b37601a6a5fba9d66e079",
+    "controller_sha256": "9a3b627dfcd00a9df00e2aec21a6233e93e3a41c50021470bf0485a0fbfa8614",
+    "host_context_sha256": "b905ea1805c2ea7eb40920fb27ab5df464f14fe0af9f1bd40333aa573b80aa39",
+    "host_binding_version": "host-v5.1-20261023"
+  }
+}

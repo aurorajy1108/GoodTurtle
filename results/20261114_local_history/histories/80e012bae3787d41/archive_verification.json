@@ -1,0 +1,38 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "6e3594508e8de63929f5b31decc0a421ada80bd680e69f9c281834249eec64a5",
+    "trajectory.jsonl": "a841c25463e87376f93259519366263315e0e52afff34de994a61b7515c73807",
+    "trajectory.md": "12960bde2acff6babb36a35666cb259bdddf06285fda12dfe7b19f61282b756f",
+    "trajectory.html": "fb2e775f892491df35d1dd2096b7cd04bc04992b34c793fd0fb591b4a305f7bf",
+    "config.json": "a014f81ea9e104679e8f092a1f109161aea61071386b2e945a24be08c367d75c",
+    "prompts.json": "229c9b162e1ccad47a332ecc5b8130273ed37b2e3e8db9c7ce9edb23ca50061c",
+    "puzzle_private.json": "7568a0f60d5ec6f4ecdb1b51d2123d9de87ebe824a5280e62af2dcc525f4c148",
+    "host_context.json": "212fb8f3c1ea3dcd063de48a5f85fd36d1b0c1b352b13c772deac5b744d24160",
+    "human_review.csv": "87d2ba646423156a269833e8b2862f3c7b9da91773e0b8cdba25b8a7ca614c47",
+    "review_template.csv": "87d2ba646423156a269833e8b2862f3c7b9da91773e0b8cdba25b8a7ca614c47",
+    "transfer_input.json": "4610009ed30f3296d3dfd4fae9430fd9a2958123e8967ceb39cc5ac7c2e78905"
+  },
+  "api_audit": {
+    "source_raw_sha256": "4bfe8d387d879e0156284d10053e26e6b5203de82ae17b4a5a434afbe4b65c8d",
+    "source_raw_bytes": 8298756,
+    "published_sha256": "c87b6531c3336768ff1bfaca1c74e1259533ab0cd8c331e827806c229d8d80e1",
+    "attempts": 200
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261023_three_review_rerun/positive/G07_TS022_TS047_r01_source",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "6e3594508e8de63929f5b31decc0a421ada80bd680e69f9c281834249eec64a5",
+      "signature": "80e012bae3787d41f5d2aa98d8850c20867e2c938090b58bb4e61104e4d557ae",
+      "event_count": 201,
+      "trajectory_sha256": "a841c25463e87376f93259519366263315e0e52afff34de994a61b7515c73807",
+      "first_submission": "2026-10-23T10:41:36.421502+00:00",
+      "first_text": "Was the strange thing she noticed inside the house?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

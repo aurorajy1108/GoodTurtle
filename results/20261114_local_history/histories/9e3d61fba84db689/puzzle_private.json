@@ -1,0 +1,54 @@
+{
+  "id": "TS047",
+  "opening": "The Guesthouse Portrait. A reporter visiting the countryside stays in a shabby guesthouse. In the dim room, there is a picture opposite her bed. The next morning, she is stunned. Why?",
+  "answer": "In poor light, she mistakes a window with a real man outside for a lifelike portrait. During the night, she feels watched and avoids looking at it. In daylight, she approaches it and realizes it is a window: the man was real, and she had been watched.",
+  "rubric": [
+    {
+      "id": "C1",
+      "weight": 0.5,
+      "core": true,
+      "criterion": "The supposed portrait opposite the bed is a window with a real person outside.",
+      "criterion_zh": "床对面的所谓画像其实是一扇窗户，窗外站真人",
+      "points": 50.0,
+      "full_credit": "The supposed portrait opposite the bed is a window with a real person outside.",
+      "half_credit": "Window identified without outside person",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses."
+    },
+    {
+      "id": "C2",
+      "weight": 0.3,
+      "core": false,
+      "criterion": "Dim lighting makes the guest mistake the staring person for a portrait.",
+      "criterion_zh": "昏暗光线让住客误以为是画像，而那人一直看着她",
+      "points": 30.0,
+      "full_credit": "Dim lighting makes the guest mistake the staring person for a portrait.",
+      "half_credit": "Poor-light mistake identified without watcher-as-portrait link",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses."
+    },
+    {
+      "id": "C3",
+      "weight": 0.2,
+      "core": false,
+      "criterion": "The guest discovers the window in daylight and is shocked.",
+      "criterion_zh": "第二天发现真相，所以震惊",
+      "points": 20.0,
+      "full_credit": "The guest discovers the window in daylight and is shocked.",
+      "half_credit": "Daylight discovery identified without shocking realization",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses."
+    }
+  ],
+  "title": "旅店的画像",
+  "story_family": "F-WINDOW-PORTRAIT",
+  "quality_status": "同故事变体",
+  "review_notes": "与22题为同一核心故事的改写",
+  "source_row": "47",
+  "observed_score": null,
+  "completion_requirements": [
+    "In poor light the guest mistakes a window and a real man outside for a lifelike portrait",
+    "Feeling watched, she avoids looking at it during the night",
+    "Daylight reveals the window and makes her realize the watcher was real, shocking her"
+  ],
+  "annotation_version": "turtle50-v1-2026-10-22",
+  "annotation_status": "pending_human_review",
+  "grading_notes": "Accept faithful paraphrase. Require the listed identities, events and causal links, not exact prose or unspecified incidental details."
+}

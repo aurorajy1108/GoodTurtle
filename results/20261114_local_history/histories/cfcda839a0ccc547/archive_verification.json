@@ -1,0 +1,40 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "40905a346672c3d2c9a2b41a1f2d60f4fa9dcf31aaec61f242d11ec0eda76b03",
+    "trajectory.jsonl": "dafe7311e06f22afad9dbc52b91a69f74a9c5c3742af37bb307af226d1e4c303",
+    "trajectory.md": "faa9fa96355ca75a65275a97bce46e8a942df0006bf39a37671e6e7f949edf52",
+    "trajectory.html": "b2ac2692727e32ea9207b8cfeb7703b7e004660265313cfc1b3b928d019dbc29",
+    "config.json": "2f478a93b148e08ef772bb1729ef0c18373ea9b3511902600a95a8bde32762cf",
+    "prompts.json": "a1dd2d2ca8afe1a9f9dd540b8c4c71b8c01679fc71e6511290d8eafffecbeaa0",
+    "puzzle_private.json": "29e954e99ae4cf044cdbb6058560998d599b9623b77eef50de93599f1faf9c85",
+    "host_context.json": "8bb2ff6f9105c5ae110ff476710d36110ed2bef53a0c3e5a7a2f42a4cc597146",
+    "pricing_snapshot.json": "64c31820443327839ce32e5128053650aacd3becf6b6746e94de79bb5620c17d",
+    "cost_summary.json": "d3313d491bc2c7e07227157bc6eee13090b6f37c481fda46666781513079247f",
+    "token_costs.csv": "0941d36f36e0a1bf0d196f654b9a3d3e082b56304f5c043ac31fd840341b3449",
+    "human_review.csv": "a05ec6da7ca72d1c81aecc0f8e3cc24912e455fc2cc9cbc364034fe06ac1a5aa",
+    "review_template.csv": "a05ec6da7ca72d1c81aecc0f8e3cc24912e455fc2cc9cbc364034fe06ac1a5aa"
+  },
+  "api_audit": {
+    "source_raw_sha256": "6d01a50d7b7c0d8db085b045aac14ef554828013d0fba6413519e65ccc077328",
+    "source_raw_bytes": 7469867,
+    "published_sha256": "c939913634a24b891f2ad51ac1e7351b84241017036a9bccf708a4e59f3f9485",
+    "attempts": 251
+  },
+  "aliases": [
+    {
+      "source": "runs/api/2026-11-02_set1_once_resume01/continual/S1_TS015_TS013_TS015_TS013_r01_direct",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "40905a346672c3d2c9a2b41a1f2d60f4fa9dcf31aaec61f242d11ec0eda76b03",
+      "signature": "cfcda839a0ccc5471b997c740f56c7bcf8626f07a7a65c7cd8b561aa23b24e5d",
+      "event_count": 251,
+      "trajectory_sha256": "dafe7311e06f22afad9dbc52b91a69f74a9c5c3742af37bb307af226d1e4c303",
+      "first_submission": "2026-11-02T12:05:56.518105+00:00",
+      "first_text": "Did the courses disappear from the university's online course-registration system? પ્રતિ",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

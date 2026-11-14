@@ -1,0 +1,61 @@
+{
+  "status": "error",
+  "stop_reason": "APIError",
+  "simulation": false,
+  "success": null,
+  "host_questions": 4,
+  "final_attempts": 0,
+  "rejected_finals": 0,
+  "counted_questions": 4,
+  "submissions": 4,
+  "pending_feedback": 1,
+  "forced_final": false,
+  "final_partial_score": null,
+  "best_partial_score": null,
+  "latest_final": null,
+  "latest_grade": null,
+  "elapsed_seconds": 86.49180541583337,
+  "usage": {
+    "grader": {
+      "http_attempts": 0,
+      "successful_responses": 0,
+      "seconds": 0,
+      "provider_reported_usage": {}
+    },
+    "host": {
+      "http_attempts": 8,
+      "successful_responses": 7,
+      "seconds": 49.73317787493579,
+      "provider_reported_usage": {
+        "input_tokens": 153498,
+        "cached_input_tokens": 13824,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 109,
+        "reasoning_output_tokens": 0
+      }
+    },
+    "player": {
+      "http_attempts": 4,
+      "successful_responses": 4,
+      "seconds": 36.683760206680745,
+      "provider_reported_usage": {
+        "input_tokens": 22786,
+        "cached_input_tokens": 5760,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 618,
+        "reasoning_output_tokens": 491
+      }
+    }
+  },
+  "error": "host: Codex CLI failed (exit=1, tools=False, format=False); see api_calls.jsonl",
+  "human_review_status": "pending",
+  "evaluation_versions": {
+    "story_sha256": "53f7fbdb24212705bbbe8e2ae12b20773f609a02377082226c8299db279d7428",
+    "grading_sha256": "007f3f097ed52e23cf1eef40b821716553cd49eef0335596d2350c6588c75ab9",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "317d8fe155f38c71d6100a173036d52d2061c896539f94cd57bbd0c3a56645ad",
+    "controller_sha256": "ee8c0759b759eb73528ecdbfc34f8c35fe00de843db206b08630ff3214536163",
+    "host_context_sha256": "594126eaa4a7475e0193ddf2401062b150d686efa5c286785c33155a4a2bf013",
+    "host_binding_version": "host-v5.1-20261023"
+  }
+}

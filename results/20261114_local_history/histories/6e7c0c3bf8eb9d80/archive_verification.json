@@ -1,0 +1,41 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "9f8d191e267499d54740b8c161acdbe722ca52c82dfaec8d15f8a2a90faa76b2",
+    "trajectory.jsonl": "cbc32f8183d6745734948cce4d014058e4466a5542801c967c08dcde39ead7d6",
+    "trajectory.md": "d903eaa1ce9fc2cdcf98d10ae0addebf908685e3a84e6f56dcef70ba52531776",
+    "trajectory.html": "c3fde5b6bb00d66639a5a67c2d2e51aeea1376779d8936eeca2a31e948c17124",
+    "config.json": "4307cf3c715247acc8faf9d322125607962ba66e56d5980b57d841ccb930bc1e",
+    "prompts.json": "a9dba37a156716f526e0d9a31a06fc4baea1abfbe4ba7028933a716384597a2e",
+    "puzzle_private.json": "b1c69c4db95e2279cc8972e3b68d76291d9518a2f7c306619dbb37a204b5574e",
+    "host_context.json": "8f235fc20be67ee92e7960123d947f4a0473dd8db366ded6d93fa14a56e3aab0",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "0a3fdde5e02a39bbfd5dea2afbce6b9ce2479134e71d8df316bc7b00195cca23",
+    "cost_summary.json": "96a37e8761a9d6e1c58cd8bcb5bceb4b7ddc0f7f06d5a825e4e5e53bc7b467ce",
+    "token_costs.csv": "3daeded8d8e278fee5f141ef09ffb8aea98a8638794e9515a3e7277451e0f8da",
+    "human_review.csv": "2b655c0ac1fac457a899ec89b92e7060d8b1b6bb0f5ac9327ef4b2b808449a7a",
+    "review_template.csv": "2b655c0ac1fac457a899ec89b92e7060d8b1b6bb0f5ac9327ef4b2b808449a7a"
+  },
+  "api_audit": {
+    "source_raw_sha256": "6bc6576cd4596770dfd3769e02ef654c8962262145ff778f97f60c4ef90e83a1",
+    "source_raw_bytes": 1626600,
+    "published_sha256": "0b4828ab9854458c29a985b30ee07b896de49aeecc49864cd4208146abfec88a",
+    "attempts": 60
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261111_live_smoke_v2_mas_resume01/team/TS038_r01_solo",
+      "status_as_recorded": "error",
+      "simulation": false,
+      "submissions": 29,
+      "result_sha256": "9f8d191e267499d54740b8c161acdbe722ca52c82dfaec8d15f8a2a90faa76b2",
+      "signature": "6e7c0c3bf8eb9d80ea14e1dff68badaf0addb5f05bd20db74c051b06563d3962",
+      "event_count": 184,
+      "trajectory_sha256": "cbc32f8183d6745734948cce4d014058e4466a5542801c967c08dcde39ead7d6",
+      "first_submission": "2026-11-11T10:33:43.869364+00:00",
+      "first_text": "Is the speaker being told this by multiple distinct people?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

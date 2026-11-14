@@ -1,0 +1,93 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 96,
+  "final_attempts": 4,
+  "rejected_finals": 4,
+  "counted_questions": 100,
+  "submissions": 100,
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.675,
+  "best_partial_score": 0.675,
+  "latest_final": "At school, A reported to the authorities a murder B’s parent had already committed. The parent faced criminal consequences, and B moved in with a relative, prompting B to transfer schools. The crime and its revelation contributed to B’s shame and fear of being judged by others. Years later, B voluntarily disappeared partly because of those feelings. A had not killed B. Hoping B would reappear and correct the false claim—and hoping to comfort and support B—A falsely confessed to killing B. Authorities suspected and arrested A based on the confession.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 1,
+        "evidence": "“B voluntarily disappeared”; A “falsely confessed to killing B” hoping B would reappear and correct the false claim.",
+        "reason": "Covers both a voluntary disappearance while B is alive by implication and A’s false confession intended to reach B."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "A reported a murder committed by B’s parent, and B moved in with a relative and transferred schools.",
+        "reason": "Identifies the report and resulting move, but omits A’s later surname change."
+      },
+      {
+        "id": "C3",
+        "credit": 0,
+        "evidence": "B disappeared partly because of shame and fear of being judged by others.",
+        "reason": "Does not say B later recognized A or mistakenly believed A did not know B’s family background."
+      },
+      {
+        "id": "C4",
+        "credit": 0.5,
+        "evidence": "A hoped B would reappear and correct the false claim, and hoped to comfort and support B.",
+        "reason": "Includes the appeal for B to return and clear A, with a supportive intent, but omits that A knew B’s past and that they genuinely loved each other."
+      }
+    ],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Omits A’s surname change and the university recognition asymmetry and genuine romance. It also does not establish that B recognized A, mistakenly thought A was unaware of the family history, left divorce papers and an apology, or never learned A reported the crime. A’s hope to communicate acceptance of B’s past is not clearly stated.",
+    "partial_score": 0.675,
+    "complete": false,
+    "label": "yes and no"
+  },
+  "elapsed_seconds": 4528.65097141685,
+  "usage": {
+    "grader": {
+      "http_attempts": 4,
+      "successful_responses": 4,
+      "seconds": 49.992368668084964,
+      "provider_reported_usage": {
+        "input_tokens": 27527,
+        "cached_input_tokens": 2176,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3021,
+        "reasoning_output_tokens": 1647
+      }
+    },
+    "host": {
+      "http_attempts": 96,
+      "successful_responses": 96,
+      "seconds": 940.6662468013819,
+      "provider_reported_usage": {
+        "input_tokens": 760776,
+        "cached_input_tokens": 239232,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 14734,
+        "reasoning_output_tokens": 13069
+      }
+    },
+    "player": {
+      "http_attempts": 300,
+      "successful_responses": 300,
+      "seconds": 3536.643885206431,
+      "provider_reported_usage": {
+        "input_tokens": 1120958,
+        "cached_input_tokens": 274560,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 100725,
+        "reasoning_output_tokens": 80790
+      }
+    }
+  },
+  "error": null,
+  "human_review_status": "pending"
+}

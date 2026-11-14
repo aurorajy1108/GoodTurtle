@@ -1,0 +1,8 @@
+call_index,role,provider,model,model_basis,call_status,input_tokens,cached_input_tokens,cache_write_tokens,output_tokens,reasoning_tokens,total_tokens,estimated_cost_usd,cost_status,unknown_reason,cost_basis,price_snapshot_sha256
+1,player,deepseek,deepseek-flash,returned,ok,17238,16896,0,26,,17264,0.000235176,estimated,,standard_api_equivalent_not_actual_bill,fcfa07688759a3a2dc223fd7b34c9f540e047560d7cf4baf878c50bb0772b77e
+2,host,deepseek,deepseek-v4-pro,returned,ok,4763,4352,0,160,158,4923,0.001367608,estimated,,standard_api_equivalent_not_actual_bill,fcfa07688759a3a2dc223fd7b34c9f540e047560d7cf4baf878c50bb0772b77e
+3,player,deepseek,deepseek-flash,returned,ok,17373,17152,0,30,,17403,0.000205212,estimated,,standard_api_equivalent_not_actual_bill,fcfa07688759a3a2dc223fd7b34c9f540e047560d7cf4baf878c50bb0772b77e
+4,host,deepseek,deepseek-v4-pro,returned,ok,5165,4736,0,155,153,5320,0.001388464,estimated,,standard_api_equivalent_not_actual_bill,fcfa07688759a3a2dc223fd7b34c9f540e047560d7cf4baf878c50bb0772b77e
+5,player,deepseek,deepseek-flash,returned,ok,17512,17280,0,23,,17535,0.00020088,estimated,,standard_api_equivalent_not_actual_bill,fcfa07688759a3a2dc223fd7b34c9f540e047560d7cf4baf878c50bb0772b77e
+6,host,deepseek,deepseek-v4-pro,returned,ok,5360,5120,0,7457,7455,12817,0.0300718,estimated,,standard_api_equivalent_not_actual_bill,fcfa07688759a3a2dc223fd7b34c9f540e047560d7cf4baf878c50bb0772b77e
+7,player,deepseek,deepseek-flash,requested_unverified,http_error,,,0,,,,,unknown,missing_or_inconsistent_usage,standard_api_equivalent_not_actual_bill,fcfa07688759a3a2dc223fd7b34c9f540e047560d7cf4baf878c50bb0772b77e

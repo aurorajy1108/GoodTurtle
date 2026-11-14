@@ -1,0 +1,39 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "34df737de5c59183a0f925467ab53135cb51f40be9a4782c1ffca67f4e18f322",
+    "trajectory.jsonl": "aec47dbd197d88122653d27ea9f71de91e9f35bd27da90847884b684cd6cfc75",
+    "trajectory.md": "e86bbfc3e7c7146f23571d9ab265353765f53f0b04708e84d07340e120a4f053",
+    "trajectory.html": "612055fafc7f78761e2cf000756ef8e44ef96a276209b95a9f02f2e365c5cdcd",
+    "config.json": "08d2187c28075d0a59d9a14953c08f5f094edb9fd06fccbe50633dbf2bea2d01",
+    "partner_config.json": "489a968c9ed96d8e89aa0c6dcd2216c2a2dd1c4b68415ba6cf332611cf340f1c",
+    "prompts.json": "0a3f1cbcc4d8a896fe50dd7047766bb101587948339862672eeda6e4c3c9ad8f",
+    "puzzle_private.json": "50e1163c07abbd95b9087b18fdafde73d2b356fe89dc8ff9cf4287feb5270640",
+    "host_context.json": "f11378373e494311a309d7186cabf5376f2c731165e19800777162a66ec81f91",
+    "human_review.csv": "695bc7782665656f6a0cff9158c3e5bd2cdcbfd059c72f7f4c4b898b1a3df3c3",
+    "review_template.csv": "695bc7782665656f6a0cff9158c3e5bd2cdcbfd059c72f7f4c4b898b1a3df3c3",
+    "collaboration.jsonl": "7156bb1a143642047c318f7e002f4f443d98241d449764c90124322bc6cbe14e"
+  },
+  "api_audit": {
+    "source_raw_sha256": "8932fb377996579b12b56d92e61bc6a33b354d909818c3ec8dbe830bee995a10",
+    "source_raw_bytes": 8697385,
+    "published_sha256": "b8734d60b3634cefeb38f9adfc03cabc8a9e6049dd979987c8c6f7df52b9635d",
+    "attempts": 301
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261024_repair_v6_study/games/batches/TS036/TS036_r02_shared_buffer",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "34df737de5c59183a0f925467ab53135cb51f40be9a4782c1ffca67f4e18f322",
+      "signature": "654d55c44b92aa56b9fce06a5fb5b8e05d52241f64728f249ed6b04ab463c2fa",
+      "event_count": 300,
+      "trajectory_sha256": "aec47dbd197d88122653d27ea9f71de91e9f35bd27da90847884b684cd6cfc75",
+      "first_submission": "2026-10-24T07:17:42.835501+00:00",
+      "first_text": "Were Kameda and Umio both people?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

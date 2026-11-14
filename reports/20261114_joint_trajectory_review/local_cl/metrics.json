@@ -1,0 +1,274 @@
+{
+  "reviewer": "AI semantic reviewer, not human gold standard",
+  "status": "complete",
+  "source": "supervisor v5 latest_study attempt_02; no fallback substitution",
+  "coverage": {
+    "games_expected": 39,
+    "games_reviewed": 39,
+    "submissions_expected": 3889,
+    "submissions_reviewed": 3889,
+    "question_submissions": 3776,
+    "final_evaluations": 113,
+    "original_labels_modified": false,
+    "unreviewed_entries_autoaccepted": false
+  },
+  "verdicts": {
+    "ok": 3783,
+    "ambiguous": 74,
+    "suspect": 32
+  },
+  "question_verdicts": {
+    "ok": 3684,
+    "ambiguous": 63,
+    "suspect": 29
+  },
+  "final_verdicts": {
+    "ambiguous": 11,
+    "ok": 99,
+    "suspect": 3
+  },
+  "evaluation_verdicts": {
+    "suspect": 13,
+    "ok": 99,
+    "ambiguous": 1
+  },
+  "all_games": {
+    "games": 39,
+    "successes": 1,
+    "submissions": 3889,
+    "questions": 3776,
+    "final_attempts": 113,
+    "mean_final_score": 0.409615,
+    "mean_best_score": 0.421154,
+    "games_with_supported_core_breakthrough": 32,
+    "median_first_breakthrough_among_observed": 19.0,
+    "mean_first_breakthrough_among_observed": 24.15625,
+    "breakthrough_capped_at100_mean": 37.769231,
+    "final_regression_games": [
+      "S1_TS028_TS013_TS028_TS013_r01_source",
+      "S1_TS028_TS013_TS028_TS013_r03_session"
+    ]
+  },
+  "by_mode": {
+    "source": {
+      "games": 3,
+      "successes": 1,
+      "submissions": 289,
+      "questions": 269,
+      "final_attempts": 20,
+      "mean_final_score": 0.875,
+      "mean_best_score": 0.925,
+      "games_with_supported_core_breakthrough": 3,
+      "median_first_breakthrough_among_observed": 17,
+      "mean_first_breakthrough_among_observed": 17.666667,
+      "breakthrough_capped_at100_mean": 17.666667,
+      "final_regression_games": [
+        "S1_TS028_TS013_TS028_TS013_r01_source"
+      ]
+    },
+    "direct": {
+      "games": 12,
+      "successes": 0,
+      "submissions": 1200,
+      "questions": 1181,
+      "final_attempts": 19,
+      "mean_final_score": 0.375,
+      "mean_best_score": 0.375,
+      "games_with_supported_core_breakthrough": 10,
+      "median_first_breakthrough_among_observed": 21.0,
+      "mean_first_breakthrough_among_observed": 29.9,
+      "breakthrough_capped_at100_mean": 41.583333,
+      "final_regression_games": []
+    },
+    "answer_only": {
+      "games": 12,
+      "successes": 0,
+      "submissions": 1200,
+      "questions": 1181,
+      "final_attempts": 19,
+      "mean_final_score": 0.4625,
+      "mean_best_score": 0.4625,
+      "games_with_supported_core_breakthrough": 11,
+      "median_first_breakthrough_among_observed": 21,
+      "mean_first_breakthrough_among_observed": 25.727273,
+      "breakthrough_capped_at100_mean": 31.916667,
+      "final_regression_games": []
+    },
+    "session": {
+      "games": 12,
+      "successes": 0,
+      "submissions": 1200,
+      "questions": 1145,
+      "final_attempts": 55,
+      "mean_final_score": 0.275,
+      "mean_best_score": 0.3,
+      "games_with_supported_core_breakthrough": 8,
+      "median_first_breakthrough_among_observed": 10.0,
+      "mean_first_breakthrough_among_observed": 17.25,
+      "breakthrough_capped_at100_mean": 44.833333,
+      "final_regression_games": [
+        "S1_TS028_TS013_TS028_TS013_r03_session"
+      ]
+    }
+  },
+  "by_source_family_and_mode": {
+    "TS014": {
+      "direct": {
+        "games": 4,
+        "successes": 0,
+        "submissions": 400,
+        "questions": 393,
+        "final_attempts": 7,
+        "mean_final_score": 0.4,
+        "mean_best_score": 0.4,
+        "games_with_supported_core_breakthrough": 3,
+        "median_first_breakthrough_among_observed": 27,
+        "mean_first_breakthrough_among_observed": 46.666667,
+        "breakthrough_capped_at100_mean": 60,
+        "final_regression_games": []
+      },
+      "answer_only": {
+        "games": 4,
+        "successes": 0,
+        "submissions": 400,
+        "questions": 394,
+        "final_attempts": 6,
+        "mean_final_score": 0.3375,
+        "mean_best_score": 0.3375,
+        "games_with_supported_core_breakthrough": 3,
+        "median_first_breakthrough_among_observed": 45,
+        "mean_first_breakthrough_among_observed": 46,
+        "breakthrough_capped_at100_mean": 59.5,
+        "final_regression_games": []
+      },
+      "session": {
+        "games": 4,
+        "successes": 0,
+        "submissions": 400,
+        "questions": 395,
+        "final_attempts": 5,
+        "mean_final_score": 0.0625,
+        "mean_best_score": 0.0625,
+        "games_with_supported_core_breakthrough": 1,
+        "median_first_breakthrough_among_observed": 71,
+        "mean_first_breakthrough_among_observed": 71,
+        "breakthrough_capped_at100_mean": 92.75,
+        "final_regression_games": []
+      }
+    },
+    "TS015": {
+      "direct": {
+        "games": 4,
+        "successes": 0,
+        "submissions": 400,
+        "questions": 394,
+        "final_attempts": 6,
+        "mean_final_score": 0.3625,
+        "mean_best_score": 0.3625,
+        "games_with_supported_core_breakthrough": 4,
+        "median_first_breakthrough_among_observed": 20.0,
+        "mean_first_breakthrough_among_observed": 22,
+        "breakthrough_capped_at100_mean": 22,
+        "final_regression_games": []
+      },
+      "answer_only": {
+        "games": 4,
+        "successes": 0,
+        "submissions": 400,
+        "questions": 394,
+        "final_attempts": 6,
+        "mean_final_score": 0.5625,
+        "mean_best_score": 0.5625,
+        "games_with_supported_core_breakthrough": 4,
+        "median_first_breakthrough_among_observed": 4.0,
+        "mean_first_breakthrough_among_observed": 18,
+        "breakthrough_capped_at100_mean": 18,
+        "final_regression_games": []
+      },
+      "session": {
+        "games": 4,
+        "successes": 0,
+        "submissions": 400,
+        "questions": 369,
+        "final_attempts": 31,
+        "mean_final_score": 0.45,
+        "mean_best_score": 0.45,
+        "games_with_supported_core_breakthrough": 4,
+        "median_first_breakthrough_among_observed": 2.0,
+        "mean_first_breakthrough_among_observed": 3.25,
+        "breakthrough_capped_at100_mean": 3.25,
+        "final_regression_games": []
+      }
+    },
+    "TS028": {
+      "direct": {
+        "games": 4,
+        "successes": 0,
+        "submissions": 400,
+        "questions": 394,
+        "final_attempts": 6,
+        "mean_final_score": 0.3625,
+        "mean_best_score": 0.3625,
+        "games_with_supported_core_breakthrough": 3,
+        "median_first_breakthrough_among_observed": 19,
+        "mean_first_breakthrough_among_observed": 23.666667,
+        "breakthrough_capped_at100_mean": 42.75,
+        "final_regression_games": []
+      },
+      "answer_only": {
+        "games": 4,
+        "successes": 0,
+        "submissions": 400,
+        "questions": 393,
+        "final_attempts": 7,
+        "mean_final_score": 0.4875,
+        "mean_best_score": 0.4875,
+        "games_with_supported_core_breakthrough": 4,
+        "median_first_breakthrough_among_observed": 17.5,
+        "mean_first_breakthrough_among_observed": 18.25,
+        "breakthrough_capped_at100_mean": 18.25,
+        "final_regression_games": []
+      },
+      "session": {
+        "games": 4,
+        "successes": 0,
+        "submissions": 400,
+        "questions": 381,
+        "final_attempts": 19,
+        "mean_final_score": 0.3125,
+        "mean_best_score": 0.3875,
+        "games_with_supported_core_breakthrough": 3,
+        "median_first_breakthrough_among_observed": 18,
+        "mean_first_breakthrough_among_observed": 18,
+        "breakthrough_capped_at100_mean": 38.5,
+        "final_regression_games": [
+          "S1_TS028_TS013_TS028_TS013_r03_session"
+        ]
+      }
+    }
+  },
+  "uncertainty_note": "suspect和ambiguous是AI待复核建议；不重新裁标签、不重算发布成绩。breakthrough编号由逐局语义阅读记录；未出现者为null，capped100均值是描述性截尾而非真实时间。direct无A前缀，不能把同组4重复当成独立A样本。",
+  "fixed_source_prefix_verification": {
+    "TS014": [
+      [
+        89,
+        "78ea8ee0-3dba-42aa-b378-2ac0d6f99073",
+        "c5e1edb191549dd64acb92ff2142941b3e0db126abadace7bee604dcae33466d"
+      ]
+    ],
+    "TS015": [
+      [
+        100,
+        "fada8b11-72bb-4d8b-b8ef-a55ba94be52a",
+        "bd13ec864e365feb3f3a058be40c2d0fdcd12c47ecc1313129aebfa6ca22fec4"
+      ]
+    ],
+    "TS028": [
+      [
+        100,
+        "769858a0-fda1-4bfa-a513-06dabd99a2f2",
+        "8de0ab79c78415784ed6da34578a4dc393a7560ca9f1c12f7b0263475f830d2d"
+      ]
+    ]
+  }
+}

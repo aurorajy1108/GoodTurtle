@@ -1,0 +1,37 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "0fd6eca7abea5447d41bd9d81f2ded9158d4691eb4995adb5050a807b5108266",
+    "trajectory.jsonl": "0782e9d25ad7d3ae75c6b0e5673023c76e6d10eefe04bffc7e67b4aee834f72a",
+    "trajectory.md": "d3815a746c3a61b8285f25990bbaba392e0c3509b407710f0be59376436b99c4",
+    "trajectory.html": "e9df336418fbcb693adfe76ddbc46abde2956c04f89601740ae951cf9dc23af3",
+    "config.json": "a014f81ea9e104679e8f092a1f109161aea61071386b2e945a24be08c367d75c",
+    "prompts.json": "fc46446f09444f43c20df1c19fbb54338043bc29e602a6373a8af5b06ee85640",
+    "puzzle_private.json": "7e27aba3b726325f54da0a861818407751ca7c1aef58cd60f07e7d73421fbb5e",
+    "host_context.json": "165dd35d67893fdee66031414a2a96a60878499e221f8b6f7ee1902b7bbe97f1",
+    "human_review.csv": "64c50ad47712f4322b468b3ba19cedba0f28d0e5c750d3cf62ceee552f538f82",
+    "review_template.csv": "64c50ad47712f4322b468b3ba19cedba0f28d0e5c750d3cf62ceee552f538f82"
+  },
+  "api_audit": {
+    "source_raw_sha256": "ccb1131f76a872ab316cc946b56947671cd9dc64c597c548bb88aee0202e2235",
+    "source_raw_bytes": 3772721,
+    "published_sha256": "fef2544d57749f73c2381f55dc4c51deac9d072469b3b3660142185dc5407cfc",
+    "attempts": 200
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261023_team_hard_repeats/batches/TS023/TS023_r01_solo",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "0fd6eca7abea5447d41bd9d81f2ded9158d4691eb4995adb5050a807b5108266",
+      "signature": "6c3dc7ae6d26dbe40abc06e6c712ececbe0d4fc149aa1416805a40b665d32b91",
+      "event_count": 201,
+      "trajectory_sha256": "0782e9d25ad7d3ae75c6b0e5673023c76e6d10eefe04bffc7e67b4aee834f72a",
+      "first_submission": "2026-10-23T14:32:31.309343+00:00",
+      "first_text": "Did the match reveal something that directly caused the man’s death?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

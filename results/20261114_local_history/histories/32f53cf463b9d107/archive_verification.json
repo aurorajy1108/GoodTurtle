@@ -1,0 +1,38 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "7e52ba7f060619032fb6bb8e0dbb8be19a29710ff94372a6c0057f8ccd5f6a07",
+    "trajectory.jsonl": "1241f19a8e8fdbe8cd3c8aa74f862cc98489b61573fed0756942672b6da57f2f",
+    "trajectory.md": "28863ff4f73c1e864c0b81ec0e5f2206d836ea8b7db14e9957ce0934395aca58",
+    "trajectory.html": "5aaf33e8be868d15cb3a8898e82b11fe2006986613640ec58a0953bdef6074db",
+    "config.json": "af79d8f1af842d47a7cd0d251ee130ba2bcfa7a50fa1dd8bf8cdd443d411721f",
+    "partner_config.json": "2f8bbd61930cfed31c815786f9f535244d801e51c948e251ac3368a73cae5cf6",
+    "prompts.json": "77501f946e5b59e400b7e0a48f2911d688062b6c2f6c25e0caab2e1a574a6344",
+    "puzzle_private.json": "e28a2a829f7c0b15c29bb3f22cd46d9925803051b58bc44c6b4888759134c9b4",
+    "human_review.csv": "963ca0a681b59fc7075976ef08549200e4cc277b6b9bbcb414df755bdae79e3f",
+    "review_template.csv": "963ca0a681b59fc7075976ef08549200e4cc277b6b9bbcb414df755bdae79e3f",
+    "collaboration.jsonl": "8eb19ad4a53d4c3f461e95249776418e2a71277f76a8bf756c76144fbf651e3e"
+  },
+  "api_audit": {
+    "source_raw_sha256": "90efcd17712739fb1df4c87dd3a78c6d270047aa964c8f6d33be9b512f2eda9e",
+    "source_raw_bytes": 316300,
+    "published_sha256": "529368afdce13e68666b85cbcf46420c0d5c94975dcd617b333aca9fa0578e1f",
+    "attempts": 69
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261022_codex_pilot/team/TS031_r01_discuss",
+      "status_as_recorded": "error",
+      "simulation": false,
+      "submissions": 17,
+      "result_sha256": "7e52ba7f060619032fb6bb8e0dbb8be19a29710ff94372a6c0057f8ccd5f6a07",
+      "signature": "32f53cf463b9d10762756f4365eb90b951b9b7fac919f6953bca9ccfbbbe472e",
+      "event_count": 36,
+      "trajectory_sha256": "1241f19a8e8fdbe8cd3c8aa74f862cc98489b61573fed0756942672b6da57f2f",
+      "first_submission": "2026-10-22T15:11:14.874765+00:00",
+      "first_text": "Did A press the eraser against the paper to make indentations that would reveal the message when the paper was shaded?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

@@ -1,0 +1,20 @@
+{
+  "generations": 184,
+  "output_tokens": 72821,
+  "input_tokens": 8392886,
+  "cached_input_tokens": 8330752,
+  "known_cost_usd": 0.15600991199999997,
+  "unknown_cost_calls": 0,
+  "generation_cap": 225,
+  "output_token_cap": 77696,
+  "remaining_generations": 41,
+  "remaining_output_tokens": 4875,
+  "review_enabled": true,
+  "forced_compute_final": false,
+  "phase_counts": {
+    "draft": 21,
+    "review": 80,
+    "action": 83
+  },
+  "matching": "Shared actor-generation/output ceilings; actual input/cache/cost are reported separately."
+}

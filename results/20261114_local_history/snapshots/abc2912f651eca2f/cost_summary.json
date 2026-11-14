@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "currency": "USD",
+  "basis": "standard_api_equivalent_not_actual_bill",
+  "total": {
+    "calls": 295,
+    "unknown_cost_calls": 0,
+    "known_estimated_cost_usd": 3.2236556,
+    "estimated_cost_usd": 3.2236556,
+    "actual_billed_cost_usd": null,
+    "tokens": {
+      "input_tokens": 2516762,
+      "cached_input_tokens": 685312,
+      "cache_write_tokens": 0,
+      "output_tokens": 38788,
+      "reasoning_tokens": 0,
+      "total_tokens": 2555550
+    },
+    "missing_token_calls": {
+      "input_tokens": 0,
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 295,
+      "total_tokens": 0
+    }
+  },
+  "by_role_model": [
+    {
+      "role": "grader",
+      "provider": "codex_cli",
+      "model": "gpt-6.1-sol",
+      "calls": 9,
+      "unknown_cost_calls": 0,
+      "known_estimated_cost_usd": 0.1837984,
+      "estimated_cost_usd": 0.1837984,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 72678,
+        "cached_input_tokens": 21504,
+        "cache_write_tokens": 0,
+        "output_tokens": 7930,
+        "reasoning_tokens": 0,
+        "total_tokens": 80608
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 9,
+        "total_tokens": 0
+      }
+    },
+    {
+      "role": "host",
+      "provider": "codex_cli",
+      "model": "gpt-6.1-sol",
+      "calls": 186,
+      "unknown_cost_calls": 0,
+      "known_estimated_cost_usd": 2.9336248,
+      "estimated_cost_usd": 2.9336248,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 1856150,
+        "cached_input_tokens": 465408,
+        "cache_write_tokens": 0,
+        "output_tokens": 10560,
+        "reasoning_tokens": 0,
+        "total_tokens": 1866710
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 186,
+        "total_tokens": 0
+      }
+    },
+    {
+      "role": "player",
+      "provider": "codex_cli",
+      "model": "gpt-5.6-luna",
+      "calls": 100,
+      "unknown_cost_calls": 0,
+      "known_estimated_cost_usd": 0.1062324,
+      "estimated_cost_usd": 0.1062324,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 587934,
+        "cached_input_tokens": 198400,
+        "cache_write_tokens": 0,
+        "output_tokens": 20298,
+        "reasoning_tokens": 0,
+        "total_tokens": 608232
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 100,
+        "total_tokens": 0
+      }
+    }
+  ]
+}

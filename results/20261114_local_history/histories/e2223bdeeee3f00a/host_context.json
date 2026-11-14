@@ -1,0 +1,329 @@
+{
+  "puzzle_id": "TS032",
+  "opening": "At school, A caused classmate B to transfer elsewhere. They met again at university, began dating, and married after starting work. Everyone thought they were a loving couple. Years later B disappeared, and A was arrested on suspicion of murdering B. What happened between them?",
+  "reference_answer": "A had photographed a murder committed by B’s parent and reported it. The arrest forced B to move away to live with relatives. A felt guilty.\nA’s surname later changed after parental divorce and remarriage. At university, A recognized B, but B did not recognize A. They genuinely fell in love and married.\nYears later, B recognized A as the former classmate. B mistakenly believed A had not recognized B and did not know about B’s criminal parent. Ashamed and afraid of rejection, B disappeared, leaving divorce papers and an apology. B never learned that A had reported the crime.\nUnable to find B, A fabricated evidence and falsely confessed to murdering B. A hoped the news would reach B, communicate acceptance of B’s past, and persuade B to return to clear A’s name. B was alive.",
+  "canonical_solution": "A had photographed a murder committed by B’s parent and reported it. The arrest forced B to move away to live with relatives. A felt guilty.\nA’s surname later changed after parental divorce and remarriage. At university, A recognized B, but B did not recognize A. They genuinely fell in love and married.\nYears later, B recognized A as the former classmate. B mistakenly believed A had not recognized B and did not know about B’s criminal parent. Ashamed and afraid of rejection, B disappeared, leaving divorce papers and an apology. B never learned that A had reported the crime.\nUnable to find B, A fabricated evidence and falsely confessed to murdering B. A hoped the news would reach B, communicate acceptance of B’s past, and persuade B to return to clear A’s name. B was alive.",
+  "canonical_facts": [
+    "A photographed and reported a murder by B’s parent; the arrest caused B to move away and A felt guilty",
+    "A’s surname changed after parental divorce and remarriage",
+    "At university A recognized B but B did not recognize A; they genuinely fell in love and married",
+    "B later recognized A, mistakenly believed A did not know the family history, and feared rejection",
+    "B voluntarily disappeared alive, leaving divorce papers and an apology, and never learned that A had reported the crime",
+    "A fabricated evidence and confessed falsely to killing B to reach B through the news",
+    "A hopes to communicate acceptance and make B return to clear A’s name"
+  ],
+  "explicit_negatives": [
+    "B is alive; the murder confession is false.",
+    "B never learns A reported the crime; this cannot be B’s reason for departure.",
+    "A recognizes B at university, while B initially does not recognize A."
+  ],
+  "unknown_details": [
+    "Whether B ultimately returns and the eventual legal outcome are unspecified."
+  ],
+  "irrelevant_details": [
+    "Unspecified names, exact dates, object brands and colors are incidental."
+  ],
+  "completion_requirements": [
+    "A photographed and reported a murder by B’s parent; the arrest caused B to move away and A felt guilty",
+    "A’s surname changed after parental divorce and remarriage",
+    "At university A recognized B but B did not recognize A; they genuinely fell in love and married",
+    "B later recognized A, mistakenly believed A did not know the family history, and feared rejection",
+    "B voluntarily disappeared alive, leaving divorce papers and an apology, and never learned that A had reported the crime",
+    "A fabricated evidence and confessed falsely to killing B to reach B through the news",
+    "A hopes to communicate acceptance and make B return to clear A’s name"
+  ],
+  "host_examples": [
+    {
+      "case_id": "V4_TS032_001",
+      "question": "Was B actually alive after disappearing?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS032_002",
+      "question": "Did A really murder B?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS032_003",
+      "question": "Did B voluntarily disappear?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS032_004",
+      "question": "Was the crime A reported committed by B’s parent?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS032_005",
+      "question": "Did A photograph the murder and report it?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS032_006",
+      "question": "Did the arrest cause B to move away to live with relatives?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Clarified subject, time, count or source scope after independent semantic audit; AI proposal pending human review.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS032_007",
+      "question": "Did A feel guilty about what happened to B?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS032_008",
+      "question": "Did A’s surname change following parental divorce and remarriage?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS032_009",
+      "question": "At university did A recognize B while B failed to recognize A?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS032_010",
+      "question": "At university, did A recognize B, and did B recognize A?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "Clarified subject, time, count or source scope after independent semantic audit; AI proposal pending human review.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS032_011",
+      "question": "Did they genuinely love each other and marry?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS032_012",
+      "question": "Did B later realize A was the former classmate?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS032_013",
+      "question": "Did B ever learn that A was the person who reported the murder?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS032_014",
+      "question": "Did B leave specifically to punish A for reporting the crime?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS032_015",
+      "question": "Did B mistakenly believe A did not know B’s family history?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS032_016",
+      "question": "Did B leave because of shame and fear of rejection over that history?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS032_017",
+      "question": "Did B leave divorce papers and an apology?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS032_018",
+      "question": "Did A fabricate evidence and falsely confess to killing B?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS032_019",
+      "question": "Was A hoping news of the confession would bring B back to clear A’s name?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS032_020",
+      "question": "Did A hope to communicate acceptance of B’s past?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS032_021",
+      "question": "Did B kill A and impersonate A?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS032_022",
+      "question": "Did A’s changed surname explain B’s failure to recognize A?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS032_023",
+      "question": "Was the police station painted white?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "V4_TS032_024",
+      "question": "Did B leave alive and did A genuinely kill B?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "Apply the stated source facts, roles, timing and causal relations; do not add unspecified details.",
+      "review_status": "ai_audit_root_adjudicated_pending_human",
+      "provenance": {
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    }
+  ],
+  "review_status": "ai_audit_root_adjudicated_pending_human",
+  "binding_version": "audit-v4.1-20261023",
+  "story_sha256": "0c23575d8534548a13e197593d6613eb5b5952b292681a055e853f5fe08a9dc7",
+  "context_sha256": "83cd2335b531ab15d3dc2f3e9851803443c38ccdaf32f5b057505597900d8163"
+}

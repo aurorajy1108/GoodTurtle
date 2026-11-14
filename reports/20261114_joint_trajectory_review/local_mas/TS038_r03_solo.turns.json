@@ -1,0 +1,1206 @@
+[
+  {
+    "timestamp": "2026-11-13T13:23:24.656436+00:00",
+    "event": "submission",
+    "index": 1,
+    "type": "question",
+    "text": "Was the speaker physically present with the disappointed person(s)?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWas the speaker physically present with the disappointed person(s)?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:24:43.205868+00:00",
+    "event": "submission",
+    "index": 2,
+    "type": "question",
+    "text": "Is the repeated sentence being spoken by multiple different people?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated sentence being spoken by multiple different people?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:24:51.552862+00:00",
+    "event": "submission",
+    "index": 3,
+    "type": "question",
+    "text": "Is the repeated line coming from a recording or device?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated line coming from a recording or device?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:24:56.867133+00:00",
+    "event": "submission",
+    "index": 4,
+    "type": "question",
+    "text": "Is the person who says \"I'm never coming back\" a child of the speaker?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the person who says \"I'm never coming back\" a child of the speaker?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:25:04.034449+00:00",
+    "event": "submission",
+    "index": 5,
+    "type": "question",
+    "text": "Is the speaker a performer on stage?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the speaker a performer on stage?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:25:19.334556+00:00",
+    "event": "submission",
+    "index": 6,
+    "type": "question",
+    "text": "Is the \"I'm in trouble\" speaker the one who was told the repeated line?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the \"I'm in trouble\" speaker the one who was told the repeated line?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:25:27.340301+00:00",
+    "event": "submission",
+    "index": 7,
+    "type": "question",
+    "text": "Is the repeated line sung as lyrics?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated line sung as lyrics?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:25:32.043229+00:00",
+    "event": "submission",
+    "index": 8,
+    "type": "question",
+    "text": "Is the repeated line said by a fictional character (e.g., in a game, book, or show)?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated line said by a fictional character (e.g., in a game, book, or show)?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:25:39.851947+00:00",
+    "event": "submission",
+    "index": 9,
+    "type": "question",
+    "text": "Is the repeated line being spoken to the \"I'm in trouble\" speaker?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated line being spoken to the \"I'm in trouble\" speaker?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:27:01.437427+00:00",
+    "event": "submission",
+    "index": 10,
+    "type": "question",
+    "text": "Does the \"I'm in trouble\" speaker hear the repeated line?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the \"I'm in trouble\" speaker hear the repeated line?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:27:40.365194+00:00",
+    "event": "submission",
+    "index": 11,
+    "type": "question",
+    "text": "Is the repeated line written text that the speaker reads?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated line written text that the speaker reads?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:27:50.722246+00:00",
+    "event": "submission",
+    "index": 12,
+    "type": "question",
+    "text": "Does the repeated line appear in the same document repeatedly (not just one occurrence)?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the repeated line appear in the same document repeatedly (not just one occurrence)?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-13T13:28:05.570389+00:00",
+    "event": "submission",
+    "index": 13,
+    "type": "question",
+    "text": "Is the repeated line something the \"I'm in trouble\" speaker wrote?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated line something the \"I'm in trouble\" speaker wrote?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:28:11.102235+00:00",
+    "event": "submission",
+    "index": 14,
+    "type": "question",
+    "text": "Is the repeated line written in a textbook or exam context?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated line written in a textbook or exam context?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:28:17.598037+00:00",
+    "event": "submission",
+    "index": 15,
+    "type": "question",
+    "text": "Is the repeated sentence a line delivered by a chatbot or automated responder?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated sentence a line delivered by a chatbot or automated responder?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:28:23.227107+00:00",
+    "event": "submission",
+    "index": 16,
+    "type": "question",
+    "text": "Does the repeated line appear in a personal message written to someone the writer is upset with?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the repeated line appear in a personal message written to someone the writer is upset with?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:29:27.666281+00:00",
+    "event": "submission",
+    "index": 17,
+    "type": "question",
+    "text": "Did the writer send the same message to multiple people?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDid the writer send the same message to multiple people?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:29:33.800780+00:00",
+    "event": "submission",
+    "index": 18,
+    "type": "question",
+    "text": "Is the repeated line part of a single letter to one person?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated line part of a single letter to one person?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:30:23.442617+00:00",
+    "event": "submission",
+    "index": 19,
+    "type": "question",
+    "text": "Is the letter written as a form of apology?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the letter written as a form of apology?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:30:30.859598+00:00",
+    "event": "submission",
+    "index": 20,
+    "type": "question",
+    "text": "Is the repeated line copied into the letter by someone other than its original author (e.g., quoted)?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated line copied into the letter by someone other than its original author (e.g., quoted)?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:31:10.805160+00:00",
+    "event": "submission",
+    "index": 21,
+    "type": "question",
+    "text": "Is the repeated line written as punishment lines?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated line written as punishment lines?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:31:16.078800+00:00",
+    "event": "submission",
+    "index": 22,
+    "type": "question",
+    "text": "Is the repeated line written as an automatic/reflexive repeated response during an argument, e.g., the writer repeating the same complaint many times within one message?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated line written as an automatic/reflexive repeated response during an argument, e.g., the writer repeating the same complaint many times within one message?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:31:23.228517+00:00",
+    "event": "submission",
+    "index": 23,
+    "type": "question",
+    "text": "Is the repeated line written by a machine or printer error (the writer did not intend to repeat it)?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated line written by a machine or printer error (the writer did not intend to repeat it)?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:31:30.515266+00:00",
+    "event": "submission",
+    "index": 24,
+    "type": "question",
+    "text": "Is the repetition of the line intentional on the writer's part?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repetition of the line intentional on the writer's part?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:31:36.810070+00:00",
+    "event": "submission",
+    "index": 25,
+    "type": "question",
+    "text": "Is the repeated line seven identical copies of a breakup/quit message the writer is using to emphasize how strongly they mean it?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated line seven identical copies of a breakup/quit message the writer is using to emphasize how strongly they mean it?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:31:49.587217+00:00",
+    "event": "submission",
+    "index": 26,
+    "type": "question",
+    "text": "Is the letter a resignation letter?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the letter a resignation letter?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:31:58.543875+00:00",
+    "event": "submission",
+    "index": 27,
+    "type": "question",
+    "text": "Does the letter contain the same sentence because the line is a refrain repeated to show intensifying anger rather than identical in meaning each time?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the letter contain the same sentence because the line is a refrain repeated to show intensifying anger rather than identical in meaning each time?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:32:04.593346+00:00",
+    "event": "submission",
+    "index": 28,
+    "type": "question",
+    "text": "Is the letter a suicide note?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the letter a suicide note?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:32:11.075612+00:00",
+    "event": "submission",
+    "index": 29,
+    "type": "question",
+    "text": "Is the writer a young child writing the same line over and over in a note after being scolded?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the writer a young child writing the same line over and over in a note after being scolded?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:32:17.380362+00:00",
+    "event": "submission",
+    "index": 30,
+    "type": "question",
+    "text": "Is the letter an email?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the letter an email?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:32:24.389152+00:00",
+    "event": "submission",
+    "index": 31,
+    "type": "question",
+    "text": "Is the repeated line written in a comment or review about a business/service?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated line written in a comment or review about a business/service?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:32:29.948161+00:00",
+    "event": "submission",
+    "index": 32,
+    "type": "question",
+    "text": "Is the repeated line written inside a greeting card?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated line written inside a greeting card?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:32:36.844778+00:00",
+    "event": "submission",
+    "index": 33,
+    "type": "question",
+    "text": "Is the repeated line written by the \"I'm in trouble\" speaker in a note to themselves (like a journal/diary)?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated line written by the \"I'm in trouble\" speaker in a note to themselves (like a journal/diary)?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:32:48.664602+00:00",
+    "event": "submission",
+    "index": 34,
+    "type": "question",
+    "text": "Is the letter addressed to the \"I'm in trouble\" speaker?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the letter addressed to the \"I'm in trouble\" speaker?",
+    "label": "yes and no"
+  },
+  {
+    "timestamp": "2026-11-13T13:33:43.218690+00:00",
+    "event": "submission",
+    "index": 35,
+    "type": "question",
+    "text": "Is the \"I'm in trouble\" speaker a student?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the \"I'm in trouble\" speaker a student?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-13T13:33:50.001088+00:00",
+    "event": "submission",
+    "index": 36,
+    "type": "question",
+    "text": "Is the letter found by the \"I'm in trouble\" speaker rather than delivered to them?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the letter found by the \"I'm in trouble\" speaker rather than delivered to them?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-13T13:34:28.604691+00:00",
+    "event": "submission",
+    "index": 37,
+    "type": "question",
+    "text": "Is the letter a public notice or open letter (not addressed to a private recipient)?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the letter a public notice or open letter (not addressed to a private recipient)?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:34:37.754257+00:00",
+    "event": "submission",
+    "index": 38,
+    "type": "question",
+    "text": "Is the \"I'm in trouble\" speaker the addressee's parent or guardian?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the \"I'm in trouble\" speaker the addressee's parent or guardian?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-13T13:35:57.238494+00:00",
+    "event": "submission",
+    "index": 39,
+    "type": "question",
+    "text": "Is the \"I'm in trouble\" speaker a computer program or system processing the letters?",
+    "forced": false,
+    "raw_player_output": "I've been getting \"irrelevant\" on questions about who these people are. Let me step back and reconsider the core mechanism.\n\nQUESTION\nIs the \"I'm in trouble\" speaker a computer program or system processing the letters?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:36:02.611552+00:00",
+    "event": "submission",
+    "index": 40,
+    "type": "question",
+    "text": "Is the repeated line written because the writer is required to write it a certain number of times as part of a legal sentence/penalty (e.g., a court-ordered apology)?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated line written because the writer is required to write it a certain number of times as part of a legal sentence/penalty (e.g., a court-ordered apology)?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:36:09.267800+00:00",
+    "event": "submission",
+    "index": 41,
+    "type": "question",
+    "text": "Is the repeated line written once but appears duplicated because the letter is a carbon copy or photocopy?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated line written once but appears duplicated because the letter is a carbon copy or photocopy?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:36:15.195498+00:00",
+    "event": "submission",
+    "index": 42,
+    "type": "question",
+    "text": "Is the writer of the line a person in a position of authority over the \"I'm in trouble\" speaker (like a boss, teacher, or coach)?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the writer of the line a person in a position of authority over the \"I'm in trouble\" speaker (like a boss, teacher, or coach)?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:36:22.403335+00:00",
+    "event": "submission",
+    "index": 43,
+    "type": "question",
+    "text": "Does the number seven (seven repetitions) matter to the story?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the number seven (seven repetitions) matter to the story?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:36:34.794801+00:00",
+    "event": "submission",
+    "index": 44,
+    "type": "question",
+    "text": "Is the repeated line written by the writer in a letter that the writer gives to someone to read, where the writer wants to convey that others agreed with them?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated line written by the writer in a letter that the writer gives to someone to read, where the writer wants to convey that others agreed with them?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:36:41.939017+00:00",
+    "event": "submission",
+    "index": 45,
+    "type": "question",
+    "text": "Is the \"I'm in trouble\" speaker reading the letter aloud to others?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the \"I'm in trouble\" speaker reading the letter aloud to others?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-13T13:36:57.895862+00:00",
+    "event": "submission",
+    "index": 46,
+    "type": "question",
+    "text": "Does the \"I'm in trouble\" speaker write the repeated line but the letter is addressed to someone else (the person who disappointed them)?",
+    "forced": false,
+    "raw_player_output": "Let me reconsider. I've confirmed: written text read by someone, written by the \"I'm in trouble\" speaker, in a personal letter to one upset person, intentional repetition, not delivered-to but \"yes and no\" addressed. Maybe the writer wrote it but the letter is addressed to themselves or ambiguous.\n\nQUESTION\nDoes the \"I'm in trouble\" speaker write the repeated line but the letter is addressed to someone else (the person who disappointed them)?",
+    "label": "yes and no"
+  },
+  {
+    "timestamp": "2026-11-13T13:38:50.738994+00:00",
+    "event": "submission",
+    "index": 47,
+    "type": "question",
+    "text": "Is the repeated line a captcha or verification phrase the speaker had to type repeatedly?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated line a captcha or verification phrase the speaker had to type repeatedly?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:38:56.180846+00:00",
+    "event": "submission",
+    "index": 48,
+    "type": "question",
+    "text": "Is the letter a love letter or affectionate letter to a partner?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the letter a love letter or affectionate letter to a partner?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:39:11.057808+00:00",
+    "event": "submission",
+    "index": 49,
+    "type": "question",
+    "text": "Is the repeated line a threat that the writer is repeating to make the recipient know the writer means it?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated line a threat that the writer is repeating to make the recipient know the writer means it?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:39:19.214542+00:00",
+    "event": "submission",
+    "index": 50,
+    "type": "question",
+    "text": "Is the \"I'm in trouble\" speaker a writer or author by profession?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the \"I'm in trouble\" speaker a writer or author by profession?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-13T13:39:29.212455+00:00",
+    "event": "submission",
+    "index": 51,
+    "type": "question",
+    "text": "Is the letter a note left for the writer's own private use that someone else later finds?",
+    "forced": false,
+    "raw_player_output": "Let me reconsider the wordplay angle. \"I know I'm in trouble\" — the speaker is in trouble because someone wrote \"I'm never coming back\" seven times. Perhaps this is a note left, and the trouble is being caught.\n\nQUESTION\nIs the letter a note left for the writer's own private use that someone else later finds?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:39:48.971173+00:00",
+    "event": "submission",
+    "index": 52,
+    "type": "question",
+    "text": "Does the \"I'm in trouble\" speaker write the repeated line as if quoting a person who rejected them, but in fact the speaker is fabricating/imitating that person?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the \"I'm in trouble\" speaker write the repeated line as if quoting a person who rejected them, but in fact the speaker is fabricating/imitating that person?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:40:06.928813+00:00",
+    "event": "submission",
+    "index": 53,
+    "type": "question",
+    "text": "Is the repeated line a quote the speaker is falsely attributing to a person who is actually still loyal/not disappointed?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated line a quote the speaker is falsely attributing to a person who is actually still loyal/not disappointed?",
+    "label": "yes and no"
+  },
+  {
+    "timestamp": "2026-11-13T13:40:21.670083+00:00",
+    "event": "submission",
+    "index": 54,
+    "type": "question",
+    "text": "Is the \"I'm in trouble\" speaker a forger creating a fake message from someone?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the \"I'm in trouble\" speaker a forger creating a fake message from someone?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:40:28.956189+00:00",
+    "event": "submission",
+    "index": 55,
+    "type": "question",
+    "text": "Is the forger trying to copy someone's handwriting or signature so that the repeated copies form a practice sheet?",
+    "forced": false,
+    "raw_player_output": "Good progress. The speaker is a forger writing a fake breakup/quit message, repeating it seven times. Why repeat seven times, and why \"I'm in trouble\"?\n\nQUESTION\nIs the forger trying to copy someone's handwriting or signature so that the repeated copies form a practice sheet?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:40:39.159477+00:00",
+    "event": "submission",
+    "index": 56,
+    "type": "question",
+    "text": "Is the forger trying to forge a signature to fake the writer's identity on a document?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the forger trying to forge a signature to fake the writer's identity on a document?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:40:57.614421+00:00",
+    "event": "submission",
+    "index": 57,
+    "type": "question",
+    "text": "Is the forger practicing the handwriting itself (imitating lettering style) by writing the phrase repeatedly?",
+    "forced": false,
+    "raw_player_output": "Wait, I may have over-reached. The forger confirmed yes, but the \"signature\" idea was rejected. Let me separate: is it handwriting practice vs. actually manufacturing copies of a note?\n\nQUESTION\nIs the forger practicing the handwriting itself (imitating lettering style) by writing the phrase repeatedly?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:41:03.419654+00:00",
+    "event": "submission",
+    "index": 58,
+    "type": "question",
+    "text": "Is the \"I'm in trouble\" speaker practicing someone else's handwriting to then use it to write a fake letter as that other person?",
+    "forced": false,
+    "raw_player_output": "So: the speaker is practicing/imitating someone's handwriting by writing the same sentence repeatedly. Why \"I know I'm in trouble\"? Perhaps the forger's practice sheet was discovered, or a handwriting expert will catch them.\n\nQUESTION\nIs the \"I'm in trouble\" speaker practicing someone else's handwriting to then use it to write a fake letter as that other person?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:41:10.595936+00:00",
+    "event": "submission",
+    "index": 59,
+    "type": "question",
+    "text": "Is the \"I'm in trouble\" speaker the one who found or intercepted the practice sheet (not the forger)?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the \"I'm in trouble\" speaker the one who found or intercepted the practice sheet (not the forger)?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:41:30.427814+00:00",
+    "event": "submission",
+    "index": 60,
+    "type": "question",
+    "text": "Is the forger impersonating the person who was disappointed (the addressee of the real letter), so the fake letter claims that person is leaving?",
+    "forced": false,
+    "raw_player_output": "The \"I'm in trouble\" speaker IS the forger. So they practiced, then realized they're in trouble. Perhaps their plan to fake the letter was to impersonate someone who would leave. Let me find out the motive/target.\n\nQUESTION\nIs the forger impersonating the person who was disappointed (the addressee of the real letter), so the fake letter claims that person is leaving?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:42:47.437771+00:00",
+    "event": "submission",
+    "index": 61,
+    "type": "question",
+    "text": "Is the forger practicing to imitate the handwriting of a person who has died or is absent, in order to fabricate documents?",
+    "forced": false,
+    "raw_player_output": "Let me reconsider. The seven repeated sentences could literally be the forger's practice sheet. But the opening shows them as \"spoken\" quotes. The forger is practicing writing a specific person's handwriting. Who is being impersonated, and why \"I'm in trouble\"?\n\nQUESTION\nIs the forger practicing to imitate the handwriting of a person who has died or is absent, in order to fabricate documents?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:42:55.606245+00:00",
+    "event": "submission",
+    "index": 62,
+    "type": "question",
+    "text": "Is the forger imitating a dead person's handwriting in order to forge that person's will/testament?",
+    "forced": false,
+    "raw_player_output": "The forger is imitating an absent/dead person's handwriting. \"I know I'm in trouble\" suggests the practice sheet itself betrays the crime, or the deed is done. Let me clarify the specific purpose.\n\nQUESTION\nIs the forger imitating a dead person's handwriting in order to forge that person's will/testament?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:43:02.560915+00:00",
+    "event": "submission",
+    "index": 63,
+    "type": "question",
+    "text": "Is the forger the \"I'm in trouble\" speaker who realizes the practice sentence carries a clue that reveals guilt (e.g., writing \"I'm never coming back\" proves foreknowledge of the person's death)?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the forger the \"I'm in trouble\" speaker who realizes the practice sentence carries a clue that reveals guilt (e.g., writing \"I'm never coming back\" proves foreknowledge of the person's death)?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:43:12.779287+00:00",
+    "event": "submission",
+    "index": 64,
+    "type": "question",
+    "text": "Was the forger's handwriting-practice sheet discovered and used as evidence against them?",
+    "forced": false,
+    "raw_player_output": "Let me simplify. The forger practiced writing someone's handwriting by repeating that sentence seven times — a practice sheet. Why \"I'm in trouble\"? Perhaps this practice sheet was found by police/authorities as evidence.\n\nQUESTION\nWas the forger's handwriting-practice sheet discovered and used as evidence against them?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-13T13:43:33.158595+00:00",
+    "event": "submission",
+    "index": 65,
+    "type": "question",
+    "text": "Is the forger writing in the handwriting of someone so they can send a cruel letter pretending that person has abandoned the recipient?",
+    "forced": false,
+    "raw_player_output": "Let me focus on the meaning of the sentence itself as the forger's motive/goal. The phrase \"You've disappointed me so much; I'm never coming back\" is what the forger wants to fabricate. Perhaps to make someone believe a person has abandoned them.\n\nQUESTION\nIs the forger writing in the handwriting of someone so they can send a cruel letter pretending that person has abandoned the recipient?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:43:51.548564+00:00",
+    "event": "submission",
+    "index": 66,
+    "type": "question",
+    "text": "Is the person being impersonated someone in authority over the forger (e.g., the forger's parent, teacher, or boss)?",
+    "forced": false,
+    "raw_player_output": "Now I'm getting somewhere. The forger wants to make the recipient believe a specific person has abandoned them by faking a letter. Why \"I know I'm in trouble\"?\n\nPerhaps the forger is a child faking a note from a parent/teacher, and realizes they'll be caught. Or a prisoner. Let me clarify who is being impersonated relative to the forger.\n\nQUESTION\nIs the person being impersonated someone in authority over the forger (e.g., the forger's parent, teacher, or boss)?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:43:58.332542+00:00",
+    "event": "submission",
+    "index": 67,
+    "type": "question",
+    "text": "Is the forger trying to make the recipient believe their romantic partner left them, so the forger can have the recipient?",
+    "forced": false,
+    "raw_player_output": "Let me reconsider the whole framing. Maybe the \"seven repeated sentences\" are literally seven different letters/samples, and the forger practiced each one. The aim was to make the recipient believe someone abandoned them. The forger realizes they're in trouble because they were caught, or the handwriting didn't match.\n\nLet me test whether the forger's motivation is to isolate the recipient (e.g., a romantic rival).\n\nQUESTION\nIs the forger trying to make the recipient believe their romantic partner left them, so the forger can have the recipient?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:44:16.476399+00:00",
+    "event": "submission",
+    "index": 68,
+    "type": "question",
+    "text": "Is the forger's goal to make the recipient believe a loved one has cut ties, so the recipient becomes dependent on the forger?",
+    "forced": false,
+    "raw_player_output": "Let me confirm two things separately: is the forger's goal to isolate the recipient by making them think a loved one left, and is the \"I'm in trouble\" because the forgery was detected?\n\nQUESTION\nIs the forger's goal to make the recipient believe a loved one has cut ties, so the recipient becomes dependent on the forger?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:44:37.121797+00:00",
+    "event": "submission",
+    "index": 69,
+    "type": "question",
+    "text": "Is the forger's goal to make the recipient believe a loved one has cut ties with them?",
+    "forced": false,
+    "raw_player_output": "I'm over-adding \"so the recipient becomes dependent\" clauses. Let me split it.\n\nQUESTION\nIs the forger's goal to make the recipient believe a loved one has cut ties with them?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:44:47.938396+00:00",
+    "event": "submission",
+    "index": 70,
+    "type": "question",
+    "text": "Did the forger commit this forgery in order to prevent the recipient from marrying or being with someone?",
+    "forced": false,
+    "raw_player_output": "Confirmed: the forger wants the recipient to believe a loved one cut ties. So it's a betrayal/abandonment deception. Now, why \"I know I'm in trouble\"? Perhaps the forger did this to break up a couple, and it backfired. Or the forger is the one caught.\n\nQUESTION\nDid the forger commit this forgery in order to prevent the recipient from marrying or being with someone?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:44:54.100123+00:00",
+    "event": "submission",
+    "index": 71,
+    "type": "question",
+    "text": "Is the \"I'm in trouble\" because the forgery has been exposed or discovered?",
+    "forced": false,
+    "raw_player_output": "Let me check the \"I'm in trouble\" reason directly — whether it's because the forgery was exposed, versus the forger's own guilt/predicament.\n\nQUESTION\nIs the \"I'm in trouble\" because the forgery has been exposed or discovered?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:45:03.143726+00:00",
+    "event": "submission",
+    "index": 72,
+    "type": "question",
+    "text": "Is the recipient of the fake letters the forger themselves?",
+    "forced": false,
+    "raw_player_output": "This is very significant. The forger is writing the letters to themselves (\"I know I'm in trouble\"). Perhaps the forger is writing these fake abandonment letters to themselves as a form of self-harm or to rationalize something.\n\nLet me test: is the forger creating these fake letters addressed to themselves?\n\nQUESTION\nIs the recipient of the fake letters the forger themselves?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:45:16.530901+00:00",
+    "event": "submission",
+    "index": 73,
+    "type": "question",
+    "text": "Is the forger trying to make the recipient believe their loved one abandoned them in order to claim that the loved one died or is missing?",
+    "forced": false,
+    "raw_player_output": "Let me reconsider \"I'm in trouble\" — perhaps it's not that the forgery is exposed, but that the deception is about to be discovered, or the forger has realized a flaw. Let me test whether the forger is about to be caught / about to be found out.\n\nActually, let me reconsider the whole thing. The forger is practicing someone's handwriting to make a person believe a loved one left them. Yet the recipient isn't the forger, and the forgery isn't exposed, and it's not to break up a marriage. Who benefits?\n\nQUESTION\nIs the forger trying to make the recipient believe their loved one abandoned them in order to claim that the loved one died or is missing?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:45:31.713340+00:00",
+    "event": "submission",
+    "index": 74,
+    "type": "question",
+    "text": "Is the forger trying to make the recipient believe the impersonated person abandoned them, to cover up that the forger actually killed or harmed that person?",
+    "forced": false,
+    "raw_player_output": "Let me reconsider. The forger is impersonating a specific absent/dead person. They want the recipient to think that person abandoned them. \"I'm in trouble\" — perhaps the forger is doing this to cover up a murder: making it look like the victim left rather than was killed.\n\nQUESTION\nIs the forger trying to make the recipient believe the impersonated person abandoned them, to cover up that the forger actually killed or harmed that person?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:45:40.648486+00:00",
+    "event": "submission",
+    "index": 75,
+    "type": "question",
+    "text": "Is the \"I'm in trouble\" speaker the murderer who harmed the person whose handwriting they're imitating?",
+    "forced": false,
+    "raw_player_output": "This is the key: the forger killed/harmed the person, and is faking an abandonment letter. So the forger is a murderer. Who is the recipient? Probably a family member of the victim who would come looking. The \"I'm in trouble\" suggests the forger is now in trouble for the murder.\n\nLet me confirm the setup — the forger is the murderer.\n\nQUESTION\nIs the \"I'm in trouble\" speaker the murderer who harmed the person whose handwriting they're imitating?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:45:47.963861+00:00",
+    "event": "submission",
+    "index": 76,
+    "type": "question",
+    "text": "Is the recipient of the fake abandonment letter a family member of the person the forger killed (e.g., a spouse or partner)?",
+    "forced": false,
+    "raw_player_output": "The murderer practices the victim's handwriting, writes a fake \"I'm never coming back\" letter to the victim's family to suggest the victim walked out on them. Now: why is the murderer \"in trouble\"? Perhaps a baby or child is involved — the victim left behind a child who's crying. \"Sigh, I know I'm in trouble\" could be the murderer's weary realization.\n\nLet me clarify who the recipient of the fake letter is.\n\nQUESTION\nIs the recipient of the fake abandonment letter a family member of the person the forger killed (e.g., a spouse or partner)?",
+    "label": "yes and no"
+  },
+  {
+    "timestamp": "2026-11-13T13:47:22.791793+00:00",
+    "event": "submission",
+    "index": 77,
+    "type": "question",
+    "text": "Is the victim a child (the recipient being the child's parent)?",
+    "forced": false,
+    "raw_player_output": "\"yes and no\" on family member — perhaps the recipient is multiple people (the whole family), or the recipient is a parent and the victim a child. Let me narrow.\n\nQUESTION\nIs the victim a child (the recipient being the child's parent)?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:47:29.047173+00:00",
+    "event": "submission",
+    "index": 78,
+    "type": "question",
+    "text": "Is the recipient of the fake letter the victim's spouse/partner?",
+    "forced": false,
+    "raw_player_output": "Recipient was \"yes and no\" a family member. Perhaps the recipient is the victim's parent, and the victim was an adult. But the victim isn't a child. Let me ask who the recipient is relative to the victim.\n\nQUESTION\nIs the recipient of the fake letter the victim's spouse/partner?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:50:15.779091+00:00",
+    "event": "submission",
+    "index": 79,
+    "type": "question",
+    "text": "Is the \"Sigh, I know I'm in trouble\" speaker the same person as the forger/murderer?",
+    "forced": false,
+    "raw_player_output": "So the murderer killed someone and forged a letter to that person's spouse, in the victim's handwriting, saying the victim is leaving forever — to explain the victim's disappearance.\n\nNow the \"I'm in trouble\" line. It may be from the murderer's perspective now realizing they're suspected. But let me reconsider — the narrator says \"Sigh, I know I'm in trouble.\" Maybe this is the spouse reacting after realizing the letter is fake. But we established the speaker is the murderer. Let me confirm the \"I'm in trouble\" applies to the murderer being caught/suspected.\n\nActually, let me verify whether the \"sigh, I'm in trouble\" speaker is the murderer (same as forger).\n\nQUESTION\nIs the \"Sigh, I know I'm in trouble\" speaker the same person as the forger/murderer?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:50:25.807033+00:00",
+    "event": "submission",
+    "index": 80,
+    "type": "question",
+    "text": "Is the murderer \"in trouble\" because investigators are asking for handwriting samples, and the murderer's practice sheet or forgery will betray them?",
+    "forced": false,
+    "raw_player_output": "The murderer is the one saying \"I know I'm in trouble.\" So why do they say it? Perhaps because the practice sheet — seven copies of the victim's handwriting — is itself suspicious. Or perhaps the murderer is being asked to provide a handwriting sample.\n\nLet me test the handwriting-sample idea, which is a classic detective plot.\n\nQUESTION\nIs the murderer \"in trouble\" because investigators are asking for handwriting samples, and the murderer's practice sheet or forgery will betray them?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:50:33.048850+00:00",
+    "event": "submission",
+    "index": 81,
+    "type": "question",
+    "text": "Is the murderer worried because the victim's spouse suspects the letter is not genuine?",
+    "forced": false,
+    "raw_player_output": "Not investigators. Let me reconsider. \"Sigh, I know I'm in trouble\" — maybe the murderer wrote a fake letter to the spouse, but the spouse is not fooled / suspicious. Or maybe the murderer is now the one being abandoned. Let me reconsider the framing entirely.\n\nCould \"I'm in trouble\" refer to the murderer being confronted by the victim's spouse?\n\nQUESTION\nIs the murderer worried because the victim's spouse suspects the letter is not genuine?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:50:57.625484+00:00",
+    "event": "submission",
+    "index": 82,
+    "type": "question",
+    "text": "Is the repeated sentence literally the murderer's handwriting-practice sheet, which later serves as incriminating evidence?",
+    "forced": false,
+    "raw_player_output": "Let me reconsider \"I know I'm in trouble.\" Maybe it's a lighter, less literal meaning. Perhaps the murderer is the victim's spouse's new partner or someone. Actually, maybe the \"I'm in trouble\" is about something in the murderer's own life now, not related to the crime being exposed.\n\nLet me step back. The murderer practiced the handwriting seven times, then wrote a fake letter to the victim's spouse. Now says \"I'm in trouble.\" Perhaps someone else also impersonated, or the murderer's practice sheet itself was left behind and found.\n\nLet me reconsider who finds/is affected. Maybe the practice sheet with 7 copies is what the spouse finds, revealing the forgery — good, that was my \"investigators\" idea which was rejected because it specified investigators. Let me just ask if the practice sheet being found is key.\n\nQUESTION\nIs the repeated sentence literally the murderer's handwriting-practice sheet, which later serves as incriminating evidence?",
+    "label": "yes and no"
+  },
+  {
+    "timestamp": "2026-11-13T13:51:54.894393+00:00",
+    "event": "submission",
+    "index": 83,
+    "type": "question",
+    "text": "Is the repeated sentence literally the murderer's handwriting-practice sheet?",
+    "forced": false,
+    "raw_player_output": "\"yes and no\" — so it's a practice sheet, but maybe not \"later incriminating evidence\" exactly. Let me split.\n\nQUESTION\nIs the repeated sentence literally the murderer's handwriting-practice sheet?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:52:07.999026+00:00",
+    "event": "submission",
+    "index": 84,
+    "type": "question",
+    "text": "Is the practice sheet found by someone other than the murderer (e.g., the police or the spouse)?",
+    "forced": false,
+    "raw_player_output": "Confirmed: it's the practice sheet. The \"yes and no\" earlier was about it being \"incriminating evidence.\" So it's a practice sheet, but perhaps not used as evidence — maybe it's just the practice, and the \"I'm in trouble\" comes from something else.\n\nLet me reconsider the \"sigh, I know I'm in trouble.\" Perhaps the murderer is in trouble because they've fallen behind / need to finish, or because the practice betrayed them to themselves. Actually — maybe the murderer realizes the difficulty: to forge convincingly they must practice, and this tedious labor (\"sigh\") shows the crime's burden. Let me test a cleaner hypothesis: the \"I'm in trouble\" is because the seven repetitions look suspicious to whoever finds the sheet.\n\nLet me ask whether the practice sheet is found by someone.\n\nQUESTION\nIs the practice sheet found by someone other than the murderer (e.g., the police or the spouse)?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-13T13:52:20.857950+00:00",
+    "event": "submission",
+    "index": 85,
+    "type": "question",
+    "text": "Is the person the murderer killed the murderer's own partner?",
+    "forced": false,
+    "raw_player_output": "\"Not found\" - irrelevant. So the practice sheet isn't about being found. The \"sigh, I know I'm in trouble\" must mean something else, tied to the practice/fabrication itself.\n\nWait — maybe the murderer is practicing the victim's handwriting, and while writing \"I'm never coming back\" repeatedly, realizes the phrase itself is ironic or that they're doomed. Let me reconsider whether the murdered victim is the murderer's own spouse/partner, and \"I'm in trouble\" is a pun.\n\nLet me test a totally different thread: is the victim the murderer's own partner?\n\nQUESTION\nIs the person the murderer killed the murderer's own partner?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:52:27.948290+00:00",
+    "event": "submission",
+    "index": 86,
+    "type": "question",
+    "text": "Is the recipient of the fake letter the murderer's spouse or partner?",
+    "forced": false,
+    "raw_player_output": "Big development. The murderer killed their own partner, then forged the partner's handwriting to write a letter to... the partner's spouse? Wait, but recipient is the victim's spouse/partner, and the victim is the murderer's own partner — so the recipient would be the murderer. But recipient isn't the forger. Contradiction.\n\nLet me recheck. Earlier: recipient is victim's spouse/partner = yes. And victim is murderer's own partner = yes. That would make recipient = murderer. But we established recipient ≠ forger. Contradiction. So maybe \"spouse/partner\" recipient has a different relationship. Let me clarify the recipient's identity directly.\n\nQUESTION\nIs the recipient of the fake letter the murderer's spouse or partner?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:53:00.758417+00:00",
+    "event": "submission",
+    "index": 87,
+    "type": "question",
+    "text": "Was the person the murderer killed the murderer's spouse?",
+    "forced": false,
+    "raw_player_output": "But then \"recipient is victim's partner\" and \"victim is murderer's own partner\" would make recipient = murderer, contradicting this \"no.\" So one of those answers is misleading. Host warned labels can be fallible and \"yes and no\" reveals ambiguity. The \"victim is murderer's partner = yes\" might be a misread.\n\nLet me directly establish the victim's relationship to the murderer more carefully — is the murdered person the murderer's spouse?\n\nQUESTION\nWas the person the murderer killed the murderer's spouse?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:53:08.097841+00:00",
+    "event": "submission",
+    "index": 88,
+    "type": "question",
+    "text": "Was the murdered victim having an affair with the murderer (i.e., the victim was married to the letter's recipient but involved with the murderer)?",
+    "forced": false,
+    "raw_player_output": "So victim = murderer's spouse. Recipient of the letter = victim's spouse = the murderer. But recipient ≠ forger. These conflict. The issue may be that \"victim's spouse\" doesn't equal murderer — the victim could have had a spouse who is the recipient, and the murderer killed the victim who was married to someone else, i.e., an affair.\n\nLet me reframe: The murderer killed a person who is married (to the recipient). The murderer may be the victim's lover. Let me test the affair hypothesis.\n\nQUESTION\nWas the murdered victim having an affair with the murderer (i.e., the victim was married to the letter's recipient but involved with the murderer)?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:53:52.741076+00:00",
+    "event": "submission",
+    "index": 89,
+    "type": "question",
+    "text": "Did the murderer hope to start a relationship with the letter's recipient after the victim was gone?",
+    "forced": false,
+    "raw_player_output": "Not an affair. So the victim was married to the murderer AND the recipient is the victim's spouse... The contradiction remains. Unless \"spouse/partner\" earlier answers conflate things. Let me directly ask whether the recipient of the fake letter is the murderer's spouse's other partner — no.\n\nLet me reconsider: perhaps the recipient is the person who will read the letter = the murderer's spouse's new/potential partner, or maybe the recipient is a joint. Let me just directly ask who the recipient is: is the recipient the spouse of the victim (who is no longer the murderer's spouse, e.g., ex)?\n\nActually cleaner: is the letter written to make the recipient (victim's spouse) believe the victim left THEM — but if murderer = victim's spouse, recipient = murderer. So maybe the \"spouse/partner\" for recipient referred to the person the murderer wanted to be with.\n\nLet me directly ask a simplifying identity: is the person who receives/reads the fake letter the murderer's intended new romantic interest?\n\nQUESTION\nDid the murderer hope to start a relationship with the letter's recipient after the victim was gone?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-13T13:54:14.887580+00:00",
+    "event": "submission",
+    "index": 90,
+    "type": "question",
+    "text": "Is the recipient of the fake letter the very person the murderer killed (i.e., the letter is addressed to the dead spouse)?",
+    "forced": false,
+    "raw_player_output": "Let me directly resolve the identity contradiction by asking whether the letter's recipient is the same person as the murderer's spouse who was killed.\n\nQUESTION\nIs the recipient of the fake letter the very person the murderer killed (i.e., the letter is addressed to the dead spouse)?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:54:43.174528+00:00",
+    "event": "submission",
+    "index": 91,
+    "type": "question",
+    "text": "Is the fake letter addressed to the murderer's own self (the murderer wrote it to themselves to justify the crime)?",
+    "forced": false,
+    "raw_player_output": "So the letter is NOT addressed to the dead spouse. But it IS addressed to \"the victim's spouse/partner.\" The only consistent reading: the victim had multiple partners, or the \"victim\" and \"murderer's spouse\" aren't identical after all — the earlier \"yes\" might be too broad.\n\nLet me just directly ask who receives the fake letter, concretely.\n\nQUESTION\nIs the fake letter addressed to the murderer's own self (the murderer wrote it to themselves to justify the crime)?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:54:50.845610+00:00",
+    "event": "submission",
+    "index": 92,
+    "type": "question",
+    "text": "At the moment the speaker says \"I know I'm in trouble,\" has the murder already been committed?",
+    "forced": false,
+    "raw_player_output": "I'm approaching slot 100. I have 8 submissions left. Let me consolidate what I firmly know and identify the missing \"I'm in trouble\" reason. The key unresolved facts: recipient identity, and the meaning of \"I know I'm in trouble.\"\n\nLet me reconsider the simplest classic plot: A person is practicing their own spouse's handwriting? No. Let me reconsider — maybe the two \"speakers\" (the repeated line vs. \"I'm in trouble\") form a comedic/detective scenario. Perhaps the murder hasn't happened yet: the murderer is practicing to fake a \"goodbye\" note so it looks like the spouse left, then will kill them. \"I know I'm in trouble\" = the murderer anticipates being a suspect, or feels guilty.\n\nLet me ask the crucial unconfirmed: has the murder already happened at the time of saying \"I'm in trouble\"?\n\nQUESTION\nAt the moment the speaker says \"I know I'm in trouble,\" has the murder already been committed?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:55:01.047149+00:00",
+    "event": "submission",
+    "index": 93,
+    "type": "question",
+    "text": "Is the fake letter written to the dead spouse's parent(s)/family to explain the spouse's disappearance?",
+    "forced": false,
+    "raw_player_output": "Murder already committed. So the sequence: murderer kills spouse, practices dead spouse's handwriting, writes fake \"I'm never coming back\" letter (to make it look like spouse left). But the letter's recipient isn't clear.\n\nGiven the contradiction, likely the letter is to the dead spouse's family/friends. Let me pin the recipient as the spouse's parent or the murderer's in-law.\n\nActually, let me reconsider \"Sigh, I know I'm in trouble\" — maybe the murderer is annoyed because they now must keep up the deception, i.e., the trouble is ongoing burden. Or, a clever reading: the murderer is practicing the note, and each copy is an admission (\"You've disappointed me... I'm never coming back\") — the murderer is rehearsing as the spouse. \"I'm in trouble\" is just the murderer acknowledging their guilt/crime.\n\nLet me ask the recipient = spouse's parent.\n\nQUESTION\nIs the fake letter written to the dead spouse's parent(s)/family to explain the spouse's disappearance?",
+    "label": "yes and no"
+  },
+  {
+    "timestamp": "2026-11-13T13:56:23.146485+00:00",
+    "event": "submission",
+    "index": 94,
+    "type": "question",
+    "text": "Is the fake letter intended to stop people from searching for the murdered spouse (so the murder is not discovered)?",
+    "forced": false,
+    "raw_player_output": "\"Yes and no\" again — recurring ambiguity around recipients. Perhaps the letter is a general one, and \"recipient\" is ambiguous because the note could be found/broadcast. But I've spent enough. Let me try to resolve the \"yes and no\" on the spouse's family by splitting: is the letter at least meant to explain the disappearance to others (not the dead spouse)?\n\nActually, the recurring \"yes and no\" suggests the letter's intended reader and its effect differ. Let me accept: the murderer forges a \"goodbye\" note so the spouse's disappearance is explained as voluntary abandonment.\n\nNow \"I know I'm in trouble\" — the clownish/sad tone. Perhaps the murderer is a pet! A dog or cat who killed... no, handwriting.\n\nLet me try a different, high-value probe: is the whole scenario from a game/riddle where the \"trouble\" refers to being caught because the family will recognize the handwriting is forged, since the dead spouse would never write such a thing?\n\nLet me ask the simplest remaining: is the letter meant to stop people from searching for the dead spouse?\n\nQUESTION\nIs the fake letter intended to stop people from searching for the murdered spouse (so the murder is not discovered)?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:56:51.391354+00:00",
+    "event": "submission",
+    "index": 95,
+    "type": "question",
+    "text": "Is the \"I know I'm in trouble\" a realization that the forged note still won't prevent the murderer from being suspected/caught?",
+    "forced": false,
+    "raw_player_output": "This fits: the murderer forges a \"goodbye, I'm leaving you\" note in the dead spouse's handwriting so people assume the spouse walked out and don't search — concealing the murder.\n\nNow the \"Sigh, I know I'm in trouble.\" With 5 submissions left, let me consider that this final line might be the murderer's rueful realization now that suspicion is turning to them — that despite the forgery, they'll be caught. Or it's a joke that the tedious forgery practice is itself the \"trouble.\"\n\nGiven budget, let me make one clarifying probe then finalize.\n\nQUESTION\nIs the \"I know I'm in trouble\" a realization that the forged note still won't prevent the murderer from being suspected/caught?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:57:03.650472+00:00",
+    "event": "submission",
+    "index": 96,
+    "type": "final",
+    "text": "A man murdered his own spouse. To cover up the killing and explain the spouse's disappearance, he decided to forge a \"goodbye\" note in the dead spouse's handwriting, so people would believe the spouse had stormed off in anger and would stop looking for them. To make the imitation convincing, he sat and practiced copying the spouse's handwriting, writing the same line over and over — \"You've disappointed me so much; I'm never coming back\" — seven times as a practice sheet. He then used the forged handwriting on a farewell letter meant to convince others the spouse had walked out for good (rather than having been killed). The practicing murderer then says with a sigh, \"I know I'm in trouble\": now that the deed is done and suspicion is turning his way, he recognizes the forgery will not actually save him — he will be caught anyway.",
+    "forced": false,
+    "raw_player_output": "I have the full causal story now. Let me get one more confirmation to solidify the motive for the note, then finalize.\n\nActually I have enough confirmed facts: the murderer killed their spouse, practiced the spouse's handwriting seven times (\"You've disappointed me so much; I'm never coming back\"), wrote a forged goodbye letter to make it look like the spouse voluntarily abandoned everyone and stop people searching, and now ruefully realizes the forgery won't spare them from being caught. Let me submit.\n\nFINAL\nA man murdered his own spouse. To cover up the killing and explain the spouse's disappearance, he decided to forge a \"goodbye\" note in the dead spouse's handwriting, so people would believe the spouse had stormed off in anger and would stop looking for them. To make the imitation convincing, he sat and practiced copying the spouse's handwriting, writing the same line over and over — \"You've disappointed me so much; I'm never coming back\" — seven times as a practice sheet. He then used the forged handwriting on a farewell letter meant to convince others the spouse had walked out for good (rather than having been killed). The practicing murderer then says with a sigh, \"I know I'm in trouble\": now that the deed is done and suspicion is turning his way, he recognizes the forgery will not actually save him — he will be caught anyway.",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 96,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 1,
+          "evidence": "A man murdered his own spouse. To cover up the killing and explain the spouse's disappearance, he decided to forge a \"goodbye\" note in the dead spouse's handwriting, so people would believe the spouse had stormed off in anger and would stop looking for them.",
+          "reason": "Covers the murder, staged disappearance, voluntary-departure cover story, and forged leaving message; all C1 required facts are present."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "he sat and practiced copying the spouse's handwriting, writing the same line over and over ... he recognizes the forgery will not actually save him — he will be caught anyway.",
+          "reason": "Repeated handwriting practice is covered, but the submission does not state the attempts failed to imitate her handwriting; it only implies worry/capture. Partial."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "The practicing murderer then says ... he recognizes the forgery will not actually save him — he will be caught anyway.",
+          "reason": "Worry about being caught is present, but the causal link to an inability to imitate her handwriting is not explicitly supplied. Partial."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "covered",
+          "evidence": "A man murdered his own spouse. To cover up the killing and explain the spouse's disappearance, he decided to forge a \"goodbye\" note in the dead spouse's handwriting, so people would believe the spouse had stormed off in anger and would stop looking for them."
+        },
+        {
+          "id": "C1.F2",
+          "status": "covered",
+          "evidence": "A man murdered his own spouse."
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "he decided to forge a \"goodbye\" note ... so people would believe the spouse had stormed off in anger and would stop looking for them."
+        },
+        {
+          "id": "C2.F1",
+          "status": "covered",
+          "evidence": "he sat and practiced copying the spouse's handwriting, writing the same line over and over — \"You've disappointed me so much; I'm never coming back\" — seven times as a practice sheet."
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "he sat and practiced copying the spouse's handwriting ... he recognizes the forgery will not actually save him — he will be caught anyway."
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "The practicing murderer then says ... he recognizes the forgery will not actually save him — he will be caught anyway."
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.75,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-13T13:58:22.261752+00:00",
+    "event": "submission",
+    "index": 97,
+    "type": "question",
+    "text": "Is the \"I'm in trouble\" speaker actually the victim (the spouse), who survived, saying they're now in danger from the murderer?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the \"I'm in trouble\" speaker actually the victim (the spouse), who survived, saying they're now in danger from the murderer?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:58:29.565997+00:00",
+    "event": "submission",
+    "index": 98,
+    "type": "question",
+    "text": "Does the murderer destroy or hide the practice sheet before presenting the forged letter?",
+    "forced": false,
+    "raw_player_output": "My final was \"yes and no\" — partially right. The core is right but something is off. What could be the alternative meaning of \"I know I'm in trouble\"? Perhaps the murderer is in trouble because the deceased's family will recognize the note is fake, or because he wrote it to the wrong recipient.\n\nLet me reconsider one loose end: the recurring \"yes and no\" on recipients. Perhaps the letter was addressed to the murderer himself (from the \"dead spouse\") — so the murderer keeps it as alibi. Earlier I asked if recipient=murderer and got \"no.\" Hmm.\n\nLet me probe one distinct new fact: where the practice sheet fits — was it deliberately burned/hidden?\n\nQUESTION\nDoes the murderer destroy or hide the practice sheet before presenting the forged letter?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-13T13:58:45.749180+00:00",
+    "event": "submission",
+    "index": 99,
+    "type": "final",
+    "text": "A person murdered their own spouse. To hide the killing and explain the spouse's disappearance, they forged a farewell note in the dead spouse's handwriting. To imitate the handwriting convincingly, they first practiced copying the dead spouse's writing, producing a practice sheet of the same line seven times: \"You've disappointed me so much; I'm never coming back.\" The forged note, written in the slain spouse's handwriting, was meant to make people believe the spouse had angrily walked out and would never return — so no one would search for them and the murder would go unnoticed. With a sigh, the murderer acknowledges \"I know I'm in trouble\": despite the forgery intended to cover up the killing, they realize the deception will not hold and they will be caught and blamed for the spouse's disappearance.",
+    "forced": false,
+    "raw_player_output": "One submission left before the mandatory final at slot 100. Let me reconsider the \"yes and no\" on my final. The core crime/motive was largely accepted. The likely flaw: the \"I'm in trouble\" meaning, or the recipient. \n\nThe repeated line itself is \"You've disappointed me so much; I'm never coming back.\" Perhaps the \"yes and no\" is because the note wasn't forged to fool the family but specifically addressed such that the murderer himself is the one who \"receives\" the goodbye — but that was \"no.\"\n\nLet me offer a revised final that keeps all confirmed facts and reframes the trouble more simply: the trouble is that the murderer is now stuck maintaining the lie, and will be caught.\n\nFINAL\nA person murdered their own spouse. To hide the killing and explain the spouse's disappearance, they forged a farewell note in the dead spouse's handwriting. To imitate the handwriting convincingly, they first practiced copying the dead spouse's writing, producing a practice sheet of the same line seven times: \"You've disappointed me so much; I'm never coming back.\" The forged note, written in the slain spouse's handwriting, was meant to make people believe the spouse had angrily walked out and would never return — so no one would search for them and the murder would go unnoticed. With a sigh, the murderer acknowledges \"I know I'm in trouble\": despite the forgery intended to cover up the killing, they realize the deception will not hold and they will be caught and blamed for the spouse's disappearance.",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 99,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 1,
+          "evidence": "A person murdered their own spouse. To hide the killing and explain the spouse's disappearance, they forged a farewell note in the dead spouse's handwriting. ... was meant to make people believe the spouse had angrily walked out and would never return",
+          "reason": "Covers murder, staged voluntary departure, and forged leaving message. All C1 required facts are present."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "they first practiced copying the dead spouse's writing, producing a practice sheet of the same line seven times ... they realize the deception will not hold and they will be caught",
+          "reason": "The repeated message as handwriting practice is covered, but the submission does not explicitly state that the attempts failed to imitate her handwriting. Partial."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "despite the forgery intended to cover up the killing, they realize the deception will not hold and they will be caught and blamed",
+          "reason": "Worry about being caught is present, but the causal link to an inability to imitate her handwriting is not explicitly supplied. Partial."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "covered",
+          "evidence": "A person murdered their own spouse. To hide the killing and explain the spouse's disappearance, they forged a farewell note in the dead spouse's handwriting. ... was meant to make people believe the spouse had angrily walked out and would never return"
+        },
+        {
+          "id": "C1.F2",
+          "status": "covered",
+          "evidence": "A person murdered their own spouse."
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "they forged a farewell note ... meant to make people believe the spouse had angrily walked out ... so no one would search for them"
+        },
+        {
+          "id": "C2.F1",
+          "status": "covered",
+          "evidence": "they first practiced copying the dead spouse's writing, producing a practice sheet of the same line seven times"
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "they first practiced copying the dead spouse's writing, producing a practice sheet of the same line seven times ... they realize the deception will not hold and they will be caught"
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "despite the forgery intended to cover up the killing, they realize the deception will not hold and they will be caught and blamed"
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.75,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-13T13:59:15.260478+00:00",
+    "event": "submission",
+    "index": 100,
+    "type": "final",
+    "text": "A person murdered their own spouse. To conceal the killing and explain the spouse's disappearance, they decided to forge a farewell letter in the dead spouse's handwriting, making it appear the spouse had stormed off forever so nobody would search for them. To make the imitation believable, the murderer first practiced copying the slain spouse's handwriting, writing the same sentence over and over — \"You've disappointed me so much; I'm never coming back\" — producing a practice sheet of repeated copies of that line. Having completed this rehearsal, the murderer uses the forged handwriting on a note meant to convince others that the spouse left deliberately and will never return, disguising the murder as a voluntary abandonment. The murderer then remarks with a sigh, \"I know I'm in trouble\": the forgery was a desperate rehearsal, and the killer senses that this deception will not save them — they will still be suspected and caught for the spouse's disappearance.",
+    "forced": true,
+    "raw_player_output": "FINAL\nA person murdered their own spouse. To conceal the killing and explain the spouse's disappearance, they decided to forge a farewell letter in the dead spouse's handwriting, making it appear the spouse had stormed off forever so nobody would search for them. To make the imitation believable, the murderer first practiced copying the slain spouse's handwriting, writing the same sentence over and over — \"You've disappointed me so much; I'm never coming back\" — producing a practice sheet of repeated copies of that line. Having completed this rehearsal, the murderer uses the forged handwriting on a note meant to convince others that the spouse left deliberately and will never return, disguising the murder as a voluntary abandonment. The murderer then remarks with a sigh, \"I know I'm in trouble\": the forgery was a desperate rehearsal, and the killer senses that this deception will not save them — they will still be suspected and caught for the spouse's disappearance.",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 100,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 1,
+          "evidence": "A person murdered their own spouse. To conceal the killing and explain the spouse's disappearance, they decided to forge a farewell letter in the dead spouse's handwriting, making it appear the spouse had stormed off forever ... disguising the murder as a voluntary abandonment.",
+          "reason": "Covers the murder, staged disappearance, voluntary departure cover story, and forged farewell letter. All C1 required facts are present."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "practiced copying the slain spouse's handwriting, writing the same sentence over and over ... producing a practice sheet of repeated copies ... the killer senses that this deception will not save them — they will still be suspected and caught",
+          "reason": "The repeated message as handwriting practice is covered, but the submission does not explicitly state that the attempts failed to imitate her handwriting. Partial."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "the forgery was a desperate rehearsal, and the killer senses that this deception will not save them — they will still be suspected and caught",
+          "reason": "Worry about being caught is present, but the causal link to an inability to imitate her handwriting is not explicitly supplied. Partial."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "covered",
+          "evidence": "A person murdered their own spouse. To conceal the killing and explain the spouse's disappearance, they decided to forge a farewell letter in the dead spouse's handwriting, making it appear the spouse had stormed off forever ... disguising the murder as a voluntary abandonment."
+        },
+        {
+          "id": "C1.F2",
+          "status": "covered",
+          "evidence": "A person murdered their own spouse."
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "they decided to forge a farewell letter ... making it appear the spouse had stormed off forever ... disguising the murder as a voluntary abandonment"
+        },
+        {
+          "id": "C2.F1",
+          "status": "covered",
+          "evidence": "practiced copying the slain spouse's handwriting, writing the same sentence over and over ... producing a practice sheet of repeated copies"
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "practiced copying the slain spouse's handwriting, writing the same sentence over and over ... producing a practice sheet of repeated copies ... the killer senses that this deception will not save them — they will still be suspected and caught"
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "the forgery was a desperate rehearsal, and the killer senses that this deception will not save them — they will still be suspected and caught"
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.75,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  }
+]

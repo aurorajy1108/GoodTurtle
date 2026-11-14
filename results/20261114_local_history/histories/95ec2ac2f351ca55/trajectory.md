@@ -1,0 +1,781 @@
+# Turtle Soup trajectory
+
+"You've disappointed me so much; I'm never coming back." "You've disappointed me so much; I'm never coming back." "You've disappointed me so much; I'm never coming back." "You've disappointed me so much; I'm never coming back." "You've disappointed me so much; I'm never coming back." "You've disappointed me so much; I'm never coming back." "You've disappointed me so much; I'm never coming back."
+
+Sigh, I know I'm in trouble.
+
+Status: completed | counted questions: 100 | submissions: 100 | final partial score: 0.0
+
+[Token usage and estimated costs](token_costs.csv)
+
+## 1 · question
+
+What is being repeated seven times—the words of one person speaking repeatedly, seven separate people each saying the same sentence, or something else (e.g. a recording/message)?
+
+Host: yes
+
+## 2 · question
+
+The host’s “yes” did not distinguish among the three alternatives. Ask a more discriminating question: Is the repeated sentence spoken by the same person each time (rather than by seven different people)?
+
+Host: no
+
+## 3 · question
+
+Are the seven repetitions being heard (or read) by the same person, who is the one saying "Sigh, I know I'm in trouble"?
+
+Host: yes
+
+## 4 · question
+
+Are the seven repetitions messages that arrived separately (e.g. texts, letters, posts) from seven different sources, rather than a single spoken utterance repeated to one listener?
+
+Host: no
+
+## 5 · question
+
+So the same listener hears the repeated phrase, but it is not one person speaking seven times nor seven separately arriving messages. Could it be a group/location echoing or chanting it—i.e., is the phrase repeated by several voices together or in sequence in the same setting?
+
+Host: no
+
+## 6 · question
+
+Is the phrase being produced by a machine or device (an automated voice/message) rather than by a human speaker?
+
+Host: no
+
+## 7 · question
+
+Is the list of seven identical sentences something the listener reads (e.g. a written list displayed to them), rather than hears?
+
+Host: yes
+
+## 8 · question
+
+The listener reads seven identical written lines, not hears them, not from one human speaker, nor a machine, nor a group. Is the “listener” the author’s pet or animal, i.e. is “Sigh, I know I’m in trouble” the thought of a pet that has done something wrong and is being scolded?
+
+Host: no
+
+## 9 · question
+
+Is the person reading the seven lines a human being (as opposed to an animal, AI, or fictional entity)?
+
+Host: yes
+
+## 10 · question
+
+Are the seven identical written lines seven separate documents/messages (e.g. seven letters, seven emails, seven notes) that the same human received, rather than one single document containing seven lines?
+
+Host: no
+
+## 11 · question
+
+One human is reading a single document that contains seven identical lines saying “You’ve disappointed me so much; I’m never coming back,” then remarks, “Sigh, I know I’m in trouble.” Is this person reading a teacher’s repeated written comment on a piece of schoolwork (e.g., a test or essay graded by the same remark seven times)?
+
+Host: no
+
+## 12 · question
+
+Established: one human sees a single written item containing seven identical copies of the sentence, then says they're in trouble. Is the written item a review/receipt/printout of something—like a purchase rating or a website error/review page—rather than a personal letter to them?
+
+Host: no
+
+## 13 · question
+
+Is the single document something like a search results page, forum thread, or comment section where the same phrase appears seven times (posted by seven users) and the reader realizes the criticism is aimed at them?
+
+Host: no
+
+## 14 · question
+
+Is the single written item something the reader authored or submitted themselves—so the seven repeated lines are a consequence/response to their own action, and that is why they conclude "I'm in trouble"?
+
+Host: yes
+
+## 15 · question
+
+The written item is something the reader authored/submitted, and the seven repeats are its consequence, making them realize they're in trouble. Is this the output of a machine-learning/natural-language program (e.g., a chatbot or autocomplete) that produced the sentence seven times, revealing that the author copied/reused it suspiciously—such as a plagiarism or cheating detector flagging repeated text?
+
+Host: no
+
+## 16 · question
+
+Not a chatbot/plagiarism detector. The reader authored the item, and reading it back with seven repeats makes them know they're in trouble. Is this a “jinx”/cursed-writing situation—e.g., they wrote the sentence as a joke or wish, and its magical repetition means the curse will actually come true?
+
+Host: no
+
+## 17 · question
+
+Is the seven-fold repetition the result of a copy/paste or duplication mistake by the reader—e.g. they pasted the same line seven times into a form, message, essay, or document—and now recognize that the duplicate text will cause them trouble?
+
+Host: no
+
+## 18 · question
+
+Is the seven-line written item a verdict, ruling, or formal notice about the reader (e.g. a court judgment, sentence, or official decision), where the repeated phrase means each of seven counts/charges is being ruled on with the same wording?
+
+Host: no
+
+## 19 · question
+
+Established: a human reads one written item they themselves authored/submitted; it bears seven identical copies of “You’ve disappointed me so much; I’m never coming back,” and on reading it they say they know they’re in trouble. Was the item a message/letter the person wrote but never intended to send—so seeing it sent seven times (or delivered as-is) means an embarrassing mistake has already escaped to others?
+
+Host: no
+
+## 20 · question
+
+Let’s reset the authored-item idea. The reader wrote/submitted the document, and reading its seven repeated lines makes them realize trouble. Is the document a self-written list or record—such as a diary, log, or commitment/contract they wrote—and the seven identical entries show they have repeatedly failed to keep the same promise, so they now realize the consequence?
+
+Host: no
+
+## 21 · question
+
+On reading the seven repeated lines, is the reader's trouble that someone else (e.g. the person who said "I'm never coming back") will see or has seen this document and will be further upset or leave for good—i.e. the repeated line is a message addressed *to* the reader's counterpart, not a criticism of the reader?
+
+Host: no
+
+## 22 · question
+
+Is the written item the reader's own *work output* in a job or game—such as a form response, an application, or a generated report—where the seven identical lines show that the system/person receiving it will treat the repetition as an error or failure on their part?
+
+Host: no
+
+## 23 · question
+
+We’ve confirmed the reader authored/submitted the item and the repetition signals their coming trouble, but several guesses (letters, plagiarism, verdicts, logs) failed. Is the “item” actually a written answer the person gave in a word game/puzzle—where writing “I’m never coming back” seven times is a clue that the answer will punish or disqualify them?
+
+Host: no
+
+## 24 · question
+
+The reader authored/submitted the document; several familiar interpretations failed. Could “authored/submitted” mean their own online post/profile that they are now re-reading, and the seven copies are other people quoting/repeating it back (e.g. a viral repost thread) so they realize public backlash is coming?
+
+Host: no
+
+## 25 · question
+
+Is the written item a "Dear John"/breakup message the reader *sent*, and the seven repeats are actually seven deliveries of that same message (to seven recipients), so the reader now realizes they accidentally broke up with or alienated multiple people at once?
+
+Host: no
+
+## 26 · question
+
+Is the written item a form or test answer the reader submitted in which the required answer was the line of dialogue “You’ve disappointed me so much; I’m never coming back,” and the seven repeats are the grader/system returning that same rejected answer seven times—so their “trouble” is that the submission is wrong or must be redone?
+
+Host: no
+
+## 27 · question
+
+Is the written item a document the reader "authored/submitted" in a bureaucratic sense—such as an application, registration, or form—where the seven repeated lines are fields/answers that reveal to the reader that they have made a serious misrepresentation (e.g. lied on the form), so they now know they'll be caught?
+
+Host: no
+
+## 28 · question
+
+Is the "written item" a line the reader *typed as input somewhere*—like a search query, a chat/comment box, or a command—and the sevenfold repetition is the system/person echoing their own typed words back, making them realize what they just sent or said will land them in trouble?
+
+Host: no
+
+## 29 · question
+
+We may be over-reading “authored/submitted.” Let’s test the phrase’s role instead. In the story, is the sentence “You’ve disappointed me so much; I’m never coming back” something the *reader wrote as a note/message to be found later*—i.e. a “sorry, I’m leaving” note they hid or left behind—rather than a line someone said to them?
+
+Host: yes
+
+## 30 · question
+
+Good—confirmed: the reader wrote “You’ve disappointed me so much; I’m never coming back” as a leaving note to be found. Is the reader now seeing seven copies because the note was reproduced seven times in a way meant to make them regret leaving—e.g. the recipient(s) made seven copies and displayed them, and the reader realizes they are now the one in trouble/being punished?
+
+Host: no
+
+## 31 · question
+
+Is the situation that the reader wrote this "I'm never coming back" note but never actually left / was caught before leaving—and seeing the note (perhaps found and shown back to them) means they're now in trouble for what they wrote?
+
+Host: no
+
+## 32 · question
+
+Does the sevenfold repetition come from the reader writing the same leaving note seven separate times—i.e. this is a pattern of them repeatedly threatening to leave/quit and coming back—so now reading all seven together makes them realize the trouble they're in?
+
+Host: no
+
+## 33 · question
+
+Confirmed: the reader wrote the line as a leaving note to be found. Is the reader a character in a game/story simulation—e.g. a player character or NPC—whose departure note was duplicated seven times because the same scripted line is used for seven instances of that character (such as seven save files or seven versions), and now they realize the consequences?
+
+Host: no
+
+## 34 · question
+
+New angle: maybe the seven copies arise because the note was written in a medium where writing it once yields seven visible copies—e.g. carbon paper, a multi-part form, or a printer producing multiple copies. Is the leaving note physically duplicated by such a copying/printing mechanism rather than being repeated intentionally by a person?
+
+Host: no
+
+## 35 · question
+
+If you asked the host whether the seven copies are seven separate *leaving notes* the reader wrote for seven different recipients/places (i.e. one note per recipient, all identical), would the answer be yes?
+
+Host: no
+
+## 36 · question
+
+Is the seven-step repetition caused by the reader *reading the note aloud or writing it as a line that gets legitimately repeated*—for example, the note is a song lyric/chorus, a line in a script, or a "seven times" ritual (like saying it seven times) the reader performed on purpose?
+
+Wait—reframe as one atomic test: Is the repeated phrase part of a *ritual or challenge that requires repeating it seven times*?
+
+Host: no
+
+## 37 · question
+
+Confirmed: the reader wrote it as a leaving note to be found, and it is not physical duplication, not seven notes to seven recipients, not a ritual. Is the “seven times” simply the reader reading down a *list of seven identical lines that were compiled* from their own prior writings—e.g. an archive/history of messages they sent, shown back to them—so the repeated note appears seven times as an audit of their own earlier departures?
+
+Host: no
+
+## 38 · question
+
+Let me re-open the most basic interpretation, since “written item they authored → reads seven repeats → realizes trouble” has resisted elaboration. Is the written item a *suicide note / farewell letter* the reader wrote, and reading it back (as a single document) makes them realize they are in trouble in a supernatural or afterlife sense—i.e. they are dead and now facing consequences?
+
+Host: no
+
+## 39 · question
+
+Is this a "customer service / feedback" situation—the reader wrote the leaving note (e.g. a complaint or canceling a subscription saying "I'm never coming back"), and the seven-line document is an automated *response/reply* template repeating their own words, making them realize they're in trouble (e.g. they can't undo it, or they broke terms)?
+
+Host: no
+
+## 40 · question
+
+Re-check the "authored" fact against the "leaving note" fact: was the leaving note written by the reader but *left for someone who then died/left first*, so finding/reading it now means something entirely different? That's too compound—atomic version: Is the reader the person the note was *left for*, not the writer?
+
+Host: no
+
+## 41 · question
+
+Set aside “leaving note” as a goodbye. Could the sentence instead be a written *warning/threat* the reader composed against someone (e.g. “I’m never coming back” meaning they’ll cut the person off), and the seven repeats show that this text has been found and will be used against them—so they now know they’re in trouble?
+
+Host: no
+
+## 42 · question
+
+We confirmed the reader wrote the line as a leaving note “to be found.” Was it written inside a *confined place they were trapped in*—e.g. scratched on a wall/cell/cave—and the seven copies are because the same message has been found and transcribed seven times over the years, so the reader is now realizing they are in the same predicament as those before?
+
+Host: no
+
+## 43 · question
+
+Is the reader a famous figure or character known for having *said/written this leaving line* in a real work (a movie, song, book)—and the "document I authored" is actually a *transcript/quote sheet* where the reader (e.g. a famous person reading fan mail, or a person reading "things you've said" list) sees their line quoted seven times, realizing the consequences their exit brought?
+
+That's compound—instead: Is the repeated sentence a **quotation of the reader from a public record/source** (i.e. someone else's document quoting what the reader originally wrote), rather than the reader's own handwritten note?
+
+Host: no
+
+## 44 · question
+
+Let’s test the reader’s identity. Is the reader a child (or dependent) who wrote “I’m never coming back” as a note after being scolded, and upon reading seven such notes realizes the parent/guardian has documented repeated runaway attempts—so they know they’re in trouble?
+
+Host: no
+
+## 45 · question
+
+Is the reader the person being left (the addressee of the note), where the note's writer is disappointed in the reader and leaving because of something the reader did?
+
+Host: yes
+
+## 46 · question
+
+Are the seven identical lines seven separate notes/letters that the same person (the leaver) sent to the reader at different times, so the reader now sees a stack of them together and realizes the trouble is that this person has repeatedly left/will truly leave this time?
+
+Host: no
+
+## 47 · question
+
+Important correction: the reader is the one being left, and the note-writer is disappointed in the reader. Then my earlier “the reader authored the note” was likely a misread of a loose host answer. Was the seven-line document a single message in which the leaver repeats the sentence to stress their point—for example, a breakup text where the same line appears seven times because the leaver sent/pasted it repeatedly in one message?
+
+Host: no
+
+## 48 · question
+
+Given the reader is the one being left and reads a single document containing seven identical lines of that same leaving message, is this document a *gravestone/epitaph or memorial* — i.e., someone who left the reader is now dead, and the message is engraved (perhaps repeated on a monument), so the reader realizes their past conduct caused the estrangement?
+
+Host: no
+
+## 49 · question
+
+Is the seven-line document a *letter/note the leaver wrote to be read after they were gone* — i.e. a farewell note left behind (not sent repeatedly, not a gravestone), and the seven repeats are simply how it appears to the reader?
+
+Host: no
+
+## 50 · question
+
+Is the repeated line something the reader is *supposed to read as a written exercise or repetition task*—e.g. lines written out as punishment (writing "I will not disappoint you" seven times) or as handwriting practice—so the seven copies are the leaver's/reader's imposed repetition rather than a free note?
+
+Host: yes and no
+
+## 51 · question
+
+Were the seven lines written by someone other than the reader (e.g. a pupil/child) as an assigned punishment—i.e. the reader is the authority figure who imposed "write this sentence seven times"?
+
+Host: no
+
+## 52 · question
+
+Were the seven lines written by the reader themself as punishment lines—i.e. the reader was made to write "You've disappointed me so much; I'm never coming back" seven times?
+
+Host: no
+
+## 53 · question
+
+Punishment-lines branch is dead on both sides. Return to confirmed: the reader is the one being left, and the leaver was disappointed in them. Is the “seven identical lines” simply the same message appearing on a *screen/device* where seven copies are visible—e.g. seven identical notifications, alerts, or message previews from the same leaver?
+
+Host: no
+
+## 54 · question
+
+Is the seven-line document a *letter of resignation/withdrawal*—e.g. the reader is an employer/organizer reading a quit notice from someone they treated badly—where the sentence is repeated seven times because the person is resigning from seven roles/positions at once?
+
+Host: no
+
+## 55 · question
+
+Is the seven-line document a *note left on a refrigerator / whiteboard / door* where the leaver wrote the same sentence on several surfaces or posted notes, and the reader is seeing them all together in one place (e.g. in a photo or written copy) and realizing they are about to be abandoned?
+
+Host: no
+
+## 56 · question
+
+Is the repeated sentence a *quote from a play/movie/script the reader is rehearsing or reading*—i.e. the seven identical lines are seven characters' dialogue lines all saying the same thing, so the reader realizes they're in trouble as an actor/director for a botched production?
+
+Host: no
+
+## 57 · question
+
+Take “yes and no” seriously as a split. Is it correct that the seven repetitions are *deliberately written/repeated by a person* (not mechanically produced)?
+
+Host: yes
+
+## 58 · question
+
+A person deliberately wrote/repeated the line seven times. Is it the *leaver* who deliberately wrote the seven copies (e.g., to emphasize or make a point), rather than the reader?
+
+Host: no
+
+## 59 · question
+
+Is it a third person (neither the reader nor the leaver) who deliberately wrote the sentence seven times in a single document—e.g. a child, a witness, or a third party documenting what the leaver said?
+
+Host: no
+
+## 60 · question
+
+We have: a person deliberately wrote the seven copies; not the leaver; not a third party; and earlier the reader "authored/submitted" it. Does the reader deliberately write this sentence seven times *as part of leaving the leaver*—i.e. the reader is the one walking out ("I'm never coming back"), and the "you've disappointed me" is addressed to the leaver, so the sentence is the reader's own break-up line repeated seven times on a single sheet?
+
+Host: no
+
+## 61 · question
+
+Given: a person deliberately wrote the seven copies, not the leaver, not a third party, not the reader-as-leaver. Did the reader write the line seven times as a *practice/imitation exercise*—copying out the leaver's sentence—so that reading it back now makes them realize the person really meant it and is gone?
+
+Host: no
+
+## 62 · question
+
+Is the seven-line document a *sign/placard the reader is holding or standing near*—i.e. a written item physically attached to the reader (a label, tag, or board), so the seven repeats are what others will read about the reader?
+
+Host: no
+
+## 63 · question
+
+Is the reader reading the seven lines on a *mirror or window*—like condensation writing or a message that appears reversed/repeated—so that the "written item" is not a normal sheet of paper?
+
+Host: no
+
+## 64 · question
+
+The seven copies were deliberately written by the reader, but not as a departure line. Did the reader write the same sentence seven times to *memorize or record what the leaver said*—e.g. copying it into a notebook or form seven times while filling in a form, so seeing the page now makes them understand the seriousness?
+
+Host: no
+
+## 65 · question
+
+Since the reader wrote the seven copies themselves but not as a leaving line, was the sentence a *reply* the reader wrote seven times to the leaver—i.e., the leaver repeatedly said “you’ve disappointed me,” and the reader answered “I’m never coming back” seven times in one document (such as a message draft), so reading it shows the reader will be the one at fault?
+
+Host: no
+
+## 66 · question
+
+Are the seven identical lines a *list of names/titles* rather than a message—i.e. the leaver is a teacher/coach/leader who has quit, and the reader sees the same "I'm never coming back" note seven times because it is attached to seven things (seven students, seven classes, seven jobs) they are now responsible for?
+
+Host: no
+
+## 67 · question
+
+Set "who wrote it" aside. Is the "trouble" the reader is in *supernatural or religious*—i.e. the reader is being punished/haunted for having disappointed and driven away someone (like a ghost returning seven times to repeat the accusation)?
+
+Host: no
+
+## 68 · question
+
+Are the seven identical lines written in the same handwriting on a single sheet of paper (i.e. one person physically wrote the same sentence out seven times by hand)?
+
+Host: yes
+
+## 69 · question
+
+Is the sheet of paper the sort of thing a *student's parent or guardian must sign*—i.e. a school conduct/citation slip where the same complaint is written seven times—so the reader (the child) knows they're in trouble when it gets signed?
+
+Host: no
+
+## 70 · question
+
+Confirmed: one person hand-wrote the same sentence seven times on a single sheet. Is that person the reader, and was the sheet written as a *punishment/repetition exercise* imposed by someone else (i.e. the reader had to write it as a penalty for disappointing someone)?
+
+Host: yes and no
+
+## 71 · question
+
+Splitting that compound. Is the person who hand-wrote the seven lines the reader themself?
+
+Host: yes
+
+## 72 · question
+
+Was the sheet written by the reader as *punishment lines*—i.e. the reader was made to write that sentence out seven times as a penalty?
+
+Host: no
+
+## 73 · question
+
+The reader wrote the seven lines themselves, but not as punishment. Is it a *plea or apology letter* the reader wrote—copying the sentence over and over to beg someone to stay or to prove they're sorry—so seeing how desperate it looks makes them realize they're in trouble?
+
+Host: no
+
+## 74 · question
+
+Reader hand-wrote seven copies themselves; not punishment, not a plea. Is the sheet a *“lines”/copying exercise in a school setting where the sentence is the teacher’s model sentence*—i.e. handwriting/copying practice where the pupil copies the teacher’s line seven times, and the sentence happens to be the teacher’s own farewell to the class, so the reader realizes the teacher really is leaving for good?
+
+Host: no
+
+## 75 · question
+
+Reader hand-wrote seven copies on one sheet, not punishment, not plea, not copying practice. Is it a *list the reader wrote as a record for themselves*—such as writing the same sentence on seven lines because they were testing a pen, filling a form’s answer lines, or doing a “write your answer seven times” exam format—where the content is coincidentally a farewell the reader had just heard?
+
+Host: no
+
+## 76 · question
+
+Is the seven-line handwritten sheet a *testament/will or formal signed document* the reader wrote—i.e. the reader wrote out the same sentence seven times to make a legal or formal statement, and realizing its consequences means they're in trouble?
+
+Host: no
+
+## 77 · question
+
+Is the seven-line handwritten sheet a *child's drawing/craft or school worksheet where they write the same sentence in seven spaces*—e.g. a "things I'm sorry for" or "reasons someone is upset" exercise—that the reader (now an adult or parent) is reading again, realizing the trouble dates back to childhood?
+
+Host: no
+
+## 78 · question
+
+Established: the reader is the one being left/rejected by someone who said “You’ve disappointed me so much; I’m never coming back”; the reader herself hand-wrote that same sentence seven times on one sheet; a human deliberately wrote it (confirmed). Is the seven-times copying the reader’s *spelling/vocabulary test or dictation*—the teacher (the leaver) dictated the sentence and the reader had to write it seven times—so the reader is failing a class and thus in trouble?
+
+Host: no
+
+## 79 · question
+
+Is the sentence something the reader wrote seven times *out of anger or as a threat*—i.e. the reader, after being told "you've disappointed me," wrote "I'm never coming back" repeatedly to vent, and now realizes that writing it down (perhaps it was found by the other person) has caused real trouble?
+
+Host: no
+
+## 80 · question
+
+Is the reader a *student in an exam who is writing out the same answer seven times because they don't know what else to write*—i.e. the sheet is the reader's own exam/essay paper, and the repeated sentence shows their answer is inadequate, so now they know they're in trouble (failed)?
+
+Host: no
+
+## 81 · question
+
+Back to basics on the sheet. On the sheet, are the seven handwritten copies stacked as a *vertical column written in one sitting by the reader*—but the sentence itself is something the leaver *said aloud* and the reader is writing it down as it is spoken (transcribing), so the reader is e.g. a secretary/scribe recording the leaver’s repeated statement?
+
+Host: no
+
+## 82 · question
+
+Is the reader a child who wrote this sentence seven times in a note before running away from home—i.e. the seven-line sheet is the reader's own runaway note?
+
+Host: no
+
+## 83 · question
+
+Is the "sheet with seven handwritten copies" a *form the reader filled in where she had to write the same thing on every line*—such as signing/initialing a document, a customs/immigration form, a hotel register, or a "write your name and address" repeated field—so writing the sentence seven times was routine paperwork, not emotional?
+
+Host: no
+
+## 84 · question
+
+Let me challenge the framing of “in trouble.” Instead of a child or a form, is the reader a *professional performer/reciter*—e.g. an actor or singer—who wrote out the same line seven times as a *script side/lyric sheet*, and the “trouble” is that the line was actually addressed to them by the person who quit (their co-star/partner), making it personal?
+
+Host: no
+
+## 85 · question
+
+Is the reader writing the sentence seven times to *learn or forge another person's handwriting*—i.e. she is practicing/copying the leaver's written message so as to pass it off as genuine, and now realizes she'll be caught?
+
+Host: yes
+
+## 86 · question
+
+Breakthrough. So the reader practiced/forged the leaver's handwriting. Was the forged message meant to *convince others that the leaver left of their own accord*—i.e. the reader harmed/killed the leaver, and is now writing a fake "I'm never coming back" note seven times to explain the disappearance, and realizes the practice sheet will betray her?
+
+Host: yes
+
+## 87 · question
+
+Breakthrough confirmed. Was the “leaver” actually dead before the reader wrote the practice lines—i.e. the reader killed or caused the death of the person whose handwriting she is forging, so the fake “I’m never coming back” note is meant to cover up a death rather than a voluntary departure?
+
+Host: yes
+
+## 88 · question
+
+So the reader killed someone and is forging the victim’s handwriting to fake a voluntary departure. Is the seven-line practice sheet itself something the reader is *now reading back* because it has fallen into the hands of an investigator (or is about to be discovered), which is why she knows she’s in trouble?
+
+Host: no
+
+## 89 · question
+
+Is the reader's "trouble" that she cannot yet produce a convincing forgery—i.e. the seven identical practice lines show she is failing to imitate the victim's handwriting, so the fake note won't fool anyone?
+
+Host: yes
+
+## 90 · question
+
+Two facts now confirmed: the reader killed the person, and her “trouble” is that she cannot yet produce a convincing forged farewell note. Is the victim the reader’s spouse/romantic partner—i.e. the fake “I’m never coming back” note is meant to make the partner’s disappearance look like walking out on her?
+
+Host: yes
+
+## 91 · question
+
+Confirmed: the reader killed her spouse/partner and is forging the victim’s farewell note to disguise the death as a walk-out. Is the forged note addressed *to the reader herself* (so the “you” who disappointed the victim is the killer), making the note read as the victim saying she was disappointed in her partner and leaving her?
+
+Host: yes
+
+## 92 · question
+
+Is the intended scenario that the forged note claims the partner left *because the reader disappointed her*—so the reader is deliberately making herself look like the innocent, wronged party rather than a suspect?
+
+Host: yes
+
+## 93 · question
+
+Is the "seven" simply the number of practice attempts still unfinished on the sheet—i.e. each line is a fresh try, and because they all look identical she can see she has made no progress in imitating her partner's hand?
+
+Host: yes
+
+## 94 · question
+
+One crucial practical link remains. Did the reader hide the body somewhere it will be found or is already at risk of being found—so her whole cover-up depends on getting the forged note convincing quickly?
+
+Host: no
+
+## 95 · question
+
+So the body/disposal isn’t the pressing issue. Is the urgency simply that the partner’s absence will soon be noticed (by friends, family, or police), so the reader must finish the fake note before anyone asks where the partner has gone?
+
+Host: no
+
+## 96 · question
+
+Is the reader's trouble simply that she is running out of paper/space on the sheet—i.e. she has made seven attempts and, seeing the sheet fill up with identical failures, realizes she has no more room or time to get the forgery right?
+
+Host: no
+
+## 97 · question
+
+Is the reader's trouble that she realizes the handwriting on all seven lines is *unmistakably her own*—so the sheet itself is evidence proving she wrote that sentence, and she now knows she must destroy it (and can't undo having written it)?
+
+Host: yes
+
+## 98 · final
+
+A woman has murdered her spouse/romantic partner. To make the death look like a voluntary walk-out—and to cast herself as the innocent, wronged party—she is forging a farewell note in the victim's handwriting, addressed to herself: "You've disappointed me so much; I'm never coming back."
+
+She has been practicing that sentence on a single sheet. The seven identical lines are seven attempts, and because they are all visibly in her own hand and all identical, she can see she has made no progress at imitating her partner's writing. Reading the sheet back, she realizes it is unmistakably her own handwriting and therefore damning evidence that she composed the "victim's" farewell line. That is why she sighs: the forgery has failed, the fake note will not pass as genuine, and she now knows she is in trouble.
+
+Host: no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0,
+      "evidence": "A woman has murdered her spouse/romantic partner. To make the death look like a voluntary walk-out... she is forging a farewell note in the victim's handwriting",
+      "reason": "The required facts identify the narrator as a man who murdered his wife. The submission instead says a woman murdered her spouse/romantic partner, reversing the central identities and contradicting C1.F1, C1.F2, and C1.F3."
+    },
+    {
+      "id": "C2",
+      "credit": 0,
+      "evidence": "she is forging a farewell note in the victim's handwriting... she has made no progress at imitating her partner's writing",
+      "reason": "Although repeated attempts to forge handwriting are described, the required facts specify forging his wife's handwriting. The submission says a woman is imitating her partner's writing, contradicting the required actor/victim identities."
+    },
+    {
+      "id": "C3",
+      "credit": 0,
+      "evidence": "she can see she has made no progress at imitating her partner's writing... she now knows she is in trouble",
+      "reason": "The causal link from failure to fear of discovery is present, but it is attributed to the wrong actor and victim: the required facts say his inability to imitate her handwriting leads him to worry, while the submission reverses the roles."
+    }
+  ],
+  "material_contradiction": true,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "contradicted",
+      "evidence": "A woman has murdered her spouse/romantic partner. To make the death look like a voluntary walk-out"
+    },
+    {
+      "id": "C1.F2",
+      "status": "contradicted",
+      "evidence": "A woman has murdered her spouse/romantic partner"
+    },
+    {
+      "id": "C1.F3",
+      "status": "contradicted",
+      "evidence": "To make the death look like a voluntary walk-out—and to cast herself as the innocent, wronged party—she is forging a farewell note"
+    },
+    {
+      "id": "C2.F1",
+      "status": "contradicted",
+      "evidence": "she is forging a farewell note in the victim's handwriting... seven attempts... imitating her partner's writing"
+    },
+    {
+      "id": "C2.F2",
+      "status": "contradicted",
+      "evidence": "she has made no progress at imitating her partner's writing... she now knows she is in trouble"
+    },
+    {
+      "id": "C3.F1",
+      "status": "contradicted",
+      "evidence": "she can see she has made no progress at imitating her partner's writing... she now knows she is in trouble"
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [
+    {
+      "quote": "A woman has murdered her spouse/romantic partner. To make the death look like a voluntary walk-out—and to cast herself as the innocent, wronged party—she is forging a farewell note in the victim's handwriting",
+      "reference": "The narrator murdered his wife and staged her disappearance as a voluntary departure; the narrator killed his wife and tried to forge her handwriting.",
+      "checkpoint_ids": [
+        "C1",
+        "C2",
+        "C3"
+      ]
+    }
+  ],
+  "partial_score": 0.0,
+  "complete": false,
+  "label": "no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>
+
+## 99 · question
+
+The final was rejected—so some confirmed fact must be misframed. Most suspect: "seven attempts / no progress." Is the sheet instead the *finished forged note itself*, seven copies because the reader wrote it on seven separate sheets or seven times to have spares, and "I'm in trouble" refers to something else? Alternatively: is the reader *not* the killer—the killer is someone else, and the reader is the forger? Atomic test: Is the reader the person who actually killed her partner (not merely someone forging on a killer's behalf)?
+
+Host: yes
+
+## 100 · final · mandatory final
+
+A woman has killed her spouse/romantic partner. To pass the death off as a voluntary walk-out—and to make herself look like the innocent, wronged party—she is forging the partner's handwriting on a farewell note addressed to herself: "You've disappointed me so much; I'm never coming back."
+
+She practiced that sentence repeatedly, and the sheet in front of her bears seven identical handwritten copies. All seven are visibly in her own handwriting and identical, showing she has made no progress in imitating her partner's hand. Reading the sheet back, she recognizes that it is unmistakably her writing—so the practice sheet is itself incriminating evidence that she, not the "leaver," composed the farewelling line. Her sigh and "I know I'm in trouble" come from realizing the fake note will not pass as genuine: the forgery has failed while proving that she wrote the victim's supposed last words.
+
+Host: no
+
+<details><summary>Private evaluator result (not sent to player)</summary>
+
+```json
+{
+  "checkpoints": [
+    {
+      "id": "C1",
+      "credit": 0,
+      "evidence": "A woman has killed her spouse/romantic partner. To pass the death off as a voluntary walk-out—and to make herself look like the innocent, wronged party—she is forging the partner's handwriting on a farewell note addressed to herself",
+      "reason": "The required facts identify the narrator as a man who murdered his wife. The submission instead says a woman killed her spouse/romantic partner, reversing the central identities and contradicting C1.F1, C1.F2, and C1.F3."
+    },
+    {
+      "id": "C2",
+      "credit": 0,
+      "evidence": "she is forging the partner's handwriting... she has made no progress in imitating her partner's hand",
+      "reason": "Although repeated efforts to imitate handwriting are described, the required facts specify attempts to forge his wife's handwriting. The submission says a woman is imitating her partner's handwriting, contradicting the required actor and victim."
+    },
+    {
+      "id": "C3",
+      "credit": 0,
+      "evidence": "she has made no progress in imitating her partner's hand... she now knows she is in trouble",
+      "reason": "The causal link from failed imitation to fear of discovery is present, but it is attributed to the wrong actor and victim: the required facts say his inability to imitate her handwriting leads him to worry, while the submission reverses the roles."
+    }
+  ],
+  "material_contradiction": true,
+  "irrelevant": false,
+  "rubric_conflict": false,
+  "full_solution": false,
+  "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+  "fact_coverage": [
+    {
+      "id": "C1.F1",
+      "status": "contradicted",
+      "evidence": "A woman has killed her spouse/romantic partner. To pass the death off as a voluntary walk-out"
+    },
+    {
+      "id": "C1.F2",
+      "status": "contradicted",
+      "evidence": "A woman has killed her spouse/romantic partner"
+    },
+    {
+      "id": "C1.F3",
+      "status": "contradicted",
+      "evidence": "To pass the death off as a voluntary walk-out—and to make herself look like the innocent, wronged party—she is forging the partner's handwriting on a farewell note addressed to herself"
+    },
+    {
+      "id": "C2.F1",
+      "status": "contradicted",
+      "evidence": "To pass the death off as a voluntary walk-out—and to make herself look like the innocent, wronged party—she is forging the partner's handwriting on a farewell note addressed to herself: \"You've disappointed me so much; I'm never coming back.\"\n\nShe practiced that sentence repeatedly, and the sheet in front of her bears seven identical handwritten copies. … All seven are visibly in her own handwriting and identical, showing she has made no progress in imitating her partner's hand."
+    },
+    {
+      "id": "C2.F2",
+      "status": "contradicted",
+      "evidence": "All seven are visibly in her own handwriting and identical, showing she has made no progress in imitating her partner's hand. … Her sigh and \"I know I'm in trouble\" come from realizing the fake note will not pass as genuine: the forgery has failed while proving that she wrote the victim's supposed last words."
+    },
+    {
+      "id": "C3.F1",
+      "status": "contradicted",
+      "evidence": "All seven are visibly in her own handwriting and identical, showing she has made no progress in imitating her partner's hand. … Her sigh and \"I know I'm in trouble\" come from realizing the fake note will not pass as genuine: the forgery has failed while proving that she wrote the victim's supposed last words."
+    }
+  ],
+  "requirement_coverage": [],
+  "contradictions": [
+    {
+      "quote": "A woman has killed her spouse/romantic partner. To pass the death off as a voluntary walk-out—and to make herself look like the innocent, wronged party—she is forging the partner's handwriting on a farewell note addressed to herself",
+      "reference": "The narrator murdered his wife and staged her disappearance as a voluntary departure; the narrator killed his wife and tried to forge her handwriting.",
+      "checkpoint_ids": [
+        "C1",
+        "C2",
+        "C3"
+      ]
+    }
+  ],
+  "partial_score": 0.0,
+  "complete": false,
+  "label": "no",
+  "grading_protocol": "coverage-v3-unified",
+  "controller_corrections": []
+}
+```
+</details>

@@ -1,0 +1,169 @@
+{
+  "status": "interrupted",
+  "stop_reason": "user_interrupt",
+  "simulation": false,
+  "success": null,
+  "host_questions": 83,
+  "final_attempts": 1,
+  "rejected_finals": 1,
+  "counted_questions": 84,
+  "submissions": 84,
+  "pending_feedback": 1,
+  "forced_final": false,
+  "final_partial_score": 0.175,
+  "best_partial_score": 0.175,
+  "latest_final": "A fugitive arranged with an accomplice to hide inside a coffin during a funeral, expecting the accomplice to dig him out after the burial. He knew the coffin would be buried and believed he could escape afterward, but he did not know whose funeral it was. Once buried, he struck a match and recognized the corpse as his accomplice. The accomplice had died before the funeral, so no one was coming to free him; the buried coffin could not be opened from inside. Realizing he was trapped, he died there.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0,
+        "evidence": "A fugitive arranged with an accomplice to hide inside a coffin during a funeral",
+        "reason": "Coffin concealment is established, but the man is not identified as a prisoner escaping prison. The required condition for half credit is not covered."
+      },
+      {
+        "id": "C2",
+        "credit": 0,
+        "evidence": "expecting the accomplice to dig him out after the burial ... recognized the corpse as his accomplice",
+        "reason": "The dead accomplice is the intended rescuer, but he is not identified as a prison guard, and no bribe is stated. Guard identity is required even for half credit."
+      },
+      {
+        "id": "C3",
+        "credit": 0.5,
+        "evidence": "Once buried, he struck a match and recognized the corpse as his accomplice.",
+        "reason": "Match-lighting and recognition of the corpse are established, but the corpse is not identified as the guard."
+      },
+      {
+        "id": "C4",
+        "credit": 1,
+        "evidence": "The accomplice had died before the funeral, so no one was coming to free him; the buried coffin could not be opened from inside. Realizing he was trapped, he died there.",
+        "reason": "The rescuer's death leaves him without rescue, and he realizes he will die trapped in the buried coffin."
+      }
+    ],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Missing the prisoner and prison-guard identities, the bribe, and the plan to use the next prison death's coffin and be carried outside prison. The burial, recognition of the dead rescuer, and resulting fatal entrapment are reconstructed.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "partial",
+        "evidence": "A fugitive arranged with an accomplice to hide inside a coffin during a funeral ... believed he could escape afterward"
+      },
+      {
+        "id": "C1.F2",
+        "status": "covered",
+        "evidence": "A fugitive arranged with an accomplice to hide inside a coffin during a funeral ... Once buried, he struck a match and recognized the corpse as his accomplice."
+      },
+      {
+        "id": "C2.F1",
+        "status": "partial",
+        "evidence": "recognized the corpse as his accomplice"
+      },
+      {
+        "id": "C2.F2",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "C2.F3",
+        "status": "partial",
+        "evidence": "A fugitive arranged with an accomplice to hide inside a coffin during a funeral, expecting the accomplice to dig him out after the burial."
+      },
+      {
+        "id": "C3.F1",
+        "status": "partial",
+        "evidence": "Once buried, he struck a match and recognized the corpse as his accomplice."
+      },
+      {
+        "id": "C4.F1",
+        "status": "covered",
+        "evidence": "The accomplice had died before the funeral, so no one was coming to free him; the buried coffin could not be opened from inside. Realizing he was trapped, he died there."
+      }
+    ],
+    "requirement_coverage": [
+      {
+        "id": "R1",
+        "status": "partial",
+        "evidence": "A fugitive arranged with an accomplice to hide inside a coffin during a funeral ... believed he could escape afterward"
+      },
+      {
+        "id": "R2",
+        "status": "partial",
+        "evidence": "A fugitive arranged with an accomplice to hide inside a coffin during a funeral, expecting the accomplice to dig him out after the burial. He knew the coffin would be buried ... Once buried, he struck a match"
+      },
+      {
+        "id": "R3",
+        "status": "partial",
+        "evidence": "expecting the accomplice to dig him out after the burial"
+      },
+      {
+        "id": "R4",
+        "status": "partial",
+        "evidence": "Once buried, he struck a match and recognized the corpse as his accomplice."
+      },
+      {
+        "id": "R5",
+        "status": "covered",
+        "evidence": "The accomplice had died before the funeral, so no one was coming to free him; the buried coffin could not be opened from inside. Realizing he was trapped, he died there."
+      }
+    ],
+    "contradictions": [],
+    "partial_score": 0.175,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v2",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 2418.8721861250233,
+  "usage": {
+    "grader": {
+      "http_attempts": 1,
+      "successful_responses": 1,
+      "seconds": 30.220843417104334,
+      "provider_reported_usage": {
+        "input_tokens": 9523,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1556,
+        "reasoning_output_tokens": 502
+      }
+    },
+    "host": {
+      "http_attempts": 167,
+      "successful_responses": 167,
+      "seconds": 1466.2953685845714,
+      "provider_reported_usage": {
+        "input_tokens": 1591755,
+        "cached_input_tokens": 359552,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9486,
+        "reasoning_output_tokens": 6689
+      }
+    },
+    "player": {
+      "http_attempts": 84,
+      "successful_responses": 84,
+      "seconds": 914.7466077506542,
+      "provider_reported_usage": {
+        "input_tokens": 298124,
+        "cached_input_tokens": 154112,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 28013,
+        "reasoning_output_tokens": 24963
+      }
+    }
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "evaluation_versions": {
+    "story_sha256": "6e6ea7eabb42f6e387794f1a2bb7d9ec10071bf6ae28640252258c26999de20b",
+    "grading_sha256": "256de45b1fa8a493bca0782814f283ee637014fa2e553d941b81f173594cae5d",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "28d70e41f9f66353fc7cf9666eb1c3fe925432202ac2cc87791eebbfc049e11a",
+    "controller_sha256": "6e0ffa6bef13e372d03254c85fa74f707f68dc1cab5be94458e7e7360015fe92",
+    "host_context_sha256": "6042d7749837fc9925699434403bb3c36bff17b579930107063765b9a7c5dd54",
+    "host_binding_version": "host-v5.1-20261023"
+  }
+}

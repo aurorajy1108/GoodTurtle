@@ -1,0 +1,279 @@
+{
+  "status": "error",
+  "stop_reason": "APIError",
+  "simulation": false,
+  "success": null,
+  "host_questions": 86,
+  "final_attempts": 5,
+  "rejected_finals": 5,
+  "counted_questions": 91,
+  "submissions": 91,
+  "pending_feedback": 1,
+  "forced_final": false,
+  "final_partial_score": 0.8,
+  "best_partial_score": 0.8,
+  "latest_final": "The writer deliberately murdered their spouse. To conceal the crime, they practiced imitating the spouse’s handwriting by repeatedly writing the sentence seven times, then used that imitation to forge a message addressed to themselves. The message appeared to come from the still-living spouse, who was angry and disappointed and had voluntarily left forever. This was intended to make others believe the spouse had merely disappeared, delaying suspicion of the murder.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 1,
+        "evidence": "The writer deliberately murdered their spouse. ... The message appeared to come from the still-living spouse, who was angry and disappointed and had voluntarily left forever.",
+        "reason": "Identifies the narrator's murder of their spouse and the cover story of a voluntary departure."
+      },
+      {
+        "id": "C2",
+        "credit": 1,
+        "evidence": "they practiced imitating the spouse’s handwriting by repeatedly writing the sentence seven times",
+        "reason": "Correctly explains the repetitions as attempts to imitate the murdered spouse's handwriting for a forged message."
+      },
+      {
+        "id": "C3",
+        "credit": 0,
+        "evidence": "",
+        "reason": "Does not identify failed handwriting imitation or the narrator's resulting fear of being caught. Delaying others' suspicion is not the required explanation of his worry."
+      }
+    ],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Missing the crucial failure of the repeated handwriting attempts and its causal connection to the narrator's fear of discovery. Using an imitation to forge a message does not expressly establish that the handwriting was convincing.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "covered",
+        "evidence": "The writer deliberately murdered their spouse. ... The message appeared to come from the still-living spouse, who was angry and disappointed and had voluntarily left forever. This was intended to make others believe the spouse had merely disappeared, delaying suspicion of the murder."
+      },
+      {
+        "id": "C2.F1",
+        "status": "covered",
+        "evidence": "they practiced imitating the spouse’s handwriting by repeatedly writing the sentence seven times"
+      },
+      {
+        "id": "C3.F1",
+        "status": "missing",
+        "evidence": ""
+      }
+    ],
+    "requirement_coverage": [
+      {
+        "id": "R1",
+        "status": "covered",
+        "evidence": "The writer deliberately murdered their spouse."
+      },
+      {
+        "id": "R2",
+        "status": "covered",
+        "evidence": "To conceal the crime, they practiced imitating the spouse’s handwriting by repeatedly writing the sentence seven times, then used that imitation to forge a message addressed to themselves. The message appeared to come from the still-living spouse, who was angry and disappointed and had voluntarily left forever."
+      },
+      {
+        "id": "R3",
+        "status": "partial",
+        "evidence": "they practiced imitating the spouse’s handwriting by repeatedly writing the sentence seven times"
+      }
+    ],
+    "contradictions": [],
+    "partial_score": 0.8,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v2",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 8745.016954709019,
+  "usage": {
+    "grader": {
+      "http_attempts": 5,
+      "successful_responses": 5,
+      "seconds": 221.73513275000732,
+      "provider_reported_usage": {
+        "input_tokens": 102283,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5294,
+        "reasoning_output_tokens": 2149
+      }
+    },
+    "host": {
+      "http_attempts": 174,
+      "successful_responses": 173,
+      "seconds": 3617.7458941269433,
+      "provider_reported_usage": {
+        "input_tokens": 3801657,
+        "cached_input_tokens": 293888,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 9612,
+        "reasoning_output_tokens": 6699
+      }
+    },
+    "partner": {
+      "http_attempts": 91,
+      "successful_responses": 91,
+      "seconds": 1682.5744148393278,
+      "provider_reported_usage": {
+        "input_tokens": 530848,
+        "cached_input_tokens": 178048,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 18973,
+        "reasoning_output_tokens": 14555
+      }
+    },
+    "player": {
+      "http_attempts": 182,
+      "successful_responses": 182,
+      "seconds": 3220.3433679959853,
+      "provider_reported_usage": {
+        "input_tokens": 1027438,
+        "cached_input_tokens": 287744,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 28166,
+        "reasoning_output_tokens": 19968
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "total": {
+      "calls": 452,
+      "unknown_cost_calls": 1,
+      "known_estimated_cost_usd": 7.68293424,
+      "estimated_cost_usd": null,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 5462226,
+        "cached_input_tokens": 759680,
+        "cache_write_tokens": 0,
+        "output_tokens": 62045,
+        "reasoning_tokens": 0,
+        "total_tokens": 5524271
+      },
+      "missing_token_calls": {
+        "input_tokens": 1,
+        "cached_input_tokens": 1,
+        "cache_write_tokens": 0,
+        "output_tokens": 1,
+        "reasoning_tokens": 452,
+        "total_tokens": 1
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "codex_cli",
+        "model": "gpt-6.1-sol",
+        "calls": 5,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.257506,
+        "estimated_cost_usd": 0.257506,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 102283,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 5294,
+          "reasoning_tokens": 0,
+          "total_tokens": 107577
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 5,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "codex_cli",
+        "model": "gpt-6.1-sol",
+        "calls": 174,
+        "unknown_cost_calls": 1,
+        "known_estimated_cost_usd": 7.1410468,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 3801657,
+          "cached_input_tokens": 293888,
+          "cache_write_tokens": 0,
+          "output_tokens": 9612,
+          "reasoning_tokens": 0,
+          "total_tokens": 3811269
+        },
+        "missing_token_calls": {
+          "input_tokens": 1,
+          "cached_input_tokens": 1,
+          "cache_write_tokens": 0,
+          "output_tokens": 1,
+          "reasoning_tokens": 174,
+          "total_tokens": 1
+        }
+      },
+      {
+        "role": "partner",
+        "provider": "codex_cli",
+        "model": "gpt-5.6-luna",
+        "calls": 91,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.09688856,
+        "estimated_cost_usd": 0.09688856,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 530848,
+          "cached_input_tokens": 178048,
+          "cache_write_tokens": 0,
+          "output_tokens": 18973,
+          "reasoning_tokens": 0,
+          "total_tokens": 549821
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 91,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "codex_cli",
+        "model": "gpt-5.6-luna",
+        "calls": 182,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.18749288,
+        "estimated_cost_usd": 0.18749288,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1027438,
+          "cached_input_tokens": 287744,
+          "cache_write_tokens": 0,
+          "output_tokens": 28166,
+          "reasoning_tokens": 0,
+          "total_tokens": 1055604
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 182,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": "host: Codex CLI failed (exit=1, tools=False, format=False); see api_calls.jsonl",
+  "human_review_status": "pending",
+  "evaluation_versions": {
+    "story_sha256": "8f2ddbbd95f8552db795e6101df8e1ec6ac3755b6591d990fc66877d5a4b9d3b",
+    "grading_sha256": "b45687898c96ce287d149e65ef97c3ace0f95ce5ccfd722ce4b2d9d4588abd56",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "ee2355155bc93572faf555bea747de2352440d723da28eaad5060002be9cb0c8",
+    "controller_sha256": "a837789c1530041ac3cbc9994afa348276569852953ca6331611139073a6cdc6",
+    "host_context_sha256": "6ef204bc1f9c029351d2344d68946fac16ade3855f72f54df450f43d49a6e4e2",
+    "host_binding_version": "host-v9-human-20261102"
+  }
+}

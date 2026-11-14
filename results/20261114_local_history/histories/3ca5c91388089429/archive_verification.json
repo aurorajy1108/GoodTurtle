@@ -1,0 +1,39 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "442f95b64925bbc97c70a51f07b58f94f450b6e01f739798427184e590cc9edb",
+    "trajectory.jsonl": "5b966152905a71d83b77a45be36e042fa2962cee8a37f4febf1a8a439b595569",
+    "trajectory.md": "36aa392182143a5cfd7f484b6708a42668e773461b21d4537aed7646f37d425e",
+    "trajectory.html": "e3fb0a8b61337b9ea9945770089e0f518479ee0adbd0056130eeaf7a7a75105b",
+    "config.json": "a014f81ea9e104679e8f092a1f109161aea61071386b2e945a24be08c367d75c",
+    "partner_config.json": "489a968c9ed96d8e89aa0c6dcd2216c2a2dd1c4b68415ba6cf332611cf340f1c",
+    "prompts.json": "fc46446f09444f43c20df1c19fbb54338043bc29e602a6373a8af5b06ee85640",
+    "puzzle_private.json": "584b8e48b2d2c3366856d4d6600576c043923b00c60a212818d34fe7b29fa4a0",
+    "host_context.json": "9955853313c40e114fd560addc9affbeae287083b0415025160e0c67e0a7d026",
+    "human_review.csv": "8beaba883b49df186d3e79ef57bcd8a5659ab4b6c9d8c624965fb5af8453c012",
+    "review_template.csv": "8beaba883b49df186d3e79ef57bcd8a5659ab4b6c9d8c624965fb5af8453c012",
+    "collaboration.jsonl": "e77ebd20156917d2a5c80a956d8b0beea42b5a18b7916fbf042ca2880d899250"
+  },
+  "api_audit": {
+    "source_raw_sha256": "e3e159028c8823c12d4d15d9906b85912aba3ad7aa5bb34113d96402dbbf91fe",
+    "source_raw_bytes": 5619244,
+    "published_sha256": "a690a48ddd00f6475868dc100ee6a9f04fde251fcc253813952834329dcdd352",
+    "attempts": 384
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261023_team_more_puzzles/batches/TS036/TS036_r03_independent",
+      "status_as_recorded": "interrupted",
+      "simulation": false,
+      "submissions": 96,
+      "result_sha256": "442f95b64925bbc97c70a51f07b58f94f450b6e01f739798427184e590cc9edb",
+      "signature": "3ca5c9138808942970433d268f9583e5630a2cfb6dcd0e6de6f32a277c6f7343",
+      "event_count": 194,
+      "trajectory_sha256": "5b966152905a71d83b77a45be36e042fa2962cee8a37f4febf1a8a439b595569",
+      "first_submission": "2026-10-23T15:28:00.931580+00:00",
+      "first_text": "Were Kameda and Umio nonliving objects rather than living beings? ",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

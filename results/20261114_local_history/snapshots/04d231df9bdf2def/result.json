@@ -1,0 +1,125 @@
+{
+  "status": "error",
+  "stop_reason": "ProtocolError",
+  "simulation": false,
+  "success": null,
+  "host_questions": 0,
+  "final_attempts": 0,
+  "rejected_finals": 0,
+  "counted_questions": 0,
+  "submissions": 0,
+  "player_format_corrections": [],
+  "pending_feedback": 0,
+  "forced_final": false,
+  "final_partial_score": null,
+  "best_partial_score": null,
+  "latest_final": null,
+  "latest_grade": null,
+  "elapsed_seconds": 2.4044867089251056,
+  "usage": {
+    "grader": {
+      "http_attempts": 0,
+      "successful_responses": 0,
+      "seconds": 0,
+      "provider_reported_usage": {}
+    },
+    "host": {
+      "http_attempts": 0,
+      "successful_responses": 0,
+      "seconds": 0,
+      "provider_reported_usage": {}
+    },
+    "player": {
+      "http_attempts": 2,
+      "successful_responses": 2,
+      "seconds": 2.3454704160103574,
+      "provider_reported_usage": {
+        "prompt_tokens": 3488,
+        "completion_tokens": 32,
+        "total_tokens": 3520,
+        "prompt_cache_hit_tokens": 2432,
+        "prompt_cache_miss_tokens": 1056
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "estimate_assumptions": [
+      "peak_rate_reference_upper_estimate; off-peak rates are half; actual billing unknown"
+    ],
+    "total": {
+      "calls": 2,
+      "unknown_cost_calls": 0,
+      "known_estimated_cost_usd": 0.000369792,
+      "estimated_cost_usd": 0.000369792,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 3488,
+        "cached_input_tokens": 2432,
+        "cache_write_tokens": 0,
+        "output_tokens": 32,
+        "reasoning_tokens": 0,
+        "total_tokens": 3520
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 2,
+        "total_tokens": 0
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 2,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.000369792,
+        "estimated_cost_usd": 0.000369792,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 3488,
+          "cached_input_tokens": 2432,
+          "cache_write_tokens": 0,
+          "output_tokens": 32,
+          "reasoning_tokens": 0,
+          "total_tokens": 3520
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 2,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": "Invalid action; matched budget forbids an unbounded format retry",
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "57f58bcf-4b0c-4fbd-9479-b254ad767407"
+    ],
+    "logical_input_chars": 1984,
+    "delta_input_chars": 1295,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "8f2ddbbd95f8552db795e6101df8e1ec6ac3755b6591d990fc66877d5a4b9d3b",
+    "grading_sha256": "ca184d8550ded2ca3f901e2f09673271411833e9d201f2febc0c774acef67093",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v3-unified",
+    "prompts_sha256": "c95150ba24dd57486633f8b8acdc715e4861fd9e112077b7598de481dead1678",
+    "controller_sha256": "80b0fbe1f3c20aea3163acf8095417744c81a44dd5be0f55a08c88224de1829c",
+    "player_format_policy_sha256": "cf439ee1d60ae38374486aada319739646a5975284ff00bc877a3040047df56a",
+    "host_context_sha256": "4de8a9c689103080f87f7d2d62d3c0d145f07e715d5fe6e9b988f49249c5bcaf",
+    "host_binding_version": "host-v14-ai-20261111-forged-author"
+  }
+}

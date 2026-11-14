@@ -1,0 +1,87 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 92,
+  "final_attempts": 8,
+  "rejected_finals": 8,
+  "counted_questions": 100,
+  "submissions": 100,
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 1.0,
+  "best_partial_score": 1.0,
+  "latest_final": "In the dim room, the reporter mistook a window opposite her bed for a portrait. Morning light revealed the glass, and she saw a man outside staring in at her. She was startled because he was connected to the story that had brought her to the countryside and was someone she had reason not to expect there. The clues suggest he may have been a fugitive or otherwise thought to be confined, but they don’t establish his exact identity or circumstances.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 1,
+        "evidence": "She mistook a window opposite her bed for a portrait; in the morning she saw a man outside.",
+        "reason": "Identifies the supposed portrait as a window with a real person outside."
+      },
+      {
+        "id": "C2",
+        "credit": 1,
+        "evidence": "“In the dim room, the reporter mistook a window … for a portrait”; the man was later seen “staring in.”",
+        "reason": "Connects the dim-light mistake to the window and identifies the outside person as a watcher."
+      },
+      {
+        "id": "C3",
+        "credit": 1,
+        "evidence": "“Morning light revealed the glass” and she “was startled.”",
+        "reason": "Covers the daylight discovery and her shock."
+      }
+    ],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "The explanation omits that she felt watched during the night and avoided looking at the portrait/window. The asserted connection to her countryside story and possible fugitive status is unsupported, but does not contradict the reference.",
+    "partial_score": 1.0,
+    "complete": false,
+    "label": "yes and no"
+  },
+  "elapsed_seconds": 2692.7211920421105,
+  "usage": {
+    "grader": {
+      "http_attempts": 8,
+      "successful_responses": 8,
+      "seconds": 106.8038840838708,
+      "provider_reported_usage": {
+        "input_tokens": 24087,
+        "cached_input_tokens": 4096,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 3694,
+        "reasoning_output_tokens": 1843
+      }
+    },
+    "host": {
+      "http_attempts": 92,
+      "successful_responses": 92,
+      "seconds": 1084.507334873546,
+      "provider_reported_usage": {
+        "input_tokens": 373404,
+        "cached_input_tokens": 174080,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 7485,
+        "reasoning_output_tokens": 5799
+      }
+    },
+    "player": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 1500.4380069521721,
+      "provider_reported_usage": {
+        "input_tokens": 754080,
+        "cached_input_tokens": 104832,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 34041,
+        "reasoning_output_tokens": 29791
+      }
+    }
+  },
+  "error": null,
+  "human_review_status": "pending"
+}

@@ -1,0 +1,171 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 94,
+  "final_attempts": 6,
+  "rejected_finals": 6,
+  "counted_questions": 100,
+  "submissions": 100,
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.425,
+  "best_partial_score": 0.55,
+  "latest_final": "Kameda was the reigning monarch, and Umio was a non-royal challenger for political control of the same kingdom. Kameda defeated Umio. After their deaths, Kameda was cremated, a more honorific treatment, while Umio was buried intact in a deliberately less prestigious burial arranged by Kameda’s side. People comparing their funerals took that contrast as evidence that Umio had lost. Kameda’s fragments resulted from cremation, not from damage Umio inflicted during their struggle.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0.5,
+        "evidence": "After their deaths, Kameda was cremated ... while Umio was buried intact ... Kameda’s fragments resulted from cremation, not from damage Umio inflicted during their struggle.",
+        "reason": "Identifies postmortem remains rather than living fighters’ injuries, but omits excavation and the historical comparison context."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "Kameda was cremated, a more honorific treatment ... Kameda’s fragments resulted from cremation",
+        "reason": "Connects fragmentation to cremation and honorable treatment, but does not establish that cremation was the customary proper funeral."
+      },
+      {
+        "id": "C3",
+        "credit": 0,
+        "evidence": "Umio was buried intact in a deliberately less prestigious burial arranged by Kameda’s side.",
+        "reason": "Suggests burial without cremation, but does not identify secret burial, which is required by both the full-credit and specified half-credit rules."
+      },
+      {
+        "id": "C4",
+        "credit": 0.5,
+        "evidence": "Kameda defeated Umio. ... People comparing their funerals took that contrast as evidence that Umio had lost.",
+        "reason": "Identifies political defeat, but omits poisoning by the rival’s agents."
+      }
+    ],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Missing Umio’s ducal rank, excavation and history-lecture photographs, the customary nature of cremation, and the accepted account of poisoning and secret burial by Kameda’s agents.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "partial",
+        "evidence": "After their deaths, Kameda was cremated, a more honorific treatment, while Umio was buried intact in a deliberately less prestigious burial arranged by Kameda’s side. ... Kameda’s fragments resulted from cremation, not from damage Umio inflicted during their struggle."
+      },
+      {
+        "id": "C2.F1",
+        "status": "partial",
+        "evidence": "Kameda was cremated, a more honorific treatment ... Kameda’s fragments resulted from cremation, not from damage Umio inflicted during their struggle."
+      },
+      {
+        "id": "C3.F1",
+        "status": "partial",
+        "evidence": "Kameda was cremated, a more honorific treatment, while Umio was buried intact in a deliberately less prestigious burial arranged by Kameda’s side."
+      },
+      {
+        "id": "C4.F1",
+        "status": "partial",
+        "evidence": "Kameda defeated Umio. ... People comparing their funerals took that contrast as evidence that Umio had lost."
+      }
+    ],
+    "requirement_coverage": [
+      {
+        "id": "R1",
+        "status": "partial",
+        "evidence": "Kameda was the reigning monarch, and Umio was a non-royal challenger for political control of the same kingdom. ... People comparing their funerals took that contrast as evidence that Umio had lost."
+      },
+      {
+        "id": "R2",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "R3",
+        "status": "partial",
+        "evidence": "Kameda was cremated, a more honorific treatment ... Kameda’s fragments resulted from cremation, not from damage Umio inflicted during their struggle."
+      },
+      {
+        "id": "R4",
+        "status": "covered",
+        "evidence": "Kameda was cremated, a more honorific treatment, while Umio was buried intact"
+      },
+      {
+        "id": "R5",
+        "status": "partial",
+        "evidence": "Umio was buried intact in a deliberately less prestigious burial arranged by Kameda’s side."
+      },
+      {
+        "id": "R6",
+        "status": "partial",
+        "evidence": "After their deaths, Kameda was cremated, a more honorific treatment, while Umio was buried intact in a deliberately less prestigious burial arranged by Kameda’s side. People comparing their funerals took that contrast as evidence that Umio had lost."
+      }
+    ],
+    "contradictions": [],
+    "partial_score": 0.425,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v2",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 5119.456820333842,
+  "usage": {
+    "grader": {
+      "http_attempts": 6,
+      "successful_responses": 6,
+      "seconds": 210.77818991616368,
+      "provider_reported_usage": {
+        "input_tokens": 46547,
+        "cached_input_tokens": 2816,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8297,
+        "reasoning_output_tokens": 2647
+      }
+    },
+    "host": {
+      "http_attempts": 192,
+      "successful_responses": 192,
+      "seconds": 1461.1516845431179,
+      "provider_reported_usage": {
+        "input_tokens": 1584043,
+        "cached_input_tokens": 173568,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 12546,
+        "reasoning_output_tokens": 9264
+      }
+    },
+    "partner": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 1198.74018817069,
+      "provider_reported_usage": {
+        "input_tokens": 387470,
+        "cached_input_tokens": 164096,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 53470,
+        "reasoning_output_tokens": 49077
+      }
+    },
+    "player": {
+      "http_attempts": 200,
+      "successful_responses": 200,
+      "seconds": 2247.1854371973313,
+      "provider_reported_usage": {
+        "input_tokens": 763889,
+        "cached_input_tokens": 292480,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 94955,
+        "reasoning_output_tokens": 86267
+      }
+    }
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "evaluation_versions": {
+    "story_sha256": "edf0fb14af6ff2c56f5cf8abeedb0b4f0b01fb8d2ef7982f524e0eb7ea0be857",
+    "grading_sha256": "d3055c83d80b48e93fe53291b49857fc39f83cb240cdca7f2cbdeb2ce8346253",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "5e8670d5cd1d8953946f0fe19d410ee9e4ea62aacb2b37601a6a5fba9d66e079",
+    "controller_sha256": "9a3b627dfcd00a9df00e2aec21a6233e93e3a41c50021470bf0485a0fbfa8614",
+    "host_context_sha256": "7878657f97bbb87bcf087e437eb1c179002ffd9cdda4c5cfd34f1b4ded51c93d",
+    "host_binding_version": "host-v5.1-20261023"
+  }
+}

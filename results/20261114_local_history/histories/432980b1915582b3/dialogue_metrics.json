@@ -1,0 +1,28 @@
+{
+  "settings": {
+    "roles": "complementary",
+    "scheduling": "adaptive",
+    "max_discussion": 4,
+    "start": "A",
+    "role_assignment": {
+      "A": {
+        "specialty": "investigator",
+        "instruction": "Develop and test explanations of identities, setting, event order and the main causal mechanism. Connect confirmed facts into a coherent story; explicitly distinguish hypotheses from host-confirmed facts."
+      },
+      "B": {
+        "specialty": "critic",
+        "instruction": "Challenge unsupported assumptions, propose alternative interpretations, and test missing causal links, motives and contradictions. Suggest discriminating questions rather than only criticizing. Help complete the story."
+      }
+    },
+    "protocol": "shared-dialogue-v3-prefix-v1",
+    "format_correction_max_retries": 2
+  },
+  "counts_by_actor": {
+    "A": {
+      "question": 39
+    },
+    "B": {}
+  },
+  "external_submissions": 39,
+  "internal_messages": 0
+}

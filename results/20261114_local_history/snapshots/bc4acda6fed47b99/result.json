@@ -1,0 +1,277 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 98,
+  "final_attempts": 2,
+  "rejected_finals": 2,
+  "counted_questions": 100,
+  "submissions": 100,
+  "player_format_corrections": [],
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.0,
+  "best_partial_score": 0.0,
+  "latest_final": "The student was using HKU's online course-selection system before the deadline. He had made his course choices and believed they were set, but the selections were only in a temporary/unsaved state on the system—never actually committed as registered enrollments. When the system synchronized or the session ended that evening, the unconfirmed choices did not persist, leaving his course list empty. So from his point of view, all of his courses had been \"gone in one evening\": not cancelled by others, not lost to a system crash, hack, deadline, full classes, or his own intentional dropping, but because the choices were never properly saved to the server as final enrollments. When he checked, every slot was blank, and the courses he wanted appeared to have vanished in a single evening.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0,
+        "evidence": "The student was using HKU's online course-selection system before the deadline.",
+        "reason": "The submission treats courses as academic enrolments, directly contradicting the required identification of courses as meal courses at a formal high-table dinner."
+      },
+      {
+        "id": "C2",
+        "credit": 0,
+        "evidence": "The student was using HKU's online course-selection system before the deadline.",
+        "reason": "The deadline is framed as an academic course-selection deadline, not as the deadline for expressing meal-course preferences."
+      },
+      {
+        "id": "C3",
+        "credit": 0,
+        "evidence": "the selections were only in a temporary/unsaved state on the system—never actually committed as registered enrollments. When the system synchronized or the session ended that evening, the unconfirmed choices did not persist, leaving his course list empty.",
+        "reason": "The submission replaces the required causal mechanism—waiter clearing uneaten dishes as the next course is served—with an academic system synchronization/session-saving failure."
+      }
+    ],
+    "material_contradiction": true,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "contradicted",
+        "evidence": "The student was using HKU's online course-selection system before the deadline."
+      },
+      {
+        "id": "C1.F2",
+        "status": "contradicted",
+        "evidence": "The student was using HKU's online course-selection system before the deadline."
+      },
+      {
+        "id": "C2.F1",
+        "status": "contradicted",
+        "evidence": "The student was using HKU's online course-selection system before the deadline."
+      },
+      {
+        "id": "C2.F2",
+        "status": "contradicted",
+        "evidence": "The student was using HKU's online course-selection system before the deadline."
+      },
+      {
+        "id": "C3.F1",
+        "status": "contradicted",
+        "evidence": "the selections were only in a temporary/unsaved state on the system—never actually committed as registered enrollments. When the system synchronized or the session ended that evening, the unconfirmed choices did not persist, leaving his course list empty."
+      },
+      {
+        "id": "C3.F2",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "C3.F3",
+        "status": "contradicted",
+        "evidence": "the selections were only in a temporary/unsaved state on the system—never actually committed as registered enrollments. When the system synchronized or the session ended that evening, the unconfirmed choices did not persist, leaving his course list empty."
+      }
+    ],
+    "requirement_coverage": [],
+    "contradictions": [
+      {
+        "quote": "The student was using HKU's online course-selection system before the deadline.",
+        "reference": "Courses means dishes at a mandatory high-table dinner, not academic classes; the deadline is for meal preferences.",
+        "checkpoint_ids": [
+          "C1",
+          "C2"
+        ]
+      },
+      {
+        "quote": "the selections were only in a temporary/unsaved state on the system—never actually committed as registered enrollments. When the system synchronized or the session ended that evening, the unconfirmed choices did not persist, leaving his course list empty.",
+        "reference": "At the student’s request the waiter clears leftovers when serving each next dish, so all courses disappear.",
+        "checkpoint_ids": [
+          "C3"
+        ]
+      }
+    ],
+    "partial_score": 0.0,
+    "complete": false,
+    "label": "no",
+    "grading_protocol": "coverage-v3-unified",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 688.5087512079626,
+  "usage": {
+    "grader": {
+      "http_attempts": 2,
+      "successful_responses": 2,
+      "seconds": 85.30712166707963,
+      "provider_reported_usage": {
+        "prompt_tokens": 10902,
+        "completion_tokens": 5860,
+        "total_tokens": 16762,
+        "prompt_cache_hit_tokens": 8064,
+        "prompt_cache_miss_tokens": 2838
+      }
+    },
+    "host": {
+      "http_attempts": 98,
+      "successful_responses": 98,
+      "seconds": 411.6216475876281,
+      "provider_reported_usage": {
+        "prompt_tokens": 1469561,
+        "completion_tokens": 14182,
+        "total_tokens": 1483743,
+        "prompt_cache_hit_tokens": 1442304,
+        "prompt_cache_miss_tokens": 27257
+      }
+    },
+    "player": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 189.7692542093573,
+      "provider_reported_usage": {
+        "prompt_tokens": 2213382,
+        "completion_tokens": 3208,
+        "total_tokens": 2216590,
+        "prompt_cache_hit_tokens": 2192384,
+        "prompt_cache_miss_tokens": 20998
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "estimate_assumptions": [
+      "peak_rate_reference_upper_estimate; off-peak rates are half; actual billing unknown"
+    ],
+    "total": {
+      "calls": 200,
+      "unknown_cost_calls": 0,
+      "known_estimated_cost_usd": 0.206211216,
+      "estimated_cost_usd": 0.206211216,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 3693845,
+        "cached_input_tokens": 3642752,
+        "cache_write_tokens": 0,
+        "output_tokens": 23250,
+        "reasoning_tokens": 18053,
+        "total_tokens": 3717095
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 100,
+        "total_tokens": 0
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 2,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.027306576,
+        "estimated_cost_usd": 0.027306576,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 10902,
+          "cached_input_tokens": 8064,
+          "cache_write_tokens": 0,
+          "output_tokens": 5860,
+          "reasoning_tokens": 4067,
+          "total_tokens": 16762
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 98,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.155601336,
+        "estimated_cost_usd": 0.155601336,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1469561,
+          "cached_input_tokens": 1442304,
+          "cache_write_tokens": 0,
+          "output_tokens": 14182,
+          "reasoning_tokens": 13986,
+          "total_tokens": 1483743
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 100,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.023303304,
+        "estimated_cost_usd": 0.023303304,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 2213382,
+          "cached_input_tokens": 2192384,
+          "cache_write_tokens": 0,
+          "output_tokens": 3208,
+          "reasoning_tokens": 0,
+          "total_tokens": 2216590
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 100,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "83936ed7-8148-4396-bc63-b70897fbdb30",
+      "bff474d7-a7f3-4434-95e6-ff30f4ae4a88",
+      "d251ff89-7926-456f-a33c-966ae23b8a16"
+    ],
+    "logical_input_chars": 2479983,
+    "delta_input_chars": 132083,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+    "grading_sha256": "8f36cc594b03d7530e282b727b7a357000970fc86e0e2971590597f7c206c18b",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v3-unified",
+    "prompts_sha256": "533fed2879c5bee42d2b3da39a93449c142c58f51a3c16cb8bdd87a66efb2c8c",
+    "controller_sha256": "fb00619f193edaa47fd7bb51604df5467dd2cbd3b6482d772cfa1142afe7ec41",
+    "player_format_policy_sha256": "fbe0c8e24192584b0d306318bcd4cfa37f899a558d0db9f139e23de30fbc9e19",
+    "host_context_sha256": "6237bbab6b4d9a8bf33160a32cbc0a64e9bceb8a5d97c7be98f70266f130cd12",
+    "host_binding_version": "host-v11-set1-causal-20261110"
+  }
+}

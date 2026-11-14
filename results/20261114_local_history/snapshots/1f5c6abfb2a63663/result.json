@@ -1,0 +1,267 @@
+{
+  "status": "error",
+  "stop_reason": "APIError",
+  "simulation": false,
+  "success": null,
+  "host_questions": 82,
+  "final_attempts": 1,
+  "rejected_finals": 1,
+  "counted_questions": 83,
+  "submissions": 83,
+  "player_format_corrections": [],
+  "pending_feedback": 0,
+  "forced_final": false,
+  "final_partial_score": 0.0,
+  "best_partial_score": 0.0,
+  "latest_final": "The narrator personally knew a third person and caused or contributed to that person's death. That dead person was the reader's spouse or partner, and the line \"You've disappointed me so much; I'm never coming back\" was the victim's sentiment toward the reader. To cover up the death and to deflect suspicion from themselves, the narrator fabricated a farewell note, repeatedly hand-copying that sentence onto a single sheet of paper in an attempt to make it seem the victim had written it and voluntarily walked away. The unnatural sevenfold repetition of the identical line was a giveaway that exposed the forgery, and that repeated copying is part of why the narrator now expects to be caught. The narrator gave this note to the reader, the victim's partner, intending the reader to believe their partner had abandoned them rather than died, a deception serving the narrator's own interest. When the reader read the note aloud to the narrator, the fabricated, repeated writing made the cover-up apparent. Realizing the deception has failed and that they are caught, the narrator sighs, \"I know I'm in trouble.\"",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0,
+        "evidence": "The narrator personally knew a third person and caused or contributed to that person's death. That dead person was the reader's spouse or partner",
+        "reason": "The submission reverses the central identity: the victim is the narrator's wife, not the reader's spouse/partner. It also only says caused or contributed rather than murdered. This contradicts required facts C1.F1 and C1.F2."
+      },
+      {
+        "id": "C2",
+        "credit": 0,
+        "evidence": "repeatedly hand-copying that sentence onto a single sheet of paper in an attempt to make it seem the victim had written it",
+        "reason": "The explanation describes forging the victim's handwriting but identifies the victim as the reader's spouse/partner, contradicting the required fact that the handwriting is his wife's."
+      },
+      {
+        "id": "C3",
+        "credit": 0,
+        "evidence": "The unnatural sevenfold repetition of the identical line was a giveaway that exposed the forgery, and that repeated copying is part of why the narrator now expects to be caught.",
+        "reason": "The causal worry about being caught is present, but the required cause is inability to imitate her handwriting, and the victim is contradictorily identified as the reader's spouse/partner."
+      }
+    ],
+    "material_contradiction": true,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "contradicted",
+        "evidence": "The narrator personally knew a third person and caused or contributed to that person's death. That dead person was the reader's spouse or partner ... fabricated a farewell note ... make it seem the victim had written it and voluntarily walked away."
+      },
+      {
+        "id": "C1.F2",
+        "status": "contradicted",
+        "evidence": "The narrator personally knew a third person and caused or contributed to that person's death. That dead person was the reader's spouse or partner"
+      },
+      {
+        "id": "C1.F3",
+        "status": "covered",
+        "evidence": "fabricated a farewell note ... make it seem the victim had written it and voluntarily walked away."
+      },
+      {
+        "id": "C2.F1",
+        "status": "contradicted",
+        "evidence": "repeatedly hand-copying that sentence onto a single sheet of paper in an attempt to make it seem the victim had written it"
+      },
+      {
+        "id": "C2.F2",
+        "status": "contradicted",
+        "evidence": "The unnatural sevenfold repetition of the identical line was a giveaway that exposed the forgery, and that repeated copying is part of why the narrator now expects to be caught."
+      },
+      {
+        "id": "C3.F1",
+        "status": "contradicted",
+        "evidence": "The unnatural sevenfold repetition of the identical line was a giveaway that exposed the forgery, and that repeated copying is part of why the narrator now expects to be caught."
+      }
+    ],
+    "requirement_coverage": [],
+    "contradictions": [
+      {
+        "quote": "The narrator personally knew a third person and caused or contributed to that person's death. That dead person was the reader's spouse or partner",
+        "reference": "The narrator killed his wife",
+        "checkpoint_ids": [
+          "C1",
+          "C2",
+          "C3"
+        ]
+      }
+    ],
+    "partial_score": 0.0,
+    "complete": false,
+    "label": "no",
+    "grading_protocol": "coverage-v3-unified",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 4688.858862749999,
+  "usage": {
+    "grader": {
+      "http_attempts": 1,
+      "successful_responses": 1,
+      "seconds": 117.69152287510224,
+      "provider_reported_usage": {
+        "prompt_tokens": 4559,
+        "completion_tokens": 7283,
+        "total_tokens": 11842,
+        "prompt_cache_hit_tokens": 3072,
+        "prompt_cache_miss_tokens": 1487
+      }
+    },
+    "host": {
+      "http_attempts": 84,
+      "successful_responses": 82,
+      "seconds": 3802.890524415765,
+      "provider_reported_usage": {
+        "prompt_tokens": 1090615,
+        "completion_tokens": 219601,
+        "total_tokens": 1310216,
+        "prompt_cache_hit_tokens": 1068032,
+        "prompt_cache_miss_tokens": 22583
+      }
+    },
+    "player": {
+      "http_attempts": 193,
+      "successful_responses": 187,
+      "seconds": 754.5169875940774,
+      "provider_reported_usage": {
+        "prompt_tokens": 4763955,
+        "completion_tokens": 38136,
+        "total_tokens": 4802091,
+        "prompt_cache_hit_tokens": 4725632,
+        "prompt_cache_miss_tokens": 38323
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "estimate_assumptions": [
+      "peak_rate_reference_upper_estimate; off-peak rates are half; actual billing unknown"
+    ],
+    "total": {
+      "calls": 278,
+      "unknown_cost_calls": 8,
+      "known_estimated_cost_usd": 1.062975508,
+      "estimated_cost_usd": null,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 5859129,
+        "cached_input_tokens": 5796736,
+        "cache_write_tokens": 0,
+        "output_tokens": 265020,
+        "reasoning_tokens": 225844,
+        "total_tokens": 6124149
+      },
+      "missing_token_calls": {
+        "input_tokens": 8,
+        "cached_input_tokens": 8,
+        "cache_write_tokens": 0,
+        "output_tokens": 8,
+        "reasoning_tokens": 195,
+        "total_tokens": 8
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 1,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.030938688,
+        "estimated_cost_usd": 0.030938688,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 4559,
+          "cached_input_tokens": 3072,
+          "cache_write_tokens": 0,
+          "output_tokens": 7283,
+          "reasoning_tokens": 6436,
+          "total_tokens": 11842
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 84,
+        "unknown_cost_calls": 2,
+        "known_estimated_cost_usd": 0.946422928,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1090615,
+          "cached_input_tokens": 1068032,
+          "cache_write_tokens": 0,
+          "output_tokens": 219601,
+          "reasoning_tokens": 219408,
+          "total_tokens": 1310216
+        },
+        "missing_token_calls": {
+          "input_tokens": 2,
+          "cached_input_tokens": 2,
+          "cache_write_tokens": 0,
+          "output_tokens": 2,
+          "reasoning_tokens": 2,
+          "total_tokens": 2
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 193,
+        "unknown_cost_calls": 6,
+        "known_estimated_cost_usd": 0.085613892,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 4763955,
+          "cached_input_tokens": 4725632,
+          "cache_write_tokens": 0,
+          "output_tokens": 38136,
+          "reasoning_tokens": 0,
+          "total_tokens": 4802091
+        },
+        "missing_token_calls": {
+          "input_tokens": 6,
+          "cached_input_tokens": 6,
+          "cache_write_tokens": 0,
+          "output_tokens": 6,
+          "reasoning_tokens": 193,
+          "total_tokens": 6
+        }
+      }
+    ]
+  },
+  "error": "player: transport failure (tls_handshake_eof, open)",
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "18bbc3c4-3db3-4a5f-b16b-4da54ed8f296",
+      "443abf08-1821-42c6-a949-d342efe3ec0f",
+      "b3afe25c-4196-4242-80cc-fd984c8de109"
+    ],
+    "logical_input_chars": 2137234,
+    "delta_input_chars": 138378,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "8f2ddbbd95f8552db795e6101df8e1ec6ac3755b6591d990fc66877d5a4b9d3b",
+    "grading_sha256": "ca184d8550ded2ca3f901e2f09673271411833e9d201f2febc0c774acef67093",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v3-unified",
+    "prompts_sha256": "533fed2879c5bee42d2b3da39a93449c142c58f51a3c16cb8bdd87a66efb2c8c",
+    "controller_sha256": "019f26c77e5eecd890c8d17b2112e35f37e26300eb63bddd39ee204784462bef",
+    "player_format_policy_sha256": "cf439ee1d60ae38374486aada319739646a5975284ff00bc877a3040047df56a",
+    "host_context_sha256": "4de8a9c689103080f87f7d2d62d3c0d145f07e715d5fe6e9b988f49249c5bcaf",
+    "host_binding_version": "host-v14-ai-20261111-forged-author",
+    "original_controller_sha256": "019f26c77e5eecd890c8d17b2112e35f37e26300eb63bddd39ee204784462bef"
+  }
+}

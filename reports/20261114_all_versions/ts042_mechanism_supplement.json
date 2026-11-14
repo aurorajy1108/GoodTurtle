@@ -1,0 +1,89 @@
+{
+  "status": "exploratory supplement only; original grades unchanged",
+  "criteria": [
+    "apple-on-head knife act",
+    "heel-induced height increase",
+    "unadjusted throw trajectory",
+    "fatal head strike"
+  ],
+  "rows": [
+    {
+      "condition": "baseline",
+      "repeat": 1,
+      "apple_on_head_knife_act": true,
+      "heels_raise_height": true,
+      "unadjusted_aim": true,
+      "fatal_head_strike": true,
+      "all_four_explicit": true,
+      "original_score": 0.5,
+      "original_success": false,
+      "source": "results/20261114_t22_t42_session_free_dialogue/trajectories/TS042/baseline/r01",
+      "review_kind": "post-hoc AI descriptive mechanism check; not human gold or replacement success criterion"
+    },
+    {
+      "condition": "free_dialogue",
+      "repeat": 1,
+      "apple_on_head_knife_act": false,
+      "heels_raise_height": false,
+      "unadjusted_aim": false,
+      "fatal_head_strike": true,
+      "all_four_explicit": false,
+      "original_score": 0.35,
+      "original_success": false,
+      "source": "results/20261114_t22_t42_session_free_dialogue/trajectories/TS042/free_dialogue/r01",
+      "review_kind": "post-hoc AI descriptive mechanism check; not human gold or replacement success criterion"
+    },
+    {
+      "condition": "free_dialogue",
+      "repeat": 2,
+      "apple_on_head_knife_act": true,
+      "heels_raise_height": true,
+      "unadjusted_aim": true,
+      "fatal_head_strike": true,
+      "all_four_explicit": true,
+      "original_score": 0.6,
+      "original_success": false,
+      "source": "results/20261114_t22_t42_session_free_dialogue/trajectories/TS042/free_dialogue/r02",
+      "review_kind": "post-hoc AI descriptive mechanism check; not human gold or replacement success criterion"
+    },
+    {
+      "condition": "free_dialogue",
+      "repeat": 3,
+      "apple_on_head_knife_act": true,
+      "heels_raise_height": true,
+      "unadjusted_aim": true,
+      "fatal_head_strike": true,
+      "all_four_explicit": true,
+      "original_score": 0.75,
+      "original_success": false,
+      "source": "results/20261114_t22_t42_session_free_dialogue/trajectories/TS042/free_dialogue/r03",
+      "review_kind": "post-hoc AI descriptive mechanism check; not human gold or replacement success criterion"
+    },
+    {
+      "condition": "free_dialogue",
+      "repeat": 4,
+      "apple_on_head_knife_act": false,
+      "heels_raise_height": true,
+      "unadjusted_aim": true,
+      "fatal_head_strike": true,
+      "all_four_explicit": false,
+      "original_score": 0.6,
+      "original_success": false,
+      "source": "results/20261114_t22_t42_session_free_dialogue/trajectories/TS042/free_dialogue/r04",
+      "review_kind": "post-hoc AI descriptive mechanism check; not human gold or replacement success criterion"
+    },
+    {
+      "condition": "free_dialogue",
+      "repeat": 5,
+      "apple_on_head_knife_act": true,
+      "heels_raise_height": true,
+      "unadjusted_aim": true,
+      "fatal_head_strike": true,
+      "all_four_explicit": true,
+      "original_score": 0.85,
+      "original_success": false,
+      "source": "results/20261114_t22_t42_session_free_dialogue/trajectories/TS042/free_dialogue/r05",
+      "review_kind": "post-hoc AI descriptive mechanism check; not human gold or replacement success criterion"
+    }
+  ]
+}

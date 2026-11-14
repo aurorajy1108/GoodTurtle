@@ -1,0 +1,309 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 98,
+  "final_attempts": 2,
+  "rejected_finals": 2,
+  "counted_questions": 100,
+  "submissions": 100,
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.0,
+  "best_partial_score": 0.0,
+  "latest_final": "The student was a very smart, high-achieving student who was officially enrolled in the course and passed all of its tests and exams with high marks. The failing grade was not caused by cheating, missed coursework, attendance problems, administrative record errors, or by an administrator/committee overturning the result. Instead, the failure came from a decision by the teacher or professor: the instructor assigned the failing course grade for a reason outside the student's test and exam performance. The student's impressive exam results therefore did not translate into a passing grade in the course, so despite being an excellent student, they failed the course.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0,
+        "evidence": "",
+        "reason": "The submission never states that the course grade substantially depends on a group project; it instead attributes the failing grade to an instructor decision outside exam performance."
+      },
+      {
+        "id": "C2",
+        "credit": 0,
+        "evidence": "",
+        "reason": "No group members are mentioned, so the required fact that all other group members free-ride is absent."
+      },
+      {
+        "id": "C3",
+        "credit": 0,
+        "evidence": "the failure came from a decision by the teacher or professor: the instructor assigned the failing course grade for a reason outside the student's test and exam performance",
+        "reason": "The required causal chain is excessive workload causing a poor project and course failure; the submission replaces it with an instructor decision outside exam performance, contradicting that chain."
+      }
+    ],
+    "material_contradiction": true,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "The submission omits the group project, free-riding members, excessive workload, and poor project. It replaces the reference's causal explanation with an instructor decision outside exam performance, so it does not reconstruct the complete narrative.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "C2.F1",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "C3.F1",
+        "status": "contradicted",
+        "evidence": "the failure came from a decision by the teacher or professor: the instructor assigned the failing course grade for a reason outside the student's test and exam performance"
+      }
+    ],
+    "requirement_coverage": [
+      {
+        "id": "R1",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "R2",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "R3",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "R4",
+        "status": "contradicted",
+        "evidence": "the failure came from a decision by the teacher or professor: the instructor assigned the failing course grade for a reason outside the student's test and exam performance"
+      }
+    ],
+    "contradictions": [
+      {
+        "quote": "the failure came from a decision by the teacher or professor: the instructor assigned the failing course grade for a reason outside the student's test and exam performance",
+        "reference": "The excessive workload makes the student complete the project poorly and fail the course; the low project grade causes failure despite good exam results.",
+        "checkpoint_ids": [
+          "C3"
+        ]
+      }
+    ],
+    "partial_score": 0.0,
+    "complete": false,
+    "label": "no",
+    "grading_protocol": "coverage-v2",
+    "controller_corrections": [
+      {
+        "field": "fact_coverage.C1.F1.reason",
+        "action": "ignored_metadata",
+        "model": "The submission does not state that the course grade substantially depends on a group project.",
+        "effective": null
+      },
+      {
+        "field": "fact_coverage.C2.F1.reason",
+        "action": "ignored_metadata",
+        "model": "The submission does not state that all other group members free-ride.",
+        "effective": null
+      },
+      {
+        "field": "fact_coverage.C3.F1.reason",
+        "action": "ignored_metadata",
+        "model": "The required fact says excessive workload made the student complete the project poorly and fail; the submission says the failure came from an instructor decision outside exam performance.",
+        "effective": null
+      },
+      {
+        "field": "requirement_coverage.R1.reason",
+        "action": "ignored_metadata",
+        "model": "The submission does not mention a group project worth a large portion of the grade.",
+        "effective": null
+      },
+      {
+        "field": "requirement_coverage.R2.reason",
+        "action": "ignored_metadata",
+        "model": "The submission does not mention other group members free-riding.",
+        "effective": null
+      },
+      {
+        "field": "requirement_coverage.R3.reason",
+        "action": "ignored_metadata",
+        "model": "The submission does not mention workload overwhelming the student and making the project poor.",
+        "effective": null
+      },
+      {
+        "field": "requirement_coverage.R4.reason",
+        "action": "ignored_metadata",
+        "model": "The required fact says the low project grade causes failure despite good exam results; the submission says an instructor decision outside exam performance caused the failure.",
+        "effective": null
+      }
+    ]
+  },
+  "elapsed_seconds": 1144.936233958113,
+  "usage": {
+    "grader": {
+      "http_attempts": 2,
+      "successful_responses": 2,
+      "seconds": 118.04478629096411,
+      "provider_reported_usage": {
+        "prompt_tokens": 7714,
+        "completion_tokens": 6522,
+        "total_tokens": 14236,
+        "prompt_cache_hit_tokens": 3200,
+        "prompt_cache_miss_tokens": 4514
+      }
+    },
+    "host": {
+      "http_attempts": 98,
+      "successful_responses": 98,
+      "seconds": 784.7210766681237,
+      "provider_reported_usage": {
+        "prompt_tokens": 1632079,
+        "completion_tokens": 31002,
+        "total_tokens": 1663081,
+        "prompt_cache_hit_tokens": 1598336,
+        "prompt_cache_miss_tokens": 33743
+      }
+    },
+    "player": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 240.09195712278597,
+      "provider_reported_usage": {
+        "prompt_tokens": 778409,
+        "completion_tokens": 3816,
+        "total_tokens": 782225,
+        "prompt_cache_hit_tokens": 758272,
+        "prompt_cache_miss_tokens": 20137
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "total": {
+      "calls": 200,
+      "unknown_cost_calls": 200,
+      "known_estimated_cost_usd": 0.0,
+      "estimated_cost_usd": null,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 2418202,
+        "cached_input_tokens": 2359808,
+        "cache_write_tokens": 0,
+        "output_tokens": 41340,
+        "reasoning_tokens": 35629,
+        "total_tokens": 2459542
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 100,
+        "total_tokens": 0
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 2,
+        "unknown_cost_calls": 2,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 7714,
+          "cached_input_tokens": 3200,
+          "cache_write_tokens": 0,
+          "output_tokens": 6522,
+          "reasoning_tokens": 4827,
+          "total_tokens": 14236
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 98,
+        "unknown_cost_calls": 98,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1632079,
+          "cached_input_tokens": 1598336,
+          "cache_write_tokens": 0,
+          "output_tokens": 31002,
+          "reasoning_tokens": 30802,
+          "total_tokens": 1663081
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 100,
+        "unknown_cost_calls": 100,
+        "known_estimated_cost_usd": 0.0,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 778409,
+          "cached_input_tokens": 758272,
+          "cache_write_tokens": 0,
+          "output_tokens": 3816,
+          "reasoning_tokens": 0,
+          "total_tokens": 782225
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 100,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "27bc2faf-6a53-4aee-aceb-9f2793da099d",
+      "d2ad5758-6ceb-4722-99f3-ba61b1333f34",
+      "ef12ed7f-f2ff-42d5-8f55-da1cce09f34c"
+    ],
+    "logical_input_chars": 2139002,
+    "delta_input_chars": 172440,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "95a3d31f81a3ef0ebfa32f5ede191b4e24e727b55ced0a21d7ba42666a2392a4",
+    "grading_sha256": "475d22bca77f15b9707d0c4067d0a85ab70975edf0dbb10d3fdb3903cef5b48f",
+    "runtime_context_version": "single-retrieved-session-v2",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "dc248f2034005a3d28541196864b4e66ded05754256e7690488460788b92f287",
+    "controller_sha256": "2fec43b23fc7dfe2b48ea9e3dd3ad6b4a2757d6e01fe80bcdea66fc80cdd3db7",
+    "host_context_sha256": "e9964bdd370fd71c26b14aa9a646e6e8f23dadfbfdf11122ddfd69cf4418adc6",
+    "host_binding_version": "host-v9-human-20261102",
+    "original_controller_sha256": "1b09ca337a1553c005755001b0f3869c9700d762b257085172ed49c4716a8ac9"
+  }
+}

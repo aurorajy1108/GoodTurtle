@@ -1,0 +1,37 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "ec586ec6527a3daaf5dafb7c312868fa00aa2ab67043ca77997fd46135f9c88e",
+    "trajectory.jsonl": "40adea2adc208abf37cdb36f53d0564e59d110943e964d067c2d0cba40e7caa9",
+    "trajectory.md": "24766a2ead75de05d332235ce024ea5bac8e940110124f68fd7821dc961910a2",
+    "trajectory.html": "640f7240b7f26fadd39b34bb67a3b62b743f28595f66aa9ea0826aea373e86d4",
+    "config.json": "a014f81ea9e104679e8f092a1f109161aea61071386b2e945a24be08c367d75c",
+    "prompts.json": "2a21ccff5c91752c470f3a0a99b24221e1118e050bba473630a227c15ae791a9",
+    "puzzle_private.json": "49dfe2f12bd440db7c3a5360dd2df0e84a2352a95dda1c17b39699a636e0ee98",
+    "human_review.csv": "598c451802d73fd6e038fe69354dfad91b89d90481b3549ed067dae2dd0752f1",
+    "review_template.csv": "598c451802d73fd6e038fe69354dfad91b89d90481b3549ed067dae2dd0752f1",
+    "prior_experience.json": "72618f2e7f321852ac9c7af600e56d861810b850d0c897e4734226acb7fc7464"
+  },
+  "api_audit": {
+    "source_raw_sha256": "59b00d6bd55f272a5afc697ed2fc54a74e8a07a9917fa51db86348300d9c9e3d",
+    "source_raw_bytes": 4057028,
+    "published_sha256": "4c7174fd6e1baf8ef36e1064d8d661d037306a46dd5258c0db50f8a4ab3b1f41",
+    "attempts": 200
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "ec586ec6527a3daaf5dafb7c312868fa00aa2ab67043ca77997fd46135f9c88e",
+      "signature": "769de41d03b4530566259dd5cc16fcae9cbafda026fcd30a600c81ae0f1ef150",
+      "event_count": 201,
+      "trajectory_sha256": "40adea2adc208abf37cdb36f53d0564e59d110943e964d067c2d0cba40e7caa9",
+      "first_submission": "2026-10-22T17:36:00.115886+00:00",
+      "first_text": "Does the picture depict the reporter herself?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

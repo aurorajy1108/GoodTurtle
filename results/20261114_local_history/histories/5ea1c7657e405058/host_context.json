@@ -1,0 +1,2041 @@
+{
+  "puzzle_id": "TS047",
+  "opening": "The Guesthouse Portrait. A reporter visiting the countryside stays in a shabby guesthouse. In the dim room, there is a picture opposite her bed. The next morning, she is stunned. Why?",
+  "reference_answer": "In poor light, she mistakes a window with a real man outside for a lifelike portrait. During the night, she feels watched and avoids looking at it. In daylight, she approaches it and realizes it is a window: the man was real, and she had been watched.",
+  "canonical_solution": "In poor light, she mistakes a window with a real man outside for a lifelike portrait. During the night, she feels watched and avoids looking at it. In daylight, she approaches it and realizes it is a window: the man was real, and she had been watched.",
+  "canonical_facts": [
+    "In poor light the guest mistakes a window and a real man outside for a lifelike portrait",
+    "Feeling watched, she avoids looking at it during the night",
+    "Daylight reveals the window and makes her realize the watcher was real, shocking her"
+  ],
+  "explicit_negatives": [
+    "There is no actual painting depicting an object; the supposed portrait itself is a window.",
+    "The shock is discovering a real watcher, not recognizing a criminal or a previously dead person."
+  ],
+  "unknown_details": [
+    "The watcher’s precise biography, intentions and criminal history are unspecified; being unknown is not evidence of being false."
+  ],
+  "irrelevant_details": [
+    "Watcher occupation, name, criminal history and motive are unspecified and not required.",
+    "Exact house dimensions and window material are incidental."
+  ],
+  "completion_requirements": [
+    "In poor light the guest mistakes a window and a real man outside for a lifelike portrait",
+    "Feeling watched, she avoids looking at it during the night",
+    "Daylight reveals the window and makes her realize the watcher was real, shocking her"
+  ],
+  "host_examples": [
+    {
+      "case_id": "AUDIT_001",
+      "question": "Was the picture actually a mirror rather than a portrait or painting?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q001",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_002",
+      "question": "Does the portrait depict the reporter herself?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q002",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_003",
+      "question": "Had the picture itself changed overnight?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The supposed picture is a real window; no actual depicted window, physical picture change or concealing framed covering is established.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q004",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_004",
+      "question": "Was the reporter stunned because the picture looked different in daylight than it had in the dim room?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Supported by poor-light window/real-man misidentification and daylight realization.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q005",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_005",
+      "question": "In daylight, did she realize the portrait showed a dead person?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q008",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_006",
+      "question": "Did the portrait clearly depict an animal in daylight?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q010",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_007",
+      "question": "In daylight, did she realize the picture depicted a landscape rather than a person?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q011",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_008",
+      "question": "Did the dim light make the picture seem to show a person, while daylight revealed that it depicted an inanimate object?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q012",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_009",
+      "question": "Did the picture depict an object commonly found in a guesthouse room?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q013",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_010",
+      "question": "Did the picture depict a piece of furniture?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q014",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_011",
+      "question": "In daylight, did she realize the picture depicted a man-made object?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q015",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_012",
+      "question": "In daylight, did she realize the picture depicted a statue or sculpture?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q016",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_013",
+      "question": "Did the picture depict an item of clothing or a garment?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q017",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_014",
+      "question": "In daylight, did she realize that the picture depicted a vehicle?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q018",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_015",
+      "question": "Did the picture depict a building or other architectural structure?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q019",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_016",
+      "question": "Did the picture depict a weapon?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q020",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_017",
+      "question": "Did the picture depict a household object?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q022",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_018",
+      "question": "Did the picture depict a written document, such as a map, sign, or poster?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q023",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_019",
+      "question": "Did the picture depict a tool or implement?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q024",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_020",
+      "question": "Did the picture depict a musical instrument?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q025",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_021",
+      "question": "Did the picture depict a scarecrow?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q026",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_022",
+      "question": "In daylight, did she realize the picture depicted a piece of art or a decorative object?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q027",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_023",
+      "question": "Did the picture depict food or a drink?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q028",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_024",
+      "question": "Did the picture depict a human-shaped object, such as a doll or mannequin?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q029",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_025",
+      "question": "Is the man-made object depicted in the picture primarily intended for use outdoors?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q030",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_026",
+      "question": "Did the picture depict an object used for sports or recreation?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q031",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_027",
+      "question": "In daylight, did she realize the picture depicted a container?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q032",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_028",
+      "question": "Did the picture depict a religious object or symbol, such as a cross?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q033",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_029",
+      "question": "Is the depicted object a component or part of a larger object, rather than a complete standalone object?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q034",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_030",
+      "question": "Is the depicted component used to fasten or join parts of a larger object together?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q036",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_031",
+      "question": "Is the depicted component part of an object that people normally wear or carry?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q037",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_032",
+      "question": "Is the depicted component part of a door?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q038",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_033",
+      "question": "Is the depicted component part of a piece of furniture?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q039",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_034",
+      "question": "Is the depicted component part of a book?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q040",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_035",
+      "question": "Is the depicted component part of a vehicle, even though the picture does not depict the whole vehicle?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q041",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_036",
+      "question": "Is the depicted component part of a larger object used for writing or communication?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q043",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_037",
+      "question": "Is the depicted component part of a building or other structure?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q044",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_038",
+      "question": "Is the depicted component part of a roof?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q045",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_039",
+      "question": "Is the depicted component part of a wall?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q046",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_040",
+      "question": "In daylight, did she realize the picture depicted a brick or stone used in a wall?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q047",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_041",
+      "question": "Is the depicted component part of a window?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q048",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_042",
+      "question": "Does the picture depict a doorway or an opening in the wall?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q049",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_043",
+      "question": "Does the picture show a dark, open doorway that looked like a standing person in the dim light?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q050",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_044",
+      "question": "Does the picture show an arched doorway or archway that looked like a person in the dim light?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q051",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_045",
+      "question": "Did the picture show a narrow slit or crack in the wall that looked like a person in the dim light?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q052",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_046",
+      "question": "Does the picture show a door standing partly open in the doorway?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q053",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_047",
+      "question": "Does the picture show a closed door filling the doorway?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q054",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_048",
+      "question": "Does the picture show a passageway or tunnel opening through the wall?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q055",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_049",
+      "question": "Does the picture show a doorway in a wall that leads into another room?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q056",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_050",
+      "question": "Does the picture depict a fireplace opening in a wall?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q057",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_051",
+      "question": "Does the picture show an opening in a wall that leads outdoors?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q058",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_052",
+      "question": "Is the opening a hole or breach in the wall, rather than a purpose-built architectural opening?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q059",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_053",
+      "question": "Does the picture depict a ventilation opening or air vent in the wall, leading outdoors?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q060",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_054",
+      "question": "Does the picture depict a gateway or entrance through a freestanding boundary wall, such as a garden or courtyard wall?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q062",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_055",
+      "question": "Is the opening intended for an animal to pass through?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q064",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_056",
+      "question": "Does the picture depict a chimney opening through the wall to the outdoors?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q065",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_057",
+      "question": "Is the opening a loophole or arrow slit in the wall, intended for looking or shooting through?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait is itself a window, not a picture depicting the proposed object or opening.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q066",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_058",
+      "question": "Does the picture depict a window opening in the wall, with the outdoors visible through it?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The supposed picture is a real window; no actual depicted window, physical picture change or concealing framed covering is established.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q067",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_059",
+      "question": "Was the person visible through the window in the picture actually outside the guesthouse, rather than merely depicted in the picture?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Supported by poor-light window/real-man misidentification and daylight realization.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q071",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_060",
+      "question": "Was the apparent picture actually a real window concealed behind a framed covering, so that the person she saw was visible through the actual window?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The supposed picture is a real window; no actual depicted window, physical picture change or concealing framed covering is established.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q072",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_061",
+      "question": "Was the picture a painting of a window, rather than a photograph?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q074",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_062",
+      "question": "Was the object she called a picture actually a window in the guesthouse room, rather than an image hanging on the wall?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Supported by poor-light window/real-man misidentification and daylight realization.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q076",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_063",
+      "question": "Was the person outside the window doing something threatening or otherwise alarming to the reporter?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Supported by poor-light window/real-man misidentification and daylight realization.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q077",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_064",
+      "question": "Was the person outside trying to kill the reporter because they mistook her for someone else?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q081",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_065",
+      "question": "Was the person outside a hunter who mistook the reporter for an animal?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q082",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_066",
+      "question": "Is the person outside the window a threat because of the reporter’s work as a journalist?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q090",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_067",
+      "question": "Was the person outside a sniper who had been sent to shoot the reporter?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q091",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_068",
+      "question": "Was the person outside trying to frighten the reporter into abandoning her investigation?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Watcher biography, weapon, motive and connection to reporting are unspecified incidental details; the question does not assert that identity as the reporter’s canonical reason for shock.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q092",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_069",
+      "question": "Was the person outside visibly holding a firearm?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Watcher biography, weapon, motive and connection to reporting are unspecified incidental details; the question does not assert that identity as the reporter’s canonical reason for shock.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q093",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_070",
+      "question": "Was the person outside trying to stop the reporter from publishing or investigating a particular story?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. No suppressing-a-story mechanism is present.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q094",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_071",
+      "question": "Is the person outside trying to warn the reporter about an immediate danger?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Watcher biography, weapon, motive and connection to reporting are unspecified incidental details; the question does not assert that identity as the reporter’s canonical reason for shock.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q095",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_072",
+      "question": "Was the person outside the window a criminal whom the reporter recognized?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Watcher biography, weapon, motive and connection to reporting are unspecified incidental details; the question does not assert that identity as the reporter’s canonical reason for shock.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_direct/Q096",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_073",
+      "question": "Does the picture depict the reporter herself?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q001",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_074",
+      "question": "Did the picture look different in the morning because the brighter light revealed something that was hard to see in the dim room?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Supported by poor-light window/real-man misidentification and daylight realization.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q002",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_075",
+      "question": "Did the reporter recognize the person in the picture as someone connected to a crime or news story she had reported on?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Watcher biography, weapon, motive and connection to reporting are unspecified incidental details; the question does not assert that identity as the reporter’s canonical reason for shock.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q003",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_076",
+      "question": "Does the picture depict a fictional or imaginary human figure, rather than a real person?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q005",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_077",
+      "question": "Does the picture depict an animal?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q006",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_078",
+      "question": "Does the picture depict a landscape or other outdoor scene?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q007",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_079",
+      "question": "Does the picture depict an inanimate object?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q008",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_080",
+      "question": "Does the picture contain writing or lettering that becomes readable in the brighter morning light?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q009",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_081",
+      "question": "Is the picture an abstract image rather than a recognizable scene or subject?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q010",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_082",
+      "question": "Does the picture depict an indoor scene, such as a room or building interior?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q011",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_083",
+      "question": "Was the picture actually a mirror, and did the reporter’s shock come from what she saw reflected in it that morning?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q012",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_084",
+      "question": "Does the picture depict a natural phenomenon, such as fire, water, weather, or the night sky?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q013",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_085",
+      "question": "Did the brighter light reveal a physical feature of the picture itself—such as its material, surface, or something concealed beneath it—rather than a subject depicted in the image?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Supported by poor-light window/real-man misidentification and daylight realization.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q014",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_086",
+      "question": "Did the morning light reveal that the picture was covering an opening or hole in the wall?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q016",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_087",
+      "question": "Did the morning light reveal that another image or object was hidden behind or underneath the picture?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q017",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_088",
+      "question": "Did the brighter morning light reveal damage or tampering on the picture’s surface?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q018",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_089",
+      "question": "Did the morning light reveal that what she had taken for a picture was actually a window?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Supported by poor-light window/real-man misidentification and daylight realization.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q020",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_090",
+      "question": "Did what she saw through the window reveal that the guesthouse was somewhere other than where she believed it to be?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q022",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_091",
+      "question": "Was the person outside looking in through the window at the reporter?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Supported by poor-light window/real-man misidentification and daylight realization.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q024",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_092",
+      "question": "Was the person outside actually alive at that moment?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Supported by poor-light window/real-man misidentification and daylight realization.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q029",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_093",
+      "question": "Did the reporter initially think the person outside was a dead person who had returned as a ghost?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q030",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_094",
+      "question": "Was the reporter stunned because she recognized the person outside as someone widely believed to be dead?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q037",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_095",
+      "question": "Was the person outside watching her because they knew she was a reporter and wanted to prevent her from reporting something?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Watcher biography, weapon, motive and connection to reporting are unspecified incidental details; the question does not assert that identity as the reporter’s canonical reason for shock.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q042",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_096",
+      "question": "Did seeing the person outside make the reporter realize that a reported death had been faked or falsely reported?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q043",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_097",
+      "question": "Was the reporter’s shock primarily personal rather than connected to her work or assignment as a journalist?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Supported by poor-light window/real-man misidentification and daylight realization.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q059",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_098",
+      "question": "Was the reporter stunned by a distinctive or abnormal feature of the person’s appearance, rather than by who the person was?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q063",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_099",
+      "question": "Was the person looking in through the window a man?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Supported by poor-light window/real-man misidentification and daylight realization.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q065",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_100",
+      "question": "Was the reporter surprised because she had not expected this man to be at the guesthouse?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The shock is discovering the real window and watcher, not recognizing a particular unexpected acquaintance.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q071",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_101",
+      "question": "Was the reporter stunned because she recognized the man as someone she believed was currently in prison?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q072",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_102",
+      "question": "Was the man outside legally out of prison—for example, because he had been released or escaped—despite the reporter believing he was still incarcerated?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Watcher biography, weapon, motive and connection to reporting are unspecified incidental details; the question does not assert that identity as the reporter’s canonical reason for shock.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q073",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_103",
+      "question": "Was the reporter stunned because the man outside was someone she had previously reported as having escaped from prison?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The apparent portrait IS a window with a real watcher; this proposed depiction or shock mechanism is false.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q081",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_104",
+      "question": "Was the man outside deliberately watching or following the reporter because of her work as a journalist?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Watcher biography, weapon, motive and connection to reporting are unspecified incidental details; the question does not assert that identity as the reporter’s canonical reason for shock.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/positive/G07_TS022_TS047_r02_transcript/Q082",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "R01",
+      "question": "Was the apparent portrait actually a window?",
+      "answer": "yes",
+      "rationale": "Physical identity, not a painting of a window.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R02",
+      "question": "Was there a real person outside the window?",
+      "answer": "yes",
+      "rationale": "The apparent painted figure was real.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R03",
+      "question": "Did an actual painting depict a window?",
+      "answer": "no",
+      "rationale": "No actual painting is involved.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R04",
+      "question": "Was the object she thought was a portrait man-made?",
+      "answer": "yes",
+      "rationale": "The window itself is man-made.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R05",
+      "question": "Did the apparent painting show a manufactured object rather than a human?",
+      "answer": "no",
+      "rationale": "The seen figure was a real human, not a depicted object.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R06",
+      "question": "Was she scared because the window proved she had been watched?",
+      "answer": "yes",
+      "rationale": "Correct causal discovery.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R07",
+      "question": "Was she scared because she recognized a wanted criminal?",
+      "answer": "no",
+      "rationale": "Unsupported identity is substituted as the explanatory cause.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R08",
+      "question": "Did the watcher have a job as a teacher?",
+      "answer": "irrelevant",
+      "rationale": "Occupation is unspecified and not needed.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R09",
+      "question": "Had the watcher ever been to prison?",
+      "answer": "irrelevant",
+      "rationale": "Personal history is incidental.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R10",
+      "question": "Was the window wooden?",
+      "answer": "irrelevant",
+      "rationale": "Frame material is incidental.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R11",
+      "question": "Was the watcher a ghost?",
+      "answer": "no",
+      "rationale": "The watcher was a real person.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R12",
+      "question": "Did the glass transform into a painting overnight?",
+      "answer": "no",
+      "rationale": "Misinterpretation, not physical transformation.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R13",
+      "question": "Was it a window, and was the watcher a supernatural spirit?",
+      "answer": "yes and no",
+      "rationale": "Independent true identity and false watcher claim.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R14",
+      "question": "Was it either a window or a framed photograph?",
+      "answer": "yes",
+      "rationale": "Inclusive OR: window is supported.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R15",
+      "question": "Did she avoid looking at it because she felt watched during the night?",
+      "answer": "yes",
+      "rationale": "Explicit night-time event.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R16",
+      "question": "Was she shocked because the man was supposedly in jail?",
+      "answer": "no",
+      "rationale": "Wrong explanatory cause.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R17",
+      "question": "Does this story establish that the man left before dawn?",
+      "answer": "no",
+      "rationale": "Do not import the disappearance from the other window puzzle.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    }
+  ],
+  "review_status": "ai_three_review_root_adjudicated_pending_human",
+  "binding_version": "three-review-v3-20261023",
+  "story_sha256": "53f7fbdb24212705bbbe8e2ae12b20773f609a02377082226c8299db279d7428",
+  "context_sha256": "2dcb26e237e88e106b2d15a985db8d9cde3ad3d8d754d6d68a63b6d14c7aa8e3"
+}

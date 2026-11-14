@@ -1,0 +1,38 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "1237d776b7047480c74322cb5fcb9e1bb0c1990abf8f9c28a2be3c4a08825b33",
+    "trajectory.jsonl": "9f4980b3b47290a62bd5eafca8d3025aff1568fccf48abd18304d715756d28b6",
+    "trajectory.md": "6432b5d7089677b5ece785536ee37df7107c8dbb827f728c4bf0fedcfa87e016",
+    "trajectory.html": "85a5af666ecfca101f8819dea53d9f366b94b9598dbae5734a6c607cf04b16cf",
+    "config.json": "a014f81ea9e104679e8f092a1f109161aea61071386b2e945a24be08c367d75c",
+    "partner_config.json": "489a968c9ed96d8e89aa0c6dcd2216c2a2dd1c4b68415ba6cf332611cf340f1c",
+    "prompts.json": "77501f946e5b59e400b7e0a48f2911d688062b6c2f6c25e0caab2e1a574a6344",
+    "puzzle_private.json": "e28a2a829f7c0b15c29bb3f22cd46d9925803051b58bc44c6b4888759134c9b4",
+    "human_review.csv": "67aac25a4c14312cb3e49f8b4c43f4a5281bca297976e8efb76f004a36375a20",
+    "review_template.csv": "67aac25a4c14312cb3e49f8b4c43f4a5281bca297976e8efb76f004a36375a20",
+    "collaboration.jsonl": "3aa3224339b4252f998cc905995f98655c732081100aee405010c6980fa278f7"
+  },
+  "api_audit": {
+    "source_raw_sha256": "ec02cf9494eece5d49156223dd64b16c23cdd8c151fcacfb94350ad7a192b14c",
+    "source_raw_bytes": 4734893,
+    "published_sha256": "e2bb9f35acc409470374849f46d8dff0eb9973e3c5ed5005f51f86646cc7ab41",
+    "attempts": 400
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261022_codex_rerun/team/TS031_r01_discuss",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "1237d776b7047480c74322cb5fcb9e1bb0c1990abf8f9c28a2be3c4a08825b33",
+      "signature": "f94243e7b9e12976c18aecc7246cbb42ea44a5e0986c0efd84a34ed336ccd2dc",
+      "event_count": 201,
+      "trajectory_sha256": "9f4980b3b47290a62bd5eafca8d3025aff1568fccf48abd18304d715756d28b6",
+      "first_submission": "2026-10-22T15:50:22.668614+00:00",
+      "first_text": "Did the eraser itself leave a visible mark on the paper, rather than being used to erase something?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

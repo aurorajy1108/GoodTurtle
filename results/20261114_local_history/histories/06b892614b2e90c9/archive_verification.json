@@ -1,0 +1,39 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "c3010a94533798f48c88dd923daed38f0b504f3ab6926632b6f5afce58e4a650",
+    "trajectory.jsonl": "ad68e857b4d6d0d2423efa9e3f9cfd44aa30bfa8337d667ad91831eb7ff6ff83",
+    "trajectory.md": "f4e50da68483382fd302f3ef294a8a92954754a0d6c22ec343498626aa77b385",
+    "trajectory.html": "c544e9d71b9df73a346bfac7a7a0606512268fd6f21e6aea25b89122f27b5644",
+    "config.json": "08d2187c28075d0a59d9a14953c08f5f094edb9fd06fccbe50633dbf2bea2d01",
+    "prompts.json": "0a3f1cbcc4d8a896fe50dd7047766bb101587948339862672eeda6e4c3c9ad8f",
+    "puzzle_private.json": "22ffd650e18ae8444325ab6a9acd77206305ae69f61048db6f32f9e0fda54fb4",
+    "host_context.json": "36e21a33310f578fdef20506e49bef1b9094f2c82ea52a8ac0ccad7b4ca2c787",
+    "human_review.csv": "c9edf79127c2d61b4f17dfab47b19e44bca1bfcd424136bbe247ad7532cd1c23",
+    "review_template.csv": "c9edf79127c2d61b4f17dfab47b19e44bca1bfcd424136bbe247ad7532cd1c23",
+    "transfer_input.json": "def1bd9bcbc5362908e37aeccdc3e5275a4fe20b519af56ac67ae7f6365e962c",
+    "source_answer_reveal.json": "397e22e224935ed1ec1e626763670c79cfb4a53e084de588bb7093eabc9bd7b6"
+  },
+  "api_audit": {
+    "source_raw_sha256": "2fc5c497fd07d9328f0fb52f675231384ba652258ce3bd3e1d5924cf49afdf07",
+    "source_raw_bytes": 6119809,
+    "published_sha256": "867657b3e792d21093b4cc91c464b4d13b37811c73147b7fa259614a156ecb12",
+    "attempts": 303
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261024_cl_answer_study/batches/G02/G02_TS015_TS016_r02_source",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "c3010a94533798f48c88dd923daed38f0b504f3ab6926632b6f5afce58e4a650",
+      "signature": "06b892614b2e90c94e3c9d377e6341473caeb7ba4861ff73c1b6a7aa2559cfee",
+      "event_count": 298,
+      "trajectory_sha256": "ad68e857b4d6d0d2423efa9e3f9cfd44aa30bfa8337d667ad91831eb7ff6ff83",
+      "first_submission": "2026-10-24T10:18:16.761979+00:00",
+      "first_text": "Did the student fail because they did not pass an exam or other required assessment?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

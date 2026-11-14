@@ -1,0 +1,13 @@
+{
+  "calls_count": 82,
+  "calls_sha256": "17a845f44b87fab97f1de71706f99ca354e8dd87a36ccce43ddbd9ae7e597345",
+  "request_sha256": "67f4a62b7b933fc3e1cdb48a3a78b9cd05ffe045b2b58b652487ee36895fa005",
+  "role": "partner",
+  "authorization": "user_requested_same_request_retry",
+  "additional_attempts": 1,
+  "possible_duplicate_generation": true,
+  "possible_duplicate_remote_charge": true,
+  "reserved_unobserved_output_tokens": 2048,
+  "reason": "User explicitly requested same-request retries on 2026-11-13, preserving original checkpoints and recording possible duplicate generation and charge.",
+  "authorized_at": "2026-11-13T13:54:33.280740+00:00"
+}

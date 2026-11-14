@@ -1,0 +1,49 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "ba0d8cede3e49a3912014db2257215eb83b34cdba2b11796950b60ef127f1fc8",
+    "trajectory.jsonl": "831fc7729b215fb1ba13611433c2396ab65f1833dae66fab698eac605e304f20",
+    "trajectory.md": "662cca19f67134c4bf024e5a0af1fc2a137d1016a3e4f6d34066a82e75a76b56",
+    "trajectory.html": "df8efc58d3e8941829ddde44435a50afd4f92cbb9c38835497dbe7533270e4ec",
+    "config.json": "4307cf3c715247acc8faf9d322125607962ba66e56d5980b57d841ccb930bc1e",
+    "prompts.json": "2293fcad2d75c545b454f5ac0b351c8f0d0b635d59ed01a87e246365943d699f",
+    "puzzle_private.json": "c01a39bd4b8af6fb50d2f9bed46102d70dfc3b607728363b47501821cf04f406",
+    "host_context.json": "a9be0c92867631e3a6030e94c7bb2add9c4a322a04ac7697c64dccc9deef3db1",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "0a3fdde5e02a39bbfd5dea2afbce6b9ce2479134e71d8df316bc7b00195cca23",
+    "cost_summary.json": "982d3e878f2ff2e610b04de147269afbe86a2fc505cd367c851f572a2ea6213c",
+    "token_costs.csv": "91397e6e136036b32f4d3ae21ae398a756a21c286b2ba8e76c30729668d6f858",
+    "human_review.csv": "dcb1a55d5d4e15d7af6a9737ef2e43a4ec10b4b24d73f98361915b49e752daec",
+    "review_template.csv": "70c16aa03c2c1453856c2500722a9bf66adf4111c90faa01a231524e3f36e804",
+    "shared_dialogue.jsonl": "b554bb420499984348b94187c8d6c5366a786a0bad2773648e36520e4e923f25",
+    "shared_dialogue.html": "42834149c634883cd40734fac7afbaee84063ff345da131e6f530618dab35c96",
+    "dialogue_metrics.json": "0f71fd0ef8f119b3332ee9680b8eecee8230455af00ef078b58a4d9368e23b8f",
+    "dialogue_policy.json": "bef6bb0e727602dd5a00821ae0a6847992bf1eab6d8a3c8fe0681779e9753c5d",
+    "collaboration.jsonl": "0c31dc65eb408b786c992d07a85abdc620c409369edb38ff1b644508c3448cf1",
+    "self_review.html": "3d86bb7dba8dac8b87a27a02491bdb83f16218699966e7de914dd3b02ff4c560",
+    "solver_compute.json": "3e0a3523e6dbf4f5fd99924b82aa0aaca3f018bcfb964cc6f3f3a531b4249aed",
+    "actor_retry_authorization.json": "01c82761038f169efab2b11efaa34f8bc97e39ede76fd9f3def68e45fdc3b583"
+  },
+  "api_audit": {
+    "source_raw_sha256": "a0052c81dcade39ec678ec07a81593975bcf14c7a7a63b59904028935cfc1c3c",
+    "source_raw_bytes": 7277111,
+    "published_sha256": "eca5acf0f1d455ec04481ca007fbc8c1b1e25ac6e1040a7b2ebf8c70cee05650",
+    "attempts": 131
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261113_ts038_compute_matched_2x2_r1r4_v3_actor_authorized/TS038_r04_mas_review",
+      "status_as_recorded": "error",
+      "simulation": false,
+      "submissions": 36,
+      "result_sha256": "ba0d8cede3e49a3912014db2257215eb83b34cdba2b11796950b60ef127f1fc8",
+      "signature": "fe056fcc05f1b62e47fefc9319f83f0e3e58703c856582ba7a173221bff3db10",
+      "event_count": 431,
+      "trajectory_sha256": "831fc7729b215fb1ba13611433c2396ab65f1833dae66fab698eac605e304f20",
+      "first_submission": "2026-11-13T05:25:48.348394+00:00",
+      "first_text": "Are the seven repetitions spoken by seven distinct people (or entities), rather than one person repeating the phrase?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

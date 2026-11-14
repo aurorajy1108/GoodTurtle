@@ -1,0 +1,42 @@
+{
+  "id": "TS031",
+  "opening": "An eraser is, of course, a piece of stationery used to erase something that has been written.\nHowever, A picked up an eraser in order to leave a message on a blank sheet of paper on which nothing had yet been written.\nWhy?",
+  "answer": "Because A needed to put lead into a mechanical pencil.",
+  "rubric": [
+    {
+      "id": "C1",
+      "weight": 0.75,
+      "core": true,
+      "criterion": "The eraser is lifted/handled to load lead into a mechanical pencil.",
+      "criterion_zh": "橡皮擦不是用来擦字，而是为了给自动铅笔装入铅芯",
+      "points": 75.0,
+      "full_credit": "The eraser is lifted/handled to load lead into a mechanical pencil.",
+      "half_credit": "Mechanical pencil identified without lead-refill purpose",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses."
+    },
+    {
+      "id": "C2",
+      "weight": 0.25,
+      "core": false,
+      "criterion": "The actual message is written with the refilled mechanical pencil on blank paper.",
+      "criterion_zh": "写信息的真正工具是装好铅芯的铅笔，在原本空白的纸上写",
+      "points": 25.0,
+      "full_credit": "The actual message is written with the refilled mechanical pencil on blank paper.",
+      "half_credit": "Writing with pencil identified without refill-to-message sequence",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses."
+    }
+  ],
+  "title": "橡皮擦留下字",
+  "story_family": "F031",
+  "quality_status": "正常",
+  "review_notes": "",
+  "source_row": "31",
+  "observed_score": null,
+  "completion_requirements": [
+    "The eraser is handled or removed to access the lead-refill opening of a mechanical pencil",
+    "A inserts lead and uses the refilled pencil to write on the blank page"
+  ],
+  "annotation_version": "turtle50-v1-2026-10-22",
+  "annotation_status": "pending_human_review",
+  "grading_notes": "Accept faithful paraphrase. Require the listed identities, events and causal links, not exact prose or unspecified incidental details."
+}

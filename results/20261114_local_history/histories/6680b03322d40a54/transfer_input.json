@@ -1,0 +1,362 @@
+{
+  "opening": "I am a very smart student who is very attentive in my class. I could not pass the course. Why?",
+  "history": [
+    {
+      "type": "question",
+      "text": "Did I fail because I performed poorly on an exam or other graded assessment?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did I fail because I did not meet a required attendance threshold?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because they did not complete required coursework or assignments?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student officially enrolled in the course? ",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because they were not officially enrolled, and therefore could not receive credit for the course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because they did not satisfy a prerequisite for the course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student prevented from passing by a rule or administrative circumstance unrelated to their academic performance, attendance, or coursework?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was this a school or university course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was this a professional or skills-training course rather than an academic school course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the “course” a physical route or obstacle course that the student was trying to traverse?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to complete the physical course because of a physical limitation or condition?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the physical course part of a class activity, such as a physical-education obstacle course?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the physical course an obstacle course designed for people to navigate on foot?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the physical course one the student was supposed to complete while riding or driving a vehicle?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the course part of a sport or game?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Is the physical course a waterway, such as a river or channel, that the student was trying to cross?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the student an animal, such as a fish, trying to travel through or across the waterway?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student trying to cross the waterway by swimming?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Is the student a human?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was a hazard in or around the waterway what prevented the student from crossing it?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the hazard a dangerous animal in the waterway?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was a strong current the hazard that prevented the student from crossing the waterway?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the student trying to cross the waterway to get to school or class?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the student trying to cross the waterway on foot, by wading through it?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student trying to cross the waterway in a boat or other floating vessel?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student turn back or refrain from crossing because the current was too strong to swim against?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the student attempting to cross the waterway as part of a test or challenge?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the student in the water when they turned back because of the current?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student decide not to enter the water after judging from the bank that the current was too strong to cross safely?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was crossing the river itself the physical course the student was trying to complete?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the river unusually swollen or dangerous because of flooding?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was there a bridge or other safe route across the river that the student could have used instead?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Was there a bridge across the river that the student could have used?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Was there a bridge across the river, but it was closed or otherwise unusable to the student?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Could the student have completed the crossing by using a bridge?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Was there a bridge across the river that was physically damaged?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was there any bridge across the river at the location where the student needed to cross?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was crossing the river a required part of a journey the student needed to make?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the student expected to cross the river as part of an activity assigned by a teacher?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "final",
+      "text": "“Course” means the river’s course, not an academic class. The student was trying to cross the river, but from the bank judged that its current was too strong to swim against. They wisely stayed out of the water, so they did not complete the crossing. Their intelligence and attentiveness in class were incidental; this was not a school-course failure.",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Could the student swim, but the current was still too strong for them to cross the river safely?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Could the student have crossed the river safely at a different location where the current was weaker?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the student’s attentiveness help them recognize that the river current made crossing unsafe?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the student trying to travel upstream against the river’s current?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student eventually cross the river by some means other than swimming against the current?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to swim?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the student’s failure simply that they did not complete the river crossing because they judged the current too strong to cross safely?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the student’s intelligence or attentiveness have a direct role in why they did not complete the river crossing?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Would the current have swept the student downstream and away from the intended crossing point?",
+      "feedback": "yes"
+    },
+    {
+      "type": "final",
+      "text": "“Course” meant the course of a river, not a class. The student was trying to cross it, but recognized from the bank that the current was too strong: it would sweep them downstream and away from the intended crossing point. They stayed out of the water, so they did not complete the crossing. Their intelligence and attentiveness in class were not the reason they failed to complete it.",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Was the strong current the only obstacle that prevented the student from completing the river crossing?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was there a waterfall or drop in the river that made crossing impossible?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the river too deep for the student to wade across?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the absence of a suitable means of crossing the river an additional obstacle, apart from the strong current?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the student lack a boat or other vessel that could have carried them across the river?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was swimming the only available way for the student to cross the river?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Would having a boat have allowed the student to cross despite the strong current?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student lack a boat because no boat was available to them at the crossing point?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the student unable to complete the crossing because they had no boat and the current made swimming across unsafe?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the student trying to cross the river as part of a specific game or simulated challenge?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was a boat normally provided for people who needed to cross this river?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the student trying to cross the river from one bank to the other, rather than travel along the river?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Would the student have been able to cross the river safely if the current had been weak, even without a boat?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail to complete the crossing because they had no boat available and judged swimming unsafe due to the current?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Could the student have reached the other bank safely by swimming downstream with the current and landing at a different point?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Could the student have safely crossed by swimming diagonally downstream and landing farther along the opposite bank?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student trying to cross at a particular point on the river where the current was too strong, rather than being unable to cross the river anywhere?",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student trying to cross the river in order to reach a specific destination on the opposite bank?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the river too wide for the student to swim across, even if the current had been weak?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the student required to cross the river using a particular method, such as swimming or wading, rather than choosing any available method?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "final",
+      "text": "“Course” means the river’s course, not a school class. The student was trying to cross from one bank to the other, but had no boat available. Swimming was not a safe option: the strong current would sweep them downstream and away from the crossing point. So they did not complete the crossing. Being smart and attentive in class was incidental; this was not an academic failure.",
+      "feedback": "yes"
+    }
+  ],
+  "termination": "solved",
+  "revealed_source_answer": "I was standing in front of a river. I cannot pass the course of the river because the current is too swift and I don't have suitable equipm."
+}

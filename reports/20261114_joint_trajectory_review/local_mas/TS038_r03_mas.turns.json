@@ -1,0 +1,1206 @@
+[
+  {
+    "timestamp": "2026-11-13T06:14:30.975761+00:00",
+    "event": "submission",
+    "index": 1,
+    "type": "question",
+    "text": "Was the repeated line spoken by one person, or by several different people?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Was the repeated line spoken by one person, or by several different people?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T06:14:42.456339+00:00",
+    "event": "submission",
+    "index": 2,
+    "type": "question",
+    "text": "The repeated line was spoken by one person? If not, is the repetition merely an echo/recording rather than multiple speakers?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"The repeated line was spoken by one person? If not, is the repetition merely an echo/recording rather than multiple speakers?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T06:14:59.845771+00:00",
+    "event": "submission",
+    "index": 3,
+    "type": "question",
+    "text": "Is the repeated line part of a recording that the speaker of \"Sigh, I know I'm in trouble\" is listening to?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the repeated line part of a recording that the speaker of \\\"Sigh, I know I'm in trouble\\\" is listening to?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:34:31.587945+00:00",
+    "event": "submission",
+    "index": 4,
+    "type": "question",
+    "text": "Does the repeated sentence serve as a message conveyed to the final speaker (e.g., spoken, written, or played by others or a device)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Does the repeated sentence serve as a message conveyed to the final speaker (e.g., spoken, written, or played by others or a device)?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:34:42.080016+00:00",
+    "event": "submission",
+    "index": 5,
+    "type": "question",
+    "text": "Is the repeated line written text?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the repeated line written text?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:34:48.529560+00:00",
+    "event": "submission",
+    "index": 6,
+    "type": "question",
+    "text": "Does the final speaker (\"Sigh, I know I'm in trouble\") see these written lines in a place they are not supposed to be—for example a warning or error message on a screen?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Does the final speaker (\\\"Sigh, I know I'm in trouble\\\") see these written lines in a place they are not supposed to be—for example a warning or error message on a screen?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:35:00.886507+00:00",
+    "event": "submission",
+    "index": 7,
+    "type": "question",
+    "text": "Are the seven written lines something the final speaker is required to write as a punishment—e.g., writing lines on a blackboard?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Are the seven written lines something the final speaker is required to write as a punishment—e.g., writing lines on a blackboard?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:35:07.573295+00:00",
+    "event": "submission",
+    "index": 8,
+    "type": "question",
+    "text": "Are the seven written lines something the final speaker wrote voluntarily (not forced as punishment)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Are the seven written lines something the final speaker wrote voluntarily (not forced as punishment)?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:35:14.043867+00:00",
+    "event": "submission",
+    "index": 9,
+    "type": "question",
+    "text": "Did the final speaker read the seven written lines somewhere and then copy them out themselves (e.g., copying a line from a book, sign, or letter)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Did the final speaker read the seven written lines somewhere and then copy them out themselves (e.g., copying a line from a book, sign, or letter)?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:35:21.311004+00:00",
+    "event": "submission",
+    "index": 10,
+    "type": "question",
+    "text": "Did the final speaker compose/write the repeated sentence themselves voluntarily as a message to someone else (e.g., a note or letter to another person)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Did the final speaker compose/write the repeated sentence themselves voluntarily as a message to someone else (e.g., a note or letter to another person)?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:36:04.188167+00:00",
+    "event": "submission",
+    "index": 11,
+    "type": "question",
+    "text": "Does the seven-fold repetition arise because the final speaker wrote the same farewell message to seven different people (or wrote it seven times expecting/receiving replies)—i.e., mass-sent the same letter/note?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Does the seven-fold repetition arise because the final speaker wrote the same farewell message to seven different people (or wrote it seven times expecting/receiving replies)—i.e., mass-sent the same letter/note?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:36:10.565528+00:00",
+    "event": "submission",
+    "index": 12,
+    "type": "question",
+    "text": "Did the final speaker write the sentence seven times to the same recipient/person (repeating it in a single letter or message to one person)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Did the final speaker write the sentence seven times to the same recipient/person (repeating it in a single letter or message to one person)?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:36:32.145921+00:00",
+    "event": "submission",
+    "index": 13,
+    "type": "question",
+    "text": "Is the seven-fold repetition a visual/authentic feature of the story text itself—i.e., the opening lines are seven separate documents/notes/graffiti written by the speaker at different times (not addressed to anyone in particular)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the seven-fold repetition a visual/authentic feature of the story text itself—i.e., the opening lines are seven separate documents/notes/graffiti written by the speaker at different times (not addressed to anyone in particular)?\"}",
+    "label": "yes and no"
+  },
+  {
+    "timestamp": "2026-11-13T13:40:09.941400+00:00",
+    "event": "submission",
+    "index": 14,
+    "type": "question",
+    "text": "Are the seven written lines on seven separate physical objects (e.g., seven identical items each bearing the sentence)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Are the seven written lines on seven separate physical objects (e.g., seven identical items each bearing the sentence)?\"}",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-13T13:40:23.578814+00:00",
+    "event": "submission",
+    "index": 15,
+    "type": "question",
+    "text": "Does the situation involve seven people (other than the final speaker) who each individually said or wrote that line—i.e., seven separate \"you've disappointed me, I'm never coming back\" messages received by the final speaker?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Does the situation involve seven people (other than the final speaker) who each individually said or wrote that line—i.e., seven separate \\\"you've disappointed me, I'm never coming back\\\" messages received by the final speaker?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:40:31.987399+00:00",
+    "event": "submission",
+    "index": 16,
+    "type": "question",
+    "text": "Is the repeated sentence seven identical written entries in a list/column (e.g., a checklist, table, or form the final speaker filled out) rather than flowingly repeated prose?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the repeated sentence seven identical written entries in a list/column (e.g., a checklist, table, or form the final speaker filled out) rather than flowingly repeated prose?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:42:20.095243+00:00",
+    "event": "submission",
+    "index": 17,
+    "type": "question",
+    "text": "Is the list/column something like a guestbook, log, or register where the final speaker wrote the same sentence seven times for seven entries?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the list/column something like a guestbook, log, or register where the final speaker wrote the same sentence seven times for seven entries?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:42:30.654290+00:00",
+    "event": "submission",
+    "index": 18,
+    "type": "question",
+    "text": "Are the seven identical entries the speaker's answers to seven separate questions/prompts on a form or worksheet?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Are the seven identical entries the speaker's answers to seven separate questions/prompts on a form or worksheet?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:42:36.398665+00:00",
+    "event": "submission",
+    "index": 19,
+    "type": "question",
+    "text": "Is the list a set of items the final speaker is rating/reviewing/categorizing (so the same written verdict appears seven times in a column)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the list a set of items the final speaker is rating/reviewing/categorizing (so the same written verdict appears seven times in a column)?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:42:50.730618+00:00",
+    "event": "submission",
+    "index": 20,
+    "type": "question",
+    "text": "Are the seven identical entries letters/notes the speaker wrote to seven different people (e.g., family members), announcing that they are leaving?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Are the seven identical entries letters/notes the speaker wrote to seven different people (e.g., family members), announcing that they are leaving?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:42:59.534745+00:00",
+    "event": "submission",
+    "index": 21,
+    "type": "question",
+    "text": "Is the \"list/column\" actually a form-field or single text entry where the same line got typed/pasted repeatedly—e.g., a comment field, chat box, or signature line—rather than a genuine multi-item list?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the \\\"list/column\\\" actually a form-field or single text entry where the same line got typed/pasted repeatedly—e.g., a comment field, chat box, or signature line—rather than a genuine multi-item list?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:43:07.376609+00:00",
+    "event": "submission",
+    "index": 22,
+    "type": "question",
+    "text": "Is the repeated line part of a game or activity where seven identical tokens/cards/spaces each display it—i.e., a board game, bingo, or similar repetition produced by the setup, rather than the speaker's own writing being the point?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the repeated line part of a game or activity where seven identical tokens/cards/spaces each display it—i.e., a board game, bingo, or similar repetition produced by the setup, rather than the speaker's own writing being the point?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:43:13.718670+00:00",
+    "event": "submission",
+    "index": 23,
+    "type": "question",
+    "text": "Is the repeated line a single phrase on a list where the speaker is counting or tracking something (e.g., tallying the same event seven times)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the repeated line a single phrase on a list where the speaker is counting or tracking something (e.g., tallying the same event seven times)?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:43:23.560886+00:00",
+    "event": "submission",
+    "index": 24,
+    "type": "question",
+    "text": "Is the repeated sentence the content of seven speech/thought bubbles in a comic or cartoon strip, one per panel?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the repeated sentence the content of seven speech/thought bubbles in a comic or cartoon strip, one per panel?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:43:37.750523+00:00",
+    "event": "submission",
+    "index": 25,
+    "type": "question",
+    "text": "Is the \"list\" a to-do list or plan the speaker made, with the same item written seven times because the same task keeps going unfinished?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the \\\"list\\\" a to-do list or plan the speaker made, with the same item written seven times because the same task keeps going unfinished?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:43:44.506055+00:00",
+    "event": "submission",
+    "index": 26,
+    "type": "question",
+    "text": "Does the seven-line repetition come from a template that the final speaker filled in—seven blanks/copies of the same standard sentence (like a form letter or a printed phrase completed seven times)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Does the seven-line repetition come from a template that the final speaker filled in—seven blanks/copies of the same standard sentence (like a form letter or a printed phrase completed seven times)?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:43:51.950313+00:00",
+    "event": "submission",
+    "index": 27,
+    "type": "question",
+    "text": "Is the speaker writing the same sentence to each of several entries because they are crossing off/leaving a note in seven *places* they have visited or roles they are quitting (e.g., leaving seven groups/clubs/relationships) — one farewell per account or membership?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the speaker writing the same sentence to each of several entries because they are crossing off/leaving a note in seven *places* they have visited or roles they are quitting (e.g., leaving seven groups/clubs/relationships) — one farewell per account or membership?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:44:04.554455+00:00",
+    "event": "submission",
+    "index": 28,
+    "type": "question",
+    "text": "Is the document containing the seven lines a confession or official statement the speaker wrote for authorities (so the seven repetitions now incriminate them)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the document containing the seven lines a confession or official statement the speaker wrote for authorities (so the seven repetitions now incriminate them)?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:44:13.470531+00:00",
+    "event": "submission",
+    "index": 29,
+    "type": "question",
+    "text": "Is the seven-times repetition because the speaker wrote the sentence once for each of seven *attempts* or seven *chances*—for example, a \"last words\"/farewell that failed or a relationship they tried to leave seven times?\n\nBut better to test structure: was the \"yes\" to \"seven identical entries in a list/column\" perhaps about a *column of numbers/scores* where the sentence replaces each entry? Let me first ask: Is the seven-entry list found on a computer/phone screen rather than on physical paper?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the seven-times repetition because the speaker wrote the sentence once for each of seven *attempts* or seven *chances*—for example, a \\\"last words\\\"/farewell that failed or a relationship they tried to leave seven times?\\n\\nBut better to test structure: was the \\\"yes\\\" to \\\"seven identical entries in a list/column\\\" perhaps about a *column of numbers/scores* where the sentence replaces each entry? Let me first ask: Is the seven-entry list found on a computer/phone screen rather than on physical paper?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:44:46.175865+00:00",
+    "event": "submission",
+    "index": 30,
+    "type": "question",
+    "text": "Is the list a set of rules or terms the speaker read and then wrote the same objection/response against each one—i.e., a contract or agreement they refused to accept?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the list a set of rules or terms the speaker read and then wrote the same objection/response against each one—i.e., a contract or agreement they refused to accept?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:44:53.219706+00:00",
+    "event": "submission",
+    "index": 31,
+    "type": "question",
+    "text": "Is the seven-line document a \"letter to the editor\" / notice / announcement the speaker wrote to be published or displayed publicly (e.g., a resignation notice, obituary, or sign)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the seven-line document a \\\"letter to the editor\\\" / notice / announcement the speaker wrote to be published or displayed publicly (e.g., a resignation notice, obituary, or sign)?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:45:00.862973+00:00",
+    "event": "submission",
+    "index": 32,
+    "type": "question",
+    "text": "Is the list actually a set of *names* or *labels* in a column (like a roster, sign-up sheet, or gift list) on which the speaker wrote the same sentence beside/under each entry?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the list actually a set of *names* or *labels* in a column (like a roster, sign-up sheet, or gift list) on which the speaker wrote the same sentence beside/under each entry?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:45:13.735421+00:00",
+    "event": "submission",
+    "index": 33,
+    "type": "question",
+    "text": "Are the seven entries written on ordinary paper (by hand), rather than on a board, a screen, or a printed form?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Are the seven entries written on ordinary paper (by hand), rather than on a board, a screen, or a printed form?\"}",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-13T13:46:02.424272+00:00",
+    "event": "submission",
+    "index": 34,
+    "type": "question",
+    "text": "Is the final speaker the author/composer of a creative work (play, story, script) in which the same line is written for seven different characters?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the final speaker the author/composer of a creative work (play, story, script) in which the same line is written for seven different characters?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:46:10.414781+00:00",
+    "event": "submission",
+    "index": 35,
+    "type": "question",
+    "text": "Did the final speaker know they were \"in trouble\" only *after* seeing the seven written repetitions (i.e., the sight of the repeated lines tipped them off to something)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Did the final speaker know they were \\\"in trouble\\\" only *after* seeing the seven written repetitions (i.e., the sight of the repeated lines tipped them off to something)?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:46:56.546711+00:00",
+    "event": "submission",
+    "index": 36,
+    "type": "question",
+    "text": "So the speaker wrote the seven lines without realizing, then saw the seven repeated entries and realized something. Are the seven identical entries a *symptom/evidence* of a fault or malfunction the speaker caused (e.g., a misprint or glitch they didn't intend)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"So the speaker wrote the seven lines without realizing, then saw the seven repeated entries and realized something. Are the seven identical entries a *symptom/evidence* of a fault or malfunction the speaker caused (e.g., a misprint or glitch they didn't intend)?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:47:05.483714+00:00",
+    "event": "submission",
+    "index": 37,
+    "type": "question",
+    "text": "Did the seven identical entries cause the speaker to realize they had made an error in what they were writing (e.g., that they wrote the same thing in seven places they shouldn't have)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Did the seven identical entries cause the speaker to realize they had made an error in what they were writing (e.g., that they wrote the same thing in seven places they shouldn't have)?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:47:21.499292+00:00",
+    "event": "submission",
+    "index": 38,
+    "type": "question",
+    "text": "Does seeing the seven identical entries reveal something about the speaker themselves (their own identity, condition, memory, or nature)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Does seeing the seven identical entries reveal something about the speaker themselves (their own identity, condition, memory, or nature)?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:47:58.589464+00:00",
+    "event": "submission",
+    "index": 39,
+    "type": "question",
+    "text": "Does seeing the seven identical entries reveal to the speaker that they have forgotten having written them before (i.e., a memory problem), so the same line repeating means they keep doing it unknowingly?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Does seeing the seven identical entries reveal to the speaker that they have forgotten having written them before (i.e., a memory problem), so the same line repeating means they keep doing it unknowingly?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:48:06.345002+00:00",
+    "event": "submission",
+    "index": 40,
+    "type": "question",
+    "text": "Does seeing the seven identical entries reveal to the speaker that they are *not human*—e.g., an AI, machine, or artificial being—whose repetitive writing betrayed its non-human nature?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Does seeing the seven identical entries reveal to the speaker that they are *not human*—e.g., an AI, machine, or artificial being—whose repetitive writing betrayed its non-human nature?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:48:14.128385+00:00",
+    "event": "submission",
+    "index": 41,
+    "type": "question",
+    "text": "Does seeing the seven identical entries reveal to the speaker that they are *not the unique individual they thought*—e.g., one of several identical copies/clones/duplicates (a twin, a clone, a replicant, multiple identical people)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Does seeing the seven identical entries reveal to the speaker that they are *not the unique individual they thought*—e.g., one of several identical copies/clones/duplicates (a twin, a clone, a replicant, multiple identical people)?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:48:21.937386+00:00",
+    "event": "submission",
+    "index": 42,
+    "type": "question",
+    "text": "Does seeing the seven identical entries reveal to the speaker that the line is about *themselves* — that is, the seven \"You've disappointed me; I'm never coming back\" messages are being/can be said about the speaker by others, revealing the speaker's own fault?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Does seeing the seven identical entries reveal to the speaker that the line is about *themselves* — that is, the seven \\\"You've disappointed me; I'm never coming back\\\" messages are being/can be said about the speaker by others, revealing the speaker's own fault?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:49:16.369621+00:00",
+    "event": "submission",
+    "index": 43,
+    "type": "question",
+    "text": "Does what the speaker realizes concern their mental health or a medical/neurological condition?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Does what the speaker realizes concern their mental health or a medical/neurological condition?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:49:25.238360+00:00",
+    "event": "submission",
+    "index": 44,
+    "type": "question",
+    "text": "Does seeing the seven identical entries reveal something the speaker *is* that they didn't know—such as their age, their name, or that they are someone else's child/creation?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Does seeing the seven identical entries reveal something the speaker *is* that they didn't know—such as their age, their name, or that they are someone else's child/creation?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:49:37.924909+00:00",
+    "event": "submission",
+    "index": 45,
+    "type": "question",
+    "text": "Does the \"something about themselves\" concern a *role or position* the speaker holds—e.g., they realize they are the culprit/perpetrator, or the one responsible, because only they could have written the seven identical entries?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Does the \\\"something about themselves\\\" concern a *role or position* the speaker holds—e.g., they realize they are the culprit/perpetrator, or the one responsible, because only they could have written the seven identical entries?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:49:46.611212+00:00",
+    "event": "submission",
+    "index": 46,
+    "type": "question",
+    "text": "Does the speaker realize they are *dead / a ghost / in the afterlife*—i.e., the repeated farewell is a message the speaker left behind, and seeing it (and it being read/repeated) reveals their own death?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Does the speaker realize they are *dead / a ghost / in the afterlife*—i.e., the repeated farewell is a message the speaker left behind, and seeing it (and it being read/repeated) reveals their own death?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:49:56.164776+00:00",
+    "event": "submission",
+    "index": 47,
+    "type": "question",
+    "text": "Does seeing the seven identical entries reveal to the speaker a *habitual behavior or pattern of their own* (like that they always do the same thing), rather than a fact about their identity?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Does seeing the seven identical entries reveal to the speaker a *habitual behavior or pattern of their own* (like that they always do the same thing), rather than a fact about their identity?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:50:08.973978+00:00",
+    "event": "submission",
+    "index": 48,
+    "type": "question",
+    "text": "Does the \"something about themselves\" that the speaker realizes concern their feelings or relationship toward another person (e.g., that they don't actually care, or that they love someone)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Does the \\\"something about themselves\\\" that the speaker realizes concern their feelings or relationship toward another person (e.g., that they don't actually care, or that they love someone)?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:50:19.756162+00:00",
+    "event": "submission",
+    "index": 49,
+    "type": "question",
+    "text": "Is the list something like a receipt, invoice, or bill where the same line item appears seven times, and seeing it makes the speaker realize they are being charged/will owe money (financially \"in trouble\")?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the list something like a receipt, invoice, or bill where the same line item appears seven times, and seeing it makes the speaker realize they are being charged/will owe money (financially \\\"in trouble\\\")?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:50:33.640742+00:00",
+    "event": "submission",
+    "index": 50,
+    "type": "question",
+    "text": "Is the seven-entry document a personal record or keepsake (diary, journal, scrapbook, appointment book) rather than an official or functional document?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the seven-entry document a personal record or keepsake (diary, journal, scrapbook, appointment book) rather than an official or functional document?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:50:42.172507+00:00",
+    "event": "submission",
+    "index": 51,
+    "type": "question",
+    "text": "Is the seven-entry list a *guest sign-in or RSVP/attendance sheet*—no, that's a register. Different angle: is the document a *multiple-choice answer sheet / exam paper* where the speaker bubble-filled or wrote the same answer seven times and now realizes they misread the question?\n\nLet me instead ask cleanly: Is the document an official/functional form the speaker filled out as part of an application or transaction (not personal, not creative)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the seven-entry list a *guest sign-in or RSVP/attendance sheet*—no, that's a register. Different angle: is the document a *multiple-choice answer sheet / exam paper* where the speaker bubble-filled or wrote the same answer seven times and now realizes they misread the question?\\n\\nLet me instead ask cleanly: Is the document an official/functional form the speaker filled out as part of an application or transaction (not personal, not creative)?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:50:57.627094+00:00",
+    "event": "submission",
+    "index": 52,
+    "type": "question",
+    "text": "Is the \"list\" actually the speaker's own *to-be-said script or cue card* that they will read from—i.e., seven lines they plan to say, all identical because they kept rewriting the same line?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the \\\"list\\\" actually the speaker's own *to-be-said script or cue card* that they will read from—i.e., seven lines they plan to say, all identical because they kept rewriting the same line?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:51:08.189578+00:00",
+    "event": "submission",
+    "index": 53,
+    "type": "question",
+    "text": "Is the seven-entry list a *medical or laboratory test result sheet* (e.g., seven test rows), where seeing the same result repeated seven times tells the speaker something about their own body/condition?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the seven-entry list a *medical or laboratory test result sheet* (e.g., seven test rows), where seeing the same result repeated seven times tells the speaker something about their own body/condition?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:51:20.964163+00:00",
+    "event": "submission",
+    "index": 54,
+    "type": "question",
+    "text": "Is the literal meaning of the sentence (a disappointment-driven farewell) relevant to the story—i.e., it matters that it is a \"you disappointed me, I'm leaving\" message—rather than the sentence being just a neutral sample used for writing practice?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the literal meaning of the sentence (a disappointment-driven farewell) relevant to the story—i.e., it matters that it is a \\\"you disappointed me, I'm leaving\\\" message—rather than the sentence being just a neutral sample used for writing practice?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:51:28.302916+00:00",
+    "event": "submission",
+    "index": 55,
+    "type": "question",
+    "text": "The sender(s) of the \"I'm never coming back\" message—are they *the same person* as the final speaker?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"The sender(s) of the \\\"I'm never coming back\\\" message—are they *the same person* as the final speaker?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:51:45.885208+00:00",
+    "event": "submission",
+    "index": 56,
+    "type": "question",
+    "text": "The sentence's meaning matters (a farewell due to disappointment), and the final speaker is NOT the one who says/sends it. So someone else said \"I'm never coming back\" to the speaker. Does the \"seven identical entries\" represent the speaker recording/listing the *same disappointing event* seven times—e.g., seven people (or seven times) that \"you've disappointed me\" has been said to them? But earlier \"seven people each said it\" was rejected. Let me instead ask: Is the seven-entry list a record the speaker keeps of *their own disappointments/regrets* — a list of people they have disappointed who then left?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"The sentence's meaning matters (a farewell due to disappointment), and the final speaker is NOT the one who says/sends it. So someone else said \\\"I'm never coming back\\\" to the speaker. Does the \\\"seven identical entries\\\" represent the speaker recording/listing the *same disappointing event* seven times—e.g., seven people (or seven times) that \\\"you've disappointed me\\\" has been said to them? But earlier \\\"seven people each said it\\\" was rejected. Let me instead ask: Is the seven-entry list a record the speaker keeps of *their own disappointments/regrets* — a list of people they have disappointed who then left?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:52:05.914449+00:00",
+    "event": "submission",
+    "index": 57,
+    "type": "question",
+    "text": "Is the speaker a child (or student), with the repeated sentence being something a parent or teacher said to them?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the speaker a child (or student), with the repeated sentence being something a parent or teacher said to them?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:52:15.097290+00:00",
+    "event": "submission",
+    "index": 58,
+    "type": "question",
+    "text": "Since the speaker wrote the seven identical lines but is not the \"sender\" of the message, are the seven entries the speaker's *translation/paraphrase of a phrase spoken by someone else*—i.e., the speaker recorded a quote that another person said?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Since the speaker wrote the seven identical lines but is not the \\\"sender\\\" of the message, are the seven entries the speaker's *translation/paraphrase of a phrase spoken by someone else*—i.e., the speaker recorded a quote that another person said?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:52:28.404736+00:00",
+    "event": "submission",
+    "index": 59,
+    "type": "question",
+    "text": "Were the seven identical lines originally written in different places/at different times and have now been *collected together* (so seeing them side by side is what reveals something to the speaker)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Were the seven identical lines originally written in different places/at different times and have now been *collected together* (so seeing them side by side is what reveals something to the speaker)?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:52:57.060088+00:00",
+    "event": "submission",
+    "index": 60,
+    "type": "question",
+    "text": "Did the speaker expect the seven entries to be different from one another, so that discovering they are all identical is what revealed something about themselves?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Did the speaker expect the seven entries to be different from one another, so that discovering they are all identical is what revealed something about themselves?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:53:06.072724+00:00",
+    "event": "submission",
+    "index": 61,
+    "type": "question",
+    "text": "Did the speaker write the same sentence seven times because they were writing it out to **multiple copies of the same document** (e.g., a form in septuplicate/seven-part carbon copy, or seven identical forms to be filled)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Did the speaker write the same sentence seven times because they were writing it out to **multiple copies of the same document** (e.g., a form in septuplicate/seven-part carbon copy, or seven identical forms to be filled)?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:53:15.112057+00:00",
+    "event": "submission",
+    "index": 62,
+    "type": "question",
+    "text": "Is the speaker *not human* in a different sense—e.g., an animal (like a parrot or pet) or a non-human character—with the \"list\" being something like a training/reward chart?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the speaker *not human* in a different sense—e.g., an animal (like a parrot or pet) or a non-human character—with the \\\"list\\\" being something like a training/reward chart?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:53:22.934177+00:00",
+    "event": "submission",
+    "index": 63,
+    "type": "question",
+    "text": "Is the seven-line list a *transcript or log the speaker is required to keep* for their job—e.g., a call log, incident report, or record of what a client/patient/customer said—so the repeated line is the same quote entered seven times in that log?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the seven-line list a *transcript or log the speaker is required to keep* for their job—e.g., a call log, incident report, or record of what a client/patient/customer said—so the repeated line is the same quote entered seven times in that log?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:53:33.273332+00:00",
+    "event": "submission",
+    "index": 64,
+    "type": "question",
+    "text": "Is this set in the ordinary, present-day real world (not fantasy, not sci-fi, not the afterlife)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is this set in the ordinary, present-day real world (not fantasy, not sci-fi, not the afterlife)?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:54:10.065982+00:00",
+    "event": "submission",
+    "index": 65,
+    "type": "question",
+    "text": "Are there seven distinct people (seven separate individuals) whose words or messages the speaker is recording in the list?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Are there seven distinct people (seven separate individuals) whose words or messages the speaker is recording in the list?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:54:17.583290+00:00",
+    "event": "submission",
+    "index": 66,
+    "type": "question",
+    "text": "Is the \"list\" actually the speaker writing the sentence as **several separate entries on a single sheet of lined paper**—i.e., the same message repeated down a page, where the point is that the speaker is *practicing or rehearsing* what someone else said to them (so they can say it back or process it)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the \\\"list\\\" actually the speaker writing the sentence as **several separate entries on a single sheet of lined paper**—i.e., the same message repeated down a page, where the point is that the speaker is *practicing or rehearsing* what someone else said to them (so they can say it back or process it)?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:55:02.871221+00:00",
+    "event": "submission",
+    "index": 67,
+    "type": "question",
+    "text": "Is the speaker writing the sentence as a message they intend to give/deliver to a specific other person (the \"you\" who disappointed them)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the speaker writing the sentence as a message they intend to give/deliver to a specific other person (the \\\"you\\\" who disappointed them)?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:55:34.714647+00:00",
+    "event": "submission",
+    "index": 68,
+    "type": "question",
+    "text": "Does the word \"you\" in the repeated sentence refer to the final speaker?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Does the word \\\"you\\\" in the repeated sentence refer to the final speaker?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:56:28.388080+00:00",
+    "event": "submission",
+    "index": 69,
+    "type": "question",
+    "text": "So the speaker is the \"you\" being accused, and the speaker wrote this accusatory line seven times themselves. Is the speaker writing it down as a *self-directed* statement—i.e., berating themselves (the \"I\" is the speaker's own conscience/self talking to the \"you\" which is also the speaker)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"So the speaker is the \\\"you\\\" being accused, and the speaker wrote this accusatory line seven times themselves. Is the speaker writing it down as a *self-directed* statement—i.e., berating themselves (the \\\"I\\\" is the speaker's own conscience/self talking to the \\\"you\\\" which is also the speaker)?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:56:43.188127+00:00",
+    "event": "submission",
+    "index": 70,
+    "type": "question",
+    "text": "Is another person — the \"I\" who says \"I'm never coming back\" — a real, separate individual central to the story?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is another person — the \\\"I\\\" who says \\\"I'm never coming back\\\" — a real, separate individual central to the story?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:58:31.313227+00:00",
+    "event": "submission",
+    "index": 71,
+    "type": "question",
+    "text": "In reality, was the \"I'm never coming back\" line spoken (or written) by the other person only once, with the speaker then writing it down seven times in the list?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"In reality, was the \\\"I'm never coming back\\\" line spoken (or written) by the other person only once, with the speaker then writing it down seven times in the list?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:58:44.981039+00:00",
+    "event": "submission",
+    "index": 72,
+    "type": "question",
+    "text": "Is the speaker writing the repeated line as part of their job or professional duty?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the speaker writing the repeated line as part of their job or professional duty?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:58:51.677817+00:00",
+    "event": "submission",
+    "index": 73,
+    "type": "question",
+    "text": "Did the other person (\"I'm never coming back\") say or write that same line seven separate times, so the speaker is recording seven separate occurrences?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Did the other person (\\\"I'm never coming back\\\") say or write that same line seven separate times, so the speaker is recording seven separate occurrences?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:58:59.320301+00:00",
+    "event": "submission",
+    "index": 74,
+    "type": "question",
+    "text": "Is this a *word game/puzzle* the speaker is solving—like a crossword, word search, or \"how many times does this sentence appear\" challenge—where the seven identical sentences are clues or a repeating answer?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is this a *word game/puzzle* the speaker is solving—like a crossword, word search, or \\\"how many times does this sentence appear\\\" challenge—where the seven identical sentences are clues or a repeating answer?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:59:15.338829+00:00",
+    "event": "submission",
+    "index": 75,
+    "type": "question",
+    "text": "Is the speaker writing the sentence seven times as a *superstitious ritual or wish* (e.g., writing something many times in hopes it comes true or to ward it off)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the speaker writing the sentence seven times as a *superstitious ritual or wish* (e.g., writing something many times in hopes it comes true or to ward it off)?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:59:28.153760+00:00",
+    "event": "submission",
+    "index": 76,
+    "type": "question",
+    "text": "Is the other person a *romantic* partner or ex-partner of the speaker (rather than family or a friend)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the other person a *romantic* partner or ex-partner of the speaker (rather than family or a friend)?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T13:59:37.224655+00:00",
+    "event": "submission",
+    "index": 77,
+    "type": "question",
+    "text": "Is the \"list\" of seven identical lines something the speaker is writing *in order to win back or contact the partner*—e.g., drafting apology messages or a letter—where the same line keeps appearing?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the \\\"list\\\" of seven identical lines something the speaker is writing *in order to win back or contact the partner*—e.g., drafting apology messages or a letter—where the same line keeps appearing?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T13:59:48.082066+00:00",
+    "event": "submission",
+    "index": 78,
+    "type": "question",
+    "text": "Does the speaker realize, from seven identical such farewells, that they have driven away multiple past partners in the same way—i.e., the seven entries correspond to past relationships that ended with this same complaint?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Does the speaker realize, from seven identical such farewells, that they have driven away multiple past partners in the same way—i.e., the seven entries correspond to past relationships that ended with this same complaint?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T14:00:04.337785+00:00",
+    "event": "submission",
+    "index": 79,
+    "type": "question",
+    "text": "At the moment of the sigh, has the romantic partner already left for good?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"At the moment of the sigh, has the romantic partner already left for good?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T14:00:22.915503+00:00",
+    "event": "submission",
+    "index": 80,
+    "type": "question",
+    "text": "Is the partner's line something the speaker is *writing down in advance* because the partner has threatened to say it / it's a recurring threat—i.e., the speaker is preparing for the breakup?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the partner's line something the speaker is *writing down in advance* because the partner has threatened to say it / it's a recurring threat—i.e., the speaker is preparing for the breakup?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T14:00:36.067371+00:00",
+    "event": "submission",
+    "index": 81,
+    "type": "question",
+    "text": "Is the \"trouble\" the speaker is in with an authority (police, court, employer, school) as a result of the seven written lines—i.e., the writing itself is evidence/offensive?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the \\\"trouble\\\" the speaker is in with an authority (police, court, employer, school) as a result of the seven written lines—i.e., the writing itself is evidence/offensive?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T14:00:50.055281+00:00",
+    "event": "submission",
+    "index": 82,
+    "type": "question",
+    "text": "Is the seven-line list something the speaker wrote as part of *preparing a formal/legal document* related to the relationship (e.g., divorce papers, a prenup, or a legal complaint)—rather than for the partner to read directly?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the seven-line list something the speaker wrote as part of *preparing a formal/legal document* related to the relationship (e.g., divorce papers, a prenup, or a legal complaint)—rather than for the partner to read directly?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T14:00:56.329273+00:00",
+    "event": "submission",
+    "index": 83,
+    "type": "question",
+    "text": "Is the \"list\" the speaker's own *list of reasons/excuses they plan to give the partner* to explain themselves—but every entry turns out to be the same accusation the partner made, revealing the speaker has no real excuse?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the \\\"list\\\" the speaker's own *list of reasons/excuses they plan to give the partner* to explain themselves—but every entry turns out to be the same accusation the partner made, revealing the speaker has no real excuse?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T14:01:12.734726+00:00",
+    "event": "submission",
+    "index": 84,
+    "type": "question",
+    "text": "Is the seven-line document a letter/farewell note that the speaker wrote to the partner but never intended to send or deliver (a kept but undelivered letter)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the seven-line document a letter/farewell note that the speaker wrote to the partner but never intended to send or deliver (a kept but undelivered letter)?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T14:01:36.079959+00:00",
+    "event": "submission",
+    "index": 85,
+    "type": "question",
+    "text": "Is the seven-entry list a decision-making list the speaker made about the relationship—like a \"pros and cons\" or \"should I stay or should I leave\" list—where writing out the partner's threat seven times helps them decide?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the seven-entry list a decision-making list the speaker made about the relationship—like a \\\"pros and cons\\\" or \\\"should I stay or should I leave\\\" list—where writing out the partner's threat seven times helps them decide?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T14:01:53.522019+00:00",
+    "event": "submission",
+    "index": 86,
+    "type": "question",
+    "text": "Does \"I'm in trouble\" mean the speaker realizes/believes they have just lost (or are about to lose) the romantic partner for good because of their own failing?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Does \\\"I'm in trouble\\\" mean the speaker realizes/believes they have just lost (or are about to lose) the romantic partner for good because of their own failing?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T14:02:11.728198+00:00",
+    "event": "submission",
+    "index": 87,
+    "type": "question",
+    "text": "Is what the speaker realizes about themselves that they have *lost the ability to write differently*—that the seven identical entries are their own writing showing a deterioration or deficit, meaning they're \"in trouble\" medically? (Test despite earlier medical \"no\" for a different phrasing.)\n\nBut cleaner: Is the reason all seven entries are identical that the speaker *can't remember what they just wrote*, so they keep re-writing the same line? We tested memory=\"no.\"\n\nLet me instead ask about the *emotional state*: Is the speaker's \"trouble\" that they realize they are **the common factor** — but we tested that (cause of leaving)=\"no\" (about losing partner). \n\nDifferent lever: Is the seven-line writing on a **\"suicide/plea note\" the partner will find**? No.\n\nAsk: Is the speaker writing these seven lines *instead of or as a substitute for* actually doing something (i.e., procrastinating/avoiding an action)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is what the speaker realizes about themselves that they have *lost the ability to write differently*—that the seven identical entries are their own writing showing a deterioration or deficit, meaning they're \\\"in trouble\\\" medically? (Test despite earlier medical \\\"no\\\" for a different phrasing.)\\n\\nBut cleaner: Is the reason all seven entries are identical that the speaker *can't remember what they just wrote*, so they keep re-writing the same line? We tested memory=\\\"no.\\\"\\n\\nLet me instead ask about the *emotional state*: Is the speaker's \\\"trouble\\\" that they realize they are **the common factor** — but we tested that (cause of leaving)=\\\"no\\\" (about losing partner). \\n\\nDifferent lever: Is the seven-line writing on a **\\\"suicide/plea note\\\" the partner will find**? No.\\n\\nAsk: Is the speaker writing these seven lines *instead of or as a substitute for* actually doing something (i.e., procrastinating/avoiding an action)?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T14:02:20.374358+00:00",
+    "event": "submission",
+    "index": 88,
+    "type": "question",
+    "text": "Is the \"list\" a *question-and-answer or \"get to know you\" thing* the partner left for the speaker—like the partner wrote the same answer seven times on a compatibility questionnaire that the speaker is now going through? Earlier \"answers to prompts\" was rejected, so instead: Is the list a **compatibility/personality test result** the speaker is reading?\n\nBetter single probe: Is the seven-entry list something the speaker *found* (written by someone else) rather than composed fresh—contradicting \"speaker wrote it voluntarily\"? That would resolve a contradiction. Actually host said speaker wrote it voluntarily = yes. So no.\n\nLet me test whether the \"list\" is a **\"top seven\" ranking** the speaker made (e.g., seven favorite things), where each entry turned out identical because they can only think of the partner. Ask that.",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the \\\"list\\\" a *question-and-answer or \\\"get to know you\\\" thing* the partner left for the speaker—like the partner wrote the same answer seven times on a compatibility questionnaire that the speaker is now going through? Earlier \\\"answers to prompts\\\" was rejected, so instead: Is the list a **compatibility/personality test result** the speaker is reading?\\n\\nBetter single probe: Is the seven-entry list something the speaker *found* (written by someone else) rather than composed fresh—contradicting \\\"speaker wrote it voluntarily\\\"? That would resolve a contradiction. Actually host said speaker wrote it voluntarily = yes. So no.\\n\\nLet me test whether the \\\"list\\\" is a **\\\"top seven\\\" ranking** the speaker made (e.g., seven favorite things), where each entry turned out identical because they can only think of the partner. Ask that.\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T14:02:39.514475+00:00",
+    "event": "submission",
+    "index": 89,
+    "type": "question",
+    "text": "Is the speaker writing this farewell line as part of a cover story or lie to someone else—e.g., pretending/claiming the partner left them, and the seven identical copies are where the lie might be exposed?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the speaker writing this farewell line as part of a cover story or lie to someone else—e.g., pretending/claiming the partner left them, and the seven identical copies are where the lie might be exposed?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T14:02:55.824285+00:00",
+    "event": "submission",
+    "index": 90,
+    "type": "question",
+    "text": "Is the lie meant to cover up what actually happened to the partner—i.e., the speaker is hiding that they caused the partner's death or disappearance, using \"the partner left me\" as a cover story?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the lie meant to cover up what actually happened to the partner—i.e., the speaker is hiding that they caused the partner's death or disappearance, using \\\"the partner left me\\\" as a cover story?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T14:03:05.206916+00:00",
+    "event": "submission",
+    "index": 91,
+    "type": "question",
+    "text": "Is the speaker forging a fake farewell/suicide note in the partner's voice (to make it look like the partner left or died), and the seven identical copies are practice attempts that betray the forgery?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the speaker forging a fake farewell/suicide note in the partner's voice (to make it look like the partner left or died), and the seven identical copies are practice attempts that betray the forgery?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T14:03:34.954764+00:00",
+    "event": "submission",
+    "index": 92,
+    "type": "question",
+    "text": "Did the speaker just realize that the seven practice copies of the forged farewell are somewhere they can't retrieve or destroy—so the forged evidence will be found and expose them?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Did the speaker just realize that the seven practice copies of the forged farewell are somewhere they can't retrieve or destroy—so the forged evidence will be found and expose them?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T14:03:48.300415+00:00",
+    "event": "submission",
+    "index": 93,
+    "type": "question",
+    "text": "Did the speaker realize that they wrote all seven copies in their own handwriting (having failed to disguise it / imitating the partner's hand), so the identical handwriting will reveal the note is forged by them?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Did the speaker realize that they wrote all seven copies in their own handwriting (having failed to disguise it / imitating the partner's hand), so the identical handwriting will reveal the note is forged by them?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T14:04:18.085757+00:00",
+    "event": "submission",
+    "index": 94,
+    "type": "final",
+    "text": "The seven identical lines are seven practice copies of a forged farewell note. The speaker's romantic partner is the \"I\" who supposedly wrote \"You've disappointed me so much; I'm never coming back,\" and the speaker is the \"you\" it accuses.\n\nIn reality the partner did not simply leave. The speaker caused her death (or disappearance) and invented the story that — disappointed in him — she walked out forever, to explain her absence. To back this up he forged a farewell/message in her voice, writing it out repeatedly to work on the fake hand.\n\nSighing over the sheet, he sees that all seven attempts are written in his own undisguised handwriting — identical script that no genuine note from the partner would share. The forgery betrays its author: the handwriting (and the tell-tale repetition) shows that he, not she, wrote the \"goodbye.\" Recognizing the note will be exposed as a fake and link him to what really happened to the partner, he mutters, \"Sigh, I know I'm in trouble.\"",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"final\", \"text\": \"The seven identical lines are seven practice copies of a forged farewell note. The speaker's romantic partner is the \\\"I\\\" who supposedly wrote \\\"You've disappointed me so much; I'm never coming back,\\\" and the speaker is the \\\"you\\\" it accuses.\\n\\nIn reality the partner did not simply leave. The speaker caused her death (or disappearance) and invented the story that — disappointed in him — she walked out forever, to explain her absence. To back this up he forged a farewell/message in her voice, writing it out repeatedly to work on the fake hand.\\n\\nSighing over the sheet, he sees that all seven attempts are written in his own undisguised handwriting — identical script that no genuine note from the partner would share. The forgery betrays its author: the handwriting (and the tell-tale repetition) shows that he, not she, wrote the \\\"goodbye.\\\" Recognizing the note will be exposed as a fake and link him to what really happened to the partner, he mutters, \\\"Sigh, I know I'm in trouble.\\\"\"}",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 94,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The speaker caused her death (or disappearance) and invented the story that — disappointed in him — she walked out forever, to explain her absence. To back this up he forged a farewell/message in her voice",
+          "reason": "Stages the departure and forgery, but leaves victim's wife/marital identity omitted and death vs disappearance uncommitted."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "The seven identical lines are seven practice copies of a forged farewell note. ... writing it out repeatedly to work on the fake hand. ... all seven attempts are written in his own undisguised handwriting",
+          "reason": "Repeated forgery attempts and failure are present; wife identity not explicitly stated."
+        },
+        {
+          "id": "C3",
+          "credit": 1,
+          "evidence": "he sees that all seven attempts are written in his own undisguised handwriting — identical script that no genuine note from the partner would share. ... Recognizing the note will be exposed as a fake and link him to what really happened to the partner, he mutters, \"Sigh, I know I'm in trouble.\"",
+          "reason": "Inability to imitate and resultant fear of exposure are clearly covered."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The speaker caused her death (or disappearance) and invented the story that — disappointed in him — she walked out forever, to explain her absence."
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "The speaker caused her death (or disappearance)"
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "invented the story that — disappointed in him — she walked out forever, to explain her absence. To back this up he forged a farewell/message in her voice"
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "The seven identical lines are seven practice copies of a forged farewell note. ... writing it out repeatedly to work on the fake hand."
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "all seven attempts are written in his own undisguised handwriting — identical script that no genuine note from the partner would share. ... Recognizing the note will be exposed as a fake and link him to what really happened to the partner, he mutters, \"Sigh, I know I'm in trouble.\""
+        },
+        {
+          "id": "C3.F1",
+          "status": "covered",
+          "evidence": "he sees that all seven attempts are written in his own undisguised handwriting — identical script that no genuine note from the partner would share. ... Recognizing the note will be exposed as a fake and link him to what really happened to the partner, he mutters, \"Sigh, I know I'm in trouble.\""
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.6,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-13T14:06:27.324129+00:00",
+    "event": "submission",
+    "index": 95,
+    "type": "final",
+    "text": "The seven repeated lines are not seven different messages: they are the same forged farewell written out repeatedly, the giveaway being that they are all identical and all in the speaker's own hand.\n\nThe speaker is the \"you\" who has disappointed the other person; the \"I\" who threatens \"I'm never coming back\" is the speaker's real romantic partner. The truth is that the speaker caused the partner's death/disappearance and needed a story to explain her absence, so he invented one: that she was so disappointed in him she left and would never return. To support this fabrication he wrote a supposed farewell in her voice, copying it over and over across the page to perfect the fake hand.\n\nLooking at the seven tries, he notices every one is unmistakably his own handwriting — identical script that would never appear in a genuine note from her. The repetition itself and the single hand betray the forgery and expose him as the author of the \"goodbye.\" Realizing the fake will be recognized and tie him to what actually happened to the partner, he sighs: \"I know I'm in trouble.\" The sigh marks the moment the forgery has failed and his cover story is about to collapse.",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"final\", \"text\": \"The seven repeated lines are not seven different messages: they are the same forged farewell written out repeatedly, the giveaway being that they are all identical and all in the speaker's own hand.\\n\\nThe speaker is the \\\"you\\\" who has disappointed the other person; the \\\"I\\\" who threatens \\\"I'm never coming back\\\" is the speaker's real romantic partner. The truth is that the speaker caused the partner's death/disappearance and needed a story to explain her absence, so he invented one: that she was so disappointed in him she left and would never return. To support this fabrication he wrote a supposed farewell in her voice, copying it over and over across the page to perfect the fake hand.\\n\\nLooking at the seven tries, he notices every one is unmistakably his own handwriting — identical script that would never appear in a genuine note from her. The repetition itself and the single hand betray the forgery and expose him as the author of the \\\"goodbye.\\\" Realizing the fake will be recognized and tie him to what actually happened to the partner, he sighs: \\\"I know I'm in trouble.\\\" The sigh marks the moment the forgery has failed and his cover story is about to collapse.\"}",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 95,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The truth is that the speaker caused the partner's death/disappearance and needed a story to explain her absence, so he invented one: that she was so disappointed in him she left and would never return. To support this fabrication he wrote a supposed farewell in her voice",
+          "reason": "Voluntary departure and forged message are present, but the victim is not identified as his wife and the killing is hedged as death/disappearance."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "The seven repeated lines are not seven different messages: they are the same forged farewell written out repeatedly ... copying it over and over across the page to perfect the fake hand. Looking at the seven tries, he notices every one is unmistakably his own handwriting — identical script that would never appear in a genuine note from her.",
+          "reason": "Repeated handwriting-forgery attempts and failure are covered, but the forged author's wife identity is omitted."
+        },
+        {
+          "id": "C3",
+          "credit": 1,
+          "evidence": "he notices every one is unmistakably his own handwriting — identical script that would never appear in a genuine note from her. ... Realizing the fake will be recognized and tie him to what actually happened to the partner, he sighs: \"I know I'm in trouble.\"",
+          "reason": "His inability to imitate her handwriting and the resulting fear of being caught are clearly stated."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The truth is that the speaker caused the partner's death/disappearance and needed a story to explain her absence, so he invented one: that she was so disappointed in him she left and would never return."
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "the speaker caused the partner's death/disappearance"
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "he invented one: that she was so disappointed in him she left and would never return. To support this fabrication he wrote a supposed farewell in her voice"
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "The seven repeated lines are not seven different messages: they are the same forged farewell written out repeatedly ... copying it over and over across the page to perfect the fake hand."
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "he notices every one is unmistakably his own handwriting — identical script that would never appear in a genuine note from her. The repetition itself and the single hand betray the forgery and expose him as the author of the \"goodbye.\" Realizing the fake will be recognized and tie him to what actually happened to the partner, he sighs: \"I know I'm in trouble.\""
+        },
+        {
+          "id": "C3.F1",
+          "status": "covered",
+          "evidence": "he notices every one is unmistakably his own handwriting — identical script that would never appear in a genuine note from her. ... Realizing the fake will be recognized and tie him to what actually happened to the partner, he sighs: \"I know I'm in trouble.\""
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.6,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-13T14:07:33.580344+00:00",
+    "event": "submission",
+    "index": 96,
+    "type": "question",
+    "text": "Is the forged \"farewell\" actually a *suicide note* written in the partner's voice—so the cover story is that she killed herself because he disappointed her, rather than that she simply left?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the forged \\\"farewell\\\" actually a *suicide note* written in the partner's voice—so the cover story is that she killed herself because he disappointed her, rather than that she simply left?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T14:07:43.183960+00:00",
+    "event": "submission",
+    "index": 97,
+    "type": "question",
+    "text": "Is the speaker pretending the partner left (and forging a farewell note in her voice) in order to gain something material or legal—e.g., to claim life insurance, inheritance, or otherwise benefit from her absence?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the speaker pretending the partner left (and forging a farewell note in her voice) in order to gain something material or legal—e.g., to claim life insurance, inheritance, or otherwise benefit from her absence?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T14:07:59.835112+00:00",
+    "event": "submission",
+    "index": 98,
+    "type": "question",
+    "text": "Did the speaker murder the partner (partner is dead by the speaker's hand), as opposed to the partner merely leaving, vanishing, or being hidden alive?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Did the speaker murder the partner (partner is dead by the speaker's hand), as opposed to the partner merely leaving, vanishing, or being hidden alive?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T14:08:15.655149+00:00",
+    "event": "submission",
+    "index": 99,
+    "type": "question",
+    "text": "When the speaker looks at the seven identical copies, does he realize the handwriting is not merely \"his own\" but specifically that he has failed to disguise it as the partner's—i.e., the copies look like his normal hand, proving he cannot fake the partner's writing?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"When the speaker looks at the seven identical copies, does he realize the handwriting is not merely \\\"his own\\\" but specifically that he has failed to disguise it as the partner's—i.e., the copies look like his normal hand, proving he cannot fake the partner's writing?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T14:08:31.233202+00:00",
+    "event": "submission",
+    "index": 100,
+    "type": "final",
+    "text": "The speaker has murdered his romantic partner. To explain the partner's disappearance, he invented a cover story: that the partner was so disappointed in him that they walked out forever — \"You've disappointed me so much; I'm never coming back.\" To make that story believable, he forged a farewell note in the partner's voice, writing the line out again and again on the page to work on imitating the partner's hand.\n\nHe is the \"you\" the line accuses; the \"I\" who supposedly left is the murdered partner. The repeated sentence appears seven times because it is not seven real messages but the same forged note copied over and over — a column of practice attempts.\n\nSighing, he looks down at the seven tries and sees the fatal flaw: every copy is unmistakably in his own everyday handwriting. He has failed to disguise it as the partner's. The identical script, repeated seven times, betrays that only one hand — his — produced the \"goodbye.\" Realizing the fake note will be recognized as his work and will tie him to what really happened to the partner, he mutters, \"Sigh, I know I'm in trouble.\" The sigh marks the moment his forgery has failed and his cover story is about to collapse.",
+    "forced": true,
+    "raw_player_output": "{\"type\": \"final\", \"text\": \"The speaker has murdered his romantic partner. To explain the partner's disappearance, he invented a cover story: that the partner was so disappointed in him that they walked out forever — \\\"You've disappointed me so much; I'm never coming back.\\\" To make that story believable, he forged a farewell note in the partner's voice, writing the line out again and again on the page to work on imitating the partner's hand.\\n\\nHe is the \\\"you\\\" the line accuses; the \\\"I\\\" who supposedly left is the murdered partner. The repeated sentence appears seven times because it is not seven real messages but the same forged note copied over and over — a column of practice attempts.\\n\\nSighing, he looks down at the seven tries and sees the fatal flaw: every copy is unmistakably in his own everyday handwriting. He has failed to disguise it as the partner's. The identical script, repeated seven times, betrays that only one hand — his — produced the \\\"goodbye.\\\" Realizing the fake note will be recognized as his work and will tie him to what really happened to the partner, he mutters, \\\"Sigh, I know I'm in trouble.\\\" The sigh marks the moment his forgery has failed and his cover story is about to collapse.\"}",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 100,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "The speaker has murdered his romantic partner. To explain the partner's disappearance, he invented a cover story: that the partner was so disappointed in him that they walked out forever ... To make that story believable, he forged a farewell note in the partner's voice",
+          "reason": "The cover-up and forged departure are clearly covered, but the required wife/marital identity is omitted; the victim is described only as a romantic partner."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "he forged a farewell note in the partner's voice, writing the line out again and again on the page to work on imitating the partner's hand ... every copy is unmistakably in his own everyday handwriting. He has failed to disguise it as the partner's.",
+          "reason": "Repeated attempts to imitate and their failure are covered, but the wife identity is replaced by romantic partner, leaving a required qualifier incomplete."
+        },
+        {
+          "id": "C3",
+          "credit": 1,
+          "evidence": "He has failed to disguise it as the partner's. ... Realizing the fake note will be recognized as his work and will tie him to what really happened to the partner, he mutters, \"Sigh, I know I'm in trouble.\"",
+          "reason": "The causal link from failed imitation to fear of being caught is explicitly present."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "The speaker has murdered his romantic partner. To explain the partner's disappearance, he invented a cover story: that the partner was so disappointed in him that they walked out forever ... To make that story believable, he forged a farewell note in the partner's voice"
+        },
+        {
+          "id": "C1.F2",
+          "status": "partial",
+          "evidence": "The speaker has murdered his romantic partner."
+        },
+        {
+          "id": "C1.F3",
+          "status": "covered",
+          "evidence": "To explain the partner's disappearance, he invented a cover story: that the partner was so disappointed in him that they walked out forever ... he forged a farewell note in the partner's voice"
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "he forged a farewell note in the partner's voice, writing the line out again and again on the page to work on imitating the partner's hand."
+        },
+        {
+          "id": "C2.F2",
+          "status": "partial",
+          "evidence": "Sighing, he looks down at the seven tries and sees the fatal flaw: every copy is unmistakably in his own everyday handwriting. He has failed to disguise it as the partner's. ... Realizing the fake note will be recognized as his work and will tie him to what really happened to the partner, he mutters, \"Sigh, I know I'm in trouble.\""
+        },
+        {
+          "id": "C3.F1",
+          "status": "covered",
+          "evidence": "He has failed to disguise it as the partner's. ... Realizing the fake note will be recognized as his work and will tie him to what really happened to the partner, he mutters, \"Sigh, I know I'm in trouble.\""
+        }
+      ],
+      "requirement_coverage": [],
+      "contradictions": [],
+      "partial_score": 0.6,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v3-unified",
+      "controller_corrections": []
+    }
+  }
+]

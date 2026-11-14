@@ -1,0 +1,59 @@
+{
+  "id": "TS015",
+  "opening": "I am a very smart student who is very attentive in my class. I could not pass the course. Why?",
+  "answer": "I was standing in front of a river. I cannot pass the course of the river because the current is too swift and I don't have suitable equipm.",
+  "rubric": [
+    {
+      "id": "C1",
+      "weight": 0.75,
+      "core": true,
+      "criterion": "Course refers to the course of a river, not a school subject.",
+      "full_credit": "All required_facts must be covered, including their causal and narrative qualifiers. Faithful paraphrases count.",
+      "half_credit": "Some required facts are covered, with no contradiction; half_credit_requires gates still apply.",
+      "zero_credit": "No required facts are covered, a fact is contradicted, or a half-credit prerequisite is missing.",
+      "points": 75.0,
+      "required_facts": [
+        "Course refers to the course of a river, not a school subject.",
+        "The student stands in front of a river; course means the river course",
+        "Pass means cross the river, not pass a class"
+      ],
+      "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+    },
+    {
+      "id": "C2",
+      "weight": 0.25,
+      "core": false,
+      "criterion": "The river is too swift to cross safely without equipment.",
+      "full_credit": "All required_facts must be covered, including their causal and narrative qualifiers. Faithful paraphrases count.",
+      "half_credit": "Some required facts are covered, with no contradiction; half_credit_requires gates still apply.",
+      "zero_credit": "No required facts are covered, a fact is contradicted, or a half-credit prerequisite is missing.",
+      "points": 25.0,
+      "required_facts": [
+        "The river is too swift to cross safely without equipment.",
+        "The current is too swift and suitable crossing equipment is unavailable"
+      ],
+      "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+    }
+  ],
+  "title": "无法pass the course：河流",
+  "story_family": "F-PASS-COURSE",
+  "quality_status": "同题不同解/待复核",
+  "review_notes": "与16题题面完全相同；英文pass the course of the river措辞不够自然",
+  "source_row": "15",
+  "observed_score": null,
+  "completion_requirements": [],
+  "annotation_version": "turtle50-v3-host-repair-20261023",
+  "annotation_status": "ai_repair_pending_human",
+  "grading_notes": "AI three-review adjudication v2, pending human confirmation. Score only this submission. Apply full_credit/half_credit/zero_credit explicitly, with zero taking precedence for a materially contradictory checkpoint claim. An omitted qualifier can be partial; replacing the core identity/cause with a wrong one is not an omission. Faithful paraphrases count. Partial score and full narrative are separate outputs. AI independent review B, pending human approval. Credit is 0/.5/1 per checkpoint. Full narrative additionally requires all sourced completion requirements and no incompatible central claims. Judge the submitted explanation, not unasserted chat guesses. Accept faithful paraphrases; missing optional detail is not a contradiction. Do not demand unknown motives, devices or events. Accept faithful paraphrase. Require the listed identities, events and causal links, not exact prose or unspecified incidental details.\nUNIFIED-V3: Only rubric.required_facts determine scored narrative coverage. Do not invent additional mandatory events from the reference or host examples. Interpretation guards prohibit unsupported assertions but never require a player to recite a disclaimer.\n",
+  "annotation_provenance": {
+    "reviewers": [
+      "a",
+      "b",
+      "c"
+    ],
+    "selected_base": "b",
+    "adjudicator": "root",
+    "human_confirmed": false
+  },
+  "grading_protocol": "coverage-v3-unified"
+}

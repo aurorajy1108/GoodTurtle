@@ -1,0 +1,246 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 83,
+  "final_attempts": 17,
+  "rejected_finals": 17,
+  "counted_questions": 100,
+  "submissions": 100,
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.6,
+  "best_partial_score": 0.6,
+  "latest_final": "“Courses” referred to the successive dishes in a meal, not university classes. The student attended a university-organized social dinner at a restaurant and ordered a multi-course meal. After tasting the normal, edible dishes, the student disliked them all and asked the staff to discard them. Thus all the meal’s courses were gone that evening; the course-selection deadline was a misleading interpretation.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0.5,
+        "evidence": "“Courses” referred to the successive dishes in a meal, not university classes. The student attended a university-organized social dinner at a restaurant",
+        "reason": "Correctly identifies meal courses rather than academic classes, but does not identify the formal high-table dinner."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "ordered a multi-course meal",
+        "reason": "Identifies choosing a meal, but does not explain that the deadline was for submitting meal-course preferences. Calling the deadline misleading does not supply that connection."
+      },
+      {
+        "id": "C3",
+        "credit": 1,
+        "evidence": "After tasting the normal, edible dishes, the student disliked them all and asked the staff to discard them. Thus all the meal’s courses were gone that evening",
+        "reason": "The serving staff removing the disliked, unfinished dishes faithfully conveys the waiter clearing leftovers and explains their disappearance."
+      }
+    ],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Missing the mandatory high-table setting, meal-preference deadline, punctual arrival, specifically three courses, and clearing leftovers as each next course is served. The expanded narrative's booking confirmation and individual portions are also not established.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "partial",
+        "evidence": "“Courses” referred to the successive dishes in a meal, not university classes. The student attended a university-organized social dinner at a restaurant and ordered a multi-course meal."
+      },
+      {
+        "id": "C2.F1",
+        "status": "partial",
+        "evidence": "ordered a multi-course meal. … the course-selection deadline was a misleading interpretation."
+      },
+      {
+        "id": "C3.F1",
+        "status": "covered",
+        "evidence": "After tasting the normal, edible dishes, the student disliked them all and asked the staff to discard them. Thus all the meal’s courses were gone that evening"
+      }
+    ],
+    "requirement_coverage": [
+      {
+        "id": "R1",
+        "status": "partial",
+        "evidence": "“Courses” referred to the successive dishes in a meal, not university classes. The student attended a university-organized social dinner at a restaurant and ordered a multi-course meal."
+      },
+      {
+        "id": "R2",
+        "status": "partial",
+        "evidence": "ordered a multi-course meal. … the course-selection deadline was a misleading interpretation."
+      },
+      {
+        "id": "R3",
+        "status": "partial",
+        "evidence": "The student attended a university-organized social dinner at a restaurant and ordered a multi-course meal. After tasting the normal, edible dishes, the student disliked them all and asked the staff to discard them."
+      },
+      {
+        "id": "R4",
+        "status": "partial",
+        "evidence": "After tasting the normal, edible dishes, the student disliked them all and asked the staff to discard them. Thus all the meal’s courses were gone that evening"
+      }
+    ],
+    "contradictions": [],
+    "partial_score": 0.6,
+    "complete": false,
+    "label": "yes and no",
+    "grading_protocol": "coverage-v2",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 3912.0458046669955,
+  "usage": {
+    "grader": {
+      "http_attempts": 17,
+      "successful_responses": 17,
+      "seconds": 466.5427648748155,
+      "provider_reported_usage": {
+        "input_tokens": 137662,
+        "cached_input_tokens": 27648,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 17184,
+        "reasoning_output_tokens": 5290
+      }
+    },
+    "host": {
+      "http_attempts": 169,
+      "successful_responses": 169,
+      "seconds": 2295.876551748719,
+      "provider_reported_usage": {
+        "input_tokens": 1656926,
+        "cached_input_tokens": 415232,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10335,
+        "reasoning_output_tokens": 7470
+      }
+    },
+    "player": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 1148.0073477544938,
+      "provider_reported_usage": {
+        "input_tokens": 624969,
+        "cached_input_tokens": 222976,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 19475,
+        "reasoning_output_tokens": 13815
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "total": {
+      "calls": 286,
+      "unknown_cost_calls": 0,
+      "known_estimated_cost_usd": 3.13112212,
+      "estimated_cost_usd": 3.13112212,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 2419557,
+        "cached_input_tokens": 665856,
+        "cache_write_tokens": 0,
+        "output_tokens": 46994,
+        "reasoning_tokens": 0,
+        "total_tokens": 2466551
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 286,
+        "total_tokens": 0
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "codex_cli",
+        "model": "gpt-6.1-sol",
+        "calls": 17,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.3946328,
+        "estimated_cost_usd": 0.3946328,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 137662,
+          "cached_input_tokens": 27648,
+          "cache_write_tokens": 0,
+          "output_tokens": 17184,
+          "reasoning_tokens": 0,
+          "total_tokens": 154846
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 17,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "codex_cli",
+        "model": "gpt-6.1-sol",
+        "calls": 169,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 2.6282612,
+        "estimated_cost_usd": 2.6282612,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1656926,
+          "cached_input_tokens": 415232,
+          "cache_write_tokens": 0,
+          "output_tokens": 10335,
+          "reasoning_tokens": 0,
+          "total_tokens": 1667261
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 169,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "codex_cli",
+        "model": "gpt-5.6-luna",
+        "calls": 100,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.10822812,
+        "estimated_cost_usd": 0.10822812,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 624969,
+          "cached_input_tokens": 222976,
+          "cache_write_tokens": 0,
+          "output_tokens": 19475,
+          "reasoning_tokens": 0,
+          "total_tokens": 644444
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 100,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "evaluation_versions": {
+    "story_sha256": "3dbbfb381538b078be34946b5d74afc437b0933e2ee92426d58eca3d40d8481a",
+    "grading_sha256": "e2e1dea6d4371a72371685cbbef56611c54322aa2e2c9e64ed566b147b06d458",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "dbbb198778e1126d5d5542ad7ceef030a73da29103247565a55244b0f8985c1a",
+    "controller_sha256": "82e800578271590049e19eca916337060fba902340416c353f93b900a2098d98",
+    "host_context_sha256": "c803af7b204b713d9dc47cd4014bf561ebf46fc4f22068b0ab0ccf9b30d415d9",
+    "host_binding_version": "host-v9-human-20261102"
+  }
+}

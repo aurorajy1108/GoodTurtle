@@ -1,0 +1,507 @@
+{
+  "opening": "I am a very smart student who always pass tests and exams with flying colors. I failed the course. Why?",
+  "history": [
+    {
+      "type": "question",
+      "text": "Did the student fail because the course grade depended on something besides tests and exams?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because they did not complete a required assignment or project?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because attendance was part of the course grade?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because the course grade included a required oral examination or presentation?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the course grade depend on class participation or in-class activities?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the course require the student to pass a separate practical or laboratory component in addition to the tests and exams?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because of an academic-integrity violation, such as cheating or plagiarism?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student receive a failing grade on some other graded coursework, even though they passed all the tests and exams?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because they received a failing grade on homework or problem sets?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student receive a failing grade on a written paper or essay that was part of the course grade?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because they received a failing grade on a quiz?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because they did not submit or complete a required graded course component, even though it was not an assignment, project, homework, quiz, paper, presentation, or practical component?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because the instructor assigned a failing overall course grade based on subjective judgment, despite the student passing every test and exam?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because they received a failing grade for a required reading response or other short written response that was not considered a paper or essay?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because they received a failing grade for a required in-class written test that was not classified as a quiz or an exam?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail because they received a failing grade for required group work or a group contribution component?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the student receive a failing grade for the group work because the group as a whole performed poorly, rather than because of the student's individual contribution?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the group-work grade low enough, by itself or together with the other course components, to make the student’s overall course grade failing?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Was the group’s poor performance caused primarily by the other group members’ work, rather than by the student’s own work?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the group’s poor performance caused primarily by the student’s own work or lack of work?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the student intentionally perform poorly or withhold effort on the group work, despite being capable of doing it well?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student perform poorly on the group work because it required a skill or ability that the tests and exams did not measure?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student perform poorly on the group work because they misunderstood what the group work required?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student perform poorly on the group work because they failed to communicate or coordinate effectively with the other group members?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student’s lack of work on the group project caused by a physical or mental health problem?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student prevented from doing the group work by an external event or circumstance beyond their control?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail to contribute enough to the group work because they forgot about it or overlooked a deadline?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail to contribute to the group work because they died before it was completed?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail to contribute because they were physically unable to access or participate in the group work, despite being otherwise capable and willing?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student’s contribution to the group work contain serious factual or logical errors, even though they could pass the course’s tests and exams?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail to contribute adequately because they were absent from the group work for a reason unrelated to health, external circumstances, forgetting, or physical inability to participate?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail to contribute adequately to the group work because they were subject to a disciplinary or administrative action, such as suspension or expulsion?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail to contribute adequately to the group work because they devoted their time to studying for the tests and exams instead?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail to contribute adequately because they chose to prioritize an activity other than studying, rather than because they intended to perform poorly?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail to contribute to the group work because they refused to work with the assigned group members?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail to contribute adequately because someone else prevented, sabotaged, or interfered with the student’s work without the student’s knowledge?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail to contribute adequately to the group work simply because they were lazy or unwilling to do the work, without specifically intending to perform poorly?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student fail to contribute adequately because they were unaware that they had been assigned the group work or that their contribution was required?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student's poor contribution to the group work caused by the student being incarcerated or otherwise legally detained?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student’s own contribution fail mainly because it was of poor quality, rather than because too little work was submitted?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the student’s contribution receive a low grade because it violated a formal requirement of the group-work task, such as using the wrong format, source, or procedure, rather than because its substantive content was poor?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student’s contribution receive a low grade because it was poorly written or difficult to understand, rather than because its ideas or facts were wrong?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the student’s contribution receive a low grade because it was aesthetically or creatively poor, such as being an unattractive design or weak artistic work?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the student’s contribution receive a low grade because its factual content was incorrect?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the student’s contribution receive a low grade because it was irrelevant or off-topic for the group-work task?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the student’s contribution poor because they lacked knowledge or understanding of the group-work subject matter, despite passing the tests and exams?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student’s contribution receive a low grade because it contained copied or plagiarized material, even though the student was not judged to have committed an academic-integrity violation?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student’s contribution judged poor because it was too complex or overcomplicated to be useful to the group?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the student’s contribution poor because it lacked originality or creativity, rather than because it was factually wrong, poorly written, irrelevant, or aesthetically weak?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the student’s contribution poor because it was incomplete or unfinished, rather than because the submitted material was incorrect?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student’s contribution judged poor because its reasoning or analysis was inadequate, even though it was not factually incorrect, incomplete, or based on insufficient subject knowledge?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the student’s contribution judged poor because it did not fit or integrate with the other group members’ contributions, despite being acceptable on its own?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student’s contribution receive a low grade because it was submitted for the wrong group or wrong group-work task?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student’s contribution judged poor because it used an inappropriate tone or style for the group-work task, rather than because its content was wrong or incomplete?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the student’s poor contribution result from an interpersonal problem or conflict with the other group members?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student’s contribution judged poor because it duplicated or substantially overlapped with another group member’s contribution, making it of little additional value?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student’s contribution receive a low grade because it contained a mistake or error made during the group work, despite the student’s knowledge and effort?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the student’s contribution receive a low grade because the student misunderstood or misapplied the subject matter specifically in the group-work context, despite understanding it on the tests and exams?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student’s contribution receive a low grade because it was generated or substantially written by an AI tool, making it unsuitable for the group’s work?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student’s low group-work grade based primarily on negative evaluations or ratings from the other group members?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student’s contribution receive a low grade because it failed to satisfy an unstated or implicit expectation of the group-work task, despite containing no specific factual, logical, formatting, completeness, or subject-matter error?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the student’s poor contribution caused by a condition or characteristic that made them fundamentally unsuitable for ordinary human group work, despite being able to pass the tests and exams?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student’s contribution receive a low grade because it made a poor decision or judgment about how to approach the group task, despite knowing the relevant subject matter?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the student’s contribution poor because the student was not a human being, despite being able to pass the tests and exams?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student’s contribution fail because they accidentally damaged or destroyed something the group had produced or needed for the group work?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student’s contribution receive a low grade because it was not suitable for the group’s intended audience or purpose, despite being technically correct and complete?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the poor-quality contribution actually produced by the student, rather than being mistakenly attributed to them?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the student’s contribution receive a low grade because it was physically defective or damaged, rather than because of its written or intellectual content?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the student’s contribution receive a low grade because it failed to function or operate as required, despite its intellectual content being acceptable?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the student’s contribution a physical object or performance rather than written or intellectual work?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the student’s contribution receive a low grade because it was intentionally humorous, satirical, or otherwise not meant to be taken as a serious contribution?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student’s contribution receive a low grade because it was written in the wrong language for the group-work task?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student’s contribution poor because they executed or carried out the group-work task badly, despite understanding what should be done?",
+      "feedback": "yes"
+    },
+    {
+      "type": "question",
+      "text": "Did the student execute the group-work task poorly because they were careless or inattentive while carrying it out, despite understanding the subject and knowing what should be done?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student execute the group-work task poorly because they lacked the practical skill needed to carry it out, despite understanding the subject matter and knowing what should be done?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student execute the group-work task poorly because they lacked experience or training in performing that kind of task, despite understanding the subject matter?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student execute the group-work task poorly because they were intoxicated or otherwise impaired at the time?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student execute the group-work task poorly because they lacked the physical coordination or dexterity needed to carry it out, despite understanding what to do?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the group work require the student to make a physical movement or gesture, and did they perform that movement incorrectly despite understanding the task?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the student execute the group task poorly because they could not perceive an important aspect of what they were doing, such as being unable to see or hear it properly?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the group work require the student to perform a real-world action or activity, rather than produce an academic or creative submission?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Did the student execute the group-work task poorly because they did it at the wrong time or in the wrong sequence, despite knowing what needed to be done?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the student’s poor execution of the group-work task caused by an unforeseeable accident or bad luck during the execution?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student execute the group-work task poorly because they used the wrong tool, method, or technique, despite understanding the subject matter and knowing the intended outcome?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Was the group task itself designed so that the student could not execute it successfully, despite understanding the subject matter and the intended outcome?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the group task require the student to communicate or interact with someone outside the group, and did they handle that interaction poorly?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "question",
+      "text": "Was the group-work task a real-world practical activity rather than the production of a conventional academic submission?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "final",
+      "text": "The student passed every test and exam, but the course also included a group-work component. The group performed poorly because of the student’s own contribution: although the student understood the subject matter and knew what was required, they executed their part of the group task badly. This lowered the group-work grade enough to make the student’s overall course grade failing.",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student execute their part poorly because they were nervous or anxious while performing it?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student execute the group task poorly because an unusual emotional or psychological state, other than nervousness or anxiety, affected their performance?",
+      "feedback": "no"
+    },
+    {
+      "type": "question",
+      "text": "Did the student make an incorrect choice while carrying out their part of the group task?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "final",
+      "text": "The student passed all tests and exams, but the course also graded group work. Their group received a failing grade because the student’s own contribution was poorly executed, despite understanding the subject and what was required. That group-work grade lowered the overall course grade below passing.",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "question",
+      "text": "Was the group-work task a competitive sporting activity or game in which the student had to perform physically?",
+      "feedback": "irrelevant"
+    },
+    {
+      "type": "final",
+      "text": "The student passed all tests and exams, but the course also assessed group work. The group received a failing grade because the student’s own contribution was poorly executed, despite understanding the subject and the task. That failing group-work grade pulled the student’s overall course grade below the passing threshold.",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "final",
+      "text": "The student passed every test and exam, but the course also graded a group-work component. The group received a failing grade because the student’s own contribution was poorly executed, even though they understood the subject and knew what the task required. That failing group grade lowered the student’s overall course grade below the passing threshold.",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "final",
+      "text": "The student passed every test and exam, but the course also graded group work. The group’s result was poor primarily because the student executed their assigned contribution badly, despite understanding the subject and the task. The resulting group-work grade was low enough to make the student’s overall course grade fail.",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "final",
+      "text": "The student passed every test and exam, but the course also graded a group component. Although the student understood the subject and knew what the group task required, they carried out their assigned part badly. This made the group’s submission fail and lowered the student’s overall course grade below the passing threshold.",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "final",
+      "text": "The student passed all tests and exams, but the course also graded a group-work component. The student understood the subject and the task, yet carried out their assigned contribution poorly. This caused the group to receive a failing grade, which was sufficient to make the student’s overall course grade fail.",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "final",
+      "text": "The student passed every test and exam, but the course also included a group-work component. Although they understood the material and the task, they carried out their assigned part poorly, causing the group to receive a failing grade. That grade lowered their overall course grade below passing.",
+      "feedback": "yes and no"
+    },
+    {
+      "type": "final",
+      "text": "The student passed all tests and exams, but the course also graded group work. Their group performed poorly primarily because the student’s own contribution was of poor quality: although they understood the subject and what was required, they executed their part badly. The resulting group-work grade was low enough to make the student’s overall course grade failing.",
+      "feedback": "yes and no"
+    }
+  ],
+  "termination": "budget_exhausted",
+  "revealed_source_answer": "The course has a group project which contributes significantly towards the final grades. Unfortunately, everyone in the group except me is a free rider. Due to the huge workload, I completed the project poorly, received a poor grade and thus failed the course."
+}

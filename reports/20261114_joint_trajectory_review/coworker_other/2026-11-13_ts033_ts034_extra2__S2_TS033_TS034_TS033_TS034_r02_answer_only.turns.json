@@ -1,0 +1,1090 @@
+[
+  {
+    "timestamp": "2026-11-13T11:43:40.034348+00:00",
+    "event": "submission",
+    "index": 1,
+    "type": "question",
+    "text": "Is the daughter the hostage being referred to in the kidnapper’s demand?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the daughter the hostage being referred to in the kidnapper’s demand?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:43:43.423955+00:00",
+    "event": "submission",
+    "index": 2,
+    "type": "question",
+    "text": "Is the father being asked to pay the ransom for the daughter?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the father being asked to pay the ransom for the daughter?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:43:47.091625+00:00",
+    "event": "submission",
+    "index": 3,
+    "type": "question",
+    "text": "Is the person begging over the smartphone the hostage's mother?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the person begging over the smartphone the hostage's mother?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:43:50.033469+00:00",
+    "event": "submission",
+    "index": 4,
+    "type": "question",
+    "text": "Is the father being asked to pay the ransom for someone other than his own daughter?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the father being asked to pay the ransom for someone other than his own daughter?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:43:57.085825+00:00",
+    "event": "submission",
+    "index": 5,
+    "type": "question",
+    "text": "Is the father the actual kidnapper or involved in staging the kidnapping?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the father the actual kidnapper or involved in staging the kidnapping?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:44:00.167130+00:00",
+    "event": "submission",
+    "index": 6,
+    "type": "question",
+    "text": "Is the daughter actually being held captive by the person demanding the ransom?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the daughter actually being held captive by the person demanding the ransom?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:44:03.110943+00:00",
+    "event": "submission",
+    "index": 7,
+    "type": "question",
+    "text": "Is the daughter the one who made the phone call begging for a life to be spared?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the daughter the one who made the phone call begging for a life to be spared?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:44:11.741566+00:00",
+    "event": "submission",
+    "index": 8,
+    "type": "question",
+    "text": "Is the phone call a recording or scripted performance rather than a live conversation?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the phone call a recording or scripted performance rather than a live conversation?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:44:25.793712+00:00",
+    "event": "submission",
+    "index": 9,
+    "type": "question",
+    "text": "Is the \"daughter\" in the phone call someone the father does not actually have as a daughter?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the \"daughter\" in the phone call someone the father does not actually have as a daughter?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:44:30.293712+00:00",
+    "event": "submission",
+    "index": 10,
+    "type": "question",
+    "text": "Is the father aware that the caller is not really his daughter, and that makes him decide not to pay?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the father aware that the caller is not really his daughter, and that makes him decide not to pay?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:44:34.518656+00:00",
+    "event": "submission",
+    "index": 11,
+    "type": "question",
+    "text": "Does the father recognize the voice on the phone as someone he knows?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the father recognize the voice on the phone as someone he knows?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-13T11:44:42.886473+00:00",
+    "event": "submission",
+    "index": 12,
+    "type": "question",
+    "text": "Is the daughter already dead before the ransom demand is made?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the daughter already dead before the ransom demand is made?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:44:45.541479+00:00",
+    "event": "submission",
+    "index": 13,
+    "type": "question",
+    "text": "Does the father refuse to pay because paying the ransom would be illegal or would put someone in danger?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the father refuse to pay because paying the ransom would be illegal or would put someone in danger?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T11:44:49.440617+00:00",
+    "event": "submission",
+    "index": 14,
+    "type": "question",
+    "text": "Would paying the ransom put his daughter in greater danger?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWould paying the ransom put his daughter in greater danger?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T11:44:55.880233+00:00",
+    "event": "submission",
+    "index": 15,
+    "type": "question",
+    "text": "Does the father believe the kidnapper intends to kill the hostage regardless of whether the ransom is paid?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the father believe the kidnapper intends to kill the hostage regardless of whether the ransom is paid?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:46:23.042946+00:00",
+    "event": "submission",
+    "index": 16,
+    "type": "question",
+    "text": "Does the father refuse to pay because the demand to come alone means he would be unable to bring police, making any payment attempt dangerous or futile?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the father refuse to pay because the demand to come alone means he would be unable to bring police, making any payment attempt dangerous or futile?",
+    "label": "yes and no"
+  },
+  {
+    "timestamp": "2026-11-13T11:47:04.608488+00:00",
+    "event": "submission",
+    "index": 17,
+    "type": "question",
+    "text": "Does the father refuse to pay because he has already contacted the police despite the \"no police\" warning?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the father refuse to pay because he has already contacted the police despite the \"no police\" warning?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:47:07.951625+00:00",
+    "event": "submission",
+    "index": 18,
+    "type": "question",
+    "text": "May the father’s decision be based on recognizing that the “kidnapper” is not a real kidnapper—for example, a scam or extortion attempt—so paying would not save the hostage?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nMay the father’s decision be based on recognizing that the “kidnapper” is not a real kidnapper—for example, a scam or extortion attempt—so paying would not save the hostage?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:47:14.321324+00:00",
+    "event": "submission",
+    "index": 19,
+    "type": "question",
+    "text": "Is the father actually unable to pay one hundred million yen?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the father actually unable to pay one hundred million yen?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-13T11:47:51.377184+00:00",
+    "event": "submission",
+    "index": 20,
+    "type": "question",
+    "text": "Would delivering the money require the father to put himself in danger?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWould delivering the money require the father to put himself in danger?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:47:55.786436+00:00",
+    "event": "submission",
+    "index": 21,
+    "type": "question",
+    "text": "Is the caller who begs for the life to be spared someone other than the hostage?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the caller who begs for the life to be spared someone other than the hostage?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T11:47:59.021268+00:00",
+    "event": "submission",
+    "index": 22,
+    "type": "question",
+    "text": "Is the caller begging for the hostage’s life also a captive?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the caller begging for the hostage’s life also a captive?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:48:02.429617+00:00",
+    "event": "submission",
+    "index": 23,
+    "type": "question",
+    "text": "Is the caller a family member of the hostage other than her father?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the caller a family member of the hostage other than her father?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T11:48:08.035299+00:00",
+    "event": "submission",
+    "index": 24,
+    "type": "question",
+    "text": "Is the caller the hostage's mother?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the caller the hostage's mother?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:48:10.719508+00:00",
+    "event": "submission",
+    "index": 25,
+    "type": "question",
+    "text": "Is the caller the hostage's sibling?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the caller the hostage's sibling?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:48:14.233722+00:00",
+    "event": "submission",
+    "index": 26,
+    "type": "question",
+    "text": "Is the caller the father's wife, but not the hostage's mother (e.g., a stepmother)?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the caller the father's wife, but not the hostage's mother (e.g., a stepmother)?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:48:17.788387+00:00",
+    "event": "submission",
+    "index": 27,
+    "type": "question",
+    "text": "Is the caller the hostage's grandmother?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the caller the hostage's grandmother?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:48:20.845844+00:00",
+    "event": "submission",
+    "index": 28,
+    "type": "question",
+    "text": "Is the caller a relative of the hostage by marriage rather than blood?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the caller a relative of the hostage by marriage rather than blood?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:48:23.620276+00:00",
+    "event": "submission",
+    "index": 29,
+    "type": "question",
+    "text": "Is the caller the hostage's aunt?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the caller the hostage's aunt?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:48:27.431835+00:00",
+    "event": "submission",
+    "index": 30,
+    "type": "question",
+    "text": "Is the caller the hostage's cousin?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the caller the hostage's cousin?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:48:32.311802+00:00",
+    "event": "submission",
+    "index": 31,
+    "type": "question",
+    "text": "Is the caller the hostage's sister-in-law?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the caller the hostage's sister-in-law?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:48:36.303425+00:00",
+    "event": "submission",
+    "index": 32,
+    "type": "question",
+    "text": "Is the caller the hostage's father’s sister?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the caller the hostage's father’s sister?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:48:41.001102+00:00",
+    "event": "submission",
+    "index": 33,
+    "type": "question",
+    "text": "Is the caller the hostage's daughter?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the caller the hostage's daughter?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T11:48:44.800409+00:00",
+    "event": "submission",
+    "index": 34,
+    "type": "question",
+    "text": "Is the hostage the father’s granddaughter?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the hostage the father’s granddaughter?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:49:01.690012+00:00",
+    "event": "submission",
+    "index": 35,
+    "type": "question",
+    "text": "Is the \"daughter\" on the phone the father's daughter, while the hostage is someone else?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the \"daughter\" on the phone the father's daughter, while the hostage is someone else?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T11:49:27.013482+00:00",
+    "event": "submission",
+    "index": 36,
+    "type": "question",
+    "text": "Is the hostage the daughter’s child (the father’s grandchild)?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the hostage the daughter’s child (the father’s grandchild)?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:49:30.197369+00:00",
+    "event": "submission",
+    "index": 37,
+    "type": "question",
+    "text": "Is the hostage the daughter’s spouse?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the hostage the daughter’s spouse?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:49:33.670803+00:00",
+    "event": "submission",
+    "index": 38,
+    "type": "question",
+    "text": "Is the hostage the daughter’s lover or partner who is not married to her?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the hostage the daughter’s lover or partner who is not married to her?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:49:37.236482+00:00",
+    "event": "submission",
+    "index": 39,
+    "type": "question",
+    "text": "Is the hostage the daughter’s friend?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the hostage the daughter’s friend?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:49:40.968823+00:00",
+    "event": "submission",
+    "index": 40,
+    "type": "question",
+    "text": "Is the hostage the daughter’s pet?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the hostage the daughter’s pet?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:49:44.477845+00:00",
+    "event": "submission",
+    "index": 41,
+    "type": "question",
+    "text": "Is the hostage the daughter’s doctor or caregiver?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the hostage the daughter’s doctor or caregiver?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:49:48.795389+00:00",
+    "event": "submission",
+    "index": 42,
+    "type": "question",
+    "text": "Is the hostage the daughter’s colleague or employee?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the hostage the daughter’s colleague or employee?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:49:52.145913+00:00",
+    "event": "submission",
+    "index": 43,
+    "type": "question",
+    "text": "Is the hostage the daughter's teacher or student?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the hostage the daughter's teacher or student?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-13T11:50:00.373689+00:00",
+    "event": "submission",
+    "index": 44,
+    "type": "question",
+    "text": "Is the hostage the daughter’s unborn child?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the hostage the daughter’s unborn child?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:50:05.071891+00:00",
+    "event": "submission",
+    "index": 45,
+    "type": "question",
+    "text": "Is the daughter involved in committing the kidnapping?",
+    "forced": false,
+    "raw_player_output": "Let me step back and challenge an assumption. Perhaps the \"daughter\" caller is not asking for a third party's life—perhaps she is begging for her own life, and the \"hostage\" is the daughter herself after all. But question 1 said no.\n\nLet me reconsider: the caller is the daughter (Q35 yes), hostage is someone else (Q35 yes). But daughter begging for the hostage's life... Perhaps the daughter is one of the kidnappers? Or perhaps the daughter is a criminal?\n\nLet me test whether the daughter is involved with the kidnapping.\n\nQUESTION\nIs the daughter involved in committing the kidnapping?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:50:09.482182+00:00",
+    "event": "submission",
+    "index": 46,
+    "type": "question",
+    "text": "Did the daughter call her father to relay the kidnapper’s demand, rather than being the kidnapper herself?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDid the daughter call her father to relay the kidnapper’s demand, rather than being the kidnapper herself?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:50:51.076884+00:00",
+    "event": "submission",
+    "index": 47,
+    "type": "question",
+    "text": "Was the daughter present at the scene where the kidnapper made the demand?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWas the daughter present at the scene where the kidnapper made the demand?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:51:00.611181+00:00",
+    "event": "submission",
+    "index": 48,
+    "type": "question",
+    "text": "Is the hostage the daughter’s boss or employer?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the hostage the daughter’s boss or employer?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:51:03.261194+00:00",
+    "event": "submission",
+    "index": 49,
+    "type": "question",
+    "text": "Is the hostage the father’s wife (the daughter’s mother)?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the hostage the father’s wife (the daughter’s mother)?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:51:08.350284+00:00",
+    "event": "submission",
+    "index": 50,
+    "type": "question",
+    "text": "Is the hostage a man?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the hostage a man?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T11:51:11.421619+00:00",
+    "event": "submission",
+    "index": 51,
+    "type": "question",
+    "text": "Is the hostage a stranger to the father?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the hostage a stranger to the father?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:51:14.944663+00:00",
+    "event": "submission",
+    "index": 52,
+    "type": "question",
+    "text": "Does the father know the male hostage personally?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the father know the male hostage personally?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T11:51:22.021365+00:00",
+    "event": "submission",
+    "index": 53,
+    "type": "question",
+    "text": "Is the male hostage the father’s son?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the male hostage the father’s son?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:51:25.169571+00:00",
+    "event": "submission",
+    "index": 54,
+    "type": "question",
+    "text": "Is the male hostage the daughter’s boyfriend or fiancé?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the male hostage the daughter’s boyfriend or fiancé?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:51:29.073161+00:00",
+    "event": "submission",
+    "index": 55,
+    "type": "question",
+    "text": "Is the male hostage the daughter’s ex-husband?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the male hostage the daughter’s ex-husband?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:51:32.035823+00:00",
+    "event": "submission",
+    "index": 56,
+    "type": "question",
+    "text": "Is the male hostage related to the father by blood or marriage?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the male hostage related to the father by blood or marriage?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:51:36.982450+00:00",
+    "event": "submission",
+    "index": 57,
+    "type": "question",
+    "text": "Is the male hostage the father’s business associate?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the male hostage the father’s business associate?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:51:39.415959+00:00",
+    "event": "submission",
+    "index": 58,
+    "type": "question",
+    "text": "Is the male hostage the daughter’s friend who is male?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the male hostage the daughter’s friend who is male?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:51:46.303981+00:00",
+    "event": "submission",
+    "index": 59,
+    "type": "question",
+    "text": "Is the male hostage the father’s doctor?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the male hostage the father’s doctor?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:52:00.613042+00:00",
+    "event": "submission",
+    "index": 60,
+    "type": "question",
+    "text": "Did the daughter herself make the phone call that the father heard?",
+    "forced": false,
+    "raw_player_output": "Let me reconsider. The father knows the male hostage personally. Not a relative, not business, not son, not daughter's partner. Could be a friend, neighbor, or a public figure he knows of. Also, the daughter begs to spare the hostage's life, yet father won't pay.\n\nPerhaps the key: the \"kidnapper\" is the daughter? No, Q45 no. Perhaps the daughter is the one who will die? No, Q4 ambiguous but Q7 said daughter not the caller... wait Q7 said daughter not the caller, but Q35 said caller is daughter. Contradiction! Host labels can be fallible.\n\nActually Q7: \"Is the daughter the one who made the phone call begging\" = no. Q35: \"Is the daughter on phone the father's daughter, hostage is someone else\" = yes. These conflict. Let me test to resolve.\n\nQUESTION\nDid the daughter herself make the phone call that the father heard?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:52:19.762321+00:00",
+    "event": "submission",
+    "index": 61,
+    "type": "question",
+    "text": "Was the daughter's voice heard on the phone (e.g., in the background) even though she did not herself make the call?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWas the daughter's voice heard on the phone (e.g., in the background) even though she did not herself make the call?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T11:52:57.379716+00:00",
+    "event": "submission",
+    "index": 62,
+    "type": "question",
+    "text": "Was the daughter's voice on the phone a recording made earlier?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWas the daughter's voice on the phone a recording made earlier?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:53:02.957792+00:00",
+    "event": "submission",
+    "index": 63,
+    "type": "question",
+    "text": "Was the daughter also being held captive at the time, so her voice was heard as a captive in the background?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWas the daughter also being held captive at the time, so her voice was heard as a captive in the background?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:53:14.609289+00:00",
+    "event": "submission",
+    "index": 64,
+    "type": "question",
+    "text": "Was the daughter the person shouting the ransom demand (the kidnapper)?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWas the daughter the person shouting the ransom demand (the kidnapper)?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:53:19.851059+00:00",
+    "event": "submission",
+    "index": 65,
+    "type": "question",
+    "text": "Was the daughter's voice on the phone used to trick the father into believing she was in danger, when in fact she was cooperating with the kidnapper?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWas the daughter's voice on the phone used to trick the father into believing she was in danger, when in fact she was cooperating with the kidnapper?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:53:26.387522+00:00",
+    "event": "submission",
+    "index": 66,
+    "type": "question",
+    "text": "Was the daughter a victim present at the location of the hostage (not the caller, but her voice heard because she was there)?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWas the daughter a victim present at the location of the hostage (not the caller, but her voice heard because she was there)?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:53:36.517024+00:00",
+    "event": "submission",
+    "index": 67,
+    "type": "question",
+    "text": "Would paying the ransom cause the kidnapper to target the daughter next?",
+    "forced": false,
+    "raw_player_output": "Let me consolidate the confirmed facts:\n\n- Hostage is male, known personally to father, not related.\n- Caller is daughter; daughter's voice heard on phone as begging, but she didn't make the call, isn't a captive at that location, isn't cooperating, isn't recording.\n- Father decides ransom should not be paid; paying would put daughter in greater danger.\n\nWait—paying puts the daughter in greater danger (Q14 yes). If daughter isn't the hostage... Does the kidnapper target the daughter as the next victim after getting money? Or is the hostage a lure?\n\nLet me test whether the daughter is the kidnapper's real target.\n\nQUESTION\nWould paying the ransom cause the kidnapper to target the daughter next?",
+    "label": "yes and no"
+  },
+  {
+    "timestamp": "2026-11-13T11:55:02.250292+00:00",
+    "event": "submission",
+    "index": 68,
+    "type": "question",
+    "text": "Is the daughter currently in a safe place unknown to the kidnapper?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the daughter currently in a safe place unknown to the kidnapper?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-13T11:55:08.827477+00:00",
+    "event": "submission",
+    "index": 69,
+    "type": "question",
+    "text": "Is the daughter's voice heard on the phone because the kidnapper is playing a live communication from where the daughter actually is (i.e., she is somewhere else, speaking in real time)?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the daughter's voice heard on the phone because the kidnapper is playing a live communication from where the daughter actually is (i.e., she is somewhere else, speaking in real time)?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T11:55:40.242625+00:00",
+    "event": "submission",
+    "index": 70,
+    "type": "question",
+    "text": "Is the daughter being held by an accomplice at a different location while the caller negotiates?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the daughter being held by an accomplice at a different location while the caller negotiates?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:55:50.832400+00:00",
+    "event": "submission",
+    "index": 71,
+    "type": "question",
+    "text": "Is the daughter being used (unwillingly) to lure her father into paying, while she herself is free but unaware she is being exploited?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the daughter being used (unwillingly) to lure her father into paying, while she herself is free but unaware she is being exploited?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:56:14.918873+00:00",
+    "event": "submission",
+    "index": 72,
+    "type": "question",
+    "text": "Is the daughter aware that her voice is being transmitted to her father during this call?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the daughter aware that her voice is being transmitted to her father during this call?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-13T11:56:56.369215+00:00",
+    "event": "submission",
+    "index": 73,
+    "type": "question",
+    "text": "Is the daughter being held hostage too (a second hostage), while the male is the hostage the ransom is nominally for?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the daughter being held hostage too (a second hostage), while the male is the hostage the ransom is nominally for?",
+    "label": "yes and no"
+  },
+  {
+    "timestamp": "2026-11-13T11:57:10.205000+00:00",
+    "event": "submission",
+    "index": 74,
+    "type": "question",
+    "text": "Is the daughter currently in the kidnapper's custody?",
+    "forced": false,
+    "raw_player_output": "I need to clarify something fundamental. Let me test whether the daughter is actually in captivity at all.\n\nQUESTION\nIs the daughter currently in the kidnapper's custody?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:57:13.381224+00:00",
+    "event": "submission",
+    "index": 75,
+    "type": "question",
+    "text": "Is the daughter's voice being heard through a live phone connection because she is calling from somewhere the kidnapper does not control?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the daughter's voice being heard through a live phone connection because she is calling from somewhere the kidnapper does not control?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T11:57:47.920129+00:00",
+    "event": "submission",
+    "index": 76,
+    "type": "question",
+    "text": "Did the father receive two separate calls — one from his daughter begging, and one from the kidnapper making the demand?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDid the father receive two separate calls — one from his daughter begging, and one from the kidnapper making the demand?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:57:55.773938+00:00",
+    "event": "submission",
+    "index": 77,
+    "type": "question",
+    "text": "Was the daughter's live voice picked up by the kidnapper's phone (e.g., she called the kidnapper, or was in the room with the hostage when the call was made)?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWas the daughter's live voice picked up by the kidnapper's phone (e.g., she called the kidnapper, or was in the room with the hostage when the call was made)?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T11:59:02.918013+00:00",
+    "event": "submission",
+    "index": 78,
+    "type": "question",
+    "text": "Did the daughter call the kidnapper's phone during the hostage crisis (unaware or aware) to plead for the hostage's life?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDid the daughter call the kidnapper's phone during the hostage crisis (unaware or aware) to plead for the hostage's life?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:59:08.723816+00:00",
+    "event": "submission",
+    "index": 79,
+    "type": "question",
+    "text": "Was the daughter physically present at the place where the kidnapper had the hostage?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWas the daughter physically present at the place where the kidnapper had the hostage?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T11:59:14.952057+00:00",
+    "event": "submission",
+    "index": 80,
+    "type": "question",
+    "text": "Did the daughter happen to be on the line because she shares the phone/line with the kidnapper or the father (e.g., a three-way or conference call)?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDid the daughter happen to be on the line because she shares the phone/line with the kidnapper or the father (e.g., a three-way or conference call)?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T12:00:44.082065+00:00",
+    "event": "submission",
+    "index": 81,
+    "type": "question",
+    "text": "Is the daughter a police officer or negotiator who was already on the line with her father when the kidnapper called?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the daughter a police officer or negotiator who was already on the line with her father when the kidnapper called?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T12:01:16.884455+00:00",
+    "event": "submission",
+    "index": 82,
+    "type": "question",
+    "text": "Was the father already on a call with his daughter when the kidnapper’s call came through on the same line?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWas the father already on a call with his daughter when the kidnapper’s call came through on the same line?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T12:02:08.296473+00:00",
+    "event": "submission",
+    "index": 83,
+    "type": "question",
+    "text": "Did the daughter and the kidnapper both speak because the daughter was physically near the kidnapper's phone (e.g., they were together) but she was not the captive?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDid the daughter and the kidnapper both speak because the daughter was physically near the kidnapper's phone (e.g., they were together) but she was not the captive?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T12:02:18.311671+00:00",
+    "event": "submission",
+    "index": 84,
+    "type": "question",
+    "text": "Was the daughter's live voice transmitted over the phone call through a device connection such as speakerphone, a second line, or call forwarding rather than being in the same room as the kidnapper?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWas the daughter's live voice transmitted over the phone call through a device connection such as speakerphone, a second line, or call forwarding rather than being in the same room as the kidnapper?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T12:02:40.790421+00:00",
+    "event": "submission",
+    "index": 85,
+    "type": "question",
+    "text": "Was the daughter's call forwarded/connected to her father (e.g., call forwarding) so that her live pleading reached him alongside the kidnapper's demand?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWas the daughter's call forwarded/connected to her father (e.g., call forwarding) so that her live pleading reached him alongside the kidnapper's demand?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T12:03:56.030729+00:00",
+    "event": "submission",
+    "index": 86,
+    "type": "question",
+    "text": "Is the male hostage a criminal or wrongdoer?",
+    "forced": false,
+    "raw_player_output": "I've been overcomplicating this. Let me reconsider the core: the male hostage is someone the father knows personally and is not related to. The father decides the ransom should NOT be paid, because paying would put his daughter in greater danger. His daughter's voice is heard pleading—live, via some shared line.\n\nKey question: why does paying endanger the daughter? Perhaps because the hostage is the daughter's kidnapper... no. Perhaps because the male hostage is a criminal/dangerous person, and paying would fund him or free him.\n\nLet me test whether the male hostage is a criminal.\n\nQUESTION\nIs the male hostage a criminal or wrongdoer?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-13T12:04:01.945676+00:00",
+    "event": "submission",
+    "index": 87,
+    "type": "question",
+    "text": "Is the male hostage the daughter's kidnapper (i.e., the person who has wronged the daughter), so that the father refuses to rescue the very man who harmed her?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the male hostage the daughter's kidnapper (i.e., the person who has wronged the daughter), so that the father refuses to rescue the very man who harmed her?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T12:04:06.826519+00:00",
+    "event": "submission",
+    "index": 88,
+    "type": "question",
+    "text": "Would freeing the male hostage put the daughter in danger because he is a threat to her (e.g., an abuser, stalker, or someone she fears)?",
+    "forced": false,
+    "raw_player_output": "Let me refocus. The daughter's voice reached the father live via a device connection (speakerphone/second line/call forwarding) — this happened incidentally. The daughter is not captive, not at the scene, not cooperating.\n\nPerhaps: the daughter is being held hostage elsewhere — no, Q74 says not in kidnapper's custody. But her voice was on the line. If she called the father at home while a kidnapper held the phone... Actually maybe the daughter was the one who answered/was on the home phone.\n\nLet me reconsider whether the male hostage could be someone dangerous to the daughter — perhaps her stalker or abuser, so that if freed he'd harm her. That would explain: paying frees him, putting daughter in danger.\n\nQUESTION\nWould freeing the male hostage put the daughter in danger because he is a threat to her (e.g., an abuser, stalker, or someone she fears)?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T12:04:13.269256+00:00",
+    "event": "submission",
+    "index": 89,
+    "type": "question",
+    "text": "Is the male hostage the daughter's husband (present or estranged), given the father knows him but earlier spouse question was about the daughter's spouse as hostage?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the male hostage the daughter's husband (present or estranged), given the father knows him but earlier spouse question was about the daughter's spouse as hostage?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T12:04:27.968295+00:00",
+    "event": "submission",
+    "index": 90,
+    "type": "question",
+    "text": "Does the father believe the male hostage is not actually in real danger of being killed?",
+    "forced": false,
+    "raw_player_output": "Wait—Q37 asked \"is the hostage the daughter's spouse?\" = no. Consistent.\n\nLet me think differently. Why would a father decide the ransom should NOT be paid, yet paying puts the daughter in greater danger? And the daughter's live voice reached him over the phone incidentally via device connection. \n\nMaybe the daughter is the one who is actually at risk if the kidnapper learns something. Perhaps the father knows the kidnapper's real identity, or knows the \"hostage\" is safe somewhere.\n\nLet me ask: is the father confident the hostage is not in real danger of death?\n\nQUESTION\nDoes the father believe the male hostage is not actually in real danger of being killed?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T12:04:37.395867+00:00",
+    "event": "submission",
+    "index": 91,
+    "type": "question",
+    "text": "Was the daughter on her own phone at a separate location, connected into the same call as the father and kidnapper (e.g., three-way call)?",
+    "forced": false,
+    "raw_player_output": "I have 10 question-equivalents left before slot 100. Let me use them wisely.\n\nKey unknowns: Who is the male hostage to the father? Why does paying endanger the daughter? Why is the daughter's live voice heard incidentally?\n\nLet me think about the shared line. The daughter's voice reached the father via a device connection (speakerphone/second line). This is a real live call. Perhaps the daughter is talking to someone else—like the police—and her voice is picked up because... no.\n\nAlternatively: the father is at home; his daughter is also at home on an extension/second line, listening, and her voice gets transmitted. Maybe the daughter is a hostage elsewhere and her pleading is genuinely transmitted... but Q74 says she's not in custody.\n\nLet me test whether the daughter is listening in on her own phone at another location—i.e., three-way via her phone line.\n\nQUESTION\nWas the daughter on her own phone at a separate location, connected into the same call as the father and kidnapper (e.g., three-way call)?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T12:05:26.257151+00:00",
+    "event": "submission",
+    "index": 92,
+    "type": "question",
+    "text": "Does the daughter personally know the male hostage well (e.g., a close relationship)?",
+    "forced": false,
+    "raw_player_output": "Refined fact: The daughter was on her own phone at a separate location, connected into the same three-way call as father and kidnapper.\n\nSo the daughter is a third party on the call, at a separate location, pleading for the hostage's life, while the kidnapper makes the demand. The daughter is free, not captive, knows the hostage personally.\n\nThe male hostage is someone the father knows but isn't related to, and the daughter begs to spare him. Perhaps the daughter is the hostage's wife/partner? But Q37/54/89 said no. Maybe the daughter is the hostage's daughter? No—hostage is male.\n\nLet me now probe the danger-to-daughter mechanism: paying the ransom would put the daughter in greater danger. Perhaps because the daughter would be implicated, or because she's involved with the hostage in something.\n\nQUESTION\nDoes the daughter personally know the male hostage well (e.g., a close relationship)?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T12:05:39.325636+00:00",
+    "event": "submission",
+    "index": 93,
+    "type": "question",
+    "text": "Would paying the ransom reveal to the kidnapper that the daughter is connected to the father and hostage, thereby endangering her?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWould paying the ransom reveal to the kidnapper that the daughter is connected to the father and hostage, thereby endangering her?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T12:06:15.537289+00:00",
+    "event": "submission",
+    "index": 94,
+    "type": "question",
+    "text": "Does the kidnapper know that the daughter on the line is the father's daughter?",
+    "forced": false,
+    "raw_player_output": "Let me reconsider the whole thing with a fresh angle. The daughter is on a separate phone, in a three-way call, begging for the hostage's life. She knows the hostage well.\n\nMaybe the daughter is the one who arranged the three-way call — perhaps she is the kidnapper's accomplice after all? Q45 said no. Or maybe she's a negotiator... no.\n\nActually—the danger angle. Q14: paying puts daughter in greater danger = yes. Q67: paying causes kidnapper to target daughter next = yes and no. Q93: paying reveals daughter's connection = no.\n\nPerhaps the danger is: if the father pays without police, and the daughter is involved/at risk in the transaction, or the kidnapper would then demand from the daughter too. Let me test: does the kidnapper know the daughter is the father's daughter?\n\nQUESTION\nDoes the kidnapper know that the daughter on the line is the father's daughter?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T12:06:47.345296+00:00",
+    "event": "submission",
+    "index": 95,
+    "type": "question",
+    "text": "Is the male hostage part of the kidnapping scheme (an accomplice or fake victim) rather than a genuine victim?",
+    "forced": false,
+    "raw_player_output": "I'm at 94. 6 left. Let me focus on the central \"why\": the father decides the ransom should not be paid. Confirmed: paying would put daughter in greater danger (yes). The kidnapper knows she's his daughter.\n\nPerhaps the mechanism: The kidnapper demanded money from the father while the daughter is present on the line—the kidnapper will use the daughter as leverage/next victim. But maybe simpler: the \"hostage\" is a scam—a stranger hired to pretend, and the daughter's pleading exposes it. No, daughter genuinely knows hostage.\n\nLet me test whether the male hostage is actually a con man / part of a scam with the kidnapper.\n\nQUESTION\nIs the male hostage part of the kidnapping scheme (an accomplice or fake victim) rather than a genuine victim?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T12:06:53.457147+00:00",
+    "event": "submission",
+    "index": 96,
+    "type": "question",
+    "text": "Is the male hostage the daughter's biological father, while the man hearing the demand is her adoptive or stepfather?",
+    "forced": false,
+    "raw_player_output": "I'm at 95. 5 left. Let me recall the strongest facts:\n\n1. Hostage is male, known personally to father, not related, not spouse/son.\n2. Daughter is the caller, on a separate phone, three-way call, begging for hostage's life.\n3. Daughter knows hostage well.\n4. Father decides ransom should not be paid.\n5. Paying puts daughter in greater danger (yes).\n6. Paying to bring alone → danger/futility (yes and no).\n7. Hostage in real danger of being killed (yes).\n\nSo the hostage is genuinely in danger, genuinely known to both, and paying endangers the daughter. Why would paying endanger the daughter but not paying saves her?\n\nPerhaps: if the hostage dies, something resolves; if freed, he'd continue something harmful? But Q88 said no threat to her.\n\nAlternative: The daughter is the biological daughter, and the male hostage is her biological father... no, father IS her father.\n\nWait—maybe the hostage is the daughter's biological father, and the man on the phone is her adoptive/stepfather? The \"father\" hearing the demand is a different father. Let me test.\n\nQUESTION\nIs the male hostage the daughter's biological father, while the man hearing the demand is her adoptive or stepfather?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T12:07:11.481932+00:00",
+    "event": "submission",
+    "index": 97,
+    "type": "question",
+    "text": "Does the father's decision not to pay stem from recognizing the ransom demand as a trap meant to hurt or entrap the daughter?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the father's decision not to pay stem from recognizing the ransom demand as a trap meant to hurt or entrap the daughter?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T12:07:36.805633+00:00",
+    "event": "submission",
+    "index": 98,
+    "type": "question",
+    "text": "Is the male hostage being used as bait to lure the daughter into danger?",
+    "forced": false,
+    "raw_player_output": "At 97. 3 left. Confirmed: the ransom demand is a trap meant to hurt/entrap the daughter. Paying would put her in greater danger—so the father refuses.\n\nNow I have a strong core: The kidnapping/ransom demand is a trap targeting the daughter; paying the ransom would harm her, so the father decides not to pay.\n\nBut who is the male hostage, and what is the trap? The trap may be that the hostage is bait—if the father pays, the daughter is harmed. Perhaps the male hostage is a decoy, and the real aim is to lure the father/daughter.\n\nLet me test one key fact: whether the male hostage is being used as bait to lure the daughter.\n\nQUESTION\nIs the male hostage being used as bait to lure the daughter into danger?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T12:08:27.929486+00:00",
+    "event": "submission",
+    "index": 99,
+    "type": "question",
+    "text": "Is the kidnapper someone who personally wants to harm or pursue the daughter (e.g., an obsessed person or someone with a grudge against her)?",
+    "forced": false,
+    "raw_player_output": "I'm at 98. Two question-equivalents left, then slot 100 must be a final. Let me use the last two to nail the trap: who is the kidnapper targeting, and how does paying harm the daughter?\n\nThe kidnapper is using the male hostage as bait to lure the daughter. The father knows paying would draw the daughter into the trap. So he refuses to pay.\n\nOne more fact to distinguish: is the kidnapper someone who wants to harm the daughter specifically (e.g., a stalker or someone obsessed with her)?\n\nQUESTION\nIs the kidnapper someone who personally wants to harm or pursue the daughter (e.g., an obsessed person or someone with a grudge against her)?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T12:08:38.602814+00:00",
+    "event": "submission",
+    "index": 100,
+    "type": "final",
+    "text": "A daughter speaks live on a smartphone pleading for a man’s life to be spared, while a kidnapper shouts a demand for one hundred million yen, alone, by noon tomorrow, with no police. The man the father knows personally is the hostage, but he is not a relative, spouse, son, or business associate. The daughter is not the hostage and is not in the kidnapper’s custody; she is on her own phone at a separate location, connected into the same three-way call, and she knows the hostage well. Her voice is heard live because the call links her into the conversation, not because she is a captive at the scene.\n\nThe crucial fact is that the ransom demand is a trap, and the male hostage is being used as bait to lure the daughter into danger. The father understands this. He also understands that paying the ransom—especially by coming alone with the money—would put his daughter in greater danger, and that delivering the money could prove dangerous or futile. Even though the hostage faces a genuine threat of being killed, the father concludes that complying would draw his daughter into the trap rather than save anyone.\n\nAccordingly, the father decides the ransom should not be paid: the apparent kidnapping is designed to entrap his daughter, and paying would worsen the danger to her. His refusal is a protective decision, not indifference to the hostage.",
+    "forced": true,
+    "raw_player_output": "FINAL\nA daughter speaks live on a smartphone pleading for a man’s life to be spared, while a kidnapper shouts a demand for one hundred million yen, alone, by noon tomorrow, with no police. The man the father knows personally is the hostage, but he is not a relative, spouse, son, or business associate. The daughter is not the hostage and is not in the kidnapper’s custody; she is on her own phone at a separate location, connected into the same three-way call, and she knows the hostage well. Her voice is heard live because the call links her into the conversation, not because she is a captive at the scene.\n\nThe crucial fact is that the ransom demand is a trap, and the male hostage is being used as bait to lure the daughter into danger. The father understands this. He also understands that paying the ransom—especially by coming alone with the money—would put his daughter in greater danger, and that delivering the money could prove dangerous or futile. Even though the hostage faces a genuine threat of being killed, the father concludes that complying would draw his daughter into the trap rather than save anyone.\n\nAccordingly, the father decides the ransom should not be paid: the apparent kidnapping is designed to entrap his daughter, and paying would worsen the danger to her. His refusal is a protective decision, not indifference to the hostage.",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 100,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0,
+          "evidence": "The man the father knows personally is the hostage... The daughter is not the hostage and is not in the kidnapper’s custody; she is on her own phone at a separate location",
+          "reason": "The submission identifies the hostage as someone the father knows, not the father himself, contradicting the required identity."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "paying the ransom—especially by coming alone with the money—would put his daughter in greater danger",
+          "reason": "Identifies danger to the daughter if she brings the ransom alone, but omits the required motive that she would be killed as a witness."
+        },
+        {
+          "id": "C3",
+          "credit": 0,
+          "evidence": "The man the father knows personally is the hostage... His refusal is a protective decision, not indifference to the hostage.",
+          "reason": "Refusal to protect the daughter is present, but the required self-sacrifice/danger to the father is contradicted by the claim that another man is the hostage."
+        }
+      ],
+      "material_contradiction": true,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "The submission contradicts the central identity by making a man the father knows the hostage instead of the father. It also omits the witness-killing motive, the daughter as only family, the explicit instruction to her not to pay or come, and the father's own risk.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "contradicted",
+          "evidence": "The man the father knows personally is the hostage... The daughter is not the hostage and is not in the kidnapper’s custody; she is on her own phone at a separate location"
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "paying the ransom—especially by coming alone with the money—would put his daughter in greater danger"
+        },
+        {
+          "id": "C3.F1",
+          "status": "contradicted",
+          "evidence": "The man the father knows personally is the hostage... His refusal is a protective decision, not indifference to the hostage."
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "contradicted",
+          "evidence": "The man the father knows personally is the hostage... The daughter is not the hostage and is not in the kidnapper’s custody; she is on her own phone at a separate location"
+        },
+        {
+          "id": "R2",
+          "status": "covered",
+          "evidence": "a kidnapper shouts a demand for one hundred million yen, alone, by noon tomorrow, with no police... paying the ransom—especially by coming alone with the money—would put his daughter in greater danger"
+        },
+        {
+          "id": "R3",
+          "status": "partial",
+          "evidence": "The crucial fact is that the ransom demand is a trap... paying the ransom—especially by coming alone with the money—would put his daughter in greater danger... complying would draw his daughter into the trap rather than save anyone"
+        },
+        {
+          "id": "R4",
+          "status": "contradicted",
+          "evidence": "The man the father knows personally is the hostage... His refusal is a protective decision, not indifference to the hostage."
+        },
+        {
+          "id": "R5",
+          "status": "partial",
+          "evidence": "Even though the hostage faces a genuine threat of being killed, the father concludes that complying would draw his daughter into the trap... the father decides the ransom should not be paid"
+        }
+      ],
+      "contradictions": [
+        {
+          "quote": "The man the father knows personally is the hostage",
+          "reference": "The father is the hostage.",
+          "checkpoint_ids": [
+            "C1",
+            "C3"
+          ]
+        }
+      ],
+      "partial_score": 0.15,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    }
+  }
+]

@@ -1,0 +1,54 @@
+{
+  "id": "TS012",
+  "opening": "I went to the pantry in my hall. The fire alarm rang. What happened?",
+  "answer": "I cooked food with a very high temperature (without burning the food) in the pantry. However, I forgot to turn on the exhaust fan. Since the smoke detecter in the building is very sensitive, the grease fumes triggered the fire alarm.",
+  "rubric": [
+    {
+      "id": "C1",
+      "weight": 0.5,
+      "core": true,
+      "criterion": "High-temperature cooking produces fumes triggering the alarm, not burning food.",
+      "criterion_zh": "火警由高温烹饪产生的油烟触发，而非食物着火",
+      "points": 50.0,
+      "full_credit": "High-temperature cooking produces fumes triggering the alarm, not burning food.",
+      "half_credit": "Cooking fumes identified but no distinction from burnt food",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses."
+    },
+    {
+      "id": "C2",
+      "weight": 0.3,
+      "core": false,
+      "criterion": "The exhaust fan was not turned on.",
+      "criterion_zh": "没有打开抽风机，油烟未被排走",
+      "points": 30.0,
+      "full_credit": "The exhaust fan was not turned on.",
+      "half_credit": "No half credit: exhaust fan off is atomic",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses."
+    },
+    {
+      "id": "C3",
+      "weight": 0.2,
+      "core": false,
+      "criterion": "A sensitive smoke detector is activated by the fumes.",
+      "criterion_zh": "楼宇烟雾探测器很敏感，厨房烟气足以报警",
+      "points": 20.0,
+      "full_credit": "A sensitive smoke detector is activated by the fumes.",
+      "half_credit": "Detector identified without smoke sensitivity",
+      "zero_credit": "Missing, contradicted, only repeats the opening without the required explanation, or gives uncommitted incompatible guesses."
+    }
+  ],
+  "title": "厨房火警：烹饪",
+  "story_family": "F-FIRE-ALARM",
+  "quality_status": "同题不同解",
+  "review_notes": "与17、18题题面完全相同，但答案不同",
+  "source_row": "12",
+  "observed_score": null,
+  "completion_requirements": [
+    "The narrator cooks at high temperature in the pantry without burning the food",
+    "The exhaust fan was not switched on",
+    "Cooking grease fumes trigger a sensitive smoke detector and the fire alarm"
+  ],
+  "annotation_version": "turtle50-v1-2026-10-22",
+  "annotation_status": "pending_human_review",
+  "grading_notes": "Accept faithful paraphrase. Require the listed identities, events and causal links, not exact prose or unspecified incidental details."
+}

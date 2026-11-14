@@ -1,0 +1,1062 @@
+{
+  "puzzle_id": "TS012",
+  "opening": "I went to the pantry in my hall. The fire alarm rang. What happened?",
+  "reference_answer": "I cooked food with a very high temperature (without burning the food) in the pantry. However, I forgot to turn on the exhaust fan. Since the smoke detecter in the building is very sensitive, the grease fumes triggered the fire alarm.",
+  "canonical_solution": "I cooked food with a very high temperature (without burning the food) in the pantry. However, I forgot to turn on the exhaust fan. Since the smoke detecter in the building is very sensitive, the grease fumes triggered the fire alarm.",
+  "canonical_facts": [
+    "The narrator cooks at high temperature in the pantry without burning the food",
+    "The exhaust fan was not switched on",
+    "Cooking grease fumes trigger a sensitive smoke detector and the fire alarm",
+    "Cooking grease fumes may be called cooking smoke in ordinary language; do not confuse them with burnt food, water steam, cigarette smoke or a separate fire."
+  ],
+  "explicit_negatives": [
+    "The source was high-temperature cooking grease fumes, not cigarette smoke."
+  ],
+  "unknown_details": [
+    "The precise appliance, gas/electric energy source, cooking technique (including frying), detector position and naked-eye visibility of fumes are unspecified."
+  ],
+  "irrelevant_details": [
+    "Appliance brand, exact temperature, clothing and room dimensions are incidental."
+  ],
+  "completion_requirements": [
+    "The narrator cooks at high temperature in the pantry without burning the food",
+    "The exhaust fan was not switched on",
+    "Cooking grease fumes trigger a sensitive smoke detector and the fire alarm"
+  ],
+  "host_examples": [
+    {
+      "case_id": "AUDIT_001",
+      "question": "Was there an actual fire?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q001",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_002",
+      "question": "Did something the person did in the pantry trigger the alarm?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Supported by high-temperature unburnt cooking fumes, exhaust fan off and sensitive detector.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q002",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_003",
+      "question": "Did the person physically activate the fire alarm, such as by pulling a manual alarm lever?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q004",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_004",
+      "question": "Did the person cause the alarm to sound by disturbing dust or particles in the pantry?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q005",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_005",
+      "question": "Did the person handle or use a chemical product in the pantry, such as an aerosol spray or cleaning product, that triggered the alarm?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q006",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_006",
+      "question": "Did opening or closing the pantry door trigger the fire alarm?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q007",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_007",
+      "question": "Did the person create smoke in the pantry by smoking or lighting something, rather than using an appliance?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Cigarette smoking or steam is not the TS012 grease-fume mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q008",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_008",
+      "question": "Did the person switch on a light in the pantry, and did that cause the fire alarm to sound?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q010",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_009",
+      "question": "Did the person turn off or disconnect power to the fire-alarm system, causing it to sound as a warning?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q011",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_010",
+      "question": "Did the person turn on a heat-producing appliance in the pantry, such as a kettle, and trigger the alarm without producing smoke?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q013",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_011",
+      "question": "Did the person boil water in a kettle, producing steam that reached the fire detector and triggered the alarm?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q015",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_012",
+      "question": "Did the person use a clothes steamer or steam iron, producing vapor that reached the fire detector?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q016",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_013",
+      "question": "Did the person use a humidifier or vaporizer in the pantry, producing mist that reached the detector?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q017",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_014",
+      "question": "Did the person heat food in a microwave, producing steam that reached the detector?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q018",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_015",
+      "question": "Did the person use a rice cooker or another food-cooking appliance, producing steam that reached the detector?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q019",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_016",
+      "question": "Did the person use a coffee maker or espresso machine, producing steam that reached the fire detector?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q020",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_017",
+      "question": "Did the person pour or spill hot water in the pantry, producing steam that reached the detector?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q021",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_018",
+      "question": "Did the person use a steam cleaner in the pantry, producing vapor that reached the detector?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q022",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_019",
+      "question": "Did the person turn on or use a hot-water tap or other plumbing fixture, producing steam that reached the fire detector?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q023",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_020",
+      "question": "Did the person release steam from a pressure cooker or similar pressurized cooking vessel?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q024",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_021",
+      "question": "Did the person switch on an electric water heater or boiler in the pantry, releasing steam that reached the fire detector?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q025",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_022",
+      "question": "Did the person heat water on a stove or hob, producing steam that reached the fire detector?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q026",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_023",
+      "question": "Did the person operate a dishwasher or washing machine, releasing steam that reached the detector?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q027",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_024",
+      "question": "Did the person use an electric appliance other than those already mentioned to heat water or another liquid, producing steam that reached the detector?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q028",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_025",
+      "question": "Did the person release steam or hot vapor that was already contained in a vessel or system, rather than generating it by heating a liquid?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q029",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_026",
+      "question": "Did the person heat food or liquid in the pantry using an open flame, rather than an electrical appliance?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Gas versus electricity and a particular pan/frying setup are unspecified implementation details, not required to solve TS012.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q030",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_027",
+      "question": "Did the person heat water over an open flame, producing steam that reached the fire detector?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q031",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_028",
+      "question": "Did the person create steam or hot vapor through a chemical reaction rather than by heating or releasing a liquid?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q033",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_029",
+      "question": "Did the person operate a gas-powered heater or water-heating appliance in the pantry, releasing hot vapor that reached the fire detector?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q035",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_030",
+      "question": "Did the person open a container of hot food, releasing steam that reached the fire detector?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q036",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_031",
+      "question": "Did the person bring a hot or steaming item into the pantry, and did steam from that item trigger the alarm?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q037",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_032",
+      "question": "Did the person use an electronic cigarette or vape in the pantry, producing vapor that reached the fire detector? ",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q038",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_033",
+      "question": "Did the person ignite a gas burner in the pantry and then boil or heat food on it, producing steam that reached the detector?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Cigarette smoking or steam is not the TS012 grease-fume mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q040",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_034",
+      "question": "Did the person burn or scorch the food while cooking it, causing smoke or fumes to trigger the alarm?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q044",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_035",
+      "question": "Was the person cooking food in the pantry when the alarm sounded?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Supported by high-temperature unburnt cooking fumes, exhaust fan off and sensitive detector.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q046",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_036",
+      "question": "Was the person frying food in a pan on a gas burner when the alarm sounded?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Gas versus electricity and a particular pan/frying setup are unspecified implementation details, not required to solve TS012.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q051",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_037",
+      "question": "Did cooking fumes or grease particles from the food, rather than steam, trigger the fire alarm?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Supported by high-temperature unburnt cooking fumes, exhaust fan off and sensitive detector.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q053",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_038",
+      "question": "Was the pantry a shared kitchen in a residence hall or dormitory?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Residence-hall subtype or pantry layout is unspecified and unnecessary to the smoke/fumes mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q054",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_039",
+      "question": "Was there no extractor fan or range hood installed in the cooking area?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q063",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_040",
+      "question": "Was an extractor fan or range hood installed, but not operating while the person cooked?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Supported by high-temperature unburnt cooking fumes, exhaust fan off and sensitive detector.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q064",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_041",
+      "question": "Was it a smoke detector that was triggered by the cooking fumes and grease particles?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Supported by high-temperature unburnt cooking fumes, exhaust fan off and sensitive detector.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q067",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_042",
+      "question": "Was the smoke detector unusually sensitive to cooking fumes or grease particles?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Supported by high-temperature unburnt cooking fumes, exhaust fan off and sensitive detector.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q077",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_043",
+      "question": "Was the pantry actually a cooking area equipped with a stove or other cooking appliance, rather than simply a food-storage cupboard?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "The pantry was usable for cooking in this incident; this does not select a particular stove or appliance.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q081",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_044",
+      "question": "Was the person cooking in a kitchen or kitchenette located in the hall, rather than in a food-storage pantry?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Residence-hall subtype or pantry layout is unspecified and unnecessary to the smoke/fumes mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261022_codex_rerun/negative/G01_TS012_TS017_r02_source/Q091",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_045",
+      "question": "Did something you did in the pantry directly cause the fire alarm to ring?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Supported by high-temperature unburnt cooking fumes, exhaust fan off and sensitive detector.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261023_repaired_host_rerun/negative/G01_TS012_TS017_r01_source/Q001",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_046",
+      "question": "Were you cooking or heating food in the pantry?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Supported by high-temperature unburnt cooking fumes, exhaust fan off and sensitive detector.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261023_repaired_host_rerun/negative/G01_TS012_TS017_r01_source/Q002",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_047",
+      "question": "Did the food become burnt or produce smoke, triggering the alarm?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Inclusive OR: cooking emits grease fumes/smoke. The affirmative does not mean the food was burnt.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261023_repaired_host_rerun/negative/G01_TS012_TS017_r01_source/Q003",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_048",
+      "question": "Did steam or water vapor from the food trigger the fire alarm?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261023_repaired_host_rerun/negative/G01_TS012_TS017_r01_source/Q004",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_049",
+      "question": "Did heat from the food or cooking appliance trigger a heat detector?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261023_repaired_host_rerun/negative/G01_TS012_TS017_r01_source/Q005",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_050",
+      "question": "Did the cooking appliance itself malfunction or produce something other than smoke, steam, or excess heat that triggered the alarm?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261023_repaired_host_rerun/negative/G01_TS012_TS017_r01_source/Q006",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_051",
+      "question": "Did the food or cooking create an open flame that activated the fire alarm?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261023_repaired_host_rerun/negative/G01_TS012_TS017_r01_source/Q007",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_052",
+      "question": "Did cooking produce carbon monoxide that triggered a carbon-monoxide detector linked to the fire alarm?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261023_repaired_host_rerun/negative/G01_TS012_TS017_r01_source/Q008",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_053",
+      "question": "Did cooking release airborne particles—such as oil or grease aerosol—that triggered the fire alarm?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. Supported by high-temperature unburnt cooking fumes, exhaust fan off and sensitive detector.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261023_repaired_host_rerun/negative/G01_TS012_TS017_r01_source/Q009",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_054",
+      "question": "Was there an actual fire, despite the alarm being triggered by grease particles from the frying?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Three independent reviews agree; retained after source/rule and cross-case review. The alarm is from cooking grease fumes, not this proposed alternative mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261023_repaired_host_rerun/negative/G01_TS012_TS017_r01_source/Q012",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "AUDIT_055",
+      "question": "Was the pantry a shared or communal kitchen in a residential building, rather than a pantry inside your own home?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Residence-hall subtype or pantry layout is unspecified and unnecessary to the smoke/fumes mechanism.",
+      "review_status": "ai_three_review_root_adjudicated_pending_human",
+      "provenance": {
+        "source_case": "20261023_repaired_host_rerun/negative/G01_TS012_TS017_r01_source/Q013",
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "case_id": "R01",
+      "question": "Was the alarm triggered by high-temperature cooking grease fumes?",
+      "answer": "yes",
+      "rationale": "Correct source for this specific answer.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R02",
+      "question": "Was the alarm triggered by cigarette smoke?",
+      "answer": "no",
+      "rationale": "Another puzzle shares the opening but has a different cause.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R03",
+      "question": "Was the exhaust fan switched off?",
+      "answer": "yes",
+      "rationale": "Canonical ventilation failure.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R04",
+      "question": "What colour was the exhaust fan?",
+      "answer": "irrelevant",
+      "rationale": "Incidental detail.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R05",
+      "question": "Was a building fire the cause of the alarm?",
+      "answer": "no",
+      "rationale": "Smoke/fumes caused the alarm without a building fire.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    }
+  ],
+  "review_status": "ai_three_review_root_adjudicated_pending_human",
+  "binding_version": "three-review-v3-20261023",
+  "story_sha256": "04995537df7e52769b14fe3c1e95fec045c7e37660653735687022427f6c2ee2",
+  "context_sha256": "161edb218915c0a1b3ff2e0d34d55edb9c48b6f1ff2efc7f0bf8591264cc73b9"
+}

@@ -1,0 +1,39 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "f451bf3f5090160d21c1594e584a573a530ff4e51fa7b9b9994f4ad1a3c59630",
+    "trajectory.jsonl": "f5baa0f25c438ddbcdb1832a842749fd84c14ec7ebc18ee4fc00b829327ca3f4",
+    "trajectory.md": "995284538680839ad119667488925ba642ebeb84cb79495d1eafddd989b7d1d0",
+    "trajectory.html": "045548a078e1bf5cb21e13c4cac12703f83ee513906ebd3228e1d6ea1c6d27cb",
+    "config.json": "703c2753bfafec1aaf4a60b062f73623201790a6e05114f16c607c893429310e",
+    "partner_config.json": "489a968c9ed96d8e89aa0c6dcd2216c2a2dd1c4b68415ba6cf332611cf340f1c",
+    "prompts.json": "b09d2cf2b79c213d00edfc08f1360e3a6e17b95214b96f57d7c1e30290695558",
+    "puzzle_private.json": "4f8ba37beaffea6a7afedd59ca4a56d68913d792dc53bb1e4b9e9212f76afbf8",
+    "host_context.json": "279107d51a69d4ee17ddc435fb5fef34f513a579c80c15eccba39cc40fb516a9",
+    "human_review.csv": "9278961f1db46b811f13662788e93b3a64b9d76f4f67c04fb7ae18a8f658b3f8",
+    "review_template.csv": "9278961f1db46b811f13662788e93b3a64b9d76f4f67c04fb7ae18a8f658b3f8",
+    "collaboration.jsonl": "f1c1e7215519b9ee075643dfe4d4a29f731d739e02a7c6b18a63690476d1f074"
+  },
+  "api_audit": {
+    "source_raw_sha256": "14bae2a3acf909aed2df3a2134c5a9c4ecd21ad8877f89c283d0d87b8136052b",
+    "source_raw_bytes": 113645,
+    "published_sha256": "418898b3934b3ab3fff9ec41a24008378a4eb99fcbdd7ed9b8785ca731654b94",
+    "attempts": 13
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261023_host_repair/integration_smoke/TS019_r01_independent",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 3,
+      "result_sha256": "f451bf3f5090160d21c1594e584a573a530ff4e51fa7b9b9994f4ad1a3c59630",
+      "signature": "daed55f7e5b84fffc1fcdfa8a82a18af4a28315519ccaff0b3dc49aa6cabcde5",
+      "event_count": 8,
+      "trajectory_sha256": "f5baa0f25c438ddbcdb1832a842749fd84c14ec7ebc18ee4fc00b829327ca3f4",
+      "first_submission": "2026-10-23T16:02:41.838319+00:00",
+      "first_text": "Are the stairs the narrator often uses inside a building on the school campus?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

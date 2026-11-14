@@ -1,0 +1,52 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "b0d7b241dc4c85fcf805cf79463b0d2178fa4d4ad65093b10f0dc6b4f3540113",
+    "trajectory.jsonl": "66aa9deae6f0ec438d15994600ea510b7ffd811988b0e307bddbce0c653ab8a4",
+    "trajectory.md": "901eabc34a148abd012ce2cb36dd3edff507a3967154218194746a0e0690910d",
+    "trajectory.html": "c8807627564d525252178e0956e8d2f174f5775b035b5935b624fd8aed51700b",
+    "config.json": "a014f81ea9e104679e8f092a1f109161aea61071386b2e945a24be08c367d75c",
+    "partner_config.json": "489a968c9ed96d8e89aa0c6dcd2216c2a2dd1c4b68415ba6cf332611cf340f1c",
+    "prompts.json": "fc46446f09444f43c20df1c19fbb54338043bc29e602a6373a8af5b06ee85640",
+    "puzzle_private.json": "7e27aba3b726325f54da0a861818407751ca7c1aef58cd60f07e7d73421fbb5e",
+    "host_context.json": "165dd35d67893fdee66031414a2a96a60878499e221f8b6f7ee1902b7bbe97f1",
+    "human_review.csv": "fbf684ad00fa54411fd48cdce173304ad5d170d2cf8c48220ba8ce82dc548448",
+    "review_template.csv": "fbf684ad00fa54411fd48cdce173304ad5d170d2cf8c48220ba8ce82dc548448",
+    "collaboration.jsonl": "c02a86632aba951f2551b8c8713784980e2b4b74fdb47617ca578799ad26a2a4"
+  },
+  "api_audit": {
+    "source_raw_sha256": "be5c06261d77088155cedf0bad1892d802500afbc8a29e8c31a90508a8bfa6ce",
+    "source_raw_bytes": 5701737,
+    "published_sha256": "c9cd21eb914324e1626eec19408ded05f5aa93b6ee25a45023e9e178da8a96c2",
+    "attempts": 400
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261023_host_reliability/frozen_inputs/20261023_team_hard_repeats/TS023_r01_independent",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "b0d7b241dc4c85fcf805cf79463b0d2178fa4d4ad65093b10f0dc6b4f3540113",
+      "signature": "4ec8f5f940aecc9ed3eceff9058808b5fa4efa3f6199ab7f99b917237f5c8e78",
+      "event_count": 201,
+      "trajectory_sha256": "66aa9deae6f0ec438d15994600ea510b7ffd811988b0e307bddbce0c653ab8a4",
+      "first_submission": "2026-10-23T13:15:22.838369+00:00",
+      "first_text": "Did the matchlight reveal another person to him?",
+      "archive_scope": "observed_history"
+    },
+    {
+      "source": "runs/api/20261023_team_hard_repeats/batches/TS023/TS023_r01_independent",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "b0d7b241dc4c85fcf805cf79463b0d2178fa4d4ad65093b10f0dc6b4f3540113",
+      "signature": "4ec8f5f940aecc9ed3eceff9058808b5fa4efa3f6199ab7f99b917237f5c8e78",
+      "event_count": 201,
+      "trajectory_sha256": "66aa9deae6f0ec438d15994600ea510b7ffd811988b0e307bddbce0c653ab8a4",
+      "first_submission": "2026-10-23T13:15:22.838369+00:00",
+      "first_text": "Did the matchlight reveal another person to him?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

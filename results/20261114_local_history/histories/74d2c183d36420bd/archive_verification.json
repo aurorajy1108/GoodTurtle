@@ -1,0 +1,47 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "130734159bc761979461a601d1bc958edb27f9e3050ed2413454decb0280d5b7",
+    "trajectory.jsonl": "d4dd4928fb37bc4b8ee8838f13361104ce8e67d831e61417d1edabab91eefa52",
+    "trajectory.md": "d74641311ea584ba92b936cabe5d40fe3eb22ae6ef6b65455dab52e0d9eb104f",
+    "trajectory.html": "69ac5d1dcb6233cb58dc8eb3d3b960f1b21367af3546893795fe8e81d0ddee79",
+    "config.json": "4307cf3c715247acc8faf9d322125607962ba66e56d5980b57d841ccb930bc1e",
+    "partner_config.json": "c2e8a291df1c554b1c94f20fa63d5e7965959edf5a1f3583a876abd45e3f658b",
+    "prompts.json": "a81d1dab037a22f0f3a32d4fa8964a18521d93b8894ea666c96a4dfbbf1ef6c3",
+    "puzzle_private.json": "b1c69c4db95e2279cc8972e3b68d76291d9518a2f7c306619dbb37a204b5574e",
+    "host_context.json": "068d2c9bd19776e3c172ca22600c73c110b0b6645b8f218fcf723cc5492150b6",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "0a3fdde5e02a39bbfd5dea2afbce6b9ce2479134e71d8df316bc7b00195cca23",
+    "cost_summary.json": "ef4f0d92ff151bbe6e773e3ef3f62f187c5e48bbe04a712a213a4fa3f03f3a62",
+    "token_costs.csv": "e11bf8266753ab0a1d401dc4136631831a3a5ccfb3c46b196e1ea2a828fa0b81",
+    "human_review.csv": "db94f62a809a87118aa446a98797f31677220f54a1c0205c7f0ec1ca6cb18d7b",
+    "review_template.csv": "db94f62a809a87118aa446a98797f31677220f54a1c0205c7f0ec1ca6cb18d7b",
+    "shared_dialogue.jsonl": "e91ae958c887bd768db2819162a0b75112835f6eef39cdda39b4bbcee9204e06",
+    "shared_dialogue.html": "7930e5831cf4cd9cd155c545257a3b584230253d86bfd1494025cac6276c5c11",
+    "dialogue_metrics.json": "1e6497edac22776788dbd2ab27e1c436364e724b754814c711dee98cfbf123c1",
+    "dialogue_policy.json": "bef6bb0e727602dd5a00821ae0a6847992bf1eab6d8a3c8fe0681779e9753c5d",
+    "collaboration.jsonl": "806145b1af4694baa54d1bcbdfc60ab70b8da23013957219e0f68b6313f1f058"
+  },
+  "api_audit": {
+    "source_raw_sha256": "f573dab6a82dc849c4e5f4d156e2ad8b732cbf5e72c74c3eb75048ca9a37e3b2",
+    "source_raw_bytes": 2526216,
+    "published_sha256": "d5bebf7851b52bd0f171dc59c0618b8b82ba77776312a35924c801d3e9e3f6f6",
+    "attempts": 73
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261111_live_smoke_v3_mas/tasks/mas-ts038-a/team/TS038_r01_free_dialogue",
+      "status_as_recorded": "error",
+      "simulation": false,
+      "submissions": 33,
+      "result_sha256": "130734159bc761979461a601d1bc958edb27f9e3050ed2413454decb0280d5b7",
+      "signature": "74d2c183d36420bdf335411e23ca0866dcd0805b2b5ad9fea9403b2ad346e4b7",
+      "event_count": 254,
+      "trajectory_sha256": "d4dd4928fb37bc4b8ee8838f13361104ce8e67d831e61417d1edabab91eefa52",
+      "first_submission": "2026-11-11T11:06:03.625555+00:00",
+      "first_text": "The same sentence is repeated seven times. Is the repetition itself—specifically the count seven—significant to the puzzle's solution?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

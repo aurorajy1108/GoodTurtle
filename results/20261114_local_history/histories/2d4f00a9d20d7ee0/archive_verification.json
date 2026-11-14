@@ -1,0 +1,41 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "7565c3cd226246b1a089366cea6f807eb1979f727c7c4c2d68c54d215cf2fd19",
+    "trajectory.jsonl": "8ea121d8fc0a196ee319b4a8c3966ba8ef85668c346ba523e12465b9c208f4a9",
+    "trajectory.md": "888aea59f1b17d8fb2f6265adddabd771f63497290b8095f9826aea224abc9e7",
+    "trajectory.html": "13e0549be60803e77c3d4b8696c32e076e69e82960533ccda62d967c51d5a65c",
+    "config.json": "2a474139b20bf95d9a43818066c49cfc134cfda6bbb3086349ea2e2d8f32b2a4",
+    "prompts.json": "d717281a9319d3f8435356c0724cf2c212d645a20f47af1527e025f6ef4ddb9e",
+    "puzzle_private.json": "29e954e99ae4cf044cdbb6058560998d599b9623b77eef50de93599f1faf9c85",
+    "host_context.json": "8bb2ff6f9105c5ae110ff476710d36110ed2bef53a0c3e5a7a2f42a4cc597146",
+    "runtime_context_policy.json": "e1e7012baad0875d7349da9e5abadea818f3f7a6ebca0a5f1b15eb69a80e1c74",
+    "pricing_snapshot.json": "64c31820443327839ce32e5128053650aacd3becf6b6746e94de79bb5620c17d",
+    "cost_summary.json": "003ebf03a37350700d1401914dc20be1e3cdc0d5b4622506d3456f9c4b18ee6f",
+    "token_costs.csv": "9162dc27078d22095e58d22c5f21120ac39f57cd969d915ef9983e0e89596299",
+    "human_review.csv": "8e3fb2bca84ceef49cc969d25c6cdfd912539a00216bcf32b31eaa78567d28ac",
+    "review_template.csv": "8e3fb2bca84ceef49cc969d25c6cdfd912539a00216bcf32b31eaa78567d28ac"
+  },
+  "api_audit": {
+    "source_raw_sha256": "bdbd807c6a3ad818b189fe1ea37b050a0c46c167b2eeba461d6123e2fb69a405",
+    "source_raw_bytes": 3551259,
+    "published_sha256": "663ee3c9554e32b51c2543369ce3a44c2f412bc47af0e2216edfa35bf7678301",
+    "attempts": 96
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261107_deepseek_ts013_nothinking_once/TS013_r01",
+      "status_as_recorded": "error",
+      "simulation": false,
+      "submissions": 48,
+      "result_sha256": "7565c3cd226246b1a089366cea6f807eb1979f727c7c4c2d68c54d215cf2fd19",
+      "signature": "2d4f00a9d20d7ee0c9f00df6b0ef219a7793d59ccc0815c903e33347194414a6",
+      "event_count": 293,
+      "trajectory_sha256": "8ea121d8fc0a196ee319b4a8c3966ba8ef85668c346ba523e12465b9c208f4a9",
+      "first_submission": "2026-11-07T15:01:17.052488+00:00",
+      "first_text": "Did someone else (e.g., a friend or hacker) deliberately delete or drop all of your courses?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

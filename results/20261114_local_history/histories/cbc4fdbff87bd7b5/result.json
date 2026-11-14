@@ -1,0 +1,241 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 90,
+  "final_attempts": 10,
+  "rejected_finals": 10,
+  "counted_questions": 100,
+  "submissions": 100,
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.0,
+  "best_partial_score": 0.0,
+  "latest_final": "In a single situation, one person writes “You’ve disappointed me so much; I’m never coming back.” seven times. This repeated writing follows something they did involving someone with whom they have a personal relationship; that act caused the other person a significant physical consequence, which is why the writer is in trouble. The exact act, consequence, and significance of the wording and number seven remain unknown.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0,
+        "evidence": "“that act caused the other person a significant physical consequence” and “The exact act, consequence ... remain unknown.”",
+        "reason": "Does not identify the act as murdering his wife or explain staging her disappearance as voluntary. The half-credit condition of identifying the wife's murder is not met."
+      },
+      {
+        "id": "C2",
+        "credit": 0,
+        "evidence": "“one person writes ‘You’ve disappointed me so much; I’m never coming back.’ seven times”",
+        "reason": "Identifies repeated writing but not forgery or attempts to imitate his wife's handwriting."
+      },
+      {
+        "id": "C3",
+        "credit": 0,
+        "evidence": "“that act caused the other person a significant physical consequence, which is why the writer is in trouble”",
+        "reason": "Does not identify fear of capture or connect that fear to unsuccessful handwriting imitation."
+      }
+    ],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Missing the wife's murder, the forged voluntary-departure message, and failed handwriting imitation causing fear of discovery. The submission leaves the central explanation unknown rather than reconstructing it.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "C2.F1",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "C3.F1",
+        "status": "missing",
+        "evidence": ""
+      }
+    ],
+    "requirement_coverage": [
+      {
+        "id": "R1",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "R2",
+        "status": "missing",
+        "evidence": ""
+      },
+      {
+        "id": "R3",
+        "status": "missing",
+        "evidence": ""
+      }
+    ],
+    "contradictions": [],
+    "partial_score": 0.0,
+    "complete": false,
+    "label": "no",
+    "grading_protocol": "coverage-v2",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 9675.384201417037,
+  "usage": {
+    "grader": {
+      "http_attempts": 10,
+      "successful_responses": 10,
+      "seconds": 393.3458972919034,
+      "provider_reported_usage": {
+        "input_tokens": 204534,
+        "cached_input_tokens": 6144,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 8591,
+        "reasoning_output_tokens": 3184
+      }
+    },
+    "host": {
+      "http_attempts": 191,
+      "successful_responses": 191,
+      "seconds": 4183.482793000992,
+      "provider_reported_usage": {
+        "input_tokens": 4198912,
+        "cached_input_tokens": 423424,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 16041,
+        "reasoning_output_tokens": 12773
+      }
+    },
+    "player": {
+      "http_attempts": 300,
+      "successful_responses": 300,
+      "seconds": 5095.4360721732955,
+      "provider_reported_usage": {
+        "input_tokens": 1654757,
+        "cached_input_tokens": 523904,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 63074,
+        "reasoning_output_tokens": 41023
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "total": {
+      "calls": 501,
+      "unknown_cost_calls": 0,
+      "known_estimated_cost_usd": 8.54937028,
+      "estimated_cost_usd": 8.54937028,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 6058203,
+        "cached_input_tokens": 953472,
+        "cache_write_tokens": 0,
+        "output_tokens": 87706,
+        "reasoning_tokens": 0,
+        "total_tokens": 6145909
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 501,
+        "total_tokens": 0
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "codex_cli",
+        "model": "gpt-6.1-sol",
+        "calls": 10,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.4833044,
+        "estimated_cost_usd": 0.4833044,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 204534,
+          "cached_input_tokens": 6144,
+          "cache_write_tokens": 0,
+          "output_tokens": 8591,
+          "reasoning_tokens": 0,
+          "total_tokens": 213125
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 10,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "codex_cli",
+        "model": "gpt-6.1-sol",
+        "calls": 191,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 7.7537284,
+        "estimated_cost_usd": 7.7537284,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 4198912,
+          "cached_input_tokens": 423424,
+          "cache_write_tokens": 0,
+          "output_tokens": 16041,
+          "reasoning_tokens": 0,
+          "total_tokens": 4214953
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 191,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "codex_cli",
+        "model": "gpt-5.6-luna",
+        "calls": 300,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.31233748,
+        "estimated_cost_usd": 0.31233748,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1654757,
+          "cached_input_tokens": 523904,
+          "cache_write_tokens": 0,
+          "output_tokens": 63074,
+          "reasoning_tokens": 0,
+          "total_tokens": 1717831
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 300,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": null,
+  "human_review_status": "pending",
+  "evaluation_versions": {
+    "story_sha256": "8f2ddbbd95f8552db795e6101df8e1ec6ac3755b6591d990fc66877d5a4b9d3b",
+    "grading_sha256": "b45687898c96ce287d149e65ef97c3ace0f95ce5ccfd722ce4b2d9d4588abd56",
+    "grading_protocol": "coverage-v2",
+    "prompts_sha256": "ee2355155bc93572faf555bea747de2352440d723da28eaad5060002be9cb0c8",
+    "controller_sha256": "82e800578271590049e19eca916337060fba902340416c353f93b900a2098d98",
+    "host_context_sha256": "6ef204bc1f9c029351d2344d68946fac16ade3855f72f54df450f43d49a6e4e2",
+    "host_binding_version": "host-v9-human-20261102"
+  }
+}

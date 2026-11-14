@@ -1,0 +1,500 @@
+[
+  {
+    "timestamp": "2026-11-13T04:23:14.847753+00:00",
+    "event": "submission",
+    "index": 1,
+    "type": "question",
+    "text": "Is a non-human animal or a recording/device the source of the repeated sentence?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is a non-human animal or a recording/device the source of the repeated sentence?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:23:19.456979+00:00",
+    "event": "submission",
+    "index": 2,
+    "type": "question",
+    "text": "Is the repeated line spoken by a human being (or humans), not a machine or animal?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the repeated line spoken by a human being (or humans), not a machine or animal?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:23:29.510472+00:00",
+    "event": "submission",
+    "index": 3,
+    "type": "question",
+    "text": "Is the repeated sentence being read or recited from something — a book, script, letter, or written text — rather than spoken spontaneously to a person?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the repeated sentence being read or recited from something — a book, script, letter, or written text — rather than spoken spontaneously to a person?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:25:18.253948+00:00",
+    "event": "submission",
+    "index": 4,
+    "type": "question",
+    "text": "Were the seven repetitions said by seven different people, one each?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Were the seven repetitions said by seven different people, one each?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:25:22.672228+00:00",
+    "event": "submission",
+    "index": 5,
+    "type": "question",
+    "text": "Was it one person repeating the line seven times, as in rehearsal or practice?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Was it one person repeating the line seven times, as in rehearsal or practice?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:25:29.432886+00:00",
+    "event": "submission",
+    "index": 6,
+    "type": "question",
+    "text": "Is the person rehearsing or practicing in order to deceive someone — for example, memorizing a false statement or a scripted line to deliver convincingly?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the person rehearsing or practicing in order to deceive someone — for example, memorizing a false statement or a scripted line to deliver convincingly?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:25:36.385143+00:00",
+    "event": "submission",
+    "index": 7,
+    "type": "question",
+    "text": "Is the speaker practicing this line so they can deliver it convincingly on a specific occasion — like a performance, interview, confession, or public statement — rather than just studying or memorizing for its own sake?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the speaker practicing this line so they can deliver it convincingly on a specific occasion — like a performance, interview, confession, or public statement — rather than just studying or memorizing for its own sake?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:25:51.540485+00:00",
+    "event": "submission",
+    "index": 8,
+    "type": "question",
+    "text": "Is the deception about making the words appear to come from somewhere other than the speaker — e.g., a spirit, the dead, telepathy, or another entity?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the deception about making the words appear to come from somewhere other than the speaker — e.g., a spirit, the dead, telepathy, or another entity?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:26:20.115136+00:00",
+    "event": "submission",
+    "index": 9,
+    "type": "question",
+    "text": "Is the speaker pretending to be a medium communicating with the dead — repeating messages supposedly from spirits — when in fact they are just reciting a line they prepared themselves?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the speaker pretending to be a medium communicating with the dead — repeating messages supposedly from spirits — when in fact they are just reciting a line they prepared themselves?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:26:25.808922+00:00",
+    "event": "submission",
+    "index": 10,
+    "type": "question",
+    "text": "Is the deceiver pretending the repeated words are messages from a supernatural or non-human source, while actually being the human who wrote/prepared them — is this an \"alien/entity channeling\" or similar hoax rather than a medium contacting the dead?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the deceiver pretending the repeated words are messages from a supernatural or non-human source, while actually being the human who wrote/prepared them — is this an \\\"alien/entity channeling\\\" or similar hoax rather than a medium contacting the dead?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:26:32.822554+00:00",
+    "event": "submission",
+    "index": 11,
+    "type": "question",
+    "text": "Is the deceiver making the words appear to be spoken by a specific other living person (impersonation), rather than by a spirit, alien, or god?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the deceiver making the words appear to be spoken by a specific other living person (impersonation), rather than by a spirit, alien, or god?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:26:56.744557+00:00",
+    "event": "submission",
+    "index": 12,
+    "type": "question",
+    "text": "Is the person rehearsing the repeated line in order to fool a listener into thinking those words were spoken by a particular other living person — as in practicing someone else's voice/words to impersonate them?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the person rehearsing the repeated line in order to fool a listener into thinking those words were spoken by a particular other living person — as in practicing someone else's voice/words to impersonate them?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:27:08.045701+00:00",
+    "event": "submission",
+    "index": 13,
+    "type": "question",
+    "text": "Is the deception that the repeated words are being attributed to a real, specific living person who did not actually say/write them — i.e., a fabricated quote or plagiarism rather than voice impersonation?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the deception that the repeated words are being attributed to a real, specific living person who did not actually say/write them — i.e., a fabricated quote or plagiarism rather than voice impersonation?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:27:30.586032+00:00",
+    "event": "submission",
+    "index": 14,
+    "type": "question",
+    "text": "Is the person rehearsing the fabricated quote so they can recite it aloud as though quoting the real person — for example, reading a fake quotation out loud in a speech, broadcast, or interview?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the person rehearsing the fabricated quote so they can recite it aloud as though quoting the real person — for example, reading a fake quotation out loud in a speech, broadcast, or interview?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:27:34.505549+00:00",
+    "event": "submission",
+    "index": 15,
+    "type": "question",
+    "text": "Is the person rehearsing the fabricated quote privately in order to practice speaking it convincingly — but without a planned audience event — so the seven repetitions are just practice aloud?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the person rehearsing the fabricated quote privately in order to practice speaking it convincingly — but without a planned audience event — so the seven repetitions are just practice aloud?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:27:40.392141+00:00",
+    "event": "submission",
+    "index": 16,
+    "type": "question",
+    "text": "Is the person repeatedly writing the fabricated quote (e.g., forging a signature, practicing a fake handwritten note, or testifying by repeating it in writing) rather than speaking it aloud for an audience?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the person repeatedly writing the fabricated quote (e.g., forging a signature, practicing a fake handwritten note, or testifying by repeating it in writing) rather than speaking it aloud for an audience?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:27:45.706551+00:00",
+    "event": "submission",
+    "index": 17,
+    "type": "question",
+    "text": "Is the person forging the real living person's handwriting/signature on a document — i.e., the repeated words are being written out as a fake handwritten note or signature attributed to that person?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the person forging the real living person's handwriting/signature on a document — i.e., the repeated words are being written out as a fake handwritten note or signature attributed to that person?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:27:55.307618+00:00",
+    "event": "submission",
+    "index": 18,
+    "type": "question",
+    "text": "Is the person a journalist or writer fabricating a quotation attributed to a real living person, for inclusion in an article, book, or other published text?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the person a journalist or writer fabricating a quotation attributed to a real living person, for inclusion in an article, book, or other published text?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:28:00.773010+00:00",
+    "event": "submission",
+    "index": 19,
+    "type": "question",
+    "text": "Is the person writing the fabricated quote as part of a school assignment or test — e.g., copying a fake quote as if it were a real source in an essay or exam answer?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the person writing the fabricated quote as part of a school assignment or test — e.g., copying a fake quote as if it were a real source in an essay or exam answer?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:28:04.118512+00:00",
+    "event": "submission",
+    "index": 20,
+    "type": "question",
+    "text": "Is the words \"You've disappointed me so much; I'm never coming back\" being written repeatedly as a customer complaint/letter or in a review — i.e., the writer is composing a message that will be attributed to a real other person?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the words \\\"You've disappointed me so much; I'm never coming back\\\" being written repeatedly as a customer complaint/letter or in a review — i.e., the writer is composing a message that will be attributed to a real other person?\"}",
+    "label": "yes and no"
+  },
+  {
+    "timestamp": "2026-11-13T04:29:35.131003+00:00",
+    "event": "submission",
+    "index": 21,
+    "type": "question",
+    "text": "Is the person trying to create evidence/impression that the real living person actually said or wrote these words — i.e., faking proof of a statement — rather than merely quoting or referring to them?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the person trying to create evidence/impression that the real living person actually said or wrote these words — i.e., faking proof of a statement — rather than merely quoting or referring to them?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:30:05.619812+00:00",
+    "event": "submission",
+    "index": 22,
+    "type": "question",
+    "text": "Is the fabricated statement being written in the form of a note or message left by that real living person — e.g., a note that appears to be from them saying they are leaving/never coming back?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the fabricated statement being written in the form of a note or message left by that real living person — e.g., a note that appears to be from them saying they are leaving/never coming back?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:30:31.663799+00:00",
+    "event": "submission",
+    "index": 23,
+    "type": "question",
+    "text": "Is the deceiver writing this fake \"I'm never coming back\" note in order to make people believe the real person has run away or abandoned them — i.e., to explain that person's disappearance — when in fact the deceiver has harmed or killed that person?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the deceiver writing this fake \\\"I'm never coming back\\\" note in order to make people believe the real person has run away or abandoned them — i.e., to explain that person's disappearance — when in fact the deceiver has harmed or killed that person?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:30:38.570268+00:00",
+    "event": "submission",
+    "index": 24,
+    "type": "question",
+    "text": "Was the real person (whose note is being faked) the deceiver's spouse or romantic partner?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Was the real person (whose note is being faked) the deceiver's spouse or romantic partner?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:30:44.450083+00:00",
+    "event": "submission",
+    "index": 25,
+    "type": "question",
+    "text": "Is the final line \"Sigh, I know I'm in trouble\" spoken by the person who killed their partner — i.e., the murderer acknowledging they've been caught or will be caught?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the final line \\\"Sigh, I know I'm in trouble\\\" spoken by the person who killed their partner — i.e., the murderer acknowledging they've been caught or will be caught?\"}",
+    "label": "yes and no"
+  },
+  {
+    "timestamp": "2026-11-13T04:32:00.703513+00:00",
+    "event": "submission",
+    "index": 26,
+    "type": "question",
+    "text": "Does this story originate from a well-known real criminal case or famous fictional detective plot (rather than being a made-up scenario)?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Does this story originate from a well-known real criminal case or famous fictional detective plot (rather than being a made-up scenario)?\"}",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-13T04:32:13.962998+00:00",
+    "event": "submission",
+    "index": 27,
+    "type": "question",
+    "text": "Is the killer eventually caught or exposed?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the killer eventually caught or exposed?\"}",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-13T04:32:20.254607+00:00",
+    "event": "submission",
+    "index": 28,
+    "type": "question",
+    "text": "Are the seven identical lines separate practice drafts of the forged note, written repeatedly by the killer to perfect it before composing the final note?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Are the seven identical lines separate practice drafts of the forged note, written repeatedly by the killer to perfect it before composing the final note?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:32:48.621454+00:00",
+    "event": "submission",
+    "index": 29,
+    "type": "question",
+    "text": "Were these practice drafts on paper later found/discarded in a way that betrayed the killer — i.e., is the discovery of the repeated practice writings what exposes the forged note?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Were these practice drafts on paper later found/discarded in a way that betrayed the killer — i.e., is the discovery of the repeated practice writings what exposes the forged note?\"}",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-13T04:33:11.806052+00:00",
+    "event": "submission",
+    "index": 30,
+    "type": "question",
+    "text": "Was the partner already dead at the time the seven practice drafts were written?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Was the partner already dead at the time the seven practice drafts were written?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:33:20.766186+00:00",
+    "event": "submission",
+    "index": 31,
+    "type": "final",
+    "text": "A person has killed their spouse/partner. To cover up the death and make it appear the partner simply walked out on them, the killer forges a farewell note in the partner's voice: \"You've disappointed me so much; I'm never coming back.\" Because the partner is already dead and will no longer write anything, the killer repeatedly practices that exact sentence — the seven identical repetitions are successive drafts written to perfect the handwriting/forgery of the note — before producing the final version to pass off as the missing partner's own words. The closing line, \"Sigh, I know I'm in trouble,\" is the killer's own grim acknowledgment of guilt and impending exposure as they rehearse the fabricated note.",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"final\", \"text\": \"A person has killed their spouse/partner. To cover up the death and make it appear the partner simply walked out on them, the killer forges a farewell note in the partner's voice: \\\"You've disappointed me so much; I'm never coming back.\\\" Because the partner is already dead and will no longer write anything, the killer repeatedly practices that exact sentence — the seven identical repetitions are successive drafts written to perfect the handwriting/forgery of the note — before producing the final version to pass off as the missing partner's own words. The closing line, \\\"Sigh, I know I'm in trouble,\\\" is the killer's own grim acknowledgment of guilt and impending exposure as they rehearse the fabricated note.\"}",
+    "label": "yes and no",
+    "grade": {
+      "event": "evaluation",
+      "submission": 31,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 0.5,
+          "evidence": "A person has killed their spouse/partner. To cover up the death and make it appear the partner simply walked out on them",
+          "reason": "Murder and staged voluntary departure are present, but the required identity of wife is generalized to spouse/partner."
+        },
+        {
+          "id": "C2",
+          "credit": 0.5,
+          "evidence": "the killer repeatedly practices that exact sentence — the seven identical repetitions are successive drafts written to perfect the handwriting/forgery of the note",
+          "reason": "Repeated forgery/handwriting attempts are identified, but wife-specific identity is not specified."
+        },
+        {
+          "id": "C3",
+          "credit": 0.5,
+          "evidence": "The closing line ... is the killer's own grim acknowledgment of guilt and impending exposure as they rehearse the fabricated note",
+          "reason": "Fear of exposure is present, but the required cause—inability to imitate her handwriting—is not stated."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": false,
+      "completion_note": "Recovered murder and forged departure note, but omitted the wife identity and did not state that the repetitions were failed attempts caused by inability to imitate her handwriting.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "partial",
+          "evidence": "A person has killed their spouse/partner. To cover up the death and make it appear the partner simply walked out on them"
+        },
+        {
+          "id": "C2.F1",
+          "status": "partial",
+          "evidence": "the killer repeatedly practices that exact sentence — the seven identical repetitions are successive drafts written to perfect the handwriting/forgery of the note"
+        },
+        {
+          "id": "C3.F1",
+          "status": "partial",
+          "evidence": "the killer repeatedly practices that exact sentence — ... to perfect the handwriting/forgery of the note ... The closing line ... is the killer's own grim acknowledgment of guilt and impending exposure as they rehearse the fabricated note"
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "partial",
+          "evidence": "A person has killed their spouse/partner."
+        },
+        {
+          "id": "R2",
+          "status": "covered",
+          "evidence": "To cover up the death and make it appear the partner simply walked out on them, the killer forges a farewell note in the partner's voice: \"You've disappointed me so much; I'm never coming back.\""
+        },
+        {
+          "id": "R3",
+          "status": "partial",
+          "evidence": "the killer repeatedly practices that exact sentence — ... to perfect the handwriting/forgery of the note ... The closing line ... is the killer's own grim acknowledgment of guilt and impending exposure as they rehearse the fabricated note"
+        }
+      ],
+      "contradictions": [],
+      "partial_score": 0.5,
+      "complete": false,
+      "label": "yes and no",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    }
+  },
+  {
+    "timestamp": "2026-11-13T04:34:54.140212+00:00",
+    "event": "submission",
+    "index": 32,
+    "type": "question",
+    "text": "Is the repeated practice writing done by typing on a keyboard or typewriter — i.e., a typed/printed note that won't be matched to the partner's handwriting — rather than by hand?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the repeated practice writing done by typing on a keyboard or typewriter — i.e., a typed/printed note that won't be matched to the partner's handwriting — rather than by hand?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:35:00.825701+00:00",
+    "event": "submission",
+    "index": 33,
+    "type": "question",
+    "text": "Is the final line spoken not by the killer but by the person the note is addressed to — the one being \"disappointed\" and abandoned — realizing their situation?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the final line spoken not by the killer but by the person the note is addressed to — the one being \\\"disappointed\\\" and abandoned — realizing their situation?\"}",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:35:18.227657+00:00",
+    "event": "submission",
+    "index": 34,
+    "type": "question",
+    "text": "Is the \"trouble\" the killer refers to about the forgery being detectable — e.g., that the handwriting won't convincingly match the dead partner's?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is the \\\"trouble\\\" the killer refers to about the forgery being detectable — e.g., that the handwriting won't convincingly match the dead partner's?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:35:22.996357+00:00",
+    "event": "submission",
+    "index": 35,
+    "type": "question",
+    "text": "Is it the killer's own handwriting — i.e., they cannot disguise it — so writing the note is itself evidence, making them recognize they are \"in trouble\"?",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"question\", \"text\": \"Is it the killer's own handwriting — i.e., they cannot disguise it — so writing the note is itself evidence, making them recognize they are \\\"in trouble\\\"?\"}",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:36:38.799287+00:00",
+    "event": "submission",
+    "index": 36,
+    "type": "final",
+    "text": "A man has killed his wife/partner. To cover up the death and make it look as though she simply walked out on him, he writes a farewell note in her voice: \"You've disappointed me so much; I'm never coming back.\" Because she is already dead and he must pass the note off as her own writing, he practices that exact sentence repeatedly — the seven identical lines are his successive handwritten drafts as he tries to disguise his handwriting and produce a convincing forgery. The closing line is his own resigned realization: his real handwriting cannot be disguised, so the very note he is practicing will betray him — he knows he is in trouble.",
+    "forced": false,
+    "raw_player_output": "{\"type\": \"final\", \"text\": \"A man has killed his wife/partner. To cover up the death and make it look as though she simply walked out on him, he writes a farewell note in her voice: \\\"You've disappointed me so much; I'm never coming back.\\\" Because she is already dead and he must pass the note off as her own writing, he practices that exact sentence repeatedly — the seven identical lines are his successive handwritten drafts as he tries to disguise his handwriting and produce a convincing forgery. The closing line is his own resigned realization: his real handwriting cannot be disguised, so the very note he is practicing will betray him — he knows he is in trouble.\"}",
+    "label": "yes",
+    "grade": {
+      "event": "evaluation",
+      "submission": 36,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 1,
+          "evidence": "A man has killed his wife/partner. To cover up the death and make it look as though she simply walked out on him",
+          "reason": "Murder of the wife/partner and staging the departure as voluntary are both present."
+        },
+        {
+          "id": "C2",
+          "credit": 1,
+          "evidence": "he practices that exact sentence repeatedly — the seven identical lines are his successive handwritten drafts as he tries to disguise his handwriting and produce a convincing forgery",
+          "reason": "The repeated drafts are explicitly described as attempts to forge a note in her handwriting."
+        },
+        {
+          "id": "C3",
+          "credit": 1,
+          "evidence": "his real handwriting cannot be disguised, so the very note he is practicing will betray him — he knows he is in trouble",
+          "reason": "The inability to disguise/forge the handwriting is directly linked to fear of exposure."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": true,
+      "completion_note": "The submission reconstructs the complete reference narrative: murder, staged departure note, repeated forgery attempts, and fear of discovery from inability to imitate the handwriting.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "covered",
+          "evidence": "A man has killed his wife/partner. To cover up the death and make it look as though she simply walked out on him"
+        },
+        {
+          "id": "C2.F1",
+          "status": "covered",
+          "evidence": "he practices that exact sentence repeatedly — the seven identical lines are his successive handwritten drafts as he tries to disguise his handwriting and produce a convincing forgery"
+        },
+        {
+          "id": "C3.F1",
+          "status": "covered",
+          "evidence": "he tries to disguise his handwriting ... his real handwriting cannot be disguised, so the very note he is practicing will betray him — he knows he is in trouble"
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "covered",
+          "evidence": "A man has killed his wife/partner."
+        },
+        {
+          "id": "R2",
+          "status": "covered",
+          "evidence": "To cover up the death and make it look as though she simply walked out on him, he writes a farewell note in her voice: \"You've disappointed me so much; I'm never coming back.\""
+        },
+        {
+          "id": "R3",
+          "status": "covered",
+          "evidence": "he practices that exact sentence repeatedly — ... as he tries to disguise his handwriting and produce a convincing forgery ... his real handwriting cannot be disguised, so the very note he is practicing will betray him — he knows he is in trouble"
+        }
+      ],
+      "contradictions": [],
+      "partial_score": 1.0,
+      "complete": true,
+      "label": "yes",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    }
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "2f37373b1374b644462ee90e0fca65d4d22d364ea4f0c4f12d7c9d0d41160d41",
+    "trajectory.jsonl": "48cb6f9afa2f487ef20614ce43e638c30fc6d568b7d37e8763a5b3fdb974cdcd",
+    "trajectory.md": "93cc021bab9fdb57fc0c140a91df003c98ce3abaef4cd7e3900f66f3e530798c",
+    "trajectory.html": "a6ce61678bb03b601f1d78f7d241b003cc8a10e2acfe67895b0807632b5a310e",
+    "config.json": "4307cf3c715247acc8faf9d322125607962ba66e56d5980b57d841ccb930bc1e",
+    "prompts.json": "2293fcad2d75c545b454f5ac0b351c8f0d0b635d59ed01a87e246365943d699f",
+    "puzzle_private.json": "c01a39bd4b8af6fb50d2f9bed46102d70dfc3b607728363b47501821cf04f406",
+    "host_context.json": "a9be0c92867631e3a6030e94c7bb2add9c4a322a04ac7697c64dccc9deef3db1",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "0a3fdde5e02a39bbfd5dea2afbce6b9ce2479134e71d8df316bc7b00195cca23",
+    "cost_summary.json": "d6c395a57a5a7820c59ef9d6fb55e5118f82fac553f8ba565bb648af30fe16ae",
+    "token_costs.csv": "76dd6859c654cbb4ede96bef49f76836025e3937b6988581894088a6d1f1f31f",
+    "human_review.csv": "8161f9e2de44fd888ac6919b84b2c741f3a9722e04ecf63dd466834a3b965603",
+    "review_template.csv": "bda0dbf3429a55e3aa1e7a6a04f0baa3b34d8bdf9f6f39e8656d6a356d97bcda",
+    "self_review.html": "f579ad771909d3af4f6d3aa5b8074edc814aacc4c1705e9cf8e3551f7643ac1c",
+    "solver_compute.json": "6282a557b90b44ff294067063470a1e4340c398b033d23930dd85526e6de6e60"
+  },
+  "api_audit": {
+    "source_raw_sha256": "b98fb4168d59121c3bf7ad7b81accd9d095d659bf6b7d684a1f9cac9d3c5c352",
+    "source_raw_bytes": 21804206,
+    "published_sha256": "72567cfabe098f6c3f7e1692956cf1a25c32405e9af0eeedfd16667019e554bf",
+    "attempts": 210
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261112_ts038_self_review_matched_v2/TS038_r01_solo_self_review_matched",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 70,
+      "result_sha256": "2f37373b1374b644462ee90e0fca65d4d22d364ea4f0c4f12d7c9d0d41160d41",
+      "signature": "6f6f0ae8eb6b65a5bc5d2f0ee77d09149e0c36519b5aeed6940cc39787645835",
+      "event_count": 702,
+      "trajectory_sha256": "48cb6f9afa2f487ef20614ce43e638c30fc6d568b7d37e8763a5b3fdb974cdcd",
+      "first_submission": "2026-11-12T05:11:59.283502+00:00",
+      "first_text": "Is the repeated line spoken by one person on multiple separate occasions?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

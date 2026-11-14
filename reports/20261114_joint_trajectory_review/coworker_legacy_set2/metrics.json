@@ -1,0 +1,282 @@
+{
+  "reviewer": "AI逐条语义审阅，非人工gold",
+  "status": "complete",
+  "coverage": {
+    "expected_games": 24,
+    "reviewed_games": 24,
+    "expected_submissions": 2400,
+    "reviewed_submissions": 2400,
+    "question_submissions": 2321,
+    "final_evaluations": 79,
+    "original_labels_modified": false,
+    "unread_auto_ok": false
+  },
+  "verdicts": {
+    "ok": 2289,
+    "suspect": 52,
+    "ambiguous": 59
+  },
+  "question_verdicts": {
+    "ok": 2222,
+    "suspect": 48,
+    "ambiguous": 51
+  },
+  "evaluation_verdicts": {
+    "ok": 67,
+    "ambiguous": 7,
+    "suspect": 5
+  },
+  "all": {
+    "games": 24,
+    "submissions": 2400,
+    "questions": 2321,
+    "final_attempts": 79,
+    "successes": 0,
+    "mean_final_score": 0.50625,
+    "mean_best_score": 0.539583,
+    "core_pivot_games": 16,
+    "regression_games": [
+      "round1::S2_TS033_TS034_TS033_TS034_r01_session",
+      "round1::S2_TS035_TS034_TS035_TS034_r01_source",
+      "round2::S2_TS012_TS034_TS012_TS034_r01_answer_only"
+    ],
+    "score_one_but_not_complete_games": [
+      "round1::S2_TS035_TS034_TS035_TS034_r01_direct",
+      "round2::S2_TS033_TS034_TS033_TS034_r01_answer_only"
+    ]
+  },
+  "by_mode": {
+    "source": {
+      "games": 6,
+      "submissions": 600,
+      "questions": 576,
+      "final_attempts": 24,
+      "successes": 0,
+      "mean_final_score": 0.35,
+      "mean_best_score": 0.391667,
+      "core_pivot_games": 5,
+      "regression_games": [
+        "round1::S2_TS035_TS034_TS035_TS034_r01_source"
+      ],
+      "score_one_but_not_complete_games": []
+    },
+    "direct": {
+      "games": 6,
+      "submissions": 600,
+      "questions": 585,
+      "final_attempts": 15,
+      "successes": 0,
+      "mean_final_score": 0.7,
+      "mean_best_score": 0.7,
+      "core_pivot_games": 4,
+      "regression_games": [],
+      "score_one_but_not_complete_games": [
+        "round1::S2_TS035_TS034_TS035_TS034_r01_direct"
+      ]
+    },
+    "answer_only": {
+      "games": 6,
+      "submissions": 600,
+      "questions": 586,
+      "final_attempts": 14,
+      "successes": 0,
+      "mean_final_score": 0.583333,
+      "mean_best_score": 0.65,
+      "core_pivot_games": 5,
+      "regression_games": [
+        "round2::S2_TS012_TS034_TS012_TS034_r01_answer_only"
+      ],
+      "score_one_but_not_complete_games": [
+        "round2::S2_TS033_TS034_TS033_TS034_r01_answer_only"
+      ]
+    },
+    "session": {
+      "games": 6,
+      "submissions": 600,
+      "questions": 574,
+      "final_attempts": 26,
+      "successes": 0,
+      "mean_final_score": 0.391667,
+      "mean_best_score": 0.416667,
+      "core_pivot_games": 2,
+      "regression_games": [
+        "round1::S2_TS033_TS034_TS033_TS034_r01_session"
+      ],
+      "score_one_but_not_complete_games": []
+    }
+  },
+  "by_round_mode": {
+    "1": {
+      "source": {
+        "games": 3,
+        "submissions": 300,
+        "questions": 286,
+        "final_attempts": 14,
+        "successes": 0,
+        "mean_final_score": 0.291667,
+        "mean_best_score": 0.375,
+        "core_pivot_games": 3,
+        "regression_games": [
+          "round1::S2_TS035_TS034_TS035_TS034_r01_source"
+        ],
+        "score_one_but_not_complete_games": []
+      },
+      "direct": {
+        "games": 3,
+        "submissions": 300,
+        "questions": 292,
+        "final_attempts": 8,
+        "successes": 0,
+        "mean_final_score": 0.9,
+        "mean_best_score": 0.9,
+        "core_pivot_games": 3,
+        "regression_games": [],
+        "score_one_but_not_complete_games": [
+          "round1::S2_TS035_TS034_TS035_TS034_r01_direct"
+        ]
+      },
+      "answer_only": {
+        "games": 3,
+        "submissions": 300,
+        "questions": 297,
+        "final_attempts": 3,
+        "successes": 0,
+        "mean_final_score": 0.4,
+        "mean_best_score": 0.4,
+        "core_pivot_games": 2,
+        "regression_games": [],
+        "score_one_but_not_complete_games": []
+      },
+      "session": {
+        "games": 3,
+        "submissions": 300,
+        "questions": 286,
+        "final_attempts": 14,
+        "successes": 0,
+        "mean_final_score": 0.216667,
+        "mean_best_score": 0.266667,
+        "core_pivot_games": 0,
+        "regression_games": [
+          "round1::S2_TS033_TS034_TS033_TS034_r01_session"
+        ],
+        "score_one_but_not_complete_games": []
+      }
+    },
+    "2": {
+      "source": {
+        "games": 3,
+        "submissions": 300,
+        "questions": 290,
+        "final_attempts": 10,
+        "successes": 0,
+        "mean_final_score": 0.408333,
+        "mean_best_score": 0.408333,
+        "core_pivot_games": 2,
+        "regression_games": [],
+        "score_one_but_not_complete_games": []
+      },
+      "direct": {
+        "games": 3,
+        "submissions": 300,
+        "questions": 293,
+        "final_attempts": 7,
+        "successes": 0,
+        "mean_final_score": 0.5,
+        "mean_best_score": 0.5,
+        "core_pivot_games": 1,
+        "regression_games": [],
+        "score_one_but_not_complete_games": []
+      },
+      "answer_only": {
+        "games": 3,
+        "submissions": 300,
+        "questions": 289,
+        "final_attempts": 11,
+        "successes": 0,
+        "mean_final_score": 0.766667,
+        "mean_best_score": 0.9,
+        "core_pivot_games": 3,
+        "regression_games": [
+          "round2::S2_TS012_TS034_TS012_TS034_r01_answer_only"
+        ],
+        "score_one_but_not_complete_games": [
+          "round2::S2_TS033_TS034_TS033_TS034_r01_answer_only"
+        ]
+      },
+      "session": {
+        "games": 3,
+        "submissions": 300,
+        "questions": 288,
+        "final_attempts": 12,
+        "successes": 0,
+        "mean_final_score": 0.566667,
+        "mean_best_score": 0.566667,
+        "core_pivot_games": 2,
+        "regression_games": [],
+        "score_one_but_not_complete_games": []
+      }
+    }
+  },
+  "score_one_evaluations": [
+    {
+      "game_id": "round1::S2_TS035_TS034_TS035_TS034_r01_direct",
+      "submission": 87,
+      "score": 1,
+      "complete": false,
+      "completion_note": "The core hostage reversal, witness-fear motive, and protective refusal are present, but the submission omits the daughter's wealth, the father's fear for both himself and the daughter at the meeting, and the only-family status and instruction not to come."
+    },
+    {
+      "game_id": "round1::S2_TS035_TS034_TS035_TS034_r01_direct",
+      "submission": 100,
+      "score": 1,
+      "complete": false,
+      "completion_note": "Core solution is present, but completion is incomplete: it omits the daughter's wealth, the father's fear that the meeting would expose both himself and his daughter to witness killing, the only-family detail, and the explicit instruction not to come. It also frames the kidnapper's intent as actual rather than as the father's fear."
+    },
+    {
+      "game_id": "round2::S2_TS033_TS034_TS033_TS034_r01_answer_only",
+      "submission": 64,
+      "score": 1,
+      "complete": false,
+      "completion_note": "The submission reconstructs the core reversal, the witness-killing fear, and the protective refusal, but omits that the daughter is wealthy and his only family, does not report that he tells her not to pay or come, and does not explicitly state that arriving would expose both of them to being killed to remove witnesses."
+    },
+    {
+      "game_id": "round2::S2_TS033_TS034_TS033_TS034_r01_answer_only",
+      "submission": 77,
+      "score": 1,
+      "complete": false,
+      "completion_note": "The submission reconstructs the hostage reversal, the demand to bring the money alone, and the feared witness killing, but it omits that the daughter is wealthy, that she is his only family, and that he tells her not to pay or come. It also does not state the reference's fear that arriving would expose both of them to being killed to remove witnesses."
+    },
+    {
+      "game_id": "round2::S2_TS033_TS034_TS033_TS034_r01_answer_only",
+      "submission": 85,
+      "score": 1,
+      "complete": false,
+      "completion_note": "The submission reconstructs the core hostage reversal, the lone-ransom demand, the witness-killing fear, and the self-sacrificing refusal. However, it omits that the daughter is wealthy, that she is his only family, and that he tells her not to pay or come. It also does not state the father's fear that arriving would expose both of them to being killed to remove witnesses."
+    },
+    {
+      "game_id": "round2::S2_TS033_TS034_TS033_TS034_r01_answer_only",
+      "submission": 100,
+      "score": 1,
+      "complete": false,
+      "completion_note": "The submission reconstructs the core reversal, the lone-ransom demand, the witness-killing fear, and the self-sacrificing refusal. It omits that the daughter is wealthy, that she is his only family, and that he tells her not to pay or come. It also does not state the reference's required fear that arriving would expose both of them, focusing only on the daughter's danger."
+    }
+  ],
+  "forensics_summary": {
+    "actual_formatter_calls": 7,
+    "accepted_formatter_submissions": 0,
+    "re_prompts": 12,
+    "deterministic_format_recoveries": 948,
+    "source_answer_reveal_events": 39,
+    "imported_direct_baselines": [
+      {
+        "game_id": "round1::S2_TS033_TS034_TS033_TS034_r01_direct",
+        "path": "/Users/tongmindy/Desktop/COMP1110/gp-comp1110/GoodTurtle/runs/api/20261111_191242_set2_first_round_v12_baseline",
+        "block": "S2_TS033_TS034_TS033_TS034_r01",
+        "trajectory_sha256": "63fd23fa8e0e6701683c38433a215f6865b12bd57c60cbad83168c27c34f3704",
+        "result_sha256": "cce238f12d70e4bf91b594baa8a9f7b974ee38d199015a808551bc1cc9df8258",
+        "reason": "Historical direct baseline was completed before the source game and includes audited recoveries; inspect frozen versions before interpreting comparisons."
+      }
+    ]
+  },
+  "limits": "每轮每A关系只有一个source及一个B/condition；两轮host v12/v13、seed和transport不同，round1一项direct预先发布，不能把分差作干净因果效应。suspect/ambiguous不是已证实错误；建议均待人工复核，未改原成绩。"
+}

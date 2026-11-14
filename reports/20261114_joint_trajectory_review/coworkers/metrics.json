@@ -1,0 +1,194 @@
+{
+  "review_kind": "AI-assisted semantic review, not human gold standard; rates are review flags, not validated error rates",
+  "expected_games": 38,
+  "reviewed_games": 38,
+  "expected_submissions": 3800,
+  "reviewed_submissions": 3800,
+  "unreviewed_submissions": 0,
+  "verdict_counts": {
+    "ok": 3596,
+    "ambiguous": 141,
+    "suspect": 63
+  },
+  "by_type": {
+    "final": {
+      "ambiguous": 18,
+      "suspect": 12,
+      "ok": 78
+    },
+    "invalid": {
+      "ok": 4
+    },
+    "question": {
+      "ok": 3514,
+      "ambiguous": 123,
+      "suspect": 51
+    }
+  },
+  "submission_types": {
+    "question": 3688,
+    "final": 108,
+    "invalid": 4
+  },
+  "all_trajectory_bytes_match_full_parent": true,
+  "text_type_label_consistency_checked": true,
+  "event_counts": {
+    "start": 38,
+    "session_open": 112,
+    "session_turn": 7603,
+    "submission": 3800,
+    "reference_selection": 3803,
+    "host_review": 3688,
+    "host_feedback": 3688,
+    "codex_format_repair_requested": 5,
+    "error": 16,
+    "session_close": 162,
+    "player_format_recovery": 202,
+    "lossless_continuation_authorized": 2,
+    "session_reopen": 50,
+    "session_restored": 50,
+    "evaluation": 108,
+    "protocol_intervention": 4,
+    "pending_transport_replay_authorized": 7,
+    "player_session_inherited": 17,
+    "grader_evidence_repair": 7,
+    "host_transport_recovery": 2,
+    "pending_host_replay_user_authorized": 2,
+    "localized_final_lossless_recovery_authorized": 1,
+    "source_answer_reveal": 3
+  },
+  "existing_api_audit_models": [
+    {
+      "role": "format_repair",
+      "provider": "codex_cli",
+      "requested_model": "gpt-6.1-sol",
+      "returned_model": null,
+      "status": "ok",
+      "records": 5
+    },
+    {
+      "role": "grader",
+      "provider": "deepseek",
+      "requested_model": "deepseek-v4-pro",
+      "returned_model": "deepseek-v4-pro",
+      "status": "ok",
+      "records": 115
+    },
+    {
+      "role": "host",
+      "provider": "deepseek",
+      "requested_model": "deepseek-v4-pro",
+      "returned_model": "deepseek-v4-pro",
+      "status": "ok",
+      "records": 3688
+    },
+    {
+      "role": "host",
+      "provider": "deepseek",
+      "requested_model": "deepseek-v4-pro",
+      "returned_model": null,
+      "status": "transport_error",
+      "records": 18
+    },
+    {
+      "role": "player",
+      "provider": "deepseek",
+      "requested_model": "deepseek-flash",
+      "returned_model": "deepseek-flash",
+      "status": "ok",
+      "records": 3800
+    },
+    {
+      "role": "player",
+      "provider": "deepseek",
+      "requested_model": "deepseek-flash",
+      "returned_model": null,
+      "status": "transport_error",
+      "records": 13
+    }
+  ],
+  "source_A_count": 3,
+  "target_B_count": 35,
+  "complete_games": 0,
+  "all_runs_reached_budget": true,
+  "original_final_score_means": {
+    "TS012_answer_only": {
+      "n": 5,
+      "mean": 0.33,
+      "scores": [
+        0.65,
+        0.0,
+        0.15,
+        0.6,
+        0.25
+      ]
+    },
+    "TS012_session": {
+      "n": 5,
+      "mean": 0.5599999999999999,
+      "scores": [
+        0.7,
+        0.7,
+        0.0,
+        0.7,
+        0.7
+      ]
+    },
+    "TS033_answer_only": {
+      "n": 5,
+      "mean": 0.665,
+      "scores": [
+        0.8,
+        0.7,
+        0.8,
+        0.55,
+        0.475
+      ]
+    },
+    "TS033_session": {
+      "n": 5,
+      "mean": 0.27,
+      "scores": [
+        0.0,
+        0.1,
+        0.45,
+        0.8,
+        0.0
+      ]
+    },
+    "TS035_answer_only": {
+      "n": 5,
+      "mean": 0.23,
+      "scores": [
+        0.0,
+        0.8,
+        0.0,
+        0.1,
+        0.25
+      ]
+    },
+    "TS035_session": {
+      "n": 5,
+      "mean": 0.41,
+      "scores": [
+        0.0,
+        0.7,
+        0.55,
+        0.1,
+        0.7
+      ]
+    },
+    "none_direct": {
+      "n": 5,
+      "mean": 0.555,
+      "scores": [
+        0.25,
+        0.375,
+        0.8,
+        0.8,
+        0.55
+      ]
+    }
+  },
+  "new_experiment_or_api_calls_by_this_review": 0
+}

@@ -1,0 +1,227 @@
+{
+  "status": "error",
+  "stop_reason": "APIError",
+  "simulation": false,
+  "success": null,
+  "host_questions": 3,
+  "final_attempts": 0,
+  "rejected_finals": 0,
+  "counted_questions": 3,
+  "submissions": 3,
+  "player_format_corrections": [],
+  "pending_feedback": 1,
+  "forced_final": false,
+  "final_partial_score": null,
+  "best_partial_score": null,
+  "latest_final": null,
+  "latest_grade": null,
+  "elapsed_seconds": 181.7125039580278,
+  "usage": {
+    "grader": {
+      "http_attempts": 0,
+      "successful_responses": 0,
+      "seconds": 0,
+      "provider_reported_usage": {}
+    },
+    "host": {
+      "http_attempts": 3,
+      "successful_responses": 2,
+      "seconds": 175.91341933305375,
+      "provider_reported_usage": {
+        "prompt_tokens": 8963,
+        "completion_tokens": 1289,
+        "total_tokens": 10252,
+        "prompt_cache_hit_tokens": 8448,
+        "prompt_cache_miss_tokens": 515
+      }
+    },
+    "partner": {
+      "http_attempts": 1,
+      "successful_responses": 1,
+      "seconds": 2.049187333090231,
+      "provider_reported_usage": {
+        "prompt_tokens": 2071,
+        "completion_tokens": 30,
+        "total_tokens": 2101,
+        "prompt_cache_hit_tokens": 1536,
+        "prompt_cache_miss_tokens": 535
+      }
+    },
+    "player": {
+      "http_attempts": 2,
+      "successful_responses": 2,
+      "seconds": 3.681526208296418,
+      "provider_reported_usage": {
+        "prompt_tokens": 4279,
+        "completion_tokens": 50,
+        "total_tokens": 4329,
+        "prompt_cache_hit_tokens": 3712,
+        "prompt_cache_miss_tokens": 567
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "estimate_assumptions": [
+      "peak_rate_reference_upper_estimate; off-peak rates are half; actual billing unknown"
+    ],
+    "total": {
+      "calls": 6,
+      "unknown_cost_calls": 1,
+      "known_estimated_cost_usd": 0.00661404,
+      "estimated_cost_usd": null,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 15313,
+        "cached_input_tokens": 13696,
+        "cache_write_tokens": 0,
+        "output_tokens": 1369,
+        "reasoning_tokens": 1285,
+        "total_tokens": 16682
+      },
+      "missing_token_calls": {
+        "input_tokens": 1,
+        "cached_input_tokens": 1,
+        "cache_write_tokens": 0,
+        "output_tokens": 1,
+        "reasoning_tokens": 4,
+        "total_tokens": 1
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 3,
+        "unknown_cost_calls": 1,
+        "known_estimated_cost_usd": 0.006155952,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 8963,
+          "cached_input_tokens": 8448,
+          "cache_write_tokens": 0,
+          "output_tokens": 1289,
+          "reasoning_tokens": 1285,
+          "total_tokens": 10252
+        },
+        "missing_token_calls": {
+          "input_tokens": 1,
+          "cached_input_tokens": 1,
+          "cache_write_tokens": 0,
+          "output_tokens": 1,
+          "reasoning_tokens": 1,
+          "total_tokens": 1
+        }
+      },
+      {
+        "role": "partner",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 1,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.000205716,
+        "estimated_cost_usd": 0.000205716,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 2071,
+          "cached_input_tokens": 1536,
+          "cache_write_tokens": 0,
+          "output_tokens": 30,
+          "reasoning_tokens": 0,
+          "total_tokens": 2101
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 1,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 2,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.000252372,
+        "estimated_cost_usd": 0.000252372,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 4279,
+          "cached_input_tokens": 3712,
+          "cache_write_tokens": 0,
+          "output_tokens": 50,
+          "reasoning_tokens": 0,
+          "total_tokens": 4329
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 2,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": "host: transport failure (connection_reset, open)",
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "1240d705-80ab-40c1-abd4-44feda3a0a4b",
+      "2a971def-2f54-487b-bc21-591d2bfd0322",
+      "d40bb849-1b9c-4ac1-a6fc-bfc8f0d4a066"
+    ],
+    "logical_input_chars": 19925,
+    "delta_input_chars": 11807,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "8f2ddbbd95f8552db795e6101df8e1ec6ac3755b6591d990fc66877d5a4b9d3b",
+    "grading_sha256": "ca184d8550ded2ca3f901e2f09673271411833e9d201f2febc0c774acef67093",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v3-unified",
+    "prompts_sha256": "c95150ba24dd57486633f8b8acdc715e4861fd9e112077b7598de481dead1678",
+    "controller_sha256": "019f26c77e5eecd890c8d17b2112e35f37e26300eb63bddd39ee204784462bef",
+    "player_format_policy_sha256": "cf439ee1d60ae38374486aada319739646a5975284ff00bc877a3040047df56a",
+    "host_context_sha256": "4de8a9c689103080f87f7d2d62d3c0d145f07e715d5fe6e9b988f49249c5bcaf",
+    "host_binding_version": "host-v14-ai-20261111-forged-author"
+  },
+  "dialogue_metrics": {
+    "settings": {
+      "roles": "complementary",
+      "scheduling": "adaptive",
+      "max_discussion": 4,
+      "start": "A",
+      "role_assignment": {
+        "A": {
+          "specialty": "investigator",
+          "instruction": "Develop and test explanations of identities, setting, event order and the main causal mechanism. Connect confirmed facts into a coherent story; explicitly distinguish hypotheses from host-confirmed facts."
+        },
+        "B": {
+          "specialty": "critic",
+          "instruction": "Challenge unsupported assumptions, propose alternative interpretations, and test missing causal links, motives and contradictions. Suggest discriminating questions rather than only criticizing. Help complete the story."
+        }
+      },
+      "protocol": "shared-dialogue-v3-prefix-v1",
+      "format_correction_max_retries": 2
+    },
+    "counts_by_actor": {
+      "A": {
+        "question": 2
+      },
+      "B": {
+        "question": 1
+      }
+    },
+    "external_submissions": 3,
+    "internal_messages": 0
+  }
+}

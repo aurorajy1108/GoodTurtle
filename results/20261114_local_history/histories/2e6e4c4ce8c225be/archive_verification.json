@@ -1,0 +1,41 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "63758c61b11bca93b3ee60e4759f3b93a3ae836b35760c8353f0d1347a645227",
+    "trajectory.jsonl": "31d1678074ce50f69a858f0d18c0be60d2e912ef914bd5dca91b775e2a6c09e1",
+    "trajectory.md": "1b2cf50fad6b6c05617073f5b81468ffd0dd3833d068af45e88112998977d51b",
+    "trajectory.html": "2e69c6e2e944ef6ab7c2f2616cdee6364443b7fcad63e96713803b06e192f14d",
+    "config.json": "4307cf3c715247acc8faf9d322125607962ba66e56d5980b57d841ccb930bc1e",
+    "prompts.json": "fd0f3ea13c946e62222d317314549bea070bde6feb4c96d4bb9d525f03568bd4",
+    "puzzle_private.json": "c01a39bd4b8af6fb50d2f9bed46102d70dfc3b607728363b47501821cf04f406",
+    "host_context.json": "a9be0c92867631e3a6030e94c7bb2add9c4a322a04ac7697c64dccc9deef3db1",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "0a3fdde5e02a39bbfd5dea2afbce6b9ce2479134e71d8df316bc7b00195cca23",
+    "cost_summary.json": "105ab3cfdb21549e1cc2595ab6a08052516686b3f9cea57bef1e55c3df7be3a2",
+    "token_costs.csv": "bfcd9cb69a3ddf804317eea76b51e6af180d4fe59e7a058d6e07c88f7463cd50",
+    "human_review.csv": "ccb44cfff0a261864a6f8599efd32590f6aa7386717c0858336b89dbbcdaee2a",
+    "review_template.csv": "ccb44cfff0a261864a6f8599efd32590f6aa7386717c0858336b89dbbcdaee2a"
+  },
+  "api_audit": {
+    "source_raw_sha256": "e507ca91477a9e2d11e1f51a556594c7e9e5f30a9d2910499482a421cc6cb956",
+    "source_raw_bytes": 10104208,
+    "published_sha256": "f4a206cdd2bfe57947a0cdde522f56f15dd2678a056dd7cecaccd47124a515d6",
+    "attempts": 200
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261112_jiayang_supervised_v2/continuations/mas-ts038-a/attempt_01/team/TS038_r01_solo",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "63758c61b11bca93b3ee60e4759f3b93a3ae836b35760c8353f0d1347a645227",
+      "signature": "2e6e4c4ce8c225be18aee7790a8ff8fc85dc2738fa3194c513a2404a564db606",
+      "event_count": 606,
+      "trajectory_sha256": "31d1678074ce50f69a858f0d18c0be60d2e912ef914bd5dca91b775e2a6c09e1",
+      "first_submission": "2026-11-11T17:58:37.098531+00:00",
+      "first_text": "Is the repeated line spoken by multiple distinct people?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

@@ -1,0 +1,93 @@
+{
+  "status": "completed",
+  "stop_reason": "budget_exhausted",
+  "simulation": false,
+  "success": false,
+  "host_questions": 93,
+  "final_attempts": 7,
+  "rejected_finals": 7,
+  "counted_questions": 100,
+  "submissions": 100,
+  "pending_feedback": 0,
+  "forced_final": true,
+  "final_partial_score": 0.125,
+  "best_partial_score": 0.125,
+  "latest_final": "A used the separate eraser while preparing a pencil for a drawing apparatus; its exact role in that preparation is unclear. A then moved the apparatus by hand over the blank sheet, and the pencil fixed to it traced the message’s strokes and made the marks.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0,
+        "evidence": "“its exact role in that preparation is unclear”",
+        "reason": "Does not identify the eraser’s role as accessing the refill opening or loading lead into a mechanical pencil."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "“the pencil fixed to it traced the message’s strokes” on “the blank sheet”",
+        "reason": "Identifies a pencil writing on the blank sheet, but omits the lead-refill-to-message sequence."
+      }
+    ],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "The explanation omits that the eraser is removed or handled to access the mechanical pencil’s lead opening, that A inserts lead, and that the refilled pencil is then used to write the message.",
+    "partial_score": 0.125,
+    "complete": false,
+    "label": "yes and no"
+  },
+  "elapsed_seconds": 6678.205491375178,
+  "usage": {
+    "grader": {
+      "http_attempts": 7,
+      "successful_responses": 7,
+      "seconds": 96.44048616639338,
+      "provider_reported_usage": {
+        "input_tokens": 19908,
+        "cached_input_tokens": 8192,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2911,
+        "reasoning_output_tokens": 1551
+      }
+    },
+    "host": {
+      "http_attempts": 93,
+      "successful_responses": 93,
+      "seconds": 1519.5519503778778,
+      "provider_reported_usage": {
+        "input_tokens": 387061,
+        "cached_input_tokens": 153600,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 26648,
+        "reasoning_output_tokens": 25032
+      }
+    },
+    "partner": {
+      "http_attempts": 100,
+      "successful_responses": 100,
+      "seconds": 1735.4341454596724,
+      "provider_reported_usage": {
+        "input_tokens": 376986,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 54064,
+        "reasoning_output_tokens": 42403
+      }
+    },
+    "player": {
+      "http_attempts": 200,
+      "successful_responses": 200,
+      "seconds": 3325.2867574081756,
+      "provider_reported_usage": {
+        "input_tokens": 811894,
+        "cached_input_tokens": 223232,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 70316,
+        "reasoning_output_tokens": 61189
+      }
+    }
+  },
+  "error": null,
+  "human_review_status": "pending"
+}

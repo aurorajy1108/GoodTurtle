@@ -1,0 +1,105 @@
+{
+  "status": "interrupted",
+  "stop_reason": "user_interrupt",
+  "simulation": false,
+  "success": null,
+  "host_questions": 39,
+  "final_attempts": 1,
+  "rejected_finals": 1,
+  "counted_questions": 40,
+  "submissions": 40,
+  "pending_feedback": 1,
+  "forced_final": false,
+  "final_partial_score": 0.125,
+  "best_partial_score": 0.125,
+  "latest_final": "The man has been buried alive in a man-made enclosure with no usable way out. When he strikes a match, he recognizes someone he knows, whom he had not believed to be dead. That person is already dead and is in the enclosure with him. Their identity reveals something about his immediate, already-fatal situation, but they do not cause his death. The air in the enclosure has too little oxygen, and trapped there, the man dies in terror and despair. The clues do not establish why the oxygen is low or how the other person died.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0,
+        "evidence": "He says the man was buried in a man-made enclosure, without identifying him as a prisoner or describing a prison-escape plan.",
+        "reason": "The required prisoner-and-coffin escape explanation is absent."
+      },
+      {
+        "id": "C2",
+        "credit": 0,
+        "evidence": "The person is described only as someone he knows who is dead.",
+        "reason": "The explanation does not identify the person as the bribed guard or intended rescuer."
+      },
+      {
+        "id": "C3",
+        "credit": 0.5,
+        "evidence": "“When he strikes a match, he recognizes someone he knows” who is already dead.",
+        "reason": "Match-lighting and discovery of a dead person are covered, but the person is not identified as the guard."
+      },
+      {
+        "id": "C4",
+        "credit": 0.5,
+        "evidence": "He says the man is trapped with “no usable way out” and dies.",
+        "reason": "Entrapment and death are stated, but not because the dead person was the promised rescuer who could no longer dig him out."
+      }
+    ],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "The explanation omits that he is a prisoner who bribed a guard, the plan to hide in the next deceased person's coffin and be dug up after burial, and that the dead person he recognizes is that guard. It substitutes an unspecified enclosure and low oxygen for the reference's coffin-and-rescuer explanation.",
+    "partial_score": 0.125,
+    "complete": false,
+    "label": "yes and no"
+  },
+  "elapsed_seconds": 1705.5812783329748,
+  "usage": {
+    "grader": {
+      "http_attempts": 1,
+      "successful_responses": 1,
+      "seconds": 12.241737792035565,
+      "provider_reported_usage": {
+        "input_tokens": 6160,
+        "cached_input_tokens": 2176,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 627,
+        "reasoning_output_tokens": 305
+      }
+    },
+    "host": {
+      "http_attempts": 38,
+      "successful_responses": 38,
+      "seconds": 358.01291078864597,
+      "provider_reported_usage": {
+        "input_tokens": 245443,
+        "cached_input_tokens": 90112,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 5799,
+        "reasoning_output_tokens": 5150
+      }
+    },
+    "partner": {
+      "http_attempts": 40,
+      "successful_responses": 40,
+      "seconds": 528.7195519555826,
+      "provider_reported_usage": {
+        "input_tokens": 105517,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 23220,
+        "reasoning_output_tokens": 19198
+      }
+    },
+    "player": {
+      "http_attempts": 80,
+      "successful_responses": 80,
+      "seconds": 800.8898449605331,
+      "provider_reported_usage": {
+        "input_tokens": 221859,
+        "cached_input_tokens": 109824,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 19221,
+        "reasoning_output_tokens": 16271
+      }
+    }
+  },
+  "error": null,
+  "human_review_status": "pending"
+}

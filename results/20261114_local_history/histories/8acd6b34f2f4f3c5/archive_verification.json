@@ -1,0 +1,69 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "070b980961d530b2cdaaae6f74dff11028a3283d072a2fb019882683e01301d7",
+    "trajectory.jsonl": "3dde4526239b199dd57d7549b61d0d5f37398e030aece1c83360cc80b6c7b12d",
+    "trajectory.md": "cbb1872b357d0d961f12fe64b593e197841c0cff3956753487101c43eb5de8f3",
+    "trajectory.html": "b7e6c61973c4f2857af75aaadeb5a46be2dfd92442750f86b5c6917f1193a902",
+    "config.json": "2a474139b20bf95d9a43818066c49cfc134cfda6bbb3086349ea2e2d8f32b2a4",
+    "prompts.json": "7c68c3b9f3f1e86560746549c8910143bf5612c60b8dbd5b7439344f2ae084d4",
+    "puzzle_private.json": "29e954e99ae4cf044cdbb6058560998d599b9623b77eef50de93599f1faf9c85",
+    "host_context.json": "699185720c8010aa01be314332377a1b8915dd67d4d09bd5d1df1e291b5257be",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "64c31820443327839ce32e5128053650aacd3becf6b6746e94de79bb5620c17d",
+    "cost_summary.json": "2bb10df5230f88a69d73b36b51208a28b8de7b6a55cfa2f68f71950a8520c52d",
+    "token_costs.csv": "584e42a6df416361920734dfdd4fbb86415bf125ce2f0b32c1341b15010a7e41",
+    "human_review.csv": "01dce2bd59fda52122025b6597fc05c59fa22fb7b5c24c982113747455ba3d3d",
+    "review_template.csv": "01dce2bd59fda52122025b6597fc05c59fa22fb7b5c24c982113747455ba3d3d",
+    "transfer_metadata.json": "ef3bb66bcce6cc5805d2747dc5b112ab7d578ec865c58c8af8e2dc8671c0d567",
+    "prior_experience.json": "38f1693aaa3580dfb97ef0dda3ee213c6412855df81f572a2e42cd0baddacca2"
+  },
+  "api_audit": {
+    "source_raw_sha256": "98cf326f8fb0dbcc63946855190b6a6ef15e1a9f96fdad3b773e436ee16e9a31",
+    "source_raw_bytes": 4958703,
+    "published_sha256": "aac4185b6b542aea1421ff8c46f27e14143d671e47c53c6e42280cc06bc6b669",
+    "attempts": 121
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261111_deepseek_set1_v11_json_resume01/continual/S1_TS014_TS013_TS014_TS013_r01_answer_only",
+      "status_as_recorded": "error",
+      "simulation": false,
+      "submissions": 60,
+      "result_sha256": "070b980961d530b2cdaaae6f74dff11028a3283d072a2fb019882683e01301d7",
+      "signature": "8acd6b34f2f4f3c5f023df982339dc823608b6c4c0ec29f9fa18837dfca5a017",
+      "event_count": 369,
+      "trajectory_sha256": "3dde4526239b199dd57d7549b61d0d5f37398e030aece1c83360cc80b6c7b12d",
+      "first_submission": "2026-11-10T16:52:24.324938+00:00",
+      "first_text": "Was the disappearance of all your courses related to the course-selection computer system (e.g., a system crash, error, or being timed out of the enrollment session)?",
+      "archive_scope": "observed_history"
+    },
+    {
+      "source": "runs/api/20261111_set1_auto_continue_check/continuation_01/continual/S1_TS014_TS013_TS014_TS013_r01_answer_only",
+      "status_as_recorded": "error",
+      "simulation": false,
+      "submissions": 60,
+      "result_sha256": "070b980961d530b2cdaaae6f74dff11028a3283d072a2fb019882683e01301d7",
+      "signature": "8acd6b34f2f4f3c5f023df982339dc823608b6c4c0ec29f9fa18837dfca5a017",
+      "event_count": 369,
+      "trajectory_sha256": "3dde4526239b199dd57d7549b61d0d5f37398e030aece1c83360cc80b6c7b12d",
+      "first_submission": "2026-11-10T16:52:24.324938+00:00",
+      "first_text": "Was the disappearance of all your courses related to the course-selection computer system (e.g., a system crash, error, or being timed out of the enrollment session)?",
+      "archive_scope": "observed_history"
+    },
+    {
+      "source": "runs/api/20261111_set1_auto_continue_final_check/continuation_01/continual/S1_TS014_TS013_TS014_TS013_r01_answer_only",
+      "status_as_recorded": "error",
+      "simulation": false,
+      "submissions": 60,
+      "result_sha256": "070b980961d530b2cdaaae6f74dff11028a3283d072a2fb019882683e01301d7",
+      "signature": "8acd6b34f2f4f3c5f023df982339dc823608b6c4c0ec29f9fa18837dfca5a017",
+      "event_count": 369,
+      "trajectory_sha256": "3dde4526239b199dd57d7549b61d0d5f37398e030aece1c83360cc80b6c7b12d",
+      "first_submission": "2026-11-10T16:52:24.324938+00:00",
+      "first_text": "Was the disappearance of all your courses related to the course-selection computer system (e.g., a system crash, error, or being timed out of the enrollment session)?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

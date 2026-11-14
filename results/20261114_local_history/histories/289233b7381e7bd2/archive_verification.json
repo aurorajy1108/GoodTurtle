@@ -1,0 +1,43 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "ae9b6c78cef230ff558893ae5fc6953d12af130d93504efc7d1ac7f4cd20c316",
+    "trajectory.jsonl": "ee85952f18aa490b80852ad360e3095c52a04e9497bc76e67d018be116f498a9",
+    "trajectory.md": "128414e46022fa71bf4c33b5e725bac132b5e6a487a02f5cddc5d013c330aa51",
+    "trajectory.html": "3f2f501be9956f354ead173174c576d3dba98abeff9a1cf0ce084f1d7cbae630",
+    "config.json": "2a474139b20bf95d9a43818066c49cfc134cfda6bbb3086349ea2e2d8f32b2a4",
+    "prompts.json": "7c68c3b9f3f1e86560746549c8910143bf5612c60b8dbd5b7439344f2ae084d4",
+    "puzzle_private.json": "29e954e99ae4cf044cdbb6058560998d599b9623b77eef50de93599f1faf9c85",
+    "host_context.json": "699185720c8010aa01be314332377a1b8915dd67d4d09bd5d1df1e291b5257be",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "64c31820443327839ce32e5128053650aacd3becf6b6746e94de79bb5620c17d",
+    "cost_summary.json": "3aa8c00ffe6a3a70e9fea2bb5854150296e9680c1232bc2ffb4b8c17362139ef",
+    "token_costs.csv": "d57157446fea9bde9eda5f7d2c2a965b823b61778780bd1930a50bb2a9be31e8",
+    "human_review.csv": "8988021b682a1fa9516e1685d0c4d12b585abc040dd32447962d18a9734c8d4b",
+    "review_template.csv": "8988021b682a1fa9516e1685d0c4d12b585abc040dd32447962d18a9734c8d4b",
+    "transfer_metadata.json": "2d7b7b0fedbe84c3caa7a78c3f75cf33c2c46dc350130b13b8614d5c6649cd45",
+    "prior_experience.json": "54c64b815b2734d9c2bf55538febe9da73f37659155ca2440fd559f234db174d"
+  },
+  "api_audit": {
+    "source_raw_sha256": "7fb94e573b99d1c0ff2ef3b061ed10675d3647937b6e13dfdfe4b341bad56701",
+    "source_raw_bytes": 6274312,
+    "published_sha256": "7852411f1227ba9adfe946d0fd242ad0fd7052b0b796a69a0d68a8e3da15434b",
+    "attempts": 121
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261111_set1_auto_continue_v2/continuation_01/continual/S1_TS014_TS013_TS014_TS013_r01_transcript",
+      "status_as_recorded": "error",
+      "simulation": false,
+      "submissions": 60,
+      "result_sha256": "ae9b6c78cef230ff558893ae5fc6953d12af130d93504efc7d1ac7f4cd20c316",
+      "signature": "289233b7381e7bd2c66f5c161c9689e4767cf64f4272c2dee8f7899349ff0dc5",
+      "event_count": 369,
+      "trajectory_sha256": "ee85952f18aa490b80852ad360e3095c52a04e9497bc76e67d018be116f498a9",
+      "first_submission": "2026-11-11T07:28:56.849985+00:00",
+      "first_text": "Did the student fail to secure courses because all the course places were filled by other students before the student's course-selection time (i.e., the student lost out in a course-enrollment race)?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

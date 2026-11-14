@@ -1,0 +1,38 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "f55d95f7c0063d559dcb7448a009c89540c3dbeff6c9a22ef8d315feb1b8770d",
+    "trajectory.jsonl": "cbc37ffaf2896d5073b991eaad0db960616fbe4ae1e21b6832316477fe75121f",
+    "trajectory.md": "3a6d67ee60db2e6b58b307f7bdab783c019bf6f73107bfbae1ea8e5bb8ca40c5",
+    "trajectory.html": "cf65d88750c5079b0aeb663af47aa4744b6022eaa8290c407b56c68f8027777a",
+    "config.json": "a014f81ea9e104679e8f092a1f109161aea61071386b2e945a24be08c367d75c",
+    "prompts.json": "229c9b162e1ccad47a332ecc5b8130273ed37b2e3e8db9c7ce9edb23ca50061c",
+    "puzzle_private.json": "1e07e735fdcf39a5f15a736229f3c7ab0512327b0eaa52ff31e64827f48c37e8",
+    "host_context.json": "3ee116a3f166dcd3af0d8e4fc5da1d3afd7dff14eb9d43ed2933797cd51602a0",
+    "human_review.csv": "153cb86df6955d67d928981b6333e8934cbf2ed85a31a68e4f680631f0eab0ef",
+    "review_template.csv": "153cb86df6955d67d928981b6333e8934cbf2ed85a31a68e4f680631f0eab0ef",
+    "transfer_input.json": "4a35bc697adf229e528f2eeeb7e6d1d2d78ee04e31f4a589096f7d3db9871483"
+  },
+  "api_audit": {
+    "source_raw_sha256": "9683f3db761c6964a1a1d502d1115f5736468d48ee189f33f4f8264e7d904f60",
+    "source_raw_bytes": 6233817,
+    "published_sha256": "a84606858b01b067b6ab810c45677d3e54e7884c3b83c3fc06e76245df906e55",
+    "attempts": 200
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261023_three_review_rerun/negative/G01_TS012_TS017_r01_source",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "f55d95f7c0063d559dcb7448a009c89540c3dbeff6c9a22ef8d315feb1b8770d",
+      "signature": "2c7048db5e64acc83c26906e4fa46eb12cbb3813cda2dac75dcb248623a21d65",
+      "event_count": 201,
+      "trajectory_sha256": "cbc37ffaf2896d5073b991eaad0db960616fbe4ae1e21b6832316477fe75121f",
+      "first_submission": "2026-10-23T10:41:41.670861+00:00",
+      "first_text": "Was there an actual fire?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

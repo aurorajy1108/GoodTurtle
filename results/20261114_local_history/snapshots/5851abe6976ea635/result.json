@@ -1,0 +1,351 @@
+{
+  "status": "error",
+  "stop_reason": "APIError",
+  "simulation": false,
+  "success": null,
+  "host_questions": 75,
+  "final_attempts": 4,
+  "rejected_finals": 4,
+  "counted_questions": 79,
+  "submissions": 79,
+  "player_format_corrections": [],
+  "pending_feedback": 0,
+  "forced_final": false,
+  "final_partial_score": 0.0,
+  "best_partial_score": 0.0,
+  "latest_final": "The narrator is a married adult who has secretly and deliberately assaulted their spouse — a family member by marriage. This assault is still hidden: nobody has reported it, so it is unknown to the authorities. The spouse, worn down and disappointed for reasons of their own, announces \"You've disappointed me so much; I'm never coming back\" and leaves the marriage for good. The narrator, watching them go, sighs \"Sigh, I know I'm in trouble,\" because they know that they will be the prime suspect for having harmed the spouse and that the hidden assault they committed can no longer stay buried — it will come to light and they will be arrested and prosecuted for it. In short: a secretly abusive spouse dreads that their unreported assault will be exposed and that they will be blamed and charged for the harm they truly did to their partner.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0,
+        "evidence": "The narrator is a married adult who has secretly and deliberately assaulted their spouse ... The spouse, worn down and disappointed for reasons of their own, announces \"You've disappointed me so much; I'm never coming back\" and leaves the marriage for good.",
+        "reason": "Directly contradicts the required murder and staged voluntary departure, replacing them with a surviving spouse who leaves on their own."
+      },
+      {
+        "id": "C2",
+        "credit": 0,
+        "evidence": "The spouse, worn down and disappointed for reasons of their own, announces \"You've disappointed me so much; I'm never coming back\" and leaves the marriage for good.",
+        "reason": "Treats the repeated message as a genuine declaration by the spouse, not attempts to forge the wife's handwriting."
+      },
+      {
+        "id": "C3",
+        "credit": 0,
+        "evidence": "they know that they will be the prime suspect for having harmed the spouse and that the hidden assault they committed can no longer stay buried — it will come to light and they will be arrested and prosecuted for it.",
+        "reason": "Replaces fear of failed handwriting imitation with fear of prosecution for a hidden assault."
+      }
+    ],
+    "material_contradiction": true,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "Scored facts remain missing, partial or contradicted; see fact_coverage.",
+    "fact_coverage": [
+      {
+        "id": "C1.F1",
+        "status": "contradicted",
+        "evidence": "The narrator is a married adult who has secretly and deliberately assaulted their spouse ... The spouse, worn down and disappointed for reasons of their own, announces \"You've disappointed me so much; I'm never coming back\" and leaves the marriage for good."
+      },
+      {
+        "id": "C1.F2",
+        "status": "contradicted",
+        "evidence": "The narrator ... secretly and deliberately assaulted their spouse ... The spouse ... announces \"You've disappointed me so much; I'm never coming back\" and leaves the marriage for good."
+      },
+      {
+        "id": "C1.F3",
+        "status": "contradicted",
+        "evidence": "The spouse, worn down and disappointed for reasons of their own, announces \"You've disappointed me so much; I'm never coming back\" and leaves the marriage for good."
+      },
+      {
+        "id": "C2.F1",
+        "status": "contradicted",
+        "evidence": "The spouse, worn down and disappointed for reasons of their own, announces \"You've disappointed me so much; I'm never coming back\" and leaves the marriage for good."
+      },
+      {
+        "id": "C2.F2",
+        "status": "contradicted",
+        "evidence": "they know that they will be the prime suspect for having harmed the spouse and that the hidden assault they committed can no longer stay buried — it will come to light and they will be arrested and prosecuted for it."
+      },
+      {
+        "id": "C3.F1",
+        "status": "contradicted",
+        "evidence": "they know that they will be the prime suspect for having harmed the spouse and that the hidden assault they committed can no longer stay buried — it will come to light and they will be arrested and prosecuted for it."
+      }
+    ],
+    "requirement_coverage": [],
+    "contradictions": [
+      {
+        "quote": "The narrator is a married adult who has secretly and deliberately assaulted their spouse ... The spouse, worn down and disappointed for reasons of their own, announces \"You've disappointed me so much; I'm never coming back\" and leaves the marriage for good.",
+        "reference": "The narrator murdered his wife and staged her disappearance as a voluntary departure.",
+        "checkpoint_ids": [
+          "C1"
+        ]
+      },
+      {
+        "quote": "The spouse, worn down and disappointed for reasons of their own, announces \"You've disappointed me so much; I'm never coming back\" and leaves the marriage for good.",
+        "reference": "The repeated message represents attempts to forge his wife's handwriting.",
+        "checkpoint_ids": [
+          "C2"
+        ]
+      },
+      {
+        "quote": "they know that they will be the prime suspect for having harmed the spouse and that the hidden assault they committed can no longer stay buried — it will come to light and they will be arrested and prosecuted for it.",
+        "reference": "His inability to imitate her handwriting leads him to worry about being caught.",
+        "checkpoint_ids": [
+          "C3"
+        ]
+      }
+    ],
+    "partial_score": 0.0,
+    "complete": false,
+    "label": "no",
+    "grading_protocol": "coverage-v3-unified",
+    "controller_corrections": []
+  },
+  "elapsed_seconds": 2636.2572580010165,
+  "usage": {
+    "grader": {
+      "http_attempts": 4,
+      "successful_responses": 4,
+      "seconds": 125.53190745890606,
+      "provider_reported_usage": {
+        "prompt_tokens": 25381,
+        "completion_tokens": 11820,
+        "total_tokens": 37201,
+        "prompt_cache_hit_tokens": 19968,
+        "prompt_cache_miss_tokens": 5413
+      }
+    },
+    "host": {
+      "http_attempts": 81,
+      "successful_responses": 76,
+      "seconds": 1547.221784333,
+      "provider_reported_usage": {
+        "prompt_tokens": 1026547,
+        "completion_tokens": 85997,
+        "total_tokens": 1112544,
+        "prompt_cache_hit_tokens": 1004416,
+        "prompt_cache_miss_tokens": 22131
+      }
+    },
+    "partner": {
+      "http_attempts": 3,
+      "successful_responses": 3,
+      "seconds": 9.267552458913997,
+      "provider_reported_usage": {
+        "prompt_tokens": 33865,
+        "completion_tokens": 335,
+        "total_tokens": 34200,
+        "prompt_cache_hit_tokens": 22528,
+        "prompt_cache_miss_tokens": 11337
+      }
+    },
+    "player": {
+      "http_attempts": 181,
+      "successful_responses": 181,
+      "seconds": 936.8150897924788,
+      "provider_reported_usage": {
+        "prompt_tokens": 8359021,
+        "completion_tokens": 72486,
+        "total_tokens": 8431507,
+        "prompt_cache_hit_tokens": 8308224,
+        "prompt_cache_miss_tokens": 50797
+      }
+    }
+  },
+  "costs": {
+    "schema_version": 1,
+    "currency": "USD",
+    "basis": "standard_api_equivalent_not_actual_bill",
+    "estimate_assumptions": [
+      "peak_rate_reference_upper_estimate; off-peak rates are half; actual billing unknown"
+    ],
+    "total": {
+      "calls": 269,
+      "unknown_cost_calls": 5,
+      "known_estimated_cost_usd": 0.624796208,
+      "estimated_cost_usd": null,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 9444814,
+        "cached_input_tokens": 9355136,
+        "cache_write_tokens": 0,
+        "output_tokens": 170638,
+        "reasoning_tokens": 93736,
+        "total_tokens": 9615452
+      },
+      "missing_token_calls": {
+        "input_tokens": 5,
+        "cached_input_tokens": 5,
+        "cache_write_tokens": 0,
+        "output_tokens": 5,
+        "reasoning_tokens": 189,
+        "total_tokens": 5
+      }
+    },
+    "by_role_model": [
+      {
+        "role": "grader",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 4,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.054830952,
+        "estimated_cost_usd": 0.054830952,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 25381,
+          "cached_input_tokens": 19968,
+          "cache_write_tokens": 0,
+          "output_tokens": 11820,
+          "reasoning_tokens": 7901,
+          "total_tokens": 37201
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 0,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "host",
+        "provider": "deepseek",
+        "model": "deepseek-v4-pro",
+        "calls": 81,
+        "unknown_cost_calls": 5,
+        "known_estimated_cost_usd": 0.413955344,
+        "estimated_cost_usd": null,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 1026547,
+          "cached_input_tokens": 1004416,
+          "cache_write_tokens": 0,
+          "output_tokens": 85997,
+          "reasoning_tokens": 85835,
+          "total_tokens": 1112544
+        },
+        "missing_token_calls": {
+          "input_tokens": 5,
+          "cached_input_tokens": 5,
+          "cache_write_tokens": 0,
+          "output_tokens": 5,
+          "reasoning_tokens": 5,
+          "total_tokens": 5
+        }
+      },
+      {
+        "role": "partner",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 3,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.003938268,
+        "estimated_cost_usd": 0.003938268,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 33865,
+          "cached_input_tokens": 22528,
+          "cache_write_tokens": 0,
+          "output_tokens": 335,
+          "reasoning_tokens": 0,
+          "total_tokens": 34200
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 3,
+          "total_tokens": 0
+        }
+      },
+      {
+        "role": "player",
+        "provider": "deepseek",
+        "model": "deepseek-flash",
+        "calls": 181,
+        "unknown_cost_calls": 0,
+        "known_estimated_cost_usd": 0.152071644,
+        "estimated_cost_usd": 0.152071644,
+        "actual_billed_cost_usd": null,
+        "tokens": {
+          "input_tokens": 8359021,
+          "cached_input_tokens": 8308224,
+          "cache_write_tokens": 0,
+          "output_tokens": 72486,
+          "reasoning_tokens": 0,
+          "total_tokens": 8431507
+        },
+        "missing_token_calls": {
+          "input_tokens": 0,
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 0,
+          "output_tokens": 0,
+          "reasoning_tokens": 181,
+          "total_tokens": 0
+        }
+      }
+    ]
+  },
+  "error": "player: invalid/empty/truncated provider response",
+  "human_review_status": "pending",
+  "session_transport": {
+    "session_ids": [
+      "923dd7d6-cc07-4af8-812e-7691af80c6f7",
+      "9f9a75b4-2fa0-450e-b1d1-88fbb64bbcf0",
+      "b7667e76-1ca1-45d4-9bb0-a51ba085d0f4",
+      "c4fcb3a7-5d1a-4cf7-ba6d-7b217bbfe95a"
+    ],
+    "logical_input_chars": 5271901,
+    "delta_input_chars": 227162,
+    "note": "Character counters cover caller input, not billed tokens or replay-provider wire history; see costs."
+  },
+  "evaluation_versions": {
+    "story_sha256": "8f2ddbbd95f8552db795e6101df8e1ec6ac3755b6591d990fc66877d5a4b9d3b",
+    "grading_sha256": "ca184d8550ded2ca3f901e2f09673271411833e9d201f2febc0c774acef67093",
+    "runtime_context_version": "single-cached-reference-session-v3",
+    "grading_protocol": "coverage-v3-unified",
+    "prompts_sha256": "c95150ba24dd57486633f8b8acdc715e4861fd9e112077b7598de481dead1678",
+    "controller_sha256": "1d077da839adb604f4f7474eb4c8e9690dfdde7d3a1b3badb7c186735a46628f",
+    "player_format_policy_sha256": "cf439ee1d60ae38374486aada319739646a5975284ff00bc877a3040047df56a",
+    "host_context_sha256": "4de8a9c689103080f87f7d2d62d3c0d145f07e715d5fe6e9b988f49249c5bcaf",
+    "host_binding_version": "host-v14-ai-20261111-forged-author",
+    "original_controller_sha256": "f4cc4c807b039a1f7c04af6f633735b32d08fe8855e575ef901018cc9b3d3609"
+  },
+  "dialogue_metrics": {
+    "settings": {
+      "roles": "complementary",
+      "scheduling": "adaptive",
+      "max_discussion": 4,
+      "start": "A",
+      "role_assignment": {
+        "A": {
+          "specialty": "investigator",
+          "instruction": "Develop and test explanations of identities, setting, event order and the main causal mechanism. Connect confirmed facts into a coherent story; explicitly distinguish hypotheses from host-confirmed facts."
+        },
+        "B": {
+          "specialty": "critic",
+          "instruction": "Challenge unsupported assumptions, propose alternative interpretations, and test missing causal links, motives and contradictions. Suggest discriminating questions rather than only criticizing. Help complete the story."
+        }
+      },
+      "protocol": "shared-dialogue-v3-prefix-v1",
+      "format_correction_max_retries": 2
+    },
+    "counts_by_actor": {
+      "A": {
+        "question": 73,
+        "discuss": 3,
+        "final": 4
+      },
+      "B": {
+        "question": 2,
+        "discuss": 1
+      }
+    },
+    "external_submissions": 79,
+    "internal_messages": 4
+  }
+}

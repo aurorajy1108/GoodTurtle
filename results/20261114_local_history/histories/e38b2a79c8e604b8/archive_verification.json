@@ -1,0 +1,38 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "8eef4d8572197c7f692024852a43cbb753ae44ac874bbf986f004268f2303bde",
+    "trajectory.jsonl": "50af25a8a1fa3bc40c1ba436a0c3ad996adf30a13d531a62799d62c68e187cd8",
+    "trajectory.md": "c79ac697196747357c366a23f101031d88cb70e5c9b36d09f8a15b4298601262",
+    "trajectory.html": "f2c0c4789bb6a405e4e26444a2a9409076600c67f78e0d4c9ecd4671f18c3278",
+    "config.json": "08d2187c28075d0a59d9a14953c08f5f094edb9fd06fccbe50633dbf2bea2d01",
+    "prompts.json": "6582734feeb915d3e798a328a1040b6001c6bd242804abca29d1c6155576d330",
+    "puzzle_private.json": "28aeeb07d7c0b0a8bb6bcca4e2b939a75b85148db74dec4d755dd50c20e857b7",
+    "host_context.json": "441afd7732f5d9584305bdc7908b336aac29e5d9c51b809077f4d4f7c712fd0c",
+    "human_review.csv": "19ac37dbaafc83528c68c5459b2f3b17e5aa49a792679cc42a5f766aba3e73b2",
+    "review_template.csv": "19ac37dbaafc83528c68c5459b2f3b17e5aa49a792679cc42a5f766aba3e73b2",
+    "prior_experience.json": "7e8fc6601037a3b25459ffa0bcbf27fa91379816b51dfccc41552fde20684a30"
+  },
+  "api_audit": {
+    "source_raw_sha256": "46ee1bae8dc185efa32cf007fe852a5829e19e93e34059f4a5355776b00e4bbe",
+    "source_raw_bytes": 7533836,
+    "published_sha256": "623456fcfa3fb7a9c204b68726b1194bbd183ff7b1a616a72dc124f7a3403e31",
+    "attempts": 301
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261024_cl_answer_study/batches/G02/G02_TS015_TS016_r03_transcript",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "8eef4d8572197c7f692024852a43cbb753ae44ac874bbf986f004268f2303bde",
+      "signature": "e38b2a79c8e604b82dfcebb1dc8c79b280fa485590b5e68fb9033ab1cb9607ab",
+      "event_count": 299,
+      "trajectory_sha256": "50af25a8a1fa3bc40c1ba436a0c3ad996adf30a13d531a62799d62c68e187cd8",
+      "first_submission": "2026-10-24T08:44:33.048844+00:00",
+      "first_text": "Does “course” refer to the course of a river rather than an academic class?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

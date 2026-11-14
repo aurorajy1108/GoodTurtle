@@ -1,0 +1,39 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "2e5e88785a90a20cb9d2d285d6b7f7d4157a7dc82899bcb1da5ceea61882e776",
+    "trajectory.jsonl": "d4e07362879c7f4345571f2fa7e9ae94123fda56c1a00a179b317b2ee5055349",
+    "trajectory.md": "e9a716c20b375ebec6eebf0a9591a52f0bc4bd4fe4919b111e951db0554c0ca0",
+    "trajectory.html": "e2c06ce5f035256dab1ae79373213da31c605c0e48f7e7a4ef236c834b479b00",
+    "config.json": "08d2187c28075d0a59d9a14953c08f5f094edb9fd06fccbe50633dbf2bea2d01",
+    "prompts.json": "0a3f1cbcc4d8a896fe50dd7047766bb101587948339862672eeda6e4c3c9ad8f",
+    "puzzle_private.json": "b773ae5f2d9e882eeaa5193ec14ad32d4cde89dd4584088193736d59421d7fde",
+    "host_context.json": "5a4cf3ac5d51e1a55e756d9f35302152d9a0d5e198b1c1fe9e5b46310a1f75d3",
+    "human_review.csv": "776e33889b71419053b981638fdb5df1a21b59ff12578bbbd2ab8924e934e7f3",
+    "review_template.csv": "776e33889b71419053b981638fdb5df1a21b59ff12578bbbd2ab8924e934e7f3",
+    "transfer_input.json": "88a1d563a69433834aba0ad0d743e9f6e5dfa146fb8d2cb5d01ab3d6f8c6b9f7",
+    "source_answer_reveal.json": "7ea35f650a27f5c16e394523f4df615ad790cf1823becffcde8683ea00a3c7bb"
+  },
+  "api_audit": {
+    "source_raw_sha256": "c84b86cb86518af7dd7303db9518e2ff9c75261f6cfd1ed709945d08fc0136e7",
+    "source_raw_bytes": 16168642,
+    "published_sha256": "4f50640a48f19f2067f71d7af5e7f5fa706accb19df8d544f954655d31d8fa25",
+    "attempts": 300
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261024_cl_answer_study/batches/G07/G07_TS022_TS047_r02_source",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 100,
+      "result_sha256": "2e5e88785a90a20cb9d2d285d6b7f7d4157a7dc82899bcb1da5ceea61882e776",
+      "signature": "4873b6d863b1eeeabc13acab688b302c0b8333f47dc731295382f7fe43601ee2",
+      "event_count": 301,
+      "trajectory_sha256": "d4e07362879c7f4345571f2fa7e9ae94123fda56c1a00a179b317b2ee5055349",
+      "first_submission": "2026-10-24T08:06:24.190836+00:00",
+      "first_text": "Was something inside the house the reason she initially couldn't fall asleep?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

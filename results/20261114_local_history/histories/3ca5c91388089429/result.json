@@ -1,0 +1,105 @@
+{
+  "status": "interrupted",
+  "stop_reason": "user_interrupt",
+  "simulation": false,
+  "success": null,
+  "host_questions": 93,
+  "final_attempts": 3,
+  "rejected_finals": 3,
+  "counted_questions": 96,
+  "submissions": 96,
+  "pending_feedback": 0,
+  "forced_final": false,
+  "final_partial_score": 0.5,
+  "best_partial_score": 0.625,
+  "latest_final": "Kameda and Umio were political rivals. Kameda was cremated, leaving his bones fragmented, while Umio was buried with his bones intact. Umio’s burial was less prestigious and was carried out by the faction that defeated him. People therefore took the difference in funerary treatment as evidence that Umio had lost their political struggle, despite Kameda’s more visibly damaged remains.",
+  "latest_grade": {
+    "checkpoints": [
+      {
+        "id": "C1",
+        "credit": 0.5,
+        "evidence": "Kameda and Umio were political rivals; their bones were fragmented or intact.",
+        "reason": "Identifies skeletal remains and historical rivalry, but does not establish that they were excavated or shown in a lecture."
+      },
+      {
+        "id": "C2",
+        "credit": 0.5,
+        "evidence": "Kameda was cremated, leaving his bones fragmented.",
+        "reason": "Connects the king’s fragments to cremation, but omits that it was customary and a proper, honorable burial."
+      },
+      {
+        "id": "C3",
+        "credit": 0.5,
+        "evidence": "Umio was buried with his bones intact.",
+        "reason": "The contrast with Kameda’s cremation suggests burial without cremation, but secret disposal is not stated."
+      },
+      {
+        "id": "C4",
+        "credit": 0.5,
+        "evidence": "People took the funerary difference as evidence Umio had lost the political struggle.",
+        "reason": "States political defeat, but does not identify poisoning by Kameda or his agents."
+      }
+    ],
+    "material_contradiction": false,
+    "irrelevant": false,
+    "rubric_conflict": false,
+    "full_solution": false,
+    "completion_note": "The explanation omits that Kameda was king and Umio duke, the lecture and excavated-remains context, customary cremation and honorable burial, and the accepted account that Kameda’s agents poisoned and secretly disposed of Umio. It does capture that Umio’s intact remains indicated a less prestigious burial and political defeat.",
+    "partial_score": 0.5,
+    "complete": false,
+    "label": "yes and no"
+  },
+  "elapsed_seconds": 5314.121823417023,
+  "usage": {
+    "grader": {
+      "http_attempts": 3,
+      "successful_responses": 3,
+      "seconds": 32.593733415938914,
+      "provider_reported_usage": {
+        "input_tokens": 16862,
+        "cached_input_tokens": 2176,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1697,
+        "reasoning_output_tokens": 762
+      }
+    },
+    "host": {
+      "http_attempts": 93,
+      "successful_responses": 93,
+      "seconds": 777.8394063338637,
+      "provider_reported_usage": {
+        "input_tokens": 645974,
+        "cached_input_tokens": 239104,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 10077,
+        "reasoning_output_tokens": 8471
+      }
+    },
+    "partner": {
+      "http_attempts": 96,
+      "successful_responses": 96,
+      "seconds": 1414.9454253320582,
+      "provider_reported_usage": {
+        "input_tokens": 374328,
+        "cached_input_tokens": 154112,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 57497,
+        "reasoning_output_tokens": 53147
+      }
+    },
+    "player": {
+      "http_attempts": 192,
+      "successful_responses": 192,
+      "seconds": 3082.8981994984206,
+      "provider_reported_usage": {
+        "input_tokens": 750427,
+        "cached_input_tokens": 273280,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 118514,
+        "reasoning_output_tokens": 109972
+      }
+    }
+  },
+  "error": null,
+  "human_review_status": "pending"
+}

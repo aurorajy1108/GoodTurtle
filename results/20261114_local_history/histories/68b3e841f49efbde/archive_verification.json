@@ -1,0 +1,37 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "a9e95c64a624079d1e4c0738cff972037a7735bc1d8568c582f91b30efbbaa2f",
+    "trajectory.jsonl": "f8139c3723ed5df46cd1dfd3ac4ae4fecb4387191d9dd380cf26779512046a3e",
+    "trajectory.md": "b775e682bcbee4971a375e4b503f0475a11935981c698c0712c665a6eb9913af",
+    "trajectory.html": "c33db4b4542b53bb96a4e03396479c152788c37c930e2772ddbb0bfc33e3eaac",
+    "config.json": "a014f81ea9e104679e8f092a1f109161aea61071386b2e945a24be08c367d75c",
+    "prompts.json": "464909ce81859886160c1541bece3c308662bfb51dbf52c11d604dddef80aed8",
+    "puzzle_private.json": "f8e59ec492f389bd23df99b5cc00aa35e5c9d732e3445a4a5e829a9c9655e2d2",
+    "host_context.json": "81908bf13b350b80a0a186826de882bc3e523f948a995d46eeb9b667d5305fc7",
+    "human_review.csv": "0fbb7df33efb667d603a7f79f458610c0af5072505fecb55d2fac14cd2d8186a",
+    "review_template.csv": "0fbb7df33efb667d603a7f79f458610c0af5072505fecb55d2fac14cd2d8186a"
+  },
+  "api_audit": {
+    "source_raw_sha256": "566a6a24ea7ead4d204fa3fd0dd9879857cb34cb4412c0a3f8cbab22bf87cffc",
+    "source_raw_bytes": 239391,
+    "published_sha256": "668bfa12b9711bf63eae1b88026fd384020d04e8cb82321d5e01866ffb5384ea",
+    "attempts": 27
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261023_repaired_host_rerun/positive/G07_TS022_TS047_r01_source",
+      "status_as_recorded": "interrupted",
+      "simulation": false,
+      "submissions": 14,
+      "result_sha256": "a9e95c64a624079d1e4c0738cff972037a7735bc1d8568c582f91b30efbbaa2f",
+      "signature": "68b3e841f49efbde731f850bdefd405b11cdb9f66916a80503296a3211c0ed72",
+      "event_count": 29,
+      "trajectory_sha256": "f8139c3723ed5df46cd1dfd3ac4ae4fecb4387191d9dd380cf26779512046a3e",
+      "first_submission": "2026-10-23T10:21:02.620894+00:00",
+      "first_text": "Was the strange thing she noticed something supernatural?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

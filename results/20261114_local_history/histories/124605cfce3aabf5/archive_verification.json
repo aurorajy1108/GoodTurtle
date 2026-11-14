@@ -1,0 +1,43 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "e9757375a8d15c1ce4bd4add8563d3b812cd350049819c30427bdabf77dfbd80",
+    "trajectory.jsonl": "e369e7de8cb007b9ba465740757aa46de67bff11a1957b37a656b16e5e87261f",
+    "trajectory.md": "2fcb91ce3663899130fdf2308f582faa99737c759741f5c41ba54ed0367e552d",
+    "trajectory.html": "7432173d93de549cf32f1b49d41443a2b244d96ee444f9e1e9dba9b054b6308b",
+    "config.json": "4307cf3c715247acc8faf9d322125607962ba66e56d5980b57d841ccb930bc1e",
+    "prompts.json": "2293fcad2d75c545b454f5ac0b351c8f0d0b635d59ed01a87e246365943d699f",
+    "puzzle_private.json": "c01a39bd4b8af6fb50d2f9bed46102d70dfc3b607728363b47501821cf04f406",
+    "host_context.json": "a9be0c92867631e3a6030e94c7bb2add9c4a322a04ac7697c64dccc9deef3db1",
+    "runtime_context_policy.json": "b53859fbd41199761b941c9a98fd9f72225c38279ee4c5e329fc7794d99aead9",
+    "pricing_snapshot.json": "0a3fdde5e02a39bbfd5dea2afbce6b9ce2479134e71d8df316bc7b00195cca23",
+    "cost_summary.json": "76df393890fcfa586c6718d13820355ed28b3ea1e8c8a2c878c62e4958f68ae7",
+    "token_costs.csv": "193519da2ef63ec063343c6d11d2734e37eb8351838a367c8cec8bdb543b4e95",
+    "human_review.csv": "8161f9e2de44fd888ac6919b84b2c741f3a9722e04ecf63dd466834a3b965603",
+    "review_template.csv": "e4833ed11ceb291b290b04117b0db31b64dea8c25e9454f7316db148911b0c59",
+    "self_review.html": "f3bfa73d5929066f2b048e95cf526d983e2a5c88bde13c85d85b50a766f7fc1c",
+    "solver_compute.json": "b3d1106f94ae49a6602886c50d3b356d04e96e89813f7c853b79f2adf3f7b23b"
+  },
+  "api_audit": {
+    "source_raw_sha256": "4f295616673752d4be8fdf5301a44c44844c667bd188df5def747d5d405502e0",
+    "source_raw_bytes": 30499650,
+    "published_sha256": "62ded613ab23a3945d78e517840cd082ad43bcafcc3096e1e18004ef7104fc80",
+    "attempts": 264
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261112_ts038_self_review_matched_v2/TS038_r02_solo_self_review_matched",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 78,
+      "result_sha256": "e9757375a8d15c1ce4bd4add8563d3b812cd350049819c30427bdabf77dfbd80",
+      "signature": "124605cfce3aabf56c1df647c1faba356ad2db1c71082fab01051f2266660f2b",
+      "event_count": 855,
+      "trajectory_sha256": "e369e7de8cb007b9ba465740757aa46de67bff11a1957b37a656b16e5e87261f",
+      "first_submission": "2026-11-12T05:11:59.283485+00:00",
+      "first_text": "Is the repeated line being said by a single source (one person or creature) rather than by several different people?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

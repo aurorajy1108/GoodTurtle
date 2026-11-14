@@ -1,0 +1,37 @@
+{
+  "scope": "archive integrity only, not semantic correctness or independent-trial certification",
+  "original_files_sha256": {
+    "result.json": "b54d8052c54e0b41d71735dd96793243068eb6e9e5daad0d87c5a160bf1b4d0a",
+    "trajectory.jsonl": "3b76e0846f1db989021241f9c43d531d62f398e45813ca26b703eeb92b9980d4",
+    "trajectory.md": "7b38b53d242405b1cb79e00721853e97921ebdc4c40230de7e54fe53157a592c",
+    "trajectory.html": "59f51d64d735db03330ad92e96df1a2e86415bc365b6c9b58257267f14b3fcac",
+    "config.json": "a014f81ea9e104679e8f092a1f109161aea61071386b2e945a24be08c367d75c",
+    "prompts.json": "229c9b162e1ccad47a332ecc5b8130273ed37b2e3e8db9c7ce9edb23ca50061c",
+    "puzzle_private.json": "2fd616e37e47136b862a34614ca35e6c6f9f8a739d42f2f92b0ea1c089142212",
+    "host_context.json": "695473af1e85f3895d5ffdf5af98797af76d00494373fbba5c059d93502d7334",
+    "human_review.csv": "7d71893f2c217cbf4fd2edd97f4ed0a424e1e1e93bef38141211c422c5429491",
+    "review_template.csv": "7d71893f2c217cbf4fd2edd97f4ed0a424e1e1e93bef38141211c422c5429491"
+  },
+  "api_audit": {
+    "source_raw_sha256": "65b1f9beb6a99def1ed1a851b689eec910150a1735519ea8c12bdfed932b9efc",
+    "source_raw_bytes": 4112152,
+    "published_sha256": "99c21b7c0eb4422d01cfff8ae77d5ff3cf0f22cfbf48ce9b154d6a7cba61317d",
+    "attempts": 76
+  },
+  "aliases": [
+    {
+      "source": "runs/api/20261023_three_review_rerun/team/TS031_r01_solo",
+      "status_as_recorded": "completed",
+      "simulation": false,
+      "submissions": 38,
+      "result_sha256": "b54d8052c54e0b41d71735dd96793243068eb6e9e5daad0d87c5a160bf1b4d0a",
+      "signature": "e33a291053fe9a6606bf70457e3f6d7b1474e6ff268f3111f66e8fff7ed4905e",
+      "event_count": 77,
+      "trajectory_sha256": "3b76e0846f1db989021241f9c43d531d62f398e45813ca26b703eeb92b9980d4",
+      "first_submission": "2026-10-23T10:41:37.791194+00:00",
+      "first_text": "Did A use the eraser to remove something from the sheet, thereby revealing the message?",
+      "archive_scope": "observed_history"
+    }
+  ],
+  "note": "Recovery prefixes and divergent continuations may share a rollout_family; not independent repetitions. Status running is historical, not a live-process claim."
+}

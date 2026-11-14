@@ -1,0 +1,521 @@
+[
+  {
+    "timestamp": "2026-11-13T04:37:20.801975+00:00",
+    "event": "submission",
+    "index": 1,
+    "type": "question",
+    "text": "Is the repeated statement spoken by multiple distinct people?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated statement spoken by multiple distinct people?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:37:25.261789+00:00",
+    "event": "submission",
+    "index": 2,
+    "type": "question",
+    "text": "Is the same statement being repeated by a single person or source, such as an automated message or recording?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the same statement being repeated by a single person or source, such as an automated message or recording?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:38:00.632614+00:00",
+    "event": "submission",
+    "index": 3,
+    "type": "question",
+    "text": "Is the repetition produced by a machine or software system rather than a human deliberately repeating themselves?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repetition produced by a machine or software system rather than a human deliberately repeating themselves?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:38:04.203072+00:00",
+    "event": "submission",
+    "index": 4,
+    "type": "question",
+    "text": "Is the repeated statement coming from a fictional or inanimate character, such as a parrot or echo?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated statement coming from a fictional or inanimate character, such as a parrot or echo?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:38:07.305442+00:00",
+    "event": "submission",
+    "index": 5,
+    "type": "question",
+    "text": "Is the repeated statement being heard by the speaker as they say it, such as through an echo or recording playback?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated statement being heard by the speaker as they say it, such as through an echo or recording playback?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:38:12.872509+00:00",
+    "event": "submission",
+    "index": 6,
+    "type": "question",
+    "text": "Is the same person saying the sentence repeatedly, such as a child throwing a tantrum or someone rehearsing a line?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the same person saying the sentence repeatedly, such as a child throwing a tantrum or someone rehearsing a line?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:38:20.854834+00:00",
+    "event": "submission",
+    "index": 7,
+    "type": "question",
+    "text": "Is the sentence being read or written repeatedly, rather than spoken aloud?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the sentence being read or written repeatedly, rather than spoken aloud?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:38:25.221749+00:00",
+    "event": "submission",
+    "index": 8,
+    "type": "question",
+    "text": "Is the sentence written repeatedly as part of a punishment, such as writing lines as a school punishment?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the sentence written repeatedly as part of a punishment, such as writing lines as a school punishment?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:38:28.039185+00:00",
+    "event": "submission",
+    "index": 9,
+    "type": "question",
+    "text": "Is the sentence written repeatedly by someone other than the person who says \"Sigh, I know I'm in trouble\"?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the sentence written repeatedly by someone other than the person who says \"Sigh, I know I'm in trouble\"?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:38:31.978110+00:00",
+    "event": "submission",
+    "index": 10,
+    "type": "question",
+    "text": "Is the person who wrote the repeated sentence the same person who says \"Sigh, I know I'm in trouble\"?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the person who wrote the repeated sentence the same person who says \"Sigh, I know I'm in trouble\"?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:38:35.181354+00:00",
+    "event": "submission",
+    "index": 11,
+    "type": "question",
+    "text": "Did the person write the sentence repeatedly as part of an exercise, drill, or practice?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDid the person write the sentence repeatedly as part of an exercise, drill, or practice?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:38:38.799652+00:00",
+    "event": "submission",
+    "index": 12,
+    "type": "question",
+    "text": "Is this a classroom or language-learning setting where the sentence is a practice exercise?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs this a classroom or language-learning setting where the sentence is a practice exercise?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:38:42.536375+00:00",
+    "event": "submission",
+    "index": 13,
+    "type": "question",
+    "text": "Is the repeated writing part of a handwriting or penmanship practice exercise?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the repeated writing part of a handwriting or penmanship practice exercise?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:38:55.959806+00:00",
+    "event": "submission",
+    "index": 14,
+    "type": "question",
+    "text": "Is the sentence being written repeatedly in order to practice or improve handwriting?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the sentence being written repeatedly in order to practice or improve handwriting?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:38:59.575949+00:00",
+    "event": "submission",
+    "index": 15,
+    "type": "question",
+    "text": "Does the content of the sentence (\"You've disappointed me... I'm never coming back\") have special significance, such as being a sample sentence from a handwriting workbook?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the content of the sentence (\"You've disappointed me... I'm never coming back\") have special significance, such as being a sample sentence from a handwriting workbook?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:39:05.473194+00:00",
+    "event": "submission",
+    "index": 16,
+    "type": "question",
+    "text": "Is the handwriting exercise sentence a pangram or otherwise chosen to include many different letters for practice?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the handwriting exercise sentence a pangram or otherwise chosen to include many different letters for practice?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:39:10.538184+00:00",
+    "event": "submission",
+    "index": 17,
+    "type": "question",
+    "text": "Is the sentence being copied from a source the person is reading, such as a textbook, worksheet, or printed sample?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the sentence being copied from a source the person is reading, such as a textbook, worksheet, or printed sample?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-13T04:39:41.091810+00:00",
+    "event": "submission",
+    "index": 18,
+    "type": "question",
+    "text": "Is the sentence being written at a normal desk with paper and pen/pencil?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the sentence being written at a normal desk with paper and pen/pencil?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-13T04:39:45.981408+00:00",
+    "event": "submission",
+    "index": 19,
+    "type": "question",
+    "text": "Is the writing implement itself significant to the puzzle (for example, a pen that cannot be lifted or a self-writing device)?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the writing implement itself significant to the puzzle (for example, a pen that cannot be lifted or a self-writing device)?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:39:53.719072+00:00",
+    "event": "submission",
+    "index": 20,
+    "type": "question",
+    "text": "Is the phrase \"Sigh, I know I'm in trouble\" the person's reaction to how their handwriting looks, such as being messy or unsatisfactory?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the phrase \"Sigh, I know I'm in trouble\" the person's reaction to how their handwriting looks, such as being messy or unsatisfactory?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:39:59.288103+00:00",
+    "event": "submission",
+    "index": 21,
+    "type": "question",
+    "text": "Is the person worried about being scolded or punished because their handwriting practice is not meeting a standard?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the person worried about being scolded or punished because their handwriting practice is not meeting a standard?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:40:11.465450+00:00",
+    "event": "submission",
+    "index": 22,
+    "type": "question",
+    "text": "Is the person a student whose handwriting will be graded or assessed by a teacher?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the person a student whose handwriting will be graded or assessed by a teacher?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:40:16.802192+00:00",
+    "event": "submission",
+    "index": 23,
+    "type": "question",
+    "text": "Is the person attempting to fake someone else's handwriting?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the person attempting to fake someone else's handwriting?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:40:19.416681+00:00",
+    "event": "submission",
+    "index": 24,
+    "type": "question",
+    "text": "Is the person writing the sentence repeatedly in order to forge someone's signature or handwriting?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the person writing the sentence repeatedly in order to forge someone's signature or handwriting?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:40:23.757970+00:00",
+    "event": "submission",
+    "index": 25,
+    "type": "question",
+    "text": "Is the person practicing forging a handwritten note whose text is \"You've disappointed me so much; I'm never coming back\"?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the person practicing forging a handwritten note whose text is \"You've disappointed me so much; I'm never coming back\"?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:40:26.218834+00:00",
+    "event": "submission",
+    "index": 26,
+    "type": "question",
+    "text": "Would the forged note, once delivered, make it look like someone left permanently—so that person's later disappearance would not be investigated or mourned?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWould the forged note, once delivered, make it look like someone left permanently—so that person's later disappearance would not be investigated or mourned?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:40:35.298294+00:00",
+    "event": "submission",
+    "index": 27,
+    "type": "question",
+    "text": "Is the person who wrote the repeated practice lines planning to harm or kill the person whose handwriting they are forging?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the person who wrote the repeated practice lines planning to harm or kill the person whose handwriting they are forging?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:42:01.245751+00:00",
+    "event": "submission",
+    "index": 28,
+    "type": "question",
+    "text": "Is the forger planning to impersonate the victim in order to steal money or commit fraud?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the forger planning to impersonate the victim in order to steal money or commit fraud?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:42:14.085120+00:00",
+    "event": "submission",
+    "index": 29,
+    "type": "question",
+    "text": "Is the person whose handwriting is being forged someone the forger is trying to drive away or make leave, so the forger can take their place or benefit from their absence?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the person whose handwriting is being forged someone the forger is trying to drive away or make leave, so the forger can take their place or benefit from their absence?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:42:18.249650+00:00",
+    "event": "submission",
+    "index": 30,
+    "type": "question",
+    "text": "Is the forger writing the lines to practice copying the handwriting of a person who has already died, so the note can be passed off as that person's farewell?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the forger writing the lines to practice copying the handwriting of a person who has already died, so the note can be passed off as that person's farewell?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:42:22.640937+00:00",
+    "event": "submission",
+    "index": 31,
+    "type": "question",
+    "text": "Is the person whose handwriting is being forged a suicide victim, and the note is meant to make their death appear to be a voluntary farewell?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the person whose handwriting is being forged a suicide victim, and the note is meant to make their death appear to be a voluntary farewell?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:42:26.623125+00:00",
+    "event": "submission",
+    "index": 32,
+    "type": "question",
+    "text": "Was the person whose handwriting is being forged believed to have left voluntarily, when in fact they died or were killed?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWas the person whose handwriting is being forged believed to have left voluntarily, when in fact they died or were killed?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:42:36.521006+00:00",
+    "event": "submission",
+    "index": 33,
+    "type": "question",
+    "text": "Did the forger cause that person's death?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDid the forger cause that person's death?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:42:40.704941+00:00",
+    "event": "submission",
+    "index": 34,
+    "type": "question",
+    "text": "Did the forger kill the person accidentally, such as in an accident or momentary act, rather than deliberately planning it?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDid the forger kill the person accidentally, such as in an accident or momentary act, rather than deliberately planning it?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:42:50.742053+00:00",
+    "event": "submission",
+    "index": 35,
+    "type": "question",
+    "text": "Was the person killed deliberately, but the forger had not planned the forgery until after the death?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nWas the person killed deliberately, but the forger had not planned the forgery until after the death?",
+    "label": "yes and no"
+  },
+  {
+    "timestamp": "2026-11-13T04:43:23.595332+00:00",
+    "event": "submission",
+    "index": 36,
+    "type": "question",
+    "text": "Had the forger already planned to forge the note before killing the person?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nHad the forger already planned to forge the note before killing the person?",
+    "label": "irrelevant"
+  },
+  {
+    "timestamp": "2026-11-13T04:43:54.624620+00:00",
+    "event": "submission",
+    "index": 37,
+    "type": "question",
+    "text": "Is the forger a family member or romantic partner of the person they killed?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the forger a family member or romantic partner of the person they killed?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:43:57.674900+00:00",
+    "event": "submission",
+    "index": 38,
+    "type": "question",
+    "text": "Is the killer the spouse or romantic partner of the victim?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the killer the spouse or romantic partner of the victim?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:43:59.842201+00:00",
+    "event": "submission",
+    "index": 39,
+    "type": "question",
+    "text": "Is the victim the killer's spouse (married), rather than a non-married romantic partner?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the victim the killer's spouse (married), rather than a non-married romantic partner?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:44:02.695854+00:00",
+    "event": "submission",
+    "index": 40,
+    "type": "question",
+    "text": "Does the killer forge the note to cover up the murder by making it seem the victim abandoned the marriage and left on their own?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the killer forge the note to cover up the murder by making it seem the victim abandoned the marriage and left on their own?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:44:06.750326+00:00",
+    "event": "submission",
+    "index": 41,
+    "type": "question",
+    "text": "Is the line \"Sigh, I know I'm in trouble\" spoken by the killer as he imagines or notices his own poor forgery, realizing he has been caught out?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the line \"Sigh, I know I'm in trouble\" spoken by the killer as he imagines or notices his own poor forgery, realizing he has been caught out?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:44:22.652428+00:00",
+    "event": "submission",
+    "index": 42,
+    "type": "question",
+    "text": "Is the final speaker someone who has just received the forged note and sees through it, realizing the victim did not really leave?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the final speaker someone who has just received the forged note and sees through it, realizing the victim did not really leave?",
+    "label": "no"
+  },
+  {
+    "timestamp": "2026-11-13T04:44:26.184235+00:00",
+    "event": "submission",
+    "index": 43,
+    "type": "question",
+    "text": "Is the final speaker the killer, who says \"Sigh, I know I'm in trouble\" because his handwriting is giving him away?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nIs the final speaker the killer, who says \"Sigh, I know I'm in trouble\" because his handwriting is giving him away?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:44:32.153489+00:00",
+    "event": "submission",
+    "index": 44,
+    "type": "question",
+    "text": "Does the \"trouble\" refer to the killer's handwriting being identifiable as his own, revealing that he wrote the note rather than the victim?",
+    "forced": false,
+    "raw_player_output": "QUESTION\nDoes the \"trouble\" refer to the killer's handwriting being identifiable as his own, revealing that he wrote the note rather than the victim?",
+    "label": "yes"
+  },
+  {
+    "timestamp": "2026-11-13T04:44:40.405550+00:00",
+    "event": "submission",
+    "index": 45,
+    "type": "final",
+    "text": "The killer murdered his wife and then forged a farewell note in her handwriting—\"You've disappointed me so much; I'm never coming back\"—so that her disappearance would look like she had voluntarily walked out on the marriage. To make the forgery convincing, he practiced copying her handwriting by writing the sentence over and over. Looking at the results of his practice, he sighs, \"I know I'm in trouble,\" because the writing is clearly his own rather than hers and would expose the note as a forgery.",
+    "forced": false,
+    "raw_player_output": "FINAL\nThe killer murdered his wife and then forged a farewell note in her handwriting—\"You've disappointed me so much; I'm never coming back\"—so that her disappearance would look like she had voluntarily walked out on the marriage. To make the forgery convincing, he practiced copying her handwriting by writing the sentence over and over. Looking at the results of his practice, he sighs, \"I know I'm in trouble,\" because the writing is clearly his own rather than hers and would expose the note as a forgery.",
+    "label": "yes",
+    "grade": {
+      "event": "evaluation",
+      "submission": 45,
+      "checkpoints": [
+        {
+          "id": "C1",
+          "credit": 1,
+          "evidence": "The killer murdered his wife and then forged a farewell note in her handwriting... so that her disappearance would look like she had voluntarily walked out on the marriage.",
+          "reason": "The submission clearly states the murder and the staged voluntary departure through a forged note."
+        },
+        {
+          "id": "C2",
+          "credit": 1,
+          "evidence": "To make the forgery convincing, he practiced copying her handwriting by writing the sentence over and over.",
+          "reason": "The repeated message is explicitly explained as practice attempts to forge the wife's handwriting."
+        },
+        {
+          "id": "C3",
+          "credit": 1,
+          "evidence": "the writing is clearly his own rather than hers and would expose the note as a forgery... he sighs, \"I know I'm in trouble\"",
+          "reason": "The submission links his inability to imitate her handwriting to his fear of being caught."
+        }
+      ],
+      "material_contradiction": false,
+      "irrelevant": false,
+      "rubric_conflict": false,
+      "full_solution": true,
+      "completion_note": "Complete reference narrative reconstructed.",
+      "fact_coverage": [
+        {
+          "id": "C1.F1",
+          "status": "covered",
+          "evidence": "The killer murdered his wife and then forged a farewell note in her handwriting—\"You've disappointed me so much; I'm never coming back\"—so that her disappearance would look like she had voluntarily walked out on the marriage."
+        },
+        {
+          "id": "C2.F1",
+          "status": "covered",
+          "evidence": "he practiced copying her handwriting by writing the sentence over and over"
+        },
+        {
+          "id": "C3.F1",
+          "status": "covered",
+          "evidence": "Looking at the results of his practice, he sighs, \"I know I'm in trouble,\" because the writing is clearly his own rather than hers and would expose the note as a forgery."
+        }
+      ],
+      "requirement_coverage": [
+        {
+          "id": "R1",
+          "status": "covered",
+          "evidence": "The killer murdered his wife"
+        },
+        {
+          "id": "R2",
+          "status": "covered",
+          "evidence": "forged a farewell note in her handwriting... so that her disappearance would look like she had voluntarily walked out on the marriage"
+        },
+        {
+          "id": "R3",
+          "status": "covered",
+          "evidence": "he practiced copying her handwriting by writing the sentence over and over... the writing is clearly his own rather than hers and would expose the note as a forgery"
+        }
+      ],
+      "contradictions": [],
+      "partial_score": 1.0,
+      "complete": true,
+      "label": "yes",
+      "grading_protocol": "coverage-v2",
+      "controller_corrections": []
+    }
+  }
+]

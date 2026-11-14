@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "currency": "USD",
+  "basis": "standard_api_equivalent_not_actual_bill",
+  "total": {
+    "calls": 85,
+    "unknown_cost_calls": 85,
+    "known_estimated_cost_usd": 0.0,
+    "estimated_cost_usd": null,
+    "actual_billed_cost_usd": null,
+    "tokens": {
+      "input_tokens": 484846,
+      "cached_input_tokens": 464512,
+      "cache_write_tokens": 0,
+      "output_tokens": 20961,
+      "reasoning_tokens": 19897,
+      "total_tokens": 505807
+    },
+    "missing_token_calls": {
+      "input_tokens": 1,
+      "cached_input_tokens": 1,
+      "cache_write_tokens": 0,
+      "output_tokens": 1,
+      "reasoning_tokens": 43,
+      "total_tokens": 1
+    }
+  },
+  "by_role_model": [
+    {
+      "role": "host",
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "calls": 42,
+      "unknown_cost_calls": 42,
+      "known_estimated_cost_usd": 0.0,
+      "estimated_cost_usd": null,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 332795,
+        "cached_input_tokens": 321792,
+        "cache_write_tokens": 0,
+        "output_tokens": 19981,
+        "reasoning_tokens": 19897,
+        "total_tokens": 352776
+      },
+      "missing_token_calls": {
+        "input_tokens": 0,
+        "cached_input_tokens": 0,
+        "cache_write_tokens": 0,
+        "output_tokens": 0,
+        "reasoning_tokens": 0,
+        "total_tokens": 0
+      }
+    },
+    {
+      "role": "player",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "calls": 43,
+      "unknown_cost_calls": 43,
+      "known_estimated_cost_usd": 0.0,
+      "estimated_cost_usd": null,
+      "actual_billed_cost_usd": null,
+      "tokens": {
+        "input_tokens": 152051,
+        "cached_input_tokens": 142720,
+        "cache_write_tokens": 0,
+        "output_tokens": 980,
+        "reasoning_tokens": 0,
+        "total_tokens": 153031
+      },
+      "missing_token_calls": {
+        "input_tokens": 1,
+        "cached_input_tokens": 1,
+        "cache_write_tokens": 0,
+        "output_tokens": 1,
+        "reasoning_tokens": 43,
+        "total_tokens": 1
+      }
+    }
+  ]
+}
