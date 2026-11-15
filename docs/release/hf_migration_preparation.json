@@ -1,12 +1,12 @@
 {
-  "status": "published_download_verified_and_github_cleaned",
+  "status": "report_scope_published_and_verified",
   "source_dataset": "COMP1110-20261A-Group50/GoodTurtle",
   "source_dataset_revision": "f362ef09b79d99bae9831948424a71d5b5cc2ce0",
   "target_repo": "COMP1110-20261A-Group50/GoodTurtle-experiments",
   "counts": {
-    "games": 206,
-    "turns": 20076,
-    "messages": 4937
+    "games": 163,
+    "turns": 17574,
+    "messages": 4440
   },
   "archive_bytes": 30337735,
   "local_complete_restore_verified": true,
@@ -14,5 +14,9 @@
   "schema_checks": "All three JSONL tables parsed as Arrow tables; HF dataset card parsed successfully",
   "remote_upload_completed": true,
   "github_trajectory_deletion_completed": true,
-  "revision": "67fb22797a3e0e6544cb00c58ad33d210225e510"
+  "revision": "2635280be766631d2c2b827637801c347239cf6f",
+  "scope_change": {
+    "removed_unused_legacy": 61,
+    "added_report_supplements": 18
+  }
 }

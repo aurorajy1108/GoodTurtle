@@ -16,11 +16,19 @@ The downloader restores the original `results/` structure, verifies every archiv
 
 ## Release contents
 
-- 206 canonical games, including source and interrupted records with their original status.
-- 20,076 external submissions.
-- 4,937 shared-agent and private reflection messages, explicitly distinguished.
+- 163 report-scope games, including source and interrupted records with their original status.
+- 17,574 external submissions.
+- 4,440 shared-agent and private reflection messages, explicitly distinguished.
 - Full original records in `results.tar.gz`; browsable `games`, `turns` and `messages` tables on HF.
 
-[Summary CSV](summary.csv) · [Condition table](tables/20261114_latest_update/by_condition.csv) · [Source/condition table](tables/20261114_latest_update/by_source_condition.csv)
+[Summary CSV](summary.csv)
 
 Historical cohorts retain original model, host, rubric and completion rules. Restore the records before rebuilding analyses. Live experiments are added in a later verified release after registration.
+
+## Current scope
+
+The current HF version removes 61 unused older-batch games and adds 18 report appendix/supplement games. It includes the completed fourth MAS-reflection run. The 50-puzzle dataset is unchanged.
+
+The CL four-run descriptive analysis uses outcome-ranked subsets. Full candidate records and the selection table are retained in the HF archive for audit; they are not additional reported four-run samples. See `results/report_provenance/cl_selection.csv` after downloading. Historical archive versions remain available for provenance.
+
+If a previous full archive is already restored in your checkout, use a fresh checkout or a new `--root` directory for this release. The downloader preserves conflicting local evidence rather than silently replacing it.

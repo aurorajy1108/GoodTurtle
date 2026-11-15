@@ -12,7 +12,7 @@
 |组友Set1，20261113|12|9|coverage-v2|同上；保留100%但未完成的原记录|
 |Set3 answer_only，20261114|15|15|coverage-v3-unified|补齐TS022的答案条件；14份接受的在线终分、1份评分冲突|
 
-新增39局的完整轨迹均在[结果目录](../../results/README.md)。[更新逐局表](https://huggingface.co/datasets/COMP1110-20261A-Group50/GoodTurtle-experiments)覆盖全部206局；[分来源汇总](../../results/tables/20261114_latest_update/by_source_condition.csv)保留A、条件、评分版本和批次边界。上次的[固定分析快照](all_versions_20261114.md)仍保留，不能把其中167或113等旧计数当作当前总数。
+新增39局的完整轨迹均在[结果目录](../../results/README.md)。[更新逐局表](https://huggingface.co/datasets/COMP1110-20261A-Group50/GoodTurtle-experiments)覆盖全部206局；[分来源汇总](https://huggingface.co/datasets/COMP1110-20261A-Group50/GoodTurtle-experiments)保留A、条件、评分版本和批次边界。上次的[固定分析快照](all_versions_20261114.md)仍保留，不能把其中167或113等旧计数当作当前总数。
 
 覆盖说明：本次机械核验全部206局；阅读了新增33个目标局的末卷、前十次提交及选定关键问答，也阅读了6个新前题末卷。导出[390条前十次提交](https://huggingface.co/datasets/COMP1110-20261A-Group50/GoodTurtle-experiments)和[39份末卷及原评分](https://huggingface.co/datasets/COMP1110-20261A-Group50/GoodTurtle-experiments)。**没有完成新增3,852次提交的逐问语义审查，也没有把助手审阅称为人工gold。** 旧批次逐问审阅的既有覆盖范围不因此扩大。
 

@@ -83,7 +83,9 @@ def prepare(root, out, repo_id=DEFAULT_REPO):
     (out/'archive_manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
     with tarfile.open(out/'results.tar.gz','w:gz') as tar:
         for f in files: tar.add(f,arcname=str(f.relative_to(root)),recursive=False)
-    try: commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=root,text=True,stderr=subprocess.DEVNULL).strip()
+    try:
+        top=subprocess.check_output(['git','rev-parse','--show-toplevel'],cwd=root,text=True,stderr=subprocess.DEVNULL).strip()
+        commit=subprocess.check_output(['git','rev-parse','HEAD'],cwd=root,text=True,stderr=subprocess.DEVNULL).strip() if Path(top).resolve()==root else None
     except (OSError,subprocess.CalledProcessError): commit=None
     info={'repo_id':repo_id,'source_code_commit':commit,'counts':{'games':len(games),'turns':len(turns),'messages':len(messages)},
           'original_validation':validation,'archive_file':'results.tar.gz','archive_sha256':digest(out/'results.tar.gz'),

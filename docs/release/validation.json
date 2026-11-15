@@ -1,7 +1,7 @@
 {
-  "games": 206,
+  "games": 163,
   "copied_frozen_files_verified": 2868,
-  "submissions": 20076,
+  "submissions": 17574,
   "original_outcomes_unchanged": true,
   "semantic_certification": false,
   "html_inspected": 231,
@@ -35,25 +35,26 @@
   "remote_experiment_release": {
     "repo_id": "COMP1110-20261A-Group50/GoodTurtle-experiments",
     "repo_type": "dataset",
-    "revision": "67fb22797a3e0e6544cb00c58ad33d210225e510",
+    "revision": "2635280be766631d2c2b827637801c347239cf6f",
     "archive_file": "results.tar.gz",
-    "archive_sha256": "4afba54a9bb372aa81556859af8f2f984c0147315e625cc19ee82700ead79c93",
+    "archive_sha256": "7f2e6241c7f9b8290306074c5ee41c821394fa3c751f09948dcfcb29b0fab0f4",
     "source_dataset": "COMP1110-20261A-Group50/GoodTurtle",
     "counts": {
-      "games": 206,
-      "turns": 20076,
-      "messages": 4937
+      "games": 163,
+      "turns": 17574,
+      "messages": 4440
     },
     "download_verified": true,
     "verification": {
-      "games": 206,
-      "copied_frozen_files_verified": 2868,
-      "submissions": 20076,
+      "games": 163,
+      "copied_frozen_files_verified": 2184,
+      "submissions": 17574,
       "original_outcomes_unchanged": true,
       "semantic_certification": false,
-      "restored_files": 3378,
+      "restored_files": 2541,
       "complete_download_verified": true
-    }
+    },
+    "scope": "Report studies, appendices and documented candidate selection provenance"
   },
   "local_full_archive": false
 }

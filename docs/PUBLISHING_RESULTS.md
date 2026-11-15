@@ -19,7 +19,7 @@ and writing a verification receipt. This release has completed upload and pinned
 | `release.json` | Counts, source code version and archive information |
 | `README.md` | HF dataset card with three independently browsable configurations |
 
-The proposed snapshot has 206 games, 20,076 submissions and 4,937 shared/reflection messages.
+The current report-scope snapshot has 163 games, 17,574 submissions and 4,440 shared/reflection messages. It removes unused legacy batches, includes reported supplements and preserves outcome-selection provenance.
 New live experiments are not included until finished and registered. Original host answers, scores,
 completion decisions and source labels remain unchanged.
 
