@@ -84,7 +84,7 @@ Each published game contains `trajectory.jsonl`, readable `trajectory.md`, its o
 
 English is the release's primary documentation language. Original conversations and dated research notes retain their source language. Human annotations, model-generated conversations and subsequent review decisions keep their original provenance.
 
-The [full historical archive](https://github.com/aurorajy1108/GoodTurtle/tree/archive/full-repository-20261114) retains earlier dashboards and raw execution snapshots. See the [release cleanup record](docs/release/README.md) for the file-by-file HTML audit and validation.
+The [full historical archive](https://github.com/aurorajy1108/GoodTurtle/tree/c4ccc67eef8c09aa0c6987a464f468718f5015f4) retains earlier dashboards and raw execution snapshots. See the [release cleanup record](docs/release/README.md) for the file-by-file HTML audit and validation.
 
 ## Citation and contributions
 

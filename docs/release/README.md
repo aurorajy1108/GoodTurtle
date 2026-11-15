@@ -2,7 +2,7 @@
 
 **HF migration completed:** full records now live in [GoodTurtle-experiments](https://huggingface.co/datasets/COMP1110-20261A-Group50/GoodTurtle-experiments). The original cleanup below describes the archived evidence. The current GitHub tree keeps summaries and a pinned download descriptor; run `python3 scripts/fetch_results.py` to restore all records.
 
-This release is prepared on `release/english-clean-20261115`, based on the fetched `main` snapshot. The existing experiment worktrees, credentials and report backups are untouched.
+The public release uses a single `main` branch. Original development history and the pre-cleanup snapshot remain reachable from `main`. The existing experiment worktrees, credentials and report backups are untouched.
 
 ## Presentation audit
 

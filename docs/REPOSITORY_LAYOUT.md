@@ -21,7 +21,7 @@ Read the [English quickstart](running/coworker_quickstart.md) to run experiments
 
 Generated result HTML is excluded. Text/JSON trajectories, shared discussion and reflection remain available. The single retained HTML file, `turtle_loop/web/progress.html`, is the runtime's local monitoring interface. The [HTML inventory](release/html_inventory.json) explains every decision.
 
-The pre-cleanup snapshot is retained in Git history. Older full execution snapshots and dashboards are also on [archive/full-repository-20261114](https://github.com/aurorajy1108/GoodTurtle/tree/archive/full-repository-20261114). Resolve historical paths with:
+The pre-cleanup snapshot is retained in Git history. Older full execution snapshots and dashboards are also on [the historical snapshot](https://github.com/aurorajy1108/GoodTurtle/tree/c4ccc67eef8c09aa0c6987a464f468718f5015f4). Resolve historical paths with:
 
 ```bash
 python3 scripts/results_catalog.py locate 'results/20261113_verified_final/mas/TS038_r01_solo/trajectory.jsonl'

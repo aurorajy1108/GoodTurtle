@@ -19,7 +19,7 @@
 | 打包/校验运行所需私有题库与Host包 | `experiment_bundle.py` |
 | 已发布结果索引、校验、汇总与旧路径查找 | `results_catalog.py list / check / summarize / locate` |
 | 重建当前分析与历史固定表，不生成仪表盘 | `analyze_latest_results.py`、`build_all_versions_summary.py`、`analyze_transfer_process.py` |
-| 旧三标签原型 | `prepare.py`、`summarize_pilot.py`；旧筛选脚本见[归档分支](https://github.com/aurorajy1108/GoodTurtle/tree/archive/full-repository-20261114/scripts) |
+| 旧三标签原型 | `prepare.py`、`summarize_pilot.py`；旧筛选脚本见[历史快照](https://github.com/aurorajy1108/GoodTurtle/tree/c4ccc67eef8c09aa0c6987a464f468718f5015f4/scripts) |
 
 新同事先读 [运行指南](../docs/running/coworker_quickstart.md)。旧原型不作为当前四标签实验入口。每个脚本的 `--help` 列参数；完整参数说明见docs。
 
