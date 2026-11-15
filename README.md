@@ -26,8 +26,8 @@ We study how prior experience and cooperation influence interactive puzzle solvi
 Python 3.11 is recommended. The core runtime uses the Python standard library.
 
 ```bash
-git clone https://github.com/aurorajy1108/GoodTurtle-Release.git
-cd GoodTurtle-Release
+git clone https://github.com/aurorajy1108/GoodTurtle.git
+cd GoodTurtle
 python3 -m unittest discover -s tests
 python3 scripts/release_check.py
 ```
