@@ -1,0 +1,180 @@
+{
+  "version": "local-extension-20261023",
+  "replace_host_examples": true,
+  "canonical_facts": [
+    "The shopper bought eggs and sets them on another car while tying a loose shoelace",
+    "The bag breaks and eggs fall into the wiper recess unnoticed",
+    "The shopper leaves and the driver later drives away, also unaware",
+    "Rain prompts the driver to activate the wipers",
+    "The wipers break and smear the eggs, obstructing vision and causing the crash"
+  ],
+  "explicit_negatives": [
+    "The shopper and driver do not notice the eggs. The crash arises later from obscured vision, not deliberate sabotage or brake failure."
+  ],
+  "unknown_details": [
+    "The car brand, bag color, exact date and exact number within the stated two-or-three eggs are unspecified incidental details."
+  ],
+  "review_status": "ai_authored_pending_human",
+  "host_examples": [
+    {
+      "case_id": "LOCAL_TS009_001",
+      "question": "Had the shopper bought eggs?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS009_002",
+      "question": "Did he temporarily put the eggs on a nearby car while tying a loose shoelace?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS009_003",
+      "question": "Did the bag break and let eggs fall into the windshield wiper recess?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS009_004",
+      "question": "Did he notice the eggs that fell into the car’s wiper area?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS009_005",
+      "question": "Did the shopper leave with the remaining eggs?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS009_006",
+      "question": "Did the driver also fail to notice the eggs before driving?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS009_007",
+      "question": "Did rain cause the driver to turn on the wipers?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS009_008",
+      "question": "Did the wipers smash and spread eggs over the windshield?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS009_009",
+      "question": "Did the smeared eggs obstruct vision and cause the crash?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS009_010",
+      "question": "Did tying the shoelace directly mechanically damage the car’s brakes?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS009_011",
+      "question": "Did he deliberately sabotage the car with eggs?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS009_012",
+      "question": "Did the shopper drive the car that later crashed?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS009_013",
+      "question": "Did the eggs roll under the brake pedal?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS009_014",
+      "question": "Was the egg-related accident delayed until the car was driven in rain?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS009_015",
+      "question": "Was the shopper struck by the car while still crouching to tie his shoe?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS009_016",
+      "question": "Did he place the eggs on the car, and did he know they had leaked into its wiper recess?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS009_017",
+      "question": "Was the bag blue?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS009_018",
+      "question": "What make was the car?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS009_019",
+      "question": "Did the driver need the wipers because rain had started?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS009_020",
+      "question": "Was the immediate driving problem impaired sight through the windshield?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    }
+  ]
+}

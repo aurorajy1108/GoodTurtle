@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "source": "TS002-only experimental scoring dataset, derived from turtle50_v7",
+  "scoring": "sum(weight * credit); credit in {0,0.5,1}; AI-adjudicated, pending human confirmation",
+  "puzzles": [
+    {
+      "id": "TS002",
+      "opening": "The young woman was stopped at the baggage security checkpoint.\nShe said, \"My luggage contains only pajamas, a pillow, a thermos, a towel, and some changes of clothes—why are you stopping me?\"\nAfter inspecting her luggage, security personnel handcuffed her and took her away.",
+      "answer": "The man the girl loved betrayed her today; he was packing his bags, preparing to move out of the apartment they shared.\nThe girl tearfully begged him not to leave, but he didn't look back.\nJust then, the girl said coldly, \"At least leave my pillow behind.\"\nAnd so, she cut off the boy's hand.",
+      "rubric": [
+        {
+          "id": "C1",
+          "weight": 0.4,
+          "core": true,
+          "criterion": "She deliberately severed the HAND of her boyfriend or romantic partner, the same man preparing to leave; not an arm.",
+          "full_credit": "She deliberately cut off the hand of her boyfriend or romantic partner; explicitly identify that relationship.",
+          "half_credit": "A severed hand is identified, but the deliberate cutting or boyfriend/romantic-partner identity is missing. A hand belonging only to a known person or acquaintance cannot earn full credit.",
+          "zero_credit": "Missing or contradicted; incompatible uncommitted alternatives; merely repeating the opening without the required explanatory content. An arm is not a hand.",
+          "points": 40.0,
+          "required_facts": [
+            "She deliberately cut off the hand of her boyfriend or romantic partner."
+          ],
+          "coverage_note": "Full credit requires all of deliberate cutting, a hand, and explicit boyfriend or romantic-partner identity. A known person alone does not establish a romantic relationship. Faithful equivalents such as romantic partner count. Missing identity or deliberate action is partial; arm alone is zero."
+        },
+        {
+          "id": "C2",
+          "weight": 0.25,
+          "core": false,
+          "criterion": "He betrayed her that day and was packing to leave their shared home.",
+          "full_credit": "Betrayal that day and packing to leave shared home.",
+          "half_credit": "Betrayal or packing to leave shared home, not both.",
+          "zero_credit": "Missing or contradicted; incompatible uncommitted alternatives; merely repeating the opening without the required explanatory content. An arm is not a hand.",
+          "points": 25.0,
+          "required_facts": [
+            "Betrayal that day and packing to leave shared home."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        },
+        {
+          "id": "C3",
+          "weight": 0.15,
+          "core": false,
+          "criterion": "She tearfully begged him to stay but he ignored her.",
+          "full_credit": "Tearful plea and his continued departure.",
+          "half_credit": "Begging or refusal identified, not both.",
+          "zero_credit": "Missing or contradicted; incompatible uncommitted alternatives; merely repeating the opening without the required explanatory content. An arm is not a hand.",
+          "points": 15.0,
+          "required_facts": [
+            "Tearful plea and his continued departure."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        },
+        {
+          "id": "C4",
+          "weight": 0.2,
+          "core": false,
+          "criterion": "She demanded her pillow remain, treating his hand as the pillow later carried in luggage.",
+          "full_credit": "Pillow demand, hand-as-pillow and luggage/security connection.",
+          "half_credit": "Pillow/body-part identity without demand or luggage connection.",
+          "zero_credit": "Missing or contradicted; incompatible uncommitted alternatives; merely repeating the opening without the required explanatory content. An arm is not a hand.",
+          "points": 20.0,
+          "required_facts": [
+            "Pillow demand, hand-as-pillow and luggage/security connection."
+          ],
+          "coverage_note": "Assess every qualifier; covered requires the entire fact. Partial factual coverage cannot receive full credit."
+        }
+      ],
+      "title": "安检处的行李",
+      "story_family": "F002",
+      "quality_status": "需要复核",
+      "review_notes": "答案没有交代断手与行李如何关联，以及安检如何发现",
+      "source_row": "2",
+      "observed_score": null,
+      "completion_requirements": [
+        "Her loved boyfriend betrayed her that day",
+        "He is packing to leave their shared apartment",
+        "She tearfully begs him to stay, but he keeps leaving",
+        "She demands that he at least leave her pillow",
+        "She deliberately cuts off the HAND of that same boyfriend or romantic partner who betrayed her and was preparing to leave, not merely an unspecified person or arm.",
+        "The hand is the body part she treats as her pillow and carries in the luggage, explaining security’s discovery and arrest"
+      ],
+      "annotation_version": "turtle50-v3-host-repair-20261023",
+      "annotation_status": "ai_repair_pending_human",
+      "grading_notes": "AI three-review adjudication v2, pending human confirmation. Score only this submission. Apply full_credit/half_credit/zero_credit explicitly, with zero taking precedence for a materially contradictory checkpoint claim. An omitted qualifier can be partial; replacing the core identity/cause with a wrong one is not an omission. Faithful paraphrases count. Partial score and full narrative are separate outputs. AI independent review C, not human gold. Score sum(weight*credit), credit 0/0.5/1. Full narrative requires all listed supported requirements and no material contradictory mechanism; partial 1 alone does not override full narrative. Credit each distinct causal proposition once; do not penalize faithful paraphrase or omitted unknown details. Strict hand/arm: arm alone cannot fully solve. The source answer omits the explicit luggage/pillow bridge; the completion list supplies that intended inference from the opening. Human review required. Do not demand a specific wrapping, cover or successful security evasion. Strict hand/arm distinction; arm cannot earn C1, even if severing is correct. TS002 C1: Full credit requires explicit boyfriend or romantic-partner identity for the person whose hand she deliberately severed. An unspecified known person is not enough; if the hand is identified but that identity or the deliberate cutting is missing, award half credit. A different body part such as an arm or head is zero for C1.",
+      "annotation_provenance": {
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "selected_base": "c",
+        "adjudicator": "root",
+        "human_confirmed": false
+      },
+      "grading_protocol": "coverage-v2"
+    }
+  ],
+  "annotation_policy": {
+    "review": "Three independent AI annotations plus root adjudication, not human gold",
+    "full_solution": "Requires all completion requirements and no material contradiction; no new incidental facts",
+    "weight_policy": "Distinct explanatory content; weighting is a documented research choice, not a uniquely optimal quantity",
+    "attachment": "Original 49-puzzle XLSX remains unchanged; TS040 added in previous version"
+  },
+  "revision_notes": [
+    "TS002 C1 requires explicit romantic partner identity for full credit; completion requires the same partner. Other puzzles excluded."
+  ]
+}

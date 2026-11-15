@@ -1,0 +1,478 @@
+{
+  "human_confirmed": false,
+  "dataset": "data/annotations/turtle50_v4/private.json",
+  "puzzles": [
+    {
+      "puzzle_id": "TS039",
+      "base_binding": {
+        "story_sha256": "dd3af8efedeb645df7d03e35f7c9737ef81b44e63a2e8f6184098358006bece7",
+        "overlay_pack": "data/host_packs/LOOP_TS039_repair_v5.json",
+        "version": "host-v5.1-20261023",
+        "review_status": "ai_repair_pending_human"
+      },
+      "base_sha256": "fb2ae8778401a1ae9748c5a0fdc9dba55c00df0d9b10052970ff38230ad12f9a",
+      "merged_pack": "data/host_packs/LOOP_TS039_share_merged_v1.json",
+      "added_examples": [
+        {
+          "case_id": "SHARE_6adf3775_014",
+          "question": "Did the boy actually improve his grades enough to be admitted to the same university as the girl?",
+          "answer": "no",
+          "rationale": "He failed to enter as a student.",
+          "public_history": [],
+          "review_status": "user_history_ai_adjudicated_pending_human",
+          "provenance": {
+            "source_url": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+            "message_id": "114adfc6-20db-4468-b8e0-588f62901d3d",
+            "feedback_message_id": "a92c64e5-927e-4c60-9282-d6d3b8f9a69e",
+            "source_case": "SHARE_6adf3775_014",
+            "human_confirmed": false,
+            "question_origin": "user_shared_player_question",
+            "answer_origin": "user_supplied_history",
+            "reviewer": "codex_root",
+            "review_date": "2026-10-26"
+          }
+        },
+        {
+          "case_id": "SHARE_6adf3775_034",
+          "question": "Did the boy enter the university as a student, rather than as an employee or in some other capacity?",
+          "answer": "no",
+          "rationale": "He arrived as a cadaver, not a student.",
+          "public_history": [],
+          "review_status": "user_history_ai_adjudicated_pending_human",
+          "provenance": {
+            "source_url": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+            "message_id": "3e9e0237-bce8-43e0-a1d5-678c2852ae94",
+            "feedback_message_id": "851d9cf9-7820-46b3-94dc-6a54f9fd2969",
+            "source_case": "SHARE_6adf3775_034",
+            "human_confirmed": false,
+            "question_origin": "user_shared_player_question",
+            "answer_origin": "user_supplied_history",
+            "reviewer": "codex_root",
+            "review_date": "2026-10-26"
+          }
+        },
+        {
+          "case_id": "SHARE_6adf3775_064",
+          "question": "Did the girl go insane after discovering that the cadaver she was studying in an anatomy class was the boy who had loved her?",
+          "answer": "yes",
+          "rationale": "Recognition of his cadaver in anatomy class causes the breakdown.",
+          "public_history": [],
+          "review_status": "user_history_ai_adjudicated_pending_human",
+          "provenance": {
+            "source_url": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+            "message_id": "412ff2a9-2c5b-4cd1-adaf-cdcceb0bbf07",
+            "feedback_message_id": "59d5c47b-c188-46ca-ab37-30ba2b0d6aea",
+            "source_case": "SHARE_6adf3775_064",
+            "human_confirmed": false,
+            "question_origin": "user_shared_player_question",
+            "answer_origin": "user_supplied_history",
+            "reviewer": "codex_root",
+            "review_date": "2026-10-26"
+          }
+        }
+      ],
+      "reference_answer_sha256": "fdc53565ef06e0957ed07eed03d92ca90b9a9e483f04768ec7bd9a48a2aab809"
+    },
+    {
+      "puzzle_id": "TS033",
+      "base_binding": {
+        "story_sha256": "2dc6d092da9b7ee0afaa084f67fdcd78924254b03d5fa15e7230656de69e668d",
+        "overlay_pack": "data/host_packs/LOOP_TS033_repair_v5.json",
+        "version": "host-v5.1-20261023",
+        "review_status": "ai_repair_pending_human"
+      },
+      "base_sha256": "ef8524cd913cd5aa2f288388f601d4d671022152ad2105b3fd6938e1acf0fd17",
+      "merged_pack": "data/host_packs/LOOP_TS033_share_merged_v1.json",
+      "added_examples": [
+        {
+          "case_id": "SHARE_6adf3775_116",
+          "question": "Was the money connected to paying a ransom for a kidnapped person?",
+          "answer": "yes",
+          "rationale": "The payment is ransom for his kidnapped daughter.",
+          "public_history": [],
+          "review_status": "user_history_ai_adjudicated_pending_human",
+          "provenance": {
+            "source_url": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+            "message_id": "7e25fcc3-4ac6-4e7f-91f4-5a263a6c95bb",
+            "feedback_message_id": "7409231d-e8b1-4966-905b-14717f3bc2bb",
+            "source_case": "SHARE_6adf3775_116",
+            "human_confirmed": false,
+            "question_origin": "user_shared_player_question",
+            "answer_origin": "user_supplied_history",
+            "reviewer": "codex_root",
+            "review_date": "2026-10-26"
+          }
+        },
+        {
+          "case_id": "SHARE_6adf3775_120",
+          "question": "Did he add more cash because the kidnappers had demanded a ransom greater than one million yen?",
+          "answer": "yes",
+          "rationale": "The demand is fifty million yen, exceeding one million; extra real top bundles conceal the deception, not necessarily make the whole bag genuine.",
+          "public_history": [],
+          "review_status": "user_history_ai_adjudicated_pending_human",
+          "provenance": {
+            "source_url": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+            "message_id": "b7aba170-1b67-4e05-a978-a882de5f004b",
+            "feedback_message_id": "b749b51c-e996-4a23-bf22-ff7c32d87702",
+            "source_case": "SHARE_6adf3775_120",
+            "human_confirmed": false,
+            "question_origin": "user_shared_player_question",
+            "answer_origin": "user_supplied_history",
+            "reviewer": "codex_root",
+            "review_date": "2026-10-26"
+          }
+        },
+        {
+          "case_id": "SHARE_6adf3775_132",
+          "question": "Was the president carrying the money to rescue a member of his own family?",
+          "answer": "yes",
+          "rationale": "The hostage is his daughter.",
+          "public_history": [],
+          "review_status": "user_history_ai_adjudicated_pending_human",
+          "provenance": {
+            "source_url": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+            "message_id": "1367c94f-8a32-4cdb-b705-e606f808f4e0",
+            "feedback_message_id": "744626cd-de5b-4be5-aac1-0f03c59deab8",
+            "source_case": "SHARE_6adf3775_132",
+            "human_confirmed": false,
+            "question_origin": "user_shared_player_question",
+            "answer_origin": "user_supplied_history",
+            "reviewer": "codex_root",
+            "review_date": "2026-10-26"
+          }
+        },
+        {
+          "case_id": "SHARE_6adf3775_178",
+          "question": "Was the person who was kidnapped the president's **child**?",
+          "answer": "yes",
+          "rationale": "The hostage is his daughter, hence his child.",
+          "public_history": [],
+          "review_status": "user_history_ai_adjudicated_pending_human",
+          "provenance": {
+            "source_url": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+            "message_id": "6b784c03-1eed-497d-afcc-5defee839eec",
+            "feedback_message_id": "d6e91e49-8c09-4db6-ba44-4bfbea9c1ae8",
+            "source_case": "SHARE_6adf3775_178",
+            "human_confirmed": false,
+            "question_origin": "user_shared_player_question",
+            "answer_origin": "user_supplied_history",
+            "reviewer": "codex_root",
+            "review_date": "2026-10-26"
+          }
+        }
+      ],
+      "reference_answer_sha256": "d0f425b4ae644c91e0a6d52c26f13dae1c18ee451c2e2553684b351b637ee902"
+    },
+    {
+      "puzzle_id": "TS032",
+      "base_binding": {
+        "story_sha256": "0c23575d8534548a13e197593d6613eb5b5952b292681a055e853f5fe08a9dc7",
+        "overlay_pack": "data/host_packs/LOOP_TS032_repair_v5.json",
+        "version": "host-v5.1-20261023",
+        "review_status": "ai_repair_pending_human"
+      },
+      "base_sha256": "edf86ba49df3b238cc35964bdea32f91446515608c16022ad436829e29dba520",
+      "merged_pack": "data/host_packs/LOOP_TS032_share_merged_v1.json",
+      "added_examples": [
+        {
+          "case_id": "SHARE_6adf3775_302",
+          "question": "Did A reveal that B’s family had committed some kind of wrongdoing or crime, causing B to transfer?",
+          "answer": "yes",
+          "rationale": "A photographs and reports the parent’s murder; the arrest forces B to move to relatives.",
+          "public_history": [],
+          "review_status": "user_history_ai_adjudicated_pending_human",
+          "provenance": {
+            "source_url": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+            "message_id": "b4abce33-64fb-407d-84ce-3d01484c118c",
+            "feedback_message_id": "462ae766-acc9-458b-82b1-3cffff80a69e",
+            "source_case": "SHARE_6adf3775_302",
+            "human_confirmed": false,
+            "question_origin": "user_shared_player_question",
+            "answer_origin": "user_supplied_history",
+            "reviewer": "codex_root",
+            "review_date": "2026-10-26"
+          }
+        },
+        {
+          "case_id": "SHARE_6adf3775_306",
+          "question": "Was B’s family crime connected to **B’s parents**, rather than B themselves?",
+          "answer": "yes",
+          "rationale": "The crime was committed by B’s parent.",
+          "public_history": [],
+          "review_status": "user_history_ai_adjudicated_pending_human",
+          "provenance": {
+            "source_url": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+            "message_id": "061f29cf-8801-4e70-a8e8-ca44d68a74c0",
+            "feedback_message_id": "86bf27ff-a4b8-45cf-b170-595b206a92c4",
+            "source_case": "SHARE_6adf3775_306",
+            "human_confirmed": false,
+            "question_origin": "user_shared_player_question",
+            "answer_origin": "user_supplied_history",
+            "reviewer": "codex_root",
+            "review_date": "2026-10-26"
+          }
+        },
+        {
+          "case_id": "SHARE_6adf3775_310",
+          "question": "Was the parent’s crime related to **murder or causing someone's death**?",
+          "answer": "yes",
+          "rationale": "The parent committed murder.",
+          "public_history": [],
+          "review_status": "user_history_ai_adjudicated_pending_human",
+          "provenance": {
+            "source_url": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+            "message_id": "15a396dd-07d0-425b-8f4c-e3e285061e9f",
+            "feedback_message_id": "ac489cf6-340d-44ec-a031-ae8153a7b050",
+            "source_case": "SHARE_6adf3775_310",
+            "human_confirmed": false,
+            "question_origin": "user_shared_player_question",
+            "answer_origin": "user_supplied_history",
+            "reviewer": "codex_root",
+            "review_date": "2026-10-26"
+          }
+        },
+        {
+          "case_id": "SHARE_6adf3775_326",
+          "question": "Did A actually kill B?",
+          "answer": "no",
+          "rationale": "A falsely confesses; B remains alive.",
+          "public_history": [],
+          "review_status": "user_history_ai_adjudicated_pending_human",
+          "provenance": {
+            "source_url": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+            "message_id": "2efb4d40-ba4c-40c9-81e3-14cc99fb49be",
+            "feedback_message_id": "e445daa3-778e-4baf-a6cf-25d4d837eb40",
+            "source_case": "SHARE_6adf3775_326",
+            "human_confirmed": false,
+            "question_origin": "user_shared_player_question",
+            "answer_origin": "user_supplied_history",
+            "reviewer": "codex_root",
+            "review_date": "2026-10-26"
+          }
+        },
+        {
+          "case_id": "SHARE_6adf3775_328",
+          "question": "Was B’s disappearance staged by B themselves (i.e., B intentionally disappeared)?",
+          "answer": "yes",
+          "rationale": "B voluntarily leaves, ashamed and afraid of rejection.",
+          "public_history": [],
+          "review_status": "user_history_ai_adjudicated_pending_human",
+          "provenance": {
+            "source_url": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+            "message_id": "77f01f34-f925-409b-9435-e950bd2765a3",
+            "feedback_message_id": "1ed02d65-d4a1-4cc2-ade1-7dfa55cd0503",
+            "source_case": "SHARE_6adf3775_328",
+            "human_confirmed": false,
+            "question_origin": "user_shared_player_question",
+            "answer_origin": "user_supplied_history",
+            "reviewer": "codex_root",
+            "review_date": "2026-10-26"
+          }
+        }
+      ],
+      "reference_answer_sha256": "67e4453990f6f2c243168f1e5defd7adf1647d3fc519b95468d4ed83838d12c2"
+    },
+    {
+      "puzzle_id": "TS034",
+      "base_binding": {
+        "story_sha256": "5908fea8d67817a926cfa428f3349f2b9b572aedfa0290fc87188b431c3ec49c",
+        "overlay_pack": "data/host_packs/LOOP_TS034_repair_v5.json",
+        "version": "host-v5.1-20261023",
+        "review_status": "ai_repair_pending_human"
+      },
+      "base_sha256": "dd6916bfd2d82dbda4173783273f17ec652f279ebb40c3db772fce6c4cd67bea",
+      "merged_pack": "data/host_packs/LOOP_TS034_share_merged_v1.json",
+      "added_examples": [
+        {
+          "case_id": "SHARE_6adf37d6_006",
+          "question": "Is the hostage being threatened actually the father's daughter?",
+          "answer": "no",
+          "rationale": "The father, not the daughter, is the hostage.",
+          "public_history": [],
+          "review_status": "user_history_ai_adjudicated_pending_human",
+          "provenance": {
+            "source_url": "https://chatgpt.com/share/6adf37d6-5080-83e9-abbc-2ced03b615d6",
+            "message_id": "d2815415-a2d2-4267-9c25-06fb97a6e601",
+            "feedback_message_id": "b70d336e-a2e1-47f1-9571-7bf0b53c9e02",
+            "source_case": "SHARE_6adf37d6_006",
+            "human_confirmed": false,
+            "question_origin": "user_shared_player_question",
+            "answer_origin": "user_supplied_history",
+            "reviewer": "codex_root",
+            "review_date": "2026-10-26"
+          }
+        },
+        {
+          "case_id": "SHARE_6adf37d6_032",
+          "question": "Is the father himself the hostage whose life the kidnapper is threatening?",
+          "answer": "yes",
+          "rationale": "The father is held hostage.",
+          "public_history": [],
+          "review_status": "user_history_ai_adjudicated_pending_human",
+          "provenance": {
+            "source_url": "https://chatgpt.com/share/6adf37d6-5080-83e9-abbc-2ced03b615d6",
+            "message_id": "c3e7186e-f650-4b06-8c7f-155da9f8b59a",
+            "feedback_message_id": "d620db41-9387-41f7-aa86-5a8f8e18aca6",
+            "source_case": "SHARE_6adf37d6_032",
+            "human_confirmed": false,
+            "question_origin": "user_shared_player_question",
+            "answer_origin": "user_supplied_history",
+            "reviewer": "codex_root",
+            "review_date": "2026-10-26"
+          }
+        },
+        {
+          "case_id": "SHARE_6adf37d6_038",
+          "question": "Does the father believe that paying the ransom would put his daughter in danger?",
+          "answer": "yes",
+          "rationale": "He fears the daughter will be killed if she comes to deliver the ransom.",
+          "public_history": [],
+          "review_status": "user_history_ai_adjudicated_pending_human",
+          "provenance": {
+            "source_url": "https://chatgpt.com/share/6adf37d6-5080-83e9-abbc-2ced03b615d6",
+            "message_id": "2babec7a-1477-4758-9bd1-58272686d7da",
+            "feedback_message_id": "e6b60b3b-bcea-4022-83a0-18d69f1b75c4",
+            "source_case": "SHARE_6adf37d6_038",
+            "human_confirmed": false,
+            "question_origin": "user_shared_player_question",
+            "answer_origin": "user_supplied_history",
+            "reviewer": "codex_root",
+            "review_date": "2026-10-26"
+          }
+        },
+        {
+          "case_id": "SHARE_6adf37d6_050",
+          "question": "Is the father refusing the ransom primarily because he wants to protect his daughter, even at the cost of his own life?",
+          "answer": "yes",
+          "rationale": "He protects his only family even at risk to his own life.",
+          "public_history": [],
+          "review_status": "user_history_ai_adjudicated_pending_human",
+          "provenance": {
+            "source_url": "https://chatgpt.com/share/6adf37d6-5080-83e9-abbc-2ced03b615d6",
+            "message_id": "a6ce1fa0-c600-44ef-adae-1ec06b470dc6",
+            "feedback_message_id": "e382b586-3d53-4b34-b119-3e2f77bc3704",
+            "source_case": "SHARE_6adf37d6_050",
+            "human_confirmed": false,
+            "question_origin": "user_shared_player_question",
+            "answer_origin": "user_supplied_history",
+            "reviewer": "codex_root",
+            "review_date": "2026-10-26"
+          }
+        },
+        {
+          "case_id": "SHARE_6adf37d6_068",
+          "question": "Does the father believe the kidnapper will kill his daughter because she would become a witness to the ransom exchange?",
+          "answer": "yes",
+          "rationale": "He fears witness elimination after she arrives; this is his belief, not an established eventual outcome.",
+          "public_history": [],
+          "review_status": "user_history_ai_adjudicated_pending_human",
+          "provenance": {
+            "source_url": "https://chatgpt.com/share/6adf37d6-5080-83e9-abbc-2ced03b615d6",
+            "message_id": "8910190b-6002-47a4-a1a9-08f218becfaf",
+            "feedback_message_id": "27731146-a280-4219-a22f-a74f0a5f3fac",
+            "source_case": "SHARE_6adf37d6_068",
+            "human_confirmed": false,
+            "question_origin": "user_shared_player_question",
+            "answer_origin": "user_supplied_history",
+            "reviewer": "codex_root",
+            "review_date": "2026-10-26"
+          }
+        }
+      ],
+      "reference_answer_sha256": "5f163832cc75371959aef4da6798a8b1ab171b3e3b94f761b7637fa1e6067e13"
+    },
+    {
+      "puzzle_id": "TS037",
+      "base_binding": {
+        "story_sha256": "c609422b3375e258db7d02bb170cd68b797f5081828733d5524dac0cdf8ae0ff",
+        "overlay_pack": "data/host_packs/LOOP_TS037_repair_v5.json",
+        "version": "host-v5.1-20261023",
+        "review_status": "ai_repair_pending_human"
+      },
+      "base_sha256": "b86ce6dc7fddcdd1cac9640637fe6b6903de9faf386bcfc7a35409e7788d56ad",
+      "merged_pack": "data/host_packs/LOOP_TS037_share_merged_v1.json",
+      "added_examples": [
+        {
+          "case_id": "SHARE_6adf37d6_108",
+          "question": "Is the mother's condition life-threatening?",
+          "answer": "yes",
+          "rationale": "The mother has terminal heart disease.",
+          "public_history": [],
+          "review_status": "user_history_ai_adjudicated_pending_human",
+          "provenance": {
+            "source_url": "https://chatgpt.com/share/6adf37d6-5080-83e9-abbc-2ced03b615d6",
+            "message_id": "a3098ef3-5039-4f83-a206-0328819db585",
+            "feedback_message_id": "c5e05157-6107-46ff-ad48-5b92849b921b",
+            "source_case": "SHARE_6adf37d6_108",
+            "human_confirmed": false,
+            "question_origin": "user_shared_player_question",
+            "answer_origin": "user_supplied_history",
+            "reviewer": "codex_root",
+            "review_date": "2026-10-26"
+          }
+        },
+        {
+          "case_id": "SHARE_6adf37d6_110",
+          "question": "Is the mother terminally ill?",
+          "answer": "yes",
+          "rationale": "Only a few days remain.",
+          "public_history": [],
+          "review_status": "user_history_ai_adjudicated_pending_human",
+          "provenance": {
+            "source_url": "https://chatgpt.com/share/6adf37d6-5080-83e9-abbc-2ced03b615d6",
+            "message_id": "ed203a73-e700-40ba-ba93-05545c1bea55",
+            "feedback_message_id": "2e26326b-59c4-41a3-853b-1d173748b5bc",
+            "source_case": "SHARE_6adf37d6_110",
+            "human_confirmed": false,
+            "question_origin": "user_shared_player_question",
+            "answer_origin": "user_supplied_history",
+            "reviewer": "codex_root",
+            "review_date": "2026-10-26"
+          }
+        },
+        {
+          "case_id": "SHARE_6adf37d6_112",
+          "question": "Is the mother's counting pattern related to the amount of time she has left to live?",
+          "answer": "yes",
+          "rationale": "Limited time motivates bringing the July birthday forward from March.",
+          "public_history": [],
+          "review_status": "user_history_ai_adjudicated_pending_human",
+          "provenance": {
+            "source_url": "https://chatgpt.com/share/6adf37d6-5080-83e9-abbc-2ced03b615d6",
+            "message_id": "cdb85b00-b82f-4ef2-b188-b21488aaf0ef",
+            "feedback_message_id": "f8ab0ae7-1225-42e0-8e6e-f4a2605d02ee",
+            "source_case": "SHARE_6adf37d6_112",
+            "human_confirmed": false,
+            "question_origin": "user_shared_player_question",
+            "answer_origin": "user_supplied_history",
+            "reviewer": "codex_root",
+            "review_date": "2026-10-26"
+          }
+        },
+        {
+          "case_id": "SHARE_6adf37d6_134",
+          "question": "Did the teacher start saying “1, 2, 3, 7” after the home visit out of sympathy for the mother and daughter, rather than because the teacher believed it was mathematically correct?",
+          "answer": "yes",
+          "rationale": "The teacher compassionately plays along; ordinary arithmetic is not changed.",
+          "public_history": [],
+          "review_status": "user_history_ai_adjudicated_pending_human",
+          "provenance": {
+            "source_url": "https://chatgpt.com/share/6adf37d6-5080-83e9-abbc-2ced03b615d6",
+            "message_id": "0fb51f0e-4435-4ec7-a2f2-9dd9e6c0dea5",
+            "feedback_message_id": "85349937-fc7d-4ab6-8753-bd2705755c8a",
+            "source_case": "SHARE_6adf37d6_134",
+            "human_confirmed": false,
+            "question_origin": "user_shared_player_question",
+            "answer_origin": "user_supplied_history",
+            "reviewer": "codex_root",
+            "review_date": "2026-10-26"
+          }
+        }
+      ],
+      "reference_answer_sha256": "b5bd16acdbb3497d382ec80cb4834e778baa3e33b969ec3c42c781439a6e255d"
+    }
+  ],
+  "added_examples": 21,
+  "archive_rows": 311,
+  "rejected_rows_not_automatically_relabelled": true
+}

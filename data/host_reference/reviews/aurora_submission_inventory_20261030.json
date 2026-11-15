@@ -1,0 +1,341 @@
+{
+  "as_of": "2026-10-30",
+  "remote_commit": "123fd30c261c1056e55f3455a4816b67b8d1f703",
+  "local_head": "1aa06dbaf013718e87ad1836cac4f760ec108de9",
+  "scope": {
+    "set1": [
+      13,
+      14,
+      15,
+      16,
+      28
+    ],
+    "set2": [
+      34,
+      35,
+      33,
+      12
+    ],
+    "set3": [
+      22,
+      47,
+      45,
+      19
+    ],
+    "set4": [
+      7,
+      26,
+      21,
+      31
+    ],
+    "set5": [
+      38,
+      46,
+      32,
+      45,
+      28
+    ]
+  },
+  "distinct_puzzles": 20,
+  "human_qa_uploaded_count": 13,
+  "missing_human_qa": [
+    "TS016",
+    "TS031",
+    "TS035",
+    "TS038",
+    "TS045",
+    "TS046",
+    "TS047"
+  ],
+  "sources": {
+    "TS007": [
+      {
+        "path": "data/host_reference/inbox/TS007/20261029_tiger_history/trajectory.md",
+        "metadata_path": "data/host_reference/inbox/TS007/20261029_tiger_history/source.json",
+        "review_status": "pending",
+        "sha256": "d73c38fcba0e77a8238a59ee6852bf00c05f76abb0e5d34cf04ca313a58bb4e2",
+        "declared_hash_matches": true,
+        "notes": "由用户提供的结构化历史记录整理；保留所有32问和原主持回答。source_record.json 为原始输入；不声称还原未记录的聊天消息。"
+      }
+    ],
+    "TS012": [
+      {
+        "path": "data/host_reference/inbox/TS012/20261029_chat01/trajectory.md",
+        "metadata_path": "data/host_reference/inbox/TS012/20261029_chat01/source.json",
+        "review_status": "pending",
+        "sha256": "b906d5d7e229476d04489c2787724296f25f3a9c71edc7d39486081ed1ec9a4b",
+        "declared_hash_matches": null,
+        "notes": "Preserve original questions, feedback, corrections, missing replies and final submissions. Upload does not change runtime Host context."
+      }
+    ],
+    "TS013": [
+      {
+        "path": "data/host_reference/inbox/TS013/20261029_courses_gone/trajectory.md",
+        "metadata_path": "data/host_reference/inbox/TS013/20261029_courses_gone/source.json",
+        "review_status": "pending",
+        "sha256": "c62495bb47c057d6e4639d6a980d9eed5956ecf68c30c50e2fe20ed19980df6f",
+        "declared_hash_matches": null,
+        "notes": "Preserve original questions, feedback, corrections, missing replies and final submissions. Upload does not change runtime Host context."
+      }
+    ],
+    "TS014": [
+      {
+        "path": "data/host_reference/inbox/TS014/20261029_fail_course_group_project/trajectory.md",
+        "metadata_path": "data/host_reference/inbox/TS014/20261029_fail_course_group_project/source.json",
+        "review_status": "pending",
+        "sha256": "5ba0404c926688a3624ea4c448fa27e39c2c279e0d15107c27466799d1fd0ea5",
+        "declared_hash_matches": null,
+        "notes": "Preserve original questions, feedback, corrections, missing replies and final submissions. Upload does not change runtime Host context."
+      }
+    ],
+    "TS015": [
+      {
+        "path": "data/host_reference/inbox/TS015/20261029_fail_course_river/trajectory.md",
+        "metadata_path": "data/host_reference/inbox/TS015/20261029_fail_course_river/source.json",
+        "review_status": "pending",
+        "sha256": "bcb21a4e268603badca7dd6efa37c0cb083ea2352a4dcc34fe4df40b9aa59222",
+        "declared_hash_matches": null,
+        "notes": "Preserve original questions, feedback, corrections, missing replies and final submissions. Upload does not change runtime Host context."
+      }
+    ],
+    "TS016": [],
+    "TS019": [
+      {
+        "path": "data/host_reference/inbox/TS019/20261029_stairs_campus/trajectory.md",
+        "metadata_path": "data/host_reference/inbox/TS019/20261029_stairs_campus/source.json",
+        "review_status": "pending",
+        "sha256": "736468de3949d502c6df8d34da289519bb4c07a2d13732f4cd35475f07729e1a",
+        "declared_hash_matches": null,
+        "notes": "Preserve original questions, feedback, corrections, missing replies and final submissions. Upload does not change runtime Host context."
+      }
+    ],
+    "TS021": [
+      {
+        "path": "data/host_reference/inbox/TS021/20261029_chatgpt_6ae30251/trajectory.md",
+        "metadata_path": "data/host_reference/inbox/TS021/20261029_chatgpt_6ae30251/source.json",
+        "review_status": "pending",
+        "sha256": "030eb815399880500a7cc1dd4c489052d63679f4389166bff93d3b97e2ee7f37",
+        "declared_hash_matches": true,
+        "notes": "Transcribed from the visible ChatGPT share on 2026-10-29. Preserves the experiment prompt, opening, four host answers and the player's final submission. The share visibly identifies user as human_host and assistant as player. Upload does not change runtime Host context."
+      }
+    ],
+    "TS022": [
+      {
+        "path": "data/host_reference/inbox/TS022/20261029_chatgpt_6ae30235/trajectory.md",
+        "metadata_path": "data/host_reference/inbox/TS022/20261029_chatgpt_6ae30235/source.json",
+        "review_status": "pending",
+        "sha256": "d2a06e7308b4f9f5b4e25a090dab336193f2b7c9821735270caf5473b6628b3d",
+        "declared_hash_matches": true,
+        "notes": "Captured from the public ChatGPT share on 2026-10-29. Preserves the opening, all 36 visible player questions, original host-label capitalization, and the final submission. The share's final says 33 questions although 36 question turns are visible; the discrepancy is preserved for review. Player hypothesis blocks are not duplicated in this normalized Q&A file. Upload does not change runtime Host context."
+      }
+    ],
+    "TS026": [
+      {
+        "path": "data/host_reference/inbox/TS026/20261029_chatgpt_6ae3021a/trajectory.md",
+        "metadata_path": "data/host_reference/inbox/TS026/20261029_chatgpt_6ae3021a/source.json",
+        "review_status": "pending",
+        "sha256": "2a4251036d1733b814da8d325dbe7052018378c1c6700e84e473122021df28d2",
+        "declared_hash_matches": true,
+        "notes": "Captured from the public ChatGPT share on 2026-10-29. Preserves the opening, all 13 visible player questions, original host-label capitalization, and the final submission. The share's final says 12 questions although 13 question turns are visible; the discrepancy is preserved for review. Player hypothesis blocks are not duplicated in this normalized Q&A file. Upload does not change runtime Host context."
+      }
+    ],
+    "TS028": [
+      {
+        "path": "data/host_reference/inbox/TS028/20261029_chatgpt_6ae2ff22/trajectory.md",
+        "metadata_path": "data/host_reference/inbox/TS028/20261029_chatgpt_6ae2ff22/source.json",
+        "review_status": "pending",
+        "sha256": "1ea02498960df8cfa6871cb9a7b19be4fb24cd31395906c7645f1a0bee736925",
+        "declared_hash_matches": true,
+        "notes": "Captured from the public ChatGPT share on 2026-10-29. Preserves the opening, all six visible player questions, original host-label capitalization, and the final submission. Player hypothesis blocks are not duplicated in this normalized Q&A file. Upload does not change runtime Host context."
+      }
+    ],
+    "TS031": [],
+    "TS032": [
+      {
+        "session_id": "6adf3775_TS032_04",
+        "source_url": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+        "path": "data/host_reference/sources/chatgpt_shares_20261026/sessions.json",
+        "recorded_actions": 100
+      }
+    ],
+    "TS033": [
+      {
+        "session_id": "6adf3775_TS033_03",
+        "source_url": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+        "path": "data/host_reference/sources/chatgpt_shares_20261026/sessions.json",
+        "recorded_actions": 101
+      }
+    ],
+    "TS034": [
+      {
+        "session_id": "6adf3775_TS034_05",
+        "source_url": "https://chatgpt.com/share/6adf3775-b4dc-83ea-83d0-ef0cf69dbc45",
+        "path": "data/host_reference/sources/chatgpt_shares_20261026/sessions.json",
+        "recorded_actions": 9
+      },
+      {
+        "session_id": "6adf37d6_TS034_01",
+        "source_url": "https://chatgpt.com/share/6adf37d6-5080-83e9-abbc-2ced03b615d6",
+        "path": "data/host_reference/sources/chatgpt_shares_20261026/sessions.json",
+        "recorded_actions": 37
+      }
+    ],
+    "TS035": [],
+    "TS038": [],
+    "TS045": [],
+    "TS046": [],
+    "TS047": []
+  },
+  "caveats": [
+    "Uploaded Q&A does not imply a complete finished game, semantic approval, or incorporation into active Host.",
+    "TS012, TS014, TS015 end on an unanswered player question; TS013 has no final reconstruction in uploaded file.",
+    "TS007 now has all 32 questions in the supplied structured history; not guaranteed to include every original chat message.",
+    "TS022, TS026, TS028 are normalized Q&A, not every original hypothesis message.",
+    "TS031 has earlier human reference fragments; TS045/046/047 have new automated DeepSeek trajectories, not human-host Q&A.",
+    "New ChatGPT link possibly containing TS035/TS038 remains unreadable; Notion contents not verified."
+  ],
+  "runtime_changed": false,
+  "temporary_model_references": [
+    {
+      "puzzle_id": "TS045",
+      "source_kind": "model_experiment",
+      "temporary_use_authorized_by_user": true,
+      "human_confirmed": false,
+      "semantic_review_status": "pending",
+      "source_commit": "123fd30c261c1056e55f3455a4816b67b8d1f703",
+      "trajectory_path": "runs/2026-10-29_deepseek_TS043-TS050/20261029_deepseek_recovery/TS045/trajectory.md",
+      "result_path": "runs/2026-10-29_deepseek_TS043-TS050/20261029_deepseek_recovery/TS045/result.json",
+      "result_summary": {
+        "status": "error",
+        "stop_reason": "ProtocolError",
+        "host_questions": 72,
+        "final_attempts": 5,
+        "rejected_finals": 4,
+        "counted_questions": 76,
+        "submissions": 77,
+        "pending_feedback": 1,
+        "final_partial_score": null,
+        "error": "Evaluator must return JSON, without markdown"
+      }
+    },
+    {
+      "puzzle_id": "TS046",
+      "source_kind": "model_experiment",
+      "temporary_use_authorized_by_user": true,
+      "human_confirmed": false,
+      "semantic_review_status": "pending",
+      "source_commit": "123fd30c261c1056e55f3455a4816b67b8d1f703",
+      "trajectory_path": "runs/2026-10-29_deepseek_TS043-TS050/20261029_deepseek_recovery/TS046/trajectory.md",
+      "result_path": "runs/2026-10-29_deepseek_TS043-TS050/20261029_deepseek_recovery/TS046/result.json",
+      "result_summary": {
+        "status": "error",
+        "stop_reason": "ProtocolError",
+        "host_questions": 88,
+        "final_attempts": 12,
+        "rejected_finals": 11,
+        "counted_questions": 99,
+        "submissions": 100,
+        "pending_feedback": 1,
+        "final_partial_score": null,
+        "error": "requirement_coverage: invalid or duplicate coverage row"
+      }
+    },
+    {
+      "puzzle_id": "TS047",
+      "source_kind": "model_experiment",
+      "temporary_use_authorized_by_user": true,
+      "human_confirmed": false,
+      "semantic_review_status": "pending",
+      "source_commit": "123fd30c261c1056e55f3455a4816b67b8d1f703",
+      "trajectory_path": "runs/2026-10-29_deepseek_TS043-TS050/20261029_deepseek_recovery/TS047/trajectory.md",
+      "result_path": "runs/2026-10-29_deepseek_TS043-TS050/20261029_deepseek_recovery/TS047/result.json",
+      "result_summary": {
+        "status": "completed",
+        "stop_reason": "budget_exhausted",
+        "host_questions": 71,
+        "final_attempts": 29,
+        "rejected_finals": 29,
+        "counted_questions": 100,
+        "submissions": 100,
+        "pending_feedback": 0,
+        "final_partial_score": 0.8,
+        "error": null
+      }
+    },
+    {
+      "puzzle_id": "TS031",
+      "source_kind": "model_simulated_reference",
+      "temporary_use_authorized_by_user": true,
+      "human_confirmed": false,
+      "semantic_review_status": "pending",
+      "trajectory_path": "runs/2026-10-30_sol_luna_reference/batches/TS031/TS031_r01_solo/trajectory.md",
+      "normalized_source_path": "data/host_reference/sources/model_simulated_20261030/TS031.json",
+      "result_summary": {
+        "puzzle_id": "TS031",
+        "run_path": "runs/2026-10-30_sol_luna_reference/batches/TS031/TS031_r01_solo",
+        "status": "completed",
+        "stop_reason": "budget_exhausted",
+        "submissions": 100,
+        "counted_questions": 100,
+        "rejected_finals": 3,
+        "pending_feedback": 0,
+        "final_partial_score": 0.0,
+        "success": false,
+        "error": null
+      }
+    },
+    {
+      "puzzle_id": "TS035",
+      "source_kind": "model_simulated_reference",
+      "temporary_use_authorized_by_user": true,
+      "human_confirmed": false,
+      "semantic_review_status": "pending",
+      "trajectory_path": "runs/2026-10-30_sol_luna_reference/batches/TS035/TS035_r01_solo/trajectory.md",
+      "normalized_source_path": "data/host_reference/sources/model_simulated_20261030/TS035.json",
+      "result_summary": {
+        "puzzle_id": "TS035",
+        "run_path": "runs/2026-10-30_sol_luna_reference/batches/TS035/TS035_r01_solo",
+        "status": "completed",
+        "stop_reason": "budget_exhausted",
+        "submissions": 100,
+        "counted_questions": 100,
+        "rejected_finals": 16,
+        "pending_feedback": 0,
+        "final_partial_score": 0.625,
+        "success": false,
+        "error": null
+      }
+    },
+    {
+      "puzzle_id": "TS038",
+      "source_kind": "model_simulated_reference",
+      "temporary_use_authorized_by_user": true,
+      "human_confirmed": false,
+      "semantic_review_status": "pending",
+      "trajectory_path": "runs/2026-10-30_sol_luna_reference/batches/TS038/TS038_r01_solo/trajectory.md",
+      "normalized_source_path": "data/host_reference/sources/model_simulated_20261030/TS038.json",
+      "result_summary": {
+        "puzzle_id": "TS038",
+        "run_path": "runs/2026-10-30_sol_luna_reference/batches/TS038/TS038_r01_solo",
+        "status": "completed",
+        "stop_reason": "budget_exhausted",
+        "submissions": 100,
+        "counted_questions": 100,
+        "rejected_finals": 3,
+        "pending_feedback": 0,
+        "final_partial_score": 0.35,
+        "success": false,
+        "error": null
+      }
+    }
+  ],
+  "remaining_to_supply_under_user_policy": [
+    "TS016"
+  ],
+  "coverage_under_user_policy": {
+    "human_qa_uploaded": 13,
+    "temporary_model_references": 6,
+    "still_missing": 1
+  },
+  "new_batch_reference_manifest": "runs/2026-10-30_sol_luna_reference/reference_export.json"
+}

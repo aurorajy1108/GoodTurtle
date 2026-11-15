@@ -1,0 +1,181 @@
+{
+  "version": "local-extension-20261023",
+  "replace_host_examples": true,
+  "canonical_facts": [
+    "A preschool teacher hears a child count 1,2,3,7 and learns the mother taught it",
+    "On requesting a home visit the teacher is taken to a hospital",
+    "The mother is terminally ill with heart disease and has only days left",
+    "It is March but the child’s birthday is in July",
+    "The mother pretends to skip the intervening months to share one last birthday",
+    "The sympathetic teacher then repeats that 7 comes after 3"
+  ],
+  "explicit_negatives": [
+    "The mother, not the child, is terminally ill. The month skipping is pretend; ordinary numerical order has not changed."
+  ],
+  "unknown_details": [
+    "The child’s exact age, hospital name and eventual medical outcome are unspecified. The story is a pretense, not literal time travel."
+  ],
+  "review_status": "ai_authored_pending_human",
+  "host_examples": [
+    {
+      "case_id": "LOCAL_TS037_001",
+      "question": "Was the narrator a preschool teacher?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS037_002",
+      "question": "Did the child count 1, 2, 3, 7 because her mother taught her that?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS037_003",
+      "question": "Did the teacher initially try to correct the child?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS037_004",
+      "question": "Did the teacher propose a home visit?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS037_005",
+      "question": "Did the mother take the teacher to a hospital instead?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS037_006",
+      "question": "Did the mother have terminal heart disease and only days left?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS037_007",
+      "question": "Was it March, with the child’s birthday in July?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS037_008",
+      "question": "Did skipping 4, 5, and 6 represent skipping the intervening months?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS037_009",
+      "question": "Did the mother want to celebrate one last birthday with her child?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS037_010",
+      "question": "Did the teacher knowingly join in the mother’s comforting pretense?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS037_011",
+      "question": "Did the teacher then also say that 7 comes after 3?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS037_012",
+      "question": "Did calendar time literally jump from March to July?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS037_013",
+      "question": "Was the child’s mistaken counting evidence that she could travel through time?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS037_014",
+      "question": "Was the child herself the terminal heart-disease patient in this story?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS037_015",
+      "question": "Did the mother teach the skipped counting because she wanted to cheat on a math exam?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS037_016",
+      "question": "Was the teacher moved by the mother’s situation?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS037_017",
+      "question": "Was the mother terminally ill and was the child’s birthday in March?",
+      "answer": "yes and no",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS037_018",
+      "question": "Which exact hospital was it?",
+      "answer": "irrelevant",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS037_019",
+      "question": "Was the child’s exact age specified?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    },
+    {
+      "case_id": "LOCAL_TS037_020",
+      "question": "Did the story establish that the mother later recovered?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "Ground the specified roles, sequence and mechanism in the reference; do not invent incidental facts.",
+      "review_status": "ai_authored_pending_human"
+    }
+  ]
+}

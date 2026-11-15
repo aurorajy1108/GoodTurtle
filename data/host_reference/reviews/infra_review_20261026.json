@@ -1,0 +1,125 @@
+{
+  "scope": "Status reconciled from v7 repair documentation; no new live runs this turn.",
+  "issues": [
+    {
+      "issue_id": "INF01",
+      "topic": "Host未说明的细节被说成事实",
+      "status": "已补v7提示与专属边界；真实模型待验证",
+      "evidence": "TS023 通气机制、TS036 政府接管/辩论、TS016 高尔夫等。",
+      "source": "docs/host_repair_v7.md",
+      "human_check": "对照汤底逐问审核；同模型二次同意不能作证据。",
+      "human_decision": "",
+      "human_note": ""
+    },
+    {
+      "issue_id": "INF02",
+      "topic": "计划/结果、知识/事实混淆",
+      "status": "已补v7；待独立回放",
+      "evidence": "原计划下一个死者≠指定狱警葬礼；预期有尸体≠提前知身份。",
+      "source": "docs/host_repair_v7.md",
+      "human_check": "重点核查含 before/after/know/expect 的问法。",
+      "human_decision": "",
+      "human_note": ""
+    },
+    {
+      "issue_id": "INF03",
+      "topic": "四标签遇到混合句边界不唯一",
+      "status": "开放，需人工定标",
+      "evidence": "独立分句一真一未知可 mixed；单一因果带真词不能靠多数决定。",
+      "source": "prompts/loop_host_v1.txt",
+      "human_check": "确认本表混合细节案例；既不整体泄露，也不丢弃核心相关信息。",
+      "human_decision": "",
+      "human_note": ""
+    },
+    {
+      "issue_id": "INF04",
+      "topic": "AI示例不等于人工gold/独立准确率",
+      "status": "来源明确，准确率仍未知",
+      "evidence": "few-shot衍生用例可测回归，不能测独立泛化；此次21例也是AI筛选。",
+      "source": "docs/reviews/chatgpt_share_merge_20261026.json",
+      "human_check": "人工签字、另留未进入提示的测试集；不以单元测试通过宣称模型可靠。",
+      "human_decision": "",
+      "human_note": ""
+    },
+    {
+      "issue_id": "INF05",
+      "topic": "双agent额外调用预算混淆",
+      "status": "新增solo_reflect；仍未匹配token",
+      "evidence": "independent每步3次，solo_reflect3次，shared_buffer/solo1次。",
+      "source": "docs/host_repair_v7.md",
+      "human_check": "对照调用数之外报告token、时间、可见上下文。",
+      "human_decision": "",
+      "human_note": ""
+    },
+    {
+      "issue_id": "INF06",
+      "topic": "共享buffer信息与重复",
+      "status": "实现边界已修复；语义重复仍可能",
+      "evidence": "同步前仅见对方预约问题而非答案，最后提交前全部同步。",
+      "source": "docs/host_repair_v7.md",
+      "human_check": "核查预约问题泄露探索方向与同步前后重复；不能声称完全隔离。",
+      "human_decision": "",
+      "human_note": ""
+    },
+    {
+      "issue_id": "INF07",
+      "topic": "CL关联标签不是实验真值",
+      "status": "已有四条件，仍需人工确认题对",
+      "evidence": "G02既共享course双关又答案互斥；G07近答案重复。",
+      "source": "docs/host_repair_v7.md",
+      "human_check": "分题对、方向报告；同一有向题对不能在多个group当独立样本。",
+      "human_decision": "",
+      "human_note": ""
+    },
+    {
+      "issue_id": "INF08",
+      "topic": "CL长上下文与答案泄露控制",
+      "status": "已给A完整答案/B独立100问；长度未匹配",
+      "evidence": "direct/transcript/answer_only/unrelated；C对照源也未必真正无关。",
+      "source": "docs/host_repair_v7.md",
+      "human_check": "确认只揭示A/C答案，不向B泄露B答案；检查上下文长度与控制源。",
+      "human_decision": "",
+      "human_note": ""
+    },
+    {
+      "issue_id": "INF09",
+      "topic": "预算耗尽与失败次数统计",
+      "status": "实现已测；报告解释要保持",
+      "evidence": "100问失败是删失；错误final计一次；成功final另记；历史问号编号不能当动作数。",
+      "source": "docs/host_repair_v7.md",
+      "human_check": "不能把100当已解出时间；TS033原聊天另有一次未编号错误提交。",
+      "human_decision": "",
+      "human_note": ""
+    },
+    {
+      "issue_id": "INF10",
+      "topic": "样本少/缺失条件/异常重试",
+      "status": "已记录异常并有有界重试；未完成扩样",
+      "evidence": "只有3次不能排除高方差；增加重复不能补救系统偏差。",
+      "source": "docs/host_repair_v7.md",
+      "human_check": "先修Host再预注册pilot和效应目标；最终分为主，不能挑best分。",
+      "human_decision": "",
+      "human_note": ""
+    },
+    {
+      "issue_id": "INF11",
+      "topic": "最终分下降不是必然grader错误",
+      "status": "已区分，仍需逐checkpoint核查",
+      "evidence": "TS036 solo后来final省略先前秘密埋葬，0.70→0.55可有真实文本原因。",
+      "source": "runs/api/20261024_repair_v6_study/reviews/TS036_r02_solo/audit.json",
+      "human_check": "比较两次提交正文，不能要求评分自动继承未复述内容。",
+      "human_decision": "",
+      "human_note": ""
+    },
+    {
+      "issue_id": "INF12",
+      "topic": "历史prompt与当前运行prompt容易混淆",
+      "status": "文档说明；旧文件仍保留",
+      "evidence": "prompts/host_system.txt是旧三标签；loop_host_v1.txt为当前四标签。",
+      "source": "prompts/loop_host_v1.txt",
+      "human_check": "以实际config及runtime_snapshot为准，不误用旧prompt。",
+      "human_decision": "",
+      "human_note": ""
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "source_id": "20261029_tiger_history",
+  "puzzle_ids": [
+    "TS007"
+  ],
+  "source_url": "",
+  "uploaded_at": "2026-10-29T11:23:11.928703+08:00",
+  "review_status": "pending",
+  "role_mapping": {
+    "user": "human_host",
+    "assistant": "player"
+  },
+  "role_mapping_status": "confirmed",
+  "trajectory_file": "trajectory.md",
+  "submission_status": "uploaded",
+  "trajectory_sha256": "d73c38fcba0e77a8238a59ee6852bf00c05f76abb0e5d34cf04ca313a58bb4e2",
+  "notes": "由用户提供的结构化历史记录整理；保留所有32问和原主持回答。source_record.json 为原始输入；不声称还原未记录的聊天消息。",
+  "original_source_file": "turtle_soup_tiger_guessing_record.json",
+  "original_source_sha256": "6be65ed59a263b69e47ff1398cd928e2437c1534b9a2caf25c883e46a1a32b4a"
+}

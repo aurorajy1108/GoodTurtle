@@ -1,0 +1,4 @@
+# Immutable experiment payloads and original CSV line endings.
+results/trajectories/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+results/**/*.csv -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof
+docs/**/*.csv -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof

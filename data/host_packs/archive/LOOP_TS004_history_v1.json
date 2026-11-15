@@ -1,0 +1,141 @@
+{
+  "puzzle_id": "TS004",
+  "version": "history-candidate-v1-20261024",
+  "review_status": "user_supplied_ai_curated",
+  "story_sha256": "9b56802a7b6f8f6c3b40b12db39e9427af2c4e643b9607aa2313cc8eac9188d8",
+  "canonical_facts": [
+    "The narrator dies from overwork, returns as a spirit on the seventh day, and kills the exploitative client.",
+    "No genuine revised proposal is delivered after the narrator’s death."
+  ],
+  "explicit_negatives": [],
+  "unknown_details": [],
+  "irrelevant_details": [],
+  "host_examples": [
+    {
+      "case_id": "HIST_TS004_001",
+      "question": "Was the client already dead when the narrator received the message?",
+      "answer": "no",
+      "rationale": "The client sends the message while alive and dies later.",
+      "public_history": [],
+      "review_status": "user_supplied_ai_curated",
+      "provenance": {
+        "source_case": "six_puzzles/seventh_day/001",
+        "source_file": "turtle_soup_full_question_logs.json",
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
+      }
+    },
+    {
+      "case_id": "HIST_TS004_002",
+      "question": "Was the narrator also alive when they received the message?",
+      "answer": "no",
+      "rationale": "The narrator has already died before receiving the message.",
+      "public_history": [],
+      "review_status": "user_supplied_ai_curated",
+      "provenance": {
+        "source_case": "six_puzzles/seventh_day/002",
+        "source_file": "turtle_soup_full_question_logs.json",
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
+      }
+    },
+    {
+      "case_id": "HIST_TS004_004",
+      "question": "Did the client know that the narrator had died seven days earlier?",
+      "answer": "no",
+      "rationale": "The client does not realize the narrator died.",
+      "public_history": [],
+      "review_status": "user_supplied_ai_curated",
+      "provenance": {
+        "source_case": "six_puzzles/seventh_day/004",
+        "source_file": "turtle_soup_full_question_logs.json",
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
+      }
+    },
+    {
+      "case_id": "HIST_TS004_005",
+      "question": "Was the narrator a ghost who continued working after death?",
+      "answer": "no",
+      "rationale": "The ghost takes revenge; no real proposal is completed after death.",
+      "public_history": [],
+      "review_status": "user_supplied_ai_curated",
+      "provenance": {
+        "source_case": "six_puzzles/seventh_day/005",
+        "source_file": "turtle_soup_full_question_logs.json",
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
+      }
+    },
+    {
+      "case_id": "HIST_TS004_012",
+      "question": "Was the narrator's death a literal physical death, rather than a metaphorical or virtual one?",
+      "answer": "yes",
+      "rationale": "The narrator literally died and returned as a spirit.",
+      "public_history": [],
+      "review_status": "user_supplied_ai_curated",
+      "provenance": {
+        "source_case": "six_puzzles/seventh_day/012",
+        "source_file": "turtle_soup_full_question_logs.json",
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
+      }
+    },
+    {
+      "case_id": "HIST_TS004_015",
+      "question": "Was the narrator experiencing the traditional “seventh-day return of the soul” (头七), when the deceased is believed to return to the living world?",
+      "answer": "yes",
+      "rationale": "The return occurs on the traditional seventh day.",
+      "public_history": [],
+      "review_status": "user_supplied_ai_curated",
+      "provenance": {
+        "source_case": "six_puzzles/seventh_day/015",
+        "source_file": "turtle_soup_full_question_logs.json",
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
+      }
+    },
+    {
+      "case_id": "HIST_TS004_020",
+      "question": "Did the client die after sending the message?",
+      "answer": "yes",
+      "rationale": "The client dies after sending the message.",
+      "public_history": [],
+      "review_status": "user_supplied_ai_curated",
+      "provenance": {
+        "source_case": "six_puzzles/seventh_day/020",
+        "source_file": "turtle_soup_full_question_logs.json",
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
+      }
+    },
+    {
+      "case_id": "HIST_TS004_021",
+      "question": "Did the narrator cause the client's death after receiving the message?",
+      "answer": "yes",
+      "rationale": "The narrator kills the client after seeing the message.",
+      "public_history": [],
+      "review_status": "user_supplied_ai_curated",
+      "provenance": {
+        "source_case": "six_puzzles/seventh_day/021",
+        "source_file": "turtle_soup_full_question_logs.json",
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
+      }
+    },
+    {
+      "case_id": "HIST_TS004_022",
+      "question": "Did the narrator kill the client as revenge for continuing to demand work even after the narrator's death?",
+      "answer": "yes",
+      "rationale": "The killing is revenge for the client’s continued demands.",
+      "public_history": [],
+      "review_status": "user_supplied_ai_curated",
+      "provenance": {
+        "source_case": "six_puzzles/seventh_day/022",
+        "source_file": "turtle_soup_full_question_logs.json",
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
+      }
+    }
+  ]
+}

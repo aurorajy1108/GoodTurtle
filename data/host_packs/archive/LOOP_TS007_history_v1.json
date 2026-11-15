@@ -1,0 +1,169 @@
+{
+  "puzzle_id": "TS007",
+  "version": "history-candidate-v1-20261024",
+  "review_status": "user_supplied_ai_curated",
+  "story_sha256": "f1ca2549a5ddf5e66b2e7e23154c2318287a8fe3985fea2fa946936fd705f149",
+  "canonical_facts": [
+    "The narrator is a tiger cub in a wildlife park; colorful boxes are visitor cars and the toy is a human.",
+    "Park staff tranquilize the cub after it mauls the human; the human later dies and the cub is euthanized."
+  ],
+  "explicit_negatives": [],
+  "unknown_details": [],
+  "irrelevant_details": [],
+  "host_examples": [
+    {
+      "case_id": "HIST_TS007_001",
+      "question": "Is the narrator human?",
+      "answer": "no",
+      "rationale": "The narrator is a young tiger, not a human.",
+      "public_history": [],
+      "review_status": "user_supplied_ai_curated",
+      "provenance": {
+        "source_case": "tiger/tiger_cub_colorful_boxes/001",
+        "source_file": "turtle_soup_tiger_guessing_record.json",
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
+      }
+    },
+    {
+      "case_id": "HIST_TS007_003",
+      "question": "Are the “boxes” actually living creatures?",
+      "answer": "no",
+      "rationale": "The colorful boxes are tourist cars, not living creatures.",
+      "public_history": [],
+      "review_status": "user_supplied_ai_curated",
+      "provenance": {
+        "source_case": "tiger/tiger_cub_colorful_boxes/003",
+        "source_file": "turtle_soup_tiger_guessing_record.json",
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
+      }
+    },
+    {
+      "case_id": "HIST_TS007_007",
+      "question": "Does the narrator normally live underwater?",
+      "answer": "no",
+      "rationale": "The tiger lives in a wildlife park, not underwater.",
+      "public_history": [],
+      "review_status": "user_supplied_ai_curated",
+      "provenance": {
+        "source_case": "tiger/tiger_cub_colorful_boxes/007",
+        "source_file": "turtle_soup_tiger_guessing_record.json",
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
+      }
+    },
+    {
+      "case_id": "HIST_TS007_010",
+      "question": "Is the narrator an animal?",
+      "answer": "yes",
+      "rationale": "The narrator is a tiger and therefore an animal.",
+      "public_history": [],
+      "review_status": "user_supplied_ai_curated",
+      "provenance": {
+        "source_case": "tiger/tiger_cub_colorful_boxes/010",
+        "source_file": "turtle_soup_tiger_guessing_record.json",
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
+      }
+    },
+    {
+      "case_id": "HIST_TS007_017",
+      "question": "Were the “boxes” made by humans?",
+      "answer": "yes",
+      "rationale": "The colorful boxes are human-made vehicles.",
+      "public_history": [],
+      "review_status": "user_supplied_ai_curated",
+      "provenance": {
+        "source_case": "tiger/tiger_cub_colorful_boxes/017",
+        "source_file": "turtle_soup_tiger_guessing_record.json",
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
+      }
+    },
+    {
+      "case_id": "HIST_TS007_019",
+      "question": "Was the “toy” actually a living creature?",
+      "answer": "yes",
+      "rationale": "The supposed toy is a human who left a car.",
+      "public_history": [],
+      "review_status": "user_supplied_ai_curated",
+      "provenance": {
+        "source_case": "tiger/tiger_cub_colorful_boxes/019",
+        "source_file": "turtle_soup_tiger_guessing_record.json",
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
+      }
+    },
+    {
+      "case_id": "HIST_TS007_020",
+      "question": "Was the “toy” a human?",
+      "answer": "yes",
+      "rationale": "The supposed toy is specifically a human.",
+      "public_history": [],
+      "review_status": "user_supplied_ai_curated",
+      "provenance": {
+        "source_case": "tiger/tiger_cub_colorful_boxes/020",
+        "source_file": "turtle_soup_tiger_guessing_record.json",
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
+      }
+    },
+    {
+      "case_id": "HIST_TS007_022",
+      "question": "Are the “boxes” actually cars?",
+      "answer": "yes",
+      "rationale": "The colorful boxes are tourists’ cars.",
+      "public_history": [],
+      "review_status": "user_supplied_ai_curated",
+      "provenance": {
+        "source_case": "tiger/tiger_cub_colorful_boxes/022",
+        "source_file": "turtle_soup_tiger_guessing_record.json",
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
+      }
+    },
+    {
+      "case_id": "HIST_TS007_026",
+      "question": "Did the narrator injure the person while believing it was just playing with them?",
+      "answer": "yes",
+      "rationale": "The tiger hurts the human while thinking it is playing.",
+      "public_history": [],
+      "review_status": "user_supplied_ai_curated",
+      "provenance": {
+        "source_case": "tiger/tiger_cub_colorful_boxes/026",
+        "source_file": "turtle_soup_tiger_guessing_record.json",
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
+      }
+    },
+    {
+      "case_id": "HIST_TS007_028",
+      "question": "Was the narrator shot with a tranquilizer dart?",
+      "answer": "yes",
+      "rationale": "The first shot is a tranquilizer dart, causing unconsciousness.",
+      "public_history": [],
+      "review_status": "user_supplied_ai_curated",
+      "provenance": {
+        "source_case": "tiger/tiger_cub_colorful_boxes/028",
+        "source_file": "turtle_soup_tiger_guessing_record.json",
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
+      }
+    },
+    {
+      "case_id": "HIST_TS007_030",
+      "question": "Is the narrator a young animal?",
+      "answer": "yes",
+      "rationale": "The narrator is a young tiger.",
+      "public_history": [],
+      "review_status": "user_supplied_ai_curated",
+      "provenance": {
+        "source_case": "tiger/tiger_cub_colorful_boxes/030",
+        "source_file": "turtle_soup_tiger_guessing_record.json",
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
+      }
+    }
+  ]
+}

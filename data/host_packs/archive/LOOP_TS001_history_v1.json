@@ -1,0 +1,113 @@
+{
+  "puzzle_id": "TS001",
+  "version": "history-candidate-v1-20261024",
+  "review_status": "user_supplied_ai_curated",
+  "story_sha256": "34546a145c8caf716484be1186d0d700b73b403f522361f2d8c0fa37f0fb5acf",
+  "canonical_facts": [
+    "The apparent girl is an adult woman with dwarfism who poses as a child to lure child abductors.",
+    "She kills the abductors in secluded places; the blood-stained gifts, including a real rabbit, are trophies."
+  ],
+  "explicit_negatives": [],
+  "unknown_details": [],
+  "irrelevant_details": [],
+  "host_examples": [
+    {
+      "case_id": "HIST_TS001_002",
+      "question": "Did the rabbit turn red because it was stained with blood?",
+      "answer": "yes",
+      "rationale": "The rabbit is stained with the killed man’s blood.",
+      "public_history": [],
+      "review_status": "user_supplied_ai_curated",
+      "provenance": {
+        "source_case": "six_puzzles/rabbit/002",
+        "source_file": "turtle_soup_full_question_logs.json",
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
+      }
+    },
+    {
+      "case_id": "HIST_TS001_005",
+      "question": "Was the man driving the car the person she killed?",
+      "answer": "yes",
+      "rationale": "She kills the abductor who drove her into the mountains.",
+      "public_history": [],
+      "review_status": "user_supplied_ai_curated",
+      "provenance": {
+        "source_case": "six_puzzles/rabbit/005",
+        "source_file": "turtle_soup_full_question_logs.json",
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
+      }
+    },
+    {
+      "case_id": "HIST_TS001_006",
+      "question": "Did the girl intentionally plan to kill the man before getting into his car?",
+      "answer": "yes",
+      "rationale": "She planned to kill him before letting herself be lured.",
+      "public_history": [],
+      "review_status": "user_supplied_ai_curated",
+      "provenance": {
+        "source_case": "six_puzzles/rabbit/006",
+        "source_file": "turtle_soup_full_question_logs.json",
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
+      }
+    },
+    {
+      "case_id": "HIST_TS001_008",
+      "question": "Had the girl killed other men in the same way before?",
+      "answer": "yes",
+      "rationale": "The story describes this as her repeated pattern.",
+      "public_history": [],
+      "review_status": "user_supplied_ai_curated",
+      "provenance": {
+        "source_case": "six_puzzles/rabbit/008",
+        "source_file": "turtle_soup_full_question_logs.json",
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
+      }
+    },
+    {
+      "case_id": "HIST_TS001_018",
+      "question": "Was the girl a supernatural being who only appeared to be a child?",
+      "answer": "no",
+      "rationale": "She is an adult human, not a supernatural being.",
+      "public_history": [],
+      "review_status": "user_supplied_ai_curated",
+      "provenance": {
+        "source_case": "six_puzzles/rabbit/018",
+        "source_file": "turtle_soup_full_question_logs.json",
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
+      }
+    },
+    {
+      "case_id": "HIST_TS001_039",
+      "question": "Was her condition a form of dwarfism?",
+      "answer": "yes",
+      "rationale": "The source explicitly identifies dwarfism.",
+      "public_history": [],
+      "review_status": "user_supplied_ai_curated",
+      "provenance": {
+        "source_case": "six_puzzles/rabbit/039",
+        "source_file": "turtle_soup_full_question_logs.json",
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
+      }
+    },
+    {
+      "case_id": "HIST_TS001_046",
+      "question": "Was she acting as a vigilante rather than as a police officer or someone working with law enforcement?",
+      "answer": "yes",
+      "rationale": "She acts on her own idea of justice, not as law enforcement.",
+      "public_history": [],
+      "review_status": "user_supplied_ai_curated",
+      "provenance": {
+        "source_case": "six_puzzles/rabbit/046",
+        "source_file": "turtle_soup_full_question_logs.json",
+        "answer_origin": "user_supplied_history",
+        "selection": "AI source check and independent screening"
+      }
+    }
+  ]
+}

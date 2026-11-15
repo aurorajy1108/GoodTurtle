@@ -1,0 +1,20 @@
+{
+  "puzzle_id": "APRIL_TRAIN_024",
+  "version": "draft-1",
+  "review_status": "pending_human_review",
+  "source": "Chinese Internet",
+  "family_id": "april_train_death_age_prediction",
+  "curator_title": "Five Minutes to Midnight",
+  "language": "en",
+  "opening": "Five minutes before midnight, a man boarded the train.\nThe man looked very strange. He looked at the few people on the train, then began asking the passengers their ages.\n\"Ma'am, are you 28 this year?\"\n\"How did you know?\" \"Sir, are you 55 this year?\"\n\"Yes.\"\nThen the man guessed the passengers' ages one by one, and got them all right.\n\"Ma'am, are you 69 this year?\"\n\"No, in 5 minutes I will be 69.\"\nAfter hearing this, the man's face turned deathly pale.",
+  "solution": "The man had a superpower: he could foresee the age at which a person would die. After boarding the train, he saw that the people on board all looked to be about the same age as he was when he would die. He found this very strange, so he tentatively asked a few people and discovered that all of them were going to die that very year. When he asked the old woman, he realized that the train would have an accident in five minutes, and everyone on board would die.",
+  "canonical_facts": [
+    "The man had a supernatural ability.",
+    "He could foresee the age at which a person would die.",
+    "The passengers' current ages matched the death ages he foresaw for them.",
+    "He realized that the train would have an accident in five minutes."
+  ],
+  "explicit_negatives": [],
+  "unknown_details": [],
+  "host_examples": []
+}

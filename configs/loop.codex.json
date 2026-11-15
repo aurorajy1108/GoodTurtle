@@ -1,0 +1,31 @@
+{
+  "max_questions": 100,
+  "session_mode": "persistent",
+  "context_policy": {
+    "host_examples_limit": 6,
+    "grader_examples_limit": 3,
+    "host_examples_max_chars": 6000,
+    "grader_examples_max_chars": 3000
+  },
+  "host": {
+    "provider": "codex_cli",
+    "model": "gpt-6.1-sol",
+    "usage_scope": "thread_total",
+    "reasoning_effort": "medium",
+    "timeout": 600
+  },
+  "player": {
+    "provider": "codex_cli",
+    "model": "gpt-5.6-luna",
+    "usage_scope": "thread_total",
+    "reasoning_effort": "low",
+    "timeout": 600
+  },
+  "grader": {
+    "provider": "codex_cli",
+    "model": "gpt-6.1-sol",
+    "usage_scope": "thread_total",
+    "reasoning_effort": "high",
+    "timeout": 600
+  }
+}

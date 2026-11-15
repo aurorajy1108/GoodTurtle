@@ -1,0 +1,43 @@
+[
+  {
+    "id": "UNIFIED_TS013_FULL",
+    "puzzle_id": "TS013",
+    "submission": "The student had to attend a mandatory formal high-table dinner. Courses meant meal dishes, not academic classes. The deadline was to state meal-course preferences. The student arrived punctually but disliked the taste of the three-course meal and left portions uneaten. At the student's request, the waiter cleared each dish's leftovers when serving the next course, so eventually all the courses were gone.",
+    "expected": {
+      "partial_score": 1.0,
+      "complete": true
+    }
+  },
+  {
+    "id": "UNIFIED_TS013_MISSING_NARRATIVE",
+    "puzzle_id": "TS013",
+    "submission": "Courses means dishes at a mandatory formal high-table dinner, not classes. The deadline was for stating meal preferences. The waiter clears uneaten dishes, making all courses disappear.",
+    "expected": {
+      "complete": false,
+      "checkpoint_credits": {
+        "C3": 0.5
+      }
+    }
+  },
+  {
+    "id": "UNIFIED_TS038_FULL",
+    "puzzle_id": "TS038",
+    "submission": "The narrator murdered his wife and tried to stage her disappearance as a voluntary departure. He repeatedly wrote the leaving message himself, attempting to forge his wife's handwriting. The repeated lines are failed practice attempts. He cannot imitate her handwriting convincingly and sighs because he fears discovery of the murder and forgery.",
+    "expected": {
+      "partial_score": 1.0,
+      "complete": true
+    }
+  },
+  {
+    "id": "UNIFIED_TS038_CONTRADICTION",
+    "puzzle_id": "TS038",
+    "submission": "The narrator never killed his wife: she is still alive and left voluntarily. He repeatedly tries to forge a leaving note in her handwriting, cannot imitate it, and worries about getting caught for forgery.",
+    "expected": {
+      "complete": false,
+      "material_contradiction": true,
+      "checkpoint_credits": {
+        "C1": 0
+      }
+    }
+  }
+]

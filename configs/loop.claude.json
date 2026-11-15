@@ -1,0 +1,6 @@
+{
+  "max_questions": 100,
+  "host": {"provider": "anthropic", "model": "${ANTHROPIC_MODEL}", "max_output_tokens": 4096},
+  "player": {"provider": "anthropic", "model": "${ANTHROPIC_MODEL}", "max_output_tokens": 4096},
+  "grader": "host"
+}

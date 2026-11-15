@@ -1,0 +1,50 @@
+{
+  "puzzle_id": "APRIL_ONION_026",
+  "version": "draft-1",
+  "review_status": "pending_human_review",
+  "source": "Chinese Internet",
+  "family_id": "april_onion_narrator",
+  "curator_title": "Tears for an Onion",
+  "language": "en",
+  "opening": "One stab, two stabs, three stabs.\nThat person I hadn't known for long still wants to kill me. I yelled to him in my mind, \"Silly, don't cry!\"",
+  "solution": "I am an onion.",
+  "canonical_facts": [
+    "The narrator is an onion."
+  ],
+  "explicit_negatives": [],
+  "unknown_details": [],
+  "host_examples": [
+    {
+      "case_id": "O026_01",
+      "question": "Is the person stabbing me actually trying to save my life?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The apparent stabbing is the cutting of an onion, not an attempt to save it.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "O026_02",
+      "question": "Am I a human being?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The narrator is an onion.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "O026_03",
+      "question": "Am I an animal?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The narrator is an onion, not an animal.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "O026_04",
+      "question": "Am I an onion?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "This is the narrator's exact identity.",
+      "review_status": "pending_human_review"
+    }
+  ]
+}

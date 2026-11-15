@@ -1,0 +1,971 @@
+[
+  {
+    "row": 2,
+    "puzzle_id": "TS002",
+    "cases": [
+      "INBOX_TS002_003"
+    ],
+    "question_cell": "[INBOX_TS002_003]\nQ: Was the evidence related to a murder?\nHost: yes & no",
+    "decision": "修改标签",
+    "label": "irrelevant",
+    "note": null
+  },
+  {
+    "row": 3,
+    "puzzle_id": "TS002",
+    "cases": [
+      "INBOX_TS002_004",
+      "INBOX_TS002_037"
+    ],
+    "question_cell": "[INBOX_TS002_004]\nQ: Did someone die in connection with the crime?\nHost: unknown\n\n[INBOX_TS002_037]\nQ: Did her ex-boyfriend use the pillow to defend himself during the attack?\nHost: unknown",
+    "decision": "修改标签",
+    "label": "irrelevant",
+    "note": null
+  },
+  {
+    "row": 4,
+    "puzzle_id": "TS002",
+    "cases": [
+      "INBOX_TS002_054"
+    ],
+    "question_cell": "[INBOX_TS002_054]\nQ: Was the woman holding the pillow when she stabbed her ex-boyfriend?\nHost: unknown",
+    "decision": "修改标签",
+    "label": "irrelevant",
+    "note": null
+  },
+  {
+    "row": 5,
+    "puzzle_id": "TS002",
+    "cases": [
+      "INBOX_TS002_008",
+      "INBOX_TS002_040"
+    ],
+    "question_cell": "[INBOX_TS002_008]\nQ: Was the blood found on the towel?\nHost: no\n\n[INBOX_TS002_040]\nQ: Was the knife she used to attack her ex-boyfriend also found in her luggage?\nHost: no",
+    "decision": "修改标签",
+    "label": "irrelevant",
+    "note": null
+  },
+  {
+    "row": 6,
+    "puzzle_id": "TS002",
+    "cases": [
+      "INBOX_TS002_079"
+    ],
+    "question_cell": "[INBOX_TS002_079]\nQ: Were any of the other items she listed also made from parts of her ex-boyfriend’s body?\nHost: no",
+    "decision": "修改标签",
+    "label": "irrelevant",
+    "note": null
+  },
+  {
+    "row": 7,
+    "puzzle_id": "TS002",
+    "cases": [
+      "INBOX_TS002_020"
+    ],
+    "question_cell": "[INBOX_TS002_020]\nQ: Did she attack her ex-boyfriend while he was sleeping?\nHost: irrelevant",
+    "decision": "非问题",
+    "label": "irrelevant",
+    "note": null
+  },
+  {
+    "row": 8,
+    "puzzle_id": "TS002",
+    "cases": [
+      "INBOX_TS002_041",
+      "INBOX_TS002_047"
+    ],
+    "question_cell": "[INBOX_TS002_041]\nQ: Did the knife pierce the pillow during the attack?\nHost: yes\n\n[INBOX_TS002_047]\nQ: Did she deliberately stab the pillow with the knife during the attack?\nHost: yes",
+    "decision": "改写",
+    "label": "irrelevant",
+    "note": null
+  },
+  {
+    "row": 9,
+    "puzzle_id": "TS002",
+    "cases": [
+      "INBOX_TS002_049",
+      "INBOX_TS002_081"
+    ],
+    "question_cell": "[INBOX_TS002_049]\nQ: Did she stab both the pillow and her ex-boyfriend with the same knife thrust?\nHost: yes\n\n[INBOX_TS002_081]\nQ: Did she sever her ex-boyfriend’s arm during the same attack in which she stabbed it?\nHost: yes",
+    "decision": "改写",
+    "label": "irrelevant",
+    "note": null
+  },
+  {
+    "row": 10,
+    "puzzle_id": "TS002",
+    "cases": [
+      "INBOX_TS002_050",
+      "INBOX_TS002_055"
+    ],
+    "question_cell": "[INBOX_TS002_050]\nQ: Was the pillow right next to her ex-boyfriend's body when she stabbed him?\nHost: yes & no\n\n[INBOX_TS002_055]\nQ: Was the pillow positioned between the woman and her ex-boyfriend when she stabbed him?\nHost: yes & no",
+    "decision": null,
+    "label": "yes and no",
+    "note": "这种比喻的题目设定边界太模糊了，还是回答yes&no吧"
+  },
+  {
+    "row": 11,
+    "puzzle_id": "TS002",
+    "cases": [
+      "INBOX_TS002_057",
+      "INBOX_TS002_059"
+    ],
+    "question_cell": "[INBOX_TS002_057]\nQ: Was her ex-boyfriend wearing the pillow on his body when she stabbed him?\nHost: yes & no\n\n[INBOX_TS002_059]\nQ: Was the pillow attached to his clothing rather than directly to his body?\nHost: irrelevant",
+    "decision": null,
+    "label": "yes and no",
+    "note": "同上"
+  },
+  {
+    "row": 12,
+    "puzzle_id": "TS002",
+    "cases": [
+      "INBOX_TS002_067",
+      "INBOX_TS002_070"
+    ],
+    "question_cell": "[INBOX_TS002_067]\nQ: Was the pillow’s outer covering made from her ex-boyfriend’s skin?\nHost: yes\n\n[INBOX_TS002_070]\nQ: Did her ex-boyfriend's skin come off naturally, without anyone deliberately removing it?\nHost: irrelevant",
+    "decision": null,
+    "label": "yes and no",
+    "note": "同上"
+  },
+  {
+    "row": 13,
+    "puzzle_id": "TS002",
+    "cases": [
+      "INBOX_TS002_076",
+      "INBOX_TS002_077"
+    ],
+    "question_cell": "[INBOX_TS002_076]\nQ: Was the “pillow” actually her ex-boyfriend’s severed arm?\nHost: yes\n\n[INBOX_TS002_077]\nQ: Did she deliberately cut off her ex-boyfriend’s arm?\nHost: yes",
+    "decision": "接受",
+    "label": "no",
+    "note": null
+  },
+  {
+    "row": 14,
+    "puzzle_id": "TS002",
+    "cases": [
+      "INBOX_TS002_082",
+      "INBOX_TS002_083"
+    ],
+    "question_cell": "[INBOX_TS002_082]\nQ: Had she previously used her ex-boyfriend’s arm as a pillow while sleeping?\nHost: yes\n\n[INBOX_TS002_083]\nQ: Did she cut off her ex-boyfriend’s arm because she wanted to keep using it as a pillow after their breakup?\nHost: yes",
+    "decision": "接受",
+    "label": "no",
+    "note": null
+  },
+  {
+    "row": 15,
+    "puzzle_id": "TS002",
+    "cases": [
+      "INBOX_TS002_078"
+    ],
+    "question_cell": "[INBOX_TS002_078]\nQ: Did she disguise her ex-boyfriend’s severed arm as a pillow to get it through security?\nHost: yes & no",
+    "decision": "暂缓",
+    "label": "yes and no",
+    "note": null
+  },
+  {
+    "row": 16,
+    "puzzle_id": "TS007",
+    "cases": [
+      "INBOX_TS007_002"
+    ],
+    "question_cell": "[INBOX_TS007_002]\nQ: Is the narrator a cat?\nHost: no",
+    "decision": "暂缓",
+    "label": "no",
+    "note": null
+  },
+  {
+    "row": 17,
+    "puzzle_id": "TS007",
+    "cases": [
+      "INBOX_TS007_006"
+    ],
+    "question_cell": "[INBOX_TS007_006]\nQ: Is the narrator a mammal?\nHost: no",
+    "decision": "接受",
+    "label": "yes",
+    "note": null
+  },
+  {
+    "row": 18,
+    "puzzle_id": "TS007",
+    "cases": [
+      "INBOX_TS007_018"
+    ],
+    "question_cell": "[INBOX_TS007_018]\nQ: Did the narrator lose consciousness because of an electric shock?\nHost: irrelevant",
+    "decision": "接受",
+    "label": "no",
+    "note": null
+  },
+  {
+    "row": 19,
+    "puzzle_id": "TS007",
+    "cases": [
+      "INBOX_TS007_021",
+      "INBOX_TS007_025"
+    ],
+    "question_cell": "[INBOX_TS007_021]\nQ: Is the narrator much larger than a human?\nHost: yes & no\n\n[INBOX_TS007_025]\nQ: Did the human get out of the car voluntarily, despite the park’s rules requiring visitors to stay inside?\nHost: yes",
+    "decision": null,
+    "label": "yes",
+    "note": null
+  },
+  {
+    "row": 20,
+    "puzzle_id": "TS007",
+    "cases": [
+      "INBOX_TS007_029"
+    ],
+    "question_cell": "[INBOX_TS007_029]\nQ: Did Mom forbid opening the cars because she knew that hurting a human would get the narrator shot by park staff?\nHost: yes & no",
+    "decision": "暂缓",
+    "label": "yes and no",
+    "note": null
+  },
+  {
+    "row": 21,
+    "puzzle_id": "TS012",
+    "cases": [
+      "INBOX_TS012_016",
+      "INBOX_TS012_020"
+    ],
+    "question_cell": "[INBOX_TS012_016]\nQ: Did you touch something electrical?\nHost: no\n\n[INBOX_TS012_020]\nQ: Did you touch a stove?\nHost: no",
+    "decision": null,
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 22,
+    "puzzle_id": "TS012",
+    "cases": [
+      "INBOX_TS012_021"
+    ],
+    "question_cell": "[INBOX_TS012_021]\nQ: Is the setting a normal, everyday residential house?\nHost: Yes",
+    "decision": "接受",
+    "label": "yes",
+    "note": "宿舍符合 a normal, everyday residential house 的定义"
+  },
+  {
+    "row": 23,
+    "puzzle_id": "TS012",
+    "cases": [
+      "INBOX_TS012_025"
+    ],
+    "question_cell": "[INBOX_TS012_025]\nQ: Did the narrator start heating the food before going to the pantry?\nHost: Yes and no",
+    "decision": "修改标签",
+    "label": "no",
+    "note": "先进入pantry，然后在pantry里面cook food"
+  },
+  {
+    "row": 24,
+    "puzzle_id": "TS012",
+    "cases": [
+      "INBOX_TS012_027"
+    ],
+    "question_cell": "[INBOX_TS012_027]\nQ: Did the narrator go to the pantry to get an ingredient or item needed for the food?\nHost: Yes",
+    "decision": "修改标签",
+    "label": "no",
+    "note": "进入pantry的目的就是cook food而不是get ingredients，我们hall对于pantry的定义跟一般定义不一样（cambridge：a small room or large cupboard in a house where food is kept，hall：mini kitchen+food storage）"
+  },
+  {
+    "row": 25,
+    "puzzle_id": "TS012",
+    "cases": [
+      "INBOX_TS012_029"
+    ],
+    "question_cell": "[INBOX_TS012_029]\nQ: Was there already food on the stovetop when the narrator went to the pantry?\nHost: No",
+    "decision": "接受",
+    "label": "no",
+    "note": "进入pantry后才开始cook"
+  },
+  {
+    "row": 26,
+    "puzzle_id": "TS012",
+    "cases": [
+      "INBOX_TS012_030",
+      "INBOX_TS012_031"
+    ],
+    "question_cell": "[INBOX_TS012_030]\nQ: Was the pan or pot on the stove empty when the narrator went to the pantry?\nHost: Yes\n\n[INBOX_TS012_031]\nQ: Was there oil or cooking fat in the pan when it was left on the stove?\nHost: Yes",
+    "decision": "接受",
+    "label": "yes",
+    "note": null
+  },
+  {
+    "row": 27,
+    "puzzle_id": "TS012",
+    "cases": [
+      "INBOX_TS012_032"
+    ],
+    "question_cell": "[INBOX_TS012_032]\nQ: Did the oil in the pan overheat and produce smoke while the narrator was in the pantry?\nHost: Yes and no",
+    "decision": "修改标签",
+    "label": "yes",
+    "note": null
+  },
+  {
+    "row": 28,
+    "puzzle_id": "TS012",
+    "cases": [
+      "INBOX_TS012_034"
+    ],
+    "question_cell": "[INBOX_TS012_034]\nQ: Did the smoke start after the narrator returned from the pantry?\nHost: Yes and no",
+    "decision": "修改标签",
+    "label": "no",
+    "note": "the smoke started while the narrator is cooking"
+  },
+  {
+    "row": 29,
+    "puzzle_id": "TS012",
+    "cases": [
+      "INBOX_TS012_049"
+    ],
+    "question_cell": "[INBOX_TS012_049]\nQ: Is the fire alarm located in the hall, just outside the pantry?\nHost: yes and no",
+    "decision": "修改标签",
+    "label": "no",
+    "note": "其实写的时候assume了smoke detector和fire alarm都在pantry里面，可能需要改写汤底？"
+  },
+  {
+    "row": 30,
+    "puzzle_id": "TS013",
+    "cases": [
+      "INBOX_TS013_001"
+    ],
+    "question_cell": "[INBOX_TS013_001]\nQ: Had you already enrolled in these courses before they were gone?\nHost: Yes",
+    "decision": "修改标签",
+    "label": "no",
+    "note": "you can't enroll in a dish"
+  },
+  {
+    "row": 31,
+    "puzzle_id": "TS013",
+    "cases": [
+      "INBOX_TS013_005"
+    ],
+    "question_cell": "[INBOX_TS013_005]\nQ: Did the courses disappear because the course selection period/deadline ended?\nHost: Yes",
+    "decision": "修改标签",
+    "label": "no",
+    "note": null
+  },
+  {
+    "row": 32,
+    "puzzle_id": "TS013",
+    "cases": [
+      "INBOX_TS013_008"
+    ],
+    "question_cell": "[INBOX_TS013_008]\nQ: Did you receive an official confirmation that you had been allocated a place in each of those courses before they disappeared?\nHost: Yes",
+    "decision": "接受",
+    "label": "yes",
+    "note": "assume narrator 成功报名（因此才能出席高桌晚宴），理论上应该收到confirmation（当然在hku什么都有可能发生"
+  },
+  {
+    "row": 33,
+    "puzzle_id": "TS013",
+    "cases": [
+      "INBOX_TS013_012",
+      "INBOX_TS013_019"
+    ],
+    "question_cell": "[INBOX_TS013_012]\nQ: Did the courses reappear after that one night?\nHost: No\n\n[INBOX_TS013_019]\nQ: Did you leave the High Table Dinner before all the courses were served?\nHost: No",
+    "decision": "接受",
+    "label": "no",
+    "note": "1. 收走的菜品不会再出现 2. 离席并不是菜品消失的原因，收走才是"
+  },
+  {
+    "row": 34,
+    "puzzle_id": "TS013",
+    "cases": [
+      "INBOX_TS013_023",
+      "INBOX_TS013_025"
+    ],
+    "question_cell": "[INBOX_TS013_023]\nQ: Were the courses served as shared dishes at the table, rather than as individual portions?\nHost: No\n\n[INBOX_TS013_025]\nQ: Were some of your courses taken away by the waiters before you could eat them?\nHost: No",
+    "decision": "接受",
+    "label": "no",
+    "note": "1. 分餐方式是每人一碟，看需不需要汤底写明？ 2. 作者尝过每道菜品，并不喜欢，才叫waiter收走"
+  },
+  {
+    "row": 35,
+    "puzzle_id": "TS014",
+    "cases": [
+      "INBOX_TS014_001",
+      "INBOX_TS014_008"
+    ],
+    "question_cell": "[INBOX_TS014_001]\nQ: Were the tests and exams you passed part of the course you failed?\nHost: No\n\n[INBOX_TS014_008]\nQ: Did the course you failed have any tests or exams?\nHost: No",
+    "decision": "接受",
+    "label": "irrelevant",
+    "note": "除了小组作业以外其他都不是重点"
+  },
+  {
+    "row": 36,
+    "puzzle_id": "TS014",
+    "cases": [
+      "INBOX_TS014_051",
+      "INBOX_TS014_059"
+    ],
+    "question_cell": "[INBOX_TS014_051]\nQ: Was the course you failed an online course?\nHost: no\n\n[INBOX_TS014_059]\nQ: Was the course you failed a seminar?\nHost: no",
+    "decision": "接受",
+    "label": "irrelevant",
+    "note": "除了小组作业以外其他都不是重点"
+  },
+  {
+    "row": 37,
+    "puzzle_id": "TS014",
+    "cases": [
+      "INBOX_TS014_067",
+      "INBOX_TS014_069"
+    ],
+    "question_cell": "[INBOX_TS014_067]\nQ: Was the course you failed a course in a religious institution?\nHost: no\n\n[INBOX_TS014_069]\nQ: Was the course you failed a course in a military or police academy?\nHost: no",
+    "decision": "接受",
+    "label": "irrelevant",
+    "note": "除了小组作业以外其他都不是重点"
+  },
+  {
+    "row": 38,
+    "puzzle_id": "TS014",
+    "cases": [
+      "INBOX_TS014_071"
+    ],
+    "question_cell": "[INBOX_TS014_071]\nQ: Was the course you failed a cooking class?\nHost: no",
+    "decision": "接受",
+    "label": "irrelevant",
+    "note": "除了小组作业以外其他都不是重点"
+  },
+  {
+    "row": 39,
+    "puzzle_id": "TS014",
+    "cases": [
+      "INBOX_TS014_004",
+      "INBOX_TS014_046"
+    ],
+    "question_cell": "[INBOX_TS014_004]\nQ: Did you fail the course because you did not complete a required project or assignment?\nHost: No\n\n[INBOX_TS014_046]\nQ: Did you fail the course because you did not complete a required group project?\nHost: no",
+    "decision": "非问题",
+    "label": "no",
+    "note": "汤底明确写明完成了小组项目"
+  },
+  {
+    "row": 40,
+    "puzzle_id": "TS015",
+    "cases": [
+      "INBOX_TS015_011",
+      "INBOX_TS015_019"
+    ],
+    "question_cell": "[INBOX_TS015_011]\nQ: Was the narrator using any apparatus, machine, or conveyance to attempt the course, rather than relying solely on his own body?\nHost: no\n\n[INBOX_TS015_019]\nQ: Did the narrator fail because he did not have the equipment normally required to complete the course?\nHost: yes",
+    "decision": "非问题",
+    "label": null,
+    "note": "如果narrator有合适设备就可以过河了，可以推测他此时没有这种设备"
+  },
+  {
+    "row": 41,
+    "puzzle_id": "TS015",
+    "cases": [
+      "INBOX_TS015_044",
+      "INBOX_TS015_045"
+    ],
+    "question_cell": "[INBOX_TS015_044]\nQ: Is the missing equipment something the narrator would ride on or in, rather than something he would wear or carry?\nHost: yes\n\n[INBOX_TS015_045]\nQ: Is the missing equipment a watercraft or board used on water, such as a boat, kayak, canoe, or surfboard?\nHost: yes",
+    "decision": null,
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 42,
+    "puzzle_id": "TS015",
+    "cases": [
+      "INBOX_TS015_048"
+    ],
+    "question_cell": "[INBOX_TS015_048]\nQ: Did the narrator fail because he needed to cross the water but had no available watercraft to do so?\nHost: yes and no",
+    "decision": "暂缓",
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 43,
+    "puzzle_id": "TS015",
+    "cases": [
+      "INBOX_TS015_013",
+      "INBOX_TS015_020"
+    ],
+    "question_cell": "[INBOX_TS015_013]\nQ: Does passing the course require a kind of movement that an unaided human physically cannot perform, such as flying?\nHost: yes\n\n[INBOX_TS015_020]\nQ: Is the equipment the narrator lacked an aircraft, such as a plane or helicopter?\nHost: yes",
+    "decision": "暂缓",
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 44,
+    "puzzle_id": "TS019",
+    "cases": [
+      "INBOX_TS019_003",
+      "INBOX_TS019_005"
+    ],
+    "question_cell": "[INBOX_TS019_003]\nQ: Are the stairs part of a fixed building structure?\nHost: yes\n\n[INBOX_TS019_005]\nQ: Do you use the stairs only when the elevator/lift is unavailable?\nHost: yes",
+    "decision": "修改标签",
+    "label": null,
+    "note": "1. 改为irrelevant，并非重点 2. 扶梯没坏时附近确实没有楼梯，作者只有在扶梯坏掉时才有机会走「楼梯」"
+  },
+  {
+    "row": 45,
+    "puzzle_id": "TS019",
+    "cases": [
+      "INBOX_TS019_006",
+      "INBOX_TS019_007"
+    ],
+    "question_cell": "[INBOX_TS019_006]\nQ: Are the stairs inside a building that is on your usual route to or from the school campus?\nHost: yes\n\n[INBOX_TS019_007]\nQ: Is the building with the stairs part of the school campus?\nHost: no",
+    "decision": "改写",
+    "label": null,
+    "note": "两者都改为yes and no（有时扶梯停用就有「楼梯」，否则建筑里没有「楼梯」，maybe汤底写明扶梯在campus entrance/exit 前面？"
+  },
+  {
+    "row": 46,
+    "puzzle_id": "TS019",
+    "cases": [
+      "INBOX_TS019_008",
+      "INBOX_TS019_009"
+    ],
+    "question_cell": "[INBOX_TS019_008]\nQ: Is the building with the stairs primarily a transportation-related facility, such as a subway/metro station, train station, bus terminal, or parking garage?\nHost: no\n\n[INBOX_TS019_009]\nQ: Do you have to pass through this building—or its lift/stair area—as part of your normal route onto or off the school campus?\nHost: yes",
+    "decision": null,
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 47,
+    "puzzle_id": "TS019",
+    "cases": [
+      "INBOX_TS019_012",
+      "INBOX_TS019_015"
+    ],
+    "question_cell": "[INBOX_TS019_012]\nQ: Is the elevator/lift whose unavailability makes you use the stairs located in the same building as those stairs?\nHost: yes\n\n[INBOX_TS019_015]\nQ: Is the part of the school campus you enter or exit located inside the building that has the stairs/elevator, rather than the building merely being adjacent to the campus?\nHost: yes",
+    "decision": null,
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 48,
+    "puzzle_id": "TS019",
+    "cases": [
+      "INBOX_TS019_016",
+      "INBOX_TS019_017"
+    ],
+    "question_cell": "[INBOX_TS019_016]\nQ: Is the school-campus area you enter/exit located on a floor other than ground level inside that non-campus building?\nHost: yes\n\n[INBOX_TS019_017]\nQ: Is the explanation that the entrance/exit to the school campus is on an upper or lower floor inside a separate non-campus building, so you normally take that building’s lift/elevator, but sometimes take its stairs when the lift is unavailable?\nHost: yes and no",
+    "decision": "非问题",
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 49,
+    "puzzle_id": "TS019",
+    "cases": [
+      "INBOX_TS019_018",
+      "INBOX_TS019_019"
+    ],
+    "question_cell": "[INBOX_TS019_018]\nQ: Is the inaccurate part of my summary the claim that the building is a separate, non‑campus building—that is, is it actually connected to, owned by, or otherwise associated with the school?\nHost: no\n\n[INBOX_TS019_019]\nQ: When the lift/elevator is available, do you normally use it to reach the campus entrance/exit floor?\nHost: yes",
+    "decision": null,
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 50,
+    "puzzle_id": "TS019",
+    "cases": [
+      "INBOX_TS019_020"
+    ],
+    "question_cell": "[INBOX_TS019_020]\nQ: Is the elevator/lift unavailable because it is temporarily out of service, such as being broken or under maintenance?\nHost: yes",
+    "decision": null,
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 51,
+    "puzzle_id": "TS021",
+    "cases": [
+      "INBOX_TS021_003"
+    ],
+    "question_cell": "[INBOX_TS021_003]\nQ: Had her parents led her to believe that the basement was the entire world she could access?\nHost: yes",
+    "decision": "非问题",
+    "label": "yes",
+    "note": null
+  },
+  {
+    "row": 52,
+    "puzzle_id": "TS021",
+    "cases": [
+      "INBOX_TS021_004"
+    ],
+    "question_cell": "[INBOX_TS021_004]\nQ: When she opened the basement door, did she see the normal outside world for the first time?\nHost: yes",
+    "decision": "非问题",
+    "label": "yes",
+    "note": null
+  },
+  {
+    "row": 53,
+    "puzzle_id": "TS022",
+    "cases": [
+      "INBOX_TS022_002",
+      "INBOX_TS022_005"
+    ],
+    "question_cell": "[INBOX_TS022_002]\nQ: Was the strange thing she noticed related to a change in the house's physical environment?\nHost: No\n\n[INBOX_TS022_005]\nQ: Was the strange thing she noticed something that had already been present when she first entered the house?\nHost: Yes",
+    "decision": "暂缓",
+    "label": "yes",
+    "note": null
+  },
+  {
+    "row": 54,
+    "puzzle_id": "TS022",
+    "cases": [
+      "INBOX_TS022_011",
+      "INBOX_TS022_012"
+    ],
+    "question_cell": "[INBOX_TS022_011]\nQ: Was her inability to sleep caused by the arrangement of multiple objects inside the house?\nHost: Yes and no\n\n[INBOX_TS022_012]\nQ: Was the absence of something normally found in a house the key to understanding why she couldn't sleep?\nHost: Yes",
+    "decision": "暂缓",
+    "label": "yes and no",
+    "note": null
+  },
+  {
+    "row": 55,
+    "puzzle_id": "TS022",
+    "cases": [
+      "INBOX_TS022_014",
+      "INBOX_TS022_016"
+    ],
+    "question_cell": "[INBOX_TS022_014]\nQ: Was the missing thing related to the house's windows?\nHost: Yes\n\n[INBOX_TS022_016]\nQ: Were the windows missing curtains or other coverings?\nHost: yes",
+    "decision": "非问题",
+    "label": "yes",
+    "note": null
+  },
+  {
+    "row": 56,
+    "puzzle_id": "TS022",
+    "cases": [
+      "INBOX_TS022_023",
+      "INBOX_TS022_025"
+    ],
+    "question_cell": "[INBOX_TS022_023]\nQ: Did the girl recognize the person watching her when she woke up the next morning?\nHost: Yes\n\n[INBOX_TS022_025]\nQ: Did the girl notice something unusual about the window itself the next morning?\nHost: No",
+    "decision": "非问题",
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 57,
+    "puzzle_id": "TS031",
+    "cases": [
+      "RUN_TS031_013",
+      "RUN_TS031_020"
+    ],
+    "question_cell": "[RUN_TS031_013]\nQ: Was the eraser attached to the end of an ordinary pencil, as a pencil-top eraser?\nHost: yes\n\n[RUN_TS031_020]\nQ: Was the pencil attached to the eraser unusual in some way that mattered to why A used it?\nHost: yes",
+    "decision": "非问题",
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 58,
+    "puzzle_id": "TS031",
+    "cases": [
+      "RUN_TS031_057",
+      "RUN_TS031_069"
+    ],
+    "question_cell": "[RUN_TS031_057]\nQ: Did the pencil support the separate graphite indirectly, through another object or part, while A wrote?\nHost: yes\n\n[RUN_TS031_069]\nQ: Did the pencil indirectly support the separate graphite by supporting something that played a role in creating the message?\nHost: yes",
+    "decision": "非问题",
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 59,
+    "puzzle_id": "TS031",
+    "cases": [
+      "RUN_TS031_077",
+      "RUN_TS031_079"
+    ],
+    "question_cell": "[RUN_TS031_077]\nQ: Did the pencil support an object that A used to make the message by physically marking, cutting, or otherwise altering the paper?\nHost: yes\n\n[RUN_TS031_079]\nQ: Was the tool that the pencil indirectly supported used to make the message by applying pressure to the paper?\nHost: yes",
+    "decision": "非问题",
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 60,
+    "puzzle_id": "TS031",
+    "cases": [
+      "RUN_TS031_082"
+    ],
+    "question_cell": "[RUN_TS031_082]\nQ: Did A move the pressure-applying tool across the paper while pressing it, rather than keeping it in one place?\nHost: yes\n\n",
+    "decision": "改写",
+    "label": "yes",
+    "note": null
+  },
+  {
+    "row": 61,
+    "puzzle_id": "TS031",
+    "cases": [
+      "RUN_TS031_084",
+      "RUN_TS031_085"
+    ],
+    "question_cell": "[RUN_TS031_084]\nQ: Was the tool that rubbed or scraped across the paper a separate piece of graphite?\nHost: yes\n\n[RUN_TS031_085]\nQ: Did the pencil support an object that helped guide or control the separate graphite as it rubbed across the paper?\nHost: yes",
+    "decision": null,
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 62,
+    "puzzle_id": "TS031",
+    "cases": [
+      "RUN_TS031_095"
+    ],
+    "question_cell": "[RUN_TS031_095]\nQ: Was the pencil physically touching the object it indirectly supported?\nHost: no",
+    "decision": null,
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 63,
+    "puzzle_id": "TS031",
+    "cases": [
+      "RUN_TS031_003",
+      "RUN_TS031_011"
+    ],
+    "question_cell": "[RUN_TS031_003]\nQ: Did A use the eraser as a tool to make a message with some other material, rather than using the eraser itself to mark or erase the paper?\nHost: yes\n\n[RUN_TS031_011]\nQ: Did A pick up the eraser because a pencil was attached to it or otherwise incorporated into it, and then use that pencil to write the message?\nHost: yes",
+    "decision": null,
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 64,
+    "puzzle_id": "TS032",
+    "cases": [
+      "NEW034"
+    ],
+    "question_cell": "[NEW034]\nQ: **Question 77:** Did B disappear because B **could no longer live with the guilt of knowing about the murder**, rather than because of any external threat?\nHost: yes",
+    "decision": null,
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 65,
+    "puzzle_id": "TS032",
+    "cases": [
+      "NEW026"
+    ],
+    "question_cell": "[NEW026]\nQ: **Question 2:** Did A cause B to transfer elsewhere because of something A did **intentionally**, rather than accidentally?\nHost: no",
+    "decision": null,
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 66,
+    "puzzle_id": "TS033",
+    "cases": [
+      "NEW016"
+    ],
+    "question_cell": "[NEW016]\nQ: **Question 27:** Was he trying to make the amount of money in the bag match the ransom demanded by the kidnappers exactly?\nHost: yes",
+    "decision": null,
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 67,
+    "puzzle_id": "TS033",
+    "cases": [
+      "NEW022"
+    ],
+    "question_cell": "[NEW022]\nQ: **Question 64:** Was the “unavoidable situation” that caused him to put one million yen in the bag something like the kidnappers **showing him a photo/video/message proving they had his child**, after which he prepared the ransom? (i.e., the situation forced him to start preparing the money, not a direct instruction about the amount)\nHost: yes",
+    "decision": null,
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 68,
+    "puzzle_id": "TS033",
+    "cases": [
+      "NEW018",
+      "NEW023"
+    ],
+    "question_cell": "[NEW018]\nQ: **Question 44:** Did the president add more cash because the kidnappers would **count the money**, and if they found only one million yen they would realize he had not obeyed their ransom demand?\nHost: yes\n\n[NEW023]\nQ: **Question 66:** Did the president add more cash **before handing over the ransom**, because the kidnappers had already specified the ransom amount, and the problem was that the bag contained **exactly one million yen at that moment**?\nHost: no",
+    "decision": null,
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 69,
+    "puzzle_id": "TS033",
+    "cases": [
+      "NEW013",
+      "NEW014"
+    ],
+    "question_cell": "[NEW013]\nQ: **Question 11:** Was the additional cash intended to make the total amount resemble the price of an expensive purchase?\nHost: yes\n\n[NEW014]\nQ: **Question 12:** Was he trying to make the money look like it was intended for a purchase costing more than one million yen?\nHost: yes",
+    "decision": null,
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 70,
+    "puzzle_id": "TS034",
+    "cases": [
+      "NEW040"
+    ],
+    "question_cell": "[NEW040]\nQ: **Question 26:** Is the father's decision based on the fact that the kidnapper demanded his daughter come alone, without police protection?\nHost: irrelevant",
+    "decision": null,
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 71,
+    "puzzle_id": "TS034",
+    "cases": [
+      "NEW038"
+    ],
+    "question_cell": "[NEW038]\nQ: **Question 6:** Is the kidnapper's voice coming from the same phone call as the daughter's voice?\nHost: no",
+    "decision": null,
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 72,
+    "puzzle_id": "TS035",
+    "cases": [
+      "RUN_TS035_083"
+    ],
+    "question_cell": "[RUN_TS035_083]\nQ: Did the father expect that bears would eventually dig up and eat other villagers’ buried relatives, rather than merely recognize that it was possible?\nHost: yes",
+    "decision": null,
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 73,
+    "puzzle_id": "TS035",
+    "cases": [
+      "RUN_TS035_060",
+      "RUN_TS035_068"
+    ],
+    "question_cell": "[RUN_TS035_060]\nQ: Was the father’s fear that other villagers would suffer the same emotional shock of discovering bears eating their deceased relatives, rather than that the bears would cause some further harm to the bodies or the living?\nHost: yes\n\n[RUN_TS035_068]\nQ: Was the ongoing consequence he feared chiefly that other villagers would be traumatized by finding bears eating their buried relatives?\nHost: yes",
+    "decision": null,
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 74,
+    "puzzle_id": "TS035",
+    "cases": [
+      "RUN_TS035_070",
+      "RUN_TS035_071"
+    ],
+    "question_cell": "[RUN_TS035_070]\nQ: Was the father chiefly afraid that other villagers would themselves discover bears eating their buried relatives, and suffer the same emotional shock he had? \nHost: no\n\n[RUN_TS035_071]\nQ: Was the father chiefly afraid that bears would eat other villagers’ buried relatives, rather than chiefly afraid of the distress villagers would feel if they discovered it?\nHost: yes",
+    "decision": null,
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 75,
+    "puzzle_id": "TS035",
+    "cases": [
+      "RUN_TS035_091"
+    ],
+    "question_cell": "[RUN_TS035_091]\nQ: Did the father fear that bears would dig up the other graves because this bear had revealed that human corpses were an available food source to bears generally, even though it had not taught them to eat human bodies?\nHost: yes",
+    "decision": null,
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 76,
+    "puzzle_id": "TS038",
+    "cases": [
+      "RUN_TS038_030"
+    ],
+    "question_cell": "[RUN_TS038_030]\nQ: Did the speaker write the draft to create or support an alibi for the killing?\nHost: yes",
+    "decision": null,
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 77,
+    "puzzle_id": "TS038",
+    "cases": [
+      "RUN_TS038_001",
+      "RUN_TS038_002"
+    ],
+    "question_cell": "[RUN_TS038_001]\nQ: Is the repeated sentence something the speaker is hearing or reading, rather than saying themselves?\nHost: yes\n\n[RUN_TS038_002]\nQ: Is the repeated sentence written somewhere for the speaker to read?\nHost: yes",
+    "decision": null,
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 78,
+    "puzzle_id": "TS038",
+    "cases": [
+      "RUN_TS038_016"
+    ],
+    "question_cell": "[RUN_TS038_016]\nQ: Does the draft reveal something the speaker has done that they are trying to conceal from its intended recipient?\nHost: yes",
+    "decision": null,
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 79,
+    "puzzle_id": "TS042",
+    "cases": [
+      "INBOX_TS042_012",
+      "INBOX_TS042_013"
+    ],
+    "question_cell": "[INBOX_TS042_012]\nQ: Did the high heels make her taller in a way that caused her to hit her head on something (e.g., a ceiling, doorway, or overhead object)?\nHost: yes and no\n\n[INBOX_TS042_013]\nQ: Did the high heels make her taller in a way that caused her to strike an overhead object that was moving or being moved (rather than a fixed ceiling/doorway)?\nHost: yes",
+    "decision": "非问题",
+    "label": null,
+    "note": " [INBOX_TS042_012] 仍为 yes and no，第一句正确而括号内错误"
+  },
+  {
+    "row": 80,
+    "puzzle_id": "TS042",
+    "cases": [
+      "INBOX_TS042_016",
+      "INBOX_TS042_018"
+    ],
+    "question_cell": "[INBOX_TS042_016]\nQ: Was the overhead object a blade, such as a ceiling fan or industrial fan, whose spinning blades struck her head because the heels raised her into their reach?\nHost: yes and no\n\n[INBOX_TS042_018]\nQ: Is the \"yes and no\" because it was not actually a ceiling fan, but some other spinning overhead object?\nHost: yes and no",
+    "decision": "修改标签",
+    "label": null,
+    "note": "[INBOX_TS042_016] 仍为yes and no，blade为真，fan为假 [INBOX_TS042_018]\n改为no"
+  },
+  {
+    "row": 81,
+    "puzzle_id": "TS042",
+    "cases": [
+      "INBOX_TS042_025",
+      "INBOX_TS042_037"
+    ],
+    "question_cell": "[INBOX_TS042_025]\nQ: Is the \"yes and no\" because the heels did raise her into the path of a moving overhead object and it struck her, but the object was not spinning?\nHost: yes\n\n[INBOX_TS042_037]\nQ: Does the moving overhead object travel along a fixed path that the woman entered *horizontally* (e.g., she walked into its path), rather than it descending onto her?\nHost: yes",
+    "decision": "非问题",
+    "label": null,
+    "note": null
+  },
+  {
+    "row": 82,
+    "puzzle_id": "TS042",
+    "cases": [
+      "INBOX_TS042_040",
+      "INBOX_TS042_041"
+    ],
+    "question_cell": "[INBOX_TS042_040]\nQ: Is the moving overhead object a piece of equipment whose normal clearance is just high enough for people without the extra heel height—such as a low-hanging chandelier, sign, or doorway fixture—rather than a vehicle?\nHost: yes\n\n[INBOX_TS042_041]\nQ: Is the moving overhead object a *chandelier* or similar suspended decorative fixture (rather than a vehicle, fan, or industrial machine)?\nHost: yes and no",
+    "decision": "修改标签",
+    "label": "no",
+    "note": null
+  },
+  {
+    "row": 83,
+    "puzzle_id": "TS042",
+    "cases": [
+      "INBOX_TS042_072"
+    ],
+    "question_cell": "[INBOX_TS042_072]\nQ: Is the fatal overhead object a **hammer or mallet being swung by another person** (as in a high striker/strongman game or auction), which struck her head because the heels made her taller?\nHost: yes",
+    "decision": "修改标签",
+    "label": "yes and no",
+    "note": "不是hammer"
+  },
+  {
+    "row": 84,
+    "puzzle_id": "TS042",
+    "cases": [
+      "INBOX_TS042_027"
+    ],
+    "question_cell": "[INBOX_TS042_027]\nQ: Do the red high heels themselves need to be *red* for the death mechanism—i.e., would the same fatal collision have occurred with an identical pair of high heels of a different color?\nHost: no",
+    "decision": "修改标签",
+    "label": "yes and no",
+    "note": "玩家给出两个意思一致的相反表述，所以需要yes and no的回答"
+  },
+  {
+    "row": 85,
+    "puzzle_id": "TS042",
+    "cases": [
+      "INBOX_TS042_031"
+    ],
+    "question_cell": "[INBOX_TS042_031]\nQ: Is the \"yes and no\" because the heels raised her into the path of a moving overhead object that struck her, but the object was not what killed her—she died of fright/startlement from the strike?\nHost: yes and no",
+    "decision": "非问题",
+    "label": null,
+    "note": null
+  }
+]

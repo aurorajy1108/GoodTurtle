@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "puzzles": [
+    {
+      "id": "TS002",
+      "opening": "The young woman was stopped at the baggage security checkpoint.\nShe said, \"My luggage contains only pajamas, a pillow, a thermos, a towel, and some changes of clothes—why are you stopping me?\"\nAfter inspecting her luggage, security personnel handcuffed her and took her away.",
+      "answer": "The man the girl loved betrayed her today; he was packing his bags, preparing to move out of the apartment they shared.\nThe girl tearfully begged him not to leave, but he didn't look back.\nJust then, the girl said coldly, \"At least leave my pillow behind.\"\nAnd so, she cut off the boy's hand.",
+      "rubric": [
+        {
+          "id": "C1",
+          "weight": 0.4,
+          "core": true,
+          "criterion": "She deliberately severed her departing boyfriend’s HAND, not arm.",
+          "full_credit": "She deliberately cut off his hand.",
+          "half_credit": "Severed hand identified without deliberate act; arm alone is zero.",
+          "zero_credit": "Missing or contradicted; incompatible uncommitted alternatives; merely repeating the opening without the required explanatory content. An arm is not a hand.",
+          "points": 40.0
+        },
+        {
+          "id": "C2",
+          "weight": 0.25,
+          "core": false,
+          "criterion": "He betrayed her that day and was packing to leave their shared home.",
+          "full_credit": "Betrayal that day and packing to leave shared home.",
+          "half_credit": "Betrayal or packing to leave shared home, not both.",
+          "zero_credit": "Missing or contradicted; incompatible uncommitted alternatives; merely repeating the opening without the required explanatory content. An arm is not a hand.",
+          "points": 25.0
+        },
+        {
+          "id": "C3",
+          "weight": 0.15,
+          "core": false,
+          "criterion": "She tearfully begged him to stay but he ignored her.",
+          "full_credit": "Tearful plea and his continued departure.",
+          "half_credit": "Begging or refusal identified, not both.",
+          "zero_credit": "Missing or contradicted; incompatible uncommitted alternatives; merely repeating the opening without the required explanatory content. An arm is not a hand.",
+          "points": 15.0
+        },
+        {
+          "id": "C4",
+          "weight": 0.2,
+          "core": false,
+          "criterion": "She demanded her pillow remain, treating his hand as the pillow later carried in luggage.",
+          "full_credit": "Pillow demand, hand-as-pillow and luggage/security connection.",
+          "half_credit": "Pillow/body-part identity without demand or luggage connection.",
+          "zero_credit": "Missing or contradicted; incompatible uncommitted alternatives; merely repeating the opening without the required explanatory content. An arm is not a hand.",
+          "points": 20.0
+        }
+      ],
+      "title": "安检处的行李",
+      "story_family": "F002",
+      "quality_status": "需要复核",
+      "review_notes": "答案没有交代断手与行李如何关联，以及安检如何发现",
+      "source_row": "2",
+      "observed_score": null,
+      "completion_requirements": [
+        "Her loved boyfriend betrayed her that day",
+        "He is packing to leave their shared apartment",
+        "She tearfully begs him to stay, but he keeps leaving",
+        "She demands that he at least leave her pillow",
+        "She deliberately cuts off his HAND, not merely an unspecified arm",
+        "The hand is the body part she treats as her pillow and carries in the luggage, explaining security’s discovery and arrest"
+      ],
+      "annotation_version": "turtle50-v2-three-review-2026-10-23",
+      "annotation_status": "ai_three_review_adjudicated_pending_human",
+      "grading_notes": "AI three-review adjudication v2, pending human confirmation. Score only this submission. Apply full_credit/half_credit/zero_credit explicitly, with zero taking precedence for a materially contradictory checkpoint claim. An omitted qualifier can be partial; replacing the core identity/cause with a wrong one is not an omission. Faithful paraphrases count. Partial score and full narrative are separate outputs. AI independent review C, not human gold. Score sum(weight*credit), credit 0/0.5/1. Full narrative requires all listed supported requirements and no material contradictory mechanism; partial 1 alone does not override full narrative. Credit each distinct causal proposition once; do not penalize faithful paraphrase or omitted unknown details. Strict hand/arm: arm alone cannot fully solve. The source answer omits the explicit luggage/pillow bridge; the completion list supplies that intended inference from the opening. Human review required. Do not demand a specific wrapping, cover or successful security evasion. Strict hand/arm distinction; arm cannot earn C1, even if severing is correct.",
+      "annotation_provenance": {
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "selected_base": "c",
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    },
+    {
+      "id": "TS031",
+      "opening": "An eraser is, of course, a piece of stationery used to erase something that has been written.\nHowever, A picked up an eraser in order to leave a message on a blank sheet of paper on which nothing had yet been written.\nWhy?",
+      "answer": "Because A needed to put lead into a mechanical pencil.",
+      "rubric": [
+        {
+          "id": "C1",
+          "weight": 0.75,
+          "core": true,
+          "criterion": "The eraser is lifted/handled to load lead into a mechanical pencil.",
+          "full_credit": "The eraser is lifted/handled to load lead into a mechanical pencil.",
+          "half_credit": "Mechanical pencil identified without lead-refill purpose",
+          "zero_credit": "Missing or contradicted; incompatible uncommitted alternatives; merely repeating the opening without the required explanatory content. ",
+          "points": 75.0
+        },
+        {
+          "id": "C2",
+          "weight": 0.25,
+          "core": false,
+          "criterion": "The actual message is written with the refilled mechanical pencil on blank paper.",
+          "full_credit": "The actual message is written with the refilled mechanical pencil on blank paper.",
+          "half_credit": "Writing with pencil identified without refill-to-message sequence",
+          "zero_credit": "Missing or contradicted; incompatible uncommitted alternatives; merely repeating the opening without the required explanatory content. ",
+          "points": 25.0
+        }
+      ],
+      "title": "橡皮擦留下字",
+      "story_family": "F031",
+      "quality_status": "正常",
+      "review_notes": "",
+      "source_row": "31",
+      "observed_score": null,
+      "completion_requirements": [
+        "The eraser is handled or removed to access the lead-refill opening of a mechanical pencil",
+        "A inserts lead and uses the refilled pencil to write on the blank page"
+      ],
+      "annotation_version": "turtle50-v2-three-review-2026-10-23",
+      "annotation_status": "ai_three_review_adjudicated_pending_human",
+      "grading_notes": "AI three-review adjudication v2, pending human confirmation. Score only this submission. Apply full_credit/half_credit/zero_credit explicitly, with zero taking precedence for a materially contradictory checkpoint claim. An omitted qualifier can be partial; replacing the core identity/cause with a wrong one is not an omission. Faithful paraphrases count. Partial score and full narrative are separate outputs. AI independent review C, not human gold. Score sum(weight*credit), credit 0/0.5/1. Full narrative requires all listed supported requirements and no material contradictory mechanism; partial 1 alone does not override full narrative. Credit each distinct causal proposition once; do not penalize faithful paraphrase or omitted unknown details. Accept faithful paraphrase. Require the listed identities, events and causal links, not exact prose or unspecified incidental details. Prior user-provided expanded canonical story establishes removal of the eraser covering the refill opening. This is an accepted expansion beyond the short spreadsheet answer. A direct eraser-driven writing mechanism contradicts it.",
+      "annotation_provenance": {
+        "reviewers": [
+          "a",
+          "b",
+          "c"
+        ],
+        "selected_base": "c",
+        "adjudicator": "root",
+        "human_confirmed": false
+      }
+    }
+  ]
+}

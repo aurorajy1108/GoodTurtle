@@ -1,0 +1,70 @@
+{
+  "puzzle_id": "APRIL_COFFIN_023",
+  "version": "draft-1",
+  "review_status": "pending_human_review",
+  "source": "Chinese Internet",
+  "family_id": "april_prison_coffin_escape",
+  "curator_title": "The Guard in the Coffin",
+  "language": "en",
+  "opening": "In the darkness, a man strikes a match and yells, \"It's you?!\" Then, in terror and despair, he dies.",
+  "solution": "The man was a prisoner. In order to escape, he bribed a prison guard. The two agreed that the next time someone in the prison died, he would hide inside the coffin. After it was transported out and buried, the guard would dig him back up.\n\nThen one day, someone in the prison finally passed away, and he quickly hid inside the coffin. When the coffin was buried and everything around him was pitch black, he struck a match to take a look. He found that lying next to him—the prison guard who was supposed to be waiting to escape with him—was already dead. Knowing his own death was certain, he could only wait to die in terror and despair.",
+  "canonical_facts": [
+    "The man was a prisoner.",
+    "He had made an escape arrangement with a prison guard.",
+    "Their plan was for him to hide inside the next dead prisoner's coffin.",
+    "After the coffin was buried, the guard was supposed to dig him back up.",
+    "The dead person inside the coffin was the prison guard."
+  ],
+  "explicit_negatives": [],
+  "unknown_details": [],
+  "host_examples": [
+    {
+      "case_id": "C023_01",
+      "question": "Did the man recognize another person after striking the match?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "The match revealed the prison guard's body beside him.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "C023_02",
+      "question": "Was the person he recognized already dead?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "The prison guard inside the coffin was dead.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "C023_03",
+      "question": "Was the man trapped inside a coffin with the dead person?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "He was buried inside the coffin beside the dead guard.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "C023_04",
+      "question": "Was the dead person the one who had promised to dig him out of the grave?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "The guard had promised to uncover the coffin and free him.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "C023_05",
+      "question": "Was the man a prisoner trying to escape from prison?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Hiding in the coffin was part of his prison escape plan.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "C023_06",
+      "question": "Was their plan for the prisoner to hide in a coffin with the next person who died, then wait for the guard to dig him out after burial?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "This describes the agreed escape plan in full.",
+      "review_status": "pending_human_review"
+    }
+  ]
+}

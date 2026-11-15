@@ -1,0 +1,217 @@
+{
+  "puzzle_id": "ERASER_HOST_DEV_V03",
+  "family_id": "user_eraser_mechanical_pencil",
+  "split": "host_development",
+  "status": "proposed_labels_pending_human_review",
+  "source": "User supplied final expanded explanation in host revision request; original publisher unknown.",
+  "original_short_solution": "Because A needed to put lead into a mechanical pencil.",
+  "opening": "An eraser is, of course, a piece of stationery used to erase something that has been written.\nHowever, A picked up an eraser in order to leave a message on a blank sheet of paper on which nothing had yet been written.\nWhy?",
+  "solution": "A had a mechanical pencil with no usable lead. The eraser covered the lead-refill opening, so A picked up/removed the eraser, inserted new lead, then used the pencil to write the message on the blank sheet.",
+  "canonical_facts": [
+    "The pencil had no usable lead.",
+    "The eraser covered the lead-refill opening.",
+    "A removed the eraser, inserted lead, and then wrote with the pencil."
+  ],
+  "explicit_negatives": [
+    "The eraser was not being used as an erasing or marking tool in this explanation.",
+    "Removing the eraser opened the refill access; it did not directly expose or extend the writing tip."
+  ],
+  "unknown_details": [
+    "The eraser colour, pencil brand and exact loading hardware beyond the covered refill opening are unspecified."
+  ],
+  "inference_notes": "Explicit negatives state the intended-role interpretation of the supplied expanded explanation, not verbatim additional author statements. They require human confirmation before a frozen evaluation.",
+  "cases": [
+    {
+      "case_id": "E01",
+      "question": "Did A use the eraser to remove a substance from the blank sheet?",
+      "proposed_label": "no",
+      "rationale": "It was removed to load lead, not used to erase the sheet.",
+      "origin": "old_Q01",
+      "human_label": null,
+      "model_label": null
+    },
+    {
+      "case_id": "E02",
+      "question": "Did A use the eraser to make visible marks on the sheet?",
+      "proposed_label": "no",
+      "rationale": "Mark-making was done by the pencil, not the eraser.",
+      "origin": "old_Q03",
+      "human_label": null,
+      "model_label": null
+    },
+    {
+      "case_id": "E03",
+      "question": "Was the eraser attached to the pencil that A used?",
+      "proposed_label": "yes",
+      "rationale": "In the ordinary sense it was the removable eraser covering that pencil's refill opening; permanent attachment is not implied.",
+      "origin": "old_Q06",
+      "human_label": null,
+      "model_label": null
+    },
+    {
+      "case_id": "E04",
+      "question": "Did A use the eraser to correct a mistake made while writing the message in pencil?",
+      "proposed_label": "no",
+      "rationale": "Wrong explanatory role for the eraser in this incident.",
+      "origin": "old_Q07",
+      "human_label": null,
+      "model_label": null
+    },
+    {
+      "case_id": "E05",
+      "question": "Did A intend to erase any pencil marks?",
+      "proposed_label": "no",
+      "rationale": "Read in the incident's context: the stated purpose was loading lead. This does not rule out every future erasing intention.",
+      "origin": "old_Q19",
+      "human_label": null,
+      "model_label": null
+    },
+    {
+      "case_id": "E06",
+      "question": "Did A erase pencil marks to form the letters of the message?",
+      "proposed_label": "no",
+      "rationale": "Alternative mark-forming mechanism is not the intended story.",
+      "origin": "old_Q22",
+      "human_label": null,
+      "model_label": null
+    },
+    {
+      "case_id": "E07",
+      "question": "Was the eraser used for its usual purpose of removing pencil marks?",
+      "proposed_label": "no",
+      "rationale": "Same purpose judgement as the earlier erasing questions.",
+      "origin": "old_Q38",
+      "human_label": null,
+      "model_label": null
+    },
+    {
+      "case_id": "E08",
+      "question": "Was the pencil broken or unusable for ordinary writing?",
+      "proposed_label": "yes",
+      "rationale": "Read as an inclusive disjunction: no usable lead establishes unusable at that moment; mechanical damage is not required.",
+      "origin": "old_Q25",
+      "human_label": null,
+      "model_label": null
+    },
+    {
+      "case_id": "E09",
+      "question": "Was the pencil tip broken?",
+      "proposed_label": "yes and no",
+      "rationale": "No usable lead does not establish why it was unusable. v0.3 uses yes and no for this unresolved or ambiguous case, without asserting partial truth.",
+      "origin": "old_Q12",
+      "human_label": null,
+      "model_label": null
+    },
+    {
+      "case_id": "E10",
+      "question": "When A picked up the eraser end, did that action cause the writing end to become exposed or accessible?",
+      "proposed_label": "no",
+      "rationale": "Under the direct-effect reading, it exposed refill access, not the writing end. If accessible means indirectly made usable after refilling, reword first.",
+      "origin": "reference_01",
+      "human_label": null,
+      "model_label": null
+    },
+    {
+      "case_id": "E11",
+      "question": "Was the tool inserted into or resting in some holder/container, so that grabbing the eraser end and pulling it out exposed the writing end?",
+      "proposed_label": "no",
+      "rationale": "The proposed holder-based exposure mechanism replaces the stated refill mechanism.",
+      "origin": "reference_02",
+      "human_label": null,
+      "model_label": null
+    },
+    {
+      "case_id": "E12",
+      "question": "Did gravity play a role—i.e., by lifting the object from the eraser end, the writing end moved, dropped, or unfolded into an exposed position?",
+      "proposed_label": "no",
+      "rationale": "Reject the specified gravity-driven tip-exposure mechanism, not every possible role of gravity while handling lead.",
+      "origin": "reference_03",
+      "human_label": null,
+      "model_label": null
+    },
+    {
+      "case_id": "E13",
+      "question": "Did the eraser end move relative to the rest of the tool when A picked it up, and that movement mechanically exposed the writing tip?",
+      "proposed_label": "yes and no",
+      "rationale": "This bundled wording asserts both relative eraser movement (true) and direct tip exposure (false). A single question asking only whether removal directly exposed the tip would be no.",
+      "origin": "reference_04",
+      "human_label": null,
+      "model_label": null
+    },
+    {
+      "case_id": "E14",
+      "question": "Did “picked up the eraser” mean that A removed/detached the eraser from the rest of the tool, rather than lifting the whole object?",
+      "proposed_label": "yes",
+      "rationale": "Correct contextual meaning of the action.",
+      "origin": "reference_05",
+      "human_label": null,
+      "model_label": null
+    },
+    {
+      "case_id": "E15",
+      "question": "After A removed the eraser, did that reveal a hidden button or mechanism that A then used to extend the writing tip?",
+      "proposed_label": "yes and no",
+      "rationale": "Button/extension mechanism suggests direct actuation, whereas mechanism might loosely include refill access. These readings change the answer; distinguish refilling from extending. A specific hidden button claim alone is yes and no unless excluded by additional facts. v0.3 uses yes and no for this unresolved or ambiguous case, without asserting partial truth.",
+      "origin": "reference_06",
+      "human_label": null,
+      "model_label": null
+    },
+    {
+      "case_id": "E16",
+      "question": "Did removing the eraser expose an opening where A could insert/refill pencil lead, after which A used the pencil to write the message?",
+      "proposed_label": "yes",
+      "rationale": "Entire described sequence matches the expanded story.",
+      "origin": "reference_07",
+      "human_label": null,
+      "model_label": null
+    },
+    {
+      "case_id": "E17",
+      "question": "Was A using a mechanical pencil, and they removed the eraser because the lead-refill opening was underneath it, inserted new lead, then used the pencil to write the message on the blank paper?",
+      "proposed_label": "yes",
+      "rationale": "Complete coherent explanation; no automatic rejection for multiple clauses.",
+      "origin": "reference_08",
+      "human_label": null,
+      "model_label": null
+    },
+    {
+      "case_id": "E18",
+      "question": "Did A remove the eraser and then use that eraser as a stamp to print the message?",
+      "proposed_label": "yes and no",
+      "rationale": "Removal is true; eraser-stamp use is false.",
+      "origin": "new_mixed",
+      "human_label": null,
+      "model_label": null
+    },
+    {
+      "case_id": "E19",
+      "question": "Did A remove a blue eraser to refill the pencil?",
+      "proposed_label": "yes and no",
+      "rationale": "Correct purpose with an unknown colour does not qualify as mixed true/false. v0.3 uses yes and no for this unresolved or ambiguous case, without asserting partial truth.",
+      "origin": "new_unknown",
+      "human_label": null,
+      "model_label": null
+    },
+    {
+      "case_id": "E20",
+      "question": "Did removing the eraser directly extend the pencil tip?",
+      "proposed_label": "no",
+      "rationale": "The direct effect was opening refill access.",
+      "origin": "new_direct_effect",
+      "human_label": null,
+      "model_label": null
+    }
+  ],
+  "reference_label_alignment": "User paste starts with an orphan no; assumed following label answers each preceding question. Not treated as verified gold.",
+  "reference_following_labels": [
+    "yes",
+    "no",
+    "no",
+    "yes and no",
+    "yes",
+    "yes and no",
+    "yes",
+    "yes"
+  ],
+  "protocol_version": "0.3"
+}

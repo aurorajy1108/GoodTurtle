@@ -1,0 +1,715 @@
+{
+  "puzzle_id": "TS031",
+  "source_kind": "model_simulated_reference",
+  "opening": "An eraser is, of course, a piece of stationery used to erase something that has been written.\nHowever, A picked up an eraser in order to leave a message on a blank sheet of paper on which nothing had yet been written.\nWhy?",
+  "human_confirmed": false,
+  "review_status": "pending",
+  "host_model_requested": "gpt-6.1-sol",
+  "player_model_requested": "gpt-6-luna",
+  "reasoning_effort": "high",
+  "run_path": "runs/2026-10-30_sol_luna_reference/batches/TS031/TS031_r01_solo",
+  "trajectory_sha256": "a1deb0fa4e6e042efb7acaf7474b312cc558f9d084b119f62428c0deabd4bfc4",
+  "status": "completed",
+  "actions": [
+    {
+      "index": 1,
+      "type": "question",
+      "text": "Did A use the eraser itself to make visible marks on the paper, rather than erase existing writing?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 2,
+      "type": "question",
+      "text": "Did A use the eraser to remove something from the paper so that a message underneath became visible?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 3,
+      "type": "question",
+      "text": "Did A use the eraser as a tool to make a message with some other material, rather than using the eraser itself to mark or erase the paper?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 4,
+      "type": "question",
+      "text": "Did A use the eraser to apply ink or another pigment to the paper?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 5,
+      "type": "question",
+      "text": "Did A use the eraser to press or emboss a message into the paper, leaving indentations rather than visible pigment?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 6,
+      "type": "question",
+      "text": "Did A use the eraser together with a pencil to write the message?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 7,
+      "type": "question",
+      "text": "Did A use the pencil’s graphite to write the message on the paper?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 8,
+      "type": "question",
+      "text": "Did A use the eraser to sharpen or shape the pencil’s graphite tip before writing the message?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 9,
+      "type": "question",
+      "text": "Did A use the eraser to hold or guide the pencil while writing the message?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 10,
+      "type": "question",
+      "text": "Did A use the eraser to hold the blank sheet in place while writing the message with the pencil?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 11,
+      "type": "question",
+      "text": "Did A pick up the eraser because a pencil was attached to it or otherwise incorporated into it, and then use that pencil to write the message?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 12,
+      "type": "question",
+      "text": "Was the pencil attached to the eraser as a single stationery item, with the pencil usable for writing?",
+      "forced": false,
+      "feedback": "yes and no"
+    },
+    {
+      "index": 13,
+      "type": "question",
+      "text": "Was the eraser attached to the end of an ordinary pencil, as a pencil-top eraser?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 14,
+      "type": "final",
+      "text": "A picked up a pencil with an eraser attached to its end. Although it was described as an eraser, the item was an ordinary usable pencil, so A used its graphite tip to write a message on the blank paper. Nothing needed to be erased first.",
+      "forced": false,
+      "feedback": "yes and no"
+    },
+    {
+      "index": 15,
+      "type": "question",
+      "text": "Did A pick up the pencil because they needed to use its graphite tip to write the message?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 16,
+      "type": "question",
+      "text": "Was the message meant to demonstrate or reveal that the eraser had a pencil attached to it?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 17,
+      "type": "question",
+      "text": "Was the eraser the only writing implement available to A at the time?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 18,
+      "type": "question",
+      "text": "Was A unable to use a separate pencil, so they chose the pencil with an attached eraser instead?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 19,
+      "type": "question",
+      "text": "When A picked up the item, did A regard it as a pencil rather than as an eraser?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 20,
+      "type": "question",
+      "text": "Was the pencil attached to the eraser unusual in some way that mattered to why A used it?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 21,
+      "type": "question",
+      "text": "Was the pencil unusual because its graphite writing tip was normally hidden or unusable until A did something to the eraser?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 22,
+      "type": "question",
+      "text": "Did A remove or move the eraser to uncover the pencil’s writing tip before writing?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 23,
+      "type": "question",
+      "text": "Did A rub or wear down the eraser to uncover the pencil’s graphite writing tip?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 24,
+      "type": "question",
+      "text": "Did A break or otherwise damage the eraser to expose the pencil’s writing tip?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 25,
+      "type": "question",
+      "text": "Did A remove something other than the eraser to make the pencil’s graphite tip usable?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 26,
+      "type": "question",
+      "text": "Did A manipulate or operate the eraser in some way to make the pencil’s graphite tip usable, without removing, moving, rubbing down, or damaging the eraser?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 27,
+      "type": "question",
+      "text": "Did A press the eraser, which functioned as a button on a mechanical pencil, to advance the graphite lead before writing?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 28,
+      "type": "question",
+      "text": "Did A make the pencil’s writing tip usable by changing the eraser itself, rather than by uncovering it or operating the eraser as a button?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 29,
+      "type": "question",
+      "text": "Did A twist or turn the pencil’s body to expose or advance its writing tip before writing?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 30,
+      "type": "question",
+      "text": "Did A sharpen the pencil with a separate pencil sharpener before writing?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 31,
+      "type": "question",
+      "text": "Was the pencil’s graphite writing tip already exposed and usable when A picked up the item?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 32,
+      "type": "question",
+      "text": "Did A use a sharpener built into the eraser to sharpen the pencil before writing?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 33,
+      "type": "question",
+      "text": "Did A press a separate button on the pencil to advance its graphite lead before writing?",
+      "forced": false,
+      "feedback": "irrelevant"
+    },
+    {
+      "index": 34,
+      "type": "question",
+      "text": "Did A make the pencil’s graphite usable by breaking off a part of the pencil, rather than by sharpening it or uncovering the tip?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 35,
+      "type": "question",
+      "text": "Did A sharpen the pencil’s graphite tip by any method before writing?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 36,
+      "type": "question",
+      "text": "Was the pencil’s graphite tip covered by a cap or protective cover that A removed before writing?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 37,
+      "type": "question",
+      "text": "Was the eraser physically covering or enclosing the pencil’s graphite writing tip?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 38,
+      "type": "question",
+      "text": "Did someone other than A make the pencil’s graphite tip usable before A wrote the message?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 39,
+      "type": "question",
+      "text": "Was the pencil’s graphite tip initially blunt or unsharpened?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 40,
+      "type": "question",
+      "text": "Did A make the graphite tip usable by pulling or separating two parts of the pencil, without removing a cover or damaging the eraser?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 41,
+      "type": "question",
+      "text": "Did A make the pencil’s graphite tip usable by rubbing it against a surface, rather than by sharpening or uncovering it?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 42,
+      "type": "question",
+      "text": "Was the pencil’s graphite tip unusable because it was broken off or missing when A picked up the eraser-attached pencil?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 43,
+      "type": "question",
+      "text": "Did A write with graphite that was already exposed on the pencil when they picked it up, despite its writing tip being broken or missing?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 44,
+      "type": "question",
+      "text": "Did A obtain graphite from inside the pencil and use that graphite to write, rather than writing with the pencil’s tip?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 45,
+      "type": "question",
+      "text": "Did A make the message by using an exposed side of the pencil’s graphite core, rather than its missing or broken writing tip?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 46,
+      "type": "question",
+      "text": "Did A use a separate piece of graphite that had already broken off the pencil as the writing material?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 47,
+      "type": "question",
+      "text": "Did A use graphite from a source other than the attached pencil to write the message?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 48,
+      "type": "question",
+      "text": "Did A use the eraser-attached pencil as a holder or support for a separate piece of graphite while writing?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 49,
+      "type": "question",
+      "text": "Did A attach or embed the separate piece of graphite in the eraser, using the eraser to hold it while writing?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 50,
+      "type": "question",
+      "text": "Did A use the pencil’s eraser end to hold a separate piece of graphite against the pencil, so the graphite could serve as the writing tip?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 51,
+      "type": "question",
+      "text": "Did A insert the separate piece of graphite into the broken end of the pencil, so the pencil held it as a makeshift writing tip?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 52,
+      "type": "question",
+      "text": "Did A secure the separate piece of graphite to the pencil with tape or another adhesive so it could be used to write?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 53,
+      "type": "question",
+      "text": "Did A hold the separate piece of graphite against the side of the pencil while writing with it?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 54,
+      "type": "question",
+      "text": "Did A hold the separate piece of graphite and the pencil together in one hand while writing, without attaching the graphite to the pencil?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 55,
+      "type": "question",
+      "text": "Did A use the pencil as a straightedge or guide while making the message with the separate piece of graphite?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 56,
+      "type": "question",
+      "text": "Did A use the pencil’s metal ferrule—the part that attaches the eraser—to grip the separate piece of graphite while writing?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 57,
+      "type": "question",
+      "text": "Did the pencil support the separate graphite indirectly, through another object or part, while A wrote?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 58,
+      "type": "question",
+      "text": "Did the pencil support the separate piece of graphite by holding or propping another object that directly held the graphite?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 59,
+      "type": "question",
+      "text": "Did A use the pencil to move or operate another object that then supported the separate piece of graphite?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 60,
+      "type": "question",
+      "text": "Did the pencil indirectly support A’s hand or arm while A used the separate graphite to write?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 61,
+      "type": "question",
+      "text": "Was the pencil used as part of a larger contraption or setup that enabled A to write with the separate graphite?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 62,
+      "type": "question",
+      "text": "Did the pencil indirectly support the separate graphite by supporting the paper or another surface on which A wrote?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 63,
+      "type": "question",
+      "text": "Was the pencil physically connected to another object that directly held the separate piece of graphite?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 64,
+      "type": "question",
+      "text": "Did the pencil indirectly support the separate graphite by supporting a person or animal who was holding or using it?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 65,
+      "type": "question",
+      "text": "Did the pencil indirectly support the separate graphite by supporting a writing implement or device that contained or held that graphite?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 66,
+      "type": "question",
+      "text": "Did the pencil indirectly support the separate graphite by supporting some part of A’s body other than A’s hand or arm?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 67,
+      "type": "question",
+      "text": "Did the pencil indirectly support the separate graphite by acting as a counterweight or ballast that kept the graphite in position while A wrote?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 68,
+      "type": "question",
+      "text": "Did the pencil indirectly support the separate graphite by acting as a prop or brace for an object that did not itself directly hold the graphite?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 69,
+      "type": "question",
+      "text": "Did the pencil indirectly support the separate graphite by supporting something that played a role in creating the message?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 70,
+      "type": "question",
+      "text": "Did the pencil support a light source that helped A write the message with the separate graphite?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 71,
+      "type": "question",
+      "text": "Did the pencil support a stencil or template that A used to shape the message written with the separate graphite?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 72,
+      "type": "question",
+      "text": "Did the pencil support a reference source, such as a book or written text, that A copied while writing the message with the separate graphite?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 73,
+      "type": "question",
+      "text": "Did the pencil support an object that A used to transfer graphite onto the paper, rather than A writing directly with the separate graphite?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 74,
+      "type": "question",
+      "text": "Did the pencil support an object that A used to communicate the message electronically?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 75,
+      "type": "question",
+      "text": "Did the pencil support an object that A used to physically position or manipulate the paper while making the message?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 76,
+      "type": "question",
+      "text": "Was the object that the pencil supported physically resting on or balanced on the pencil?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 77,
+      "type": "question",
+      "text": "Did the pencil support an object that A used to make the message by physically marking, cutting, or otherwise altering the paper?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 78,
+      "type": "question",
+      "text": "Did the pencil support a tool that A used to cut or puncture the paper to make the message?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 79,
+      "type": "question",
+      "text": "Was the tool that the pencil indirectly supported used to make the message by applying pressure to the paper?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 80,
+      "type": "question",
+      "text": "Was the tool that applied pressure to the paper a stamp or other device that left the message as an impression?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 81,
+      "type": "question",
+      "text": "Was the pressure-applying tool a keyboard key or button that A pressed to produce the message?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 82,
+      "type": "question",
+      "text": "Did A move the pressure-applying tool across the paper while pressing it, rather than keeping it in one place?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 83,
+      "type": "question",
+      "text": "Did the tool make the message by rubbing or scraping across the paper under pressure?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 84,
+      "type": "question",
+      "text": "Was the tool that rubbed or scraped across the paper a separate piece of graphite?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 85,
+      "type": "question",
+      "text": "Did the pencil support an object that helped guide or control the separate graphite as it rubbed across the paper?",
+      "forced": false,
+      "feedback": "yes"
+    },
+    {
+      "index": 86,
+      "type": "question",
+      "text": "Did the pencil act as a pivot or fulcrum in a setup that guided the separate piece of graphite across the paper?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 87,
+      "type": "question",
+      "text": "Was the object the pencil supported a ruler or straightedge that guided the separate graphite across the paper?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 88,
+      "type": "question",
+      "text": "Did the pencil support the object by serving as a lever or handle, even though it was not physically connected to that object?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 89,
+      "type": "question",
+      "text": "Did the pencil support a rotating object that guided or controlled the separate piece of graphite as it moved across the paper?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 90,
+      "type": "question",
+      "text": "Did the pencil support the object by holding it in place against another object, rather than by the object resting on or being attached to the pencil?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 91,
+      "type": "question",
+      "text": "Was the object that the pencil supported a part of A’s clothing or something A was wearing?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 92,
+      "type": "question",
+      "text": "Did the pencil support a piece of equipment that guided the separate graphite by constraining its path across the paper?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 93,
+      "type": "question",
+      "text": "Was the object supported by the pencil itself held or manipulated by A while they rubbed the separate graphite across the paper?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 94,
+      "type": "question",
+      "text": "Was the object the pencil supported a part of a fixed structure or surface, rather than a movable tool or personal object?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 95,
+      "type": "question",
+      "text": "Was the pencil physically touching the object it indirectly supported?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 96,
+      "type": "question",
+      "text": "Did the pencil support the guiding object indirectly because it was part of the surface or arrangement beneath that object?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 97,
+      "type": "final",
+      "text": "A picked up a pencil with an eraser attached, but its graphite tip was broken or missing. A used graphite from another source and the pencil as part of an indirect support arrangement: it supported an object that helped guide a separate piece of graphite as it was rubbed or scraped under pressure across the paper, making the message. The pencil itself did not write the message, and the eraser was not used to erase anything.",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 98,
+      "type": "question",
+      "text": "Was the object indirectly supported by the pencil a surface or object with raised or recessed features that shaped the message as A rubbed graphite over the paper?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 99,
+      "type": "question",
+      "text": "Did the object that the pencil indirectly supported guide the graphite by moving or vibrating while A rubbed it across the paper?",
+      "forced": false,
+      "feedback": "no"
+    },
+    {
+      "index": 100,
+      "type": "final",
+      "text": "A picked up a pencil with an eraser attached, but its graphite tip was broken or missing. They used a separate piece of graphite to make the message by rubbing or scraping it under pressure across the blank paper. The pencil did not write the message itself: it indirectly supported an object that helped guide or control the separate graphite during that process. The eraser was incidental to the writing; nothing was being erased.",
+      "forced": true,
+      "feedback": "no"
+    }
+  ]
+}

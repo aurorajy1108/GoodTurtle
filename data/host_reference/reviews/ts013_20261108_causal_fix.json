@@ -1,0 +1,32 @@
+{
+  "puzzle_id": "TS013",
+  "review_date": "2026-11-08",
+  "review_method": "source_grounded_assistant_adjudication_at_user_request",
+  "human_confirmed": false,
+  "source_kind": "model_experiment_trajectory",
+  "source_run": "runs/api/20261107_deepseek_ts013_nothinking_once/TS013_r01",
+  "source_trajectory_sha256": "8ea121d8fc0a196ee319b4a8c3966ba8ef85668c346ba523e12465b9c208f4a9",
+  "public_history": [
+    {
+      "question": "Did someone else (e.g., a friend or hacker) deliberately delete or drop all of your courses?",
+      "answer": "no"
+    }
+  ],
+  "question": "Was the disappearance of your courses a result of your own action or mistake in the course selection system?",
+  "original_host_answer": "yes",
+  "accepted_reference_answer": "no",
+  "reason": "The question's causal proposition concerns an academic course-selection system. In this story courses are dinner dishes; disappearance is caused by asking the waiter to clear disliked leftovers, not by a selection-system action or mistake. The true fragment 'own action' does not make that system-based causal claim true. Successful booking of dinner choices is not academic enrolment.",
+  "canonical_basis": [
+    "Courses means dishes at a mandatory high-table dinner, not academic classes.",
+    "The narrator successfully booked meal preferences; leftovers disappear when cleared by the waiter."
+  ],
+  "active_case_id": "REVIEW_TS013_20261108_Q002",
+  "active_version": "host-v10-ts013-causal-20261108",
+  "experiment_handling": "Preserve the interrupted original unchanged. This reference applies to new runs; it does not retroactively repair the player history.",
+  "context_sha256_before": {
+    "TS013": "c803af7b204b713d9dc47cd4014bf561ebf46fc4f22068b0ab0ccf9b30d415d9"
+  },
+  "context_sha256_after": {
+    "TS013": "abba53f677876ba9858fbcef8c71541084256984188b95c83b0f36d6720eb4fa"
+  }
+}

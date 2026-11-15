@@ -1,0 +1,132 @@
+{
+  "puzzle_id": "APRIL_READER_025",
+  "version": "draft-1",
+  "review_status": "pending_human_review",
+  "source": "Chinese Internet",
+  "family_id": "april_detective_novel_reader",
+  "curator_title": "The Satisfied Bystander",
+  "language": "en",
+  "opening": "A cruel thing happens, but the bystander laughs with satisfaction after discovering the murder.",
+  "solution": "The bystander is actually the reader of a detective novel. The reader smiles with satisfaction because the murderer they guessed matches the culprit revealed at the end.",
+  "canonical_facts": [
+    "The apparent bystander was actually the reader of a detective novel.",
+    "The reader had correctly guessed the murderer before the final reveal.",
+    "The reader smiled because the correct guess was satisfying."
+  ],
+  "explicit_negatives": [],
+  "unknown_details": [],
+  "host_examples": [
+    {
+      "case_id": "R025_01",
+      "question": "Did the bystander want the victim to die?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The reader enjoyed solving the mystery, not the victim's death.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R025_02",
+      "question": "Was the bystander satisfied because they discovered who the murderer was?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "The reader's satisfaction came from identifying the correct culprit.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R025_03",
+      "question": "Was the victim a member of the bystander's family?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The victim was a character in the detective novel, not the reader's family member.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R025_04",
+      "question": "Was the murderer a member of the bystander's family?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The murderer was a character in the detective novel, not the reader's family member.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R025_05",
+      "question": "Was the bystander a detective or police officer?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The apparent bystander was a reader.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R025_06",
+      "question": "Had the bystander helped cause the murder?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The murder occurred within the novel; the reader did not cause it.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R025_07",
+      "question": "Was the bystander human?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "The bystander was the human reader of the novel.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R025_08",
+      "question": "Did the victim actually die, rather than the murder being staged or fictional?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The murder was fictional and occurred in a detective novel.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R025_09",
+      "question": "Was the bystander directing a film or play in which the murder was performed?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The bystander was reading a novel, not directing a performance.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R025_10",
+      "question": "Was the murder being acted out by performers?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "It was described in a written detective novel.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R025_11",
+      "question": "Was the bystander reading or watching a fictional story about the murder?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "The bystander was reading a fictional detective story.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R025_12",
+      "question": "Was the bystander the author of the story?",
+      "answer": "no",
+      "public_history": [],
+      "rationale": "The intended role was the reader, not the author.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R025_13",
+      "question": "Was the bystander satisfied because they had correctly guessed the murderer's identity before it was revealed?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "Correctly predicting the final reveal caused the satisfied reaction.",
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R025_14",
+      "question": "Was the bystander reading a murder mystery novel?",
+      "answer": "yes",
+      "public_history": [],
+      "rationale": "This identifies the setting and the bystander's role.",
+      "review_status": "pending_human_review"
+    }
+  ]
+}

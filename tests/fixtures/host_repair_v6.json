@@ -1,0 +1,875 @@
+[
+  {
+    "id": "TS023_observed_21",
+    "puzzle_id": "TS023",
+    "question": "Was the coffin buried underground as part of the planned escape stunt?",
+    "expected": "no",
+    "history": [
+      {
+        "type": "question",
+        "text": "Was another person physically present with him when he struck the match?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the person he saw someone he recognized personally?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the person he saw alive at that moment?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person someone whose death the man had caused?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person a member of the man's family?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Did the match reveal an external physical hazard that caused the man's death?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did he deliberately cause his own death after recognizing the dead person?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the shock of seeing the dead person trigger a fatal physical reaction, such as a heart attack?",
+        "feedback": "yes and no"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person’s body physically present in the same place as the man?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was his death directly caused by an act of another living person?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Before striking the match, did the man believe the person was still alive?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did recognizing the corpse make him realize that the person could no longer rescue him from an already life-threatening predicament?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the man stranded at sea?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the man trapped in a confined place and relying on the deceased person to help him escape?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the man trapped underground, such as in a mine, cave, or buried space?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the man trapped inside a coffin or grave with the deceased person?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did the man die from lack of air while trapped in the coffin?",
+        "feedback": "yes and no"
+      },
+      {
+        "type": "question",
+        "text": "Was the man accidentally buried alive in the coffin?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man choose to enter the coffin, rather than being forced or trapped inside against his will?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did he enter the coffin as part of a planned escape act or stunt?",
+        "feedback": "yes"
+      }
+    ]
+  },
+  {
+    "id": "TS023_observed_24",
+    "puzzle_id": "TS023",
+    "question": "When he entered the coffin, did he expect a living member of the stunt crew to dig him out?",
+    "expected": "no",
+    "history": [
+      {
+        "type": "question",
+        "text": "Was another person physically present with him when he struck the match?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the person he saw someone he recognized personally?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the person he saw alive at that moment?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person someone whose death the man had caused?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person a member of the man's family?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Did the match reveal an external physical hazard that caused the man's death?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did he deliberately cause his own death after recognizing the dead person?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the shock of seeing the dead person trigger a fatal physical reaction, such as a heart attack?",
+        "feedback": "yes and no"
+      },
+      {
+        "type": "question",
+        "text": "Was the dead person’s body physically present in the same place as the man?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was his death directly caused by an act of another living person?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Before striking the match, did the man believe the person was still alive?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did recognizing the corpse make him realize that the person could no longer rescue him from an already life-threatening predicament?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the man stranded at sea?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the man trapped in a confined place and relying on the deceased person to help him escape?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the man trapped underground, such as in a mine, cave, or buried space?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the man trapped inside a coffin or grave with the deceased person?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did the man die from lack of air while trapped in the coffin?",
+        "feedback": "yes and no"
+      },
+      {
+        "type": "question",
+        "text": "Was the man accidentally buried alive in the coffin?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did the man choose to enter the coffin, rather than being forced or trapped inside against his will?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did he enter the coffin as part of a planned escape act or stunt?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the coffin buried underground as part of the planned escape stunt?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was the deceased person part of the stunt crew and supposed to dig him out of the buried coffin?",
+        "feedback": "yes and no"
+      },
+      {
+        "type": "question",
+        "text": "Was the deceased person the one who buried the coffin?",
+        "feedback": "no"
+      }
+    ]
+  },
+  {
+    "id": "TS036_observed_8",
+    "puzzle_id": "TS036",
+    "question": "Was Kameda literally physically broken into fragments?",
+    "expected": "yes",
+    "history": [
+      {
+        "type": "question",
+        "text": "Are Kameda and Umio both people?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was their struggle a physical fight?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was their struggle a competition with a winner and a loser?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Were they competing in a game?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda’s battered condition due to something that happened to an object or work associated with him, rather than to Kameda himself?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was their competition a race?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the competition judged on something they created, such as writing or art?",
+        "feedback": "no"
+      }
+    ]
+  },
+  {
+    "id": "TS036_observed_54",
+    "puzzle_id": "TS036",
+    "question": "Was Umio’s body left uncremated by Kameda’s side after Umio was defeated in their political struggle?",
+    "expected": "yes",
+    "history": [
+      {
+        "type": "question",
+        "text": "Are Kameda and Umio both people?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was their struggle a physical fight?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was their struggle a competition with a winner and a loser?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Were they competing in a game?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda’s battered condition due to something that happened to an object or work associated with him, rather than to Kameda himself?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was their competition a race?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the competition judged on something they created, such as writing or art?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda literally physically broken into fragments?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was their competition political, such as a contest for office or political influence?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda’s political party or coalition split into factions during the struggle?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Does Kameda’s battered, fragmented state describe his political career or standing being devastated rather than his body being injured?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Were Kameda and Umio competing as candidates in an election?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was their political competition a debate or other contest of persuasion?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was their political struggle for control of a political organization, such as a contest for party leadership?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Were they political rivals competing over a policy or legislative issue, rather than for an elected office or leadership position?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was their political struggle part of a military conflict, such as a war or coup?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was their political competition a legal struggle, such as a court case or an investigation?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Were Kameda and Umio themselves politicians or holders of political office?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was their political competition primarily about which of them was more popular with the public?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Were they competing for a political appointment or another position filled without an election?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda’s battered condition a physical injury caused by something other than a fight between the two?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda physically injured as a direct consequence of the political competition, even though the two did not physically fight each other?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda already battered or fragmented before the political struggle began?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda’s body badly damaged in an accident during the period of their political struggle, but for reasons unrelated to the competition itself?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda’s battered, fragmented condition caused by a mental or emotional breakdown rather than physical injury?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda already dead when his body was reduced to battered fragments?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda’s body reduced to fragments because it was cremated after his death?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did Kameda die as a consequence of losing their political struggle?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the political struggle about which of them would live longer or remain in office longer?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the struggle about control or survival of a government or regime, rather than a contest for a particular office?",
+        "feedback": "yes and no"
+      },
+      {
+        "type": "question",
+        "text": "Was their struggle a contest between political leaders for influence over the same country, rather than for control of its government or a specific office?",
+        "feedback": "yes and no"
+      },
+      {
+        "type": "question",
+        "text": "Were Kameda and Umio political leaders of different countries competing for geopolitical influence or dominance?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "At the time people judged the outcome, was Kameda dead while Umio was still alive?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Were Kameda and Umio rulers of the same country, such as kings or emperors?",
+        "feedback": "yes and no"
+      },
+      {
+        "type": "question",
+        "text": "Were Kameda and Umio historical political figures whose struggle took place in the distant past?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was their political struggle a succession dispute over who would inherit or take over rule of a country?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Did their political struggle take place in ancient Rome?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was their struggle between rival dynasties or factions competing to rule the same country?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Did Kameda and Umio live in Japan?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Were Kameda and Umio fictional characters rather than real historical people?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did Kameda and Umio rule the same country at different times, rather than rival rulers of it at the same time?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was either Kameda or Umio a monarch, such as a king or emperor?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did people infer the likely loser from comparing physical evidence about their remains, such as their burial or cremation?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Were Kameda and Umio emperors of Japan?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did their political struggle take place in ancient China?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Were Kameda and Umio rulers of ancient Greece?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda’s cremation considered an honorable funeral rite that suggested he had won, while Umio’s intact remains suggested he had lost?",
+        "feedback": "yes"
+      },
+      {
+        "type": "final",
+        "text": "Kameda and Umio were historical political rivals, and the struggle was not a physical fight or a contest for a particular office. After they died, people compared what happened to their remains. Kameda’s body had been cremated—a treatment regarded as an honorable funeral rite and therefore evidence that he had prevailed. Umio’s remains were intact, which by comparison suggested that he had been treated as the loser. So despite Kameda’s fragments and Umio’s undamaged body, the funerary evidence pointed to Umio having lost.",
+        "feedback": "yes and no"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda cremated because he was regarded as the victor in their political struggle?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda cremated because he was a Buddhist, rather than because of the outcome of the political struggle?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda cremated as part of a customary burial practice for his people, rather than as a judgment about the outcome of the struggle?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was Umio’s body left uncremated as a sign of dishonor or defeat?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was Umio’s body deliberately left uncremated by the faction that defeated him, as a way of dishonoring him?",
+        "feedback": "yes"
+      }
+    ]
+  },
+  {
+    "id": "TS036_observed_61",
+    "puzzle_id": "TS036",
+    "question": "Was Umio defeated by someone other than Kameda?",
+    "expected": "no",
+    "history": [
+      {
+        "type": "question",
+        "text": "Are Kameda and Umio both people?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was their struggle a physical fight?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was their struggle a competition with a winner and a loser?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Were they competing in a game?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda’s battered condition due to something that happened to an object or work associated with him, rather than to Kameda himself?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was their competition a race?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the competition judged on something they created, such as writing or art?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda literally physically broken into fragments?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was their competition political, such as a contest for office or political influence?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda’s political party or coalition split into factions during the struggle?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Does Kameda’s battered, fragmented state describe his political career or standing being devastated rather than his body being injured?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Were Kameda and Umio competing as candidates in an election?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was their political competition a debate or other contest of persuasion?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was their political struggle for control of a political organization, such as a contest for party leadership?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Were they political rivals competing over a policy or legislative issue, rather than for an elected office or leadership position?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was their political struggle part of a military conflict, such as a war or coup?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was their political competition a legal struggle, such as a court case or an investigation?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Were Kameda and Umio themselves politicians or holders of political office?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was their political competition primarily about which of them was more popular with the public?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Were they competing for a political appointment or another position filled without an election?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda’s battered condition a physical injury caused by something other than a fight between the two?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda physically injured as a direct consequence of the political competition, even though the two did not physically fight each other?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda already battered or fragmented before the political struggle began?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda’s body badly damaged in an accident during the period of their political struggle, but for reasons unrelated to the competition itself?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda’s battered, fragmented condition caused by a mental or emotional breakdown rather than physical injury?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda already dead when his body was reduced to battered fragments?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda’s body reduced to fragments because it was cremated after his death?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did Kameda die as a consequence of losing their political struggle?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the political struggle about which of them would live longer or remain in office longer?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was the struggle about control or survival of a government or regime, rather than a contest for a particular office?",
+        "feedback": "yes and no"
+      },
+      {
+        "type": "question",
+        "text": "Was their struggle a contest between political leaders for influence over the same country, rather than for control of its government or a specific office?",
+        "feedback": "yes and no"
+      },
+      {
+        "type": "question",
+        "text": "Were Kameda and Umio political leaders of different countries competing for geopolitical influence or dominance?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "At the time people judged the outcome, was Kameda dead while Umio was still alive?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Were Kameda and Umio rulers of the same country, such as kings or emperors?",
+        "feedback": "yes and no"
+      },
+      {
+        "type": "question",
+        "text": "Were Kameda and Umio historical political figures whose struggle took place in the distant past?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was their political struggle a succession dispute over who would inherit or take over rule of a country?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Did their political struggle take place in ancient Rome?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was their struggle between rival dynasties or factions competing to rule the same country?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Did Kameda and Umio live in Japan?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Were Kameda and Umio fictional characters rather than real historical people?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did Kameda and Umio rule the same country at different times, rather than rival rulers of it at the same time?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was either Kameda or Umio a monarch, such as a king or emperor?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Did people infer the likely loser from comparing physical evidence about their remains, such as their burial or cremation?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Were Kameda and Umio emperors of Japan?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did their political struggle take place in ancient China?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Were Kameda and Umio rulers of ancient Greece?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda’s cremation considered an honorable funeral rite that suggested he had won, while Umio’s intact remains suggested he had lost?",
+        "feedback": "yes"
+      },
+      {
+        "type": "final",
+        "text": "Kameda and Umio were historical political rivals, and the struggle was not a physical fight or a contest for a particular office. After they died, people compared what happened to their remains. Kameda’s body had been cremated—a treatment regarded as an honorable funeral rite and therefore evidence that he had prevailed. Umio’s remains were intact, which by comparison suggested that he had been treated as the loser. So despite Kameda’s fragments and Umio’s undamaged body, the funerary evidence pointed to Umio having lost.",
+        "feedback": "yes and no"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda cremated because he was regarded as the victor in their political struggle?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda cremated because he was a Buddhist, rather than because of the outcome of the political struggle?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was Kameda cremated as part of a customary burial practice for his people, rather than as a judgment about the outcome of the struggle?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was Umio’s body left uncremated as a sign of dishonor or defeat?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was Umio’s body deliberately left uncremated by the faction that defeated him, as a way of dishonoring him?",
+        "feedback": "yes"
+      },
+      {
+        "type": "question",
+        "text": "Was Umio’s body left uncremated by Kameda’s side after Umio was defeated in their political struggle?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was Umio’s body left uncremated by the faction that defeated him, but that faction was not Kameda’s side?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Did Kameda and Umio’s political struggle take place in medieval Europe?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Were Kameda and Umio’s remains found in the same burial site?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Were Kameda and Umio on opposing sides in a larger political conflict, rather than leading the factions that directly fought each other?",
+        "feedback": "irrelevant"
+      },
+      {
+        "type": "question",
+        "text": "Were Kameda and Umio the Roman emperors Otho and Vitellius?",
+        "feedback": "no"
+      },
+      {
+        "type": "question",
+        "text": "Was Umio killed by execution after losing the political struggle?",
+        "feedback": "no"
+      }
+    ]
+  },
+  {
+    "id": "TS023_fresh_5",
+    "puzzle_id": "TS023",
+    "question": "Was this a staged public escape performance?",
+    "expected": "no"
+  },
+  {
+    "id": "TS023_fresh_6",
+    "puzzle_id": "TS023",
+    "question": "Did the original plan specify the next deceased person’s coffin in the prison, without knowing it would contain the guard?",
+    "expected": "yes"
+  },
+  {
+    "id": "TS036_fresh_7",
+    "puzzle_id": "TS036",
+    "question": "Were the king’s fragments the result of customary cremation?",
+    "expected": "yes"
+  }
+]

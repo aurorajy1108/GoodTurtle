@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "repeats_per_slot": 2,
+  "cl_conditions": ["direct", "session", "answer_only"],
+  "mas_strategies": ["solo", "free_dialogue"],
+  "cl": [
+    {"set": 1, "target": "TS013", "positive": ["TS015"], "optional_positive": "TS016", "negative": ["TS014"], "neutral": ["TS028"], "slots": {"a": ["jiayang"], "b": ["amy"]}},
+    {"set": 2, "target": "TS034", "positive": ["TS035"], "negative": ["TS033"], "neutral": ["TS012"], "slots": {"a": ["zhenqi"], "b": ["april"]}},
+    {"set": 3, "target": "TS022", "positive": ["TS047"], "negative": ["TS045"], "neutral": ["TS019"], "slots": {"a": ["shirley"], "b": ["jiayang", "zhenqi"]}}
+  ],
+  "mas": [
+    {"puzzle": "TS038", "review_owner": "jiayang (Aurora)", "slots": {"a": ["jiayang"], "b": ["april"]}},
+    {"puzzle": "TS002", "review_owner": "kelly", "slots": {"a": ["kelly"], "b": ["shirley"]}},
+    {"puzzle": "TS014", "review_owner": "amy", "slots": {"a": ["amy"], "b": ["shirley", "kelly"]}}
+  ],
+  "note": "Slots with two names require the team to choose ONE runner. Each slot is launched once. Local repeats 1/2 map to global repeats 1/2 for a and 3/4 for b. A is fixed within each slot batch; two people produce two source prefixes, not four independent A samples."
+}

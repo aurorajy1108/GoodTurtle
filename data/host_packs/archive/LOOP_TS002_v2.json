@@ -1,0 +1,93 @@
+{
+  "version": "four-label-repair-20261023",
+  "canonical_facts": [],
+  "explicit_negatives": [],
+  "irrelevant_details": [
+    "Coat colour, apartment floor, city, relationship duration, side of hand, transport mode and specific betrayal type are incidental.",
+    "Survival at the checkpoint, a separate stabbing event and packaging are unspecified and not required to explain the hand as pillow."
+  ],
+  "host_examples": [
+    {
+      "case_id": "R01",
+      "question": "Was she carrying a whole severed arm rather than a hand?",
+      "answer": "no",
+      "rationale": "The canonical body part is strictly hand.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R02",
+      "question": "Was she arrested because the pillow was stolen ordinary bedding?",
+      "answer": "no",
+      "rationale": "Wrong object and cause.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R03",
+      "question": "Was her former partner still alive at the checkpoint?",
+      "answer": "irrelevant",
+      "rationale": "Survival then is not needed for this narrative.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    },
+    {
+      "case_id": "R04",
+      "question": "Was her request to leave her pillow a reference to his hand?",
+      "answer": "yes",
+      "rationale": "Pillow is the hand she wanted him to leave.",
+      "public_history": [],
+      "review_status": "pending_human_review"
+    }
+  ],
+  "label_overrides": {
+    "P027": {
+      "answer": "irrelevant",
+      "rationale": "Unspecified incidental detail or unrelated instruction, not a partly true theory."
+    },
+    "P028": {
+      "answer": "irrelevant",
+      "rationale": "Unspecified incidental detail or unrelated instruction, not a partly true theory."
+    },
+    "P029": {
+      "answer": "irrelevant",
+      "rationale": "Unspecified incidental detail or unrelated instruction, not a partly true theory."
+    },
+    "P030": {
+      "answer": "irrelevant",
+      "rationale": "Unspecified incidental detail or unrelated instruction, not a partly true theory."
+    },
+    "P031": {
+      "answer": "irrelevant",
+      "rationale": "Unspecified incidental detail or unrelated instruction, not a partly true theory."
+    },
+    "P033": {
+      "answer": "irrelevant",
+      "rationale": "Unspecified incidental detail or unrelated instruction, not a partly true theory."
+    },
+    "P040": {
+      "answer": "irrelevant",
+      "rationale": "Unspecified incidental detail or unrelated instruction, not a partly true theory."
+    },
+    "P053": {
+      "answer": "irrelevant",
+      "rationale": "Unspecified incidental detail or unrelated instruction, not a partly true theory."
+    },
+    "P054": {
+      "answer": "irrelevant",
+      "rationale": "Unspecified incidental detail or unrelated instruction, not a partly true theory."
+    },
+    "P055": {
+      "answer": "irrelevant",
+      "rationale": "Unspecified incidental detail or unrelated instruction, not a partly true theory."
+    },
+    "P056": {
+      "answer": "irrelevant",
+      "rationale": "Unspecified incidental detail or unrelated instruction, not a partly true theory."
+    },
+    "P074": {
+      "answer": "irrelevant",
+      "rationale": "Unspecified incidental detail or unrelated instruction, not a partly true theory."
+    }
+  }
+}
