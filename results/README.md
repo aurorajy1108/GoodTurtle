@@ -32,3 +32,5 @@ The current HF version removes 61 unused older-batch games and adds 18 report ap
 The CL four-run descriptive analysis uses outcome-ranked subsets. Full candidate records and the selection table are retained in the HF archive for audit; they are not additional reported four-run samples. See `results/report_provenance/cl_selection.csv` after downloading. Historical archive versions remain available for provenance.
 
 If a previous full archive is already restored in your checkout, use a fresh checkout or a new `--root` directory for this release. The downloader preserves conflicting local evidence rather than silently replacing it.
+
+[Output-budget pair definitions](../configs/report_output_budget_pairs.json) map the 12 appendix solo controls to their original team reference IDs and allowances.

@@ -1,0 +1,227 @@
+{
+  "protocol": "ordinary-solo-mas-output-v1",
+  "question_cap": 1000,
+  "jobs": [
+    {
+      "puzzle_id": "TS038",
+      "repeat": 1,
+      "run_dir": "TS038_r01_solo_mas_output",
+      "output_token_cap": 13561,
+      "question_cap": 1000,
+      "reference_id": "local_mas::TS038_r01_mas",
+      "reference_path": "results/trajectories/mas_ts038_v14/TS038_r01_mas",
+      "reference_score": 0.5,
+      "reference_submissions": 100,
+      "reference_usage": {
+        "output_tokens": 13561,
+        "input_tokens": 2273438,
+        "generations": 121,
+        "unobserved_calls": 0
+      },
+      "solo_archive_id": "report_supplement::TS038_r01_solo_mas_output"
+    },
+    {
+      "puzzle_id": "TS038",
+      "repeat": 2,
+      "run_dir": "TS038_r02_solo_mas_output",
+      "output_token_cap": 10476,
+      "question_cap": 1000,
+      "reference_id": "local_mas::TS038_r02_mas",
+      "reference_path": "results/trajectories/mas_ts038_v14/TS038_r02_mas",
+      "reference_score": 1.0,
+      "reference_submissions": 51,
+      "reference_usage": {
+        "output_tokens": 10476,
+        "input_tokens": 820191,
+        "generations": 67,
+        "unobserved_calls": 0
+      },
+      "solo_archive_id": "report_supplement::TS038_r02_solo_mas_output"
+    },
+    {
+      "puzzle_id": "TS038",
+      "repeat": 3,
+      "run_dir": "TS038_r03_solo_mas_output",
+      "output_token_cap": 25127,
+      "question_cap": 1000,
+      "reference_id": "local_mas::TS038_r03_mas",
+      "reference_path": "results/trajectories/mas_ts038_v14/TS038_r03_mas",
+      "reference_score": 0.6,
+      "reference_submissions": 100,
+      "reference_usage": {
+        "output_tokens": 25127,
+        "input_tokens": 3065981,
+        "generations": 130,
+        "unobserved_calls": 0
+      },
+      "solo_archive_id": "report_supplement::TS038_r03_solo_mas_output"
+    },
+    {
+      "puzzle_id": "TS038",
+      "repeat": 4,
+      "run_dir": "TS038_r04_solo_mas_output",
+      "output_token_cap": 9319,
+      "question_cap": 1000,
+      "reference_id": "local_mas::TS038_r04_mas",
+      "reference_path": "results/trajectories/mas_ts038_v14/TS038_r04_mas",
+      "reference_score": 0.0,
+      "reference_submissions": 100,
+      "reference_usage": {
+        "output_tokens": 9319,
+        "input_tokens": 1864916,
+        "generations": 110,
+        "unobserved_calls": 1
+      },
+      "solo_archive_id": "report_supplement::TS038_r04_solo_mas_output"
+    },
+    {
+      "puzzle_id": "TS022",
+      "repeat": 1,
+      "run_dir": "TS022_r01_solo_mas_output",
+      "output_token_cap": 31800,
+      "question_cap": 1000,
+      "reference_id": "t22_t42::trajectories/TS022/free_dialogue/r01",
+      "reference_path": "results/trajectories/ts022_ts042_20261114/trajectories__TS022__free_dialogue__r01",
+      "reference_score": 0.1,
+      "reference_submissions": 100,
+      "reference_usage": {
+        "output_tokens": 31800,
+        "input_tokens": 2830492,
+        "generations": 130,
+        "unobserved_calls": 0
+      },
+      "solo_archive_id": "report_supplement::TS022_r01_solo_mas_output"
+    },
+    {
+      "puzzle_id": "TS022",
+      "repeat": 2,
+      "run_dir": "TS022_r02_solo_mas_output",
+      "output_token_cap": 9018,
+      "question_cap": 1000,
+      "reference_id": "t22_t42::trajectories/TS022/free_dialogue/r02",
+      "reference_path": "results/trajectories/ts022_ts042_20261114/trajectories__TS022__free_dialogue__r02",
+      "reference_score": 0.1,
+      "reference_submissions": 100,
+      "reference_usage": {
+        "output_tokens": 9018,
+        "input_tokens": 1396053,
+        "generations": 106,
+        "unobserved_calls": 0
+      },
+      "solo_archive_id": "report_supplement::TS022_r02_solo_mas_output"
+    },
+    {
+      "puzzle_id": "TS022",
+      "repeat": 3,
+      "run_dir": "TS022_r03_solo_mas_output",
+      "output_token_cap": 23363,
+      "question_cap": 1000,
+      "reference_id": "t22_t42::trajectories/TS022/free_dialogue/r03",
+      "reference_path": "results/trajectories/ts022_ts042_20261114/trajectories__TS022__free_dialogue__r03",
+      "reference_score": 1.0,
+      "reference_submissions": 93,
+      "reference_usage": {
+        "output_tokens": 23363,
+        "input_tokens": 3645700,
+        "generations": 143,
+        "unobserved_calls": 0
+      },
+      "solo_archive_id": "report_supplement::TS022_r03_solo_mas_output"
+    },
+    {
+      "puzzle_id": "TS022",
+      "repeat": 4,
+      "run_dir": "TS022_r04_solo_mas_output",
+      "output_token_cap": 31830,
+      "question_cap": 1000,
+      "reference_id": "t22_t42::trajectories/TS022/free_dialogue/r04",
+      "reference_path": "results/trajectories/ts022_ts042_20261114/trajectories__TS022__free_dialogue__r04",
+      "reference_score": 0.5,
+      "reference_submissions": 100,
+      "reference_usage": {
+        "output_tokens": 31830,
+        "input_tokens": 4144732,
+        "generations": 133,
+        "unobserved_calls": 0
+      },
+      "solo_archive_id": "report_supplement::TS022_r04_solo_mas_output"
+    },
+    {
+      "puzzle_id": "TS042",
+      "repeat": 1,
+      "run_dir": "TS042_r01_solo_mas_output",
+      "output_token_cap": 11946,
+      "question_cap": 1000,
+      "reference_id": "t22_t42::trajectories/TS042/free_dialogue/r01",
+      "reference_path": "results/trajectories/ts022_ts042_20261114/trajectories__TS042__free_dialogue__r01",
+      "reference_score": 0.35,
+      "reference_submissions": 100,
+      "reference_usage": {
+        "output_tokens": 11946,
+        "input_tokens": 2135707,
+        "generations": 123,
+        "unobserved_calls": 1
+      },
+      "solo_archive_id": "report_supplement::TS042_r01_solo_mas_output"
+    },
+    {
+      "puzzle_id": "TS042",
+      "repeat": 2,
+      "run_dir": "TS042_r02_solo_mas_output",
+      "output_token_cap": 12373,
+      "question_cap": 1000,
+      "reference_id": "t22_t42::trajectories/TS042/free_dialogue/r02",
+      "reference_path": "results/trajectories/ts022_ts042_20261114/trajectories__TS042__free_dialogue__r02",
+      "reference_score": 0.6,
+      "reference_submissions": 100,
+      "reference_usage": {
+        "output_tokens": 12373,
+        "input_tokens": 1847343,
+        "generations": 116,
+        "unobserved_calls": 1
+      },
+      "solo_archive_id": "report_supplement::TS042_r02_solo_mas_output"
+    },
+    {
+      "puzzle_id": "TS042",
+      "repeat": 3,
+      "run_dir": "TS042_r03_solo_mas_output",
+      "output_token_cap": 22997,
+      "question_cap": 1000,
+      "reference_id": "t22_t42::trajectories/TS042/free_dialogue/r03",
+      "reference_path": "results/trajectories/ts022_ts042_20261114/trajectories__TS042__free_dialogue__r03",
+      "reference_score": 0.75,
+      "reference_submissions": 100,
+      "reference_usage": {
+        "output_tokens": 22997,
+        "input_tokens": 2254063,
+        "generations": 115,
+        "unobserved_calls": 1
+      },
+      "solo_archive_id": "report_supplement::TS042_r03_solo_mas_output"
+    },
+    {
+      "puzzle_id": "TS042",
+      "repeat": 4,
+      "run_dir": "TS042_r04_solo_mas_output",
+      "output_token_cap": 16638,
+      "question_cap": 1000,
+      "reference_id": "t22_t42::trajectories/TS042/free_dialogue/r04",
+      "reference_path": "results/trajectories/ts022_ts042_20261114/trajectories__TS042__free_dialogue__r04",
+      "reference_score": 0.6,
+      "reference_submissions": 100,
+      "reference_usage": {
+        "output_tokens": 16638,
+        "input_tokens": 1962953,
+        "generations": 101,
+        "unobserved_calls": 1
+      },
+      "solo_archive_id": "report_supplement::TS042_r04_solo_mas_output"
+    }
+  ],
+  "budget": "Per-repeat observed Player+Partner output tokens, including MAS discussion; judging excluded.",
+  "selection": "First four historical MAS repetitions by repeat order, without score selection.",
+  "policy": "Ordinary baseline Player prompt, one persistent solo session, no reflection or team instructions. Historical role models, puzzle, grading, judging prompts and Host context retained. Extended question cap; output budget reserves the last answer; early success stops normally.",
+  "comparison": "Same available output allowance, not equal realized input tokens, output tokens, dollars or FLOPs.",
+  "purpose": "Pair definitions for the report output-budget appendix; reference IDs locate team records in the HF archive."
+}
